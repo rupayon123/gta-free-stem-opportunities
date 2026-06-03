@@ -29,6 +29,9 @@ jobs:
       - name: Refresh library opportunities
         run: npm run generate:library
 
+      - name: Scan discovery sources for review candidates
+        run: npm run discover:summary
+
       - name: Run QA
         run: npm run qa
 

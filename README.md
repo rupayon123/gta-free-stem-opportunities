@@ -85,7 +85,7 @@ The library generator fetches structured public library event feeds, filters out
 - Public search automatically hides listings after their `endDate`, `deadline`, or `startDate` passes.
 - Expired listings are not deleted from the source files immediately, so saved accounts and admin review can still reference them as archive/history.
 - The scheduled GitHub Action in `.github/workflows/refresh-opportunities.yml` runs every 6 hours and can be triggered manually.
-- The scheduled job refreshes official library-feed listings, runs QA/build, and commits the refreshed static database when source feeds change.
+- The scheduled job refreshes official library-feed listings, scans discovery sources for review candidates, runs QA/build, and commits the refreshed static database when source feeds change.
 - A copy of the workflow is kept in `docs/refresh-opportunities-workflow.yml` for setup reference.
 - For the public Vercel site to update automatically from that commit, the Vercel project must be connected to this GitHub repo or a Vercel deploy token workflow must be added.
 
