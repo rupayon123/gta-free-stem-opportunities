@@ -3,12 +3,11 @@ import type { DiscoveredOpportunity } from "./discovery";
 export const generatedDiscoverySummary = {
   "mode": "deterministic",
   "sourcesChecked": 30,
-  "candidatesFound": 241,
-  "newCandidates": 54,
-  "duplicatesSkipped": 32,
+  "candidatesFound": 279,
+  "newCandidates": 57,
+  "duplicatesSkipped": 43,
   "warnings": [
     "Could not check Credit Valley Conservation youth opportunities: 403 Forbidden.",
-    "Could not check TRCA youth volunteer opportunities: fetch failed.",
     "Could not check Volunteer MBC youth opportunities: 403 Forbidden.",
     "Could not check Eventbrite free science and technology events: 405 Not Allowed.",
     "Could not check Eventbrite free online science and technology events: 405 Not Allowed."
@@ -17,37 +16,38 @@ export const generatedDiscoverySummary = {
 
 export const generatedDiscoveryReviewCandidates = [
   {
-    "id": "discovered-markham-events-stem-stem-workshop-building-bridges-grades-4-6-8c77c448b69a",
-    "title": "STEM Workshop: Building Bridges (Grades 4-6)",
-    "organization": "Markham Public Library",
-    "description": "In this workshop, participants will learn about energy transfer, friction, pressure and how geometric shapes contribute to structural strength. Using the engineering design process, participants will build their very own bridge! Discover the wonderful world of civil engineering through this hands-on and interactive workshop. This session will be led by a passionate high school student and is designed to explore exciting topics in structural design (civil engineering). This program is open to children in grades 4 to 6 on a first come, first serve basis.",
-    "city": "Markham",
-    "region": "York",
-    "ageMin": 9,
-    "ageMax": 12,
-    "category": "Science & Engineering",
+    "id": "discovered-tpl-events-stem-from-demo-to-done-turn-your-musical-ideas--6ebf79337a4b",
+    "title": "From Demo to Done: Turn Your Musical Ideas into Full Productions with AI",
+    "organization": "Toronto Public Library",
+    "description": "You've got the riff, the melody, or the song, but it's stuck as a voice memo or a guitar recording on your phone. How do you get from that raw idea to a finished track with drums, bass, keys, and everything else it needs? In this session, you'll learn how to use AI tools to build a complete production around your existing musical ideas. Bring a recording, a voice memo, or even just an idea you can hum or play, and we'll walk through how to generate complementary parts, arrange them into a full track, and polish the final result. This session is designed for musicians who play an instrument or write songs and want to explore how AI can help bring their vision to life. No prior music or programming experience is required. Registration is required. This program is part of the Innovator in Res",
+    "city": "Toronto",
+    "region": "Toronto",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "STEM",
     "cost": "Free to join",
     "language": [
       "en"
     ],
-    "deadline": "2026-06-03T17:00:00-04:00",
-    "startDate": "2026-06-03T17:00:00-04:00",
-    "endDate": "2026-06-03T18:15:00-04:00",
-    "sourceUrl": "https://markham.bibliocommons.com/events/69274b3f44d0e96d007b874d",
+    "deadline": "2026-06-03T16:00:00-04:00",
+    "startDate": "2026-06-03T16:00:00-04:00",
+    "endDate": "2026-06-03T18:00:00-04:00",
+    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6a147b92748daf857d59b703",
     "lastChecked": "2026-06-03",
     "lastSeen": "2026-06-03",
     "status": "needs_review",
     "tags": [
-      "science & engineering",
       "stem",
-      "steam",
-      "makerspace",
+      "coding",
       "robotics",
-      "coding"
+      "python",
+      "arduino",
+      "science",
+      "technology"
     ],
     "confidence": "high",
     "reviewReasons": [],
-    "sourceName": "Markham Public Library events"
+    "sourceName": "Toronto Public Library events"
   },
   {
     "id": "discovered-vaughan-library-programs-volunteer-opportunities-e775e833a50b",
@@ -253,7 +253,41 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Aurora Public Library STEM events"
   },
   {
-    "id": "discovered-aurora-library-stem-steam-for-homeschoolers-5f256cad03df",
+    "id": "discovered-aurora-library-stem-stem-launch-science-workshop-for-kids-with-5132b1830851",
+    "title": "STEM Launch: Science Workshop for Kids with Minds in Motion",
+    "organization": "Aurora Public Library",
+    "description": "Join the fun with the new STEM Launch program! Every other Saturday morning, dive into hands-on science you can take home. Create explosive elephant toothpaste, compete in bridge-building challenges with prizes, and build simple robotic projects of your own. Learn by doing—and have a blast while you’re at it. Drop-in! Minds In Motion STEM Inc is a registered non-profit in Ontario aiming to make STEM more accessible and to inspire youth to pursue a career in STEM.",
+    "city": "Aurora",
+    "region": "York",
+    "ageMin": 13,
+    "ageMax": 18,
+    "category": "Career & Mentorship",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "deadline": "2026-06-06T11:00:00-04:00",
+    "startDate": "2026-06-06T11:00:00-04:00",
+    "endDate": "2026-06-06T12:00:00-04:00",
+    "sourceUrl": "https://aurora.bibliocommons.com/events/69e7c5aadefec6489cbf49ce",
+    "lastChecked": "2026-06-03",
+    "lastSeen": "2026-06-03",
+    "status": "needs_review",
+    "tags": [
+      "career & mentorship",
+      "stem",
+      "creative studio",
+      "maker",
+      "coding",
+      "technology",
+      "science"
+    ],
+    "confidence": "high",
+    "reviewReasons": [],
+    "sourceName": "Aurora Public Library STEM events"
+  },
+  {
+    "id": "discovered-aurora-library-stem-steam-for-homeschoolers-9eb0ade0d72c",
     "title": "STEAM for Homeschoolers",
     "organization": "Aurora Public Library",
     "description": "Explore science, technology, engineering, art, and math in the company of other homeschoolers. For kids ages 6-12.",
@@ -269,7 +303,7 @@ export const generatedDiscoveryReviewCandidates = [
     "deadline": "2026-06-04T14:30:00-04:00",
     "startDate": "2026-06-04T14:30:00-04:00",
     "endDate": "2026-06-04T16:00:00-04:00",
-    "sourceUrl": "https://aurora.bibliocommons.com/events/69e7c5aadefec6489cbf49ce",
+    "sourceUrl": "https://aurora.bibliocommons.com/events/6998ba56b0595799c09e3a0f",
     "lastChecked": "2026-06-03",
     "lastSeen": "2026-06-03",
     "status": "needs_review",
@@ -489,39 +523,6 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Pickering Public Library technology events"
   },
   {
-    "id": "discovered-oshawa-library-stem-genealogy-101-620479b743f3",
-    "title": "Genealogy 101",
-    "organization": "Oshawa Public Libraries",
-    "description": "Genealogy 101 from Oshawa Public Libraries STEM events.",
-    "city": "Oshawa",
-    "region": "Durham",
-    "ageMin": 1,
-    "ageMax": 18,
-    "category": "STEM",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-06-03T09:00:00-04:00",
-    "sourceUrl": "https://oshlib.bibliocommons.com/events/69dd0348b6c4ac1fedcc0626",
-    "lastChecked": "2026-06-03",
-    "lastSeen": "2026-06-03",
-    "status": "needs_review",
-    "tags": [
-      "stem",
-      "coding",
-      "science",
-      "technology",
-      "teen",
-      "volunteer"
-    ],
-    "confidence": "high",
-    "reviewReasons": [
-      "No clear future date found on the crawled page."
-    ],
-    "sourceName": "Oshawa Public Libraries STEM events"
-  },
-  {
     "id": "discovered-oshawa-library-stem-create-with-cricut-pride-celebration-95960df19f01",
     "title": "Create with Cricut®: Pride Celebration",
     "organization": "Oshawa Public Libraries",
@@ -588,10 +589,10 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Oshawa Public Libraries STEM events"
   },
   {
-    "id": "discovered-oshawa-library-stem-durham-college-a2f5a5b0aeb8",
-    "title": "Durham College",
+    "id": "discovered-oshawa-library-stem-hair-love-braiding-workshop-e55a5607d376",
+    "title": "Hair Love: Braiding Workshop",
     "organization": "Oshawa Public Libraries",
-    "description": "Durham College from Oshawa Public Libraries STEM events.",
+    "description": "Hair Love: Braiding Workshop from Oshawa Public Libraries STEM events.",
     "city": "Oshawa",
     "region": "Durham",
     "ageMin": 1,
@@ -602,7 +603,7 @@ export const generatedDiscoveryReviewCandidates = [
       "en"
     ],
     "startDate": "2026-06-03T09:00:00-04:00",
-    "sourceUrl": "https://oshlib.bibliocommons.com/events/6a15b52c43b41b3d006925ae",
+    "sourceUrl": "https://oshlib.bibliocommons.com/events/69dd2664e2a2952aed0e784e",
     "lastChecked": "2026-06-03",
     "lastSeen": "2026-06-03",
     "status": "needs_review",
@@ -687,6 +688,39 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Oshawa Public Libraries STEM events"
   },
   {
+    "id": "discovered-oshawa-library-stem-steam-saturday-df8d87f4cb66",
+    "title": "STEAM Saturday",
+    "organization": "Oshawa Public Libraries",
+    "description": "STEAM Saturday from Oshawa Public Libraries STEM events.",
+    "city": "Oshawa",
+    "region": "Durham",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "STEM",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-06-03T09:00:00-04:00",
+    "sourceUrl": "https://oshlib.bibliocommons.com/events/69dd232db6c4ac1fedcc0f03",
+    "lastChecked": "2026-06-03",
+    "lastSeen": "2026-06-03",
+    "status": "needs_review",
+    "tags": [
+      "stem",
+      "coding",
+      "science",
+      "technology",
+      "teen",
+      "volunteer"
+    ],
+    "confidence": "high",
+    "reviewReasons": [
+      "No clear future date found on the crawled page."
+    ],
+    "sourceName": "Oshawa Public Libraries STEM events"
+  },
+  {
     "id": "discovered-oshawa-library-stem-makerspace-6bb095888b6a",
     "title": "Makerspace",
     "organization": "Oshawa Public Libraries",
@@ -707,40 +741,6 @@ export const generatedDiscoveryReviewCandidates = [
     "status": "needs_review",
     "tags": [
       "makerspace & fabrication",
-      "stem",
-      "coding",
-      "science",
-      "technology",
-      "teen",
-      "volunteer"
-    ],
-    "confidence": "high",
-    "reviewReasons": [
-      "No clear future date found on the crawled page."
-    ],
-    "sourceName": "Oshawa Public Libraries STEM events"
-  },
-  {
-    "id": "discovered-oshawa-library-stem-the-science-of-love-f92cf4da7eee",
-    "title": "The Science of Love",
-    "organization": "Oshawa Public Libraries",
-    "description": "The Science of Love listed by Oshawa Public Libraries STEM events.",
-    "city": "Oshawa",
-    "region": "Durham",
-    "ageMin": 1,
-    "ageMax": 18,
-    "category": "Science & Engineering",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-06-03T09:00:00-04:00",
-    "sourceUrl": "https://oshlib.bibliocommons.com/v2/list/display/2284869569/3024904857",
-    "lastChecked": "2026-06-03",
-    "lastSeen": "2026-06-03",
-    "status": "needs_review",
-    "tags": [
-      "science & engineering",
       "stem",
       "coding",
       "science",
@@ -789,7 +789,7 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Oshawa Public Libraries STEM events"
   },
   {
-    "id": "discovered-clarington-library-programs-learning-technology-230c06781e35",
+    "id": "discovered-clarington-library-programs-learning-technology-ef1f52444b44",
     "title": "Learning & Technology",
     "organization": "Clarington Library, Museums & Archives",
     "description": "Learning & Technology listed by Clarington Library programs.",
@@ -803,7 +803,7 @@ export const generatedDiscoveryReviewCandidates = [
       "en"
     ],
     "startDate": "2026-06-03T09:00:00-04:00",
-    "sourceUrl": "http://www.cplma.ca/learning-technology",
+    "sourceUrl": "https://www.cplma.ca/learning-technology",
     "lastChecked": "2026-06-03",
     "lastSeen": "2026-06-03",
     "status": "needs_review",
@@ -822,7 +822,7 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Clarington Library programs"
   },
   {
-    "id": "discovered-clarington-library-programs-computers-internet-access-3cb588204464",
+    "id": "discovered-clarington-library-programs-computers-internet-access-541dee3079cc",
     "title": "Computers & Internet Access",
     "organization": "Clarington Library, Museums & Archives",
     "description": "Computers & Internet Access listed by Clarington Library programs.",
@@ -836,7 +836,7 @@ export const generatedDiscoveryReviewCandidates = [
       "en"
     ],
     "startDate": "2026-06-03T09:00:00-04:00",
-    "sourceUrl": "http://www.cplma.ca/learning-technology/computers-and-internet-access",
+    "sourceUrl": "https://www.cplma.ca/learning-technology/computers-and-internet-access",
     "lastChecked": "2026-06-03",
     "lastSeen": "2026-06-03",
     "status": "needs_review",
@@ -855,7 +855,7 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Clarington Library programs"
   },
   {
-    "id": "discovered-clarington-library-programs-maker-s-space-2a794c50bde2",
+    "id": "discovered-clarington-library-programs-maker-s-space-73692ec01a1b",
     "title": "Maker's Space",
     "organization": "Clarington Library, Museums & Archives",
     "description": "Maker's Space listed by Clarington Library programs.",
@@ -869,7 +869,7 @@ export const generatedDiscoveryReviewCandidates = [
       "en"
     ],
     "startDate": "2026-06-03T09:00:00-04:00",
-    "sourceUrl": "http://www.cplma.ca/learning-technology/makers-space-the-studio",
+    "sourceUrl": "https://www.cplma.ca/learning-technology/makers-space-the-studio",
     "lastChecked": "2026-06-03",
     "lastSeen": "2026-06-03",
     "status": "needs_review",
@@ -889,7 +889,7 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Clarington Library programs"
   },
   {
-    "id": "discovered-clarington-library-programs-jobs-volunteering-034bd1adb633",
+    "id": "discovered-clarington-library-programs-jobs-volunteering-812e9b03cdd9",
     "title": "Jobs & Volunteering",
     "organization": "Clarington Library, Museums & Archives",
     "description": "Jobs & Volunteering listed by Clarington Library programs.",
@@ -903,7 +903,7 @@ export const generatedDiscoveryReviewCandidates = [
       "en"
     ],
     "startDate": "2026-06-03T09:00:00-04:00",
-    "sourceUrl": "http://www.cplma.ca/about-us/jobs-and-volunteering",
+    "sourceUrl": "https://www.cplma.ca/about-us/jobs-and-volunteering",
     "lastChecked": "2026-06-03",
     "lastSeen": "2026-06-03",
     "status": "needs_review",
@@ -1186,6 +1186,108 @@ export const generatedDiscoveryReviewCandidates = [
       "No clear future date found on the crawled page."
     ],
     "sourceName": "Halton Hills Public Library programs"
+  },
+  {
+    "id": "discovered-trca-youth-youth-opportunities-at-trca-bd0e50237819",
+    "title": "Youth Opportunities at TRCA",
+    "organization": "Toronto and Region Conservation Authority",
+    "description": "TRCA offers programs to support youth and young adults who are interested in getting involved in the conservation sector.",
+    "city": "Toronto",
+    "region": "Toronto",
+    "ageMin": 13,
+    "ageMax": 18,
+    "category": "STEM",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-06-03T09:00:00-04:00",
+    "sourceUrl": "https://trca.ca/get-involved/youth-opportunities",
+    "lastChecked": "2026-06-03",
+    "lastSeen": "2026-06-03",
+    "status": "needs_review",
+    "tags": [
+      "stem",
+      "youth",
+      "volunteer",
+      "conservation",
+      "environment",
+      "science"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "No clear future date found on the crawled page.",
+      "Free access wording needs human confirmation."
+    ],
+    "sourceName": "TRCA youth volunteer opportunities"
+  },
+  {
+    "id": "discovered-trca-youth-volunteer-with-trca-cdffdd979d6f",
+    "title": "Volunteer with TRCA",
+    "organization": "Toronto and Region Conservation Authority",
+    "description": "Volunteer with TRCA listed by TRCA youth volunteer opportunities.",
+    "city": "Toronto",
+    "region": "Toronto",
+    "ageMin": 13,
+    "ageMax": 18,
+    "category": "Volunteer Hours",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-06-03T09:00:00-04:00",
+    "sourceUrl": "https://trca.ca/get-involved/volunteer",
+    "lastChecked": "2026-06-03",
+    "lastSeen": "2026-06-03",
+    "status": "needs_review",
+    "tags": [
+      "volunteer hours",
+      "youth",
+      "volunteer",
+      "conservation",
+      "environment",
+      "science"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "No clear future date found on the crawled page.",
+      "Free access wording needs human confirmation."
+    ],
+    "sourceName": "TRCA youth volunteer opportunities"
+  },
+  {
+    "id": "discovered-trca-youth-young-conservation-professionals-leadershi-275035142ede",
+    "title": "Young Conservation Professionals Leadership Program",
+    "organization": "Toronto and Region Conservation Authority",
+    "description": "Young Conservation Professionals Leadership Program listed by TRCA youth volunteer opportunities.",
+    "city": "Toronto",
+    "region": "Toronto",
+    "ageMin": 13,
+    "ageMax": 18,
+    "category": "Volunteer Hours",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-06-03T09:00:00-04:00",
+    "sourceUrl": "https://trca.ca/learning/adult/young-conservation-professionals",
+    "lastChecked": "2026-06-03",
+    "lastSeen": "2026-06-03",
+    "status": "needs_review",
+    "tags": [
+      "volunteer hours",
+      "youth",
+      "volunteer",
+      "conservation",
+      "environment",
+      "science"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "No clear future date found on the crawled page.",
+      "Free access wording needs human confirmation."
+    ],
+    "sourceName": "TRCA youth volunteer opportunities"
   },
   {
     "id": "discovered-uhn-stem-pathways-uhn-stem-pathways-7847b49cfe74",
