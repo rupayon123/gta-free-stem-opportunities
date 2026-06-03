@@ -108,7 +108,7 @@ const ui: Record<LanguageCode, Partial<Record<UiKey, string>>> = {
   en: {
     brand: "GTA FREE STEM Opportunities",
     mission: "Find real, verified free STEM programs, library events, volunteer hours, co-op, SHSM, and youth opportunities across the GTA.",
-    beta: "Public beta - verified and growing toward complete GTA coverage",
+    beta: "Verified and growing toward complete GTA coverage",
     search: "Search",
     searchPlaceholder: "Search robotics, Python, volunteer hours, co-op, hackathons...",
     filters: "Filters",
@@ -191,7 +191,7 @@ const ui: Record<LanguageCode, Partial<Record<UiKey, string>>> = {
   fr: {
     brand: "GTA FREE STEM Opportunities",
     mission: "Trouvez des occasions gratuites d'apprendre, de STEM, de benevolat, de coop et de leadership.",
-    beta: "Beta publique - verifiee et en croissance",
+    beta: "Verifiee et en croissance",
     search: "Rechercher",
     filters: "Filtres",
     list: "Liste",
@@ -212,7 +212,7 @@ const ui: Record<LanguageCode, Partial<Record<UiKey, string>>> = {
   zh: {
     brand: "GTA FREE STEM Opportunities",
     mission: "寻找GTA免费的学习、STEM、义工、合作教育和青年机会。",
-    beta: "公开测试版 - 已验证并持续扩展",
+    beta: "已验证并持续扩展",
     search: "搜索",
     filters: "筛选",
     list: "列表",
@@ -233,7 +233,7 @@ const ui: Record<LanguageCode, Partial<Record<UiKey, string>>> = {
   yue: {
     brand: "GTA FREE STEM Opportunities",
     mission: "搵GTA免費學習、STEM、義工、coop同青年機會。",
-    beta: "公開測試版 - 已核實並持續增加",
+    beta: "已核實並持續增加",
     search: "搜尋",
     filters: "篩選",
     list: "列表",
@@ -254,7 +254,7 @@ const ui: Record<LanguageCode, Partial<Record<UiKey, string>>> = {
   pa: {
     brand: "GTA FREE STEM Opportunities",
     mission: "GTA ਵਿੱਚ ਮੁਫ਼ਤ ਲਰਨਿੰਗ, STEM, ਵਲੰਟੀਅਰ, co-op ਅਤੇ ਯੂਥ ਮੌਕੇ ਲੱਭੋ।",
-    beta: "ਪਬਲਿਕ ਬੀਟਾ - ਜਾਂਚਿਆ ਹੋਇਆ ਅਤੇ ਵਧ ਰਿਹਾ ਹੈ",
+    beta: "ਜਾਂਚਿਆ ਹੋਇਆ ਅਤੇ ਵਧ ਰਿਹਾ ਹੈ",
     search: "ਖੋਜ",
     filters: "ਫਿਲਟਰ",
     list: "ਲਿਸਟ",
@@ -275,7 +275,7 @@ const ui: Record<LanguageCode, Partial<Record<UiKey, string>>> = {
   ur: {
     brand: "GTA FREE STEM Opportunities",
     mission: "GTA میں مفت تعلیم، STEM، رضاکاری، co-op اور نوجوانوں کے مواقع تلاش کریں۔",
-    beta: "عوامی بیٹا - تصدیق شدہ اور بڑھ رہا ہے",
+    beta: "تصدیق شدہ اور بڑھ رہا ہے",
     search: "تلاش",
     filters: "فلٹرز",
     list: "فہرست",
@@ -296,7 +296,7 @@ const ui: Record<LanguageCode, Partial<Record<UiKey, string>>> = {
   ta: {
     brand: "GTA FREE STEM Opportunities",
     mission: "GTA முழுவதும் இலவச கற்றல், STEM, தன்னார்வம், co-op மற்றும் இளைஞர் வாய்ப்புகள்.",
-    beta: "பொது பீட்டா - சரிபார்க்கப்பட்டு வளர்கிறது",
+    beta: "சரிபார்க்கப்பட்டு வளர்கிறது",
     search: "தேடல்",
     filters: "வடிகள்",
     list: "பட்டியல்",
@@ -317,7 +317,7 @@ const ui: Record<LanguageCode, Partial<Record<UiKey, string>>> = {
   tl: {
     brand: "GTA FREE STEM Opportunities",
     mission: "Maghanap ng libreng learning, STEM, volunteer, co-op, at youth opportunities sa GTA.",
-    beta: "Public beta - verified at patuloy na lumalaki",
+    beta: "Verified at patuloy na lumalaki",
     search: "Hanap",
     filters: "Filters",
     list: "Listahan",
@@ -338,7 +338,7 @@ const ui: Record<LanguageCode, Partial<Record<UiKey, string>>> = {
   es: {
     brand: "GTA FREE STEM Opportunities",
     mission: "Encuentra aprendizaje, STEM, voluntariado, co-op y oportunidades juveniles gratis en el GTA.",
-    beta: "Beta publica - verificada y creciendo",
+    beta: "Verificada y creciendo",
     search: "Buscar",
     filters: "Filtros",
     list: "Lista",
@@ -359,7 +359,7 @@ const ui: Record<LanguageCode, Partial<Record<UiKey, string>>> = {
   ar: {
     brand: "GTA FREE STEM Opportunities",
     mission: "ابحث عن فرص تعلم وSTEM وتطوع وتعاون للشباب مجانا في GTA.",
-    beta: "نسخة تجريبية عامة - موثقة وتتوسع",
+    beta: "موثقة وتتوسع",
     search: "بحث",
     filters: "فلاتر",
     list: "قائمة",
@@ -380,7 +380,7 @@ const ui: Record<LanguageCode, Partial<Record<UiKey, string>>> = {
   fa: {
     brand: "GTA FREE STEM Opportunities",
     mission: "فرصت های رایگان یادگیری، STEM، داوطلبی، co-op و جوانان در GTA را پیدا کنید.",
-    beta: "نسخه بتای عمومی - تایید شده و در حال رشد",
+    beta: "تایید شده و در حال رشد",
     search: "جستجو",
     filters: "فیلترها",
     list: "فهرست",
@@ -401,7 +401,7 @@ const ui: Record<LanguageCode, Partial<Record<UiKey, string>>> = {
   hi: {
     brand: "GTA FREE STEM Opportunities",
     mission: "GTA में मुफ्त learning, STEM, volunteering, co-op और youth opportunities खोजें।",
-    beta: "Public beta - verified और बढ़ रहा है",
+    beta: "Verified और बढ़ रहा है",
     search: "खोज",
     filters: "फिल्टर",
     list: "सूची",
@@ -422,7 +422,7 @@ const ui: Record<LanguageCode, Partial<Record<UiKey, string>>> = {
   gu: {
     brand: "GTA FREE STEM Opportunities",
     mission: "GTA માં મફત learning, STEM, volunteer, co-op અને youth opportunities શોધો.",
-    beta: "Public beta - verified અને વધતું",
+    beta: "Verified અને વધતું",
     search: "શોધ",
     filters: "ફિલ્ટર્સ",
     list: "યાદી",
@@ -443,7 +443,7 @@ const ui: Record<LanguageCode, Partial<Record<UiKey, string>>> = {
   bn: {
     brand: "GTA FREE STEM Opportunities",
     mission: "GTA-তে ফ্রি learning, STEM, volunteer, co-op এবং youth opportunity খুঁজুন।",
-    beta: "পাবলিক বেটা - যাচাই করা এবং বাড়ছে",
+    beta: "যাচাই করা এবং বাড়ছে",
     search: "খুঁজুন",
     searchPlaceholder: "robotics, Python, volunteer hours, co-op খুঁজুন...",
     filters: "ফিল্টার",
@@ -515,7 +515,7 @@ const ui: Record<LanguageCode, Partial<Record<UiKey, string>>> = {
   ja: {
     brand: "GTA FREE STEM Opportunities",
     mission: "GTAの無料学習、STEM、ボランティア、co-op、若者向け機会を探せます。",
-    beta: "公開ベータ - 確認済みで拡大中",
+    beta: "確認済みで拡大中",
     search: "検索",
     searchPlaceholder: "ロボット、Python、ボランティア時間、co-opを検索...",
     filters: "フィルター",
@@ -587,7 +587,7 @@ const ui: Record<LanguageCode, Partial<Record<UiKey, string>>> = {
   ko: {
     brand: "GTA FREE STEM Opportunities",
     mission: "GTA 전역의 무료 STEM 프로그램, 도서관 행사, 봉사 시간, co-op, SHSM, 청소년 기회를 찾을 수 있습니다.",
-    beta: "공개 베타 - 확인된 기회를 계속 넓히는 중",
+    beta: "확인된 기회를 계속 넓히는 중",
     search: "검색",
     searchPlaceholder: "로봇, Python, 봉사 시간, co-op 검색...",
     filters: "필터",

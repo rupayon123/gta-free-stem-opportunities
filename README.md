@@ -7,10 +7,11 @@ Public beta: https://gta-free-stem.vercel.app
 ## What Is Implemented
 
 - Source-backed public listings from official/current pages such as Toronto Public Library, Markham Public Library, Whitby Public Library, Credit Valley Conservation, TRCA, PACT, and Oakville Public Library.
+- Review-first hunting coverage across 30 public sources spanning Toronto, Peel, York, Durham, Halton, GTA-wide youth volunteer sources, university outreach, and online public event indexes.
 - Generated static library listing layer from official Toronto Public Library and Markham Public Library public event feeds.
 - Public search with list and MapLibre/OpenFreeMap map views.
 - Filters for age, city, region, category, language, approximate postal area, live-location distance, equity-focus toggles, volunteer hours, co-op, mentorship, and leadership.
-- Friendly pastel blue visual system with mint, yellow, coral, lavender, light mode, dark mode, and system theme.
+- Kid-friendly learning-site visual system with vibrant blues, mint, yellow, coral, lavender, rounded panels, playful hover motion, light mode, dark mode, and system theme.
 - Launch-language selector: English, French, Mandarin, Cantonese/Yue, Punjabi, Urdu, Tamil, Tagalog/Filipino, Spanish, Arabic, Farsi/Persian, Hindi, Gujarati, Bengali, Japanese, and Korean.
 - Listing detail panels in the main flow: access information, free-status proof, provider contact, public source evidence, directions, save button, and `.ics` calendar export.
 - Account-gated save flow in the beta UI: users must create or sign in with a verified account before saving.
@@ -76,7 +77,7 @@ npm run discover:sql
 npm run generate:library
 ```
 
-The crawler fetches public source pages, extracts likely real free GTA STEM opportunities, dedupes against existing listings, and exports new rows for admin review. New crawler finds stay out of public search as `needs_review` until an admin approves them.
+The crawler fetches public source pages across Toronto, Peel, York, Durham, Halton, and online indexes, extracts likely real free GTA STEM opportunities, dedupes against existing listings, and exports new rows for admin review. New crawler finds stay out of public search as `needs_review` until an admin approves them.
 
 The library generator fetches structured public library event feeds, filters out cancelled/full/charged/exhibit-only entries, and writes `lib/generatedLibraryOpportunities.ts` so the static public site can show a larger verified database at zero hosting cost.
 

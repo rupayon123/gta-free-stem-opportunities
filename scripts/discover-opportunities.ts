@@ -297,12 +297,13 @@ function buildOpportunity(source: DiscoverySource, candidate: RawCandidate): Dis
   const description = stripTags(candidate.description || `${title} from ${source.name}.`);
   const combinedText = `${title} ${description}`;
   if (
-    /\b(branch art exhibit|science fiction|digital (video|magazines|newspapers|comics|archive)|computer & library training|computers, printing|email us|translation disclaimer|get started|event payment system|job fairs)\b/i.test(
+    /\b(branch art exhibit|science fiction|digital (video|magazines|newspapers|comics|archive)|computer & library training|computers, printing|computers, wifi & printing|public computers|email us|translation disclaimer|get started|event payment system|job fairs|jobs & volunteers|code of conduct|privacy|terms of use|accessibility statement|artificial intelligence policy|library card|hours & information|font size|my account)\b/i.test(
       title
     ) ||
-    /^(my events|visit our website|technology|volunteer|programs?|events?|register|learn more|contact us|science & technology)$/i.test(
+    /^(my events|visit our website|homepage|.*homepage|technology|volunteer|programs?|events?|register|learn more|contact us|science & technology|catalogue|donate|log in)$/i.test(
       title
     ) ||
+    /^([a-z0-9-]+\.)+[a-z]{2,}$/i.test(title) ||
     /^best free science & tech events/i.test(title)
   ) {
     return null;

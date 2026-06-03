@@ -41,10 +41,15 @@ export const categories: Category[] = [
 
 export const cityOptions = [
   "Ajax",
+  "Aurora",
   "Brampton",
   "Burlington",
+  "Clarington",
+  "Halton Hills",
   "Markham",
+  "Milton",
   "Mississauga",
+  "Newmarket",
   "Oakville",
   "Oshawa",
   "Pickering",
