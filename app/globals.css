@@ -137,6 +137,92 @@ a {
   padding-bottom: 56px;
 }
 
+.home-shell {
+  height: 100svh;
+  min-height: 100svh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding-bottom: 0;
+}
+
+.home-shell .landing-hero {
+  display: grid;
+  min-height: calc(100svh - 132px);
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 12px;
+}
+
+.home-shell .hero-card-shell {
+  gap: 8px;
+}
+
+.home-shell .hero-logo {
+  width: clamp(76px, 7vw, 104px);
+}
+
+.home-shell .hero-card-shell h1 {
+  font-size: clamp(2.15rem, 4.15vw, 3.72rem);
+}
+
+.home-shell .hero-card-shell > p {
+  max-width: 760px;
+  font-size: clamp(0.98rem, 0.75vw + 0.78rem, 1.12rem);
+  line-height: 1.38;
+}
+
+.home-shell .hero-search-form,
+.home-shell .hero-status-card {
+  width: min(780px, 100%);
+}
+
+.home-shell .hero-search-form {
+  min-height: 48px;
+  padding-block: 6px;
+}
+
+.home-shell .hero-status-card {
+  gap: 9px;
+  padding: 9px 12px;
+  border-radius: 22px;
+}
+
+.home-shell .hero-status-copy p {
+  font-size: 0.82rem;
+  line-height: 1.32;
+}
+
+.home-shell .hero-status-metrics {
+  gap: 6px;
+}
+
+.home-shell .hero-status-metrics div {
+  padding: 5px 8px;
+  border-radius: 15px;
+}
+
+.home-shell .hero-status-metrics dt {
+  font-size: 0.68rem;
+}
+
+.home-shell .hero-status-metrics dd {
+  font-size: 0.86rem;
+}
+
+.section-shell {
+  min-height: 100svh;
+}
+
+.surface-band {
+  padding-top: 34px;
+}
+
+@media (min-width: 761px) {
+  .home-shell {
+    overflow: hidden;
+  }
+}
+
 @keyframes rise-in {
   from {
     opacity: 0;
@@ -3485,6 +3571,12 @@ a {
 
 .header-actions {
   justify-self: end;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.header-actions .account-chip {
+  max-width: 245px;
 }
 
 .compact-select select {
@@ -3919,6 +4011,10 @@ a {
 
   .landing-hero {
     padding-top: 22px;
+  }
+
+  .home-shell .landing-hero {
+    min-height: calc(100svh - 300px);
   }
 
   .hero-card-shell {

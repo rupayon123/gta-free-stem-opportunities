@@ -90,6 +90,7 @@ import {
 type ThemePreference = "light" | "dark" | "system";
 type ViewMode = "list" | "map";
 type AuthMode = "signin" | "signup" | "verify";
+type ActiveSurface = "home" | "opportunities" | "high-school" | "community-hosts" | "support";
 type StoredAccount = VerifiedAccount & { passwordHash: string };
 type BackendMode = "local" | "supabase";
 type AdminAnnouncement = Announcement;
@@ -110,6 +111,7 @@ type PendingSignup = {
   createdAt: string;
 };
 type HeaderNavigation = {
+  home: () => void;
   opportunities: () => void;
   highSchool: () => void;
   volunteerHours: () => void;
@@ -289,6 +291,8 @@ function applyEventEdits(sourceOpportunities: Opportunity[], edits: AdminEventEd
 export function HomePage() {
   const [language, setLanguage] = useState<LanguageCode>("en");
   const [theme, setTheme] = useState<ThemePreference>("light");
+  const [activeSurface, setActiveSurface] = useState<ActiveSurface>("home");
+  const [pendingScrollTarget, setPendingScrollTarget] = useState("");
   const [filters, setFilters] = useState<Filters>(initialFilters);
   const [filtersOpen, setFiltersOpen] = useState(false);
   const [viewMode, setViewMode] = useState<ViewMode>("list");
@@ -468,6 +472,18 @@ export function HomePage() {
   }, [language]);
 
   useEffect(() => {
+    if (!pendingScrollTarget) return;
+    window.requestAnimationFrame(() => {
+      if (pendingScrollTarget === "top") {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      } else {
+        document.getElementById(pendingScrollTarget)?.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+      setPendingScrollTarget("");
+    });
+  }, [activeSurface, pendingScrollTarget]);
+
+  useEffect(() => {
     if (!currentUser || backendMode !== "local") return;
     window.localStorage.setItem(savedKey(currentUser.id), JSON.stringify(savedIds));
   }, [backendMode, currentUser, savedIds]);
@@ -528,10 +544,9 @@ export function HomePage() {
     }
   };
 
-  const scrollToSection = useCallback((sectionId: string) => {
-    window.requestAnimationFrame(() => {
-      document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth", block: "start" });
-    });
+  const showHome = useCallback(() => {
+    setActiveSurface("home");
+    setPendingScrollTarget("top");
   }, []);
 
   const goToOpportunities = useCallback(
@@ -539,24 +554,34 @@ export function HomePage() {
       if (nextFilters) {
         setFilters((current) => ({ ...current, ...nextFilters }));
       }
-      scrollToSection("opportunities");
+      setActiveSurface("opportunities");
+      setPendingScrollTarget("opportunities");
     },
-    [scrollToSection]
+    []
+  );
+
+  const showSurface = useCallback(
+    (surface: ActiveSurface, targetId: string) => {
+      setActiveSurface(surface);
+      setPendingScrollTarget(targetId);
+    },
+    []
   );
 
   const navigation = useMemo<HeaderNavigation>(
     () => ({
+      home: showHome,
       opportunities: () => goToOpportunities(),
-      highSchool: () => scrollToSection("high-school"),
+      highSchool: () => showSurface("high-school", "high-school"),
       volunteerHours: () =>
         goToOpportunities({ volunteerHours: true, coop: false, mentorship: false, leadership: false }),
       coop: () => goToOpportunities({ volunteerHours: false, coop: true, mentorship: false, leadership: false }),
       mentorship: () => goToOpportunities({ volunteerHours: false, coop: false, mentorship: true, leadership: false }),
-      communityHosts: () => scrollToSection("community-hosts"),
-      support: () => scrollToSection("accessibility-support"),
-      feedback: () => scrollToSection("feedback")
+      communityHosts: () => showSurface("community-hosts", "community-hosts"),
+      support: () => showSurface("support", "accessibility-support"),
+      feedback: () => showSurface("community-hosts", "feedback")
     }),
-    [goToOpportunities, scrollToSection]
+    [goToOpportunities, showHome, showSurface]
   );
 
   const handleHeroSearch = useCallback(
@@ -958,7 +983,7 @@ export function HomePage() {
   };
 
   return (
-    <main id="top" className="site-shell">
+    <main id="top" className={`site-shell ${activeSurface === "home" ? "home-shell" : "section-shell"}`}>
       <Header
         language={language}
         setLanguage={updateLanguage}
@@ -971,6 +996,7 @@ export function HomePage() {
         navigation={navigation}
       />
 
+      {activeSurface === "home" ? (
       <section className="workspace-band hero-band landing-hero" aria-labelledby="landing-title">
         <div className="hero-card-shell">
           <img className="hero-logo" src="/logo.png" alt="" width={176} height={176} aria-hidden="true" />
@@ -1022,9 +1048,10 @@ export function HomePage() {
           ) : null}
         </div>
       </section>
+      ) : null}
 
-      {adminAnnouncements.length ? <AnnouncementStrip announcements={adminAnnouncements.slice(0, 2)} /> : null}
-      {backendStatus ? (
+      {activeSurface !== "home" && adminAnnouncements.length ? <AnnouncementStrip announcements={adminAnnouncements.slice(0, 2)} /> : null}
+      {activeSurface !== "home" && backendStatus ? (
         <section className="workspace-band backend-status-band" aria-live="polite">
           <p className="status-line backend-status-line">
             {backendMode === "supabase" ? "Supabase" : "Static preview"}: {backendStatus}
@@ -1032,7 +1059,8 @@ export function HomePage() {
         </section>
       ) : null}
 
-      <section id="opportunities" className="workspace-band search-band" aria-label="Opportunity search">
+      {activeSurface === "opportunities" ? (
+      <section id="opportunities" className="workspace-band search-band surface-band" aria-label="Opportunity search">
         <div className="search-layout">
           <aside className={`filter-panel ${filtersOpen ? "open" : ""}`} aria-label={t(language, "filters")}>
             <button
@@ -1307,17 +1335,26 @@ export function HomePage() {
           </div>
         </div>
       </section>
+      ) : null}
 
-      <HighSchoolSection
-        language={language}
-        onVolunteerFilter={navigation.volunteerHours}
-        onCoopFilter={navigation.coop}
-        onMentorshipFilter={navigation.mentorship}
-      />
+      {activeSurface === "high-school" ? (
+        <HighSchoolSection
+          language={language}
+          onVolunteerFilter={navigation.volunteerHours}
+          onCoopFilter={navigation.coop}
+          onMentorshipFilter={navigation.mentorship}
+        />
+      ) : null}
 
-      <SupportSection />
-      <ContributeSection language={language} onSubmit={submitReviewItem} localQueueCount={localQueueCount} />
-      <ProjectBackgroundSection />
+      {activeSurface === "support" ? (
+        <>
+          <SupportSection />
+          <ProjectBackgroundSection />
+        </>
+      ) : null}
+      {activeSurface === "community-hosts" ? (
+        <ContributeSection language={language} onSubmit={submitReviewItem} localQueueCount={localQueueCount} />
+      ) : null}
 
       {authOpen ? (
         <AuthModal
@@ -1409,7 +1446,15 @@ function Header({
 
   return (
     <header className="topbar">
-      <a className="brand-mark" href="#top" aria-label="GTA FREE STEM Opportunities home">
+      <a
+        className="brand-mark"
+        href="#top"
+        aria-label="GTA FREE STEM Opportunities home"
+        onClick={(event) => {
+          event.preventDefault();
+          navigation.home();
+        }}
+      >
         <span className="brand-icon">
           <img src="/logo.png" alt="" width={72} height={72} aria-hidden="true" />
         </span>
