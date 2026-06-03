@@ -3272,6 +3272,25 @@ a {
 .topbar {
   position: static;
   top: auto;
+  background:
+    linear-gradient(
+      135deg,
+      color-mix(in srgb, var(--yellow-soft) 38%, var(--surface-glass)) 0%,
+      color-mix(in srgb, var(--blue-soft) 64%, var(--surface-glass)) 46%,
+      color-mix(in srgb, var(--mint-soft) 48%, var(--surface-glass)) 100%
+    ),
+    var(--surface-glass);
+}
+
+:root[data-theme="dark"] .topbar {
+  background:
+    linear-gradient(
+      135deg,
+      color-mix(in srgb, var(--lavender-soft) 32%, var(--surface-glass)) 0%,
+      color-mix(in srgb, var(--blue-soft) 76%, var(--surface-glass)) 48%,
+      color-mix(in srgb, var(--mint-soft) 48%, var(--surface-glass)) 100%
+    ),
+    var(--surface-glass);
 }
 
 .filter-panel,
@@ -3289,11 +3308,15 @@ a {
 }
 
 .cards-column {
-  max-height: none;
-  overflow: visible;
-  padding: 8px 10px 26px;
-  margin: -8px -10px -10px;
-  scrollbar-width: auto;
+  max-height: clamp(640px, calc(100vh - 150px), 820px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 18px 14px 38px;
+  margin: -12px -14px -18px;
+  overscroll-behavior: contain;
+  scroll-padding-block: 18px 38px;
+  scrollbar-color: color-mix(in srgb, var(--blue) 70%, var(--line)) transparent;
+  scrollbar-width: thin;
 }
 
 .selected-column {
@@ -3317,11 +3340,15 @@ a {
 
   .cards-column,
   .selected-column {
-    padding: 8px 4px 22px;
-    margin: -8px -4px -8px;
+    padding: 12px 5px 26px;
+    margin: -10px -5px -10px;
   }
 
   .results-grid.map-first .cards-column {
-    max-height: none;
+    max-height: min(560px, 68vh);
+  }
+
+  .cards-column {
+    max-height: min(620px, 72vh);
   }
 }
