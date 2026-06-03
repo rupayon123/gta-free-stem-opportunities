@@ -1,0 +1,32 @@
+{
+  "name": "gta-free-stem-opportunities",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "ingest:dry-run": "tsx scripts/ingest-dry-run.ts",
+    "qa": "tsx scripts/qa-check.ts",
+    "deploy:pages": "npm run build && npx --yes wrangler pages deploy out --project-name=gta-free-stem"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.107.0",
+    "lucide-react": "^1.16.0",
+    "maplibre-gl": "^5.24.0",
+    "next": "^16.2.6",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.1",
+    "@types/react": "^19.0.1",
+    "@types/react-dom": "^19.0.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.9.3"
+  },
+  "overrides": {
+    "postcss": "^8.5.10"
+  }
+}
