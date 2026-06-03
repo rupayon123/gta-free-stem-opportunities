@@ -1311,7 +1311,7 @@ function Header({
     <header className="topbar">
       <a className="brand-mark" href="#top" aria-label="GTA FREE STEM Opportunities home">
         <span className="brand-icon">
-          <img src="/scientist.png" alt="" width={48} height={48} aria-hidden="true" />
+          <img src="/scientist.png" alt="" width={72} height={72} aria-hidden="true" />
         </span>
         <span>
           <strong>GTA FREE STEM Opportunities</strong>
