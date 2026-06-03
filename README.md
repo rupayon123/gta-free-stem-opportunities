@@ -21,6 +21,9 @@ Public beta: https://gta-free-stem.vercel.app
 - Supabase beta schema for `profiles`, `opportunities`, `saved_opportunities`, `feedback`, `missing_opportunity_submissions`, and `announcements`.
 - Opportunity statuses: `active`, `expired`, `needs_review`, and `hidden`; public search only shows active, non-expired listings.
 - Seed exporter for the Supabase opportunities table: `npm run supabase:seed`.
+- Review-first discovery crawler for public library, nonprofit, and event-index sources: `npm run discover`.
+- Optional local AI/Ollama extraction support for discovery review: `USE_LOCAL_AI=1 LOCAL_AI_MODEL=deepseek-r1:latest npm run discover`.
+- Supabase production connection check: `npm run supabase:check`.
 
 ## Developer-Only Preview
 
@@ -55,14 +58,34 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY=
 
 Do not put Supabase service-role keys in this static website.
 
+After adding real credentials, verify the production database connection:
+
+```bash
+npm run supabase:check
+```
+
+Without those credentials, public browsing still works, but production accounts/saves/admin persistence are not connected.
+
+## Discovery Crawler
+
+```bash
+npm run discover
+npm run discover:sql
+```
+
+The crawler fetches public source pages, extracts likely real free GTA STEM opportunities, dedupes against existing listings, and exports new rows for admin review. New crawler finds stay out of public search as `needs_review` until an admin approves them.
+
 ## Verification
 
 ```bash
 npm run typecheck
 npm run build
+npm run discover
 npm run ingest:dry-run
 npm run qa
 ```
+
+Run `npm run supabase:check` after `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY` are connected.
 
 ## Zero-Dollar Deployment Rules
 

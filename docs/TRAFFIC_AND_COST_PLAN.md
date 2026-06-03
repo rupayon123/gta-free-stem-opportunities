@@ -25,7 +25,8 @@ Known free-tier guardrails to monitor:
 - Avoid server functions for normal browsing.
 - Avoid image optimization services; use small static assets.
 - Do not add paid email/SMS reminders in beta.
-- Do not add AI crawling until the basic database/admin system is stable.
+- Keep discovery crawling review-first and batched; do not run constant write-heavy jobs.
+- Use local AI extraction only when it runs on already-owned hardware at no new cost.
 - Batch admin work instead of constantly writing to the database.
 - Keep map tiles on OpenFreeMap/MapLibre with proper attribution and avoid bulk tile scraping.
 

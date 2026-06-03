@@ -8,6 +8,10 @@
     "start": "next start",
     "typecheck": "tsc --noEmit",
     "ingest:dry-run": "tsx scripts/ingest-dry-run.ts",
+    "discover": "tsx scripts/discover-opportunities.ts",
+    "discover:summary": "tsx scripts/discover-opportunities.ts --summary",
+    "discover:sql": "tsx scripts/discover-opportunities.ts --format=sql",
+    "supabase:check": "tsx scripts/check-supabase.ts",
     "supabase:seed": "tsx scripts/export-supabase-seed.ts",
     "qa": "tsx scripts/qa-check.ts",
     "deploy:pages": "npm run build && npx --yes wrangler pages deploy out --project-name=gta-free-stem"

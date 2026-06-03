@@ -27,6 +27,8 @@ After creating the Supabase project and running `supabase/schema.sql`, add these
 vercel link --project gta-free-stem
 vercel env add NEXT_PUBLIC_SUPABASE_URL production
 vercel env add NEXT_PUBLIC_SUPABASE_ANON_KEY production
+vercel env pull .env.local
+npm run supabase:check
 npm run build
 npx --yes vercel deploy out --project gta-free-stem --prod --yes --public --force
 ```

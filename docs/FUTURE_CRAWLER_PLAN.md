@@ -1,41 +1,65 @@
-# Future Crawler Plan
+# Discovery Crawler Plan
 
-The beta does not include AI or automated crawling. Build accounts, saves, feedback, missing-program submissions, and admin review first.
+The beta now includes a review-first discovery crawler scaffold. It fetches public source pages, extracts likely free GTA STEM opportunities, removes obvious duplicates, and exports new finds as Supabase-ready review rows.
 
-## Future Goal
+It does not auto-publish. New discovered opportunities are queued as `needs_review` unless they are already expired. An admin must review cost, date, source, location, and duplicate risk before setting a listing to `active`.
 
-Create a review-first discovery assistant that finds public free STEM opportunities across the GTA and queues them for human review.
+## Run Discovery
 
-## Safe Sources
+```bash
+npm run discover
+```
 
-- Public library event calendars.
-- City recreation and youth pages.
-- University outreach pages.
-- School board community opportunity pages.
-- Community nonprofit pages.
-- Public provider newsletters where permission and source links are clear.
+This prints JSON with source checks, warnings, duplicate counts, and discovered opportunities.
+
+```bash
+npm run discover:sql
+```
+
+This prints SQL that can be reviewed and pasted into the Supabase SQL editor after `supabase/schema.sql` has been run.
+
+## Sources
+
+The current source registry is in `lib/discovery.ts` and includes:
+
+- Toronto Public Library event searches.
+- Markham Public Library event searches.
+- Mississauga, Whitby, and Oakville library/program pages.
+- Credit Valley Conservation youth opportunities.
+- TRCA youth volunteer opportunities.
+- Eventbrite free science/technology search as an untrusted broad index.
+
+Add sources slowly. Good sources have public pages, clear dates, clear free-access language, an official provider, and stable URLs.
+
+## Local AI Option
+
+The crawler can optionally ask a local Ollama-compatible model to help extract event fields:
+
+```bash
+USE_LOCAL_AI=1 LOCAL_AI_MODEL=deepseek-r1:latest npm run discover
+```
+
+This is optional and zero-cost only if the model is already installed locally. If Ollama or the model is missing, deterministic extraction still runs and the job reports a warning.
+
+AI is never allowed to publish directly, invent missing facts, bypass review, store child personal data, or replace admin approval.
 
 ## Review Rules
 
-Auto-publish only when confidence is high:
+Admins should approve only when all of these are true:
 
 - Future or currently active date.
 - GTA or online eligibility.
-- Clear free-access language.
+- Clear no-cost access.
 - Clear source URL.
 - Age/date/location present.
 - No serious duplicate conflict.
-- Trusted source/provider.
+- Trusted source/provider, or official provider confirmation.
 
-Quarantine anything uncertain:
+Keep items in review or hidden when any of these are true:
 
-- Unclear access/cost.
+- Unclear cost/access.
 - Stale dates.
 - Conflicting locations or age ranges.
 - Private-source-only claims.
 - Social posts without an official source.
 - Possible duplicate listings.
-
-## AI Boundary
-
-If a local model is added later, it should help extract and summarize public source pages. It should not publish directly, invent events, bypass review, store child personal data, or replace the admin approval workflow.

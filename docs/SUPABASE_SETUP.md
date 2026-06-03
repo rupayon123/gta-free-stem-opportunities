@@ -21,6 +21,14 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY=your-public-anon-key
 
 These are public client-side keys. Never add service-role keys to this static app.
 
+After setting them locally or in Vercel, run:
+
+```bash
+npm run supabase:check
+```
+
+This verifies that the public anon key can read active opportunities through the Row Level Security policy. If it fails, production accounts and saves are not connected yet.
+
 ## Seed Real Listings
 
 After running `supabase/schema.sql`, generate the seed SQL from the real source-backed listings in `lib/data.ts`:
@@ -36,6 +44,16 @@ npm run supabase:seed > supabase/seed.generated.sql
 ```
 
 The generated insert uses the required beta fields and keeps listing statuses. Public search only reads active, current listings.
+
+## Import Discovered Listings For Review
+
+Run the public-source discovery crawler:
+
+```bash
+npm run discover:sql
+```
+
+Review the generated SQL, then paste it into Supabase SQL editor. New discovered rows are stored as `needs_review` or `expired`, so they do not show in public search until an admin changes the status to `active`.
 
 ## First Admin
 
