@@ -12,7 +12,7 @@ GTA FREE STEM Opportunities is a static Next.js export. Supabase is used only fo
 
 ## Environment Variables
 
-Copy `.env.example` and set these in Vercel or Cloudflare Pages:
+Copy `.env.example` and set these in the public Vercel project `gta-free-stem`:
 
 ```bash
 NEXT_PUBLIC_SUPABASE_URL=https://your-project-ref.supabase.co
@@ -20,6 +20,22 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY=your-public-anon-key
 ```
 
 These are public client-side keys. Never add service-role keys to this static app.
+
+## Seed Real Listings
+
+After running `supabase/schema.sql`, generate the seed SQL from the real source-backed listings in `lib/data.ts`:
+
+```bash
+npm run supabase:seed
+```
+
+Copy the output into the Supabase SQL editor. You can also save a copy for review:
+
+```bash
+npm run supabase:seed > supabase/seed.generated.sql
+```
+
+The generated insert uses the required beta fields and keeps listing statuses. Public search only reads active, current listings.
 
 ## First Admin
 

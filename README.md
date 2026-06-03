@@ -2,6 +2,8 @@
 
 A public beta website for finding verified free STEM programs, library events, volunteer-hour opportunities, co-op, SHSM, mentorship, hackathons, and youth leadership pathways across Toronto, Peel, York, Durham, and Halton.
 
+Public beta: https://gta-free-stem.vercel.app
+
 ## What Is Implemented
 
 - Source-backed public listings from official/current pages such as Toronto Public Library, Markham Public Library, Whitby Public Library, Credit Valley Conservation, TRCA, PACT, and Oakville Public Library.
@@ -18,6 +20,7 @@ A public beta website for finding verified free STEM programs, library events, v
 - Community host workflow for organizations that can offer STEM placements, co-op/SHSM exposure, or volunteer hours.
 - Supabase beta schema for `profiles`, `opportunities`, `saved_opportunities`, `feedback`, `missing_opportunity_submissions`, and `announcements`.
 - Opportunity statuses: `active`, `expired`, `needs_review`, and `hidden`; public search only shows active, non-expired listings.
+- Seed exporter for the Supabase opportunities table: `npm run supabase:seed`.
 
 ## Developer-Only Preview
 
@@ -38,6 +41,8 @@ npm run deploy:pages
 ```
 
 For Vercel Hobby, use `vercel.json`: `npm run build` creates the static `out/` directory.
+
+Current public deployment instructions are in `docs/DEPLOYMENT.md`.
 
 ## Supabase Setup
 
