@@ -460,6 +460,7 @@ export function HomePage() {
     () => filterOpportunities(displayOpportunities, filters, activeLocation),
     [filters, activeLocation, displayOpportunities]
   );
+  const activeOpportunityCount = useMemo(() => publicOpportunities(displayOpportunities).length, [displayOpportunities]);
 
   const selectedOpportunity =
     visibleOpportunities.find((opportunity) => opportunity.id === selectedId) ??
@@ -906,13 +907,13 @@ export function HomePage() {
             ) : null}
           </div>
           <div className="mission-strip" aria-label="Network snapshot">
-            <Metric value={displayOpportunities.length.toString()} label={t(language, "verifiedListings")} />
+            <Metric value={activeOpportunityCount.toString()} label={t(language, "verifiedListings")} />
             <Metric value={languagePreferenceOrder.length.toString()} label={t(language, "launchLanguages")} />
             <Metric value={highSchoolCount.toString()} label={t(language, "teenPathways")} />
           </div>
         </div>
       </section>
-      <ActiveDiscoveryBadge language={language} count={displayOpportunities.length} />
+      <ActiveDiscoveryBadge language={language} count={activeOpportunityCount} />
 
       {adminAnnouncements.length ? <AnnouncementStrip announcements={adminAnnouncements.slice(0, 2)} /> : null}
       {backendStatus ? (
