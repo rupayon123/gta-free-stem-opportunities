@@ -18,6 +18,7 @@ import {
   LogOut,
   Mail,
   MapPin,
+  Menu,
   Moon,
   Megaphone,
   RefreshCw,
@@ -30,7 +31,16 @@ import {
   UsersRound,
   X
 } from "lucide-react";
-import { useCallback, useEffect, useMemo, useRef, useState, type FormEvent, type ReactNode } from "react";
+import {
+  useCallback,
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+  type FormEvent,
+  type MouseEvent as ReactMouseEvent,
+  type ReactNode
+} from "react";
 import { categories, cityOptions, languagePreferenceOrder, opportunities, regions } from "@/lib/data";
 import { generatedDiscoveryReviewCandidates, generatedDiscoverySummary } from "@/lib/generatedDiscoveryReview";
 import {
@@ -98,6 +108,16 @@ type PendingSignup = {
   grade?: string;
   password?: string;
   createdAt: string;
+};
+type HeaderNavigation = {
+  opportunities: () => void;
+  highSchool: () => void;
+  volunteerHours: () => void;
+  coop: () => void;
+  mentorship: () => void;
+  communityHosts: () => void;
+  support: () => void;
+  feedback: () => void;
 };
 
 const STORAGE_PREFIX = "gta-stem-opportunities";
@@ -268,7 +288,7 @@ function applyEventEdits(sourceOpportunities: Opportunity[], edits: AdminEventEd
 
 export function HomePage() {
   const [language, setLanguage] = useState<LanguageCode>("en");
-  const [theme, setTheme] = useState<ThemePreference>("system");
+  const [theme, setTheme] = useState<ThemePreference>("light");
   const [filters, setFilters] = useState<Filters>(initialFilters);
   const [filtersOpen, setFiltersOpen] = useState(false);
   const [viewMode, setViewMode] = useState<ViewMode>("list");
@@ -461,6 +481,20 @@ export function HomePage() {
     [filters, activeLocation, displayOpportunities]
   );
   const activeOpportunityCount = useMemo(() => publicOpportunities(displayOpportunities).length, [displayOpportunities]);
+  const latestCheckedLabel = useMemo(() => {
+    const allDates = [
+      ...displayOpportunities.map((opportunity) => opportunity.lastSeen || opportunity.lastChecked),
+      ...generatedDiscoveryReviewCandidates.map((candidate) => candidate.lastSeen || candidate.lastChecked)
+    ]
+      .filter((date): date is string => Boolean(date))
+      .map((date) => date.slice(0, 10))
+      .sort();
+    const latest = allDates.at(-1);
+    if (!latest) return "Updated regularly";
+    return new Intl.DateTimeFormat("en-CA", { month: "short", day: "numeric", year: "numeric" }).format(
+      new Date(`${latest}T12:00:00`)
+    );
+  }, [displayOpportunities]);
   const availableProgramLanguages = useMemo(() => {
     const available = new Set(displayOpportunities.flatMap((opportunity) => opportunity.languages));
     return languagePreferenceOrder.filter((code) => available.has(code));
@@ -493,6 +527,45 @@ export function HomePage() {
       });
     }
   };
+
+  const scrollToSection = useCallback((sectionId: string) => {
+    window.requestAnimationFrame(() => {
+      document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  }, []);
+
+  const goToOpportunities = useCallback(
+    (nextFilters?: Partial<Filters>) => {
+      if (nextFilters) {
+        setFilters((current) => ({ ...current, ...nextFilters }));
+      }
+      scrollToSection("opportunities");
+    },
+    [scrollToSection]
+  );
+
+  const navigation = useMemo<HeaderNavigation>(
+    () => ({
+      opportunities: () => goToOpportunities(),
+      highSchool: () => scrollToSection("high-school"),
+      volunteerHours: () =>
+        goToOpportunities({ volunteerHours: true, coop: false, mentorship: false, leadership: false }),
+      coop: () => goToOpportunities({ volunteerHours: false, coop: true, mentorship: false, leadership: false }),
+      mentorship: () => goToOpportunities({ volunteerHours: false, coop: false, mentorship: true, leadership: false }),
+      communityHosts: () => scrollToSection("community-hosts"),
+      support: () => scrollToSection("accessibility-support"),
+      feedback: () => scrollToSection("feedback")
+    }),
+    [goToOpportunities, scrollToSection]
+  );
+
+  const handleHeroSearch = useCallback(
+    (event: FormEvent<HTMLFormElement>) => {
+      event.preventDefault();
+      goToOpportunities();
+    },
+    [goToOpportunities]
+  );
 
   const openAuth = (mode: AuthMode = "signin", notice = "") => {
     setAuthMode(mode);
@@ -539,7 +612,7 @@ export function HomePage() {
     try {
       await fetch(`${window.location.origin}/?research-refresh=${Date.now()}`, { cache: "reload" });
       setResearchStatus(
-        `${generatedDiscoverySummary.sourcesChecked} sources are scanned every 6 hours. ${generatedDiscoverySummary.newCandidates} new finds are waiting for admin review.`
+        `${generatedDiscoverySummary.sourcesChecked} sources are scanned every 6 hours. ${generatedDiscoverySummary.newCandidates} new finds are being verified.`
       );
     } catch {
       setResearchStatus("Could not check the newest published database. The scheduled search engine is still running in the background.");
@@ -884,14 +957,6 @@ export function HomePage() {
     }
   };
 
-  const highSchoolCount = displayOpportunities.filter(
-    (opportunity) =>
-      opportunity.volunteerHoursEligible ||
-      opportunity.coopEligible ||
-      opportunity.categories.includes("Co-op & SHSM") ||
-      opportunity.categories.includes("Youth Leadership")
-  ).length;
-
   return (
     <main id="top" className="site-shell">
       <Header
@@ -903,40 +968,60 @@ export function HomePage() {
         onAuthClick={() => openAuth("signin")}
         onAccountClick={() => setAccountDashboardOpen(true)}
         onSignOut={signOut}
+        navigation={navigation}
       />
 
-      <section className="workspace-band hero-band">
-        <div className="hero-grid">
-          <div className="hero-copy">
-            <span className="beta-pill">
-              <Sparkles size={16} aria-hidden="true" />
-              {t(language, "beta")}
-            </span>
-            <h1>{t(language, "brand")}</h1>
-            <p>{t(language, "mission")}</p>
-            {saveGateMessage ? (
-              <p className="auth-inline-warning" role="alert">
-                <AlertTriangle size={16} aria-hidden="true" />
-                {saveGateMessage}
-              </p>
-            ) : null}
+      <section className="workspace-band hero-band landing-hero" aria-labelledby="landing-title">
+        <div className="hero-card-shell">
+          <img className="hero-logo" src="/logo.png" alt="" width={176} height={176} aria-hidden="true" />
+          <span className="beta-pill">
+            <Sparkles size={16} aria-hidden="true" />
+            {t(language, "beta")}
+          </span>
+          <h1 id="landing-title">{t(language, "brand")}</h1>
+          <p>{t(language, "mission")}</p>
+          <form className="hero-search-form" onSubmit={handleHeroSearch}>
+            <Search size={20} aria-hidden="true" />
+            <input
+              value={filters.query}
+              onChange={(event) => updateFilter("query", event.target.value)}
+              placeholder={t(language, "searchPlaceholder")}
+              aria-label={t(language, "search")}
+            />
+            <button type="submit" className="primary-button">
+              {t(language, "search")}
+              <ChevronRight size={17} aria-hidden="true" />
+            </button>
+          </form>
+          <div className="hero-actions" aria-label="Main actions">
+            <button type="button" className="primary-button" onClick={() => goToOpportunities()}>
+              Browse Opportunities
+              <ChevronRight size={17} aria-hidden="true" />
+            </button>
+            <button type="button" className="soft-button" onClick={navigation.highSchool}>
+              High School Pathways
+            </button>
+            <button type="button" className="soft-button" onClick={navigation.feedback}>
+              Share Feedback
+            </button>
           </div>
-          <div className="mission-strip" aria-label="Network snapshot">
-            <Metric value={activeOpportunityCount.toString()} label={t(language, "verifiedListings")} />
-            <Metric value={languagePreferenceOrder.length.toString()} label={t(language, "launchLanguages")} />
-            <Metric value={highSchoolCount.toString()} label={t(language, "teenPathways")} />
-          </div>
+          <DiscoveryStatusCard
+            activeCount={activeOpportunityCount}
+            latestCheckedLabel={latestCheckedLabel}
+            reviewCount={generatedDiscoverySummary.newCandidates}
+            sourceCount={generatedDiscoverySummary.sourcesChecked}
+            refreshing={researchRefreshing}
+            status={researchStatus}
+            onRefresh={refreshResearch}
+          />
+          {saveGateMessage ? (
+            <p className="auth-inline-warning" role="alert">
+              <AlertTriangle size={16} aria-hidden="true" />
+              {saveGateMessage}
+            </p>
+          ) : null}
         </div>
       </section>
-      <ActiveDiscoveryBadge
-        language={language}
-        count={activeOpportunityCount}
-        reviewCount={generatedDiscoverySummary.newCandidates}
-        sourceCount={generatedDiscoverySummary.sourcesChecked}
-        refreshing={researchRefreshing}
-        status={researchStatus}
-        onRefresh={refreshResearch}
-      />
 
       {adminAnnouncements.length ? <AnnouncementStrip announcements={adminAnnouncements.slice(0, 2)} /> : null}
       {backendStatus ? (
@@ -947,7 +1032,7 @@ export function HomePage() {
         </section>
       ) : null}
 
-      <section className="workspace-band search-band" aria-label="Opportunity search">
+      <section id="opportunities" className="workspace-band search-band" aria-label="Opportunity search">
         <div className="search-layout">
           <aside className={`filter-panel ${filtersOpen ? "open" : ""}`} aria-label={t(language, "filters")}>
             <button
@@ -1225,17 +1310,14 @@ export function HomePage() {
 
       <HighSchoolSection
         language={language}
-        onVolunteerFilter={() => {
-          setFilters((current) => ({ ...current, volunteerHours: true, coop: false }));
-          window.scrollTo({ top: 360, behavior: "smooth" });
-        }}
-        onCoopFilter={() => {
-          setFilters((current) => ({ ...current, volunteerHours: false, coop: true }));
-          window.scrollTo({ top: 360, behavior: "smooth" });
-        }}
+        onVolunteerFilter={navigation.volunteerHours}
+        onCoopFilter={navigation.coop}
+        onMentorshipFilter={navigation.mentorship}
       />
 
+      <SupportSection />
       <ContributeSection language={language} onSubmit={submitReviewItem} localQueueCount={localQueueCount} />
+      <ProjectBackgroundSection />
 
       {authOpen ? (
         <AuthModal
@@ -1296,7 +1378,8 @@ function Header({
   currentUser,
   onAuthClick,
   onAccountClick,
-  onSignOut
+  onSignOut,
+  navigation
 }: {
   language: LanguageCode;
   setLanguage: (language: LanguageCode) => void;
@@ -1306,18 +1389,51 @@ function Header({
   onAuthClick: () => void;
   onAccountClick: () => void;
   onSignOut: () => void;
+  navigation: HeaderNavigation;
 }) {
+  const menuItems = [
+    ["Opportunities", navigation.opportunities],
+    ["High School", navigation.highSchool],
+    ["Volunteer Hours", navigation.volunteerHours],
+    ["Co-op / SHSM", navigation.coop],
+    ["Mentorship", navigation.mentorship],
+    ["Community Hosts", navigation.communityHosts],
+    ["Accessibility / Support", navigation.support],
+    ["Feedback", navigation.feedback]
+  ] as const;
+
+  const runMenuAction = (event: ReactMouseEvent<HTMLButtonElement>, action: () => void) => {
+    event.currentTarget.closest("details")?.removeAttribute("open");
+    action();
+  };
+
   return (
     <header className="topbar">
       <a className="brand-mark" href="#top" aria-label="GTA FREE STEM Opportunities home">
         <span className="brand-icon">
-          <img src="/scientist.png" alt="" width={72} height={72} aria-hidden="true" />
+          <img src="/logo.png" alt="" width={72} height={72} aria-hidden="true" />
         </span>
         <span>
           <strong>GTA FREE STEM Opportunities</strong>
           <small>Verified free opportunities</small>
         </span>
       </a>
+
+      <nav className="site-menu-wrap" aria-label="Primary navigation">
+        <details className="site-menu">
+          <summary>
+            <Menu size={17} aria-hidden="true" />
+            <span>Menu</span>
+          </summary>
+          <div className="site-menu-panel">
+            {menuItems.map(([label, action]) => (
+              <button key={label} type="button" onClick={(event) => runMenuAction(event, action)}>
+                {label}
+              </button>
+            ))}
+          </div>
+        </details>
+      </nav>
 
       <div className="header-actions">
         <label className="compact-select">
@@ -1392,49 +1508,52 @@ function Header({
   );
 }
 
-function Metric({ value, label }: { value: string; label: string }) {
-  return (
-    <div className="metric">
-      <strong>{value}</strong>
-      <span>{label}</span>
-    </div>
-  );
-}
-
-function ActiveDiscoveryBadge({
-  language,
-  count,
+function DiscoveryStatusCard({
+  activeCount,
+  latestCheckedLabel,
   reviewCount,
   sourceCount,
   refreshing,
   status,
   onRefresh
 }: {
-  language: LanguageCode;
-  count: number;
+  activeCount: number;
+  latestCheckedLabel: string;
   reviewCount: number;
   sourceCount: number;
   refreshing: boolean;
   status: string;
   onRefresh: () => void;
 }) {
-  const scoutText = t(language, "sourceScoutText")
-    .replace("{count}", count.toString())
-    .replace("{sources}", sourceCount.toString())
-    .replace("{review}", reviewCount.toString());
+  const scoutText = `${sourceCount} trusted public sources scan every 6 hours. ${reviewCount} new source finds are being verified.`;
 
   return (
-    <aside className="source-scout-badge" aria-label={t(language, "sourceScout")}>
+    <aside className="hero-status-card" aria-label="Opportunity search status">
       <span className="source-scout-radar" aria-hidden="true">
         <span />
       </span>
-      <span className="source-scout-copy">
-        <strong>{t(language, "sourceScout")}</strong>
-        <small>{status || scoutText}</small>
-      </span>
-      <button type="button" className="source-scout-refresh" onClick={onRefresh} disabled={refreshing} aria-label={t(language, "refreshResearch")}>
+      <div className="hero-status-copy">
+        <strong>Actively searching for free GTA STEM opportunities</strong>
+        <p>{status || scoutText}</p>
+      </div>
+      <button type="button" className="soft-button source-scout-refresh" onClick={onRefresh} disabled={refreshing} aria-label="Refresh research scan">
         <RefreshCw size={15} aria-hidden="true" className={refreshing ? "spinning" : ""} />
+        Refresh
       </button>
+      <dl className="hero-status-metrics">
+        <div>
+          <dt>Last updated</dt>
+          <dd>{latestCheckedLabel}</dd>
+        </div>
+        <div>
+          <dt>Active opportunities</dt>
+          <dd>{activeCount}</dd>
+        </div>
+        <div>
+          <dt>New finds</dt>
+          <dd>Being verified</dd>
+        </div>
+      </dl>
     </aside>
   );
 }
@@ -1740,11 +1859,13 @@ function Fact({ label, value }: { label: string; value: string }) {
 function HighSchoolSection({
   language,
   onVolunteerFilter,
-  onCoopFilter
+  onCoopFilter,
+  onMentorshipFilter
 }: {
   language: LanguageCode;
   onVolunteerFilter: () => void;
   onCoopFilter: () => void;
+  onMentorshipFilter: () => void;
 }) {
   const pathwayCards = [
     {
@@ -1761,14 +1882,14 @@ function HighSchoolSection({
     },
     {
       icon: Compass,
-      title: t(language, "trustChecks"),
-      text: t(language, "trustCardText"),
-      action: onVolunteerFilter
+      title: t(language, "mentorship"),
+      text: "Find mentor-led STEM, leadership, and career exploration opportunities for high school students.",
+      action: onMentorshipFilter
     }
   ];
 
   return (
-    <section className="workspace-band highschool-band" aria-label="High school pathways">
+    <section id="high-school" className="workspace-band highschool-band" aria-label="High school pathways">
       <div className="section-heading">
         <p className="eyebrow">{t(language, "highSchool")}</p>
         <h2>{t(language, "highSchoolHeading")}</h2>
@@ -1789,6 +1910,41 @@ function HighSchoolSection({
   );
 }
 
+function SupportSection() {
+  const cards = [
+    {
+      title: "Browse without an account",
+      text: "Anyone can search the public opportunity list first. Accounts are only needed for saving, feedback, and submissions."
+    },
+    {
+      title: "Search in simple ways",
+      text: "Use city, region, age, category, volunteer hours, co-op, mentorship, leadership, and focused-program filters."
+    },
+    {
+      title: "Plain-language access",
+      text: "Listings keep summaries clear, show official source links, and support list view when a map is not the easiest option."
+    }
+  ];
+
+  return (
+    <section id="accessibility-support" className="workspace-band support-band" aria-label="Accessibility and support">
+      <div className="section-heading">
+        <p className="eyebrow">Accessibility / Support</p>
+        <h2>Built to be easier for students, parents, educators, and community groups.</h2>
+      </div>
+      <div className="support-grid">
+        {cards.map((card) => (
+          <article key={card.title} className="support-card">
+            <ShieldCheck size={20} aria-hidden="true" />
+            <strong>{card.title}</strong>
+            <p>{card.text}</p>
+          </article>
+        ))}
+      </div>
+    </section>
+  );
+}
+
 function ContributeSection({
   language,
   onSubmit,
@@ -1799,7 +1955,7 @@ function ContributeSection({
   localQueueCount: number;
 }) {
   return (
-    <section className="workspace-band contribute-band" aria-label="Community participation">
+    <section id="community-hosts" className="workspace-band contribute-band" aria-label="Community participation">
       <div className="section-heading">
         <p className="eyebrow">{t(language, "communityNetwork")}</p>
         <h2>{t(language, "contributeHeading")}</h2>
@@ -1822,6 +1978,7 @@ function ContributeSection({
           onSubmit={(formData) => onSubmit("suggest", formData)}
         />
         <MiniForm
+          id="feedback"
           title={t(language, "report")}
           icon={<AlertTriangle size={18} aria-hidden="true" />}
           fields={["Listing title", "Contact email", "What needs fixing", "Source link"]}
@@ -1845,7 +2002,43 @@ function ContributeSection({
   );
 }
 
+function ProjectBackgroundSection() {
+  return (
+    <section id="project-background" className="workspace-band project-background-band" aria-label="Project background">
+      <div className="project-background-card">
+        <div className="section-heading">
+          <p className="eyebrow">Project Background</p>
+          <h2>Project Background / How It Was Built</h2>
+        </div>
+        <p>
+          GTA FREE STEM Opportunities is a public web platform built to help students, parents, educators, and community groups
+          find free STEM opportunities across the Greater Toronto Area. The frontend uses Next.js, TypeScript, responsive
+          design, a mobile-first interface, light/dark mode, multilingual controls, and a map/list view.
+        </p>
+        <p>
+          The backend and data layer are planned around Supabase for user accounts, saved opportunities, feedback, missing
+          opportunity submissions, and admin review. The website is designed as a static export for free public hosting through
+          platforms such as Vercel or Cloudflare Pages.
+        </p>
+        <p>
+          The search system organizes a structured opportunity database with filters for city, age, category, language,
+          volunteer hours, co-op/SHSM, mentorship, leadership, and focused programs. A future scheduled crawler will regularly
+          check trusted public sources for new free GTA STEM opportunities, update listings, mark expired opportunities
+          inactive, and keep public search results clean.
+        </p>
+        <p>
+          Accessibility is central to the product: users can browse without an account, use list view instead of map view,
+          search by city/region/age, and read plain-language descriptions. This project strengthened skills in full-stack
+          product planning, frontend architecture, database design, authentication, public beta planning,
+          accessibility-focused design, responsive UI, free-tier deployment strategy, and scalable search/filter systems.
+        </p>
+      </div>
+    </section>
+  );
+}
+
 function MiniForm({
+  id,
   title,
   icon,
   fields,
@@ -1853,6 +2046,7 @@ function MiniForm({
   submittedLabel,
   onSubmit
 }: {
+  id?: string;
   title: string;
   icon: ReactNode;
   fields: string[];
@@ -1874,7 +2068,7 @@ function MiniForm({
   );
 
   return (
-    <form className="mini-form" onSubmit={handleSubmit}>
+    <form id={id} className="mini-form" onSubmit={handleSubmit}>
       <div className="panel-title">
         {icon}
         <span>{title}</span>

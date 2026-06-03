@@ -161,7 +161,7 @@ const ui: Record<LanguageCode, Partial<Record<UiKey, string>>> = {
     launchLanguages: "Site languages",
     teenPathways: "Teen pathways",
     sourceScout: "Actively looking",
-    sourceScoutText: "{count} verified listings loaded. {sources} sources scan every 6 hours; {review} new finds wait for review.",
+    sourceScoutText: "{count} verified listings loaded. {sources} sources scan every 6 hours; {review} new finds are being verified.",
     refreshResearch: "Refresh research",
     registerApply: "Register or apply",
     saved: "Saved",
