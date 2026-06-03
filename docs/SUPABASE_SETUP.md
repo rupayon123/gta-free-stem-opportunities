@@ -7,8 +7,9 @@ GTA FREE STEM Opportunities is a static Next.js export. Supabase is used only fo
 1. Create a Supabase Free project.
 2. Open the SQL editor.
 3. Run `supabase/schema.sql`.
-4. In Authentication settings, keep email confirmation enabled.
-5. Add the deployed site URL to the Auth redirect URLs.
+4. In Authentication settings, keep email signups enabled.
+5. In Auth email templates, make sure the OTP email includes the one-time code token, for example `{{ .Token }}`.
+6. Add the deployed site URL to the Auth redirect URLs.
 
 ## Environment Variables
 
@@ -27,7 +28,7 @@ After setting them locally or in Vercel, run:
 npm run supabase:check
 ```
 
-This verifies that the public anon key can read active opportunities through the Row Level Security policy. If it fails, production accounts and saves are not connected yet.
+This verifies that the public anon key can read active opportunities through the Row Level Security policy. If it fails, production accounts, email verification codes, and saves are not connected yet.
 
 ## Seed Real Listings
 

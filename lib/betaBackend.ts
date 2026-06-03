@@ -210,24 +210,23 @@ export async function getCurrentSupabaseAccount() {
   return profileToAccount(data as ProfileRow, Boolean(user.email_confirmed_at || user.confirmed_at));
 }
 
-export async function signUpSupabaseAccount({
+export async function startSupabaseAccountEmailVerification({
   name,
   email,
-  password,
   role,
   grade
 }: {
   name: string;
   email: string;
-  password: string;
   role: Exclude<AccountRole, "admin">;
   grade?: string;
 }) {
   const supabase = requireSupabase();
-  const { error } = await supabase.auth.signUp({
+  const { error } = await supabase.auth.signInWithOtp({
     email,
-    password,
     options: {
+      shouldCreateUser: true,
+      emailRedirectTo: typeof window !== "undefined" ? window.location.origin : undefined,
       data: {
         full_name: name,
         account_type: role,
@@ -236,6 +235,44 @@ export async function signUpSupabaseAccount({
     }
   });
   if (error) throw error;
+}
+
+export async function verifySupabaseAccountEmailCode({
+  email,
+  code,
+  password,
+  name,
+  role,
+  grade
+}: {
+  email: string;
+  code: string;
+  password: string;
+  name: string;
+  role: Exclude<AccountRole, "admin">;
+  grade?: string;
+}) {
+  const supabase = requireSupabase();
+  const { error: verifyError } = await supabase.auth.verifyOtp({
+    email,
+    token: code,
+    type: "email"
+  });
+  if (verifyError) throw verifyError;
+
+  const { error: updateError } = await supabase.auth.updateUser({
+    password,
+    data: {
+      full_name: name,
+      account_type: role,
+      optional_grade: grade ?? null
+    }
+  });
+  if (updateError) throw updateError;
+
+  const account = await getCurrentSupabaseAccount();
+  if (!account) throw new Error("Account verified, but the profile was not created. Ask an admin to review Supabase setup.");
+  return account;
 }
 
 export async function signInSupabaseAccount(email: string, password: string) {

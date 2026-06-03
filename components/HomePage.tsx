@@ -41,13 +41,14 @@ import {
   saveSupabaseOpportunity,
   signInSupabaseAccount,
   signOutSupabaseAccount,
-  signUpSupabaseAccount,
+  startSupabaseAccountEmailVerification,
   submitSupabaseFeedback,
   submitSupabaseMissingOpportunity,
   unsaveSupabaseOpportunity,
   updateSupabaseFeedbackStatus,
   updateSupabaseMissingSubmissionStatus,
-  updateSupabaseOpportunityStatus
+  updateSupabaseOpportunityStatus,
+  verifySupabaseAccountEmailCode
 } from "@/lib/betaBackend";
 import { languageMeta, t, translatedSummary } from "@/lib/i18n";
 import { adminReviewOpportunities, computedOpportunityStatus, publicOpportunities } from "@/lib/opportunityStatus";
@@ -93,8 +94,7 @@ type PendingSignup = {
   name: string;
   role: AccountRole;
   grade?: string;
-  passwordHash: string;
-  verificationCode: string;
+  password?: string;
   createdAt: string;
 };
 
@@ -167,10 +167,6 @@ function publicAccount(account: StoredAccount): VerifiedAccount {
 
 function isValidEmail(email: string) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim());
-}
-
-function createVerificationCode() {
-  return Math.floor(100000 + Math.random() * 900000).toString();
 }
 
 function clampDistance(value: number) {
@@ -559,67 +555,62 @@ export function HomePage() {
     }
     if (backendMode === "supabase") {
       try {
-        await signUpSupabaseAccount({ name, email, password, role, grade: grade || undefined });
-        setAuthMode("signin");
+        await startSupabaseAccountEmailVerification({ name, email, role, grade: grade || undefined });
+        setPendingSignup({
+          email,
+          name,
+          role,
+          grade: grade || undefined,
+          password,
+          createdAt: new Date().toISOString()
+        });
+        setAuthMode("verify");
         setAuthError("");
-        setAuthNotice("Check your email to verify the account, then sign in.");
+        setAuthNotice(`We sent a real verification code to ${email}. Enter the code from your email to finish the account.`);
         return;
       } catch (error) {
-        setAuthError(error instanceof Error ? error.message : "Could not start account verification.");
+        setAuthError(error instanceof Error ? error.message : "Could not send the verification email.");
         return;
       }
     }
-    if (readAccounts().some((account) => account.email === email)) {
-      setAuthError("An account with this email already exists. Sign in instead.");
-      return;
-    }
-
-    const verificationCode = createVerificationCode();
-    setPendingSignup({
-      email,
-      name,
-      role,
-      grade: grade || undefined,
-      passwordHash: await hashPassword(email, password),
-      verificationCode,
-      createdAt: new Date().toISOString()
-    });
-    setAuthMode("verify");
-    setAuthError("");
-    setAuthNotice("Verification required before the account is created.");
+    setAuthError("Real email verification is not connected yet. Add Supabase URL and anon key before creating accounts.");
   };
 
-  const handleVerify = (formData: FormData) => {
+  const handleVerify = async (formData: FormData) => {
     const code = String(formData.get("verificationCode") ?? "").trim();
     if (!pendingSignup) {
       setAuthError("Start sign-up first so we can verify your email.");
       setAuthMode("signup");
       return;
     }
-    if (code !== pendingSignup.verificationCode) {
-      setAuthError("That verification code does not match.");
+    if (backendMode === "supabase") {
+      if (!pendingSignup.password) {
+        setAuthError("Start sign-up again so the verified account can set a password.");
+        setAuthMode("signup");
+        return;
+      }
+      try {
+        const account = await verifySupabaseAccountEmailCode({
+          email: pendingSignup.email,
+          code,
+          password: pendingSignup.password,
+          name: pendingSignup.name,
+          role: pendingSignup.role === "admin" ? "parent" : pendingSignup.role,
+          grade: pendingSignup.grade
+        });
+        setCurrentUser(account);
+        setSavedIds(await loadSupabaseSavedOpportunityIds());
+        setPendingSignup(null);
+        setAuthError("");
+        setAuthNotice("Email verified. Your account is ready.");
+        setAuthOpen(false);
+        setAccountDashboardOpen(true);
+      } catch (error) {
+        setAuthError(error instanceof Error ? error.message : "That verification code did not work.");
+      }
       return;
     }
-
-    const account: StoredAccount = {
-      id: window.crypto?.randomUUID?.() ?? `account-${Date.now()}`,
-      email: pendingSignup.email,
-      name: pendingSignup.name,
-      role: pendingSignup.role,
-      grade: pendingSignup.grade,
-      emailVerified: true,
-      createdAt: pendingSignup.createdAt,
-      passwordHash: pendingSignup.passwordHash
-    };
-    writeAccounts([account, ...readAccounts()]);
-    window.localStorage.setItem(CURRENT_USER_KEY, account.id);
-    setCurrentUser(publicAccount(account));
-    setSavedIds([]);
-    setPendingSignup(null);
-    setAuthError("");
-    setAuthNotice("Account verified. Saves now belong to this account.");
-    setAuthOpen(false);
-    setAccountDashboardOpen(true);
+    setAuthError("Real email verification is not connected yet. Add Supabase before creating accounts.");
   };
 
   const handleSignin = async (formData: FormData) => {
@@ -2257,7 +2248,7 @@ function AuthModal({
   onClose: () => void;
   onSignin: (formData: FormData) => Promise<void>;
   onSignup: (formData: FormData) => Promise<void>;
-  onVerify: (formData: FormData) => void;
+  onVerify: (formData: FormData) => Promise<void>;
 }) {
   const handleSignin = useCallback(
     async (event: FormEvent<HTMLFormElement>) => {
@@ -2276,9 +2267,9 @@ function AuthModal({
   );
 
   const handleVerify = useCallback(
-    (event: FormEvent<HTMLFormElement>) => {
+    async (event: FormEvent<HTMLFormElement>) => {
       event.preventDefault();
-      onVerify(new FormData(event.currentTarget));
+      await onVerify(new FormData(event.currentTarget));
     },
     [onVerify]
   );
@@ -2378,7 +2369,7 @@ function AuthModal({
               <input name="confirmPassword" type="password" autoComplete="new-password" minLength={9} required />
             </label>
             <button type="submit" className="primary-button">
-              {backendMode === "supabase" ? "Send verification email" : "Send verification code"}
+              {backendMode === "supabase" ? "Send real email code" : "Email verification not connected"}
               <ChevronRight size={17} aria-hidden="true" />
             </button>
           </form>
@@ -2388,27 +2379,22 @@ function AuthModal({
           <form className="auth-form" onSubmit={handleVerify}>
             <p className="verification-copy">
               {backendMode === "supabase"
-                ? "Supabase sends the verification link by email. Open that email, verify the account, then sign in."
-                : "This static preview cannot send real email yet, so the demo code is shown here. In production, Supabase Auth sends a verification link by email before sign-in."}
+                ? "A real one-time code was sent to your email. Enter that code here to verify and create the account."
+                : "Real email verification is not connected yet. Account creation needs Supabase Auth before this can work."}
             </p>
-            {backendMode === "local" ? (
-              <div className="demo-code" aria-label="Demo verification code">
-                {pendingSignup?.verificationCode ?? "Start sign-up first"}
-              </div>
-            ) : null}
             <label className="field">
-              <span>Verification code</span>
-              <input name="verificationCode" inputMode="numeric" maxLength={6} required />
+              <span>Email verification code</span>
+              <input name="verificationCode" inputMode="numeric" autoComplete="one-time-code" maxLength={6} required />
             </label>
             <button type="submit" className="primary-button" disabled={!pendingSignup}>
-              Verify and create account
+              Verify email and create account
               <ChevronRight size={17} aria-hidden="true" />
             </button>
           </form>
         ) : null}
 
         <a className="auth-secondary-link" href="https://supabase.com/docs/guides/auth/auth-email" target="_blank" rel="noreferrer">
-          Production database uses Supabase email verification
+          Real account emails use Supabase Auth
           <ExternalLink size={14} aria-hidden="true" />
         </a>
       </section>

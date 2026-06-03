@@ -2111,19 +2111,6 @@ a {
   color: var(--muted);
 }
 
-.demo-code {
-  display: grid;
-  min-height: 64px;
-  place-items: center;
-  border: 1px dashed color-mix(in srgb, var(--blue) 70%, var(--line));
-  border-radius: var(--radius);
-  background: linear-gradient(135deg, var(--yellow-soft), color-mix(in srgb, var(--lavender-soft) 28%, var(--yellow-soft)));
-  color: var(--ink);
-  font-size: 1.65rem;
-  font-weight: 900;
-  letter-spacing: 0.12em;
-}
-
 .auth-secondary-link {
   display: inline-flex;
   align-items: center;
