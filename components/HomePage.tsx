@@ -20,6 +20,7 @@ import {
   MapPin,
   Moon,
   Megaphone,
+  RefreshCw,
   Search,
   Send,
   ShieldCheck,
@@ -31,6 +32,7 @@ import {
 } from "lucide-react";
 import { useCallback, useEffect, useMemo, useRef, useState, type FormEvent, type ReactNode } from "react";
 import { categories, cityOptions, languagePreferenceOrder, opportunities, regions } from "@/lib/data";
+import { generatedDiscoveryReviewCandidates, generatedDiscoverySummary } from "@/lib/generatedDiscoveryReview";
 import {
   betaBackendMode,
   createSupabaseAnnouncement,
@@ -277,6 +279,8 @@ export function HomePage() {
   const [localQueueCount, setLocalQueueCount] = useState(0);
   const [backendMode, setBackendMode] = useState<BackendMode>("local");
   const [backendStatus, setBackendStatus] = useState("");
+  const [researchStatus, setResearchStatus] = useState("");
+  const [researchRefreshing, setResearchRefreshing] = useState(false);
   const [currentUser, setCurrentUser] = useState<VerifiedAccount | null>(null);
   const [authOpen, setAuthOpen] = useState(false);
   const [authMode, setAuthMode] = useState<AuthMode>("signin");
@@ -457,6 +461,10 @@ export function HomePage() {
     [filters, activeLocation, displayOpportunities]
   );
   const activeOpportunityCount = useMemo(() => publicOpportunities(displayOpportunities).length, [displayOpportunities]);
+  const availableProgramLanguages = useMemo(() => {
+    const available = new Set(displayOpportunities.flatMap((opportunity) => opportunity.languages));
+    return languagePreferenceOrder.filter((code) => available.has(code));
+  }, [displayOpportunities]);
 
   const selectedOpportunity =
     visibleOpportunities.find((opportunity) => opportunity.id === selectedId) ??
@@ -524,6 +532,22 @@ export function HomePage() {
     setSaveGateMessage("");
     setAccountDashboardOpen(false);
   };
+
+  const refreshResearch = useCallback(async () => {
+    setResearchRefreshing(true);
+    setResearchStatus("Checking the newest published research database...");
+    try {
+      await fetch(`${window.location.origin}/?research-refresh=${Date.now()}`, { cache: "reload" });
+      setResearchStatus(
+        `${generatedDiscoverySummary.sourcesChecked} sources are scanned every 6 hours. ${generatedDiscoverySummary.newCandidates} new finds are waiting for admin review.`
+      );
+    } catch {
+      setResearchStatus("Could not check the newest published database. The scheduled search engine is still running in the background.");
+    } finally {
+      setResearchRefreshing(false);
+      window.setTimeout(() => setResearchStatus(""), 6200);
+    }
+  }, []);
 
   const handleSignup = async (formData: FormData) => {
     const name = String(formData.get("name") ?? "").trim();
@@ -904,7 +928,15 @@ export function HomePage() {
           </div>
         </div>
       </section>
-      <ActiveDiscoveryBadge language={language} count={activeOpportunityCount} />
+      <ActiveDiscoveryBadge
+        language={language}
+        count={activeOpportunityCount}
+        reviewCount={generatedDiscoverySummary.newCandidates}
+        sourceCount={generatedDiscoverySummary.sourcesChecked}
+        refreshing={researchRefreshing}
+        status={researchStatus}
+        onRefresh={refreshResearch}
+      />
 
       {adminAnnouncements.length ? <AnnouncementStrip announcements={adminAnnouncements.slice(0, 2)} /> : null}
       {backendStatus ? (
@@ -1011,7 +1043,7 @@ export function HomePage() {
                     onChange={(event) => updateFilter("language", event.target.value as Filters["language"])}
                   >
                     <option value="all">{t(language, "any")}</option>
-                    {languagePreferenceOrder.map((code) => (
+                    {availableProgramLanguages.map((code) => (
                       <option key={code} value={code}>
                         {languageMeta[code].label}
                       </option>
@@ -1117,27 +1149,34 @@ export function HomePage() {
                   {visibleOpportunities.length} {t(language, "results")}
                 </h2>
               </div>
-              <div className="segmented" aria-label="View mode">
-                <button
-                  className={viewMode === "list" ? "active" : ""}
-                  type="button"
-                  onClick={() => setViewMode("list")}
-                  aria-pressed={viewMode === "list"}
-                >
-                  <ListChecks size={16} aria-hidden="true" />
-                  {t(language, "list")}
+              <div className="results-actions">
+                <button type="button" className="soft-button research-refresh-button" onClick={refreshResearch} disabled={researchRefreshing}>
+                  <RefreshCw size={16} aria-hidden="true" className={researchRefreshing ? "spinning" : ""} />
+                  {t(language, "refreshResearch")}
                 </button>
-                <button
-                  className={viewMode === "map" ? "active" : ""}
-                  type="button"
-                  onClick={() => setViewMode("map")}
-                  aria-pressed={viewMode === "map"}
-                >
-                  <MapPin size={16} aria-hidden="true" />
-                  {t(language, "map")}
-                </button>
+                <div className="segmented" aria-label="View mode">
+                  <button
+                    className={viewMode === "list" ? "active" : ""}
+                    type="button"
+                    onClick={() => setViewMode("list")}
+                    aria-pressed={viewMode === "list"}
+                  >
+                    <ListChecks size={16} aria-hidden="true" />
+                    {t(language, "list")}
+                  </button>
+                  <button
+                    className={viewMode === "map" ? "active" : ""}
+                    type="button"
+                    onClick={() => setViewMode("map")}
+                    aria-pressed={viewMode === "map"}
+                  >
+                    <MapPin size={16} aria-hidden="true" />
+                    {t(language, "map")}
+                  </button>
+                </div>
               </div>
             </div>
+            {researchStatus ? <p className="research-status-line" role="status">{researchStatus}</p> : null}
 
             <div className={viewMode === "map" ? "results-grid map-first" : "results-grid"}>
               <div className="cards-column">
@@ -1222,6 +1261,8 @@ export function HomePage() {
           announcements={adminAnnouncements}
           eventEdits={adminEventEdits}
           reviewBundle={adminReviewBundle}
+          discoverySummary={generatedDiscoverySummary}
+          discoveryCandidates={generatedDiscoveryReviewCandidates}
           reviewQueueCount={localQueueCount}
           onEventEdit={submitAdminEventEdit}
           onAnnouncement={submitAdminAnnouncement}
@@ -1360,7 +1401,28 @@ function Metric({ value, label }: { value: string; label: string }) {
   );
 }
 
-function ActiveDiscoveryBadge({ language, count }: { language: LanguageCode; count: number }) {
+function ActiveDiscoveryBadge({
+  language,
+  count,
+  reviewCount,
+  sourceCount,
+  refreshing,
+  status,
+  onRefresh
+}: {
+  language: LanguageCode;
+  count: number;
+  reviewCount: number;
+  sourceCount: number;
+  refreshing: boolean;
+  status: string;
+  onRefresh: () => void;
+}) {
+  const scoutText = t(language, "sourceScoutText")
+    .replace("{count}", count.toString())
+    .replace("{sources}", sourceCount.toString())
+    .replace("{review}", reviewCount.toString());
+
   return (
     <aside className="source-scout-badge" aria-label={t(language, "sourceScout")}>
       <span className="source-scout-radar" aria-hidden="true">
@@ -1368,8 +1430,11 @@ function ActiveDiscoveryBadge({ language, count }: { language: LanguageCode; cou
       </span>
       <span className="source-scout-copy">
         <strong>{t(language, "sourceScout")}</strong>
-        <small>{t(language, "sourceScoutText").replace("{count}", count.toString())}</small>
+        <small>{status || scoutText}</small>
       </span>
+      <button type="button" className="source-scout-refresh" onClick={onRefresh} disabled={refreshing} aria-label={t(language, "refreshResearch")}>
+        <RefreshCw size={15} aria-hidden="true" className={refreshing ? "spinning" : ""} />
+      </button>
     </aside>
   );
 }
@@ -1412,6 +1477,13 @@ function FilterGroup({ title, children }: { title: string; children: ReactNode }
       {children}
     </fieldset>
   );
+}
+
+function offeredLanguageLabels(opportunity: Opportunity) {
+  const uniqueLanguages = Array.from(new Set(opportunity.languages));
+  if (uniqueLanguages.length <= 1) return [];
+  if (uniqueLanguages.length >= languagePreferenceOrder.length) return [];
+  return uniqueLanguages.map((code) => languageMeta[code].label);
 }
 
 function OpportunityCard({
@@ -1589,6 +1661,8 @@ function OpportunityDetails({
   onCalendar: () => void;
   compact?: boolean;
 }) {
+  const languageLabels = offeredLanguageLabels(opportunity);
+
   return (
     <div className={compact ? "details-layout compact-details" : "details-layout"}>
       <div className="detail-main">
@@ -1622,7 +1696,7 @@ function OpportunityDetails({
         <Fact label={t(language, "ages")} value={opportunity.ages.max ? `${opportunity.ages.min}-${opportunity.ages.max}` : `${opportunity.ages.min}+`} />
         <Fact label={t(language, "grades")} value={opportunity.grades.join(", ")} />
         <Fact label={t(language, "commitment")} value={opportunity.commitment} />
-        <Fact label={t(language, "languages")} value={opportunity.languages.map((code) => languageMeta[code].label).join(", ")} />
+        {languageLabels.length ? <Fact label={t(language, "languages")} value={languageLabels.join(", ")} /> : null}
         <Fact label={t(language, "access")} value={opportunity.accessibility.join(", ")} />
         <Fact label={t(language, "equipment")} value={opportunity.equipment} />
         <Fact label={t(language, "food")} value={opportunity.food} />
@@ -1923,6 +1997,8 @@ function AdminDashboard({
   announcements,
   eventEdits,
   reviewBundle,
+  discoverySummary,
+  discoveryCandidates,
   reviewQueueCount,
   onEventEdit,
   onAnnouncement,
@@ -1939,6 +2015,8 @@ function AdminDashboard({
   announcements: AdminAnnouncement[];
   eventEdits: AdminEventEdit[];
   reviewBundle: AdminReviewBundle;
+  discoverySummary: typeof generatedDiscoverySummary;
+  discoveryCandidates: typeof generatedDiscoveryReviewCandidates;
   reviewQueueCount: number;
   onEventEdit: (formData: FormData) => void;
   onAnnouncement: (formData: FormData) => void | Promise<void>;
@@ -2020,6 +2098,36 @@ function AdminDashboard({
             {backendStatus ? <p className="status-line">{backendStatus}</p> : null}
             <Fact label="Review queue" value={`${reviewQueueCount} local submissions`} />
             <Fact label="Account type" value={roleLabel(user.role)} />
+          </section>
+
+          <section className="admin-panel">
+            <div className="panel-title">
+              <RefreshCw size={18} aria-hidden="true" />
+              <span>Search engine finds</span>
+            </div>
+            <Fact label="Sources scanned" value={discoverySummary.sourcesChecked.toString()} />
+            <Fact label="Raw candidates" value={discoverySummary.candidatesFound.toString()} />
+            <Fact label="Needs review" value={discoverySummary.newCandidates.toString()} />
+            <div className="admin-review-list">
+              {discoveryCandidates.length ? (
+                discoveryCandidates.slice(0, 5).map((candidate) => (
+                  <article key={candidate.id} className="admin-review-item discovery-review-item">
+                    <div>
+                      <strong>{candidate.title}</strong>
+                      <span>
+                        {candidate.organization} - {candidate.city} - {candidate.confidence}
+                      </span>
+                      {candidate.reviewReasons.length ? <span>{candidate.reviewReasons.join(" ")}</span> : null}
+                    </div>
+                    <a href={candidate.sourceUrl} target="_blank" rel="noreferrer" aria-label={`Open source for ${candidate.title}`}>
+                      Source
+                    </a>
+                  </article>
+                ))
+              ) : (
+                <p className="account-note">No new discovery candidates from the latest search run.</p>
+              )}
+            </div>
           </section>
 
           <section className="admin-panel">

@@ -1,4 +1,5 @@
 import { createHash } from "node:crypto";
+import { writeFileSync } from "node:fs";
 import { discoverySources, type DiscoveredOpportunity, type DiscoverySource } from "../lib/discovery";
 import { opportunities } from "../lib/data";
 import type { Category, LanguageCode, Region } from "../lib/types";
@@ -40,6 +41,7 @@ type DiscoveryOutput = {
 
 const args = new Set(process.argv.slice(2));
 const outputFormat = args.has("--format=sql") || args.has("--sql") ? "sql" : args.has("--summary") ? "summary" : "json";
+const writeReviewFile = args.has("--write-review");
 const includeDuplicates = args.has("--include-duplicates");
 const useLocalAi = process.env.USE_LOCAL_AI === "1" || process.env.LOCAL_AI_DISCOVERY === "1";
 const localAiModel = process.env.LOCAL_AI_MODEL || "deepseek-r1:latest";
@@ -620,6 +622,24 @@ on conflict (id) do update set
 `;
 }
 
+function writeDiscoveryReviewFile(result: DiscoveryOutput) {
+  const summary = {
+    mode: result.mode,
+    sourcesChecked: result.sourcesChecked,
+    candidatesFound: result.candidatesFound,
+    newCandidates: result.newCandidates,
+    duplicatesSkipped: result.duplicatesSkipped,
+    warnings: result.warnings
+  };
+  const output = `import type { DiscoveredOpportunity } from "./discovery";
+
+export const generatedDiscoverySummary = ${JSON.stringify(summary, null, 2)} as const;
+
+export const generatedDiscoveryReviewCandidates = ${JSON.stringify(result.opportunities, null, 2)} satisfies DiscoveredOpportunity[];
+`;
+  writeFileSync("lib/generatedDiscoveryReview.ts", output);
+}
+
 async function main() {
   const warnings: string[] = [];
   const discovered: DiscoveredOpportunity[] = [];
@@ -654,6 +674,10 @@ async function main() {
     opportunities: output,
     warnings
   };
+
+  if (writeReviewFile) {
+    writeDiscoveryReviewFile(result);
+  }
 
   if (outputFormat === "sql") {
     console.log(toSql(output));

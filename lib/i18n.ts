@@ -79,6 +79,7 @@ type UiKey =
   | "teenPathways"
   | "sourceScout"
   | "sourceScoutText"
+  | "refreshResearch"
   | "registerApply"
   | "saved"
   | "date"
@@ -157,10 +158,11 @@ const ui: Record<LanguageCode, Partial<Record<UiKey, string>>> = {
     showFilters: "Show filters",
     hideFilters: "Hide filters",
     verifiedListings: "Verified listings",
-    launchLanguages: "Launch languages",
+    launchLanguages: "Site languages",
     teenPathways: "Teen pathways",
     sourceScout: "Actively looking",
-    sourceScoutText: "{count} verified listings loaded. New sources are checked for review.",
+    sourceScoutText: "{count} verified listings loaded. {sources} sources scan every 6 hours; {review} new finds wait for review.",
+    refreshResearch: "Refresh research",
     registerApply: "Register or apply",
     saved: "Saved",
     date: "Date",

@@ -10,6 +10,7 @@
     "ingest:dry-run": "tsx scripts/ingest-dry-run.ts",
     "discover": "tsx scripts/discover-opportunities.ts",
     "discover:summary": "tsx scripts/discover-opportunities.ts --summary",
+    "discover:write": "tsx scripts/discover-opportunities.ts --summary --write-review",
     "discover:sql": "tsx scripts/discover-opportunities.ts --format=sql",
     "generate:library": "tsx scripts/generate-library-opportunities.ts",
     "supabase:check": "tsx scripts/check-supabase.ts",

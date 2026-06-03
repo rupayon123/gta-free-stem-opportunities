@@ -552,7 +552,7 @@ a {
   display: flex;
   align-items: center;
   gap: 10px;
-  width: min(300px, calc(100vw - 28px));
+  width: min(390px, calc(100vw - 28px));
   padding: 10px 12px;
   border: 1px solid color-mix(in srgb, var(--blue) 42%, var(--line));
   border-radius: 999px;
@@ -597,6 +597,7 @@ a {
 }
 
 .source-scout-copy {
+  flex: 1 1 auto;
   min-width: 0;
 }
 
@@ -615,6 +616,43 @@ a {
 .source-scout-copy small {
   color: var(--muted);
   font-size: 0.72rem;
+}
+
+.source-scout-refresh {
+  display: inline-grid;
+  place-items: center;
+  flex: 0 0 auto;
+  width: 34px;
+  height: 34px;
+  border: 1px solid color-mix(in srgb, var(--blue) 42%, var(--line));
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--surface) 84%, var(--blue) 10%);
+  color: var(--ink);
+  cursor: pointer;
+  transition: transform var(--pop), background var(--motion), box-shadow var(--motion);
+}
+
+.source-scout-refresh:hover,
+.source-scout-refresh:focus-visible {
+  background: color-mix(in srgb, var(--blue) 28%, var(--surface));
+  box-shadow: 0 10px 22px color-mix(in srgb, var(--blue) 22%, transparent);
+  outline: none;
+  transform: translateY(-1px) scale(1.05);
+}
+
+.source-scout-refresh:disabled {
+  cursor: wait;
+  opacity: 0.72;
+}
+
+.spinning {
+  animation: spin-refresh 0.8s linear infinite;
+}
+
+@keyframes spin-refresh {
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes scout-pulse {
@@ -893,6 +931,24 @@ a {
   padding: 0 11px;
 }
 
+.field input:focus,
+.field select:focus,
+.field textarea:focus,
+.input-icon input:focus {
+  outline: none;
+}
+
+.field input:focus-visible,
+.field select:focus-visible,
+.field textarea:focus-visible,
+.input-icon:focus-within {
+  border-color: color-mix(in srgb, var(--blue) 78%, var(--line));
+  box-shadow:
+    0 0 0 3px color-mix(in srgb, var(--blue) 24%, transparent),
+    0 10px 24px color-mix(in srgb, var(--blue) 16%, transparent),
+    inset 0 1px 0 color-mix(in srgb, #ffffff 60%, transparent);
+}
+
 .field input[type="number"] {
   appearance: textfield;
 }
@@ -946,11 +1002,13 @@ a {
   border: 0;
   background: transparent;
   box-shadow: none;
+  outline: none;
 }
 
 .input-icon input:hover,
 .input-icon input:focus-visible {
   border: 0;
+  outline: none;
   box-shadow: none;
 }
 
@@ -1172,6 +1230,30 @@ a {
   justify-content: space-between;
   gap: 16px;
   margin-bottom: 16px;
+}
+
+.results-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 10px;
+  min-width: min(100%, 390px);
+}
+
+.research-refresh-button {
+  white-space: nowrap;
+}
+
+.research-status-line {
+  margin: -4px 0 14px;
+  padding: 10px 12px;
+  border: 1px solid color-mix(in srgb, var(--mint) 56%, var(--line));
+  border-radius: var(--radius);
+  background: color-mix(in srgb, var(--mint-soft) 72%, var(--surface));
+  color: var(--ink);
+  font-size: 0.9rem;
+  font-weight: 740;
+  line-height: 1.42;
 }
 
 .results-toolbar h2,
@@ -1960,6 +2042,25 @@ a {
   line-height: 1.35;
 }
 
+.admin-review-item a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 36px;
+  padding: 7px 10px;
+  border: 1px solid color-mix(in srgb, var(--blue) 34%, var(--line));
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--surface) 86%, var(--blue) 8%);
+  color: var(--ink);
+  font-size: 0.84rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.discovery-review-item {
+  grid-template-columns: minmax(0, 1fr) minmax(76px, auto);
+}
+
 .compact-status-select {
   display: block;
   min-width: 0;
@@ -2153,6 +2254,13 @@ a {
     max-height: none;
   }
 
+  .source-scout-badge {
+    position: static;
+    width: auto;
+    margin: 0 clamp(16px, 4vw, 44px) 18px;
+    border-radius: var(--radius);
+  }
+
   .hero-copy h1 {
     font-size: 3.45rem;
   }
@@ -2291,6 +2399,15 @@ a {
     flex-direction: column;
   }
 
+  .results-actions {
+    justify-content: stretch;
+    min-width: 0;
+  }
+
+  .research-refresh-button {
+    width: 100%;
+  }
+
   .segmented {
     width: 100%;
   }
@@ -2359,9 +2476,8 @@ a {
 
 @media (max-width: 460px) {
   .source-scout-badge {
-    right: 10px;
-    bottom: 10px;
-    width: calc(100vw - 20px);
+    width: auto;
+    margin-inline: 10px;
   }
 
   .source-scout-copy small {

@@ -30,7 +30,7 @@ jobs:
         run: npm run generate:library
 
       - name: Scan discovery sources for review candidates
-        run: npm run discover:summary
+        run: npm run discover:write
 
       - name: Run QA
         run: npm run qa
@@ -40,12 +40,12 @@ jobs:
 
       - name: Commit refreshed database
         run: |
-          if git diff --quiet -- lib/generatedLibraryOpportunities.ts; then
+          if git diff --quiet -- lib/generatedLibraryOpportunities.ts lib/generatedDiscoveryReview.ts; then
             echo "No opportunity database changes found."
             exit 0
           fi
           git config user.name "gta-free-stem-bot"
           git config user.email "gta-free-stem-bot@users.noreply.github.com"
-          git add lib/generatedLibraryOpportunities.ts
+          git add lib/generatedLibraryOpportunities.ts lib/generatedDiscoveryReview.ts
           git commit -m "Refresh generated public opportunities"
           git push
