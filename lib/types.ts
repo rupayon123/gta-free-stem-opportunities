@@ -11,6 +11,8 @@ export type Category =
   | "Career & Mentorship"
   | "Scholarships"
   | "Newcomer & Settlement"
+  | "Family Learning"
+  | "Arts & Media"
   | "Family STEM"
   | "Volunteer Hours"
   | "Co-op & SHSM"

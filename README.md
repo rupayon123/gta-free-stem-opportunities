@@ -7,6 +7,7 @@ Public beta: https://gta-free-stem.vercel.app
 ## What Is Implemented
 
 - Source-backed public listings from official/current pages such as Toronto Public Library, Markham Public Library, Whitby Public Library, Credit Valley Conservation, TRCA, PACT, and Oakville Public Library.
+- Generated static library listing layer from official Toronto Public Library and Markham Public Library public event feeds.
 - Public search with list and MapLibre/OpenFreeMap map views.
 - Filters for age, city, region, category, language, approximate postal area, live-location distance, equity-focus toggles, volunteer hours, co-op, mentorship, and leadership.
 - Friendly pastel blue visual system with mint, yellow, coral, lavender, light mode, dark mode, and system theme.
@@ -22,6 +23,7 @@ Public beta: https://gta-free-stem.vercel.app
 - Opportunity statuses: `active`, `expired`, `needs_review`, and `hidden`; public search only shows active, non-expired listings.
 - Seed exporter for the Supabase opportunities table: `npm run supabase:seed`.
 - Review-first discovery crawler for public library, nonprofit, and event-index sources: `npm run discover`.
+- Library feed generator for expanding the static public database: `npm run generate:library`.
 - Optional local AI/Ollama extraction support for discovery review: `USE_LOCAL_AI=1 LOCAL_AI_MODEL=deepseek-r1:latest npm run discover`.
 - Supabase production connection check: `npm run supabase:check`.
 
@@ -71,9 +73,12 @@ Without those credentials, public browsing still works, but production accounts/
 ```bash
 npm run discover
 npm run discover:sql
+npm run generate:library
 ```
 
 The crawler fetches public source pages, extracts likely real free GTA STEM opportunities, dedupes against existing listings, and exports new rows for admin review. New crawler finds stay out of public search as `needs_review` until an admin approves them.
+
+The library generator fetches structured public library event feeds, filters out cancelled/full/charged/exhibit-only entries, and writes `lib/generatedLibraryOpportunities.ts` so the static public site can show a larger verified database at zero hosting cost.
 
 ## Verification
 

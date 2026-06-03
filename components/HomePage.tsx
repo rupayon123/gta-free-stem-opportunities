@@ -912,6 +912,7 @@ export function HomePage() {
           </div>
         </div>
       </section>
+      <ActiveDiscoveryBadge language={language} count={displayOpportunities.length} />
 
       {adminAnnouncements.length ? <AnnouncementStrip announcements={adminAnnouncements.slice(0, 2)} /> : null}
       {backendStatus ? (
@@ -1364,6 +1365,20 @@ function Metric({ value, label }: { value: string; label: string }) {
       <strong>{value}</strong>
       <span>{label}</span>
     </div>
+  );
+}
+
+function ActiveDiscoveryBadge({ language, count }: { language: LanguageCode; count: number }) {
+  return (
+    <aside className="source-scout-badge" aria-label={t(language, "sourceScout")}>
+      <span className="source-scout-radar" aria-hidden="true">
+        <span />
+      </span>
+      <span className="source-scout-copy">
+        <strong>{t(language, "sourceScout")}</strong>
+        <small>{t(language, "sourceScoutText").replace("{count}", count.toString())}</small>
+      </span>
+    </aside>
   );
 }
 

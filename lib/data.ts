@@ -1,3 +1,4 @@
+import { generatedLibraryOpportunities } from "./generatedLibraryOpportunities";
 import type { Category, LanguageCode, Opportunity, Region, ReviewItem } from "./types";
 
 export const regions: Region[] = ["Toronto", "Peel", "York", "Durham", "Halton"];
@@ -30,6 +31,8 @@ export const categories: Category[] = [
   "Career & Mentorship",
   "Scholarships",
   "Newcomer & Settlement",
+  "Family Learning",
+  "Arts & Media",
   "Family STEM",
   "Volunteer Hours",
   "Co-op & SHSM",
@@ -718,20 +721,23 @@ const seedOpportunities: SeedOpportunity[] = [
   }
 ];
 
-export const opportunities: Opportunity[] = seedOpportunities.map((opportunity) => ({
-  ...opportunity,
-  organization: opportunity.provider,
-  description: opportunity.summary,
-  category: opportunity.categories[0],
-  ageMin: opportunity.ages.min,
-  ageMax: opportunity.ages.max,
-  language: opportunity.languages,
-  cost: "Free to join",
-  sourceUrl: opportunity.sources[0]?.url ?? opportunity.registrationUrl,
-  lastChecked: opportunity.lastVerified,
-  lastSeen: opportunity.lastVerified,
-  status: opportunity.status ?? "active"
-}));
+export const opportunities: Opportunity[] = [
+  ...seedOpportunities.map((opportunity) => ({
+    ...opportunity,
+    organization: opportunity.provider,
+    description: opportunity.summary,
+    category: opportunity.categories[0],
+    ageMin: opportunity.ages.min,
+    ageMax: opportunity.ages.max,
+    language: opportunity.languages,
+    cost: "Free to join" as const,
+    sourceUrl: opportunity.sources[0]?.url ?? opportunity.registrationUrl,
+    lastChecked: opportunity.lastVerified,
+    lastSeen: opportunity.lastVerified,
+    status: opportunity.status ?? "active"
+  })),
+  ...generatedLibraryOpportunities
+];
 
 export const reviewQueue: ReviewItem[] = [
   {

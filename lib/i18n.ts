@@ -77,6 +77,8 @@ type UiKey =
   | "verifiedListings"
   | "launchLanguages"
   | "teenPathways"
+  | "sourceScout"
+  | "sourceScoutText"
   | "registerApply"
   | "saved"
   | "date"
@@ -157,6 +159,8 @@ const ui: Record<LanguageCode, Partial<Record<UiKey, string>>> = {
     verifiedListings: "Verified listings",
     launchLanguages: "Launch languages",
     teenPathways: "Teen pathways",
+    sourceScout: "Actively looking",
+    sourceScoutText: "{count} verified listings loaded. New sources are checked for review.",
     registerApply: "Register or apply",
     saved: "Saved",
     date: "Date",
