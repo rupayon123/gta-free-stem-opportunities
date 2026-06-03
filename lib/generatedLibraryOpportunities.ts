@@ -79,14 +79,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a1090208ea300e26317c994",
-        "capturedAt": "2026-06-03T13:30:04.548Z",
+        "capturedAt": "2026-06-03T13:38:21.930Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:04.548Z",
+        "at": "2026-06-03T13:38:21.930Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -159,14 +159,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69fe4ff71773192800186f37",
-        "capturedAt": "2026-06-03T13:30:04.551Z",
+        "capturedAt": "2026-06-03T13:38:21.933Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:04.551Z",
+        "at": "2026-06-03T13:38:21.933Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -251,14 +251,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/698a5b7db48451fc3c01b366",
-        "capturedAt": "2026-06-03T13:30:04.551Z",
+        "capturedAt": "2026-06-03T13:38:21.933Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:04.551Z",
+        "at": "2026-06-03T13:38:21.933Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -343,14 +343,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/699c7b614dacf581ff7d40f4",
-        "capturedAt": "2026-06-03T13:30:04.551Z",
+        "capturedAt": "2026-06-03T13:38:21.933Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:04.551Z",
+        "at": "2026-06-03T13:38:21.933Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -435,14 +435,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69f22223deee9abd8ee954c2",
-        "capturedAt": "2026-06-03T13:30:04.551Z",
+        "capturedAt": "2026-06-03T13:38:21.933Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:04.551Z",
+        "at": "2026-06-03T13:38:21.933Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -527,14 +527,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69d9448f129f12743837bd75",
-        "capturedAt": "2026-06-03T13:30:04.551Z",
+        "capturedAt": "2026-06-03T13:38:21.933Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:04.551Z",
+        "at": "2026-06-03T13:38:21.933Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -619,14 +619,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a0db23f43b41b3d0067c478",
-        "capturedAt": "2026-06-03T13:30:04.551Z",
+        "capturedAt": "2026-06-03T13:38:21.934Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:04.551Z",
+        "at": "2026-06-03T13:38:21.934Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -701,14 +701,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a060c948e677a28001bfd8b",
-        "capturedAt": "2026-06-03T13:30:04.552Z",
+        "capturedAt": "2026-06-03T13:38:21.934Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:04.552Z",
+        "at": "2026-06-03T13:38:21.934Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -792,14 +792,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a1f6e9790cc4e3a790b10ee",
-        "capturedAt": "2026-06-03T13:30:13.738Z",
+        "capturedAt": "2026-06-03T13:38:31.193Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:13.738Z",
+        "at": "2026-06-03T13:38:31.193Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -884,14 +884,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69693c5db0595799c0969857",
-        "capturedAt": "2026-06-03T13:30:04.553Z",
+        "capturedAt": "2026-06-03T13:38:21.935Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:04.553Z",
+        "at": "2026-06-03T13:38:21.935Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -976,14 +976,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/697007886c126d0e4895741d",
-        "capturedAt": "2026-06-03T13:30:04.553Z",
+        "capturedAt": "2026-06-03T13:38:21.935Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:04.553Z",
+        "at": "2026-06-03T13:38:21.935Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -1068,14 +1068,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69700e921e64afd01e5597f5",
-        "capturedAt": "2026-06-03T13:30:04.553Z",
+        "capturedAt": "2026-06-03T13:38:21.935Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:04.553Z",
+        "at": "2026-06-03T13:38:21.935Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -1160,14 +1160,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69b1b7816583d22e3c0ea988",
-        "capturedAt": "2026-06-03T13:30:04.553Z",
+        "capturedAt": "2026-06-03T13:38:21.935Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:04.553Z",
+        "at": "2026-06-03T13:38:21.935Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -1252,14 +1252,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69a8af454a9fd98b7f822bc1",
-        "capturedAt": "2026-06-03T13:30:05.241Z",
+        "capturedAt": "2026-06-03T13:38:22.613Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:05.241Z",
+        "at": "2026-06-03T13:38:22.613Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -1337,14 +1337,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69aef1ec1e64afd01e60dae5",
-        "capturedAt": "2026-06-03T13:30:05.241Z",
+        "capturedAt": "2026-06-03T13:38:22.613Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:05.241Z",
+        "at": "2026-06-03T13:38:22.613Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -1429,14 +1429,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69c5adcfad384e40edb70714",
-        "capturedAt": "2026-06-03T13:30:05.241Z",
+        "capturedAt": "2026-06-03T13:38:22.613Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:05.241Z",
+        "at": "2026-06-03T13:38:22.613Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -1521,14 +1521,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69ebcabce7c57a539c14e24f",
-        "capturedAt": "2026-06-03T13:30:05.241Z",
+        "capturedAt": "2026-06-03T13:38:22.613Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:05.241Z",
+        "at": "2026-06-03T13:38:22.613Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -1613,14 +1613,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69ef86571d82f930d3ca432f",
-        "capturedAt": "2026-06-03T13:30:05.241Z",
+        "capturedAt": "2026-06-03T13:38:22.613Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:05.241Z",
+        "at": "2026-06-03T13:38:22.613Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -1705,14 +1705,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69dec0f1bd5c392c76444e9a",
-        "capturedAt": "2026-06-03T13:30:05.241Z",
+        "capturedAt": "2026-06-03T13:38:22.613Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:05.241Z",
+        "at": "2026-06-03T13:38:22.613Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -1790,14 +1790,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6958355e76261f280062151e",
-        "capturedAt": "2026-06-03T13:30:05.241Z",
+        "capturedAt": "2026-06-03T13:38:22.613Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:05.241Z",
+        "at": "2026-06-03T13:38:22.613Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -1882,14 +1882,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69f61462b1e102b0f3d934cf",
-        "capturedAt": "2026-06-03T13:30:05.241Z",
+        "capturedAt": "2026-06-03T13:38:22.613Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:05.241Z",
+        "at": "2026-06-03T13:38:22.613Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -1966,14 +1966,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdc8bd272945e0068ed51",
-        "capturedAt": "2026-06-03T13:30:13.738Z",
+        "capturedAt": "2026-06-03T13:38:31.193Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:13.738Z",
+        "at": "2026-06-03T13:38:31.193Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -2058,14 +2058,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69aa1124ec71a31f5b421c45",
-        "capturedAt": "2026-06-03T13:30:05.241Z",
+        "capturedAt": "2026-06-03T13:38:22.613Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:05.241Z",
+        "at": "2026-06-03T13:38:22.613Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -2150,14 +2150,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/698b7312491b809c6f18e005",
-        "capturedAt": "2026-06-03T13:30:05.241Z",
+        "capturedAt": "2026-06-03T13:38:22.613Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:05.241Z",
+        "at": "2026-06-03T13:38:22.613Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -2242,14 +2242,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69aae1682866a5b488403d44",
-        "capturedAt": "2026-06-03T13:30:05.241Z",
+        "capturedAt": "2026-06-03T13:38:22.614Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:05.241Z",
+        "at": "2026-06-03T13:38:22.614Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -2324,14 +2324,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69e2848c2866a5b488493717",
-        "capturedAt": "2026-06-03T13:30:05.241Z",
+        "capturedAt": "2026-06-03T13:38:22.614Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:05.241Z",
+        "at": "2026-06-03T13:38:22.614Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -2416,14 +2416,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a0de5600c0f2c4503fac012",
-        "capturedAt": "2026-06-03T13:30:05.241Z",
+        "capturedAt": "2026-06-03T13:38:22.614Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:05.241Z",
+        "at": "2026-06-03T13:38:22.614Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -2508,14 +2508,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69b475a8e2a2952aed07f1db",
-        "capturedAt": "2026-06-03T13:30:05.241Z",
+        "capturedAt": "2026-06-03T13:38:22.614Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:05.241Z",
+        "at": "2026-06-03T13:38:22.614Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -2592,14 +2592,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbde97d272945e0068ee51",
-        "capturedAt": "2026-06-03T13:30:13.738Z",
+        "capturedAt": "2026-06-03T13:38:31.193Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:13.738Z",
+        "at": "2026-06-03T13:38:31.193Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -2673,14 +2673,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/696e885b992fc18a86de4012",
-        "capturedAt": "2026-06-03T13:30:13.738Z",
+        "capturedAt": "2026-06-03T13:38:31.193Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:13.738Z",
+        "at": "2026-06-03T13:38:31.193Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -2764,14 +2764,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69fb66bb703c33630025d175",
-        "capturedAt": "2026-06-03T13:30:05.242Z",
+        "capturedAt": "2026-06-03T13:38:22.614Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:05.242Z",
+        "at": "2026-06-03T13:38:22.614Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -2846,14 +2846,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a18abbc46d5f64f7dcd3698",
-        "capturedAt": "2026-06-03T13:30:05.242Z",
+        "capturedAt": "2026-06-03T13:38:22.614Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:05.242Z",
+        "at": "2026-06-03T13:38:22.614Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -2927,14 +2927,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a1e227b8ea300e2631a4e9f",
-        "capturedAt": "2026-06-03T13:30:05.242Z",
+        "capturedAt": "2026-06-03T13:38:22.614Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:05.242Z",
+        "at": "2026-06-03T13:38:22.614Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -3018,14 +3018,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68c5847bc798579c2e8f34e0",
-        "capturedAt": "2026-06-03T13:30:13.738Z",
+        "capturedAt": "2026-06-03T13:38:31.193Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:13.738Z",
+        "at": "2026-06-03T13:38:31.193Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -3100,14 +3100,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/697e52f1d2bbe265eb2b40d6",
-        "capturedAt": "2026-06-03T13:30:05.242Z",
+        "capturedAt": "2026-06-03T13:38:22.614Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:05.242Z",
+        "at": "2026-06-03T13:38:22.614Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -3192,14 +3192,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69681b0dc967cb412081e6b5",
-        "capturedAt": "2026-06-03T13:30:05.242Z",
+        "capturedAt": "2026-06-03T13:38:22.615Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:05.242Z",
+        "at": "2026-06-03T13:38:22.615Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -3274,14 +3274,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/697e3bbccbf6405d3565de1d",
-        "capturedAt": "2026-06-03T13:30:05.243Z",
+        "capturedAt": "2026-06-03T13:38:22.615Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:05.243Z",
+        "at": "2026-06-03T13:38:22.615Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -3356,14 +3356,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/696ba4606724c63d00ecaf86",
-        "capturedAt": "2026-06-03T13:30:05.243Z",
+        "capturedAt": "2026-06-03T13:38:22.615Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:05.243Z",
+        "at": "2026-06-03T13:38:22.615Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -3437,14 +3437,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69dfa615b6c4ac1fedcc887b",
-        "capturedAt": "2026-06-03T13:30:05.975Z",
+        "capturedAt": "2026-06-03T13:38:23.365Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:05.975Z",
+        "at": "2026-06-03T13:38:23.365Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -3518,14 +3518,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a0222e24134893003f15dc0",
-        "capturedAt": "2026-06-03T13:30:05.976Z",
+        "capturedAt": "2026-06-03T13:38:23.365Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:05.976Z",
+        "at": "2026-06-03T13:38:23.365Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -3607,14 +3607,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a0e2b0743b41b3d0067f38a",
-        "capturedAt": "2026-06-03T13:30:05.976Z",
+        "capturedAt": "2026-06-03T13:38:23.365Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:05.976Z",
+        "at": "2026-06-03T13:38:23.365Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -3688,14 +3688,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a04d3d40c0f2c4503fa06a9",
-        "capturedAt": "2026-06-03T13:30:05.976Z",
+        "capturedAt": "2026-06-03T13:38:23.365Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:05.976Z",
+        "at": "2026-06-03T13:38:23.365Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -3769,14 +3769,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a05cfe4bfe663a2764cec9d",
-        "capturedAt": "2026-06-03T13:30:05.976Z",
+        "capturedAt": "2026-06-03T13:38:23.365Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:05.976Z",
+        "at": "2026-06-03T13:38:23.365Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -3858,14 +3858,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69e7c95cbd5c392c7645a774",
-        "capturedAt": "2026-06-03T13:30:05.976Z",
+        "capturedAt": "2026-06-03T13:38:23.365Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:05.976Z",
+        "at": "2026-06-03T13:38:23.365Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -3947,14 +3947,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69efc34abd9a3c316a55b8c1",
-        "capturedAt": "2026-06-03T13:30:05.976Z",
+        "capturedAt": "2026-06-03T13:38:23.365Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:05.976Z",
+        "at": "2026-06-03T13:38:23.365Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -4041,14 +4041,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69f39d8cb6c4ac1fedcfdae7",
-        "capturedAt": "2026-06-03T13:30:05.976Z",
+        "capturedAt": "2026-06-03T13:38:23.365Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:05.976Z",
+        "at": "2026-06-03T13:38:23.365Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -4130,14 +4130,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69fe244443b41b3d00651ffd",
-        "capturedAt": "2026-06-03T13:30:05.976Z",
+        "capturedAt": "2026-06-03T13:38:23.366Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:05.976Z",
+        "at": "2026-06-03T13:38:23.366Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -4223,14 +4223,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69a098a32866a5b4883e916c",
-        "capturedAt": "2026-06-03T13:30:05.977Z",
+        "capturedAt": "2026-06-03T13:38:23.366Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:05.977Z",
+        "at": "2026-06-03T13:38:23.366Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -4312,14 +4312,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69fe0c48e8af4a2f00711ac3",
-        "capturedAt": "2026-06-03T13:30:05.977Z",
+        "capturedAt": "2026-06-03T13:38:23.366Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:05.977Z",
+        "at": "2026-06-03T13:38:23.366Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -4411,14 +4411,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69fb76fe43b41b3d0064906b",
-        "capturedAt": "2026-06-03T13:30:05.977Z",
+        "capturedAt": "2026-06-03T13:38:23.366Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:05.977Z",
+        "at": "2026-06-03T13:38:23.366Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -4505,14 +4505,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a149ed64dc267647daa9c6c",
-        "capturedAt": "2026-06-03T13:30:05.977Z",
+        "capturedAt": "2026-06-03T13:38:23.366Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:05.977Z",
+        "at": "2026-06-03T13:38:23.366Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -4600,14 +4600,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/693f0b1b4be11d3d00d817bf",
-        "capturedAt": "2026-06-03T13:30:05.977Z",
+        "capturedAt": "2026-06-03T13:38:23.366Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:05.977Z",
+        "at": "2026-06-03T13:38:23.366Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -4691,14 +4691,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69fe4542dcc3559e3b3b86c5",
-        "capturedAt": "2026-06-03T13:30:06.757Z",
+        "capturedAt": "2026-06-03T13:38:24.148Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:06.757Z",
+        "at": "2026-06-03T13:38:24.148Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -4780,14 +4780,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69fb809cc7d3cd5800576ea7",
-        "capturedAt": "2026-06-03T13:30:06.757Z",
+        "capturedAt": "2026-06-03T13:38:24.148Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:06.757Z",
+        "at": "2026-06-03T13:38:24.148Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -4874,14 +4874,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69a31d9c4dacf581ff7e91aa",
-        "capturedAt": "2026-06-03T13:30:06.757Z",
+        "capturedAt": "2026-06-03T13:38:24.148Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:06.757Z",
+        "at": "2026-06-03T13:38:24.148Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -4968,14 +4968,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/694bfdc87ed7c62f00ac05d1",
-        "capturedAt": "2026-06-03T13:30:06.757Z",
+        "capturedAt": "2026-06-03T13:38:24.148Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:06.757Z",
+        "at": "2026-06-03T13:38:24.148Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -5057,14 +5057,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69695d5294297d3600a56aa1",
-        "capturedAt": "2026-06-03T13:30:06.757Z",
+        "capturedAt": "2026-06-03T13:38:24.148Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:06.757Z",
+        "at": "2026-06-03T13:38:24.148Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -5149,14 +5149,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69cc34d0deee9abd8ee67627",
-        "capturedAt": "2026-06-03T13:30:06.757Z",
+        "capturedAt": "2026-06-03T13:38:24.148Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:06.757Z",
+        "at": "2026-06-03T13:38:24.148Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -5242,14 +5242,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69f3b60dfca21471b7f0cf6c",
-        "capturedAt": "2026-06-03T13:30:06.757Z",
+        "capturedAt": "2026-06-03T13:38:24.148Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:06.757Z",
+        "at": "2026-06-03T13:38:24.148Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -5331,14 +5331,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a0f7db2c6a1dc3d00d54b72",
-        "capturedAt": "2026-06-03T13:30:06.757Z",
+        "capturedAt": "2026-06-03T13:38:24.148Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:06.757Z",
+        "at": "2026-06-03T13:38:24.148Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -5420,14 +5420,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a133ab746d5f64f7dccbe93",
-        "capturedAt": "2026-06-03T13:30:06.758Z",
+        "capturedAt": "2026-06-03T13:38:24.149Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:06.758Z",
+        "at": "2026-06-03T13:38:24.149Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -5514,14 +5514,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69700e2394297d3600a6689d",
-        "capturedAt": "2026-06-03T13:30:06.758Z",
+        "capturedAt": "2026-06-03T13:38:24.149Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:06.758Z",
+        "at": "2026-06-03T13:38:24.149Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -5606,14 +5606,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a038b15c6a1dc3d00d350ef",
-        "capturedAt": "2026-06-03T13:30:06.758Z",
+        "capturedAt": "2026-06-03T13:38:24.149Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:06.758Z",
+        "at": "2026-06-03T13:38:24.149Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -5700,14 +5700,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a15e5f98360de907d88648a",
-        "capturedAt": "2026-06-03T13:30:06.758Z",
+        "capturedAt": "2026-06-03T13:38:24.149Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:06.758Z",
+        "at": "2026-06-03T13:38:24.149Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -5789,14 +5789,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a15e8d6c6a1dc3d00d634aa",
-        "capturedAt": "2026-06-03T13:30:06.758Z",
+        "capturedAt": "2026-06-03T13:38:24.149Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:06.758Z",
+        "at": "2026-06-03T13:38:24.149Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -5879,14 +5879,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a17336143b41b3d006988ac",
-        "capturedAt": "2026-06-03T13:30:06.758Z",
+        "capturedAt": "2026-06-03T13:38:24.149Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:06.758Z",
+        "at": "2026-06-03T13:38:24.149Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -5970,14 +5970,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a187f9e90cc4e3a7909b163",
-        "capturedAt": "2026-06-03T13:30:06.758Z",
+        "capturedAt": "2026-06-03T13:38:24.149Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:06.758Z",
+        "at": "2026-06-03T13:38:24.149Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -6058,14 +6058,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69f6057c2866a5b4884c34ee",
-        "capturedAt": "2026-06-03T13:30:06.759Z",
+        "capturedAt": "2026-06-03T13:38:24.150Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:06.759Z",
+        "at": "2026-06-03T13:38:24.150Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -6140,14 +6140,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/699caa5a81b67dfe32a84f5d",
-        "capturedAt": "2026-06-03T13:30:06.759Z",
+        "capturedAt": "2026-06-03T13:38:24.150Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:06.759Z",
+        "at": "2026-06-03T13:38:24.150Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -6222,14 +6222,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69b86efe2866a5b488428452",
-        "capturedAt": "2026-06-03T13:30:07.601Z",
+        "capturedAt": "2026-06-03T13:38:25.184Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:07.601Z",
+        "at": "2026-06-03T13:38:25.184Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -6314,14 +6314,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69efd66bfca21471b7f07bdf",
-        "capturedAt": "2026-06-03T13:30:07.601Z",
+        "capturedAt": "2026-06-03T13:38:25.184Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:07.601Z",
+        "at": "2026-06-03T13:38:25.184Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -6408,14 +6408,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69fb8c01278f7c2f008b81ec",
-        "capturedAt": "2026-06-03T13:30:07.601Z",
+        "capturedAt": "2026-06-03T13:38:25.184Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:07.601Z",
+        "at": "2026-06-03T13:38:25.184Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -6497,14 +6497,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a14c960c7d3cd58005b9623",
-        "capturedAt": "2026-06-03T13:30:07.601Z",
+        "capturedAt": "2026-06-03T13:38:25.184Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:07.601Z",
+        "at": "2026-06-03T13:38:25.184Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -6580,14 +6580,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69a8aca7db89981d9df89e7f",
-        "capturedAt": "2026-06-03T13:30:07.601Z",
+        "capturedAt": "2026-06-03T13:38:25.184Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:07.601Z",
+        "at": "2026-06-03T13:38:25.184Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -6675,14 +6675,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69ff9390278f7c2f008c281d",
-        "capturedAt": "2026-06-03T13:30:07.601Z",
+        "capturedAt": "2026-06-03T13:38:25.184Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:07.601Z",
+        "at": "2026-06-03T13:38:25.184Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -6756,14 +6756,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69b1845b4dacf581ff812687",
-        "capturedAt": "2026-06-03T13:30:07.602Z",
+        "capturedAt": "2026-06-03T13:38:25.184Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:07.602Z",
+        "at": "2026-06-03T13:38:25.184Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -6847,14 +6847,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69f25ae7596674bcd5834fea",
-        "capturedAt": "2026-06-03T13:30:07.602Z",
+        "capturedAt": "2026-06-03T13:38:25.184Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:07.602Z",
+        "at": "2026-06-03T13:38:25.184Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -6928,14 +6928,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69d95a8ec1cf6f9a75847e24",
-        "capturedAt": "2026-06-03T13:30:07.602Z",
+        "capturedAt": "2026-06-03T13:38:25.184Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:07.602Z",
+        "at": "2026-06-03T13:38:25.184Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -7011,14 +7011,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69fbc3bd8e677a28001a5fc3",
-        "capturedAt": "2026-06-03T13:30:07.602Z",
+        "capturedAt": "2026-06-03T13:38:25.184Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:07.602Z",
+        "at": "2026-06-03T13:38:25.184Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -7093,14 +7093,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a049e6bc6a1dc3d00d379c0",
-        "capturedAt": "2026-06-03T13:30:07.602Z",
+        "capturedAt": "2026-06-03T13:38:25.185Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:07.602Z",
+        "at": "2026-06-03T13:38:25.185Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -7174,14 +7174,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a05d9f0703c3363002784f6",
-        "capturedAt": "2026-06-03T13:30:07.602Z",
+        "capturedAt": "2026-06-03T13:38:25.185Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:07.602Z",
+        "at": "2026-06-03T13:38:25.185Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -7265,14 +7265,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/692dbdf9d923da4200b31798",
-        "capturedAt": "2026-06-03T13:30:13.738Z",
+        "capturedAt": "2026-06-03T13:38:31.193Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:13.738Z",
+        "at": "2026-06-03T13:38:31.193Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -7356,14 +7356,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a0e32178ea300e263175c27",
-        "capturedAt": "2026-06-03T13:30:07.602Z",
+        "capturedAt": "2026-06-03T13:38:25.185Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:07.602Z",
+        "at": "2026-06-03T13:38:25.185Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -7448,14 +7448,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69efd6e8fca21471b7f07bec",
-        "capturedAt": "2026-06-03T13:30:07.602Z",
+        "capturedAt": "2026-06-03T13:38:25.185Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:07.602Z",
+        "at": "2026-06-03T13:38:25.185Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -7530,14 +7530,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/696a8e2c6724c63d00ec90c0",
-        "capturedAt": "2026-06-03T13:30:08.235Z",
+        "capturedAt": "2026-06-03T13:38:25.933Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:08.235Z",
+        "at": "2026-06-03T13:38:25.933Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -7621,14 +7621,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6904d55e06078d360075800d",
-        "capturedAt": "2026-06-03T13:30:13.738Z",
+        "capturedAt": "2026-06-03T13:38:31.193Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:13.738Z",
+        "at": "2026-06-03T13:38:31.193Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -7713,14 +7713,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6941e4d2ddf56328002137c7",
-        "capturedAt": "2026-06-03T13:30:08.235Z",
+        "capturedAt": "2026-06-03T13:38:25.933Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:08.235Z",
+        "at": "2026-06-03T13:38:25.933Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -7794,14 +7794,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69701d8a76261f2800659b7b",
-        "capturedAt": "2026-06-03T13:30:08.235Z",
+        "capturedAt": "2026-06-03T13:38:25.933Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:08.235Z",
+        "at": "2026-06-03T13:38:25.933Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -7877,14 +7877,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a11bf8b278f7c2f008f2551",
-        "capturedAt": "2026-06-03T13:30:08.235Z",
+        "capturedAt": "2026-06-03T13:38:25.933Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:08.235Z",
+        "at": "2026-06-03T13:38:25.933Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -7968,14 +7968,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a19a6da43b41b3d006a1954",
-        "capturedAt": "2026-06-03T13:30:08.235Z",
+        "capturedAt": "2026-06-03T13:38:25.933Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:08.235Z",
+        "at": "2026-06-03T13:38:25.933Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -8060,14 +8060,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69d5719c2866a5b488471a3c",
-        "capturedAt": "2026-06-03T13:30:08.235Z",
+        "capturedAt": "2026-06-03T13:38:25.933Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:08.235Z",
+        "at": "2026-06-03T13:38:25.933Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -8152,14 +8152,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69f0f4d5596674bcd583003d",
-        "capturedAt": "2026-06-03T13:30:08.235Z",
+        "capturedAt": "2026-06-03T13:38:25.934Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:08.235Z",
+        "at": "2026-06-03T13:38:25.934Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -8233,14 +8233,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69bad17f8089f23c676308cf",
-        "capturedAt": "2026-06-03T13:30:08.235Z",
+        "capturedAt": "2026-06-03T13:38:25.934Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:08.235Z",
+        "at": "2026-06-03T13:38:25.934Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -8325,14 +8325,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69efb0e8bd5c392c7646ebc7",
-        "capturedAt": "2026-06-03T13:30:08.235Z",
+        "capturedAt": "2026-06-03T13:38:25.934Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:08.235Z",
+        "at": "2026-06-03T13:38:25.934Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -8409,14 +8409,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbde1fe59a13000d3e1cef",
-        "capturedAt": "2026-06-03T13:30:13.738Z",
+        "capturedAt": "2026-06-03T13:38:31.193Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:13.738Z",
+        "at": "2026-06-03T13:38:31.193Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -8501,14 +8501,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/699766426583d22e3c0c829f",
-        "capturedAt": "2026-06-03T13:30:08.236Z",
+        "capturedAt": "2026-06-03T13:38:25.934Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:08.236Z",
+        "at": "2026-06-03T13:38:25.934Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -8593,14 +8593,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69f8e08fe8af4a2f00701f0f",
-        "capturedAt": "2026-06-03T13:30:08.236Z",
+        "capturedAt": "2026-06-03T13:38:25.934Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:08.236Z",
+        "at": "2026-06-03T13:38:25.934Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -8675,14 +8675,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69ca8e5e58f0b64d9e7c323c",
-        "capturedAt": "2026-06-03T13:30:08.236Z",
+        "capturedAt": "2026-06-03T13:38:25.934Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:08.236Z",
+        "at": "2026-06-03T13:38:25.934Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -8775,14 +8775,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/695d9cdd1f01fb76cec4f9e0",
-        "capturedAt": "2026-06-03T13:30:08.236Z",
+        "capturedAt": "2026-06-03T13:38:25.934Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:08.236Z",
+        "at": "2026-06-03T13:38:25.934Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -8867,14 +8867,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69a782cc4dacf581ff7f7199",
-        "capturedAt": "2026-06-03T13:30:08.236Z",
+        "capturedAt": "2026-06-03T13:38:25.934Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:08.236Z",
+        "at": "2026-06-03T13:38:25.934Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -8949,14 +8949,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69e1082afca21471b7ef6180",
-        "capturedAt": "2026-06-03T13:30:08.236Z",
+        "capturedAt": "2026-06-03T13:38:25.934Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:08.236Z",
+        "at": "2026-06-03T13:38:25.934Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -9040,14 +9040,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69b4555eb6c4ac1fedc5898a",
-        "capturedAt": "2026-06-03T13:30:08.236Z",
+        "capturedAt": "2026-06-03T13:38:25.935Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:08.236Z",
+        "at": "2026-06-03T13:38:25.935Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -9130,14 +9130,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69fb7806177319280017d91b",
-        "capturedAt": "2026-06-03T13:30:08.236Z",
+        "capturedAt": "2026-06-03T13:38:25.935Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:08.236Z",
+        "at": "2026-06-03T13:38:25.935Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -9213,14 +9213,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/696506621e64afd01e53da15",
-        "capturedAt": "2026-06-03T13:30:08.236Z",
+        "capturedAt": "2026-06-03T13:38:25.935Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:08.236Z",
+        "at": "2026-06-03T13:38:25.935Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -9295,14 +9295,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/698f7cbe6724c63d00f2902d",
-        "capturedAt": "2026-06-03T13:30:08.236Z",
+        "capturedAt": "2026-06-03T13:38:25.935Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:08.236Z",
+        "at": "2026-06-03T13:38:25.935Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -9376,14 +9376,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6949a99b6724c63d00e83224",
-        "capturedAt": "2026-06-03T13:30:08.913Z",
+        "capturedAt": "2026-06-03T13:38:26.717Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:08.913Z",
+        "at": "2026-06-03T13:38:26.717Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -9457,14 +9457,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69867ececbf1533ca5365bf9",
-        "capturedAt": "2026-06-03T13:30:08.913Z",
+        "capturedAt": "2026-06-03T13:38:26.717Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:08.913Z",
+        "at": "2026-06-03T13:38:26.717Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -9542,14 +9542,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69aef20d491b809c6f1f2173",
-        "capturedAt": "2026-06-03T13:30:08.913Z",
+        "capturedAt": "2026-06-03T13:38:26.717Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:08.913Z",
+        "at": "2026-06-03T13:38:26.717Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -9623,14 +9623,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69ecc4ca129f1274383abd39",
-        "capturedAt": "2026-06-03T13:30:08.913Z",
+        "capturedAt": "2026-06-03T13:38:26.717Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:08.913Z",
+        "at": "2026-06-03T13:38:26.717Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -9704,14 +9704,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69ff8ee9caf93436005ada17",
-        "capturedAt": "2026-06-03T13:30:08.913Z",
+        "capturedAt": "2026-06-03T13:38:26.717Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:08.913Z",
+        "at": "2026-06-03T13:38:26.717Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -9793,14 +9793,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a0e2bc3fab4ff0f649a83e0",
-        "capturedAt": "2026-06-03T13:30:08.913Z",
+        "capturedAt": "2026-06-03T13:38:26.717Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:08.913Z",
+        "at": "2026-06-03T13:38:26.717Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -9874,14 +9874,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/697bad20491b809c6f162599",
-        "capturedAt": "2026-06-03T13:30:08.913Z",
+        "capturedAt": "2026-06-03T13:38:26.717Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:08.913Z",
+        "at": "2026-06-03T13:38:26.717Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -9956,14 +9956,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a079b43c6a1dc3d00d402ef",
-        "capturedAt": "2026-06-03T13:30:08.913Z",
+        "capturedAt": "2026-06-03T13:38:26.718Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:08.913Z",
+        "at": "2026-06-03T13:38:26.718Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -10038,14 +10038,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69fdecfbdcc3559e3b3b7a38",
-        "capturedAt": "2026-06-03T13:30:08.913Z",
+        "capturedAt": "2026-06-03T13:38:26.718Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:08.913Z",
+        "at": "2026-06-03T13:38:26.718Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -10130,14 +10130,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69f92feccaf934360059cb1a",
-        "capturedAt": "2026-06-03T13:30:08.913Z",
+        "capturedAt": "2026-06-03T13:38:26.718Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:08.913Z",
+        "at": "2026-06-03T13:38:26.718Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -10211,14 +10211,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69fb96b500c14247035b1462",
-        "capturedAt": "2026-06-03T13:30:08.913Z",
+        "capturedAt": "2026-06-03T13:38:26.718Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:08.913Z",
+        "at": "2026-06-03T13:38:26.718Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -10294,14 +10294,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69fcd262e8af4a2f0070d73d",
-        "capturedAt": "2026-06-03T13:30:08.914Z",
+        "capturedAt": "2026-06-03T13:38:26.718Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:08.914Z",
+        "at": "2026-06-03T13:38:26.718Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -10383,14 +10383,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a148a7fcaf93436005e3984",
-        "capturedAt": "2026-06-03T13:30:09.873Z",
+        "capturedAt": "2026-06-03T13:38:27.303Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:09.873Z",
+        "at": "2026-06-03T13:38:27.303Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -10475,14 +10475,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/692f4cff1b0dca3d00df70e5",
-        "capturedAt": "2026-06-03T13:30:09.873Z",
+        "capturedAt": "2026-06-03T13:38:27.303Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:09.873Z",
+        "at": "2026-06-03T13:38:27.303Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -10556,14 +10556,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a109e4dfab4ff0f649af374",
-        "capturedAt": "2026-06-03T13:30:09.874Z",
+        "capturedAt": "2026-06-03T13:38:27.303Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:09.874Z",
+        "at": "2026-06-03T13:38:27.303Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -10645,14 +10645,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69fe25591773192800186294",
-        "capturedAt": "2026-06-03T13:30:09.874Z",
+        "capturedAt": "2026-06-03T13:38:27.303Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:09.874Z",
+        "at": "2026-06-03T13:38:27.303Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -10734,14 +10734,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a0ddf4cc6a1dc3d00d4eee3",
-        "capturedAt": "2026-06-03T13:30:09.874Z",
+        "capturedAt": "2026-06-03T13:38:27.304Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:09.874Z",
+        "at": "2026-06-03T13:38:27.304Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -10823,14 +10823,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a15d281c6a1dc3d00d62ec8",
-        "capturedAt": "2026-06-03T13:30:09.874Z",
+        "capturedAt": "2026-06-03T13:38:27.304Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:09.874Z",
+        "at": "2026-06-03T13:38:27.304Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -10913,14 +10913,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69d825bf4dacf581ff87bc0b",
-        "capturedAt": "2026-06-03T13:30:09.874Z",
+        "capturedAt": "2026-06-03T13:38:27.304Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:09.874Z",
+        "at": "2026-06-03T13:38:27.304Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -11005,14 +11005,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69713f49b0595799c097b6b1",
-        "capturedAt": "2026-06-03T13:30:09.874Z",
+        "capturedAt": "2026-06-03T13:38:27.304Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:09.874Z",
+        "at": "2026-06-03T13:38:27.304Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -11099,14 +11099,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6962ab55491b809c6f121a72",
-        "capturedAt": "2026-06-03T13:30:09.874Z",
+        "capturedAt": "2026-06-03T13:38:27.304Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:09.874Z",
+        "at": "2026-06-03T13:38:27.304Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -11188,14 +11188,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69711f61c967cb4120833b70",
-        "capturedAt": "2026-06-03T13:30:09.874Z",
+        "capturedAt": "2026-06-03T13:38:27.304Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:09.874Z",
+        "at": "2026-06-03T13:38:27.304Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -11279,14 +11279,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69f2591c2866a5b4884ba403",
-        "capturedAt": "2026-06-03T13:30:09.874Z",
+        "capturedAt": "2026-06-03T13:38:27.304Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:09.874Z",
+        "at": "2026-06-03T13:38:27.304Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -11368,14 +11368,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69dfc67e2866a5b48848c07d",
-        "capturedAt": "2026-06-03T13:30:09.874Z",
+        "capturedAt": "2026-06-03T13:38:27.304Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:09.874Z",
+        "at": "2026-06-03T13:38:27.304Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -11457,14 +11457,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a10c71e4dc267647daa5ef7",
-        "capturedAt": "2026-06-03T13:30:09.874Z",
+        "capturedAt": "2026-06-03T13:38:27.304Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:09.874Z",
+        "at": "2026-06-03T13:38:27.304Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -11549,14 +11549,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69d93ea82866a5b48847be6a",
-        "capturedAt": "2026-06-03T13:30:09.874Z",
+        "capturedAt": "2026-06-03T13:38:27.304Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:09.874Z",
+        "at": "2026-06-03T13:38:27.304Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -11644,14 +11644,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69fb98c8f89ee1580050f873",
-        "capturedAt": "2026-06-03T13:30:10.552Z",
+        "capturedAt": "2026-06-03T13:38:28.028Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:10.552Z",
+        "at": "2026-06-03T13:38:28.028Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -11739,14 +11739,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a02246a43b41b3d0065be22",
-        "capturedAt": "2026-06-03T13:30:10.552Z",
+        "capturedAt": "2026-06-03T13:38:28.028Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:10.552Z",
+        "at": "2026-06-03T13:38:28.028Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -11828,14 +11828,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a0f3a4ee8af4a2f007417c0",
-        "capturedAt": "2026-06-03T13:30:10.552Z",
+        "capturedAt": "2026-06-03T13:38:28.028Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:10.552Z",
+        "at": "2026-06-03T13:38:28.028Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -11922,14 +11922,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/694968c6c967cb41207dfe0f",
-        "capturedAt": "2026-06-03T13:30:10.552Z",
+        "capturedAt": "2026-06-03T13:38:28.028Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:10.552Z",
+        "at": "2026-06-03T13:38:28.028Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -12012,14 +12012,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69e7cd8bb6c4ac1fedcdd904",
-        "capturedAt": "2026-06-03T13:30:10.552Z",
+        "capturedAt": "2026-06-03T13:38:28.028Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:10.552Z",
+        "at": "2026-06-03T13:38:28.028Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -12100,14 +12100,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a0ddb8ba99bdd027d425374",
-        "capturedAt": "2026-06-03T13:30:10.552Z",
+        "capturedAt": "2026-06-03T13:38:28.028Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:10.552Z",
+        "at": "2026-06-03T13:38:28.028Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -12190,14 +12190,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a0f3fedcaf93436005d5bb8",
-        "capturedAt": "2026-06-03T13:30:10.552Z",
+        "capturedAt": "2026-06-03T13:38:28.028Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:10.552Z",
+        "at": "2026-06-03T13:38:28.028Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -12280,14 +12280,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69fb56e7f89ee1580050e0cb",
-        "capturedAt": "2026-06-03T13:30:10.552Z",
+        "capturedAt": "2026-06-03T13:38:28.028Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:10.552Z",
+        "at": "2026-06-03T13:38:28.028Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -12369,14 +12369,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a0492f60c0f2c4503f9fa94",
-        "capturedAt": "2026-06-03T13:30:10.552Z",
+        "capturedAt": "2026-06-03T13:38:28.028Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-06-03T13:30:10.552Z",
+        "at": "2026-06-03T13:38:28.028Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
