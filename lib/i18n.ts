@@ -32,6 +32,8 @@ type UiKey =
   | "search"
   | "searchPlaceholder"
   | "filters"
+  | "closeFilters"
+  | "applyFilters"
   | "list"
   | "map"
   | "language"
@@ -190,6 +192,8 @@ const ui: Record<LanguageCode, Partial<Record<UiKey, string>>> = {
     search: "Search",
     searchPlaceholder: "Search STEM opportunities...",
     filters: "Filters",
+    closeFilters: "Close filters",
+    applyFilters: "Apply filters",
     list: "List",
     map: "Map",
     language: "Language",

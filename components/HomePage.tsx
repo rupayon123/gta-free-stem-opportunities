@@ -507,6 +507,15 @@ export function HomePage() {
     window.localStorage.setItem(savedKey(currentUser.id), JSON.stringify(savedIds));
   }, [backendMode, currentUser, savedIds]);
 
+  useEffect(() => {
+    if (!filtersOpen) return;
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setFiltersOpen(false);
+    };
+    document.addEventListener("keydown", handleKeyDown);
+    return () => document.removeEventListener("keydown", handleKeyDown);
+  }, [filtersOpen]);
+
   const postalLocation = useMemo(() => coordinatesFromPostal(filters.postalCode), [filters.postalCode]);
   const activeLocation = userLocation ?? postalLocation;
   const displayOpportunities = useMemo(() => applyEventEdits(opportunities, adminEventEdits), [adminEventEdits]);
@@ -519,15 +528,23 @@ export function HomePage() {
     if (activeSurface !== "high-school") return filteredOpportunities;
     return filteredOpportunities.filter(isHighSchoolOpportunity);
   }, [activeSurface, filteredOpportunities]);
+
+  const savedIdSet = useMemo(() => new Set(savedIds), [savedIds]);
+
+  const publicFallbackOpportunity = useMemo(() => publicOpportunities(displayOpportunities)[0], [displayOpportunities]);
+
+  const selectedOpportunity = useMemo(
+    () =>
+      visibleOpportunities.find((opportunity) => opportunity.id === selectedId) ??
+      visibleOpportunities[0] ??
+      publicFallbackOpportunity,
+    [publicFallbackOpportunity, selectedId, visibleOpportunities]
+  );
+
   const availableProgramLanguages = useMemo(() => {
     const available = new Set(displayOpportunities.flatMap((opportunity) => opportunity.languages));
     return languagePreferenceOrder.filter((code) => available.has(code));
   }, [displayOpportunities]);
-
-  const selectedOpportunity =
-    visibleOpportunities.find((opportunity) => opportunity.id === selectedId) ??
-    visibleOpportunities[0] ??
-    publicOpportunities(displayOpportunities)[0];
 
   useEffect(() => {
     if (visibleOpportunities.length && (!selectedId || !visibleOpportunities.some((opportunity) => opportunity.id === selectedId))) {
@@ -1041,24 +1058,44 @@ export function HomePage() {
     }
   };
 
-  const filterPanel = (
-    <div className={`filter-panel toolbar-filter ${filtersOpen ? "open" : ""}`} aria-label={t(language, "filters")}>
-      <button
-        className="filter-toggle-button"
-        type="button"
-        onClick={() => setFiltersOpen((current) => !current)}
-        aria-expanded={filtersOpen}
-      >
-        <span>
-          <ListChecks size={18} aria-hidden="true" />
-          {t(language, "filters")}
-        </span>
-      </button>
-      <div className="filter-panel-body">
-        <div className="panel-title desktop-panel-title">
-          <ListChecks size={18} aria-hidden="true" />
-          <span>{t(language, "filters")}</span>
+  const filterButton = (
+    <button
+      className="filter-toggle-button toolbar-filter-button"
+      type="button"
+      onClick={() => setFiltersOpen(true)}
+      aria-haspopup="dialog"
+      aria-expanded={filtersOpen}
+    >
+      <ListChecks size={18} aria-hidden="true" />
+      {t(language, "filters")}
+    </button>
+  );
+
+  const filterModal = filtersOpen ? (
+    <div
+      className="filter-modal-backdrop"
+      role="presentation"
+      onMouseDown={(event) => {
+        if (event.target === event.currentTarget) setFiltersOpen(false);
+      }}
+    >
+      <section className="filter-modal" role="dialog" aria-modal="true" aria-labelledby="filter-modal-title">
+        <div className="filter-modal-header">
+          <div className="filter-modal-title">
+            <ListChecks size={20} aria-hidden="true" />
+            <h2 id="filter-modal-title">{t(language, "filters")}</h2>
+          </div>
+          <div className="filter-modal-actions">
+            <button type="button" className="soft-button" onClick={() => setFiltersOpen(false)}>
+              {t(language, "applyFilters")}
+            </button>
+            <button type="button" className="icon-only-button" onClick={() => setFiltersOpen(false)} aria-label={t(language, "closeFilters")}>
+              <X size={18} aria-hidden="true" />
+            </button>
+          </div>
         </div>
+
+        <div className="filter-panel-body modal-filter-body">
 
         <label className="field full">
           <span>{t(language, "search")}</span>
@@ -1233,8 +1270,9 @@ export function HomePage() {
           </FilterGroup>
         ) : null}
       </div>
+      </section>
     </div>
-  );
+  ) : null;
 
   return (
     <main id="top" className={`site-shell ${activeSurface === "home" ? "home-shell" : "section-shell"}`}>
@@ -1347,7 +1385,7 @@ export function HomePage() {
                   reviewCount={generatedDiscoverySummary.newCandidates}
                   sourceCount={generatedDiscoverySummary.sourcesChecked}
                 />
-                {filterPanel}
+                {filterButton}
                 <button type="button" className="soft-button research-refresh-button" onClick={refreshResearch} disabled={researchRefreshing}>
                   <RefreshCw size={16} aria-hidden="true" className={researchRefreshing ? "spinning" : ""} />
                   {t(language, "refreshResearch")}
@@ -1384,7 +1422,7 @@ export function HomePage() {
                   language={language}
                   activeLocation={activeLocation}
                   selected={selectedOpportunity?.id === opportunity.id}
-                  saved={savedIds.includes(opportunity.id)}
+                  saved={savedIdSet.has(opportunity.id)}
                   onSelect={() => selectOpportunity(opportunity.id)}
                   onSave={() => toggleSaved(opportunity.id)}
                   onCalendar={() => downloadCalendar(opportunity)}
@@ -1399,7 +1437,7 @@ export function HomePage() {
                 <OpportunityDetails
                   opportunity={selectedOpportunity}
                   language={language}
-                  saved={savedIds.includes(selectedOpportunity.id)}
+                  saved={savedIdSet.has(selectedOpportunity.id)}
                   onSave={() => toggleSaved(selectedOpportunity.id)}
                   onCalendar={() => downloadCalendar(selectedOpportunity)}
                   compact
@@ -1430,6 +1468,8 @@ export function HomePage() {
       {activeSurface === "community-hosts" ? (
         <ContributeSection language={language} onSubmit={submitReviewItem} localQueueCount={localQueueCount} />
       ) : null}
+
+      {filterModal}
 
       {authOpen ? (
         <AuthModal
@@ -1471,7 +1511,7 @@ export function HomePage() {
       ) : accountDashboardOpen && currentUser ? (
         <AccountDashboard
           user={currentUser}
-          savedOpportunities={displayOpportunities.filter((opportunity) => savedIds.includes(opportunity.id))}
+          savedOpportunities={displayOpportunities.filter((opportunity) => savedIdSet.has(opportunity.id))}
           savedCount={savedIds.length}
           language={language}
           theme={theme}
