@@ -32,15 +32,19 @@ const baseFilters: Filters = {
 const requiredUiKeys = [
   "brand",
   "mission",
+  "headerTagline",
   "beta",
   "search",
+  "searchPlaceholder",
   "filters",
   "list",
   "map",
   "siteLanguage",
+  "programLanguage",
   "theme",
   "light",
   "dark",
+  "system",
   "auto",
   "region",
   "city",
@@ -53,10 +57,35 @@ const requiredUiKeys = [
   "verifiedFree",
   "calendar",
   "save",
+  "saved",
+  "directions",
   "results",
   "freeOnly",
+  "translationNote",
+  "allGta",
+  "allCities",
+  "allCategories",
+  "any",
   "showFilters",
-  "hideFilters"
+  "hideFilters",
+  "refreshResearch",
+  "registerApply",
+  "date",
+  "deadline",
+  "ages",
+  "grades",
+  "commitment",
+  "access",
+  "equipment",
+  "food",
+  "capacity",
+  "sourceScoutMiniText",
+  "opportunityPin",
+  "yourArea",
+  "selectedListingInfo",
+  "viewMode",
+  "searchEngineAuto",
+  "expiredHidden"
 ] as const;
 
 assert(languagePreferenceOrder.length === 18, "Expected 18 launch languages.");
@@ -111,6 +140,16 @@ for (const opportunity of opportunities) {
 const publicListings = publicOpportunities(opportunities);
 assert(publicListings.length > 0, "Expected at least one public active listing.");
 assert(publicListings.every((opportunity) => isPublicOpportunity(opportunity)), "Public listings must be active and unexpired.");
+const expiredClone = {
+  ...publicListings[0],
+  id: `${publicListings[0].id}-qa-expired`,
+  startDate: "2024-01-01T09:00:00-05:00",
+  endDate: "2024-01-01T10:00:00-05:00",
+  deadline: "2024-01-01T09:00:00-05:00",
+  status: "active" as const
+};
+assert(!isPublicOpportunity(expiredClone), "Date-expired active listings must be hidden from public search.");
+assert(!publicOpportunities([...opportunities, expiredClone]).some((opportunity) => opportunity.id === expiredClone.id), "Expired listings must not appear in public results.");
 
 const allResults = filterOpportunities(opportunities, baseFilters, null);
 assert(allResults.length === publicListings.length, "Default search should return only public active opportunities.");

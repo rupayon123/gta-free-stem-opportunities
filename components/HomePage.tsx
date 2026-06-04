@@ -652,19 +652,20 @@ export function HomePage() {
 
   const refreshResearch = useCallback(async () => {
     setResearchRefreshing(true);
-    setResearchStatus("Checking the newest published research database...");
+    setResearchStatus(t(language, "searchEngineAuto"));
     try {
       await fetch(`${window.location.origin}/?research-refresh=${Date.now()}`, { cache: "reload" });
-      setResearchStatus(
-        `${generatedDiscoverySummary.sourcesChecked} sources are scanned every 6 hours. ${generatedDiscoverySummary.newCandidates} new finds are being verified.`
-      );
+      const scanLabel = t(language, "sourceScoutMiniText")
+        .replace("{sources}", String(generatedDiscoverySummary.sourcesChecked))
+        .replace("{review}", String(generatedDiscoverySummary.newCandidates));
+      setResearchStatus(`${scanLabel}. ${t(language, "expiredHidden")}`);
     } catch {
-      setResearchStatus("Could not check the newest published database. The scheduled search engine is still running in the background.");
+      setResearchStatus(t(language, "searchEngineAuto"));
     } finally {
       setResearchRefreshing(false);
       window.setTimeout(() => setResearchStatus(""), 6200);
     }
-  }, []);
+  }, [language]);
 
   const handleSignup = async (formData: FormData) => {
     const name = String(formData.get("name") ?? "").trim();
@@ -1033,6 +1034,201 @@ export function HomePage() {
     }
   };
 
+  const filterPanel = (
+    <div className={`filter-panel toolbar-filter ${filtersOpen ? "open" : ""}`} aria-label={t(language, "filters")}>
+      <button
+        className="filter-toggle-button"
+        type="button"
+        onClick={() => setFiltersOpen((current) => !current)}
+        aria-expanded={filtersOpen}
+      >
+        <span>
+          <ListChecks size={18} aria-hidden="true" />
+          {t(language, "filters")}
+        </span>
+      </button>
+      <div className="filter-panel-body">
+        <div className="panel-title desktop-panel-title">
+          <ListChecks size={18} aria-hidden="true" />
+          <span>{t(language, "filters")}</span>
+        </div>
+
+        <label className="field full">
+          <span>{t(language, "search")}</span>
+          <div className="input-icon">
+            <Search size={17} aria-hidden="true" />
+            <input
+              value={filters.query}
+              onChange={(event) => updateFilter("query", event.target.value)}
+              placeholder={t(language, "searchPlaceholder")}
+            />
+          </div>
+        </label>
+
+        <div className="two-col">
+          <label className="field">
+            <span>{t(language, "region")}</span>
+            <select
+              value={filters.region}
+              onChange={(event) => updateFilter("region", event.target.value as Filters["region"])}
+            >
+              <option value="All">{t(language, "allGta")}</option>
+              {regions.map((region) => (
+                <option key={region} value={region}>
+                  {region}
+                </option>
+              ))}
+            </select>
+          </label>
+
+          <label className="field">
+            <span>{t(language, "city")}</span>
+            <select value={filters.city} onChange={(event) => updateFilter("city", event.target.value)}>
+              <option value="">{t(language, "allCities")}</option>
+              {cityOptions.map((city) => (
+                <option key={city} value={city}>
+                  {city}
+                </option>
+              ))}
+            </select>
+          </label>
+        </div>
+
+        <label className="field full">
+          <span>{t(language, "category")}</span>
+          <select
+            value={filters.category}
+            onChange={(event) => updateFilter("category", event.target.value as Filters["category"])}
+          >
+            <option value="All">{t(language, "allCategories")}</option>
+            {categories.map((category) => (
+              <option key={category} value={category}>
+                {category}
+              </option>
+            ))}
+          </select>
+        </label>
+
+        <div className="two-col">
+          <label className="field">
+            <span>{t(language, "age")}</span>
+            <input
+              value={filters.age}
+              type="number"
+              min="0"
+              max="99"
+              onChange={(event) => updateFilter("age", event.target.value)}
+              placeholder={t(language, "any")}
+            />
+          </label>
+          <label className="field">
+            <span>{t(language, "programLanguage")}</span>
+            <select
+              value={filters.language}
+              onChange={(event) => updateFilter("language", event.target.value as Filters["language"])}
+            >
+              <option value="all">{t(language, "any")}</option>
+              {availableProgramLanguages.map((code) => (
+                <option key={code} value={code}>
+                  {languageMeta[code].label}
+                </option>
+              ))}
+            </select>
+          </label>
+        </div>
+
+        <div className="location-tools">
+          <label className="field">
+            <span>{t(language, "postal")}</span>
+            <input
+              value={filters.postalCode}
+              onChange={(event) => updateFilter("postalCode", event.target.value.toUpperCase())}
+              placeholder="M5T"
+            />
+          </label>
+          <button className="icon-text-button" type="button" onClick={requestLocation}>
+            <LocateFixed size={17} aria-hidden="true" />
+            {t(language, "nearMe")}
+          </button>
+        </div>
+        {locationStatus || postalLocation ? (
+          <p className="status-line">
+            {locationStatus || `Approximate area: ${postalLocation?.label ?? "postal code"}`}
+          </p>
+        ) : null}
+
+        <div className="field full distance-field">
+          <span>
+            {t(language, "distance")}: {filters.distanceKm} km
+          </span>
+          <div className="distance-control">
+            <input
+              type="range"
+              min="5"
+              max="100"
+              step="5"
+              value={filters.distanceKm}
+              onChange={(event) => updateFilter("distanceKm", clampDistance(Number(event.target.value)))}
+              aria-label={`${t(language, "distance")} radius`}
+            />
+            <label className="distance-number">
+              <span className="sr-only">{t(language, "distance")} in kilometres</span>
+              <input
+                type="number"
+                min="5"
+                max="100"
+                step="5"
+                value={filters.distanceKm}
+                onChange={(event) => updateFilter("distanceKm", clampDistance(Number(event.target.value)))}
+                aria-label={`${t(language, "distance")} in kilometres`}
+              />
+              <span>km</span>
+            </label>
+          </div>
+        </div>
+
+        <FilterGroup title={t(language, "equity")}>
+          <Toggle
+            checked={filters.blackFocused}
+            onChange={(value) => updateFilter("blackFocused", value)}
+            label={t(language, "black")}
+          />
+          <Toggle
+            checked={filters.girlsFocused}
+            onChange={(value) => updateFilter("girlsFocused", value)}
+            label={t(language, "girls")}
+          />
+          <Toggle
+            checked={filters.indigenousFocused}
+            onChange={(value) => updateFilter("indigenousFocused", value)}
+            label={t(language, "indigenous")}
+          />
+        </FilterGroup>
+
+        {activeSurface === "high-school" ? (
+          <FilterGroup title={t(language, "highSchool")}>
+            <Toggle
+              checked={filters.volunteerHours}
+              onChange={(value) => updateFilter("volunteerHours", value)}
+              label={t(language, "volunteerHours")}
+            />
+            <Toggle checked={filters.coop} onChange={(value) => updateFilter("coop", value)} label={t(language, "coop")} />
+            <Toggle
+              checked={filters.mentorship}
+              onChange={(value) => updateFilter("mentorship", value)}
+              label={t(language, "mentorship")}
+            />
+            <Toggle
+              checked={filters.leadership}
+              onChange={(value) => updateFilter("leadership", value)}
+              label={t(language, "leadership")}
+            />
+          </FilterGroup>
+        ) : null}
+      </div>
+    </div>
+  );
+
   return (
     <main id="top" className={`site-shell ${activeSurface === "home" ? "home-shell" : "section-shell"}`}>
       <Header
@@ -1121,200 +1317,6 @@ export function HomePage() {
         aria-label={activeSurface === "high-school" ? "High school opportunity search" : "Opportunity search"}
       >
         <div className="search-layout">
-          <aside className={`filter-panel ${filtersOpen ? "open" : ""}`} aria-label={t(language, "filters")}>
-            <button
-              className="filter-toggle-button"
-              type="button"
-              onClick={() => setFiltersOpen((current) => !current)}
-              aria-expanded={filtersOpen}
-            >
-              <span>
-                <ListChecks size={18} aria-hidden="true" />
-                {t(language, "filters")}
-              </span>
-              <strong>{filtersOpen ? t(language, "hideFilters") : t(language, "showFilters")}</strong>
-            </button>
-            <div className="filter-panel-body">
-              <div className="panel-title desktop-panel-title">
-                <ListChecks size={18} aria-hidden="true" />
-                <span>{t(language, "filters")}</span>
-              </div>
-
-              <label className="field full">
-                <span>{t(language, "search")}</span>
-                <div className="input-icon">
-                  <Search size={17} aria-hidden="true" />
-                  <input
-                    value={filters.query}
-                    onChange={(event) => updateFilter("query", event.target.value)}
-                    placeholder={t(language, "searchPlaceholder")}
-                  />
-                </div>
-              </label>
-
-              <div className="two-col">
-                <label className="field">
-                  <span>{t(language, "region")}</span>
-                  <select
-                    value={filters.region}
-                    onChange={(event) => updateFilter("region", event.target.value as Filters["region"])}
-                  >
-                    <option value="All">{t(language, "allGta")}</option>
-                    {regions.map((region) => (
-                      <option key={region} value={region}>
-                        {region}
-                      </option>
-                    ))}
-                  </select>
-                </label>
-
-                <label className="field">
-                  <span>{t(language, "city")}</span>
-                  <select value={filters.city} onChange={(event) => updateFilter("city", event.target.value)}>
-                    <option value="">{t(language, "allCities")}</option>
-                    {cityOptions.map((city) => (
-                      <option key={city} value={city}>
-                        {city}
-                      </option>
-                    ))}
-                  </select>
-                </label>
-              </div>
-
-              <label className="field full">
-                <span>{t(language, "category")}</span>
-                <select
-                  value={filters.category}
-                  onChange={(event) => updateFilter("category", event.target.value as Filters["category"])}
-                >
-                  <option value="All">{t(language, "allCategories")}</option>
-                  {categories.map((category) => (
-                    <option key={category} value={category}>
-                      {category}
-                    </option>
-                  ))}
-                </select>
-              </label>
-
-              <div className="two-col">
-                <label className="field">
-                  <span>{t(language, "age")}</span>
-                  <input
-                    value={filters.age}
-                    type="number"
-                    min="0"
-                    max="99"
-                    onChange={(event) => updateFilter("age", event.target.value)}
-                    placeholder={t(language, "any")}
-                  />
-                </label>
-                <label className="field">
-                  <span>{t(language, "programLanguage")}</span>
-                  <select
-                    value={filters.language}
-                    onChange={(event) => updateFilter("language", event.target.value as Filters["language"])}
-                  >
-                    <option value="all">{t(language, "any")}</option>
-                    {availableProgramLanguages.map((code) => (
-                      <option key={code} value={code}>
-                        {languageMeta[code].label}
-                      </option>
-                    ))}
-                  </select>
-                </label>
-              </div>
-
-              <div className="location-tools">
-                <label className="field">
-                  <span>{t(language, "postal")}</span>
-                  <input
-                    value={filters.postalCode}
-                    onChange={(event) => updateFilter("postalCode", event.target.value.toUpperCase())}
-                    placeholder="M5T"
-                  />
-                </label>
-                <button className="icon-text-button" type="button" onClick={requestLocation}>
-                  <LocateFixed size={17} aria-hidden="true" />
-                  {t(language, "nearMe")}
-                </button>
-              </div>
-              {locationStatus || postalLocation ? (
-                <p className="status-line">
-                  {locationStatus || `Approximate area: ${postalLocation?.label ?? "postal code"}`}
-                </p>
-              ) : null}
-
-              <div className="field full distance-field">
-                <span>
-                  {t(language, "distance")}: {filters.distanceKm} km
-                </span>
-                <div className="distance-control">
-                  <input
-                    type="range"
-                    min="5"
-                    max="100"
-                    step="5"
-                    value={filters.distanceKm}
-                    onChange={(event) => updateFilter("distanceKm", clampDistance(Number(event.target.value)))}
-                    aria-label={`${t(language, "distance")} radius`}
-                  />
-                  <label className="distance-number">
-                    <span className="sr-only">{t(language, "distance")} in kilometres</span>
-                    <input
-                      type="number"
-                      min="5"
-                      max="100"
-                      step="5"
-                      value={filters.distanceKm}
-                      onChange={(event) => updateFilter("distanceKm", clampDistance(Number(event.target.value)))}
-                      aria-label={`${t(language, "distance")} in kilometres`}
-                    />
-                    <span>km</span>
-                  </label>
-                </div>
-              </div>
-
-              <FilterGroup title={t(language, "equity")}>
-                <Toggle
-                  checked={filters.blackFocused}
-                  onChange={(value) => updateFilter("blackFocused", value)}
-                  label={t(language, "black")}
-                />
-                <Toggle
-                  checked={filters.girlsFocused}
-                  onChange={(value) => updateFilter("girlsFocused", value)}
-                  label={t(language, "girls")}
-                />
-                <Toggle
-                  checked={filters.indigenousFocused}
-                  onChange={(value) => updateFilter("indigenousFocused", value)}
-                  label={t(language, "indigenous")}
-                />
-              </FilterGroup>
-
-              {activeSurface === "high-school" ? (
-                <FilterGroup title={t(language, "highSchool")}>
-                  <Toggle
-                    checked={filters.volunteerHours}
-                    onChange={(value) => updateFilter("volunteerHours", value)}
-                    label={t(language, "volunteerHours")}
-                  />
-                  <Toggle checked={filters.coop} onChange={(value) => updateFilter("coop", value)} label={t(language, "coop")} />
-                  <Toggle
-                    checked={filters.mentorship}
-                    onChange={(value) => updateFilter("mentorship", value)}
-                    label={t(language, "mentorship")}
-                  />
-                  <Toggle
-                    checked={filters.leadership}
-                    onChange={(value) => updateFilter("leadership", value)}
-                    label={t(language, "leadership")}
-                  />
-                </FilterGroup>
-              ) : null}
-            </div>
-          </aside>
-
           <div className="results-panel">
             <div className="results-toolbar">
               <div>
@@ -1329,11 +1331,12 @@ export function HomePage() {
                   reviewCount={generatedDiscoverySummary.newCandidates}
                   sourceCount={generatedDiscoverySummary.sourcesChecked}
                 />
+                {filterPanel}
                 <button type="button" className="soft-button research-refresh-button" onClick={refreshResearch} disabled={researchRefreshing}>
                   <RefreshCw size={16} aria-hidden="true" className={researchRefreshing ? "spinning" : ""} />
                   {t(language, "refreshResearch")}
                 </button>
-                <div className="segmented" aria-label="View mode">
+                <div className="segmented" aria-label={t(language, "viewMode")}>
                   <button
                     className={viewMode === "list" ? "active" : ""}
                     type="button"
@@ -1374,7 +1377,7 @@ export function HomePage() {
             </div>
           </div>
 
-          <aside className={`selected-column ${viewMode === "map" ? "map-priority" : ""}`} aria-label="Selected program information">
+          <aside className={`selected-column ${viewMode === "map" ? "map-priority" : ""}`} aria-label={t(language, "selectedListingInfo")}>
             {selectedOpportunity ? (
               <div id="selected-listing-details" className="selected-details-card">
                 <OpportunityDetails
@@ -1390,6 +1393,7 @@ export function HomePage() {
 
             <div className="map-column">
               <MapPanel
+                language={language}
                 opportunities={visibleOpportunities}
                 selectedId={selectedOpportunity?.id}
                 onSelect={selectOpportunity}
@@ -1510,7 +1514,7 @@ function Header({
         </span>
         <span>
           <strong>GTA FREE STEM Opportunities</strong>
-          <small>Verified free opportunities</small>
+          <small>{t(language, "headerTagline")}</small>
         </span>
       </a>
 
@@ -1706,9 +1710,9 @@ function OpportunityCard({
         <span className="chip success">{t(language, "verifiedFree")}</span>
         {opportunity.volunteerHoursEligible ? <span className="chip">{t(language, "volunteerHours")}</span> : null}
         {opportunity.coopEligible ? <span className="chip">{t(language, "coop")}</span> : null}
-        {opportunity.communityFocus.includes("Black-focused") ? <span className="chip berry">Black-focused</span> : null}
-        {opportunity.communityFocus.includes("Girls/women-focused") ? <span className="chip lavender">Girls/women</span> : null}
-        {opportunity.communityFocus.includes("Indigenous-focused") ? <span className="chip mint">Indigenous</span> : null}
+        {opportunity.communityFocus.includes("Black-focused") ? <span className="chip berry">{t(language, "black")}</span> : null}
+        {opportunity.communityFocus.includes("Girls/women-focused") ? <span className="chip lavender">{t(language, "girls")}</span> : null}
+        {opportunity.communityFocus.includes("Indigenous-focused") ? <span className="chip mint">{t(language, "indigenous")}</span> : null}
       </div>
       <div className="card-actions">
         <button type="button" onClick={onSave} className={saved ? "soft-button saved" : "soft-button"}>
@@ -1729,11 +1733,13 @@ function OpportunityCard({
 }
 
 function MapPanel({
+  language,
   opportunities,
   selectedId,
   onSelect,
   activeLocation
 }: {
+  language: LanguageCode;
   opportunities: Opportunity[];
   selectedId?: string;
   onSelect: (id: string) => void;
@@ -1812,15 +1818,15 @@ function MapPanel({
 
   return (
     <div className="map-shell">
-      <div ref={mapContainer} className="map-canvas" aria-label="Map of free GTA opportunities" />
+      <div ref={mapContainer} className="map-canvas" aria-label={t(language, "map")} />
       <div className="map-legend">
         <span>
           <span className="legend-dot" />
-          Opportunity
+          {t(language, "opportunityPin")}
         </span>
         <span>
           <span className="legend-dot current" />
-          Your area
+          {t(language, "yourArea")}
         </span>
       </div>
     </div>
