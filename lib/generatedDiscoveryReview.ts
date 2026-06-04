@@ -3,14 +3,12 @@ import type { DiscoveredOpportunity } from "./discovery";
 export const generatedDiscoverySummary = {
   "mode": "deterministic",
   "sourcesChecked": 30,
-  "candidatesFound": 276,
-  "newCandidates": 55,
-  "duplicatesSkipped": 38,
+  "candidatesFound": 310,
+  "newCandidates": 68,
+  "duplicatesSkipped": 55,
   "warnings": [
     "Could not check Credit Valley Conservation youth opportunities: 403 Forbidden.",
-    "Could not check Volunteer MBC youth opportunities: 403 Forbidden.",
-    "Could not check Eventbrite free science and technology events: 405 Not Allowed.",
-    "Could not check Eventbrite free online science and technology events: 405 Not Allowed."
+    "Could not check Volunteer MBC youth opportunities: 403 Forbidden."
   ]
 } as const;
 
@@ -721,7 +719,7 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Oshawa Public Libraries STEM events"
   },
   {
-    "id": "discovered-clarington-library-programs-learning-technology-ef1f52444b44",
+    "id": "discovered-clarington-library-programs-learning-technology-230c06781e35",
     "title": "Learning & Technology",
     "organization": "Clarington Library, Museums & Archives",
     "description": "Learning & Technology listed by Clarington Library programs.",
@@ -735,7 +733,7 @@ export const generatedDiscoveryReviewCandidates = [
       "en"
     ],
     "startDate": "2026-06-04T09:00:00-04:00",
-    "sourceUrl": "https://www.cplma.ca/learning-technology",
+    "sourceUrl": "http://www.cplma.ca/learning-technology",
     "lastChecked": "2026-06-04",
     "lastSeen": "2026-06-04",
     "status": "needs_review",
@@ -754,7 +752,7 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Clarington Library programs"
   },
   {
-    "id": "discovered-clarington-library-programs-computers-internet-access-541dee3079cc",
+    "id": "discovered-clarington-library-programs-computers-internet-access-3cb588204464",
     "title": "Computers & Internet Access",
     "organization": "Clarington Library, Museums & Archives",
     "description": "Computers & Internet Access listed by Clarington Library programs.",
@@ -768,7 +766,7 @@ export const generatedDiscoveryReviewCandidates = [
       "en"
     ],
     "startDate": "2026-06-04T09:00:00-04:00",
-    "sourceUrl": "https://www.cplma.ca/learning-technology/computers-and-internet-access",
+    "sourceUrl": "http://www.cplma.ca/learning-technology/computers-and-internet-access",
     "lastChecked": "2026-06-04",
     "lastSeen": "2026-06-04",
     "status": "needs_review",
@@ -787,7 +785,7 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Clarington Library programs"
   },
   {
-    "id": "discovered-clarington-library-programs-maker-s-space-73692ec01a1b",
+    "id": "discovered-clarington-library-programs-maker-s-space-2a794c50bde2",
     "title": "Maker's Space",
     "organization": "Clarington Library, Museums & Archives",
     "description": "Maker's Space listed by Clarington Library programs.",
@@ -801,7 +799,7 @@ export const generatedDiscoveryReviewCandidates = [
       "en"
     ],
     "startDate": "2026-06-04T09:00:00-04:00",
-    "sourceUrl": "https://www.cplma.ca/learning-technology/makers-space-the-studio",
+    "sourceUrl": "http://www.cplma.ca/learning-technology/makers-space-the-studio",
     "lastChecked": "2026-06-04",
     "lastSeen": "2026-06-04",
     "status": "needs_review",
@@ -821,7 +819,7 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Clarington Library programs"
   },
   {
-    "id": "discovered-clarington-library-programs-jobs-volunteering-812e9b03cdd9",
+    "id": "discovered-clarington-library-programs-jobs-volunteering-034bd1adb633",
     "title": "Jobs & Volunteering",
     "organization": "Clarington Library, Museums & Archives",
     "description": "Jobs & Volunteering listed by Clarington Library programs.",
@@ -835,7 +833,7 @@ export const generatedDiscoveryReviewCandidates = [
       "en"
     ],
     "startDate": "2026-06-04T09:00:00-04:00",
-    "sourceUrl": "https://www.cplma.ca/about-us/jobs-and-volunteering",
+    "sourceUrl": "http://www.cplma.ca/about-us/jobs-and-volunteering",
     "lastChecked": "2026-06-04",
     "lastSeen": "2026-06-04",
     "status": "needs_review",
@@ -1882,5 +1880,467 @@ export const generatedDiscoveryReviewCandidates = [
       "Free access wording needs human confirmation."
     ],
     "sourceName": "Ontario Tech Engineering Outreach"
+  },
+  {
+    "id": "discovered-eventbrite-free-science-tech-data-visualization-and-statistics-in-r-boo-4d9f158bd777",
+    "title": "Data Visualization and Statistics in R: Boot Camp",
+    "organization": "Eventbrite public event search",
+    "description": "Data Visualization and Statistics in R: Boot Camp listed by Eventbrite free science and technology events.",
+    "city": "Toronto",
+    "region": "Toronto",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "Science & Engineering",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-06-04T09:00:00-04:00",
+    "sourceUrl": "https://www.eventbrite.com/e/data-visualization-and-statistics-in-r-boot-camp-tickets-1990590999264?aff=ebdssbdestsearch",
+    "lastChecked": "2026-06-04",
+    "lastSeen": "2026-06-04",
+    "status": "needs_review",
+    "tags": [
+      "science & engineering",
+      "free",
+      "science",
+      "technology",
+      "hackathon",
+      "coding",
+      "robotics"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "No clear future date found on the crawled page.",
+      "Source is a broad public event index, so official provider confirmation is needed."
+    ],
+    "sourceName": "Eventbrite free science and technology events"
+  },
+  {
+    "id": "discovered-eventbrite-free-science-tech-science-campus-tour-8b1442f65029",
+    "title": "Science Campus Tour",
+    "organization": "Eventbrite public event search",
+    "description": "Science Campus Tour listed by Eventbrite free science and technology events.",
+    "city": "Toronto",
+    "region": "Toronto",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "Science & Engineering",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-06-04T09:00:00-04:00",
+    "sourceUrl": "https://www.eventbrite.ca/e/science-campus-tour-tickets-1988834450379?aff=ebdssbdestsearch",
+    "lastChecked": "2026-06-04",
+    "lastSeen": "2026-06-04",
+    "status": "needs_review",
+    "tags": [
+      "science & engineering",
+      "free",
+      "science",
+      "technology",
+      "hackathon",
+      "coding",
+      "robotics"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "No clear future date found on the crawled page.",
+      "Source is a broad public event index, so official provider confirmation is needed."
+    ],
+    "sourceName": "Eventbrite free science and technology events"
+  },
+  {
+    "id": "discovered-eventbrite-free-science-tech-a-breath-of-clean-air-building-climate-res-45cc9bb38dfc",
+    "title": "A Breath of Clean Air: Building Climate Resilience by Improving IAQ",
+    "organization": "Eventbrite public event search",
+    "description": "A Breath of Clean Air: Building Climate Resilience by Improving IAQ listed by Eventbrite free science and technology events.",
+    "city": "Toronto",
+    "region": "Toronto",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "Science & Engineering",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-06-04T09:00:00-04:00",
+    "sourceUrl": "https://www.eventbrite.ca/e/a-breath-of-clean-air-building-climate-resilience-by-improving-iaq-tickets-1989436343658?aff=ebdssbdestsearch",
+    "lastChecked": "2026-06-04",
+    "lastSeen": "2026-06-04",
+    "status": "needs_review",
+    "tags": [
+      "science & engineering",
+      "free",
+      "science",
+      "technology",
+      "hackathon",
+      "coding",
+      "robotics"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "No clear future date found on the crawled page.",
+      "Source is a broad public event index, so official provider confirmation is needed."
+    ],
+    "sourceName": "Eventbrite free science and technology events"
+  },
+  {
+    "id": "discovered-eventbrite-free-science-tech-designing-science-innovations-in-health-re-11496863ca9f",
+    "title": "Designing Science - Innovations in Health Research Fall 2026",
+    "organization": "Eventbrite public event search",
+    "description": "Designing Science - Innovations in Health Research Fall 2026 listed by Eventbrite free science and technology events.",
+    "city": "Toronto",
+    "region": "Toronto",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "Science & Engineering",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-06-04T09:00:00-04:00",
+    "sourceUrl": "https://www.eventbrite.ca/e/designing-science-innovations-in-health-research-fall-2026-tickets-1990783742765?aff=ebdssbdestsearch",
+    "lastChecked": "2026-06-04",
+    "lastSeen": "2026-06-04",
+    "status": "needs_review",
+    "tags": [
+      "science & engineering",
+      "free",
+      "science",
+      "technology",
+      "hackathon",
+      "coding",
+      "robotics"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "No clear future date found on the crawled page.",
+      "Source is a broad public event index, so official provider confirmation is needed."
+    ],
+    "sourceName": "Eventbrite free science and technology events"
+  },
+  {
+    "id": "discovered-eventbrite-free-science-tech-free-in-person-robotics-class-in-mississau-da4434385c4b",
+    "title": "Free In-person Robotics Class in Mississauga, ON for Kids Ages 7-14 Years",
+    "organization": "Eventbrite public event search",
+    "description": "Free In-person Robotics Class in Mississauga, ON for Kids Ages 7-14 Years listed by Eventbrite free science and technology events.",
+    "city": "Toronto",
+    "region": "Toronto",
+    "ageMin": 7,
+    "ageMax": 14,
+    "category": "Coding & Robotics",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-06-04T09:00:00-04:00",
+    "sourceUrl": "https://www.eventbrite.com/e/free-in-person-robotics-class-in-mississauga-on-for-kids-ages-7-14-years-tickets-1990755542417?aff=ebdssbdestsearch",
+    "lastChecked": "2026-06-04",
+    "lastSeen": "2026-06-04",
+    "status": "needs_review",
+    "tags": [
+      "coding & robotics",
+      "free",
+      "science",
+      "technology",
+      "hackathon",
+      "coding",
+      "robotics"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "No clear future date found on the crawled page.",
+      "Source is a broad public event index, so official provider confirmation is needed."
+    ],
+    "sourceName": "Eventbrite free science and technology events"
+  },
+  {
+    "id": "discovered-eventbrite-free-science-tech-robotics-meetup-and-show-tell-8d8890960a5b",
+    "title": "Robotics Meetup and Show & Tell",
+    "organization": "Eventbrite public event search",
+    "description": "Robotics Meetup and Show & Tell listed by Eventbrite free science and technology events.",
+    "city": "Toronto",
+    "region": "Toronto",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "Coding & Robotics",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-06-04T09:00:00-04:00",
+    "sourceUrl": "https://www.eventbrite.com/e/robotics-meetup-and-show-tell-tickets-1988283546611?aff=ebdssbdestsearch",
+    "lastChecked": "2026-06-04",
+    "lastSeen": "2026-06-04",
+    "status": "needs_review",
+    "tags": [
+      "coding & robotics",
+      "free",
+      "science",
+      "technology",
+      "hackathon",
+      "coding",
+      "robotics"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "No clear future date found on the crawled page.",
+      "Source is a broad public event index, so official provider confirmation is needed."
+    ],
+    "sourceName": "Eventbrite free science and technology events"
+  },
+  {
+    "id": "discovered-eventbrite-free-online-science-tech-reboot-2026-ai-chatbots-save-time-and-huma-52a2ae47e8d3",
+    "title": "Reboot 2026 - AI chatbots: save time and humanise your automation",
+    "organization": "Eventbrite public event search",
+    "description": "Reboot 2026 - AI chatbots: save time and humanise your automation listed by Eventbrite free online science and technology events.",
+    "city": "Toronto",
+    "region": "Toronto",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "Science & Engineering",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-06-04T09:00:00-04:00",
+    "sourceUrl": "https://www.eventbrite.com.au/e/reboot-2026-ai-chatbots-save-time-and-humanise-your-automation-tickets-1983846232485?aff=ebdssbdestsearch",
+    "lastChecked": "2026-06-04",
+    "lastSeen": "2026-06-04",
+    "status": "needs_review",
+    "tags": [
+      "science & engineering",
+      "free",
+      "online",
+      "science",
+      "technology",
+      "hackathon",
+      "coding",
+      "robotics"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "No clear future date found on the crawled page.",
+      "Source is a broad public event index, so official provider confirmation is needed."
+    ],
+    "sourceName": "Eventbrite free online science and technology events"
+  },
+  {
+    "id": "discovered-eventbrite-free-online-science-tech-data-analysis-project-bootcamp-8541266831e9",
+    "title": "Data Analysis Project Bootcamp",
+    "organization": "Eventbrite public event search",
+    "description": "Data Analysis Project Bootcamp listed by Eventbrite free online science and technology events.",
+    "city": "Toronto",
+    "region": "Toronto",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "Science & Engineering",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-06-04T09:00:00-04:00",
+    "sourceUrl": "https://www.eventbrite.ca/e/data-analysis-project-bootcamp-tickets-1990150711351?aff=ebdssbdestsearch",
+    "lastChecked": "2026-06-04",
+    "lastSeen": "2026-06-04",
+    "status": "needs_review",
+    "tags": [
+      "science & engineering",
+      "free",
+      "online",
+      "science",
+      "technology",
+      "hackathon",
+      "coding",
+      "robotics"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "No clear future date found on the crawled page.",
+      "Source is a broad public event index, so official provider confirmation is needed."
+    ],
+    "sourceName": "Eventbrite free online science and technology events"
+  },
+  {
+    "id": "discovered-eventbrite-free-online-science-tech-west-midlands-climate-health-explorer-onli-87900d7e87b6",
+    "title": "West Midlands Climate-Health Explorer--Online Launch Event",
+    "organization": "Eventbrite public event search",
+    "description": "West Midlands Climate-Health Explorer--Online Launch Event listed by Eventbrite free online science and technology events.",
+    "city": "Toronto",
+    "region": "Toronto",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "Science & Engineering",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-06-04T09:00:00-04:00",
+    "sourceUrl": "https://www.eventbrite.co.uk/e/west-midlands-climate-health-explorer-online-launch-event-tickets-1986319128985?aff=ebdssbdestsearch",
+    "lastChecked": "2026-06-04",
+    "lastSeen": "2026-06-04",
+    "status": "needs_review",
+    "tags": [
+      "science & engineering",
+      "free",
+      "online",
+      "science",
+      "technology",
+      "hackathon",
+      "coding",
+      "robotics"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "No clear future date found on the crawled page.",
+      "Source is a broad public event index, so official provider confirmation is needed."
+    ],
+    "sourceName": "Eventbrite free online science and technology events"
+  },
+  {
+    "id": "discovered-eventbrite-free-online-science-tech-nus-iss-insight-series-ai-agents-when-the--d346fb920e28",
+    "title": "NUS-ISS Insight Series - AI Agents When The Stakes Are High",
+    "organization": "Eventbrite public event search",
+    "description": "NUS-ISS Insight Series - AI Agents When The Stakes Are High listed by Eventbrite free online science and technology events.",
+    "city": "Toronto",
+    "region": "Toronto",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "Science & Engineering",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-06-04T09:00:00-04:00",
+    "sourceUrl": "https://www.eventbrite.sg/e/nus-iss-insight-series-ai-agents-when-the-stakes-are-high-tickets-1988748249550?aff=ebdssbdestsearch",
+    "lastChecked": "2026-06-04",
+    "lastSeen": "2026-06-04",
+    "status": "needs_review",
+    "tags": [
+      "science & engineering",
+      "free",
+      "online",
+      "science",
+      "technology",
+      "hackathon",
+      "coding",
+      "robotics"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "No clear future date found on the crawled page.",
+      "Source is a broad public event index, so official provider confirmation is needed."
+    ],
+    "sourceName": "Eventbrite free online science and technology events"
+  },
+  {
+    "id": "discovered-eventbrite-free-online-science-tech-mini-course-data-entry-for-remote-work-wit-e74667938feb",
+    "title": "Mini Course Data Entry for Remote Work with Yudistira",
+    "organization": "Eventbrite public event search",
+    "description": "Mini Course Data Entry for Remote Work with Yudistira listed by Eventbrite free online science and technology events.",
+    "city": "Toronto",
+    "region": "Toronto",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "Science & Engineering",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-06-04T09:00:00-04:00",
+    "sourceUrl": "https://www.eventbrite.com/e/mini-course-data-entry-for-remote-work-with-yudistira-tickets-1990386264898?aff=ebdssbdestsearch",
+    "lastChecked": "2026-06-04",
+    "lastSeen": "2026-06-04",
+    "status": "needs_review",
+    "tags": [
+      "science & engineering",
+      "free",
+      "online",
+      "science",
+      "technology",
+      "hackathon",
+      "coding",
+      "robotics"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "No clear future date found on the crawled page.",
+      "Source is a broad public event index, so official provider confirmation is needed."
+    ],
+    "sourceName": "Eventbrite free online science and technology events"
+  },
+  {
+    "id": "discovered-eventbrite-free-online-science-tech-facts-vs-fiction-the-fight-for-science-in--d32abee5fba2",
+    "title": "Facts vs. Fiction: The Fight for Science in American Democracy",
+    "organization": "Eventbrite public event search",
+    "description": "Facts vs. Fiction: The Fight for Science in American Democracy listed by Eventbrite free online science and technology events.",
+    "city": "Toronto",
+    "region": "Toronto",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "Science & Engineering",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-06-04T09:00:00-04:00",
+    "sourceUrl": "https://www.eventbrite.com/e/facts-vs-fiction-the-fight-for-science-in-american-democracy-tickets-1984930177594?aff=ebdssbdestsearch",
+    "lastChecked": "2026-06-04",
+    "lastSeen": "2026-06-04",
+    "status": "needs_review",
+    "tags": [
+      "science & engineering",
+      "free",
+      "online",
+      "science",
+      "technology",
+      "hackathon",
+      "coding",
+      "robotics"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "No clear future date found on the crawled page.",
+      "Source is a broad public event index, so official provider confirmation is needed."
+    ],
+    "sourceName": "Eventbrite free online science and technology events"
+  },
+  {
+    "id": "discovered-eventbrite-free-online-science-tech-5-hackathon-9d09857cb031",
+    "title": "5 . Hackathon",
+    "organization": "Eventbrite public event search",
+    "description": "5 . Hackathon listed by Eventbrite free online science and technology events.",
+    "city": "Toronto",
+    "region": "Toronto",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "Hackathons & Competitions",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-06-04T09:00:00-04:00",
+    "sourceUrl": "https://www.eventbrite.ca/d/online/hackathon",
+    "lastChecked": "2026-06-04",
+    "lastSeen": "2026-06-04",
+    "status": "needs_review",
+    "tags": [
+      "hackathons & competitions",
+      "free",
+      "online",
+      "science",
+      "technology",
+      "hackathon",
+      "coding",
+      "robotics"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "No clear future date found on the crawled page.",
+      "Source is a broad public event index, so official provider confirmation is needed."
+    ],
+    "sourceName": "Eventbrite free online science and technology events"
   }
 ] satisfies DiscoveredOpportunity[];
