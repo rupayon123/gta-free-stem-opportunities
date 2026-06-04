@@ -5264,42 +5264,53 @@ a {
   min-width: 0;
 }
 
+.toolbar-status {
+  width: 100%;
+}
+
 .toolbar-controls {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(154px, 1.18fr);
   align-items: center;
-  gap: 10px;
+  gap: 12px;
 }
 
 .source-scout-mini {
-  width: min(100%, 360px);
+  width: 100%;
   min-width: 0;
-  max-width: 360px;
+  max-width: none;
   min-height: 42px;
+  padding-right: 14px;
   font-size: 0.78rem;
+  box-shadow: none;
 }
 
 .toolbar-filter-button,
 .research-refresh-button,
 .segmented {
-  min-height: 42px;
+  min-height: 46px;
 }
 
 .toolbar-filter-button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: auto;
+  width: 100%;
   gap: 7px;
-  padding: 0 15px;
-  border-radius: 999px;
+  padding: 0 14px;
+  border-radius: 18px;
   font-size: 0.94rem;
   font-weight: 930;
   white-space: nowrap;
+  box-shadow: none;
 }
 
 .research-refresh-button {
+  width: 100%;
+  justify-content: center;
   padding-inline: 14px;
+  border-radius: 18px;
+  box-shadow: none;
 }
 
 .results-panel .cards-column,
@@ -5307,27 +5318,27 @@ a {
   min-height: 0;
   max-height: none;
   overflow: auto;
-  padding: 0 10px 4px 0;
+  padding: 8px 10px 8px 0;
   overscroll-behavior: auto;
   scrollbar-gutter: stable;
 }
 
 .cards-column::-webkit-scrollbar,
 .filter-panel-body.modal-filter-body::-webkit-scrollbar {
-  width: 12px;
+  width: 10px;
 }
 
 .cards-column::-webkit-scrollbar-track,
 .filter-panel-body.modal-filter-body::-webkit-scrollbar-track {
   border-radius: 999px;
-  background: color-mix(in srgb, var(--blue-soft) 48%, transparent);
+  background: color-mix(in srgb, var(--blue-soft) 28%, transparent);
 }
 
 .cards-column::-webkit-scrollbar-thumb,
 .filter-panel-body.modal-filter-body::-webkit-scrollbar-thumb {
-  border: 3px solid transparent;
+  border: 3px solid color-mix(in srgb, var(--surface) 82%, transparent);
   border-radius: 999px;
-  background: linear-gradient(var(--blue), var(--mint)) border-box;
+  background: color-mix(in srgb, var(--blue) 68%, var(--mint)) border-box;
 }
 
 .opportunity-card {
@@ -5336,22 +5347,25 @@ a {
 }
 
 .segmented {
-  gap: 4px;
+  width: 100%;
+  justify-content: stretch;
+  gap: 5px;
   padding: 4px;
   border-width: 2px;
   border-color: color-mix(in srgb, var(--blue) 48%, var(--line));
-  border-radius: 999px;
+  border-radius: 18px;
   background:
-    linear-gradient(135deg, color-mix(in srgb, var(--surface) 92%, var(--blue-soft)), color-mix(in srgb, var(--surface) 90%, var(--yellow-soft))),
+    linear-gradient(135deg, color-mix(in srgb, var(--surface) 94%, var(--blue-soft)), color-mix(in srgb, var(--surface) 92%, var(--yellow-soft))),
     var(--surface);
-  box-shadow: 0 8px 18px color-mix(in srgb, var(--blue) 12%, transparent);
+  box-shadow: none;
 }
 
 .segmented button {
-  min-width: 72px;
-  min-height: 32px;
-  padding: 0 12px;
-  border-radius: 999px;
+  flex: 1 1 0;
+  min-width: 0;
+  min-height: 36px;
+  padding: 0 10px;
+  border-radius: 14px;
   font-weight: 890;
   color: color-mix(in srgb, var(--ink) 70%, var(--muted));
 }
