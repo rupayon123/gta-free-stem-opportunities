@@ -5837,3 +5837,84 @@ a {
     transform: none;
   }
 }
+
+/* Final desktop right rail: selected info follows the list and the map stays visible. */
+@media (min-width: 1121px) {
+  .search-band .search-layout {
+    align-items: stretch;
+  }
+
+  .search-band .selected-column {
+    position: sticky;
+    top: clamp(12px, 2vw, 24px);
+    align-self: start;
+    display: grid;
+    grid-template-rows: minmax(0, 1fr) clamp(230px, 30svh, 340px);
+    gap: 14px;
+    height: calc(100svh - clamp(24px, 4vw, 48px));
+    min-height: 620px;
+    max-height: calc(100svh - clamp(24px, 4vw, 48px));
+    overflow: visible;
+  }
+
+  .search-band .selected-details-card {
+    position: relative;
+    top: auto;
+    min-height: 0;
+    max-height: none;
+    overflow: hidden;
+  }
+
+  .search-band .compact-details {
+    display: grid;
+    grid-template-rows: auto minmax(0, 1fr);
+    height: 100%;
+    min-height: 0;
+    overflow: hidden;
+  }
+
+  .search-band .compact-details .detail-summary {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+
+  .search-band .compact-details .translation-note,
+  .search-band .compact-details .source-panel,
+  .search-band .compact-details .fact:nth-child(n + 6) {
+    display: none;
+  }
+
+  .search-band .compact-details .detail-actions {
+    gap: 8px;
+    margin-top: 10px;
+  }
+
+  .search-band .compact-details .detail-actions :is(.primary-button, .soft-button) {
+    min-height: 40px;
+    padding-inline: 12px;
+  }
+
+  .search-band .compact-details .detail-facts {
+    max-height: none;
+    min-height: 0;
+    overflow: hidden;
+  }
+
+  .search-band .compact-details .fact {
+    padding: 8px 10px;
+  }
+
+  .search-band .selected-column .map-column,
+  .search-band .selected-column .map-shell {
+    height: 100%;
+    min-height: 0;
+  }
+
+  .search-band .selected-column .map-shell {
+    position: relative;
+    top: auto;
+    overflow: hidden;
+  }
+}
