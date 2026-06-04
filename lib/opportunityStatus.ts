@@ -7,6 +7,8 @@ function dateValue(value?: string) {
 }
 
 export function isOpportunityDateExpired(opportunity: Opportunity, now = new Date()) {
+  if (opportunity.status === "needs_review" && opportunity.tags.includes("date-to-confirm")) return false;
+
   const visibleUntil =
     dateValue(opportunity.endDate) ?? dateValue(opportunity.deadline) ?? dateValue(opportunity.startDate);
   if (!visibleUntil) return false;
@@ -17,12 +19,14 @@ export function isOpportunityDateExpired(opportunity: Opportunity, now = new Dat
 }
 
 export function computedOpportunityStatus(opportunity: Opportunity, now = new Date()): OpportunityStatus {
-  if (opportunity.status !== "active") return opportunity.status;
-  return isOpportunityDateExpired(opportunity, now) ? "expired" : "active";
+  if (opportunity.status === "hidden") return "hidden";
+  if (opportunity.status === "expired") return "expired";
+  if (isOpportunityDateExpired(opportunity, now)) return "expired";
+  return opportunity.status;
 }
 
 export function isPublicOpportunity(opportunity: Opportunity, now = new Date()) {
-  return opportunity.status === "active" && !isOpportunityDateExpired(opportunity, now);
+  return (opportunity.status === "active" || opportunity.status === "needs_review") && !isOpportunityDateExpired(opportunity, now);
 }
 
 export function publicOpportunities(opportunities: Opportunity[], now = new Date()) {

@@ -1,4 +1,6 @@
 import { generatedLibraryOpportunities } from "./generatedLibraryOpportunities";
+import { generatedDiscoveryReviewCandidates } from "./generatedDiscoveryReview";
+import type { DiscoveredOpportunity } from "./discovery";
 import type { Category, LanguageCode, Opportunity, Region, ReviewItem } from "./types";
 
 export const regions: Region[] = ["Toronto", "Peel", "York", "Durham", "Halton"];
@@ -81,6 +83,141 @@ export const gtaFsaCentres: Record<string, { label: string; latitude: number; lo
   L6H: { label: "Oakville", latitude: 43.4675, longitude: -79.6877 },
   L7L: { label: "Burlington", latitude: 43.3795, longitude: -79.7626 }
 };
+
+const gtaCityCentres: Record<string, { latitude: number; longitude: number }> = {
+  Ajax: { latitude: 43.8509, longitude: -79.0204 },
+  Aurora: { latitude: 44.0065, longitude: -79.4504 },
+  Brampton: { latitude: 43.7315, longitude: -79.7624 },
+  Burlington: { latitude: 43.3255, longitude: -79.799 },
+  Clarington: { latitude: 43.935, longitude: -78.608 },
+  "Halton Hills": { latitude: 43.6306, longitude: -79.9512 },
+  Markham: { latitude: 43.8561, longitude: -79.337 },
+  Milton: { latitude: 43.5183, longitude: -79.8774 },
+  Mississauga: { latitude: 43.589, longitude: -79.6441 },
+  Newmarket: { latitude: 44.0592, longitude: -79.4613 },
+  Oakville: { latitude: 43.4675, longitude: -79.6877 },
+  Oshawa: { latitude: 43.8971, longitude: -78.8658 },
+  Pickering: { latitude: 43.839, longitude: -79.087 },
+  "Richmond Hill": { latitude: 43.8828, longitude: -79.4403 },
+  Toronto: { latitude: 43.6532, longitude: -79.3832 },
+  Vaughan: { latitude: 43.8372, longitude: -79.5083 },
+  Whitby: { latitude: 43.8975, longitude: -78.9429 }
+};
+
+const regionCentres: Record<Region, { latitude: number; longitude: number }> = {
+  Toronto: gtaCityCentres.Toronto,
+  Peel: gtaCityCentres.Mississauga,
+  York: gtaCityCentres.Markham,
+  Durham: gtaCityCentres.Oshawa,
+  Halton: gtaCityCentres.Oakville
+};
+
+function centreForDiscovery(candidate: DiscoveredOpportunity) {
+  return gtaCityCentres[candidate.city] ?? regionCentres[candidate.region];
+}
+
+function gradesForAges(ageMin: number, ageMax?: number) {
+  const max = ageMax ?? 18;
+  if (ageMin >= 18) return ["18+"];
+  if (max <= 5) return ["Pre-K", "K"];
+  const grades: string[] = [];
+  const firstGrade = Math.max(1, ageMin - 5);
+  const lastGrade = Math.min(12, Math.max(firstGrade, max - 5));
+  for (let grade = firstGrade; grade <= lastGrade; grade += 1) grades.push(String(grade));
+  if (max >= 18) grades.push("18+");
+  return grades;
+}
+
+function typeForDiscovery(candidate: DiscoveredOpportunity): Opportunity["type"] {
+  const text = `${candidate.title} ${candidate.description} ${candidate.tags.join(" ")}`.toLowerCase();
+  if (candidate.category === "Volunteer Hours" || text.includes("volunteer")) return "Volunteer role";
+  if (candidate.category === "Co-op & SHSM" || text.includes("co-op") || text.includes("shsm")) return "Co-op opportunity";
+  if (candidate.category === "Hackathons & Competitions" || text.includes("hackathon") || text.includes("competition")) {
+    return "Competition or hackathon";
+  }
+  if (candidate.category === "Camps" || text.includes("camp")) return "Camp";
+  if (candidate.category === "Career & Mentorship" || text.includes("mentor")) return "Mentorship";
+  return "Drop-in";
+}
+
+function discoveryCandidateToOpportunity(candidate: DiscoveredOpportunity): Opportunity {
+  const centre = centreForDiscovery(candidate);
+  const dateNeedsCheck = candidate.reviewReasons.some((reason) =>
+    reason.toLowerCase().includes("no clear future date")
+  );
+  const candidateTags = Array.from(new Set([...candidate.tags, "new find", dateNeedsCheck ? "date-to-confirm" : "source-review"]));
+  const volunteerHoursEligible =
+    candidate.category === "Volunteer Hours" ||
+    candidateTags.some((tag) => tag.toLowerCase().includes("volunteer"));
+  const coopEligible = candidateTags.some((tag) => {
+    const lower = tag.toLowerCase();
+    return lower.includes("co-op") || lower.includes("shsm") || lower.includes("placement");
+  });
+  const sourceConfidence = candidate.confidence === "needs_review" ? "needs-review" : candidate.confidence;
+
+  return {
+    id: candidate.id,
+    title: candidate.title,
+    organization: candidate.organization,
+    provider: candidate.organization,
+    description: candidate.description,
+    summary: candidate.description,
+    type: typeForDiscovery(candidate),
+    category: candidate.category,
+    categories: candidate.category === "STEM" ? ["STEM"] : [candidate.category, "STEM"],
+    communityFocus: ["Open to all", "Newcomer-friendly"],
+    city: candidate.city,
+    region: candidate.region,
+    address: `${candidate.city}, ${candidate.region}`,
+    latitude: centre.latitude,
+    longitude: centre.longitude,
+    virtual: candidate.tags.some((tag) => tag.toLowerCase().includes("online")),
+    startDate: candidate.startDate,
+    endDate: candidate.endDate,
+    deadline: candidate.deadline,
+    ageMin: candidate.ageMin,
+    ageMax: candidate.ageMax,
+    ages: { min: candidate.ageMin, max: candidate.ageMax },
+    grades: gradesForAges(candidate.ageMin, candidate.ageMax),
+    language: candidate.language,
+    languages: candidate.language,
+    cost: candidate.cost,
+    sourceUrl: candidate.sourceUrl,
+    lastChecked: candidate.lastChecked,
+    lastSeen: candidate.lastSeen,
+    status: candidate.status,
+    accessibility: ["Check the source link for current access details."],
+    equipment: "Check the source link for supplies or equipment.",
+    food: "No food listed.",
+    capacity: "Check the source link for current availability.",
+    commitment: dateNeedsCheck ? "Check the source link for current dates and times." : "Check the source link for schedule details.",
+    registrationUrl: candidate.sourceUrl,
+    providerContact: candidate.sourceUrl,
+    freeStatusProof: "Found from a public opportunity source; free access should be checked on the source page.",
+    lastVerified: candidate.lastChecked,
+    trustedSource: candidate.confidence === "high",
+    volunteerHoursEligible,
+    coopEligible,
+    paidPosition: false,
+    tags: candidateTags,
+    sources: [
+      {
+        label: candidate.sourceName,
+        url: candidate.sourceUrl,
+        capturedAt: `${candidate.lastChecked}T09:00:00-04:00`,
+        confidence: sourceConfidence
+      }
+    ],
+    adminAuditTrail: [
+      {
+        label: "Found by source scan",
+        at: `${candidate.lastChecked}T09:00:00-04:00`,
+        actor: "Discovery job",
+        detail: candidate.reviewReasons.join(" ") || "Public source matched the GTA free opportunity search."
+      }
+    ]
+  };
+}
 
 const seedOpportunities: SeedOpportunity[] = [
   {
@@ -741,7 +878,8 @@ export const opportunities: Opportunity[] = [
     lastSeen: opportunity.lastVerified,
     status: opportunity.status ?? "active"
   })),
-  ...generatedLibraryOpportunities
+  ...generatedLibraryOpportunities,
+  ...generatedDiscoveryReviewCandidates.map(discoveryCandidateToOpportunity)
 ];
 
 export const reviewQueue: ReviewItem[] = [

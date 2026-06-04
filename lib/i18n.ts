@@ -181,14 +181,16 @@ type UiKey =
   | "sourceLink"
   | "localHostsWanted"
   | "communityCalloutText"
-  | "localSubmissionsBrowser";
+  | "localSubmissionsBrowser"
+  | "newFind"
+  | "checkSourceDates";
 
 const ui: Record<LanguageCode, Partial<Record<UiKey, string>>> = {
   en: {
     brand: "GTA FREE STEM Opportunities",
-    headerTagline: "Verified free opportunities",
-    mission: "Find real, verified free STEM programs, library events, volunteer hours, co-op, SHSM, and youth opportunities across the GTA.",
-    beta: "Verified and growing toward complete GTA coverage",
+    headerTagline: "Free STEM opportunities",
+    mission: "Find real free STEM programs, library events, volunteer hours, co-op, SHSM, and youth opportunities across the GTA.",
+    beta: "Growing toward complete GTA coverage",
     search: "Search",
     searchPlaceholder: "Search STEM opportunities...",
     filters: "Filters",
@@ -220,7 +222,7 @@ const ui: Record<LanguageCode, Partial<Record<UiKey, string>>> = {
     coop: "Co-op",
     mentorship: "Mentorship",
     leadership: "Leadership",
-    verifiedFree: "Verified free",
+    verifiedFree: "Free listing",
     lastVerified: "Last verified",
     calendar: "Add calendar",
     save: "Save",
@@ -239,11 +241,11 @@ const ui: Record<LanguageCode, Partial<Record<UiKey, string>>> = {
     any: "Any",
     showFilters: "Show filters",
     hideFilters: "Hide filters",
-    verifiedListings: "Verified listings",
+    verifiedListings: "Listings",
     launchLanguages: "Site languages",
     teenPathways: "Teen pathways",
     sourceScout: "Actively looking",
-    sourceScoutText: "{count} verified listings loaded. {sources} sources scan every 6 hours; {review} new finds are being verified.",
+    sourceScoutText: "{count} listings loaded. {sources} sources scan every 6 hours; {review} new finds are ready to browse.",
     refreshResearch: "Refresh",
     registerApply: "Register or apply",
     saved: "Saved",
@@ -1315,7 +1317,7 @@ const pageUi: Partial<Record<LanguageCode, Partial<Record<UiKey, string>>>> = {
     projectBackgroundP2: "The frontend uses Next.js, TypeScript, responsive design, a mobile-first interface, light/dark mode, multilingual controls, and a map/list view.",
     projectBackgroundP3: "The backend and data layer are planned around Supabase for user accounts, saved opportunities, feedback, missing opportunity submissions, and admin review.",
     projectBackgroundP4: "Users can browse without an account, use list view instead of map view, search by city, region, and age, and read plain-language descriptions.",
-    sourceScoutMiniText: "{sources} sources · {review} new finds being verified",
+    sourceScoutMiniText: "{sources} sources · {review} new finds ready",
     hostOrgName: "Organization name",
     website: "Website",
     contactEmail: "Contact email",
@@ -1532,7 +1534,7 @@ const pageUi: Partial<Record<LanguageCode, Partial<Record<UiKey, string>>>> = {
     projectBackgroundP2: "Gumagamit ang frontend ng Next.js, TypeScript, responsive design, mobile-first UI, light/dark mode, multilingual controls, at map/list view.",
     projectBackgroundP3: "Plano ang backend sa Supabase para sa accounts, saved opportunities, feedback, missing submissions, at admin review.",
     projectBackgroundP4: "Puwedeng mag-browse nang walang account, gumamit ng list view, mag-search by city/region/age, at magbasa ng plain-language descriptions.",
-    sourceScoutMiniText: "{sources} sources · {review} new finds being verified",
+    sourceScoutMiniText: "{sources} sources · {review} new finds ready",
     hostOrgName: "Pangalan ng organization",
     website: "Website",
     contactEmail: "Contact email",
@@ -1861,7 +1863,7 @@ const pageUi: Partial<Record<LanguageCode, Partial<Record<UiKey, string>>>> = {
 
 const controlUi: Record<LanguageCode, Partial<Record<UiKey, string>>> = {
   en: {
-    headerTagline: "Verified free opportunities",
+    headerTagline: "Free STEM opportunities",
     refreshResearch: "Refresh",
     searchEngineAuto: "The search engine checks trusted public sources every 6 hours.",
     expiredHidden: "Listings are hidden from public search after their date passes.",
@@ -2612,29 +2614,187 @@ for (const code of Object.keys(languageMeta) as LanguageCode[]) {
   Object.assign(supplementalUi[code], controlUi[code], pageUi[code]);
 }
 
+const publicBrowseUi: Record<LanguageCode, Partial<Record<UiKey, string>>> = {
+  en: {
+    headerTagline: "Free STEM opportunities",
+    beta: "Growing toward complete GTA coverage",
+    mission: "Find real free STEM programs, library events, volunteer hours, co-op, SHSM, and youth opportunities across the GTA.",
+    verifiedFree: "Free listing",
+    verifiedListings: "Listings",
+    lastVerified: "Last checked",
+    sourceScoutText: "{count} listings loaded. {sources} public sources scan every 6 hours; {review} new finds are ready to browse.",
+    sourceScoutMiniText: "{sources} sources · {review} new finds ready",
+    searchEngineAuto: "The search refresh checks public GTA opportunity sources.",
+    expiredHidden: "Listings are hidden from public search after their date passes.",
+    translationNote: "Listing summary translated for browsing; source links stay available for details.",
+    newFind: "New find",
+    checkSourceDates: "Check source for current dates"
+  },
+  fr: {
+    headerTagline: "Occasions STEM gratuites",
+    verifiedFree: "Fiche gratuite",
+    lastVerified: "Derniere verification",
+    sourceScoutMiniText: "{sources} sources · {review} nouvelles trouvailles",
+    newFind: "Nouvelle trouvaille",
+    checkSourceDates: "Verifier les dates a la source"
+  },
+  zh: {
+    headerTagline: "免费 STEM 机会",
+    verifiedFree: "免费列表",
+    lastVerified: "上次检查",
+    sourceScoutMiniText: "{sources} 个来源 · {review} 个新发现",
+    newFind: "新发现",
+    checkSourceDates: "查看来源确认日期"
+  },
+  yue: {
+    headerTagline: "免費 STEM 機會",
+    verifiedFree: "免費項目",
+    lastVerified: "上次檢查",
+    sourceScoutMiniText: "{sources} 個來源 · {review} 個新發現",
+    newFind: "新發現",
+    checkSourceDates: "查看來源確認日期"
+  },
+  pa: {
+    headerTagline: "ਮੁਫ਼ਤ STEM ਮੌਕੇ",
+    verifiedFree: "ਮੁਫ਼ਤ ਲਿਸਟਿੰਗ",
+    lastVerified: "ਆਖਰੀ ਵਾਰ ਜਾਂਚਿਆ",
+    sourceScoutMiniText: "{sources} ਸਰੋਤ · {review} ਨਵੇਂ ਮੌਕੇ",
+    newFind: "ਨਵਾਂ ਮੌਕਾ",
+    checkSourceDates: "ਮੌਜੂਦਾ ਤਾਰੀਖਾਂ ਲਈ ਸਰੋਤ ਵੇਖੋ"
+  },
+  ur: {
+    headerTagline: "مفت STEM مواقع",
+    verifiedFree: "مفت لسٹنگ",
+    lastVerified: "آخری بار چیک کیا",
+    sourceScoutMiniText: "{sources} ذرائع · {review} نئے مواقع",
+    newFind: "نیا موقع",
+    checkSourceDates: "موجودہ تاریخوں کے لیے ذریعہ دیکھیں"
+  },
+  ta: {
+    headerTagline: "இலவச STEM வாய்ப்புகள்",
+    verifiedFree: "இலவச பட்டியல்",
+    lastVerified: "கடைசியாக சரிபார்த்தது",
+    sourceScoutMiniText: "{sources} மூலங்கள் · {review} புதிய வாய்ப்புகள்",
+    newFind: "புதிய வாய்ப்பு",
+    checkSourceDates: "தற்போதைய தேதிக்கு மூலத்தை பார்க்கவும்"
+  },
+  tl: {
+    headerTagline: "Libreng STEM opportunities",
+    verifiedFree: "Libreng listing",
+    lastVerified: "Huling tiningnan",
+    sourceScoutMiniText: "{sources} sources · {review} bagong nahanap",
+    newFind: "Bagong nahanap",
+    checkSourceDates: "Tingnan ang source para sa petsa"
+  },
+  es: {
+    headerTagline: "Oportunidades STEM gratis",
+    verifiedFree: "Listado gratis",
+    lastVerified: "Ultima revision",
+    sourceScoutMiniText: "{sources} fuentes · {review} hallazgos nuevos",
+    newFind: "Nuevo hallazgo",
+    checkSourceDates: "Revise la fuente para fechas"
+  },
+  ar: {
+    headerTagline: "فرص STEM مجانية",
+    verifiedFree: "قائمة مجانية",
+    lastVerified: "آخر فحص",
+    sourceScoutMiniText: "{sources} مصادر · {review} فرص جديدة",
+    newFind: "فرصة جديدة",
+    checkSourceDates: "راجع المصدر للتواريخ الحالية"
+  },
+  fa: {
+    headerTagline: "فرصت های رایگان STEM",
+    verifiedFree: "فهرست رایگان",
+    lastVerified: "آخرین بررسی",
+    sourceScoutMiniText: "{sources} منبع · {review} مورد جدید",
+    newFind: "مورد جدید",
+    checkSourceDates: "برای تاریخ ها منبع را بررسی کنید"
+  },
+  hi: {
+    headerTagline: "मुफ्त STEM opportunities",
+    verifiedFree: "Free listing",
+    lastVerified: "Last checked",
+    sourceScoutMiniText: "{sources} sources · {review} new finds",
+    newFind: "New find",
+    checkSourceDates: "Current dates के लिए source देखें"
+  },
+  pt: {
+    headerTagline: "Oportunidades STEM gratuitas",
+    verifiedFree: "Lista gratuita",
+    lastVerified: "Ultima verificacao",
+    sourceScoutMiniText: "{sources} fontes · {review} novas oportunidades",
+    newFind: "Nova oportunidade",
+    checkSourceDates: "Veja a fonte para datas"
+  },
+  gu: {
+    headerTagline: "મફત STEM તકો",
+    verifiedFree: "મફત લિસ્ટિંગ",
+    lastVerified: "છેલ્લે તપાસ્યું",
+    sourceScoutMiniText: "{sources} સ્ત્રોત · {review} નવી તકો",
+    newFind: "નવી તક",
+    checkSourceDates: "હાલની તારીખો માટે સ્રોત જુઓ"
+  },
+  bn: {
+    headerTagline: "ফ্রি STEM সুযোগ",
+    verifiedFree: "ফ্রি তালিকা",
+    lastVerified: "শেষ দেখা",
+    sourceScoutMiniText: "{sources} উৎস · {review} নতুন সুযোগ",
+    newFind: "নতুন সুযোগ",
+    checkSourceDates: "বর্তমান তারিখের জন্য উৎস দেখুন"
+  },
+  ja: {
+    headerTagline: "無料 STEM 機会",
+    verifiedFree: "無料リスト",
+    lastVerified: "最終確認",
+    sourceScoutMiniText: "{sources}件の情報源 · {review}件の新着",
+    newFind: "新着",
+    checkSourceDates: "最新の日程は情報源を確認"
+  },
+  ko: {
+    headerTagline: "무료 STEM 기회",
+    verifiedFree: "무료 목록",
+    lastVerified: "마지막 확인",
+    sourceScoutMiniText: "{sources}개 출처 · {review}개 새 기회",
+    newFind: "새 기회",
+    checkSourceDates: "현재 날짜는 출처 확인"
+  },
+  hu: {
+    headerTagline: "Ingyenes STEM lehetőségek",
+    verifiedFree: "Ingyenes lista",
+    lastVerified: "Utoljára ellenőrizve",
+    sourceScoutMiniText: "{sources} forrás · {review} új lehetőség",
+    newFind: "Új találat",
+    checkSourceDates: "Aktuális dátumokért nézd meg a forrást"
+  }
+};
+
+for (const code of Object.keys(languageMeta) as LanguageCode[]) {
+  Object.assign(supplementalUi[code], publicBrowseUi[code]);
+}
+
 export function t(language: LanguageCode, key: UiKey) {
   return supplementalUi[language][key] ?? ui[language][key] ?? supplementalUi.en[key] ?? ui.en[key] ?? key;
 }
 
 const summaryTemplates: Record<LanguageCode, string> = {
   en: "{summary}",
-  fr: "Occasion gratuite de {category} offerte par {provider} a {city}. Ages {ages}. Inscription gratuite et verifiee.",
-  zh: "{provider}在{city}提供免费的{category}机会。适合{ages}岁。报名免费并已验证。",
-  yue: "{provider}喺{city}提供免費{category}機會。適合{ages}歲。報名免費並已核實。",
-  pa: "{provider} ਵੱਲੋਂ {city} ਵਿੱਚ ਮੁਫ਼ਤ {category} ਮੌਕਾ। ਉਮਰ {ages}. ਰਜਿਸਟ੍ਰੇਸ਼ਨ ਮੁਫ਼ਤ ਅਤੇ ਜਾਂਚੀ ਹੋਈ ਹੈ।",
-  ur: "{city} میں {provider} کی طرف سے مفت {category} موقع۔ عمر {ages}. رجسٹریشن مفت اور تصدیق شدہ ہے۔",
-  ta: "{city} நகரில் {provider} வழங்கும் இலவச {category} வாய்ப்பு. வயது {ages}. பதிவு இலவசம் மற்றும் சரிபார்க்கப்பட்டது.",
-  tl: "Libreng {category} opportunity mula sa {provider} sa {city}. Edad {ages}. Verified na libre ang registration.",
-  es: "Oportunidad gratis de {category} de {provider} en {city}. Edades {ages}. Registro gratis y verificado.",
-  ar: "فرصة {category} مجانية من {provider} في {city}. الأعمار {ages}. التسجيل مجاني وموثق.",
-  fa: "فرصت رایگان {category} از {provider} در {city}. سنین {ages}. ثبت نام رایگان و تایید شده است.",
-  hi: "{city} में {provider} की मुफ्त {category} opportunity. उम्र {ages}. Registration free और verified है.",
-  pt: "Oportunidade gratuita de {category} da {provider} em {city}. Idades {ages}. Inscricao gratuita e verificada.",
-  gu: "{city} માં {provider} તરફથી મફત {category} તક. ઉંમર {ages}. Registration મફત અને verified છે.",
-  bn: "{city}-এ {provider} এর ফ্রি {category} opportunity. বয়স {ages}. রেজিস্ট্রেশন ফ্রি এবং verified.",
-  ja: "{city}の{provider}による無料の{category}機会です。対象年齢は{ages}。登録無料で確認済みです。",
-  ko: "{city}에서 {provider}이 제공하는 무료 {category} 기회입니다. 대상 나이는 {ages}입니다. 등록은 무료로 확인되었습니다.",
-  hu: "Ingyenes {category} lehetőség a(z) {provider} szervezőtől itt: {city}. Korosztály: {ages}. A regisztráció ingyenes és ellenőrzött."
+  fr: "Occasion gratuite de {category} offerte par {provider} a {city}. Ages {ages}. Consultez la source pour les details.",
+  zh: "{provider}在{city}提供免费的{category}机会。适合{ages}岁。请查看来源了解详情。",
+  yue: "{provider}喺{city}提供免費{category}機會。適合{ages}歲。請查看來源了解詳情。",
+  pa: "{provider} ਵੱਲੋਂ {city} ਵਿੱਚ ਮੁਫ਼ਤ {category} ਮੌਕਾ। ਉਮਰ {ages}. ਵੇਰਵਿਆਂ ਲਈ ਸਰੋਤ ਵੇਖੋ।",
+  ur: "{city} میں {provider} کی طرف سے مفت {category} موقع۔ عمر {ages}. تفصیلات کے لیے ذریعہ دیکھیں۔",
+  ta: "{city} நகரில் {provider} வழங்கும் இலவச {category} வாய்ப்பு. வயது {ages}. விவரங்களுக்கு மூலத்தை பார்க்கவும்.",
+  tl: "Libreng {category} opportunity mula sa {provider} sa {city}. Edad {ages}. Tingnan ang source para sa detalye.",
+  es: "Oportunidad gratis de {category} de {provider} en {city}. Edades {ages}. Revise la fuente para detalles.",
+  ar: "فرصة {category} مجانية من {provider} في {city}. الأعمار {ages}. راجع المصدر للتفاصيل.",
+  fa: "فرصت رایگان {category} از {provider} در {city}. سنین {ages}. برای جزئیات منبع را بررسی کنید.",
+  hi: "{city} में {provider} की मुफ्त {category} opportunity. उम्र {ages}. Details के लिए source देखें.",
+  pt: "Oportunidade gratuita de {category} da {provider} em {city}. Idades {ages}. Veja a fonte para detalhes.",
+  gu: "{city} માં {provider} તરફથી મફત {category} તક. ઉંમર {ages}. વિગત માટે સ્રોત જુઓ.",
+  bn: "{city}-এ {provider} এর ফ্রি {category} opportunity. বয়স {ages}. বিস্তারিত জানতে উৎস দেখুন.",
+  ja: "{city}の{provider}による無料の{category}機会です。対象年齢は{ages}。詳細は情報源をご確認ください。",
+  ko: "{city}에서 {provider}이 제공하는 무료 {category} 기회입니다. 대상 나이는 {ages}입니다. 자세한 내용은 출처를 확인하세요.",
+  hu: "Ingyenes {category} lehetőség a(z) {provider} szervezőtől itt: {city}. Korosztály: {ages}. Részletekért nézd meg a forrást."
 };
 
 export function translatedSummary(opportunity: Opportunity, language: LanguageCode) {

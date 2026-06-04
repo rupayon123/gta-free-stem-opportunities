@@ -1731,6 +1731,10 @@ function offeredLanguageLabels(opportunity: Opportunity) {
   return uniqueLanguages.map((code) => languageMeta[code].label);
 }
 
+function shouldCheckSourceDates(opportunity: Opportunity) {
+  return opportunity.status === "needs_review" && opportunity.tags.includes("date-to-confirm");
+}
+
 function OpportunityCard({
   opportunity,
   language,
@@ -1768,6 +1772,7 @@ function OpportunityCard({
       </button>
       <div className="chip-row">
         <span className="chip success">{t(language, "verifiedFree")}</span>
+        {opportunity.status === "needs_review" ? <span className="chip mint">{t(language, "newFind")}</span> : null}
         {opportunity.volunteerHoursEligible ? <span className="chip">{t(language, "volunteerHours")}</span> : null}
         {opportunity.coopEligible ? <span className="chip">{t(language, "coop")}</span> : null}
         {opportunity.communityFocus.includes("Black-focused") ? <span className="chip berry">{t(language, "black")}</span> : null}
@@ -1909,6 +1914,9 @@ function OpportunityDetails({
   compact?: boolean;
 }) {
   const languageLabels = offeredLanguageLabels(opportunity);
+  const dateValue = shouldCheckSourceDates(opportunity)
+    ? t(language, "checkSourceDates")
+    : formatDateRange(opportunity.startDate, opportunity.endDate);
 
   return (
     <div className={compact ? "details-layout compact-details" : "details-layout"}>
@@ -1938,7 +1946,7 @@ function OpportunityDetails({
       </div>
 
       <div className="detail-facts">
-        <Fact label={t(language, "date")} value={formatDateRange(opportunity.startDate, opportunity.endDate)} />
+        <Fact label={t(language, "date")} value={dateValue} />
         <Fact label={t(language, "deadline")} value={formatDeadline(opportunity.deadline)} />
         <Fact label={t(language, "ages")} value={opportunity.ages.max ? `${opportunity.ages.min}-${opportunity.ages.max}` : `${opportunity.ages.min}+`} />
         <Fact label={t(language, "grades")} value={opportunity.grades.join(", ")} />
@@ -2416,7 +2424,7 @@ function AdminDashboard({
               <span>Admin permissions</span>
             </div>
             <div className="admin-permissions">
-              <span>Edit verified listings</span>
+              <span>Edit listings</span>
               <span>Publish announcements</span>
               <span>Review public suggestions</span>
               <span>Approve hosts and partners</span>

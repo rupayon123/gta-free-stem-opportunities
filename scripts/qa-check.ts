@@ -121,7 +121,9 @@ for (const opportunity of opportunities) {
   assert(!publicText.includes("example.org"), `${opportunity.title} still points to placeholder source data.`);
   assert(!publicText.includes("tutor"), `${opportunity.title} still includes tutoring language.`);
   assert(opportunity.sources.length > 0, `${opportunity.title} needs source evidence.`);
-  assert(opportunity.sources.some((source) => source.confidence === "high"), `${opportunity.title} needs high-confidence evidence.`);
+  if (opportunity.status === "active") {
+    assert(opportunity.sources.some((source) => source.confidence === "high"), `${opportunity.title} needs high-confidence evidence.`);
+  }
   assert(opportunity.organization.length > 0, `${opportunity.title} needs organization.`);
   assert(opportunity.description.length > 0, `${opportunity.title} needs description.`);
   assert(opportunity.category.length > 0, `${opportunity.title} needs primary category.`);
@@ -139,7 +141,11 @@ for (const opportunity of opportunities) {
 
 const publicListings = publicOpportunities(opportunities);
 assert(publicListings.length > 0, "Expected at least one public active listing.");
-assert(publicListings.every((opportunity) => isPublicOpportunity(opportunity)), "Public listings must be active and unexpired.");
+assert(
+  publicListings.every((opportunity) => opportunity.status === "active" || opportunity.status === "needs_review"),
+  "Public listings must be active or newly found."
+);
+assert(publicListings.every((opportunity) => isPublicOpportunity(opportunity)), "Public listings must be browseable and unexpired.");
 const expiredClone = {
   ...publicListings[0],
   id: `${publicListings[0].id}-qa-expired`,
@@ -152,7 +158,7 @@ assert(!isPublicOpportunity(expiredClone), "Date-expired active listings must be
 assert(!publicOpportunities([...opportunities, expiredClone]).some((opportunity) => opportunity.id === expiredClone.id), "Expired listings must not appear in public results.");
 
 const allResults = filterOpportunities(opportunities, baseFilters, null);
-assert(allResults.length === publicListings.length, "Default search should return only public active opportunities.");
+assert(allResults.length === publicListings.length, "Default search should return public active and newly found opportunities.");
 
 const coopResults = filterOpportunities(
   opportunities,
