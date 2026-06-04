@@ -788,5 +788,6 @@ export const languagePreferenceOrder: LanguageCode[] = [
   "gu",
   "bn",
   "ja",
-  "ko"
+  "ko",
+  "hu"
 ];

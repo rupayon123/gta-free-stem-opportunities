@@ -59,7 +59,7 @@ const requiredUiKeys = [
   "hideFilters"
 ] as const;
 
-assert(languagePreferenceOrder.length === 17, "Expected 17 launch languages.");
+assert(languagePreferenceOrder.length === 18, "Expected 18 launch languages.");
 for (const code of languagePreferenceOrder) {
   assert(Boolean(languageMeta[code]), `Missing language metadata for ${code}.`);
   for (const key of requiredUiKeys) {

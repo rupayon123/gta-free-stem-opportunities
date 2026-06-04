@@ -59,7 +59,8 @@ export type LanguageCode =
   | "gu"
   | "bn"
   | "ja"
-  | "ko";
+  | "ko"
+  | "hu";
 
 export type AuditEvent = {
   label: string;

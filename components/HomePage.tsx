@@ -562,7 +562,7 @@ export function HomePage() {
         setFilters((current) => ({ ...current, ...nextFilters }));
       }
       setActiveSurface("opportunities");
-      setPendingScrollTarget("opportunities");
+      setPendingScrollTarget("top");
     },
     []
   );
@@ -573,15 +573,15 @@ export function HomePage() {
         setFilters((current) => ({ ...current, ...nextFilters }));
       }
       setActiveSurface("high-school");
-      setPendingScrollTarget(nextFilters ? "high-school-results" : "high-school");
+      setPendingScrollTarget("top");
     },
     []
   );
 
   const showSurface = useCallback(
-    (surface: ActiveSurface, targetId: string) => {
+    (surface: ActiveSurface, _targetId: string) => {
       setActiveSurface(surface);
-      setPendingScrollTarget(targetId);
+      setPendingScrollTarget("top");
     },
     []
   );
@@ -1325,6 +1325,7 @@ export function HomePage() {
               </div>
               <div className="results-actions">
                 <SourceScoutMini
+                  language={language}
                   reviewCount={generatedDiscoverySummary.newCandidates}
                   sourceCount={generatedDiscoverySummary.sourcesChecked}
                 />
@@ -1402,8 +1403,8 @@ export function HomePage() {
 
       {activeSurface === "support" ? (
         <>
-          <SupportSection />
-          <ProjectBackgroundSection />
+          <SupportSection language={language} />
+          <ProjectBackgroundSection language={language} />
         </>
       ) : null}
       {activeSurface === "community-hosts" ? (
@@ -1596,15 +1597,25 @@ function Header({
   );
 }
 
-function SourceScoutMini({ sourceCount, reviewCount }: { sourceCount: number; reviewCount: number }) {
+function SourceScoutMini({
+  language,
+  sourceCount,
+  reviewCount
+}: {
+  language: LanguageCode;
+  sourceCount: number;
+  reviewCount: number;
+}) {
+  const label = t(language, "sourceScoutMiniText")
+    .replace("{sources}", String(sourceCount))
+    .replace("{review}", String(reviewCount));
+
   return (
     <div className="source-scout-mini" aria-label="Research refresh status">
       <span className="source-scout-radar" aria-hidden="true">
         <span />
       </span>
-      <span>
-        {sourceCount} sources · {reviewCount} new finds being verified
-      </span>
+      <span>{label}</span>
     </div>
   );
 }
@@ -1934,7 +1945,7 @@ function HighSchoolSection({
     {
       icon: Compass,
       title: t(language, "mentorship"),
-      text: "Find mentor-led STEM, leadership, and career exploration opportunities for high school students.",
+      text: t(language, "mentorshipCardText"),
       action: onMentorshipFilter
     }
   ];
@@ -1961,30 +1972,30 @@ function HighSchoolSection({
   );
 }
 
-function SupportSection() {
+function SupportSection({ language }: { language: LanguageCode }) {
   const cards = [
     {
       icon: UserRound,
-      title: "Browse without an account",
-      text: "Anyone can search the public opportunity list first. Accounts are only needed for saving, feedback, and submissions."
+      title: t(language, "supportBrowseTitle"),
+      text: t(language, "supportBrowseText")
     },
     {
       icon: Search,
-      title: "Search in simple ways",
-      text: "Use city, region, age, category, volunteer hours, co-op, mentorship, leadership, and focused-program filters."
+      title: t(language, "supportSearchTitle"),
+      text: t(language, "supportSearchText")
     },
     {
       icon: ListChecks,
-      title: "Plain-language access",
-      text: "Listings keep summaries clear, show official source links, and support list view when a map is not the easiest option."
+      title: t(language, "supportPlainTitle"),
+      text: t(language, "supportPlainText")
     }
   ];
 
   return (
     <section id="accessibility-support" className="workspace-band support-band" aria-label="Accessibility and support">
       <div className="section-heading">
-        <p className="eyebrow">Accessibility / Support</p>
-        <h2>Built to be easier for students, parents, educators, and community groups.</h2>
+        <p className="eyebrow">{t(language, "supportEyebrow")}</p>
+        <h2>{t(language, "supportHeading")}</h2>
       </div>
       <div className="support-grid">
         {cards.map((card) => {
@@ -2011,6 +2022,27 @@ function ContributeSection({
   onSubmit: (kind: string, formData: FormData) => void | Promise<void>;
   localQueueCount: number;
 }) {
+  const hostFields = [
+    t(language, "hostOrgName"),
+    t(language, "website"),
+    t(language, "contactEmail"),
+    t(language, "cityRegion"),
+    t(language, "hostIdea")
+  ];
+  const suggestFields = [
+    t(language, "officialOpportunityLink"),
+    t(language, "contactEmail"),
+    t(language, "cityRegion"),
+    t(language, "whyFreeUseful")
+  ];
+  const reportFields = [
+    t(language, "listingTitle"),
+    t(language, "contactEmail"),
+    t(language, "whatNeedsFixing"),
+    t(language, "sourceLink")
+  ];
+  const localSubmissions = t(language, "localSubmissionsBrowser").replace("{count}", String(localQueueCount));
+
   return (
     <section id="community-hosts" className="workspace-band contribute-band" aria-label="Community participation">
       <div className="section-heading">
@@ -2021,7 +2053,7 @@ function ContributeSection({
         <MiniForm
           title={t(language, "partner")}
           icon={<Handshake size={18} aria-hidden="true" />}
-          fields={["Organization name", "Website", "Contact email", "City or region", "STEM, co-op, SHSM, or volunteer-hours idea"]}
+          fields={hostFields}
           submitLabel={t(language, "submit")}
           submittedLabel={t(language, "submitted")}
           onSubmit={(formData) => onSubmit("host", formData)}
@@ -2029,7 +2061,7 @@ function ContributeSection({
         <MiniForm
           title={t(language, "suggest")}
           icon={<Send size={18} aria-hidden="true" />}
-          fields={["Official opportunity link", "Contact email", "City or region", "Why it is free and useful"]}
+          fields={suggestFields}
           submitLabel={t(language, "submit")}
           submittedLabel={t(language, "submitted")}
           onSubmit={(formData) => onSubmit("suggest", formData)}
@@ -2038,7 +2070,7 @@ function ContributeSection({
           id="feedback"
           title={t(language, "report")}
           icon={<AlertTriangle size={18} aria-hidden="true" />}
-          fields={["Listing title", "Contact email", "What needs fixing", "Source link"]}
+          fields={reportFields}
           submitLabel={t(language, "submit")}
           submittedLabel={t(language, "submitted")}
           onSubmit={(formData) => onSubmit("report", formData)}
@@ -2046,49 +2078,28 @@ function ContributeSection({
         <div className="community-callout">
           <div className="panel-title">
             <Building2 size={18} aria-hidden="true" />
-            <span>Local hosts wanted</span>
+            <span>{t(language, "localHostsWanted")}</span>
           </div>
-          <p>
-            Be part of the community by hosting real STEM placements, high school co-op, SHSM-aligned career exploration, or
-            volunteer-hour opportunities. Submissions are stored for review before anything is published.
-          </p>
-          <span className="chip success">{localQueueCount} local submissions in this browser</span>
+          <p>{t(language, "communityCalloutText")}</p>
+          <span className="chip success">{localSubmissions}</span>
         </div>
       </div>
     </section>
   );
 }
 
-function ProjectBackgroundSection() {
+function ProjectBackgroundSection({ language }: { language: LanguageCode }) {
   return (
     <section id="project-background" className="workspace-band project-background-band" aria-label="Project background">
       <div className="project-background-card">
         <div className="section-heading">
-          <p className="eyebrow">Project Background</p>
-          <h2>Project Background / How It Was Built</h2>
+          <p className="eyebrow">{t(language, "projectBackgroundEyebrow")}</p>
+          <h2>{t(language, "projectBackgroundHeading")}</h2>
         </div>
-        <p>
-          GTA FREE STEM Opportunities is a public web platform built to help students, parents, educators, and community groups
-          find free STEM opportunities across the Greater Toronto Area. The frontend uses Next.js, TypeScript, responsive
-          design, a mobile-first interface, light/dark mode, multilingual controls, and a map/list view.
-        </p>
-        <p>
-          The backend and data layer are planned around Supabase for user accounts, saved opportunities, feedback, missing
-          opportunity submissions, and admin review. The website is designed as a static export for free public hosting through
-          platforms such as Vercel or Cloudflare Pages.
-        </p>
-        <p>
-          The search system organizes a structured opportunity database with filters for city, age, category, language,
-          volunteer hours, co-op/SHSM, mentorship, leadership, and focused programs. A future scheduled crawler will regularly
-          check trusted public sources for new free GTA STEM opportunities, update listings, mark expired opportunities
-          inactive, and keep public search results clean.
-        </p>
-        <p>
-          Accessibility is central to the product: users can browse without an account, use list view instead of map view,
-          search by city/region/age, and read plain-language descriptions. This project strengthened skills in full-stack
-          product planning, frontend architecture, database design, authentication, public beta planning,
-          accessibility-focused design, responsive UI, free-tier deployment strategy, and scalable search/filter systems.
-        </p>
+        <p>{t(language, "projectBackgroundP1")}</p>
+        <p>{t(language, "projectBackgroundP2")}</p>
+        <p>{t(language, "projectBackgroundP3")}</p>
+        <p>{t(language, "projectBackgroundP4")}</p>
       </div>
     </section>
   );
