@@ -310,6 +310,7 @@ export function HomePage() {
   const [language, setLanguage] = useState<LanguageCode>("en");
   const [theme, setTheme] = useState<ThemePreference>("light");
   const [activeSurface, setActiveSurface] = useState<ActiveSurface>("home");
+  const [heroLogoGiggling, setHeroLogoGiggling] = useState(false);
   const [pendingScrollTarget, setPendingScrollTarget] = useState("");
   const [filters, setFilters] = useState<Filters>(initialFilters);
   const [filtersOpen, setFiltersOpen] = useState(false);
@@ -610,6 +611,12 @@ export function HomePage() {
     },
     [goToOpportunities]
   );
+
+  const triggerHeroLogoGiggle = useCallback(() => {
+    setHeroLogoGiggling(false);
+    window.requestAnimationFrame(() => setHeroLogoGiggling(true));
+    window.setTimeout(() => setHeroLogoGiggling(false), 680);
+  }, []);
 
   const openAuth = (mode: AuthMode = "signin", notice = "") => {
     setAuthMode(mode);
@@ -1247,7 +1254,16 @@ export function HomePage() {
       {activeSurface === "home" ? (
       <section className="workspace-band hero-band landing-hero" aria-labelledby="landing-title">
         <div className="hero-card-shell">
-          <img className="hero-logo" src="/logo.png" alt="" width={176} height={176} aria-hidden="true" />
+          <img
+            className={`hero-logo ${heroLogoGiggling ? "is-giggling" : ""}`}
+            src="/logo.png"
+            alt=""
+            width={176}
+            height={176}
+            aria-hidden="true"
+            onPointerEnter={triggerHeroLogoGiggle}
+            onPointerDown={triggerHeroLogoGiggle}
+          />
           <span className="beta-pill">
             <Sparkles size={16} aria-hidden="true" />
             {t(language, "beta")}

@@ -5474,3 +5474,84 @@ a {
     width: 100%;
   }
 }
+
+/* Landing page logo and hero balance */
+@keyframes hero-logo-giggle {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) rotate(0deg) scale(1);
+  }
+
+  18% {
+    transform: translate3d(0, -3px, 0) rotate(-4deg) scale(1.055);
+  }
+
+  38% {
+    transform: translate3d(0, 2px, 0) rotate(3deg) scale(1.04);
+  }
+
+  58% {
+    transform: translate3d(0, -2px, 0) rotate(-2deg) scale(1.035);
+  }
+
+  78% {
+    transform: translate3d(0, 1px, 0) rotate(1.5deg) scale(1.025);
+  }
+}
+
+.home-shell .landing-hero {
+  align-items: center;
+  padding-top: clamp(4px, 1.2vh, 16px);
+}
+
+.home-shell .hero-card-shell {
+  gap: clamp(9px, 1.25vh, 15px);
+  transform: translateY(-16px);
+}
+
+.home-shell .hero-card-shell .hero-logo {
+  width: clamp(208px, 19vw, 292px);
+  cursor: pointer;
+  transform-origin: 50% 66%;
+  will-change: transform;
+}
+
+.home-shell .hero-card-shell .hero-logo:is(:hover, :active),
+.home-shell .hero-card-shell .hero-logo.is-giggling {
+  animation: hero-logo-giggle 640ms var(--pop) both;
+}
+
+@media (max-width: 900px) {
+  .home-shell .hero-card-shell {
+    transform: translateY(-10px);
+  }
+
+  .home-shell .hero-card-shell .hero-logo {
+    width: clamp(164px, 34vw, 226px);
+  }
+}
+
+@media (max-width: 520px) {
+  .home-shell .landing-hero {
+    padding-top: 8px;
+  }
+
+  .home-shell .hero-card-shell {
+    gap: 10px;
+    transform: translateY(-6px);
+  }
+
+  .home-shell .hero-card-shell .hero-logo {
+    width: clamp(152px, 42vw, 178px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-shell .hero-card-shell,
+  .home-shell .hero-card-shell .hero-logo,
+  .home-shell .hero-card-shell .hero-logo:is(:hover, :active),
+  .home-shell .hero-card-shell .hero-logo.is-giggling {
+    animation: none;
+    transform: none;
+  }
+}
