@@ -1373,42 +1373,46 @@ export function HomePage() {
         <div className="search-layout">
           <div className="results-panel">
             <div className="results-toolbar">
-              <div>
+              <div className="results-summary">
                 <p className="free-only-line">{t(language, "freeOnly")}</p>
                 <h2>
                   {visibleOpportunities.length} {t(language, "results")}
                 </h2>
               </div>
               <div className="results-actions">
-                <SourceScoutMini
-                  language={language}
-                  reviewCount={generatedDiscoverySummary.newCandidates}
-                  sourceCount={generatedDiscoverySummary.sourcesChecked}
-                />
-                {filterButton}
-                <button type="button" className="soft-button research-refresh-button" onClick={refreshResearch} disabled={researchRefreshing}>
-                  <RefreshCw size={16} aria-hidden="true" className={researchRefreshing ? "spinning" : ""} />
-                  {t(language, "refreshResearch")}
-                </button>
-                <div className="segmented" aria-label={t(language, "viewMode")}>
-                  <button
-                    className={viewMode === "list" ? "active" : ""}
-                    type="button"
-                    onClick={() => setViewMode("list")}
-                    aria-pressed={viewMode === "list"}
-                  >
-                    <ListChecks size={16} aria-hidden="true" />
-                    {t(language, "list")}
+                <div className="toolbar-status">
+                  <SourceScoutMini
+                    language={language}
+                    reviewCount={generatedDiscoverySummary.newCandidates}
+                    sourceCount={generatedDiscoverySummary.sourcesChecked}
+                  />
+                </div>
+                <div className="toolbar-controls">
+                  {filterButton}
+                  <button type="button" className="soft-button research-refresh-button" onClick={refreshResearch} disabled={researchRefreshing}>
+                    <RefreshCw size={16} aria-hidden="true" className={researchRefreshing ? "spinning" : ""} />
+                    {t(language, "refreshResearch")}
                   </button>
-                  <button
-                    className={viewMode === "map" ? "active" : ""}
-                    type="button"
-                    onClick={() => setViewMode("map")}
-                    aria-pressed={viewMode === "map"}
-                  >
-                    <MapPin size={16} aria-hidden="true" />
-                    {t(language, "map")}
-                  </button>
+                  <div className="segmented" aria-label={t(language, "viewMode")}>
+                    <button
+                      className={viewMode === "list" ? "active" : ""}
+                      type="button"
+                      onClick={() => setViewMode("list")}
+                      aria-pressed={viewMode === "list"}
+                    >
+                      <ListChecks size={16} aria-hidden="true" />
+                      {t(language, "list")}
+                    </button>
+                    <button
+                      className={viewMode === "map" ? "active" : ""}
+                      type="button"
+                      onClick={() => setViewMode("map")}
+                      aria-pressed={viewMode === "map"}
+                    >
+                      <MapPin size={16} aria-hidden="true" />
+                      {t(language, "map")}
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1779,7 +1783,7 @@ function OpportunityCard({
           <CalendarPlus size={16} aria-hidden="true" />
           {t(language, "calendar")}
         </button>
-        <a href={directionsUrl(opportunity)} target="_blank" rel="noreferrer" className="soft-button">
+        <a href={directionsUrl(opportunity)} target="_blank" rel="noopener noreferrer" className="soft-button">
           <MapPin size={16} aria-hidden="true" />
           {t(language, "directions")}
         </a>
@@ -1914,7 +1918,7 @@ function OpportunityDetails({
         <p className="detail-summary">{translatedSummary(opportunity, language)}</p>
         <p className="translation-note">{t(language, "translationNote")}</p>
         <div className="detail-actions">
-          <a href={opportunity.registrationUrl} target="_blank" rel="noreferrer" className="primary-button">
+          <a href={opportunity.registrationUrl} target="_blank" rel="noopener noreferrer" className="primary-button">
             {t(language, "registerApply")}
             <ChevronRight size={17} aria-hidden="true" />
           </a>
@@ -1926,7 +1930,7 @@ function OpportunityDetails({
             <CalendarPlus size={16} aria-hidden="true" />
             {t(language, "calendar")}
           </button>
-          <a href={directionsUrl(opportunity)} target="_blank" rel="noreferrer" className="soft-button">
+          <a href={directionsUrl(opportunity)} target="_blank" rel="noopener noreferrer" className="soft-button">
             <MapPin size={16} aria-hidden="true" />
             {t(language, "directions")}
           </a>
@@ -1960,7 +1964,7 @@ function OpportunityDetails({
         </p>
         <div className="source-list">
           {opportunity.sources.map((source) => (
-            <a key={source.url} href={source.url} target="_blank" rel="noreferrer">
+            <a key={source.url} href={source.url} target="_blank" rel="noopener noreferrer">
               {source.label}
               <span>{source.confidence}</span>
             </a>
@@ -2283,7 +2287,7 @@ function AccountDashboard({
             <div className="saved-list">
               {savedOpportunities.length ? (
                 savedOpportunities.map((opportunity) => (
-                  <a key={opportunity.id} href={opportunity.registrationUrl} target="_blank" rel="noreferrer">
+                  <a key={opportunity.id} href={opportunity.registrationUrl} target="_blank" rel="noopener noreferrer">
                     <span>{opportunity.title}</span>
                     <small>{opportunity.city}</small>
                   </a>
@@ -2443,7 +2447,7 @@ function AdminDashboard({
                       </span>
                       {candidate.reviewReasons.length ? <span>{candidate.reviewReasons.join(" ")}</span> : null}
                     </div>
-                    <a href={candidate.sourceUrl} target="_blank" rel="noreferrer" aria-label={`Open source for ${candidate.title}`}>
+                    <a href={candidate.sourceUrl} target="_blank" rel="noopener noreferrer" aria-label={`Open source for ${candidate.title}`}>
                       Source
                     </a>
                   </article>
