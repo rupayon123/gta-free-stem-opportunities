@@ -4153,3 +4153,386 @@ a {
     font-size: 1rem;
   }
 }
+
+/* Navigation and account cleanup pass */
+.topbar.home-topbar {
+  grid-template-columns: minmax(240px, 1fr) minmax(0, auto);
+}
+
+.topbar.with-nav {
+  grid-template-columns: minmax(250px, 0.8fr) minmax(420px, 1.1fr) minmax(0, auto);
+}
+
+.primary-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-width: 0;
+  padding: 5px;
+  border: 2px solid color-mix(in srgb, var(--blue) 52%, var(--line));
+  border-radius: 999px;
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--surface) 88%, var(--blue-soft)), color-mix(in srgb, var(--surface) 86%, var(--yellow-soft))),
+    var(--surface);
+  box-shadow: var(--shadow-soft);
+}
+
+:root[data-theme="dark"] .primary-nav {
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--surface) 82%, var(--blue-soft)), color-mix(in srgb, var(--surface) 86%, var(--lavender-soft))),
+    var(--surface);
+}
+
+.primary-nav button {
+  min-height: 38px;
+  padding: 0 14px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+  font-size: clamp(0.82rem, 0.35vw + 0.72rem, 0.95rem);
+  font-weight: 920;
+  white-space: nowrap;
+  transition: transform var(--pop), background var(--motion), color var(--motion);
+}
+
+.primary-nav button:hover,
+.primary-nav button:focus-visible {
+  background: linear-gradient(135deg, var(--yellow), var(--mint) 58%, var(--blue));
+  color: #08233a;
+  transform: translateY(-1px) scale(1.03);
+}
+
+.home-shell .hero-card-shell .hero-logo {
+  width: clamp(178px, 18vw, 264px);
+  animation: gentle-float 4.4s ease-in-out infinite;
+}
+
+.hero-logo:hover,
+.brand-icon:hover {
+  animation: friendly-wiggle 520ms var(--pop) both;
+}
+
+.home-shell .landing-hero {
+  min-height: calc(100svh - 126px);
+  padding-top: clamp(10px, 2.4vh, 28px);
+  padding-bottom: clamp(10px, 2vh, 22px);
+}
+
+.home-shell .hero-card-shell {
+  gap: clamp(11px, 1.5vh, 18px);
+}
+
+.home-shell .hero-search-form {
+  width: min(880px, 100%);
+}
+
+.home-shell .hero-actions {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, auto));
+  gap: 10px;
+  padding: 8px;
+  border: 2px solid color-mix(in srgb, var(--blue) 42%, var(--line));
+  border-radius: 999px;
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--surface) 88%, var(--mint-soft)), color-mix(in srgb, var(--surface) 88%, var(--yellow-soft))),
+    var(--surface);
+  box-shadow: var(--shadow-soft);
+}
+
+.source-scout-mini {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  max-width: 320px;
+  min-height: 42px;
+  padding: 5px 10px 5px 5px;
+  border: 2px solid color-mix(in srgb, var(--mint) 44%, var(--line));
+  border-radius: 999px;
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--surface) 88%, var(--mint-soft)), color-mix(in srgb, var(--surface) 90%, var(--blue-soft))),
+    var(--surface);
+  color: var(--ink);
+  font-size: 0.78rem;
+  font-weight: 860;
+  line-height: 1.15;
+}
+
+.source-scout-mini .source-scout-radar {
+  width: 28px;
+  height: 28px;
+  box-shadow: inset 0 0 0 7px color-mix(in srgb, var(--surface) 78%, transparent);
+}
+
+.source-scout-mini .source-scout-radar span {
+  width: 7px;
+  height: 7px;
+}
+
+.oauth-panel {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.oauth-button {
+  min-height: 46px;
+  padding: 0 10px;
+  border: 2px solid color-mix(in srgb, var(--blue) 46%, var(--line));
+  border-radius: 999px;
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--surface) 88%, var(--blue-soft)), color-mix(in srgb, var(--surface) 88%, var(--yellow-soft))),
+    var(--surface);
+  color: var(--ink);
+  cursor: pointer;
+  font-size: 0.88rem;
+  font-weight: 900;
+  transition: transform var(--pop), box-shadow var(--motion), background var(--motion);
+}
+
+.oauth-button:hover,
+.oauth-button:focus-visible {
+  background: linear-gradient(135deg, var(--yellow), var(--blue) 62%, var(--mint));
+  box-shadow: 0 10px 0 rgba(17, 70, 117, 0.09), 0 18px 28px color-mix(in srgb, var(--blue) 24%, transparent);
+  color: #08233a;
+  transform: translateY(-1px) scale(1.02);
+}
+
+.auth-secondary-link {
+  display: inline-flex;
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 760;
+}
+
+.compact-select,
+.compact-select select,
+.field select {
+  background-color: color-mix(in srgb, var(--surface) 92%, transparent);
+  color: var(--ink);
+}
+
+:root[data-theme="dark"] .compact-select,
+:root[data-theme="dark"] .compact-select select,
+:root[data-theme="dark"] .field select {
+  background-color: #102844;
+  color: #f8fcff;
+}
+
+.cards-column {
+  max-height: none;
+  overflow: visible;
+}
+
+.selected-column {
+  position: relative;
+}
+
+.highschool-band + .search-band {
+  padding-top: 18px;
+}
+
+@media (max-width: 1320px) {
+  .topbar.with-nav {
+    grid-template-columns: minmax(230px, 1fr) minmax(0, 1fr);
+  }
+
+  .primary-nav {
+    grid-column: 1 / -1;
+    order: 3;
+    justify-content: flex-start;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .primary-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .header-actions {
+    justify-self: end;
+  }
+}
+
+@media (max-width: 900px) {
+  .topbar.home-topbar,
+  .topbar.with-nav {
+    grid-template-columns: 1fr;
+  }
+
+  .topbar {
+    width: min(100% - 16px, 1500px);
+    margin-top: 8px;
+  }
+
+  .brand-mark {
+    justify-self: center;
+    text-align: center;
+  }
+
+  .header-actions {
+    justify-content: center;
+    justify-self: stretch;
+    flex-wrap: wrap;
+  }
+
+  .primary-nav {
+    width: 100%;
+  }
+
+  .home-shell .hero-card-shell .hero-logo {
+    width: clamp(140px, 33vw, 190px);
+  }
+
+  .home-shell .hero-actions {
+    width: min(520px, 100%);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    border-radius: 28px;
+  }
+
+  .home-shell .hero-actions :is(.primary-button, .soft-button) {
+    width: 100%;
+    min-height: 46px;
+  }
+
+  .results-actions {
+    align-items: stretch;
+  }
+
+  .source-scout-mini {
+    max-width: none;
+    width: 100%;
+  }
+
+  .oauth-panel {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .brand-icon {
+    width: 58px;
+    height: 58px;
+    flex-basis: 58px;
+  }
+
+  .brand-mark strong {
+    font-size: 1rem;
+  }
+
+  .brand-mark small {
+    font-size: 0.78rem;
+  }
+
+  .theme-toggle span {
+    display: none;
+  }
+
+  .compact-select {
+    flex: 1 1 100%;
+  }
+
+  .compact-select select {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .account-button,
+  .account-chip {
+    flex: 1 1 auto;
+  }
+
+  .home-shell .landing-hero {
+    min-height: auto;
+    padding-top: 18px;
+  }
+
+  .home-shell .hero-card-shell .hero-logo {
+    width: 136px;
+  }
+
+  .home-shell .hero-card-shell h1 {
+    font-size: clamp(2.12rem, 13vw, 3rem);
+  }
+
+  .home-shell .hero-actions {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 900px) and (max-height: 520px) {
+  .topbar.home-topbar,
+  .topbar.with-nav {
+    grid-template-columns: minmax(210px, 0.72fr) minmax(0, 1fr);
+    gap: 8px;
+    padding: 8px 10px;
+    border-radius: 22px;
+  }
+
+  .brand-mark {
+    justify-self: start;
+    text-align: left;
+  }
+
+  .brand-icon {
+    width: 50px;
+    height: 50px;
+    flex-basis: 50px;
+  }
+
+  .brand-mark strong {
+    font-size: 0.96rem;
+  }
+
+  .brand-mark small {
+    font-size: 0.72rem;
+  }
+
+  .header-actions {
+    grid-column: 2;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    gap: 6px;
+  }
+
+  .primary-nav {
+    grid-column: 1 / -1;
+    order: 3;
+    min-height: 40px;
+    padding: 4px;
+  }
+
+  .primary-nav button {
+    min-height: 34px;
+    padding-inline: 11px;
+    font-size: 0.8rem;
+  }
+
+  .compact-select {
+    min-height: 36px;
+    padding: 5px 8px;
+  }
+
+  .compact-select .control-label,
+  .theme-toggle span {
+    display: none;
+  }
+
+  .compact-select select {
+    min-width: 128px;
+  }
+
+  .theme-toggle,
+  .account-button,
+  .account-chip {
+    min-height: 36px;
+  }
+
+  .account-button {
+    padding-inline: 10px;
+    font-size: 0.8rem;
+  }
+}

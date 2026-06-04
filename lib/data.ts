@@ -784,6 +784,7 @@ export const languagePreferenceOrder: LanguageCode[] = [
   "ar",
   "fa",
   "hi",
+  "pt",
   "gu",
   "bn",
   "ja",

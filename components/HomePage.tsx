@@ -9,7 +9,6 @@ import {
   ClipboardCheck,
   Compass,
   Edit3,
-  ExternalLink,
   Handshake,
   Languages,
   ListChecks,
@@ -18,7 +17,6 @@ import {
   LogOut,
   Mail,
   MapPin,
-  Menu,
   Moon,
   Megaphone,
   RefreshCw,
@@ -38,7 +36,6 @@ import {
   useRef,
   useState,
   type FormEvent,
-  type MouseEvent as ReactMouseEvent,
   type ReactNode
 } from "react";
 import { categories, cityOptions, languagePreferenceOrder, opportunities, regions } from "@/lib/data";
@@ -52,6 +49,7 @@ import {
   loadSupabaseSavedOpportunityIds,
   saveSupabaseOpportunity,
   signInSupabaseAccount,
+  signInSupabaseWithProvider,
   signOutSupabaseAccount,
   startSupabaseAccountEmailVerification,
   submitSupabaseFeedback,
@@ -62,6 +60,7 @@ import {
   updateSupabaseOpportunityStatus,
   verifySupabaseAccountEmailCode
 } from "@/lib/betaBackend";
+import type { SupabaseOAuthProvider } from "@/lib/betaBackend";
 import { languageMeta, t, translatedSummary } from "@/lib/i18n";
 import { adminReviewOpportunities, computedOpportunityStatus, publicOpportunities } from "@/lib/opportunityStatus";
 import { warnAboutLocalFallback } from "@/lib/supabaseClient";
@@ -114,11 +113,12 @@ type HeaderNavigation = {
   home: () => void;
   opportunities: () => void;
   highSchool: () => void;
+  about: () => void;
+  support: () => void;
   volunteerHours: () => void;
   coop: () => void;
   mentorship: () => void;
   communityHosts: () => void;
-  support: () => void;
   feedback: () => void;
 };
 
@@ -200,6 +200,24 @@ function clampDistance(value: number) {
 
 function directionsUrl(opportunity: Opportunity) {
   return `https://www.google.com/maps/dir/?api=1&destination=${opportunity.latitude},${opportunity.longitude}`;
+}
+
+function isHighSchoolOpportunity(opportunity: Opportunity) {
+  const haystack = [...opportunity.tags, opportunity.type, opportunity.category, ...opportunity.categories, ...opportunity.grades]
+    .join(" ")
+    .toLowerCase();
+  return (
+    opportunity.volunteerHoursEligible ||
+    opportunity.coopEligible ||
+    opportunity.categories.includes("Career & Mentorship") ||
+    opportunity.categories.includes("Youth Leadership") ||
+    haystack.includes("shsm") ||
+    haystack.includes("high school") ||
+    haystack.includes("grade 9") ||
+    haystack.includes("grade 10") ||
+    haystack.includes("grade 11") ||
+    haystack.includes("grade 12")
+  );
 }
 
 async function hashPassword(email: string, password: string) {
@@ -492,25 +510,14 @@ export function HomePage() {
   const activeLocation = userLocation ?? postalLocation;
   const displayOpportunities = useMemo(() => applyEventEdits(opportunities, adminEventEdits), [adminEventEdits]);
 
-  const visibleOpportunities = useMemo(
+  const filteredOpportunities = useMemo(
     () => filterOpportunities(displayOpportunities, filters, activeLocation),
     [filters, activeLocation, displayOpportunities]
   );
-  const activeOpportunityCount = useMemo(() => publicOpportunities(displayOpportunities).length, [displayOpportunities]);
-  const latestCheckedLabel = useMemo(() => {
-    const allDates = [
-      ...displayOpportunities.map((opportunity) => opportunity.lastSeen || opportunity.lastChecked),
-      ...generatedDiscoveryReviewCandidates.map((candidate) => candidate.lastSeen || candidate.lastChecked)
-    ]
-      .filter((date): date is string => Boolean(date))
-      .map((date) => date.slice(0, 10))
-      .sort();
-    const latest = allDates.at(-1);
-    if (!latest) return "Updated regularly";
-    return new Intl.DateTimeFormat("en-CA", { month: "short", day: "numeric", year: "numeric" }).format(
-      new Date(`${latest}T12:00:00`)
-    );
-  }, [displayOpportunities]);
+  const visibleOpportunities = useMemo(() => {
+    if (activeSurface !== "high-school") return filteredOpportunities;
+    return filteredOpportunities.filter(isHighSchoolOpportunity);
+  }, [activeSurface, filteredOpportunities]);
   const availableProgramLanguages = useMemo(() => {
     const available = new Set(displayOpportunities.flatMap((opportunity) => opportunity.languages));
     return languagePreferenceOrder.filter((code) => available.has(code));
@@ -560,6 +567,17 @@ export function HomePage() {
     []
   );
 
+  const goToHighSchool = useCallback(
+    (nextFilters?: Partial<Filters>) => {
+      if (nextFilters) {
+        setFilters((current) => ({ ...current, ...nextFilters }));
+      }
+      setActiveSurface("high-school");
+      setPendingScrollTarget(nextFilters ? "high-school-results" : "high-school");
+    },
+    []
+  );
+
   const showSurface = useCallback(
     (surface: ActiveSurface, targetId: string) => {
       setActiveSurface(surface);
@@ -572,16 +590,17 @@ export function HomePage() {
     () => ({
       home: showHome,
       opportunities: () => goToOpportunities(),
-      highSchool: () => showSurface("high-school", "high-school"),
+      highSchool: () => goToHighSchool(),
+      about: () => showSurface("support", "accessibility-support"),
+      support: () => showSurface("community-hosts", "feedback"),
       volunteerHours: () =>
-        goToOpportunities({ volunteerHours: true, coop: false, mentorship: false, leadership: false }),
-      coop: () => goToOpportunities({ volunteerHours: false, coop: true, mentorship: false, leadership: false }),
-      mentorship: () => goToOpportunities({ volunteerHours: false, coop: false, mentorship: true, leadership: false }),
+        goToHighSchool({ volunteerHours: true, coop: false, mentorship: false, leadership: false }),
+      coop: () => goToHighSchool({ volunteerHours: false, coop: true, mentorship: false, leadership: false }),
+      mentorship: () => goToHighSchool({ volunteerHours: false, coop: false, mentorship: true, leadership: false }),
       communityHosts: () => showSurface("community-hosts", "community-hosts"),
-      support: () => showSurface("support", "accessibility-support"),
       feedback: () => showSurface("community-hosts", "feedback")
     }),
-    [goToOpportunities, showHome, showSurface]
+    [goToHighSchool, goToOpportunities, showHome, showSurface]
   );
 
   const handleHeroSearch = useCallback(
@@ -695,7 +714,8 @@ export function HomePage() {
         return;
       }
     }
-    setAuthError("Real email verification is not connected yet. Add Supabase URL and anon key before creating accounts.");
+    setAuthError("");
+    setAuthNotice("Real account creation is ready in the code. Connect Supabase Auth in the free hosting settings to send email codes.");
   };
 
   const handleVerify = async (formData: FormData) => {
@@ -732,7 +752,8 @@ export function HomePage() {
       }
       return;
     }
-    setAuthError("Real email verification is not connected yet. Add Supabase before creating accounts.");
+    setAuthError("");
+    setAuthNotice("Real email verification turns on after Supabase Auth is connected.");
   };
 
   const handleSignin = async (formData: FormData) => {
@@ -774,6 +795,26 @@ export function HomePage() {
     setAuthNotice("");
     setAuthOpen(false);
     setAccountDashboardOpen(true);
+  };
+
+  const handleProviderSignin = async (provider: SupabaseOAuthProvider) => {
+    const providerLabel = provider === "azure" ? "Microsoft" : provider === "google" ? "Google" : "Apple";
+    if (backendMode !== "supabase") {
+      setAuthError("");
+      setAuthNotice(
+        `${providerLabel} sign-in is ready in the website code. Connect Supabase Auth in the free hosting settings to turn on real accounts.`
+      );
+      return;
+    }
+
+    try {
+      setAuthError("");
+      setAuthNotice(`Opening secure ${providerLabel} sign-in...`);
+      await signInSupabaseWithProvider(provider);
+    } catch (error) {
+      setAuthNotice("");
+      setAuthError(error instanceof Error ? error.message : `${providerLabel} sign-in could not start.`);
+    }
   };
 
   const requestLocation = () => {
@@ -994,6 +1035,7 @@ export function HomePage() {
         onAccountClick={() => setAccountDashboardOpen(true)}
         onSignOut={signOut}
         navigation={navigation}
+        isHome={activeSurface === "home"}
       />
 
       {activeSurface === "home" ? (
@@ -1021,25 +1063,19 @@ export function HomePage() {
           </form>
           <div className="hero-actions" aria-label="Main actions">
             <button type="button" className="primary-button" onClick={() => goToOpportunities()}>
-              Browse Opportunities
+              Opportunities
               <ChevronRight size={17} aria-hidden="true" />
             </button>
             <button type="button" className="soft-button" onClick={navigation.highSchool}>
-              High School Pathways
+              High School Opportunities
             </button>
-            <button type="button" className="soft-button" onClick={navigation.feedback}>
-              Share Feedback
+            <button type="button" className="soft-button" onClick={navigation.about}>
+              About
+            </button>
+            <button type="button" className="soft-button" onClick={navigation.support}>
+              Support
             </button>
           </div>
-          <DiscoveryStatusCard
-            activeCount={activeOpportunityCount}
-            latestCheckedLabel={latestCheckedLabel}
-            reviewCount={generatedDiscoverySummary.newCandidates}
-            sourceCount={generatedDiscoverySummary.sourcesChecked}
-            refreshing={researchRefreshing}
-            status={researchStatus}
-            onRefresh={refreshResearch}
-          />
           {saveGateMessage ? (
             <p className="auth-inline-warning" role="alert">
               <AlertTriangle size={16} aria-hidden="true" />
@@ -1059,8 +1095,21 @@ export function HomePage() {
         </section>
       ) : null}
 
-      {activeSurface === "opportunities" ? (
-      <section id="opportunities" className="workspace-band search-band surface-band" aria-label="Opportunity search">
+      {activeSurface === "high-school" ? (
+        <HighSchoolSection
+          language={language}
+          onVolunteerFilter={navigation.volunteerHours}
+          onCoopFilter={navigation.coop}
+          onMentorshipFilter={navigation.mentorship}
+        />
+      ) : null}
+
+      {activeSurface === "opportunities" || activeSurface === "high-school" ? (
+      <section
+        id={activeSurface === "high-school" ? "high-school-results" : "opportunities"}
+        className="workspace-band search-band surface-band"
+        aria-label={activeSurface === "high-school" ? "High school opportunity search" : "Opportunity search"}
+      >
         <div className="search-layout">
           <aside className={`filter-panel ${filtersOpen ? "open" : ""}`} aria-label={t(language, "filters")}>
             <button
@@ -1233,24 +1282,26 @@ export function HomePage() {
                 />
               </FilterGroup>
 
-              <FilterGroup title={t(language, "highSchool")}>
-                <Toggle
-                  checked={filters.volunteerHours}
-                  onChange={(value) => updateFilter("volunteerHours", value)}
-                  label={t(language, "volunteerHours")}
-                />
-                <Toggle checked={filters.coop} onChange={(value) => updateFilter("coop", value)} label={t(language, "coop")} />
-                <Toggle
-                  checked={filters.mentorship}
-                  onChange={(value) => updateFilter("mentorship", value)}
-                  label={t(language, "mentorship")}
-                />
-                <Toggle
-                  checked={filters.leadership}
-                  onChange={(value) => updateFilter("leadership", value)}
-                  label={t(language, "leadership")}
-                />
-              </FilterGroup>
+              {activeSurface === "high-school" ? (
+                <FilterGroup title={t(language, "highSchool")}>
+                  <Toggle
+                    checked={filters.volunteerHours}
+                    onChange={(value) => updateFilter("volunteerHours", value)}
+                    label={t(language, "volunteerHours")}
+                  />
+                  <Toggle checked={filters.coop} onChange={(value) => updateFilter("coop", value)} label={t(language, "coop")} />
+                  <Toggle
+                    checked={filters.mentorship}
+                    onChange={(value) => updateFilter("mentorship", value)}
+                    label={t(language, "mentorship")}
+                  />
+                  <Toggle
+                    checked={filters.leadership}
+                    onChange={(value) => updateFilter("leadership", value)}
+                    label={t(language, "leadership")}
+                  />
+                </FilterGroup>
+              ) : null}
             </div>
           </aside>
 
@@ -1263,6 +1314,10 @@ export function HomePage() {
                 </h2>
               </div>
               <div className="results-actions">
+                <SourceScoutMini
+                  reviewCount={generatedDiscoverySummary.newCandidates}
+                  sourceCount={generatedDiscoverySummary.sourcesChecked}
+                />
                 <button type="button" className="soft-button research-refresh-button" onClick={refreshResearch} disabled={researchRefreshing}>
                   <RefreshCw size={16} aria-hidden="true" className={researchRefreshing ? "spinning" : ""} />
                   {t(language, "refreshResearch")}
@@ -1337,15 +1392,6 @@ export function HomePage() {
       </section>
       ) : null}
 
-      {activeSurface === "high-school" ? (
-        <HighSchoolSection
-          language={language}
-          onVolunteerFilter={navigation.volunteerHours}
-          onCoopFilter={navigation.coop}
-          onMentorshipFilter={navigation.mentorship}
-        />
-      ) : null}
-
       {activeSurface === "support" ? (
         <>
           <SupportSection />
@@ -1368,6 +1414,7 @@ export function HomePage() {
           onSignin={handleSignin}
           onSignup={handleSignup}
           onVerify={handleVerify}
+          onProviderSignin={handleProviderSignin}
         />
       ) : null}
 
@@ -1416,7 +1463,8 @@ function Header({
   onAuthClick,
   onAccountClick,
   onSignOut,
-  navigation
+  navigation,
+  isHome
 }: {
   language: LanguageCode;
   setLanguage: (language: LanguageCode) => void;
@@ -1427,25 +1475,17 @@ function Header({
   onAccountClick: () => void;
   onSignOut: () => void;
   navigation: HeaderNavigation;
+  isHome: boolean;
 }) {
-  const menuItems = [
+  const navItems = [
     ["Opportunities", navigation.opportunities],
-    ["High School", navigation.highSchool],
-    ["Volunteer Hours", navigation.volunteerHours],
-    ["Co-op / SHSM", navigation.coop],
-    ["Mentorship", navigation.mentorship],
-    ["Community Hosts", navigation.communityHosts],
-    ["Accessibility / Support", navigation.support],
-    ["Feedback", navigation.feedback]
+    ["High School Opportunities", navigation.highSchool],
+    ["About", navigation.about],
+    ["Support", navigation.support]
   ] as const;
 
-  const runMenuAction = (event: ReactMouseEvent<HTMLButtonElement>, action: () => void) => {
-    event.currentTarget.closest("details")?.removeAttribute("open");
-    action();
-  };
-
   return (
-    <header className="topbar">
+    <header className={`topbar ${isHome ? "home-topbar" : "with-nav"}`}>
       <a
         className="brand-mark"
         href="#top"
@@ -1464,21 +1504,15 @@ function Header({
         </span>
       </a>
 
-      <nav className="site-menu-wrap" aria-label="Primary navigation">
-        <details className="site-menu">
-          <summary>
-            <Menu size={17} aria-hidden="true" />
-            <span>Menu</span>
-          </summary>
-          <div className="site-menu-panel">
-            {menuItems.map(([label, action]) => (
-              <button key={label} type="button" onClick={(event) => runMenuAction(event, action)}>
-                {label}
-              </button>
-            ))}
-          </div>
-        </details>
-      </nav>
+      {!isHome ? (
+        <nav className="primary-nav" aria-label="Primary navigation">
+          {navItems.map(([label, action]) => (
+            <button key={label} type="button" onClick={action}>
+              {label}
+            </button>
+          ))}
+        </nav>
+      ) : null}
 
       <div className="header-actions">
         <label className="compact-select">
@@ -1553,53 +1587,16 @@ function Header({
   );
 }
 
-function DiscoveryStatusCard({
-  activeCount,
-  latestCheckedLabel,
-  reviewCount,
-  sourceCount,
-  refreshing,
-  status,
-  onRefresh
-}: {
-  activeCount: number;
-  latestCheckedLabel: string;
-  reviewCount: number;
-  sourceCount: number;
-  refreshing: boolean;
-  status: string;
-  onRefresh: () => void;
-}) {
-  const scoutText = `${sourceCount} trusted public sources scan every 6 hours. ${reviewCount} new source finds are being verified.`;
-
+function SourceScoutMini({ sourceCount, reviewCount }: { sourceCount: number; reviewCount: number }) {
   return (
-    <aside className="hero-status-card" aria-label="Opportunity search status">
+    <div className="source-scout-mini" aria-label="Research refresh status">
       <span className="source-scout-radar" aria-hidden="true">
         <span />
       </span>
-      <div className="hero-status-copy">
-        <strong>Actively searching for free GTA STEM opportunities</strong>
-        <p>{status || scoutText}</p>
-      </div>
-      <button type="button" className="soft-button source-scout-refresh" onClick={onRefresh} disabled={refreshing} aria-label="Refresh research scan">
-        <RefreshCw size={15} aria-hidden="true" className={refreshing ? "spinning" : ""} />
-        Refresh
-      </button>
-      <dl className="hero-status-metrics">
-        <div>
-          <dt>Last updated</dt>
-          <dd>{latestCheckedLabel}</dd>
-        </div>
-        <div>
-          <dt>Active opportunities</dt>
-          <dd>{activeCount}</dd>
-        </div>
-        <div>
-          <dt>New finds</dt>
-          <dd>Being verified</dd>
-        </div>
-      </dl>
-    </aside>
+      <span>
+        {sourceCount} sources · {reviewCount} new finds being verified
+      </span>
+    </div>
   );
 }
 
@@ -1958,14 +1955,17 @@ function HighSchoolSection({
 function SupportSection() {
   const cards = [
     {
+      icon: UserRound,
       title: "Browse without an account",
       text: "Anyone can search the public opportunity list first. Accounts are only needed for saving, feedback, and submissions."
     },
     {
+      icon: Search,
       title: "Search in simple ways",
       text: "Use city, region, age, category, volunteer hours, co-op, mentorship, leadership, and focused-program filters."
     },
     {
+      icon: ListChecks,
       title: "Plain-language access",
       text: "Listings keep summaries clear, show official source links, and support list view when a map is not the easiest option."
     }
@@ -1978,13 +1978,16 @@ function SupportSection() {
         <h2>Built to be easier for students, parents, educators, and community groups.</h2>
       </div>
       <div className="support-grid">
-        {cards.map((card) => (
+        {cards.map((card) => {
+          const Icon = card.icon;
+          return (
           <article key={card.title} className="support-card">
-            <ShieldCheck size={20} aria-hidden="true" />
+            <Icon size={20} aria-hidden="true" />
             <strong>{card.title}</strong>
             <p>{card.text}</p>
           </article>
-        ))}
+          );
+        })}
       </div>
     </section>
   );
@@ -2584,7 +2587,8 @@ function AuthModal({
   onClose,
   onSignin,
   onSignup,
-  onVerify
+  onVerify,
+  onProviderSignin
 }: {
   mode: AuthMode;
   backendMode: BackendMode;
@@ -2596,6 +2600,7 @@ function AuthModal({
   onSignin: (formData: FormData) => Promise<void>;
   onSignup: (formData: FormData) => Promise<void>;
   onVerify: (formData: FormData) => Promise<void>;
+  onProviderSignin: (provider: SupabaseOAuthProvider) => Promise<void>;
 }) {
   const handleSignin = useCallback(
     async (event: FormEvent<HTMLFormElement>) => {
@@ -2647,6 +2652,25 @@ function AuthModal({
             Verify
           </button>
         </div>
+
+        <div className="oauth-panel" aria-label="Fast sign-in options">
+          <button type="button" className="oauth-button" onClick={() => void onProviderSignin("google")}>
+            Continue with Google
+          </button>
+          <button type="button" className="oauth-button" onClick={() => void onProviderSignin("azure")}>
+            Continue with Microsoft
+          </button>
+          <button type="button" className="oauth-button" onClick={() => void onProviderSignin("apple")}>
+            Continue with Apple
+          </button>
+        </div>
+
+        {backendMode !== "supabase" ? (
+          <p className="auth-notice">
+            <ShieldCheck size={16} aria-hidden="true" />
+            Public browsing works now. Real accounts turn on after Supabase Auth is connected in the free hosting settings.
+          </p>
+        ) : null}
 
         {notice ? (
           <p className="auth-notice">
@@ -2716,7 +2740,7 @@ function AuthModal({
               <input name="confirmPassword" type="password" autoComplete="new-password" minLength={9} required />
             </label>
             <button type="submit" className="primary-button">
-              {backendMode === "supabase" ? "Send real email code" : "Email verification not connected"}
+              Send email code
               <ChevronRight size={17} aria-hidden="true" />
             </button>
           </form>
@@ -2740,10 +2764,7 @@ function AuthModal({
           </form>
         ) : null}
 
-        <a className="auth-secondary-link" href="https://supabase.com/docs/guides/auth/auth-email" target="_blank" rel="noreferrer">
-          Real account emails use Supabase Auth
-          <ExternalLink size={14} aria-hidden="true" />
-        </a>
+        <p className="auth-secondary-link">Accounts use Supabase Auth for email, saves, feedback, and submissions.</p>
       </section>
     </div>
   );

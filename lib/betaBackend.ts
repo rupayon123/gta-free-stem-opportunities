@@ -14,6 +14,8 @@ import type {
 } from "./types";
 import { getSupabaseClient, hasSupabaseConfig } from "./supabaseClient";
 
+export type SupabaseOAuthProvider = "google" | "azure" | "apple";
+
 type ProfileRow = {
   id: string;
   email: string | null;
@@ -287,6 +289,17 @@ export async function signInSupabaseAccount(email: string, password: string) {
   const account = await getCurrentSupabaseAccount();
   if (!account) throw new Error("Account profile is missing. Ask an admin to review this account.");
   return account;
+}
+
+export async function signInSupabaseWithProvider(provider: SupabaseOAuthProvider) {
+  const supabase = requireSupabase();
+  const { error } = await supabase.auth.signInWithOAuth({
+    provider,
+    options: {
+      redirectTo: typeof window !== "undefined" ? window.location.origin : undefined
+    }
+  });
+  if (error) throw error;
 }
 
 export async function signOutSupabaseAccount() {

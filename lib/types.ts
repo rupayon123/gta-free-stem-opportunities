@@ -55,6 +55,7 @@ export type LanguageCode =
   | "ar"
   | "fa"
   | "hi"
+  | "pt"
   | "gu"
   | "bn"
   | "ja"
