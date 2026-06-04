@@ -360,6 +360,7 @@ export function HomePage() {
       ".primary-button",
       ".soft-button",
       ".icon-text-button",
+      ".toolbar-filter-button",
       ".account-button",
       ".theme-toggle button",
       ".segmented button"

@@ -1266,6 +1266,7 @@ a {
 .primary-button:is(:hover, .motion-active),
 .soft-button:is(:hover, .motion-active),
 .icon-text-button:is(:hover, .motion-active),
+.toolbar-filter-button:is(:hover, .motion-active),
 .account-button:is(:hover, .motion-active),
 .theme-toggle button:is(:hover, .motion-active),
 .segmented button:is(:hover, .motion-active),
@@ -3018,6 +3019,7 @@ a {
 .primary-button:is(:hover, .motion-active),
 .soft-button:is(:hover, .motion-active),
 .icon-text-button:is(:hover, .motion-active),
+.toolbar-filter-button:is(:hover, .motion-active),
 .account-button:is(:hover, .motion-active),
 .theme-toggle button:is(:hover, .motion-active),
 .segmented button:is(:hover, .motion-active),
@@ -5305,6 +5307,14 @@ a {
   box-shadow: none;
 }
 
+.toolbar-filter-button {
+  transition:
+    transform var(--pop),
+    border-color var(--motion),
+    box-shadow var(--motion),
+    background var(--motion);
+}
+
 .research-refresh-button {
   width: 100%;
   justify-content: center;
@@ -5633,6 +5643,19 @@ a {
 
 .toolbar-controls .segmented button {
   min-height: 38px;
+}
+
+.toolbar-filter-button:is(:hover, .motion-active, :focus-visible) {
+  border-color: color-mix(in srgb, var(--blue) 68%, var(--line));
+  background:
+    radial-gradient(circle at var(--glow-x, 50%) var(--glow-y, 50%), rgba(255, 255, 255, 0.44), transparent 38%),
+    linear-gradient(135deg, color-mix(in srgb, var(--surface) 88%, var(--blue-soft)), color-mix(in srgb, var(--surface) 78%, var(--yellow-soft)));
+  box-shadow: 0 10px 22px color-mix(in srgb, var(--blue) 18%, transparent);
+  transform: perspective(700px) rotateX(var(--tilt-x, 0deg)) rotateY(var(--tilt-y, 0deg)) translateY(-2px) scale(1.03);
+}
+
+.toolbar-filter-button:active {
+  transform: translateY(1px) scale(0.98);
 }
 
 .results-panel .cards-column,
