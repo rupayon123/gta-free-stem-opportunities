@@ -1827,6 +1827,7 @@ function MapPanel({
         zoom: 8.6,
         attributionControl: { compact: true }
       });
+      mapRef.current.scrollZoom.disable();
       mapRef.current.addControl(new maplibregl.NavigationControl({ showCompass: false }), "top-right");
     }
     initMap();

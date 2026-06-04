@@ -5651,8 +5651,8 @@ a {
 }
 
 .selected-column {
-  position: sticky;
-  top: 96px;
+  position: relative;
+  top: auto;
   align-self: start;
   max-height: none;
   overflow: visible;
@@ -5695,6 +5695,37 @@ a {
   .toolbar-controls .segmented {
     grid-column: auto;
   }
+}
+
+/* Permanent search scroll contract: the page owns scrolling, never a side column. */
+.search-band .results-panel,
+.search-band .cards-column,
+.search-band .selected-column,
+.search-band .selected-details-card,
+.search-band .map-column,
+.search-band .map-shell {
+  max-height: none;
+  overflow: visible;
+}
+
+.search-band .selected-column {
+  position: relative;
+  top: auto;
+  display: grid;
+  grid-template-rows: auto auto;
+  height: auto;
+  min-height: 0;
+}
+
+.search-band .selected-details-card,
+.search-band .map-column,
+.search-band .map-shell {
+  position: relative;
+  top: auto;
+}
+
+.search-band .map-shell {
+  overflow: hidden;
 }
 
 @keyframes hero-logo-giggle {
