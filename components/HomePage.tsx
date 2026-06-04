@@ -673,6 +673,8 @@ export function HomePage() {
     const grade = String(formData.get("grade") ?? "").trim();
     const password = String(formData.get("password") ?? "");
     const confirmPassword = String(formData.get("confirmPassword") ?? "");
+    const termsAccepted = String(formData.get("termsAccepted") ?? "") === "yes";
+    const humanCheck = String(formData.get("humanCheck") ?? "") === "yes";
 
     if (!name) {
       setAuthError("Please enter a name for the account.");
@@ -688,6 +690,14 @@ export function HomePage() {
     }
     if (password !== confirmPassword) {
       setAuthError("Passwords do not match.");
+      return;
+    }
+    if (!termsAccepted) {
+      setAuthError("Please agree to the Terms of Service and Privacy Notice before creating an account.");
+      return;
+    }
+    if (!humanCheck) {
+      setAuthError("Please complete the human check before creating an account.");
       return;
     }
     if (role === "admin") {
@@ -1063,17 +1073,17 @@ export function HomePage() {
           </form>
           <div className="hero-actions" aria-label="Main actions">
             <button type="button" className="primary-button" onClick={() => goToOpportunities()}>
-              Opportunities
+              {t(language, "navOpportunities")}
               <ChevronRight size={17} aria-hidden="true" />
             </button>
             <button type="button" className="soft-button" onClick={navigation.highSchool}>
-              High School Opportunities
+              {t(language, "navHighSchoolOpportunities")}
             </button>
             <button type="button" className="soft-button" onClick={navigation.about}>
-              About
+              {t(language, "navAbout")}
             </button>
             <button type="button" className="soft-button" onClick={navigation.support}>
-              Support
+              {t(language, "navSupport")}
             </button>
           </div>
           {saveGateMessage ? (
@@ -1346,48 +1356,46 @@ export function HomePage() {
             </div>
             {researchStatus ? <p className="research-status-line" role="status">{researchStatus}</p> : null}
 
-            <div className={viewMode === "map" ? "results-grid map-first" : "results-grid"}>
-              <div className="cards-column">
-                {visibleOpportunities.map((opportunity) => (
-                  <OpportunityCard
-                    key={opportunity.id}
-                    opportunity={opportunity}
-                    language={language}
-                    activeLocation={activeLocation}
-                    selected={selectedOpportunity?.id === opportunity.id}
-                    saved={savedIds.includes(opportunity.id)}
-                    onSelect={() => selectOpportunity(opportunity.id)}
-                    onSave={() => toggleSaved(opportunity.id)}
-                    onCalendar={() => downloadCalendar(opportunity)}
-                  />
-                ))}
-              </div>
-
-              <aside className="selected-column" aria-label="Selected program information">
-                {selectedOpportunity ? (
-                  <div id="selected-listing-details" className="selected-details-card">
-                    <OpportunityDetails
-                      opportunity={selectedOpportunity}
-                      language={language}
-                      saved={savedIds.includes(selectedOpportunity.id)}
-                      onSave={() => toggleSaved(selectedOpportunity.id)}
-                      onCalendar={() => downloadCalendar(selectedOpportunity)}
-                      compact
-                    />
-                  </div>
-                ) : null}
-
-                <div className="map-column">
-                  <MapPanel
-                    opportunities={visibleOpportunities}
-                    selectedId={selectedOpportunity?.id}
-                    onSelect={selectOpportunity}
-                    activeLocation={activeLocation}
-                  />
-                </div>
-              </aside>
+            <div className="cards-column">
+              {visibleOpportunities.map((opportunity) => (
+                <OpportunityCard
+                  key={opportunity.id}
+                  opportunity={opportunity}
+                  language={language}
+                  activeLocation={activeLocation}
+                  selected={selectedOpportunity?.id === opportunity.id}
+                  saved={savedIds.includes(opportunity.id)}
+                  onSelect={() => selectOpportunity(opportunity.id)}
+                  onSave={() => toggleSaved(opportunity.id)}
+                  onCalendar={() => downloadCalendar(opportunity)}
+                />
+              ))}
             </div>
           </div>
+
+          <aside className={`selected-column ${viewMode === "map" ? "map-priority" : ""}`} aria-label="Selected program information">
+            {selectedOpportunity ? (
+              <div id="selected-listing-details" className="selected-details-card">
+                <OpportunityDetails
+                  opportunity={selectedOpportunity}
+                  language={language}
+                  saved={savedIds.includes(selectedOpportunity.id)}
+                  onSave={() => toggleSaved(selectedOpportunity.id)}
+                  onCalendar={() => downloadCalendar(selectedOpportunity)}
+                  compact
+                />
+              </div>
+            ) : null}
+
+            <div className="map-column">
+              <MapPanel
+                opportunities={visibleOpportunities}
+                selectedId={selectedOpportunity?.id}
+                onSelect={selectOpportunity}
+                activeLocation={activeLocation}
+              />
+            </div>
+          </aside>
         </div>
       </section>
       ) : null}
@@ -1406,6 +1414,7 @@ export function HomePage() {
         <AuthModal
           mode={authMode}
           backendMode={backendMode}
+          language={language}
           setMode={setAuthMode}
           error={authError}
           notice={authNotice}
@@ -1478,10 +1487,10 @@ function Header({
   isHome: boolean;
 }) {
   const navItems = [
-    ["Opportunities", navigation.opportunities],
-    ["High School Opportunities", navigation.highSchool],
-    ["About", navigation.about],
-    ["Support", navigation.support]
+    [t(language, "navOpportunities"), navigation.opportunities],
+    [t(language, "navHighSchoolOpportunities"), navigation.highSchool],
+    [t(language, "navAbout"), navigation.about],
+    [t(language, "navSupport"), navigation.support]
   ] as const;
 
   return (
@@ -1579,7 +1588,7 @@ function Header({
         ) : (
           <button type="button" className="account-button" onClick={onAuthClick}>
             <UserRound size={16} aria-hidden="true" />
-            Account / Admin
+            {t(language, "accountAdmin")}
           </button>
         )}
       </div>
@@ -1701,7 +1710,7 @@ function OpportunityCard({
         </button>
         <a href={directionsUrl(opportunity)} target="_blank" rel="noreferrer" className="soft-button">
           <MapPin size={16} aria-hidden="true" />
-          Directions
+          {t(language, "directions")}
         </a>
       </div>
     </article>
@@ -1846,7 +1855,7 @@ function OpportunityDetails({
           </button>
           <a href={directionsUrl(opportunity)} target="_blank" rel="noreferrer" className="soft-button">
             <MapPin size={16} aria-hidden="true" />
-            Directions
+            {t(language, "directions")}
           </a>
         </div>
       </div>
@@ -2580,6 +2589,7 @@ function AdminDashboard({
 function AuthModal({
   mode,
   backendMode,
+  language,
   setMode,
   error,
   notice,
@@ -2592,6 +2602,7 @@ function AuthModal({
 }: {
   mode: AuthMode;
   backendMode: BackendMode;
+  language: LanguageCode;
   setMode: (mode: AuthMode) => void;
   error: string;
   notice: string;
@@ -2602,6 +2613,11 @@ function AuthModal({
   onVerify: (formData: FormData) => Promise<void>;
   onProviderSignin: (provider: SupabaseOAuthProvider) => Promise<void>;
 }) {
+  const [termsAccepted, setTermsAccepted] = useState(false);
+  const [humanConfirmed, setHumanConfirmed] = useState(false);
+  const [consentMessage, setConsentMessage] = useState("");
+  const canUseAccountActions = termsAccepted && humanConfirmed;
+
   const handleSignin = useCallback(
     async (event: FormEvent<HTMLFormElement>) => {
       event.preventDefault();
@@ -2626,14 +2642,23 @@ function AuthModal({
     [onVerify]
   );
 
+  const startProviderSignin = (provider: SupabaseOAuthProvider) => {
+    if (!canUseAccountActions) {
+      setConsentMessage(t(language, "consentRequired"));
+      return;
+    }
+    setConsentMessage("");
+    void onProviderSignin(provider);
+  };
+
   return (
     <div className="auth-backdrop" role="presentation">
       <section className="auth-modal" role="dialog" aria-modal="true" aria-labelledby="auth-title">
         <div className="auth-header">
           <div>
-            <p className="eyebrow">Verified account required</p>
+            <p className="eyebrow">{t(language, "verifiedAccountRequired")}</p>
             <h2 id="auth-title">
-              {mode === "signup" ? "Create parent or student account" : mode === "verify" ? "Verify email first" : "Sign in to save or manage"}
+              {mode === "signup" ? t(language, "authSignupTitle") : mode === "verify" ? t(language, "authVerifyTitle") : t(language, "authSigninTitle")}
             </h2>
           </div>
           <button type="button" className="icon-only-button" onClick={onClose} aria-label="Close account dialog">
@@ -2643,32 +2668,68 @@ function AuthModal({
 
         <div className="auth-tabs" role="tablist" aria-label="Account options">
           <button type="button" className={mode === "signin" ? "active" : ""} onClick={() => setMode("signin")}>
-            Sign in
+            {t(language, "signIn")}
           </button>
           <button type="button" className={mode === "signup" ? "active" : ""} onClick={() => setMode("signup")}>
-            Create account
+            {t(language, "createAccount")}
           </button>
           <button type="button" className={mode === "verify" ? "active" : ""} onClick={() => setMode("verify")} disabled={!pendingSignup}>
-            Verify
+            {t(language, "verify")}
           </button>
+        </div>
+
+        <div className="account-consent-panel">
+          <details>
+            <summary>{t(language, "termsTitle")}</summary>
+            <p>{t(language, "termsBody")}</p>
+          </details>
+          <label className="consent-row">
+            <input
+              type="checkbox"
+              checked={termsAccepted}
+              onChange={(event) => setTermsAccepted(event.currentTarget.checked)}
+            />
+            <span>{t(language, "termsAgree")}</span>
+          </label>
+          <label className="consent-row">
+            <input
+              type="checkbox"
+              checked={humanConfirmed}
+              onChange={(event) => setHumanConfirmed(event.currentTarget.checked)}
+            />
+            <span>{t(language, "humanCheck")}</span>
+          </label>
+          <p className="captcha-note">
+            {t(language, "captchaNote")}
+          </p>
         </div>
 
         <div className="oauth-panel" aria-label="Fast sign-in options">
-          <button type="button" className="oauth-button" onClick={() => void onProviderSignin("google")}>
-            Continue with Google
+          <button type="button" className="oauth-button" onClick={() => startProviderSignin("google")} disabled={!canUseAccountActions}>
+            <span className="oauth-logo google-logo" aria-hidden="true">G</span>
+            {t(language, "continueGoogle")}
           </button>
-          <button type="button" className="oauth-button" onClick={() => void onProviderSignin("azure")}>
-            Continue with Microsoft
+          <button type="button" className="oauth-button" onClick={() => startProviderSignin("azure")} disabled={!canUseAccountActions}>
+            <span className="oauth-logo microsoft-logo" aria-hidden="true"><i /><i /><i /><i /></span>
+            {t(language, "continueMicrosoft")}
           </button>
-          <button type="button" className="oauth-button" onClick={() => void onProviderSignin("apple")}>
-            Continue with Apple
+          <button type="button" className="oauth-button" onClick={() => startProviderSignin("apple")} disabled={!canUseAccountActions}>
+            <span className="oauth-logo apple-logo" aria-hidden="true">A</span>
+            {t(language, "continueApple")}
           </button>
         </div>
 
-        {backendMode !== "supabase" ? (
+        {consentMessage ? (
+          <p className="auth-error" role="alert">
+            <AlertTriangle size={16} aria-hidden="true" />
+            {consentMessage}
+          </p>
+        ) : null}
+
+        {backendMode !== "supabase" && !notice ? (
           <p className="auth-notice">
             <ShieldCheck size={16} aria-hidden="true" />
-            Public browsing works now. Real accounts turn on after Supabase Auth is connected in the free hosting settings.
+            {t(language, "backendSetupNotice")}
           </p>
         ) : null}
 
@@ -2688,21 +2749,21 @@ function AuthModal({
         {mode === "signin" ? (
           <form className="auth-form" onSubmit={handleSignin}>
             <label className="field">
-              <span>Email</span>
+              <span>{t(language, "email")}</span>
               <div className="input-icon">
                 <Mail size={16} aria-hidden="true" />
                 <input name="email" type="email" autoComplete="email" required />
               </div>
             </label>
             <label className="field">
-              <span>Password</span>
+              <span>{t(language, "password")}</span>
               <div className="input-icon">
                 <LockKeyhole size={16} aria-hidden="true" />
                 <input name="password" type="password" autoComplete="current-password" required />
               </div>
             </label>
             <button type="submit" className="primary-button">
-              Sign in
+              {t(language, "signIn")}
               <ChevronRight size={17} aria-hidden="true" />
             </button>
           </form>
@@ -2710,37 +2771,39 @@ function AuthModal({
 
         {mode === "signup" ? (
           <form className="auth-form" onSubmit={handleSignup}>
+            <input type="hidden" name="termsAccepted" value={termsAccepted ? "yes" : ""} />
+            <input type="hidden" name="humanCheck" value={humanConfirmed ? "yes" : ""} />
             <label className="field">
-              <span>Name</span>
+              <span>{t(language, "name")}</span>
               <input name="name" autoComplete="name" required />
             </label>
             <label className="field">
-              <span>Email</span>
+              <span>{t(language, "email")}</span>
               <input name="email" type="email" autoComplete="email" required />
             </label>
             <div className="two-col">
               <label className="field">
-                <span>Account type</span>
+                <span>{t(language, "accountType")}</span>
                 <select name="role" defaultValue="parent" required>
-                  <option value="parent">Parent or caregiver</option>
-                  <option value="student">Student</option>
+                  <option value="parent">{t(language, "parentCaregiver")}</option>
+                  <option value="student">{t(language, "student")}</option>
                 </select>
               </label>
               <label className="field">
-                <span>Grade, optional</span>
+                <span>{t(language, "gradeOptional")}</span>
                 <input name="grade" placeholder="9, 10, 11, 12" />
               </label>
             </div>
             <label className="field">
-              <span>Password, longer than 8 characters</span>
+              <span>{t(language, "passwordLonger")}</span>
               <input name="password" type="password" autoComplete="new-password" minLength={9} required />
             </label>
             <label className="field">
-              <span>Confirm password</span>
+              <span>{t(language, "confirmPassword")}</span>
               <input name="confirmPassword" type="password" autoComplete="new-password" minLength={9} required />
             </label>
             <button type="submit" className="primary-button">
-              Send email code
+              {t(language, "sendEmailCode")}
               <ChevronRight size={17} aria-hidden="true" />
             </button>
           </form>
@@ -2750,21 +2813,21 @@ function AuthModal({
           <form className="auth-form" onSubmit={handleVerify}>
             <p className="verification-copy">
               {backendMode === "supabase"
-                ? "A real one-time code was sent to your email. Enter that code here to verify and create the account."
-                : "Real email verification is not connected yet. Account creation needs Supabase Auth before this can work."}
+                ? t(language, "verificationCopySupabase")
+                : t(language, "verificationCopyLocal")}
             </p>
             <label className="field">
-              <span>Email verification code</span>
+              <span>{t(language, "emailVerificationCode")}</span>
               <input name="verificationCode" inputMode="numeric" autoComplete="one-time-code" maxLength={6} required />
             </label>
             <button type="submit" className="primary-button" disabled={!pendingSignup}>
-              Verify email and create account
+              {t(language, "verifyEmailCreate")}
               <ChevronRight size={17} aria-hidden="true" />
             </button>
           </form>
         ) : null}
 
-        <p className="auth-secondary-link">Accounts use Supabase Auth for email, saves, feedback, and submissions.</p>
+        <p className="auth-secondary-link">{t(language, "authSecondary")}</p>
       </section>
     </div>
   );

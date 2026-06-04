@@ -103,7 +103,45 @@ type UiKey =
   | "contributeHeading"
   | "adminQueueSummary"
   | "submit"
-  | "submitted";
+  | "submitted"
+  | "navOpportunities"
+  | "navHighSchoolOpportunities"
+  | "navAbout"
+  | "navSupport"
+  | "accountAdmin"
+  | "continueGoogle"
+  | "continueMicrosoft"
+  | "continueApple"
+  | "termsTitle"
+  | "termsAgree"
+  | "humanCheck"
+  | "captchaNote"
+  | "directions"
+  | "verifiedAccountRequired"
+  | "authSignupTitle"
+  | "authVerifyTitle"
+  | "authSigninTitle"
+  | "signIn"
+  | "createAccount"
+  | "verify"
+  | "termsBody"
+  | "consentRequired"
+  | "backendSetupNotice"
+  | "email"
+  | "password"
+  | "name"
+  | "accountType"
+  | "parentCaregiver"
+  | "student"
+  | "gradeOptional"
+  | "passwordLonger"
+  | "confirmPassword"
+  | "sendEmailCode"
+  | "verificationCopySupabase"
+  | "verificationCopyLocal"
+  | "emailVerificationCode"
+  | "verifyEmailCreate"
+  | "authSecondary";
 
 const ui: Record<LanguageCode, Partial<Record<UiKey, string>>> = {
   en: {
@@ -686,8 +724,421 @@ const ui: Record<LanguageCode, Partial<Record<UiKey, string>>> = {
   }
 };
 
+const supplementalUi: Record<LanguageCode, Partial<Record<UiKey, string>>> = {
+  en: {
+    navOpportunities: "Opportunities",
+    navHighSchoolOpportunities: "High School Opportunities",
+    navAbout: "About",
+    navSupport: "Support",
+    accountAdmin: "Account / Admin",
+    continueGoogle: "Continue with Google",
+    continueMicrosoft: "Continue with Microsoft",
+    continueApple: "Continue with Apple",
+    termsTitle: "Terms of Service and Privacy Notice",
+    termsAgree: "I agree to the Terms of Service and Privacy Notice.",
+    humanCheck: "I am human.",
+    captchaNote: "Full CAPTCHA can be enabled through Supabase Auth with hCaptcha or Cloudflare Turnstile after the Supabase project is connected.",
+    directions: "Directions",
+    verifiedAccountRequired: "Verified account required",
+    authSignupTitle: "Create parent or student account",
+    authVerifyTitle: "Verify email first",
+    authSigninTitle: "Sign in to save or manage",
+    signIn: "Sign in",
+    createAccount: "Create account",
+    verify: "Verify",
+    termsBody: "Use this platform to find public free learning opportunities. Confirm final details with the provider, use a parent/caregiver email when needed, and do not submit private child information through feedback forms.",
+    consentRequired: "Please agree to the terms and complete the human check first.",
+    backendSetupNotice: "Public browsing works now. Real accounts turn on after Supabase Auth is connected in the free hosting settings.",
+    email: "Email",
+    password: "Password",
+    name: "Name",
+    accountType: "Account type",
+    parentCaregiver: "Parent or caregiver",
+    student: "Student",
+    gradeOptional: "Grade, optional",
+    passwordLonger: "Password, longer than 8 characters",
+    confirmPassword: "Confirm password",
+    sendEmailCode: "Send email code",
+    verificationCopySupabase: "A real one-time code was sent to your email. Enter that code here to verify and create the account.",
+    verificationCopyLocal: "Real email verification is not connected yet. Account creation needs Supabase Auth before this can work.",
+    emailVerificationCode: "Email verification code",
+    verifyEmailCreate: "Verify email and create account",
+    authSecondary: "Accounts use Supabase Auth for email, saves, feedback, and submissions."
+  },
+  fr: {
+    navOpportunities: "Occasions",
+    navHighSchoolOpportunities: "Occasions au secondaire",
+    navAbout: "A propos",
+    navSupport: "Soutien",
+    accountAdmin: "Compte / Admin",
+    continueGoogle: "Continuer avec Google",
+    continueMicrosoft: "Continuer avec Microsoft",
+    continueApple: "Continuer avec Apple",
+    termsTitle: "Conditions et avis de confidentialite",
+    termsAgree: "J'accepte les conditions et l'avis de confidentialite.",
+    humanCheck: "Je suis humain.",
+    captchaNote: "Le CAPTCHA complet peut etre active avec Supabase Auth, hCaptcha ou Cloudflare Turnstile.",
+    directions: "Itineraire",
+    verifiedAccountRequired: "Compte verifie requis",
+    authSignupTitle: "Creer un compte parent ou eleve",
+    authVerifyTitle: "Verifier le courriel d'abord",
+    authSigninTitle: "Connectez-vous pour sauvegarder ou gerer",
+    signIn: "Connexion",
+    createAccount: "Creer un compte",
+    verify: "Verifier",
+    backendSetupNotice: "La navigation publique fonctionne maintenant. Les vrais comptes seront actifs apres la connexion de Supabase Auth dans l'hebergement gratuit.",
+    email: "Courriel",
+    password: "Mot de passe",
+    name: "Nom",
+    accountType: "Type de compte",
+    parentCaregiver: "Parent ou responsable",
+    student: "Eleve",
+    gradeOptional: "Annee, optionnel",
+    passwordLonger: "Mot de passe, plus de 8 caracteres",
+    confirmPassword: "Confirmer le mot de passe",
+    sendEmailCode: "Envoyer le code",
+    emailVerificationCode: "Code de verification",
+    verifyEmailCreate: "Verifier et creer le compte"
+  },
+  zh: {
+    navOpportunities: "机会",
+    navHighSchoolOpportunities: "高中机会",
+    navAbout: "关于",
+    navSupport: "支持",
+    accountAdmin: "账户 / 管理",
+    continueGoogle: "继续使用 Google",
+    continueMicrosoft: "继续使用 Microsoft",
+    continueApple: "继续使用 Apple",
+    termsTitle: "服务条款和隐私通知",
+    termsAgree: "我同意服务条款和隐私通知。",
+    humanCheck: "我是人类用户。",
+    captchaNote: "连接 Supabase 后，可以通过 hCaptcha 或 Cloudflare Turnstile 开启完整 CAPTCHA。",
+    directions: "路线",
+    verifiedAccountRequired: "需要已验证账户",
+    authSignupTitle: "创建家长或学生账户",
+    authVerifyTitle: "请先验证电子邮件",
+    authSigninTitle: "登录以保存或管理",
+    signIn: "登录",
+    createAccount: "创建账户",
+    verify: "验证",
+    backendSetupNotice: "现在可以公开浏览。连接免费托管设置中的 Supabase Auth 后，真实账户将启用。",
+    email: "电子邮件",
+    password: "密码",
+    name: "姓名",
+    accountType: "账户类型",
+    parentCaregiver: "家长或照护者",
+    student: "学生",
+    gradeOptional: "年级，可选",
+    passwordLonger: "密码，超过8个字符",
+    confirmPassword: "确认密码",
+    sendEmailCode: "发送电子邮件代码",
+    emailVerificationCode: "电子邮件验证码",
+    verifyEmailCreate: "验证电子邮件并创建账户"
+  },
+  yue: {
+    navOpportunities: "機會",
+    navHighSchoolOpportunities: "中學機會",
+    navAbout: "關於",
+    navSupport: "支援",
+    accountAdmin: "帳戶 / 管理",
+    continueGoogle: "用 Google 繼續",
+    continueMicrosoft: "用 Microsoft 繼續",
+    continueApple: "用 Apple 繼續",
+    termsTitle: "服務條款同私隱通知",
+    termsAgree: "我同意服務條款同私隱通知。",
+    humanCheck: "我係真人。",
+    captchaNote: "連接 Supabase 後，可以用 hCaptcha 或 Cloudflare Turnstile 開啟 CAPTCHA。"
+  },
+  pa: {
+    navOpportunities: "ਮੌਕੇ",
+    navHighSchoolOpportunities: "ਹਾਈ ਸਕੂਲ ਮੌਕੇ",
+    navAbout: "ਬਾਰੇ",
+    navSupport: "ਸਹਾਇਤਾ",
+    accountAdmin: "ਖਾਤਾ / ਐਡਮਿਨ",
+    continueGoogle: "Google ਨਾਲ ਜਾਰੀ ਰੱਖੋ",
+    continueMicrosoft: "Microsoft ਨਾਲ ਜਾਰੀ ਰੱਖੋ",
+    continueApple: "Apple ਨਾਲ ਜਾਰੀ ਰੱਖੋ",
+    termsTitle: "ਸ਼ਰਤਾਂ ਅਤੇ ਪਰਦੇਦਾਰੀ ਨੋਟਿਸ",
+    termsAgree: "ਮੈਂ ਸ਼ਰਤਾਂ ਅਤੇ ਪਰਦੇਦਾਰੀ ਨੋਟਿਸ ਨਾਲ ਸਹਿਮਤ ਹਾਂ।",
+    humanCheck: "ਮੈਂ ਮਨੁੱਖ ਹਾਂ।",
+    captchaNote: "Supabase ਜੁੜਨ ਤੋਂ ਬਾਅਦ hCaptcha ਜਾਂ Cloudflare Turnstile ਨਾਲ CAPTCHA ਚਾਲੂ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ।"
+  },
+  ur: {
+    navOpportunities: "مواقع",
+    navHighSchoolOpportunities: "ہائی اسکول مواقع",
+    navAbout: "تعارف",
+    navSupport: "مدد",
+    accountAdmin: "اکاؤنٹ / ایڈمن",
+    continueGoogle: "Google سے جاری رکھیں",
+    continueMicrosoft: "Microsoft سے جاری رکھیں",
+    continueApple: "Apple سے جاری رکھیں",
+    termsTitle: "شرائط اور رازداری نوٹس",
+    termsAgree: "میں شرائط اور رازداری نوٹس سے اتفاق کرتا/کرتی ہوں۔",
+    humanCheck: "میں انسان ہوں۔",
+    captchaNote: "Supabase کے بعد hCaptcha یا Cloudflare Turnstile کے ساتھ CAPTCHA فعال کیا جا سکتا ہے۔"
+  },
+  ta: {
+    navOpportunities: "வாய்ப்புகள்",
+    navHighSchoolOpportunities: "உயர்நிலை வாய்ப்புகள்",
+    navAbout: "பற்றி",
+    navSupport: "உதவி",
+    accountAdmin: "கணக்கு / நிர்வாகம்",
+    continueGoogle: "Google மூலம் தொடரவும்",
+    continueMicrosoft: "Microsoft மூலம் தொடரவும்",
+    continueApple: "Apple மூலம் தொடரவும்",
+    termsTitle: "சேவை விதிமுறைகள் மற்றும் தனியுரிமை அறிவிப்பு",
+    termsAgree: "சேவை விதிமுறைகள் மற்றும் தனியுரிமை அறிவிப்பை ஏற்கிறேன்.",
+    humanCheck: "நான் மனிதன்.",
+    captchaNote: "Supabase இணைக்கப்பட்ட பிறகு hCaptcha அல்லது Cloudflare Turnstile மூலம் CAPTCHA இயக்கலாம்."
+  },
+  tl: {
+    navOpportunities: "Mga Opportunity",
+    navHighSchoolOpportunities: "High School Opportunities",
+    navAbout: "Tungkol",
+    navSupport: "Suporta",
+    accountAdmin: "Account / Admin",
+    continueGoogle: "Magpatuloy sa Google",
+    continueMicrosoft: "Magpatuloy sa Microsoft",
+    continueApple: "Magpatuloy sa Apple",
+    termsTitle: "Terms of Service at Privacy Notice",
+    termsAgree: "Sumasang-ayon ako sa Terms of Service at Privacy Notice.",
+    humanCheck: "Ako ay tao.",
+    captchaNote: "Maaaring i-on ang buong CAPTCHA gamit ang Supabase Auth, hCaptcha, o Cloudflare Turnstile."
+  },
+  es: {
+    navOpportunities: "Oportunidades",
+    navHighSchoolOpportunities: "Oportunidades de secundaria",
+    navAbout: "Acerca de",
+    navSupport: "Apoyo",
+    accountAdmin: "Cuenta / Admin",
+    continueGoogle: "Continuar con Google",
+    continueMicrosoft: "Continuar con Microsoft",
+    continueApple: "Continuar con Apple",
+    termsTitle: "Terminos de servicio y aviso de privacidad",
+    termsAgree: "Acepto los terminos de servicio y el aviso de privacidad.",
+    humanCheck: "Soy una persona.",
+    captchaNote: "El CAPTCHA completo puede activarse con Supabase Auth, hCaptcha o Cloudflare Turnstile.",
+    directions: "Como llegar",
+    verifiedAccountRequired: "Cuenta verificada requerida",
+    authSignupTitle: "Crear cuenta para padre, madre o estudiante",
+    authVerifyTitle: "Verifica el correo primero",
+    authSigninTitle: "Inicia sesion para guardar o administrar",
+    signIn: "Iniciar sesion",
+    createAccount: "Crear cuenta",
+    verify: "Verificar",
+    backendSetupNotice: "La busqueda publica funciona ahora. Las cuentas reales se activan despues de conectar Supabase Auth en el hosting gratuito.",
+    email: "Correo electronico",
+    password: "Contrasena",
+    name: "Nombre",
+    accountType: "Tipo de cuenta",
+    parentCaregiver: "Padre, madre o cuidador",
+    student: "Estudiante",
+    gradeOptional: "Grado, opcional",
+    passwordLonger: "Contrasena, mas de 8 caracteres",
+    confirmPassword: "Confirmar contrasena",
+    sendEmailCode: "Enviar codigo",
+    emailVerificationCode: "Codigo de verificacion",
+    verifyEmailCreate: "Verificar correo y crear cuenta"
+  },
+  ar: {
+    navOpportunities: "الفرص",
+    navHighSchoolOpportunities: "فرص المدرسة الثانوية",
+    navAbout: "حول",
+    navSupport: "الدعم",
+    accountAdmin: "الحساب / الإدارة",
+    continueGoogle: "المتابعة باستخدام Google",
+    continueMicrosoft: "المتابعة باستخدام Microsoft",
+    continueApple: "المتابعة باستخدام Apple",
+    termsTitle: "شروط الخدمة وإشعار الخصوصية",
+    termsAgree: "أوافق على شروط الخدمة وإشعار الخصوصية.",
+    humanCheck: "أنا إنسان.",
+    captchaNote: "يمكن تفعيل CAPTCHA الكامل عبر Supabase Auth مع hCaptcha أو Cloudflare Turnstile."
+  },
+  fa: {
+    navOpportunities: "فرصت ها",
+    navHighSchoolOpportunities: "فرصت های دبیرستان",
+    navAbout: "درباره",
+    navSupport: "پشتیبانی",
+    accountAdmin: "حساب / ادمین",
+    continueGoogle: "ادامه با Google",
+    continueMicrosoft: "ادامه با Microsoft",
+    continueApple: "ادامه با Apple",
+    termsTitle: "شرایط خدمات و اعلان حریم خصوصی",
+    termsAgree: "با شرایط خدمات و اعلان حریم خصوصی موافقم.",
+    humanCheck: "من انسان هستم.",
+    captchaNote: "پس از اتصال Supabase می توان CAPTCHA را با hCaptcha یا Cloudflare Turnstile فعال کرد."
+  },
+  hi: {
+    navOpportunities: "अवसर",
+    navHighSchoolOpportunities: "हाई स्कूल अवसर",
+    navAbout: "परिचय",
+    navSupport: "सहायता",
+    accountAdmin: "खाता / एडमिन",
+    continueGoogle: "Google से जारी रखें",
+    continueMicrosoft: "Microsoft से जारी रखें",
+    continueApple: "Apple से जारी रखें",
+    termsTitle: "सेवा शर्तें और गोपनीयता सूचना",
+    termsAgree: "मैं सेवा शर्तें और गोपनीयता सूचना स्वीकार करता/करती हूं।",
+    humanCheck: "मैं इंसान हूं।",
+    captchaNote: "Supabase जुड़ने के बाद hCaptcha या Cloudflare Turnstile से CAPTCHA चालू किया जा सकता है।"
+  },
+  pt: {
+    navOpportunities: "Oportunidades",
+    navHighSchoolOpportunities: "Oportunidades do ensino medio",
+    navAbout: "Sobre",
+    navSupport: "Suporte",
+    accountAdmin: "Conta / Admin",
+    continueGoogle: "Continuar com Google",
+    continueMicrosoft: "Continuar com Microsoft",
+    continueApple: "Continuar com Apple",
+    termsTitle: "Termos de servico e aviso de privacidade",
+    termsAgree: "Aceito os termos de servico e o aviso de privacidade.",
+    humanCheck: "Sou uma pessoa.",
+    captchaNote: "O CAPTCHA completo pode ser ativado com Supabase Auth, hCaptcha ou Cloudflare Turnstile."
+  },
+  gu: {
+    navOpportunities: "તકો",
+    navHighSchoolOpportunities: "હાઈ સ્કૂલ તકો",
+    navAbout: "વિશે",
+    navSupport: "સહાય",
+    accountAdmin: "ખાતું / એડમિન",
+    continueGoogle: "Google સાથે ચાલુ રાખો",
+    continueMicrosoft: "Microsoft સાથે ચાલુ રાખો",
+    continueApple: "Apple સાથે ચાલુ રાખો",
+    termsTitle: "સેવા શરતો અને ગોપનીયતા સૂચના",
+    termsAgree: "હું સેવા શરતો અને ગોપનીયતા સૂચનાથી સંમત છું.",
+    humanCheck: "હું માનવ છું.",
+    captchaNote: "Supabase જોડાયા પછી hCaptcha અથવા Cloudflare Turnstile સાથે CAPTCHA ચાલુ કરી શકાય છે.",
+    directions: "દિશાઓ",
+    verifiedAccountRequired: "ચકાસાયેલ ખાતું જરૂરી",
+    authSignupTitle: "માતા-પિતા અથવા વિદ્યાર્થી ખાતું બનાવો",
+    authVerifyTitle: "પહેલા ઇમેઇલ ચકાસો",
+    authSigninTitle: "સાચવવા અથવા સંચાલન કરવા સાઇન ઇન કરો",
+    signIn: "સાઇન ઇન",
+    createAccount: "ખાતું બનાવો",
+    verify: "ચકાસો",
+    email: "ઇમેઇલ",
+    password: "પાસવર્ડ",
+    name: "નામ",
+    accountType: "ખાતા પ્રકાર",
+    parentCaregiver: "માતા-પિતા અથવા સંભાળનાર",
+    student: "વિદ્યાર્થી",
+    gradeOptional: "ધોરણ, વૈકલ્પિક",
+    passwordLonger: "પાસવર્ડ, 8 અક્ષરથી લાંબો",
+    confirmPassword: "પાસવર્ડ પુષ્ટિ કરો",
+    sendEmailCode: "ઇમેઇલ કોડ મોકલો",
+    emailVerificationCode: "ઇમેઇલ ચકાસણી કોડ",
+    verifyEmailCreate: "ઇમેઇલ ચકાસો અને ખાતું બનાવો"
+  },
+  bn: {
+    navOpportunities: "সুযোগ",
+    navHighSchoolOpportunities: "হাই স্কুল সুযোগ",
+    navAbout: "সম্পর্কে",
+    navSupport: "সাপোর্ট",
+    accountAdmin: "অ্যাকাউন্ট / অ্যাডমিন",
+    continueGoogle: "Google দিয়ে চালিয়ে যান",
+    continueMicrosoft: "Microsoft দিয়ে চালিয়ে যান",
+    continueApple: "Apple দিয়ে চালিয়ে যান",
+    termsTitle: "সেবার শর্তাবলি এবং গোপনীয়তা নোটিশ",
+    termsAgree: "আমি সেবার শর্তাবলি এবং গোপনীয়তা নোটিশে সম্মত।",
+    humanCheck: "আমি মানুষ।",
+    captchaNote: "Supabase যুক্ত হলে hCaptcha বা Cloudflare Turnstile দিয়ে CAPTCHA চালু করা যাবে।",
+    directions: "দিকনির্দেশনা",
+    verifiedAccountRequired: "যাচাইকৃত অ্যাকাউন্ট প্রয়োজন",
+    authSignupTitle: "অভিভাবক বা শিক্ষার্থীর অ্যাকাউন্ট তৈরি করুন",
+    authVerifyTitle: "আগে ইমেইল যাচাই করুন",
+    authSigninTitle: "সেভ বা ম্যানেজ করতে সাইন ইন করুন",
+    signIn: "সাইন ইন",
+    createAccount: "অ্যাকাউন্ট তৈরি করুন",
+    verify: "যাচাই",
+    backendSetupNotice: "এখন সবাই ব্রাউজ করতে পারে। ফ্রি হোস্টিং সেটিংসে Supabase Auth যুক্ত করলে আসল অ্যাকাউন্ট চালু হবে।",
+    email: "ইমেইল",
+    password: "পাসওয়ার্ড",
+    name: "নাম",
+    accountType: "অ্যাকাউন্টের ধরন",
+    parentCaregiver: "অভিভাবক বা যত্নদাতা",
+    student: "শিক্ষার্থী",
+    gradeOptional: "গ্রেড, ঐচ্ছিক",
+    passwordLonger: "পাসওয়ার্ড, ৮ অক্ষরের বেশি",
+    confirmPassword: "পাসওয়ার্ড নিশ্চিত করুন",
+    sendEmailCode: "ইমেইল কোড পাঠান",
+    emailVerificationCode: "ইমেইল যাচাইকরণ কোড",
+    verifyEmailCreate: "ইমেইল যাচাই করে অ্যাকাউন্ট তৈরি করুন"
+  },
+  ja: {
+    navOpportunities: "機会",
+    navHighSchoolOpportunities: "高校生向け機会",
+    navAbout: "概要",
+    navSupport: "サポート",
+    accountAdmin: "アカウント / 管理",
+    continueGoogle: "Googleで続ける",
+    continueMicrosoft: "Microsoftで続ける",
+    continueApple: "Appleで続ける",
+    termsTitle: "利用規約とプライバシー通知",
+    termsAgree: "利用規約とプライバシー通知に同意します。",
+    humanCheck: "私は人間です。",
+    captchaNote: "Supabase接続後、hCaptchaまたはCloudflare TurnstileでCAPTCHAを有効にできます。",
+    directions: "行き方",
+    verifiedAccountRequired: "確認済みアカウントが必要です",
+    authSignupTitle: "保護者または学生アカウントを作成",
+    authVerifyTitle: "先にメールを確認",
+    authSigninTitle: "保存または管理するにはサインイン",
+    signIn: "サインイン",
+    createAccount: "アカウント作成",
+    verify: "確認",
+    backendSetupNotice: "公開閲覧は利用できます。無料ホスティング設定でSupabase Authを接続すると本物のアカウントが有効になります。",
+    email: "メール",
+    password: "パスワード",
+    name: "名前",
+    accountType: "アカウント種別",
+    parentCaregiver: "保護者またはケア担当者",
+    student: "学生",
+    gradeOptional: "学年、任意",
+    passwordLonger: "パスワード、8文字より長く",
+    confirmPassword: "パスワード確認",
+    sendEmailCode: "メールコードを送信",
+    emailVerificationCode: "メール確認コード",
+    verifyEmailCreate: "メールを確認してアカウント作成"
+  },
+  ko: {
+    navOpportunities: "기회",
+    navHighSchoolOpportunities: "고등학생 기회",
+    navAbout: "소개",
+    navSupport: "지원",
+    accountAdmin: "계정 / 관리자",
+    continueGoogle: "Google로 계속",
+    continueMicrosoft: "Microsoft로 계속",
+    continueApple: "Apple로 계속",
+    termsTitle: "서비스 약관 및 개인정보 안내",
+    termsAgree: "서비스 약관 및 개인정보 안내에 동의합니다.",
+    humanCheck: "저는 사람입니다.",
+    captchaNote: "Supabase 연결 후 hCaptcha 또는 Cloudflare Turnstile로 CAPTCHA를 켤 수 있습니다.",
+    directions: "길찾기",
+    verifiedAccountRequired: "인증된 계정 필요",
+    authSignupTitle: "부모 또는 학생 계정 만들기",
+    authVerifyTitle: "먼저 이메일 확인",
+    authSigninTitle: "저장 또는 관리를 위해 로그인",
+    signIn: "로그인",
+    createAccount: "계정 만들기",
+    verify: "확인",
+    backendSetupNotice: "공개 탐색은 지금 사용할 수 있습니다. 무료 호스팅 설정에서 Supabase Auth를 연결하면 실제 계정이 켜집니다.",
+    email: "이메일",
+    password: "비밀번호",
+    name: "이름",
+    accountType: "계정 유형",
+    parentCaregiver: "부모 또는 보호자",
+    student: "학생",
+    gradeOptional: "학년, 선택",
+    passwordLonger: "비밀번호, 8자보다 길게",
+    confirmPassword: "비밀번호 확인",
+    sendEmailCode: "이메일 코드 보내기",
+    emailVerificationCode: "이메일 확인 코드",
+    verifyEmailCreate: "이메일 확인 후 계정 만들기"
+  }
+};
+
 export function t(language: LanguageCode, key: UiKey) {
-  return ui[language][key] ?? ui.en[key] ?? key;
+  return ui[language][key] ?? supplementalUi[language][key] ?? ui.en[key] ?? supplementalUi.en[key] ?? key;
 }
 
 const summaryTemplates: Record<LanguageCode, string> = {
