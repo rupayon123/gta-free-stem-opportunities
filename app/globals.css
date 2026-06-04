@@ -5849,7 +5849,7 @@ a {
     top: clamp(12px, 2vw, 24px);
     align-self: start;
     display: grid;
-    grid-template-rows: minmax(0, 1fr) clamp(230px, 30svh, 340px);
+    grid-template-rows: minmax(0, 1fr) clamp(210px, 28svh, 320px);
     gap: 14px;
     height: calc(100svh - clamp(24px, 4vw, 48px));
     min-height: 620px;
@@ -5867,7 +5867,8 @@ a {
 
   .search-band .compact-details {
     display: grid;
-    grid-template-rows: auto minmax(0, 1fr);
+    grid-template-rows: auto auto minmax(0, auto);
+    align-content: start;
     height: 100%;
     min-height: 0;
     overflow: hidden;
@@ -5881,7 +5882,6 @@ a {
   }
 
   .search-band .compact-details .translation-note,
-  .search-band .compact-details .source-panel,
   .search-band .compact-details .fact:nth-child(n + 6) {
     display: none;
   }
@@ -5904,6 +5904,66 @@ a {
 
   .search-band .compact-details .fact {
     padding: 8px 10px;
+  }
+
+  .search-band .compact-details .source-panel {
+    display: grid;
+    gap: 5px;
+    min-height: 0;
+    margin-top: 2px;
+    padding: 7px;
+    overflow: hidden;
+  }
+
+  .search-band .compact-details .source-panel .panel-title {
+    gap: 6px;
+    margin-bottom: 0;
+    font-size: 0.86rem;
+    line-height: 1.1;
+  }
+
+  .search-band .compact-details .source-panel .panel-title svg {
+    width: 15px;
+    height: 15px;
+  }
+
+  .search-band .compact-details .trust-banner {
+    gap: 7px;
+    padding: 6px 8px;
+    font-size: 0.8rem;
+    line-height: 1.22;
+  }
+
+  .search-band .compact-details .trust-banner svg {
+    width: 15px;
+    height: 15px;
+  }
+
+  .search-band .compact-details .trust-banner span {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+
+  .search-band .compact-details .verified-line {
+    display: none;
+  }
+
+  .search-band .compact-details .source-list {
+    display: grid;
+    gap: 5px;
+  }
+
+  .search-band .compact-details .source-list a {
+    min-height: 26px;
+    padding: 4px 8px;
+    font-size: 0.8rem;
+    line-height: 1.12;
+  }
+
+  .search-band .compact-details .source-list a:nth-child(n + 2) {
+    display: none;
   }
 
   .search-band .selected-column .map-column,
