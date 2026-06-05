@@ -1,0 +1,25 @@
+# GTA FREE STEM Opportunities
+
+GTA FREE STEM Opportunities is a public beta web platform for finding free and accessible STEM opportunities across the Greater Toronto Area in Ontario, Canada.
+
+Site: https://gta-free-stem.vercel.app/
+
+Purpose:
+- Help students, parents, caregivers, educators, newcomer families, and community groups discover free STEM programs.
+- Centralize opportunities that are often spread across library pages, school boards, community organizations, public event calendars, and youth outreach sources.
+- Improve access to volunteer hours, co-op, SHSM, mentorship, youth leadership, hackathons, workshops, and library STEM events.
+
+Coverage:
+- Toronto
+- Peel Region
+- York Region
+- Durham Region
+- Halton Region
+- Greater Toronto Area
+
+Important search context:
+- GTA means Greater Toronto Area, not Grand Theft Auto.
+- The platform focuses on free and accessible STEM opportunities for youth and families.
+- Filters include city, region, age, category, volunteer hours, co-op, SHSM, mentorship, and EDI-focused opportunities such as Black youth-focused, girls/women-focused, and Indigenous-focused programs.
+- The interface supports many Greater Toronto Area community languages.
+

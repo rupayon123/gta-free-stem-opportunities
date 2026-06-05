@@ -1,0 +1,23 @@
+{
+  "name": "GTA FREE STEM Opportunities",
+  "short_name": "GTA STEM",
+  "description": "Find free and accessible STEM programs, library events, volunteer hours, co-op, SHSM, mentorship, and youth opportunities across the Greater Toronto Area.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f7fbff",
+  "theme_color": "#6ed9ff",
+  "icons": [
+    {
+      "src": "/icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

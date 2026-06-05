@@ -468,6 +468,15 @@ export function HomePage() {
   }, []);
 
   useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const query = params.get("q")?.trim();
+    if (!query) return;
+    setFilters((current) => ({ ...current, query }));
+    setActiveSurface("opportunities");
+    setPendingScrollTarget("top");
+  }, []);
+
+  useEffect(() => {
     const applyTheme = () => {
       const resolved =
         theme === "system"
