@@ -12,6 +12,9 @@ jobs:
   refresh:
     name: Refresh source-backed static database
     runs-on: ubuntu-latest
+    concurrency:
+      group: gta-free-stem-opportunities-refresh
+      cancel-in-progress: true
 
     steps:
       - name: Check out repository
@@ -28,9 +31,14 @@ jobs:
 
       - name: Refresh library opportunities
         run: npm run generate:library
+        env:
+          GTA_MAX_LIBRARY_OPPORTUNITIES: "420"
+          GTA_LOOKAHEAD_DAYS: "365"
 
       - name: Scan discovery sources for review candidates
         run: npm run discover:write
+        env:
+          GTA_DISCOVERY_MAX_CANDIDATES_PER_SOURCE: "250"
 
       - name: Run QA
         run: npm run qa

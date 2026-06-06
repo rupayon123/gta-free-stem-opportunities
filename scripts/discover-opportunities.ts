@@ -16,21 +16,9 @@ type RawCandidate = {
   tags?: string[];
 };
 
-type LocalAiCandidate = {
-  title?: unknown;
-  description?: unknown;
-  sourceUrl?: unknown;
-  startDate?: unknown;
-  endDate?: unknown;
-  city?: unknown;
-  region?: unknown;
-  organization?: unknown;
-  tags?: unknown;
-};
-
 type DiscoveryOutput = {
   generatedAt: string;
-  mode: "deterministic" | "deterministic+local-ai";
+  mode: "deterministic";
   sourcesChecked: number;
   candidatesFound: number;
   newCandidates: number;
@@ -43,35 +31,9 @@ const args = new Set(process.argv.slice(2));
 const outputFormat = args.has("--format=sql") || args.has("--sql") ? "sql" : args.has("--summary") ? "summary" : "json";
 const writeReviewFile = args.has("--write-review");
 const includeDuplicates = args.has("--include-duplicates");
-const useLocalAi = process.env.USE_LOCAL_AI === "1" || process.env.LOCAL_AI_DISCOVERY === "1";
-const localAiModel = process.env.LOCAL_AI_MODEL || "deepseek-r1:latest";
-const localAiBaseUrl = process.env.OLLAMA_BASE_URL || "http://127.0.0.1:11434";
 const today = new Date();
 const todayIsoDate = today.toISOString().slice(0, 10);
-
-const stemKeywords = [
-  "artificial intelligence",
-  "arduino",
-  "biology",
-  "coding",
-  "computer",
-  "conservation",
-  "climate",
-  "data",
-  "digital media",
-  "engineering",
-  "genai",
-  "hackathon",
-  "maker",
-  "math",
-  "python",
-  "robot",
-  "science",
-  "steam",
-  "stem",
-  "technology",
-  "volunteer"
-];
+const discoveryMaxCandidatesPerSource = Math.max(40, Number.parseInt(process.env.GTA_DISCOVERY_MAX_CANDIDATES_PER_SOURCE ?? "250", 10));
 
 const stemSignalPatterns = [
   /\bai\b/i,
@@ -296,6 +258,7 @@ function buildOpportunity(source: DiscoverySource, candidate: RawCandidate): Dis
   const title = stripTags(candidate.title);
   const description = stripTags(candidate.description || `${title} from ${source.name}.`);
   const combinedText = `${title} ${description}`;
+  const reviewReasons: string[] = [];
   if (
     /\b(branch art exhibit|science fiction|digital (video|magazines|newspapers|comics|archive)|computer & library training|computers, printing|computers, wifi & printing|public computers|email us|translation disclaimer|get started|event payment system|job fairs|jobs & volunteers|code of conduct|privacy|terms of use|accessibility statement|artificial intelligence policy|library card|hours & information|font size|my account)\b/i.test(
       title
@@ -333,9 +296,11 @@ function buildOpportunity(source: DiscoverySource, candidate: RawCandidate): Dis
   }
 
   const { startDate, endDate } = inferDates(combinedText, candidate.startDate, candidate.endDate);
-  const reviewReasons: string[] = [];
-  if (!startDate) reviewReasons.push("No clear future date found on the crawled page.");
-  if (isExpired(endDate || startDate)) reviewReasons.push("Date appears expired.");
+  if (!startDate) {
+    reviewReasons.push("No clear future date found on the crawled page.");
+  } else if (isExpired(endDate || startDate)) {
+    return null;
+  }
   if (!hasFreeSignal(combinedText, source)) reviewReasons.push("Free access wording needs human confirmation.");
   if (hasPaidRisk(combinedText) && !combinedText.toLowerCase().includes("free")) {
     reviewReasons.push("Cost-related words appeared near the listing.");
@@ -349,7 +314,7 @@ function buildOpportunity(source: DiscoverySource, candidate: RawCandidate): Dis
   const organization = candidate.organization || source.organization;
   const region = candidate.region || source.region || "Toronto";
   const category = inferCategory(combinedText);
-  const status = isExpired(endDate || startDate) ? "expired" : "needs_review";
+  const status = reviewReasons.length ? "needs_review" : "active";
   const confidence = reviewReasons.length <= 1 && source.trusted ? "high" : reviewReasons.length <= 3 ? "medium" : "needs_review";
 
   return {
@@ -467,53 +432,6 @@ function extractGenericCandidates(html: string, source: DiscoverySource): RawCan
   return candidates;
 }
 
-async function extractWithLocalAi(source: DiscoverySource, html: string, warnings: string[]): Promise<RawCandidate[]> {
-  if (!useLocalAi) return [];
-  const text = stripTags(html).slice(0, 12000);
-  const prompt = `Extract real free STEM, coding, science, hackathon, youth volunteer, co-op, SHSM, or learning opportunities in the GTA from this public source page. Return only JSON array items with title, description, sourceUrl, startDate, endDate, city, region, organization, tags. If unsure, include the item but keep fields conservative. Source URL: ${source.url}\n\n${text}`;
-
-  try {
-    const response = await fetch(`${localAiBaseUrl.replace(/\/$/, "")}/api/generate`, {
-      method: "POST",
-      signal: AbortSignal.timeout(30000),
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        model: localAiModel,
-        prompt,
-        stream: false,
-        format: "json"
-      })
-    });
-    if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
-    const payload = (await response.json()) as { response?: string };
-    const raw = payload.response || "[]";
-    const parsed = JSON.parse(raw) as { opportunities?: unknown } | unknown[];
-    const array: LocalAiCandidate[] = (
-      Array.isArray(parsed) ? parsed : Array.isArray(parsed.opportunities) ? parsed.opportunities : []
-    ) as LocalAiCandidate[];
-    return array
-      .filter((item) => item && typeof item.title === "string")
-      .map((item) => ({
-        title: item.title as string,
-        description: typeof item.description === "string" ? item.description : undefined,
-        sourceUrl: typeof item.sourceUrl === "string" ? item.sourceUrl : source.url,
-        startDate: typeof item.startDate === "string" ? item.startDate : undefined,
-        endDate: typeof item.endDate === "string" ? item.endDate : undefined,
-        city: typeof item.city === "string" ? item.city : source.city,
-        region: typeof item.region === "string" ? (item.region as Region) : source.region,
-        organization: typeof item.organization === "string" ? item.organization : source.organization,
-        tags: Array.isArray(item.tags) ? item.tags.map(String) : []
-      }));
-  } catch (error) {
-    warnings.push(
-      `Local AI extraction skipped for ${source.name}: ${
-        error instanceof Error ? error.message : "unknown Ollama/local model error"
-      }. Deterministic extraction still ran.`
-    );
-    return [];
-  }
-}
-
 function dedupeCandidates(candidates: DiscoveredOpportunity[]) {
   const seen = new Set<string>();
   const output: DiscoveredOpportunity[] = [];
@@ -575,7 +493,7 @@ function toSql(opportunitiesToInsert: DiscoveredOpportunity[]) {
   });
 
   return `-- Generated by npm run discover:sql.
--- Review-first import: new discovered rows are inserted as needs_review or expired.
+-- New discovered rows are inserted as active or needs_review.
 -- Run supabase/schema.sql before this script.
 
 insert into public.opportunities (
@@ -649,13 +567,13 @@ async function main() {
   for (const source of discoverySources) {
     try {
       const html = await fetchSource(source);
-      const deterministicCandidates = source.url.includes("bibliocommons.com")
+      const deterministicCandidates = (source.url.includes("bibliocommons.com")
         ? extractBiblioCommonsCandidates(html, source)
-        : [...extractBiblioCommonsCandidates(html, source), ...extractGenericCandidates(html, source)];
-      const aiCandidates = await extractWithLocalAi(source, html, warnings);
-      candidatesFound += deterministicCandidates.length + aiCandidates.length;
+        : [...extractBiblioCommonsCandidates(html, source), ...extractGenericCandidates(html, source)]
+      ).slice(0, discoveryMaxCandidatesPerSource);
+      candidatesFound += deterministicCandidates.length;
 
-      for (const candidate of [...deterministicCandidates, ...aiCandidates]) {
+      for (const candidate of deterministicCandidates) {
         const opportunity = buildOpportunity(source, candidate);
         if (opportunity) discovered.push(opportunity);
       }
@@ -667,7 +585,7 @@ async function main() {
   const { output, duplicatesSkipped } = dedupeCandidates(discovered);
   const result: DiscoveryOutput = {
     generatedAt: new Date().toISOString(),
-    mode: useLocalAi ? "deterministic+local-ai" : "deterministic",
+    mode: "deterministic",
     sourcesChecked: discoverySources.length,
     candidatesFound,
     newCandidates: output.length,

@@ -2,6 +2,9 @@ import { generatedLibraryOpportunities } from "./generatedLibraryOpportunities";
 import { generatedDiscoveryReviewCandidates } from "./generatedDiscoveryReview";
 import type { DiscoveredOpportunity } from "./discovery";
 import type { Category, LanguageCode, Opportunity, Region, ReviewItem } from "./types";
+import { isOpportunityDateExpired } from "./opportunityStatus";
+
+const now = new Date();
 
 export const regions: Region[] = ["Toronto", "Peel", "York", "Durham", "Halton"];
 
@@ -863,6 +866,16 @@ const seedOpportunities: SeedOpportunity[] = [
   }
 ];
 
+function applyLiveExpiration(opportunity: Opportunity): Opportunity {
+  if (!isOpportunityDateExpired(opportunity, now)) return opportunity;
+  return {
+    ...opportunity,
+    status: "expired",
+    freeStatusProof:
+      opportunity.freeStatusProof || "Opportunity date has passed; it is no longer shown in active search results."
+  };
+}
+
 export const opportunities: Opportunity[] = [
   ...seedOpportunities.map((opportunity) => ({
     ...opportunity,
@@ -880,7 +893,7 @@ export const opportunities: Opportunity[] = [
   })),
   ...generatedLibraryOpportunities,
   ...generatedDiscoveryReviewCandidates.map(discoveryCandidateToOpportunity)
-];
+].map(applyLiveExpiration);
 
 export const reviewQueue: ReviewItem[] = [
   {

@@ -136,6 +136,11 @@ const DEMO_ADMIN_EMAIL = "kazuhanakumora@hybe.com";
 const DEMO_ADMIN_ID = `${STORAGE_PREFIX}-demo-admin`;
 const DEMO_ACCOUNT_PASSWORD = "password123";
 const DEMO_PARENT_SAVED_IDS = ["cvc-conservation-youth-corps-2026", "oakville-youth-library-leaders-2026"];
+const RESEARCH_WORKFLOW_OWNER = process.env.NEXT_PUBLIC_GITHUB_WORKFLOW_OWNER ?? "";
+const RESEARCH_WORKFLOW_REPO = process.env.NEXT_PUBLIC_GITHUB_WORKFLOW_REPO ?? "";
+const RESEARCH_WORKFLOW_FILE = process.env.NEXT_PUBLIC_GITHUB_WORKFLOW_FILE ?? "refresh-opportunities.yml";
+const RESEARCH_WORKFLOW_REF = process.env.NEXT_PUBLIC_GITHUB_WORKFLOW_REF ?? "main";
+const RESEARCH_REFRESH_ENDPOINT = process.env.NEXT_PUBLIC_RESEARCH_REFRESH_ENDPOINT ?? "";
 
 const emptyAdminReviewBundle: AdminReviewBundle = {
   opportunities: [],
@@ -337,83 +342,6 @@ export function HomePage() {
   const [adminReviewBundle, setAdminReviewBundle] = useState<AdminReviewBundle>(emptyAdminReviewBundle);
 
   useEffect(() => {
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-
-    const selector = [
-      ".opportunity-card",
-      ".selected-details-card",
-      ".filter-panel",
-      ".results-panel",
-      ".metric",
-      ".pathway-card",
-      ".mini-form",
-      ".community-callout",
-      ".announcement-strip",
-      ".announcement-item",
-      ".source-panel",
-      ".detail-facts",
-      ".map-shell",
-      ".account-panel",
-      ".admin-panel",
-      ".saved-list a",
-      ".source-list a",
-      ".primary-button",
-      ".soft-button",
-      ".icon-text-button",
-      ".toolbar-filter-button",
-      ".account-button",
-      ".theme-toggle button",
-      ".segmented button"
-    ].join(",");
-
-    const handleMove = (event: Event) => {
-      const pointerEvent = event as MouseEvent;
-      const element = pointerEvent.currentTarget as HTMLElement;
-      const rect = element.getBoundingClientRect();
-      if (!rect.width || !rect.height) return;
-      element.classList.add("motion-active");
-      const x = (pointerEvent.clientX - rect.left) / rect.width;
-      const y = (pointerEvent.clientY - rect.top) / rect.height;
-      element.style.setProperty("--glow-x", `${Math.round(x * 100)}%`);
-      element.style.setProperty("--glow-y", `${Math.round(y * 100)}%`);
-      element.style.setProperty("--tilt-x", `${((0.5 - y) * 2.6).toFixed(2)}deg`);
-      element.style.setProperty("--tilt-y", `${((x - 0.5) * 3.2).toFixed(2)}deg`);
-    };
-
-    const handleLeave = (event: Event) => {
-      const element = event.currentTarget as HTMLElement;
-      element.style.removeProperty("--glow-x");
-      element.style.removeProperty("--glow-y");
-      element.style.removeProperty("--tilt-x");
-      element.style.removeProperty("--tilt-y");
-      element.classList.remove("motion-active");
-    };
-
-    const bind = () => {
-      document.querySelectorAll<HTMLElement>(selector).forEach((element) => {
-        if (element.dataset.motionBound) return;
-        element.dataset.motionBound = "true";
-        element.addEventListener("mousemove", handleMove);
-        element.addEventListener("mouseleave", handleLeave);
-      });
-    };
-
-    bind();
-    const observer = new MutationObserver(bind);
-    observer.observe(document.body, { childList: true, subtree: true });
-
-    return () => {
-      observer.disconnect();
-      document.querySelectorAll<HTMLElement>("[data-motion-bound]").forEach((element) => {
-        element.removeEventListener("mousemove", handleMove);
-        element.removeEventListener("mouseleave", handleLeave);
-        element.classList.remove("motion-active");
-        delete element.dataset.motionBound;
-      });
-    };
-  }, []);
-
-  useEffect(() => {
     let active = true;
     async function hydrateFromStorage() {
       const mode = betaBackendMode();
@@ -541,7 +469,8 @@ export function HomePage() {
 
   const savedIdSet = useMemo(() => new Set(savedIds), [savedIds]);
 
-  const publicFallbackOpportunity = useMemo(() => publicOpportunities(displayOpportunities)[0], [displayOpportunities]);
+  const publicVisibleOpportunities = useMemo(() => publicOpportunities(displayOpportunities), [displayOpportunities]);
+  const publicFallbackOpportunity = useMemo(() => publicVisibleOpportunities[0], [publicVisibleOpportunities]);
 
   const selectedOpportunity = useMemo(
     () =>
@@ -552,9 +481,9 @@ export function HomePage() {
   );
 
   const availableProgramLanguages = useMemo(() => {
-    const available = new Set(displayOpportunities.flatMap((opportunity) => opportunity.languages));
+    const available = new Set(publicVisibleOpportunities.flatMap((opportunity) => opportunity.languages));
     return languagePreferenceOrder.filter((code) => available.has(code));
-  }, [displayOpportunities]);
+  }, [publicVisibleOpportunities]);
 
   useEffect(() => {
     if (visibleOpportunities.length && (!selectedId || !visibleOpportunities.some((opportunity) => opportunity.id === selectedId))) {
@@ -688,13 +617,28 @@ export function HomePage() {
     setResearchRefreshing(true);
     setResearchStatus(t(language, "searchEngineAuto"));
     try {
-      await fetch(`${window.location.origin}/?research-refresh=${Date.now()}`, { cache: "reload" });
+      if (RESEARCH_REFRESH_ENDPOINT) {
+        const response = await fetch(RESEARCH_REFRESH_ENDPOINT, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            ref: RESEARCH_WORKFLOW_REF,
+            source: "gta-free-stem-opportunities"
+          })
+        });
+        if (!response.ok) throw new Error("The refresh endpoint did not accept the request.");
+      } else if (RESEARCH_WORKFLOW_OWNER && RESEARCH_WORKFLOW_REPO) {
+        const workflowUrl = `https://github.com/${RESEARCH_WORKFLOW_OWNER}/${RESEARCH_WORKFLOW_REPO}/actions/workflows/${RESEARCH_WORKFLOW_FILE}`;
+        window.open(workflowUrl, "_blank", "noopener,noreferrer");
+      } else {
+        await fetch(`${window.location.origin}/?research-refresh=${Date.now()}`, { cache: "reload" });
+      }
       const scanLabel = t(language, "sourceScoutMiniText")
         .replace("{sources}", String(generatedDiscoverySummary.sourcesChecked))
         .replace("{review}", String(generatedDiscoverySummary.newCandidates));
       setResearchStatus(`${scanLabel}. ${t(language, "expiredHidden")}`);
-    } catch {
-      setResearchStatus(t(language, "searchEngineAuto"));
+    } catch (error) {
+      setResearchStatus(error instanceof Error ? error.message : t(language, "searchEngineAuto"));
     } finally {
       setResearchRefreshing(false);
       window.setTimeout(() => setResearchStatus(""), 6200);

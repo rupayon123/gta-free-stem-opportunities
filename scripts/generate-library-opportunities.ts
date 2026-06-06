@@ -1,6 +1,17 @@
 import { writeFileSync } from "node:fs";
 import type { Category, CommunityFocus, LanguageCode, Opportunity, OpportunityType, Region } from "../lib/types";
 
+const maxLibraryOpportunities = Math.max(
+  160,
+  Math.min(1200, Number.parseInt(process.env.GTA_MAX_LIBRARY_OPPORTUNITIES ?? "420", 10))
+);
+const lookaheadDays = Math.max(30, Number.parseInt(process.env.GTA_LOOKAHEAD_DAYS ?? "365", 10));
+const today = new Date();
+const todayTime = today.getTime();
+const staleCutoff = todayTime - 1000 * 60 * 60 * 24;
+const lookaheadCutoff = todayTime + lookaheadDays * 24 * 60 * 60 * 1000;
+const timestampNow = () => new Date().toISOString();
+
 type LibraryFeed = {
   id: string;
   libraryId: string;
@@ -106,7 +117,11 @@ const rejectSignals = [
   "payment",
   "Resident:",
   "Non-resident:",
-  "tuition"
+  "tuition",
+  "tutor",
+  "tutoring",
+  "homework",
+  "resume help"
 ];
 
 const allLanguages: LanguageCode[] = ["en"];
@@ -196,6 +211,13 @@ function isCurrent(item: RssItem) {
   const endOrStart = normalizeDate(item.endDate) || normalizeDate(item.startDate);
   if (!endOrStart) return false;
   return new Date(endOrStart).getTime() >= Date.now() - 1000 * 60 * 60 * 24;
+}
+
+function isWithinActiveWindow(item: RssItem) {
+  const endOrStart = normalizeDate(item.endDate) || normalizeDate(item.startDate);
+  if (!endOrStart) return false;
+  const dateMs = new Date(endOrStart).getTime();
+  return dateMs >= staleCutoff && dateMs <= lookaheadCutoff;
 }
 
 function shouldInclude(item: RssItem) {
@@ -325,7 +347,7 @@ function contactFor(item: RssItem, feed: LibraryFeed) {
 function toOpportunity(item: RssItem, feed: LibraryFeed): Opportunity {
   const category = inferCategory(item);
   const ages = inferAges(item);
-  const startDate = normalizeDate(item.startDate) || new Date().toISOString();
+  const startDate = normalizeDate(item.startDate) || timestampNow();
   const endDate = normalizeDate(item.endDate);
   const locationLatitude = item.latitude || (feed.region === "Toronto" ? 43.6532 : 43.8561);
   const locationLongitude = item.longitude || (feed.region === "Toronto" ? -79.3832 : -79.337);
@@ -360,8 +382,8 @@ function toOpportunity(item: RssItem, feed: LibraryFeed): Opportunity {
     languages: allLanguages,
     cost: "Free to join",
     sourceUrl: item.link,
-    lastChecked: new Date().toISOString().slice(0, 10),
-    lastSeen: new Date().toISOString().slice(0, 10),
+    lastChecked: timestampNow().slice(0, 10),
+    lastSeen: timestampNow().slice(0, 10),
     status: "active",
     accessibility: ["Library accessibility services available on request", item.virtual ? "Online access" : "Public library location"],
     equipment: item.virtual ? "Internet-connected device may be needed." : "Materials provided unless the source says otherwise.",
@@ -371,7 +393,7 @@ function toOpportunity(item: RssItem, feed: LibraryFeed): Opportunity {
     registrationUrl: item.link,
     providerContact: contactFor(item, feed),
     freeStatusProof: `Official ${feed.organization} public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.`,
-    lastVerified: new Date().toISOString().slice(0, 10),
+    lastVerified: timestampNow().slice(0, 10),
     trustedSource: true,
     volunteerHoursEligible: category === "Volunteer Hours",
     coopEligible: category === "Co-op & SHSM",
@@ -381,14 +403,14 @@ function toOpportunity(item: RssItem, feed: LibraryFeed): Opportunity {
       {
         label: `Official ${feed.organization} event page`,
         url: item.link,
-        capturedAt: new Date().toISOString(),
+        capturedAt: timestampNow(),
         confidence: "high"
       }
     ],
     adminAuditTrail: [
       {
         label: "Generated from official feed",
-        at: new Date().toISOString(),
+        at: timestampNow(),
         actor: "Library RSS generator",
         detail: "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -410,6 +432,10 @@ async function main() {
   const seen = new Set<string>();
   const generated: Opportunity[] = [];
   const warnings: string[] = [];
+  const removedExpired = {
+    stale: 0,
+    duplicatesOrOverflow: 0
+  };
 
   for (const feed of feeds) {
     for (let page = 1; page <= feed.pages; page += 1) {
@@ -417,6 +443,10 @@ async function main() {
         const xml = await fetchFeed(feed, page);
         for (const item of parseItems(xml)) {
           if (!shouldInclude(item)) continue;
+          if (!isWithinActiveWindow(item)) {
+            removedExpired.stale += 1;
+            continue;
+          }
           if (seen.has(item.link)) continue;
           seen.add(item.link);
           generated.push(toOpportunity(item, feed));
@@ -428,15 +458,17 @@ async function main() {
   }
 
   generated.sort((a, b) => new Date(a.startDate).getTime() - new Date(b.startDate).getTime());
-  const selected = generated.slice(0, 140);
+  const selected = generated.slice(0, maxLibraryOpportunities);
+  removedExpired.duplicatesOrOverflow = Math.max(0, generated.length - selected.length);
   const output = `import type { Opportunity } from "./types";
 
 export const generatedLibraryOpportunities = ${JSON.stringify(selected, null, 2)} satisfies Opportunity[];
 `;
   writeFileSync("lib/generatedLibraryOpportunities.ts", output);
 
-  console.log(`Generated ${selected.length} source-backed library opportunities.`);
-  console.log(`Skipped duplicates/raw overflow: ${Math.max(0, generated.length - selected.length)}.`);
+  console.log(`Generated ${selected.length} source-backed library opportunities within ${lookaheadDays} days (max ${maxLibraryOpportunities}).`);
+  console.log(`Skipped stale/ended opportunities: ${removedExpired.stale}.`);
+  console.log(`Skipped duplicates/raw overflow: ${removedExpired.duplicatesOrOverflow}.`);
   for (const warning of warnings) console.warn(`WARNING: ${warning}`);
 }
 

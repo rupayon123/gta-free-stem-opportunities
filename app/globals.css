@@ -5978,3 +5978,147 @@ a {
     overflow: hidden;
   }
 }
+
+/* Final search UX contract: page scrolls naturally and the right rail never traps the wheel. */
+.search-band {
+  padding-inline: clamp(18px, 3.5vw, 54px);
+}
+
+.search-band .search-layout {
+  width: min(1640px, 100%);
+  grid-template-columns: minmax(390px, 0.88fr) minmax(560px, 1.22fr);
+  gap: clamp(18px, 2.3vw, 34px);
+}
+
+.search-band .results-panel,
+.search-band .cards-column,
+.search-band .selected-column,
+.search-band .selected-details-card,
+.search-band .map-column {
+  height: auto !important;
+  max-height: none !important;
+  min-height: 0 !important;
+  overflow: visible !important;
+}
+
+.search-band .results-panel {
+  padding: clamp(16px, 2vw, 24px);
+}
+
+.search-band .cards-column {
+  content-visibility: auto;
+  contain-intrinsic-size: 900px;
+}
+
+.search-band .opportunity-card {
+  content-visibility: auto;
+  contain-intrinsic-size: 220px;
+}
+
+.search-band .selected-column {
+  position: sticky !important;
+  top: 18px !important;
+  align-self: start;
+  display: grid !important;
+  grid-template-rows: auto auto !important;
+  gap: 16px;
+  padding: 0;
+}
+
+.search-band .selected-details-card {
+  position: relative !important;
+  top: auto !important;
+  z-index: 1;
+}
+
+.search-band .compact-details {
+  display: grid;
+  gap: 13px;
+  height: auto !important;
+  overflow: visible !important;
+}
+
+.search-band .compact-details .detail-summary,
+.search-band .compact-details .trust-banner span {
+  display: block;
+  overflow: visible;
+  -webkit-line-clamp: unset;
+}
+
+.search-band .compact-details .translation-note,
+.search-band .compact-details .verified-line,
+.search-band .compact-details .source-list a:nth-child(n + 2),
+.search-band .compact-details .fact:nth-child(n + 6) {
+  display: revert;
+}
+
+.search-band .compact-details .detail-facts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 9px;
+  max-height: none !important;
+  overflow: visible !important;
+}
+
+.search-band .compact-details .source-panel {
+  overflow: visible !important;
+}
+
+.search-band .map-shell {
+  position: relative !important;
+  top: auto !important;
+  height: clamp(260px, 32svh, 380px) !important;
+  min-height: 260px !important;
+  max-height: none !important;
+  overflow: hidden !important;
+}
+
+.toolbar-controls {
+  grid-template-columns: minmax(112px, 0.85fr) minmax(112px, 0.85fr) minmax(178px, 1.2fr);
+  align-items: stretch;
+}
+
+.toolbar-controls .segmented {
+  grid-column: auto;
+}
+
+.toolbar-filter-button,
+.research-refresh-button,
+.toolbar-controls .segmented {
+  width: 100%;
+}
+
+@media (max-width: 1120px) {
+  .search-band .search-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .search-band .selected-column {
+    position: static !important;
+    grid-template-columns: minmax(0, 1fr) minmax(280px, 0.85fr) !important;
+    grid-template-rows: auto !important;
+  }
+
+  .search-band .map-shell {
+    height: clamp(280px, 38svh, 390px) !important;
+  }
+}
+
+@media (max-width: 760px) {
+  .search-band {
+    padding-inline: 12px;
+  }
+
+  .search-band .selected-column {
+    grid-template-columns: 1fr !important;
+  }
+
+  .search-band .compact-details .detail-facts,
+  .toolbar-controls {
+    grid-template-columns: 1fr;
+  }
+
+  .search-band .map-shell {
+    height: 330px !important;
+  }
+}

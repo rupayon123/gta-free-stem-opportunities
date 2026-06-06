@@ -31,17 +31,9 @@ The current source registry is in `lib/discovery.ts` and includes:
 
 Add sources slowly. Good sources have public pages, clear dates, clear free-access language, an official provider, and stable URLs.
 
-## Local AI Option
+## Extraction Mode
 
-The crawler can optionally ask a local Ollama-compatible model to help extract event fields:
-
-```bash
-USE_LOCAL_AI=1 LOCAL_AI_MODEL=deepseek-r1:latest npm run discover
-```
-
-This is optional and zero-cost only if the model is already installed locally. If Ollama or the model is missing, deterministic extraction still runs and the job reports a warning.
-
-AI is never allowed to publish directly, invent missing facts, bypass review, store child personal data, or replace admin approval.
+The crawler runs in deterministic extraction mode so it stays simple, auditable, and free.
 
 ## Review Rules
 
