@@ -1,4 +1,54 @@
 {
+  "rewrites": [
+    {
+      "source": "/opportunities",
+      "destination": "/opportunities.html"
+    },
+    {
+      "source": "/opportunities/",
+      "destination": "/opportunities.html"
+    },
+    {
+      "source": "/high-school",
+      "destination": "/high-school.html"
+    },
+    {
+      "source": "/high-school/",
+      "destination": "/high-school.html"
+    },
+    {
+      "source": "/volunteer-hours",
+      "destination": "/volunteer-hours.html"
+    },
+    {
+      "source": "/volunteer-hours/",
+      "destination": "/volunteer-hours.html"
+    },
+    {
+      "source": "/coop-shsm",
+      "destination": "/coop-shsm.html"
+    },
+    {
+      "source": "/coop-shsm/",
+      "destination": "/coop-shsm.html"
+    },
+    {
+      "source": "/accessibility-support",
+      "destination": "/accessibility-support.html"
+    },
+    {
+      "source": "/accessibility-support/",
+      "destination": "/accessibility-support.html"
+    },
+    {
+      "source": "/community-hosts",
+      "destination": "/community-hosts.html"
+    },
+    {
+      "source": "/community-hosts/",
+      "destination": "/community-hosts.html"
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",
