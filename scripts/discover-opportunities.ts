@@ -74,6 +74,14 @@ const paidRiskKeywords = [
   "tuition"
 ];
 
+const blockedSupportProgramPatterns = [
+  /\btutor(s|ing)?\b/i,
+  /\bhomework\s+(club|help|support)\b/i,
+  /\bassignment\s+help\b/i,
+  /\bexam\s+prep(aration)?\b/i,
+  /\btest\s+prep(aration)?\b/i
+];
+
 const existingSourceUrls = new Set(opportunities.map((opportunity) => normalizeUrl(opportunity.sourceUrl)));
 const existingKeys = new Set(
   opportunities.map((opportunity) => normalizedKey(opportunity.title, opportunity.organization, opportunity.city))
@@ -154,6 +162,10 @@ function hasStemSignal(text: string) {
 function hasPaidRisk(text: string) {
   const lower = text.toLowerCase();
   return paidRiskKeywords.some((keyword) => lower.includes(keyword));
+}
+
+function hasBlockedSupportProgramSignal(text: string) {
+  return blockedSupportProgramPatterns.some((pattern) => pattern.test(text));
 }
 
 function hasFreeSignal(text: string, source: DiscoverySource) {
@@ -291,6 +303,7 @@ function buildOpportunity(source: DiscoverySource, candidate: RawCandidate): Dis
     return null;
   }
   if (title.length < 5 || !hasStemSignal(combinedText)) return null;
+  if (hasBlockedSupportProgramSignal(combinedText)) return null;
   if (/\$\s*\d|resident:\s*\$|non-resident:\s*\$|cost of the program|program cost|tuition|paid program/i.test(combinedText)) {
     return null;
   }
