@@ -64,7 +64,7 @@ Review the generated SQL, then paste it into Supabase SQL editor. New discovered
 ```sql
 update public.profiles
 set account_type = 'admin'
-where email = 'kazuhanakumora@hybe.com';
+where email = 'admin@example.org';
 ```
 
 Normal users cannot create or update themselves into admin. Admin permission comes from `public.profiles.account_type = 'admin'`.

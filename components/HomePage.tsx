@@ -130,11 +130,11 @@ const CURRENT_USER_KEY = `${STORAGE_PREFIX}-current-user-id`;
 const REVIEW_KEY = `${STORAGE_PREFIX}-community-submissions`;
 const ADMIN_ANNOUNCEMENTS_KEY = `${STORAGE_PREFIX}-admin-announcements`;
 const ADMIN_EVENT_EDITS_KEY = `${STORAGE_PREFIX}-admin-event-edits`;
-const DEMO_PARENT_EMAIL = "kimchaewon@hybe.com";
+const DEMO_PARENT_EMAIL = "parent.demo@example.test";
 const DEMO_PARENT_ID = `${STORAGE_PREFIX}-demo-parent`;
-const DEMO_ADMIN_EMAIL = "kazuhanakumora@hybe.com";
+const DEMO_ADMIN_EMAIL = "admin.demo@example.test";
 const DEMO_ADMIN_ID = `${STORAGE_PREFIX}-demo-admin`;
-const DEMO_ACCOUNT_PASSWORD = "password123";
+const DEMO_ACCOUNT_PASSWORD = "local-preview-only";
 const DEMO_PARENT_SAVED_IDS = ["cvc-conservation-youth-corps-2026", "oakville-youth-library-leaders-2026"];
 const RESEARCH_WORKFLOW_OWNER = process.env.NEXT_PUBLIC_GITHUB_WORKFLOW_OWNER ?? "";
 const RESEARCH_WORKFLOW_REPO = process.env.NEXT_PUBLIC_GITHUB_WORKFLOW_REPO ?? "";
@@ -240,7 +240,15 @@ function roleLabel(role: AccountRole) {
   return "Student";
 }
 
+function canUseLocalPreviewAccounts() {
+  if (typeof window === "undefined") return false;
+  const { hostname, protocol } = window.location;
+  return protocol === "file:" || hostname === "localhost" || hostname === "127.0.0.1" || hostname === "::1";
+}
+
 async function ensureSeedAccounts() {
+  if (!canUseLocalPreviewAccounts()) return;
+
   const accounts = readAccounts();
   const seeded = [...accounts];
   const upsert = async ({
@@ -274,13 +282,13 @@ async function ensureSeedAccounts() {
   const parentAccount = await upsert({
     id: DEMO_PARENT_ID,
     email: DEMO_PARENT_EMAIL,
-    name: "Kim Chaewon Demo Parent",
+    name: "Local Demo Parent",
     role: "parent"
   });
   await upsert({
     id: DEMO_ADMIN_ID,
     email: DEMO_ADMIN_EMAIL,
-    name: "Kazuha Nakamura Admin",
+    name: "Local Demo Admin",
     role: "admin"
   });
   writeAccounts(seeded);
@@ -368,26 +376,34 @@ export function HomePage() {
         return;
       }
 
-      await ensureSeedAccounts();
+      const localPreviewAccountsEnabled = canUseLocalPreviewAccounts();
+      if (localPreviewAccountsEnabled) await ensureSeedAccounts();
+      else window.localStorage.removeItem(CURRENT_USER_KEY);
+
       if (!active) return;
       const storedTheme = window.localStorage.getItem(THEME_KEY) as ThemePreference | null;
       const storedLanguage = window.localStorage.getItem(LANGUAGE_KEY) as LanguageCode | null;
       const storedQueue = safeJson<unknown[]>(window.localStorage.getItem(REVIEW_KEY), []);
       const storedAnnouncements = safeJson<AdminAnnouncement[]>(window.localStorage.getItem(ADMIN_ANNOUNCEMENTS_KEY), []);
       const storedEventEdits = safeJson<AdminEventEdit[]>(window.localStorage.getItem(ADMIN_EVENT_EDITS_KEY), []);
-      const accounts = readAccounts();
+      const accounts = localPreviewAccountsEnabled ? readAccounts() : [];
       const currentUserId = window.localStorage.getItem(CURRENT_USER_KEY);
       const storedAccount = accounts.find((account) => account.id === currentUserId && account.emailVerified);
 
       if (storedTheme) setTheme(storedTheme);
       if (storedLanguage && languageMeta[storedLanguage]) setLanguage(storedLanguage);
-      if (storedAccount) {
+      if (localPreviewAccountsEnabled && storedAccount) {
         setCurrentUser(publicAccount(storedAccount));
         setSavedIds(safeJson<string[]>(window.localStorage.getItem(savedKey(storedAccount.id)), []));
       }
       setLocalQueueCount(storedQueue.length);
       setAdminAnnouncements(storedAnnouncements.map((announcement) => ({ ...announcement, status: announcement.status ?? "active" })));
       setAdminEventEdits(storedEventEdits);
+      setBackendStatus(
+        localPreviewAccountsEnabled
+          ? "Static beta preview is running locally. Connect Supabase for production accounts."
+          : "Public browsing is active. Connect Supabase for production accounts, saves, and admin review."
+      );
     }
     hydrateFromStorage();
     return () => {
@@ -441,7 +457,7 @@ export function HomePage() {
   }, [activeSurface, pendingScrollTarget]);
 
   useEffect(() => {
-    if (!currentUser || backendMode !== "local") return;
+    if (!currentUser || backendMode !== "local" || !canUseLocalPreviewAccounts()) return;
     window.localStorage.setItem(savedKey(currentUser.id), JSON.stringify(savedIds));
   }, [backendMode, currentUser, savedIds]);
 
@@ -762,6 +778,12 @@ export function HomePage() {
       } catch (error) {
         setAuthError(error instanceof Error ? error.message : "Email or password is incorrect.");
       }
+      return;
+    }
+
+    if (!canUseLocalPreviewAccounts()) {
+      setAuthError("");
+      setAuthNotice("Accounts need Supabase Auth on the public website. Browsing stays open without an account.");
       return;
     }
 

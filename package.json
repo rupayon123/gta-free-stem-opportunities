@@ -1,7 +1,14 @@
 {
   "name": "gta-free-stem-opportunities",
   "version": "0.1.0",
+  "description": "Open-source free STEM opportunity finder for GTA families, students, educators, and community hosts.",
   "private": true,
+  "homepage": "https://gta-free-stem.vercel.app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rupayon123/gta-free-stem-opportunities.git"
+  },
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build && cp hosting/static-vercel.json out/vercel.json",

@@ -1,8 +1,26 @@
 # GTA FREE STEM Opportunities
 
-A public beta website for finding verified free STEM programs, library events, volunteer-hour opportunities, co-op, SHSM, mentorship, hackathons, and youth leadership pathways across Toronto, Peel, York, Durham, and Halton.
+[![Next.js](https://img.shields.io/badge/Next.js-16-black)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)](https://www.typescriptlang.org/)
+[![Supabase Ready](https://img.shields.io/badge/Supabase-ready-3ecf8e)](https://supabase.com/)
+[![Static Export](https://img.shields.io/badge/hosting-static%20export-6aa9ff)](https://vercel.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+Open-source public beta for finding free and accessible STEM programs, library events, volunteer-hour opportunities, co-op, SHSM, mentorship, hackathons, and youth leadership pathways across the Greater Toronto Area.
 
 Public beta: https://gta-free-stem.vercel.app
+
+This project is built so other cities can fork it, replace the source list and city/region data, and launch their own free-learning opportunity finder without paid infrastructure.
+
+## Highlights
+
+- Mobile-first Next.js and TypeScript website with static export hosting.
+- Public browsing without an account.
+- Supabase-ready accounts, saved opportunities, feedback, missing-program submissions, announcements, and admin review.
+- Search by city, region, age, category, program language, approximate postal area, map/list view, volunteer hours, co-op/SHSM, mentorship, leadership, and focused community supports.
+- Scheduled GitHub Actions refresh workflow for source-backed public opportunity data.
+- Light/dark theme, multilingual interface, keyboard-accessible controls, and plain-language listing details.
+- Security-first public repo defaults: no committed `.env` files, no service-role keys, no private credentials, and no public demo admin fallback.
 
 ## What Is Implemented
 
@@ -16,8 +34,7 @@ Public beta: https://gta-free-stem.vercel.app
 - Listing detail panels in the main flow: access information, free-status proof, provider contact, public source evidence, directions, save button, and `.ics` calendar export.
 - Account-gated save flow in the beta UI: users must create or sign in with a verified account before saving.
 - Supabase-backed accounts, saves, feedback, missing-program submissions, announcements, and admin review when env vars are configured.
-- Local fallback demo parent login for development preview only: `kimchaewon@hybe.com` / `password123`.
-- Local fallback demo admin login for development preview only: `kazuhanakumora@hybe.com` / `password123`.
+- Local preview accounts are restricted to local development hosts only and are not available on public deployments.
 - High school pathway section for volunteer hours, STEM/learning volunteering, mentorship, co-op, SHSM, youth leadership, and career exploration.
 - Community host workflow for organizations that can offer STEM placements, co-op/SHSM exposure, or volunteer hours.
 - Supabase beta schema for `profiles`, `opportunities`, `saved_opportunities`, `feedback`, `missing_opportunity_submissions`, and `announcements`.
@@ -34,7 +51,7 @@ npm install
 npm run dev
 ```
 
-This is only for private development checks. Do not use localhost, local servers, or temporary tunnel URLs as the public website.
+This is only for private development checks. Do not use localhost, local servers, or temporary tunnel URLs as the public website. Demo account fallback is limited to local preview hosts and is not available on public deployments.
 
 ## Free Public Hosting
 
@@ -58,7 +75,7 @@ NEXT_PUBLIC_SUPABASE_URL=
 NEXT_PUBLIC_SUPABASE_ANON_KEY=
 ```
 
-Do not put Supabase service-role keys in this static website.
+Do not put Supabase service-role keys, private API keys, deploy tokens, or personal credentials in this static website.
 
 After adding real credentials, verify the production database connection:
 
@@ -117,5 +134,20 @@ Run `npm run supabase:check` after `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_S
 - Saving requires a verified account.
 - Browser location is used only for the current session.
 - Public listing pages show source and verification details, not internal admin audit logs.
+- Public deployments do not seed or accept local demo admin accounts.
+- Supabase admin access is controlled by database role/profile rules, not client-side secrets.
+- `.env`, `.env.*`, `.vercel`, `.next`, `out`, and local verification artifacts are ignored by git.
 - Under-13 account storage should stay disabled until a parent-consent/legal compliance flow exists.
 - The public claim should remain honest: verified coverage that is growing toward complete GTA coverage.
+
+## Reuse For Another City
+
+1. Fork the repo.
+2. Replace the region/city data and source list.
+3. Update the public sitemap, metadata, and deployment name.
+4. Connect a free Supabase project if you need accounts, saves, feedback, and admin review.
+5. Deploy the static export to Vercel Hobby or Cloudflare Pages.
+
+## License
+
+MIT. Use it, adapt it, and improve access to free learning opportunities in more communities.

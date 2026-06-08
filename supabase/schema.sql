@@ -323,4 +323,4 @@ create policy "Admins can manage announcements"
 -- First admin setup after creating/verifying your admin Auth user:
 -- update public.profiles
 -- set account_type = 'admin'
--- where email = 'kazuhanakumora@hybe.com';
+-- where email = 'admin@example.org';
