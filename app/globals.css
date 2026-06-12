@@ -8508,3 +8508,429 @@ body {
     grid-template-columns: 1fr !important;
   }
 }
+
+/* Search result layout polish. */
+:root {
+  --story-ink: #13233b;
+  --story-paper: #fffdf2;
+  --story-paper-blue: #eefaff;
+  --story-paper-yellow: #fff4c4;
+  --story-shadow: rgba(19, 35, 59, 0.18);
+}
+
+:root[data-theme="dark"] {
+  --story-ink: #07192e;
+  --story-paper: #102946;
+  --story-paper-blue: #113c60;
+  --story-paper-yellow: #44380f;
+  --story-shadow: rgba(0, 0, 0, 0.34);
+}
+
+.search-band.surface-band {
+  padding-top: clamp(22px, 3.4vw, 44px) !important;
+}
+
+.search-layout,
+.search-band .search-layout {
+  width: min(1440px, calc(100vw - clamp(22px, 5vw, 76px))) !important;
+  gap: clamp(20px, 2.4vw, 34px) !important;
+  align-items: start !important;
+}
+
+@media (min-width: 1121px) {
+  .search-layout,
+  .search-band .search-layout {
+    grid-template-columns: minmax(420px, 0.76fr) minmax(660px, 1.24fr) !important;
+  }
+
+  .search-band .selected-column {
+    position: sticky !important;
+    top: 108px !important;
+    display: grid !important;
+    grid-template-rows: auto auto !important;
+    gap: clamp(16px, 2vw, 24px) !important;
+  }
+
+  .search-band .selected-details-card {
+    max-height: none !important;
+    overflow: visible !important;
+  }
+}
+
+.results-panel,
+.search-band .results-panel,
+.selected-details-card,
+.map-shell,
+.opportunity-card {
+  border: 3px solid var(--story-ink) !important;
+  border-radius: 32px 28px 36px 30px !important;
+  background:
+    radial-gradient(circle at 18px 18px, color-mix(in srgb, var(--blue) 12%, transparent) 0 2px, transparent 2px 100%),
+    linear-gradient(145deg, color-mix(in srgb, var(--story-paper) 96%, var(--mint-soft)) 0%, color-mix(in srgb, var(--story-paper) 92%, var(--blue-soft)) 52%, color-mix(in srgb, var(--story-paper) 92%, var(--yellow-soft)) 100%) !important;
+  background-size: 30px 30px, auto !important;
+  box-shadow: 8px 9px 0 var(--story-shadow), 0 18px 46px rgba(19, 35, 59, 0.08) !important;
+}
+
+:root[data-theme="dark"] .results-panel,
+:root[data-theme="dark"] .search-band .results-panel,
+:root[data-theme="dark"] .selected-details-card,
+:root[data-theme="dark"] .map-shell,
+:root[data-theme="dark"] .opportunity-card {
+  background:
+    radial-gradient(circle at 18px 18px, color-mix(in srgb, var(--blue) 18%, transparent) 0 2px, transparent 2px 100%),
+    linear-gradient(145deg, color-mix(in srgb, var(--surface) 88%, var(--blue) 10%) 0%, color-mix(in srgb, var(--surface) 82%, var(--mint) 8%) 56%, color-mix(in srgb, var(--surface) 86%, var(--lavender) 10%) 100%) !important;
+}
+
+.results-panel,
+.search-band .results-panel {
+  padding: clamp(18px, 2.2vw, 24px) !important;
+}
+
+.results-panel::before,
+.selected-details-card::before,
+.map-shell::before {
+  position: absolute;
+  width: 76px;
+  height: 15px;
+  border: 3px solid var(--story-ink);
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--coral), var(--yellow), var(--mint));
+  box-shadow: 3px 4px 0 var(--story-shadow);
+  content: "";
+  pointer-events: none;
+}
+
+.results-panel::before {
+  top: -12px;
+  left: 32px;
+  transform: rotate(-2deg);
+}
+
+.selected-details-card::before {
+  top: -12px;
+  right: 34px;
+  transform: rotate(2deg);
+}
+
+.map-shell::before {
+  top: -11px;
+  left: 44px;
+  transform: rotate(1deg);
+  z-index: 2;
+}
+
+.results-toolbar,
+.search-band .results-toolbar {
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  gap: 12px !important;
+  align-items: stretch !important;
+  padding: 0 0 17px !important;
+  border-bottom: 3px solid color-mix(in srgb, var(--story-ink) 16%, transparent) !important;
+}
+
+.results-summary {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: end;
+  gap: 12px;
+  min-width: 0;
+}
+
+.free-only-line {
+  max-width: 240px !important;
+  margin: 0 !important;
+  color: color-mix(in srgb, var(--ink) 78%, var(--blue-strong)) !important;
+  font-size: clamp(0.88rem, 0.4vw + 0.74rem, 1rem) !important;
+  font-weight: 950 !important;
+  line-height: 1.16 !important;
+}
+
+.results-summary h2,
+.results-toolbar h2 {
+  margin: 0 !important;
+  color: var(--ink) !important;
+  font-size: clamp(2rem, 2.25vw, 2.8rem) !important;
+  font-weight: 1000 !important;
+  letter-spacing: 0 !important;
+  line-height: 0.96 !important;
+  text-align: right;
+  white-space: nowrap !important;
+}
+
+.results-actions,
+.search-band .results-actions {
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  gap: 10px !important;
+  min-width: 0 !important;
+}
+
+.toolbar-status,
+.toolbar-controls {
+  min-width: 0 !important;
+}
+
+.source-scout-mini {
+  width: 100% !important;
+  min-height: 42px !important;
+  padding: 7px 12px !important;
+  border: 3px solid var(--story-ink) !important;
+  border-radius: 999px !important;
+  background: linear-gradient(90deg, color-mix(in srgb, var(--surface) 88%, var(--blue-soft)), color-mix(in srgb, var(--surface) 86%, var(--yellow-soft))) !important;
+  box-shadow: 3px 4px 0 var(--story-shadow) !important;
+  overflow: hidden;
+}
+
+.source-scout-mini > span:last-child {
+  min-width: 0;
+  overflow: hidden;
+  font-size: clamp(0.76rem, 0.28vw + 0.7rem, 0.88rem);
+  line-height: 1.15;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.source-scout-radar {
+  border-color: var(--story-ink) !important;
+  box-shadow: 2px 2px 0 var(--story-shadow);
+}
+
+.toolbar-controls,
+.search-band .toolbar-controls {
+  display: grid !important;
+  grid-template-columns: minmax(108px, 0.72fr) minmax(108px, 0.72fr) minmax(174px, 1.1fr);
+  gap: 9px !important;
+  align-items: center !important;
+  justify-content: stretch !important;
+}
+
+.toolbar-filter-button,
+.research-refresh-button,
+.segmented {
+  width: 100% !important;
+  min-width: 0 !important;
+}
+
+.toolbar-filter-button,
+.research-refresh-button {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 7px !important;
+  min-height: 48px !important;
+  padding: 0 14px !important;
+  border: 3px solid var(--story-ink) !important;
+  border-radius: 999px !important;
+  background: color-mix(in srgb, var(--surface) 90%, var(--yellow-soft)) !important;
+  box-shadow: 4px 5px 0 var(--story-shadow) !important;
+  color: var(--ink) !important;
+  font-size: clamp(0.88rem, 0.3vw + 0.78rem, 1rem) !important;
+  font-weight: 950 !important;
+}
+
+.toolbar-filter-button:is(:hover, :focus-visible, .motion-active),
+.research-refresh-button:is(:hover, :focus-visible) {
+  transform: translateY(-3px) rotate(-0.6deg) scale(1.025) !important;
+  box-shadow: 6px 8px 0 var(--story-shadow), 0 14px 26px rgba(41, 186, 255, 0.18) !important;
+}
+
+.segmented {
+  min-height: 48px !important;
+  padding: 5px !important;
+  border: 3px solid var(--story-ink) !important;
+  background: color-mix(in srgb, var(--surface) 88%, var(--blue-soft)) !important;
+  box-shadow: 4px 5px 0 var(--story-shadow) !important;
+}
+
+.segmented button {
+  min-height: 35px !important;
+  font-size: clamp(0.84rem, 0.26vw + 0.76rem, 0.95rem) !important;
+  font-weight: 950 !important;
+}
+
+.segmented button.active {
+  background: linear-gradient(135deg, var(--yellow) 0%, var(--blue) 55%, var(--mint) 100%) !important;
+  box-shadow: inset 0 -2px 0 rgba(19, 35, 59, 0.18) !important;
+}
+
+.cards-column,
+.results-panel .cards-column {
+  margin-top: 17px !important;
+  gap: 16px !important;
+}
+
+.opportunity-card {
+  padding: clamp(16px, 1.8vw, 20px) !important;
+  border-radius: 30px 26px 34px 28px !important;
+}
+
+.opportunity-card:nth-child(4n + 2) {
+  background:
+    radial-gradient(circle at 92% 10%, color-mix(in srgb, var(--coral) 18%, transparent), transparent 7rem),
+    linear-gradient(145deg, color-mix(in srgb, var(--story-paper) 94%, var(--coral-soft)), color-mix(in srgb, var(--story-paper) 90%, var(--blue-soft))) !important;
+}
+
+.opportunity-card:nth-child(4n + 3) {
+  background:
+    radial-gradient(circle at 92% 10%, color-mix(in srgb, var(--mint) 18%, transparent), transparent 7rem),
+    linear-gradient(145deg, color-mix(in srgb, var(--story-paper) 94%, var(--mint-soft)), color-mix(in srgb, var(--story-paper) 90%, var(--yellow-soft))) !important;
+}
+
+.opportunity-card:nth-child(4n + 4) {
+  background:
+    radial-gradient(circle at 92% 10%, color-mix(in srgb, var(--lavender) 18%, transparent), transparent 7rem),
+    linear-gradient(145deg, color-mix(in srgb, var(--story-paper) 94%, var(--lavender-soft)), color-mix(in srgb, var(--story-paper) 90%, var(--blue-soft))) !important;
+}
+
+:root[data-theme="dark"] .opportunity-card:nth-child(n) {
+  background:
+    radial-gradient(circle at 92% 10%, color-mix(in srgb, var(--blue) 16%, transparent), transparent 7rem),
+    linear-gradient(145deg, color-mix(in srgb, var(--surface) 86%, var(--blue) 10%), color-mix(in srgb, var(--surface) 82%, var(--mint) 8%)) !important;
+}
+
+.opportunity-card.selected {
+  border-color: var(--blue-strong) !important;
+  box-shadow: 0 0 0 5px color-mix(in srgb, var(--yellow) 70%, transparent), 8px 10px 0 var(--story-shadow), 0 24px 54px rgba(41, 186, 255, 0.18) !important;
+}
+
+.selected-details-card {
+  padding: clamp(18px, 2.1vw, 26px) !important;
+}
+
+.detail-main h2 {
+  font-size: clamp(1.75rem, 1.8vw, 2.55rem) !important;
+  letter-spacing: 0 !important;
+}
+
+.compact-details .detail-main h2 {
+  font-size: clamp(1.45rem, 1.35vw, 2rem) !important;
+}
+
+.detail-actions {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 9px !important;
+}
+
+.detail-actions :is(.primary-button, .soft-button),
+.card-actions .soft-button {
+  border: 3px solid var(--story-ink) !important;
+  box-shadow: 4px 5px 0 var(--story-shadow) !important;
+  font-weight: 950 !important;
+}
+
+.detail-facts,
+.source-panel,
+.trust-banner,
+.source-list a {
+  border-color: var(--story-ink) !important;
+  border-width: 3px !important;
+}
+
+.detail-facts {
+  border-radius: 24px !important;
+  background: color-mix(in srgb, var(--surface) 90%, var(--mint-soft)) !important;
+}
+
+.fact {
+  padding: 10px 12px !important;
+}
+
+.source-panel {
+  border-radius: 26px !important;
+  background: linear-gradient(145deg, color-mix(in srgb, var(--surface) 88%, var(--mint-soft)), color-mix(in srgb, var(--surface) 86%, var(--yellow-soft))) !important;
+}
+
+.map-shell,
+.selected-column .map-shell,
+.search-band .map-shell {
+  height: clamp(320px, 40svh, 460px) !important;
+  min-height: 320px !important;
+}
+
+@media (max-width: 920px) {
+  .search-layout,
+  .search-band .search-layout {
+    width: min(100% - 20px, 1440px) !important;
+  }
+
+  .results-summary {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+
+  .toolbar-controls,
+  .search-band .toolbar-controls {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  }
+
+  .segmented {
+    grid-column: 1 / -1;
+  }
+
+  .toolbar-controls > .segmented,
+  .search-band .toolbar-controls > .segmented {
+    grid-column: 1 / -1 !important;
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .search-layout,
+  .search-band .search-layout {
+    width: min(100% - 12px, 1440px) !important;
+  }
+
+  .results-panel,
+  .search-band .results-panel,
+  .selected-details-card,
+  .map-shell,
+  .opportunity-card {
+    border-width: 2px !important;
+    border-radius: 24px !important;
+    box-shadow: 5px 6px 0 var(--story-shadow), 0 12px 28px rgba(19, 35, 59, 0.08) !important;
+  }
+
+  .results-summary {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .free-only-line {
+    max-width: none !important;
+  }
+
+  .results-summary h2,
+  .results-toolbar h2 {
+    text-align: left;
+    white-space: normal !important;
+  }
+
+  .source-scout-mini > span:last-child {
+    white-space: normal;
+  }
+
+  .toolbar-filter-button,
+  .research-refresh-button,
+  .segmented,
+  .detail-actions :is(.primary-button, .soft-button),
+  .card-actions .soft-button,
+  .detail-facts,
+  .source-panel,
+  .trust-banner,
+  .source-list a {
+    border-width: 2px !important;
+  }
+
+  .toolbar-controls > .segmented,
+  .search-band .toolbar-controls > .segmented {
+    grid-column: 1 / -1 !important;
+    width: 100% !important;
+  }
+
+  .map-shell,
+  .selected-column .map-shell,
+  .search-band .map-shell {
+    height: 330px !important;
+  }
+}
