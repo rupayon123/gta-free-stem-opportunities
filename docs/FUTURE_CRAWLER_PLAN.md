@@ -1,22 +1,22 @@
-# Discovery Crawler Plan
+# Search Hunting Engine Plan
 
-The beta now includes a review-first discovery crawler scaffold. It fetches public source pages, extracts likely free GTA STEM opportunities, removes obvious duplicates, and exports new finds as Supabase-ready review rows.
+The beta includes a free scheduled search-hunting engine for the website data layer. It fetches public source pages, extracts likely free GTA STEM opportunities, removes obvious duplicates, hides expired listings from public search, and exports the same public feed the future iOS app can consume.
 
-It does not auto-publish. New discovered opportunities are queued as `needs_review` unless they are already expired. An admin must review cost, date, source, location, and duplicate risk before setting a listing to `active`.
+High-confidence listings can be `active`; uncertain but useful public finds can appear as `needs_review` / `new find` so users see more opportunities while the source still stays transparent. Expired items do not appear in public search.
 
-## Run Discovery
-
-```bash
-npm run discover
-```
-
-This prints JSON with source checks, warnings, duplicate counts, and discovered opportunities.
+## Run The Engine
 
 ```bash
-npm run discover:sql
+npm run engine:refresh
 ```
 
-This prints SQL that can be reviewed and pasted into the Supabase SQL editor after `supabase/schema.sql` has been run.
+This refreshes generated library listings, scans public discovery sources, exports `public/opportunities.json`, and runs QA.
+
+```bash
+npm run discover:summary
+```
+
+This prints source checks, warnings, duplicate counts, and discovered opportunities.
 
 ## Sources
 
@@ -31,27 +31,22 @@ The current source registry is in `lib/discovery.ts` and includes:
 
 Add sources slowly. Good sources have public pages, clear dates, clear free-access language, an official provider, and stable URLs.
 
-## Extraction Mode
+## Free Scheduled Refresh
 
-The crawler runs in deterministic extraction mode so it stays simple, auditable, and free.
+`.github/workflows/refresh-opportunities.yml` runs every 6 hours and can also be started manually from GitHub Actions. The job:
 
-## Review Rules
+- refreshes source-backed static opportunity files;
+- exports `public/opportunities.json` for app/web sync;
+- runs QA;
+- builds the static site;
+- commits only when generated opportunity data changes.
 
-Admins should approve only when all of these are true:
+## Apple/App Sync
 
-- Future or currently active date.
-- GTA or online eligibility.
-- Clear no-cost access.
-- Clear source URL.
-- Age/date/location present.
-- No serious duplicate conflict.
-- Trusted source/provider, or official provider confirmation.
+Apple services improve the native iOS app, but the durable search hunting engine should stay on free backend/GitHub Actions infrastructure. The SwiftUI app can later fetch:
 
-Keep items in review or hidden when any of these are true:
+```text
+https://gta-free-stem.vercel.app/opportunities.json
+```
 
-- Unclear cost/access.
-- Stale dates.
-- Conflicting locations or age ranges.
-- Private-source-only claims.
-- Social posts without an official source.
-- Possible duplicate listings.
+That keeps the website and app separate while letting both use the same public opportunity feed.

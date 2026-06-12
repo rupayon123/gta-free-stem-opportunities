@@ -149,7 +149,7 @@ export default function RootLayout({
       <head>
         <meta name="geo.region" content="CA-ON" />
         <meta name="geo.placename" content="Greater Toronto Area" />
-        <meta name="theme-color" content="#3b96d4" />
+        <meta name="theme-color" content="#0b7aa7" />
         <meta
           name="subject"
           content="Free and accessible STEM opportunities for students, parents, educators, and community groups across the Greater Toronto Area"

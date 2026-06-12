@@ -20,6 +20,8 @@
     "discover:write": "tsx scripts/discover-opportunities.ts --summary --write-review",
     "discover:sql": "tsx scripts/discover-opportunities.ts --format=sql",
     "generate:library": "tsx scripts/generate-library-opportunities.ts",
+    "export:public-feed": "tsx scripts/export-public-opportunities.ts",
+    "engine:refresh": "npm run generate:library && npm run discover:write && npm run export:public-feed && npm run qa",
     "supabase:check": "tsx scripts/check-supabase.ts",
     "supabase:seed": "tsx scripts/export-supabase-seed.ts",
     "qa": "tsx scripts/qa-check.ts",
