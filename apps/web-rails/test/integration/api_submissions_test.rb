@@ -30,4 +30,24 @@ class ApiSubmissionsTest < ActionDispatch::IntegrationTest
     assert_response :created
     assert_equal "new", MissingOpportunitySubmission.last.status
   end
+
+  test "accepts app hunt refresh requests" do
+    assert_difference "SourceCheck.count", 1 do
+      post api_v1_hunt_refresh_path,
+        params: {
+          hunt: {
+            query: "robotics",
+            city: "Toronto",
+            latitude: "43.6532",
+            longitude: "-79.3832",
+            distance_km: "25",
+            sort: "distance"
+          }
+        },
+        as: :json
+    end
+
+    assert_response :accepted
+    assert_equal "queued", SourceCheck.last.status
+  end
 end

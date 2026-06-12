@@ -24,6 +24,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :opportunities, only: %i[index show]
       resources :announcements, only: %i[index]
+      resource :hunt_refresh, only: %i[create]
       resources :feedback, only: %i[create]
       resources :missing_opportunity_submissions, only: %i[create]
       resources :saved_opportunities, only: %i[index create destroy], param: :opportunity_id

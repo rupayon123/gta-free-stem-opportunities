@@ -87,6 +87,9 @@ class Opportunity < ApplicationRecord
       volunteerHoursEligible: volunteer_hours_eligible,
       coopEligible: coop_eligible,
       paidPosition: paid_position,
+      distanceKm: distance_km,
+      isNewFind: status == "needs_review",
+      sourceConfidence: trusted_source ? "trusted" : "source-needs-checking",
       tags: tags,
       sources: sources
     }
@@ -108,6 +111,15 @@ class Opportunity < ApplicationRecord
 
     self.coordinates = "POINT(#{longitude} #{latitude})"
   rescue ActiveModel::MissingAttributeError, NoMethodError
+    nil
+  end
+
+  def distance_km
+    meters = self[:distance_meters] if has_attribute?(:distance_meters)
+    return if meters.blank?
+
+    (meters.to_f / 1_000).round(1)
+  rescue ActiveModel::MissingAttributeError
     nil
   end
 end

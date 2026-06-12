@@ -30,6 +30,8 @@ module Api
           :latitude,
           :longitude,
           :distanceKm,
+          :sort,
+          :includeNewFinds,
           :highSchool,
           :volunteerHours,
           :coop,

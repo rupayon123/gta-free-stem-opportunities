@@ -10,7 +10,7 @@ module Search
     end
 
     def results
-      scope = admin ? Opportunity.not_hidden : Opportunity.publicly_visible
+      scope = base_scope
       scope = text(scope)
       scope = exact(scope, :region)
       scope = exact(scope, :city)
@@ -26,10 +26,17 @@ module Search
       scope = tag_or_flag(scope, "leadership", tags: [ "leadership", "youth leadership" ])
       scope = high_school(scope)
       scope = distance(scope)
-      scope.recent_first.limit(limit)
+      sorted(scope).limit(limit)
     end
 
     private
+
+    def base_scope
+      return Opportunity.not_hidden if admin
+      return Opportunity.publicly_visible if include_new_finds?
+
+      Opportunity.publicly_visible.where(status: "active")
+    end
 
     def text(scope)
       query = params[:query].to_s.strip
@@ -120,10 +127,51 @@ module Search
         "coordinates IS NOT NULL AND ST_DWithin(coordinates, ST_SetSRID(ST_MakePoint(?, ?), 4326)::geography, ?)",
         lng,
         lat,
-        km * 1_000
+        [[ km, 1 ].max, 150 ].min * 1_000
       )
     rescue ActiveRecord::StatementInvalid
       scope
+    end
+
+    def sorted(scope)
+      case params[:sort].to_s
+      when "distance"
+        sort_by_distance(scope)
+      when "relevance"
+        sort_by_relevance(scope)
+      else
+        scope.recent_first
+      end
+    end
+
+    def sort_by_distance(scope)
+      lat = decimal_param(:latitude)
+      lng = decimal_param(:longitude)
+      return scope.recent_first if lat.blank? || lng.blank?
+      return scope.recent_first unless Opportunity.column_names.include?("coordinates")
+
+      point_sql = ActiveRecord::Base.sanitize_sql_array([ "ST_SetSRID(ST_MakePoint(?, ?), 4326)::geography", lng, lat ])
+      scope
+        .select("opportunities.*, ST_Distance(coordinates, #{point_sql}) AS distance_meters")
+        .order(Arel.sql("distance_meters ASC NULLS LAST"))
+        .order(Arel.sql("COALESCE(start_date, deadline, end_date) ASC NULLS LAST"))
+    rescue ActiveRecord::StatementInvalid
+      scope.recent_first
+    end
+
+    def sort_by_relevance(scope)
+      query = params[:query].to_s.strip
+      return scope.recent_first if query.blank?
+
+      order_sql = ActiveRecord::Base.sanitize_sql_array([
+        "GREATEST(similarity(title, ?), similarity(organization, ?), similarity(description, ?)) DESC",
+        query,
+        query,
+        query
+      ])
+      scope.order(Arel.sql(order_sql)).recent_first
+    rescue ActiveRecord::StatementInvalid
+      scope.recent_first
     end
 
     def limit
@@ -135,6 +183,12 @@ module Search
       BigDecimal(params[key].to_s)
     rescue ArgumentError
       nil
+    end
+
+    def include_new_finds?
+      return true unless params.key?(:includeNewFinds)
+
+      truthy?(params[:includeNewFinds])
     end
 
     def truthy?(value)
