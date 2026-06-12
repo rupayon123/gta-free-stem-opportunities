@@ -13,4 +13,4 @@ Before production cutover:
 - Move auth to audited OAuth flows for Apple, Google, and Microsoft.
 - Add bot protection to public submission endpoints if abuse appears.
 - Add provider review logs and admin audit views.
-- Run Brakeman, bundle audit, Rails tests, and iOS tests before every release.
+- Run Brakeman, bundle audit, Rails tests, TypeScript checks, QA checks, and production builds before every website release.
