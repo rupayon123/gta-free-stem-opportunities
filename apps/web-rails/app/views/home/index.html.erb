@@ -1,0 +1,30 @@
+<% content_for :title, "GTA FREE STEM Opportunities" %>
+
+<section class="home-hero">
+  <%= image_tag "/logo.png", alt: "GTA FREE STEM Opportunities logo", class: "hero-logo" %>
+  <p class="eyebrow">Free and accessible learning across the GTA</p>
+  <h1>GTA FREE STEM Opportunities</h1>
+  <p class="hero-copy">
+    A public platform helping students, parents, educators, and community groups find free STEM programs,
+    volunteer hours, co-op/SHSM pathways, mentorship, and youth leadership opportunities.
+  </p>
+
+  <%= form_with url: opportunities_path, method: :get, class: "hero-search" do |form| %>
+    <%= form.search_field :query, placeholder: "Search coding, robotics, science, volunteer hours...", aria: { label: "Search opportunities" } %>
+    <%= form.submit "Search" %>
+  <% end %>
+
+  <div class="hero-actions">
+    <%= link_to "Browse Opportunities", opportunities_path, class: "button primary" %>
+    <%= link_to "High School Pathways", high_school_path, class: "button secondary" %>
+    <%= link_to "Share Feedback", feedback_page_path, class: "button ghost" %>
+  </div>
+
+  <section class="status-card" aria-label="Opportunity database status">
+    <span class="pulse-dot" aria-hidden="true"></span>
+    <div>
+      <strong><%= number_with_delimiter(@active_count) %> visible opportunities</strong>
+      <span>Last refreshed <%= @last_checked.present? ? time_tag(@last_checked) : "after setup import" %></span>
+    </div>
+  </section>
+</section>

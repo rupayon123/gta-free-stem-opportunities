@@ -2,6 +2,8 @@
 
 [![Next.js](https://img.shields.io/badge/Next.js-16-black)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)](https://www.typescriptlang.org/)
+[![Rails](https://img.shields.io/badge/Rails-8.1-red)](https://rubyonrails.org/)
+[![SwiftUI](https://img.shields.io/badge/SwiftUI-iOS-blue)](https://developer.apple.com/xcode/swiftui/)
 [![Supabase Ready](https://img.shields.io/badge/Supabase-ready-3ecf8e)](https://supabase.com/)
 [![Static Export](https://img.shields.io/badge/hosting-static%20export-6aa9ff)](https://vercel.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
@@ -11,6 +13,15 @@ Open-source public beta for finding free and accessible STEM programs, library e
 Public beta: https://gta-free-stem.vercel.app
 
 This project is built so other cities can fork it, replace the source list and city/region data, and launch their own free-learning opportunity finder without paid infrastructure.
+
+## Monorepo Direction
+
+- `.`: current live Next.js static public beta.
+- `apps/web-rails`: Rails 8.1 / Ruby 3.4 web and backend platform with PostgreSQL/PostGIS, admin review, public API, importer jobs, and security tests.
+- `apps/ios`: native SwiftUI iOS app foundation for TestFlight, using MapKit, SF Symbols, Sign in with Apple UI, Dynamic Type-friendly screens, and the Rails API contract.
+- `legacy/next-static`: migration note preserving the current public site until Rails is proven better.
+
+The current public site stays live while Rails and SwiftUI mature. The Rails app is intended to become the source of truth once free hosting, Supabase Postgres/PostGIS, OAuth, admin review, and the mobile API are fully verified.
 
 ## Highlights
 
@@ -117,6 +128,26 @@ npm run qa
 ```
 
 Run `npm run supabase:check` after `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY` are connected.
+
+Rails verification:
+
+```bash
+cd apps/web-rails
+bin/rails db:prepare
+bin/rails gta_free_stem:refresh
+bin/rails test
+bin/brakeman -q
+bin/bundler-audit check --update
+```
+
+iOS verification:
+
+```bash
+cd apps/ios
+xcodegen generate
+xcodebuild -project GTAFreeSTEM.xcodeproj -scheme GTAFreeSTEM -destination 'generic/platform=iOS Simulator' build
+xcodebuild test -project GTAFreeSTEM.xcodeproj -scheme GTAFreeSTEM -destination 'platform=iOS Simulator,name=iPhone 17'
+```
 
 ## Zero-Dollar Deployment Rules
 

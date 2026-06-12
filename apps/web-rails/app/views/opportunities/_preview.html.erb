@@ -1,0 +1,21 @@
+<article class="detail-card">
+  <div class="detail-map" aria-label="Map preview">
+    <span>Map preview</span>
+    <strong><%= opportunity.city %>, <%= opportunity.region %></strong>
+  </div>
+  <span class="pill"><%= opportunity.computed_status.humanize %></span>
+  <h2><%= opportunity.title %></h2>
+  <p class="lead"><%= opportunity.summary.presence || opportunity.description %></p>
+  <dl class="detail-grid">
+    <div><dt>Provider</dt><dd><%= opportunity.organization %></dd></div>
+    <div><dt>Age</dt><dd><%= opportunity.age_min %><%= opportunity.age_max.present? ? "–#{opportunity.age_max}" : "+" %></dd></div>
+    <div><dt>City</dt><dd><%= opportunity.city %></dd></div>
+    <div><dt>Starts</dt><dd><%= opportunity.start_date.present? ? l(opportunity.start_date.to_date, format: :medium) : "Check source" %></dd></div>
+  </dl>
+  <div class="detail-actions">
+    <%= link_to "Register / Apply", opportunity.registration_url || opportunity.source_url, class: "button primary", target: "_blank", rel: "noopener" %>
+    <%= link_to "Directions", "https://www.google.com/maps/search/?api=1&query=#{ERB::Util.url_encode(opportunity.address.presence || "#{opportunity.city}, #{opportunity.region}")}", class: "button secondary", target: "_blank", rel: "noopener" %>
+    <button class="button ghost" type="button" data-requires-account="true">Save</button>
+  </div>
+  <p class="source-line">Source: <%= link_to URI.parse(opportunity.source_url).host, opportunity.source_url, target: "_blank", rel: "noopener" %></p>
+</article>

@@ -1,0 +1,27 @@
+<% content_for :title, "#{@title || "High School Opportunities"} | GTA FREE STEM" %>
+
+<section class="search-shell">
+  <div class="page-heading">
+    <p class="eyebrow">High school pathways</p>
+    <h1><%= @title || "High School Opportunities" %></h1>
+    <p>Find free volunteer-hour, co-op/SHSM, mentorship, leadership, and career exploration opportunities.</p>
+  </div>
+  <section class="results-layout">
+    <aside class="result-list">
+      <% @opportunities.each do |opportunity| %>
+        <%= link_to opportunity_path(opportunity), class: "opportunity-card" do %>
+          <span class="pill"><%= opportunity.category %></span>
+          <h2><%= opportunity.title %></h2>
+          <p><%= opportunity.organization %> · <%= opportunity.city %></p>
+        <% end %>
+      <% end %>
+    </aside>
+    <section class="details-pane">
+      <% if @opportunities.first %>
+        <%= render "opportunities/preview", opportunity: @opportunities.first %>
+      <% else %>
+        <div class="empty-state">No matching high school listings yet.</div>
+      <% end %>
+    </section>
+  </section>
+</section>

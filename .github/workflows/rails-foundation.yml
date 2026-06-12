@@ -1,0 +1,44 @@
+name: Rails foundation
+
+on:
+  push:
+    paths:
+      - "apps/web-rails/**"
+      - ".github/workflows/rails-foundation.yml"
+  pull_request:
+    paths:
+      - "apps/web-rails/**"
+      - ".github/workflows/rails-foundation.yml"
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:17
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+    defaults:
+      run:
+        working-directory: apps/web-rails
+    env:
+      RAILS_ENV: test
+      DATABASE_URL: postgres://postgres:postgres@localhost:5432/web_rails_test
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.4.9"
+          bundler-cache: true
+          working-directory: apps/web-rails
+      - run: bin/rails db:prepare
+      - run: bin/rails test
+      - run: bin/brakeman -q

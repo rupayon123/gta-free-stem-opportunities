@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title><%= content_for(:title) || "GTA FREE STEM Opportunities" %></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Find free and accessible STEM programs, high school volunteer hours, co-op and mentorship opportunities across the GTA.">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="GTA FREE STEM">
+    <meta name="mobile-web-app-capable" content="yes">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= yield :head %>
+
+    <%# Enable PWA manifest for installable apps (make sure to enable in config/routes.rb too!) %>
+    <%#= tag.link rel: "manifest", href: pwa_manifest_path(format: :json) %>
+
+    <link rel="icon" href="/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="/apple-icon.png">
+
+    <%# Includes all stylesheet files in app/assets/stylesheets %>
+    <%= stylesheet_link_tag :app, "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body>
+    <header class="site-header">
+      <%= link_to root_path, class: "brand-lockup", "aria-label": "GTA FREE STEM home" do %>
+        <%= image_tag "/logo.png", alt: "", class: "brand-mark" %>
+        <span>GTA FREE STEM</span>
+      <% end %>
+      <nav class="main-nav" aria-label="Main navigation">
+        <%= link_to "Opportunities", opportunities_path %>
+        <%= link_to "High School", high_school_path %>
+        <%= link_to "Volunteer Hours", volunteer_hours_path %>
+        <%= link_to "Co-op / SHSM", coop_shsm_path %>
+        <%= link_to "Mentorship", mentorship_path %>
+        <%= link_to "About", accessibility_support_path %>
+        <%= link_to "Support", feedback_page_path %>
+      </nav>
+    </header>
+
+    <% if notice.present? %>
+      <p class="notice"><%= notice %></p>
+    <% end %>
+
+    <main>
+      <%= yield %>
+    </main>
+  </body>
+</html>

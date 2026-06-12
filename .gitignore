@@ -16,5 +16,16 @@ pnpm-debug.log*
 *.tsbuildinfo
 .DS_Store
 
+# Ruby/Rails local state
+vendor/bundle/
+log/*.log
+tmp/
+
+# Xcode local state
+DerivedData/
+*.xcuserstate
+*.xcscmblueprint
+xcuserdata/
+
 verification/
 artifacts/

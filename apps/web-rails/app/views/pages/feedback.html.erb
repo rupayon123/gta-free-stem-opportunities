@@ -1,0 +1,27 @@
+<% content_for :title, "Support / Feedback | GTA FREE STEM" %>
+
+<section class="single-page two-column">
+  <article class="content-card">
+    <p class="eyebrow">Support</p>
+    <h1>Send feedback</h1>
+    <p>Use this route for corrections, accessibility notes, missing translations, or issues with a listing.</p>
+    <form class="stacked-form" method="post" action="/api/v1/feedback">
+      <input name="feedback[name]" placeholder="Name" autocomplete="name">
+      <input name="feedback[email]" placeholder="Email" autocomplete="email">
+      <textarea name="feedback[message]" placeholder="What should be fixed or improved?" required></textarea>
+      <button class="button primary" type="submit">Send Feedback</button>
+    </form>
+  </article>
+  <article class="content-card">
+    <p class="eyebrow">Missing program</p>
+    <h1>Submit a free opportunity</h1>
+    <form class="stacked-form" method="post" action="/api/v1/missing_opportunity_submissions">
+      <input name="missing_opportunity_submission[title]" placeholder="Program or role title" required>
+      <input name="missing_opportunity_submission[organization]" placeholder="Organization">
+      <input name="missing_opportunity_submission[city]" placeholder="City">
+      <input name="missing_opportunity_submission[source_url]" placeholder="Public source link">
+      <textarea name="missing_opportunity_submission[notes]" placeholder="What should reviewers know?" required></textarea>
+      <button class="button secondary" type="submit">Submit Opportunity</button>
+    </form>
+  </article>
+</section>
