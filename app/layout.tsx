@@ -58,10 +58,10 @@ export const metadata: Metadata = {
     locale: "en_CA",
     images: [
       {
-        url: "/logo.png",
+        url: "/icon.png",
         width: 1024,
         height: 1024,
-        alt: "GTA FREE STEM Opportunities logo"
+        alt: "GTA FREE STEM Opportunities brand mark"
       }
     ]
   },
@@ -69,7 +69,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `${siteTitle} | Free STEM programs in the GTA`,
     description: siteDescription,
-    images: ["/logo.png"]
+    images: ["/icon.png"]
   },
   icons: {
     icon: [
@@ -149,7 +149,7 @@ export default function RootLayout({
       <head>
         <meta name="geo.region" content="CA-ON" />
         <meta name="geo.placename" content="Greater Toronto Area" />
-        <meta name="theme-color" content="#6ed9ff" />
+        <meta name="theme-color" content="#3b96d4" />
         <meta
           name="subject"
           content="Free and accessible STEM opportunities for students, parents, educators, and community groups across the Greater Toronto Area"

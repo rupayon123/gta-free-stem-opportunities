@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { StorybookMark } from "@/components/StorybookMark";
 
 const siteUrl = "https://gta-free-stem.vercel.app";
 
@@ -124,13 +125,13 @@ export function metadataForPage(key: SeoPageKey): Metadata {
       description: page.description,
       siteName: "GTA FREE STEM Opportunities",
       locale: "en_CA",
-      images: [{ url: "/logo.png", width: 1024, height: 1024, alt: "GTA FREE STEM Opportunities logo" }]
+      images: [{ url: "/icon.png", width: 1024, height: 1024, alt: "GTA FREE STEM Opportunities brand mark" }]
     },
     twitter: {
       card: "summary_large_image",
       title: page.title,
       description: page.description,
-      images: ["/logo.png"]
+      images: ["/icon.png"]
     }
   };
 }
@@ -162,7 +163,7 @@ export function SeoLandingPage({ pageKey }: { pageKey: SeoPageKey }) {
       />
       <section className="seo-hero" aria-labelledby="seo-page-title">
         <a className="seo-logo-link" href="/" aria-label="Open GTA FREE STEM Opportunities">
-          <img src="/logo.png" width="132" height="132" alt="GTA FREE STEM Opportunities logo" />
+          <StorybookMark className="seo-storybook-mark" compact ariaHidden />
         </a>
         <p className="beta-pill">GTA FREE STEM Opportunities</p>
         <h1 id="seo-page-title">{page.heading}</h1>
