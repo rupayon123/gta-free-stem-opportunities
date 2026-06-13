@@ -9575,8 +9575,8 @@ body {
 .map-shell,
 .selected-column .map-shell,
 .search-band .map-shell {
-  height: clamp(270px, 37svh, 430px) !important;
-  min-height: 270px !important;
+  height: clamp(290px, 38svh, 440px) !important;
+  min-height: 290px !important;
 }
 
 .back-to-top-button {

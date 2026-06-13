@@ -331,6 +331,7 @@ export function HomePage() {
   const [filtersOpen, setFiltersOpen] = useState(false);
   const [viewMode, setViewMode] = useState<ViewMode>("list");
   const [selectedId, setSelectedId] = useState("");
+  const [showBackToTop, setShowBackToTop] = useState(false);
   const [savedIds, setSavedIds] = useState<string[]>([]);
   const [userLocation, setUserLocation] = useState<Coordinates | null>(null);
   const [locationStatus, setLocationStatus] = useState("");
@@ -457,6 +458,15 @@ export function HomePage() {
       setPendingScrollTarget("");
     });
   }, [activeSurface, pendingScrollTarget]);
+
+  useEffect(() => {
+    const updateBackToTop = () => {
+      setShowBackToTop(activeSurface !== "home" && window.scrollY > 420);
+    };
+    updateBackToTop();
+    window.addEventListener("scroll", updateBackToTop, { passive: true });
+    return () => window.removeEventListener("scroll", updateBackToTop);
+  }, [activeSurface]);
 
   useEffect(() => {
     if (!currentUser || backendMode !== "local" || !canUseLocalPreviewAccounts()) return;
@@ -1488,7 +1498,7 @@ export function HomePage() {
         />
       ) : null}
 
-      {activeSurface !== "home" ? (
+      {activeSurface !== "home" && showBackToTop ? (
         <button
           type="button"
           className="back-to-top-button"
