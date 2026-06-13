@@ -1631,7 +1631,7 @@ function Header({
         ) : (
           <button type="button" className="account-button" onClick={onAuthClick}>
             <UserRound size={16} aria-hidden="true" />
-            {t(language, "accountAdmin")}
+            <span className="account-button-full">{t(language, "accountAdmin")}</span>
           </button>
         )}
       </div>

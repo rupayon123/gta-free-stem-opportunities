@@ -9764,3 +9764,255 @@ body {
     animation: none !important;
   }
 }
+
+/* Home viewport fit: the landing page should read as one screen, not a scroll page. */
+.home-shell {
+  height: 100svh !important;
+  min-height: 100svh !important;
+  overflow: hidden !important;
+  padding-bottom: 0 !important;
+}
+
+.home-shell .landing-hero {
+  min-height: calc(100svh - 112px) !important;
+  height: calc(100svh - 112px) !important;
+  align-content: center !important;
+  padding-block: clamp(4px, 1.1svh, 10px) !important;
+}
+
+.home-shell .hero-card-shell {
+  gap: clamp(6px, 1svh, 11px) !important;
+}
+
+.home-shell .hero-storybook-mark {
+  --mark-width: clamp(220px, min(25vw, 32svh), 360px) !important;
+}
+
+.home-shell .beta-pill {
+  padding-block: 6px !important;
+}
+
+.home-shell .hero-card-shell h1 {
+  font-size: clamp(2rem, min(4.5vw, 7svh), 4.1rem) !important;
+  line-height: 1 !important;
+}
+
+.home-shell .hero-card-shell > p {
+  max-width: min(850px, 100%) !important;
+  font-size: clamp(0.88rem, min(1.05vw, 2svh), 1.08rem) !important;
+  line-height: 1.28 !important;
+}
+
+.home-shell .hero-search-form {
+  width: min(760px, 100%) !important;
+  min-height: 48px !important;
+  padding-block: 5px !important;
+}
+
+.home-shell .hero-actions {
+  gap: 8px !important;
+  padding: 2px !important;
+}
+
+.home-shell .hero-actions :is(.primary-button, .soft-button) {
+  min-height: 38px !important;
+  padding-block: 7px !important;
+}
+
+@media (max-width: 920px) {
+  .topbar.home-topbar {
+    grid-template-columns: auto minmax(0, 1fr) !important;
+    gap: 8px !important;
+    padding: 7px 9px !important;
+  }
+
+  .topbar.home-topbar .brand-mark {
+    justify-self: start !important;
+    text-align: left !important;
+  }
+
+  .topbar.home-topbar .brand-icon {
+    width: 52px !important;
+    height: 52px !important;
+  }
+
+  .topbar.home-topbar .brand-storybook-mark {
+    --mark-width: 52px !important;
+  }
+
+  .topbar.home-topbar .brand-mark strong {
+    font-size: 0.98rem !important;
+  }
+
+  .topbar.home-topbar .brand-mark small {
+    font-size: 0.72rem !important;
+  }
+
+  .topbar.home-topbar .header-actions {
+    display: grid !important;
+    grid-template-columns: minmax(180px, 1fr) auto auto;
+    align-items: center;
+    justify-self: stretch !important;
+    gap: 6px !important;
+  }
+
+  .topbar.home-topbar .compact-select {
+    width: 100% !important;
+    min-height: 36px !important;
+    padding-block: 4px !important;
+  }
+
+  .topbar.home-topbar .control-label {
+    font-size: 0 !important;
+  }
+
+  .topbar.home-topbar .control-label svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .topbar.home-topbar .compact-select select {
+    min-width: 0 !important;
+    font-size: 0.88rem !important;
+  }
+
+  .topbar.home-topbar .theme-toggle {
+    min-height: 36px !important;
+  }
+
+  .topbar.home-topbar .theme-toggle span {
+    display: none !important;
+  }
+
+  .topbar.home-topbar .theme-toggle button {
+    min-height: 30px !important;
+    padding-inline: 8px !important;
+  }
+
+  .topbar.home-topbar .account-button {
+    min-height: 36px !important;
+    padding-inline: 10px !important;
+    font-size: 0.82rem !important;
+    white-space: nowrap;
+  }
+
+  .home-shell .landing-hero {
+    min-height: calc(100svh - 86px) !important;
+    height: calc(100svh - 86px) !important;
+  }
+
+  .home-shell .hero-storybook-mark {
+    --mark-width: clamp(190px, min(34vw, 29svh), 285px) !important;
+  }
+
+  .home-shell .hero-card-shell h1 {
+    font-size: clamp(1.9rem, min(5.8vw, 6.3svh), 3.15rem) !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .topbar.home-topbar {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+
+  .topbar.home-topbar .brand-mark {
+    justify-self: center !important;
+  }
+
+  .topbar.home-topbar .header-actions {
+    grid-template-columns: minmax(0, 1fr) auto auto;
+  }
+
+  .topbar.home-topbar .account-button {
+    width: 38px !important;
+    min-width: 38px !important;
+    padding-inline: 0 !important;
+    overflow: hidden;
+    color: var(--ink) !important;
+    justify-content: center !important;
+  }
+
+  .topbar.home-topbar .account-button .account-button-full {
+    display: none !important;
+  }
+
+  .topbar.home-topbar .account-button svg {
+    display: block !important;
+    width: 16px !important;
+    min-width: 16px !important;
+    flex: 0 0 16px !important;
+    color: var(--ink);
+  }
+
+  .home-shell .landing-hero {
+    min-height: calc(100svh - 126px) !important;
+    height: calc(100svh - 126px) !important;
+  }
+
+  .home-shell .hero-storybook-mark {
+    --mark-width: clamp(150px, min(50vw, 22svh), 220px) !important;
+  }
+
+  .home-shell .hero-card-shell h1 {
+    font-size: clamp(1.65rem, min(8vw, 5.4svh), 2.55rem) !important;
+  }
+
+  .home-shell .hero-card-shell > p {
+    font-size: clamp(0.78rem, 3vw, 0.96rem) !important;
+    line-height: 1.2 !important;
+  }
+
+  .home-shell .hero-search-form {
+    min-height: 42px !important;
+    grid-template-columns: auto minmax(0, 1fr) auto !important;
+    padding-inline: 12px 6px !important;
+  }
+
+  .home-shell .hero-search-form input {
+    min-height: 32px !important;
+    font-size: 0.9rem !important;
+  }
+
+  .home-shell .hero-search-form button {
+    grid-column: auto !important;
+    width: auto !important;
+    min-height: 34px !important;
+    padding-inline: 11px !important;
+  }
+
+  .home-shell .hero-actions {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    width: min(100%, 520px) !important;
+  }
+
+  .home-shell .hero-actions :is(.primary-button, .soft-button) {
+    min-height: 34px !important;
+    padding: 6px 8px !important;
+    font-size: 0.8rem !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .home-shell .landing-hero {
+    min-height: calc(100svh - 132px) !important;
+    height: calc(100svh - 132px) !important;
+  }
+
+  .home-shell .hero-storybook-mark {
+    --mark-width: clamp(128px, min(48vw, 19svh), 180px) !important;
+  }
+
+  .home-shell .hero-card-shell {
+    gap: 5px !important;
+  }
+
+  .home-shell .hero-card-shell h1 {
+    font-size: clamp(1.45rem, min(7.5vw, 4.7svh), 2.15rem) !important;
+  }
+
+  .home-shell .beta-pill {
+    padding: 4px 9px !important;
+    font-size: 0.72rem !important;
+  }
+}
