@@ -1320,13 +1320,6 @@ export function HomePage() {
       ) : null}
 
       {activeSurface !== "home" && adminAnnouncements.length ? <AnnouncementStrip announcements={adminAnnouncements.slice(0, 2)} /> : null}
-      {activeSurface !== "home" && backendStatus ? (
-        <section className="workspace-band backend-status-band" aria-live="polite">
-          <p className="status-line backend-status-line">
-            {backendMode === "supabase" ? "Supabase" : "Static preview"}: {backendStatus}
-          </p>
-        </section>
-      ) : null}
 
       {activeSurface === "high-school" ? (
         <HighSchoolSection

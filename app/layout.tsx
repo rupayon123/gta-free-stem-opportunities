@@ -169,7 +169,13 @@ export default function RootLayout({
             __html: `
               (() => {
                 try {
-                  const preference = localStorage.getItem("gta-stem-opportunities-theme") || "light";
+                  const themeKey = "gta-stem-opportunities-theme";
+                  const defaultKey = "gta-stem-opportunities-light-default-v2";
+                  const preference = localStorage.getItem(defaultKey)
+                    ? (localStorage.getItem(themeKey) || "light")
+                    : "light";
+                  localStorage.setItem(themeKey, preference);
+                  localStorage.setItem(defaultKey, "true");
                   const resolved = preference === "system"
                     ? (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light")
                     : preference;

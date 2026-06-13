@@ -9634,3 +9634,133 @@ body {
     border-width: 2px;
   }
 }
+
+/* Final public polish: no beta/dev banner, light-first theme, bigger animated landing mark, and readable dark chips. */
+.backend-status-band,
+.backend-status-line {
+  display: none !important;
+}
+
+.landing-hero,
+.home-shell .landing-hero {
+  align-items: center !important;
+  overflow: clip !important;
+  padding-inline: clamp(14px, 3vw, 32px) !important;
+}
+
+.hero-card-shell {
+  width: min(1120px, 100%) !important;
+  gap: clamp(10px, 1.4vh, 18px) !important;
+  padding-inline: clamp(8px, 2vw, 24px) !important;
+}
+
+.hero-storybook-mark {
+  --mark-width: clamp(300px, 31vw, 500px) !important;
+  animation: hero-logo-float 4.8s ease-in-out infinite;
+  will-change: transform;
+}
+
+.hero-storybook-mark .storybook-mark-image {
+  filter:
+    drop-shadow(0 12px 0 rgba(22, 34, 56, 0.12))
+    drop-shadow(0 24px 34px rgba(41, 186, 255, 0.24)) !important;
+}
+
+.hero-card-shell h1 {
+  max-width: min(980px, 100%) !important;
+  overflow-wrap: normal !important;
+  text-wrap: balance;
+  font-size: clamp(2.4rem, 5.2vw, 4.85rem) !important;
+  line-height: 1.02 !important;
+}
+
+.hero-card-shell > p {
+  max-width: min(860px, 100%) !important;
+}
+
+@keyframes hero-logo-float {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) rotate(-0.8deg) scale(1);
+  }
+
+  50% {
+    transform: translate3d(0, -11px, 0) rotate(0.9deg) scale(1.018);
+  }
+}
+
+.storybook-mark:is(:hover, :focus-visible, :active) .storybook-mark-image,
+.hero-storybook-mark:is(:hover, :focus-visible, :active) .storybook-mark-image,
+.brand-mark:hover .storybook-mark-image,
+.seo-logo-link:hover .storybook-mark-image {
+  animation: real-logo-giggle 660ms var(--pop) both;
+  filter:
+    drop-shadow(0 14px 0 rgba(22, 34, 56, 0.14))
+    drop-shadow(0 28px 38px rgba(41, 186, 255, 0.3)) !important;
+}
+
+:root[data-theme="dark"] .chip,
+:root[data-theme="dark"] .card-kicker {
+  border-color: rgba(196, 233, 255, 0.82) !important;
+  background: linear-gradient(135deg, rgba(10, 43, 72, 0.92), rgba(18, 74, 108, 0.88)) !important;
+  color: #f1fbff !important;
+  text-shadow: none !important;
+}
+
+:root[data-theme="dark"] .chip.success {
+  border-color: #fff2a4 !important;
+  background: linear-gradient(135deg, #fff07a, #6ff0d1) !important;
+  color: #092035 !important;
+}
+
+:root[data-theme="dark"] .chip.mint {
+  border-color: #c2fff2 !important;
+  background: linear-gradient(135deg, #7bf5de, #d9fff7) !important;
+  color: #07233a !important;
+}
+
+:root[data-theme="dark"] .chip.berry {
+  border-color: #ffd1dd !important;
+  background: linear-gradient(135deg, #ff6f91, #ffd4df) !important;
+  color: #2a0914 !important;
+}
+
+:root[data-theme="dark"] .chip.lavender {
+  border-color: #eee6ff !important;
+  background: linear-gradient(135deg, #cbb8ff, #f2edff) !important;
+  color: #1c1234 !important;
+}
+
+@media (max-width: 900px) {
+  .hero-storybook-mark {
+    --mark-width: clamp(250px, 42vw, 350px) !important;
+  }
+
+  .hero-card-shell h1 {
+    max-width: min(720px, 100%) !important;
+    font-size: clamp(2.15rem, 6.4vw, 3.45rem) !important;
+    line-height: 1.03 !important;
+  }
+}
+
+@media (max-width: 560px) {
+  .landing-hero,
+  .home-shell .landing-hero {
+    padding-top: 12px !important;
+  }
+
+  .hero-storybook-mark {
+    --mark-width: clamp(230px, 72vw, 320px) !important;
+  }
+
+  .hero-card-shell h1 {
+    font-size: clamp(2rem, 10vw, 3.15rem) !important;
+    line-height: 1.04 !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-storybook-mark {
+    animation: none !important;
+  }
+}
