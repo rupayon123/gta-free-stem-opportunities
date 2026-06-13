@@ -36,6 +36,7 @@ import {
   useRef,
   useState,
   type FormEvent,
+  type MouseEvent,
   type ReactNode
 } from "react";
 import { categories, cityOptions, languagePreferenceOrder, opportunities, regions } from "@/lib/data";
@@ -517,7 +518,7 @@ export function HomePage() {
 
   const selectOpportunity = (id: string) => {
     setSelectedId(id);
-    if (window.matchMedia("(max-width: 1200px)").matches) {
+    if (window.matchMedia("(max-width: 760px)").matches) {
       window.requestAnimationFrame(() => {
         document.getElementById("selected-listing-details")?.scrollIntoView({ block: "start", behavior: "smooth" });
       });
@@ -1716,8 +1717,13 @@ function OpportunityCard({
   onCalendar: () => void;
 }) {
   const distance = activeLocation ? haversineKm(activeLocation, opportunity) : null;
+  const selectFromCard = (event: MouseEvent<HTMLElement>) => {
+    if ((event.target as HTMLElement).closest("a, button")) return;
+    onSelect();
+  };
+
   return (
-    <article className={`opportunity-card ${selected ? "selected" : ""}`}>
+    <article className={`opportunity-card ${selected ? "selected" : ""}`} onClick={selectFromCard}>
       <button className="card-main" type="button" onClick={onSelect}>
         <span className="card-kicker">
           <ShieldCheck size={15} aria-hidden="true" />
