@@ -2,6 +2,7 @@
 
 import {
   AlertTriangle,
+  ArrowUp,
   Building2,
   CalendarPlus,
   CheckCircle2,
@@ -1485,6 +1486,18 @@ export function HomePage() {
           onClose={() => setAccountDashboardOpen(false)}
           onSignOut={signOut}
         />
+      ) : null}
+
+      {activeSurface !== "home" ? (
+        <button
+          type="button"
+          className="back-to-top-button"
+          aria-label="Back to top"
+          title="Back to top"
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        >
+          <ArrowUp size={20} aria-hidden="true" />
+        </button>
       ) : null}
     </main>
   );

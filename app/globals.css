@@ -9545,3 +9545,92 @@ body {
     height: 320px !important;
   }
 }
+
+.search-layout,
+.search-band .search-layout,
+.results-panel,
+.search-band .results-panel,
+.cards-column,
+.results-panel .cards-column,
+.search-band .cards-column {
+  overflow: visible !important;
+}
+
+.cards-column,
+.results-panel .cards-column,
+.search-band .cards-column {
+  padding: 10px clamp(10px, 1vw, 16px) 18px !important;
+  margin-inline: calc(clamp(10px, 1vw, 16px) * -1) !important;
+}
+
+.opportunity-card {
+  width: 100% !important;
+  transform-origin: center center !important;
+}
+
+.opportunity-card:is(:hover, .motion-active, .selected) {
+  z-index: 2 !important;
+}
+
+.map-shell,
+.selected-column .map-shell,
+.search-band .map-shell {
+  height: clamp(270px, 37svh, 430px) !important;
+  min-height: 270px !important;
+}
+
+.back-to-top-button {
+  position: fixed;
+  left: clamp(14px, 2.4vw, 28px);
+  right: auto;
+  bottom: clamp(14px, 2.4vw, 28px);
+  z-index: 70;
+  display: inline-grid;
+  width: 52px;
+  height: 52px;
+  place-items: center;
+  border: 3px solid var(--story-ink);
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--yellow), var(--blue) 56%, var(--mint));
+  color: #101828;
+  box-shadow: 5px 6px 0 color-mix(in srgb, var(--story-shadow) 84%, transparent), 0 16px 32px rgba(41, 186, 255, 0.18);
+  cursor: pointer;
+  transition:
+    transform var(--pop),
+    box-shadow var(--motion),
+    filter var(--motion);
+}
+
+.back-to-top-button:is(:hover, :focus-visible) {
+  transform: translateY(-4px) scale(1.06);
+  box-shadow: 7px 9px 0 color-mix(in srgb, var(--story-shadow) 84%, transparent), 0 22px 42px rgba(41, 186, 255, 0.24);
+}
+
+.back-to-top-button:active {
+  transform: translateY(1px) scale(0.98);
+}
+
+@media (max-width: 760px) {
+  .cards-column,
+  .results-panel .cards-column,
+  .search-band .cards-column {
+    padding-inline: 8px !important;
+    margin-inline: -8px !important;
+  }
+
+  .map-shell,
+  .selected-column .map-shell,
+  .search-band .map-shell {
+    height: 340px !important;
+    min-height: 340px !important;
+  }
+
+  .back-to-top-button {
+    left: auto;
+    right: 14px;
+    bottom: 14px;
+    width: 46px;
+    height: 46px;
+    border-width: 2px;
+  }
+}
