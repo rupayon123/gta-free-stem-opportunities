@@ -498,14 +498,12 @@ export function HomePage() {
   const savedIdSet = useMemo(() => new Set(savedIds), [savedIds]);
 
   const publicVisibleOpportunities = useMemo(() => publicOpportunities(displayOpportunities), [displayOpportunities]);
-  const publicFallbackOpportunity = useMemo(() => publicVisibleOpportunities[0], [publicVisibleOpportunities]);
 
   const selectedOpportunity = useMemo(
     () =>
       visibleOpportunities.find((opportunity) => opportunity.id === selectedId) ??
-      visibleOpportunities[0] ??
-      publicFallbackOpportunity,
-    [publicFallbackOpportunity, selectedId, visibleOpportunities]
+      visibleOpportunities[0],
+    [selectedId, visibleOpportunities]
   );
 
   const availableProgramLanguages = useMemo(() => {
@@ -514,7 +512,11 @@ export function HomePage() {
   }, [publicVisibleOpportunities]);
 
   useEffect(() => {
-    if (visibleOpportunities.length && (!selectedId || !visibleOpportunities.some((opportunity) => opportunity.id === selectedId))) {
+    if (!visibleOpportunities.length) {
+      setSelectedId("");
+      return;
+    }
+    if (!selectedId || !visibleOpportunities.some((opportunity) => opportunity.id === selectedId)) {
       setSelectedId(visibleOpportunities[0].id);
     }
   }, [selectedId, visibleOpportunities]);

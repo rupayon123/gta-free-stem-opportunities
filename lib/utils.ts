@@ -64,7 +64,7 @@ export function createCalendarFile(opportunity: Opportunity) {
     `Provider: ${opportunity.provider}`,
     `Free status: ${opportunity.freeStatusProof}`,
     `Register: ${opportunity.registrationUrl}`
-  ].join("\\n");
+  ].join("\n");
 
   return [
     "BEGIN:VCALENDAR",
