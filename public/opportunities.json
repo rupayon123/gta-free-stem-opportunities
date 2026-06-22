@@ -1,7 +1,7 @@
 {
   "name": "GTA FREE STEM Opportunities public feed",
   "schemaVersion": 1,
-  "count": 383,
+  "count": 370,
   "lastDataChange": "2026-06-22",
   "opportunities": [
     {
@@ -329,7 +329,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a1090208ea300e26317c994",
-          "capturedAt": "2026-06-22T05:32:17.899Z",
+          "capturedAt": "2026-06-22T12:27:22.320Z",
           "confidence": "high"
         }
       ]
@@ -385,7 +385,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a2c42c41e67cd9cb33977d9",
-          "capturedAt": "2026-06-22T05:32:18.541Z",
+          "capturedAt": "2026-06-22T12:27:22.870Z",
           "confidence": "high"
         }
       ]
@@ -435,7 +435,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69e905d666c3387a9d0791c7",
-          "capturedAt": "2026-06-22T05:32:18.541Z",
+          "capturedAt": "2026-06-22T12:27:22.871Z",
           "confidence": "high"
         }
       ]
@@ -485,7 +485,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69d83c01deee9abd8ee762c3",
-          "capturedAt": "2026-06-22T05:32:18.541Z",
+          "capturedAt": "2026-06-22T12:27:22.871Z",
           "confidence": "high"
         }
       ]
@@ -536,7 +536,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a06280bc7d3cd580059431a",
-          "capturedAt": "2026-06-22T05:32:18.541Z",
+          "capturedAt": "2026-06-22T12:27:22.871Z",
           "confidence": "high"
         }
       ]
@@ -587,7 +587,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a32ab6516554cd59fc966ca",
-          "capturedAt": "2026-06-22T05:32:18.541Z",
+          "capturedAt": "2026-06-22T12:27:22.871Z",
           "confidence": "high"
         }
       ]
@@ -638,7 +638,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/694aee0b2c65973d00140fe2",
-          "capturedAt": "2026-06-22T05:32:18.541Z",
+          "capturedAt": "2026-06-22T12:27:22.871Z",
           "confidence": "high"
         }
       ]
@@ -689,7 +689,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69f39ccabd9a3c316a568e6c",
-          "capturedAt": "2026-06-22T05:32:18.542Z",
+          "capturedAt": "2026-06-22T12:27:22.871Z",
           "confidence": "high"
         }
       ]
@@ -740,7 +740,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69d571cb129f1274383726c8",
-          "capturedAt": "2026-06-22T05:32:18.542Z",
+          "capturedAt": "2026-06-22T12:27:22.871Z",
           "confidence": "high"
         }
       ]
@@ -791,7 +791,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6974f2d31e64afd01e566dfd",
-          "capturedAt": "2026-06-22T05:32:18.542Z",
+          "capturedAt": "2026-06-22T12:27:22.871Z",
           "confidence": "high"
         }
       ]
@@ -841,7 +841,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbdda72edc686d00f5c7ec",
-          "capturedAt": "2026-06-22T05:32:26.217Z",
+          "capturedAt": "2026-06-22T12:27:29.638Z",
           "confidence": "high"
         }
       ]
@@ -891,7 +891,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1da0",
-          "capturedAt": "2026-06-22T05:32:26.217Z",
+          "capturedAt": "2026-06-22T12:27:29.638Z",
           "confidence": "high"
         }
       ]
@@ -942,7 +942,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6994b42c8b29ea2800d09e7f",
-          "capturedAt": "2026-06-22T05:32:18.542Z",
+          "capturedAt": "2026-06-22T12:27:22.872Z",
           "confidence": "high"
         }
       ]
@@ -993,7 +993,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69a5b298ec71a31f5b41b82e",
-          "capturedAt": "2026-06-22T05:32:18.542Z",
+          "capturedAt": "2026-06-22T12:27:22.872Z",
           "confidence": "high"
         }
       ]
@@ -1043,7 +1043,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a1078ae8360de907d880b0d",
-          "capturedAt": "2026-06-22T05:32:18.542Z",
+          "capturedAt": "2026-06-22T12:27:22.872Z",
           "confidence": "high"
         }
       ]
@@ -1093,7 +1093,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69c19a14bfe6da104224ff83",
-          "capturedAt": "2026-06-22T05:32:19.235Z",
+          "capturedAt": "2026-06-22T12:27:23.446Z",
           "confidence": "high"
         }
       ]
@@ -1144,7 +1144,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/699caa3c8d5e2d09336115dc",
-          "capturedAt": "2026-06-22T05:32:19.235Z",
+          "capturedAt": "2026-06-22T12:27:23.446Z",
           "confidence": "high"
         }
       ]
@@ -1195,7 +1195,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/695c1281992fc18a86dbb2cb",
-          "capturedAt": "2026-06-22T05:32:19.236Z",
+          "capturedAt": "2026-06-22T12:27:23.446Z",
           "confidence": "high"
         }
       ]
@@ -1246,7 +1246,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a2b299bdcc1022f00394af0",
-          "capturedAt": "2026-06-22T05:32:19.236Z",
+          "capturedAt": "2026-06-22T12:27:23.446Z",
           "confidence": "high"
         }
       ]
@@ -1296,7 +1296,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69dbd871129f12743838133d",
-          "capturedAt": "2026-06-22T05:32:19.236Z",
+          "capturedAt": "2026-06-22T12:27:23.447Z",
           "confidence": "high"
         }
       ]
@@ -1346,7 +1346,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a10a473e8af4a2f007465cc",
-          "capturedAt": "2026-06-22T05:32:19.236Z",
+          "capturedAt": "2026-06-22T12:27:23.447Z",
           "confidence": "high"
         }
       ]
@@ -1398,7 +1398,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69741154d2bbe265eb29880d",
-          "capturedAt": "2026-06-22T05:32:19.236Z",
+          "capturedAt": "2026-06-22T12:27:23.447Z",
           "confidence": "high"
         }
       ]
@@ -1448,7 +1448,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a024652703c33630026ebc1",
-          "capturedAt": "2026-06-22T05:32:19.237Z",
+          "capturedAt": "2026-06-22T12:27:23.447Z",
           "confidence": "high"
         }
       ]
@@ -1499,7 +1499,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69483e188d33cc4900c65c68",
-          "capturedAt": "2026-06-22T05:32:19.237Z",
+          "capturedAt": "2026-06-22T12:27:23.447Z",
           "confidence": "high"
         }
       ]
@@ -1549,7 +1549,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69d920092866a5b48847b565",
-          "capturedAt": "2026-06-22T05:32:19.237Z",
+          "capturedAt": "2026-06-22T12:27:23.448Z",
           "confidence": "high"
         }
       ]
@@ -1599,7 +1599,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a14b5f94dc267647daa9e12",
-          "capturedAt": "2026-06-22T05:32:19.237Z",
+          "capturedAt": "2026-06-22T12:27:23.448Z",
           "confidence": "high"
         }
       ]
@@ -1649,7 +1649,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a03764bc6a1dc3d00d348b4",
-          "capturedAt": "2026-06-22T05:32:19.893Z",
+          "capturedAt": "2026-06-22T12:27:24.172Z",
           "confidence": "high"
         }
       ]
@@ -1699,7 +1699,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a076475e8af4a2f0072cd37",
-          "capturedAt": "2026-06-22T05:32:19.893Z",
+          "capturedAt": "2026-06-22T12:27:24.173Z",
           "confidence": "high"
         }
       ]
@@ -1751,7 +1751,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a18a2e1703c3363002aa369",
-          "capturedAt": "2026-06-22T05:32:19.894Z",
+          "capturedAt": "2026-06-22T12:27:24.173Z",
           "confidence": "high"
         }
       ]
@@ -1802,7 +1802,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a14bb5f8ea300e263186fb3",
-          "capturedAt": "2026-06-22T05:32:19.894Z",
+          "capturedAt": "2026-06-22T12:27:24.173Z",
           "confidence": "high"
         }
       ]
@@ -1852,7 +1852,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69d920ca129f12743837b779",
-          "capturedAt": "2026-06-22T05:32:19.894Z",
+          "capturedAt": "2026-06-22T12:27:24.173Z",
           "confidence": "high"
         }
       ]
@@ -1903,7 +1903,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a1881b62ea730c17ab2703e",
-          "capturedAt": "2026-06-22T05:32:19.894Z",
+          "capturedAt": "2026-06-22T12:27:24.173Z",
           "confidence": "high"
         }
       ]
@@ -1957,7 +1957,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69af11822866a5b48840ed4f",
-          "capturedAt": "2026-06-22T05:32:19.894Z",
+          "capturedAt": "2026-06-22T12:27:24.173Z",
           "confidence": "high"
         }
       ]
@@ -2011,7 +2011,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6974f37d76261f2800667216",
-          "capturedAt": "2026-06-22T05:32:19.894Z",
+          "capturedAt": "2026-06-22T12:27:24.173Z",
           "confidence": "high"
         }
       ]
@@ -2063,7 +2063,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69f8b8ad4134893003f0973b",
-          "capturedAt": "2026-06-22T05:32:19.894Z",
+          "capturedAt": "2026-06-22T12:27:24.173Z",
           "confidence": "high"
         }
       ]
@@ -2117,7 +2117,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69fa2603e13d3b4603b35d74",
-          "capturedAt": "2026-06-22T05:32:19.894Z",
+          "capturedAt": "2026-06-22T12:27:24.174Z",
           "confidence": "high"
         }
       ]
@@ -2171,7 +2171,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a29a8bf7550c8bf9f5c5439",
-          "capturedAt": "2026-06-22T05:32:19.894Z",
+          "capturedAt": "2026-06-22T12:27:24.174Z",
           "confidence": "high"
         }
       ]
@@ -2222,7 +2222,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a19bb324dc267647dab089a",
-          "capturedAt": "2026-06-22T05:32:19.894Z",
+          "capturedAt": "2026-06-22T12:27:24.174Z",
           "confidence": "high"
         }
       ]
@@ -2273,7 +2273,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a0e0d2f8e677a28001d56ef",
-          "capturedAt": "2026-06-22T05:32:19.894Z",
+          "capturedAt": "2026-06-22T12:27:24.174Z",
           "confidence": "high"
         }
       ]
@@ -2324,7 +2324,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a0de8f08e677a28001d4885",
-          "capturedAt": "2026-06-22T05:32:19.895Z",
+          "capturedAt": "2026-06-22T12:27:24.174Z",
           "confidence": "high"
         }
       ]
@@ -2375,7 +2375,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a07383fa99bdd027d41d182",
-          "capturedAt": "2026-06-22T05:32:19.895Z",
+          "capturedAt": "2026-06-22T12:27:24.174Z",
           "confidence": "high"
         }
       ]
@@ -2426,7 +2426,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69fb7bf3f56bd86e00adf29f",
-          "capturedAt": "2026-06-22T05:32:19.895Z",
+          "capturedAt": "2026-06-22T12:27:24.174Z",
           "confidence": "high"
         }
       ]
@@ -2479,7 +2479,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69a1d6b04dacf581ff7e5b6e",
-          "capturedAt": "2026-06-22T05:32:19.895Z",
+          "capturedAt": "2026-06-22T12:27:24.174Z",
           "confidence": "high"
         }
       ]
@@ -2530,7 +2530,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a079483703c33630027e83d",
-          "capturedAt": "2026-06-22T05:32:19.895Z",
+          "capturedAt": "2026-06-22T12:27:24.175Z",
           "confidence": "high"
         }
       ]
@@ -2584,7 +2584,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6941e894d875af6300d0faab",
-          "capturedAt": "2026-06-22T05:32:19.895Z",
+          "capturedAt": "2026-06-22T12:27:24.175Z",
           "confidence": "high"
         }
       ]
@@ -2638,7 +2638,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69700d4091e4576f847dbd70",
-          "capturedAt": "2026-06-22T05:32:19.895Z",
+          "capturedAt": "2026-06-22T12:27:24.175Z",
           "confidence": "high"
         }
       ]
@@ -2687,7 +2687,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/697f947dcbf6405d3565fade",
-          "capturedAt": "2026-06-22T05:32:20.605Z",
+          "capturedAt": "2026-06-22T12:27:24.842Z",
           "confidence": "high"
         }
       ]
@@ -2741,7 +2741,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69459169b5ff473000573153",
-          "capturedAt": "2026-06-22T05:32:20.605Z",
+          "capturedAt": "2026-06-22T12:27:24.842Z",
           "confidence": "high"
         }
       ]
@@ -2793,7 +2793,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69a2043c491b809c6f1cfe03",
-          "capturedAt": "2026-06-22T05:32:20.605Z",
+          "capturedAt": "2026-06-22T12:27:24.842Z",
           "confidence": "high"
         }
       ]
@@ -2847,7 +2847,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69626320491b809c6f120d91",
-          "capturedAt": "2026-06-22T05:32:20.605Z",
+          "capturedAt": "2026-06-22T12:27:24.842Z",
           "confidence": "high"
         }
       ]
@@ -2898,7 +2898,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69c30ab6b48451fc3c0b0929",
-          "capturedAt": "2026-06-22T05:32:20.605Z",
+          "capturedAt": "2026-06-22T12:27:24.842Z",
           "confidence": "high"
         }
       ]
@@ -2949,7 +2949,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69f91536c6a1dc3d00d18254",
-          "capturedAt": "2026-06-22T05:32:20.605Z",
+          "capturedAt": "2026-06-22T12:27:24.843Z",
           "confidence": "high"
         }
       ]
@@ -3002,7 +3002,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a026bb98e677a28001b628f",
-          "capturedAt": "2026-06-22T05:32:20.605Z",
+          "capturedAt": "2026-06-22T12:27:24.843Z",
           "confidence": "high"
         }
       ]
@@ -3054,7 +3054,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a1f5e7a2ea730c17ab3da31",
-          "capturedAt": "2026-06-22T05:32:20.605Z",
+          "capturedAt": "2026-06-22T12:27:24.843Z",
           "confidence": "high"
         }
       ]
@@ -3108,7 +3108,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/695d7c476f926136000eadfc",
-          "capturedAt": "2026-06-22T05:32:20.605Z",
+          "capturedAt": "2026-06-22T12:27:24.843Z",
           "confidence": "high"
         }
       ]
@@ -3162,7 +3162,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a11c7e28ea300e263180095",
-          "capturedAt": "2026-06-22T05:32:20.605Z",
+          "capturedAt": "2026-06-22T12:27:24.843Z",
           "confidence": "high"
         }
       ]
@@ -3216,7 +3216,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69f4da40b6c4ac1fedd00dc7",
-          "capturedAt": "2026-06-22T05:32:20.605Z",
+          "capturedAt": "2026-06-22T12:27:24.843Z",
           "confidence": "high"
         }
       ]
@@ -3269,7 +3269,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a15a009caf93436005e5b9e",
-          "capturedAt": "2026-06-22T05:32:20.606Z",
+          "capturedAt": "2026-06-22T12:27:24.843Z",
           "confidence": "high"
         }
       ]
@@ -3320,7 +3320,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a0f6d57caf93436005d6d37",
-          "capturedAt": "2026-06-22T05:32:20.606Z",
+          "capturedAt": "2026-06-22T12:27:24.843Z",
           "confidence": "high"
         }
       ]
@@ -3371,7 +3371,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a14d8f543b41b3d00691022",
-          "capturedAt": "2026-06-22T05:32:20.606Z",
+          "capturedAt": "2026-06-22T12:27:24.843Z",
           "confidence": "high"
         }
       ]
@@ -3422,7 +3422,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69f39042fb87a3c2e2acdd4b",
-          "capturedAt": "2026-06-22T05:32:20.606Z",
+          "capturedAt": "2026-06-22T12:27:24.843Z",
           "confidence": "high"
         }
       ]
@@ -3473,7 +3473,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a0e209743b41b3d0067ef71",
-          "capturedAt": "2026-06-22T05:32:20.606Z",
+          "capturedAt": "2026-06-22T12:27:24.843Z",
           "confidence": "high"
         }
       ]
@@ -3525,7 +3525,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a0398900c0f2c4503f9eb38",
-          "capturedAt": "2026-06-22T05:32:20.606Z",
+          "capturedAt": "2026-06-22T12:27:24.843Z",
           "confidence": "high"
         }
       ]
@@ -3578,7 +3578,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a072c89177319280019f0b4",
-          "capturedAt": "2026-06-22T05:32:20.606Z",
+          "capturedAt": "2026-06-22T12:27:24.843Z",
           "confidence": "high"
         }
       ]
@@ -3632,7 +3632,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a1634138ea300e26318bf55",
-          "capturedAt": "2026-06-22T05:32:20.606Z",
+          "capturedAt": "2026-06-22T12:27:24.843Z",
           "confidence": "high"
         }
       ]
@@ -3683,7 +3683,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a04dde6c7d3cd58005903d4",
-          "capturedAt": "2026-06-22T05:32:21.445Z",
+          "capturedAt": "2026-06-22T12:27:25.560Z",
           "confidence": "high"
         }
       ]
@@ -3734,7 +3734,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a172e048ea300e26318e3c6",
-          "capturedAt": "2026-06-22T05:32:21.445Z",
+          "capturedAt": "2026-06-22T12:27:25.560Z",
           "confidence": "high"
         }
       ]
@@ -3791,7 +3791,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a1dbabef56bd86e00b3adb3",
-          "capturedAt": "2026-06-22T05:32:21.445Z",
+          "capturedAt": "2026-06-22T12:27:25.560Z",
           "confidence": "high"
         }
       ]
@@ -3842,7 +3842,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a05fd1d278f7c2f008d253f",
-          "capturedAt": "2026-06-22T05:32:21.446Z",
+          "capturedAt": "2026-06-22T12:27:25.560Z",
           "confidence": "high"
         }
       ]
@@ -3892,7 +3892,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69960daf4a9fd98b7f7ed8f2",
-          "capturedAt": "2026-06-22T05:32:21.446Z",
+          "capturedAt": "2026-06-22T12:27:25.560Z",
           "confidence": "high"
         }
       ]
@@ -3943,7 +3943,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a1e0e63703c3363002b9cee",
-          "capturedAt": "2026-06-22T05:32:21.446Z",
+          "capturedAt": "2026-06-22T12:27:25.561Z",
           "confidence": "high"
         }
       ]
@@ -3994,7 +3994,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69f4b439762d19c7d51117a3",
-          "capturedAt": "2026-06-22T05:32:21.446Z",
+          "capturedAt": "2026-06-22T12:27:25.561Z",
           "confidence": "high"
         }
       ]
@@ -4045,7 +4045,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a283aca16554cd59fc78825",
-          "capturedAt": "2026-06-22T05:32:21.446Z",
+          "capturedAt": "2026-06-22T12:27:25.561Z",
           "confidence": "high"
         }
       ]
@@ -4095,7 +4095,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69cd1d6f2866a5b48845b3f8",
-          "capturedAt": "2026-06-22T05:32:21.446Z",
+          "capturedAt": "2026-06-22T12:27:25.561Z",
           "confidence": "high"
         }
       ]
@@ -4146,7 +4146,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a0dfd168ea300e263174478",
-          "capturedAt": "2026-06-22T05:32:21.446Z",
+          "capturedAt": "2026-06-22T12:27:25.561Z",
           "confidence": "high"
         }
       ]
@@ -4196,7 +4196,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a025263dcc3559e3b3bd077",
-          "capturedAt": "2026-06-22T05:32:21.447Z",
+          "capturedAt": "2026-06-22T12:27:25.561Z",
           "confidence": "high"
         }
       ]
@@ -4246,7 +4246,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69fcb311caf93436005a5b1c",
-          "capturedAt": "2026-06-22T05:32:21.447Z",
+          "capturedAt": "2026-06-22T12:27:25.561Z",
           "confidence": "high"
         }
       ]
@@ -4296,7 +4296,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a353f1edcc1022f003a1e50",
-          "capturedAt": "2026-06-22T05:32:21.447Z",
+          "capturedAt": "2026-06-22T12:27:25.561Z",
           "confidence": "high"
         }
       ]
@@ -4348,7 +4348,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69fe3952f89ee158005180de",
-          "capturedAt": "2026-06-22T05:32:22.153Z",
+          "capturedAt": "2026-06-22T12:27:26.138Z",
           "confidence": "high"
         }
       ]
@@ -4399,7 +4399,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69f4cd0e8ddc1caf5f207090",
-          "capturedAt": "2026-06-22T05:32:22.153Z",
+          "capturedAt": "2026-06-22T12:27:26.138Z",
           "confidence": "high"
         }
       ]
@@ -4451,7 +4451,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a11bdfbc6a1dc3d00d5a8bf",
-          "capturedAt": "2026-06-22T05:32:22.154Z",
+          "capturedAt": "2026-06-22T12:27:26.139Z",
           "confidence": "high"
         }
       ]
@@ -4504,7 +4504,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a0e340943b41b3d0067f738",
-          "capturedAt": "2026-06-22T05:32:22.154Z",
+          "capturedAt": "2026-06-22T12:27:26.139Z",
           "confidence": "high"
         }
       ]
@@ -4560,7 +4560,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a2c42c41e67cd9cb33977da",
-          "capturedAt": "2026-06-22T05:32:22.154Z",
+          "capturedAt": "2026-06-22T12:27:26.139Z",
           "confidence": "high"
         }
       ]
@@ -4610,7 +4610,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a0dd5fd46d5f64f7dcc521e",
-          "capturedAt": "2026-06-22T05:32:22.154Z",
+          "capturedAt": "2026-06-22T12:27:26.139Z",
           "confidence": "high"
         }
       ]
@@ -4661,7 +4661,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69efd498deee9abd8ee922db",
-          "capturedAt": "2026-06-22T05:32:22.154Z",
+          "capturedAt": "2026-06-22T12:27:26.139Z",
           "confidence": "high"
         }
       ]
@@ -4712,7 +4712,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6965986b6724c63d00ebd013",
-          "capturedAt": "2026-06-22T05:32:22.154Z",
+          "capturedAt": "2026-06-22T12:27:26.139Z",
           "confidence": "high"
         }
       ]
@@ -4763,7 +4763,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a0e329f8ea300e263175c42",
-          "capturedAt": "2026-06-22T05:32:22.155Z",
+          "capturedAt": "2026-06-22T12:27:26.139Z",
           "confidence": "high"
         }
       ]
@@ -4813,7 +4813,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/693f0c384be11d3d00d817f6",
-          "capturedAt": "2026-06-22T05:32:22.155Z",
+          "capturedAt": "2026-06-22T12:27:26.140Z",
           "confidence": "high"
         }
       ]
@@ -4864,7 +4864,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a14e2238ea300e2631876d8",
-          "capturedAt": "2026-06-22T05:32:22.155Z",
+          "capturedAt": "2026-06-22T12:27:26.140Z",
           "confidence": "high"
         }
       ]
@@ -4915,7 +4915,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69546c806f926136000d7a8a",
-          "capturedAt": "2026-06-22T05:32:22.155Z",
+          "capturedAt": "2026-06-22T12:27:26.140Z",
           "confidence": "high"
         }
       ]
@@ -4966,7 +4966,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69af1b9a2866a5b48840f083",
-          "capturedAt": "2026-06-22T05:32:22.155Z",
+          "capturedAt": "2026-06-22T12:27:26.140Z",
           "confidence": "high"
         }
       ]
@@ -5017,7 +5017,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69d94592deee9abd8ee7750b",
-          "capturedAt": "2026-06-22T05:32:22.155Z",
+          "capturedAt": "2026-06-22T12:27:26.140Z",
           "confidence": "high"
         }
       ]
@@ -5068,7 +5068,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/695d7d0d6724c63d00ea9b24",
-          "capturedAt": "2026-06-22T05:32:23.039Z",
+          "capturedAt": "2026-06-22T12:27:26.743Z",
           "confidence": "high"
         }
       ]
@@ -5119,7 +5119,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69cbe44358f0b64d9e7c4dc8",
-          "capturedAt": "2026-06-22T05:32:23.040Z",
+          "capturedAt": "2026-06-22T12:27:26.743Z",
           "confidence": "high"
         }
       ]
@@ -5169,7 +5169,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbd37875911f28001a232d",
-          "capturedAt": "2026-06-22T05:32:26.217Z",
+          "capturedAt": "2026-06-22T12:27:29.638Z",
           "confidence": "high"
         }
       ]
@@ -5220,7 +5220,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/698b74191e64afd01e5a7a55",
-          "capturedAt": "2026-06-22T05:32:23.040Z",
+          "capturedAt": "2026-06-22T12:27:26.743Z",
           "confidence": "high"
         }
       ]
@@ -5270,7 +5270,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbdd1b0176055300fe8092",
-          "capturedAt": "2026-06-22T05:32:26.217Z",
+          "capturedAt": "2026-06-22T12:27:29.638Z",
           "confidence": "high"
         }
       ]
@@ -5321,7 +5321,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/693f099a4be11d3d00d81762",
-          "capturedAt": "2026-06-22T05:32:23.040Z",
+          "capturedAt": "2026-06-22T12:27:26.743Z",
           "confidence": "high"
         }
       ]
@@ -5371,7 +5371,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69fdffc1f56bd86e00ae5a8f",
-          "capturedAt": "2026-06-22T05:32:23.040Z",
+          "capturedAt": "2026-06-22T12:27:26.743Z",
           "confidence": "high"
         }
       ]
@@ -5421,7 +5421,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69fb81e5f89ee1580050ef13",
-          "capturedAt": "2026-06-22T05:32:23.040Z",
+          "capturedAt": "2026-06-22T12:27:26.744Z",
           "confidence": "high"
         }
       ]
@@ -5471,7 +5471,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a174439c7d3cd58005c1efb",
-          "capturedAt": "2026-06-22T05:32:23.040Z",
+          "capturedAt": "2026-06-22T12:27:26.744Z",
           "confidence": "high"
         }
       ]
@@ -5522,7 +5522,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a14d231703c33630029e9bc",
-          "capturedAt": "2026-06-22T05:32:23.041Z",
+          "capturedAt": "2026-06-22T12:27:26.744Z",
           "confidence": "high"
         }
       ]
@@ -5572,7 +5572,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69fe4de51773192800186f04",
-          "capturedAt": "2026-06-22T05:32:23.041Z",
+          "capturedAt": "2026-06-22T12:27:26.744Z",
           "confidence": "high"
         }
       ]
@@ -5621,7 +5621,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69f292672866a5b4884bb323",
-          "capturedAt": "2026-06-22T05:32:23.041Z",
+          "capturedAt": "2026-06-22T12:27:26.744Z",
           "confidence": "high"
         }
       ]
@@ -5671,7 +5671,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69b1951a4dacf581ff81298a",
-          "capturedAt": "2026-06-22T05:32:23.041Z",
+          "capturedAt": "2026-06-22T12:27:26.744Z",
           "confidence": "high"
         }
       ]
@@ -5722,7 +5722,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69c1d0efbfe6da1042250af3",
-          "capturedAt": "2026-06-22T05:32:23.691Z",
+          "capturedAt": "2026-06-22T12:27:27.373Z",
           "confidence": "high"
         }
       ]
@@ -5773,7 +5773,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a0de6a04dc267647daa2080",
-          "capturedAt": "2026-06-22T05:32:23.691Z",
+          "capturedAt": "2026-06-22T12:27:27.373Z",
           "confidence": "high"
         }
       ]
@@ -5823,7 +5823,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69b057bfb48451fc3c07e9f4",
-          "capturedAt": "2026-06-22T05:32:23.692Z",
+          "capturedAt": "2026-06-22T12:27:27.373Z",
           "confidence": "high"
         }
       ]
@@ -5874,7 +5874,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69efc95bbd9a3c316a55bae0",
-          "capturedAt": "2026-06-22T05:32:23.692Z",
+          "capturedAt": "2026-06-22T12:27:27.373Z",
           "confidence": "high"
         }
       ]
@@ -5925,7 +5925,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69f0ef7fc1cf6f9a758868d8",
-          "capturedAt": "2026-06-22T05:32:23.692Z",
+          "capturedAt": "2026-06-22T12:27:27.373Z",
           "confidence": "high"
         }
       ]
@@ -5975,7 +5975,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a14c365fab4ff0f649b837d",
-          "capturedAt": "2026-06-22T05:32:23.692Z",
+          "capturedAt": "2026-06-22T12:27:27.374Z",
           "confidence": "high"
         }
       ]
@@ -6027,7 +6027,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a1470c5703c33630029d124",
-          "capturedAt": "2026-06-22T05:32:23.692Z",
+          "capturedAt": "2026-06-22T12:27:27.374Z",
           "confidence": "high"
         }
       ]
@@ -6079,7 +6079,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a1484aff56bd86e00b1fa9e",
-          "capturedAt": "2026-06-22T05:32:23.692Z",
+          "capturedAt": "2026-06-22T12:27:27.374Z",
           "confidence": "high"
         }
       ]
@@ -6130,7 +6130,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a0e0d6bc6a1dc3d00d5018d",
-          "capturedAt": "2026-06-22T05:32:23.692Z",
+          "capturedAt": "2026-06-22T12:27:27.374Z",
           "confidence": "high"
         }
       ]
@@ -6181,7 +6181,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a0de93dc6a1dc3d00d4f3ae",
-          "capturedAt": "2026-06-22T05:32:23.692Z",
+          "capturedAt": "2026-06-22T12:27:27.374Z",
           "confidence": "high"
         }
       ]
@@ -6234,7 +6234,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69bebd25bf48d63c596c4de9",
-          "capturedAt": "2026-06-22T05:32:23.692Z",
+          "capturedAt": "2026-06-22T12:27:27.374Z",
           "confidence": "high"
         }
       ]
@@ -6286,7 +6286,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69fb743ef6bd012f006622f9",
-          "capturedAt": "2026-06-22T05:32:24.354Z",
+          "capturedAt": "2026-06-22T12:27:27.935Z",
           "confidence": "high"
         }
       ]
@@ -6340,7 +6340,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69f8ec68f56bd86e00ad7984",
-          "capturedAt": "2026-06-22T05:32:24.354Z",
+          "capturedAt": "2026-06-22T12:27:27.935Z",
           "confidence": "high"
         }
       ]
@@ -6394,7 +6394,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69696a20b0595799c096a750",
-          "capturedAt": "2026-06-22T05:32:24.354Z",
+          "capturedAt": "2026-06-22T12:27:27.935Z",
           "confidence": "high"
         }
       ]
@@ -6448,7 +6448,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/699dfab61e64afd01e5dbda8",
-          "capturedAt": "2026-06-22T05:32:24.354Z",
+          "capturedAt": "2026-06-22T12:27:27.935Z",
           "confidence": "high"
         }
       ]
@@ -6499,7 +6499,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69f38f13b1e102b0f3d8c471",
-          "capturedAt": "2026-06-22T05:32:24.354Z",
+          "capturedAt": "2026-06-22T12:27:27.935Z",
           "confidence": "high"
         }
       ]
@@ -6549,7 +6549,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69c7efb58089f23c676526ef",
-          "capturedAt": "2026-06-22T05:32:24.355Z",
+          "capturedAt": "2026-06-22T12:27:27.935Z",
           "confidence": "high"
         }
       ]
@@ -6602,7 +6602,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/694aef6ae3e3999b5c03f2f8",
-          "capturedAt": "2026-06-22T05:32:24.355Z",
+          "capturedAt": "2026-06-22T12:27:27.935Z",
           "confidence": "high"
         }
       ]
@@ -6655,7 +6655,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69f92b1d43b41b3d00642663",
-          "capturedAt": "2026-06-22T05:32:24.355Z",
+          "capturedAt": "2026-06-22T12:27:27.936Z",
           "confidence": "high"
         }
       ]
@@ -6706,7 +6706,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69fccbcf177319280018189d",
-          "capturedAt": "2026-06-22T05:32:24.355Z",
+          "capturedAt": "2026-06-22T12:27:27.936Z",
           "confidence": "high"
         }
       ]
@@ -6757,7 +6757,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69ea8f515c04bc0fc0635245",
-          "capturedAt": "2026-06-22T05:32:24.355Z",
+          "capturedAt": "2026-06-22T12:27:27.936Z",
           "confidence": "high"
         }
       ]
@@ -6809,7 +6809,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69fe1a20f56bd86e00ae61ae",
-          "capturedAt": "2026-06-22T05:32:24.355Z",
+          "capturedAt": "2026-06-22T12:27:27.936Z",
           "confidence": "high"
         }
       ]
@@ -6861,7 +6861,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a0f3c64e8af4a2f007418db",
-          "capturedAt": "2026-06-22T05:32:24.355Z",
+          "capturedAt": "2026-06-22T12:27:27.936Z",
           "confidence": "high"
         }
       ]
@@ -6912,7 +6912,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a0e3901fab4ff0f649a87e9",
-          "capturedAt": "2026-06-22T05:32:24.355Z",
+          "capturedAt": "2026-06-22T12:27:27.936Z",
           "confidence": "high"
         }
       ]
@@ -6962,7 +6962,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69fe5658c7d3cd580057f8e9",
-          "capturedAt": "2026-06-22T05:32:24.355Z",
+          "capturedAt": "2026-06-22T12:27:27.936Z",
           "confidence": "high"
         }
       ]
@@ -7014,7 +7014,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a060af7703c336300279156",
-          "capturedAt": "2026-06-22T05:32:24.355Z",
+          "capturedAt": "2026-06-22T12:27:27.936Z",
           "confidence": "high"
         }
       ]
@@ -7065,7 +7065,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a0dd91e4dc267647daa1e1a",
-          "capturedAt": "2026-06-22T05:32:24.355Z",
+          "capturedAt": "2026-06-22T12:27:27.936Z",
           "confidence": "high"
         }
       ]
@@ -7117,7 +7117,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a1744952ea730c17ab229f4",
-          "capturedAt": "2026-06-22T05:32:25.009Z",
+          "capturedAt": "2026-06-22T12:27:28.615Z",
           "confidence": "high"
         }
       ]
@@ -7171,7 +7171,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/695c3a6cc719ac98c3361771",
-          "capturedAt": "2026-06-22T05:32:25.009Z",
+          "capturedAt": "2026-06-22T12:27:28.615Z",
           "confidence": "high"
         }
       ]
@@ -7222,7 +7222,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69efd5da213814b1b5254497",
-          "capturedAt": "2026-06-22T05:32:25.010Z",
+          "capturedAt": "2026-06-22T12:27:28.615Z",
           "confidence": "high"
         }
       ]
@@ -7272,7 +7272,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a15f3ea8e677a28001e9728",
-          "capturedAt": "2026-06-22T05:32:25.010Z",
+          "capturedAt": "2026-06-22T12:27:28.615Z",
           "confidence": "high"
         }
       ]
@@ -7323,7 +7323,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a2ef805f56bd86e00b6bc29",
-          "capturedAt": "2026-06-22T05:32:25.010Z",
+          "capturedAt": "2026-06-22T12:27:28.615Z",
           "confidence": "high"
         }
       ]
@@ -7373,7 +7373,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69fca95b278f7c2f008bab27",
-          "capturedAt": "2026-06-22T05:32:25.010Z",
+          "capturedAt": "2026-06-22T12:27:28.615Z",
           "confidence": "high"
         }
       ]
@@ -7429,7 +7429,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69739fb31e64afd01e5636a4",
-          "capturedAt": "2026-06-22T05:32:25.010Z",
+          "capturedAt": "2026-06-22T12:27:28.615Z",
           "confidence": "high"
         }
       ]
@@ -7482,7 +7482,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/697119e36724c63d00ed73a7",
-          "capturedAt": "2026-06-22T05:32:25.010Z",
+          "capturedAt": "2026-06-22T12:27:28.615Z",
           "confidence": "high"
         }
       ]
@@ -7532,7 +7532,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69c2b756e2a2952aed0a4268",
-          "capturedAt": "2026-06-22T05:32:25.010Z",
+          "capturedAt": "2026-06-22T12:27:28.615Z",
           "confidence": "high"
         }
       ]
@@ -7583,7 +7583,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6963ea5a94297d3600a495de",
-          "capturedAt": "2026-06-22T05:32:25.010Z",
+          "capturedAt": "2026-06-22T12:27:28.615Z",
           "confidence": "high"
         }
       ]
@@ -7635,7 +7635,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69fa1aa3f89ee1580050a15b",
-          "capturedAt": "2026-06-22T05:32:25.011Z",
+          "capturedAt": "2026-06-22T12:27:28.616Z",
           "confidence": "high"
         }
       ]
@@ -7686,7 +7686,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a0f0785e8af4a2f00740998",
-          "capturedAt": "2026-06-22T05:32:25.011Z",
+          "capturedAt": "2026-06-22T12:27:28.616Z",
           "confidence": "high"
         }
       ]
@@ -7736,7 +7736,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a1ef6ae8ea300e2631a69ae",
-          "capturedAt": "2026-06-22T05:32:25.011Z",
+          "capturedAt": "2026-06-22T12:27:28.616Z",
           "confidence": "high"
         }
       ]
@@ -7788,7 +7788,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a0f5fd046d5f64f7dcc76cb",
-          "capturedAt": "2026-06-22T05:32:25.011Z",
+          "capturedAt": "2026-06-22T12:27:28.617Z",
           "confidence": "high"
         }
       ]
@@ -7838,7 +7838,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69de561a4dacf581ff88acda",
-          "capturedAt": "2026-06-22T05:32:25.011Z",
+          "capturedAt": "2026-06-22T12:27:28.617Z",
           "confidence": "high"
         }
       ]
@@ -7889,7 +7889,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a33f24916554cd59fc9a21a",
-          "capturedAt": "2026-06-22T05:32:25.011Z",
+          "capturedAt": "2026-06-22T12:27:28.617Z",
           "confidence": "high"
         }
       ]
@@ -7939,7 +7939,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a06602e703c33630027af5e",
-          "capturedAt": "2026-06-22T05:32:25.011Z",
+          "capturedAt": "2026-06-22T12:27:28.617Z",
           "confidence": "high"
         }
       ]
@@ -7989,7 +7989,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/699e67562866a5b4883e2e46",
-          "capturedAt": "2026-06-22T05:32:26.217Z",
+          "capturedAt": "2026-06-22T12:27:29.638Z",
           "confidence": "high"
         }
       ]
@@ -8040,7 +8040,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6984dc5094297d3600aa30cd",
-          "capturedAt": "2026-06-22T05:32:26.217Z",
+          "capturedAt": "2026-06-22T12:27:29.638Z",
           "confidence": "high"
         }
       ]
@@ -8091,7 +8091,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/696abb606724c63d00ec9ca0",
-          "capturedAt": "2026-06-22T05:32:25.689Z",
+          "capturedAt": "2026-06-22T12:27:29.206Z",
           "confidence": "high"
         }
       ]
@@ -8142,7 +8142,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69a335f6403a4e5652ddc534",
-          "capturedAt": "2026-06-22T05:32:25.689Z",
+          "capturedAt": "2026-06-22T12:27:29.206Z",
           "confidence": "high"
         }
       ]
@@ -8193,7 +8193,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a1878c5c7d3cd58005c5641",
-          "capturedAt": "2026-06-22T05:32:25.689Z",
+          "capturedAt": "2026-06-22T12:27:29.206Z",
           "confidence": "high"
         }
       ]
@@ -8247,7 +8247,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69dee07f4dacf581ff88d9bb",
-          "capturedAt": "2026-06-22T05:32:25.689Z",
+          "capturedAt": "2026-06-22T12:27:29.206Z",
           "confidence": "high"
         }
       ]
@@ -8297,7 +8297,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69aeee6b45f57dfccb19679b",
-          "capturedAt": "2026-06-22T05:32:25.690Z",
+          "capturedAt": "2026-06-22T12:27:29.206Z",
           "confidence": "high"
         }
       ]
@@ -8346,7 +8346,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69f917f4278f7c2f008b1164",
-          "capturedAt": "2026-06-22T05:32:25.690Z",
+          "capturedAt": "2026-06-22T12:27:29.206Z",
           "confidence": "high"
         }
       ]
@@ -8396,7 +8396,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1da1",
-          "capturedAt": "2026-06-22T05:32:26.217Z",
+          "capturedAt": "2026-06-22T12:27:29.638Z",
           "confidence": "high"
         }
       ]
@@ -8452,7 +8452,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a2c42c41e67cd9cb33977db",
-          "capturedAt": "2026-06-22T05:32:25.690Z",
+          "capturedAt": "2026-06-22T12:27:29.207Z",
           "confidence": "high"
         }
       ]
@@ -8502,7 +8502,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a04d542f56bd86e00af7c6e",
-          "capturedAt": "2026-06-22T05:32:25.690Z",
+          "capturedAt": "2026-06-22T12:27:29.207Z",
           "confidence": "high"
         }
       ]
@@ -8551,7 +8551,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69fe4ff71773192800186f3a",
-          "capturedAt": "2026-06-22T05:32:25.690Z",
+          "capturedAt": "2026-06-22T12:27:29.207Z",
           "confidence": "high"
         }
       ]
@@ -8602,7 +8602,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69f22223deee9abd8ee954c5",
-          "capturedAt": "2026-06-22T05:32:25.691Z",
+          "capturedAt": "2026-06-22T12:27:29.207Z",
           "confidence": "high"
         }
       ]
@@ -8653,7 +8653,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a0db23f43b41b3d0067c47b",
-          "capturedAt": "2026-06-22T05:32:25.691Z",
+          "capturedAt": "2026-06-22T12:27:29.207Z",
           "confidence": "high"
         }
       ]
@@ -8703,7 +8703,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbdc8bd272945e0068ed54",
-          "capturedAt": "2026-06-22T05:32:26.217Z",
+          "capturedAt": "2026-06-22T12:27:29.638Z",
           "confidence": "high"
         }
       ]
@@ -8753,7 +8753,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbde97d272945e0068ee5a",
-          "capturedAt": "2026-06-22T05:32:26.217Z",
+          "capturedAt": "2026-06-22T12:27:29.638Z",
           "confidence": "high"
         }
       ]
@@ -8804,7 +8804,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/692dbdf9d923da4200b3179b",
-          "capturedAt": "2026-06-22T05:32:26.217Z",
+          "capturedAt": "2026-06-22T12:27:29.638Z",
           "confidence": "high"
         }
       ]
@@ -8854,7 +8854,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbde1fe59a13000d3e1cf5",
-          "capturedAt": "2026-06-22T05:32:26.217Z",
+          "capturedAt": "2026-06-22T12:27:29.638Z",
           "confidence": "high"
         }
       ]
@@ -8904,7 +8904,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1da2",
-          "capturedAt": "2026-06-22T05:32:26.217Z",
+          "capturedAt": "2026-06-22T12:27:29.638Z",
           "confidence": "high"
         }
       ]
@@ -8954,7 +8954,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6998d3a31e64afd01e5cdd03",
-          "capturedAt": "2026-06-22T05:32:26.217Z",
+          "capturedAt": "2026-06-22T12:27:29.638Z",
           "confidence": "high"
         }
       ]
@@ -9004,7 +9004,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/69274b3f44d0e96d007b8750",
-          "capturedAt": "2026-06-22T05:32:26.736Z",
+          "capturedAt": "2026-06-22T12:27:30.165Z",
           "confidence": "high"
         }
       ]
@@ -9054,7 +9054,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbd37875911f28001a232e",
-          "capturedAt": "2026-06-22T05:32:26.737Z",
+          "capturedAt": "2026-06-22T12:27:30.165Z",
           "confidence": "high"
         }
       ]
@@ -9104,7 +9104,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbdc50e59a13000d3e1c85",
-          "capturedAt": "2026-06-22T05:32:26.737Z",
+          "capturedAt": "2026-06-22T12:27:30.165Z",
           "confidence": "high"
         }
       ]
@@ -9154,7 +9154,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbde97d272945e0068ee5b",
-          "capturedAt": "2026-06-22T05:32:26.737Z",
+          "capturedAt": "2026-06-22T12:27:30.165Z",
           "confidence": "high"
         }
       ]
@@ -9204,7 +9204,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbd37875911f28001a232f",
-          "capturedAt": "2026-06-22T05:32:26.737Z",
+          "capturedAt": "2026-06-22T12:27:30.165Z",
           "confidence": "high"
         }
       ]
@@ -9254,7 +9254,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbdd1b0176055300fe8093",
-          "capturedAt": "2026-06-22T05:32:26.737Z",
+          "capturedAt": "2026-06-22T12:27:30.165Z",
           "confidence": "high"
         }
       ]
@@ -9304,7 +9304,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbdc50e59a13000d3e1c86",
-          "capturedAt": "2026-06-22T05:32:26.737Z",
+          "capturedAt": "2026-06-22T12:27:30.165Z",
           "confidence": "high"
         }
       ]
@@ -9354,7 +9354,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/694992cb4be11d3d00d95e2b",
-          "capturedAt": "2026-06-22T05:32:26.737Z",
+          "capturedAt": "2026-06-22T12:27:30.165Z",
           "confidence": "high"
         }
       ]
@@ -9405,7 +9405,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbd36ee647c8ff0c387290",
-          "capturedAt": "2026-06-22T05:32:26.737Z",
+          "capturedAt": "2026-06-22T12:27:30.165Z",
           "confidence": "high"
         }
       ]
@@ -9456,7 +9456,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe20064ad59251cb9d995",
-          "capturedAt": "2026-06-22T05:32:26.737Z",
+          "capturedAt": "2026-06-22T12:27:30.166Z",
           "confidence": "high"
         }
       ]
@@ -9506,7 +9506,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbde1fe59a13000d3e1cf6",
-          "capturedAt": "2026-06-22T05:32:26.737Z",
+          "capturedAt": "2026-06-22T12:27:30.166Z",
           "confidence": "high"
         }
       ]
@@ -9557,7 +9557,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe0e82edc686d00f5c89b",
-          "capturedAt": "2026-06-22T05:32:26.737Z",
+          "capturedAt": "2026-06-22T12:27:30.166Z",
           "confidence": "high"
         }
       ]
@@ -9609,7 +9609,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe12275911f28001a2535",
-          "capturedAt": "2026-06-22T05:32:26.737Z",
+          "capturedAt": "2026-06-22T12:27:30.166Z",
           "confidence": "high"
         }
       ]
@@ -9660,7 +9660,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/69e785e88ddc1caf5f1e4921",
-          "capturedAt": "2026-06-22T05:32:26.737Z",
+          "capturedAt": "2026-06-22T12:27:30.166Z",
           "confidence": "high"
         }
       ]
@@ -9711,7 +9711,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe0cde647c8ff0c38742d",
-          "capturedAt": "2026-06-22T05:32:26.737Z",
+          "capturedAt": "2026-06-22T12:27:30.166Z",
           "confidence": "high"
         }
       ]
@@ -9761,7 +9761,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbdda72edc686d00f5c7ed",
-          "capturedAt": "2026-06-22T05:32:26.737Z",
+          "capturedAt": "2026-06-22T12:27:30.166Z",
           "confidence": "high"
         }
       ]
@@ -9812,7 +9812,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe0a50176055300fe814c",
-          "capturedAt": "2026-06-22T05:32:26.737Z",
+          "capturedAt": "2026-06-22T12:27:30.166Z",
           "confidence": "high"
         }
       ]
@@ -9862,7 +9862,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/688d2e36b354fd28002ed4f9",
-          "capturedAt": "2026-06-22T05:32:26.737Z",
+          "capturedAt": "2026-06-22T12:27:30.166Z",
           "confidence": "high"
         }
       ]
@@ -9913,7 +9913,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe1952edc686d00f5c96c",
-          "capturedAt": "2026-06-22T05:32:26.737Z",
+          "capturedAt": "2026-06-22T12:27:30.166Z",
           "confidence": "high"
         }
       ]
@@ -9963,7 +9963,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1da3",
-          "capturedAt": "2026-06-22T05:32:26.737Z",
+          "capturedAt": "2026-06-22T12:27:30.166Z",
           "confidence": "high"
         }
       ]
@@ -10014,7 +10014,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe07a2edc686d00f5c865",
-          "capturedAt": "2026-06-22T05:32:26.737Z",
+          "capturedAt": "2026-06-22T12:27:30.166Z",
           "confidence": "high"
         }
       ]
@@ -10065,7 +10065,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/688d2cf1c01d8f9159e50b8f",
-          "capturedAt": "2026-06-22T05:32:26.737Z",
+          "capturedAt": "2026-06-22T12:27:30.166Z",
           "confidence": "high"
         }
       ]
@@ -10115,7 +10115,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbdda72edc686d00f5c7ee",
-          "capturedAt": "2026-06-22T05:32:27.255Z",
+          "capturedAt": "2026-06-22T12:27:30.765Z",
           "confidence": "high"
         }
       ]
@@ -10165,7 +10165,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1da4",
-          "capturedAt": "2026-06-22T05:32:27.255Z",
+          "capturedAt": "2026-06-22T12:27:30.765Z",
           "confidence": "high"
         }
       ]
@@ -10215,7 +10215,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbd37875911f28001a2330",
-          "capturedAt": "2026-06-22T05:32:27.255Z",
+          "capturedAt": "2026-06-22T12:27:30.765Z",
           "confidence": "high"
         }
       ]
@@ -10265,7 +10265,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbdd1b0176055300fe8094",
-          "capturedAt": "2026-06-22T05:32:27.255Z",
+          "capturedAt": "2026-06-22T12:27:30.765Z",
           "confidence": "high"
         }
       ]
@@ -10315,7 +10315,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1da5",
-          "capturedAt": "2026-06-22T05:32:27.255Z",
+          "capturedAt": "2026-06-22T12:27:30.765Z",
           "confidence": "high"
         }
       ]
@@ -10365,7 +10365,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbde1fe59a13000d3e1cf7",
-          "capturedAt": "2026-06-22T05:32:27.255Z",
+          "capturedAt": "2026-06-22T12:27:30.765Z",
           "confidence": "high"
         }
       ]
@@ -10416,7 +10416,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a05dbcfe13d3b4603b44599",
-          "capturedAt": "2026-06-22T05:32:27.255Z",
+          "capturedAt": "2026-06-22T12:27:30.765Z",
           "confidence": "high"
         }
       ]
@@ -10467,7 +10467,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6917539dfbf38a280023aa37",
-          "capturedAt": "2026-06-22T05:32:27.255Z",
+          "capturedAt": "2026-06-22T12:27:30.766Z",
           "confidence": "high"
         }
       ]
@@ -10517,7 +10517,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1da6",
-          "capturedAt": "2026-06-22T05:32:27.255Z",
+          "capturedAt": "2026-06-22T12:27:30.766Z",
           "confidence": "high"
         }
       ]
@@ -10567,7 +10567,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/69274b3f44d0e96d007b8751",
-          "capturedAt": "2026-06-22T05:32:27.255Z",
+          "capturedAt": "2026-06-22T12:27:30.766Z",
           "confidence": "high"
         }
       ]
@@ -10617,7 +10617,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbd37875911f28001a2331",
-          "capturedAt": "2026-06-22T05:32:27.255Z",
+          "capturedAt": "2026-06-22T12:27:30.766Z",
           "confidence": "high"
         }
       ]
@@ -10667,7 +10667,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbdc50e59a13000d3e1c87",
-          "capturedAt": "2026-06-22T05:32:27.862Z",
+          "capturedAt": "2026-06-22T12:27:31.244Z",
           "confidence": "high"
         }
       ]
@@ -10717,7 +10717,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbde97d272945e0068ee5d",
-          "capturedAt": "2026-06-22T05:32:27.862Z",
+          "capturedAt": "2026-06-22T12:27:31.245Z",
           "confidence": "high"
         }
       ]
@@ -10767,7 +10767,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbd37875911f28001a2332",
-          "capturedAt": "2026-06-22T05:32:27.862Z",
+          "capturedAt": "2026-06-22T12:27:31.245Z",
           "confidence": "high"
         }
       ]
@@ -10817,7 +10817,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbdd1b0176055300fe8095",
-          "capturedAt": "2026-06-22T05:32:27.863Z",
+          "capturedAt": "2026-06-22T12:27:31.245Z",
           "confidence": "high"
         }
       ]
@@ -10867,7 +10867,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbdc50e59a13000d3e1c88",
-          "capturedAt": "2026-06-22T05:32:27.863Z",
+          "capturedAt": "2026-06-22T12:27:31.245Z",
           "confidence": "high"
         }
       ]
@@ -10917,7 +10917,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/694992cb4be11d3d00d95e2c",
-          "capturedAt": "2026-06-22T05:32:27.863Z",
+          "capturedAt": "2026-06-22T12:27:31.245Z",
           "confidence": "high"
         }
       ]
@@ -10968,7 +10968,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbd36ee647c8ff0c387291",
-          "capturedAt": "2026-06-22T05:32:27.863Z",
+          "capturedAt": "2026-06-22T12:27:31.245Z",
           "confidence": "high"
         }
       ]
@@ -11019,7 +11019,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe20064ad59251cb9d996",
-          "capturedAt": "2026-06-22T05:32:27.863Z",
+          "capturedAt": "2026-06-22T12:27:31.245Z",
           "confidence": "high"
         }
       ]
@@ -11069,7 +11069,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbde1fe59a13000d3e1cf8",
-          "capturedAt": "2026-06-22T05:32:27.863Z",
+          "capturedAt": "2026-06-22T12:27:31.245Z",
           "confidence": "high"
         }
       ]
@@ -11120,7 +11120,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe0e82edc686d00f5c89c",
-          "capturedAt": "2026-06-22T05:32:27.863Z",
+          "capturedAt": "2026-06-22T12:27:31.245Z",
           "confidence": "high"
         }
       ]
@@ -11172,7 +11172,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe12275911f28001a2536",
-          "capturedAt": "2026-06-22T05:32:27.863Z",
+          "capturedAt": "2026-06-22T12:27:31.245Z",
           "confidence": "high"
         }
       ]
@@ -11223,7 +11223,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe0cde647c8ff0c38742e",
-          "capturedAt": "2026-06-22T05:32:27.863Z",
+          "capturedAt": "2026-06-22T12:27:31.245Z",
           "confidence": "high"
         }
       ]
@@ -11273,7 +11273,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbdda72edc686d00f5c7ef",
-          "capturedAt": "2026-06-22T05:32:27.863Z",
+          "capturedAt": "2026-06-22T12:27:31.245Z",
           "confidence": "high"
         }
       ]
@@ -11324,7 +11324,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe0a50176055300fe814d",
-          "capturedAt": "2026-06-22T05:32:27.863Z",
+          "capturedAt": "2026-06-22T12:27:31.245Z",
           "confidence": "high"
         }
       ]
@@ -11375,7 +11375,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe1952edc686d00f5c96d",
-          "capturedAt": "2026-06-22T05:32:27.863Z",
+          "capturedAt": "2026-06-22T12:27:31.245Z",
           "confidence": "high"
         }
       ]
@@ -11425,7 +11425,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1da7",
-          "capturedAt": "2026-06-22T05:32:27.863Z",
+          "capturedAt": "2026-06-22T12:27:31.245Z",
           "confidence": "high"
         }
       ]
@@ -11476,7 +11476,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe07a2edc686d00f5c866",
-          "capturedAt": "2026-06-22T05:32:27.863Z",
+          "capturedAt": "2026-06-22T12:27:31.245Z",
           "confidence": "high"
         }
       ]
@@ -11526,7 +11526,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbdda72edc686d00f5c7f0",
-          "capturedAt": "2026-06-22T05:32:28.372Z",
+          "capturedAt": "2026-06-22T12:27:31.683Z",
           "confidence": "high"
         }
       ]
@@ -11576,7 +11576,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1da8",
-          "capturedAt": "2026-06-22T05:32:28.372Z",
+          "capturedAt": "2026-06-22T12:27:31.683Z",
           "confidence": "high"
         }
       ]
@@ -11626,7 +11626,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a05e23b0b91ec3478ded84e",
-          "capturedAt": "2026-06-22T05:32:28.372Z",
+          "capturedAt": "2026-06-22T12:27:31.683Z",
           "confidence": "high"
         }
       ]
@@ -11678,7 +11678,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a146a4e8360de907d8846c2",
-          "capturedAt": "2026-06-22T05:32:28.372Z",
+          "capturedAt": "2026-06-22T12:27:31.683Z",
           "confidence": "high"
         }
       ]
@@ -11728,7 +11728,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbd37875911f28001a2333",
-          "capturedAt": "2026-06-22T05:32:28.372Z",
+          "capturedAt": "2026-06-22T12:27:31.683Z",
           "confidence": "high"
         }
       ]
@@ -11780,7 +11780,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a146abda99bdd027d42cd46",
-          "capturedAt": "2026-06-22T05:32:28.372Z",
+          "capturedAt": "2026-06-22T12:27:31.683Z",
           "confidence": "high"
         }
       ]
@@ -11832,7 +11832,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a16edaa52c88111723afebe",
-          "capturedAt": "2026-06-22T05:32:28.372Z",
+          "capturedAt": "2026-06-22T12:27:31.683Z",
           "confidence": "high"
         }
       ]
@@ -11882,7 +11882,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbdd1b0176055300fe8096",
-          "capturedAt": "2026-06-22T05:32:28.372Z",
+          "capturedAt": "2026-06-22T12:27:31.683Z",
           "confidence": "high"
         }
       ]
@@ -11932,7 +11932,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1da9",
-          "capturedAt": "2026-06-22T05:32:28.372Z",
+          "capturedAt": "2026-06-22T12:27:31.683Z",
           "confidence": "high"
         }
       ]
@@ -11982,7 +11982,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbdc8bd272945e0068ed56",
-          "capturedAt": "2026-06-22T05:32:28.373Z",
+          "capturedAt": "2026-06-22T12:27:31.683Z",
           "confidence": "high"
         }
       ]
@@ -12032,7 +12032,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbde97d272945e0068ee5f",
-          "capturedAt": "2026-06-22T05:32:28.373Z",
+          "capturedAt": "2026-06-22T12:27:31.683Z",
           "confidence": "high"
         }
       ]
@@ -12084,7 +12084,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a146aa4748daf857d59b65b",
-          "capturedAt": "2026-06-22T05:32:28.373Z",
+          "capturedAt": "2026-06-22T12:27:31.683Z",
           "confidence": "high"
         }
       ]
@@ -12133,7 +12133,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a05e81ddcc3559e3b3c2054",
-          "capturedAt": "2026-06-22T05:32:28.373Z",
+          "capturedAt": "2026-06-22T12:27:31.683Z",
           "confidence": "high"
         }
       ]
@@ -12184,7 +12184,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/692dbdf9d923da4200b3179d",
-          "capturedAt": "2026-06-22T05:32:28.931Z",
+          "capturedAt": "2026-06-22T12:27:32.216Z",
           "confidence": "high"
         }
       ]
@@ -12234,7 +12234,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbde1fe59a13000d3e1cf9",
-          "capturedAt": "2026-06-22T05:32:28.931Z",
+          "capturedAt": "2026-06-22T12:27:32.216Z",
           "confidence": "high"
         }
       ]
@@ -12286,7 +12286,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a1469f0a99bdd027d42ccc9",
-          "capturedAt": "2026-06-22T05:32:28.931Z",
+          "capturedAt": "2026-06-22T12:27:32.216Z",
           "confidence": "high"
         }
       ]
@@ -12336,7 +12336,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1daa",
-          "capturedAt": "2026-06-22T05:32:28.931Z",
+          "capturedAt": "2026-06-22T12:27:32.216Z",
           "confidence": "high"
         }
       ]
@@ -12386,7 +12386,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a062a00f56bd86e00afb51b",
-          "capturedAt": "2026-06-22T05:32:28.931Z",
+          "capturedAt": "2026-06-22T12:27:32.216Z",
           "confidence": "high"
         }
       ]
@@ -12436,7 +12436,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/69274b3f44d0e96d007b8752",
-          "capturedAt": "2026-06-22T05:32:28.931Z",
+          "capturedAt": "2026-06-22T12:27:32.216Z",
           "confidence": "high"
         }
       ]
@@ -12486,7 +12486,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbd37875911f28001a2334",
-          "capturedAt": "2026-06-22T05:32:28.931Z",
+          "capturedAt": "2026-06-22T12:27:32.216Z",
           "confidence": "high"
         }
       ]
@@ -12536,7 +12536,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbdc50e59a13000d3e1c89",
-          "capturedAt": "2026-06-22T05:32:28.931Z",
+          "capturedAt": "2026-06-22T12:27:32.217Z",
           "confidence": "high"
         }
       ]
@@ -12586,7 +12586,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbde97d272945e0068ee60",
-          "capturedAt": "2026-06-22T05:32:28.931Z",
+          "capturedAt": "2026-06-22T12:27:32.217Z",
           "confidence": "high"
         }
       ]
@@ -12638,7 +12638,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a14693a46d5f64f7dccccf8",
-          "capturedAt": "2026-06-22T05:32:28.931Z",
+          "capturedAt": "2026-06-22T12:27:32.217Z",
           "confidence": "high"
         }
       ]
@@ -12688,7 +12688,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbd37875911f28001a2335",
-          "capturedAt": "2026-06-22T05:32:28.931Z",
+          "capturedAt": "2026-06-22T12:27:32.217Z",
           "confidence": "high"
         }
       ]
@@ -12738,7 +12738,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbdd1b0176055300fe8097",
-          "capturedAt": "2026-06-22T05:32:28.931Z",
+          "capturedAt": "2026-06-22T12:27:32.217Z",
           "confidence": "high"
         }
       ]
@@ -12788,7 +12788,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbdc50e59a13000d3e1c8a",
-          "capturedAt": "2026-06-22T05:32:28.931Z",
+          "capturedAt": "2026-06-22T12:27:32.217Z",
           "confidence": "high"
         }
       ]
@@ -12838,7 +12838,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/694992cb4be11d3d00d95e2d",
-          "capturedAt": "2026-06-22T05:32:28.932Z",
+          "capturedAt": "2026-06-22T12:27:32.217Z",
           "confidence": "high"
         }
       ]
@@ -12889,7 +12889,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a1dfe9c8ea300e2631a42c6",
-          "capturedAt": "2026-06-22T05:32:28.932Z",
+          "capturedAt": "2026-06-22T12:27:32.217Z",
           "confidence": "high"
         }
       ]
@@ -12940,7 +12940,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbd36ee647c8ff0c387292",
-          "capturedAt": "2026-06-22T05:32:28.932Z",
+          "capturedAt": "2026-06-22T12:27:32.217Z",
           "confidence": "high"
         }
       ]
@@ -12991,7 +12991,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe20064ad59251cb9d997",
-          "capturedAt": "2026-06-22T05:32:28.932Z",
+          "capturedAt": "2026-06-22T12:27:32.217Z",
           "confidence": "high"
         }
       ]
@@ -13041,7 +13041,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbde1fe59a13000d3e1cfa",
-          "capturedAt": "2026-06-22T05:32:28.932Z",
+          "capturedAt": "2026-06-22T12:27:32.217Z",
           "confidence": "high"
         }
       ]
@@ -13092,7 +13092,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe0e82edc686d00f5c89d",
-          "capturedAt": "2026-06-22T05:32:28.932Z",
+          "capturedAt": "2026-06-22T12:27:32.217Z",
           "confidence": "high"
         }
       ]
@@ -13144,7 +13144,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe12275911f28001a2537",
-          "capturedAt": "2026-06-22T05:32:28.932Z",
+          "capturedAt": "2026-06-22T12:27:32.217Z",
           "confidence": "high"
         }
       ]
@@ -13195,7 +13195,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe0cde647c8ff0c38742f",
-          "capturedAt": "2026-06-22T05:32:29.515Z",
+          "capturedAt": "2026-06-22T12:27:32.689Z",
           "confidence": "high"
         }
       ]
@@ -13245,7 +13245,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbdda72edc686d00f5c7f1",
-          "capturedAt": "2026-06-22T05:32:29.515Z",
+          "capturedAt": "2026-06-22T12:27:32.689Z",
           "confidence": "high"
         }
       ]
@@ -13297,7 +13297,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a1469a7748daf857d59b63d",
-          "capturedAt": "2026-06-22T05:32:29.515Z",
+          "capturedAt": "2026-06-22T12:27:32.689Z",
           "confidence": "high"
         }
       ]
@@ -13348,7 +13348,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe0a50176055300fe814e",
-          "capturedAt": "2026-06-22T05:32:29.515Z",
+          "capturedAt": "2026-06-22T12:27:32.689Z",
           "confidence": "high"
         }
       ]
@@ -13398,7 +13398,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a0964ee703c3363002828b2",
-          "capturedAt": "2026-06-22T05:32:29.515Z",
+          "capturedAt": "2026-06-22T12:27:32.690Z",
           "confidence": "high"
         }
       ]
@@ -13449,7 +13449,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe1952edc686d00f5c96e",
-          "capturedAt": "2026-06-22T05:32:29.515Z",
+          "capturedAt": "2026-06-22T12:27:32.690Z",
           "confidence": "high"
         }
       ]
@@ -13499,7 +13499,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1dab",
-          "capturedAt": "2026-06-22T05:32:29.515Z",
+          "capturedAt": "2026-06-22T12:27:32.690Z",
           "confidence": "high"
         }
       ]
@@ -13551,7 +13551,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a146a1c46d5f64f7dcccd09",
-          "capturedAt": "2026-06-22T05:32:29.515Z",
+          "capturedAt": "2026-06-22T12:27:32.690Z",
           "confidence": "high"
         }
       ]
@@ -13602,7 +13602,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe07a2edc686d00f5c867",
-          "capturedAt": "2026-06-22T05:32:29.515Z",
+          "capturedAt": "2026-06-22T12:27:32.690Z",
           "confidence": "high"
         }
       ]
@@ -13652,7 +13652,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbdda72edc686d00f5c7f2",
-          "capturedAt": "2026-06-22T05:32:29.515Z",
+          "capturedAt": "2026-06-22T12:27:32.690Z",
           "confidence": "high"
         }
       ]
@@ -13702,7 +13702,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1dac",
-          "capturedAt": "2026-06-22T05:32:29.515Z",
+          "capturedAt": "2026-06-22T12:27:32.690Z",
           "confidence": "high"
         }
       ]
@@ -13751,7 +13751,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a0602d08360de907d873a42",
-          "capturedAt": "2026-06-22T05:32:29.516Z",
+          "capturedAt": "2026-06-22T12:27:32.690Z",
           "confidence": "high"
         }
       ]
@@ -13803,7 +13803,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a146a4e8360de907d8846c3",
-          "capturedAt": "2026-06-22T05:32:29.516Z",
+          "capturedAt": "2026-06-22T12:27:32.690Z",
           "confidence": "high"
         }
       ]
@@ -13853,7 +13853,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbd37875911f28001a2336",
-          "capturedAt": "2026-06-22T05:32:30.074Z",
+          "capturedAt": "2026-06-22T12:27:33.226Z",
           "confidence": "high"
         }
       ]
@@ -13905,7 +13905,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a146abda99bdd027d42cd47",
-          "capturedAt": "2026-06-22T05:32:30.074Z",
+          "capturedAt": "2026-06-22T12:27:33.226Z",
           "confidence": "high"
         }
       ]
@@ -13957,7 +13957,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a16edaa52c88111723afebf",
-          "capturedAt": "2026-06-22T05:32:30.074Z",
+          "capturedAt": "2026-06-22T12:27:33.226Z",
           "confidence": "high"
         }
       ]
@@ -14007,7 +14007,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbdd1b0176055300fe8098",
-          "capturedAt": "2026-06-22T05:32:30.074Z",
+          "capturedAt": "2026-06-22T12:27:33.226Z",
           "confidence": "high"
         }
       ]
@@ -14060,7 +14060,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a04d134dcc3559e3b3c0776",
-          "capturedAt": "2026-06-22T05:32:30.074Z",
+          "capturedAt": "2026-06-22T12:27:33.226Z",
           "confidence": "high"
         }
       ]
@@ -14110,7 +14110,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1dad",
-          "capturedAt": "2026-06-22T05:32:30.074Z",
+          "capturedAt": "2026-06-22T12:27:33.226Z",
           "confidence": "high"
         }
       ]
@@ -14160,7 +14160,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbdc8bd272945e0068ed57",
-          "capturedAt": "2026-06-22T05:32:30.074Z",
+          "capturedAt": "2026-06-22T12:27:33.226Z",
           "confidence": "high"
         }
       ]
@@ -14210,7 +14210,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbde97d272945e0068ee62",
-          "capturedAt": "2026-06-22T05:32:30.074Z",
+          "capturedAt": "2026-06-22T12:27:33.226Z",
           "confidence": "high"
         }
       ]
@@ -14262,7 +14262,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a146aa4748daf857d59b65c",
-          "capturedAt": "2026-06-22T05:32:30.074Z",
+          "capturedAt": "2026-06-22T12:27:33.226Z",
           "confidence": "high"
         }
       ]
@@ -14314,7 +14314,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a062ba28e677a28001c0929",
-          "capturedAt": "2026-06-22T05:32:30.074Z",
+          "capturedAt": "2026-06-22T12:27:33.227Z",
           "confidence": "high"
         }
       ]
@@ -14365,7 +14365,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/692dbdf9d923da4200b3179e",
-          "capturedAt": "2026-06-22T05:32:30.074Z",
+          "capturedAt": "2026-06-22T12:27:33.227Z",
           "confidence": "high"
         }
       ]
@@ -14414,7 +14414,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/69a1c0465506be0745ff34eb",
-          "capturedAt": "2026-06-22T05:32:30.075Z",
+          "capturedAt": "2026-06-22T12:27:33.227Z",
           "confidence": "high"
         }
       ]
@@ -14464,7 +14464,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbde1fe59a13000d3e1cfb",
-          "capturedAt": "2026-06-22T05:32:30.575Z",
+          "capturedAt": "2026-06-22T12:27:33.827Z",
           "confidence": "high"
         }
       ]
@@ -14516,7 +14516,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a1469f0a99bdd027d42ccca",
-          "capturedAt": "2026-06-22T05:32:30.575Z",
+          "capturedAt": "2026-06-22T12:27:33.827Z",
           "confidence": "high"
         }
       ]
@@ -14566,7 +14566,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1dae",
-          "capturedAt": "2026-06-22T05:32:30.575Z",
+          "capturedAt": "2026-06-22T12:27:33.827Z",
           "confidence": "high"
         }
       ]
@@ -14616,7 +14616,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/69274b3f44d0e96d007b8753",
-          "capturedAt": "2026-06-22T05:32:30.575Z",
+          "capturedAt": "2026-06-22T12:27:33.827Z",
           "confidence": "high"
         }
       ]
@@ -14666,7 +14666,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbd37875911f28001a2337",
-          "capturedAt": "2026-06-22T05:32:30.575Z",
+          "capturedAt": "2026-06-22T12:27:33.827Z",
           "confidence": "high"
         }
       ]
@@ -14716,7 +14716,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbdc50e59a13000d3e1c8b",
-          "capturedAt": "2026-06-22T05:32:30.575Z",
+          "capturedAt": "2026-06-22T12:27:33.827Z",
           "confidence": "high"
         }
       ]
@@ -14766,7 +14766,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbde97d272945e0068ee63",
-          "capturedAt": "2026-06-22T05:32:30.575Z",
+          "capturedAt": "2026-06-22T12:27:33.827Z",
           "confidence": "high"
         }
       ]
@@ -14818,7 +14818,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a14693a46d5f64f7dccccf9",
-          "capturedAt": "2026-06-22T05:32:30.575Z",
+          "capturedAt": "2026-06-22T12:27:33.827Z",
           "confidence": "high"
         }
       ]
@@ -14868,7 +14868,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbd37875911f28001a2338",
-          "capturedAt": "2026-06-22T05:32:30.575Z",
+          "capturedAt": "2026-06-22T12:27:33.827Z",
           "confidence": "high"
         }
       ]
@@ -14918,7 +14918,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbdd1b0176055300fe8099",
-          "capturedAt": "2026-06-22T05:32:30.575Z",
+          "capturedAt": "2026-06-22T12:27:33.828Z",
           "confidence": "high"
         }
       ]
@@ -14968,7 +14968,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbdc50e59a13000d3e1c8c",
-          "capturedAt": "2026-06-22T05:32:30.575Z",
+          "capturedAt": "2026-06-22T12:27:33.828Z",
           "confidence": "high"
         }
       ]
@@ -15018,7 +15018,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/694992cb4be11d3d00d95e2e",
-          "capturedAt": "2026-06-22T05:32:30.575Z",
+          "capturedAt": "2026-06-22T12:27:33.828Z",
           "confidence": "high"
         }
       ]
@@ -15069,7 +15069,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbd36ee647c8ff0c387293",
-          "capturedAt": "2026-06-22T05:32:30.575Z",
+          "capturedAt": "2026-06-22T12:27:33.828Z",
           "confidence": "high"
         }
       ]
@@ -15120,7 +15120,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe20064ad59251cb9d998",
-          "capturedAt": "2026-06-22T05:32:30.575Z",
+          "capturedAt": "2026-06-22T12:27:33.828Z",
           "confidence": "high"
         }
       ]
@@ -15170,7 +15170,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbde1fe59a13000d3e1cfc",
-          "capturedAt": "2026-06-22T05:32:30.575Z",
+          "capturedAt": "2026-06-22T12:27:33.828Z",
           "confidence": "high"
         }
       ]
@@ -15221,7 +15221,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe0e82edc686d00f5c89e",
-          "capturedAt": "2026-06-22T05:32:30.575Z",
+          "capturedAt": "2026-06-22T12:27:33.828Z",
           "confidence": "high"
         }
       ]
@@ -15273,7 +15273,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe12275911f28001a2538",
-          "capturedAt": "2026-06-22T05:32:30.575Z",
+          "capturedAt": "2026-06-22T12:27:33.828Z",
           "confidence": "high"
         }
       ]
@@ -15324,7 +15324,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe0cde647c8ff0c387430",
-          "capturedAt": "2026-06-22T05:32:30.575Z",
+          "capturedAt": "2026-06-22T12:27:33.828Z",
           "confidence": "high"
         }
       ]
@@ -15374,7 +15374,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbdda72edc686d00f5c7f3",
-          "capturedAt": "2026-06-22T05:32:30.576Z",
+          "capturedAt": "2026-06-22T12:27:33.828Z",
           "confidence": "high"
         }
       ]
@@ -15426,7 +15426,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a1469a7748daf857d59b63e",
-          "capturedAt": "2026-06-22T05:32:30.576Z",
+          "capturedAt": "2026-06-22T12:27:33.828Z",
           "confidence": "high"
         }
       ]
@@ -15477,7 +15477,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe0a50176055300fe814f",
-          "capturedAt": "2026-06-22T05:32:30.576Z",
+          "capturedAt": "2026-06-22T12:27:33.828Z",
           "confidence": "high"
         }
       ]
@@ -15528,7 +15528,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe1952edc686d00f5c96f",
-          "capturedAt": "2026-06-22T05:32:31.210Z",
+          "capturedAt": "2026-06-22T12:27:34.236Z",
           "confidence": "high"
         }
       ]
@@ -15578,7 +15578,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1daf",
-          "capturedAt": "2026-06-22T05:32:31.210Z",
+          "capturedAt": "2026-06-22T12:27:34.236Z",
           "confidence": "high"
         }
       ]
@@ -15630,7 +15630,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a146a1c46d5f64f7dcccd0a",
-          "capturedAt": "2026-06-22T05:32:31.210Z",
+          "capturedAt": "2026-06-22T12:27:34.236Z",
           "confidence": "high"
         }
       ]
@@ -15681,7 +15681,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe07a2edc686d00f5c868",
-          "capturedAt": "2026-06-22T05:32:31.210Z",
+          "capturedAt": "2026-06-22T12:27:34.236Z",
           "confidence": "high"
         }
       ]
@@ -15731,7 +15731,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbdda72edc686d00f5c7f4",
-          "capturedAt": "2026-06-22T05:32:31.211Z",
+          "capturedAt": "2026-06-22T12:27:34.236Z",
           "confidence": "high"
         }
       ]
@@ -15781,7 +15781,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1db0",
-          "capturedAt": "2026-06-22T05:32:31.211Z",
+          "capturedAt": "2026-06-22T12:27:34.236Z",
           "confidence": "high"
         }
       ]
@@ -15833,7 +15833,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a146a4e8360de907d8846c4",
-          "capturedAt": "2026-06-22T05:32:31.211Z",
+          "capturedAt": "2026-06-22T12:27:34.236Z",
           "confidence": "high"
         }
       ]
@@ -15883,7 +15883,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbd37875911f28001a2339",
-          "capturedAt": "2026-06-22T05:32:31.211Z",
+          "capturedAt": "2026-06-22T12:27:34.236Z",
           "confidence": "high"
         }
       ]
@@ -15935,7 +15935,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a146abda99bdd027d42cd48",
-          "capturedAt": "2026-06-22T05:32:31.211Z",
+          "capturedAt": "2026-06-22T12:27:34.237Z",
           "confidence": "high"
         }
       ]
@@ -15987,7 +15987,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a16edaa52c88111723afec0",
-          "capturedAt": "2026-06-22T05:32:31.211Z",
+          "capturedAt": "2026-06-22T12:27:34.237Z",
           "confidence": "high"
         }
       ]
@@ -16037,7 +16037,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbdd1b0176055300fe809a",
-          "capturedAt": "2026-06-22T05:32:31.211Z",
+          "capturedAt": "2026-06-22T12:27:34.237Z",
           "confidence": "high"
         }
       ]
@@ -16086,7 +16086,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a04e411055b429f3b3b3542",
-          "capturedAt": "2026-06-22T05:32:31.211Z",
+          "capturedAt": "2026-06-22T12:27:34.237Z",
           "confidence": "high"
         }
       ]
@@ -16136,7 +16136,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1db1",
-          "capturedAt": "2026-06-22T05:32:31.211Z",
+          "capturedAt": "2026-06-22T12:27:34.237Z",
           "confidence": "high"
         }
       ]
@@ -16186,7 +16186,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a32f63775b1e22800817901",
-          "capturedAt": "2026-06-22T05:32:31.211Z",
+          "capturedAt": "2026-06-22T12:27:34.237Z",
           "confidence": "high"
         }
       ]
@@ -16236,7 +16236,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbdc8bd272945e0068ed58",
-          "capturedAt": "2026-06-22T05:32:31.706Z",
+          "capturedAt": "2026-06-22T12:27:34.726Z",
           "confidence": "high"
         }
       ]
@@ -16286,7 +16286,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a32f63775b1e22800817902",
-          "capturedAt": "2026-06-22T05:32:31.707Z",
+          "capturedAt": "2026-06-22T12:27:34.726Z",
           "confidence": "high"
         }
       ]
@@ -16336,7 +16336,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbde97d272945e0068ee65",
-          "capturedAt": "2026-06-22T05:32:31.707Z",
+          "capturedAt": "2026-06-22T12:27:34.726Z",
           "confidence": "high"
         }
       ]
@@ -16388,7 +16388,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a146aa4748daf857d59b65d",
-          "capturedAt": "2026-06-22T05:32:31.707Z",
+          "capturedAt": "2026-06-22T12:27:34.726Z",
           "confidence": "high"
         }
       ]
@@ -16438,7 +16438,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a32f63775b1e22800817903",
-          "capturedAt": "2026-06-22T05:32:31.707Z",
+          "capturedAt": "2026-06-22T12:27:34.726Z",
           "confidence": "high"
         }
       ]
@@ -16488,7 +16488,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a06106246d5f64f7dcbb82e",
-          "capturedAt": "2026-06-22T05:32:31.707Z",
+          "capturedAt": "2026-06-22T12:27:34.726Z",
           "confidence": "high"
         }
       ]
@@ -16539,7 +16539,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/692dbdf9d923da4200b3179f",
-          "capturedAt": "2026-06-22T05:32:31.707Z",
+          "capturedAt": "2026-06-22T12:27:34.727Z",
           "confidence": "high"
         }
       ]
@@ -16589,7 +16589,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbde1fe59a13000d3e1cfd",
-          "capturedAt": "2026-06-22T05:32:31.707Z",
+          "capturedAt": "2026-06-22T12:27:34.727Z",
           "confidence": "high"
         }
       ]
@@ -16641,7 +16641,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a1469f0a99bdd027d42cccb",
-          "capturedAt": "2026-06-22T05:32:31.707Z",
+          "capturedAt": "2026-06-22T12:27:34.727Z",
           "confidence": "high"
         }
       ]
@@ -16691,7 +16691,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1db2",
-          "capturedAt": "2026-06-22T05:32:31.707Z",
+          "capturedAt": "2026-06-22T12:27:34.727Z",
           "confidence": "high"
         }
       ]
@@ -16741,7 +16741,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/69274b3f44d0e96d007b8754",
-          "capturedAt": "2026-06-22T05:32:31.707Z",
+          "capturedAt": "2026-06-22T12:27:34.727Z",
           "confidence": "high"
         }
       ]
@@ -16791,7 +16791,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbd37875911f28001a233a",
-          "capturedAt": "2026-06-22T05:32:31.707Z",
+          "capturedAt": "2026-06-22T12:27:34.727Z",
           "confidence": "high"
         }
       ]
@@ -16841,7 +16841,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbdc50e59a13000d3e1c8d",
-          "capturedAt": "2026-06-22T05:32:31.707Z",
+          "capturedAt": "2026-06-22T12:27:34.727Z",
           "confidence": "high"
         }
       ]
@@ -16891,7 +16891,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbde97d272945e0068ee66",
-          "capturedAt": "2026-06-22T05:32:31.707Z",
+          "capturedAt": "2026-06-22T12:27:34.727Z",
           "confidence": "high"
         }
       ]
@@ -16943,7 +16943,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a14693a46d5f64f7dccccfa",
-          "capturedAt": "2026-06-22T05:32:31.707Z",
+          "capturedAt": "2026-06-22T12:27:34.727Z",
           "confidence": "high"
         }
       ]
@@ -16993,7 +16993,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbd37875911f28001a233b",
-          "capturedAt": "2026-06-22T05:32:31.707Z",
+          "capturedAt": "2026-06-22T12:27:34.727Z",
           "confidence": "high"
         }
       ]
@@ -17043,7 +17043,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbdd1b0176055300fe809b",
-          "capturedAt": "2026-06-22T05:32:32.306Z",
+          "capturedAt": "2026-06-22T12:27:35.166Z",
           "confidence": "high"
         }
       ]
@@ -17093,7 +17093,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbdc50e59a13000d3e1c8e",
-          "capturedAt": "2026-06-22T05:32:32.306Z",
+          "capturedAt": "2026-06-22T12:27:35.166Z",
           "confidence": "high"
         }
       ]
@@ -17144,7 +17144,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a025696c6a1dc3d00d319b3",
-          "capturedAt": "2026-06-22T05:32:32.306Z",
+          "capturedAt": "2026-06-22T12:27:35.167Z",
           "confidence": "high"
         }
       ]
@@ -17195,7 +17195,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a024227e13d3b4603b4021f",
-          "capturedAt": "2026-06-22T05:32:32.306Z",
+          "capturedAt": "2026-06-22T12:27:35.167Z",
           "confidence": "high"
         }
       ]
@@ -17245,7 +17245,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/694992cb4be11d3d00d95e2f",
-          "capturedAt": "2026-06-22T05:32:32.306Z",
+          "capturedAt": "2026-06-22T12:27:35.167Z",
           "confidence": "high"
         }
       ]
@@ -17296,7 +17296,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbd36ee647c8ff0c387294",
-          "capturedAt": "2026-06-22T05:32:32.306Z",
+          "capturedAt": "2026-06-22T12:27:35.167Z",
           "confidence": "high"
         }
       ]
@@ -17347,7 +17347,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe20064ad59251cb9d999",
-          "capturedAt": "2026-06-22T05:32:32.306Z",
+          "capturedAt": "2026-06-22T12:27:35.167Z",
           "confidence": "high"
         }
       ]
@@ -17397,7 +17397,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbde1fe59a13000d3e1cfe",
-          "capturedAt": "2026-06-22T05:32:32.306Z",
+          "capturedAt": "2026-06-22T12:27:35.167Z",
           "confidence": "high"
         }
       ]
@@ -17448,7 +17448,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe0e82edc686d00f5c89f",
-          "capturedAt": "2026-06-22T05:32:32.306Z",
+          "capturedAt": "2026-06-22T12:27:35.167Z",
           "confidence": "high"
         }
       ]
@@ -17500,7 +17500,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe12275911f28001a2539",
-          "capturedAt": "2026-06-22T05:32:32.307Z",
+          "capturedAt": "2026-06-22T12:27:35.167Z",
           "confidence": "high"
         }
       ]
@@ -17551,7 +17551,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe0cde647c8ff0c387431",
-          "capturedAt": "2026-06-22T05:32:32.307Z",
+          "capturedAt": "2026-06-22T12:27:35.167Z",
           "confidence": "high"
         }
       ]
@@ -17601,7 +17601,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbdda72edc686d00f5c7f5",
-          "capturedAt": "2026-06-22T05:32:32.307Z",
+          "capturedAt": "2026-06-22T12:27:35.167Z",
           "confidence": "high"
         }
       ]
@@ -17653,7 +17653,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a1469a7748daf857d59b63f",
-          "capturedAt": "2026-06-22T05:32:32.307Z",
+          "capturedAt": "2026-06-22T12:27:35.167Z",
           "confidence": "high"
         }
       ]
@@ -17704,7 +17704,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe0a50176055300fe8150",
-          "capturedAt": "2026-06-22T05:32:32.307Z",
+          "capturedAt": "2026-06-22T12:27:35.167Z",
           "confidence": "high"
         }
       ]
@@ -17755,7 +17755,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe1952edc686d00f5c970",
-          "capturedAt": "2026-06-22T05:32:32.307Z",
+          "capturedAt": "2026-06-22T12:27:35.167Z",
           "confidence": "high"
         }
       ]
@@ -17805,7 +17805,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1db3",
-          "capturedAt": "2026-06-22T05:32:32.307Z",
+          "capturedAt": "2026-06-22T12:27:35.167Z",
           "confidence": "high"
         }
       ]
@@ -17857,7 +17857,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a146a1c46d5f64f7dcccd0b",
-          "capturedAt": "2026-06-22T05:32:32.307Z",
+          "capturedAt": "2026-06-22T12:27:35.167Z",
           "confidence": "high"
         }
       ]
@@ -17908,17 +17908,17 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe07a2edc686d00f5c869",
-          "capturedAt": "2026-06-22T05:32:32.307Z",
+          "capturedAt": "2026-06-22T12:27:35.167Z",
           "confidence": "high"
         }
       ]
     },
     {
-      "id": "discovered-vaughan-library-programs-volunteer-opportunities-e775e833a50b",
-      "title": "Volunteer Opportunities",
-      "organization": "Vaughan Public Libraries",
-      "description": "Volunteer Opportunities listed by Vaughan Public Libraries programs.",
-      "city": "Vaughan",
+      "id": "discovered-richmond-hill-library-programs-volunteer-at-rhpl-e9cf3759163d",
+      "title": "Volunteer at RHPL",
+      "organization": "Richmond Hill Public Library",
+      "description": "Volunteer at RHPL listed by Richmond Hill Public Library programs.",
+      "city": "Richmond Hill",
       "region": "York",
       "ageMin": 1,
       "ageMax": 18,
@@ -17932,8 +17932,8 @@
         "en"
       ],
       "startDate": "2026-06-22T09:00:00-04:00",
-      "sourceUrl": "https://www.vaughanpl.info/volunteer",
-      "registrationUrl": "https://www.vaughanpl.info/volunteer",
+      "sourceUrl": "https://www.rhpl.ca/working-with-the-library/volunteer-opportunities",
+      "registrationUrl": "https://www.rhpl.ca/working-with-the-library/volunteer-opportunities",
       "lastChecked": "2026-06-22",
       "lastSeen": "2026-06-22",
       "status": "needs_review",
@@ -17941,10 +17941,10 @@
         "volunteer hours",
         "stem",
         "coding",
-        "robotics",
-        "maker",
         "technology",
-        "volunteer",
+        "science",
+        "maker",
+        "teen",
         "new find",
         "date-to-confirm"
       ],
@@ -17952,57 +17952,55 @@
         "Open to all",
         "Newcomer-friendly"
       ],
-      "latitude": 43.8372,
-      "longitude": -79.5083,
-      "address": "Vaughan, York",
+      "latitude": 43.8828,
+      "longitude": -79.4403,
+      "address": "Richmond Hill, York",
       "volunteerHoursEligible": true,
       "coopEligible": false,
       "trustedSource": true,
       "sources": [
         {
-          "label": "Vaughan Public Libraries programs",
-          "url": "https://www.vaughanpl.info/volunteer",
+          "label": "Richmond Hill Public Library programs",
+          "url": "https://www.rhpl.ca/working-with-the-library/volunteer-opportunities",
           "capturedAt": "2026-06-22T09:00:00-04:00",
           "confidence": "high"
         }
       ]
     },
     {
-      "id": "discovered-aurora-library-stem-maker-workshop-custom-apron-5aa228ce3b0f",
-      "title": "Maker Workshop: Custom Apron",
+      "id": "discovered-aurora-library-volunteers-volunteers-9a6997e9e36a",
+      "title": "Volunteers",
       "organization": "Aurora Public Library",
-      "description": "Learn how to design and make a custom apron using Canva and the sublimation printer. All required materials will be provided. Please note that spots will be prioritized for first-time attendees. Ages 13+",
+      "description": "Volunteering at the Library Volunteering can be a great way to build experience, learn new skills, connect&hellip;",
       "city": "Aurora",
       "region": "York",
       "ageMin": 1,
       "ageMax": 18,
-      "category": "Makerspace & Fabrication",
+      "category": "Volunteer Hours",
       "categories": [
-        "Makerspace & Fabrication",
+        "Volunteer Hours",
         "STEM"
       ],
       "cost": "Free to join",
       "language": [
         "en"
       ],
-      "deadline": "2026-06-22T18:30:00-04:00",
-      "startDate": "2026-06-22T18:30:00-04:00",
-      "endDate": "2026-06-22T20:00:00-04:00",
-      "sourceUrl": "https://aurora.bibliocommons.com/events/6a186f5cf6bd012f006af32f",
-      "registrationUrl": "https://aurora.bibliocommons.com/events/6a186f5cf6bd012f006af32f",
+      "startDate": "2026-06-22T09:00:00-04:00",
+      "sourceUrl": "https://aurorapl.ca/volunteers",
+      "registrationUrl": "https://aurorapl.ca/volunteers",
       "lastChecked": "2026-06-22",
       "lastSeen": "2026-06-22",
-      "status": "active",
+      "status": "needs_review",
       "tags": [
-        "makerspace & fabrication",
-        "stem",
-        "creative studio",
-        "maker",
-        "coding",
-        "technology",
-        "science",
+        "volunteer hours",
+        "volunteer",
+        "teen",
+        "youth",
+        "hours",
+        "service",
+        "leadership",
         "new find",
-        "source-review"
+        "date-to-confirm"
       ],
       "communityFocus": [
         "Open to all",
@@ -18011,284 +18009,24 @@
       "latitude": 44.0065,
       "longitude": -79.4504,
       "address": "Aurora, York",
-      "volunteerHoursEligible": false,
-      "coopEligible": false,
-      "trustedSource": true,
-      "sources": [
-        {
-          "label": "Aurora Public Library STEM events",
-          "url": "https://aurora.bibliocommons.com/events/6a186f5cf6bd012f006af32f",
-          "capturedAt": "2026-06-22T09:00:00-04:00",
-          "confidence": "high"
-        }
-      ]
-    },
-    {
-      "id": "discovered-oshawa-library-stem-creation-station-d10ece714b70",
-      "title": "Creation Station",
-      "organization": "Oshawa Public Libraries",
-      "description": "Creation Station from Oshawa Public Libraries STEM events.",
-      "city": "Oshawa",
-      "region": "Durham",
-      "ageMin": 1,
-      "ageMax": 18,
-      "category": "STEM",
-      "categories": [
-        "STEM"
-      ],
-      "cost": "Free to join",
-      "language": [
-        "en"
-      ],
-      "startDate": "2026-06-22T09:00:00-04:00",
-      "sourceUrl": "https://oshlib.bibliocommons.com/events/69dd16d6e2a2952aed0e7347",
-      "registrationUrl": "https://oshlib.bibliocommons.com/events/69dd16d6e2a2952aed0e7347",
-      "lastChecked": "2026-06-22",
-      "lastSeen": "2026-06-22",
-      "status": "needs_review",
-      "tags": [
-        "stem",
-        "coding",
-        "science",
-        "technology",
-        "teen",
-        "volunteer",
-        "new find",
-        "date-to-confirm"
-      ],
-      "communityFocus": [
-        "Open to all",
-        "Newcomer-friendly"
-      ],
-      "latitude": 43.8971,
-      "longitude": -78.8658,
-      "address": "Oshawa, Durham",
       "volunteerHoursEligible": true,
       "coopEligible": false,
       "trustedSource": true,
       "sources": [
         {
-          "label": "Oshawa Public Libraries STEM events",
-          "url": "https://oshlib.bibliocommons.com/events/69dd16d6e2a2952aed0e7347",
+          "label": "Aurora Public Library volunteer opportunities",
+          "url": "https://aurorapl.ca/volunteers",
           "capturedAt": "2026-06-22T09:00:00-04:00",
           "confidence": "high"
         }
       ]
     },
     {
-      "id": "discovered-oshawa-library-stem-book-club-bash-34e1f4d91911",
-      "title": "Book Club Bash",
-      "organization": "Oshawa Public Libraries",
-      "description": "Book Club Bash from Oshawa Public Libraries STEM events.",
-      "city": "Oshawa",
-      "region": "Durham",
-      "ageMin": 1,
-      "ageMax": 18,
-      "category": "STEM",
-      "categories": [
-        "STEM"
-      ],
-      "cost": "Free to join",
-      "language": [
-        "en"
-      ],
-      "startDate": "2026-06-22T09:00:00-04:00",
-      "sourceUrl": "https://oshlib.bibliocommons.com/events/69dd0439ad384e40edbaa21d",
-      "registrationUrl": "https://oshlib.bibliocommons.com/events/69dd0439ad384e40edbaa21d",
-      "lastChecked": "2026-06-22",
-      "lastSeen": "2026-06-22",
-      "status": "needs_review",
-      "tags": [
-        "stem",
-        "coding",
-        "science",
-        "technology",
-        "teen",
-        "volunteer",
-        "new find",
-        "date-to-confirm"
-      ],
-      "communityFocus": [
-        "Open to all",
-        "Newcomer-friendly"
-      ],
-      "latitude": 43.8971,
-      "longitude": -78.8658,
-      "address": "Oshawa, Durham",
-      "volunteerHoursEligible": true,
-      "coopEligible": false,
-      "trustedSource": true,
-      "sources": [
-        {
-          "label": "Oshawa Public Libraries STEM events",
-          "url": "https://oshlib.bibliocommons.com/events/69dd0439ad384e40edbaa21d",
-          "capturedAt": "2026-06-22T09:00:00-04:00",
-          "confidence": "high"
-        }
-      ]
-    },
-    {
-      "id": "discovered-oshawa-library-stem-durham-region-unemployed-help-centre-edad439ffe75",
-      "title": "Durham Region Unemployed Help Centre",
-      "organization": "Oshawa Public Libraries",
-      "description": "Durham Region Unemployed Help Centre from Oshawa Public Libraries STEM events.",
-      "city": "Oshawa",
-      "region": "Durham",
-      "ageMin": 1,
-      "ageMax": 18,
-      "category": "STEM",
-      "categories": [
-        "STEM"
-      ],
-      "cost": "Free to join",
-      "language": [
-        "en"
-      ],
-      "startDate": "2026-06-22T09:00:00-04:00",
-      "sourceUrl": "https://oshlib.bibliocommons.com/events/6a1dcae452c88111723c3c82",
-      "registrationUrl": "https://oshlib.bibliocommons.com/events/6a1dcae452c88111723c3c82",
-      "lastChecked": "2026-06-22",
-      "lastSeen": "2026-06-22",
-      "status": "needs_review",
-      "tags": [
-        "stem",
-        "coding",
-        "science",
-        "technology",
-        "teen",
-        "volunteer",
-        "new find",
-        "date-to-confirm"
-      ],
-      "communityFocus": [
-        "Open to all",
-        "Newcomer-friendly"
-      ],
-      "latitude": 43.8971,
-      "longitude": -78.8658,
-      "address": "Oshawa, Durham",
-      "volunteerHoursEligible": true,
-      "coopEligible": false,
-      "trustedSource": true,
-      "sources": [
-        {
-          "label": "Oshawa Public Libraries STEM events",
-          "url": "https://oshlib.bibliocommons.com/events/6a1dcae452c88111723c3c82",
-          "capturedAt": "2026-06-22T09:00:00-04:00",
-          "confidence": "high"
-        }
-      ]
-    },
-    {
-      "id": "discovered-clarington-library-programs-learning-technology-230c06781e35",
-      "title": "Learning & Technology",
-      "organization": "Clarington Library, Museums & Archives",
-      "description": "Learning & Technology listed by Clarington Library programs.",
-      "city": "Clarington",
-      "region": "Durham",
-      "ageMin": 1,
-      "ageMax": 18,
-      "category": "STEM",
-      "categories": [
-        "STEM"
-      ],
-      "cost": "Free to join",
-      "language": [
-        "en"
-      ],
-      "startDate": "2026-06-22T09:00:00-04:00",
-      "sourceUrl": "http://www.cplma.ca/learning-technology",
-      "registrationUrl": "http://www.cplma.ca/learning-technology",
-      "lastChecked": "2026-06-22",
-      "lastSeen": "2026-06-22",
-      "status": "needs_review",
-      "tags": [
-        "stem",
-        "science",
-        "technology",
-        "programs",
-        "museum",
-        "youth",
-        "new find",
-        "date-to-confirm"
-      ],
-      "communityFocus": [
-        "Open to all",
-        "Newcomer-friendly"
-      ],
-      "latitude": 43.935,
-      "longitude": -78.608,
-      "address": "Clarington, Durham",
-      "volunteerHoursEligible": false,
-      "coopEligible": false,
-      "trustedSource": true,
-      "sources": [
-        {
-          "label": "Clarington Library programs",
-          "url": "http://www.cplma.ca/learning-technology",
-          "capturedAt": "2026-06-22T09:00:00-04:00",
-          "confidence": "high"
-        }
-      ]
-    },
-    {
-      "id": "discovered-clarington-library-programs-computers-internet-access-3cb588204464",
-      "title": "Computers & Internet Access",
-      "organization": "Clarington Library, Museums & Archives",
-      "description": "Computers & Internet Access listed by Clarington Library programs.",
-      "city": "Clarington",
-      "region": "Durham",
-      "ageMin": 1,
-      "ageMax": 18,
-      "category": "STEM",
-      "categories": [
-        "STEM"
-      ],
-      "cost": "Free to join",
-      "language": [
-        "en"
-      ],
-      "startDate": "2026-06-22T09:00:00-04:00",
-      "sourceUrl": "http://www.cplma.ca/learning-technology/computers-and-internet-access",
-      "registrationUrl": "http://www.cplma.ca/learning-technology/computers-and-internet-access",
-      "lastChecked": "2026-06-22",
-      "lastSeen": "2026-06-22",
-      "status": "needs_review",
-      "tags": [
-        "stem",
-        "science",
-        "technology",
-        "programs",
-        "museum",
-        "youth",
-        "new find",
-        "date-to-confirm"
-      ],
-      "communityFocus": [
-        "Open to all",
-        "Newcomer-friendly"
-      ],
-      "latitude": 43.935,
-      "longitude": -78.608,
-      "address": "Clarington, Durham",
-      "volunteerHoursEligible": false,
-      "coopEligible": false,
-      "trustedSource": true,
-      "sources": [
-        {
-          "label": "Clarington Library programs",
-          "url": "http://www.cplma.ca/learning-technology/computers-and-internet-access",
-          "capturedAt": "2026-06-22T09:00:00-04:00",
-          "confidence": "high"
-        }
-      ]
-    },
-    {
-      "id": "discovered-clarington-library-programs-maker-s-space-2a794c50bde2",
-      "title": "Maker's Space",
-      "organization": "Clarington Library, Museums & Archives",
-      "description": "Maker's Space listed by Clarington Library programs.",
-      "city": "Clarington",
+      "id": "discovered-ajax-library-stem-makerspace-mclean-79e320ceb204",
+      "title": "Makerspace @ McLean",
+      "organization": "Ajax Public Library",
+      "description": "Makerspace @ McLean listed by Ajax Public Library STEM events.",
+      "city": "Ajax",
       "region": "Durham",
       "ageMin": 1,
       "ageMax": 18,
@@ -18302,18 +18040,72 @@
         "en"
       ],
       "startDate": "2026-06-22T09:00:00-04:00",
-      "sourceUrl": "http://www.cplma.ca/learning-technology/makers-space-the-studio",
-      "registrationUrl": "http://www.cplma.ca/learning-technology/makers-space-the-studio",
+      "sourceUrl": "https://ajaxlibrary.ca/Makerspace",
+      "registrationUrl": "https://ajaxlibrary.ca/Makerspace",
       "lastChecked": "2026-06-22",
       "lastSeen": "2026-06-22",
       "status": "needs_review",
       "tags": [
         "makerspace & fabrication",
         "stem",
+        "coding",
         "science",
+        "engineering",
         "technology",
-        "programs",
-        "museum",
+        "black youth",
+        "new find",
+        "date-to-confirm"
+      ],
+      "communityFocus": [
+        "Open to all",
+        "Newcomer-friendly"
+      ],
+      "latitude": 43.8509,
+      "longitude": -79.0204,
+      "address": "Ajax, Durham",
+      "volunteerHoursEligible": false,
+      "coopEligible": false,
+      "trustedSource": true,
+      "sources": [
+        {
+          "label": "Ajax Public Library STEM events",
+          "url": "https://ajaxlibrary.ca/Makerspace",
+          "capturedAt": "2026-06-22T09:00:00-04:00",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": "discovered-pickering-library-tech-science-and-technology-f36c250b8680",
+      "title": "Science and Technology",
+      "organization": "Pickering Public Library",
+      "description": "Science and Technology listed by Pickering Public Library technology events.",
+      "city": "Pickering",
+      "region": "Durham",
+      "ageMin": 1,
+      "ageMax": 18,
+      "category": "Science & Engineering",
+      "categories": [
+        "Science & Engineering",
+        "STEM"
+      ],
+      "cost": "Free to join",
+      "language": [
+        "en"
+      ],
+      "startDate": "2026-06-22T09:00:00-04:00",
+      "sourceUrl": "https://pickeringlibrary.ca/resources/science-technology",
+      "registrationUrl": "https://pickeringlibrary.ca/resources/science-technology",
+      "lastChecked": "2026-06-22",
+      "lastSeen": "2026-06-22",
+      "status": "needs_review",
+      "tags": [
+        "science & engineering",
+        "stem",
+        "technology",
+        "maker",
+        "computers",
+        "coding",
         "youth",
         "new find",
         "date-to-confirm"
@@ -18322,27 +18114,394 @@
         "Open to all",
         "Newcomer-friendly"
       ],
-      "latitude": 43.935,
-      "longitude": -78.608,
-      "address": "Clarington, Durham",
+      "latitude": 43.839,
+      "longitude": -79.087,
+      "address": "Pickering, Durham",
       "volunteerHoursEligible": false,
       "coopEligible": false,
       "trustedSource": true,
       "sources": [
         {
-          "label": "Clarington Library programs",
-          "url": "http://www.cplma.ca/learning-technology/makers-space-the-studio",
+          "label": "Pickering Public Library technology events",
+          "url": "https://pickeringlibrary.ca/resources/science-technology",
           "capturedAt": "2026-06-22T09:00:00-04:00",
           "confidence": "high"
         }
       ]
     },
     {
-      "id": "discovered-clarington-library-programs-jobs-volunteering-034bd1adb633",
-      "title": "Jobs & Volunteering",
-      "organization": "Clarington Library, Museums & Archives",
-      "description": "Jobs & Volunteering listed by Clarington Library programs.",
-      "city": "Clarington",
+      "id": "discovered-pickering-library-tech-technology-and-maker-space-9189ff2faf8e",
+      "title": "Technology and Maker Space",
+      "organization": "Pickering Public Library",
+      "description": "Technology and Maker Space listed by Pickering Public Library technology events.",
+      "city": "Pickering",
+      "region": "Durham",
+      "ageMin": 1,
+      "ageMax": 18,
+      "category": "Makerspace & Fabrication",
+      "categories": [
+        "Makerspace & Fabrication",
+        "STEM"
+      ],
+      "cost": "Free to join",
+      "language": [
+        "en"
+      ],
+      "startDate": "2026-06-22T09:00:00-04:00",
+      "sourceUrl": "https://pickeringlibrary.ca/makerspace",
+      "registrationUrl": "https://pickeringlibrary.ca/makerspace",
+      "lastChecked": "2026-06-22",
+      "lastSeen": "2026-06-22",
+      "status": "needs_review",
+      "tags": [
+        "makerspace & fabrication",
+        "stem",
+        "technology",
+        "maker",
+        "computers",
+        "coding",
+        "youth",
+        "new find",
+        "date-to-confirm"
+      ],
+      "communityFocus": [
+        "Open to all",
+        "Newcomer-friendly"
+      ],
+      "latitude": 43.839,
+      "longitude": -79.087,
+      "address": "Pickering, Durham",
+      "volunteerHoursEligible": false,
+      "coopEligible": false,
+      "trustedSource": true,
+      "sources": [
+        {
+          "label": "Pickering Public Library technology events",
+          "url": "https://pickeringlibrary.ca/makerspace",
+          "capturedAt": "2026-06-22T09:00:00-04:00",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": "discovered-pickering-library-tech-technology-for-health-fitness-c25f6de4b42e",
+      "title": "Technology for Health & Fitness",
+      "organization": "Pickering Public Library",
+      "description": "Technology for Health & Fitness listed by Pickering Public Library technology events.",
+      "city": "Pickering",
+      "region": "Durham",
+      "ageMin": 1,
+      "ageMax": 18,
+      "category": "STEM",
+      "categories": [
+        "STEM"
+      ],
+      "cost": "Free to join",
+      "language": [
+        "en"
+      ],
+      "startDate": "2026-06-22T09:00:00-04:00",
+      "sourceUrl": "https://pickering.bibliocommons.com/v2/list/display/1491301049/3037093477",
+      "registrationUrl": "https://pickering.bibliocommons.com/v2/list/display/1491301049/3037093477",
+      "lastChecked": "2026-06-22",
+      "lastSeen": "2026-06-22",
+      "status": "needs_review",
+      "tags": [
+        "stem",
+        "technology",
+        "maker",
+        "computers",
+        "coding",
+        "youth",
+        "new find",
+        "date-to-confirm"
+      ],
+      "communityFocus": [
+        "Open to all",
+        "Newcomer-friendly"
+      ],
+      "latitude": 43.839,
+      "longitude": -79.087,
+      "address": "Pickering, Durham",
+      "volunteerHoursEligible": false,
+      "coopEligible": false,
+      "trustedSource": true,
+      "sources": [
+        {
+          "label": "Pickering Public Library technology events",
+          "url": "https://pickering.bibliocommons.com/v2/list/display/1491301049/3037093477",
+          "capturedAt": "2026-06-22T09:00:00-04:00",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": "discovered-oshawa-library-stem-adult-summer-reading-challenge-f4980264b496",
+      "title": "Adult Summer Reading Challenge",
+      "organization": "Oshawa Public Libraries",
+      "description": "Adult Summer Reading Challenge from Oshawa Public Libraries STEM events.",
+      "city": "Oshawa",
+      "region": "Durham",
+      "ageMin": 18,
+      "category": "STEM",
+      "categories": [
+        "STEM"
+      ],
+      "cost": "Free to join",
+      "language": [
+        "en"
+      ],
+      "startDate": "2026-06-22T09:00:00-04:00",
+      "sourceUrl": "https://oshlib.bibliocommons.com/events/69dd02d3c1cf6f9a75850754",
+      "registrationUrl": "https://oshlib.bibliocommons.com/events/69dd02d3c1cf6f9a75850754",
+      "lastChecked": "2026-06-22",
+      "lastSeen": "2026-06-22",
+      "status": "needs_review",
+      "tags": [
+        "stem",
+        "coding",
+        "science",
+        "technology",
+        "teen",
+        "volunteer",
+        "new find",
+        "date-to-confirm"
+      ],
+      "communityFocus": [
+        "Open to all",
+        "Newcomer-friendly"
+      ],
+      "latitude": 43.8971,
+      "longitude": -78.8658,
+      "address": "Oshawa, Durham",
+      "volunteerHoursEligible": true,
+      "coopEligible": false,
+      "trustedSource": true,
+      "sources": [
+        {
+          "label": "Oshawa Public Libraries STEM events",
+          "url": "https://oshlib.bibliocommons.com/events/69dd02d3c1cf6f9a75850754",
+          "capturedAt": "2026-06-22T09:00:00-04:00",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": "discovered-oshawa-library-stem-teen-summer-reading-challenge-18e265e8adcb",
+      "title": "Teen Summer Reading Challenge",
+      "organization": "Oshawa Public Libraries",
+      "description": "Teen Summer Reading Challenge from Oshawa Public Libraries STEM events.",
+      "city": "Oshawa",
+      "region": "Durham",
+      "ageMin": 13,
+      "ageMax": 18,
+      "category": "STEM",
+      "categories": [
+        "STEM"
+      ],
+      "cost": "Free to join",
+      "language": [
+        "en"
+      ],
+      "startDate": "2026-06-22T09:00:00-04:00",
+      "sourceUrl": "https://oshlib.bibliocommons.com/events/69dd0b47b6c4ac1fedcc079e",
+      "registrationUrl": "https://oshlib.bibliocommons.com/events/69dd0b47b6c4ac1fedcc079e",
+      "lastChecked": "2026-06-22",
+      "lastSeen": "2026-06-22",
+      "status": "needs_review",
+      "tags": [
+        "stem",
+        "coding",
+        "science",
+        "technology",
+        "teen",
+        "volunteer",
+        "new find",
+        "date-to-confirm"
+      ],
+      "communityFocus": [
+        "Open to all",
+        "Newcomer-friendly"
+      ],
+      "latitude": 43.8971,
+      "longitude": -78.8658,
+      "address": "Oshawa, Durham",
+      "volunteerHoursEligible": true,
+      "coopEligible": false,
+      "trustedSource": true,
+      "sources": [
+        {
+          "label": "Oshawa Public Libraries STEM events",
+          "url": "https://oshlib.bibliocommons.com/events/69dd0b47b6c4ac1fedcc079e",
+          "capturedAt": "2026-06-22T09:00:00-04:00",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": "discovered-oshawa-library-stem-td-summer-reading-club-8c963ca1c97f",
+      "title": "TD Summer Reading Club",
+      "organization": "Oshawa Public Libraries",
+      "description": "TD Summer Reading Club from Oshawa Public Libraries STEM events.",
+      "city": "Oshawa",
+      "region": "Durham",
+      "ageMin": 1,
+      "ageMax": 18,
+      "category": "STEM",
+      "categories": [
+        "STEM"
+      ],
+      "cost": "Free to join",
+      "language": [
+        "en"
+      ],
+      "startDate": "2026-06-22T09:00:00-04:00",
+      "sourceUrl": "https://oshlib.bibliocommons.com/events/69dd1476e2a2952aed0e7278",
+      "registrationUrl": "https://oshlib.bibliocommons.com/events/69dd1476e2a2952aed0e7278",
+      "lastChecked": "2026-06-22",
+      "lastSeen": "2026-06-22",
+      "status": "needs_review",
+      "tags": [
+        "stem",
+        "coding",
+        "science",
+        "technology",
+        "teen",
+        "volunteer",
+        "new find",
+        "date-to-confirm"
+      ],
+      "communityFocus": [
+        "Open to all",
+        "Newcomer-friendly"
+      ],
+      "latitude": 43.8971,
+      "longitude": -78.8658,
+      "address": "Oshawa, Durham",
+      "volunteerHoursEligible": true,
+      "coopEligible": false,
+      "trustedSource": true,
+      "sources": [
+        {
+          "label": "Oshawa Public Libraries STEM events",
+          "url": "https://oshlib.bibliocommons.com/events/69dd1476e2a2952aed0e7278",
+          "capturedAt": "2026-06-22T09:00:00-04:00",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": "discovered-oshawa-library-stem-eyes-forward-audiobook-club-ce52546a8aca",
+      "title": "Eyes Forward Audiobook Club",
+      "organization": "Oshawa Public Libraries",
+      "description": "Eyes Forward Audiobook Club from Oshawa Public Libraries STEM events.",
+      "city": "Oshawa",
+      "region": "Durham",
+      "ageMin": 1,
+      "ageMax": 18,
+      "category": "STEM",
+      "categories": [
+        "STEM"
+      ],
+      "cost": "Free to join",
+      "language": [
+        "en"
+      ],
+      "startDate": "2026-06-22T09:00:00-04:00",
+      "sourceUrl": "https://oshlib.bibliocommons.com/events/69dcfd74c1cf6f9a758505da",
+      "registrationUrl": "https://oshlib.bibliocommons.com/events/69dcfd74c1cf6f9a758505da",
+      "lastChecked": "2026-06-22",
+      "lastSeen": "2026-06-22",
+      "status": "needs_review",
+      "tags": [
+        "stem",
+        "coding",
+        "science",
+        "technology",
+        "teen",
+        "volunteer",
+        "new find",
+        "date-to-confirm"
+      ],
+      "communityFocus": [
+        "Open to all",
+        "Newcomer-friendly"
+      ],
+      "latitude": 43.8971,
+      "longitude": -78.8658,
+      "address": "Oshawa, Durham",
+      "volunteerHoursEligible": true,
+      "coopEligible": false,
+      "trustedSource": true,
+      "sources": [
+        {
+          "label": "Oshawa Public Libraries STEM events",
+          "url": "https://oshlib.bibliocommons.com/events/69dcfd74c1cf6f9a758505da",
+          "capturedAt": "2026-06-22T09:00:00-04:00",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": "discovered-oshawa-library-stem-makerspace-6bb095888b6a",
+      "title": "Makerspace",
+      "organization": "Oshawa Public Libraries",
+      "description": "Makerspace listed by Oshawa Public Libraries STEM events.",
+      "city": "Oshawa",
+      "region": "Durham",
+      "ageMin": 1,
+      "ageMax": 18,
+      "category": "Makerspace & Fabrication",
+      "categories": [
+        "Makerspace & Fabrication",
+        "STEM"
+      ],
+      "cost": "Free to join",
+      "language": [
+        "en"
+      ],
+      "startDate": "2026-06-22T09:00:00-04:00",
+      "sourceUrl": "https://oshawalibrary.ca/technology/makerspace",
+      "registrationUrl": "https://oshawalibrary.ca/technology/makerspace",
+      "lastChecked": "2026-06-22",
+      "lastSeen": "2026-06-22",
+      "status": "needs_review",
+      "tags": [
+        "makerspace & fabrication",
+        "stem",
+        "coding",
+        "science",
+        "technology",
+        "teen",
+        "volunteer",
+        "new find",
+        "date-to-confirm"
+      ],
+      "communityFocus": [
+        "Open to all",
+        "Newcomer-friendly"
+      ],
+      "latitude": 43.8971,
+      "longitude": -78.8658,
+      "address": "Oshawa, Durham",
+      "volunteerHoursEligible": true,
+      "coopEligible": false,
+      "trustedSource": true,
+      "sources": [
+        {
+          "label": "Oshawa Public Libraries STEM events",
+          "url": "https://oshawalibrary.ca/technology/makerspace",
+          "capturedAt": "2026-06-22T09:00:00-04:00",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": "discovered-oshawa-library-stem-volunteer-at-opl-2fa4d7078a11",
+      "title": "Volunteer at OPL",
+      "organization": "Oshawa Public Libraries",
+      "description": "Volunteer at OPL listed by Oshawa Public Libraries STEM events.",
+      "city": "Oshawa",
       "region": "Durham",
       "ageMin": 1,
       "ageMax": 18,
@@ -18356,19 +18515,19 @@
         "en"
       ],
       "startDate": "2026-06-22T09:00:00-04:00",
-      "sourceUrl": "http://www.cplma.ca/about-us/jobs-and-volunteering",
-      "registrationUrl": "http://www.cplma.ca/about-us/jobs-and-volunteering",
+      "sourceUrl": "https://oshawalibrary.ca/volunteer",
+      "registrationUrl": "https://oshawalibrary.ca/volunteer",
       "lastChecked": "2026-06-22",
       "lastSeen": "2026-06-22",
       "status": "needs_review",
       "tags": [
         "volunteer hours",
         "stem",
+        "coding",
         "science",
         "technology",
-        "programs",
-        "museum",
-        "youth",
+        "teen",
+        "volunteer",
         "new find",
         "date-to-confirm"
       ],
@@ -18376,714 +18535,136 @@
         "Open to all",
         "Newcomer-friendly"
       ],
-      "latitude": 43.935,
-      "longitude": -78.608,
-      "address": "Clarington, Durham",
+      "latitude": 43.8971,
+      "longitude": -78.8658,
+      "address": "Oshawa, Durham",
       "volunteerHoursEligible": true,
       "coopEligible": false,
       "trustedSource": true,
       "sources": [
         {
-          "label": "Clarington Library programs",
-          "url": "http://www.cplma.ca/about-us/jobs-and-volunteering",
+          "label": "Oshawa Public Libraries STEM events",
+          "url": "https://oshawalibrary.ca/volunteer",
           "capturedAt": "2026-06-22T09:00:00-04:00",
           "confidence": "high"
         }
       ]
     },
     {
-      "id": "discovered-clarington-library-programs-reading-and-math-buddies-3e183b053cf3",
-      "title": "Reading and Math Buddies",
-      "organization": "Clarington Library, Museums & Archives",
-      "description": "Reading and Math Buddies listed by Clarington Library programs.",
-      "city": "Clarington",
+      "id": "discovered-mississauga-library-volunteers-library-jobs-and-volunteer-4e330c1fa4cc",
+      "title": "Library jobs and volunteer",
+      "organization": "Mississauga Library",
+      "description": "View current job opportunities and volunteer information for people who want to work at the Mississauga Library or volunteer with the Friends of the Library.",
+      "city": "Mississauga",
+      "region": "Peel",
+      "ageMin": 1,
+      "ageMax": 18,
+      "category": "Volunteer Hours",
+      "categories": [
+        "Volunteer Hours",
+        "STEM"
+      ],
+      "cost": "Free to join",
+      "language": [
+        "en"
+      ],
+      "startDate": "2026-06-22T09:00:00-04:00",
+      "sourceUrl": "https://www.mississauga.ca/library/library-jobs-and-volunteer",
+      "registrationUrl": "https://www.mississauga.ca/library/library-jobs-and-volunteer",
+      "lastChecked": "2026-06-22",
+      "lastSeen": "2026-06-22",
+      "status": "needs_review",
+      "tags": [
+        "volunteer hours",
+        "volunteer",
+        "teen",
+        "youth",
+        "hours",
+        "community service",
+        "new find",
+        "date-to-confirm"
+      ],
+      "communityFocus": [
+        "Open to all",
+        "Newcomer-friendly"
+      ],
+      "latitude": 43.589,
+      "longitude": -79.6441,
+      "address": "Mississauga, Peel",
+      "volunteerHoursEligible": true,
+      "coopEligible": false,
+      "trustedSource": true,
+      "sources": [
+        {
+          "label": "Mississauga Library volunteer opportunities",
+          "url": "https://www.mississauga.ca/library/library-jobs-and-volunteer",
+          "capturedAt": "2026-06-22T09:00:00-04:00",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": "discovered-mississauga-library-volunteers-volunteer-at-the-library-teens-can-join-a--8e063ada33da",
+      "title": "Volunteer at the library Teens can join a teen advisory group. Adults can volunteer for special events and more.",
+      "organization": "Mississauga Library",
+      "description": "Volunteer at the library Teens can join a teen advisory group. Adults can volunteer for special events and more. listed by Mississauga Library volunteer opportunities.",
+      "city": "Mississauga",
+      "region": "Peel",
+      "ageMin": 13,
+      "ageMax": 18,
+      "category": "Volunteer Hours",
+      "categories": [
+        "Volunteer Hours",
+        "STEM"
+      ],
+      "cost": "Free to join",
+      "language": [
+        "en"
+      ],
+      "startDate": "2026-06-22T09:00:00-04:00",
+      "sourceUrl": "https://app.betterimpact.com/PublicEnterprise/e3200288-2b64-4ed8-a26d-5bd0f4c5170b",
+      "registrationUrl": "https://app.betterimpact.com/PublicEnterprise/e3200288-2b64-4ed8-a26d-5bd0f4c5170b",
+      "lastChecked": "2026-06-22",
+      "lastSeen": "2026-06-22",
+      "status": "needs_review",
+      "tags": [
+        "volunteer hours",
+        "volunteer",
+        "teen",
+        "youth",
+        "hours",
+        "community service",
+        "new find",
+        "date-to-confirm"
+      ],
+      "communityFocus": [
+        "Open to all",
+        "Newcomer-friendly"
+      ],
+      "latitude": 43.589,
+      "longitude": -79.6441,
+      "address": "Mississauga, Peel",
+      "volunteerHoursEligible": true,
+      "coopEligible": false,
+      "trustedSource": true,
+      "sources": [
+        {
+          "label": "Mississauga Library volunteer opportunities",
+          "url": "https://app.betterimpact.com/PublicEnterprise/e3200288-2b64-4ed8-a26d-5bd0f4c5170b",
+          "capturedAt": "2026-06-22T09:00:00-04:00",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": "discovered-ontario-tech-engineering-outreach-engineering-outreach-b8a6272b9876",
+      "title": "Engineering Outreach",
+      "organization": "Ontario Tech University Engineering Outreach",
+      "description": "Engineering Outreach from Ontario Tech Engineering Outreach.",
+      "city": "Oshawa",
       "region": "Durham",
       "ageMin": 1,
       "ageMax": 18,
-      "category": "STEM",
-      "categories": [
-        "STEM"
-      ],
-      "cost": "Free to join",
-      "language": [
-        "en"
-      ],
-      "startDate": "2026-06-22T09:00:00-04:00",
-      "sourceUrl": "https://www.cplma.ca/programs-services/reading-and-math-buddies",
-      "registrationUrl": "https://www.cplma.ca/programs-services/reading-and-math-buddies",
-      "lastChecked": "2026-06-22",
-      "lastSeen": "2026-06-22",
-      "status": "needs_review",
-      "tags": [
-        "stem",
-        "science",
-        "technology",
-        "programs",
-        "museum",
-        "youth",
-        "new find",
-        "date-to-confirm"
-      ],
-      "communityFocus": [
-        "Open to all",
-        "Newcomer-friendly"
-      ],
-      "latitude": 43.935,
-      "longitude": -78.608,
-      "address": "Clarington, Durham",
-      "volunteerHoursEligible": false,
-      "coopEligible": false,
-      "trustedSource": true,
-      "sources": [
-        {
-          "label": "Clarington Library programs",
-          "url": "https://www.cplma.ca/programs-services/reading-and-math-buddies",
-          "capturedAt": "2026-06-22T09:00:00-04:00",
-          "confidence": "high"
-        }
-      ]
-    },
-    {
-      "id": "discovered-milton-library-programs-volunteer-opportunities-b6ad7428d58f",
-      "title": "Volunteer Opportunities",
-      "organization": "Milton Public Library",
-      "description": "Volunteer Opportunities listed by Milton Public Library programs.",
-      "city": "Milton",
-      "region": "Halton",
-      "ageMin": 1,
-      "ageMax": 18,
-      "category": "Volunteer Hours",
-      "categories": [
-        "Volunteer Hours",
-        "STEM"
-      ],
-      "cost": "Free to join",
-      "language": [
-        "en"
-      ],
-      "startDate": "2026-06-22T09:00:00-04:00",
-      "sourceUrl": "https://beinspired.ca/volunteer-opportunities",
-      "registrationUrl": "https://beinspired.ca/volunteer-opportunities",
-      "lastChecked": "2026-06-22",
-      "lastSeen": "2026-06-22",
-      "status": "needs_review",
-      "tags": [
-        "volunteer hours",
-        "stem",
-        "coding",
-        "maker",
-        "technology",
-        "volunteer",
-        "programs",
-        "new find",
-        "date-to-confirm"
-      ],
-      "communityFocus": [
-        "Open to all",
-        "Newcomer-friendly"
-      ],
-      "latitude": 43.5183,
-      "longitude": -79.8774,
-      "address": "Milton, Halton",
-      "volunteerHoursEligible": true,
-      "coopEligible": false,
-      "trustedSource": true,
-      "sources": [
-        {
-          "label": "Milton Public Library programs",
-          "url": "https://beinspired.ca/volunteer-opportunities",
-          "capturedAt": "2026-06-22T09:00:00-04:00",
-          "confidence": "high"
-        }
-      ]
-    },
-    {
-      "id": "discovered-milton-library-programs-computer-services-02850eef3932",
-      "title": "Computer Services",
-      "organization": "Milton Public Library",
-      "description": "Computer Services listed by Milton Public Library programs.",
-      "city": "Milton",
-      "region": "Halton",
-      "ageMin": 1,
-      "ageMax": 18,
-      "category": "STEM",
-      "categories": [
-        "STEM"
-      ],
-      "cost": "Free to join",
-      "language": [
-        "en"
-      ],
-      "startDate": "2026-06-22T09:00:00-04:00",
-      "sourceUrl": "https://beinspired.ca",
-      "registrationUrl": "https://beinspired.ca",
-      "lastChecked": "2026-06-22",
-      "lastSeen": "2026-06-22",
-      "status": "needs_review",
-      "tags": [
-        "stem",
-        "coding",
-        "maker",
-        "technology",
-        "volunteer",
-        "programs",
-        "new find",
-        "date-to-confirm"
-      ],
-      "communityFocus": [
-        "Open to all",
-        "Newcomer-friendly"
-      ],
-      "latitude": 43.5183,
-      "longitude": -79.8774,
-      "address": "Milton, Halton",
-      "volunteerHoursEligible": true,
-      "coopEligible": false,
-      "trustedSource": true,
-      "sources": [
-        {
-          "label": "Milton Public Library programs",
-          "url": "https://beinspired.ca",
-          "capturedAt": "2026-06-22T09:00:00-04:00",
-          "confidence": "high"
-        }
-      ]
-    },
-    {
-      "id": "discovered-milton-library-programs-public-access-computers-wireless-access-bo-9651b4edfb4b",
-      "title": "Public Access Computers, Wireless Access, Borrow Laptops",
-      "organization": "Milton Public Library",
-      "description": "Public Access Computers, Wireless Access, Borrow Laptops listed by Milton Public Library programs.",
-      "city": "Milton",
-      "region": "Halton",
-      "ageMin": 1,
-      "ageMax": 18,
-      "category": "STEM",
-      "categories": [
-        "STEM"
-      ],
-      "cost": "Free to join",
-      "language": [
-        "en"
-      ],
-      "startDate": "2026-06-22T09:00:00-04:00",
-      "sourceUrl": "https://beinspired.ca/computer-services",
-      "registrationUrl": "https://beinspired.ca/computer-services",
-      "lastChecked": "2026-06-22",
-      "lastSeen": "2026-06-22",
-      "status": "needs_review",
-      "tags": [
-        "stem",
-        "coding",
-        "maker",
-        "technology",
-        "volunteer",
-        "programs",
-        "new find",
-        "date-to-confirm"
-      ],
-      "communityFocus": [
-        "Open to all",
-        "Newcomer-friendly"
-      ],
-      "latitude": 43.5183,
-      "longitude": -79.8774,
-      "address": "Milton, Halton",
-      "volunteerHoursEligible": true,
-      "coopEligible": false,
-      "trustedSource": true,
-      "sources": [
-        {
-          "label": "Milton Public Library programs",
-          "url": "https://beinspired.ca/computer-services",
-          "capturedAt": "2026-06-22T09:00:00-04:00",
-          "confidence": "high"
-        }
-      ]
-    },
-    {
-      "id": "discovered-halton-hills-library-programs-technology-resources-f6eda0d3bfa5",
-      "title": "Technology Resources",
-      "organization": "Halton Hills Public Library",
-      "description": "Technology Resources listed by Halton Hills Public Library programs.",
-      "city": "Halton Hills",
-      "region": "Halton",
-      "ageMin": 1,
-      "ageMax": 18,
-      "category": "STEM",
-      "categories": [
-        "STEM"
-      ],
-      "cost": "Free to join",
-      "language": [
-        "en"
-      ],
-      "startDate": "2026-06-22T09:00:00-04:00",
-      "sourceUrl": "https://www.hhpl.ca/services/technology-resources",
-      "registrationUrl": "https://www.hhpl.ca/services/technology-resources",
-      "lastChecked": "2026-06-22",
-      "lastSeen": "2026-06-22",
-      "status": "needs_review",
-      "tags": [
-        "stem",
-        "coding",
-        "technology",
-        "lego",
-        "maker",
-        "programs",
-        "new find",
-        "date-to-confirm"
-      ],
-      "communityFocus": [
-        "Open to all",
-        "Newcomer-friendly"
-      ],
-      "latitude": 43.6306,
-      "longitude": -79.9512,
-      "address": "Halton Hills, Halton",
-      "volunteerHoursEligible": false,
-      "coopEligible": false,
-      "trustedSource": true,
-      "sources": [
-        {
-          "label": "Halton Hills Public Library programs",
-          "url": "https://www.hhpl.ca/services/technology-resources",
-          "capturedAt": "2026-06-22T09:00:00-04:00",
-          "confidence": "high"
-        }
-      ]
-    },
-    {
-      "id": "discovered-halton-hills-library-programs-computers-2d82aa6ec575",
-      "title": "Computers",
-      "organization": "Halton Hills Public Library",
-      "description": "Computers listed by Halton Hills Public Library programs.",
-      "city": "Halton Hills",
-      "region": "Halton",
-      "ageMin": 1,
-      "ageMax": 18,
-      "category": "STEM",
-      "categories": [
-        "STEM"
-      ],
-      "cost": "Free to join",
-      "language": [
-        "en"
-      ],
-      "startDate": "2026-06-22T09:00:00-04:00",
-      "sourceUrl": "https://www.hhpl.ca/computers",
-      "registrationUrl": "https://www.hhpl.ca/computers",
-      "lastChecked": "2026-06-22",
-      "lastSeen": "2026-06-22",
-      "status": "needs_review",
-      "tags": [
-        "stem",
-        "coding",
-        "technology",
-        "lego",
-        "maker",
-        "programs",
-        "new find",
-        "date-to-confirm"
-      ],
-      "communityFocus": [
-        "Open to all",
-        "Newcomer-friendly"
-      ],
-      "latitude": 43.6306,
-      "longitude": -79.9512,
-      "address": "Halton Hills, Halton",
-      "volunteerHoursEligible": false,
-      "coopEligible": false,
-      "trustedSource": true,
-      "sources": [
-        {
-          "label": "Halton Hills Public Library programs",
-          "url": "https://www.hhpl.ca/computers",
-          "capturedAt": "2026-06-22T09:00:00-04:00",
-          "confidence": "high"
-        }
-      ]
-    },
-    {
-      "id": "discovered-trca-youth-youth-opportunities-at-trca-bd0e50237819",
-      "title": "Youth Opportunities at TRCA",
-      "organization": "Toronto and Region Conservation Authority",
-      "description": "TRCA offers programs to support youth and young adults who are interested in getting involved in the conservation sector.",
-      "city": "Toronto",
-      "region": "Toronto",
-      "ageMin": 13,
-      "ageMax": 18,
-      "category": "STEM",
-      "categories": [
-        "STEM"
-      ],
-      "cost": "Free to join",
-      "language": [
-        "en"
-      ],
-      "startDate": "2026-06-22T09:00:00-04:00",
-      "sourceUrl": "https://trca.ca/get-involved/youth-opportunities",
-      "registrationUrl": "https://trca.ca/get-involved/youth-opportunities",
-      "lastChecked": "2026-06-22",
-      "lastSeen": "2026-06-22",
-      "status": "needs_review",
-      "tags": [
-        "stem",
-        "youth",
-        "volunteer",
-        "conservation",
-        "environment",
-        "science",
-        "new find",
-        "date-to-confirm"
-      ],
-      "communityFocus": [
-        "Open to all",
-        "Newcomer-friendly"
-      ],
-      "latitude": 43.6532,
-      "longitude": -79.3832,
-      "address": "Toronto, Toronto",
-      "volunteerHoursEligible": true,
-      "coopEligible": false,
-      "trustedSource": false,
-      "sources": [
-        {
-          "label": "TRCA youth volunteer opportunities",
-          "url": "https://trca.ca/get-involved/youth-opportunities",
-          "capturedAt": "2026-06-22T09:00:00-04:00",
-          "confidence": "medium"
-        }
-      ]
-    },
-    {
-      "id": "discovered-trca-youth-volunteer-with-trca-cdffdd979d6f",
-      "title": "Volunteer with TRCA",
-      "organization": "Toronto and Region Conservation Authority",
-      "description": "Volunteer with TRCA listed by TRCA youth volunteer opportunities.",
-      "city": "Toronto",
-      "region": "Toronto",
-      "ageMin": 13,
-      "ageMax": 18,
-      "category": "Volunteer Hours",
-      "categories": [
-        "Volunteer Hours",
-        "STEM"
-      ],
-      "cost": "Free to join",
-      "language": [
-        "en"
-      ],
-      "startDate": "2026-06-22T09:00:00-04:00",
-      "sourceUrl": "https://trca.ca/get-involved/volunteer",
-      "registrationUrl": "https://trca.ca/get-involved/volunteer",
-      "lastChecked": "2026-06-22",
-      "lastSeen": "2026-06-22",
-      "status": "needs_review",
-      "tags": [
-        "volunteer hours",
-        "youth",
-        "volunteer",
-        "conservation",
-        "environment",
-        "science",
-        "new find",
-        "date-to-confirm"
-      ],
-      "communityFocus": [
-        "Open to all",
-        "Newcomer-friendly"
-      ],
-      "latitude": 43.6532,
-      "longitude": -79.3832,
-      "address": "Toronto, Toronto",
-      "volunteerHoursEligible": true,
-      "coopEligible": false,
-      "trustedSource": false,
-      "sources": [
-        {
-          "label": "TRCA youth volunteer opportunities",
-          "url": "https://trca.ca/get-involved/volunteer",
-          "capturedAt": "2026-06-22T09:00:00-04:00",
-          "confidence": "medium"
-        }
-      ]
-    },
-    {
-      "id": "discovered-trca-youth-young-conservation-professionals-leadershi-275035142ede",
-      "title": "Young Conservation Professionals Leadership Program",
-      "organization": "Toronto and Region Conservation Authority",
-      "description": "Young Conservation Professionals Leadership Program listed by TRCA youth volunteer opportunities.",
-      "city": "Toronto",
-      "region": "Toronto",
-      "ageMin": 13,
-      "ageMax": 18,
-      "category": "Volunteer Hours",
-      "categories": [
-        "Volunteer Hours",
-        "STEM"
-      ],
-      "cost": "Free to join",
-      "language": [
-        "en"
-      ],
-      "startDate": "2026-06-22T09:00:00-04:00",
-      "sourceUrl": "https://trca.ca/learning/adult/young-conservation-professionals",
-      "registrationUrl": "https://trca.ca/learning/adult/young-conservation-professionals",
-      "lastChecked": "2026-06-22",
-      "lastSeen": "2026-06-22",
-      "status": "needs_review",
-      "tags": [
-        "volunteer hours",
-        "youth",
-        "volunteer",
-        "conservation",
-        "environment",
-        "science",
-        "new find",
-        "date-to-confirm"
-      ],
-      "communityFocus": [
-        "Open to all",
-        "Newcomer-friendly"
-      ],
-      "latitude": 43.6532,
-      "longitude": -79.3832,
-      "address": "Toronto, Toronto",
-      "volunteerHoursEligible": true,
-      "coopEligible": false,
-      "trustedSource": false,
-      "sources": [
-        {
-          "label": "TRCA youth volunteer opportunities",
-          "url": "https://trca.ca/learning/adult/young-conservation-professionals",
-          "capturedAt": "2026-06-22T09:00:00-04:00",
-          "confidence": "medium"
-        }
-      ]
-    },
-    {
-      "id": "discovered-uhn-stem-pathways-uhn-stem-pathways-7847b49cfe74",
-      "title": "UHN STEM Pathways",
-      "organization": "UHN STEM Pathways",
-      "description": "UHN STEM Pathways from UHN STEM Pathways.",
-      "city": "Toronto",
-      "region": "Toronto",
-      "ageMin": 1,
-      "ageMax": 18,
-      "category": "STEM",
-      "categories": [
-        "STEM"
-      ],
-      "cost": "Free to join",
-      "language": [
-        "en"
-      ],
-      "startDate": "2026-06-22T09:00:00-04:00",
-      "sourceUrl": "https://uhnstempathways.ca",
-      "registrationUrl": "https://uhnstempathways.ca",
-      "lastChecked": "2026-06-22",
-      "lastSeen": "2026-06-22",
-      "status": "needs_review",
-      "tags": [
-        "stem",
-        "science",
-        "health",
-        "workshop",
-        "underserved",
-        "youth",
-        "new find",
-        "date-to-confirm"
-      ],
-      "communityFocus": [
-        "Open to all",
-        "Newcomer-friendly"
-      ],
-      "latitude": 43.6532,
-      "longitude": -79.3832,
-      "address": "Toronto, Toronto",
-      "volunteerHoursEligible": false,
-      "coopEligible": false,
-      "trustedSource": false,
-      "sources": [
-        {
-          "label": "UHN STEM Pathways",
-          "url": "https://uhnstempathways.ca",
-          "capturedAt": "2026-06-22T09:00:00-04:00",
-          "confidence": "medium"
-        }
-      ]
-    },
-    {
-      "id": "discovered-uhn-stem-pathways-volunteer-spotlight-ff9c6a9238e5",
-      "title": "Volunteer Spotlight",
-      "organization": "UHN STEM Pathways",
-      "description": "Volunteer Spotlight listed by UHN STEM Pathways.",
-      "city": "Toronto",
-      "region": "Toronto",
-      "ageMin": 1,
-      "ageMax": 18,
-      "category": "Volunteer Hours",
-      "categories": [
-        "Volunteer Hours",
-        "STEM"
-      ],
-      "cost": "Free to join",
-      "language": [
-        "en"
-      ],
-      "startDate": "2026-06-22T09:00:00-04:00",
-      "sourceUrl": "https://uhnstempathways.ca/volunteer-spotlight",
-      "registrationUrl": "https://uhnstempathways.ca/volunteer-spotlight",
-      "lastChecked": "2026-06-22",
-      "lastSeen": "2026-06-22",
-      "status": "needs_review",
-      "tags": [
-        "volunteer hours",
-        "stem",
-        "science",
-        "health",
-        "workshop",
-        "underserved",
-        "youth",
-        "new find",
-        "date-to-confirm"
-      ],
-      "communityFocus": [
-        "Open to all",
-        "Newcomer-friendly"
-      ],
-      "latitude": 43.6532,
-      "longitude": -79.3832,
-      "address": "Toronto, Toronto",
-      "volunteerHoursEligible": true,
-      "coopEligible": false,
-      "trustedSource": false,
-      "sources": [
-        {
-          "label": "UHN STEM Pathways",
-          "url": "https://uhnstempathways.ca/volunteer-spotlight",
-          "capturedAt": "2026-06-22T09:00:00-04:00",
-          "confidence": "medium"
-        }
-      ]
-    },
-    {
-      "id": "discovered-uhn-stem-pathways-folder-volunteers-04eb7154ed70",
-      "title": "Folder: Volunteers",
-      "organization": "UHN STEM Pathways",
-      "description": "Folder: Volunteers listed by UHN STEM Pathways.",
-      "city": "Toronto",
-      "region": "Toronto",
-      "ageMin": 1,
-      "ageMax": 18,
-      "category": "Volunteer Hours",
-      "categories": [
-        "Volunteer Hours",
-        "STEM"
-      ],
-      "cost": "Free to join",
-      "language": [
-        "en"
-      ],
-      "startDate": "2026-06-22T09:00:00-04:00",
-      "sourceUrl": "https://uhnstempathways.ca/volunteers",
-      "registrationUrl": "https://uhnstempathways.ca/volunteers",
-      "lastChecked": "2026-06-22",
-      "lastSeen": "2026-06-22",
-      "status": "needs_review",
-      "tags": [
-        "volunteer hours",
-        "stem",
-        "science",
-        "health",
-        "workshop",
-        "underserved",
-        "youth",
-        "new find",
-        "date-to-confirm"
-      ],
-      "communityFocus": [
-        "Open to all",
-        "Newcomer-friendly"
-      ],
-      "latitude": 43.6532,
-      "longitude": -79.3832,
-      "address": "Toronto, Toronto",
-      "volunteerHoursEligible": true,
-      "coopEligible": false,
-      "trustedSource": false,
-      "sources": [
-        {
-          "label": "UHN STEM Pathways",
-          "url": "https://uhnstempathways.ca/volunteers",
-          "capturedAt": "2026-06-22T09:00:00-04:00",
-          "confidence": "medium"
-        }
-      ]
-    },
-    {
-      "id": "discovered-uhn-stem-pathways-upcoming-stem-talks-2025-26-213b62cbcb46",
-      "title": "Upcoming STEM Talks - 2025/26",
-      "organization": "UHN STEM Pathways",
-      "description": "Upcoming STEM Talks - 2025/26 listed by UHN STEM Pathways.",
-      "city": "Toronto",
-      "region": "Toronto",
-      "ageMin": 1,
-      "ageMax": 18,
-      "category": "STEM",
-      "categories": [
-        "STEM"
-      ],
-      "cost": "Free to join",
-      "language": [
-        "en"
-      ],
-      "startDate": "2026-06-22T09:00:00-04:00",
-      "sourceUrl": "https://uhnstempathways.ca/upcoming/stem-talks-2025-overview",
-      "registrationUrl": "https://uhnstempathways.ca/upcoming/stem-talks-2025-overview",
-      "lastChecked": "2026-06-22",
-      "lastSeen": "2026-06-22",
-      "status": "needs_review",
-      "tags": [
-        "stem",
-        "science",
-        "health",
-        "workshop",
-        "underserved",
-        "youth",
-        "new find",
-        "date-to-confirm"
-      ],
-      "communityFocus": [
-        "Open to all",
-        "Newcomer-friendly"
-      ],
-      "latitude": 43.6532,
-      "longitude": -79.3832,
-      "address": "Toronto, Toronto",
-      "volunteerHoursEligible": false,
-      "coopEligible": false,
-      "trustedSource": false,
-      "sources": [
-        {
-          "label": "UHN STEM Pathways",
-          "url": "https://uhnstempathways.ca/upcoming/stem-talks-2025-overview",
-          "capturedAt": "2026-06-22T09:00:00-04:00",
-          "confidence": "medium"
-        }
-      ]
-    },
-    {
-      "id": "discovered-uoft-engineering-outreach-home-engineering-outreach-9f92ae9e4cb2",
-      "title": "Home - Engineering Outreach",
-      "organization": "University of Toronto Engineering Outreach",
-      "description": "Explore our Pre-University Programs! Engineering Outreach is dedicated to inspiring bright young minds from grades 3-12 with a wide spectrum of pre-university STEM programs. Discover our offerings for elementary, high [&hellip;]",
-      "city": "Toronto",
-      "region": "Toronto",
-      "ageMin": 8,
-      "ageMax": 18,
       "category": "Science & Engineering",
       "categories": [
         "Science & Engineering",
@@ -19094,8 +18675,8 @@
         "en"
       ],
       "startDate": "2026-06-22T09:00:00-04:00",
-      "sourceUrl": "https://outreach.engineering.utoronto.ca",
-      "registrationUrl": "https://outreach.engineering.utoronto.ca",
+      "sourceUrl": "https://engineering.ontariotechu.ca/outreach/index.php",
+      "registrationUrl": "https://engineering.ontariotechu.ca/outreach/index.php",
       "lastChecked": "2026-06-22",
       "lastSeen": "2026-06-22",
       "status": "needs_review",
@@ -19114,28 +18695,28 @@
         "Open to all",
         "Newcomer-friendly"
       ],
-      "latitude": 43.6532,
-      "longitude": -79.3832,
-      "address": "Toronto, Toronto",
+      "latitude": 43.8971,
+      "longitude": -78.8658,
+      "address": "Oshawa, Durham",
       "volunteerHoursEligible": false,
       "coopEligible": false,
       "trustedSource": false,
       "sources": [
         {
-          "label": "University of Toronto Engineering Outreach",
-          "url": "https://outreach.engineering.utoronto.ca",
+          "label": "Ontario Tech Engineering Outreach",
+          "url": "https://engineering.ontariotechu.ca/outreach/index.php",
           "capturedAt": "2026-06-22T09:00:00-04:00",
           "confidence": "medium"
         }
       ]
     },
     {
-      "id": "discovered-uoft-engineering-outreach-u-of-t-engineering-1da89280bbbd",
-      "title": "U of T ENGINEERING",
-      "organization": "University of Toronto Engineering Outreach",
-      "description": "U of T ENGINEERING listed by University of Toronto Engineering Outreach.",
-      "city": "Toronto",
-      "region": "Toronto",
+      "id": "discovered-ontario-tech-engineering-outreach-engineering-outreach-supporters-182433c06ecc",
+      "title": "Engineering Outreach Supporters",
+      "organization": "Ontario Tech University Engineering Outreach",
+      "description": "Engineering Outreach Supporters listed by Ontario Tech Engineering Outreach.",
+      "city": "Oshawa",
+      "region": "Durham",
       "ageMin": 1,
       "ageMax": 18,
       "category": "Science & Engineering",
@@ -19148,8 +18729,8 @@
         "en"
       ],
       "startDate": "2026-06-22T09:00:00-04:00",
-      "sourceUrl": "https://www.engineering.utoronto.ca",
-      "registrationUrl": "https://www.engineering.utoronto.ca",
+      "sourceUrl": "https://engineering.ontariotechu.ca/outreach/about-us/outreach-supporters.php",
+      "registrationUrl": "https://engineering.ontariotechu.ca/outreach/about-us/outreach-supporters.php",
       "lastChecked": "2026-06-22",
       "lastSeen": "2026-06-22",
       "status": "needs_review",
@@ -19168,28 +18749,28 @@
         "Open to all",
         "Newcomer-friendly"
       ],
-      "latitude": 43.6532,
-      "longitude": -79.3832,
-      "address": "Toronto, Toronto",
+      "latitude": 43.8971,
+      "longitude": -78.8658,
+      "address": "Oshawa, Durham",
       "volunteerHoursEligible": false,
       "coopEligible": false,
       "trustedSource": false,
       "sources": [
         {
-          "label": "University of Toronto Engineering Outreach",
-          "url": "https://www.engineering.utoronto.ca",
+          "label": "Ontario Tech Engineering Outreach",
+          "url": "https://engineering.ontariotechu.ca/outreach/about-us/outreach-supporters.php",
           "capturedAt": "2026-06-22T09:00:00-04:00",
           "confidence": "medium"
         }
       ]
     },
     {
-      "id": "discovered-uoft-engineering-outreach-about-engineering-outreach-f1d9659ef0b8",
-      "title": "About Engineering Outreach",
-      "organization": "University of Toronto Engineering Outreach",
-      "description": "About Engineering Outreach listed by University of Toronto Engineering Outreach.",
-      "city": "Toronto",
-      "region": "Toronto",
+      "id": "discovered-ontario-tech-engineering-outreach-engineering-outreach-in-the-community-97cd2a77dd32",
+      "title": "Engineering Outreach in the Community",
+      "organization": "Ontario Tech University Engineering Outreach",
+      "description": "Engineering Outreach in the Community listed by Ontario Tech Engineering Outreach.",
+      "city": "Oshawa",
+      "region": "Durham",
       "ageMin": 1,
       "ageMax": 18,
       "category": "Science & Engineering",
@@ -19202,8 +18783,8 @@
         "en"
       ],
       "startDate": "2026-06-22T09:00:00-04:00",
-      "sourceUrl": "https://outreach.engineering.utoronto.ca/about-us",
-      "registrationUrl": "https://outreach.engineering.utoronto.ca/about-us",
+      "sourceUrl": "https://engineering.ontariotechu.ca/outreach/about-us/in-the-community.php",
+      "registrationUrl": "https://engineering.ontariotechu.ca/outreach/about-us/in-the-community.php",
       "lastChecked": "2026-06-22",
       "lastSeen": "2026-06-22",
       "status": "needs_review",
@@ -19222,28 +18803,28 @@
         "Open to all",
         "Newcomer-friendly"
       ],
-      "latitude": 43.6532,
-      "longitude": -79.3832,
-      "address": "Toronto, Toronto",
+      "latitude": 43.8971,
+      "longitude": -78.8658,
+      "address": "Oshawa, Durham",
       "volunteerHoursEligible": false,
       "coopEligible": false,
       "trustedSource": false,
       "sources": [
         {
-          "label": "University of Toronto Engineering Outreach",
-          "url": "https://outreach.engineering.utoronto.ca/about-us",
+          "label": "Ontario Tech Engineering Outreach",
+          "url": "https://engineering.ontariotechu.ca/outreach/about-us/in-the-community.php",
           "capturedAt": "2026-06-22T09:00:00-04:00",
           "confidence": "medium"
         }
       ]
     },
     {
-      "id": "discovered-uoft-engineering-outreach-create-engineering-design-challenges-33057fc93678",
-      "title": "CREATE: Engineering Design Challenges »",
-      "organization": "University of Toronto Engineering Outreach",
-      "description": "CREATE: Engineering Design Challenges » listed by University of Toronto Engineering Outreach.",
-      "city": "Toronto",
-      "region": "Toronto",
+      "id": "discovered-ontario-tech-engineering-outreach-traditional-knowledge-and-stem-conference-08e0a500e84e",
+      "title": "Traditional Knowledge and STEM Conference",
+      "organization": "Ontario Tech University Engineering Outreach",
+      "description": "Traditional Knowledge and STEM Conference listed by Ontario Tech Engineering Outreach.",
+      "city": "Oshawa",
+      "region": "Durham",
       "ageMin": 1,
       "ageMax": 18,
       "category": "Science & Engineering",
@@ -19256,8 +18837,8 @@
         "en"
       ],
       "startDate": "2026-06-22T09:00:00-04:00",
-      "sourceUrl": "https://outreach.engineering.utoronto.ca/pre-university-programs/high-school-program/create",
-      "registrationUrl": "https://outreach.engineering.utoronto.ca/pre-university-programs/high-school-program/create",
+      "sourceUrl": "https://docs.google.com/forms/d/e/1FAIpQLScCVdFb5HmbdhkEG1uIDjWOTByDFojpUGTY-bmAe6Y41gHbMg/viewform",
+      "registrationUrl": "https://docs.google.com/forms/d/e/1FAIpQLScCVdFb5HmbdhkEG1uIDjWOTByDFojpUGTY-bmAe6Y41gHbMg/viewform",
       "lastChecked": "2026-06-22",
       "lastSeen": "2026-06-22",
       "status": "needs_review",
@@ -19276,136 +18857,28 @@
         "Open to all",
         "Newcomer-friendly"
       ],
-      "latitude": 43.6532,
-      "longitude": -79.3832,
-      "address": "Toronto, Toronto",
+      "latitude": 43.8971,
+      "longitude": -78.8658,
+      "address": "Oshawa, Durham",
       "volunteerHoursEligible": false,
       "coopEligible": false,
       "trustedSource": false,
       "sources": [
         {
-          "label": "University of Toronto Engineering Outreach",
-          "url": "https://outreach.engineering.utoronto.ca/pre-university-programs/high-school-program/create",
+          "label": "Ontario Tech Engineering Outreach",
+          "url": "https://docs.google.com/forms/d/e/1FAIpQLScCVdFb5HmbdhkEG1uIDjWOTByDFojpUGTY-bmAe6Y41gHbMg/viewform",
           "capturedAt": "2026-06-22T09:00:00-04:00",
           "confidence": "medium"
         }
       ]
     },
     {
-      "id": "discovered-uoft-engineering-outreach-ready-set-code-5a16f2c8d362",
-      "title": "Ready Set Code! »",
-      "organization": "University of Toronto Engineering Outreach",
-      "description": "Ready Set Code! » listed by University of Toronto Engineering Outreach.",
-      "city": "Toronto",
-      "region": "Toronto",
-      "ageMin": 1,
-      "ageMax": 18,
-      "category": "Science & Engineering",
-      "categories": [
-        "Science & Engineering",
-        "STEM"
-      ],
-      "cost": "Free to join",
-      "language": [
-        "en"
-      ],
-      "startDate": "2026-06-22T09:00:00-04:00",
-      "sourceUrl": "https://outreach.engineering.utoronto.ca/pre-university-programs/elementary/ready-set-code",
-      "registrationUrl": "https://outreach.engineering.utoronto.ca/pre-university-programs/elementary/ready-set-code",
-      "lastChecked": "2026-06-22",
-      "lastSeen": "2026-06-22",
-      "status": "needs_review",
-      "tags": [
-        "science & engineering",
-        "engineering",
-        "stem",
-        "science",
-        "coding",
-        "youth",
-        "workshop",
-        "new find",
-        "date-to-confirm"
-      ],
-      "communityFocus": [
-        "Open to all",
-        "Newcomer-friendly"
-      ],
-      "latitude": 43.6532,
-      "longitude": -79.3832,
-      "address": "Toronto, Toronto",
-      "volunteerHoursEligible": false,
-      "coopEligible": false,
-      "trustedSource": false,
-      "sources": [
-        {
-          "label": "University of Toronto Engineering Outreach",
-          "url": "https://outreach.engineering.utoronto.ca/pre-university-programs/elementary/ready-set-code",
-          "capturedAt": "2026-06-22T09:00:00-04:00",
-          "confidence": "medium"
-        }
-      ]
-    },
-    {
-      "id": "discovered-uoft-engineering-outreach-engineering-discovery-day-77f23ff7203c",
-      "title": "Engineering Discovery Day »",
-      "organization": "University of Toronto Engineering Outreach",
-      "description": "Engineering Discovery Day » listed by University of Toronto Engineering Outreach.",
-      "city": "Toronto",
-      "region": "Toronto",
-      "ageMin": 1,
-      "ageMax": 18,
-      "category": "Science & Engineering",
-      "categories": [
-        "Science & Engineering",
-        "STEM"
-      ],
-      "cost": "Free to join",
-      "language": [
-        "en"
-      ],
-      "startDate": "2026-06-22T09:00:00-04:00",
-      "sourceUrl": "https://outreach.engineering.utoronto.ca/pre-university-programs/elementary/engineering-discovery-day",
-      "registrationUrl": "https://outreach.engineering.utoronto.ca/pre-university-programs/elementary/engineering-discovery-day",
-      "lastChecked": "2026-06-22",
-      "lastSeen": "2026-06-22",
-      "status": "needs_review",
-      "tags": [
-        "science & engineering",
-        "engineering",
-        "stem",
-        "science",
-        "coding",
-        "youth",
-        "workshop",
-        "new find",
-        "date-to-confirm"
-      ],
-      "communityFocus": [
-        "Open to all",
-        "Newcomer-friendly"
-      ],
-      "latitude": 43.6532,
-      "longitude": -79.3832,
-      "address": "Toronto, Toronto",
-      "volunteerHoursEligible": false,
-      "coopEligible": false,
-      "trustedSource": false,
-      "sources": [
-        {
-          "label": "University of Toronto Engineering Outreach",
-          "url": "https://outreach.engineering.utoronto.ca/pre-university-programs/elementary/engineering-discovery-day",
-          "capturedAt": "2026-06-22T09:00:00-04:00",
-          "confidence": "medium"
-        }
-      ]
-    },
-    {
-      "id": "discovered-uoft-engineering-outreach-volunteer-opportunities-0caedcfe66e2",
-      "title": "Volunteer Opportunities",
-      "organization": "University of Toronto Engineering Outreach",
-      "description": "Volunteer Opportunities listed by University of Toronto Engineering Outreach.",
-      "city": "Toronto",
-      "region": "Toronto",
+      "id": "discovered-ontario-tech-engineering-outreach-volunteer-with-us-fd0687f56430",
+      "title": "Volunteer With Us",
+      "organization": "Ontario Tech University Engineering Outreach",
+      "description": "Volunteer With Us listed by Ontario Tech Engineering Outreach.",
+      "city": "Oshawa",
+      "region": "Durham",
       "ageMin": 1,
       "ageMax": 18,
       "category": "Volunteer Hours",
@@ -19418,8 +18891,8 @@
         "en"
       ],
       "startDate": "2026-06-22T09:00:00-04:00",
-      "sourceUrl": "https://outreach.engineering.utoronto.ca/about-us/volunteer-opportunities",
-      "registrationUrl": "https://outreach.engineering.utoronto.ca/about-us/volunteer-opportunities",
+      "sourceUrl": "https://engineering.ontariotechu.ca/outreach/about-us/volunteer.php",
+      "registrationUrl": "https://engineering.ontariotechu.ca/outreach/about-us/volunteer.php",
       "lastChecked": "2026-06-22",
       "lastSeen": "2026-06-22",
       "status": "needs_review",
@@ -19438,179 +18911,16 @@
         "Open to all",
         "Newcomer-friendly"
       ],
-      "latitude": 43.6532,
-      "longitude": -79.3832,
-      "address": "Toronto, Toronto",
+      "latitude": 43.8971,
+      "longitude": -78.8658,
+      "address": "Oshawa, Durham",
       "volunteerHoursEligible": true,
       "coopEligible": false,
       "trustedSource": false,
       "sources": [
         {
-          "label": "University of Toronto Engineering Outreach",
-          "url": "https://outreach.engineering.utoronto.ca/about-us/volunteer-opportunities",
-          "capturedAt": "2026-06-22T09:00:00-04:00",
-          "confidence": "medium"
-        }
-      ]
-    },
-    {
-      "id": "discovered-uoft-engineering-outreach-student-data-practices-92ddd2c683bc",
-      "title": "Student Data Practices",
-      "organization": "University of Toronto Engineering Outreach",
-      "description": "Student Data Practices listed by University of Toronto Engineering Outreach.",
-      "city": "Toronto",
-      "region": "Toronto",
-      "ageMin": 1,
-      "ageMax": 18,
-      "category": "Science & Engineering",
-      "categories": [
-        "Science & Engineering",
-        "STEM"
-      ],
-      "cost": "Free to join",
-      "language": [
-        "en"
-      ],
-      "startDate": "2026-06-22T09:00:00-04:00",
-      "sourceUrl": "https://data.viceprovoststudents.utoronto.ca",
-      "registrationUrl": "https://data.viceprovoststudents.utoronto.ca",
-      "lastChecked": "2026-06-22",
-      "lastSeen": "2026-06-22",
-      "status": "needs_review",
-      "tags": [
-        "science & engineering",
-        "engineering",
-        "stem",
-        "science",
-        "coding",
-        "youth",
-        "workshop",
-        "new find",
-        "date-to-confirm"
-      ],
-      "communityFocus": [
-        "Open to all",
-        "Newcomer-friendly"
-      ],
-      "latitude": 43.6532,
-      "longitude": -79.3832,
-      "address": "Toronto, Toronto",
-      "volunteerHoursEligible": false,
-      "coopEligible": false,
-      "trustedSource": false,
-      "sources": [
-        {
-          "label": "University of Toronto Engineering Outreach",
-          "url": "https://data.viceprovoststudents.utoronto.ca",
-          "capturedAt": "2026-06-22T09:00:00-04:00",
-          "confidence": "medium"
-        }
-      ]
-    },
-    {
-      "id": "discovered-eventbrite-free-science-tech-free-stem-mental-wellness-workshop-for-you-ec3d4056e200",
-      "title": "FREE STEM & Mental Wellness Workshop for Youth",
-      "organization": "Eventbrite public event search",
-      "description": "FREE STEM & Mental Wellness Workshop for Youth listed by Eventbrite free science and technology events.",
-      "city": "Toronto",
-      "region": "Toronto",
-      "ageMin": 13,
-      "ageMax": 18,
-      "category": "Science & Engineering",
-      "categories": [
-        "Science & Engineering",
-        "STEM"
-      ],
-      "cost": "Free to join",
-      "language": [
-        "en"
-      ],
-      "startDate": "2026-06-22T09:00:00-04:00",
-      "sourceUrl": "https://www.eventbrite.ca/e/free-stem-mental-wellness-workshop-for-youth-tickets-1992318488230?aff=ebdssbdestsearch",
-      "registrationUrl": "https://www.eventbrite.ca/e/free-stem-mental-wellness-workshop-for-youth-tickets-1992318488230?aff=ebdssbdestsearch",
-      "lastChecked": "2026-06-22",
-      "lastSeen": "2026-06-22",
-      "status": "needs_review",
-      "tags": [
-        "science & engineering",
-        "free",
-        "science",
-        "technology",
-        "hackathon",
-        "coding",
-        "robotics",
-        "new find",
-        "date-to-confirm"
-      ],
-      "communityFocus": [
-        "Open to all",
-        "Newcomer-friendly"
-      ],
-      "latitude": 43.6532,
-      "longitude": -79.3832,
-      "address": "Toronto, Toronto",
-      "volunteerHoursEligible": false,
-      "coopEligible": false,
-      "trustedSource": false,
-      "sources": [
-        {
-          "label": "Eventbrite free science and technology events",
-          "url": "https://www.eventbrite.ca/e/free-stem-mental-wellness-workshop-for-youth-tickets-1992318488230?aff=ebdssbdestsearch",
-          "capturedAt": "2026-06-22T09:00:00-04:00",
-          "confidence": "medium"
-        }
-      ]
-    },
-    {
-      "id": "discovered-eventbrite-free-online-science-tech-from-commitments-to-climate-justice-food-s-757f409c0fd0",
-      "title": "From Commitments to Climate Justice: Food Systems & Rural Resilience",
-      "organization": "Eventbrite public event search",
-      "description": "From Commitments to Climate Justice: Food Systems & Rural Resilience listed by Eventbrite free online science and technology events.",
-      "city": "Toronto",
-      "region": "Toronto",
-      "ageMin": 1,
-      "ageMax": 18,
-      "category": "Science & Engineering",
-      "categories": [
-        "Science & Engineering",
-        "STEM"
-      ],
-      "cost": "Free to join",
-      "language": [
-        "en"
-      ],
-      "startDate": "2026-06-22T09:00:00-04:00",
-      "sourceUrl": "https://www.eventbrite.com/e/from-commitments-to-climate-justice-food-systems-rural-resilience-tickets-1989641315735?aff=ebdssbdestsearch",
-      "registrationUrl": "https://www.eventbrite.com/e/from-commitments-to-climate-justice-food-systems-rural-resilience-tickets-1989641315735?aff=ebdssbdestsearch",
-      "lastChecked": "2026-06-22",
-      "lastSeen": "2026-06-22",
-      "status": "needs_review",
-      "tags": [
-        "science & engineering",
-        "free",
-        "online",
-        "science",
-        "technology",
-        "hackathon",
-        "coding",
-        "robotics",
-        "new find",
-        "date-to-confirm"
-      ],
-      "communityFocus": [
-        "Open to all",
-        "Newcomer-friendly"
-      ],
-      "latitude": 43.6532,
-      "longitude": -79.3832,
-      "address": "Toronto, Toronto",
-      "volunteerHoursEligible": false,
-      "coopEligible": false,
-      "trustedSource": false,
-      "sources": [
-        {
-          "label": "Eventbrite free online science and technology events",
-          "url": "https://www.eventbrite.com/e/from-commitments-to-climate-justice-food-systems-rural-resilience-tickets-1989641315735?aff=ebdssbdestsearch",
+          "label": "Ontario Tech Engineering Outreach",
+          "url": "https://engineering.ontariotechu.ca/outreach/about-us/volunteer.php",
           "capturedAt": "2026-06-22T09:00:00-04:00",
           "confidence": "medium"
         }
