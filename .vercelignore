@@ -1,0 +1,17 @@
+# Keep local package-manager experiments out of Vercel CLI uploads.
+pnpm-lock.yaml
+pnpm-workspace.yaml
+
+# Local build/runtime artifacts.
+node_modules/
+.next/
+out/
+.vercel/
+.wrangler/
+
+# Local secrets and verification output.
+.env
+.env.*
+!.env.example
+verification/
+artifacts/
