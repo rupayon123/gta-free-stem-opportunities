@@ -1,9 +1,37 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 import { dirname } from "node:path";
-import { opportunities } from "../lib/data";
+import { languagePreferenceOrder, opportunities } from "../lib/data";
+import { translatedCategory, translatedFreeCost, translatedSummary } from "../lib/i18n";
 import { publicOpportunities } from "../lib/opportunityStatus";
+import type { LanguageCode, Opportunity } from "../lib/types";
 
 const outputPath = process.env.GTA_PUBLIC_OPPORTUNITIES_EXPORT ?? "public/opportunities.json";
+
+function opportunityTranslations(opportunity: Opportunity) {
+  return Object.fromEntries(
+    languagePreferenceOrder
+      .filter((language): language is Exclude<LanguageCode, "en"> => language !== "en")
+      .map((language) => {
+        const summary = translatedSummary(opportunity, language);
+        const localizedCategory = translatedCategory(opportunity.categories[0], language);
+        const localizedCategoryTags = Array.from(
+          new Set(opportunity.categories.map((category) => translatedCategory(category, language)))
+        );
+        return [
+          language,
+          {
+            summary,
+            description: summary,
+            category: localizedCategory,
+            cost: translatedFreeCost(language),
+            tags: localizedCategoryTags,
+            translationSource: "generated-summary-template"
+          }
+        ];
+      })
+  );
+}
+
 const publicListings = publicOpportunities(opportunities).map((opportunity) => ({
   id: opportunity.id,
   title: opportunity.title,
@@ -33,7 +61,8 @@ const publicListings = publicOpportunities(opportunities).map((opportunity) => (
   volunteerHoursEligible: opportunity.volunteerHoursEligible,
   coopEligible: opportunity.coopEligible,
   trustedSource: opportunity.trustedSource,
-  sources: opportunity.sources
+  sources: opportunity.sources,
+  translations: opportunityTranslations(opportunity)
 }));
 
 const lastDataChange = publicListings

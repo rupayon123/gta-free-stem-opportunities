@@ -1,3 +1,4 @@
+import { readFileSync } from "node:fs";
 import { categories, languagePreferenceOrder, opportunities } from "../lib/data";
 import { languageMeta, t, translatedSummary } from "../lib/i18n";
 import { isPublicOpportunity, publicOpportunities } from "../lib/opportunityStatus";
@@ -157,6 +158,62 @@ const expiredClone = {
 assert(!isPublicOpportunity(expiredClone), "Date-expired active listings must be hidden from public search.");
 assert(!publicOpportunities([...opportunities, expiredClone]).some((opportunity) => opportunity.id === expiredClone.id), "Expired listings must not appear in public results.");
 
+const launchTranslationLanguages = languagePreferenceOrder.filter(
+  (language): language is Exclude<LanguageCode, "en"> => language !== "en"
+);
+const exportedFeed = JSON.parse(readFileSync("public/opportunities.json", "utf8")) as {
+  count?: number;
+  opportunities?: Array<{
+    id?: string;
+    translations?: Record<
+      string,
+      {
+        title?: string;
+        summary?: string;
+        description?: string;
+        category?: string;
+        cost?: string;
+        tags?: string[];
+      }
+    >;
+  }>;
+};
+const exportedListings = exportedFeed.opportunities ?? [];
+const hasText = (value: unknown) => typeof value === "string" && value.trim().length > 0;
+const hasGeneratedSummary = (translation: { summary?: string; description?: string } | undefined) =>
+  hasText(translation?.summary) || hasText(translation?.description);
+const hasLocalizedCategory = (translation: { category?: string; tags?: string[] } | undefined) =>
+  hasText(translation?.category) || Boolean(translation?.tags?.some(hasText));
+const hasLocalizedCost = (translation: { cost?: string } | undefined) =>
+  hasText(translation?.cost) && translation?.cost !== "Free";
+
+assert(exportedFeed.count === exportedListings.length, "Exported feed count must match exported opportunities.");
+assert(exportedListings.length === publicListings.length, "Exported feed must match public listing count.");
+const fullSummaryCoverage = exportedListings.filter((opportunity) =>
+  launchTranslationLanguages.every((language) => hasGeneratedSummary(opportunity.translations?.[language]))
+).length;
+const fullCategoryCoverage = exportedListings.filter((opportunity) =>
+  launchTranslationLanguages.every((language) => hasLocalizedCategory(opportunity.translations?.[language]))
+).length;
+const fullCostCoverage = exportedListings.filter((opportunity) =>
+  launchTranslationLanguages.every((language) => hasLocalizedCost(opportunity.translations?.[language]))
+).length;
+const anyTitleCoverage = exportedListings.filter((opportunity) =>
+  launchTranslationLanguages.some((language) => hasText(opportunity.translations?.[language]?.title))
+).length;
+assert(
+  fullSummaryCoverage === exportedListings.length,
+  "Every exported opportunity needs generated summary/description coverage for every non-English launch language."
+);
+assert(
+  fullCategoryCoverage === exportedListings.length,
+  "Every exported opportunity needs localized category coverage for every non-English launch language."
+);
+assert(
+  fullCostCoverage === exportedListings.length,
+  "Every exported opportunity needs localized cost coverage for every non-English launch language."
+);
+
 const allResults = filterOpportunities(opportunities, baseFilters, null);
 assert(allResults.length === publicListings.length, "Default search should return public active and newly found opportunities.");
 
@@ -215,3 +272,7 @@ console.log(`Opportunities: ${opportunities.length}`);
 console.log(`Default results: ${allResults.length}`);
 console.log(`Co-op results: ${coopResults.length}`);
 console.log(`Nearby L5B results: ${nearbyResults.length}`);
+console.log(`Exported summary coverage: ${fullSummaryCoverage}/${exportedListings.length}`);
+console.log(`Exported category coverage: ${fullCategoryCoverage}/${exportedListings.length}`);
+console.log(`Exported cost coverage: ${fullCostCoverage}/${exportedListings.length}`);
+console.log(`Exported reviewed title coverage: ${anyTitleCoverage}/${exportedListings.length}`);

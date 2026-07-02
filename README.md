@@ -97,6 +97,8 @@ Public search hides listings after their `endDate`, `deadline`, or `startDate` p
 
 The scheduled workflow reference is in `docs/refresh-opportunities-workflow.yml`. It is designed to refresh public data, run QA/build checks, and commit updated static listing files when source feeds change.
 
+The public feed export adds generated summary translations, localized category metadata, and localized cost metadata for every non-English launch language under each listing's `translations` payload. These are free, deterministic browsing summaries built from listing metadata. Full public-release content translation still needs reviewed translated titles, organization names, addresses, source-specific tags, and richer descriptions before every dynamic field can be considered fully translated.
+
 ## Security And Privacy
 
 - Browsing requires no account.
