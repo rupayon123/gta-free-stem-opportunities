@@ -11,7 +11,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "next dev",
-    "build": "next build && cp hosting/static-vercel.json out/vercel.json",
+    "build": "tsx scripts/export-public-opportunities.ts && next build && cp hosting/static-vercel.json out/vercel.json",
     "start": "next start",
     "typecheck": "tsc --noEmit",
     "ingest:dry-run": "tsx scripts/ingest-dry-run.ts",

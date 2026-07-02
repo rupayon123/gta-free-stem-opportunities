@@ -14,12 +14,14 @@ function opportunityTranslations(opportunity: Opportunity) {
       .map((language) => {
         const summary = translatedSummary(opportunity, language);
         const localizedCategory = translatedCategory(opportunity.categories[0], language);
+        const translatedTitle = translatedSummary(opportunity, language).split(".")[0];
         const localizedCategoryTags = Array.from(
           new Set(opportunity.categories.map((category) => translatedCategory(category, language)))
         );
         return [
           language,
           {
+            title: translatedTitle,
             summary,
             description: summary,
             category: localizedCategory,
