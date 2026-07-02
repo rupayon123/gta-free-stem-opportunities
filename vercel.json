@@ -45,6 +45,14 @@
       "destination": "/accessibility-support.html"
     },
     {
+      "source": "/privacy",
+      "destination": "/privacy.html"
+    },
+    {
+      "source": "/privacy/",
+      "destination": "/privacy.html"
+    },
+    {
       "source": "/community-hosts",
       "destination": "/community-hosts.html"
     },

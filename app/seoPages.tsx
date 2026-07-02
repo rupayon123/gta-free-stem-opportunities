@@ -79,6 +79,21 @@ const pages = {
     ],
     keywords: "accessible STEM programs GTA, newcomer family STEM programs, free learning opportunities Toronto"
   },
+  privacy: {
+    path: "/privacy/",
+    title: "Privacy Policy",
+    description:
+      "Privacy policy for GTA FREE STEM Opportunities, including public browsing, optional location use, local storage, accounts, feedback, submissions, and provider links.",
+    heading: "Privacy policy",
+    intro:
+      "GTA FREE STEM Opportunities is designed for public browsing first, with optional account, save, feedback, and submission features when the production backend is connected.",
+    points: [
+      "Browse public STEM opportunity listings without creating an account.",
+      "Use optional location only when you choose nearby search.",
+      "Manage local settings, saved searches, and cached public listings on your device."
+    ],
+    keywords: "GTA FREE STEM privacy policy, STEM opportunities privacy, Toronto education app privacy"
+  },
   communityHosts: {
     path: "/community-hosts/",
     title: "Host Free STEM, Volunteer Hour, Co-op, or SHSM Opportunities in the GTA",
@@ -101,7 +116,7 @@ export type SeoPageKey = keyof typeof pages;
 export function metadataForPage(key: SeoPageKey): Metadata {
   const page = pages[key];
   return {
-    title: `${page.title} | GTA FREE STEM Opportunities`,
+    title: page.title,
     description: page.description,
     keywords: page.keywords,
     alternates: {

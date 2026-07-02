@@ -24,7 +24,7 @@ This project is open source so other cities can fork it, replace the region/sour
 - Source-backed opportunity data from public GTA library, community, conservation, nonprofit, and education sources.
 - Scheduled refresh workflow for rebuilding public listing data from trusted sources.
 - High-school pathway pages for volunteer hours, co-op/SHSM, mentorship, leadership, and career exploration.
-- Accessibility/support and community-host pages.
+- Accessibility/support, privacy-policy, and community-host pages.
 - Light/dark themes, multilingual interface, keyboard-accessible controls, and plain-language listing details.
 
 ## Repo Layout
@@ -104,6 +104,7 @@ The public feed export adds generated summary translations, localized category m
 - Browsing requires no account.
 - Saving requires an account once production auth is connected.
 - Browser location is optional and session-only.
+- Public privacy policy route: `/privacy/`.
 - Public listing pages show source details, not internal admin audit logs.
 - Supabase admin access must be controlled by database rules, not client-side fields.
 - `.env`, `.env.*`, `.vercel`, `.next`, `out`, local artifacts, and build output are ignored by git.

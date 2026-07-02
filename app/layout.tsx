@@ -154,7 +154,6 @@ export default function RootLayout({
           name="subject"
           content="Free and accessible STEM opportunities for students, parents, educators, and community groups across the Greater Toronto Area"
         />
-        <link rel="canonical" href={siteUrl} />
         <link rel="manifest" href="/site.webmanifest" />
         <link rel="icon" type="image/png" sizes="64x64" href="/favicon.png" />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon.png" />
