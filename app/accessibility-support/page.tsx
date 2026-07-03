@@ -1,7 +1,8 @@
-import { metadataForPage, SeoLandingPage } from "../seoPages";
+import { HomePage } from "@/components/HomePage";
+import { metadataForPage } from "../seoPages";
 
 export const metadata = metadataForPage("accessibilitySupport");
 
 export default function AccessibilitySupportPage() {
-  return <SeoLandingPage pageKey="accessibilitySupport" />;
+  return <HomePage initialSurface="support" />;
 }

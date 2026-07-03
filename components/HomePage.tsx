@@ -124,6 +124,10 @@ type HeaderNavigation = {
   communityHosts: () => void;
   feedback: () => void;
 };
+type HomePageProps = {
+  initialSurface?: ActiveSurface;
+  initialFilterOverrides?: Partial<Filters>;
+};
 
 const STORAGE_PREFIX = "gta-stem-opportunities";
 const THEME_KEY = `${STORAGE_PREFIX}-theme`;
@@ -322,12 +326,12 @@ function applyEventEdits(sourceOpportunities: Opportunity[], edits: AdminEventEd
   });
 }
 
-export function HomePage() {
+export function HomePage({ initialSurface = "home", initialFilterOverrides = {} }: HomePageProps = {}) {
   const [language, setLanguage] = useState<LanguageCode>("en");
   const [theme, setTheme] = useState<ThemePreference>("light");
-  const [activeSurface, setActiveSurface] = useState<ActiveSurface>("home");
+  const [activeSurface, setActiveSurface] = useState<ActiveSurface>(initialSurface);
   const [pendingScrollTarget, setPendingScrollTarget] = useState("");
-  const [filters, setFilters] = useState<Filters>(initialFilters);
+  const [filters, setFilters] = useState<Filters>(() => ({ ...initialFilters, ...initialFilterOverrides }));
   const [filtersOpen, setFiltersOpen] = useState(false);
   const [viewMode, setViewMode] = useState<ViewMode>("list");
   const [selectedId, setSelectedId] = useState("");

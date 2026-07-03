@@ -1,7 +1,8 @@
-import { metadataForPage, SeoLandingPage } from "../seoPages";
+import { HomePage } from "@/components/HomePage";
+import { metadataForPage } from "../seoPages";
 
 export const metadata = metadataForPage("opportunities");
 
 export default function OpportunitiesPage() {
-  return <SeoLandingPage pageKey="opportunities" />;
+  return <HomePage initialSurface="opportunities" />;
 }
