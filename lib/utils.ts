@@ -105,13 +105,24 @@ export function filterOpportunities(
     .filter((opportunity) => {
       const haystack = [
         opportunity.title,
+        opportunity.description,
         opportunity.provider,
         opportunity.summary,
         opportunity.city,
         opportunity.region,
+        opportunity.address,
         opportunity.type,
+        opportunity.freeStatusProof,
+        opportunity.equipment,
+        opportunity.food,
+        opportunity.capacity,
+        opportunity.commitment,
+        opportunity.providerContact,
         ...opportunity.categories,
         ...opportunity.communityFocus,
+        ...opportunity.accessibility,
+        ...opportunity.grades,
+        ...opportunity.languages,
         ...opportunity.tags
       ]
         .join(" ")
