@@ -71,6 +71,9 @@ type UiKey =
   | "report"
   | "adminQueue"
   | "results"
+  | "emptyResultsTitle"
+  | "emptyResultsBody"
+  | "clearFilters"
   | "freeOnly"
   | "translationNote"
   | "allGta"
@@ -233,6 +236,9 @@ const ui: Record<LanguageCode, Partial<Record<UiKey, string>>> = {
     report: "Report correction",
     adminQueue: "Admin review queue",
     results: "Results",
+    emptyResultsTitle: "No current matches",
+    emptyResultsBody: "Try fewer filters or a different search. Expired listings are hidden from public search.",
+    clearFilters: "Clear filters",
     freeOnly: "Everything here is free for everyone.",
     translationNote: "Listing summary translated for browsing; source details remain available for verification.",
     allGta: "All GTA",

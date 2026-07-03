@@ -502,14 +502,12 @@ export function HomePage({ initialSurface = "home", initialFilterOverrides = {} 
   const savedIdSet = useMemo(() => new Set(savedIds), [savedIds]);
 
   const publicVisibleOpportunities = useMemo(() => publicOpportunities(displayOpportunities), [displayOpportunities]);
-  const publicFallbackOpportunity = useMemo(() => publicVisibleOpportunities[0], [publicVisibleOpportunities]);
-
   const selectedOpportunity = useMemo(
     () =>
       visibleOpportunities.find((opportunity) => opportunity.id === selectedId) ??
       visibleOpportunities[0] ??
-      publicFallbackOpportunity,
-    [publicFallbackOpportunity, selectedId, visibleOpportunities]
+      null,
+    [selectedId, visibleOpportunities]
   );
 
   const availableProgramLanguages = useMemo(() => {
@@ -525,6 +523,12 @@ export function HomePage({ initialSurface = "home", initialFilterOverrides = {} 
 
   const updateFilter = <K extends keyof Filters>(key: K, value: Filters[K]) => {
     setFilters((current) => ({ ...current, [key]: value }));
+  };
+
+  const clearFilters = () => {
+    setFilters({ ...initialFilters });
+    setUserLocation(null);
+    setSelectedId("");
   };
 
   const updateLanguage = (nextLanguage: LanguageCode) => {
@@ -1389,19 +1393,31 @@ export function HomePage({ initialSurface = "home", initialFilterOverrides = {} 
             {researchStatus ? <p className="research-status-line" role="status">{researchStatus}</p> : null}
 
             <div className="cards-column">
-              {visibleOpportunities.map((opportunity) => (
-                <OpportunityCard
-                  key={opportunity.id}
-                  opportunity={opportunity}
-                  language={language}
-                  activeLocation={activeLocation}
-                  selected={selectedOpportunity?.id === opportunity.id}
-                  saved={savedIdSet.has(opportunity.id)}
-                  onSelect={() => selectOpportunity(opportunity.id)}
-                  onSave={() => toggleSaved(opportunity.id)}
-                  onCalendar={() => downloadCalendar(opportunity)}
-                />
-              ))}
+              {visibleOpportunities.length ? (
+                visibleOpportunities.map((opportunity) => (
+                  <OpportunityCard
+                    key={opportunity.id}
+                    opportunity={opportunity}
+                    language={language}
+                    activeLocation={activeLocation}
+                    selected={selectedOpportunity?.id === opportunity.id}
+                    saved={savedIdSet.has(opportunity.id)}
+                    onSelect={() => selectOpportunity(opportunity.id)}
+                    onSave={() => toggleSaved(opportunity.id)}
+                    onCalendar={() => downloadCalendar(opportunity)}
+                  />
+                ))
+              ) : (
+                <div className="empty-results-card" role="status">
+                  <Search size={24} aria-hidden="true" />
+                  <h3>{t(language, "emptyResultsTitle")}</h3>
+                  <p>{t(language, "emptyResultsBody")}</p>
+                  <button type="button" className="soft-button" onClick={clearFilters}>
+                    <X size={16} aria-hidden="true" />
+                    {t(language, "clearFilters")}
+                  </button>
+                </div>
+              )}
             </div>
           </div>
 
@@ -1419,15 +1435,17 @@ export function HomePage({ initialSurface = "home", initialFilterOverrides = {} 
               </div>
             ) : null}
 
-            <div className="map-column">
-              <MapPanel
-                language={language}
-                opportunities={visibleOpportunities}
-                selectedId={selectedOpportunity?.id}
-                onSelect={selectOpportunity}
-                activeLocation={activeLocation}
-              />
-            </div>
+            {selectedOpportunity ? (
+              <div className="map-column">
+                <MapPanel
+                  language={language}
+                  opportunities={visibleOpportunities}
+                  selectedId={selectedOpportunity.id}
+                  onSelect={selectOpportunity}
+                  activeLocation={activeLocation}
+                />
+              </div>
+            ) : null}
           </aside>
         </div>
       </section>

@@ -7865,6 +7865,44 @@ body {
   scrollbar-width: auto;
 }
 
+.empty-results-card {
+  display: grid;
+  gap: 12px;
+  justify-items: start;
+  min-height: 220px;
+  padding: clamp(18px, 2vw, 24px);
+  border: 2px solid var(--line);
+  border-radius: 28px;
+  background: var(--panel-wash), var(--surface);
+  box-shadow: var(--shadow-soft);
+  color: var(--ink);
+}
+
+.empty-results-card svg {
+  box-sizing: content-box;
+  width: 22px;
+  height: 22px;
+  padding: 10px;
+  border: 2px solid var(--line);
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--yellow), var(--blue) 60%, var(--mint));
+  color: #101828;
+}
+
+.empty-results-card h3 {
+  margin: 0;
+  font-size: 1.35rem;
+  line-height: 1.1;
+}
+
+.empty-results-card p {
+  max-width: 42rem;
+  margin: 0;
+  color: var(--muted);
+  font-weight: 800;
+  line-height: 1.45;
+}
+
 .opportunity-card {
   position: relative;
   overflow: hidden;
