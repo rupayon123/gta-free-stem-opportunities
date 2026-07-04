@@ -81,14 +81,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a3a1877c026ff22477c0360",
-        "capturedAt": "2026-07-04T13:59:40.796Z",
+        "capturedAt": "2026-07-04T19:38:28.259Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:40.796Z",
+        "at": "2026-07-04T19:38:28.259Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -184,14 +184,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a46bdb09ec85be793f1242c",
-        "capturedAt": "2026-07-04T13:59:41.363Z",
+        "capturedAt": "2026-07-04T19:38:28.975Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:41.363Z",
+        "at": "2026-07-04T19:38:28.975Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -285,14 +285,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a2c42c41e67cd9cb33977e5",
-        "capturedAt": "2026-07-04T13:59:41.364Z",
+        "capturedAt": "2026-07-04T19:38:28.975Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:41.364Z",
+        "at": "2026-07-04T19:38:28.975Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -372,104 +372,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69c42a5abf48d63c596cc238",
-        "capturedAt": "2026-07-04T13:59:41.364Z",
+        "capturedAt": "2026-07-04T19:38:28.976Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:41.364Z",
-        "actor": "Library RSS generator",
-        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
-      }
-    ]
-  },
-  {
-    "id": "tpl-rss-6a3997502ea730c17ab8bd8e",
-    "title": "Knitting Circle",
-    "organization": "Toronto Public Library",
-    "provider": "Toronto Public Library",
-    "description": "Join Port Union Library's Knitting Circle. Chat and knit or crochet with a friendly group! You can also share your projects with others! This is a drop in program but limited to a room capacity of 20 participants. Arrive early to secure your spot. No registrat",
-    "summary": "Join Port Union Library's Knitting Circle. Chat and knit or crochet with a friendly group! You can also share your projects with others! This is a drop in program but limited to a room capacity of 20 participants. Arrive early to secure your spot. No registrat",
-    "type": "Drop-in",
-    "category": "Makerspace & Fabrication",
-    "categories": [
-      "STEM",
-      "Makerspace & Fabrication"
-    ],
-    "communityFocus": [
-      "Open to all",
-      "Newcomer-friendly"
-    ],
-    "city": "Toronto",
-    "region": "Toronto",
-    "address": "Port Union, 5450 Lawrence Avenue East, Toronto, ON, M1C 3B2",
-    "latitude": 43.7796722,
-    "longitude": -79.14028379999999,
-    "virtual": false,
-    "startDate": "2026-07-04T13:30:00.000Z",
-    "endDate": "2026-07-04T15:00:00.000Z",
-    "deadline": "2026-07-04T13:30:00.000Z",
-    "ageMin": 13,
-    "ageMax": 17,
-    "ages": {
-      "min": 13,
-      "max": 17
-    },
-    "grades": [
-      "8",
-      "9",
-      "10",
-      "11",
-      "12"
-    ],
-    "language": [
-      "en"
-    ],
-    "languages": [
-      "en"
-    ],
-    "cost": "Free to join",
-    "sourceUrl": "https://tpl.bibliocommons.com/events/6a3997502ea730c17ab8bd8e",
-    "lastChecked": "2026-07-04",
-    "lastSeen": "2026-07-04",
-    "status": "active",
-    "accessibility": [
-      "Library accessibility services available on request",
-      "Public library location"
-    ],
-    "equipment": "Materials provided unless the source says otherwise.",
-    "food": "No food listed.",
-    "capacity": "Check the source page for availability.",
-    "commitment": "Single scheduled library program or series date from source feed.",
-    "registrationUrl": "https://tpl.bibliocommons.com/events/6a3997502ea730c17ab8bd8e",
-    "providerContact": "+1-416-396-8885",
-    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-04",
-    "trustedSource": true,
-    "volunteerHoursEligible": false,
-    "coopEligible": false,
-    "paidPosition": false,
-    "tags": [
-      "makerspace & fabrication",
-      "crafts & hobbies",
-      "adults (18+)",
-      "teens (13-17)",
-      "english"
-    ],
-    "sources": [
-      {
-        "label": "Official Toronto Public Library event page",
-        "url": "https://tpl.bibliocommons.com/events/6a3997502ea730c17ab8bd8e",
-        "capturedAt": "2026-07-04T13:59:41.364Z",
-        "confidence": "high"
-      }
-    ],
-    "adminAuditTrail": [
-      {
-        "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:41.364Z",
+        "at": "2026-07-04T19:38:28.976Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -555,3330 +465,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/696ab9958b29ea2800c9eba8",
-        "capturedAt": "2026-07-04T13:59:41.365Z",
+        "capturedAt": "2026-07-04T19:38:28.976Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:41.365Z",
-        "actor": "Library RSS generator",
-        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
-      }
-    ]
-  },
-  {
-    "id": "tpl-rss-69a0e9296724c63d00f579a8",
-    "title": "Wellness Recovery Action Plan (WRAP)",
-    "organization": "Toronto Public Library",
-    "provider": "Toronto Public Library",
-    "description": "WRAP is for anyone looking to strengthen their well-being—whether you’re supporting your mental health, managing stress, or simply wanting to feel more balanced and resilient in daily life. Participants will receive a WRAP certificate upon program completion. ",
-    "summary": "WRAP is for anyone looking to strengthen their well-being—whether you’re supporting your mental health, managing stress, or simply wanting to feel more balanced and resilient in daily life. Participants will receive a WRAP certificate upon program completion. ",
-    "type": "Drop-in",
-    "category": "Family Learning",
-    "categories": [
-      "Family Learning"
-    ],
-    "communityFocus": [
-      "Open to all",
-      "Newcomer-friendly"
-    ],
-    "city": "Toronto",
-    "region": "Toronto",
-    "address": "Maria A. Shchuka, 1745 Eglinton Avenue West, Toronto, ON, M6E 2H4",
-    "latitude": 43.6960925,
-    "longitude": -79.4472591,
-    "virtual": false,
-    "startDate": "2026-07-04T14:00:00.000Z",
-    "endDate": "2026-07-04T17:00:00.000Z",
-    "deadline": "2026-07-04T14:00:00.000Z",
-    "ageMin": 18,
-    "ages": {
-      "min": 18
-    },
-    "grades": [],
-    "language": [
-      "en"
-    ],
-    "languages": [
-      "en"
-    ],
-    "cost": "Free to join",
-    "sourceUrl": "https://tpl.bibliocommons.com/events/69a0e9296724c63d00f579a8",
-    "lastChecked": "2026-07-04",
-    "lastSeen": "2026-07-04",
-    "status": "active",
-    "accessibility": [
-      "Library accessibility services available on request",
-      "Public library location"
-    ],
-    "equipment": "Materials provided unless the source says otherwise.",
-    "food": "No food listed.",
-    "capacity": "Check the source page for availability.",
-    "commitment": "Single scheduled library program or series date from source feed.",
-    "registrationUrl": "https://tpl.bibliocommons.com/events/69a0e9296724c63d00f579a8",
-    "providerContact": "+1-416-394-1000",
-    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-04",
-    "trustedSource": true,
-    "volunteerHoursEligible": false,
-    "coopEligible": false,
-    "paidPosition": false,
-    "tags": [
-      "family learning",
-      "social & crisis support services​",
-      "personal development",
-      "adults (18+)",
-      "english"
-    ],
-    "sources": [
-      {
-        "label": "Official Toronto Public Library event page",
-        "url": "https://tpl.bibliocommons.com/events/69a0e9296724c63d00f579a8",
-        "capturedAt": "2026-07-04T13:59:41.365Z",
-        "confidence": "high"
-      }
-    ],
-    "adminAuditTrail": [
-      {
-        "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:41.365Z",
-        "actor": "Library RSS generator",
-        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
-      }
-    ]
-  },
-  {
-    "id": "tpl-rss-6a0f5bd043b41b3d00682b8f",
-    "title": "Seniors E-Connect",
-    "organization": "Toronto Public Library",
-    "provider": "Toronto Public Library",
-    "description": "Seniors E-Connect matches older adults with a teen volunteer to provide tech help, under the guidance of library staff. Learn the basics of using computers, tablets and smartphones and popular websites and software. If you're a teen between the ages of 13-17 a",
-    "summary": "Seniors E-Connect matches older adults with a teen volunteer to provide tech help, under the guidance of library staff. Learn the basics of using computers, tablets and smartphones and popular websites and software. If you're a teen between the ages of 13-17 a",
-    "type": "Volunteer role",
-    "category": "Volunteer Hours",
-    "categories": [
-      "Volunteer Hours"
-    ],
-    "communityFocus": [
-      "Open to all",
-      "Newcomer-friendly"
-    ],
-    "city": "Toronto",
-    "region": "Toronto",
-    "address": "Palmerston, 560 Palmerston Avenue, Toronto, ON, M6G 2P7",
-    "latitude": 43.6651019,
-    "longitude": -79.41415740000001,
-    "virtual": false,
-    "startDate": "2026-07-04T14:00:00.000Z",
-    "endDate": "2026-07-04T15:00:00.000Z",
-    "deadline": "2026-07-04T14:00:00.000Z",
-    "ageMin": 13,
-    "ageMax": 17,
-    "ages": {
-      "min": 13,
-      "max": 17
-    },
-    "grades": [
-      "8",
-      "9",
-      "10",
-      "11",
-      "12"
-    ],
-    "language": [
-      "en"
-    ],
-    "languages": [
-      "en"
-    ],
-    "cost": "Free to join",
-    "sourceUrl": "https://tpl.bibliocommons.com/events/6a0f5bd043b41b3d00682b8f",
-    "lastChecked": "2026-07-04",
-    "lastSeen": "2026-07-04",
-    "status": "active",
-    "accessibility": [
-      "Library accessibility services available on request",
-      "Public library location"
-    ],
-    "equipment": "Materials provided unless the source says otherwise.",
-    "food": "No food listed.",
-    "capacity": "5 spots listed by source.",
-    "commitment": "Single scheduled library program or series date from source feed.",
-    "registrationUrl": "https://tpl.bibliocommons.com/events/6a0f5bd043b41b3d00682b8f",
-    "providerContact": "+1-416-393-7680",
-    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-04",
-    "trustedSource": true,
-    "volunteerHoursEligible": true,
-    "coopEligible": false,
-    "paidPosition": false,
-    "tags": [
-      "volunteer hours",
-      "computer basics & office software",
-      "older adults",
-      "english"
-    ],
-    "sources": [
-      {
-        "label": "Official Toronto Public Library event page",
-        "url": "https://tpl.bibliocommons.com/events/6a0f5bd043b41b3d00682b8f",
-        "capturedAt": "2026-07-04T13:59:41.365Z",
-        "confidence": "high"
-      }
-    ],
-    "adminAuditTrail": [
-      {
-        "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:41.365Z",
-        "actor": "Library RSS generator",
-        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
-      }
-    ]
-  },
-  {
-    "id": "tpl-rss-6a3d5515f3bd131b675fe7c1",
-    "title": "Computers for Beginners 1: Use the Mouse",
-    "organization": "Toronto Public Library",
-    "provider": "Toronto Public Library",
-    "description": "A class on how to use a mouse for absolute beginners with little or no computer experience. In this first session you will: Observe and practice how to operate a mouse effectively Understand various mouse pointers and cursors Review basic keyboard functions Us",
-    "summary": "A class on how to use a mouse for absolute beginners with little or no computer experience. In this first session you will: Observe and practice how to operate a mouse effectively Understand various mouse pointers and cursors Review basic keyboard functions Us",
-    "type": "One-time event",
-    "category": "Family Learning",
-    "categories": [
-      "Family Learning"
-    ],
-    "communityFocus": [
-      "Open to all",
-      "Newcomer-friendly"
-    ],
-    "city": "Toronto",
-    "region": "Toronto",
-    "address": "Parliament Street, 269 Gerrard Street East, Toronto, ON, M5A 2G3",
-    "latitude": 43.6618438,
-    "longitude": -79.3680718,
-    "virtual": false,
-    "startDate": "2026-07-04T14:00:00.000Z",
-    "endDate": "2026-07-04T14:45:00.000Z",
-    "deadline": "2026-07-04T14:00:00.000Z",
-    "ageMin": 18,
-    "ages": {
-      "min": 18
-    },
-    "grades": [],
-    "language": [
-      "en"
-    ],
-    "languages": [
-      "en"
-    ],
-    "cost": "Free to join",
-    "sourceUrl": "https://tpl.bibliocommons.com/events/6a3d5515f3bd131b675fe7c1",
-    "lastChecked": "2026-07-04",
-    "lastSeen": "2026-07-04",
-    "status": "active",
-    "accessibility": [
-      "Library accessibility services available on request",
-      "Public library location"
-    ],
-    "equipment": "Materials provided unless the source says otherwise.",
-    "food": "No food listed.",
-    "capacity": "Check the source page for availability.",
-    "commitment": "Single scheduled library program or series date from source feed.",
-    "registrationUrl": "https://tpl.bibliocommons.com/events/6a3d5515f3bd131b675fe7c1",
-    "providerContact": "+1-416-393-7663",
-    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-04",
-    "trustedSource": true,
-    "volunteerHoursEligible": false,
-    "coopEligible": false,
-    "paidPosition": false,
-    "tags": [
-      "family learning",
-      "computer basics & office software",
-      "adults (18+)",
-      "older adults",
-      "english"
-    ],
-    "sources": [
-      {
-        "label": "Official Toronto Public Library event page",
-        "url": "https://tpl.bibliocommons.com/events/6a3d5515f3bd131b675fe7c1",
-        "capturedAt": "2026-07-04T13:59:41.365Z",
-        "confidence": "high"
-      }
-    ],
-    "adminAuditTrail": [
-      {
-        "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:41.365Z",
-        "actor": "Library RSS generator",
-        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
-      }
-    ]
-  },
-  {
-    "id": "tpl-rss-6a29dc65f56bd86e00b5eb09",
-    "title": "Computers for Beginners 3: Use the Internet",
-    "organization": "Toronto Public Library",
-    "provider": "Toronto Public Library",
-    "description": "An introductory class on the Internet for absolute beginners with little computer experience. In this third session you will: Understand how to read a web site address Practice using web addresses Search for information using a search engine Explore a website ",
-    "summary": "An introductory class on the Internet for absolute beginners with little computer experience. In this third session you will: Understand how to read a web site address Practice using web addresses Search for information using a search engine Explore a website ",
-    "type": "One-time event",
-    "category": "Family Learning",
-    "categories": [
-      "Family Learning"
-    ],
-    "communityFocus": [
-      "Open to all",
-      "Newcomer-friendly"
-    ],
-    "city": "Toronto",
-    "region": "Toronto",
-    "address": "Malvern, 30 Sewells Road, Toronto, ON, M1B 3G5",
-    "latitude": 43.8089406,
-    "longitude": -79.2164074,
-    "virtual": false,
-    "startDate": "2026-07-04T14:00:00.000Z",
-    "endDate": "2026-07-04T15:30:00.000Z",
-    "deadline": "2026-07-04T14:00:00.000Z",
-    "ageMin": 18,
-    "ages": {
-      "min": 18
-    },
-    "grades": [],
-    "language": [
-      "en"
-    ],
-    "languages": [
-      "en"
-    ],
-    "cost": "Free to join",
-    "sourceUrl": "https://tpl.bibliocommons.com/events/6a29dc65f56bd86e00b5eb09",
-    "lastChecked": "2026-07-04",
-    "lastSeen": "2026-07-04",
-    "status": "active",
-    "accessibility": [
-      "Library accessibility services available on request",
-      "Public library location"
-    ],
-    "equipment": "Materials provided unless the source says otherwise.",
-    "food": "No food listed.",
-    "capacity": "9 spots listed by source.",
-    "commitment": "Single scheduled library program or series date from source feed.",
-    "registrationUrl": "https://tpl.bibliocommons.com/events/6a29dc65f56bd86e00b5eb09",
-    "providerContact": "+1-416-396-8969",
-    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-04",
-    "trustedSource": true,
-    "volunteerHoursEligible": false,
-    "coopEligible": false,
-    "paidPosition": false,
-    "tags": [
-      "family learning",
-      "computer basics & office software",
-      "adults (18+)",
-      "older adults",
-      "english"
-    ],
-    "sources": [
-      {
-        "label": "Official Toronto Public Library event page",
-        "url": "https://tpl.bibliocommons.com/events/6a29dc65f56bd86e00b5eb09",
-        "capturedAt": "2026-07-04T13:59:41.366Z",
-        "confidence": "high"
-      }
-    ],
-    "adminAuditTrail": [
-      {
-        "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:41.366Z",
-        "actor": "Library RSS generator",
-        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
-      }
-    ]
-  },
-  {
-    "id": "tpl-rss-696a997c6724c63d00ec9486",
-    "title": "Family Time",
-    "organization": "Toronto Public Library",
-    "provider": "Toronto Public Library",
-    "description": "Join us for stories, songs, rhymes and activities in this program for children ages 5 and under and their parents or caregivers. Drop-in, registration is not required. This is a year-round program.",
-    "summary": "Join us for stories, songs, rhymes and activities in this program for children ages 5 and under and their parents or caregivers. Drop-in, registration is not required. This is a year-round program.",
-    "type": "Drop-in",
-    "category": "Family Learning",
-    "categories": [
-      "Family Learning"
-    ],
-    "communityFocus": [
-      "Open to all",
-      "Newcomer-friendly"
-    ],
-    "city": "Toronto",
-    "region": "Toronto",
-    "address": "Main Street, 137 Main Street, Toronto, ON, M4E 2V9",
-    "latitude": 43.6834513,
-    "longitude": -79.2995033,
-    "virtual": false,
-    "startDate": "2026-07-04T14:30:00.000Z",
-    "endDate": "2026-07-04T15:00:00.000Z",
-    "deadline": "2026-07-04T14:30:00.000Z",
-    "ageMin": 0,
-    "ageMax": 12,
-    "ages": {
-      "min": 0,
-      "max": 12
-    },
-    "grades": [
-      "0",
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "7"
-    ],
-    "language": [
-      "en"
-    ],
-    "languages": [
-      "en"
-    ],
-    "cost": "Free to join",
-    "sourceUrl": "https://tpl.bibliocommons.com/events/696a997c6724c63d00ec9486",
-    "lastChecked": "2026-07-04",
-    "lastSeen": "2026-07-04",
-    "status": "active",
-    "accessibility": [
-      "Library accessibility services available on request",
-      "Public library location"
-    ],
-    "equipment": "Materials provided unless the source says otherwise.",
-    "food": "No food listed.",
-    "capacity": "Check the source page for availability.",
-    "commitment": "Single scheduled library program or series date from source feed.",
-    "registrationUrl": "https://tpl.bibliocommons.com/events/696a997c6724c63d00ec9486",
-    "providerContact": "+1-416-393-7700",
-    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-04",
-    "trustedSource": true,
-    "volunteerHoursEligible": false,
-    "coopEligible": false,
-    "paidPosition": false,
-    "tags": [
-      "family learning",
-      "ready for reading storytimes",
-      "reading programs & storytimes",
-      "preschool children (0-5)",
-      "english"
-    ],
-    "sources": [
-      {
-        "label": "Official Toronto Public Library event page",
-        "url": "https://tpl.bibliocommons.com/events/696a997c6724c63d00ec9486",
-        "capturedAt": "2026-07-04T13:59:41.366Z",
-        "confidence": "high"
-      }
-    ],
-    "adminAuditTrail": [
-      {
-        "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:41.366Z",
-        "actor": "Library RSS generator",
-        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
-      }
-    ]
-  },
-  {
-    "id": "tpl-rss-69e7b9fafca21471b7efe12a",
-    "title": "Family Time",
-    "organization": "Toronto Public Library",
-    "provider": "Toronto Public Library",
-    "description": "Join us for stories, songs, rhymes and activities in this program for children ages 5 and under and their parents or caregivers. Family Time runs from 10:30 AM to 11:00 AM. Children, parents and caregivers are invited to Stay and Play, from 11:00 AM to 11:30 A",
-    "summary": "Join us for stories, songs, rhymes and activities in this program for children ages 5 and under and their parents or caregivers. Family Time runs from 10:30 AM to 11:00 AM. Children, parents and caregivers are invited to Stay and Play, from 11:00 AM to 11:30 A",
-    "type": "One-time event",
-    "category": "Family Learning",
-    "categories": [
-      "Family Learning"
-    ],
-    "communityFocus": [
-      "Open to all",
-      "Newcomer-friendly"
-    ],
-    "city": "Toronto",
-    "region": "Toronto",
-    "address": "Albert Campbell, 496 Birchmount Road, Toronto, ON, M1K 1N8",
-    "latitude": 43.7080744,
-    "longitude": -79.2692964,
-    "virtual": false,
-    "startDate": "2026-07-04T14:30:00.000Z",
-    "endDate": "2026-07-04T15:30:00.000Z",
-    "deadline": "2026-07-04T14:30:00.000Z",
-    "ageMin": 0,
-    "ageMax": 12,
-    "ages": {
-      "min": 0,
-      "max": 12
-    },
-    "grades": [
-      "0",
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "7"
-    ],
-    "language": [
-      "en"
-    ],
-    "languages": [
-      "en"
-    ],
-    "cost": "Free to join",
-    "sourceUrl": "https://tpl.bibliocommons.com/events/69e7b9fafca21471b7efe12a",
-    "lastChecked": "2026-07-04",
-    "lastSeen": "2026-07-04",
-    "status": "active",
-    "accessibility": [
-      "Library accessibility services available on request",
-      "Public library location"
-    ],
-    "equipment": "Materials provided unless the source says otherwise.",
-    "food": "No food listed.",
-    "capacity": "Check the source page for availability.",
-    "commitment": "Single scheduled library program or series date from source feed.",
-    "registrationUrl": "https://tpl.bibliocommons.com/events/69e7b9fafca21471b7efe12a",
-    "providerContact": "+1-416-396-8890",
-    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-04",
-    "trustedSource": true,
-    "volunteerHoursEligible": false,
-    "coopEligible": false,
-    "paidPosition": false,
-    "tags": [
-      "family learning",
-      "ready for reading storytimes",
-      "reading programs & storytimes",
-      "preschool children (0-5)",
-      "english"
-    ],
-    "sources": [
-      {
-        "label": "Official Toronto Public Library event page",
-        "url": "https://tpl.bibliocommons.com/events/69e7b9fafca21471b7efe12a",
-        "capturedAt": "2026-07-04T13:59:41.366Z",
-        "confidence": "high"
-      }
-    ],
-    "adminAuditTrail": [
-      {
-        "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:41.366Z",
-        "actor": "Library RSS generator",
-        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
-      }
-    ]
-  },
-  {
-    "id": "tpl-rss-69f0dc1bdefec6489cc0c9fa",
-    "title": "Family Time",
-    "organization": "Toronto Public Library",
-    "provider": "Toronto Public Library",
-    "description": "Join us for stories, songs, rhymes and activities in this program for children ages 5 and under and their parents or caregivers. Family Time runs from 10:30 to 11:00 am. Children, parents and caregivers are invited to Stay and Play, from 11:00 to 11:30. Drop-i",
-    "summary": "Join us for stories, songs, rhymes and activities in this program for children ages 5 and under and their parents or caregivers. Family Time runs from 10:30 to 11:00 am. Children, parents and caregivers are invited to Stay and Play, from 11:00 to 11:30. Drop-i",
-    "type": "Drop-in",
-    "category": "Family Learning",
-    "categories": [
-      "Family Learning"
-    ],
-    "communityFocus": [
-      "Open to all",
-      "Newcomer-friendly"
-    ],
-    "city": "Toronto",
-    "region": "Toronto",
-    "address": "S. Walter Stewart, 170 Memorial Park Avenue, Toronto, ON, M4J 2K5",
-    "latitude": 43.6921393,
-    "longitude": -79.329711,
-    "virtual": false,
-    "startDate": "2026-07-04T14:30:00.000Z",
-    "endDate": "2026-07-04T15:00:00.000Z",
-    "deadline": "2026-07-04T14:30:00.000Z",
-    "ageMin": 0,
-    "ageMax": 12,
-    "ages": {
-      "min": 0,
-      "max": 12
-    },
-    "grades": [
-      "0",
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "7"
-    ],
-    "language": [
-      "en"
-    ],
-    "languages": [
-      "en"
-    ],
-    "cost": "Free to join",
-    "sourceUrl": "https://tpl.bibliocommons.com/events/69f0dc1bdefec6489cc0c9fa",
-    "lastChecked": "2026-07-04",
-    "lastSeen": "2026-07-04",
-    "status": "active",
-    "accessibility": [
-      "Library accessibility services available on request",
-      "Public library location"
-    ],
-    "equipment": "Materials provided unless the source says otherwise.",
-    "food": "No food listed.",
-    "capacity": "Check the source page for availability.",
-    "commitment": "Single scheduled library program or series date from source feed.",
-    "registrationUrl": "https://tpl.bibliocommons.com/events/69f0dc1bdefec6489cc0c9fa",
-    "providerContact": "+1-416-396-3854",
-    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-04",
-    "trustedSource": true,
-    "volunteerHoursEligible": false,
-    "coopEligible": false,
-    "paidPosition": false,
-    "tags": [
-      "family learning",
-      "ready for reading storytimes",
-      "reading programs & storytimes",
-      "preschool children (0-5)",
-      "english"
-    ],
-    "sources": [
-      {
-        "label": "Official Toronto Public Library event page",
-        "url": "https://tpl.bibliocommons.com/events/69f0dc1bdefec6489cc0c9fa",
-        "capturedAt": "2026-07-04T13:59:41.366Z",
-        "confidence": "high"
-      }
-    ],
-    "adminAuditTrail": [
-      {
-        "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:41.366Z",
-        "actor": "Library RSS generator",
-        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
-      }
-    ]
-  },
-  {
-    "id": "tpl-rss-6a1f277ef56bd86e00b3fde4",
-    "title": "Family Time",
-    "organization": "Toronto Public Library",
-    "provider": "Toronto Public Library",
-    "description": "Join us for stories, songs, rhymes and activities in this program for children ages 5 and under and their parents or caregivers.",
-    "summary": "Join us for stories, songs, rhymes and activities in this program for children ages 5 and under and their parents or caregivers.",
-    "type": "One-time event",
-    "category": "Family Learning",
-    "categories": [
-      "Family Learning"
-    ],
-    "communityFocus": [
-      "Open to all",
-      "Newcomer-friendly"
-    ],
-    "city": "Toronto",
-    "region": "Toronto",
-    "address": "Richview, 1806 Islington Avenue, Toronto, ON, M9P 3N3",
-    "latitude": 43.6834225,
-    "longitude": -79.5411615,
-    "virtual": false,
-    "startDate": "2026-07-04T14:30:00.000Z",
-    "endDate": "2026-07-04T15:00:00.000Z",
-    "deadline": "2026-07-04T14:30:00.000Z",
-    "ageMin": 0,
-    "ageMax": 12,
-    "ages": {
-      "min": 0,
-      "max": 12
-    },
-    "grades": [
-      "0",
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "7"
-    ],
-    "language": [
-      "en"
-    ],
-    "languages": [
-      "en"
-    ],
-    "cost": "Free to join",
-    "sourceUrl": "https://tpl.bibliocommons.com/events/6a1f277ef56bd86e00b3fde4",
-    "lastChecked": "2026-07-04",
-    "lastSeen": "2026-07-04",
-    "status": "active",
-    "accessibility": [
-      "Library accessibility services available on request",
-      "Public library location"
-    ],
-    "equipment": "Materials provided unless the source says otherwise.",
-    "food": "No food listed.",
-    "capacity": "Check the source page for availability.",
-    "commitment": "Single scheduled library program or series date from source feed.",
-    "registrationUrl": "https://tpl.bibliocommons.com/events/6a1f277ef56bd86e00b3fde4",
-    "providerContact": "+1-416-394-5120",
-    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-04",
-    "trustedSource": true,
-    "volunteerHoursEligible": false,
-    "coopEligible": false,
-    "paidPosition": false,
-    "tags": [
-      "family learning",
-      "ready for reading storytimes",
-      "reading programs & storytimes",
-      "preschool children (0-5)",
-      "english"
-    ],
-    "sources": [
-      {
-        "label": "Official Toronto Public Library event page",
-        "url": "https://tpl.bibliocommons.com/events/6a1f277ef56bd86e00b3fde4",
-        "capturedAt": "2026-07-04T13:59:41.366Z",
-        "confidence": "high"
-      }
-    ],
-    "adminAuditTrail": [
-      {
-        "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:41.366Z",
-        "actor": "Library RSS generator",
-        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
-      }
-    ]
-  },
-  {
-    "id": "tpl-rss-695814a1491b809c6f107dd2",
-    "title": "Family Time",
-    "organization": "Toronto Public Library",
-    "provider": "Toronto Public Library",
-    "description": "Join us for stories, songs, rhymes and activities in this program for children ages 5 and under and their parents or caregivers. Family Time runs from 10:30 to 11:30. Drop in. No registration required, but space is limited.",
-    "summary": "Join us for stories, songs, rhymes and activities in this program for children ages 5 and under and their parents or caregivers. Family Time runs from 10:30 to 11:30. Drop in. No registration required, but space is limited.",
-    "type": "Drop-in",
-    "category": "Family Learning",
-    "categories": [
-      "Family Learning"
-    ],
-    "communityFocus": [
-      "Open to all",
-      "Newcomer-friendly"
-    ],
-    "city": "Toronto",
-    "region": "Toronto",
-    "address": "Fairview, 35 Fairview Mall Drive, Toronto, ON, M2J 4S4",
-    "latitude": 43.7790599,
-    "longitude": -79.3468197,
-    "virtual": false,
-    "startDate": "2026-07-04T14:30:00.000Z",
-    "endDate": "2026-07-04T15:30:00.000Z",
-    "deadline": "2026-07-04T14:30:00.000Z",
-    "ageMin": 0,
-    "ageMax": 12,
-    "ages": {
-      "min": 0,
-      "max": 12
-    },
-    "grades": [
-      "0",
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "7"
-    ],
-    "language": [
-      "en"
-    ],
-    "languages": [
-      "en"
-    ],
-    "cost": "Free to join",
-    "sourceUrl": "https://tpl.bibliocommons.com/events/695814a1491b809c6f107dd2",
-    "lastChecked": "2026-07-04",
-    "lastSeen": "2026-07-04",
-    "status": "active",
-    "accessibility": [
-      "Library accessibility services available on request",
-      "Public library location"
-    ],
-    "equipment": "Materials provided unless the source says otherwise.",
-    "food": "No food listed.",
-    "capacity": "Check the source page for availability.",
-    "commitment": "Single scheduled library program or series date from source feed.",
-    "registrationUrl": "https://tpl.bibliocommons.com/events/695814a1491b809c6f107dd2",
-    "providerContact": "+1-416-395-5750",
-    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-04",
-    "trustedSource": true,
-    "volunteerHoursEligible": false,
-    "coopEligible": false,
-    "paidPosition": false,
-    "tags": [
-      "family learning",
-      "ready for reading storytimes",
-      "reading programs & storytimes",
-      "preschool children (0-5)",
-      "english"
-    ],
-    "sources": [
-      {
-        "label": "Official Toronto Public Library event page",
-        "url": "https://tpl.bibliocommons.com/events/695814a1491b809c6f107dd2",
-        "capturedAt": "2026-07-04T13:59:41.366Z",
-        "confidence": "high"
-      }
-    ],
-    "adminAuditTrail": [
-      {
-        "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:41.366Z",
-        "actor": "Library RSS generator",
-        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
-      }
-    ]
-  },
-  {
-    "id": "tpl-rss-69695b828b29ea2800c9ba2a",
-    "title": "Family Time",
-    "organization": "Toronto Public Library",
-    "provider": "Toronto Public Library",
-    "description": "Join us for a fun storytime with stories, songs and rhymes followed by a craft or activity. For children ages 5 and under with their parents or caregivers.",
-    "summary": "Join us for a fun storytime with stories, songs and rhymes followed by a craft or activity. For children ages 5 and under with their parents or caregivers.",
-    "type": "One-time event",
-    "category": "Makerspace & Fabrication",
-    "categories": [
-      "STEM",
-      "Makerspace & Fabrication"
-    ],
-    "communityFocus": [
-      "Open to all",
-      "Newcomer-friendly"
-    ],
-    "city": "Toronto",
-    "region": "Toronto",
-    "address": "Scarborough Civic Centre, 156 Borough Drive, Toronto, ON, M1P 4N7",
-    "latitude": 43.7723665,
-    "longitude": -79.2570444,
-    "virtual": false,
-    "startDate": "2026-07-04T14:30:00.000Z",
-    "endDate": "2026-07-04T15:30:00.000Z",
-    "deadline": "2026-07-04T14:30:00.000Z",
-    "ageMin": 0,
-    "ageMax": 12,
-    "ages": {
-      "min": 0,
-      "max": 12
-    },
-    "grades": [
-      "0",
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "7"
-    ],
-    "language": [
-      "en"
-    ],
-    "languages": [
-      "en"
-    ],
-    "cost": "Free to join",
-    "sourceUrl": "https://tpl.bibliocommons.com/events/69695b828b29ea2800c9ba2a",
-    "lastChecked": "2026-07-04",
-    "lastSeen": "2026-07-04",
-    "status": "active",
-    "accessibility": [
-      "Library accessibility services available on request",
-      "Public library location"
-    ],
-    "equipment": "Materials provided unless the source says otherwise.",
-    "food": "No food listed.",
-    "capacity": "Check the source page for availability.",
-    "commitment": "Single scheduled library program or series date from source feed.",
-    "registrationUrl": "https://tpl.bibliocommons.com/events/69695b828b29ea2800c9ba2a",
-    "providerContact": "ask@tpl.ca",
-    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-04",
-    "trustedSource": true,
-    "volunteerHoursEligible": false,
-    "coopEligible": false,
-    "paidPosition": false,
-    "tags": [
-      "makerspace & fabrication",
-      "ready for reading storytimes",
-      "reading programs & storytimes",
-      "preschool children (0-5)",
-      "english"
-    ],
-    "sources": [
-      {
-        "label": "Official Toronto Public Library event page",
-        "url": "https://tpl.bibliocommons.com/events/69695b828b29ea2800c9ba2a",
-        "capturedAt": "2026-07-04T13:59:41.366Z",
-        "confidence": "high"
-      }
-    ],
-    "adminAuditTrail": [
-      {
-        "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:41.366Z",
-        "actor": "Library RSS generator",
-        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
-      }
-    ]
-  },
-  {
-    "id": "tpl-rss-6a0f4003278f7c2f008ea616",
-    "title": "Family Time",
-    "organization": "Toronto Public Library",
-    "provider": "Toronto Public Library",
-    "description": "Join us for stories, songs and rhymes for the whole family. For children birth to 5 years of age, with parents or caregivers.",
-    "summary": "Join us for stories, songs and rhymes for the whole family. For children birth to 5 years of age, with parents or caregivers.",
-    "type": "One-time event",
-    "category": "Family Learning",
-    "categories": [
-      "Family Learning"
-    ],
-    "communityFocus": [
-      "Open to all",
-      "Newcomer-friendly"
-    ],
-    "city": "Toronto",
-    "region": "Toronto",
-    "address": "Parkdale, 1303 Queen Street West, Toronto, ON, M6K 1L6",
-    "latitude": 43.6411423,
-    "longitude": -79.4326474,
-    "virtual": false,
-    "startDate": "2026-07-04T14:30:00.000Z",
-    "endDate": "2026-07-04T15:00:00.000Z",
-    "deadline": "2026-07-04T14:30:00.000Z",
-    "ageMin": 0,
-    "ageMax": 12,
-    "ages": {
-      "min": 0,
-      "max": 12
-    },
-    "grades": [
-      "0",
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "7"
-    ],
-    "language": [
-      "en"
-    ],
-    "languages": [
-      "en"
-    ],
-    "cost": "Free to join",
-    "sourceUrl": "https://tpl.bibliocommons.com/events/6a0f4003278f7c2f008ea616",
-    "lastChecked": "2026-07-04",
-    "lastSeen": "2026-07-04",
-    "status": "active",
-    "accessibility": [
-      "Library accessibility services available on request",
-      "Public library location"
-    ],
-    "equipment": "Materials provided unless the source says otherwise.",
-    "food": "No food listed.",
-    "capacity": "Check the source page for availability.",
-    "commitment": "Single scheduled library program or series date from source feed.",
-    "registrationUrl": "https://tpl.bibliocommons.com/events/6a0f4003278f7c2f008ea616",
-    "providerContact": "+1-416-393-7686",
-    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-04",
-    "trustedSource": true,
-    "volunteerHoursEligible": false,
-    "coopEligible": false,
-    "paidPosition": false,
-    "tags": [
-      "family learning",
-      "ready for reading storytimes",
-      "reading programs & storytimes",
-      "preschool children (0-5)",
-      "english"
-    ],
-    "sources": [
-      {
-        "label": "Official Toronto Public Library event page",
-        "url": "https://tpl.bibliocommons.com/events/6a0f4003278f7c2f008ea616",
-        "capturedAt": "2026-07-04T13:59:41.366Z",
-        "confidence": "high"
-      }
-    ],
-    "adminAuditTrail": [
-      {
-        "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:41.366Z",
-        "actor": "Library RSS generator",
-        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
-      }
-    ]
-  },
-  {
-    "id": "tpl-rss-6a039cd6c6a1dc3d00d35bd6",
-    "title": "Caribbean Storytime with Yolanda T. Marshall",
-    "organization": "Toronto Public Library",
-    "provider": "Toronto Public Library",
-    "description": "Let's get moving! Join Guyanese-born Canadian author Yolanda T. Marshall for a lively, interactive storytelling program as she reads from her Caribbean-inspired picture books followed by Soca music. Please note this program will be in place of our regular Satu",
-    "summary": "Let's get moving! Join Guyanese-born Canadian author Yolanda T. Marshall for a lively, interactive storytelling program as she reads from her Caribbean-inspired picture books followed by Soca music. Please note this program will be in place of our regular Satu",
-    "type": "One-time event",
-    "category": "Family Learning",
-    "categories": [
-      "Family Learning"
-    ],
-    "communityFocus": [
-      "Open to all",
-      "Newcomer-friendly"
-    ],
-    "city": "Toronto",
-    "region": "Toronto",
-    "address": "Bloor/Gladstone, 1101 Bloor Street West, Toronto, ON, M6H 1M7",
-    "latitude": 43.6598954,
-    "longitude": -79.43409969999999,
-    "virtual": false,
-    "startDate": "2026-07-04T14:30:00.000Z",
-    "endDate": "2026-07-04T15:15:00.000Z",
-    "deadline": "2026-07-04T14:30:00.000Z",
-    "ageMin": 0,
-    "ageMax": 12,
-    "ages": {
-      "min": 0,
-      "max": 12
-    },
-    "grades": [
-      "0",
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "7"
-    ],
-    "language": [
-      "en"
-    ],
-    "languages": [
-      "en"
-    ],
-    "cost": "Free to join",
-    "sourceUrl": "https://tpl.bibliocommons.com/events/6a039cd6c6a1dc3d00d35bd6",
-    "lastChecked": "2026-07-04",
-    "lastSeen": "2026-07-04",
-    "status": "active",
-    "accessibility": [
-      "Library accessibility services available on request",
-      "Public library location"
-    ],
-    "equipment": "Materials provided unless the source says otherwise.",
-    "food": "No food listed.",
-    "capacity": "Check the source page for availability.",
-    "commitment": "Single scheduled library program or series date from source feed.",
-    "registrationUrl": "https://tpl.bibliocommons.com/events/6a039cd6c6a1dc3d00d35bd6",
-    "providerContact": "blstaff@tpl.ca",
-    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-04",
-    "trustedSource": true,
-    "volunteerHoursEligible": false,
-    "coopEligible": false,
-    "paidPosition": false,
-    "tags": [
-      "family learning",
-      "summer wonder",
-      "author talks & lectures",
-      "reading programs & storytimes",
-      "preschool children (0-5)",
-      "school age children (6-12)",
-      "english"
-    ],
-    "sources": [
-      {
-        "label": "Official Toronto Public Library event page",
-        "url": "https://tpl.bibliocommons.com/events/6a039cd6c6a1dc3d00d35bd6",
-        "capturedAt": "2026-07-04T13:59:41.366Z",
-        "confidence": "high"
-      }
-    ],
-    "adminAuditTrail": [
-      {
-        "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:41.366Z",
-        "actor": "Library RSS generator",
-        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
-      }
-    ]
-  },
-  {
-    "id": "tpl-rss-6a1e06302ea730c17ab37f84",
-    "title": "Saturday Craft",
-    "organization": "Toronto Public Library",
-    "provider": "Toronto Public Library",
-    "description": "To celebrate your Saturday mornings, join us for a fun craft! Supplies are limited. First come first served.",
-    "summary": "To celebrate your Saturday mornings, join us for a fun craft! Supplies are limited. First come first served.",
-    "type": "One-time event",
-    "category": "Makerspace & Fabrication",
-    "categories": [
-      "STEM",
-      "Makerspace & Fabrication"
-    ],
-    "communityFocus": [
-      "Open to all",
-      "Newcomer-friendly"
-    ],
-    "city": "Toronto",
-    "region": "Toronto",
-    "address": "Pape/Danforth, 701 Pape Avenue, Toronto, ON, M4K 3S6",
-    "latitude": 43.6786237,
-    "longitude": -79.34442150000001,
-    "virtual": false,
-    "startDate": "2026-07-04T14:30:00.000Z",
-    "endDate": "2026-07-04T15:30:00.000Z",
-    "deadline": "2026-07-04T14:30:00.000Z",
-    "ageMin": 0,
-    "ageMax": 12,
-    "ages": {
-      "min": 0,
-      "max": 12
-    },
-    "grades": [
-      "0",
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "7"
-    ],
-    "language": [
-      "en"
-    ],
-    "languages": [
-      "en"
-    ],
-    "cost": "Free to join",
-    "sourceUrl": "https://tpl.bibliocommons.com/events/6a1e06302ea730c17ab37f84",
-    "lastChecked": "2026-07-04",
-    "lastSeen": "2026-07-04",
-    "status": "active",
-    "accessibility": [
-      "Library accessibility services available on request",
-      "Public library location"
-    ],
-    "equipment": "Materials provided unless the source says otherwise.",
-    "food": "No food listed.",
-    "capacity": "Check the source page for availability.",
-    "commitment": "Single scheduled library program or series date from source feed.",
-    "registrationUrl": "https://tpl.bibliocommons.com/events/6a1e06302ea730c17ab37f84",
-    "providerContact": "+1-416-393-7727",
-    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-04",
-    "trustedSource": true,
-    "volunteerHoursEligible": false,
-    "coopEligible": false,
-    "paidPosition": false,
-    "tags": [
-      "makerspace & fabrication",
-      "summer wonder",
-      "crafts & hobbies",
-      "preschool children (0-5)",
-      "school age children (6-12)",
-      "english"
-    ],
-    "sources": [
-      {
-        "label": "Official Toronto Public Library event page",
-        "url": "https://tpl.bibliocommons.com/events/6a1e06302ea730c17ab37f84",
-        "capturedAt": "2026-07-04T13:59:42.051Z",
-        "confidence": "high"
-      }
-    ],
-    "adminAuditTrail": [
-      {
-        "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:42.051Z",
-        "actor": "Library RSS generator",
-        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
-      }
-    ]
-  },
-  {
-    "id": "tpl-rss-6a3d748c86636e3d00509c6a",
-    "title": "Robotics 101: for families",
-    "organization": "Toronto Public Library",
-    "provider": "Toronto Public Library",
-    "description": "Families are welcome to come in for a fun tech surprise as we explore coding, and more! Space is limited.",
-    "summary": "Families are welcome to come in for a fun tech surprise as we explore coding, and more! Space is limited.",
-    "type": "One-time event",
-    "category": "Coding & Robotics",
-    "categories": [
-      "STEM",
-      "Coding & Robotics"
-    ],
-    "communityFocus": [
-      "Open to all",
-      "Newcomer-friendly"
-    ],
-    "city": "Toronto",
-    "region": "Toronto",
-    "address": "Amesbury Park, 1565 Lawrence Avenue West, Toronto, ON, M6L 1A8",
-    "latitude": 43.7064534,
-    "longitude": -79.4857392,
-    "virtual": false,
-    "startDate": "2026-07-04T14:30:00.000Z",
-    "endDate": "2026-07-04T15:30:00.000Z",
-    "deadline": "2026-07-04T14:30:00.000Z",
-    "ageMin": 0,
-    "ageMax": 12,
-    "ages": {
-      "min": 0,
-      "max": 12
-    },
-    "grades": [
-      "0",
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "7"
-    ],
-    "language": [
-      "en"
-    ],
-    "languages": [
-      "en"
-    ],
-    "cost": "Free to join",
-    "sourceUrl": "https://tpl.bibliocommons.com/events/6a3d748c86636e3d00509c6a",
-    "lastChecked": "2026-07-04",
-    "lastSeen": "2026-07-04",
-    "status": "active",
-    "accessibility": [
-      "Library accessibility services available on request",
-      "Public library location"
-    ],
-    "equipment": "Materials provided unless the source says otherwise.",
-    "food": "No food listed.",
-    "capacity": "Check the source page for availability.",
-    "commitment": "Single scheduled library program or series date from source feed.",
-    "registrationUrl": "https://tpl.bibliocommons.com/events/6a3d748c86636e3d00509c6a",
-    "providerContact": "apstaff@tpl.ca",
-    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-04",
-    "trustedSource": true,
-    "volunteerHoursEligible": false,
-    "coopEligible": false,
-    "paidPosition": false,
-    "tags": [
-      "coding & robotics",
-      "adults (18+)",
-      "preschool children (0-5)",
-      "school age children (6-12)",
-      "english"
-    ],
-    "sources": [
-      {
-        "label": "Official Toronto Public Library event page",
-        "url": "https://tpl.bibliocommons.com/events/6a3d748c86636e3d00509c6a",
-        "capturedAt": "2026-07-04T13:59:42.051Z",
-        "confidence": "high"
-      }
-    ],
-    "adminAuditTrail": [
-      {
-        "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:42.051Z",
-        "actor": "Library RSS generator",
-        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
-      }
-    ]
-  },
-  {
-    "id": "tpl-rss-6a331a631e67cd9cb33aa821",
-    "title": "Family Time",
-    "organization": "Toronto Public Library",
-    "provider": "Toronto Public Library",
-    "description": "Stories, songs, and rhymes for children ages 0-5 and their caregivers. Drop-in.",
-    "summary": "Stories, songs, and rhymes for children ages 0-5 and their caregivers. Drop-in.",
-    "type": "Drop-in",
-    "category": "Family Learning",
-    "categories": [
-      "Family Learning"
-    ],
-    "communityFocus": [
-      "Open to all",
-      "Newcomer-friendly"
-    ],
-    "city": "Toronto",
-    "region": "Toronto",
-    "address": "Cedarbrae, 545 Markham Road, Toronto, ON, M1H 2A1",
-    "latitude": 43.7574814,
-    "longitude": -79.2239668,
-    "virtual": false,
-    "startDate": "2026-07-04T14:30:00.000Z",
-    "endDate": "2026-07-04T15:00:00.000Z",
-    "deadline": "2026-07-04T14:30:00.000Z",
-    "ageMin": 0,
-    "ageMax": 5,
-    "ages": {
-      "min": 0,
-      "max": 5
-    },
-    "grades": [
-      "0"
-    ],
-    "language": [
-      "en"
-    ],
-    "languages": [
-      "en"
-    ],
-    "cost": "Free to join",
-    "sourceUrl": "https://tpl.bibliocommons.com/events/6a331a631e67cd9cb33aa821",
-    "lastChecked": "2026-07-04",
-    "lastSeen": "2026-07-04",
-    "status": "active",
-    "accessibility": [
-      "Library accessibility services available on request",
-      "Public library location"
-    ],
-    "equipment": "Materials provided unless the source says otherwise.",
-    "food": "No food listed.",
-    "capacity": "Check the source page for availability.",
-    "commitment": "Single scheduled library program or series date from source feed.",
-    "registrationUrl": "https://tpl.bibliocommons.com/events/6a331a631e67cd9cb33aa821",
-    "providerContact": "+1-416-396-8850",
-    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-04",
-    "trustedSource": true,
-    "volunteerHoursEligible": false,
-    "coopEligible": false,
-    "paidPosition": false,
-    "tags": [
-      "family learning",
-      "ready for reading storytimes",
-      "reading programs & storytimes",
-      "preschool children (0-5)",
-      "english"
-    ],
-    "sources": [
-      {
-        "label": "Official Toronto Public Library event page",
-        "url": "https://tpl.bibliocommons.com/events/6a331a631e67cd9cb33aa821",
-        "capturedAt": "2026-07-04T13:59:42.051Z",
-        "confidence": "high"
-      }
-    ],
-    "adminAuditTrail": [
-      {
-        "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:42.051Z",
-        "actor": "Library RSS generator",
-        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
-      }
-    ]
-  },
-  {
-    "id": "tpl-rss-6a46ab2cc52cdc3600ee64b1",
-    "title": "Family Time",
-    "organization": "Toronto Public Library",
-    "provider": "Toronto Public Library",
-    "description": "Join us for stories, songs, rhymes and activities in this program for children ages 5 and under and their parents or caregivers. Family Time runs from 10:30am to 11 am . Children, parents and caregivers are invited to Stay and Play from 11am to 11:30am .",
-    "summary": "Join us for stories, songs, rhymes and activities in this program for children ages 5 and under and their parents or caregivers. Family Time runs from 10:30am to 11 am . Children, parents and caregivers are invited to Stay and Play from 11am to 11:30am .",
-    "type": "One-time event",
-    "category": "Family Learning",
-    "categories": [
-      "Family Learning"
-    ],
-    "communityFocus": [
-      "Open to all",
-      "Newcomer-friendly"
-    ],
-    "city": "Toronto",
-    "region": "Toronto",
-    "address": "Junction Triangle, 305 Campbell Avenue, Toronto, ON, M6P 3V7",
-    "latitude": 43.6658048,
-    "longitude": -79.4497289,
-    "virtual": false,
-    "startDate": "2026-07-04T14:30:00.000Z",
-    "endDate": "2026-07-04T15:30:00.000Z",
-    "deadline": "2026-07-04T14:30:00.000Z",
-    "ageMin": 0,
-    "ageMax": 12,
-    "ages": {
-      "min": 0,
-      "max": 12
-    },
-    "grades": [
-      "0",
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "7"
-    ],
-    "language": [
-      "en"
-    ],
-    "languages": [
-      "en"
-    ],
-    "cost": "Free to join",
-    "sourceUrl": "https://tpl.bibliocommons.com/events/6a46ab2cc52cdc3600ee64b1",
-    "lastChecked": "2026-07-04",
-    "lastSeen": "2026-07-04",
-    "status": "active",
-    "accessibility": [
-      "Library accessibility services available on request",
-      "Public library location"
-    ],
-    "equipment": "Materials provided unless the source says otherwise.",
-    "food": "No food listed.",
-    "capacity": "Check the source page for availability.",
-    "commitment": "Single scheduled library program or series date from source feed.",
-    "registrationUrl": "https://tpl.bibliocommons.com/events/6a46ab2cc52cdc3600ee64b1",
-    "providerContact": "ask@tpl.ca",
-    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-04",
-    "trustedSource": true,
-    "volunteerHoursEligible": false,
-    "coopEligible": false,
-    "paidPosition": false,
-    "tags": [
-      "family learning",
-      "ready for reading storytimes",
-      "reading programs & storytimes",
-      "preschool children (0-5)",
-      "english"
-    ],
-    "sources": [
-      {
-        "label": "Official Toronto Public Library event page",
-        "url": "https://tpl.bibliocommons.com/events/6a46ab2cc52cdc3600ee64b1",
-        "capturedAt": "2026-07-04T13:59:42.051Z",
-        "confidence": "high"
-      }
-    ],
-    "adminAuditTrail": [
-      {
-        "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:42.051Z",
-        "actor": "Library RSS generator",
-        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
-      }
-    ]
-  },
-  {
-    "id": "markham-rss-68fbd37875911f28001a2332",
-    "title": "Storytime",
-    "organization": "Markham Public Library",
-    "provider": "Markham Public Library",
-    "description": "Join us on for an interactive storytime full of books, songs and activities for little ones and their caregivers. Drop-in program.",
-    "summary": "Join us on for an interactive storytime full of books, songs and activities for little ones and their caregivers. Drop-in program.",
-    "type": "Drop-in",
-    "category": "Family Learning",
-    "categories": [
-      "Family Learning"
-    ],
-    "communityFocus": [
-      "Open to all",
-      "Newcomer-friendly"
-    ],
-    "city": "Markham",
-    "region": "York",
-    "address": "Angus Glen Branch, 3990 Major Mackenzie Drive East, Markham, Ontario, L6C 1P8",
-    "latitude": 43.8947178,
-    "longitude": -79.33652219999999,
-    "virtual": false,
-    "startDate": "2026-07-04T14:30:00.000Z",
-    "endDate": "2026-07-04T15:00:00.000Z",
-    "deadline": "2026-07-04T14:30:00.000Z",
-    "ageMin": 0,
-    "ageMax": 5,
-    "ages": {
-      "min": 0,
-      "max": 5
-    },
-    "grades": [
-      "0"
-    ],
-    "language": [
-      "en"
-    ],
-    "languages": [
-      "en"
-    ],
-    "cost": "Free to join",
-    "sourceUrl": "https://markham.bibliocommons.com/events/68fbd37875911f28001a2332",
-    "lastChecked": "2026-07-04",
-    "lastSeen": "2026-07-04",
-    "status": "active",
-    "accessibility": [
-      "Library accessibility services available on request",
-      "Public library location"
-    ],
-    "equipment": "Materials provided unless the source says otherwise.",
-    "food": "No food listed.",
-    "capacity": "12 spots listed by source.",
-    "commitment": "Single scheduled library program or series date from source feed.",
-    "registrationUrl": "https://markham.bibliocommons.com/events/68fbd37875911f28001a2332",
-    "providerContact": "mplchats@markham.library.on.ca",
-    "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-04",
-    "trustedSource": true,
-    "volunteerHoursEligible": false,
-    "coopEligible": false,
-    "paidPosition": false,
-    "tags": [
-      "family learning",
-      "storytime",
-      "birth to five",
-      "english"
-    ],
-    "sources": [
-      {
-        "label": "Official Markham Public Library event page",
-        "url": "https://markham.bibliocommons.com/events/68fbd37875911f28001a2332",
-        "capturedAt": "2026-07-04T13:59:48.707Z",
-        "confidence": "high"
-      }
-    ],
-    "adminAuditTrail": [
-      {
-        "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:48.707Z",
-        "actor": "Library RSS generator",
-        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
-      }
-    ]
-  },
-  {
-    "id": "markham-rss-68fbdd1b0176055300fe8095",
-    "title": "Storytime",
-    "organization": "Markham Public Library",
-    "provider": "Markham Public Library",
-    "description": "Join us on for an interactive storytime full of books, songs and activities for little ones and their caregivers. Drop-in program.",
-    "summary": "Join us on for an interactive storytime full of books, songs and activities for little ones and their caregivers. Drop-in program.",
-    "type": "Drop-in",
-    "category": "Family Learning",
-    "categories": [
-      "Family Learning"
-    ],
-    "communityFocus": [
-      "Open to all",
-      "Newcomer-friendly"
-    ],
-    "city": "Markham",
-    "region": "York",
-    "address": "Thornhill Comm. Ctr. Branch, 7755 Bayview Avenue, Thornhill, Ontario, L3T 4P1",
-    "latitude": 43.8200327,
-    "longitude": -79.39987339999999,
-    "virtual": false,
-    "startDate": "2026-07-04T14:30:00.000Z",
-    "endDate": "2026-07-04T15:00:00.000Z",
-    "deadline": "2026-07-04T14:30:00.000Z",
-    "ageMin": 0,
-    "ageMax": 5,
-    "ages": {
-      "min": 0,
-      "max": 5
-    },
-    "grades": [
-      "0"
-    ],
-    "language": [
-      "en"
-    ],
-    "languages": [
-      "en"
-    ],
-    "cost": "Free to join",
-    "sourceUrl": "https://markham.bibliocommons.com/events/68fbdd1b0176055300fe8095",
-    "lastChecked": "2026-07-04",
-    "lastSeen": "2026-07-04",
-    "status": "active",
-    "accessibility": [
-      "Library accessibility services available on request",
-      "Public library location"
-    ],
-    "equipment": "Materials provided unless the source says otherwise.",
-    "food": "No food listed.",
-    "capacity": "12 spots listed by source.",
-    "commitment": "Single scheduled library program or series date from source feed.",
-    "registrationUrl": "https://markham.bibliocommons.com/events/68fbdd1b0176055300fe8095",
-    "providerContact": "mplchats@markham.library.on.ca",
-    "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-04",
-    "trustedSource": true,
-    "volunteerHoursEligible": false,
-    "coopEligible": false,
-    "paidPosition": false,
-    "tags": [
-      "family learning",
-      "storytime",
-      "birth to five",
-      "english"
-    ],
-    "sources": [
-      {
-        "label": "Official Markham Public Library event page",
-        "url": "https://markham.bibliocommons.com/events/68fbdd1b0176055300fe8095",
-        "capturedAt": "2026-07-04T13:59:48.707Z",
-        "confidence": "high"
-      }
-    ],
-    "adminAuditTrail": [
-      {
-        "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:48.707Z",
-        "actor": "Library RSS generator",
-        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
-      }
-    ]
-  },
-  {
-    "id": "markham-rss-68fbdc50e59a13000d3e1c88",
-    "title": "Storytime",
-    "organization": "Markham Public Library",
-    "provider": "Markham Public Library",
-    "description": "Join us on for an interactive storytime full of books, songs and activities for little ones and their caregivers. Drop-in program.",
-    "summary": "Join us on for an interactive storytime full of books, songs and activities for little ones and their caregivers. Drop-in program.",
-    "type": "Drop-in",
-    "category": "Family Learning",
-    "categories": [
-      "Family Learning"
-    ],
-    "communityFocus": [
-      "Open to all",
-      "Newcomer-friendly"
-    ],
-    "city": "Markham",
-    "region": "York",
-    "address": "Unionville Branch, 15 Library Lane, Unionville, Ontario, L3R 5C4",
-    "latitude": 43.8696741,
-    "longitude": -79.31056890000002,
-    "virtual": false,
-    "startDate": "2026-07-04T14:30:00.000Z",
-    "endDate": "2026-07-04T15:00:00.000Z",
-    "deadline": "2026-07-04T14:30:00.000Z",
-    "ageMin": 0,
-    "ageMax": 5,
-    "ages": {
-      "min": 0,
-      "max": 5
-    },
-    "grades": [
-      "0"
-    ],
-    "language": [
-      "en"
-    ],
-    "languages": [
-      "en"
-    ],
-    "cost": "Free to join",
-    "sourceUrl": "https://markham.bibliocommons.com/events/68fbdc50e59a13000d3e1c88",
-    "lastChecked": "2026-07-04",
-    "lastSeen": "2026-07-04",
-    "status": "active",
-    "accessibility": [
-      "Library accessibility services available on request",
-      "Public library location"
-    ],
-    "equipment": "Materials provided unless the source says otherwise.",
-    "food": "No food listed.",
-    "capacity": "12 spots listed by source.",
-    "commitment": "Single scheduled library program or series date from source feed.",
-    "registrationUrl": "https://markham.bibliocommons.com/events/68fbdc50e59a13000d3e1c88",
-    "providerContact": "mplchats@markham.library.on.ca",
-    "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-04",
-    "trustedSource": true,
-    "volunteerHoursEligible": false,
-    "coopEligible": false,
-    "paidPosition": false,
-    "tags": [
-      "family learning",
-      "storytime",
-      "birth to five",
-      "english"
-    ],
-    "sources": [
-      {
-        "label": "Official Markham Public Library event page",
-        "url": "https://markham.bibliocommons.com/events/68fbdc50e59a13000d3e1c88",
-        "capturedAt": "2026-07-04T13:59:48.708Z",
-        "confidence": "high"
-      }
-    ],
-    "adminAuditTrail": [
-      {
-        "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:48.708Z",
-        "actor": "Library RSS generator",
-        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
-      }
-    ]
-  },
-  {
-    "id": "markham-rss-694992cb4be11d3d00d95e2c",
-    "title": "Storytime",
-    "organization": "Markham Public Library",
-    "provider": "Markham Public Library",
-    "description": "Join us on for an interactive storytime full of books, songs and activities for little ones and their caregivers. Drop-in program.",
-    "summary": "Join us on for an interactive storytime full of books, songs and activities for little ones and their caregivers. Drop-in program.",
-    "type": "Drop-in",
-    "category": "Family Learning",
-    "categories": [
-      "Family Learning"
-    ],
-    "communityFocus": [
-      "Open to all",
-      "Newcomer-friendly"
-    ],
-    "city": "Markham",
-    "region": "York",
-    "address": "Cornell Branch, 3201 Bur Oak Avenue, Markham, Ontario, L6B 0T2",
-    "latitude": 43.8849972,
-    "longitude": -79.22996080000001,
-    "virtual": false,
-    "startDate": "2026-07-04T14:30:00.000Z",
-    "endDate": "2026-07-04T15:00:00.000Z",
-    "deadline": "2026-07-04T14:30:00.000Z",
-    "ageMin": 0,
-    "ageMax": 5,
-    "ages": {
-      "min": 0,
-      "max": 5
-    },
-    "grades": [
-      "0"
-    ],
-    "language": [
-      "en"
-    ],
-    "languages": [
-      "en"
-    ],
-    "cost": "Free to join",
-    "sourceUrl": "https://markham.bibliocommons.com/events/694992cb4be11d3d00d95e2c",
-    "lastChecked": "2026-07-04",
-    "lastSeen": "2026-07-04",
-    "status": "active",
-    "accessibility": [
-      "Library accessibility services available on request",
-      "Public library location"
-    ],
-    "equipment": "Materials provided unless the source says otherwise.",
-    "food": "No food listed.",
-    "capacity": "12 spots listed by source.",
-    "commitment": "Single scheduled library program or series date from source feed.",
-    "registrationUrl": "https://markham.bibliocommons.com/events/694992cb4be11d3d00d95e2c",
-    "providerContact": "mplchats@markham.library.on.ca",
-    "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-04",
-    "trustedSource": true,
-    "volunteerHoursEligible": false,
-    "coopEligible": false,
-    "paidPosition": false,
-    "tags": [
-      "family learning",
-      "storytime",
-      "birth to five",
-      "english"
-    ],
-    "sources": [
-      {
-        "label": "Official Markham Public Library event page",
-        "url": "https://markham.bibliocommons.com/events/694992cb4be11d3d00d95e2c",
-        "capturedAt": "2026-07-04T13:59:48.708Z",
-        "confidence": "high"
-      }
-    ],
-    "adminAuditTrail": [
-      {
-        "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:48.708Z",
-        "actor": "Library RSS generator",
-        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
-      }
-    ]
-  },
-  {
-    "id": "tpl-rss-69ef9053bd9a3c316a55a7dd",
-    "title": "Family Time",
-    "organization": "Toronto Public Library",
-    "provider": "Toronto Public Library",
-    "description": "Join us for stories, songs, rhymes and activities in this program for children ages 5 and under and their parents or caregivers.",
-    "summary": "Join us for stories, songs, rhymes and activities in this program for children ages 5 and under and their parents or caregivers.",
-    "type": "One-time event",
-    "category": "Family Learning",
-    "categories": [
-      "Family Learning"
-    ],
-    "communityFocus": [
-      "Open to all",
-      "Newcomer-friendly"
-    ],
-    "city": "Toronto",
-    "region": "Toronto",
-    "address": "Queen/Saulter, 765 Queen Street East, Toronto, ON, M4M 1H3",
-    "latitude": 43.659131,
-    "longitude": -79.3475824,
-    "virtual": false,
-    "startDate": "2026-07-04T14:45:00.000Z",
-    "endDate": "2026-07-04T15:15:00.000Z",
-    "deadline": "2026-07-04T14:45:00.000Z",
-    "ageMin": 0,
-    "ageMax": 12,
-    "ages": {
-      "min": 0,
-      "max": 12
-    },
-    "grades": [
-      "0",
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "7"
-    ],
-    "language": [
-      "en"
-    ],
-    "languages": [
-      "en"
-    ],
-    "cost": "Free to join",
-    "sourceUrl": "https://tpl.bibliocommons.com/events/69ef9053bd9a3c316a55a7dd",
-    "lastChecked": "2026-07-04",
-    "lastSeen": "2026-07-04",
-    "status": "active",
-    "accessibility": [
-      "Library accessibility services available on request",
-      "Public library location"
-    ],
-    "equipment": "Materials provided unless the source says otherwise.",
-    "food": "No food listed.",
-    "capacity": "Check the source page for availability.",
-    "commitment": "Single scheduled library program or series date from source feed.",
-    "registrationUrl": "https://tpl.bibliocommons.com/events/69ef9053bd9a3c316a55a7dd",
-    "providerContact": "+1-416-393-7723",
-    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-04",
-    "trustedSource": true,
-    "volunteerHoursEligible": false,
-    "coopEligible": false,
-    "paidPosition": false,
-    "tags": [
-      "family learning",
-      "ready for reading storytimes",
-      "reading programs & storytimes",
-      "preschool children (0-5)",
-      "english"
-    ],
-    "sources": [
-      {
-        "label": "Official Toronto Public Library event page",
-        "url": "https://tpl.bibliocommons.com/events/69ef9053bd9a3c316a55a7dd",
-        "capturedAt": "2026-07-04T13:59:42.051Z",
-        "confidence": "high"
-      }
-    ],
-    "adminAuditTrail": [
-      {
-        "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:42.051Z",
-        "actor": "Library RSS generator",
-        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
-      }
-    ]
-  },
-  {
-    "id": "tpl-rss-69ced34a24bd39b0b5e63bd0",
-    "title": "Family Time",
-    "organization": "Toronto Public Library",
-    "provider": "Toronto Public Library",
-    "description": "Join us for stories, songs, rhymes and activities in this program for children ages 5 and under and their parents or caregivers.",
-    "summary": "Join us for stories, songs, rhymes and activities in this program for children ages 5 and under and their parents or caregivers.",
-    "type": "One-time event",
-    "category": "Family Learning",
-    "categories": [
-      "Family Learning"
-    ],
-    "communityFocus": [
-      "Open to all",
-      "Newcomer-friendly"
-    ],
-    "city": "Toronto",
-    "region": "Toronto",
-    "address": "Queen/Saulter, 765 Queen Street East, Toronto, ON, M4M 1H3",
-    "latitude": 43.659131,
-    "longitude": -79.3475824,
-    "virtual": false,
-    "startDate": "2026-07-04T14:45:00.000Z",
-    "endDate": "2026-07-04T15:15:00.000Z",
-    "deadline": "2026-07-04T14:45:00.000Z",
-    "ageMin": 0,
-    "ageMax": 12,
-    "ages": {
-      "min": 0,
-      "max": 12
-    },
-    "grades": [
-      "0",
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "7"
-    ],
-    "language": [
-      "en"
-    ],
-    "languages": [
-      "en"
-    ],
-    "cost": "Free to join",
-    "sourceUrl": "https://tpl.bibliocommons.com/events/69ced34a24bd39b0b5e63bd0",
-    "lastChecked": "2026-07-04",
-    "lastSeen": "2026-07-04",
-    "status": "active",
-    "accessibility": [
-      "Library accessibility services available on request",
-      "Public library location"
-    ],
-    "equipment": "Materials provided unless the source says otherwise.",
-    "food": "No food listed.",
-    "capacity": "Check the source page for availability.",
-    "commitment": "Single scheduled library program or series date from source feed.",
-    "registrationUrl": "https://tpl.bibliocommons.com/events/69ced34a24bd39b0b5e63bd0",
-    "providerContact": "+1-416-393-7723",
-    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-04",
-    "trustedSource": true,
-    "volunteerHoursEligible": false,
-    "coopEligible": false,
-    "paidPosition": false,
-    "tags": [
-      "family learning",
-      "ready for reading storytimes",
-      "reading programs & storytimes",
-      "preschool children (0-5)",
-      "english"
-    ],
-    "sources": [
-      {
-        "label": "Official Toronto Public Library event page",
-        "url": "https://tpl.bibliocommons.com/events/69ced34a24bd39b0b5e63bd0",
-        "capturedAt": "2026-07-04T13:59:42.051Z",
-        "confidence": "high"
-      }
-    ],
-    "adminAuditTrail": [
-      {
-        "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:42.051Z",
-        "actor": "Library RSS generator",
-        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
-      }
-    ]
-  },
-  {
-    "id": "tpl-rss-6a3d5670414ef43d00980608",
-    "title": "Typing Practice",
-    "organization": "Toronto Public Library",
-    "provider": "Toronto Public Library",
-    "description": "Typing is a key skill for using the computer. This program is intended to help participants practice using a keyboard and learn how to type faster and with increased accuracy. Prerequisites: No computer experience required. Format: Hands-on with demonstrations",
-    "summary": "Typing is a key skill for using the computer. This program is intended to help participants practice using a keyboard and learn how to type faster and with increased accuracy. Prerequisites: No computer experience required. Format: Hands-on with demonstrations",
-    "type": "One-time event",
-    "category": "Family Learning",
-    "categories": [
-      "Family Learning"
-    ],
-    "communityFocus": [
-      "Open to all",
-      "Newcomer-friendly"
-    ],
-    "city": "Toronto",
-    "region": "Toronto",
-    "address": "Parliament Street, 269 Gerrard Street East, Toronto, ON, M5A 2G3",
-    "latitude": 43.6618438,
-    "longitude": -79.3680718,
-    "virtual": false,
-    "startDate": "2026-07-04T14:45:00.000Z",
-    "endDate": "2026-07-04T15:30:00.000Z",
-    "deadline": "2026-07-04T14:45:00.000Z",
-    "ageMin": 18,
-    "ages": {
-      "min": 18
-    },
-    "grades": [],
-    "language": [
-      "en"
-    ],
-    "languages": [
-      "en"
-    ],
-    "cost": "Free to join",
-    "sourceUrl": "https://tpl.bibliocommons.com/events/6a3d5670414ef43d00980608",
-    "lastChecked": "2026-07-04",
-    "lastSeen": "2026-07-04",
-    "status": "active",
-    "accessibility": [
-      "Library accessibility services available on request",
-      "Public library location"
-    ],
-    "equipment": "Materials provided unless the source says otherwise.",
-    "food": "No food listed.",
-    "capacity": "Check the source page for availability.",
-    "commitment": "Single scheduled library program or series date from source feed.",
-    "registrationUrl": "https://tpl.bibliocommons.com/events/6a3d5670414ef43d00980608",
-    "providerContact": "+1-416-393-7663",
-    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-04",
-    "trustedSource": true,
-    "volunteerHoursEligible": false,
-    "coopEligible": false,
-    "paidPosition": false,
-    "tags": [
-      "family learning",
-      "computer basics & office software",
-      "adults (18+)",
-      "older adults",
-      "english"
-    ],
-    "sources": [
-      {
-        "label": "Official Toronto Public Library event page",
-        "url": "https://tpl.bibliocommons.com/events/6a3d5670414ef43d00980608",
-        "capturedAt": "2026-07-04T13:59:42.051Z",
-        "confidence": "high"
-      }
-    ],
-    "adminAuditTrail": [
-      {
-        "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:42.051Z",
-        "actor": "Library RSS generator",
-        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
-      }
-    ]
-  },
-  {
-    "id": "tpl-rss-69a07659cbf6405d3568b14c",
-    "title": "Builder's Club",
-    "organization": "Toronto Public Library",
-    "provider": "Toronto Public Library",
-    "description": "Join us on Saturday mornings and build to your heart’s content! LEGO, DUPLO, and KEVA planks will be provided for you to explore your creativity. All children welcome with their caregivers. Drop-in, no registration required.",
-    "summary": "Join us on Saturday mornings and build to your heart’s content! LEGO, DUPLO, and KEVA planks will be provided for you to explore your creativity. All children welcome with their caregivers. Drop-in, no registration required.",
-    "type": "Drop-in",
-    "category": "Makerspace & Fabrication",
-    "categories": [
-      "STEM",
-      "Makerspace & Fabrication"
-    ],
-    "communityFocus": [
-      "Open to all",
-      "Newcomer-friendly"
-    ],
-    "city": "Toronto",
-    "region": "Toronto",
-    "address": "Locke, 3083 Yonge Street, Toronto, ON, M4N 2K7",
-    "latitude": 43.7248617,
-    "longitude": -79.4017205,
-    "virtual": false,
-    "startDate": "2026-07-04T15:00:00.000Z",
-    "endDate": "2026-07-04T16:00:00.000Z",
-    "deadline": "2026-07-04T15:00:00.000Z",
-    "ageMin": 0,
-    "ageMax": 12,
-    "ages": {
-      "min": 0,
-      "max": 12
-    },
-    "grades": [
-      "0",
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "7"
-    ],
-    "language": [
-      "en"
-    ],
-    "languages": [
-      "en"
-    ],
-    "cost": "Free to join",
-    "sourceUrl": "https://tpl.bibliocommons.com/events/69a07659cbf6405d3568b14c",
-    "lastChecked": "2026-07-04",
-    "lastSeen": "2026-07-04",
-    "status": "active",
-    "accessibility": [
-      "Library accessibility services available on request",
-      "Public library location"
-    ],
-    "equipment": "Materials provided unless the source says otherwise.",
-    "food": "No food listed.",
-    "capacity": "Check the source page for availability.",
-    "commitment": "Single scheduled library program or series date from source feed.",
-    "registrationUrl": "https://tpl.bibliocommons.com/events/69a07659cbf6405d3568b14c",
-    "providerContact": "lostaff@tpl.ca",
-    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-04",
-    "trustedSource": true,
-    "volunteerHoursEligible": false,
-    "coopEligible": false,
-    "paidPosition": false,
-    "tags": [
-      "makerspace & fabrication",
-      "crafts & hobbies",
-      "culture, arts & entertainment",
-      "science & engineering",
-      "preschool children (0-5)",
-      "school age children (6-12)",
-      "english"
-    ],
-    "sources": [
-      {
-        "label": "Official Toronto Public Library event page",
-        "url": "https://tpl.bibliocommons.com/events/69a07659cbf6405d3568b14c",
-        "capturedAt": "2026-07-04T13:59:42.051Z",
-        "confidence": "high"
-      }
-    ],
-    "adminAuditTrail": [
-      {
-        "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:42.051Z",
-        "actor": "Library RSS generator",
-        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
-      }
-    ]
-  },
-  {
-    "id": "tpl-rss-6a14ba718ea300e263186f6a",
-    "title": "Saturday Morning Storytime",
-    "organization": "Toronto Public Library",
-    "provider": "Toronto Public Library",
-    "description": "Songs, stories, and activities for children from birth to 5 years with their parents or caregivers. Drop-in. No registration required.",
-    "summary": "Songs, stories, and activities for children from birth to 5 years with their parents or caregivers. Drop-in. No registration required.",
-    "type": "Drop-in",
-    "category": "Family Learning",
-    "categories": [
-      "Family Learning"
-    ],
-    "communityFocus": [
-      "Open to all",
-      "Newcomer-friendly"
-    ],
-    "city": "Toronto",
-    "region": "Toronto",
-    "address": "Yorkville, 22 Yorkville Avenue, Toronto, ON, M4W 1L4",
-    "latitude": 43.6720537,
-    "longitude": -79.38869129999999,
-    "virtual": false,
-    "startDate": "2026-07-04T15:00:00.000Z",
-    "endDate": "2026-07-04T15:30:00.000Z",
-    "deadline": "2026-07-04T15:00:00.000Z",
-    "ageMin": 0,
-    "ageMax": 12,
-    "ages": {
-      "min": 0,
-      "max": 12
-    },
-    "grades": [
-      "0",
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "7"
-    ],
-    "language": [
-      "en"
-    ],
-    "languages": [
-      "en"
-    ],
-    "cost": "Free to join",
-    "sourceUrl": "https://tpl.bibliocommons.com/events/6a14ba718ea300e263186f6a",
-    "lastChecked": "2026-07-04",
-    "lastSeen": "2026-07-04",
-    "status": "active",
-    "accessibility": [
-      "Library accessibility services available on request",
-      "Public library location"
-    ],
-    "equipment": "Materials provided unless the source says otherwise.",
-    "food": "No food listed.",
-    "capacity": "Check the source page for availability.",
-    "commitment": "Single scheduled library program or series date from source feed.",
-    "registrationUrl": "https://tpl.bibliocommons.com/events/6a14ba718ea300e263186f6a",
-    "providerContact": "+1-416-393-7660",
-    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-04",
-    "trustedSource": true,
-    "volunteerHoursEligible": false,
-    "coopEligible": false,
-    "paidPosition": false,
-    "tags": [
-      "family learning",
-      "ready for reading storytimes",
-      "reading programs & storytimes",
-      "preschool children (0-5)",
-      "english"
-    ],
-    "sources": [
-      {
-        "label": "Official Toronto Public Library event page",
-        "url": "https://tpl.bibliocommons.com/events/6a14ba718ea300e263186f6a",
-        "capturedAt": "2026-07-04T13:59:42.051Z",
-        "confidence": "high"
-      }
-    ],
-    "adminAuditTrail": [
-      {
-        "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:42.051Z",
-        "actor": "Library RSS generator",
-        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
-      }
-    ]
-  },
-  {
-    "id": "tpl-rss-6973b3bc377f55c8ec1512c2",
-    "title": "Family Time",
-    "organization": "Toronto Public Library",
-    "provider": "Toronto Public Library",
-    "description": "Join us for stories, songs, rhymes and activities in this program for children ages 5 and under and their parents or caregivers. Family Time runs from 11:00AM to 11:30AM . Accessibility Live or automated closed captioning, sign language interpretation, interve",
-    "summary": "Join us for stories, songs, rhymes and activities in this program for children ages 5 and under and their parents or caregivers. Family Time runs from 11:00AM to 11:30AM . Accessibility Live or automated closed captioning, sign language interpretation, interve",
-    "type": "One-time event",
-    "category": "Family Learning",
-    "categories": [
-      "Family Learning"
-    ],
-    "communityFocus": [
-      "Open to all",
-      "Newcomer-friendly"
-    ],
-    "city": "Toronto",
-    "region": "Toronto",
-    "address": "Sanderson, 327 Bathurst Street, Toronto, ON, M5T 1J1",
-    "latitude": 43.652106,
-    "longitude": -79.4056243,
-    "virtual": false,
-    "startDate": "2026-07-04T15:00:00.000Z",
-    "endDate": "2026-07-04T15:30:00.000Z",
-    "deadline": "2026-07-04T15:00:00.000Z",
-    "ageMin": 0,
-    "ageMax": 12,
-    "ages": {
-      "min": 0,
-      "max": 12
-    },
-    "grades": [
-      "0",
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "7"
-    ],
-    "language": [
-      "en"
-    ],
-    "languages": [
-      "en"
-    ],
-    "cost": "Free to join",
-    "sourceUrl": "https://tpl.bibliocommons.com/events/6973b3bc377f55c8ec1512c2",
-    "lastChecked": "2026-07-04",
-    "lastSeen": "2026-07-04",
-    "status": "active",
-    "accessibility": [
-      "Library accessibility services available on request",
-      "Public library location"
-    ],
-    "equipment": "Materials provided unless the source says otherwise.",
-    "food": "No food listed.",
-    "capacity": "Check the source page for availability.",
-    "commitment": "Single scheduled library program or series date from source feed.",
-    "registrationUrl": "https://tpl.bibliocommons.com/events/6973b3bc377f55c8ec1512c2",
-    "providerContact": "ask@tpl.ca",
-    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-04",
-    "trustedSource": true,
-    "volunteerHoursEligible": false,
-    "coopEligible": false,
-    "paidPosition": false,
-    "tags": [
-      "family learning",
-      "ready for reading storytimes",
-      "reading programs & storytimes",
-      "preschool children (0-5)",
-      "english"
-    ],
-    "sources": [
-      {
-        "label": "Official Toronto Public Library event page",
-        "url": "https://tpl.bibliocommons.com/events/6973b3bc377f55c8ec1512c2",
-        "capturedAt": "2026-07-04T13:59:42.052Z",
-        "confidence": "high"
-      }
-    ],
-    "adminAuditTrail": [
-      {
-        "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:42.052Z",
-        "actor": "Library RSS generator",
-        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
-      }
-    ]
-  },
-  {
-    "id": "tpl-rss-69f8c34d43b41b3d0064065a",
-    "title": "Family Time",
-    "organization": "Toronto Public Library",
-    "provider": "Toronto Public Library",
-    "description": "Join us for stories, songs, rhymes and activities in this program for children ages 5 and under and their parents or caregivers. Family Time runs from 11 to 11:30. Children, parents, and caregivers are invited to join us for a fun craft from 11:30 to 12:00.",
-    "summary": "Join us for stories, songs, rhymes and activities in this program for children ages 5 and under and their parents or caregivers. Family Time runs from 11 to 11:30. Children, parents, and caregivers are invited to join us for a fun craft from 11:30 to 12:00.",
-    "type": "One-time event",
-    "category": "Makerspace & Fabrication",
-    "categories": [
-      "STEM",
-      "Makerspace & Fabrication"
-    ],
-    "communityFocus": [
-      "Open to all",
-      "Newcomer-friendly"
-    ],
-    "city": "Toronto",
-    "region": "Toronto",
-    "address": "Albion, 1515 Albion Road, Toronto, ON, M9V 1B2",
-    "latitude": 43.7399466,
-    "longitude": -79.58481189999999,
-    "virtual": false,
-    "startDate": "2026-07-04T15:00:00.000Z",
-    "endDate": "2026-07-04T16:00:00.000Z",
-    "deadline": "2026-07-04T15:00:00.000Z",
-    "ageMin": 0,
-    "ageMax": 12,
-    "ages": {
-      "min": 0,
-      "max": 12
-    },
-    "grades": [
-      "0",
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "7"
-    ],
-    "language": [
-      "en"
-    ],
-    "languages": [
-      "en"
-    ],
-    "cost": "Free to join",
-    "sourceUrl": "https://tpl.bibliocommons.com/events/69f8c34d43b41b3d0064065a",
-    "lastChecked": "2026-07-04",
-    "lastSeen": "2026-07-04",
-    "status": "active",
-    "accessibility": [
-      "Library accessibility services available on request",
-      "Public library location"
-    ],
-    "equipment": "Materials provided unless the source says otherwise.",
-    "food": "No food listed.",
-    "capacity": "Check the source page for availability.",
-    "commitment": "Single scheduled library program or series date from source feed.",
-    "registrationUrl": "https://tpl.bibliocommons.com/events/69f8c34d43b41b3d0064065a",
-    "providerContact": "albionkids@tpl.ca",
-    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-04",
-    "trustedSource": true,
-    "volunteerHoursEligible": false,
-    "coopEligible": false,
-    "paidPosition": false,
-    "tags": [
-      "makerspace & fabrication",
-      "ready for reading storytimes",
-      "reading programs & storytimes",
-      "preschool children (0-5)",
-      "english"
-    ],
-    "sources": [
-      {
-        "label": "Official Toronto Public Library event page",
-        "url": "https://tpl.bibliocommons.com/events/69f8c34d43b41b3d0064065a",
-        "capturedAt": "2026-07-04T13:59:42.052Z",
-        "confidence": "high"
-      }
-    ],
-    "adminAuditTrail": [
-      {
-        "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:42.052Z",
-        "actor": "Library RSS generator",
-        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
-      }
-    ]
-  },
-  {
-    "id": "tpl-rss-6a1714b046d5f64f7dcd0cb8",
-    "title": "Candy Sculptures",
-    "organization": "Toronto Public Library",
-    "provider": "Toronto Public Library",
-    "description": "Get creative and make your very own candy sculpture! Tap into your inner artist and make a fun whimsical sculpture that you can take home and eat Note: this program involves pre-made store bought dietary friendly candy to create sculptures, materials are provi",
-    "summary": "Get creative and make your very own candy sculpture! Tap into your inner artist and make a fun whimsical sculpture that you can take home and eat Note: this program involves pre-made store bought dietary friendly candy to create sculptures, materials are provi",
-    "type": "One-time event",
-    "category": "Makerspace & Fabrication",
-    "categories": [
-      "STEM",
-      "Makerspace & Fabrication"
-    ],
-    "communityFocus": [
-      "Open to all",
-      "Newcomer-friendly"
-    ],
-    "city": "Toronto",
-    "region": "Toronto",
-    "address": "St. Clair/Silverthorn, 1748 St. Clair Avenue West, Toronto, ON, M6N 1J3",
-    "latitude": 43.6742898,
-    "longitude": -79.4605991,
-    "virtual": false,
-    "startDate": "2026-07-04T15:00:00.000Z",
-    "endDate": "2026-07-04T16:00:00.000Z",
-    "deadline": "2026-07-04T15:00:00.000Z",
-    "ageMin": 13,
-    "ageMax": 17,
-    "ages": {
-      "min": 13,
-      "max": 17
-    },
-    "grades": [
-      "8",
-      "9",
-      "10",
-      "11",
-      "12"
-    ],
-    "language": [
-      "en"
-    ],
-    "languages": [
-      "en"
-    ],
-    "cost": "Free to join",
-    "sourceUrl": "https://tpl.bibliocommons.com/events/6a1714b046d5f64f7dcd0cb8",
-    "lastChecked": "2026-07-04",
-    "lastSeen": "2026-07-04",
-    "status": "active",
-    "accessibility": [
-      "Library accessibility services available on request",
-      "Public library location"
-    ],
-    "equipment": "Materials provided unless the source says otherwise.",
-    "food": "No food listed.",
-    "capacity": "15 spots listed by source.",
-    "commitment": "Single scheduled library program or series date from source feed.",
-    "registrationUrl": "https://tpl.bibliocommons.com/events/6a1714b046d5f64f7dcd0cb8",
-    "providerContact": "+1-416-393-7709",
-    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-04",
-    "trustedSource": true,
-    "volunteerHoursEligible": false,
-    "coopEligible": false,
-    "paidPosition": false,
-    "tags": [
-      "makerspace & fabrication",
-      "crafts & hobbies",
-      "adults (18+)",
-      "teens (13-17)",
-      "younger adults (18-24)",
-      "english"
-    ],
-    "sources": [
-      {
-        "label": "Official Toronto Public Library event page",
-        "url": "https://tpl.bibliocommons.com/events/6a1714b046d5f64f7dcd0cb8",
-        "capturedAt": "2026-07-04T13:59:42.052Z",
-        "confidence": "high"
-      }
-    ],
-    "adminAuditTrail": [
-      {
-        "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:42.052Z",
-        "actor": "Library RSS generator",
-        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
-      }
-    ]
-  },
-  {
-    "id": "tpl-rss-6a356bb07550c8bf9f5e7de5",
-    "title": "Family Storytime and Craft",
-    "organization": "Toronto Public Library",
-    "provider": "Toronto Public Library",
-    "description": "Join us for stories, songs, rhymes and activities in this program for children ages 5 and under and their parents or caregivers. Family time runs from 11:00-11:30 am. Children, parents and caregivers are welcomed to stay afterwards for a craft and colouring ac",
-    "summary": "Join us for stories, songs, rhymes and activities in this program for children ages 5 and under and their parents or caregivers. Family time runs from 11:00-11:30 am. Children, parents and caregivers are welcomed to stay afterwards for a craft and colouring ac",
-    "type": "One-time event",
-    "category": "Makerspace & Fabrication",
-    "categories": [
-      "STEM",
-      "Makerspace & Fabrication"
-    ],
-    "communityFocus": [
-      "Open to all",
-      "Newcomer-friendly"
-    ],
-    "city": "Toronto",
-    "region": "Toronto",
-    "address": "Jane/Sheppard, 1906 Sheppard Avenue West, Toronto, ON, M3L 1Y7",
-    "latitude": 43.7399911,
-    "longitude": -79.51010459999999,
-    "virtual": false,
-    "startDate": "2026-07-04T15:00:00.000Z",
-    "endDate": "2026-07-04T16:00:00.000Z",
-    "deadline": "2026-07-04T15:00:00.000Z",
-    "ageMin": 0,
-    "ageMax": 12,
-    "ages": {
-      "min": 0,
-      "max": 12
-    },
-    "grades": [
-      "0",
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "7"
-    ],
-    "language": [
-      "en"
-    ],
-    "languages": [
-      "en"
-    ],
-    "cost": "Free to join",
-    "sourceUrl": "https://tpl.bibliocommons.com/events/6a356bb07550c8bf9f5e7de5",
-    "lastChecked": "2026-07-04",
-    "lastSeen": "2026-07-04",
-    "status": "active",
-    "accessibility": [
-      "Library accessibility services available on request",
-      "Public library location"
-    ],
-    "equipment": "Materials provided unless the source says otherwise.",
-    "food": "No food listed.",
-    "capacity": "Check the source page for availability.",
-    "commitment": "Single scheduled library program or series date from source feed.",
-    "registrationUrl": "https://tpl.bibliocommons.com/events/6a356bb07550c8bf9f5e7de5",
-    "providerContact": "janesheppard@tpl.ca",
-    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-04",
-    "trustedSource": true,
-    "volunteerHoursEligible": false,
-    "coopEligible": false,
-    "paidPosition": false,
-    "tags": [
-      "makerspace & fabrication",
-      "reading programs & storytimes",
-      "preschool children (0-5)",
-      "english"
-    ],
-    "sources": [
-      {
-        "label": "Official Toronto Public Library event page",
-        "url": "https://tpl.bibliocommons.com/events/6a356bb07550c8bf9f5e7de5",
-        "capturedAt": "2026-07-04T13:59:42.052Z",
-        "confidence": "high"
-      }
-    ],
-    "adminAuditTrail": [
-      {
-        "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:42.052Z",
-        "actor": "Library RSS generator",
-        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
-      }
-    ]
-  },
-  {
-    "id": "tpl-rss-6a11f0d7caf93436005de173",
-    "title": "Yoga Storytime",
-    "organization": "Toronto Public Library",
-    "provider": "Toronto Public Library",
-    "description": "Join us for an interactive, movement-based program where we read stories and make them come alive with our bodies! Join Megan Snider, author and Founder of Appleseed Yoga for Kids as she delivers inspiring stories and gets the whole family moving. Class begins",
-    "summary": "Join us for an interactive, movement-based program where we read stories and make them come alive with our bodies! Join Megan Snider, author and Founder of Appleseed Yoga for Kids as she delivers inspiring stories and gets the whole family moving. Class begins",
-    "type": "One-time event",
-    "category": "Family Learning",
-    "categories": [
-      "Family Learning"
-    ],
-    "communityFocus": [
-      "Open to all",
-      "Newcomer-friendly"
-    ],
-    "city": "Toronto",
-    "region": "Toronto",
-    "address": "Agincourt, 155 Bonis Ave, Toronto, ON, M1T 3W6",
-    "latitude": 43.785235,
-    "longitude": -79.2934973,
-    "virtual": false,
-    "startDate": "2026-07-04T15:00:00.000Z",
-    "endDate": "2026-07-04T16:00:00.000Z",
-    "deadline": "2026-07-04T15:00:00.000Z",
-    "ageMin": 0,
-    "ageMax": 12,
-    "ages": {
-      "min": 0,
-      "max": 12
-    },
-    "grades": [
-      "0",
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "7"
-    ],
-    "language": [
-      "en"
-    ],
-    "languages": [
-      "en"
-    ],
-    "cost": "Free to join",
-    "sourceUrl": "https://tpl.bibliocommons.com/events/6a11f0d7caf93436005de173",
-    "lastChecked": "2026-07-04",
-    "lastSeen": "2026-07-04",
-    "status": "active",
-    "accessibility": [
-      "Library accessibility services available on request",
-      "Public library location"
-    ],
-    "equipment": "Materials provided unless the source says otherwise.",
-    "food": "No food listed.",
-    "capacity": "55 spots listed by source.",
-    "commitment": "Single scheduled library program or series date from source feed.",
-    "registrationUrl": "https://tpl.bibliocommons.com/events/6a11f0d7caf93436005de173",
-    "providerContact": "+1-416-396-8943",
-    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-04",
-    "trustedSource": true,
-    "volunteerHoursEligible": false,
-    "coopEligible": false,
-    "paidPosition": false,
-    "tags": [
-      "family learning",
-      "summer wonder",
-      "reading programs & storytimes",
-      "preschool children (0-5)",
-      "school age children (6-12)",
-      "english"
-    ],
-    "sources": [
-      {
-        "label": "Official Toronto Public Library event page",
-        "url": "https://tpl.bibliocommons.com/events/6a11f0d7caf93436005de173",
-        "capturedAt": "2026-07-04T13:59:42.052Z",
-        "confidence": "high"
-      }
-    ],
-    "adminAuditTrail": [
-      {
-        "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:42.052Z",
-        "actor": "Library RSS generator",
-        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
-      }
-    ]
-  },
-  {
-    "id": "markham-rss-68fbd36ee647c8ff0c387291",
-    "title": "Mini-Makers",
-    "organization": "Markham Public Library",
-    "provider": "Markham Public Library",
-    "description": "Drop in anytime between 11 AM and 12 PM for a fun-filled hour of STEAM (Science, Technology, Engineering, Arts, and Math) exploration! Designed for curious young minds, Mini-Makers offers hands-on activities ranging from simple crafts to creative LEGO builds. ",
-    "summary": "Drop in anytime between 11 AM and 12 PM for a fun-filled hour of STEAM (Science, Technology, Engineering, Arts, and Math) exploration! Designed for curious young minds, Mini-Makers offers hands-on activities ranging from simple crafts to creative LEGO builds. ",
-    "type": "Drop-in",
-    "category": "Makerspace & Fabrication",
-    "categories": [
-      "STEM",
-      "Makerspace & Fabrication"
-    ],
-    "communityFocus": [
-      "Open to all",
-      "Newcomer-friendly"
-    ],
-    "city": "Markham",
-    "region": "York",
-    "address": "Angus Glen Branch, 3990 Major Mackenzie Drive East, Markham, Ontario, L6C 1P8",
-    "latitude": 43.8947178,
-    "longitude": -79.33652219999999,
-    "virtual": false,
-    "startDate": "2026-07-04T15:00:00.000Z",
-    "endDate": "2026-07-04T16:00:00.000Z",
-    "deadline": "2026-07-04T15:00:00.000Z",
-    "ageMin": 6,
-    "ageMax": 12,
-    "ages": {
-      "min": 6,
-      "max": 12
-    },
-    "grades": [
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "7"
-    ],
-    "language": [
-      "en"
-    ],
-    "languages": [
-      "en"
-    ],
-    "cost": "Free to join",
-    "sourceUrl": "https://markham.bibliocommons.com/events/68fbd36ee647c8ff0c387291",
-    "lastChecked": "2026-07-04",
-    "lastSeen": "2026-07-04",
-    "status": "active",
-    "accessibility": [
-      "Library accessibility services available on request",
-      "Public library location"
-    ],
-    "equipment": "Materials provided unless the source says otherwise.",
-    "food": "No food listed.",
-    "capacity": "Check the source page for availability.",
-    "commitment": "Single scheduled library program or series date from source feed.",
-    "registrationUrl": "https://markham.bibliocommons.com/events/68fbd36ee647c8ff0c387291",
-    "providerContact": "mplchats@markhamlibrary.ca",
-    "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-04",
-    "trustedSource": true,
-    "volunteerHoursEligible": false,
-    "coopEligible": false,
-    "paidPosition": false,
-    "tags": [
-      "makerspace & fabrication",
-      "steam",
-      "children",
-      "english"
-    ],
-    "sources": [
-      {
-        "label": "Official Markham Public Library event page",
-        "url": "https://markham.bibliocommons.com/events/68fbd36ee647c8ff0c387291",
-        "capturedAt": "2026-07-04T13:59:48.708Z",
-        "confidence": "high"
-      }
-    ],
-    "adminAuditTrail": [
-      {
-        "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:48.708Z",
-        "actor": "Library RSS generator",
-        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
-      }
-    ]
-  },
-  {
-    "id": "markham-rss-68fbe20064ad59251cb9d996",
-    "title": "Mini-Makers",
-    "organization": "Markham Public Library",
-    "provider": "Markham Public Library",
-    "description": "Drop in anytime between 11 AM and 12 PM for a fun-filled hour of STEAM (Science, Technology, Engineering, Arts, and Math) exploration! Designed for curious young minds, Mini-Makers offers hands-on activities ranging from simple crafts to creative LEGO builds. ",
-    "summary": "Drop in anytime between 11 AM and 12 PM for a fun-filled hour of STEAM (Science, Technology, Engineering, Arts, and Math) exploration! Designed for curious young minds, Mini-Makers offers hands-on activities ranging from simple crafts to creative LEGO builds. ",
-    "type": "Drop-in",
-    "category": "Makerspace & Fabrication",
-    "categories": [
-      "STEM",
-      "Makerspace & Fabrication"
-    ],
-    "communityFocus": [
-      "Open to all",
-      "Newcomer-friendly"
-    ],
-    "city": "Markham",
-    "region": "York",
-    "address": "Unionville Branch, 15 Library Lane, Unionville, Ontario, L3R 5C4",
-    "latitude": 43.8696741,
-    "longitude": -79.31056890000002,
-    "virtual": false,
-    "startDate": "2026-07-04T15:00:00.000Z",
-    "endDate": "2026-07-04T16:00:00.000Z",
-    "deadline": "2026-07-04T15:00:00.000Z",
-    "ageMin": 6,
-    "ageMax": 12,
-    "ages": {
-      "min": 6,
-      "max": 12
-    },
-    "grades": [
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "7"
-    ],
-    "language": [
-      "en"
-    ],
-    "languages": [
-      "en"
-    ],
-    "cost": "Free to join",
-    "sourceUrl": "https://markham.bibliocommons.com/events/68fbe20064ad59251cb9d996",
-    "lastChecked": "2026-07-04",
-    "lastSeen": "2026-07-04",
-    "status": "active",
-    "accessibility": [
-      "Library accessibility services available on request",
-      "Public library location"
-    ],
-    "equipment": "Materials provided unless the source says otherwise.",
-    "food": "No food listed.",
-    "capacity": "Check the source page for availability.",
-    "commitment": "Single scheduled library program or series date from source feed.",
-    "registrationUrl": "https://markham.bibliocommons.com/events/68fbe20064ad59251cb9d996",
-    "providerContact": "mplchats@markhamlibrary.ca",
-    "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-04",
-    "trustedSource": true,
-    "volunteerHoursEligible": false,
-    "coopEligible": false,
-    "paidPosition": false,
-    "tags": [
-      "makerspace & fabrication",
-      "steam",
-      "children",
-      "english"
-    ],
-    "sources": [
-      {
-        "label": "Official Markham Public Library event page",
-        "url": "https://markham.bibliocommons.com/events/68fbe20064ad59251cb9d996",
-        "capturedAt": "2026-07-04T13:59:48.708Z",
-        "confidence": "high"
-      }
-    ],
-    "adminAuditTrail": [
-      {
-        "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:48.708Z",
-        "actor": "Library RSS generator",
-        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
-      }
-    ]
-  },
-  {
-    "id": "markham-rss-68fbde1fe59a13000d3e1cf8",
-    "title": "Storytime",
-    "organization": "Markham Public Library",
-    "provider": "Markham Public Library",
-    "description": "Join us on for an interactive storytime full of books, songs and activities for little ones and their caregivers. Drop-in program.",
-    "summary": "Join us on for an interactive storytime full of books, songs and activities for little ones and their caregivers. Drop-in program.",
-    "type": "Drop-in",
-    "category": "Family Learning",
-    "categories": [
-      "Family Learning"
-    ],
-    "communityFocus": [
-      "Open to all",
-      "Newcomer-friendly"
-    ],
-    "city": "Markham",
-    "region": "York",
-    "address": "Milliken Mills Branch, 7600 Kennedy Road, Unit 1, Markham, Ontario, L3R 9S5",
-    "latitude": 43.8402283,
-    "longitude": -79.30500649999999,
-    "virtual": false,
-    "startDate": "2026-07-04T15:00:00.000Z",
-    "endDate": "2026-07-04T15:30:00.000Z",
-    "deadline": "2026-07-04T15:00:00.000Z",
-    "ageMin": 0,
-    "ageMax": 5,
-    "ages": {
-      "min": 0,
-      "max": 5
-    },
-    "grades": [
-      "0"
-    ],
-    "language": [
-      "en"
-    ],
-    "languages": [
-      "en"
-    ],
-    "cost": "Free to join",
-    "sourceUrl": "https://markham.bibliocommons.com/events/68fbde1fe59a13000d3e1cf8",
-    "lastChecked": "2026-07-04",
-    "lastSeen": "2026-07-04",
-    "status": "active",
-    "accessibility": [
-      "Library accessibility services available on request",
-      "Public library location"
-    ],
-    "equipment": "Materials provided unless the source says otherwise.",
-    "food": "No food listed.",
-    "capacity": "12 spots listed by source.",
-    "commitment": "Single scheduled library program or series date from source feed.",
-    "registrationUrl": "https://markham.bibliocommons.com/events/68fbde1fe59a13000d3e1cf8",
-    "providerContact": "mplchats@markham.library.on.ca",
-    "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-04",
-    "trustedSource": true,
-    "volunteerHoursEligible": false,
-    "coopEligible": false,
-    "paidPosition": false,
-    "tags": [
-      "family learning",
-      "storytime",
-      "birth to five",
-      "english"
-    ],
-    "sources": [
-      {
-        "label": "Official Markham Public Library event page",
-        "url": "https://markham.bibliocommons.com/events/68fbde1fe59a13000d3e1cf8",
-        "capturedAt": "2026-07-04T13:59:48.708Z",
-        "confidence": "high"
-      }
-    ],
-    "adminAuditTrail": [
-      {
-        "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:48.708Z",
-        "actor": "Library RSS generator",
-        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
-      }
-    ]
-  },
-  {
-    "id": "markham-rss-68fbe0e82edc686d00f5c89c",
-    "title": "Mini-Makers",
-    "organization": "Markham Public Library",
-    "provider": "Markham Public Library",
-    "description": "Drop in anytime between 11 AM - 12 PM for a fun-filled hour of STEAM (Science, Technology, Engineering, Arts, and Math) exploration! Designed for curious young minds, Mini-Makers offers hands-on activities ranging from simple crafts to creative LEGO builds. It",
-    "summary": "Drop in anytime between 11 AM - 12 PM for a fun-filled hour of STEAM (Science, Technology, Engineering, Arts, and Math) exploration! Designed for curious young minds, Mini-Makers offers hands-on activities ranging from simple crafts to creative LEGO builds. It",
-    "type": "Drop-in",
-    "category": "Makerspace & Fabrication",
-    "categories": [
-      "STEM",
-      "Makerspace & Fabrication"
-    ],
-    "communityFocus": [
-      "Open to all",
-      "Newcomer-friendly"
-    ],
-    "city": "Markham",
-    "region": "York",
-    "address": "Markham Village Branch, 6031 Highway 7, Markham, Ontario, L3P 3A7",
-    "latitude": 43.8732112,
-    "longitude": -79.25847479999999,
-    "virtual": false,
-    "startDate": "2026-07-04T15:00:00.000Z",
-    "endDate": "2026-07-04T16:00:00.000Z",
-    "deadline": "2026-07-04T15:00:00.000Z",
-    "ageMin": 6,
-    "ageMax": 12,
-    "ages": {
-      "min": 6,
-      "max": 12
-    },
-    "grades": [
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "7"
-    ],
-    "language": [
-      "en"
-    ],
-    "languages": [
-      "en"
-    ],
-    "cost": "Free to join",
-    "sourceUrl": "https://markham.bibliocommons.com/events/68fbe0e82edc686d00f5c89c",
-    "lastChecked": "2026-07-04",
-    "lastSeen": "2026-07-04",
-    "status": "active",
-    "accessibility": [
-      "Library accessibility services available on request",
-      "Public library location"
-    ],
-    "equipment": "Materials provided unless the source says otherwise.",
-    "food": "No food listed.",
-    "capacity": "Check the source page for availability.",
-    "commitment": "Single scheduled library program or series date from source feed.",
-    "registrationUrl": "https://markham.bibliocommons.com/events/68fbe0e82edc686d00f5c89c",
-    "providerContact": "mplchats@markhamlibrary.ca",
-    "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-04",
-    "trustedSource": true,
-    "volunteerHoursEligible": false,
-    "coopEligible": false,
-    "paidPosition": false,
-    "tags": [
-      "makerspace & fabrication",
-      "steam",
-      "children",
-      "english"
-    ],
-    "sources": [
-      {
-        "label": "Official Markham Public Library event page",
-        "url": "https://markham.bibliocommons.com/events/68fbe0e82edc686d00f5c89c",
-        "capturedAt": "2026-07-04T13:59:48.708Z",
-        "confidence": "high"
-      }
-    ],
-    "adminAuditTrail": [
-      {
-        "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:48.708Z",
-        "actor": "Library RSS generator",
-        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
-      }
-    ]
-  },
-  {
-    "id": "markham-rss-68fbe12275911f28001a2536",
-    "title": "Mini-Makers",
-    "organization": "Markham Public Library",
-    "provider": "Markham Public Library",
-    "description": "Drop in anytime between 11:00AM to 12:00PM for a fun-filled hour of STEAM (Science, Technology, Engineering, Arts, and Math) exploration! Designed for curious young minds, Mini-Makers offers hands-on activities ranging from simple crafts to creative LEGO build",
-    "summary": "Drop in anytime between 11:00AM to 12:00PM for a fun-filled hour of STEAM (Science, Technology, Engineering, Arts, and Math) exploration! Designed for curious young minds, Mini-Makers offers hands-on activities ranging from simple crafts to creative LEGO build",
-    "type": "Drop-in",
-    "category": "Makerspace & Fabrication",
-    "categories": [
-      "STEM",
-      "Makerspace & Fabrication"
-    ],
-    "communityFocus": [
-      "Open to all",
-      "Newcomer-friendly"
-    ],
-    "city": "Markham",
-    "region": "York",
-    "address": "Thornhill Comm. Ctr. Branch, 7755 Bayview Avenue, Thornhill, Ontario, L3T 4P1",
-    "latitude": 43.8200327,
-    "longitude": -79.39987339999999,
-    "virtual": false,
-    "startDate": "2026-07-04T15:00:00.000Z",
-    "endDate": "2026-07-04T16:00:00.000Z",
-    "deadline": "2026-07-04T15:00:00.000Z",
-    "ageMin": 6,
-    "ageMax": 12,
-    "ages": {
-      "min": 6,
-      "max": 12
-    },
-    "grades": [
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "7"
-    ],
-    "language": [
-      "en"
-    ],
-    "languages": [
-      "en"
-    ],
-    "cost": "Free to join",
-    "sourceUrl": "https://markham.bibliocommons.com/events/68fbe12275911f28001a2536",
-    "lastChecked": "2026-07-04",
-    "lastSeen": "2026-07-04",
-    "status": "active",
-    "accessibility": [
-      "Library accessibility services available on request",
-      "Public library location"
-    ],
-    "equipment": "Materials provided unless the source says otherwise.",
-    "food": "No food listed.",
-    "capacity": "Check the source page for availability.",
-    "commitment": "Single scheduled library program or series date from source feed.",
-    "registrationUrl": "https://markham.bibliocommons.com/events/68fbe12275911f28001a2536",
-    "providerContact": "mplchats@markhamlibrary.ca",
-    "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-04",
-    "trustedSource": true,
-    "volunteerHoursEligible": false,
-    "coopEligible": false,
-    "paidPosition": false,
-    "tags": [
-      "makerspace & fabrication",
-      "creative expression",
-      "steam",
-      "children",
-      "english"
-    ],
-    "sources": [
-      {
-        "label": "Official Markham Public Library event page",
-        "url": "https://markham.bibliocommons.com/events/68fbe12275911f28001a2536",
-        "capturedAt": "2026-07-04T13:59:48.708Z",
-        "confidence": "high"
-      }
-    ],
-    "adminAuditTrail": [
-      {
-        "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:48.708Z",
-        "actor": "Library RSS generator",
-        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
-      }
-    ]
-  },
-  {
-    "id": "tpl-rss-6a39984590cc4e3a790ff42a",
-    "title": "Saturday Family Club",
-    "organization": "Toronto Public Library",
-    "provider": "Toronto Public Library",
-    "description": "Come celebrate your Saturday morning at Port Union Library! You can colour your favorite characters or create freestyle Legos with family and friends! This is a drop in program but limited to a room capacity of 20 participants. Arrive early to secure your spot",
-    "summary": "Come celebrate your Saturday morning at Port Union Library! You can colour your favorite characters or create freestyle Legos with family and friends! This is a drop in program but limited to a room capacity of 20 participants. Arrive early to secure your spot",
-    "type": "Drop-in",
-    "category": "Makerspace & Fabrication",
-    "categories": [
-      "STEM",
-      "Makerspace & Fabrication"
-    ],
-    "communityFocus": [
-      "Open to all",
-      "Newcomer-friendly"
-    ],
-    "city": "Toronto",
-    "region": "Toronto",
-    "address": "Port Union, 5450 Lawrence Avenue East, Toronto, ON, M1C 3B2",
-    "latitude": 43.7796722,
-    "longitude": -79.14028379999999,
-    "virtual": false,
-    "startDate": "2026-07-04T15:30:00.000Z",
-    "endDate": "2026-07-04T16:30:00.000Z",
-    "deadline": "2026-07-04T15:30:00.000Z",
-    "ageMin": 0,
-    "ageMax": 12,
-    "ages": {
-      "min": 0,
-      "max": 12
-    },
-    "grades": [
-      "0",
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "7"
-    ],
-    "language": [
-      "en"
-    ],
-    "languages": [
-      "en"
-    ],
-    "cost": "Free to join",
-    "sourceUrl": "https://tpl.bibliocommons.com/events/6a39984590cc4e3a790ff42a",
-    "lastChecked": "2026-07-04",
-    "lastSeen": "2026-07-04",
-    "status": "active",
-    "accessibility": [
-      "Library accessibility services available on request",
-      "Public library location"
-    ],
-    "equipment": "Materials provided unless the source says otherwise.",
-    "food": "No food listed.",
-    "capacity": "Check the source page for availability.",
-    "commitment": "Single scheduled library program or series date from source feed.",
-    "registrationUrl": "https://tpl.bibliocommons.com/events/6a39984590cc4e3a790ff42a",
-    "providerContact": "+1-416-396-8886",
-    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-04",
-    "trustedSource": true,
-    "volunteerHoursEligible": false,
-    "coopEligible": false,
-    "paidPosition": false,
-    "tags": [
-      "makerspace & fabrication",
-      "crafts & hobbies",
-      "preschool children (0-5)",
-      "school age children (6-12)",
-      "english"
-    ],
-    "sources": [
-      {
-        "label": "Official Toronto Public Library event page",
-        "url": "https://tpl.bibliocommons.com/events/6a39984590cc4e3a790ff42a",
-        "capturedAt": "2026-07-04T13:59:42.052Z",
-        "confidence": "high"
-      }
-    ],
-    "adminAuditTrail": [
-      {
-        "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:42.052Z",
-        "actor": "Library RSS generator",
-        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
-      }
-    ]
-  },
-  {
-    "id": "markham-rss-68fbe0cde647c8ff0c38742e",
-    "title": "Mini-Makers",
-    "organization": "Markham Public Library",
-    "provider": "Markham Public Library",
-    "description": "Drop in anytime between 11:30 AM and 12:30 PM for a fun-filled hour of STEAM (Science, Technology, Engineering, Arts, and Math) exploration! Designed for curious young minds, Mini-Makers offers hands-on activities ranging from simple crafts to creative LEGO bu",
-    "summary": "Drop in anytime between 11:30 AM and 12:30 PM for a fun-filled hour of STEAM (Science, Technology, Engineering, Arts, and Math) exploration! Designed for curious young minds, Mini-Makers offers hands-on activities ranging from simple crafts to creative LEGO bu",
-    "type": "Drop-in",
-    "category": "Makerspace & Fabrication",
-    "categories": [
-      "STEM",
-      "Makerspace & Fabrication"
-    ],
-    "communityFocus": [
-      "Open to all",
-      "Newcomer-friendly"
-    ],
-    "city": "Markham",
-    "region": "York",
-    "address": "Milliken Mills Branch, 7600 Kennedy Road, Unit 1, Markham, Ontario, L3R 9S5",
-    "latitude": 43.8402283,
-    "longitude": -79.30500649999999,
-    "virtual": false,
-    "startDate": "2026-07-04T15:30:00.000Z",
-    "endDate": "2026-07-04T16:30:00.000Z",
-    "deadline": "2026-07-04T15:30:00.000Z",
-    "ageMin": 6,
-    "ageMax": 12,
-    "ages": {
-      "min": 6,
-      "max": 12
-    },
-    "grades": [
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "7"
-    ],
-    "language": [
-      "en"
-    ],
-    "languages": [
-      "en"
-    ],
-    "cost": "Free to join",
-    "sourceUrl": "https://markham.bibliocommons.com/events/68fbe0cde647c8ff0c38742e",
-    "lastChecked": "2026-07-04",
-    "lastSeen": "2026-07-04",
-    "status": "active",
-    "accessibility": [
-      "Library accessibility services available on request",
-      "Public library location"
-    ],
-    "equipment": "Materials provided unless the source says otherwise.",
-    "food": "No food listed.",
-    "capacity": "Check the source page for availability.",
-    "commitment": "Single scheduled library program or series date from source feed.",
-    "registrationUrl": "https://markham.bibliocommons.com/events/68fbe0cde647c8ff0c38742e",
-    "providerContact": "mplchats@markhamlibrary.ca",
-    "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-04",
-    "trustedSource": true,
-    "volunteerHoursEligible": false,
-    "coopEligible": false,
-    "paidPosition": false,
-    "tags": [
-      "makerspace & fabrication",
-      "steam",
-      "children",
-      "english"
-    ],
-    "sources": [
-      {
-        "label": "Official Markham Public Library event page",
-        "url": "https://markham.bibliocommons.com/events/68fbe0cde647c8ff0c38742e",
-        "capturedAt": "2026-07-04T13:59:48.708Z",
-        "confidence": "high"
-      }
-    ],
-    "adminAuditTrail": [
-      {
-        "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:48.708Z",
+        "at": "2026-07-04T19:38:28.976Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -3972,14 +566,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a2efe04361280dd2264524e",
-        "capturedAt": "2026-07-04T13:59:42.052Z",
+        "capturedAt": "2026-07-04T19:38:28.976Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:42.052Z",
+        "at": "2026-07-04T19:38:28.976Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -4053,563 +647,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/696a62b9b0595799c096bc40",
-        "capturedAt": "2026-07-04T13:59:42.777Z",
+        "capturedAt": "2026-07-04T19:38:28.976Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:42.777Z",
-        "actor": "Library RSS generator",
-        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
-      }
-    ]
-  },
-  {
-    "id": "tpl-rss-69f131e4b6c4ac1fedcf82e8",
-    "title": "Lego Builders Club",
-    "organization": "Toronto Public Library",
-    "provider": "Toronto Public Library",
-    "description": "LEGO Builders Club is a fun, STEAM based program where children can build anything they imagine using LEGO bricks. Kids are free to explore, create, and play at their own pace, encouraging creativity, problem-solving, and social interaction. Drop-in program, n",
-    "summary": "LEGO Builders Club is a fun, STEAM based program where children can build anything they imagine using LEGO bricks. Kids are free to explore, create, and play at their own pace, encouraging creativity, problem-solving, and social interaction. Drop-in program, n",
-    "type": "Drop-in",
-    "category": "Makerspace & Fabrication",
-    "categories": [
-      "STEM",
-      "Makerspace & Fabrication"
-    ],
-    "communityFocus": [
-      "Open to all",
-      "Newcomer-friendly"
-    ],
-    "city": "Toronto",
-    "region": "Toronto",
-    "address": "Mount Pleasant, 599 Mt. Pleasant Road, Toronto, ON, M4S 2M5",
-    "latitude": 43.7039676,
-    "longitude": -79.38805359999999,
-    "virtual": false,
-    "startDate": "2026-07-04T17:00:00.000Z",
-    "endDate": "2026-07-04T19:00:00.000Z",
-    "deadline": "2026-07-04T17:00:00.000Z",
-    "ageMin": 6,
-    "ageMax": 12,
-    "ages": {
-      "min": 6,
-      "max": 12
-    },
-    "grades": [
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "7"
-    ],
-    "language": [
-      "en"
-    ],
-    "languages": [
-      "en"
-    ],
-    "cost": "Free to join",
-    "sourceUrl": "https://tpl.bibliocommons.com/events/69f131e4b6c4ac1fedcf82e8",
-    "lastChecked": "2026-07-04",
-    "lastSeen": "2026-07-04",
-    "status": "active",
-    "accessibility": [
-      "Library accessibility services available on request",
-      "Public library location"
-    ],
-    "equipment": "Materials provided unless the source says otherwise.",
-    "food": "No food listed.",
-    "capacity": "Check the source page for availability.",
-    "commitment": "Single scheduled library program or series date from source feed.",
-    "registrationUrl": "https://tpl.bibliocommons.com/events/69f131e4b6c4ac1fedcf82e8",
-    "providerContact": "+1-416-393-7737",
-    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-04",
-    "trustedSource": true,
-    "volunteerHoursEligible": false,
-    "coopEligible": false,
-    "paidPosition": false,
-    "tags": [
-      "makerspace & fabrication",
-      "games & sports",
-      "school age children (6-12)",
-      "english"
-    ],
-    "sources": [
-      {
-        "label": "Official Toronto Public Library event page",
-        "url": "https://tpl.bibliocommons.com/events/69f131e4b6c4ac1fedcf82e8",
-        "capturedAt": "2026-07-04T13:59:42.777Z",
-        "confidence": "high"
-      }
-    ],
-    "adminAuditTrail": [
-      {
-        "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:42.777Z",
-        "actor": "Library RSS generator",
-        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
-      }
-    ]
-  },
-  {
-    "id": "tpl-rss-6a1f2f3a43b41b3d006b218c",
-    "title": "Game Club",
-    "organization": "Toronto Public Library",
-    "provider": "Toronto Public Library",
-    "description": "Come hang out and play our Xbox One S and board games! Enjoy friendly competitions, and plenty of laughs. Test your skills, try new games, and play alongside friends in a welcoming and energetic space. Grab a controller and jump into fun! For children ages 7-1",
-    "summary": "Come hang out and play our Xbox One S and board games! Enjoy friendly competitions, and plenty of laughs. Test your skills, try new games, and play alongside friends in a welcoming and energetic space. Grab a controller and jump into fun! For children ages 7-1",
-    "type": "Competition or hackathon",
-    "category": "Makerspace & Fabrication",
-    "categories": [
-      "STEM",
-      "Makerspace & Fabrication"
-    ],
-    "communityFocus": [
-      "Open to all",
-      "Newcomer-friendly"
-    ],
-    "city": "Toronto",
-    "region": "Toronto",
-    "address": "Cliffcrest, 3017 Kingston Road, Toronto, ON, M1M 1P1",
-    "latitude": 43.7256276,
-    "longitude": -79.23035639999999,
-    "virtual": false,
-    "startDate": "2026-07-04T18:00:00.000Z",
-    "endDate": "2026-07-04T19:00:00.000Z",
-    "deadline": "2026-07-04T18:00:00.000Z",
-    "ageMin": 7,
-    "ageMax": 12,
-    "ages": {
-      "min": 7,
-      "max": 12
-    },
-    "grades": [
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "7"
-    ],
-    "language": [
-      "en"
-    ],
-    "languages": [
-      "en"
-    ],
-    "cost": "Free to join",
-    "sourceUrl": "https://tpl.bibliocommons.com/events/6a1f2f3a43b41b3d006b218c",
-    "lastChecked": "2026-07-04",
-    "lastSeen": "2026-07-04",
-    "status": "active",
-    "accessibility": [
-      "Library accessibility services available on request",
-      "Public library location"
-    ],
-    "equipment": "Materials provided unless the source says otherwise.",
-    "food": "No food listed.",
-    "capacity": "15 spots listed by source.",
-    "commitment": "Single scheduled library program or series date from source feed.",
-    "registrationUrl": "https://tpl.bibliocommons.com/events/6a1f2f3a43b41b3d006b218c",
-    "providerContact": "+1-416-396-8916",
-    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-04",
-    "trustedSource": true,
-    "volunteerHoursEligible": false,
-    "coopEligible": false,
-    "paidPosition": false,
-    "tags": [
-      "makerspace & fabrication",
-      "summer wonder",
-      "crafts & hobbies",
-      "school age children (6-12)",
-      "english"
-    ],
-    "sources": [
-      {
-        "label": "Official Toronto Public Library event page",
-        "url": "https://tpl.bibliocommons.com/events/6a1f2f3a43b41b3d006b218c",
-        "capturedAt": "2026-07-04T13:59:42.778Z",
-        "confidence": "high"
-      }
-    ],
-    "adminAuditTrail": [
-      {
-        "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:42.778Z",
-        "actor": "Library RSS generator",
-        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
-      }
-    ]
-  },
-  {
-    "id": "tpl-rss-6a23367b2ea730c17ab4a973",
-    "title": "Funny Grass Head (Drop in)",
-    "organization": "Toronto Public Library",
-    "provider": "Toronto Public Library",
-    "description": "Make a funny soccer grass head, with us!. All crafting supplies included. * Daycares and groups should call the branch to ensure space availability at 416-393-7723",
-    "summary": "Make a funny soccer grass head, with us!. All crafting supplies included. * Daycares and groups should call the branch to ensure space availability at 416-393-7723",
-    "type": "Drop-in",
-    "category": "Makerspace & Fabrication",
-    "categories": [
-      "STEM",
-      "Makerspace & Fabrication"
-    ],
-    "communityFocus": [
-      "Open to all",
-      "Newcomer-friendly"
-    ],
-    "city": "Toronto",
-    "region": "Toronto",
-    "address": "Queen/Saulter, 765 Queen Street East, Toronto, ON, M4M 1H3",
-    "latitude": 43.659131,
-    "longitude": -79.3475824,
-    "virtual": false,
-    "startDate": "2026-07-04T18:00:00.000Z",
-    "endDate": "2026-07-04T19:00:00.000Z",
-    "deadline": "2026-07-04T18:00:00.000Z",
-    "ageMin": 6,
-    "ageMax": 12,
-    "ages": {
-      "min": 6,
-      "max": 12
-    },
-    "grades": [
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "7"
-    ],
-    "language": [
-      "en"
-    ],
-    "languages": [
-      "en"
-    ],
-    "cost": "Free to join",
-    "sourceUrl": "https://tpl.bibliocommons.com/events/6a23367b2ea730c17ab4a973",
-    "lastChecked": "2026-07-04",
-    "lastSeen": "2026-07-04",
-    "status": "active",
-    "accessibility": [
-      "Library accessibility services available on request",
-      "Public library location"
-    ],
-    "equipment": "Materials provided unless the source says otherwise.",
-    "food": "No food listed.",
-    "capacity": "Check the source page for availability.",
-    "commitment": "Single scheduled library program or series date from source feed.",
-    "registrationUrl": "https://tpl.bibliocommons.com/events/6a23367b2ea730c17ab4a973",
-    "providerContact": "+1-416-393-7723",
-    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-04",
-    "trustedSource": true,
-    "volunteerHoursEligible": false,
-    "coopEligible": false,
-    "paidPosition": false,
-    "tags": [
-      "makerspace & fabrication",
-      "crafts & hobbies",
-      "school age children (6-12)",
-      "english"
-    ],
-    "sources": [
-      {
-        "label": "Official Toronto Public Library event page",
-        "url": "https://tpl.bibliocommons.com/events/6a23367b2ea730c17ab4a973",
-        "capturedAt": "2026-07-04T13:59:42.778Z",
-        "confidence": "high"
-      }
-    ],
-    "adminAuditTrail": [
-      {
-        "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:42.778Z",
-        "actor": "Library RSS generator",
-        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
-      }
-    ]
-  },
-  {
-    "id": "tpl-rss-6a0dbcc48ea300e263172d4e",
-    "title": "3D Printing Demo - All Ages",
-    "organization": "Toronto Public Library",
-    "provider": "Toronto Public Library",
-    "description": "Watch a 3D printer in action, see samples, learn how they work, and how you can use them at TPL's Digital Innovation Hubs. Note: Customers are no longer required to attend a mandatory 3D printing class prior to using a 3D printer at the Toronto Public Library’",
-    "summary": "Watch a 3D printer in action, see samples, learn how they work, and how you can use them at TPL's Digital Innovation Hubs. Note: Customers are no longer required to attend a mandatory 3D printing class prior to using a 3D printer at the Toronto Public Library’",
-    "type": "One-time event",
-    "category": "AI & Digital Media",
-    "categories": [
-      "STEM",
-      "AI & Digital Media"
-    ],
-    "communityFocus": [
-      "Open to all",
-      "Newcomer-friendly"
-    ],
-    "city": "Toronto",
-    "region": "Toronto",
-    "address": "Mount Dennis, 1123 Weston Road, Toronto, ON, M6N 3S3",
-    "latitude": 43.6866495,
-    "longitude": -79.4881846,
-    "virtual": false,
-    "startDate": "2026-07-04T18:00:00.000Z",
-    "endDate": "2026-07-04T19:30:00.000Z",
-    "deadline": "2026-07-04T18:00:00.000Z",
-    "ageMin": 0,
-    "ageMax": 17,
-    "ages": {
-      "min": 0,
-      "max": 17
-    },
-    "grades": [
-      "0",
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "7",
-      "8",
-      "9",
-      "10",
-      "11",
-      "12"
-    ],
-    "language": [
-      "en"
-    ],
-    "languages": [
-      "en"
-    ],
-    "cost": "Free to join",
-    "sourceUrl": "https://tpl.bibliocommons.com/events/6a0dbcc48ea300e263172d4e",
-    "lastChecked": "2026-07-04",
-    "lastSeen": "2026-07-04",
-    "status": "active",
-    "accessibility": [
-      "Library accessibility services available on request",
-      "Public library location"
-    ],
-    "equipment": "Materials provided unless the source says otherwise.",
-    "food": "No food listed.",
-    "capacity": "12 spots listed by source.",
-    "commitment": "Single scheduled library program or series date from source feed.",
-    "registrationUrl": "https://tpl.bibliocommons.com/events/6a0dbcc48ea300e263172d4e",
-    "providerContact": "+1-416-394-1008",
-    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-04",
-    "trustedSource": true,
-    "volunteerHoursEligible": false,
-    "coopEligible": false,
-    "paidPosition": false,
-    "tags": [
-      "ai & digital media",
-      "pop up learning labs",
-      "3d printing",
-      "adults (18+)",
-      "school age children (6-12)",
-      "teens (13-17)",
-      "english"
-    ],
-    "sources": [
-      {
-        "label": "Official Toronto Public Library event page",
-        "url": "https://tpl.bibliocommons.com/events/6a0dbcc48ea300e263172d4e",
-        "capturedAt": "2026-07-04T13:59:42.779Z",
-        "confidence": "high"
-      }
-    ],
-    "adminAuditTrail": [
-      {
-        "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:42.779Z",
-        "actor": "Library RSS generator",
-        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
-      }
-    ]
-  },
-  {
-    "id": "tpl-rss-6a42d17b5f884f9a10d9cb4f",
-    "title": "Story Time and Craft",
-    "organization": "Toronto Public Library",
-    "provider": "Toronto Public Library",
-    "description": "Join us on Saturday afternoons at Kennedy/Eglinton for a Story Time and Craft. We will read stories, sing songs, do a craft and have fun! All children and their caregivers are welcome.",
-    "summary": "Join us on Saturday afternoons at Kennedy/Eglinton for a Story Time and Craft. We will read stories, sing songs, do a craft and have fun! All children and their caregivers are welcome.",
-    "type": "One-time event",
-    "category": "Makerspace & Fabrication",
-    "categories": [
-      "STEM",
-      "Makerspace & Fabrication"
-    ],
-    "communityFocus": [
-      "Open to all",
-      "Newcomer-friendly"
-    ],
-    "city": "Toronto",
-    "region": "Toronto",
-    "address": "Kennedy/Eglinton, 2380 Eglinton Avenue East, Toronto, ON, M1K 2P3",
-    "latitude": 43.7323055,
-    "longitude": -79.27028039999999,
-    "virtual": false,
-    "startDate": "2026-07-04T18:00:00.000Z",
-    "endDate": "2026-07-04T19:00:00.000Z",
-    "deadline": "2026-07-04T18:00:00.000Z",
-    "ageMin": 0,
-    "ageMax": 12,
-    "ages": {
-      "min": 0,
-      "max": 12
-    },
-    "grades": [
-      "0",
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "7"
-    ],
-    "language": [
-      "en"
-    ],
-    "languages": [
-      "en"
-    ],
-    "cost": "Free to join",
-    "sourceUrl": "https://tpl.bibliocommons.com/events/6a42d17b5f884f9a10d9cb4f",
-    "lastChecked": "2026-07-04",
-    "lastSeen": "2026-07-04",
-    "status": "active",
-    "accessibility": [
-      "Library accessibility services available on request",
-      "Public library location"
-    ],
-    "equipment": "Materials provided unless the source says otherwise.",
-    "food": "No food listed.",
-    "capacity": "Check the source page for availability.",
-    "commitment": "Single scheduled library program or series date from source feed.",
-    "registrationUrl": "https://tpl.bibliocommons.com/events/6a42d17b5f884f9a10d9cb4f",
-    "providerContact": "kestaff@tpl.ca",
-    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-04",
-    "trustedSource": true,
-    "volunteerHoursEligible": false,
-    "coopEligible": false,
-    "paidPosition": false,
-    "tags": [
-      "makerspace & fabrication",
-      "ready for reading storytimes",
-      "reading programs & storytimes",
-      "preschool children (0-5)",
-      "school age children (6-12)",
-      "english"
-    ],
-    "sources": [
-      {
-        "label": "Official Toronto Public Library event page",
-        "url": "https://tpl.bibliocommons.com/events/6a42d17b5f884f9a10d9cb4f",
-        "capturedAt": "2026-07-04T13:59:42.779Z",
-        "confidence": "high"
-      }
-    ],
-    "adminAuditTrail": [
-      {
-        "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:42.779Z",
-        "actor": "Library RSS generator",
-        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
-      }
-    ]
-  },
-  {
-    "id": "tpl-rss-69dd343bb6c4ac1fedcc1674",
-    "title": "Creative Writing for Adults",
-    "organization": "Toronto Public Library",
-    "provider": "Toronto Public Library",
-    "description": "Join like-minded peers in creative writing exercises. Through guided prompts and lively discussion, you'll learn new ways to expand your writing, and discover interesting paths to inspiration. No creative writing experience required! While writing techniques m",
-    "summary": "Join like-minded peers in creative writing exercises. Through guided prompts and lively discussion, you'll learn new ways to expand your writing, and discover interesting paths to inspiration. No creative writing experience required! While writing techniques m",
-    "type": "One-time event",
-    "category": "Family Learning",
-    "categories": [
-      "Family Learning"
-    ],
-    "communityFocus": [
-      "Open to all",
-      "Newcomer-friendly"
-    ],
-    "city": "Toronto",
-    "region": "Toronto",
-    "address": "Forest Hill, 700 Eglinton Avenue West, Toronto, ON, M5N 1B9",
-    "latitude": 43.70234970000001,
-    "longitude": -79.4207275,
-    "virtual": false,
-    "startDate": "2026-07-04T18:00:00.000Z",
-    "endDate": "2026-07-04T19:30:00.000Z",
-    "deadline": "2026-07-04T18:00:00.000Z",
-    "ageMin": 18,
-    "ages": {
-      "min": 18
-    },
-    "grades": [],
-    "language": [
-      "en"
-    ],
-    "languages": [
-      "en"
-    ],
-    "cost": "Free to join",
-    "sourceUrl": "https://tpl.bibliocommons.com/events/69dd343bb6c4ac1fedcc1674",
-    "lastChecked": "2026-07-04",
-    "lastSeen": "2026-07-04",
-    "status": "active",
-    "accessibility": [
-      "Library accessibility services available on request",
-      "Public library location"
-    ],
-    "equipment": "Materials provided unless the source says otherwise.",
-    "food": "No food listed.",
-    "capacity": "15 spots listed by source.",
-    "commitment": "Single scheduled library program or series date from source feed.",
-    "registrationUrl": "https://tpl.bibliocommons.com/events/69dd343bb6c4ac1fedcc1674",
-    "providerContact": "fhstaff@tpl.ca",
-    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-04",
-    "trustedSource": true,
-    "volunteerHoursEligible": false,
-    "coopEligible": false,
-    "paidPosition": false,
-    "tags": [
-      "family learning",
-      "writing groups",
-      "adults (18+)",
-      "older adults",
-      "younger adults (18-24)",
-      "english"
-    ],
-    "sources": [
-      {
-        "label": "Official Toronto Public Library event page",
-        "url": "https://tpl.bibliocommons.com/events/69dd343bb6c4ac1fedcc1674",
-        "capturedAt": "2026-07-04T13:59:42.779Z",
-        "confidence": "high"
-      }
-    ],
-    "adminAuditTrail": [
-      {
-        "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:42.779Z",
+        "at": "2026-07-04T19:38:28.976Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -4693,98 +738,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69c82a09ad384e40edb768af",
-        "capturedAt": "2026-07-04T13:59:42.779Z",
+        "capturedAt": "2026-07-04T19:38:28.977Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:42.779Z",
-        "actor": "Library RSS generator",
-        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
-      }
-    ]
-  },
-  {
-    "id": "markham-rss-68fbdda72edc686d00f5c7ef",
-    "title": "Storytime",
-    "organization": "Markham Public Library",
-    "provider": "Markham Public Library",
-    "description": "Join us on for an interactive storytime full of books, songs and activities for little ones and their caregivers. Drop-in program.",
-    "summary": "Join us on for an interactive storytime full of books, songs and activities for little ones and their caregivers. Drop-in program.",
-    "type": "Drop-in",
-    "category": "Family Learning",
-    "categories": [
-      "Family Learning"
-    ],
-    "communityFocus": [
-      "Open to all",
-      "Newcomer-friendly"
-    ],
-    "city": "Markham",
-    "region": "York",
-    "address": "Markham Village Branch, 6031 Highway 7, Markham, Ontario, L3P 3A7",
-    "latitude": 43.8732112,
-    "longitude": -79.25847479999999,
-    "virtual": false,
-    "startDate": "2026-07-04T18:00:00.000Z",
-    "endDate": "2026-07-04T18:30:00.000Z",
-    "deadline": "2026-07-04T18:00:00.000Z",
-    "ageMin": 0,
-    "ageMax": 5,
-    "ages": {
-      "min": 0,
-      "max": 5
-    },
-    "grades": [
-      "0"
-    ],
-    "language": [
-      "en"
-    ],
-    "languages": [
-      "en"
-    ],
-    "cost": "Free to join",
-    "sourceUrl": "https://markham.bibliocommons.com/events/68fbdda72edc686d00f5c7ef",
-    "lastChecked": "2026-07-04",
-    "lastSeen": "2026-07-04",
-    "status": "active",
-    "accessibility": [
-      "Library accessibility services available on request",
-      "Public library location"
-    ],
-    "equipment": "Materials provided unless the source says otherwise.",
-    "food": "No food listed.",
-    "capacity": "12 spots listed by source.",
-    "commitment": "Single scheduled library program or series date from source feed.",
-    "registrationUrl": "https://markham.bibliocommons.com/events/68fbdda72edc686d00f5c7ef",
-    "providerContact": "mplchats@markham.library.on.ca",
-    "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-04",
-    "trustedSource": true,
-    "volunteerHoursEligible": false,
-    "coopEligible": false,
-    "paidPosition": false,
-    "tags": [
-      "family learning",
-      "storytime",
-      "birth to five",
-      "english"
-    ],
-    "sources": [
-      {
-        "label": "Official Markham Public Library event page",
-        "url": "https://markham.bibliocommons.com/events/68fbdda72edc686d00f5c7ef",
-        "capturedAt": "2026-07-04T13:59:48.708Z",
-        "confidence": "high"
-      }
-    ],
-    "adminAuditTrail": [
-      {
-        "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:48.708Z",
+        "at": "2026-07-04T19:38:28.977Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -4860,14 +821,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a206d6fc7d3cd58005dcd63",
-        "capturedAt": "2026-07-04T13:59:43.489Z",
+        "capturedAt": "2026-07-04T19:38:28.977Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:43.489Z",
+        "at": "2026-07-04T19:38:28.977Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -4953,14 +914,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a1b2439caf93436005f6a03",
-        "capturedAt": "2026-07-04T13:59:43.489Z",
+        "capturedAt": "2026-07-04T19:38:28.977Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:43.489Z",
+        "at": "2026-07-04T19:38:28.977Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -5034,14 +995,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/694432a26724c63d00e78fea",
-        "capturedAt": "2026-07-04T13:59:43.489Z",
+        "capturedAt": "2026-07-04T19:38:28.977Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:43.489Z",
+        "at": "2026-07-04T19:38:28.977Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -5125,14 +1086,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbe0a50176055300fe814d",
-        "capturedAt": "2026-07-04T13:59:48.708Z",
+        "capturedAt": "2026-07-04T19:38:36.388Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:48.708Z",
+        "at": "2026-07-04T19:38:36.388Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -5226,14 +1187,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a2c42c41e67cd9cb33977e6",
-        "capturedAt": "2026-07-04T13:59:43.489Z",
+        "capturedAt": "2026-07-04T19:38:28.978Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:43.489Z",
+        "at": "2026-07-04T19:38:28.978Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -5319,14 +1280,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/696aba094a9fd98b7f780de4",
-        "capturedAt": "2026-07-04T13:59:43.490Z",
+        "capturedAt": "2026-07-04T19:38:28.978Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:43.490Z",
+        "at": "2026-07-04T19:38:28.978Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -5412,14 +1373,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69f8ea8be13d3b4603b3448c",
-        "capturedAt": "2026-07-04T13:59:43.490Z",
+        "capturedAt": "2026-07-04T19:38:29.713Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:43.490Z",
+        "at": "2026-07-04T19:38:29.713Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -5513,14 +1474,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a10a4108360de907d88110e",
-        "capturedAt": "2026-07-04T13:59:43.490Z",
+        "capturedAt": "2026-07-04T19:38:29.713Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:43.490Z",
+        "at": "2026-07-04T19:38:29.713Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -5606,14 +1567,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a0f6c9ecaf93436005d6c7a",
-        "capturedAt": "2026-07-04T13:59:43.490Z",
+        "capturedAt": "2026-07-04T19:38:29.713Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:43.490Z",
+        "at": "2026-07-04T19:38:29.713Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -5700,14 +1661,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a356fad90cc4e3a790f5061",
-        "capturedAt": "2026-07-04T13:59:43.490Z",
+        "capturedAt": "2026-07-04T19:38:29.713Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:43.490Z",
+        "at": "2026-07-04T19:38:29.713Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -5792,14 +1753,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69d7e1a5dcd22510c03c04cf",
-        "capturedAt": "2026-07-04T13:59:43.490Z",
+        "capturedAt": "2026-07-04T19:38:29.713Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:43.490Z",
+        "at": "2026-07-04T19:38:29.713Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -5884,14 +1845,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a1493b1f6bd012f006a349c",
-        "capturedAt": "2026-07-04T13:59:43.490Z",
+        "capturedAt": "2026-07-04T19:38:29.713Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:43.490Z",
+        "at": "2026-07-04T19:38:29.713Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -5976,14 +1937,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69f26a14fb87a3c2e2acb122",
-        "capturedAt": "2026-07-04T13:59:43.490Z",
+        "capturedAt": "2026-07-04T19:38:29.713Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:43.490Z",
+        "at": "2026-07-04T19:38:29.713Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -6067,14 +2028,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69eb9b4fb6c4ac1fedce8642",
-        "capturedAt": "2026-07-04T13:59:43.490Z",
+        "capturedAt": "2026-07-04T19:38:29.713Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:43.490Z",
+        "at": "2026-07-04T19:38:29.713Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -6158,14 +2119,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69f0dd20c1cf6f9a758863e9",
-        "capturedAt": "2026-07-04T13:59:43.490Z",
+        "capturedAt": "2026-07-04T19:38:29.714Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:43.490Z",
+        "at": "2026-07-04T19:38:29.714Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -6249,14 +2210,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69b561548d5e2d0933653386",
-        "capturedAt": "2026-07-04T13:59:43.490Z",
+        "capturedAt": "2026-07-04T19:38:29.714Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:43.490Z",
+        "at": "2026-07-04T19:38:29.714Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -6341,14 +2302,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69a861c92866a5b4883fd3b0",
-        "capturedAt": "2026-07-04T13:59:43.490Z",
+        "capturedAt": "2026-07-04T19:38:29.714Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:43.490Z",
+        "at": "2026-07-04T19:38:29.714Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -6432,14 +2393,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69c4419bb2f5bfe57aba3bbb",
-        "capturedAt": "2026-07-04T13:59:43.490Z",
+        "capturedAt": "2026-07-04T19:38:29.714Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:43.490Z",
+        "at": "2026-07-04T19:38:29.714Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -6524,14 +2485,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a28870a7550c8bf9f5c2787",
-        "capturedAt": "2026-07-04T13:59:43.490Z",
+        "capturedAt": "2026-07-04T19:38:29.714Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:43.490Z",
+        "at": "2026-07-04T19:38:29.714Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -6615,14 +2576,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a29a07cc7d3cd58005f6323",
-        "capturedAt": "2026-07-04T13:59:43.490Z",
+        "capturedAt": "2026-07-04T19:38:29.714Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:43.490Z",
+        "at": "2026-07-04T19:38:29.714Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -6706,14 +2667,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a20a68ecaf9343600607755",
-        "capturedAt": "2026-07-04T13:59:44.234Z",
+        "capturedAt": "2026-07-04T19:38:29.714Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:44.234Z",
+        "at": "2026-07-04T19:38:29.714Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -6798,14 +2759,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a187be9c7d3cd58005c56be",
-        "capturedAt": "2026-07-04T13:59:44.234Z",
+        "capturedAt": "2026-07-04T19:38:29.714Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:44.234Z",
+        "at": "2026-07-04T19:38:29.714Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -6890,14 +2851,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a2acb52f56bd86e00b60a3c",
-        "capturedAt": "2026-07-04T13:59:44.234Z",
+        "capturedAt": "2026-07-04T19:38:29.714Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:44.234Z",
+        "at": "2026-07-04T19:38:29.714Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -6983,14 +2944,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a29a5d490cc4e3a790d1680",
-        "capturedAt": "2026-07-04T13:59:44.234Z",
+        "capturedAt": "2026-07-04T19:38:29.714Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:44.234Z",
+        "at": "2026-07-04T19:38:29.714Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -7075,14 +3036,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a29bfbf8ea300e2631cab0f",
-        "capturedAt": "2026-07-04T13:59:44.234Z",
+        "capturedAt": "2026-07-04T19:38:29.714Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:44.234Z",
+        "at": "2026-07-04T19:38:29.714Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -7167,14 +3128,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a2c482916554cd59fc86594",
-        "capturedAt": "2026-07-04T13:59:44.235Z",
+        "capturedAt": "2026-07-04T19:38:29.715Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:44.235Z",
+        "at": "2026-07-04T19:38:29.715Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -7259,14 +3220,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a2c7e64c7d3cd58006001d1",
-        "capturedAt": "2026-07-04T13:59:44.235Z",
+        "capturedAt": "2026-07-04T19:38:29.715Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:44.235Z",
+        "at": "2026-07-04T19:38:29.715Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -7352,14 +3313,105 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a19ac06c6a1dc3d00d6ef42",
-        "capturedAt": "2026-07-04T13:59:44.235Z",
+        "capturedAt": "2026-07-04T19:38:29.715Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:44.235Z",
+        "at": "2026-07-04T19:38:29.715Z",
+        "actor": "Library RSS generator",
+        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
+      }
+    ]
+  },
+  {
+    "id": "tpl-rss-6a1efba88360de907d8926dd",
+    "title": "Sunday Crafternoon",
+    "organization": "Toronto Public Library",
+    "provider": "Toronto Public Library",
+    "description": "Join us each Sunday for a different craft! All supplies provided. Information Collection Notice: The personal information on this form is collected by the Toronto Public Library under the Public Libraries Act, sections 20(a), 20(c), and 20(d). The information ",
+    "summary": "Join us each Sunday for a different craft! All supplies provided. Information Collection Notice: The personal information on this form is collected by the Toronto Public Library under the Public Libraries Act, sections 20(a), 20(c), and 20(d). The information ",
+    "type": "One-time event",
+    "category": "Makerspace & Fabrication",
+    "categories": [
+      "STEM",
+      "Makerspace & Fabrication"
+    ],
+    "communityFocus": [
+      "Open to all",
+      "Newcomer-friendly"
+    ],
+    "city": "Toronto",
+    "region": "Toronto",
+    "address": "Ethennonnhawahstihnen&apos;, 100 Ethennonnhawahstihnen&apos; Lane, Toronto, ON, M2K 3C9",
+    "latitude": 43.76871999999999,
+    "longitude": -79.3758,
+    "virtual": false,
+    "startDate": "2026-07-05T18:00:00.000Z",
+    "endDate": "2026-07-05T19:00:00.000Z",
+    "deadline": "2026-07-05T18:00:00.000Z",
+    "ageMin": 6,
+    "ageMax": 12,
+    "ages": {
+      "min": 6,
+      "max": 12
+    },
+    "grades": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "language": [
+      "en"
+    ],
+    "languages": [
+      "en"
+    ],
+    "cost": "Free to join",
+    "sourceUrl": "https://tpl.bibliocommons.com/events/6a1efba88360de907d8926dd",
+    "lastChecked": "2026-07-04",
+    "lastSeen": "2026-07-04",
+    "status": "active",
+    "accessibility": [
+      "Library accessibility services available on request",
+      "Public library location"
+    ],
+    "equipment": "Materials provided unless the source says otherwise.",
+    "food": "No food listed.",
+    "capacity": "20 spots listed by source.",
+    "commitment": "Single scheduled library program or series date from source feed.",
+    "registrationUrl": "https://tpl.bibliocommons.com/events/6a1efba88360de907d8926dd",
+    "providerContact": "+1-416-395-5460",
+    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
+    "lastVerified": "2026-07-04",
+    "trustedSource": true,
+    "volunteerHoursEligible": false,
+    "coopEligible": false,
+    "paidPosition": false,
+    "tags": [
+      "makerspace & fabrication",
+      "crafts & hobbies",
+      "school age children (6-12)",
+      "english"
+    ],
+    "sources": [
+      {
+        "label": "Official Toronto Public Library event page",
+        "url": "https://tpl.bibliocommons.com/events/6a1efba88360de907d8926dd",
+        "capturedAt": "2026-07-04T19:38:29.715Z",
+        "confidence": "high"
+      }
+    ],
+    "adminAuditTrail": [
+      {
+        "label": "Generated from official feed",
+        "at": "2026-07-04T19:38:29.715Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -7445,14 +3497,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a109cd5748daf857d5977e9",
-        "capturedAt": "2026-07-04T13:59:44.235Z",
+        "capturedAt": "2026-07-04T19:38:30.476Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:44.235Z",
+        "at": "2026-07-04T19:38:30.476Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -7547,14 +3599,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a0f4adf8e677a28001d8c74",
-        "capturedAt": "2026-07-04T13:59:44.235Z",
+        "capturedAt": "2026-07-04T19:38:30.476Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:44.235Z",
+        "at": "2026-07-04T19:38:30.476Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -7639,14 +3691,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69f7765bc1cf6f9a75897d5f",
-        "capturedAt": "2026-07-04T13:59:44.235Z",
+        "capturedAt": "2026-07-04T19:38:30.476Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:44.235Z",
+        "at": "2026-07-04T19:38:30.476Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -7733,14 +3785,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a03beec43b41b3d006617fb",
-        "capturedAt": "2026-07-04T13:59:44.235Z",
+        "capturedAt": "2026-07-04T19:38:30.476Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:44.235Z",
+        "at": "2026-07-04T19:38:30.476Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -7825,14 +3877,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a172cd98ea300e26318e2da",
-        "capturedAt": "2026-07-04T13:59:44.235Z",
+        "capturedAt": "2026-07-04T19:38:30.476Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:44.235Z",
+        "at": "2026-07-04T19:38:30.476Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -7917,14 +3969,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a174305703c3363002a602d",
-        "capturedAt": "2026-07-04T13:59:44.235Z",
+        "capturedAt": "2026-07-04T19:38:30.476Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:44.235Z",
+        "at": "2026-07-04T19:38:30.476Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -7998,14 +4050,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a1b03b946d5f64f7dcd5f0d",
-        "capturedAt": "2026-07-04T13:59:44.235Z",
+        "capturedAt": "2026-07-04T19:38:30.477Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:44.235Z",
+        "at": "2026-07-04T19:38:30.477Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -8093,14 +4145,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a2ed9232ea730c17ab6d1f6",
-        "capturedAt": "2026-07-04T13:59:44.235Z",
+        "capturedAt": "2026-07-04T19:38:30.477Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:44.235Z",
+        "at": "2026-07-04T19:38:30.477Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -8185,14 +4237,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a2f0eec1e67cd9cb339e1de",
-        "capturedAt": "2026-07-04T13:59:44.235Z",
+        "capturedAt": "2026-07-04T19:38:30.477Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:44.235Z",
+        "at": "2026-07-04T19:38:30.477Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -8279,14 +4331,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a30409af56bd86e00b6e82a",
-        "capturedAt": "2026-07-04T13:59:44.235Z",
+        "capturedAt": "2026-07-04T19:38:30.477Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:44.235Z",
+        "at": "2026-07-04T19:38:30.477Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -8374,14 +4426,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a2d70b94407827f8aa4b25c",
-        "capturedAt": "2026-07-04T13:59:44.235Z",
+        "capturedAt": "2026-07-04T19:38:30.477Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:44.235Z",
+        "at": "2026-07-04T19:38:30.477Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -8467,14 +4519,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a42aa030e851028002df8ab",
-        "capturedAt": "2026-07-04T13:59:44.235Z",
+        "capturedAt": "2026-07-04T19:38:30.477Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:44.235Z",
+        "at": "2026-07-04T19:38:30.477Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -8558,14 +4610,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a42e91041251a9e77c6f268",
-        "capturedAt": "2026-07-04T13:59:44.235Z",
+        "capturedAt": "2026-07-04T19:38:30.477Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:44.235Z",
+        "at": "2026-07-04T19:38:30.477Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -8652,14 +4704,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a3090a88ea300e2631de926",
-        "capturedAt": "2026-07-04T13:59:44.235Z",
+        "capturedAt": "2026-07-04T19:38:30.477Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:44.235Z",
+        "at": "2026-07-04T19:38:30.477Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -8745,14 +4797,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a3eaccdc52cdc3600ed11eb",
-        "capturedAt": "2026-07-04T13:59:44.936Z",
+        "capturedAt": "2026-07-04T19:38:30.477Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:44.936Z",
+        "at": "2026-07-04T19:38:30.477Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -8846,14 +4898,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a31cc06c7d3cd580060de82",
-        "capturedAt": "2026-07-04T13:59:44.936Z",
+        "capturedAt": "2026-07-04T19:38:30.477Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:44.936Z",
+        "at": "2026-07-04T19:38:30.477Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -8936,14 +4988,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a383c194407827f8aa6706d",
-        "capturedAt": "2026-07-04T13:59:44.936Z",
+        "capturedAt": "2026-07-04T19:38:30.477Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:44.936Z",
+        "at": "2026-07-04T19:38:30.477Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -9029,14 +5081,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a35b7c7dcc1022f003a2ba8",
-        "capturedAt": "2026-07-04T13:59:44.936Z",
+        "capturedAt": "2026-07-04T19:38:30.477Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:44.936Z",
+        "at": "2026-07-04T19:38:30.477Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -9115,14 +5167,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a34491d8d1b82ca9f7af3b2",
-        "capturedAt": "2026-07-04T13:59:44.936Z",
+        "capturedAt": "2026-07-04T19:38:30.477Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:44.936Z",
+        "at": "2026-07-04T19:38:30.477Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -9208,14 +5260,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a11dee543b41b3d00689e4f",
-        "capturedAt": "2026-07-04T13:59:44.936Z",
+        "capturedAt": "2026-07-04T19:38:30.477Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:44.936Z",
+        "at": "2026-07-04T19:38:30.477Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -9301,14 +5353,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a3bfc727e16a03d00e7bcb9",
-        "capturedAt": "2026-07-04T13:59:44.937Z",
+        "capturedAt": "2026-07-04T19:38:30.478Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:44.937Z",
+        "at": "2026-07-04T19:38:30.478Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -9394,14 +5446,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a3c213c6db61d280097aee3",
-        "capturedAt": "2026-07-04T13:59:44.937Z",
+        "capturedAt": "2026-07-04T19:38:30.478Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:44.937Z",
+        "at": "2026-07-04T19:38:30.478Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -9485,14 +5537,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a39999e90cc4e3a790ff4e1",
-        "capturedAt": "2026-07-04T13:59:44.937Z",
+        "capturedAt": "2026-07-04T19:38:31.005Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:44.937Z",
+        "at": "2026-07-04T19:38:31.005Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -9576,14 +5628,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a3ad756dcc1022f003a8ff3",
-        "capturedAt": "2026-07-04T13:59:44.937Z",
+        "capturedAt": "2026-07-04T19:38:31.005Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:44.937Z",
+        "at": "2026-07-04T19:38:31.005Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -9668,14 +5720,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a46b04f6db61d280099819c",
-        "capturedAt": "2026-07-04T13:59:44.937Z",
+        "capturedAt": "2026-07-04T19:38:31.005Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:44.937Z",
+        "at": "2026-07-04T19:38:31.005Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -9761,14 +5813,104 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69e8ea6edefec6489cbf7ca3",
-        "capturedAt": "2026-07-04T13:59:44.937Z",
+        "capturedAt": "2026-07-04T19:38:31.005Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:44.937Z",
+        "at": "2026-07-04T19:38:31.005Z",
+        "actor": "Library RSS generator",
+        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
+      }
+    ]
+  },
+  {
+    "id": "tpl-rss-6a4946b7ed35742f00005a2f",
+    "title": "Snap Circuits Sundays",
+    "organization": "Toronto Public Library",
+    "provider": "Toronto Public Library",
+    "description": "Want to play with electricity? Drop in for a half hour of fun with circuitry. Turn on a light, spin a motor, activate a speaker; work your way through the 100+ circuitry projects as you learn about electricity! For ages 6-12. Parent/Caregiver must attend. Drop",
+    "summary": "Want to play with electricity? Drop in for a half hour of fun with circuitry. Turn on a light, spin a motor, activate a speaker; work your way through the 100+ circuitry projects as you learn about electricity! For ages 6-12. Parent/Caregiver must attend. Drop",
+    "type": "Drop-in",
+    "category": "Coding & Robotics",
+    "categories": [
+      "STEM",
+      "Coding & Robotics"
+    ],
+    "communityFocus": [
+      "Open to all",
+      "Newcomer-friendly"
+    ],
+    "city": "Toronto",
+    "region": "Toronto",
+    "address": "Spadina Road, 10 Spadina Road, Toronto, ON, M5R 2S7",
+    "latitude": 43.6676472,
+    "longitude": -79.4046566,
+    "virtual": false,
+    "startDate": "2026-07-05T18:00:00.000Z",
+    "endDate": "2026-07-05T18:30:00.000Z",
+    "deadline": "2026-07-05T18:00:00.000Z",
+    "ageMin": 6,
+    "ageMax": 12,
+    "ages": {
+      "min": 6,
+      "max": 12
+    },
+    "grades": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "language": [
+      "en"
+    ],
+    "languages": [
+      "en"
+    ],
+    "cost": "Free to join",
+    "sourceUrl": "https://tpl.bibliocommons.com/events/6a4946b7ed35742f00005a2f",
+    "lastChecked": "2026-07-04",
+    "lastSeen": "2026-07-04",
+    "status": "active",
+    "accessibility": [
+      "Library accessibility services available on request",
+      "Public library location"
+    ],
+    "equipment": "Materials provided unless the source says otherwise.",
+    "food": "No food listed.",
+    "capacity": "10 spots listed by source.",
+    "commitment": "Single scheduled library program or series date from source feed.",
+    "registrationUrl": "https://tpl.bibliocommons.com/events/6a4946b7ed35742f00005a2f",
+    "providerContact": "+1-416-393-7666",
+    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
+    "lastVerified": "2026-07-04",
+    "trustedSource": true,
+    "volunteerHoursEligible": false,
+    "coopEligible": false,
+    "paidPosition": false,
+    "tags": [
+      "coding & robotics",
+      "school age children (6-12)",
+      "english"
+    ],
+    "sources": [
+      {
+        "label": "Official Toronto Public Library event page",
+        "url": "https://tpl.bibliocommons.com/events/6a4946b7ed35742f00005a2f",
+        "capturedAt": "2026-07-04T19:38:31.005Z",
+        "confidence": "high"
+      }
+    ],
+    "adminAuditTrail": [
+      {
+        "label": "Generated from official feed",
+        "at": "2026-07-04T19:38:31.005Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -9852,14 +5994,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbe1952edc686d00f5c96d",
-        "capturedAt": "2026-07-04T13:59:48.708Z",
+        "capturedAt": "2026-07-04T19:38:36.388Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:48.708Z",
+        "at": "2026-07-04T19:38:36.388Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -9936,14 +6078,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1da7",
-        "capturedAt": "2026-07-04T13:59:48.708Z",
+        "capturedAt": "2026-07-04T19:38:36.388Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:48.708Z",
+        "at": "2026-07-04T19:38:36.388Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -10026,14 +6168,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69546b1e6724c63d00e96a80",
-        "capturedAt": "2026-07-04T13:59:44.937Z",
+        "capturedAt": "2026-07-04T19:38:31.005Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:44.937Z",
+        "at": "2026-07-04T19:38:31.005Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -10117,14 +6259,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69ecea081e64afd01e6b9f7c",
-        "capturedAt": "2026-07-04T13:59:44.937Z",
+        "capturedAt": "2026-07-04T19:38:31.005Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:44.937Z",
+        "at": "2026-07-04T19:38:31.005Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -10209,14 +6351,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/698b73cc1e64afd01e5a7a38",
-        "capturedAt": "2026-07-04T13:59:44.937Z",
+        "capturedAt": "2026-07-04T19:38:31.005Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:44.937Z",
+        "at": "2026-07-04T19:38:31.005Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -10301,14 +6443,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a1b4c6fe13d3b4603b5e4a4",
-        "capturedAt": "2026-07-04T13:59:44.937Z",
+        "capturedAt": "2026-07-04T19:38:31.006Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:44.937Z",
+        "at": "2026-07-04T19:38:31.006Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -10394,14 +6536,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a3afe9a86636e3d00501d08",
-        "capturedAt": "2026-07-04T13:59:44.937Z",
+        "capturedAt": "2026-07-04T19:38:31.006Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:44.937Z",
+        "at": "2026-07-04T19:38:31.006Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -10485,14 +6627,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbe07a2edc686d00f5c866",
-        "capturedAt": "2026-07-04T13:59:48.708Z",
+        "capturedAt": "2026-07-04T19:38:36.388Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:48.708Z",
+        "at": "2026-07-04T19:38:36.388Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -10577,14 +6719,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69f8c1ff3f8e7924031e4413",
-        "capturedAt": "2026-07-04T13:59:44.937Z",
+        "capturedAt": "2026-07-04T19:38:31.006Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:44.937Z",
+        "at": "2026-07-04T19:38:31.006Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -10670,14 +6812,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a1c9c024dc267647dab41ef",
-        "capturedAt": "2026-07-04T13:59:44.937Z",
+        "capturedAt": "2026-07-04T19:38:31.006Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:44.937Z",
+        "at": "2026-07-04T19:38:31.006Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -10762,14 +6904,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a26e8fb414ef43d00961c93",
-        "capturedAt": "2026-07-04T13:59:44.937Z",
+        "capturedAt": "2026-07-04T19:38:31.006Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:44.937Z",
+        "at": "2026-07-04T19:38:31.006Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -10863,14 +7005,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a2c42c41e67cd9cb33977e7",
-        "capturedAt": "2026-07-04T13:59:45.618Z",
+        "capturedAt": "2026-07-04T19:38:31.006Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:45.618Z",
+        "at": "2026-07-04T19:38:31.006Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -10952,14 +7094,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a27247d90cc4e3a790c9072",
-        "capturedAt": "2026-07-04T13:59:45.618Z",
+        "capturedAt": "2026-07-04T19:38:31.006Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:45.618Z",
+        "at": "2026-07-04T19:38:31.006Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -11041,14 +7183,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a44219dfde59ac78bc29602",
-        "capturedAt": "2026-07-04T13:59:45.618Z",
+        "capturedAt": "2026-07-04T19:38:31.006Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:45.618Z",
+        "at": "2026-07-04T19:38:31.006Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -11122,14 +7264,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a24538a6803ceac1bb95826",
-        "capturedAt": "2026-07-04T13:59:45.619Z",
+        "capturedAt": "2026-07-04T19:38:31.685Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:45.619Z",
+        "at": "2026-07-04T19:38:31.685Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -11213,14 +7355,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a050690caf93436005bc944",
-        "capturedAt": "2026-07-04T13:59:45.619Z",
+        "capturedAt": "2026-07-04T19:38:31.685Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:45.619Z",
+        "at": "2026-07-04T19:38:31.685Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -11305,14 +7447,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/694aee0b2c65973d00140fe4",
-        "capturedAt": "2026-07-04T13:59:45.619Z",
+        "capturedAt": "2026-07-04T19:38:31.686Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:45.619Z",
+        "at": "2026-07-04T19:38:31.686Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -11397,14 +7539,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a30115cc7d3cd5800607a40",
-        "capturedAt": "2026-07-04T13:59:45.619Z",
+        "capturedAt": "2026-07-04T19:38:31.686Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:45.619Z",
+        "at": "2026-07-04T19:38:31.686Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -11489,14 +7631,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a35a59d2ea730c17ab82996",
-        "capturedAt": "2026-07-04T13:59:45.619Z",
+        "capturedAt": "2026-07-04T19:38:31.686Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:45.619Z",
+        "at": "2026-07-04T19:38:31.686Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -11580,14 +7722,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a3998ddc78687f2fd2de666",
-        "capturedAt": "2026-07-04T13:59:45.619Z",
+        "capturedAt": "2026-07-04T19:38:31.686Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:45.619Z",
+        "at": "2026-07-04T19:38:31.686Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -11664,14 +7806,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdda72edc686d00f5c7f0",
-        "capturedAt": "2026-07-04T13:59:49.287Z",
+        "capturedAt": "2026-07-04T19:38:36.388Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:49.287Z",
+        "at": "2026-07-04T19:38:36.388Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -11748,14 +7890,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1da8",
-        "capturedAt": "2026-07-04T13:59:49.287Z",
+        "capturedAt": "2026-07-04T19:38:36.388Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:49.287Z",
+        "at": "2026-07-04T19:38:36.388Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -11835,14 +7977,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a1df49ecaf93436005fe53f",
-        "capturedAt": "2026-07-04T13:59:45.619Z",
+        "capturedAt": "2026-07-04T19:38:31.686Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:45.619Z",
+        "at": "2026-07-04T19:38:31.686Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -11916,14 +8058,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a1dc8e343b41b3d006ac82b",
-        "capturedAt": "2026-07-04T13:59:45.619Z",
+        "capturedAt": "2026-07-04T19:38:31.686Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:45.619Z",
+        "at": "2026-07-04T19:38:31.686Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -11997,14 +8139,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a14b5f94dc267647daa9e14",
-        "capturedAt": "2026-07-04T13:59:45.619Z",
+        "capturedAt": "2026-07-04T19:38:31.686Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:45.619Z",
+        "at": "2026-07-04T19:38:31.686Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -12077,14 +8219,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a32ce3c2ea730c17ab79d95",
-        "capturedAt": "2026-07-04T13:59:45.619Z",
+        "capturedAt": "2026-07-04T19:38:31.686Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:45.619Z",
+        "at": "2026-07-04T19:38:31.686Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -12169,14 +8311,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6994b42c8b29ea2800d09e81",
-        "capturedAt": "2026-07-04T13:59:45.619Z",
+        "capturedAt": "2026-07-04T19:38:31.686Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:45.619Z",
+        "at": "2026-07-04T19:38:31.686Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -12250,14 +8392,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a05e23b0b91ec3478ded84e",
-        "capturedAt": "2026-07-04T13:59:49.287Z",
+        "capturedAt": "2026-07-04T19:38:36.388Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:49.287Z",
+        "at": "2026-07-04T19:38:36.388Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -12342,14 +8484,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a298ea67f943b520051d217",
-        "capturedAt": "2026-07-04T13:59:45.619Z",
+        "capturedAt": "2026-07-04T19:38:31.686Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:45.619Z",
+        "at": "2026-07-04T19:38:31.686Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -12430,14 +8572,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a2b0a2ff56bd86e00b6235e",
-        "capturedAt": "2026-07-04T13:59:46.249Z",
+        "capturedAt": "2026-07-04T19:38:31.686Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:46.249Z",
+        "at": "2026-07-04T19:38:31.686Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -12512,14 +8654,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/695c1281992fc18a86dbb2cd",
-        "capturedAt": "2026-07-04T13:59:46.249Z",
+        "capturedAt": "2026-07-04T19:38:31.686Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:46.249Z",
+        "at": "2026-07-04T19:38:31.686Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -12594,14 +8736,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a2b299bdcc1022f00394af2",
-        "capturedAt": "2026-07-04T13:59:46.249Z",
+        "capturedAt": "2026-07-04T19:38:31.686Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:46.249Z",
+        "at": "2026-07-04T19:38:31.686Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -12685,14 +8827,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a19e0d852c88111723ba386",
-        "capturedAt": "2026-07-04T13:59:46.249Z",
+        "capturedAt": "2026-07-04T19:38:31.687Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:46.249Z",
+        "at": "2026-07-04T19:38:31.687Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -12766,14 +8908,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69dbd871129f12743838133f",
-        "capturedAt": "2026-07-04T13:59:46.249Z",
+        "capturedAt": "2026-07-04T19:38:31.687Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:46.249Z",
+        "at": "2026-07-04T19:38:31.687Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -12848,14 +8990,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a42dba8a5d130a37d66503d",
-        "capturedAt": "2026-07-04T13:59:46.249Z",
+        "capturedAt": "2026-07-04T19:38:31.687Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:46.249Z",
+        "at": "2026-07-04T19:38:31.687Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -12940,14 +9082,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a33089cdcc1022f0039f3b7",
-        "capturedAt": "2026-07-04T13:59:46.249Z",
+        "capturedAt": "2026-07-04T19:38:32.423Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:46.249Z",
+        "at": "2026-07-04T19:38:32.423Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -13021,14 +9163,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a297a0990cc4e3a790d0498",
-        "capturedAt": "2026-07-04T13:59:46.249Z",
+        "capturedAt": "2026-07-04T19:38:32.423Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:46.249Z",
+        "at": "2026-07-04T19:38:32.423Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -13103,14 +9245,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69483e188d33cc4900c65c6a",
-        "capturedAt": "2026-07-04T13:59:46.249Z",
+        "capturedAt": "2026-07-04T19:38:32.423Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:46.249Z",
+        "at": "2026-07-04T19:38:32.423Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -13196,14 +9338,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69fd24978e677a28001aa35c",
-        "capturedAt": "2026-07-04T13:59:46.249Z",
+        "capturedAt": "2026-07-04T19:38:32.423Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:46.249Z",
+        "at": "2026-07-04T19:38:32.423Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -13289,14 +9431,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a286ef52ea730c17ab59f17",
-        "capturedAt": "2026-07-04T13:59:46.249Z",
+        "capturedAt": "2026-07-04T19:38:32.423Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:46.249Z",
+        "at": "2026-07-04T19:38:32.423Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -13383,14 +9525,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a29a251f56bd86e00b5d87f",
-        "capturedAt": "2026-07-04T13:59:46.249Z",
+        "capturedAt": "2026-07-04T19:38:32.423Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:46.249Z",
+        "at": "2026-07-04T19:38:32.423Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -13475,14 +9617,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a1f381af56bd86e00b40365",
-        "capturedAt": "2026-07-04T13:59:46.250Z",
+        "capturedAt": "2026-07-04T19:38:32.423Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:46.250Z",
+        "at": "2026-07-04T19:38:32.423Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -13569,14 +9711,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a19e66abd892a0672e65622",
-        "capturedAt": "2026-07-04T13:59:46.250Z",
+        "capturedAt": "2026-07-04T19:38:32.423Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:46.250Z",
+        "at": "2026-07-04T19:38:32.423Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -13663,14 +9805,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a1f17048360de907d892a43",
-        "capturedAt": "2026-07-04T13:59:46.250Z",
+        "capturedAt": "2026-07-04T19:38:32.423Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:46.250Z",
+        "at": "2026-07-04T19:38:32.423Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -13755,14 +9897,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a0dd550278f7c2f008e6356",
-        "capturedAt": "2026-07-04T13:59:46.978Z",
+        "capturedAt": "2026-07-04T19:38:32.424Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:46.978Z",
+        "at": "2026-07-04T19:38:32.424Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -13847,14 +9989,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a0e1782f56bd86e00b0f8bb",
-        "capturedAt": "2026-07-04T13:59:46.978Z",
+        "capturedAt": "2026-07-04T19:38:32.424Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:46.978Z",
+        "at": "2026-07-04T19:38:32.424Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -13927,14 +10069,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a071dde3246e7b84b4f4353",
-        "capturedAt": "2026-07-04T13:59:46.978Z",
+        "capturedAt": "2026-07-04T19:38:32.424Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:46.978Z",
+        "at": "2026-07-04T19:38:32.424Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -14018,14 +10160,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a2d6550caf934360062d31c",
-        "capturedAt": "2026-07-04T13:59:46.978Z",
+        "capturedAt": "2026-07-04T19:38:32.424Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:46.978Z",
+        "at": "2026-07-04T19:38:32.424Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -14110,14 +10252,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a3edc2f296ea565de2efb10",
-        "capturedAt": "2026-07-04T13:59:46.978Z",
+        "capturedAt": "2026-07-04T19:38:32.424Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:46.978Z",
+        "at": "2026-07-04T19:38:32.424Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -14204,14 +10346,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a1d89a0703c3363002b6e94",
-        "capturedAt": "2026-07-04T13:59:46.978Z",
+        "capturedAt": "2026-07-04T19:38:32.424Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:46.978Z",
+        "at": "2026-07-04T19:38:32.424Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -14287,14 +10429,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a3485497550c8bf9f5e67bf",
-        "capturedAt": "2026-07-04T13:59:46.978Z",
+        "capturedAt": "2026-07-04T19:38:32.424Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:46.978Z",
+        "at": "2026-07-04T19:38:32.424Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -14380,14 +10522,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a32add97550c8bf9f5dfab9",
-        "capturedAt": "2026-07-04T13:59:46.978Z",
+        "capturedAt": "2026-07-04T19:38:33.070Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:46.978Z",
+        "at": "2026-07-04T19:38:33.070Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -14472,14 +10614,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a3c2601ed35742f00fdfafa",
-        "capturedAt": "2026-07-04T13:59:46.979Z",
+        "capturedAt": "2026-07-04T19:38:33.070Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:46.979Z",
+        "at": "2026-07-04T19:38:33.070Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -14561,14 +10703,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a33268df56bd86e00b77845",
-        "capturedAt": "2026-07-04T13:59:46.979Z",
+        "capturedAt": "2026-07-04T19:38:33.070Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:46.979Z",
+        "at": "2026-07-04T19:38:33.070Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -14643,14 +10785,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a33101fcaf934360063da44",
-        "capturedAt": "2026-07-04T13:59:46.979Z",
+        "capturedAt": "2026-07-04T19:38:33.070Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:46.979Z",
+        "at": "2026-07-04T19:38:33.070Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -14735,14 +10877,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a14bb5f8ea300e263186fb5",
-        "capturedAt": "2026-07-04T13:59:46.979Z",
+        "capturedAt": "2026-07-04T19:38:33.070Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:46.979Z",
+        "at": "2026-07-04T19:38:33.070Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -14828,14 +10970,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a146a4e8360de907d8846c2",
-        "capturedAt": "2026-07-04T13:59:49.287Z",
+        "capturedAt": "2026-07-04T19:38:36.388Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:49.287Z",
+        "at": "2026-07-04T19:38:36.388Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -14917,14 +11059,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6942f4eb6f926136000b6c89",
-        "capturedAt": "2026-07-04T13:59:47.645Z",
+        "capturedAt": "2026-07-04T19:38:33.071Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:47.645Z",
+        "at": "2026-07-04T19:38:33.071Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -15006,14 +11148,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a14831343b41b3d0068fd2a",
-        "capturedAt": "2026-07-04T13:59:47.645Z",
+        "capturedAt": "2026-07-04T19:38:33.598Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:47.645Z",
+        "at": "2026-07-04T19:38:33.598Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -15095,14 +11237,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a3575ddc7d3cd5800617888",
-        "capturedAt": "2026-07-04T13:59:47.645Z",
+        "capturedAt": "2026-07-04T19:38:33.598Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:47.645Z",
+        "at": "2026-07-04T19:38:33.598Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -15184,14 +11326,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a359415caf93436006443d3",
-        "capturedAt": "2026-07-04T13:59:47.645Z",
+        "capturedAt": "2026-07-04T19:38:33.599Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:47.645Z",
+        "at": "2026-07-04T19:38:33.599Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -15273,14 +11415,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a32fa2bf56bd86e00b76759",
-        "capturedAt": "2026-07-04T13:59:47.645Z",
+        "capturedAt": "2026-07-04T19:38:33.599Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:47.645Z",
+        "at": "2026-07-04T19:38:33.599Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -15362,14 +11504,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a3c0b13c7d3cd580062881a",
-        "capturedAt": "2026-07-04T13:59:47.645Z",
+        "capturedAt": "2026-07-04T19:38:33.599Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:47.645Z",
+        "at": "2026-07-04T19:38:33.599Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -15451,14 +11593,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a46971120e064860195839d",
-        "capturedAt": "2026-07-04T13:59:47.645Z",
+        "capturedAt": "2026-07-04T19:38:33.599Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:47.645Z",
+        "at": "2026-07-04T19:38:33.599Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -15539,14 +11681,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a15fc388e677a28001e9995",
-        "capturedAt": "2026-07-04T13:59:47.645Z",
+        "capturedAt": "2026-07-04T19:38:33.599Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:47.645Z",
+        "at": "2026-07-04T19:38:33.599Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -15628,14 +11770,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a205ad92ea730c17ab4033c",
-        "capturedAt": "2026-07-04T13:59:47.645Z",
+        "capturedAt": "2026-07-04T19:38:33.599Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:47.645Z",
+        "at": "2026-07-04T19:38:33.599Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -15708,14 +11850,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/697f947dcbf6405d3565fae0",
-        "capturedAt": "2026-07-04T13:59:47.645Z",
+        "capturedAt": "2026-07-04T19:38:33.599Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:47.645Z",
+        "at": "2026-07-04T19:38:33.599Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -15790,14 +11932,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69c30ab6b48451fc3c0b092b",
-        "capturedAt": "2026-07-04T13:59:47.646Z",
+        "capturedAt": "2026-07-04T19:38:33.599Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:47.646Z",
+        "at": "2026-07-04T19:38:33.599Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -15882,14 +12024,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a29c0f190cc4e3a790d221d",
-        "capturedAt": "2026-07-04T13:59:47.646Z",
+        "capturedAt": "2026-07-04T19:38:33.599Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:47.646Z",
+        "at": "2026-07-04T19:38:33.599Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -15971,14 +12113,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a2adee18d1b82ca9f792e5d",
-        "capturedAt": "2026-07-04T13:59:47.646Z",
+        "capturedAt": "2026-07-04T19:38:33.599Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:47.646Z",
+        "at": "2026-07-04T19:38:33.599Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -16060,14 +12202,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a4158776db61d280098997c",
-        "capturedAt": "2026-07-04T13:59:48.305Z",
+        "capturedAt": "2026-07-04T19:38:33.599Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:48.305Z",
+        "at": "2026-07-04T19:38:33.599Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -16150,14 +12292,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a3189db361280dd2264877d",
-        "capturedAt": "2026-07-04T13:59:48.305Z",
+        "capturedAt": "2026-07-04T19:38:33.599Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:48.305Z",
+        "at": "2026-07-04T19:38:33.599Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -16239,14 +12381,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a31b72d8ea300e2631e247b",
-        "capturedAt": "2026-07-04T13:59:48.305Z",
+        "capturedAt": "2026-07-04T19:38:33.599Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:48.305Z",
+        "at": "2026-07-04T19:38:33.599Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -16332,14 +12474,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a1b2439caf93436005f6a04",
-        "capturedAt": "2026-07-04T13:59:48.305Z",
+        "capturedAt": "2026-07-04T19:38:33.599Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:48.305Z",
+        "at": "2026-07-04T19:38:33.599Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -16413,14 +12555,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69960daf4a9fd98b7f7ed8f4",
-        "capturedAt": "2026-07-04T13:59:48.305Z",
+        "capturedAt": "2026-07-04T19:38:33.600Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:48.305Z",
+        "at": "2026-07-04T19:38:33.600Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -16494,14 +12636,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69a0928f4a9fd98b7f80bfe9",
-        "capturedAt": "2026-07-04T13:59:48.305Z",
+        "capturedAt": "2026-07-04T19:38:34.324Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:48.305Z",
+        "at": "2026-07-04T19:38:34.324Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -16575,14 +12717,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a4309c10e851028002e1a0c",
-        "capturedAt": "2026-07-04T13:59:48.306Z",
+        "capturedAt": "2026-07-04T19:38:34.324Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:48.306Z",
+        "at": "2026-07-04T19:38:34.324Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -16656,14 +12798,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a353f1edcc1022f003a1e52",
-        "capturedAt": "2026-07-04T13:59:48.307Z",
+        "capturedAt": "2026-07-04T19:38:34.324Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:48.307Z",
+        "at": "2026-07-04T19:38:34.324Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -16748,14 +12890,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a3546d5414ef43d009768f6",
-        "capturedAt": "2026-07-04T13:59:48.307Z",
+        "capturedAt": "2026-07-04T19:38:34.324Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:48.307Z",
+        "at": "2026-07-04T19:38:34.324Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -16841,14 +12983,1279 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a298f037f943b520051d22e",
-        "capturedAt": "2026-07-04T13:59:48.308Z",
+        "capturedAt": "2026-07-04T19:38:34.324Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:48.308Z",
+        "at": "2026-07-04T19:38:34.324Z",
+        "actor": "Library RSS generator",
+        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
+      }
+    ]
+  },
+  {
+    "id": "tpl-rss-6a299215154fb14b00215acb",
+    "title": "Scavenger Hunt Tuesdays",
+    "organization": "Toronto Public Library",
+    "provider": "Toronto Public Library",
+    "description": "Join us anytime of the day every Tuesday of the month; try your best to find all of the items hidden around the library’s children section. Find them all and win a fun prize! For ages 3-12 years. Drop in, no registration required. Information Collection Notice",
+    "summary": "Join us anytime of the day every Tuesday of the month; try your best to find all of the items hidden around the library’s children section. Find them all and win a fun prize! For ages 3-12 years. Drop in, no registration required. Information Collection Notice",
+    "type": "Drop-in",
+    "category": "Makerspace & Fabrication",
+    "categories": [
+      "STEM",
+      "Makerspace & Fabrication"
+    ],
+    "communityFocus": [
+      "Open to all",
+      "Newcomer-friendly"
+    ],
+    "city": "Toronto",
+    "region": "Toronto",
+    "address": "Thorncliffe, 48 Thorncliffe Park Drive, Toronto, ON, M4H 1J7",
+    "latitude": 43.7029316,
+    "longitude": -79.3427304,
+    "virtual": false,
+    "startDate": "2026-07-07T04:00:00.000Z",
+    "endDate": "2026-07-08T03:59:59.000Z",
+    "deadline": "2026-07-07T04:00:00.000Z",
+    "ageMin": 3,
+    "ageMax": 12,
+    "ages": {
+      "min": 3,
+      "max": 12
+    },
+    "grades": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "language": [
+      "en"
+    ],
+    "languages": [
+      "en"
+    ],
+    "cost": "Free to join",
+    "sourceUrl": "https://tpl.bibliocommons.com/events/6a299215154fb14b00215acb",
+    "lastChecked": "2026-07-04",
+    "lastSeen": "2026-07-04",
+    "status": "active",
+    "accessibility": [
+      "Library accessibility services available on request",
+      "Public library location"
+    ],
+    "equipment": "Materials provided unless the source says otherwise.",
+    "food": "No food listed.",
+    "capacity": "Check the source page for availability.",
+    "commitment": "Single scheduled library program or series date from source feed.",
+    "registrationUrl": "https://tpl.bibliocommons.com/events/6a299215154fb14b00215acb",
+    "providerContact": "+1-416-396-3865",
+    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
+    "lastVerified": "2026-07-04",
+    "trustedSource": true,
+    "volunteerHoursEligible": false,
+    "coopEligible": false,
+    "paidPosition": false,
+    "tags": [
+      "makerspace & fabrication",
+      "summer wonder",
+      "crafts & hobbies",
+      "culture, arts & entertainment",
+      "preschool children (0-5)",
+      "school age children (6-12)",
+      "english"
+    ],
+    "sources": [
+      {
+        "label": "Official Toronto Public Library event page",
+        "url": "https://tpl.bibliocommons.com/events/6a299215154fb14b00215acb",
+        "capturedAt": "2026-07-04T19:38:34.324Z",
+        "confidence": "high"
+      }
+    ],
+    "adminAuditTrail": [
+      {
+        "label": "Generated from official feed",
+        "at": "2026-07-04T19:38:34.324Z",
+        "actor": "Library RSS generator",
+        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
+      }
+    ]
+  },
+  {
+    "id": "tpl-rss-6a2c42c41e67cd9cb33977e8",
+    "title": "World Cup 2026 Watch Live @ Fairview!",
+    "organization": "Toronto Public Library",
+    "provider": "Toronto Public Library",
+    "description": "Celebrate soccer's biggest event at TPL! #FWC26, #WeAreToronto. Please note that screenings are only during branch open hours, if there are no conflicting programs in that space during that time, and that entire games may end at least twenty minutes before the",
+    "summary": "Celebrate soccer's biggest event at TPL! #FWC26, #WeAreToronto. Please note that screenings are only during branch open hours, if there are no conflicting programs in that space during that time, and that entire games may end at least twenty minutes before the",
+    "type": "One-time event",
+    "category": "AI & Digital Media",
+    "categories": [
+      "STEM",
+      "AI & Digital Media"
+    ],
+    "communityFocus": [
+      "Open to all",
+      "Newcomer-friendly"
+    ],
+    "city": "Toronto",
+    "region": "Toronto",
+    "address": "Fairview, 35 Fairview Mall Drive, Toronto, ON, M2J 4S4",
+    "latitude": 43.7790599,
+    "longitude": -79.3468197,
+    "virtual": false,
+    "startDate": "2026-07-07T04:00:00.000Z",
+    "endDate": "2026-07-08T03:59:59.000Z",
+    "deadline": "2026-07-07T04:00:00.000Z",
+    "ageMin": 6,
+    "ageMax": 17,
+    "ages": {
+      "min": 6,
+      "max": 17
+    },
+    "grades": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "language": [
+      "en"
+    ],
+    "languages": [
+      "en"
+    ],
+    "cost": "Free to join",
+    "sourceUrl": "https://tpl.bibliocommons.com/events/6a2c42c41e67cd9cb33977e8",
+    "lastChecked": "2026-07-04",
+    "lastSeen": "2026-07-04",
+    "status": "active",
+    "accessibility": [
+      "Library accessibility services available on request",
+      "Public library location"
+    ],
+    "equipment": "Materials provided unless the source says otherwise.",
+    "food": "No food listed.",
+    "capacity": "Check the source page for availability.",
+    "commitment": "Single scheduled library program or series date from source feed.",
+    "registrationUrl": "https://tpl.bibliocommons.com/events/6a2c42c41e67cd9cb33977e8",
+    "providerContact": "+1-416-395-5750",
+    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
+    "lastVerified": "2026-07-04",
+    "trustedSource": true,
+    "volunteerHoursEligible": false,
+    "coopEligible": false,
+    "paidPosition": false,
+    "tags": [
+      "ai & digital media",
+      "world cup",
+      "culture, arts & entertainment",
+      "adults (18+)",
+      "older adults",
+      "school age children (6-12)",
+      "teens (13-17)",
+      "younger adults (18-24)",
+      "english"
+    ],
+    "sources": [
+      {
+        "label": "Official Toronto Public Library event page",
+        "url": "https://tpl.bibliocommons.com/events/6a2c42c41e67cd9cb33977e8",
+        "capturedAt": "2026-07-04T19:38:34.325Z",
+        "confidence": "high"
+      }
+    ],
+    "adminAuditTrail": [
+      {
+        "label": "Generated from official feed",
+        "at": "2026-07-04T19:38:34.325Z",
+        "actor": "Library RSS generator",
+        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
+      }
+    ]
+  },
+  {
+    "id": "tpl-rss-69fce528c7d3cd580057aeae",
+    "title": "Family Time & Stay and Play",
+    "organization": "Toronto Public Library",
+    "provider": "Toronto Public Library",
+    "description": "Join us for stories, songs, rhymes and activities in this program for children ages 5 and under with their parents or caregivers. Family Time runs from 10:00am to 10:30am. Activity stations will be set up for self-directed learning and play from 10:30am to 11:",
+    "summary": "Join us for stories, songs, rhymes and activities in this program for children ages 5 and under with their parents or caregivers. Family Time runs from 10:00am to 10:30am. Activity stations will be set up for self-directed learning and play from 10:30am to 11:",
+    "type": "One-time event",
+    "category": "Family Learning",
+    "categories": [
+      "Family Learning"
+    ],
+    "communityFocus": [
+      "Open to all",
+      "Newcomer-friendly"
+    ],
+    "city": "Toronto",
+    "region": "Toronto",
+    "address": "Runnymede, 2178 Bloor Street West, Toronto, ON, M6S 1M8",
+    "latitude": 43.6519739,
+    "longitude": -79.47391739999999,
+    "virtual": false,
+    "startDate": "2026-07-07T14:00:00.000Z",
+    "endDate": "2026-07-07T15:00:00.000Z",
+    "deadline": "2026-07-07T14:00:00.000Z",
+    "ageMin": 0,
+    "ageMax": 12,
+    "ages": {
+      "min": 0,
+      "max": 12
+    },
+    "grades": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "language": [
+      "en"
+    ],
+    "languages": [
+      "en"
+    ],
+    "cost": "Free to join",
+    "sourceUrl": "https://tpl.bibliocommons.com/events/69fce528c7d3cd580057aeae",
+    "lastChecked": "2026-07-04",
+    "lastSeen": "2026-07-04",
+    "status": "active",
+    "accessibility": [
+      "Library accessibility services available on request",
+      "Public library location"
+    ],
+    "equipment": "Materials provided unless the source says otherwise.",
+    "food": "No food listed.",
+    "capacity": "Check the source page for availability.",
+    "commitment": "Single scheduled library program or series date from source feed.",
+    "registrationUrl": "https://tpl.bibliocommons.com/events/69fce528c7d3cd580057aeae",
+    "providerContact": "ask@tpl.ca",
+    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
+    "lastVerified": "2026-07-04",
+    "trustedSource": true,
+    "volunteerHoursEligible": false,
+    "coopEligible": false,
+    "paidPosition": false,
+    "tags": [
+      "family learning",
+      "ready for reading storytimes",
+      "reading programs & storytimes",
+      "preschool children (0-5)",
+      "english"
+    ],
+    "sources": [
+      {
+        "label": "Official Toronto Public Library event page",
+        "url": "https://tpl.bibliocommons.com/events/69fce528c7d3cd580057aeae",
+        "capturedAt": "2026-07-04T19:38:34.325Z",
+        "confidence": "high"
+      }
+    ],
+    "adminAuditTrail": [
+      {
+        "label": "Generated from official feed",
+        "at": "2026-07-04T19:38:34.325Z",
+        "actor": "Library RSS generator",
+        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
+      }
+    ]
+  },
+  {
+    "id": "tpl-rss-69ff4aa4703c33630026820f",
+    "title": "Wellness Recovery Action Plan (WRAP)",
+    "organization": "Toronto Public Library",
+    "provider": "Toronto Public Library",
+    "description": "WRAP is for anyone looking to strengthen their well-being—whether you’re supporting your mental health, managing stress, or simply wanting to feel more balanced and resilient in daily life. Participants will receive a WRAP certificate upon program completion. ",
+    "summary": "WRAP is for anyone looking to strengthen their well-being—whether you’re supporting your mental health, managing stress, or simply wanting to feel more balanced and resilient in daily life. Participants will receive a WRAP certificate upon program completion. ",
+    "type": "Drop-in",
+    "category": "Family Learning",
+    "categories": [
+      "Family Learning"
+    ],
+    "communityFocus": [
+      "Open to all",
+      "Newcomer-friendly"
+    ],
+    "city": "Toronto",
+    "region": "Toronto",
+    "address": "Lillian H. Smith, 239 College Street, Toronto, ON, M5T 1R5",
+    "latitude": 43.6579668,
+    "longitude": -79.39830189999999,
+    "virtual": false,
+    "startDate": "2026-07-07T14:00:00.000Z",
+    "endDate": "2026-07-07T17:00:00.000Z",
+    "deadline": "2026-07-07T14:00:00.000Z",
+    "ageMin": 18,
+    "ages": {
+      "min": 18
+    },
+    "grades": [],
+    "language": [
+      "en"
+    ],
+    "languages": [
+      "en"
+    ],
+    "cost": "Free to join",
+    "sourceUrl": "https://tpl.bibliocommons.com/events/69ff4aa4703c33630026820f",
+    "lastChecked": "2026-07-04",
+    "lastSeen": "2026-07-04",
+    "status": "active",
+    "accessibility": [
+      "Library accessibility services available on request",
+      "Public library location"
+    ],
+    "equipment": "Materials provided unless the source says otherwise.",
+    "food": "No food listed.",
+    "capacity": "Check the source page for availability.",
+    "commitment": "Single scheduled library program or series date from source feed.",
+    "registrationUrl": "https://tpl.bibliocommons.com/events/69ff4aa4703c33630026820f",
+    "providerContact": "+1-416-393-7746",
+    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
+    "lastVerified": "2026-07-04",
+    "trustedSource": true,
+    "volunteerHoursEligible": false,
+    "coopEligible": false,
+    "paidPosition": false,
+    "tags": [
+      "family learning",
+      "social & crisis support services​",
+      "personal development",
+      "adults (18+)",
+      "english"
+    ],
+    "sources": [
+      {
+        "label": "Official Toronto Public Library event page",
+        "url": "https://tpl.bibliocommons.com/events/69ff4aa4703c33630026820f",
+        "capturedAt": "2026-07-04T19:38:34.325Z",
+        "confidence": "high"
+      }
+    ],
+    "adminAuditTrail": [
+      {
+        "label": "Generated from official feed",
+        "at": "2026-07-04T19:38:34.325Z",
+        "actor": "Library RSS generator",
+        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
+      }
+    ]
+  },
+  {
+    "id": "tpl-rss-6a1af4fe748daf857d5a48f3",
+    "title": "Baby Time",
+    "organization": "Toronto Public Library",
+    "provider": "Toronto Public Library",
+    "description": "Join us for bouncing rhymes, songs and stories in this program for babies, birth to 18 months, and their parents or caregivers.",
+    "summary": "Join us for bouncing rhymes, songs and stories in this program for babies, birth to 18 months, and their parents or caregivers.",
+    "type": "One-time event",
+    "category": "Family Learning",
+    "categories": [
+      "Family Learning"
+    ],
+    "communityFocus": [
+      "Open to all",
+      "Newcomer-friendly"
+    ],
+    "city": "Toronto",
+    "region": "Toronto",
+    "address": "Don Mills, 888 Lawrence Avenue East, Toronto, ON, M3C 1P6",
+    "latitude": 43.7366527,
+    "longitude": -79.3473537,
+    "virtual": false,
+    "startDate": "2026-07-07T14:00:00.000Z",
+    "endDate": "2026-07-07T14:30:00.000Z",
+    "deadline": "2026-07-07T14:00:00.000Z",
+    "ageMin": 0,
+    "ageMax": 12,
+    "ages": {
+      "min": 0,
+      "max": 12
+    },
+    "grades": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "language": [
+      "en"
+    ],
+    "languages": [
+      "en"
+    ],
+    "cost": "Free to join",
+    "sourceUrl": "https://tpl.bibliocommons.com/events/6a1af4fe748daf857d5a48f3",
+    "lastChecked": "2026-07-04",
+    "lastSeen": "2026-07-04",
+    "status": "active",
+    "accessibility": [
+      "Library accessibility services available on request",
+      "Public library location"
+    ],
+    "equipment": "Materials provided unless the source says otherwise.",
+    "food": "No food listed.",
+    "capacity": "Check the source page for availability.",
+    "commitment": "Single scheduled library program or series date from source feed.",
+    "registrationUrl": "https://tpl.bibliocommons.com/events/6a1af4fe748daf857d5a48f3",
+    "providerContact": "+1-416-395-5710",
+    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
+    "lastVerified": "2026-07-04",
+    "trustedSource": true,
+    "volunteerHoursEligible": false,
+    "coopEligible": false,
+    "paidPosition": false,
+    "tags": [
+      "family learning",
+      "ready for reading storytimes",
+      "reading programs & storytimes",
+      "preschool children (0-5)",
+      "english"
+    ],
+    "sources": [
+      {
+        "label": "Official Toronto Public Library event page",
+        "url": "https://tpl.bibliocommons.com/events/6a1af4fe748daf857d5a48f3",
+        "capturedAt": "2026-07-04T19:38:34.957Z",
+        "confidence": "high"
+      }
+    ],
+    "adminAuditTrail": [
+      {
+        "label": "Generated from official feed",
+        "at": "2026-07-04T19:38:34.957Z",
+        "actor": "Library RSS generator",
+        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
+      }
+    ]
+  },
+  {
+    "id": "tpl-rss-6a2472377b73be6a1b1ac133",
+    "title": "Drop-in Family Time",
+    "organization": "Toronto Public Library",
+    "provider": "Toronto Public Library",
+    "description": "Join us for stories, songs, rhymes and activities in this program for children ages 5 and under and their parents or caregivers. Family Time runs from 10:00 to 10:30 am.",
+    "summary": "Join us for stories, songs, rhymes and activities in this program for children ages 5 and under and their parents or caregivers. Family Time runs from 10:00 to 10:30 am.",
+    "type": "Drop-in",
+    "category": "Family Learning",
+    "categories": [
+      "Family Learning"
+    ],
+    "communityFocus": [
+      "Open to all",
+      "Newcomer-friendly"
+    ],
+    "city": "Toronto",
+    "region": "Toronto",
+    "address": "Weston, 2 King Street, Toronto, ON, M9N 1K9",
+    "latitude": 43.7017009,
+    "longitude": -79.5206752,
+    "virtual": false,
+    "startDate": "2026-07-07T14:00:00.000Z",
+    "endDate": "2026-07-07T14:30:00.000Z",
+    "deadline": "2026-07-07T14:00:00.000Z",
+    "ageMin": 0,
+    "ageMax": 12,
+    "ages": {
+      "min": 0,
+      "max": 12
+    },
+    "grades": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "language": [
+      "en"
+    ],
+    "languages": [
+      "en"
+    ],
+    "cost": "Free to join",
+    "sourceUrl": "https://tpl.bibliocommons.com/events/6a2472377b73be6a1b1ac133",
+    "lastChecked": "2026-07-04",
+    "lastSeen": "2026-07-04",
+    "status": "active",
+    "accessibility": [
+      "Library accessibility services available on request",
+      "Public library location"
+    ],
+    "equipment": "Materials provided unless the source says otherwise.",
+    "food": "No food listed.",
+    "capacity": "Check the source page for availability.",
+    "commitment": "Single scheduled library program or series date from source feed.",
+    "registrationUrl": "https://tpl.bibliocommons.com/events/6a2472377b73be6a1b1ac133",
+    "providerContact": "+1-416-394-1016",
+    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
+    "lastVerified": "2026-07-04",
+    "trustedSource": true,
+    "volunteerHoursEligible": false,
+    "coopEligible": false,
+    "paidPosition": false,
+    "tags": [
+      "family learning",
+      "ready for reading storytimes",
+      "reading programs & storytimes",
+      "preschool children (0-5)",
+      "english"
+    ],
+    "sources": [
+      {
+        "label": "Official Toronto Public Library event page",
+        "url": "https://tpl.bibliocommons.com/events/6a2472377b73be6a1b1ac133",
+        "capturedAt": "2026-07-04T19:38:34.957Z",
+        "confidence": "high"
+      }
+    ],
+    "adminAuditTrail": [
+      {
+        "label": "Generated from official feed",
+        "at": "2026-07-04T19:38:34.957Z",
+        "actor": "Library RSS generator",
+        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
+      }
+    ]
+  },
+  {
+    "id": "tpl-rss-6a3b09ac296ea565de2e534d",
+    "title": "Toddler Time",
+    "organization": "Toronto Public Library",
+    "provider": "Toronto Public Library",
+    "description": "Join us Tuesday mornings from 10:00 AM to 10:30 AM for a half-hour of high-energy fun! We will be reading great books, singing our favorite tunes, and dancing to action songs. Parents and caregivers are encouraged to join in on the fun as we bring you our very",
+    "summary": "Join us Tuesday mornings from 10:00 AM to 10:30 AM for a half-hour of high-energy fun! We will be reading great books, singing our favorite tunes, and dancing to action songs. Parents and caregivers are encouraged to join in on the fun as we bring you our very",
+    "type": "Drop-in",
+    "category": "Family Learning",
+    "categories": [
+      "Family Learning"
+    ],
+    "communityFocus": [
+      "Open to all",
+      "Newcomer-friendly"
+    ],
+    "city": "Toronto",
+    "region": "Toronto",
+    "address": "Bloor/Gladstone, 1101 Bloor Street West, Toronto, ON, M6H 1M7",
+    "latitude": 43.6598954,
+    "longitude": -79.43409969999999,
+    "virtual": false,
+    "startDate": "2026-07-07T14:00:00.000Z",
+    "endDate": "2026-07-07T14:30:00.000Z",
+    "deadline": "2026-07-07T14:00:00.000Z",
+    "ageMin": 0,
+    "ageMax": 12,
+    "ages": {
+      "min": 0,
+      "max": 12
+    },
+    "grades": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "language": [
+      "en"
+    ],
+    "languages": [
+      "en"
+    ],
+    "cost": "Free to join",
+    "sourceUrl": "https://tpl.bibliocommons.com/events/6a3b09ac296ea565de2e534d",
+    "lastChecked": "2026-07-04",
+    "lastSeen": "2026-07-04",
+    "status": "active",
+    "accessibility": [
+      "Library accessibility services available on request",
+      "Public library location"
+    ],
+    "equipment": "Materials provided unless the source says otherwise.",
+    "food": "No food listed.",
+    "capacity": "Check the source page for availability.",
+    "commitment": "Single scheduled library program or series date from source feed.",
+    "registrationUrl": "https://tpl.bibliocommons.com/events/6a3b09ac296ea565de2e534d",
+    "providerContact": "blstaff@tpl.ca",
+    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
+    "lastVerified": "2026-07-04",
+    "trustedSource": true,
+    "volunteerHoursEligible": false,
+    "coopEligible": false,
+    "paidPosition": false,
+    "tags": [
+      "family learning",
+      "ready for reading storytimes",
+      "reading programs & storytimes",
+      "preschool children (0-5)",
+      "english"
+    ],
+    "sources": [
+      {
+        "label": "Official Toronto Public Library event page",
+        "url": "https://tpl.bibliocommons.com/events/6a3b09ac296ea565de2e534d",
+        "capturedAt": "2026-07-04T19:38:34.957Z",
+        "confidence": "high"
+      }
+    ],
+    "adminAuditTrail": [
+      {
+        "label": "Generated from official feed",
+        "at": "2026-07-04T19:38:34.957Z",
+        "actor": "Library RSS generator",
+        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
+      }
+    ]
+  },
+  {
+    "id": "tpl-rss-6a14e2238ea300e2631876da",
+    "title": "LEGO Hour",
+    "organization": "Toronto Public Library",
+    "provider": "Toronto Public Library",
+    "description": "Enjoy an hour of building with our various blocks! All children are welcome.",
+    "summary": "Enjoy an hour of building with our various blocks! All children are welcome.",
+    "type": "One-time event",
+    "category": "Makerspace & Fabrication",
+    "categories": [
+      "STEM",
+      "Makerspace & Fabrication"
+    ],
+    "communityFocus": [
+      "Open to all",
+      "Newcomer-friendly"
+    ],
+    "city": "Toronto",
+    "region": "Toronto",
+    "address": "Eatonville, 430 Burnhampthorpe Road, Toronto, ON, M9B 2B1",
+    "latitude": 43.6462138,
+    "longitude": -79.55957839999999,
+    "virtual": false,
+    "startDate": "2026-07-07T14:00:00.000Z",
+    "endDate": "2026-07-07T15:00:00.000Z",
+    "deadline": "2026-07-07T14:00:00.000Z",
+    "ageMin": 0,
+    "ageMax": 12,
+    "ages": {
+      "min": 0,
+      "max": 12
+    },
+    "grades": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "language": [
+      "en"
+    ],
+    "languages": [
+      "en"
+    ],
+    "cost": "Free to join",
+    "sourceUrl": "https://tpl.bibliocommons.com/events/6a14e2238ea300e2631876da",
+    "lastChecked": "2026-07-04",
+    "lastSeen": "2026-07-04",
+    "status": "active",
+    "accessibility": [
+      "Library accessibility services available on request",
+      "Public library location"
+    ],
+    "equipment": "Materials provided unless the source says otherwise.",
+    "food": "No food listed.",
+    "capacity": "Check the source page for availability.",
+    "commitment": "Single scheduled library program or series date from source feed.",
+    "registrationUrl": "https://tpl.bibliocommons.com/events/6a14e2238ea300e2631876da",
+    "providerContact": "eaprograms@tpl.ca",
+    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
+    "lastVerified": "2026-07-04",
+    "trustedSource": true,
+    "volunteerHoursEligible": false,
+    "coopEligible": false,
+    "paidPosition": false,
+    "tags": [
+      "makerspace & fabrication",
+      "crafts & hobbies",
+      "preschool children (0-5)",
+      "english"
+    ],
+    "sources": [
+      {
+        "label": "Official Toronto Public Library event page",
+        "url": "https://tpl.bibliocommons.com/events/6a14e2238ea300e2631876da",
+        "capturedAt": "2026-07-04T19:38:34.957Z",
+        "confidence": "high"
+      }
+    ],
+    "adminAuditTrail": [
+      {
+        "label": "Generated from official feed",
+        "at": "2026-07-04T19:38:34.957Z",
+        "actor": "Library RSS generator",
+        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
+      }
+    ]
+  },
+  {
+    "id": "tpl-rss-6a3435f1caf9343600640b7e",
+    "title": "Seniors Social",
+    "organization": "Toronto Public Library",
+    "provider": "Toronto Public Library",
+    "description": "Join us every other Tuesday, at the Malvern Library for our Seniors Social. Enjoy trivia, bingo, coffee, chess, and relaxed conversation in a welcoming and friendly space. Participants can explore library resources, learn about programs offered across the libr",
+    "summary": "Join us every other Tuesday, at the Malvern Library for our Seniors Social. Enjoy trivia, bingo, coffee, chess, and relaxed conversation in a welcoming and friendly space. Participants can explore library resources, learn about programs offered across the libr",
+    "type": "Drop-in",
+    "category": "Volunteer Hours",
+    "categories": [
+      "Volunteer Hours"
+    ],
+    "communityFocus": [
+      "Open to all",
+      "Newcomer-friendly"
+    ],
+    "city": "Toronto",
+    "region": "Toronto",
+    "address": "Malvern, 30 Sewells Road, Toronto, ON, M1B 3G5",
+    "latitude": 43.8089406,
+    "longitude": -79.2164074,
+    "virtual": false,
+    "startDate": "2026-07-07T14:00:00.000Z",
+    "endDate": "2026-07-07T16:00:00.000Z",
+    "deadline": "2026-07-07T14:00:00.000Z",
+    "ageMin": 18,
+    "ages": {
+      "min": 18
+    },
+    "grades": [],
+    "language": [
+      "en"
+    ],
+    "languages": [
+      "en"
+    ],
+    "cost": "Free to join",
+    "sourceUrl": "https://tpl.bibliocommons.com/events/6a3435f1caf9343600640b7e",
+    "lastChecked": "2026-07-04",
+    "lastSeen": "2026-07-04",
+    "status": "active",
+    "accessibility": [
+      "Library accessibility services available on request",
+      "Public library location"
+    ],
+    "equipment": "Materials provided unless the source says otherwise.",
+    "food": "No food listed.",
+    "capacity": "Check the source page for availability.",
+    "commitment": "Single scheduled library program or series date from source feed.",
+    "registrationUrl": "https://tpl.bibliocommons.com/events/6a3435f1caf9343600640b7e",
+    "providerContact": "+1-416-396-8969",
+    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
+    "lastVerified": "2026-07-04",
+    "trustedSource": true,
+    "volunteerHoursEligible": true,
+    "coopEligible": false,
+    "paidPosition": false,
+    "tags": [
+      "volunteer hours",
+      "culture, arts & entertainment",
+      "older adults",
+      "english"
+    ],
+    "sources": [
+      {
+        "label": "Official Toronto Public Library event page",
+        "url": "https://tpl.bibliocommons.com/events/6a3435f1caf9343600640b7e",
+        "capturedAt": "2026-07-04T19:38:34.957Z",
+        "confidence": "high"
+      }
+    ],
+    "adminAuditTrail": [
+      {
+        "label": "Generated from official feed",
+        "at": "2026-07-04T19:38:34.957Z",
+        "actor": "Library RSS generator",
+        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
+      }
+    ]
+  },
+  {
+    "id": "tpl-rss-6a38411b1c3e58cad59148ec",
+    "title": "Family Time",
+    "organization": "Toronto Public Library",
+    "provider": "Toronto Public Library",
+    "description": "Join us for stories, songs, rhymes, and activities. This program is for children ages 4 and under and their parents or caregivers. Family Time runs from 10:15 to 10:45.",
+    "summary": "Join us for stories, songs, rhymes, and activities. This program is for children ages 4 and under and their parents or caregivers. Family Time runs from 10:15 to 10:45.",
+    "type": "One-time event",
+    "category": "Family Learning",
+    "categories": [
+      "Family Learning"
+    ],
+    "communityFocus": [
+      "Open to all",
+      "Newcomer-friendly"
+    ],
+    "city": "Toronto",
+    "region": "Toronto",
+    "address": "Alderwood, 2 Orianna Drive, Toronto, ON, M8W 4Y1",
+    "latitude": 43.6017737,
+    "longitude": -79.5478411,
+    "virtual": false,
+    "startDate": "2026-07-07T14:15:00.000Z",
+    "endDate": "2026-07-07T14:45:00.000Z",
+    "deadline": "2026-07-07T14:15:00.000Z",
+    "ageMin": 0,
+    "ageMax": 12,
+    "ages": {
+      "min": 0,
+      "max": 12
+    },
+    "grades": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "language": [
+      "en"
+    ],
+    "languages": [
+      "en"
+    ],
+    "cost": "Free to join",
+    "sourceUrl": "https://tpl.bibliocommons.com/events/6a38411b1c3e58cad59148ec",
+    "lastChecked": "2026-07-04",
+    "lastSeen": "2026-07-04",
+    "status": "active",
+    "accessibility": [
+      "Library accessibility services available on request",
+      "Public library location"
+    ],
+    "equipment": "Materials provided unless the source says otherwise.",
+    "food": "No food listed.",
+    "capacity": "Check the source page for availability.",
+    "commitment": "Single scheduled library program or series date from source feed.",
+    "registrationUrl": "https://tpl.bibliocommons.com/events/6a38411b1c3e58cad59148ec",
+    "providerContact": "+1-416-394-5310",
+    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
+    "lastVerified": "2026-07-04",
+    "trustedSource": true,
+    "volunteerHoursEligible": false,
+    "coopEligible": false,
+    "paidPosition": false,
+    "tags": [
+      "family learning",
+      "ready for reading storytimes",
+      "reading programs & storytimes",
+      "preschool children (0-5)",
+      "english"
+    ],
+    "sources": [
+      {
+        "label": "Official Toronto Public Library event page",
+        "url": "https://tpl.bibliocommons.com/events/6a38411b1c3e58cad59148ec",
+        "capturedAt": "2026-07-04T19:38:34.957Z",
+        "confidence": "high"
+      }
+    ],
+    "adminAuditTrail": [
+      {
+        "label": "Generated from official feed",
+        "at": "2026-07-04T19:38:34.957Z",
+        "actor": "Library RSS generator",
+        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
+      }
+    ]
+  },
+  {
+    "id": "tpl-rss-69efb19cc1cf6f9a7588398c",
+    "title": "Family Time",
+    "organization": "Toronto Public Library",
+    "provider": "Toronto Public Library",
+    "description": "Join us for stories, songs, rhymes and activities in this program for children ages 5 and under and their parents or caregivers.",
+    "summary": "Join us for stories, songs, rhymes and activities in this program for children ages 5 and under and their parents or caregivers.",
+    "type": "One-time event",
+    "category": "Family Learning",
+    "categories": [
+      "Family Learning"
+    ],
+    "communityFocus": [
+      "Open to all",
+      "Newcomer-friendly"
+    ],
+    "city": "Toronto",
+    "region": "Toronto",
+    "address": "Pape/Danforth, 701 Pape Avenue, Toronto, ON, M4K 3S6",
+    "latitude": 43.6786237,
+    "longitude": -79.34442150000001,
+    "virtual": false,
+    "startDate": "2026-07-07T14:30:00.000Z",
+    "endDate": "2026-07-07T15:00:00.000Z",
+    "deadline": "2026-07-07T14:30:00.000Z",
+    "ageMin": 0,
+    "ageMax": 12,
+    "ages": {
+      "min": 0,
+      "max": 12
+    },
+    "grades": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "language": [
+      "en"
+    ],
+    "languages": [
+      "en"
+    ],
+    "cost": "Free to join",
+    "sourceUrl": "https://tpl.bibliocommons.com/events/69efb19cc1cf6f9a7588398c",
+    "lastChecked": "2026-07-04",
+    "lastSeen": "2026-07-04",
+    "status": "active",
+    "accessibility": [
+      "Library accessibility services available on request",
+      "Public library location"
+    ],
+    "equipment": "Materials provided unless the source says otherwise.",
+    "food": "No food listed.",
+    "capacity": "Check the source page for availability.",
+    "commitment": "Single scheduled library program or series date from source feed.",
+    "registrationUrl": "https://tpl.bibliocommons.com/events/69efb19cc1cf6f9a7588398c",
+    "providerContact": "+1-416-393-7727",
+    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
+    "lastVerified": "2026-07-04",
+    "trustedSource": true,
+    "volunteerHoursEligible": false,
+    "coopEligible": false,
+    "paidPosition": false,
+    "tags": [
+      "family learning",
+      "ready for reading storytimes",
+      "reading programs & storytimes",
+      "preschool children (0-5)",
+      "english"
+    ],
+    "sources": [
+      {
+        "label": "Official Toronto Public Library event page",
+        "url": "https://tpl.bibliocommons.com/events/69efb19cc1cf6f9a7588398c",
+        "capturedAt": "2026-07-04T19:38:34.957Z",
+        "confidence": "high"
+      }
+    ],
+    "adminAuditTrail": [
+      {
+        "label": "Generated from official feed",
+        "at": "2026-07-04T19:38:34.957Z",
+        "actor": "Library RSS generator",
+        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
+      }
+    ]
+  },
+  {
+    "id": "tpl-rss-69c6d129b48451fc3c0baab0",
+    "title": "L'Heure du conte / French Storytime",
+    "organization": "Toronto Public Library",
+    "provider": "Toronto Public Library",
+    "description": "Rejoignez-nous pour des histoires, des chansons et des comptines en français pour les enfants âgés de 0 à 5 ans, accompagnés de leurs parents et responsables. Les familles sont invitées à rester et à jouer pour 30 minutes supplémentaires après la conclusion du",
+    "summary": "Rejoignez-nous pour des histoires, des chansons et des comptines en français pour les enfants âgés de 0 à 5 ans, accompagnés de leurs parents et responsables. Les familles sont invitées à rester et à jouer pour 30 minutes supplémentaires après la conclusion du",
+    "type": "One-time event",
+    "category": "Family Learning",
+    "categories": [
+      "Family Learning"
+    ],
+    "communityFocus": [
+      "Open to all",
+      "Newcomer-friendly"
+    ],
+    "city": "Toronto",
+    "region": "Toronto",
+    "address": "S. Walter Stewart, 170 Memorial Park Avenue, Toronto, ON, M4J 2K5",
+    "latitude": 43.6921393,
+    "longitude": -79.329711,
+    "virtual": false,
+    "startDate": "2026-07-07T14:30:00.000Z",
+    "endDate": "2026-07-07T15:00:00.000Z",
+    "deadline": "2026-07-07T14:30:00.000Z",
+    "ageMin": 0,
+    "ageMax": 5,
+    "ages": {
+      "min": 0,
+      "max": 5
+    },
+    "grades": [
+      "0"
+    ],
+    "language": [
+      "en"
+    ],
+    "languages": [
+      "en"
+    ],
+    "cost": "Free to join",
+    "sourceUrl": "https://tpl.bibliocommons.com/events/69c6d129b48451fc3c0baab0",
+    "lastChecked": "2026-07-04",
+    "lastSeen": "2026-07-04",
+    "status": "active",
+    "accessibility": [
+      "Library accessibility services available on request",
+      "Public library location"
+    ],
+    "equipment": "Materials provided unless the source says otherwise.",
+    "food": "No food listed.",
+    "capacity": "Check the source page for availability.",
+    "commitment": "Single scheduled library program or series date from source feed.",
+    "registrationUrl": "https://tpl.bibliocommons.com/events/69c6d129b48451fc3c0baab0",
+    "providerContact": "+1-416-396-3975",
+    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
+    "lastVerified": "2026-07-04",
+    "trustedSource": true,
+    "volunteerHoursEligible": false,
+    "coopEligible": false,
+    "paidPosition": false,
+    "tags": [
+      "family learning",
+      "ready for reading storytimes",
+      "reading programs & storytimes",
+      "preschool children (0-5)",
+      "french"
+    ],
+    "sources": [
+      {
+        "label": "Official Toronto Public Library event page",
+        "url": "https://tpl.bibliocommons.com/events/69c6d129b48451fc3c0baab0",
+        "capturedAt": "2026-07-04T19:38:34.958Z",
+        "confidence": "high"
+      }
+    ],
+    "adminAuditTrail": [
+      {
+        "label": "Generated from official feed",
+        "at": "2026-07-04T19:38:34.958Z",
+        "actor": "Library RSS generator",
+        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
+      }
+    ]
+  },
+  {
+    "id": "tpl-rss-6a15e5914dc267647daab583",
+    "title": "Little Builders",
+    "organization": "Toronto Public Library",
+    "provider": "Toronto Public Library",
+    "description": "A fun construction zone where toddlers and preschoolers can play, stack, and create with giant building blocks. Ages 1-5. Drop-in",
+    "summary": "A fun construction zone where toddlers and preschoolers can play, stack, and create with giant building blocks. Ages 1-5. Drop-in",
+    "type": "Drop-in",
+    "category": "Makerspace & Fabrication",
+    "categories": [
+      "STEM",
+      "Makerspace & Fabrication"
+    ],
+    "communityFocus": [
+      "Open to all",
+      "Newcomer-friendly"
+    ],
+    "city": "Toronto",
+    "region": "Toronto",
+    "address": "Richview, 1806 Islington Avenue, Toronto, ON, M9P 3N3",
+    "latitude": 43.6834225,
+    "longitude": -79.5411615,
+    "virtual": false,
+    "startDate": "2026-07-07T14:30:00.000Z",
+    "endDate": "2026-07-07T15:30:00.000Z",
+    "deadline": "2026-07-07T14:30:00.000Z",
+    "ageMin": 1,
+    "ageMax": 5,
+    "ages": {
+      "min": 1,
+      "max": 5
+    },
+    "grades": [
+      "0"
+    ],
+    "language": [
+      "en"
+    ],
+    "languages": [
+      "en"
+    ],
+    "cost": "Free to join",
+    "sourceUrl": "https://tpl.bibliocommons.com/events/6a15e5914dc267647daab583",
+    "lastChecked": "2026-07-04",
+    "lastSeen": "2026-07-04",
+    "status": "active",
+    "accessibility": [
+      "Library accessibility services available on request",
+      "Public library location"
+    ],
+    "equipment": "Materials provided unless the source says otherwise.",
+    "food": "No food listed.",
+    "capacity": "Check the source page for availability.",
+    "commitment": "Single scheduled library program or series date from source feed.",
+    "registrationUrl": "https://tpl.bibliocommons.com/events/6a15e5914dc267647daab583",
+    "providerContact": "+1-416-394-5120",
+    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
+    "lastVerified": "2026-07-04",
+    "trustedSource": true,
+    "volunteerHoursEligible": false,
+    "coopEligible": false,
+    "paidPosition": false,
+    "tags": [
+      "makerspace & fabrication",
+      "summer wonder",
+      "crafts & hobbies",
+      "science & engineering",
+      "preschool children (0-5)",
+      "english"
+    ],
+    "sources": [
+      {
+        "label": "Official Toronto Public Library event page",
+        "url": "https://tpl.bibliocommons.com/events/6a15e5914dc267647daab583",
+        "capturedAt": "2026-07-04T19:38:34.958Z",
+        "confidence": "high"
+      }
+    ],
+    "adminAuditTrail": [
+      {
+        "label": "Generated from official feed",
+        "at": "2026-07-04T19:38:34.958Z",
+        "actor": "Library RSS generator",
+        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
+      }
+    ]
+  },
+  {
+    "id": "tpl-rss-6a3ac945c78687f2fd2e154f",
+    "title": "Toddler Time",
+    "organization": "Toronto Public Library",
+    "provider": "Toronto Public Library",
+    "description": "Join us for stories, songs and rhymes in this program for children 19 months to 3 years, and their parents or caregivers. Toddler Time runs from 10:30 to 11:00 . Drop in. No registration required",
+    "summary": "Join us for stories, songs and rhymes in this program for children 19 months to 3 years, and their parents or caregivers. Toddler Time runs from 10:30 to 11:00 . Drop in. No registration required",
+    "type": "Drop-in",
+    "category": "Family Learning",
+    "categories": [
+      "Family Learning"
+    ],
+    "communityFocus": [
+      "Open to all",
+      "Newcomer-friendly"
+    ],
+    "city": "Toronto",
+    "region": "Toronto",
+    "address": "Maryvale, 85 Ellesmere Road, Unit 22, Toronto, ON, M1R 4B9",
+    "latitude": 43.757348049125646,
+    "longitude": -79.31156936354598,
+    "virtual": false,
+    "startDate": "2026-07-07T14:30:00.000Z",
+    "endDate": "2026-07-07T15:00:00.000Z",
+    "deadline": "2026-07-07T14:30:00.000Z",
+    "ageMin": 0,
+    "ageMax": 12,
+    "ages": {
+      "min": 0,
+      "max": 12
+    },
+    "grades": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "language": [
+      "en"
+    ],
+    "languages": [
+      "en"
+    ],
+    "cost": "Free to join",
+    "sourceUrl": "https://tpl.bibliocommons.com/events/6a3ac945c78687f2fd2e154f",
+    "lastChecked": "2026-07-04",
+    "lastSeen": "2026-07-04",
+    "status": "active",
+    "accessibility": [
+      "Library accessibility services available on request",
+      "Public library location"
+    ],
+    "equipment": "Materials provided unless the source says otherwise.",
+    "food": "No food listed.",
+    "capacity": "Check the source page for availability.",
+    "commitment": "Single scheduled library program or series date from source feed.",
+    "registrationUrl": "https://tpl.bibliocommons.com/events/6a3ac945c78687f2fd2e154f",
+    "providerContact": "+1-416-396-8931",
+    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
+    "lastVerified": "2026-07-04",
+    "trustedSource": true,
+    "volunteerHoursEligible": false,
+    "coopEligible": false,
+    "paidPosition": false,
+    "tags": [
+      "family learning",
+      "summer wonder",
+      "reading programs & storytimes",
+      "preschool children (0-5)",
+      "english"
+    ],
+    "sources": [
+      {
+        "label": "Official Toronto Public Library event page",
+        "url": "https://tpl.bibliocommons.com/events/6a3ac945c78687f2fd2e154f",
+        "capturedAt": "2026-07-04T19:38:34.958Z",
+        "confidence": "high"
+      }
+    ],
+    "adminAuditTrail": [
+      {
+        "label": "Generated from official feed",
+        "at": "2026-07-04T19:38:34.958Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -16925,14 +14332,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbd37875911f28001a2333",
-        "capturedAt": "2026-07-04T13:59:49.287Z",
+        "capturedAt": "2026-07-04T19:38:36.388Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:49.287Z",
+        "at": "2026-07-04T19:38:36.388Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -17018,14 +14425,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a146abda99bdd027d42cd46",
-        "capturedAt": "2026-07-04T13:59:49.287Z",
+        "capturedAt": "2026-07-04T19:38:36.388Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:49.287Z",
+        "at": "2026-07-04T19:38:36.388Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -17111,14 +14518,188 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a16edaa52c88111723afebe",
-        "capturedAt": "2026-07-04T13:59:49.287Z",
+        "capturedAt": "2026-07-04T19:38:36.388Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:49.287Z",
+        "at": "2026-07-04T19:38:36.388Z",
+        "actor": "Library RSS generator",
+        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
+      }
+    ]
+  },
+  {
+    "id": "tpl-rss-6a429fd1ed35742f00ff274e",
+    "title": "Finding Recovery Through Exercise Skills and Hope (FRESH)",
+    "organization": "Toronto Public Library",
+    "provider": "Toronto Public Library",
+    "description": "This program helps people stay active, make friends, learn new skills, and have fun. It involves peer-led group activities which can include crafts, games, walking, yoga, and more. Meet new folks, build social connections, and tell us about programs and servic",
+    "summary": "This program helps people stay active, make friends, learn new skills, and have fun. It involves peer-led group activities which can include crafts, games, walking, yoga, and more. Meet new folks, build social connections, and tell us about programs and servic",
+    "type": "One-time event",
+    "category": "Makerspace & Fabrication",
+    "categories": [
+      "STEM",
+      "Makerspace & Fabrication"
+    ],
+    "communityFocus": [
+      "Open to all",
+      "Newcomer-friendly"
+    ],
+    "city": "Toronto",
+    "region": "Toronto",
+    "address": "Lillian H. Smith, 239 College Street, Toronto, ON, M5T 1R5",
+    "latitude": 43.6579668,
+    "longitude": -79.39830189999999,
+    "virtual": false,
+    "startDate": "2026-07-07T15:00:00.000Z",
+    "endDate": "2026-07-07T18:00:00.000Z",
+    "deadline": "2026-07-07T15:00:00.000Z",
+    "ageMin": 18,
+    "ages": {
+      "min": 18
+    },
+    "grades": [],
+    "language": [
+      "en"
+    ],
+    "languages": [
+      "en"
+    ],
+    "cost": "Free to join",
+    "sourceUrl": "https://tpl.bibliocommons.com/events/6a429fd1ed35742f00ff274e",
+    "lastChecked": "2026-07-04",
+    "lastSeen": "2026-07-04",
+    "status": "active",
+    "accessibility": [
+      "Library accessibility services available on request",
+      "Public library location"
+    ],
+    "equipment": "Materials provided unless the source says otherwise.",
+    "food": "No food listed.",
+    "capacity": "Check the source page for availability.",
+    "commitment": "Single scheduled library program or series date from source feed.",
+    "registrationUrl": "https://tpl.bibliocommons.com/events/6a429fd1ed35742f00ff274e",
+    "providerContact": "+1-416-393-7746",
+    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
+    "lastVerified": "2026-07-04",
+    "trustedSource": true,
+    "volunteerHoursEligible": false,
+    "coopEligible": false,
+    "paidPosition": false,
+    "tags": [
+      "makerspace & fabrication",
+      "social & crisis support services​",
+      "personal development",
+      "adults (18+)",
+      "english"
+    ],
+    "sources": [
+      {
+        "label": "Official Toronto Public Library event page",
+        "url": "https://tpl.bibliocommons.com/events/6a429fd1ed35742f00ff274e",
+        "capturedAt": "2026-07-04T19:38:34.958Z",
+        "confidence": "high"
+      }
+    ],
+    "adminAuditTrail": [
+      {
+        "label": "Generated from official feed",
+        "at": "2026-07-04T19:38:34.958Z",
+        "actor": "Library RSS generator",
+        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
+      }
+    ]
+  },
+  {
+    "id": "tpl-rss-6a3ad1e3dcc1022f003a8f5d",
+    "title": "Baby Time",
+    "organization": "Toronto Public Library",
+    "provider": "Toronto Public Library",
+    "description": "Join us for bouncing rhymes, songs and stories in this program for babies, birth to 18 months, and their parents or caregivers. Baby Time runs from 11am to 11:30am. Children, parents and caregivers are invited to Stay and Play, from 11:30am to 12pm. *On August",
+    "summary": "Join us for bouncing rhymes, songs and stories in this program for babies, birth to 18 months, and their parents or caregivers. Baby Time runs from 11am to 11:30am. Children, parents and caregivers are invited to Stay and Play, from 11:30am to 12pm. *On August",
+    "type": "One-time event",
+    "category": "Family Learning",
+    "categories": [
+      "Family Learning"
+    ],
+    "communityFocus": [
+      "Open to all",
+      "Newcomer-friendly"
+    ],
+    "city": "Toronto",
+    "region": "Toronto",
+    "address": "Parkdale, 1303 Queen Street West, Toronto, ON, M6K 1L6",
+    "latitude": 43.6411423,
+    "longitude": -79.4326474,
+    "virtual": false,
+    "startDate": "2026-07-07T15:00:00.000Z",
+    "endDate": "2026-07-07T15:30:00.000Z",
+    "deadline": "2026-07-07T15:00:00.000Z",
+    "ageMin": 0,
+    "ageMax": 12,
+    "ages": {
+      "min": 0,
+      "max": 12
+    },
+    "grades": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "language": [
+      "en"
+    ],
+    "languages": [
+      "en"
+    ],
+    "cost": "Free to join",
+    "sourceUrl": "https://tpl.bibliocommons.com/events/6a3ad1e3dcc1022f003a8f5d",
+    "lastChecked": "2026-07-04",
+    "lastSeen": "2026-07-04",
+    "status": "active",
+    "accessibility": [
+      "Library accessibility services available on request",
+      "Public library location"
+    ],
+    "equipment": "Materials provided unless the source says otherwise.",
+    "food": "No food listed.",
+    "capacity": "Check the source page for availability.",
+    "commitment": "Single scheduled library program or series date from source feed.",
+    "registrationUrl": "https://tpl.bibliocommons.com/events/6a3ad1e3dcc1022f003a8f5d",
+    "providerContact": "ask@tpl.ca",
+    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
+    "lastVerified": "2026-07-04",
+    "trustedSource": true,
+    "volunteerHoursEligible": false,
+    "coopEligible": false,
+    "paidPosition": false,
+    "tags": [
+      "family learning",
+      "ready for reading storytimes",
+      "reading programs & storytimes",
+      "preschool children (0-5)",
+      "english"
+    ],
+    "sources": [
+      {
+        "label": "Official Toronto Public Library event page",
+        "url": "https://tpl.bibliocommons.com/events/6a3ad1e3dcc1022f003a8f5d",
+        "capturedAt": "2026-07-04T19:38:34.958Z",
+        "confidence": "high"
+      }
+    ],
+    "adminAuditTrail": [
+      {
+        "label": "Generated from official feed",
+        "at": "2026-07-04T19:38:34.958Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -17195,14 +14776,1069 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdd1b0176055300fe8096",
-        "capturedAt": "2026-07-04T13:59:49.287Z",
+        "capturedAt": "2026-07-04T19:38:36.388Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:49.287Z",
+        "at": "2026-07-04T19:38:36.388Z",
+        "actor": "Library RSS generator",
+        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
+      }
+    ]
+  },
+  {
+    "id": "tpl-rss-6a47e4aee6e135e78be03d81",
+    "title": "Summer Settlement Services",
+    "organization": "Toronto Public Library",
+    "provider": "Toronto Public Library",
+    "description": "New to Canada? Need information on employment, housing, language learning, schools, or other topics? A Settlement Worker can help. Drop in to meet our settlement worker every Tuesday, Wednesday, or Thursday from 12:30 pm - 8:30 pm. In partnership with Catholic",
+    "summary": "New to Canada? Need information on employment, housing, language learning, schools, or other topics? A Settlement Worker can help. Drop in to meet our settlement worker every Tuesday, Wednesday, or Thursday from 12:30 pm - 8:30 pm. In partnership with Catholic",
+    "type": "Drop-in",
+    "category": "Newcomer & Settlement",
+    "categories": [
+      "Newcomer & Settlement"
+    ],
+    "communityFocus": [
+      "Open to all",
+      "Newcomer-friendly"
+    ],
+    "city": "Toronto",
+    "region": "Toronto",
+    "address": "Burrows Hall, 1081 Progress Ave, Toronto, ON, M1B 5Z6",
+    "latitude": 43.7939492,
+    "longitude": -79.23422219999999,
+    "virtual": false,
+    "startDate": "2026-07-07T16:30:00.000Z",
+    "endDate": "2026-07-08T00:30:00.000Z",
+    "deadline": "2026-07-07T16:30:00.000Z",
+    "ageMin": 18,
+    "ages": {
+      "min": 18
+    },
+    "grades": [],
+    "language": [
+      "en"
+    ],
+    "languages": [
+      "en"
+    ],
+    "cost": "Free to join",
+    "sourceUrl": "https://tpl.bibliocommons.com/events/6a47e4aee6e135e78be03d81",
+    "lastChecked": "2026-07-04",
+    "lastSeen": "2026-07-04",
+    "status": "active",
+    "accessibility": [
+      "Library accessibility services available on request",
+      "Public library location"
+    ],
+    "equipment": "Materials provided unless the source says otherwise.",
+    "food": "No food listed.",
+    "capacity": "Check the source page for availability.",
+    "commitment": "Single scheduled library program or series date from source feed.",
+    "registrationUrl": "https://tpl.bibliocommons.com/events/6a47e4aee6e135e78be03d81",
+    "providerContact": "+1-416-396-8740",
+    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
+    "lastVerified": "2026-07-04",
+    "trustedSource": true,
+    "volunteerHoursEligible": false,
+    "coopEligible": false,
+    "paidPosition": false,
+    "tags": [
+      "newcomer & settlement",
+      "newcomer",
+      "civic & community engagement",
+      "adults (18+)",
+      "older adults",
+      "english"
+    ],
+    "sources": [
+      {
+        "label": "Official Toronto Public Library event page",
+        "url": "https://tpl.bibliocommons.com/events/6a47e4aee6e135e78be03d81",
+        "capturedAt": "2026-07-04T19:38:34.958Z",
+        "confidence": "high"
+      }
+    ],
+    "adminAuditTrail": [
+      {
+        "label": "Generated from official feed",
+        "at": "2026-07-04T19:38:34.958Z",
+        "actor": "Library RSS generator",
+        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
+      }
+    ]
+  },
+  {
+    "id": "tpl-rss-693f099a4be11d3d00d81764",
+    "title": "Knitting and Crochet Circle",
+    "organization": "Toronto Public Library",
+    "provider": "Toronto Public Library",
+    "description": "Join us weekly for a drop-in knitting and crochet circle! Bring your yarn, needles and crochet hooks and enjoy the company of other knitters and crocheters.",
+    "summary": "Join us weekly for a drop-in knitting and crochet circle! Bring your yarn, needles and crochet hooks and enjoy the company of other knitters and crocheters.",
+    "type": "Drop-in",
+    "category": "Makerspace & Fabrication",
+    "categories": [
+      "STEM",
+      "Makerspace & Fabrication"
+    ],
+    "communityFocus": [
+      "Open to all",
+      "Newcomer-friendly"
+    ],
+    "city": "Toronto",
+    "region": "Toronto",
+    "address": "Weston, 2 King Street, Toronto, ON, M9N 1K9",
+    "latitude": 43.7017009,
+    "longitude": -79.5206752,
+    "virtual": false,
+    "startDate": "2026-07-07T17:00:00.000Z",
+    "endDate": "2026-07-07T18:00:00.000Z",
+    "deadline": "2026-07-07T17:00:00.000Z",
+    "ageMin": 18,
+    "ages": {
+      "min": 18
+    },
+    "grades": [],
+    "language": [
+      "en"
+    ],
+    "languages": [
+      "en"
+    ],
+    "cost": "Free to join",
+    "sourceUrl": "https://tpl.bibliocommons.com/events/693f099a4be11d3d00d81764",
+    "lastChecked": "2026-07-04",
+    "lastSeen": "2026-07-04",
+    "status": "active",
+    "accessibility": [
+      "Library accessibility services available on request",
+      "Public library location"
+    ],
+    "equipment": "Materials provided unless the source says otherwise.",
+    "food": "No food listed.",
+    "capacity": "Check the source page for availability.",
+    "commitment": "Single scheduled library program or series date from source feed.",
+    "registrationUrl": "https://tpl.bibliocommons.com/events/693f099a4be11d3d00d81764",
+    "providerContact": "+1-416-394-1016",
+    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
+    "lastVerified": "2026-07-04",
+    "trustedSource": true,
+    "volunteerHoursEligible": false,
+    "coopEligible": false,
+    "paidPosition": false,
+    "tags": [
+      "makerspace & fabrication",
+      "crafts & hobbies",
+      "adults (18+)",
+      "older adults",
+      "english"
+    ],
+    "sources": [
+      {
+        "label": "Official Toronto Public Library event page",
+        "url": "https://tpl.bibliocommons.com/events/693f099a4be11d3d00d81764",
+        "capturedAt": "2026-07-04T19:38:34.958Z",
+        "confidence": "high"
+      }
+    ],
+    "adminAuditTrail": [
+      {
+        "label": "Generated from official feed",
+        "at": "2026-07-04T19:38:34.958Z",
+        "actor": "Library RSS generator",
+        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
+      }
+    ]
+  },
+  {
+    "id": "tpl-rss-6a2b0a14c7d3cd58005fb01f",
+    "title": "Nature Song Circle with Pete Moss",
+    "organization": "Toronto Public Library",
+    "provider": "Toronto Public Library",
+    "description": "A musical interactive performance just for babies, toddlers and accompanying parents and caregivers. This acoustic musical performance includes well-known short nature songs adapted to local nature themes and movement activities with egg shakers and scarves. A",
+    "summary": "A musical interactive performance just for babies, toddlers and accompanying parents and caregivers. This acoustic musical performance includes well-known short nature songs adapted to local nature themes and movement activities with egg shakers and scarves. A",
+    "type": "Drop-in",
+    "category": "Makerspace & Fabrication",
+    "categories": [
+      "STEM",
+      "Makerspace & Fabrication"
+    ],
+    "communityFocus": [
+      "Open to all",
+      "Newcomer-friendly"
+    ],
+    "city": "Toronto",
+    "region": "Toronto",
+    "address": "Albert Campbell, 496 Birchmount Road, Toronto, ON, M1K 1N8",
+    "latitude": 43.7080744,
+    "longitude": -79.2692964,
+    "virtual": false,
+    "startDate": "2026-07-07T17:00:00.000Z",
+    "endDate": "2026-07-07T18:00:00.000Z",
+    "deadline": "2026-07-07T17:00:00.000Z",
+    "ageMin": 0,
+    "ageMax": 6,
+    "ages": {
+      "min": 0,
+      "max": 6
+    },
+    "grades": [
+      "0",
+      "1"
+    ],
+    "language": [
+      "en"
+    ],
+    "languages": [
+      "en"
+    ],
+    "cost": "Free to join",
+    "sourceUrl": "https://tpl.bibliocommons.com/events/6a2b0a14c7d3cd58005fb01f",
+    "lastChecked": "2026-07-04",
+    "lastSeen": "2026-07-04",
+    "status": "active",
+    "accessibility": [
+      "Library accessibility services available on request",
+      "Public library location"
+    ],
+    "equipment": "Materials provided unless the source says otherwise.",
+    "food": "No food listed.",
+    "capacity": "Check the source page for availability.",
+    "commitment": "Single scheduled library program or series date from source feed.",
+    "registrationUrl": "https://tpl.bibliocommons.com/events/6a2b0a14c7d3cd58005fb01f",
+    "providerContact": "+1-416-396-8890",
+    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
+    "lastVerified": "2026-07-04",
+    "trustedSource": true,
+    "volunteerHoursEligible": false,
+    "coopEligible": false,
+    "paidPosition": false,
+    "tags": [
+      "makerspace & fabrication",
+      "summer wonder",
+      "culture, arts & entertainment",
+      "reading programs & storytimes",
+      "preschool children (0-5)",
+      "english"
+    ],
+    "sources": [
+      {
+        "label": "Official Toronto Public Library event page",
+        "url": "https://tpl.bibliocommons.com/events/6a2b0a14c7d3cd58005fb01f",
+        "capturedAt": "2026-07-04T19:38:34.959Z",
+        "confidence": "high"
+      }
+    ],
+    "adminAuditTrail": [
+      {
+        "label": "Generated from official feed",
+        "at": "2026-07-04T19:38:34.959Z",
+        "actor": "Library RSS generator",
+        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
+      }
+    ]
+  },
+  {
+    "id": "tpl-rss-6a29ad1a414ef43d00966140",
+    "title": "1-on-1 Career Consultations with ACCES Employment",
+    "organization": "Toronto Public Library",
+    "provider": "Toronto Public Library",
+    "description": "Explore the incredible resources and expertise offered by ACCES Employment. Connect with an Employment Consultant to get tailored resume reviews, invaluable interview tips, and a wealth of additional support. Book a free 30-minute appointment and embark on a r",
+    "summary": "Explore the incredible resources and expertise offered by ACCES Employment. Connect with an Employment Consultant to get tailored resume reviews, invaluable interview tips, and a wealth of additional support. Book a free 30-minute appointment and embark on a r",
+    "type": "One-time event",
+    "category": "Career & Mentorship",
+    "categories": [
+      "Career & Mentorship"
+    ],
+    "communityFocus": [
+      "Open to all",
+      "Newcomer-friendly"
+    ],
+    "city": "Toronto",
+    "region": "Toronto",
+    "address": "North York Central Library, 5120 Yonge Street, Toronto, ON, M2N 5N9",
+    "latitude": 43.7681656,
+    "longitude": -79.41388859999999,
+    "virtual": false,
+    "startDate": "2026-07-07T17:00:00.000Z",
+    "endDate": "2026-07-07T20:00:00.000Z",
+    "deadline": "2026-07-07T17:00:00.000Z",
+    "ageMin": 18,
+    "ages": {
+      "min": 18
+    },
+    "grades": [],
+    "language": [
+      "en"
+    ],
+    "languages": [
+      "en"
+    ],
+    "cost": "Free to join",
+    "sourceUrl": "https://tpl.bibliocommons.com/events/6a29ad1a414ef43d00966140",
+    "lastChecked": "2026-07-04",
+    "lastSeen": "2026-07-04",
+    "status": "active",
+    "accessibility": [
+      "Library accessibility services available on request",
+      "Public library location"
+    ],
+    "equipment": "Materials provided unless the source says otherwise.",
+    "food": "No food listed.",
+    "capacity": "Check the source page for availability.",
+    "commitment": "Single scheduled library program or series date from source feed.",
+    "registrationUrl": "https://tpl.bibliocommons.com/events/6a29ad1a414ef43d00966140",
+    "providerContact": "ask@tpl.ca",
+    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
+    "lastVerified": "2026-07-04",
+    "trustedSource": true,
+    "volunteerHoursEligible": false,
+    "coopEligible": false,
+    "paidPosition": false,
+    "tags": [
+      "career & mentorship",
+      "personal development",
+      "adults (18+)",
+      "older adults",
+      "younger adults (18-24)",
+      "english"
+    ],
+    "sources": [
+      {
+        "label": "Official Toronto Public Library event page",
+        "url": "https://tpl.bibliocommons.com/events/6a29ad1a414ef43d00966140",
+        "capturedAt": "2026-07-04T19:38:34.959Z",
+        "confidence": "high"
+      }
+    ],
+    "adminAuditTrail": [
+      {
+        "label": "Generated from official feed",
+        "at": "2026-07-04T19:38:34.959Z",
+        "actor": "Library RSS generator",
+        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
+      }
+    ]
+  },
+  {
+    "id": "tpl-rss-6a31b3feba0ec7dc22614624",
+    "title": "Suncatchers",
+    "organization": "Toronto Public Library",
+    "provider": "Toronto Public Library",
+    "description": "Make your own colourful suncatcher to display on your windows, reflecting beautiful colours with natural sunlight. Ages 6-12. Drop-in only. Space is limited.",
+    "summary": "Make your own colourful suncatcher to display on your windows, reflecting beautiful colours with natural sunlight. Ages 6-12. Drop-in only. Space is limited.",
+    "type": "Drop-in",
+    "category": "Makerspace & Fabrication",
+    "categories": [
+      "STEM",
+      "Makerspace & Fabrication"
+    ],
+    "communityFocus": [
+      "Open to all",
+      "Newcomer-friendly"
+    ],
+    "city": "Toronto",
+    "region": "Toronto",
+    "address": "Jane/Sheppard, 1906 Sheppard Avenue West, Toronto, ON, M3L 1Y7",
+    "latitude": 43.7399911,
+    "longitude": -79.51010459999999,
+    "virtual": false,
+    "startDate": "2026-07-07T17:00:00.000Z",
+    "endDate": "2026-07-07T18:00:00.000Z",
+    "deadline": "2026-07-07T17:00:00.000Z",
+    "ageMin": 6,
+    "ageMax": 12,
+    "ages": {
+      "min": 6,
+      "max": 12
+    },
+    "grades": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "language": [
+      "en"
+    ],
+    "languages": [
+      "en"
+    ],
+    "cost": "Free to join",
+    "sourceUrl": "https://tpl.bibliocommons.com/events/6a31b3feba0ec7dc22614624",
+    "lastChecked": "2026-07-04",
+    "lastSeen": "2026-07-04",
+    "status": "active",
+    "accessibility": [
+      "Library accessibility services available on request",
+      "Public library location"
+    ],
+    "equipment": "Materials provided unless the source says otherwise.",
+    "food": "No food listed.",
+    "capacity": "Check the source page for availability.",
+    "commitment": "Single scheduled library program or series date from source feed.",
+    "registrationUrl": "https://tpl.bibliocommons.com/events/6a31b3feba0ec7dc22614624",
+    "providerContact": "janesheppard@tpl.ca",
+    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
+    "lastVerified": "2026-07-04",
+    "trustedSource": true,
+    "volunteerHoursEligible": false,
+    "coopEligible": false,
+    "paidPosition": false,
+    "tags": [
+      "makerspace & fabrication",
+      "summer wonder",
+      "crafts & hobbies",
+      "school age children (6-12)",
+      "english"
+    ],
+    "sources": [
+      {
+        "label": "Official Toronto Public Library event page",
+        "url": "https://tpl.bibliocommons.com/events/6a31b3feba0ec7dc22614624",
+        "capturedAt": "2026-07-04T19:38:35.778Z",
+        "confidence": "high"
+      }
+    ],
+    "adminAuditTrail": [
+      {
+        "label": "Generated from official feed",
+        "at": "2026-07-04T19:38:35.778Z",
+        "actor": "Library RSS generator",
+        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
+      }
+    ]
+  },
+  {
+    "id": "tpl-rss-6a44307d7e16a03d00e93425",
+    "title": "Baby Time",
+    "organization": "Toronto Public Library",
+    "provider": "Toronto Public Library",
+    "description": "Bouncing and tickling rhymes, songs and stories for babies from birth to 18 months with their parents or caregivers. Learn how to lay a solid foundation for your child's future love of reading and learning. Families are welcome to stay and play after the progr",
+    "summary": "Bouncing and tickling rhymes, songs and stories for babies from birth to 18 months with their parents or caregivers. Learn how to lay a solid foundation for your child's future love of reading and learning. Families are welcome to stay and play after the progr",
+    "type": "Drop-in",
+    "category": "Family Learning",
+    "categories": [
+      "Family Learning"
+    ],
+    "communityFocus": [
+      "Open to all",
+      "Newcomer-friendly"
+    ],
+    "city": "Toronto",
+    "region": "Toronto",
+    "address": "Junction Triangle, 305 Campbell Avenue, Toronto, ON, M6P 3V7",
+    "latitude": 43.6658048,
+    "longitude": -79.4497289,
+    "virtual": false,
+    "startDate": "2026-07-07T17:00:00.000Z",
+    "endDate": "2026-07-07T18:00:00.000Z",
+    "deadline": "2026-07-07T17:00:00.000Z",
+    "ageMin": 0,
+    "ageMax": 12,
+    "ages": {
+      "min": 0,
+      "max": 12
+    },
+    "grades": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "language": [
+      "en"
+    ],
+    "languages": [
+      "en"
+    ],
+    "cost": "Free to join",
+    "sourceUrl": "https://tpl.bibliocommons.com/events/6a44307d7e16a03d00e93425",
+    "lastChecked": "2026-07-04",
+    "lastSeen": "2026-07-04",
+    "status": "active",
+    "accessibility": [
+      "Library accessibility services available on request",
+      "Public library location"
+    ],
+    "equipment": "Materials provided unless the source says otherwise.",
+    "food": "No food listed.",
+    "capacity": "Check the source page for availability.",
+    "commitment": "Single scheduled library program or series date from source feed.",
+    "registrationUrl": "https://tpl.bibliocommons.com/events/6a44307d7e16a03d00e93425",
+    "providerContact": "ask@tpl.ca",
+    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
+    "lastVerified": "2026-07-04",
+    "trustedSource": true,
+    "volunteerHoursEligible": false,
+    "coopEligible": false,
+    "paidPosition": false,
+    "tags": [
+      "family learning",
+      "ready for reading storytimes",
+      "reading programs & storytimes",
+      "preschool children (0-5)",
+      "english"
+    ],
+    "sources": [
+      {
+        "label": "Official Toronto Public Library event page",
+        "url": "https://tpl.bibliocommons.com/events/6a44307d7e16a03d00e93425",
+        "capturedAt": "2026-07-04T19:38:35.778Z",
+        "confidence": "high"
+      }
+    ],
+    "adminAuditTrail": [
+      {
+        "label": "Generated from official feed",
+        "at": "2026-07-04T19:38:35.778Z",
+        "actor": "Library RSS generator",
+        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
+      }
+    ]
+  },
+  {
+    "id": "tpl-rss-6a21bcddbd892a0672e7bafa",
+    "title": "Nature Detectives",
+    "organization": "Toronto Public Library",
+    "provider": "Toronto Public Library",
+    "description": "This is a nature-themed program for parents and caregivers with children from birth - 6 years. Families have the opportunity to socialize while children develop new skills in an early learning environment. This is a drop-in program for children ages 0-6. Co-sp",
+    "summary": "This is a nature-themed program for parents and caregivers with children from birth - 6 years. Families have the opportunity to socialize while children develop new skills in an early learning environment. This is a drop-in program for children ages 0-6. Co-sp",
+    "type": "Drop-in",
+    "category": "Family Learning",
+    "categories": [
+      "Family Learning"
+    ],
+    "communityFocus": [
+      "Open to all",
+      "Newcomer-friendly"
+    ],
+    "city": "Toronto",
+    "region": "Toronto",
+    "address": "Burrows Hall, 1081 Progress Ave, Toronto, ON, M1B 5Z6",
+    "latitude": 43.7939492,
+    "longitude": -79.23422219999999,
+    "virtual": false,
+    "startDate": "2026-07-07T17:30:00.000Z",
+    "endDate": "2026-07-07T19:30:00.000Z",
+    "deadline": "2026-07-07T17:30:00.000Z",
+    "ageMin": 0,
+    "ageMax": 6,
+    "ages": {
+      "min": 0,
+      "max": 6
+    },
+    "grades": [
+      "0",
+      "1"
+    ],
+    "language": [
+      "en"
+    ],
+    "languages": [
+      "en"
+    ],
+    "cost": "Free to join",
+    "sourceUrl": "https://tpl.bibliocommons.com/events/6a21bcddbd892a0672e7bafa",
+    "lastChecked": "2026-07-04",
+    "lastSeen": "2026-07-04",
+    "status": "active",
+    "accessibility": [
+      "Library accessibility services available on request",
+      "Public library location"
+    ],
+    "equipment": "Materials provided unless the source says otherwise.",
+    "food": "No food listed.",
+    "capacity": "Check the source page for availability.",
+    "commitment": "Single scheduled library program or series date from source feed.",
+    "registrationUrl": "https://tpl.bibliocommons.com/events/6a21bcddbd892a0672e7bafa",
+    "providerContact": "+1-416-396-8740",
+    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
+    "lastVerified": "2026-07-04",
+    "trustedSource": true,
+    "volunteerHoursEligible": false,
+    "coopEligible": false,
+    "paidPosition": false,
+    "tags": [
+      "family learning",
+      "ready for reading storytimes",
+      "reading programs & storytimes",
+      "preschool children (0-5)",
+      "english"
+    ],
+    "sources": [
+      {
+        "label": "Official Toronto Public Library event page",
+        "url": "https://tpl.bibliocommons.com/events/6a21bcddbd892a0672e7bafa",
+        "capturedAt": "2026-07-04T19:38:35.778Z",
+        "confidence": "high"
+      }
+    ],
+    "adminAuditTrail": [
+      {
+        "label": "Generated from official feed",
+        "at": "2026-07-04T19:38:35.778Z",
+        "actor": "Library RSS generator",
+        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
+      }
+    ]
+  },
+  {
+    "id": "tpl-rss-6a15f443caf93436005e7506",
+    "title": "Fun with Snap Circuits",
+    "organization": "Toronto Public Library",
+    "provider": "Toronto Public Library",
+    "description": "Play with electricity and circuitry during this hands-on program! Turn on a light, spin a motor, activate a speaker and choose from hundreds of different projects, or try making your own circuits! For children ages 6-12.",
+    "summary": "Play with electricity and circuitry during this hands-on program! Turn on a light, spin a motor, activate a speaker and choose from hundreds of different projects, or try making your own circuits! For children ages 6-12.",
+    "type": "One-time event",
+    "category": "Science & Engineering",
+    "categories": [
+      "STEM",
+      "Science & Engineering"
+    ],
+    "communityFocus": [
+      "Open to all",
+      "Newcomer-friendly"
+    ],
+    "city": "Toronto",
+    "region": "Toronto",
+    "address": "Humber Summit, 2990 Islington Avenue, Toronto, ON, M9L 2K6",
+    "latitude": 43.7590426,
+    "longitude": -79.5715992,
+    "virtual": false,
+    "startDate": "2026-07-07T17:30:00.000Z",
+    "endDate": "2026-07-07T18:30:00.000Z",
+    "deadline": "2026-07-07T17:30:00.000Z",
+    "ageMin": 6,
+    "ageMax": 12,
+    "ages": {
+      "min": 6,
+      "max": 12
+    },
+    "grades": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "language": [
+      "en"
+    ],
+    "languages": [
+      "en"
+    ],
+    "cost": "Free to join",
+    "sourceUrl": "https://tpl.bibliocommons.com/events/6a15f443caf93436005e7506",
+    "lastChecked": "2026-07-04",
+    "lastSeen": "2026-07-04",
+    "status": "active",
+    "accessibility": [
+      "Library accessibility services available on request",
+      "Public library location"
+    ],
+    "equipment": "Materials provided unless the source says otherwise.",
+    "food": "No food listed.",
+    "capacity": "Check the source page for availability.",
+    "commitment": "Single scheduled library program or series date from source feed.",
+    "registrationUrl": "https://tpl.bibliocommons.com/events/6a15f443caf93436005e7506",
+    "providerContact": "ask@tpl.ca",
+    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
+    "lastVerified": "2026-07-04",
+    "trustedSource": true,
+    "volunteerHoursEligible": false,
+    "coopEligible": false,
+    "paidPosition": false,
+    "tags": [
+      "science & engineering",
+      "school age children (6-12)",
+      "english"
+    ],
+    "sources": [
+      {
+        "label": "Official Toronto Public Library event page",
+        "url": "https://tpl.bibliocommons.com/events/6a15f443caf93436005e7506",
+        "capturedAt": "2026-07-04T19:38:35.778Z",
+        "confidence": "high"
+      }
+    ],
+    "adminAuditTrail": [
+      {
+        "label": "Generated from official feed",
+        "at": "2026-07-04T19:38:35.778Z",
+        "actor": "Library RSS generator",
+        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
+      }
+    ]
+  },
+  {
+    "id": "tpl-rss-6a4818017e16a03d00ea0c13",
+    "title": "Lego Build the Change",
+    "organization": "Toronto Public Library",
+    "provider": "Toronto Public Library",
+    "description": "Challenge yourself to think creatively about our future! Use your imagination and our Lego to create solutions to problems that affect the whole planet! Drop-in. Space is limited.",
+    "summary": "Challenge yourself to think creatively about our future! Use your imagination and our Lego to create solutions to problems that affect the whole planet! Drop-in. Space is limited.",
+    "type": "Drop-in",
+    "category": "Makerspace & Fabrication",
+    "categories": [
+      "STEM",
+      "Makerspace & Fabrication"
+    ],
+    "communityFocus": [
+      "Open to all",
+      "Newcomer-friendly"
+    ],
+    "city": "Toronto",
+    "region": "Toronto",
+    "address": "Maria A. Shchuka, 1745 Eglinton Avenue West, Toronto, ON, M6E 2H4",
+    "latitude": 43.6960925,
+    "longitude": -79.4472591,
+    "virtual": false,
+    "startDate": "2026-07-07T17:30:00.000Z",
+    "endDate": "2026-07-07T19:00:00.000Z",
+    "deadline": "2026-07-07T17:30:00.000Z",
+    "ageMin": 6,
+    "ageMax": 12,
+    "ages": {
+      "min": 6,
+      "max": 12
+    },
+    "grades": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "language": [
+      "en"
+    ],
+    "languages": [
+      "en"
+    ],
+    "cost": "Free to join",
+    "sourceUrl": "https://tpl.bibliocommons.com/events/6a4818017e16a03d00ea0c13",
+    "lastChecked": "2026-07-04",
+    "lastSeen": "2026-07-04",
+    "status": "active",
+    "accessibility": [
+      "Library accessibility services available on request",
+      "Public library location"
+    ],
+    "equipment": "Materials provided unless the source says otherwise.",
+    "food": "No food listed.",
+    "capacity": "Check the source page for availability.",
+    "commitment": "Single scheduled library program or series date from source feed.",
+    "registrationUrl": "https://tpl.bibliocommons.com/events/6a4818017e16a03d00ea0c13",
+    "providerContact": "+1-416-394-1000",
+    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
+    "lastVerified": "2026-07-04",
+    "trustedSource": true,
+    "volunteerHoursEligible": false,
+    "coopEligible": false,
+    "paidPosition": false,
+    "tags": [
+      "makerspace & fabrication",
+      "summer wonder",
+      "crafts & hobbies",
+      "science & engineering",
+      "school age children (6-12)",
+      "english"
+    ],
+    "sources": [
+      {
+        "label": "Official Toronto Public Library event page",
+        "url": "https://tpl.bibliocommons.com/events/6a4818017e16a03d00ea0c13",
+        "capturedAt": "2026-07-04T19:38:35.778Z",
+        "confidence": "high"
+      }
+    ],
+    "adminAuditTrail": [
+      {
+        "label": "Generated from official feed",
+        "at": "2026-07-04T19:38:35.778Z",
+        "actor": "Library RSS generator",
+        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
+      }
+    ]
+  },
+  {
+    "id": "tpl-rss-69f23e0cbd9a3c316a563daf",
+    "title": "Make, Create and Discover!",
+    "organization": "Toronto Public Library",
+    "provider": "Toronto Public Library",
+    "description": "Join us for fun, hands-on activities. For children ages 6-12 years. Drop-in. Space is limited. First come first served. July 7 - Button Art July 28 - Nature Explorers August 4 - Science Explorers Lab August 11 - Rock Painting August 18 - Dioramas and Collages",
+    "summary": "Join us for fun, hands-on activities. For children ages 6-12 years. Drop-in. Space is limited. First come first served. July 7 - Button Art July 28 - Nature Explorers August 4 - Science Explorers Lab August 11 - Rock Painting August 18 - Dioramas and Collages",
+    "type": "Drop-in",
+    "category": "Makerspace & Fabrication",
+    "categories": [
+      "STEM",
+      "Makerspace & Fabrication"
+    ],
+    "communityFocus": [
+      "Open to all",
+      "Newcomer-friendly"
+    ],
+    "city": "Toronto",
+    "region": "Toronto",
+    "address": "Pape/Danforth, 701 Pape Avenue, Toronto, ON, M4K 3S6",
+    "latitude": 43.6786237,
+    "longitude": -79.34442150000001,
+    "virtual": false,
+    "startDate": "2026-07-07T18:00:00.000Z",
+    "endDate": "2026-07-07T19:00:00.000Z",
+    "deadline": "2026-07-07T18:00:00.000Z",
+    "ageMin": 6,
+    "ageMax": 12,
+    "ages": {
+      "min": 6,
+      "max": 12
+    },
+    "grades": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "language": [
+      "en"
+    ],
+    "languages": [
+      "en"
+    ],
+    "cost": "Free to join",
+    "sourceUrl": "https://tpl.bibliocommons.com/events/69f23e0cbd9a3c316a563daf",
+    "lastChecked": "2026-07-04",
+    "lastSeen": "2026-07-04",
+    "status": "active",
+    "accessibility": [
+      "Library accessibility services available on request",
+      "Public library location"
+    ],
+    "equipment": "Materials provided unless the source says otherwise.",
+    "food": "No food listed.",
+    "capacity": "Check the source page for availability.",
+    "commitment": "Single scheduled library program or series date from source feed.",
+    "registrationUrl": "https://tpl.bibliocommons.com/events/69f23e0cbd9a3c316a563daf",
+    "providerContact": "+1-416-393-7727",
+    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
+    "lastVerified": "2026-07-04",
+    "trustedSource": true,
+    "volunteerHoursEligible": false,
+    "coopEligible": false,
+    "paidPosition": false,
+    "tags": [
+      "makerspace & fabrication",
+      "summer wonder",
+      "crafts & hobbies",
+      "culture, arts & entertainment",
+      "science & engineering",
+      "school age children (6-12)",
+      "english"
+    ],
+    "sources": [
+      {
+        "label": "Official Toronto Public Library event page",
+        "url": "https://tpl.bibliocommons.com/events/69f23e0cbd9a3c316a563daf",
+        "capturedAt": "2026-07-04T19:38:35.778Z",
+        "confidence": "high"
+      }
+    ],
+    "adminAuditTrail": [
+      {
+        "label": "Generated from official feed",
+        "at": "2026-07-04T19:38:35.778Z",
+        "actor": "Library RSS generator",
+        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
+      }
+    ]
+  },
+  {
+    "id": "tpl-rss-69c1d0efbfe6da1042250af5",
+    "title": "Newcomer Settlement Services",
+    "organization": "Toronto Public Library",
+    "provider": "Toronto Public Library",
+    "description": "New to Canada? Need information on employment, housing, language learning, schools, or other topics? A Settlement Worker can help. Drop in to meet our settlement worker every Tuesday afternoon from 2 pm-5 pm. Visit our branch or contact Ada Tao at 416-770-0312",
+    "summary": "New to Canada? Need information on employment, housing, language learning, schools, or other topics? A Settlement Worker can help. Drop in to meet our settlement worker every Tuesday afternoon from 2 pm-5 pm. Visit our branch or contact Ada Tao at 416-770-0312",
+    "type": "Drop-in",
+    "category": "Newcomer & Settlement",
+    "categories": [
+      "Newcomer & Settlement"
+    ],
+    "communityFocus": [
+      "Open to all",
+      "Newcomer-friendly"
+    ],
+    "city": "Toronto",
+    "region": "Toronto",
+    "address": "Albert Campbell, 496 Birchmount Road, Toronto, ON, M1K 1N8",
+    "latitude": 43.7080744,
+    "longitude": -79.2692964,
+    "virtual": false,
+    "startDate": "2026-07-07T18:00:00.000Z",
+    "endDate": "2026-07-07T21:00:00.000Z",
+    "deadline": "2026-07-07T18:00:00.000Z",
+    "ageMin": 18,
+    "ages": {
+      "min": 18
+    },
+    "grades": [],
+    "language": [
+      "en"
+    ],
+    "languages": [
+      "en"
+    ],
+    "cost": "Free to join",
+    "sourceUrl": "https://tpl.bibliocommons.com/events/69c1d0efbfe6da1042250af5",
+    "lastChecked": "2026-07-04",
+    "lastSeen": "2026-07-04",
+    "status": "active",
+    "accessibility": [
+      "Library accessibility services available on request",
+      "Public library location"
+    ],
+    "equipment": "Materials provided unless the source says otherwise.",
+    "food": "No food listed.",
+    "capacity": "Check the source page for availability.",
+    "commitment": "Single scheduled library program or series date from source feed.",
+    "registrationUrl": "https://tpl.bibliocommons.com/events/69c1d0efbfe6da1042250af5",
+    "providerContact": "+1-416-396-8890",
+    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
+    "lastVerified": "2026-07-04",
+    "trustedSource": true,
+    "volunteerHoursEligible": false,
+    "coopEligible": false,
+    "paidPosition": false,
+    "tags": [
+      "newcomer & settlement",
+      "newcomer",
+      "civic & community engagement",
+      "adults (18+)",
+      "older adults",
+      "english"
+    ],
+    "sources": [
+      {
+        "label": "Official Toronto Public Library event page",
+        "url": "https://tpl.bibliocommons.com/events/69c1d0efbfe6da1042250af5",
+        "capturedAt": "2026-07-04T19:38:35.778Z",
+        "confidence": "high"
+      }
+    ],
+    "adminAuditTrail": [
+      {
+        "label": "Generated from official feed",
+        "at": "2026-07-04T19:38:35.778Z",
+        "actor": "Library RSS generator",
+        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
+      }
+    ]
+  },
+  {
+    "id": "tpl-rss-6a2c7a6f4407827f8aa496d1",
+    "title": "Ocean Themed Summer at Annette",
+    "organization": "Toronto Public Library",
+    "provider": "Toronto Public Library",
+    "description": "PERLER BEAD FISH! Take home a Perler Bead fish you make yourself. All materials will be provided. Information Collection Notice: The personal information on this form is collected by the Toronto Public Library under the Public Libraries Act, sections 20(a), 20",
+    "summary": "PERLER BEAD FISH! Take home a Perler Bead fish you make yourself. All materials will be provided. Information Collection Notice: The personal information on this form is collected by the Toronto Public Library under the Public Libraries Act, sections 20(a), 20",
+    "type": "One-time event",
+    "category": "Makerspace & Fabrication",
+    "categories": [
+      "STEM",
+      "Makerspace & Fabrication"
+    ],
+    "communityFocus": [
+      "Open to all",
+      "Newcomer-friendly"
+    ],
+    "city": "Toronto",
+    "region": "Toronto",
+    "address": "Annette Street, 145 Annette Street, Toronto, ON, M6P 1P3",
+    "latitude": 43.6632966,
+    "longitude": -79.4663667,
+    "virtual": false,
+    "startDate": "2026-07-07T18:00:00.000Z",
+    "endDate": "2026-07-07T19:30:00.000Z",
+    "deadline": "2026-07-07T18:00:00.000Z",
+    "ageMin": 6,
+    "ageMax": 12,
+    "ages": {
+      "min": 6,
+      "max": 12
+    },
+    "grades": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "language": [
+      "en"
+    ],
+    "languages": [
+      "en"
+    ],
+    "cost": "Free to join",
+    "sourceUrl": "https://tpl.bibliocommons.com/events/6a2c7a6f4407827f8aa496d1",
+    "lastChecked": "2026-07-04",
+    "lastSeen": "2026-07-04",
+    "status": "active",
+    "accessibility": [
+      "Library accessibility services available on request",
+      "Public library location"
+    ],
+    "equipment": "Materials provided unless the source says otherwise.",
+    "food": "No food listed.",
+    "capacity": "15 spots listed by source.",
+    "commitment": "Single scheduled library program or series date from source feed.",
+    "registrationUrl": "https://tpl.bibliocommons.com/events/6a2c7a6f4407827f8aa496d1",
+    "providerContact": "+1-416-393-7692",
+    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
+    "lastVerified": "2026-07-04",
+    "trustedSource": true,
+    "volunteerHoursEligible": false,
+    "coopEligible": false,
+    "paidPosition": false,
+    "tags": [
+      "makerspace & fabrication",
+      "summer wonder",
+      "crafts & hobbies",
+      "school age children (6-12)",
+      "english"
+    ],
+    "sources": [
+      {
+        "label": "Official Toronto Public Library event page",
+        "url": "https://tpl.bibliocommons.com/events/6a2c7a6f4407827f8aa496d1",
+        "capturedAt": "2026-07-04T19:38:35.779Z",
+        "confidence": "high"
+      }
+    ],
+    "adminAuditTrail": [
+      {
+        "label": "Generated from official feed",
+        "at": "2026-07-04T19:38:35.779Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -17279,14 +15915,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1da9",
-        "capturedAt": "2026-07-04T13:59:49.287Z",
+        "capturedAt": "2026-07-04T19:38:36.388Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:49.287Z",
+        "at": "2026-07-04T19:38:36.388Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -17363,14 +15999,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdc8bd272945e0068ed56",
-        "capturedAt": "2026-07-04T13:59:49.287Z",
+        "capturedAt": "2026-07-04T19:38:36.952Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:49.287Z",
+        "at": "2026-07-04T19:38:36.952Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -17447,14 +16083,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbde97d272945e0068ee5f",
-        "capturedAt": "2026-07-04T13:59:49.288Z",
+        "capturedAt": "2026-07-04T19:38:36.952Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:49.288Z",
+        "at": "2026-07-04T19:38:36.952Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -17540,14 +16176,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a146aa4748daf857d59b65b",
-        "capturedAt": "2026-07-04T13:59:49.288Z",
+        "capturedAt": "2026-07-04T19:38:36.952Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:49.288Z",
+        "at": "2026-07-04T19:38:36.952Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -17620,14 +16256,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a05e81ddcc3559e3b3c2054",
-        "capturedAt": "2026-07-04T13:59:49.288Z",
+        "capturedAt": "2026-07-04T19:38:36.952Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:49.288Z",
+        "at": "2026-07-04T19:38:36.952Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -17711,14 +16347,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/692dbdf9d923da4200b3179d",
-        "capturedAt": "2026-07-04T13:59:49.288Z",
+        "capturedAt": "2026-07-04T19:38:36.952Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:49.288Z",
+        "at": "2026-07-04T19:38:36.952Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -17795,14 +16431,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbde1fe59a13000d3e1cf9",
-        "capturedAt": "2026-07-04T13:59:49.288Z",
+        "capturedAt": "2026-07-04T19:38:36.952Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:49.288Z",
+        "at": "2026-07-04T19:38:36.952Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -17888,14 +16524,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a1469f0a99bdd027d42ccc9",
-        "capturedAt": "2026-07-04T13:59:49.288Z",
+        "capturedAt": "2026-07-04T19:38:36.953Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:49.288Z",
+        "at": "2026-07-04T19:38:36.953Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -17972,14 +16608,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1daa",
-        "capturedAt": "2026-07-04T13:59:49.746Z",
+        "capturedAt": "2026-07-04T19:38:36.953Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:49.746Z",
+        "at": "2026-07-04T19:38:36.953Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -18056,14 +16692,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/69274b3f44d0e96d007b8752",
-        "capturedAt": "2026-07-04T13:59:49.746Z",
+        "capturedAt": "2026-07-04T19:38:36.953Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:49.746Z",
+        "at": "2026-07-04T19:38:36.953Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -18140,14 +16776,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbd37875911f28001a2334",
-        "capturedAt": "2026-07-04T13:59:49.746Z",
+        "capturedAt": "2026-07-04T19:38:36.953Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:49.746Z",
+        "at": "2026-07-04T19:38:36.953Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -18224,14 +16860,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdc50e59a13000d3e1c89",
-        "capturedAt": "2026-07-04T13:59:49.746Z",
+        "capturedAt": "2026-07-04T19:38:36.953Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:49.746Z",
+        "at": "2026-07-04T19:38:36.953Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -18308,14 +16944,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbde97d272945e0068ee60",
-        "capturedAt": "2026-07-04T13:59:49.746Z",
+        "capturedAt": "2026-07-04T19:38:36.953Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:49.746Z",
+        "at": "2026-07-04T19:38:36.953Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -18401,14 +17037,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a14693a46d5f64f7dccccf8",
-        "capturedAt": "2026-07-04T13:59:49.746Z",
+        "capturedAt": "2026-07-04T19:38:36.953Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:49.746Z",
+        "at": "2026-07-04T19:38:36.953Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -18485,14 +17121,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbd37875911f28001a2335",
-        "capturedAt": "2026-07-04T13:59:49.746Z",
+        "capturedAt": "2026-07-04T19:38:36.953Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:49.746Z",
+        "at": "2026-07-04T19:38:36.953Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -18569,14 +17205,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdd1b0176055300fe8097",
-        "capturedAt": "2026-07-04T13:59:49.746Z",
+        "capturedAt": "2026-07-04T19:38:36.953Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:49.746Z",
+        "at": "2026-07-04T19:38:36.953Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -18653,14 +17289,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdc50e59a13000d3e1c8a",
-        "capturedAt": "2026-07-04T13:59:49.746Z",
+        "capturedAt": "2026-07-04T19:38:37.430Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:49.746Z",
+        "at": "2026-07-04T19:38:37.430Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -18737,14 +17373,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/694992cb4be11d3d00d95e2d",
-        "capturedAt": "2026-07-04T13:59:49.746Z",
+        "capturedAt": "2026-07-04T19:38:37.430Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:49.746Z",
+        "at": "2026-07-04T19:38:37.430Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -18828,14 +17464,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a1dfe9c8ea300e2631a42c6",
-        "capturedAt": "2026-07-04T13:59:49.746Z",
+        "capturedAt": "2026-07-04T19:38:37.430Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:49.746Z",
+        "at": "2026-07-04T19:38:37.430Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -18919,14 +17555,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbd36ee647c8ff0c387292",
-        "capturedAt": "2026-07-04T13:59:49.746Z",
+        "capturedAt": "2026-07-04T19:38:37.430Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:49.746Z",
+        "at": "2026-07-04T19:38:37.430Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -19010,14 +17646,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbe20064ad59251cb9d997",
-        "capturedAt": "2026-07-04T13:59:49.746Z",
+        "capturedAt": "2026-07-04T19:38:37.430Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:49.746Z",
+        "at": "2026-07-04T19:38:37.430Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -19094,14 +17730,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbde1fe59a13000d3e1cfa",
-        "capturedAt": "2026-07-04T13:59:49.746Z",
+        "capturedAt": "2026-07-04T19:38:37.430Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:49.746Z",
+        "at": "2026-07-04T19:38:37.430Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -19185,14 +17821,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbe0e82edc686d00f5c89d",
-        "capturedAt": "2026-07-04T13:59:49.746Z",
+        "capturedAt": "2026-07-04T19:38:37.430Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:49.746Z",
+        "at": "2026-07-04T19:38:37.430Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -19277,14 +17913,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbe12275911f28001a2537",
-        "capturedAt": "2026-07-04T13:59:49.747Z",
+        "capturedAt": "2026-07-04T19:38:37.430Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:49.747Z",
+        "at": "2026-07-04T19:38:37.430Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -19368,14 +18004,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbe0cde647c8ff0c38742f",
-        "capturedAt": "2026-07-04T13:59:49.747Z",
+        "capturedAt": "2026-07-04T19:38:37.430Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:49.747Z",
+        "at": "2026-07-04T19:38:37.430Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -19452,14 +18088,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdda72edc686d00f5c7f1",
-        "capturedAt": "2026-07-04T13:59:49.747Z",
+        "capturedAt": "2026-07-04T19:38:37.430Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:49.747Z",
+        "at": "2026-07-04T19:38:37.430Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -19545,14 +18181,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a1469a7748daf857d59b63d",
-        "capturedAt": "2026-07-04T13:59:49.747Z",
+        "capturedAt": "2026-07-04T19:38:37.430Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:49.747Z",
+        "at": "2026-07-04T19:38:37.430Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -19636,14 +18272,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbe0a50176055300fe814e",
-        "capturedAt": "2026-07-04T13:59:50.255Z",
+        "capturedAt": "2026-07-04T19:38:37.430Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:50.255Z",
+        "at": "2026-07-04T19:38:37.430Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -19717,14 +18353,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a0964ee703c3363002828b2",
-        "capturedAt": "2026-07-04T13:59:50.255Z",
+        "capturedAt": "2026-07-04T19:38:37.430Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:50.255Z",
+        "at": "2026-07-04T19:38:37.430Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -19808,14 +18444,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbe1952edc686d00f5c96e",
-        "capturedAt": "2026-07-04T13:59:50.255Z",
+        "capturedAt": "2026-07-04T19:38:37.430Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:50.255Z",
+        "at": "2026-07-04T19:38:37.430Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -19892,14 +18528,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1dab",
-        "capturedAt": "2026-07-04T13:59:50.255Z",
+        "capturedAt": "2026-07-04T19:38:37.430Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:50.255Z",
+        "at": "2026-07-04T19:38:37.430Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -19985,14 +18621,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a146a1c46d5f64f7dcccd09",
-        "capturedAt": "2026-07-04T13:59:50.255Z",
+        "capturedAt": "2026-07-04T19:38:37.430Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:50.255Z",
+        "at": "2026-07-04T19:38:37.430Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -20076,14 +18712,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbe07a2edc686d00f5c867",
-        "capturedAt": "2026-07-04T13:59:50.255Z",
+        "capturedAt": "2026-07-04T19:38:37.430Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:50.255Z",
+        "at": "2026-07-04T19:38:37.430Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -20160,14 +18796,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdda72edc686d00f5c7f2",
-        "capturedAt": "2026-07-04T13:59:50.255Z",
+        "capturedAt": "2026-07-04T19:38:37.869Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:50.255Z",
+        "at": "2026-07-04T19:38:37.869Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -20244,14 +18880,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1dac",
-        "capturedAt": "2026-07-04T13:59:50.256Z",
+        "capturedAt": "2026-07-04T19:38:37.869Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:50.256Z",
+        "at": "2026-07-04T19:38:37.869Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -20324,14 +18960,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a0602d08360de907d873a42",
-        "capturedAt": "2026-07-04T13:59:50.256Z",
+        "capturedAt": "2026-07-04T19:38:37.869Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:50.256Z",
+        "at": "2026-07-04T19:38:37.869Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -20417,14 +19053,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a146a4e8360de907d8846c3",
-        "capturedAt": "2026-07-04T13:59:50.256Z",
+        "capturedAt": "2026-07-04T19:38:37.869Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:50.256Z",
+        "at": "2026-07-04T19:38:37.869Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -20501,14 +19137,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbd37875911f28001a2336",
-        "capturedAt": "2026-07-04T13:59:50.256Z",
+        "capturedAt": "2026-07-04T19:38:37.869Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:50.256Z",
+        "at": "2026-07-04T19:38:37.869Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -20594,14 +19230,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a146abda99bdd027d42cd47",
-        "capturedAt": "2026-07-04T13:59:50.256Z",
+        "capturedAt": "2026-07-04T19:38:37.869Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:50.256Z",
+        "at": "2026-07-04T19:38:37.869Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -20687,14 +19323,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a16edaa52c88111723afebf",
-        "capturedAt": "2026-07-04T13:59:51.217Z",
+        "capturedAt": "2026-07-04T19:38:37.869Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:51.217Z",
+        "at": "2026-07-04T19:38:37.869Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -20771,14 +19407,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdd1b0176055300fe8098",
-        "capturedAt": "2026-07-04T13:59:51.217Z",
+        "capturedAt": "2026-07-04T19:38:37.869Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:51.217Z",
+        "at": "2026-07-04T19:38:37.869Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -20865,14 +19501,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a04d134dcc3559e3b3c0776",
-        "capturedAt": "2026-07-04T13:59:51.217Z",
+        "capturedAt": "2026-07-04T19:38:37.870Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:51.217Z",
+        "at": "2026-07-04T19:38:37.870Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -20946,14 +19582,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a060a23490f176f7dd53474",
-        "capturedAt": "2026-07-04T13:59:51.217Z",
+        "capturedAt": "2026-07-04T19:38:37.870Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:51.217Z",
+        "at": "2026-07-04T19:38:37.870Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -21030,14 +19666,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1dad",
-        "capturedAt": "2026-07-04T13:59:51.217Z",
+        "capturedAt": "2026-07-04T19:38:37.870Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:51.217Z",
+        "at": "2026-07-04T19:38:37.870Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -21114,14 +19750,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdc8bd272945e0068ed57",
-        "capturedAt": "2026-07-04T13:59:51.217Z",
+        "capturedAt": "2026-07-04T19:38:37.870Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:51.217Z",
+        "at": "2026-07-04T19:38:37.870Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -21198,14 +19834,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbde97d272945e0068ee62",
-        "capturedAt": "2026-07-04T13:59:51.217Z",
+        "capturedAt": "2026-07-04T19:38:37.870Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:51.217Z",
+        "at": "2026-07-04T19:38:37.870Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -21291,14 +19927,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a146aa4748daf857d59b65c",
-        "capturedAt": "2026-07-04T13:59:51.218Z",
+        "capturedAt": "2026-07-04T19:38:37.870Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:51.218Z",
+        "at": "2026-07-04T19:38:37.870Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -21374,14 +20010,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a062ba28e677a28001c0929",
-        "capturedAt": "2026-07-04T13:59:51.218Z",
+        "capturedAt": "2026-07-04T19:38:37.870Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:51.218Z",
+        "at": "2026-07-04T19:38:37.870Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -21465,14 +20101,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/692dbdf9d923da4200b3179e",
-        "capturedAt": "2026-07-04T13:59:51.218Z",
+        "capturedAt": "2026-07-04T19:38:38.423Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:51.218Z",
+        "at": "2026-07-04T19:38:38.423Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -21549,14 +20185,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbde1fe59a13000d3e1cfb",
-        "capturedAt": "2026-07-04T13:59:51.218Z",
+        "capturedAt": "2026-07-04T19:38:38.423Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:51.218Z",
+        "at": "2026-07-04T19:38:38.423Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -21642,14 +20278,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a1469f0a99bdd027d42ccca",
-        "capturedAt": "2026-07-04T13:59:51.218Z",
+        "capturedAt": "2026-07-04T19:38:38.423Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:51.218Z",
+        "at": "2026-07-04T19:38:38.423Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -21726,14 +20362,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1dae",
-        "capturedAt": "2026-07-04T13:59:51.656Z",
+        "capturedAt": "2026-07-04T19:38:38.423Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:51.656Z",
+        "at": "2026-07-04T19:38:38.423Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -21810,14 +20446,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/69274b3f44d0e96d007b8753",
-        "capturedAt": "2026-07-04T13:59:51.656Z",
+        "capturedAt": "2026-07-04T19:38:38.423Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:51.656Z",
+        "at": "2026-07-04T19:38:38.423Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -21894,14 +20530,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbd37875911f28001a2337",
-        "capturedAt": "2026-07-04T13:59:51.656Z",
+        "capturedAt": "2026-07-04T19:38:38.423Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:51.656Z",
+        "at": "2026-07-04T19:38:38.423Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -21978,14 +20614,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdc50e59a13000d3e1c8b",
-        "capturedAt": "2026-07-04T13:59:51.656Z",
+        "capturedAt": "2026-07-04T19:38:38.423Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:51.656Z",
+        "at": "2026-07-04T19:38:38.423Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -22062,14 +20698,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbde97d272945e0068ee63",
-        "capturedAt": "2026-07-04T13:59:51.656Z",
+        "capturedAt": "2026-07-04T19:38:38.423Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:51.656Z",
+        "at": "2026-07-04T19:38:38.423Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -22155,14 +20791,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a14693a46d5f64f7dccccf9",
-        "capturedAt": "2026-07-04T13:59:51.656Z",
+        "capturedAt": "2026-07-04T19:38:38.423Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:51.656Z",
+        "at": "2026-07-04T19:38:38.423Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -22239,14 +20875,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbd37875911f28001a2338",
-        "capturedAt": "2026-07-04T13:59:51.656Z",
+        "capturedAt": "2026-07-04T19:38:38.424Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:51.656Z",
+        "at": "2026-07-04T19:38:38.424Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -22323,14 +20959,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdd1b0176055300fe8099",
-        "capturedAt": "2026-07-04T13:59:51.656Z",
+        "capturedAt": "2026-07-04T19:38:38.424Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:51.656Z",
+        "at": "2026-07-04T19:38:38.424Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -22407,14 +21043,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdc50e59a13000d3e1c8c",
-        "capturedAt": "2026-07-04T13:59:51.656Z",
+        "capturedAt": "2026-07-04T19:38:38.424Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:51.656Z",
+        "at": "2026-07-04T19:38:38.424Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -22491,14 +21127,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/694992cb4be11d3d00d95e2e",
-        "capturedAt": "2026-07-04T13:59:51.656Z",
+        "capturedAt": "2026-07-04T19:38:38.424Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:51.656Z",
+        "at": "2026-07-04T19:38:38.424Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -22582,14 +21218,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbd36ee647c8ff0c387293",
-        "capturedAt": "2026-07-04T13:59:51.656Z",
+        "capturedAt": "2026-07-04T19:38:38.848Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:51.656Z",
+        "at": "2026-07-04T19:38:38.848Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -22673,14 +21309,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbe20064ad59251cb9d998",
-        "capturedAt": "2026-07-04T13:59:51.656Z",
+        "capturedAt": "2026-07-04T19:38:38.848Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:51.656Z",
+        "at": "2026-07-04T19:38:38.848Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -22757,14 +21393,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbde1fe59a13000d3e1cfc",
-        "capturedAt": "2026-07-04T13:59:51.656Z",
+        "capturedAt": "2026-07-04T19:38:38.848Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:51.656Z",
+        "at": "2026-07-04T19:38:38.848Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -22848,14 +21484,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbe0e82edc686d00f5c89e",
-        "capturedAt": "2026-07-04T13:59:51.656Z",
+        "capturedAt": "2026-07-04T19:38:38.848Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:51.656Z",
+        "at": "2026-07-04T19:38:38.848Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -22940,14 +21576,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbe12275911f28001a2538",
-        "capturedAt": "2026-07-04T13:59:51.656Z",
+        "capturedAt": "2026-07-04T19:38:38.849Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:51.656Z",
+        "at": "2026-07-04T19:38:38.849Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -23031,14 +21667,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbe0cde647c8ff0c387430",
-        "capturedAt": "2026-07-04T13:59:51.656Z",
+        "capturedAt": "2026-07-04T19:38:38.849Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:51.656Z",
+        "at": "2026-07-04T19:38:38.849Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -23115,14 +21751,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdda72edc686d00f5c7f3",
-        "capturedAt": "2026-07-04T13:59:51.656Z",
+        "capturedAt": "2026-07-04T19:38:38.849Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:51.656Z",
+        "at": "2026-07-04T19:38:38.849Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -23208,14 +21844,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a1469a7748daf857d59b63e",
-        "capturedAt": "2026-07-04T13:59:51.656Z",
+        "capturedAt": "2026-07-04T19:38:38.849Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:51.656Z",
+        "at": "2026-07-04T19:38:38.849Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -23299,14 +21935,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbe0a50176055300fe814f",
-        "capturedAt": "2026-07-04T13:59:51.656Z",
+        "capturedAt": "2026-07-04T19:38:38.849Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:51.656Z",
+        "at": "2026-07-04T19:38:38.849Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -23390,14 +22026,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbe1952edc686d00f5c96f",
-        "capturedAt": "2026-07-04T13:59:51.656Z",
+        "capturedAt": "2026-07-04T19:38:38.849Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:51.656Z",
+        "at": "2026-07-04T19:38:38.849Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -23474,14 +22110,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1daf",
-        "capturedAt": "2026-07-04T13:59:52.139Z",
+        "capturedAt": "2026-07-04T19:38:38.849Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:52.139Z",
+        "at": "2026-07-04T19:38:38.849Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -23567,14 +22203,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a146a1c46d5f64f7dcccd0a",
-        "capturedAt": "2026-07-04T13:59:52.139Z",
+        "capturedAt": "2026-07-04T19:38:38.849Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:52.139Z",
+        "at": "2026-07-04T19:38:38.849Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -23658,14 +22294,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbe07a2edc686d00f5c868",
-        "capturedAt": "2026-07-04T13:59:52.139Z",
+        "capturedAt": "2026-07-04T19:38:38.849Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:52.139Z",
+        "at": "2026-07-04T19:38:38.849Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -23742,14 +22378,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdda72edc686d00f5c7f4",
-        "capturedAt": "2026-07-04T13:59:52.139Z",
+        "capturedAt": "2026-07-04T19:38:38.849Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:52.139Z",
+        "at": "2026-07-04T19:38:38.849Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -23826,14 +22462,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1db0",
-        "capturedAt": "2026-07-04T13:59:52.139Z",
+        "capturedAt": "2026-07-04T19:38:38.849Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:52.139Z",
+        "at": "2026-07-04T19:38:38.849Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -23919,14 +22555,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a146a4e8360de907d8846c4",
-        "capturedAt": "2026-07-04T13:59:52.139Z",
+        "capturedAt": "2026-07-04T19:38:38.849Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:52.139Z",
+        "at": "2026-07-04T19:38:38.849Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -24003,14 +22639,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbd37875911f28001a2339",
-        "capturedAt": "2026-07-04T13:59:52.139Z",
+        "capturedAt": "2026-07-04T19:38:39.402Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:52.139Z",
+        "at": "2026-07-04T19:38:39.402Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -24096,14 +22732,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a146abda99bdd027d42cd48",
-        "capturedAt": "2026-07-04T13:59:52.139Z",
+        "capturedAt": "2026-07-04T19:38:39.402Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:52.139Z",
+        "at": "2026-07-04T19:38:39.402Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -24189,14 +22825,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a16edaa52c88111723afec0",
-        "capturedAt": "2026-07-04T13:59:52.139Z",
+        "capturedAt": "2026-07-04T19:38:39.402Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:52.139Z",
+        "at": "2026-07-04T19:38:39.402Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -24273,14 +22909,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdd1b0176055300fe809a",
-        "capturedAt": "2026-07-04T13:59:52.139Z",
+        "capturedAt": "2026-07-04T19:38:39.402Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:52.139Z",
+        "at": "2026-07-04T19:38:39.402Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -24353,14 +22989,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a04e411055b429f3b3b3542",
-        "capturedAt": "2026-07-04T13:59:52.139Z",
+        "capturedAt": "2026-07-04T19:38:39.402Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:52.139Z",
+        "at": "2026-07-04T19:38:39.402Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -24437,14 +23073,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1db1",
-        "capturedAt": "2026-07-04T13:59:52.139Z",
+        "capturedAt": "2026-07-04T19:38:39.402Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:52.139Z",
+        "at": "2026-07-04T19:38:39.402Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -24521,14 +23157,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdc8bd272945e0068ed58",
-        "capturedAt": "2026-07-04T13:59:52.139Z",
+        "capturedAt": "2026-07-04T19:38:39.402Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:52.139Z",
+        "at": "2026-07-04T19:38:39.402Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -24605,14 +23241,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbde97d272945e0068ee65",
-        "capturedAt": "2026-07-04T13:59:52.612Z",
+        "capturedAt": "2026-07-04T19:38:39.402Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:52.612Z",
+        "at": "2026-07-04T19:38:39.402Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -24698,14 +23334,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a146aa4748daf857d59b65d",
-        "capturedAt": "2026-07-04T13:59:52.612Z",
+        "capturedAt": "2026-07-04T19:38:39.402Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:52.612Z",
+        "at": "2026-07-04T19:38:39.402Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -24779,14 +23415,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a06106246d5f64f7dcbb82e",
-        "capturedAt": "2026-07-04T13:59:52.612Z",
+        "capturedAt": "2026-07-04T19:38:39.402Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:52.612Z",
+        "at": "2026-07-04T19:38:39.402Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -24870,14 +23506,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/692dbdf9d923da4200b3179f",
-        "capturedAt": "2026-07-04T13:59:52.612Z",
+        "capturedAt": "2026-07-04T19:38:39.402Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:52.612Z",
+        "at": "2026-07-04T19:38:39.402Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -24954,14 +23590,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbde1fe59a13000d3e1cfd",
-        "capturedAt": "2026-07-04T13:59:52.612Z",
+        "capturedAt": "2026-07-04T19:38:39.402Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:52.612Z",
+        "at": "2026-07-04T19:38:39.402Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -25047,14 +23683,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a1469f0a99bdd027d42cccb",
-        "capturedAt": "2026-07-04T13:59:52.612Z",
+        "capturedAt": "2026-07-04T19:38:39.402Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:52.612Z",
+        "at": "2026-07-04T19:38:39.402Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -25131,14 +23767,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1db2",
-        "capturedAt": "2026-07-04T13:59:52.613Z",
+        "capturedAt": "2026-07-04T19:38:39.943Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:52.613Z",
+        "at": "2026-07-04T19:38:39.943Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -25215,14 +23851,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/69274b3f44d0e96d007b8754",
-        "capturedAt": "2026-07-04T13:59:52.613Z",
+        "capturedAt": "2026-07-04T19:38:39.943Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:52.613Z",
+        "at": "2026-07-04T19:38:39.943Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -25299,14 +23935,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbd37875911f28001a233a",
-        "capturedAt": "2026-07-04T13:59:52.613Z",
+        "capturedAt": "2026-07-04T19:38:39.943Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:52.613Z",
+        "at": "2026-07-04T19:38:39.943Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -25383,14 +24019,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdc50e59a13000d3e1c8d",
-        "capturedAt": "2026-07-04T13:59:52.613Z",
+        "capturedAt": "2026-07-04T19:38:39.943Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:52.613Z",
+        "at": "2026-07-04T19:38:39.943Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -25467,14 +24103,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbde97d272945e0068ee66",
-        "capturedAt": "2026-07-04T13:59:52.613Z",
+        "capturedAt": "2026-07-04T19:38:39.943Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:52.613Z",
+        "at": "2026-07-04T19:38:39.943Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -25560,14 +24196,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a14693a46d5f64f7dccccfa",
-        "capturedAt": "2026-07-04T13:59:52.613Z",
+        "capturedAt": "2026-07-04T19:38:39.943Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:52.613Z",
+        "at": "2026-07-04T19:38:39.943Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -25644,14 +24280,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbd37875911f28001a233b",
-        "capturedAt": "2026-07-04T13:59:52.613Z",
+        "capturedAt": "2026-07-04T19:38:39.943Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:52.613Z",
+        "at": "2026-07-04T19:38:39.943Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -25728,14 +24364,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdd1b0176055300fe809b",
-        "capturedAt": "2026-07-04T13:59:52.613Z",
+        "capturedAt": "2026-07-04T19:38:39.944Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:52.613Z",
+        "at": "2026-07-04T19:38:39.944Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -25812,14 +24448,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdc50e59a13000d3e1c8e",
-        "capturedAt": "2026-07-04T13:59:53.031Z",
+        "capturedAt": "2026-07-04T19:38:39.944Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:53.031Z",
+        "at": "2026-07-04T19:38:39.944Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -25896,14 +24532,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/694992cb4be11d3d00d95e2f",
-        "capturedAt": "2026-07-04T13:59:53.031Z",
+        "capturedAt": "2026-07-04T19:38:39.944Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:53.031Z",
+        "at": "2026-07-04T19:38:39.944Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -25987,14 +24623,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbd36ee647c8ff0c387294",
-        "capturedAt": "2026-07-04T13:59:53.031Z",
+        "capturedAt": "2026-07-04T19:38:39.944Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:53.031Z",
+        "at": "2026-07-04T19:38:39.944Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -26078,14 +24714,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbe20064ad59251cb9d999",
-        "capturedAt": "2026-07-04T13:59:53.031Z",
+        "capturedAt": "2026-07-04T19:38:39.944Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:53.031Z",
+        "at": "2026-07-04T19:38:39.944Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -26162,14 +24798,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbde1fe59a13000d3e1cfe",
-        "capturedAt": "2026-07-04T13:59:53.031Z",
+        "capturedAt": "2026-07-04T19:38:39.944Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:53.031Z",
+        "at": "2026-07-04T19:38:39.944Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -26253,14 +24889,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbe0e82edc686d00f5c89f",
-        "capturedAt": "2026-07-04T13:59:53.031Z",
+        "capturedAt": "2026-07-04T19:38:39.944Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:53.031Z",
+        "at": "2026-07-04T19:38:39.944Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -26345,14 +24981,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbe12275911f28001a2539",
-        "capturedAt": "2026-07-04T13:59:53.031Z",
+        "capturedAt": "2026-07-04T19:38:39.944Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:53.031Z",
+        "at": "2026-07-04T19:38:39.944Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -26436,14 +25072,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbe0cde647c8ff0c387431",
-        "capturedAt": "2026-07-04T13:59:53.031Z",
+        "capturedAt": "2026-07-04T19:38:39.944Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:53.031Z",
+        "at": "2026-07-04T19:38:39.944Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -26520,14 +25156,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdda72edc686d00f5c7f5",
-        "capturedAt": "2026-07-04T13:59:53.031Z",
+        "capturedAt": "2026-07-04T19:38:39.944Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:53.031Z",
+        "at": "2026-07-04T19:38:39.944Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -26613,14 +25249,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a1469a7748daf857d59b63f",
-        "capturedAt": "2026-07-04T13:59:53.031Z",
+        "capturedAt": "2026-07-04T19:38:40.392Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:53.031Z",
+        "at": "2026-07-04T19:38:40.392Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -26704,14 +25340,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbe0a50176055300fe8150",
-        "capturedAt": "2026-07-04T13:59:53.031Z",
+        "capturedAt": "2026-07-04T19:38:40.393Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:53.031Z",
+        "at": "2026-07-04T19:38:40.393Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -26795,14 +25431,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbe1952edc686d00f5c970",
-        "capturedAt": "2026-07-04T13:59:53.031Z",
+        "capturedAt": "2026-07-04T19:38:40.393Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:53.031Z",
+        "at": "2026-07-04T19:38:40.393Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -26879,14 +25515,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1db3",
-        "capturedAt": "2026-07-04T13:59:53.031Z",
+        "capturedAt": "2026-07-04T19:38:40.393Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:53.031Z",
+        "at": "2026-07-04T19:38:40.393Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -26972,14 +25608,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a146a1c46d5f64f7dcccd0b",
-        "capturedAt": "2026-07-04T13:59:53.031Z",
+        "capturedAt": "2026-07-04T19:38:40.393Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:53.031Z",
+        "at": "2026-07-04T19:38:40.393Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -27063,14 +25699,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbe07a2edc686d00f5c869",
-        "capturedAt": "2026-07-04T13:59:53.031Z",
+        "capturedAt": "2026-07-04T19:38:40.393Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:53.031Z",
+        "at": "2026-07-04T19:38:40.393Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -27147,14 +25783,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdda72edc686d00f5c7f6",
-        "capturedAt": "2026-07-04T13:59:53.534Z",
+        "capturedAt": "2026-07-04T19:38:40.393Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:53.534Z",
+        "at": "2026-07-04T19:38:40.393Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -27231,14 +25867,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1db4",
-        "capturedAt": "2026-07-04T13:59:53.534Z",
+        "capturedAt": "2026-07-04T19:38:40.393Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:53.534Z",
+        "at": "2026-07-04T19:38:40.393Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -27312,14 +25948,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a062977f6bd012f0067f360",
-        "capturedAt": "2026-07-04T13:59:53.534Z",
+        "capturedAt": "2026-07-04T19:38:40.393Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:53.534Z",
+        "at": "2026-07-04T19:38:40.393Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -27405,14 +26041,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a146a4e8360de907d8846c5",
-        "capturedAt": "2026-07-04T13:59:53.534Z",
+        "capturedAt": "2026-07-04T19:38:40.393Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:53.534Z",
+        "at": "2026-07-04T19:38:40.393Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -27489,14 +26125,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbd37875911f28001a233c",
-        "capturedAt": "2026-07-04T13:59:53.534Z",
+        "capturedAt": "2026-07-04T19:38:40.393Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:53.534Z",
+        "at": "2026-07-04T19:38:40.393Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -27582,14 +26218,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a146abda99bdd027d42cd49",
-        "capturedAt": "2026-07-04T13:59:53.534Z",
+        "capturedAt": "2026-07-04T19:38:40.393Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:53.534Z",
+        "at": "2026-07-04T19:38:40.393Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -27675,14 +26311,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a16edaa52c88111723afec1",
-        "capturedAt": "2026-07-04T13:59:53.534Z",
+        "capturedAt": "2026-07-04T19:38:40.394Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:53.534Z",
+        "at": "2026-07-04T19:38:40.394Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -27759,14 +26395,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdd1b0176055300fe809c",
-        "capturedAt": "2026-07-04T13:59:53.534Z",
+        "capturedAt": "2026-07-04T19:38:40.394Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:53.534Z",
+        "at": "2026-07-04T19:38:40.394Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -27839,14 +26475,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a0616e00c0f2c4503fa235a",
-        "capturedAt": "2026-07-04T13:59:53.534Z",
+        "capturedAt": "2026-07-04T19:38:40.928Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:53.534Z",
+        "at": "2026-07-04T19:38:40.928Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -27920,14 +26556,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a06223bc6a1dc3d00d3c0f2",
-        "capturedAt": "2026-07-04T13:59:53.534Z",
+        "capturedAt": "2026-07-04T19:38:40.928Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:53.534Z",
+        "at": "2026-07-04T19:38:40.928Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -28004,14 +26640,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1db5",
-        "capturedAt": "2026-07-04T13:59:53.534Z",
+        "capturedAt": "2026-07-04T19:38:40.928Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:53.534Z",
+        "at": "2026-07-04T19:38:40.928Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -28088,14 +26724,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdc8bd272945e0068ed59",
-        "capturedAt": "2026-07-04T13:59:53.534Z",
+        "capturedAt": "2026-07-04T19:38:40.928Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:53.534Z",
+        "at": "2026-07-04T19:38:40.928Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -28172,14 +26808,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbde97d272945e0068ee68",
-        "capturedAt": "2026-07-04T13:59:53.534Z",
+        "capturedAt": "2026-07-04T19:38:40.928Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:53.534Z",
+        "at": "2026-07-04T19:38:40.928Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -28265,14 +26901,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a146aa4748daf857d59b65e",
-        "capturedAt": "2026-07-04T13:59:53.534Z",
+        "capturedAt": "2026-07-04T19:38:40.928Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:53.534Z",
+        "at": "2026-07-04T19:38:40.928Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -28356,14 +26992,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a061768e13d3b4603b44f5d",
-        "capturedAt": "2026-07-04T13:59:53.534Z",
+        "capturedAt": "2026-07-04T19:38:40.928Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:53.534Z",
+        "at": "2026-07-04T19:38:40.928Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -28447,14 +27083,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/692dbdf9d923da4200b317a0",
-        "capturedAt": "2026-07-04T13:59:53.535Z",
+        "capturedAt": "2026-07-04T19:38:40.928Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:53.535Z",
+        "at": "2026-07-04T19:38:40.928Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -28531,14 +27167,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbde1fe59a13000d3e1cff",
-        "capturedAt": "2026-07-04T13:59:54.119Z",
+        "capturedAt": "2026-07-04T19:38:40.928Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:54.119Z",
+        "at": "2026-07-04T19:38:40.928Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -28624,14 +27260,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a1469f0a99bdd027d42cccc",
-        "capturedAt": "2026-07-04T13:59:54.119Z",
+        "capturedAt": "2026-07-04T19:38:40.928Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:54.119Z",
+        "at": "2026-07-04T19:38:40.928Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -28708,14 +27344,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1db6",
-        "capturedAt": "2026-07-04T13:59:54.119Z",
+        "capturedAt": "2026-07-04T19:38:40.928Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:54.119Z",
+        "at": "2026-07-04T19:38:40.928Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -28792,14 +27428,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/69274b3f44d0e96d007b8755",
-        "capturedAt": "2026-07-04T13:59:54.119Z",
+        "capturedAt": "2026-07-04T19:38:40.928Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:54.119Z",
+        "at": "2026-07-04T19:38:40.928Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -28876,14 +27512,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbd37875911f28001a233d",
-        "capturedAt": "2026-07-04T13:59:54.119Z",
+        "capturedAt": "2026-07-04T19:38:40.928Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:54.119Z",
+        "at": "2026-07-04T19:38:40.928Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -28960,14 +27596,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdc50e59a13000d3e1c8f",
-        "capturedAt": "2026-07-04T13:59:54.119Z",
+        "capturedAt": "2026-07-04T19:38:40.928Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:54.119Z",
+        "at": "2026-07-04T19:38:40.928Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -29044,14 +27680,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbde97d272945e0068ee69",
-        "capturedAt": "2026-07-04T13:59:54.119Z",
+        "capturedAt": "2026-07-04T19:38:40.928Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:54.119Z",
+        "at": "2026-07-04T19:38:40.928Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -29137,14 +27773,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a14693a46d5f64f7dccccfb",
-        "capturedAt": "2026-07-04T13:59:54.120Z",
+        "capturedAt": "2026-07-04T19:38:40.929Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:54.120Z",
+        "at": "2026-07-04T19:38:40.929Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -29221,14 +27857,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbd37875911f28001a233e",
-        "capturedAt": "2026-07-04T13:59:54.120Z",
+        "capturedAt": "2026-07-04T19:38:40.929Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:54.120Z",
+        "at": "2026-07-04T19:38:40.929Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -29305,14 +27941,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdd1b0176055300fe809d",
-        "capturedAt": "2026-07-04T13:59:54.120Z",
+        "capturedAt": "2026-07-04T19:38:41.413Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:54.120Z",
+        "at": "2026-07-04T19:38:41.413Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -29389,14 +28025,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdc50e59a13000d3e1c90",
-        "capturedAt": "2026-07-04T13:59:54.120Z",
+        "capturedAt": "2026-07-04T19:38:41.413Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:54.120Z",
+        "at": "2026-07-04T19:38:41.413Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -29473,14 +28109,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/694992cb4be11d3d00d95e30",
-        "capturedAt": "2026-07-04T13:59:54.120Z",
+        "capturedAt": "2026-07-04T19:38:41.413Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:54.120Z",
+        "at": "2026-07-04T19:38:41.413Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -29564,14 +28200,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbd36ee647c8ff0c387295",
-        "capturedAt": "2026-07-04T13:59:54.120Z",
+        "capturedAt": "2026-07-04T19:38:41.413Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:54.120Z",
+        "at": "2026-07-04T19:38:41.413Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -29655,14 +28291,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbe20064ad59251cb9d99a",
-        "capturedAt": "2026-07-04T13:59:54.120Z",
+        "capturedAt": "2026-07-04T19:38:41.413Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:54.120Z",
+        "at": "2026-07-04T19:38:41.413Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -29739,14 +28375,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbde1fe59a13000d3e1d00",
-        "capturedAt": "2026-07-04T13:59:54.120Z",
+        "capturedAt": "2026-07-04T19:38:41.413Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:54.120Z",
+        "at": "2026-07-04T19:38:41.413Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -29830,14 +28466,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbe0e82edc686d00f5c8a0",
-        "capturedAt": "2026-07-04T13:59:54.120Z",
+        "capturedAt": "2026-07-04T19:38:41.413Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:54.120Z",
+        "at": "2026-07-04T19:38:41.413Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -29922,14 +28558,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbe12275911f28001a253a",
-        "capturedAt": "2026-07-04T13:59:54.120Z",
+        "capturedAt": "2026-07-04T19:38:41.414Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:54.120Z",
+        "at": "2026-07-04T19:38:41.414Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -30013,14 +28649,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbe0cde647c8ff0c387432",
-        "capturedAt": "2026-07-04T13:59:54.120Z",
+        "capturedAt": "2026-07-04T19:38:41.414Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:54.120Z",
+        "at": "2026-07-04T19:38:41.414Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -30097,14 +28733,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdda72edc686d00f5c7f7",
-        "capturedAt": "2026-07-04T13:59:54.120Z",
+        "capturedAt": "2026-07-04T19:38:41.414Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:54.120Z",
+        "at": "2026-07-04T19:38:41.414Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -30190,14 +28826,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a1469a7748daf857d59b640",
-        "capturedAt": "2026-07-04T13:59:54.593Z",
+        "capturedAt": "2026-07-04T19:38:41.414Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:54.593Z",
+        "at": "2026-07-04T19:38:41.414Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -30281,14 +28917,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbe0a50176055300fe8151",
-        "capturedAt": "2026-07-04T13:59:54.593Z",
+        "capturedAt": "2026-07-04T19:38:41.414Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:54.593Z",
+        "at": "2026-07-04T19:38:41.414Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -30372,14 +29008,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbe1952edc686d00f5c971",
-        "capturedAt": "2026-07-04T13:59:54.593Z",
+        "capturedAt": "2026-07-04T19:38:41.414Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:54.593Z",
+        "at": "2026-07-04T19:38:41.414Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -30456,14 +29092,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1db7",
-        "capturedAt": "2026-07-04T13:59:54.593Z",
+        "capturedAt": "2026-07-04T19:38:41.414Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:54.593Z",
+        "at": "2026-07-04T19:38:41.414Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -30549,14 +29185,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a146a1c46d5f64f7dcccd0c",
-        "capturedAt": "2026-07-04T13:59:54.593Z",
+        "capturedAt": "2026-07-04T19:38:41.414Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:54.593Z",
+        "at": "2026-07-04T19:38:41.414Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -30640,14 +29276,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbe07a2edc686d00f5c86a",
-        "capturedAt": "2026-07-04T13:59:54.593Z",
+        "capturedAt": "2026-07-04T19:38:41.414Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:54.593Z",
+        "at": "2026-07-04T19:38:41.414Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -30724,14 +29360,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbd37875911f28001a233f",
-        "capturedAt": "2026-07-04T13:59:54.593Z",
+        "capturedAt": "2026-07-04T19:38:41.893Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:54.593Z",
+        "at": "2026-07-04T19:38:41.893Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -30817,14 +29453,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a146abda99bdd027d42cd4a",
-        "capturedAt": "2026-07-04T13:59:54.593Z",
+        "capturedAt": "2026-07-04T19:38:41.893Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:54.593Z",
+        "at": "2026-07-04T19:38:41.893Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -30910,14 +29546,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a16edaa52c88111723afec2",
-        "capturedAt": "2026-07-04T13:59:54.594Z",
+        "capturedAt": "2026-07-04T19:38:41.893Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:54.594Z",
+        "at": "2026-07-04T19:38:41.893Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -30994,14 +29630,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdd1b0176055300fe809e",
-        "capturedAt": "2026-07-04T13:59:54.594Z",
+        "capturedAt": "2026-07-04T19:38:41.893Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:54.594Z",
+        "at": "2026-07-04T19:38:41.893Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -31078,14 +29714,877 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1db8",
-        "capturedAt": "2026-07-04T13:59:54.594Z",
+        "capturedAt": "2026-07-04T19:38:41.893Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-04T13:59:54.594Z",
+        "at": "2026-07-04T19:38:41.893Z",
+        "actor": "Library RSS generator",
+        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
+      }
+    ]
+  },
+  {
+    "id": "markham-rss-68fbdc8bd272945e0068ed5a",
+    "title": "Storytime",
+    "organization": "Markham Public Library",
+    "provider": "Markham Public Library",
+    "description": "Join us on for an interactive storytime full of books, songs and activities for little ones and their caregivers. Drop-in program.",
+    "summary": "Join us on for an interactive storytime full of books, songs and activities for little ones and their caregivers. Drop-in program.",
+    "type": "Drop-in",
+    "category": "Family Learning",
+    "categories": [
+      "Family Learning"
+    ],
+    "communityFocus": [
+      "Open to all",
+      "Newcomer-friendly"
+    ],
+    "city": "Markham",
+    "region": "York",
+    "address": "Thornhill Village Branch, 10 Colborne Street, Thornhill, Ontario, L3T 1Z6",
+    "latitude": 43.815629,
+    "longitude": -79.42345410000001,
+    "virtual": false,
+    "startDate": "2026-08-05T14:30:00.000Z",
+    "endDate": "2026-08-05T15:00:00.000Z",
+    "deadline": "2026-08-05T14:30:00.000Z",
+    "ageMin": 0,
+    "ageMax": 5,
+    "ages": {
+      "min": 0,
+      "max": 5
+    },
+    "grades": [
+      "0"
+    ],
+    "language": [
+      "en"
+    ],
+    "languages": [
+      "en"
+    ],
+    "cost": "Free to join",
+    "sourceUrl": "https://markham.bibliocommons.com/events/68fbdc8bd272945e0068ed5a",
+    "lastChecked": "2026-07-04",
+    "lastSeen": "2026-07-04",
+    "status": "active",
+    "accessibility": [
+      "Library accessibility services available on request",
+      "Public library location"
+    ],
+    "equipment": "Materials provided unless the source says otherwise.",
+    "food": "No food listed.",
+    "capacity": "12 spots listed by source.",
+    "commitment": "Single scheduled library program or series date from source feed.",
+    "registrationUrl": "https://markham.bibliocommons.com/events/68fbdc8bd272945e0068ed5a",
+    "providerContact": "mplchats@markham.library.on.ca",
+    "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
+    "lastVerified": "2026-07-04",
+    "trustedSource": true,
+    "volunteerHoursEligible": false,
+    "coopEligible": false,
+    "paidPosition": false,
+    "tags": [
+      "family learning",
+      "storytime",
+      "birth to five",
+      "english"
+    ],
+    "sources": [
+      {
+        "label": "Official Markham Public Library event page",
+        "url": "https://markham.bibliocommons.com/events/68fbdc8bd272945e0068ed5a",
+        "capturedAt": "2026-07-04T19:38:41.893Z",
+        "confidence": "high"
+      }
+    ],
+    "adminAuditTrail": [
+      {
+        "label": "Generated from official feed",
+        "at": "2026-07-04T19:38:41.893Z",
+        "actor": "Library RSS generator",
+        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
+      }
+    ]
+  },
+  {
+    "id": "markham-rss-68fbde97d272945e0068ee6a",
+    "title": "Storytime",
+    "organization": "Markham Public Library",
+    "provider": "Markham Public Library",
+    "description": "Join us on for an interactive storytime full of books, songs and activities for little ones and their caregivers. Drop-in program.",
+    "summary": "Join us on for an interactive storytime full of books, songs and activities for little ones and their caregivers. Drop-in program.",
+    "type": "Drop-in",
+    "category": "Family Learning",
+    "categories": [
+      "Family Learning"
+    ],
+    "communityFocus": [
+      "Open to all",
+      "Newcomer-friendly"
+    ],
+    "city": "Markham",
+    "region": "York",
+    "address": "Cornell Branch, 3201 Bur Oak Avenue, Markham, Ontario, L6B 0T2",
+    "latitude": 43.8849972,
+    "longitude": -79.22996080000001,
+    "virtual": false,
+    "startDate": "2026-08-05T15:00:00.000Z",
+    "endDate": "2026-08-05T15:30:00.000Z",
+    "deadline": "2026-08-05T15:00:00.000Z",
+    "ageMin": 0,
+    "ageMax": 5,
+    "ages": {
+      "min": 0,
+      "max": 5
+    },
+    "grades": [
+      "0"
+    ],
+    "language": [
+      "en"
+    ],
+    "languages": [
+      "en"
+    ],
+    "cost": "Free to join",
+    "sourceUrl": "https://markham.bibliocommons.com/events/68fbde97d272945e0068ee6a",
+    "lastChecked": "2026-07-04",
+    "lastSeen": "2026-07-04",
+    "status": "active",
+    "accessibility": [
+      "Library accessibility services available on request",
+      "Public library location"
+    ],
+    "equipment": "Materials provided unless the source says otherwise.",
+    "food": "No food listed.",
+    "capacity": "12 spots listed by source.",
+    "commitment": "Single scheduled library program or series date from source feed.",
+    "registrationUrl": "https://markham.bibliocommons.com/events/68fbde97d272945e0068ee6a",
+    "providerContact": "mplchats@markham.library.on.ca",
+    "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
+    "lastVerified": "2026-07-04",
+    "trustedSource": true,
+    "volunteerHoursEligible": false,
+    "coopEligible": false,
+    "paidPosition": false,
+    "tags": [
+      "family learning",
+      "storytime",
+      "birth to five",
+      "english"
+    ],
+    "sources": [
+      {
+        "label": "Official Markham Public Library event page",
+        "url": "https://markham.bibliocommons.com/events/68fbde97d272945e0068ee6a",
+        "capturedAt": "2026-07-04T19:38:41.893Z",
+        "confidence": "high"
+      }
+    ],
+    "adminAuditTrail": [
+      {
+        "label": "Generated from official feed",
+        "at": "2026-07-04T19:38:41.893Z",
+        "actor": "Library RSS generator",
+        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
+      }
+    ]
+  },
+  {
+    "id": "markham-rss-6a146aa4748daf857d59b65f",
+    "title": "Summer Reading Club Meet-up",
+    "organization": "Markham Public Library",
+    "provider": "Markham Public Library",
+    "description": "Join us for fun weekly activities and games to keep children reading and learning throughout the summer. Find out more about Summer Reading Club, how to join and track your reading, prizes and other activities here .",
+    "summary": "Join us for fun weekly activities and games to keep children reading and learning throughout the summer. Find out more about Summer Reading Club, how to join and track your reading, prizes and other activities here .",
+    "type": "Multi-week program",
+    "category": "Family Learning",
+    "categories": [
+      "Family Learning"
+    ],
+    "communityFocus": [
+      "Open to all",
+      "Newcomer-friendly"
+    ],
+    "city": "Markham",
+    "region": "York",
+    "address": "Thornhill Village Branch, 10 Colborne Street, Thornhill, Ontario, L3T 1Z6",
+    "latitude": 43.815629,
+    "longitude": -79.42345410000001,
+    "virtual": false,
+    "startDate": "2026-08-05T15:00:00.000Z",
+    "endDate": "2026-08-05T16:00:00.000Z",
+    "deadline": "2026-08-05T15:00:00.000Z",
+    "ageMin": 0,
+    "ageMax": 12,
+    "ages": {
+      "min": 0,
+      "max": 12
+    },
+    "grades": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "language": [
+      "en"
+    ],
+    "languages": [
+      "en"
+    ],
+    "cost": "Free to join",
+    "sourceUrl": "https://markham.bibliocommons.com/events/6a146aa4748daf857d59b65f",
+    "lastChecked": "2026-07-04",
+    "lastSeen": "2026-07-04",
+    "status": "active",
+    "accessibility": [
+      "Library accessibility services available on request",
+      "Public library location"
+    ],
+    "equipment": "Materials provided unless the source says otherwise.",
+    "food": "No food listed.",
+    "capacity": "Check the source page for availability.",
+    "commitment": "Single scheduled library program or series date from source feed.",
+    "registrationUrl": "https://markham.bibliocommons.com/events/6a146aa4748daf857d59b65f",
+    "providerContact": "mplchats@markhamlibrary.ca",
+    "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
+    "lastVerified": "2026-07-04",
+    "trustedSource": true,
+    "volunteerHoursEligible": false,
+    "coopEligible": false,
+    "paidPosition": false,
+    "tags": [
+      "family learning",
+      "summer reading club meet-up",
+      "summer reading club",
+      "all ages",
+      "children",
+      "english"
+    ],
+    "sources": [
+      {
+        "label": "Official Markham Public Library event page",
+        "url": "https://markham.bibliocommons.com/events/6a146aa4748daf857d59b65f",
+        "capturedAt": "2026-07-04T19:38:41.893Z",
+        "confidence": "high"
+      }
+    ],
+    "adminAuditTrail": [
+      {
+        "label": "Generated from official feed",
+        "at": "2026-07-04T19:38:41.893Z",
+        "actor": "Library RSS generator",
+        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
+      }
+    ]
+  },
+  {
+    "id": "markham-rss-692dbdf9d923da4200b317a1",
+    "title": "STEAM Drop-In",
+    "organization": "Markham Public Library",
+    "provider": "Markham Public Library",
+    "description": "Join us anytime between 6:30 - 7:30 PM to explore all things STEAM (Science, Technology, Engineering, Arts, and Math). This drop-in program is designed for families to get curious and creative together!",
+    "summary": "Join us anytime between 6:30 - 7:30 PM to explore all things STEAM (Science, Technology, Engineering, Arts, and Math). This drop-in program is designed for families to get curious and creative together!",
+    "type": "Drop-in",
+    "category": "Science & Engineering",
+    "categories": [
+      "STEM",
+      "Science & Engineering"
+    ],
+    "communityFocus": [
+      "Open to all",
+      "Newcomer-friendly"
+    ],
+    "city": "Markham",
+    "region": "York",
+    "address": "Thornhill Comm. Ctr. Branch, 7755 Bayview Avenue, Thornhill, Ontario, L3T 4P1",
+    "latitude": 43.8200327,
+    "longitude": -79.39987339999999,
+    "virtual": false,
+    "startDate": "2026-08-05T22:30:00.000Z",
+    "endDate": "2026-08-05T23:30:00.000Z",
+    "deadline": "2026-08-05T22:30:00.000Z",
+    "ageMin": 6,
+    "ageMax": 12,
+    "ages": {
+      "min": 6,
+      "max": 12
+    },
+    "grades": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "language": [
+      "en"
+    ],
+    "languages": [
+      "en"
+    ],
+    "cost": "Free to join",
+    "sourceUrl": "https://markham.bibliocommons.com/events/692dbdf9d923da4200b317a1",
+    "lastChecked": "2026-07-04",
+    "lastSeen": "2026-07-04",
+    "status": "active",
+    "accessibility": [
+      "Library accessibility services available on request",
+      "Public library location"
+    ],
+    "equipment": "Materials provided unless the source says otherwise.",
+    "food": "No food listed.",
+    "capacity": "Check the source page for availability.",
+    "commitment": "Single scheduled library program or series date from source feed.",
+    "registrationUrl": "https://markham.bibliocommons.com/events/692dbdf9d923da4200b317a1",
+    "providerContact": "mplchats@markhamlibrary.ca",
+    "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
+    "lastVerified": "2026-07-04",
+    "trustedSource": true,
+    "volunteerHoursEligible": false,
+    "coopEligible": false,
+    "paidPosition": false,
+    "tags": [
+      "science & engineering",
+      "steam",
+      "children",
+      "english"
+    ],
+    "sources": [
+      {
+        "label": "Official Markham Public Library event page",
+        "url": "https://markham.bibliocommons.com/events/692dbdf9d923da4200b317a1",
+        "capturedAt": "2026-07-04T19:38:41.893Z",
+        "confidence": "high"
+      }
+    ],
+    "adminAuditTrail": [
+      {
+        "label": "Generated from official feed",
+        "at": "2026-07-04T19:38:41.893Z",
+        "actor": "Library RSS generator",
+        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
+      }
+    ]
+  },
+  {
+    "id": "markham-rss-68fbde1fe59a13000d3e1d01",
+    "title": "Storytime",
+    "organization": "Markham Public Library",
+    "provider": "Markham Public Library",
+    "description": "Join us on for an interactive storytime full of books, songs and activities for little ones and their caregivers. Drop-in program.",
+    "summary": "Join us on for an interactive storytime full of books, songs and activities for little ones and their caregivers. Drop-in program.",
+    "type": "Drop-in",
+    "category": "Family Learning",
+    "categories": [
+      "Family Learning"
+    ],
+    "communityFocus": [
+      "Open to all",
+      "Newcomer-friendly"
+    ],
+    "city": "Markham",
+    "region": "York",
+    "address": "Milliken Mills Branch, 7600 Kennedy Road, Unit 1, Markham, Ontario, L3R 9S5",
+    "latitude": 43.8402283,
+    "longitude": -79.30500649999999,
+    "virtual": false,
+    "startDate": "2026-08-06T14:30:00.000Z",
+    "endDate": "2026-08-06T15:00:00.000Z",
+    "deadline": "2026-08-06T14:30:00.000Z",
+    "ageMin": 0,
+    "ageMax": 5,
+    "ages": {
+      "min": 0,
+      "max": 5
+    },
+    "grades": [
+      "0"
+    ],
+    "language": [
+      "en"
+    ],
+    "languages": [
+      "en"
+    ],
+    "cost": "Free to join",
+    "sourceUrl": "https://markham.bibliocommons.com/events/68fbde1fe59a13000d3e1d01",
+    "lastChecked": "2026-07-04",
+    "lastSeen": "2026-07-04",
+    "status": "active",
+    "accessibility": [
+      "Library accessibility services available on request",
+      "Public library location"
+    ],
+    "equipment": "Materials provided unless the source says otherwise.",
+    "food": "No food listed.",
+    "capacity": "12 spots listed by source.",
+    "commitment": "Single scheduled library program or series date from source feed.",
+    "registrationUrl": "https://markham.bibliocommons.com/events/68fbde1fe59a13000d3e1d01",
+    "providerContact": "mplchats@markham.library.on.ca",
+    "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
+    "lastVerified": "2026-07-04",
+    "trustedSource": true,
+    "volunteerHoursEligible": false,
+    "coopEligible": false,
+    "paidPosition": false,
+    "tags": [
+      "family learning",
+      "storytime",
+      "birth to five",
+      "english"
+    ],
+    "sources": [
+      {
+        "label": "Official Markham Public Library event page",
+        "url": "https://markham.bibliocommons.com/events/68fbde1fe59a13000d3e1d01",
+        "capturedAt": "2026-07-04T19:38:41.893Z",
+        "confidence": "high"
+      }
+    ],
+    "adminAuditTrail": [
+      {
+        "label": "Generated from official feed",
+        "at": "2026-07-04T19:38:41.893Z",
+        "actor": "Library RSS generator",
+        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
+      }
+    ]
+  },
+  {
+    "id": "markham-rss-6a1469f0a99bdd027d42cccd",
+    "title": "Summer Reading Club Meet-up",
+    "organization": "Markham Public Library",
+    "provider": "Markham Public Library",
+    "description": "Join us for fun weekly activities and games to keep children reading and learning throughout the summer. Find out more about Summer Reading Club, how to join and track your reading, prizes and other activities here .",
+    "summary": "Join us for fun weekly activities and games to keep children reading and learning throughout the summer. Find out more about Summer Reading Club, how to join and track your reading, prizes and other activities here .",
+    "type": "Multi-week program",
+    "category": "Family Learning",
+    "categories": [
+      "Family Learning"
+    ],
+    "communityFocus": [
+      "Open to all",
+      "Newcomer-friendly"
+    ],
+    "city": "Markham",
+    "region": "York",
+    "address": "Markham Village Branch, 6031 Highway 7, Markham, Ontario, L3P 3A7",
+    "latitude": 43.8732112,
+    "longitude": -79.25847479999999,
+    "virtual": false,
+    "startDate": "2026-08-06T14:30:00.000Z",
+    "endDate": "2026-08-06T15:30:00.000Z",
+    "deadline": "2026-08-06T14:30:00.000Z",
+    "ageMin": 0,
+    "ageMax": 12,
+    "ages": {
+      "min": 0,
+      "max": 12
+    },
+    "grades": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "language": [
+      "en"
+    ],
+    "languages": [
+      "en"
+    ],
+    "cost": "Free to join",
+    "sourceUrl": "https://markham.bibliocommons.com/events/6a1469f0a99bdd027d42cccd",
+    "lastChecked": "2026-07-04",
+    "lastSeen": "2026-07-04",
+    "status": "active",
+    "accessibility": [
+      "Library accessibility services available on request",
+      "Public library location"
+    ],
+    "equipment": "Materials provided unless the source says otherwise.",
+    "food": "No food listed.",
+    "capacity": "Check the source page for availability.",
+    "commitment": "Single scheduled library program or series date from source feed.",
+    "registrationUrl": "https://markham.bibliocommons.com/events/6a1469f0a99bdd027d42cccd",
+    "providerContact": "mplchats@markhamlibrary.ca",
+    "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
+    "lastVerified": "2026-07-04",
+    "trustedSource": true,
+    "volunteerHoursEligible": false,
+    "coopEligible": false,
+    "paidPosition": false,
+    "tags": [
+      "family learning",
+      "summer reading club meet-up",
+      "summer reading club",
+      "all ages",
+      "children",
+      "english"
+    ],
+    "sources": [
+      {
+        "label": "Official Markham Public Library event page",
+        "url": "https://markham.bibliocommons.com/events/6a1469f0a99bdd027d42cccd",
+        "capturedAt": "2026-07-04T19:38:41.893Z",
+        "confidence": "high"
+      }
+    ],
+    "adminAuditTrail": [
+      {
+        "label": "Generated from official feed",
+        "at": "2026-07-04T19:38:41.893Z",
+        "actor": "Library RSS generator",
+        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
+      }
+    ]
+  },
+  {
+    "id": "markham-rss-6917539dfbf38a280023aa38",
+    "title": "Women Entrepreneur Tea and Chat Meetup",
+    "organization": "Markham Public Library",
+    "provider": "Markham Public Library",
+    "description": "💼Are you a women entrepreneurs? Looking for a community of fellow side hustlers and business owners? This meetup is for you! The Women Entrepreneur Tea and Chat Meetup is a dedicated space where women entrepreneurs can come together to share their experiences",
+    "summary": "💼Are you a women entrepreneurs? Looking for a community of fellow side hustlers and business owners? This meetup is for you! The Women Entrepreneur Tea and Chat Meetup is a dedicated space where women entrepreneurs can come together to share their experiences",
+    "type": "One-time event",
+    "category": "Career & Mentorship",
+    "categories": [
+      "Career & Mentorship"
+    ],
+    "communityFocus": [
+      "Open to all",
+      "Newcomer-friendly",
+      "Girls/women-focused"
+    ],
+    "city": "Markham",
+    "region": "York",
+    "address": "Angus Glen Branch, 3990 Major Mackenzie Drive East, Markham, Ontario, L6C 1P8",
+    "latitude": 43.8947178,
+    "longitude": -79.33652219999999,
+    "virtual": false,
+    "startDate": "2026-08-06T22:00:00.000Z",
+    "endDate": "2026-08-06T23:00:00.000Z",
+    "deadline": "2026-08-06T22:00:00.000Z",
+    "ageMin": 18,
+    "ages": {
+      "min": 18
+    },
+    "grades": [],
+    "language": [
+      "en"
+    ],
+    "languages": [
+      "en"
+    ],
+    "cost": "Free to join",
+    "sourceUrl": "https://markham.bibliocommons.com/events/6917539dfbf38a280023aa38",
+    "lastChecked": "2026-07-04",
+    "lastSeen": "2026-07-04",
+    "status": "active",
+    "accessibility": [
+      "Library accessibility services available on request",
+      "Public library location"
+    ],
+    "equipment": "Materials provided unless the source says otherwise.",
+    "food": "No food listed.",
+    "capacity": "15 spots listed by source.",
+    "commitment": "Single scheduled library program or series date from source feed.",
+    "registrationUrl": "https://markham.bibliocommons.com/events/6917539dfbf38a280023aa38",
+    "providerContact": "mplcommunitylibrarians@markham.library.on.ca",
+    "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
+    "lastVerified": "2026-07-04",
+    "trustedSource": true,
+    "volunteerHoursEligible": false,
+    "coopEligible": false,
+    "paidPosition": false,
+    "tags": [
+      "career & mentorship",
+      "business & finance",
+      "adult",
+      "older adult",
+      "english"
+    ],
+    "sources": [
+      {
+        "label": "Official Markham Public Library event page",
+        "url": "https://markham.bibliocommons.com/events/6917539dfbf38a280023aa38",
+        "capturedAt": "2026-07-04T19:38:41.893Z",
+        "confidence": "high"
+      }
+    ],
+    "adminAuditTrail": [
+      {
+        "label": "Generated from official feed",
+        "at": "2026-07-04T19:38:41.893Z",
+        "actor": "Library RSS generator",
+        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
+      }
+    ]
+  },
+  {
+    "id": "markham-rss-68fbdf2de59a13000d3e1db9",
+    "title": "Storytime",
+    "organization": "Markham Public Library",
+    "provider": "Markham Public Library",
+    "description": "Join us on for an interactive storytime full of books, songs and activities for little ones and their caregivers. Drop-in program.",
+    "summary": "Join us on for an interactive storytime full of books, songs and activities for little ones and their caregivers. Drop-in program.",
+    "type": "Drop-in",
+    "category": "Family Learning",
+    "categories": [
+      "Family Learning"
+    ],
+    "communityFocus": [
+      "Open to all",
+      "Newcomer-friendly"
+    ],
+    "city": "Markham",
+    "region": "York",
+    "address": "Aaniin Branch, 5665 14th Avenue, Markham, Ontario, L3S 3K5",
+    "latitude": 43.8519849,
+    "longitude": -79.26676309999999,
+    "virtual": false,
+    "startDate": "2026-08-06T22:30:00.000Z",
+    "endDate": "2026-08-06T23:00:00.000Z",
+    "deadline": "2026-08-06T22:30:00.000Z",
+    "ageMin": 0,
+    "ageMax": 5,
+    "ages": {
+      "min": 0,
+      "max": 5
+    },
+    "grades": [
+      "0"
+    ],
+    "language": [
+      "en"
+    ],
+    "languages": [
+      "en"
+    ],
+    "cost": "Free to join",
+    "sourceUrl": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1db9",
+    "lastChecked": "2026-07-04",
+    "lastSeen": "2026-07-04",
+    "status": "active",
+    "accessibility": [
+      "Library accessibility services available on request",
+      "Public library location"
+    ],
+    "equipment": "Materials provided unless the source says otherwise.",
+    "food": "No food listed.",
+    "capacity": "12 spots listed by source.",
+    "commitment": "Single scheduled library program or series date from source feed.",
+    "registrationUrl": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1db9",
+    "providerContact": "mplchats@markham.library.on.ca",
+    "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
+    "lastVerified": "2026-07-04",
+    "trustedSource": true,
+    "volunteerHoursEligible": false,
+    "coopEligible": false,
+    "paidPosition": false,
+    "tags": [
+      "family learning",
+      "storytime",
+      "birth to five",
+      "english"
+    ],
+    "sources": [
+      {
+        "label": "Official Markham Public Library event page",
+        "url": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1db9",
+        "capturedAt": "2026-07-04T19:38:41.893Z",
+        "confidence": "high"
+      }
+    ],
+    "adminAuditTrail": [
+      {
+        "label": "Generated from official feed",
+        "at": "2026-07-04T19:38:41.893Z",
+        "actor": "Library RSS generator",
+        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
+      }
+    ]
+  },
+  {
+    "id": "markham-rss-69274b3f44d0e96d007b8756",
+    "title": "Baby & Books",
+    "organization": "Markham Public Library",
+    "provider": "Markham Public Library",
+    "description": "Enjoy early literacy fun that focuses on sharing stories, rhymes, lap play, and songs with your baby. Please bring a blanket or mat for your baby. We will provide simple sensory toys for you to explore with your child, but feel free to bring your own! Drop-in ",
+    "summary": "Enjoy early literacy fun that focuses on sharing stories, rhymes, lap play, and songs with your baby. Please bring a blanket or mat for your baby. We will provide simple sensory toys for you to explore with your child, but feel free to bring your own! Drop-in ",
+    "type": "Drop-in",
+    "category": "Family Learning",
+    "categories": [
+      "Family Learning"
+    ],
+    "communityFocus": [
+      "Open to all",
+      "Newcomer-friendly"
+    ],
+    "city": "Markham",
+    "region": "York",
+    "address": "Thornhill Village Branch, 10 Colborne Street, Thornhill, Ontario, L3T 1Z6",
+    "latitude": 43.815629,
+    "longitude": -79.42345410000001,
+    "virtual": false,
+    "startDate": "2026-08-07T14:30:00.000Z",
+    "endDate": "2026-08-07T15:00:00.000Z",
+    "deadline": "2026-08-07T14:30:00.000Z",
+    "ageMin": 0,
+    "ageMax": 5,
+    "ages": {
+      "min": 0,
+      "max": 5
+    },
+    "grades": [
+      "0"
+    ],
+    "language": [
+      "en"
+    ],
+    "languages": [
+      "en"
+    ],
+    "cost": "Free to join",
+    "sourceUrl": "https://markham.bibliocommons.com/events/69274b3f44d0e96d007b8756",
+    "lastChecked": "2026-07-04",
+    "lastSeen": "2026-07-04",
+    "status": "active",
+    "accessibility": [
+      "Library accessibility services available on request",
+      "Public library location"
+    ],
+    "equipment": "Materials provided unless the source says otherwise.",
+    "food": "No food listed.",
+    "capacity": "10 spots listed by source.",
+    "commitment": "Single scheduled library program or series date from source feed.",
+    "registrationUrl": "https://markham.bibliocommons.com/events/69274b3f44d0e96d007b8756",
+    "providerContact": "mplchats@markham.library.on.ca",
+    "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
+    "lastVerified": "2026-07-04",
+    "trustedSource": true,
+    "volunteerHoursEligible": false,
+    "coopEligible": false,
+    "paidPosition": false,
+    "tags": [
+      "family learning",
+      "storytime",
+      "infants (0 to 12 months)",
+      "english"
+    ],
+    "sources": [
+      {
+        "label": "Official Markham Public Library event page",
+        "url": "https://markham.bibliocommons.com/events/69274b3f44d0e96d007b8756",
+        "capturedAt": "2026-07-04T19:38:41.893Z",
+        "confidence": "high"
+      }
+    ],
+    "adminAuditTrail": [
+      {
+        "label": "Generated from official feed",
+        "at": "2026-07-04T19:38:41.893Z",
+        "actor": "Library RSS generator",
+        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
+      }
+    ]
+  },
+  {
+    "id": "markham-rss-68fbd37875911f28001a2340",
+    "title": "Storytime",
+    "organization": "Markham Public Library",
+    "provider": "Markham Public Library",
+    "description": "Join us on for an interactive storytime full of books, songs and activities for little ones and their caregivers. Drop-in program.",
+    "summary": "Join us on for an interactive storytime full of books, songs and activities for little ones and their caregivers. Drop-in program.",
+    "type": "Drop-in",
+    "category": "Family Learning",
+    "categories": [
+      "Family Learning"
+    ],
+    "communityFocus": [
+      "Open to all",
+      "Newcomer-friendly"
+    ],
+    "city": "Markham",
+    "region": "York",
+    "address": "Angus Glen Branch, 3990 Major Mackenzie Drive East, Markham, Ontario, L6C 1P8",
+    "latitude": 43.8947178,
+    "longitude": -79.33652219999999,
+    "virtual": false,
+    "startDate": "2026-08-07T14:30:00.000Z",
+    "endDate": "2026-08-07T15:00:00.000Z",
+    "deadline": "2026-08-07T14:30:00.000Z",
+    "ageMin": 0,
+    "ageMax": 5,
+    "ages": {
+      "min": 0,
+      "max": 5
+    },
+    "grades": [
+      "0"
+    ],
+    "language": [
+      "en"
+    ],
+    "languages": [
+      "en"
+    ],
+    "cost": "Free to join",
+    "sourceUrl": "https://markham.bibliocommons.com/events/68fbd37875911f28001a2340",
+    "lastChecked": "2026-07-04",
+    "lastSeen": "2026-07-04",
+    "status": "active",
+    "accessibility": [
+      "Library accessibility services available on request",
+      "Public library location"
+    ],
+    "equipment": "Materials provided unless the source says otherwise.",
+    "food": "No food listed.",
+    "capacity": "12 spots listed by source.",
+    "commitment": "Single scheduled library program or series date from source feed.",
+    "registrationUrl": "https://markham.bibliocommons.com/events/68fbd37875911f28001a2340",
+    "providerContact": "mplchats@markham.library.on.ca",
+    "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
+    "lastVerified": "2026-07-04",
+    "trustedSource": true,
+    "volunteerHoursEligible": false,
+    "coopEligible": false,
+    "paidPosition": false,
+    "tags": [
+      "family learning",
+      "storytime",
+      "birth to five",
+      "english"
+    ],
+    "sources": [
+      {
+        "label": "Official Markham Public Library event page",
+        "url": "https://markham.bibliocommons.com/events/68fbd37875911f28001a2340",
+        "capturedAt": "2026-07-04T19:38:41.893Z",
+        "confidence": "high"
+      }
+    ],
+    "adminAuditTrail": [
+      {
+        "label": "Generated from official feed",
+        "at": "2026-07-04T19:38:41.893Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
