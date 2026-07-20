@@ -51,8 +51,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a3a1877c026ff22477c0360",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -65,7 +65,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a3a1877c026ff22477c0360",
     "providerContact": "+1-416-396-8910",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -81,14 +81,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a3a1877c026ff22477c0360",
-        "capturedAt": "2026-07-19T19:33:12.242Z",
+        "capturedAt": "2026-07-20T04:06:08.862Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:12.242Z",
+        "at": "2026-07-20T04:06:08.862Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -149,8 +149,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a46bdb09ec85be793f1242c",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -163,7 +163,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a46bdb09ec85be793f1242c",
     "providerContact": "+1-416-393-6240",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -184,14 +184,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a46bdb09ec85be793f1242c",
-        "capturedAt": "2026-07-19T19:33:12.242Z",
+        "capturedAt": "2026-07-20T04:06:08.862Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:12.242Z",
+        "at": "2026-07-20T04:06:08.862Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -242,8 +242,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a1ddbf6c7d3cd58005d4a69",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -256,7 +256,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a1ddbf6c7d3cd58005d4a69",
     "providerContact": "nzand@nych.ca",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -273,393 +273,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a1ddbf6c7d3cd58005d4a69",
-        "capturedAt": "2026-07-19T19:33:13.203Z",
+        "capturedAt": "2026-07-20T04:06:08.863Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:13.203Z",
-        "actor": "Library RSS generator",
-        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
-      }
-    ]
-  },
-  {
-    "id": "tpl-rss-6a2c42c41e67cd9cb33977f4",
-    "title": "World Cup 2026 Watch Live @ Fairview!",
-    "organization": "Toronto Public Library",
-    "provider": "Toronto Public Library",
-    "description": "Celebrate soccer's biggest event at TPL! #FWC26, #WeAreToronto. Please note that screenings are only during branch open hours, if there are no conflicting programs in that space during that time, and that entire games may end at least twenty minutes before the",
-    "summary": "Celebrate soccer's biggest event at TPL! #FWC26, #WeAreToronto. Please note that screenings are only during branch open hours, if there are no conflicting programs in that space during that time, and that entire games may end at least twenty minutes before the",
-    "type": "One-time event",
-    "category": "AI & Digital Media",
-    "categories": [
-      "STEM",
-      "AI & Digital Media"
-    ],
-    "communityFocus": [
-      "Open to all",
-      "Newcomer-friendly"
-    ],
-    "city": "Toronto",
-    "region": "Toronto",
-    "address": "Fairview, 35 Fairview Mall Drive, Toronto, ON, M2J 4S4",
-    "latitude": 43.7790599,
-    "longitude": -79.3468197,
-    "virtual": false,
-    "startDate": "2026-07-19T04:00:00.000Z",
-    "endDate": "2026-07-20T03:59:59.000Z",
-    "deadline": "2026-07-19T04:00:00.000Z",
-    "ageMin": 6,
-    "ageMax": 17,
-    "ages": {
-      "min": 6,
-      "max": 17
-    },
-    "grades": [
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "7",
-      "8",
-      "9",
-      "10",
-      "11",
-      "12"
-    ],
-    "language": [
-      "en"
-    ],
-    "languages": [
-      "en"
-    ],
-    "cost": "Free to join",
-    "sourceUrl": "https://tpl.bibliocommons.com/events/6a2c42c41e67cd9cb33977f4",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
-    "status": "active",
-    "accessibility": [
-      "Library accessibility services available on request",
-      "Public library location"
-    ],
-    "equipment": "Materials provided unless the source says otherwise.",
-    "food": "No food listed.",
-    "capacity": "Check the source page for availability.",
-    "commitment": "Single scheduled library program or series date from source feed.",
-    "registrationUrl": "https://tpl.bibliocommons.com/events/6a2c42c41e67cd9cb33977f4",
-    "providerContact": "+1-416-395-5750",
-    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
-    "trustedSource": true,
-    "volunteerHoursEligible": false,
-    "coopEligible": false,
-    "paidPosition": false,
-    "tags": [
-      "ai & digital media",
-      "world cup",
-      "culture, arts & entertainment",
-      "adults (18+)",
-      "older adults",
-      "school age children (6-12)",
-      "teens (13-17)",
-      "younger adults (18-24)",
-      "english"
-    ],
-    "sources": [
-      {
-        "label": "Official Toronto Public Library event page",
-        "url": "https://tpl.bibliocommons.com/events/6a2c42c41e67cd9cb33977f4",
-        "capturedAt": "2026-07-19T19:33:13.203Z",
-        "confidence": "high"
-      }
-    ],
-    "adminAuditTrail": [
-      {
-        "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:13.203Z",
-        "actor": "Library RSS generator",
-        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
-      }
-    ]
-  },
-  {
-    "id": "tpl-rss-696aba094a9fd98b7f780de6",
-    "title": "Sunday Crafternoon",
-    "organization": "Toronto Public Library",
-    "provider": "Toronto Public Library",
-    "description": "Join us for Sunday crafts. Different activity each week. Sundays 12-4:30 pm. Drop-in.",
-    "summary": "Join us for Sunday crafts. Different activity each week. Sundays 12-4:30 pm. Drop-in.",
-    "type": "Drop-in",
-    "category": "Makerspace & Fabrication",
-    "categories": [
-      "STEM",
-      "Makerspace & Fabrication"
-    ],
-    "communityFocus": [
-      "Open to all",
-      "Newcomer-friendly"
-    ],
-    "city": "Toronto",
-    "region": "Toronto",
-    "address": "Jones, 118 Jones Avenue, Toronto, ON, M4M 2Z9",
-    "latitude": 43.6659465,
-    "longitude": -79.3345198,
-    "virtual": false,
-    "startDate": "2026-07-19T16:00:00.000Z",
-    "endDate": "2026-07-19T20:30:00.000Z",
-    "deadline": "2026-07-19T16:00:00.000Z",
-    "ageMin": 0,
-    "ageMax": 12,
-    "ages": {
-      "min": 0,
-      "max": 12
-    },
-    "grades": [
-      "0",
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "7"
-    ],
-    "language": [
-      "en"
-    ],
-    "languages": [
-      "en"
-    ],
-    "cost": "Free to join",
-    "sourceUrl": "https://tpl.bibliocommons.com/events/696aba094a9fd98b7f780de6",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
-    "status": "active",
-    "accessibility": [
-      "Library accessibility services available on request",
-      "Public library location"
-    ],
-    "equipment": "Materials provided unless the source says otherwise.",
-    "food": "No food listed.",
-    "capacity": "Check the source page for availability.",
-    "commitment": "Single scheduled library program or series date from source feed.",
-    "registrationUrl": "https://tpl.bibliocommons.com/events/696aba094a9fd98b7f780de6",
-    "providerContact": "ask@tpl.ca",
-    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
-    "trustedSource": true,
-    "volunteerHoursEligible": false,
-    "coopEligible": false,
-    "paidPosition": false,
-    "tags": [
-      "makerspace & fabrication",
-      "crafts & hobbies",
-      "preschool children (0-5)",
-      "school age children (6-12)",
-      "english"
-    ],
-    "sources": [
-      {
-        "label": "Official Toronto Public Library event page",
-        "url": "https://tpl.bibliocommons.com/events/696aba094a9fd98b7f780de6",
-        "capturedAt": "2026-07-19T19:33:13.204Z",
-        "confidence": "high"
-      }
-    ],
-    "adminAuditTrail": [
-      {
-        "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:13.204Z",
-        "actor": "Library RSS generator",
-        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
-      }
-    ]
-  },
-  {
-    "id": "tpl-rss-6a1c9c024dc267647dab41f1",
-    "title": "Sunday Family Crafts",
-    "organization": "Toronto Public Library",
-    "provider": "Toronto Public Library",
-    "description": "Come as a family and enjoy making crafts together. This program is for families or caregivers with children. Drop-in. No registration required.",
-    "summary": "Come as a family and enjoy making crafts together. This program is for families or caregivers with children. Drop-in. No registration required.",
-    "type": "Drop-in",
-    "category": "Makerspace & Fabrication",
-    "categories": [
-      "STEM",
-      "Makerspace & Fabrication"
-    ],
-    "communityFocus": [
-      "Open to all",
-      "Newcomer-friendly"
-    ],
-    "city": "Toronto",
-    "region": "Toronto",
-    "address": "Yorkville, 22 Yorkville Avenue, Toronto, ON, M4W 1L4",
-    "latitude": 43.6720537,
-    "longitude": -79.38869129999999,
-    "virtual": false,
-    "startDate": "2026-07-19T19:00:00.000Z",
-    "endDate": "2026-07-19T20:00:00.000Z",
-    "deadline": "2026-07-19T19:00:00.000Z",
-    "ageMin": 0,
-    "ageMax": 12,
-    "ages": {
-      "min": 0,
-      "max": 12
-    },
-    "grades": [
-      "0",
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "7"
-    ],
-    "language": [
-      "en"
-    ],
-    "languages": [
-      "en"
-    ],
-    "cost": "Free to join",
-    "sourceUrl": "https://tpl.bibliocommons.com/events/6a1c9c024dc267647dab41f1",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
-    "status": "active",
-    "accessibility": [
-      "Library accessibility services available on request",
-      "Public library location"
-    ],
-    "equipment": "Materials provided unless the source says otherwise.",
-    "food": "No food listed.",
-    "capacity": "Check the source page for availability.",
-    "commitment": "Single scheduled library program or series date from source feed.",
-    "registrationUrl": "https://tpl.bibliocommons.com/events/6a1c9c024dc267647dab41f1",
-    "providerContact": "+1-416-393-7660",
-    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
-    "trustedSource": true,
-    "volunteerHoursEligible": false,
-    "coopEligible": false,
-    "paidPosition": false,
-    "tags": [
-      "makerspace & fabrication",
-      "crafts & hobbies",
-      "preschool children (0-5)",
-      "school age children (6-12)",
-      "english"
-    ],
-    "sources": [
-      {
-        "label": "Official Toronto Public Library event page",
-        "url": "https://tpl.bibliocommons.com/events/6a1c9c024dc267647dab41f1",
-        "capturedAt": "2026-07-19T19:33:13.204Z",
-        "confidence": "high"
-      }
-    ],
-    "adminAuditTrail": [
-      {
-        "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:13.204Z",
-        "actor": "Library RSS generator",
-        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
-      }
-    ]
-  },
-  {
-    "id": "tpl-rss-69ff9658e8af4a2f00715c02",
-    "title": "Sunday Fun-Day",
-    "organization": "Toronto Public Library",
-    "provider": "Toronto Public Library",
-    "description": "**NEW TIME** The start time has changed for this event. It will now start at 3pm. Join us on Sunday afternoons for a variety of activities including STEM, arts & crafts and games. For children ages 6-12. Drop-in. Space and supplies are limited.",
-    "summary": "**NEW TIME** The start time has changed for this event. It will now start at 3pm. Join us on Sunday afternoons for a variety of activities including STEM, arts & crafts and games. For children ages 6-12. Drop-in. Space and supplies are limited.",
-    "type": "Drop-in",
-    "category": "Makerspace & Fabrication",
-    "categories": [
-      "STEM",
-      "Makerspace & Fabrication"
-    ],
-    "communityFocus": [
-      "Open to all",
-      "Newcomer-friendly"
-    ],
-    "city": "Toronto",
-    "region": "Toronto",
-    "address": "Maria A. Shchuka, 1745 Eglinton Avenue West, Toronto, ON, M6E 2H4",
-    "latitude": 43.6960925,
-    "longitude": -79.4472591,
-    "virtual": false,
-    "startDate": "2026-07-19T19:00:00.000Z",
-    "endDate": "2026-07-19T20:00:00.000Z",
-    "deadline": "2026-07-19T19:00:00.000Z",
-    "ageMin": 6,
-    "ageMax": 12,
-    "ages": {
-      "min": 6,
-      "max": 12
-    },
-    "grades": [
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "7"
-    ],
-    "language": [
-      "en"
-    ],
-    "languages": [
-      "en"
-    ],
-    "cost": "Free to join",
-    "sourceUrl": "https://tpl.bibliocommons.com/events/69ff9658e8af4a2f00715c02",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
-    "status": "active",
-    "accessibility": [
-      "Library accessibility services available on request",
-      "Public library location"
-    ],
-    "equipment": "Materials provided unless the source says otherwise.",
-    "food": "No food listed.",
-    "capacity": "Check the source page for availability.",
-    "commitment": "Single scheduled library program or series date from source feed.",
-    "registrationUrl": "https://tpl.bibliocommons.com/events/69ff9658e8af4a2f00715c02",
-    "providerContact": "+1-416-394-1000",
-    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
-    "trustedSource": true,
-    "volunteerHoursEligible": false,
-    "coopEligible": false,
-    "paidPosition": false,
-    "tags": [
-      "makerspace & fabrication",
-      "crafts & hobbies",
-      "science & engineering",
-      "school age children (6-12)",
-      "english"
-    ],
-    "sources": [
-      {
-        "label": "Official Toronto Public Library event page",
-        "url": "https://tpl.bibliocommons.com/events/69ff9658e8af4a2f00715c02",
-        "capturedAt": "2026-07-19T19:33:13.204Z",
-        "confidence": "high"
-      }
-    ],
-    "adminAuditTrail": [
-      {
-        "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:13.204Z",
+        "at": "2026-07-20T04:06:08.863Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -711,8 +332,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a3c2382f0a66233671aeb1b",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -725,7 +346,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a3c2382f0a66233671aeb1b",
     "providerContact": "+1-416-394-1000",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -743,14 +364,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a3c2382f0a66233671aeb1b",
-        "capturedAt": "2026-07-19T19:33:13.205Z",
+        "capturedAt": "2026-07-20T04:06:08.863Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:13.205Z",
+        "at": "2026-07-20T04:06:08.863Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -795,8 +416,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a245b315459385f1bd2a1f9",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -809,7 +430,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a245b315459385f1bd2a1f9",
     "providerContact": "kestaff@tpl.ca",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -825,14 +446,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a245b315459385f1bd2a1f9",
-        "capturedAt": "2026-07-19T19:33:13.205Z",
+        "capturedAt": "2026-07-20T04:06:08.863Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:13.205Z",
+        "at": "2026-07-20T04:06:08.863Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -887,8 +508,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a29e15390cc4e3a790d30a5",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -901,7 +522,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a29e15390cc4e3a790d30a5",
     "providerContact": "+1-416-394-1008",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -917,14 +538,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a29e15390cc4e3a790d30a5",
-        "capturedAt": "2026-07-19T19:33:13.205Z",
+        "capturedAt": "2026-07-20T04:06:08.863Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:13.205Z",
+        "at": "2026-07-20T04:06:08.863Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -979,8 +600,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/694aee0b2c65973d00140fe6",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -993,7 +614,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/694aee0b2c65973d00140fe6",
     "providerContact": "+1-416-393-7663",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -1009,14 +630,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/694aee0b2c65973d00140fe6",
-        "capturedAt": "2026-07-19T19:33:13.205Z",
+        "capturedAt": "2026-07-20T04:06:08.863Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:13.205Z",
+        "at": "2026-07-20T04:06:08.863Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -1071,8 +692,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/69f4dd6b129f1274383c08e3",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -1085,7 +706,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/69f4dd6b129f1274383c08e3",
     "providerContact": "ask@tpl.ca",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -1101,14 +722,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69f4dd6b129f1274383c08e3",
-        "capturedAt": "2026-07-19T19:33:13.205Z",
+        "capturedAt": "2026-07-20T04:06:08.864Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:13.205Z",
+        "at": "2026-07-20T04:06:08.864Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -1163,8 +784,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a11f3a7fab4ff0f649b2d07",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -1177,7 +798,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a11f3a7fab4ff0f649b2d07",
     "providerContact": "+1-416-396-3854",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -1193,14 +814,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a11f3a7fab4ff0f649b2d07",
-        "capturedAt": "2026-07-19T19:33:13.205Z",
+        "capturedAt": "2026-07-20T04:06:08.864Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:13.205Z",
+        "at": "2026-07-20T04:06:08.864Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -1255,8 +876,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a35a59d2ea730c17ab82998",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -1269,7 +890,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a35a59d2ea730c17ab82998",
     "providerContact": "vvstaff@tpl.ca",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -1285,14 +906,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a35a59d2ea730c17ab82998",
-        "capturedAt": "2026-07-19T19:33:13.206Z",
+        "capturedAt": "2026-07-20T04:06:09.502Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:13.206Z",
+        "at": "2026-07-20T04:06:09.502Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -1347,8 +968,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a3998ddc78687f2fd2de668",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -1361,7 +982,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a3998ddc78687f2fd2de668",
     "providerContact": "+1-416-396-8885",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -1376,14 +997,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a3998ddc78687f2fd2de668",
-        "capturedAt": "2026-07-19T19:33:13.206Z",
+        "capturedAt": "2026-07-20T04:06:09.502Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:13.206Z",
+        "at": "2026-07-20T04:06:09.502Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -1438,8 +1059,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a30115cc7d3cd5800607a42",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -1452,7 +1073,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a30115cc7d3cd5800607a42",
     "providerContact": "+1-416-393-7657",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -1468,14 +1089,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a30115cc7d3cd5800607a42",
-        "capturedAt": "2026-07-19T19:33:13.206Z",
+        "capturedAt": "2026-07-20T04:06:09.503Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:13.206Z",
+        "at": "2026-07-20T04:06:09.503Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -1530,8 +1151,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a353a603e640a44001a0505",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -1544,7 +1165,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a353a603e640a44001a0505",
     "providerContact": "+1-416-394-1040",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -1560,14 +1181,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a353a603e640a44001a0505",
-        "capturedAt": "2026-07-19T19:33:14.009Z",
+        "capturedAt": "2026-07-20T04:06:09.503Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:14.009Z",
+        "at": "2026-07-20T04:06:09.503Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -1615,8 +1236,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbdda72edc686d00f5c7f4",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -1629,7 +1250,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbdda72edc686d00f5c7f4",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -1644,14 +1265,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdda72edc686d00f5c7f4",
-        "capturedAt": "2026-07-19T19:33:21.987Z",
+        "capturedAt": "2026-07-20T04:06:17.851Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:21.987Z",
+        "at": "2026-07-20T04:06:17.851Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -1699,8 +1320,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1db0",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -1713,7 +1334,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1db0",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -1728,14 +1349,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1db0",
-        "capturedAt": "2026-07-19T19:33:21.987Z",
+        "capturedAt": "2026-07-20T04:06:17.851Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:21.987Z",
+        "at": "2026-07-20T04:06:17.851Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -1779,8 +1400,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a1dc8e343b41b3d006ac82d",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -1793,7 +1414,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a1dc8e343b41b3d006ac82d",
     "providerContact": "bfstaff@tpl.ca",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -1809,14 +1430,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a1dc8e343b41b3d006ac82d",
-        "capturedAt": "2026-07-19T19:33:14.009Z",
+        "capturedAt": "2026-07-20T04:06:09.503Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:14.009Z",
+        "at": "2026-07-20T04:06:09.503Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -1871,8 +1492,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6994b42c8b29ea2800d09e83",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -1885,7 +1506,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6994b42c8b29ea2800d09e83",
     "providerContact": "ask@tpl.ca",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -1901,14 +1522,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6994b42c8b29ea2800d09e83",
-        "capturedAt": "2026-07-19T19:33:14.009Z",
+        "capturedAt": "2026-07-20T04:06:09.503Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:14.009Z",
+        "at": "2026-07-20T04:06:09.503Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -1953,8 +1574,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a14b5f94dc267647daa9e16",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -1967,7 +1588,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a14b5f94dc267647daa9e16",
     "providerContact": "ask@tpl.ca",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -1982,14 +1603,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a14b5f94dc267647daa9e16",
-        "capturedAt": "2026-07-19T19:33:14.009Z",
+        "capturedAt": "2026-07-20T04:06:09.503Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:14.009Z",
+        "at": "2026-07-20T04:06:09.503Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -2044,8 +1665,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a298ea67f943b520051d219",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -2058,7 +1679,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a298ea67f943b520051d219",
     "providerContact": "+1-416-396-3865",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -2074,14 +1695,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a298ea67f943b520051d219",
-        "capturedAt": "2026-07-19T19:33:14.009Z",
+        "capturedAt": "2026-07-20T04:06:09.503Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:14.009Z",
+        "at": "2026-07-20T04:06:09.503Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -2126,8 +1747,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/695c1281992fc18a86dbb2cf",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -2140,7 +1761,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/695c1281992fc18a86dbb2cf",
     "providerContact": "+1-416-393-7666",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -2156,14 +1777,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/695c1281992fc18a86dbb2cf",
-        "capturedAt": "2026-07-19T19:33:14.009Z",
+        "capturedAt": "2026-07-20T04:06:09.503Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:14.009Z",
+        "at": "2026-07-20T04:06:09.503Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -2208,8 +1829,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a2b299bdcc1022f00394af4",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -2222,7 +1843,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a2b299bdcc1022f00394af4",
     "providerContact": "+1-416-393-7671",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -2238,14 +1859,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a2b299bdcc1022f00394af4",
-        "capturedAt": "2026-07-19T19:33:14.009Z",
+        "capturedAt": "2026-07-20T04:06:09.504Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:14.009Z",
+        "at": "2026-07-20T04:06:09.504Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -2300,8 +1921,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a19e0d852c88111723ba388",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -2314,7 +1935,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a19e0d852c88111723ba388",
     "providerContact": "+1-416-396-8876",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -2329,14 +1950,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a19e0d852c88111723ba388",
-        "capturedAt": "2026-07-19T19:33:14.009Z",
+        "capturedAt": "2026-07-20T04:06:09.504Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:14.009Z",
+        "at": "2026-07-20T04:06:09.504Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -2380,8 +2001,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/69dbd871129f127438381341",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -2394,7 +2015,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/69dbd871129f127438381341",
     "providerContact": "+1-416-395-5710",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -2410,14 +2031,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69dbd871129f127438381341",
-        "capturedAt": "2026-07-19T19:33:14.009Z",
+        "capturedAt": "2026-07-20T04:06:09.504Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:14.009Z",
+        "at": "2026-07-20T04:06:09.504Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -2472,8 +2093,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a1078578ea300e26317c219",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -2486,7 +2107,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a1078578ea300e26317c219",
     "providerContact": "+1-416-396-3854",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -2502,14 +2123,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a1078578ea300e26317c219",
-        "capturedAt": "2026-07-19T19:33:14.009Z",
+        "capturedAt": "2026-07-20T04:06:09.504Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:14.009Z",
+        "at": "2026-07-20T04:06:09.504Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -2561,8 +2182,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a399d7d8ea300e2631f8a8d",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -2575,7 +2196,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a399d7d8ea300e2631f8a8d",
     "providerContact": "bfstaff@tpl.ca",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": true,
     "coopEligible": false,
@@ -2590,14 +2211,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a399d7d8ea300e2631f8a8d",
-        "capturedAt": "2026-07-19T19:33:14.010Z",
+        "capturedAt": "2026-07-20T04:06:09.504Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:14.010Z",
+        "at": "2026-07-20T04:06:09.504Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -2652,8 +2273,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a4818920e851028002f1eb8",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -2666,7 +2287,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a4818920e851028002f1eb8",
     "providerContact": "+1-416-394-1000",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -2682,14 +2303,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a4818920e851028002f1eb8",
-        "capturedAt": "2026-07-19T19:33:14.010Z",
+        "capturedAt": "2026-07-20T04:06:09.504Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:14.010Z",
+        "at": "2026-07-20T04:06:09.504Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -2734,8 +2355,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a2dbb627550c8bf9f5d2c09",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -2748,7 +2369,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a2dbb627550c8bf9f5d2c09",
     "providerContact": "+1-416-395-5950",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -2763,14 +2384,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a2dbb627550c8bf9f5d2c09",
-        "capturedAt": "2026-07-19T19:33:14.010Z",
+        "capturedAt": "2026-07-20T04:06:09.504Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:14.010Z",
+        "at": "2026-07-20T04:06:09.504Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -2815,8 +2436,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a42dba8a5d130a37d66503f",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -2829,7 +2450,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a42dba8a5d130a37d66503f",
     "providerContact": "ask@tpl.ca",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -2845,14 +2466,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a42dba8a5d130a37d66503f",
-        "capturedAt": "2026-07-19T19:33:14.010Z",
+        "capturedAt": "2026-07-20T04:06:09.504Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:14.010Z",
+        "at": "2026-07-20T04:06:09.504Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -2903,8 +2524,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/69d59952b6c4ac1fedcae7e4",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -2917,7 +2538,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/69d59952b6c4ac1fedcae7e4",
     "providerContact": "+1-416-393-7717",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -2933,14 +2554,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69d59952b6c4ac1fedcae7e4",
-        "capturedAt": "2026-07-19T19:33:14.010Z",
+        "capturedAt": "2026-07-20T04:06:09.504Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:14.010Z",
+        "at": "2026-07-20T04:06:09.504Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -2984,8 +2605,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a2c3551ba0ec7dc2260d762",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -2998,7 +2619,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a2c3551ba0ec7dc2260d762",
     "providerContact": "+1-416-396-8979",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -3014,14 +2635,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a2c3551ba0ec7dc2260d762",
-        "capturedAt": "2026-07-19T19:33:14.010Z",
+        "capturedAt": "2026-07-20T04:06:10.289Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:14.010Z",
+        "at": "2026-07-20T04:06:10.289Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -3076,8 +2697,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a16007b8e677a28001e9b7e",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -3090,7 +2711,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a16007b8e677a28001e9b7e",
     "providerContact": "ask@tpl.ca",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -3105,14 +2726,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a16007b8e677a28001e9b7e",
-        "capturedAt": "2026-07-19T19:33:14.010Z",
+        "capturedAt": "2026-07-20T04:06:10.289Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:14.010Z",
+        "at": "2026-07-20T04:06:10.289Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -3166,8 +2787,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a109212e8af4a2f0074605a",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -3180,7 +2801,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a109212e8af4a2f0074605a",
     "providerContact": "+1-416-395-5720",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -3196,14 +2817,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a109212e8af4a2f0074605a",
-        "capturedAt": "2026-07-19T19:33:14.010Z",
+        "capturedAt": "2026-07-20T04:06:10.290Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:14.010Z",
+        "at": "2026-07-20T04:06:10.290Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -3248,8 +2869,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a4ea3580e562e2800987b1f",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -3262,7 +2883,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a4ea3580e562e2800987b1f",
     "providerContact": "+1-416-393-7674",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -3278,14 +2899,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a4ea3580e562e2800987b1f",
-        "capturedAt": "2026-07-19T19:33:14.898Z",
+        "capturedAt": "2026-07-20T04:06:10.290Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:14.898Z",
+        "at": "2026-07-20T04:06:10.290Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -3330,8 +2951,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/69483e188d33cc4900c65c6c",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -3344,7 +2965,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/69483e188d33cc4900c65c6c",
     "providerContact": "+1-416-396-8920",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -3360,14 +2981,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69483e188d33cc4900c65c6c",
-        "capturedAt": "2026-07-19T19:33:14.898Z",
+        "capturedAt": "2026-07-20T04:06:10.290Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:14.898Z",
+        "at": "2026-07-20T04:06:10.290Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -3412,8 +3033,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/69fd0bf6caf93436005a7dae",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -3426,7 +3047,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/69fd0bf6caf93436005a7dae",
     "providerContact": "+1-416-393-7674",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -3442,14 +3063,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69fd0bf6caf93436005a7dae",
-        "capturedAt": "2026-07-19T19:33:14.898Z",
+        "capturedAt": "2026-07-20T04:06:10.290Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:14.898Z",
+        "at": "2026-07-20T04:06:10.290Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -3504,8 +3125,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a24411b4407827f8aa3025a",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -3518,7 +3139,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a24411b4407827f8aa3025a",
     "providerContact": "lbstaff@tpl.ca",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -3534,14 +3155,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a24411b4407827f8aa3025a",
-        "capturedAt": "2026-07-19T19:33:14.898Z",
+        "capturedAt": "2026-07-20T04:06:10.290Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:14.898Z",
+        "at": "2026-07-20T04:06:10.290Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -3597,8 +3218,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a286ef52ea730c17ab59f19",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -3611,7 +3232,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a286ef52ea730c17ab59f19",
     "providerContact": "+1-416-393-7720",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -3627,14 +3248,108 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a286ef52ea730c17ab59f19",
-        "capturedAt": "2026-07-19T19:33:14.898Z",
+        "capturedAt": "2026-07-20T04:06:10.290Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:14.898Z",
+        "at": "2026-07-20T04:06:10.290Z",
+        "actor": "Library RSS generator",
+        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
+      }
+    ]
+  },
+  {
+    "id": "tpl-rss-6a29a251f56bd86e00b5d881",
+    "title": "STEM Story",
+    "organization": "Toronto Public Library",
+    "provider": "Toronto Public Library",
+    "description": "Enjoy a story, and then take part in a related STEM activity! For kids ages 4-12. Registration starts on Monday, June 29 at 9 am. Register online through our website at www.tpl.ca . Please register using the participant's name. Please register for each individ",
+    "summary": "Enjoy a story, and then take part in a related STEM activity! For kids ages 4-12. Registration starts on Monday, June 29 at 9 am. Register online through our website at www.tpl.ca . Please register using the participant's name. Please register for each individ",
+    "type": "One-time event",
+    "category": "Science & Engineering",
+    "categories": [
+      "STEM",
+      "Science & Engineering"
+    ],
+    "communityFocus": [
+      "Open to all",
+      "Newcomer-friendly"
+    ],
+    "city": "Toronto",
+    "region": "Toronto",
+    "address": "North York Central Library, 5120 Yonge Street, Toronto, ON, M2N 5N9",
+    "latitude": 43.7681656,
+    "longitude": -79.41388859999999,
+    "virtual": false,
+    "startDate": "2026-07-20T18:00:00.000Z",
+    "endDate": "2026-07-20T19:00:00.000Z",
+    "deadline": "2026-07-20T18:00:00.000Z",
+    "ageMin": 4,
+    "ageMax": 12,
+    "ages": {
+      "min": 4,
+      "max": 12
+    },
+    "grades": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "language": [
+      "en"
+    ],
+    "languages": [
+      "en"
+    ],
+    "cost": "Free to join",
+    "sourceUrl": "https://tpl.bibliocommons.com/events/6a29a251f56bd86e00b5d881",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
+    "status": "active",
+    "accessibility": [
+      "Library accessibility services available on request",
+      "Public library location"
+    ],
+    "equipment": "Materials provided unless the source says otherwise.",
+    "food": "No food listed.",
+    "capacity": "50 spots listed by source.",
+    "commitment": "Single scheduled library program or series date from source feed.",
+    "registrationUrl": "https://tpl.bibliocommons.com/events/6a29a251f56bd86e00b5d881",
+    "providerContact": "+1-416-395-5630",
+    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
+    "lastVerified": "2026-07-20",
+    "trustedSource": true,
+    "volunteerHoursEligible": false,
+    "coopEligible": false,
+    "paidPosition": false,
+    "tags": [
+      "science & engineering",
+      "summer wonder",
+      "reading programs & storytimes",
+      "preschool children (0-5)",
+      "school age children (6-12)",
+      "english"
+    ],
+    "sources": [
+      {
+        "label": "Official Toronto Public Library event page",
+        "url": "https://tpl.bibliocommons.com/events/6a29a251f56bd86e00b5d881",
+        "capturedAt": "2026-07-20T04:06:10.290Z",
+        "confidence": "high"
+      }
+    ],
+    "adminAuditTrail": [
+      {
+        "label": "Generated from official feed",
+        "at": "2026-07-20T04:06:10.290Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -3689,8 +3404,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a1f381af56bd86e00b40367",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -3703,7 +3418,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a1f381af56bd86e00b40367",
     "providerContact": "+1-416-394-5200",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -3719,14 +3434,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a1f381af56bd86e00b40367",
-        "capturedAt": "2026-07-19T19:33:14.898Z",
+        "capturedAt": "2026-07-20T04:06:10.290Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:14.898Z",
+        "at": "2026-07-20T04:06:10.290Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -3781,8 +3496,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a2335842ea730c17ab4a8c2",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -3795,7 +3510,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a2335842ea730c17ab4a8c2",
     "providerContact": "+1-416-393-7723",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -3811,14 +3526,103 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a2335842ea730c17ab4a8c2",
-        "capturedAt": "2026-07-19T19:33:14.898Z",
+        "capturedAt": "2026-07-20T04:06:10.290Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:14.898Z",
+        "at": "2026-07-20T04:06:10.290Z",
+        "actor": "Library RSS generator",
+        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
+      }
+    ]
+  },
+  {
+    "id": "tpl-rss-6a1e1a9ce13d3b4603b623be",
+    "title": "Coding with Ozobots",
+    "organization": "Toronto Public Library",
+    "provider": "Toronto Public Library",
+    "description": "For ages 9 to 12. Registration opens June 15. Join us for a fun 3-day mini camp where kids will explore the exciting world of coding through hands-on play with Ozobots! Kids will learn how to program their Ozobots using simple block-based coding that will make",
+    "summary": "For ages 9 to 12. Registration opens June 15. Join us for a fun 3-day mini camp where kids will explore the exciting world of coding through hands-on play with Ozobots! Kids will learn how to program their Ozobots using simple block-based coding that will make",
+    "type": "Camp",
+    "category": "Coding & Robotics",
+    "categories": [
+      "STEM",
+      "Coding & Robotics"
+    ],
+    "communityFocus": [
+      "Open to all",
+      "Newcomer-friendly"
+    ],
+    "city": "Toronto",
+    "region": "Toronto",
+    "address": "Don Mills, 888 Lawrence Avenue East, Toronto, ON, M3C 1P6",
+    "latitude": 43.7366527,
+    "longitude": -79.3473537,
+    "virtual": false,
+    "startDate": "2026-07-20T18:00:00.000Z",
+    "endDate": "2026-07-22T19:00:00.000Z",
+    "deadline": "2026-07-20T18:00:00.000Z",
+    "ageMin": 9,
+    "ageMax": 12,
+    "ages": {
+      "min": 9,
+      "max": 12
+    },
+    "grades": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "language": [
+      "en"
+    ],
+    "languages": [
+      "en"
+    ],
+    "cost": "Free to join",
+    "sourceUrl": "https://tpl.bibliocommons.com/events/6a1e1a9ce13d3b4603b623be",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
+    "status": "active",
+    "accessibility": [
+      "Library accessibility services available on request",
+      "Public library location"
+    ],
+    "equipment": "Materials provided unless the source says otherwise.",
+    "food": "No food listed.",
+    "capacity": "10 spots listed by source.",
+    "commitment": "Single scheduled library program or series date from source feed.",
+    "registrationUrl": "https://tpl.bibliocommons.com/events/6a1e1a9ce13d3b4603b623be",
+    "providerContact": "+1-416-395-5710",
+    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
+    "lastVerified": "2026-07-20",
+    "trustedSource": true,
+    "volunteerHoursEligible": false,
+    "coopEligible": false,
+    "paidPosition": false,
+    "tags": [
+      "coding & robotics",
+      "summer wonder",
+      "science & engineering",
+      "school age children (6-12)",
+      "english"
+    ],
+    "sources": [
+      {
+        "label": "Official Toronto Public Library event page",
+        "url": "https://tpl.bibliocommons.com/events/6a1e1a9ce13d3b4603b623be",
+        "capturedAt": "2026-07-20T04:06:10.290Z",
+        "confidence": "high"
+      }
+    ],
+    "adminAuditTrail": [
+      {
+        "label": "Generated from official feed",
+        "at": "2026-07-20T04:06:10.290Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -3874,8 +3678,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a1f17048360de907d892a45",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -3888,7 +3692,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a1f17048360de907d892a45",
     "providerContact": "+1-416-393-7700",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -3905,14 +3709,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a1f17048360de907d892a45",
-        "capturedAt": "2026-07-19T19:33:14.898Z",
+        "capturedAt": "2026-07-20T04:06:10.290Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:14.898Z",
+        "at": "2026-07-20T04:06:10.290Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -3964,8 +3768,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a0e05cf8ea300e2631747d9",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -3978,7 +3782,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a0e05cf8ea300e2631747d9",
     "providerContact": "ask@tpl.ca",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -3993,14 +3797,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a0e05cf8ea300e2631747d9",
-        "capturedAt": "2026-07-19T19:33:14.899Z",
+        "capturedAt": "2026-07-20T04:06:10.291Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:14.899Z",
+        "at": "2026-07-20T04:06:10.291Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -4053,8 +3857,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a0dd550278f7c2f008e6358",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -4067,7 +3871,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a0dd550278f7c2f008e6358",
     "providerContact": "mpstaff@tpl.ca",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -4085,14 +3889,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a0dd550278f7c2f008e6358",
-        "capturedAt": "2026-07-19T19:33:14.899Z",
+        "capturedAt": "2026-07-20T04:06:10.291Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:14.899Z",
+        "at": "2026-07-20T04:06:10.291Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -4136,8 +3940,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a071f0f177319280019ed86",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -4150,7 +3954,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a071f0f177319280019ed86",
     "providerContact": "+1-416-394-1000",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -4165,14 +3969,103 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a071f0f177319280019ed86",
-        "capturedAt": "2026-07-19T19:33:14.899Z",
+        "capturedAt": "2026-07-20T04:06:10.291Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:14.899Z",
+        "at": "2026-07-20T04:06:10.291Z",
+        "actor": "Library RSS generator",
+        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
+      }
+    ]
+  },
+  {
+    "id": "tpl-rss-6a340fbd90cc4e3a790f0bd8",
+    "title": "Coding with Python",
+    "organization": "Toronto Public Library",
+    "provider": "Toronto Public Library",
+    "description": "Python is an open source programming language that is used for creating web applications, web content, mathematics and system scripting. In this course you will learn how python code works and given time to practice. Prior coding knowledge is not necessary for",
+    "summary": "Python is an open source programming language that is used for creating web applications, web content, mathematics and system scripting. In this course you will learn how python code works and given time to practice. Prior coding knowledge is not necessary for",
+    "type": "Multi-week program",
+    "category": "Coding & Robotics",
+    "categories": [
+      "STEM",
+      "Coding & Robotics"
+    ],
+    "communityFocus": [
+      "Open to all",
+      "Newcomer-friendly"
+    ],
+    "city": "Toronto",
+    "region": "Toronto",
+    "address": "Toronto Reference Library, 789 Yonge Street, Toronto, ON, M4W 2G8",
+    "latitude": 43.6718136,
+    "longitude": -79.38674379999999,
+    "virtual": false,
+    "startDate": "2026-07-20T18:00:00.000Z",
+    "endDate": "2026-07-20T19:30:00.000Z",
+    "deadline": "2026-07-20T18:00:00.000Z",
+    "ageMin": 13,
+    "ageMax": 17,
+    "ages": {
+      "min": 13,
+      "max": 17
+    },
+    "grades": [
+      "8",
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "language": [
+      "en"
+    ],
+    "languages": [
+      "en"
+    ],
+    "cost": "Free to join",
+    "sourceUrl": "https://tpl.bibliocommons.com/events/6a340fbd90cc4e3a790f0bd8",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
+    "status": "active",
+    "accessibility": [
+      "Library accessibility services available on request",
+      "Public library location"
+    ],
+    "equipment": "Materials provided unless the source says otherwise.",
+    "food": "No food listed.",
+    "capacity": "10 spots listed by source.",
+    "commitment": "Single scheduled library program or series date from source feed.",
+    "registrationUrl": "https://tpl.bibliocommons.com/events/6a340fbd90cc4e3a790f0bd8",
+    "providerContact": "trlinnovationhub@tpl.ca",
+    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
+    "lastVerified": "2026-07-20",
+    "trustedSource": true,
+    "volunteerHoursEligible": false,
+    "coopEligible": false,
+    "paidPosition": false,
+    "tags": [
+      "coding & robotics",
+      "adults (18+)",
+      "teens (13-17)",
+      "english"
+    ],
+    "sources": [
+      {
+        "label": "Official Toronto Public Library event page",
+        "url": "https://tpl.bibliocommons.com/events/6a340fbd90cc4e3a790f0bd8",
+        "capturedAt": "2026-07-20T04:06:10.291Z",
+        "confidence": "high"
+      }
+    ],
+    "adminAuditTrail": [
+      {
+        "label": "Generated from official feed",
+        "at": "2026-07-20T04:06:10.291Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -4217,8 +4110,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a33101fcaf934360063da46",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -4231,7 +4124,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a33101fcaf934360063da46",
     "providerContact": "ebstaff@tpl.ca",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -4247,14 +4140,106 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a33101fcaf934360063da46",
-        "capturedAt": "2026-07-19T19:33:14.899Z",
+        "capturedAt": "2026-07-20T04:06:10.291Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:14.899Z",
+        "at": "2026-07-20T04:06:10.291Z",
+        "actor": "Library RSS generator",
+        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
+      }
+    ]
+  },
+  {
+    "id": "tpl-rss-6a399a342ea730c17ab8bef3",
+    "title": "Magic in the Moonlit Forest Camp",
+    "organization": "Toronto Public Library",
+    "provider": "Toronto Public Library",
+    "description": "Step into a world of magic, mystery, and creativity! In this fun and imaginative workshop, kids will paint their very own enchanted forest using bright acrylic paints. They will explore dreamy trees, glowing paths, whimsical animals, and hidden fairy homes whi",
+    "summary": "Step into a world of magic, mystery, and creativity! In this fun and imaginative workshop, kids will paint their very own enchanted forest using bright acrylic paints. They will explore dreamy trees, glowing paths, whimsical animals, and hidden fairy homes whi",
+    "type": "Camp",
+    "category": "Makerspace & Fabrication",
+    "categories": [
+      "STEM",
+      "Makerspace & Fabrication"
+    ],
+    "communityFocus": [
+      "Open to all",
+      "Newcomer-friendly"
+    ],
+    "city": "Toronto",
+    "region": "Toronto",
+    "address": "St. Clair/Silverthorn, 1748 St. Clair Avenue West, Toronto, ON, M6N 1J3",
+    "latitude": 43.6742898,
+    "longitude": -79.4605991,
+    "virtual": false,
+    "startDate": "2026-07-20T18:00:00.000Z",
+    "endDate": "2026-07-20T20:00:00.000Z",
+    "deadline": "2026-07-20T18:00:00.000Z",
+    "ageMin": 6,
+    "ageMax": 12,
+    "ages": {
+      "min": 6,
+      "max": 12
+    },
+    "grades": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "language": [
+      "en"
+    ],
+    "languages": [
+      "en"
+    ],
+    "cost": "Free to join",
+    "sourceUrl": "https://tpl.bibliocommons.com/events/6a399a342ea730c17ab8bef3",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
+    "status": "active",
+    "accessibility": [
+      "Library accessibility services available on request",
+      "Public library location"
+    ],
+    "equipment": "Materials provided unless the source says otherwise.",
+    "food": "No food listed.",
+    "capacity": "12 spots listed by source.",
+    "commitment": "Single scheduled library program or series date from source feed.",
+    "registrationUrl": "https://tpl.bibliocommons.com/events/6a399a342ea730c17ab8bef3",
+    "providerContact": "+1-416-393-7709",
+    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
+    "lastVerified": "2026-07-20",
+    "trustedSource": true,
+    "volunteerHoursEligible": false,
+    "coopEligible": false,
+    "paidPosition": false,
+    "tags": [
+      "makerspace & fabrication",
+      "summer wonder",
+      "crafts & hobbies",
+      "school age children (6-12)",
+      "english"
+    ],
+    "sources": [
+      {
+        "label": "Official Toronto Public Library event page",
+        "url": "https://tpl.bibliocommons.com/events/6a399a342ea730c17ab8bef3",
+        "capturedAt": "2026-07-20T04:06:10.291Z",
+        "confidence": "high"
+      }
+    ],
+    "adminAuditTrail": [
+      {
+        "label": "Generated from official feed",
+        "at": "2026-07-20T04:06:10.291Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -4307,8 +4292,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a3291942ea730c17ab78a5f",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -4321,7 +4306,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a3291942ea730c17ab78a5f",
     "providerContact": "+1-416-396-8881",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -4338,14 +4323,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a3291942ea730c17ab78a5f",
-        "capturedAt": "2026-07-19T19:33:14.900Z",
+        "capturedAt": "2026-07-20T04:06:10.291Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:14.900Z",
+        "at": "2026-07-20T04:06:10.291Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -4400,8 +4385,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a2d6ff38d1b82ca9f79b2bc",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -4414,7 +4399,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a2d6ff38d1b82ca9f79b2bc",
     "providerContact": "ask@tpl.ca",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -4430,14 +4415,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a2d6ff38d1b82ca9f79b2bc",
-        "capturedAt": "2026-07-19T19:33:14.900Z",
+        "capturedAt": "2026-07-20T04:06:10.291Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:14.900Z",
+        "at": "2026-07-20T04:06:10.291Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -4493,8 +4478,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a302e47caf9343600634164",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -4507,7 +4492,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a302e47caf9343600634164",
     "providerContact": "+1-416-393-7683",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -4522,14 +4507,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a302e47caf9343600634164",
-        "capturedAt": "2026-07-19T19:33:14.900Z",
+        "capturedAt": "2026-07-20T04:06:10.961Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:14.900Z",
+        "at": "2026-07-20T04:06:10.961Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -4584,8 +4569,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a3edc9af56bd86e00b951c7",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -4598,7 +4583,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a3edc9af56bd86e00b951c7",
     "providerContact": "ask@tpl.ca",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -4614,14 +4599,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a3edc9af56bd86e00b951c7",
-        "capturedAt": "2026-07-19T19:33:14.900Z",
+        "capturedAt": "2026-07-20T04:06:10.961Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:14.900Z",
+        "at": "2026-07-20T04:06:10.961Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -4676,8 +4661,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a1d89a0703c3363002b6e96",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -4690,7 +4675,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a1d89a0703c3363002b6e96",
     "providerContact": "blstaff@tpl.ca",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -4708,14 +4693,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a1d89a0703c3363002b6e96",
-        "capturedAt": "2026-07-19T19:33:14.900Z",
+        "capturedAt": "2026-07-20T04:06:10.961Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:14.900Z",
+        "at": "2026-07-20T04:06:10.961Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -4770,8 +4755,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a32add97550c8bf9f5dfabb",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -4784,7 +4769,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a32add97550c8bf9f5dfabb",
     "providerContact": "ask@tpl.ca",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -4801,14 +4786,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a32add97550c8bf9f5dfabb",
-        "capturedAt": "2026-07-19T19:33:15.696Z",
+        "capturedAt": "2026-07-20T04:06:10.961Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:15.696Z",
+        "at": "2026-07-20T04:06:10.961Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -4863,8 +4848,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a0217e8177319280018f874",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -4877,7 +4862,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a0217e8177319280018f874",
     "providerContact": "+1-416-396-8916",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -4892,14 +4877,108 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a0217e8177319280018f874",
-        "capturedAt": "2026-07-19T19:33:15.696Z",
+        "capturedAt": "2026-07-20T04:06:10.961Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:15.696Z",
+        "at": "2026-07-20T04:06:10.961Z",
+        "actor": "Library RSS generator",
+        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
+      }
+    ]
+  },
+  {
+    "id": "tpl-rss-6a3a0b3a96ee38a44a929099",
+    "title": "TD Summer Reading Club - Origami Fish",
+    "organization": "Toronto Public Library",
+    "provider": "Toronto Public Library",
+    "description": "Learn a new skill this SRC with origami! We'll be folding a fish great enough to navigate the waterways. Ages 6 - 13 The program will take place in the Auditorium located in the basement. Elevator on site. If you have any questions, please call Bendale Branch ",
+    "summary": "Learn a new skill this SRC with origami! We'll be folding a fish great enough to navigate the waterways. Ages 6 - 13 The program will take place in the Auditorium located in the basement. Elevator on site. If you have any questions, please call Bendale Branch ",
+    "type": "One-time event",
+    "category": "Makerspace & Fabrication",
+    "categories": [
+      "STEM",
+      "Makerspace & Fabrication"
+    ],
+    "communityFocus": [
+      "Open to all",
+      "Newcomer-friendly"
+    ],
+    "city": "Toronto",
+    "region": "Toronto",
+    "address": "Bendale, 1515 Danforth Road, Toronto, ON, M1J 1H5",
+    "latitude": 43.7510939,
+    "longitude": -79.24404170000001,
+    "virtual": false,
+    "startDate": "2026-07-20T18:00:00.000Z",
+    "endDate": "2026-07-20T19:00:00.000Z",
+    "deadline": "2026-07-20T18:00:00.000Z",
+    "ageMin": 6,
+    "ageMax": 13,
+    "ages": {
+      "min": 6,
+      "max": 13
+    },
+    "grades": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "language": [
+      "en"
+    ],
+    "languages": [
+      "en"
+    ],
+    "cost": "Free to join",
+    "sourceUrl": "https://tpl.bibliocommons.com/events/6a3a0b3a96ee38a44a929099",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
+    "status": "active",
+    "accessibility": [
+      "Library accessibility services available on request",
+      "Public library location"
+    ],
+    "equipment": "Materials provided unless the source says otherwise.",
+    "food": "No food listed.",
+    "capacity": "20 spots listed by source.",
+    "commitment": "Single scheduled library program or series date from source feed.",
+    "registrationUrl": "https://tpl.bibliocommons.com/events/6a3a0b3a96ee38a44a929099",
+    "providerContact": "+1-416-396-8910",
+    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
+    "lastVerified": "2026-07-20",
+    "trustedSource": true,
+    "volunteerHoursEligible": false,
+    "coopEligible": false,
+    "paidPosition": false,
+    "tags": [
+      "makerspace & fabrication",
+      "crafts & hobbies",
+      "culture, arts & entertainment",
+      "school age children (6-12)",
+      "teens (13-17)",
+      "english"
+    ],
+    "sources": [
+      {
+        "label": "Official Toronto Public Library event page",
+        "url": "https://tpl.bibliocommons.com/events/6a3a0b3a96ee38a44a929099",
+        "capturedAt": "2026-07-20T04:06:10.961Z",
+        "confidence": "high"
+      }
+    ],
+    "adminAuditTrail": [
+      {
+        "label": "Generated from official feed",
+        "at": "2026-07-20T04:06:10.961Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -4954,8 +5033,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a3c6019c52cdc3600ecab93",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -4968,7 +5047,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a3c6019c52cdc3600ecab93",
     "providerContact": "+1-416-395-5980",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -4986,14 +5065,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a3c6019c52cdc3600ecab93",
-        "capturedAt": "2026-07-19T19:33:15.696Z",
+        "capturedAt": "2026-07-20T04:06:10.962Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:15.696Z",
+        "at": "2026-07-20T04:06:10.962Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -5038,8 +5117,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a35967290cc4e3a790f592b",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -5052,7 +5131,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a35967290cc4e3a790f592b",
     "providerContact": "fhstaff@tpl.ca",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -5069,14 +5148,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a35967290cc4e3a790f592b",
-        "capturedAt": "2026-07-19T19:33:15.697Z",
+        "capturedAt": "2026-07-20T04:06:10.962Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:15.697Z",
+        "at": "2026-07-20T04:06:10.962Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -5129,8 +5208,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a3eab22c52cdc3600ed11a4",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -5143,7 +5222,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a3eab22c52cdc3600ed11a4",
     "providerContact": "ask@tpl.ca",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -5158,14 +5237,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a3eab22c52cdc3600ed11a4",
-        "capturedAt": "2026-07-19T19:33:15.697Z",
+        "capturedAt": "2026-07-20T04:06:10.962Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:15.697Z",
+        "at": "2026-07-20T04:06:10.962Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -5220,8 +5299,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/6a146a4e8360de907d8846c4",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -5234,7 +5313,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/6a146a4e8360de907d8846c4",
     "providerContact": "mplchats@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -5251,14 +5330,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a146a4e8360de907d8846c4",
-        "capturedAt": "2026-07-19T19:33:21.987Z",
+        "capturedAt": "2026-07-20T04:06:17.851Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:21.987Z",
+        "at": "2026-07-20T04:06:17.851Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -5311,8 +5390,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a14850590cc4e3a7908e1e1",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -5325,7 +5404,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a14850590cc4e3a7908e1e1",
     "providerContact": "+1-416-395-5980",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -5340,14 +5419,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a14850590cc4e3a7908e1e1",
-        "capturedAt": "2026-07-19T19:33:15.697Z",
+        "capturedAt": "2026-07-20T04:06:10.962Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:15.697Z",
+        "at": "2026-07-20T04:06:10.962Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -5400,8 +5479,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a469f31296ea565de302e03",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -5414,7 +5493,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a469f31296ea565de302e03",
     "providerContact": "ask@tpl.ca",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -5429,14 +5508,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a469f31296ea565de302e03",
-        "capturedAt": "2026-07-19T19:33:15.697Z",
+        "capturedAt": "2026-07-20T04:06:10.962Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:15.697Z",
+        "at": "2026-07-20T04:06:10.962Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -5489,8 +5568,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a357d494407827f8aa60593",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -5503,7 +5582,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a357d494407827f8aa60593",
     "providerContact": "ask@tpl.ca",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -5518,14 +5597,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a357d494407827f8aa60593",
-        "capturedAt": "2026-07-19T19:33:15.697Z",
+        "capturedAt": "2026-07-20T04:06:10.962Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:15.697Z",
+        "at": "2026-07-20T04:06:10.962Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -5578,8 +5657,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a359415caf93436006443d5",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -5592,7 +5671,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a359415caf93436006443d5",
     "providerContact": "ask@tpl.ca",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -5607,14 +5686,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a359415caf93436006443d5",
-        "capturedAt": "2026-07-19T19:33:15.697Z",
+        "capturedAt": "2026-07-20T04:06:10.962Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:15.697Z",
+        "at": "2026-07-20T04:06:10.962Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -5667,8 +5746,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a3c0e6e296ea565de2e781a",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -5681,7 +5760,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a3c0e6e296ea565de2e781a",
     "providerContact": "ask@tpl.ca",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -5696,14 +5775,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a3c0e6e296ea565de2e781a",
-        "capturedAt": "2026-07-19T19:33:15.697Z",
+        "capturedAt": "2026-07-20T04:06:10.962Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:15.697Z",
+        "at": "2026-07-20T04:06:10.962Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -5755,8 +5834,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a16079d8e677a28001e9f62",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -5769,7 +5848,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a16079d8e677a28001e9f62",
     "providerContact": "ask@tpl.ca",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": true,
     "coopEligible": false,
@@ -5784,14 +5863,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a16079d8e677a28001e9f62",
-        "capturedAt": "2026-07-19T19:33:15.697Z",
+        "capturedAt": "2026-07-20T04:06:11.666Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:15.697Z",
+        "at": "2026-07-20T04:06:11.666Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -5844,8 +5923,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a4bed3b1a304e28005dda60",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -5858,7 +5937,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a4bed3b1a304e28005dda60",
     "providerContact": "ask@tpl.ca",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -5873,14 +5952,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a4bed3b1a304e28005dda60",
-        "capturedAt": "2026-07-19T19:33:15.697Z",
+        "capturedAt": "2026-07-20T04:06:11.666Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:15.697Z",
+        "at": "2026-07-20T04:06:11.666Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -5933,8 +6012,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a205ad92ea730c17ab4033e",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -5947,7 +6026,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a205ad92ea730c17ab4033e",
     "providerContact": "+1-416-396-8890",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -5962,14 +6041,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a205ad92ea730c17ab4033e",
-        "capturedAt": "2026-07-19T19:33:15.697Z",
+        "capturedAt": "2026-07-20T04:06:11.666Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:15.697Z",
+        "at": "2026-07-20T04:06:11.666Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -6013,8 +6092,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/697f947dcbf6405d3565fae2",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -6027,7 +6106,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/697f947dcbf6405d3565fae2",
     "providerContact": "+1-416-393-7650",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -6042,14 +6121,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/697f947dcbf6405d3565fae2",
-        "capturedAt": "2026-07-19T19:33:16.457Z",
+        "capturedAt": "2026-07-20T04:06:11.666Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:16.457Z",
+        "at": "2026-07-20T04:06:11.666Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -6094,8 +6173,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/69c30ab6b48451fc3c0b092d",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -6108,7 +6187,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/69c30ab6b48451fc3c0b092d",
     "providerContact": "+1-416-393-7663",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -6124,14 +6203,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69c30ab6b48451fc3c0b092d",
-        "capturedAt": "2026-07-19T19:33:16.457Z",
+        "capturedAt": "2026-07-20T04:06:11.666Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:16.457Z",
+        "at": "2026-07-20T04:06:11.666Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -6184,8 +6263,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a272d262ea730c17ab55fe0",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -6198,7 +6277,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a272d262ea730c17ab55fe0",
     "providerContact": "ask@tpl.ca",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -6213,14 +6292,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a272d262ea730c17ab55fe0",
-        "capturedAt": "2026-07-19T19:33:16.457Z",
+        "capturedAt": "2026-07-20T04:06:11.666Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:16.457Z",
+        "at": "2026-07-20T04:06:11.666Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -6273,8 +6352,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a1f24e3caf9343600602292",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -6287,7 +6366,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a1f24e3caf9343600602292",
     "providerContact": "+1-416-396-3975",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -6302,14 +6381,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a1f24e3caf9343600602292",
-        "capturedAt": "2026-07-19T19:33:16.457Z",
+        "capturedAt": "2026-07-20T04:06:11.666Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:16.457Z",
+        "at": "2026-07-20T04:06:11.666Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -6365,8 +6444,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a29c820dcc1022f0039274b",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -6379,7 +6458,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a29c820dcc1022f0039274b",
     "providerContact": "+1-416-395-5430",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -6396,14 +6475,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a29c820dcc1022f0039274b",
-        "capturedAt": "2026-07-19T19:33:16.457Z",
+        "capturedAt": "2026-07-20T04:06:11.666Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:16.457Z",
+        "at": "2026-07-20T04:06:11.666Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -6456,8 +6535,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a2adee18d1b82ca9f792e5f",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -6470,7 +6549,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a2adee18d1b82ca9f792e5f",
     "providerContact": "ask@tpl.ca",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -6485,14 +6564,105 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a2adee18d1b82ca9f792e5f",
-        "capturedAt": "2026-07-19T19:33:16.457Z",
+        "capturedAt": "2026-07-20T04:06:11.666Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:16.457Z",
+        "at": "2026-07-20T04:06:11.666Z",
+        "actor": "Library RSS generator",
+        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
+      }
+    ]
+  },
+  {
+    "id": "tpl-rss-6a1e14e040f528ac04dfc2f4",
+    "title": "Dash Robots",
+    "organization": "Toronto Public Library",
+    "provider": "Toronto Public Library",
+    "description": "Control Dash robots through apps, while participating in different activities to learn how to control its' movements. Information Collection Notice: The personal information on this form is collected by the Toronto Public Library under the Public Libraries Act",
+    "summary": "Control Dash robots through apps, while participating in different activities to learn how to control its' movements. Information Collection Notice: The personal information on this form is collected by the Toronto Public Library under the Public Libraries Act",
+    "type": "One-time event",
+    "category": "Coding & Robotics",
+    "categories": [
+      "STEM",
+      "Coding & Robotics"
+    ],
+    "communityFocus": [
+      "Open to all",
+      "Newcomer-friendly"
+    ],
+    "city": "Toronto",
+    "region": "Toronto",
+    "address": "Dufferin/St.Clair, 1625 Dufferin Street, Toronto, ON, M6H 3L9",
+    "latitude": 43.6769841,
+    "longitude": -79.4423807,
+    "virtual": false,
+    "startDate": "2026-07-20T20:00:00.000Z",
+    "endDate": "2026-07-20T21:00:00.000Z",
+    "deadline": "2026-07-20T20:00:00.000Z",
+    "ageMin": 6,
+    "ageMax": 12,
+    "ages": {
+      "min": 6,
+      "max": 12
+    },
+    "grades": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "language": [
+      "en"
+    ],
+    "languages": [
+      "en"
+    ],
+    "cost": "Free to join",
+    "sourceUrl": "https://tpl.bibliocommons.com/events/6a1e14e040f528ac04dfc2f4",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
+    "status": "active",
+    "accessibility": [
+      "Library accessibility services available on request",
+      "Public library location"
+    ],
+    "equipment": "Materials provided unless the source says otherwise.",
+    "food": "No food listed.",
+    "capacity": "8 spots listed by source.",
+    "commitment": "Single scheduled library program or series date from source feed.",
+    "registrationUrl": "https://tpl.bibliocommons.com/events/6a1e14e040f528ac04dfc2f4",
+    "providerContact": "ask@tpl.ca",
+    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
+    "lastVerified": "2026-07-20",
+    "trustedSource": true,
+    "volunteerHoursEligible": false,
+    "coopEligible": false,
+    "paidPosition": false,
+    "tags": [
+      "coding & robotics",
+      "summer wonder",
+      "school age children (6-12)",
+      "english"
+    ],
+    "sources": [
+      {
+        "label": "Official Toronto Public Library event page",
+        "url": "https://tpl.bibliocommons.com/events/6a1e14e040f528ac04dfc2f4",
+        "capturedAt": "2026-07-20T04:06:11.666Z",
+        "confidence": "high"
+      }
+    ],
+    "adminAuditTrail": [
+      {
+        "label": "Generated from official feed",
+        "at": "2026-07-20T04:06:11.666Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -6545,8 +6715,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a32fc5af56bd86e00b76810",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -6559,7 +6729,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a32fc5af56bd86e00b76810",
     "providerContact": "ask@tpl.ca",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -6574,14 +6744,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a32fc5af56bd86e00b76810",
-        "capturedAt": "2026-07-19T19:33:16.458Z",
+        "capturedAt": "2026-07-20T04:06:11.666Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:16.458Z",
+        "at": "2026-07-20T04:06:11.666Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -6634,8 +6804,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a4447ccdf2acadc8b406de9",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -6648,7 +6818,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a4447ccdf2acadc8b406de9",
     "providerContact": "+1-416-394-5270",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -6663,14 +6833,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a4447ccdf2acadc8b406de9",
-        "capturedAt": "2026-07-19T19:33:16.458Z",
+        "capturedAt": "2026-07-20T04:06:11.666Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:16.458Z",
+        "at": "2026-07-20T04:06:11.666Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -6723,8 +6893,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a3b15570e851028002cc280",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -6737,7 +6907,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a3b15570e851028002cc280",
     "providerContact": "+1-416-396-8960",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -6752,14 +6922,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a3b15570e851028002cc280",
-        "capturedAt": "2026-07-19T19:33:16.458Z",
+        "capturedAt": "2026-07-20T04:06:11.667Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:16.458Z",
+        "at": "2026-07-20T04:06:11.667Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -6815,8 +6985,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a1b2439caf93436005f6a08",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -6829,7 +6999,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a1b2439caf93436005f6a08",
     "providerContact": "+1-416-395-5950",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -6845,14 +7015,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a1b2439caf93436005f6a08",
-        "capturedAt": "2026-07-19T19:33:16.458Z",
+        "capturedAt": "2026-07-20T04:06:11.667Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:16.458Z",
+        "at": "2026-07-20T04:06:11.667Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -6896,8 +7066,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a4e6e447f5b862800a6f72a",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -6910,7 +7080,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a4e6e447f5b862800a6f72a",
     "providerContact": "+1-416-395-5660",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -6926,14 +7096,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a4e6e447f5b862800a6f72a",
-        "capturedAt": "2026-07-19T19:33:16.458Z",
+        "capturedAt": "2026-07-20T04:06:11.667Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:16.458Z",
+        "at": "2026-07-20T04:06:11.667Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -6977,8 +7147,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/69960daf4a9fd98b7f7ed8f6",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -6991,7 +7161,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/69960daf4a9fd98b7f7ed8f6",
     "providerContact": "+1-416-393-7671",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -7007,14 +7177,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69960daf4a9fd98b7f7ed8f6",
-        "capturedAt": "2026-07-19T19:33:16.459Z",
+        "capturedAt": "2026-07-20T04:06:11.667Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:16.459Z",
+        "at": "2026-07-20T04:06:11.667Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -7059,8 +7229,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/69a0928f4a9fd98b7f80bfea",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -7073,7 +7243,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/69a0928f4a9fd98b7f80bfea",
     "providerContact": "ask@tpl.ca",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -7088,14 +7258,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69a0928f4a9fd98b7f80bfea",
-        "capturedAt": "2026-07-19T19:33:16.459Z",
+        "capturedAt": "2026-07-20T04:06:11.667Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:16.459Z",
+        "at": "2026-07-20T04:06:11.667Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -7139,8 +7309,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a11a80dc7d3cd58005b1d62",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -7153,7 +7323,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a11a80dc7d3cd58005b1d62",
     "providerContact": "+1-416-396-8890",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": true,
     "coopEligible": false,
@@ -7169,14 +7339,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a11a80dc7d3cd58005b1d62",
-        "capturedAt": "2026-07-19T19:33:16.459Z",
+        "capturedAt": "2026-07-20T04:06:12.907Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:16.459Z",
+        "at": "2026-07-20T04:06:12.907Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -7230,8 +7400,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a31536475b1e22800814e62",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -7244,7 +7414,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a31536475b1e22800814e62",
     "providerContact": "+1-416-394-5350",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -7262,14 +7432,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a31536475b1e22800814e62",
-        "capturedAt": "2026-07-19T19:33:17.426Z",
+        "capturedAt": "2026-07-20T04:06:12.908Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:17.426Z",
+        "at": "2026-07-20T04:06:12.908Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -7314,8 +7484,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a353f1edcc1022f003a1e54",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -7328,7 +7498,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a353f1edcc1022f003a1e54",
     "providerContact": "+1-416-394-1040",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -7343,14 +7513,270 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a353f1edcc1022f003a1e54",
-        "capturedAt": "2026-07-19T19:33:17.426Z",
+        "capturedAt": "2026-07-20T04:06:12.908Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:17.426Z",
+        "at": "2026-07-20T04:06:12.908Z",
+        "actor": "Library RSS generator",
+        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
+      }
+    ]
+  },
+  {
+    "id": "tpl-rss-6a208874caf9343600606e2e",
+    "title": "Bibimbap Rice Bowl with Chef Sang",
+    "organization": "Toronto Public Library",
+    "provider": "Toronto Public Library",
+    "description": "Award-winning writer, chef, and TV personality, Sang Kim, teaches participants how to create a classic Korean rice bowl. Participants will learn each component ingredient, how to properly use a knife to chop and slice, and create their own sauce. (*contains eg",
+    "summary": "Award-winning writer, chef, and TV personality, Sang Kim, teaches participants how to create a classic Korean rice bowl. Participants will learn each component ingredient, how to properly use a knife to chop and slice, and create their own sauce. (*contains eg",
+    "type": "One-time event",
+    "category": "Makerspace & Fabrication",
+    "categories": [
+      "STEM",
+      "Makerspace & Fabrication"
+    ],
+    "communityFocus": [
+      "Open to all",
+      "Newcomer-friendly"
+    ],
+    "city": "Toronto",
+    "region": "Toronto",
+    "address": "Woodside Square, 1571 Sandhurst Circle, Toronto, ON, M1V 1V2",
+    "latitude": 43.808824,
+    "longitude": -79.2695761,
+    "virtual": false,
+    "startDate": "2026-07-20T22:00:00.000Z",
+    "endDate": "2026-07-20T23:00:00.000Z",
+    "deadline": "2026-07-20T22:00:00.000Z",
+    "ageMin": 18,
+    "ages": {
+      "min": 18
+    },
+    "grades": [],
+    "language": [
+      "en"
+    ],
+    "languages": [
+      "en"
+    ],
+    "cost": "Free to join",
+    "sourceUrl": "https://tpl.bibliocommons.com/events/6a208874caf9343600606e2e",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
+    "status": "active",
+    "accessibility": [
+      "Library accessibility services available on request",
+      "Public library location"
+    ],
+    "equipment": "Materials provided unless the source says otherwise.",
+    "food": "No food listed.",
+    "capacity": "15 spots listed by source.",
+    "commitment": "Single scheduled library program or series date from source feed.",
+    "registrationUrl": "https://tpl.bibliocommons.com/events/6a208874caf9343600606e2e",
+    "providerContact": "+1-416-396-8979",
+    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
+    "lastVerified": "2026-07-20",
+    "trustedSource": true,
+    "volunteerHoursEligible": false,
+    "coopEligible": false,
+    "paidPosition": false,
+    "tags": [
+      "makerspace & fabrication",
+      "asian heritage",
+      "crafts & hobbies",
+      "adults (18+)",
+      "younger adults (18-24)",
+      "english"
+    ],
+    "sources": [
+      {
+        "label": "Official Toronto Public Library event page",
+        "url": "https://tpl.bibliocommons.com/events/6a208874caf9343600606e2e",
+        "capturedAt": "2026-07-20T04:06:12.908Z",
+        "confidence": "high"
+      }
+    ],
+    "adminAuditTrail": [
+      {
+        "label": "Generated from official feed",
+        "at": "2026-07-20T04:06:12.908Z",
+        "actor": "Library RSS generator",
+        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
+      }
+    ]
+  },
+  {
+    "id": "tpl-rss-6a4309c10e851028002e1a0e",
+    "title": "English Conversation Circle (July)",
+    "organization": "Toronto Public Library",
+    "provider": "Toronto Public Library",
+    "description": "Practice your English conversation skills in a relaxing environment while making new friends and learning what the library has to offer! Intermediate learners welcome. Please note that this is not a formal English class.",
+    "summary": "Practice your English conversation skills in a relaxing environment while making new friends and learning what the library has to offer! Intermediate learners welcome. Please note that this is not a formal English class.",
+    "type": "One-time event",
+    "category": "Family Learning",
+    "categories": [
+      "Family Learning"
+    ],
+    "communityFocus": [
+      "Open to all",
+      "Newcomer-friendly"
+    ],
+    "city": "Toronto",
+    "region": "Toronto",
+    "address": "Agincourt, 155 Bonis Ave, Toronto, ON, M1T 3W6",
+    "latitude": 43.785235,
+    "longitude": -79.2934973,
+    "virtual": false,
+    "startDate": "2026-07-20T22:00:00.000Z",
+    "endDate": "2026-07-20T23:30:00.000Z",
+    "deadline": "2026-07-20T22:00:00.000Z",
+    "ageMin": 18,
+    "ages": {
+      "min": 18
+    },
+    "grades": [],
+    "language": [
+      "en"
+    ],
+    "languages": [
+      "en"
+    ],
+    "cost": "Free to join",
+    "sourceUrl": "https://tpl.bibliocommons.com/events/6a4309c10e851028002e1a0e",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
+    "status": "active",
+    "accessibility": [
+      "Library accessibility services available on request",
+      "Public library location"
+    ],
+    "equipment": "Materials provided unless the source says otherwise.",
+    "food": "No food listed.",
+    "capacity": "27 spots listed by source.",
+    "commitment": "Single scheduled library program or series date from source feed.",
+    "registrationUrl": "https://tpl.bibliocommons.com/events/6a4309c10e851028002e1a0e",
+    "providerContact": "ask@tpl.ca",
+    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
+    "lastVerified": "2026-07-20",
+    "trustedSource": true,
+    "volunteerHoursEligible": false,
+    "coopEligible": false,
+    "paidPosition": false,
+    "tags": [
+      "family learning",
+      "conversation circles",
+      "adults (18+)",
+      "older adults",
+      "english"
+    ],
+    "sources": [
+      {
+        "label": "Official Toronto Public Library event page",
+        "url": "https://tpl.bibliocommons.com/events/6a4309c10e851028002e1a0e",
+        "capturedAt": "2026-07-20T04:06:12.908Z",
+        "confidence": "high"
+      }
+    ],
+    "adminAuditTrail": [
+      {
+        "label": "Generated from official feed",
+        "at": "2026-07-20T04:06:12.908Z",
+        "actor": "Library RSS generator",
+        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
+      }
+    ]
+  },
+  {
+    "id": "tpl-rss-6a3301aa43b41b3d006f3309",
+    "title": "Creating Interactive Fiction with Twine",
+    "organization": "Toronto Public Library",
+    "provider": "Toronto Public Library",
+    "description": "Choose your own adventure! In this hands-on workshop, we'll browse examples of interactive fiction based on video games and touch on the basics of storytelling. Then, we'll create our own game using Twine, an open-source hypertext storytelling tool. Keyboardin",
+    "summary": "Choose your own adventure! In this hands-on workshop, we'll browse examples of interactive fiction based on video games and touch on the basics of storytelling. Then, we'll create our own game using Twine, an open-source hypertext storytelling tool. Keyboardin",
+    "type": "One-time event",
+    "category": "Makerspace & Fabrication",
+    "categories": [
+      "STEM",
+      "Makerspace & Fabrication"
+    ],
+    "communityFocus": [
+      "Open to all",
+      "Newcomer-friendly"
+    ],
+    "city": "Toronto",
+    "region": "Toronto",
+    "address": "North York Central Library, 5120 Yonge Street, Toronto, ON, M2N 5N9",
+    "latitude": 43.7681656,
+    "longitude": -79.41388859999999,
+    "virtual": false,
+    "startDate": "2026-07-20T22:30:00.000Z",
+    "endDate": "2026-07-21T00:00:00.000Z",
+    "deadline": "2026-07-20T22:30:00.000Z",
+    "ageMin": 13,
+    "ageMax": 17,
+    "ages": {
+      "min": 13,
+      "max": 17
+    },
+    "grades": [
+      "8",
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "language": [
+      "en"
+    ],
+    "languages": [
+      "en"
+    ],
+    "cost": "Free to join",
+    "sourceUrl": "https://tpl.bibliocommons.com/events/6a3301aa43b41b3d006f3309",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
+    "status": "active",
+    "accessibility": [
+      "Library accessibility services available on request",
+      "Public library location"
+    ],
+    "equipment": "Materials provided unless the source says otherwise.",
+    "food": "No food listed.",
+    "capacity": "8 spots listed by source.",
+    "commitment": "Single scheduled library program or series date from source feed.",
+    "registrationUrl": "https://tpl.bibliocommons.com/events/6a3301aa43b41b3d006f3309",
+    "providerContact": "+1-416-395-5646",
+    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
+    "lastVerified": "2026-07-20",
+    "trustedSource": true,
+    "volunteerHoursEligible": false,
+    "coopEligible": false,
+    "paidPosition": false,
+    "tags": [
+      "makerspace & fabrication",
+      "audio & visual",
+      "crafts & hobbies",
+      "adults (18+)",
+      "teens (13-17)",
+      "younger adults (18-24)",
+      "english"
+    ],
+    "sources": [
+      {
+        "label": "Official Toronto Public Library event page",
+        "url": "https://tpl.bibliocommons.com/events/6a3301aa43b41b3d006f3309",
+        "capturedAt": "2026-07-20T04:06:12.908Z",
+        "confidence": "high"
+      }
+    ],
+    "adminAuditTrail": [
+      {
+        "label": "Generated from official feed",
+        "at": "2026-07-20T04:06:12.908Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -7405,8 +7831,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a3546d5414ef43d009768f8",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -7419,7 +7845,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a3546d5414ef43d009768f8",
     "providerContact": "+1-416-395-5440",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -7435,14 +7861,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a3546d5414ef43d009768f8",
-        "capturedAt": "2026-07-19T19:33:17.426Z",
+        "capturedAt": "2026-07-20T04:06:12.908Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:17.426Z",
+        "at": "2026-07-20T04:06:12.908Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -7487,8 +7913,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a36d82b8d1b82ca9f7b5411",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -7501,7 +7927,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a36d82b8d1b82ca9f7b5411",
     "providerContact": "+1-416-394-5310",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -7517,14 +7943,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a36d82b8d1b82ca9f7b5411",
-        "capturedAt": "2026-07-19T19:33:17.426Z",
+        "capturedAt": "2026-07-20T04:06:12.908Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:17.426Z",
+        "at": "2026-07-20T04:06:12.908Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -7579,8 +8005,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a298f037f943b520051d230",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -7593,7 +8019,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a298f037f943b520051d230",
     "providerContact": "+1-416-396-3865",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -7610,14 +8036,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a298f037f943b520051d230",
-        "capturedAt": "2026-07-19T19:33:17.426Z",
+        "capturedAt": "2026-07-20T04:06:12.909Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:17.426Z",
+        "at": "2026-07-20T04:06:12.909Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -7673,8 +8099,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a299215154fb14b00215acd",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -7687,7 +8113,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a299215154fb14b00215acd",
     "providerContact": "+1-416-396-3865",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -7705,14 +8131,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a299215154fb14b00215acd",
-        "capturedAt": "2026-07-19T19:33:17.427Z",
+        "capturedAt": "2026-07-20T04:06:12.909Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:17.427Z",
+        "at": "2026-07-20T04:06:12.909Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -7767,8 +8193,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/69fce528c7d3cd580057aeb0",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -7781,7 +8207,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/69fce528c7d3cd580057aeb0",
     "providerContact": "ask@tpl.ca",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -7797,14 +8223,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69fce528c7d3cd580057aeb0",
-        "capturedAt": "2026-07-19T19:33:17.427Z",
+        "capturedAt": "2026-07-20T04:06:12.909Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:17.427Z",
+        "at": "2026-07-20T04:06:12.909Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -7859,8 +8285,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a29918a1e67cd9cb338e00a",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -7873,7 +8299,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a29918a1e67cd9cb338e00a",
     "providerContact": "+1-416-395-5630",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -7889,14 +8315,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a29918a1e67cd9cb338e00a",
-        "capturedAt": "2026-07-19T19:33:17.427Z",
+        "capturedAt": "2026-07-20T04:06:12.909Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:17.427Z",
+        "at": "2026-07-20T04:06:12.909Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -7940,8 +8366,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/69ff4aa4703c336300268211",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -7954,7 +8380,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/69ff4aa4703c336300268211",
     "providerContact": "+1-416-393-7746",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -7970,14 +8396,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69ff4aa4703c336300268211",
-        "capturedAt": "2026-07-19T19:33:17.427Z",
+        "capturedAt": "2026-07-20T04:06:12.910Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:17.427Z",
+        "at": "2026-07-20T04:06:12.910Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -8033,8 +8459,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a14e2238ea300e2631876dc",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -8047,7 +8473,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a14e2238ea300e2631876dc",
     "providerContact": "eaprograms@tpl.ca",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -8062,14 +8488,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a14e2238ea300e2631876dc",
-        "capturedAt": "2026-07-19T19:33:17.427Z",
+        "capturedAt": "2026-07-20T04:06:12.910Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:17.427Z",
+        "at": "2026-07-20T04:06:12.910Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -8124,8 +8550,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a3b09ac296ea565de2e534f",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -8138,7 +8564,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a3b09ac296ea565de2e534f",
     "providerContact": "blstaff@tpl.ca",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -8154,14 +8580,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a3b09ac296ea565de2e534f",
-        "capturedAt": "2026-07-19T19:33:17.427Z",
+        "capturedAt": "2026-07-20T04:06:12.910Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:17.427Z",
+        "at": "2026-07-20T04:06:12.910Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -8205,8 +8631,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a3435f1caf9343600640b7f",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -8219,7 +8645,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a3435f1caf9343600640b7f",
     "providerContact": "+1-416-396-8969",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": true,
     "coopEligible": false,
@@ -8234,14 +8660,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a3435f1caf9343600640b7f",
-        "capturedAt": "2026-07-19T19:33:17.427Z",
+        "capturedAt": "2026-07-20T04:06:12.910Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:17.427Z",
+        "at": "2026-07-20T04:06:12.910Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -8296,8 +8722,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a38411b1c3e58cad59148ee",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -8310,7 +8736,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a38411b1c3e58cad59148ee",
     "providerContact": "+1-416-394-5310",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -8326,14 +8752,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a38411b1c3e58cad59148ee",
-        "capturedAt": "2026-07-19T19:33:17.427Z",
+        "capturedAt": "2026-07-20T04:06:13.753Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:17.427Z",
+        "at": "2026-07-20T04:06:13.753Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -8388,8 +8814,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/69efb19cc1cf6f9a7588398e",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -8402,7 +8828,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/69efb19cc1cf6f9a7588398e",
     "providerContact": "+1-416-393-7727",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -8418,14 +8844,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69efb19cc1cf6f9a7588398e",
-        "capturedAt": "2026-07-19T19:33:17.427Z",
+        "capturedAt": "2026-07-20T04:06:13.753Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:17.427Z",
+        "at": "2026-07-20T04:06:13.753Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -8473,8 +8899,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/69c6d129b48451fc3c0baab1",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -8487,7 +8913,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/69c6d129b48451fc3c0baab1",
     "providerContact": "+1-416-396-3975",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -8503,14 +8929,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69c6d129b48451fc3c0baab1",
-        "capturedAt": "2026-07-19T19:33:17.427Z",
+        "capturedAt": "2026-07-20T04:06:13.753Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:17.427Z",
+        "at": "2026-07-20T04:06:13.753Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -8559,8 +8985,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a15e5914dc267647daab585",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -8573,7 +8999,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a15e5914dc267647daab585",
     "providerContact": "+1-416-394-5120",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -8590,14 +9016,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a15e5914dc267647daab585",
-        "capturedAt": "2026-07-19T19:33:18.154Z",
+        "capturedAt": "2026-07-20T04:06:13.753Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:18.154Z",
+        "at": "2026-07-20T04:06:13.753Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -8645,8 +9071,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbd37875911f28001a2339",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -8659,7 +9085,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbd37875911f28001a2339",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -8674,14 +9100,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbd37875911f28001a2339",
-        "capturedAt": "2026-07-19T19:33:21.987Z",
+        "capturedAt": "2026-07-20T04:06:17.851Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:21.987Z",
+        "at": "2026-07-20T04:06:17.851Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -8736,8 +9162,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/6a146abda99bdd027d42cd48",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -8750,7 +9176,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/6a146abda99bdd027d42cd48",
     "providerContact": "mplchats@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -8767,14 +9193,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a146abda99bdd027d42cd48",
-        "capturedAt": "2026-07-19T19:33:21.988Z",
+        "capturedAt": "2026-07-20T04:06:17.851Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:21.988Z",
+        "at": "2026-07-20T04:06:17.851Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -8829,8 +9255,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/6a16edaa52c88111723afec0",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -8843,7 +9269,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/6a16edaa52c88111723afec0",
     "providerContact": "mplchats@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -8860,14 +9286,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a16edaa52c88111723afec0",
-        "capturedAt": "2026-07-19T19:33:21.988Z",
+        "capturedAt": "2026-07-20T04:06:17.851Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:21.988Z",
+        "at": "2026-07-20T04:06:17.851Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -8922,8 +9348,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a3ad1e3dcc1022f003a8f5f",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -8936,7 +9362,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a3ad1e3dcc1022f003a8f5f",
     "providerContact": "ask@tpl.ca",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -8952,14 +9378,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a3ad1e3dcc1022f003a8f5f",
-        "capturedAt": "2026-07-19T19:33:18.154Z",
+        "capturedAt": "2026-07-20T04:06:13.753Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:18.154Z",
+        "at": "2026-07-20T04:06:13.753Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -9004,8 +9430,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a429fd1ed35742f00ff2750",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -9018,7 +9444,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a429fd1ed35742f00ff2750",
     "providerContact": "+1-416-393-7746",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -9034,14 +9460,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a429fd1ed35742f00ff2750",
-        "capturedAt": "2026-07-19T19:33:18.154Z",
+        "capturedAt": "2026-07-20T04:06:13.753Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:18.154Z",
+        "at": "2026-07-20T04:06:13.753Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -9089,8 +9515,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbdd1b0176055300fe809a",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -9103,7 +9529,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbdd1b0176055300fe809a",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -9118,14 +9544,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdd1b0176055300fe809a",
-        "capturedAt": "2026-07-19T19:33:21.988Z",
+        "capturedAt": "2026-07-20T04:06:17.851Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:21.988Z",
+        "at": "2026-07-20T04:06:17.851Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -9169,8 +9595,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/6a04e411055b429f3b3b3542",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -9183,7 +9609,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/6a04e411055b429f3b3b3542",
     "providerContact": "mplcommunitylibrarians@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -9198,14 +9624,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a04e411055b429f3b3b3542",
-        "capturedAt": "2026-07-19T19:33:21.988Z",
+        "capturedAt": "2026-07-20T04:06:17.851Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:21.988Z",
+        "at": "2026-07-20T04:06:17.851Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -9249,8 +9675,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a47e4aee6e135e78be03d87",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -9263,7 +9689,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a47e4aee6e135e78be03d87",
     "providerContact": "+1-416-396-8740",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -9280,14 +9706,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a47e4aee6e135e78be03d87",
-        "capturedAt": "2026-07-19T19:33:18.154Z",
+        "capturedAt": "2026-07-20T04:06:13.753Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:18.154Z",
+        "at": "2026-07-20T04:06:13.753Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -9332,8 +9758,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/693f099a4be11d3d00d81766",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -9346,7 +9772,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/693f099a4be11d3d00d81766",
     "providerContact": "+1-416-394-1016",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -9362,14 +9788,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/693f099a4be11d3d00d81766",
-        "capturedAt": "2026-07-19T19:33:18.154Z",
+        "capturedAt": "2026-07-20T04:06:13.753Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:18.154Z",
+        "at": "2026-07-20T04:06:13.753Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -9425,8 +9851,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a2877aa90cc4e3a790cd656",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -9439,7 +9865,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a2877aa90cc4e3a790cd656",
     "providerContact": "+1-416-396-8890",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -9456,14 +9882,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a2877aa90cc4e3a790cd656",
-        "capturedAt": "2026-07-19T19:33:18.155Z",
+        "capturedAt": "2026-07-20T04:06:13.753Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:18.155Z",
+        "at": "2026-07-20T04:06:13.753Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -9515,8 +9941,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a399d7d8ea300e2631f8a8e",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -9529,7 +9955,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a399d7d8ea300e2631f8a8e",
     "providerContact": "bfstaff@tpl.ca",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": true,
     "coopEligible": false,
@@ -9544,14 +9970,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a399d7d8ea300e2631f8a8e",
-        "capturedAt": "2026-07-19T19:33:18.155Z",
+        "capturedAt": "2026-07-20T04:06:13.754Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:18.155Z",
+        "at": "2026-07-20T04:06:13.754Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -9606,8 +10032,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a4819099bc7ad4320119091",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -9620,7 +10046,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a4819099bc7ad4320119091",
     "providerContact": "+1-416-394-1000",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -9634,14 +10060,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a4819099bc7ad4320119091",
-        "capturedAt": "2026-07-19T19:33:18.155Z",
+        "capturedAt": "2026-07-20T04:06:13.754Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:18.155Z",
+        "at": "2026-07-20T04:06:13.754Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -9696,8 +10122,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a31b5c7361280dd22648e28",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -9710,7 +10136,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a31b5c7361280dd22648e28",
     "providerContact": "janesheppard@tpl.ca",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -9726,14 +10152,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a31b5c7361280dd22648e28",
-        "capturedAt": "2026-07-19T19:33:18.155Z",
+        "capturedAt": "2026-07-20T04:06:13.754Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:18.155Z",
+        "at": "2026-07-20T04:06:13.754Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -9788,8 +10214,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a44307d7e16a03d00e93427",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -9802,7 +10228,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a44307d7e16a03d00e93427",
     "providerContact": "ask@tpl.ca",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -9818,14 +10244,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a44307d7e16a03d00e93427",
-        "capturedAt": "2026-07-19T19:33:18.155Z",
+        "capturedAt": "2026-07-20T04:06:13.754Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:18.155Z",
+        "at": "2026-07-20T04:06:13.754Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -9874,8 +10300,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a21bcddbd892a0672e7bafc",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -9888,7 +10314,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a21bcddbd892a0672e7bafc",
     "providerContact": "+1-416-396-8740",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -9904,14 +10330,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a21bcddbd892a0672e7bafc",
-        "capturedAt": "2026-07-19T19:33:18.155Z",
+        "capturedAt": "2026-07-20T04:06:13.754Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:18.155Z",
+        "at": "2026-07-20T04:06:13.754Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -9972,8 +10398,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a2b1b202ea730c17ab63668",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -9986,7 +10412,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a2b1b202ea730c17ab63668",
     "providerContact": "trlspc@tpl.ca",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -10007,14 +10433,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a2b1b202ea730c17ab63668",
-        "capturedAt": "2026-07-19T19:33:18.155Z",
+        "capturedAt": "2026-07-20T04:06:14.451Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:18.155Z",
+        "at": "2026-07-20T04:06:14.451Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -10066,8 +10492,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a11e856caf93436005de0d1",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -10080,7 +10506,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a11e856caf93436005de0d1",
     "providerContact": "ask@tpl.ca",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -10096,14 +10522,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a11e856caf93436005de0d1",
-        "capturedAt": "2026-07-19T19:33:18.155Z",
+        "capturedAt": "2026-07-20T04:06:14.452Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:18.155Z",
+        "at": "2026-07-20T04:06:14.452Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -10148,8 +10574,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/69483d83fd55fb2900589134",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -10162,7 +10588,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/69483d83fd55fb2900589134",
     "providerContact": "+1-416-396-8920",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -10180,14 +10606,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69483d83fd55fb2900589134",
-        "capturedAt": "2026-07-19T19:33:18.155Z",
+        "capturedAt": "2026-07-20T04:06:14.452Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:18.155Z",
+        "at": "2026-07-20T04:06:14.452Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -10231,8 +10657,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/69c1d0efbfe6da1042250af7",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -10245,7 +10671,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/69c1d0efbfe6da1042250af7",
     "providerContact": "+1-416-396-8890",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -10262,14 +10688,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69c1d0efbfe6da1042250af7",
-        "capturedAt": "2026-07-19T19:33:18.940Z",
+        "capturedAt": "2026-07-20T04:06:14.452Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:18.940Z",
+        "at": "2026-07-20T04:06:14.452Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -10321,8 +10747,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a2712b58ea300e2631c16e9",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -10335,7 +10761,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a2712b58ea300e2631c16e9",
     "providerContact": "+1-416-396-8969",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -10351,14 +10777,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a2712b58ea300e2631c16e9",
-        "capturedAt": "2026-07-19T19:33:18.941Z",
+        "capturedAt": "2026-07-20T04:06:14.452Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:18.941Z",
+        "at": "2026-07-20T04:06:14.452Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -10414,8 +10840,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a2ad25dc7d3cd58005f992e",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -10428,7 +10854,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a2ad25dc7d3cd58005f992e",
     "providerContact": "+1-416-393-7720",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -10444,14 +10870,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a2ad25dc7d3cd58005f992e",
-        "capturedAt": "2026-07-19T19:33:18.941Z",
+        "capturedAt": "2026-07-20T04:06:14.452Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:18.941Z",
+        "at": "2026-07-20T04:06:14.452Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -10507,8 +10933,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a021abdf89ee15800521c37",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -10521,7 +10947,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a021abdf89ee15800521c37",
     "providerContact": "+1-416-396-8916",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -10538,14 +10964,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a021abdf89ee15800521c37",
-        "capturedAt": "2026-07-19T19:33:18.941Z",
+        "capturedAt": "2026-07-20T04:06:14.452Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:18.941Z",
+        "at": "2026-07-20T04:06:14.452Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -10600,8 +11026,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a0f396ee8af4a2f007417ad",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -10614,7 +11040,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a0f396ee8af4a2f007417ad",
     "providerContact": "+1-416-393-7680",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -10631,14 +11057,106 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a0f396ee8af4a2f007417ad",
-        "capturedAt": "2026-07-19T19:33:18.941Z",
+        "capturedAt": "2026-07-20T04:06:14.452Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:18.941Z",
+        "at": "2026-07-20T04:06:14.452Z",
+        "actor": "Library RSS generator",
+        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
+      }
+    ]
+  },
+  {
+    "id": "tpl-rss-6a399a342ea730c17ab8bef4",
+    "title": "Magic in the Moonlit Forest Camp",
+    "organization": "Toronto Public Library",
+    "provider": "Toronto Public Library",
+    "description": "Step into a world of magic, mystery, and creativity! In this fun and imaginative workshop, kids will paint their very own enchanted forest using bright acrylic paints. They will explore dreamy trees, glowing paths, whimsical animals, and hidden fairy homes whi",
+    "summary": "Step into a world of magic, mystery, and creativity! In this fun and imaginative workshop, kids will paint their very own enchanted forest using bright acrylic paints. They will explore dreamy trees, glowing paths, whimsical animals, and hidden fairy homes whi",
+    "type": "Camp",
+    "category": "Makerspace & Fabrication",
+    "categories": [
+      "STEM",
+      "Makerspace & Fabrication"
+    ],
+    "communityFocus": [
+      "Open to all",
+      "Newcomer-friendly"
+    ],
+    "city": "Toronto",
+    "region": "Toronto",
+    "address": "St. Clair/Silverthorn, 1748 St. Clair Avenue West, Toronto, ON, M6N 1J3",
+    "latitude": 43.6742898,
+    "longitude": -79.4605991,
+    "virtual": false,
+    "startDate": "2026-07-21T18:00:00.000Z",
+    "endDate": "2026-07-21T20:00:00.000Z",
+    "deadline": "2026-07-21T18:00:00.000Z",
+    "ageMin": 6,
+    "ageMax": 12,
+    "ages": {
+      "min": 6,
+      "max": 12
+    },
+    "grades": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "language": [
+      "en"
+    ],
+    "languages": [
+      "en"
+    ],
+    "cost": "Free to join",
+    "sourceUrl": "https://tpl.bibliocommons.com/events/6a399a342ea730c17ab8bef4",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
+    "status": "active",
+    "accessibility": [
+      "Library accessibility services available on request",
+      "Public library location"
+    ],
+    "equipment": "Materials provided unless the source says otherwise.",
+    "food": "No food listed.",
+    "capacity": "12 spots listed by source.",
+    "commitment": "Single scheduled library program or series date from source feed.",
+    "registrationUrl": "https://tpl.bibliocommons.com/events/6a399a342ea730c17ab8bef4",
+    "providerContact": "+1-416-393-7709",
+    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
+    "lastVerified": "2026-07-20",
+    "trustedSource": true,
+    "volunteerHoursEligible": false,
+    "coopEligible": false,
+    "paidPosition": false,
+    "tags": [
+      "makerspace & fabrication",
+      "summer wonder",
+      "crafts & hobbies",
+      "school age children (6-12)",
+      "english"
+    ],
+    "sources": [
+      {
+        "label": "Official Toronto Public Library event page",
+        "url": "https://tpl.bibliocommons.com/events/6a399a342ea730c17ab8bef4",
+        "capturedAt": "2026-07-20T04:06:14.452Z",
+        "confidence": "high"
+      }
+    ],
+    "adminAuditTrail": [
+      {
+        "label": "Generated from official feed",
+        "at": "2026-07-20T04:06:14.452Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -10693,8 +11211,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a3ad09896ee38a44a929fe2",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -10707,7 +11225,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a3ad09896ee38a44a929fe2",
     "providerContact": "ask@tpl.ca",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -10722,14 +11240,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a3ad09896ee38a44a929fe2",
-        "capturedAt": "2026-07-19T19:33:18.941Z",
+        "capturedAt": "2026-07-20T04:06:14.452Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:18.941Z",
+        "at": "2026-07-20T04:06:14.452Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -10782,8 +11300,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a2db9038ea300e2631d76fd",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -10796,7 +11314,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a2db9038ea300e2631d76fd",
     "providerContact": "+1-416-394-5310",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -10814,14 +11332,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a2db9038ea300e2631d76fd",
-        "capturedAt": "2026-07-19T19:33:18.941Z",
+        "capturedAt": "2026-07-20T04:06:14.452Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:18.941Z",
+        "at": "2026-07-20T04:06:14.452Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -10873,8 +11391,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a3d8da84407827f8aa7640f",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -10887,7 +11405,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a3d8da84407827f8aa7640f",
     "providerContact": "+1-416-395-5950",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -10903,14 +11421,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a3d8da84407827f8aa7640f",
-        "capturedAt": "2026-07-19T19:33:18.941Z",
+        "capturedAt": "2026-07-20T04:06:14.452Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:18.941Z",
+        "at": "2026-07-20T04:06:14.452Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -10955,8 +11473,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a3dc200c52cdc3600ecf1eb",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -10969,7 +11487,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a3dc200c52cdc3600ecf1eb",
     "providerContact": "ask@tpl.ca",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -10985,14 +11503,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a3dc200c52cdc3600ecf1eb",
-        "capturedAt": "2026-07-19T19:33:18.941Z",
+        "capturedAt": "2026-07-20T04:06:14.452Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:18.941Z",
+        "at": "2026-07-20T04:06:14.452Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -11047,8 +11565,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a3489957550c8bf9f5e68e7",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -11061,7 +11579,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a3489957550c8bf9f5e68e7",
     "providerContact": "+1-416-393-7692",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -11077,14 +11595,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a3489957550c8bf9f5e68e7",
-        "capturedAt": "2026-07-19T19:33:18.941Z",
+        "capturedAt": "2026-07-20T04:06:14.453Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:18.941Z",
+        "at": "2026-07-20T04:06:14.453Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -11139,8 +11657,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a39a3fb2ea730c17ab8c181",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -11153,7 +11671,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a39a3fb2ea730c17ab8c181",
     "providerContact": "+1-416-396-8885",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -11167,14 +11685,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a39a3fb2ea730c17ab8c181",
-        "capturedAt": "2026-07-19T19:33:18.941Z",
+        "capturedAt": "2026-07-20T04:06:15.033Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:18.941Z",
+        "at": "2026-07-20T04:06:15.033Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -11218,8 +11736,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a39743a414ef43d0097b17f",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -11232,7 +11750,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a39743a414ef43d0097b17f",
     "providerContact": "ask@tpl.ca",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -11248,14 +11766,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a39743a414ef43d0097b17f",
-        "capturedAt": "2026-07-19T19:33:19.575Z",
+        "capturedAt": "2026-07-20T04:06:15.033Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:19.575Z",
+        "at": "2026-07-20T04:06:15.033Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -11310,8 +11828,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a2b49064407827f8aa45c1c",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -11324,7 +11842,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a2b49064407827f8aa45c1c",
     "providerContact": "+1-416-393-7674",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -11342,14 +11860,95 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a2b49064407827f8aa45c1c",
-        "capturedAt": "2026-07-19T19:33:19.575Z",
+        "capturedAt": "2026-07-20T04:06:15.033Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:19.575Z",
+        "at": "2026-07-20T04:06:15.033Z",
+        "actor": "Library RSS generator",
+        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
+      }
+    ]
+  },
+  {
+    "id": "tpl-rss-6a0e4c0ec7d3cd58005a9292",
+    "title": "PowerPoint Basics 3: Add Visual Style to Your Presentation",
+    "organization": "Toronto Public Library",
+    "provider": "Toronto Public Library",
+    "description": "Create a more sophisticated PowerPoint 2019 presentation with more advanced features. In this session, you will: Crop pictures, add picture borders, and add picture effects. Align and distribute objects. Insert and edit SmartArt graphics. Animate objects. Edit",
+    "summary": "Create a more sophisticated PowerPoint 2019 presentation with more advanced features. In this session, you will: Crop pictures, add picture borders, and add picture effects. Align and distribute objects. Insert and edit SmartArt graphics. Animate objects. Edit",
+    "type": "One-time event",
+    "category": "Family Learning",
+    "categories": [
+      "Family Learning"
+    ],
+    "communityFocus": [
+      "Open to all",
+      "Newcomer-friendly"
+    ],
+    "city": "Toronto",
+    "region": "Toronto",
+    "address": "Albert Campbell, 496 Birchmount Road, Toronto, ON, M1K 1N8",
+    "latitude": 43.7080744,
+    "longitude": -79.2692964,
+    "virtual": false,
+    "startDate": "2026-07-21T18:00:00.000Z",
+    "endDate": "2026-07-21T19:30:00.000Z",
+    "deadline": "2026-07-21T18:00:00.000Z",
+    "ageMin": 18,
+    "ages": {
+      "min": 18
+    },
+    "grades": [],
+    "language": [
+      "en"
+    ],
+    "languages": [
+      "en"
+    ],
+    "cost": "Free to join",
+    "sourceUrl": "https://tpl.bibliocommons.com/events/6a0e4c0ec7d3cd58005a9292",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
+    "status": "active",
+    "accessibility": [
+      "Library accessibility services available on request",
+      "Public library location"
+    ],
+    "equipment": "Materials provided unless the source says otherwise.",
+    "food": "No food listed.",
+    "capacity": "12 spots listed by source.",
+    "commitment": "Single scheduled library program or series date from source feed.",
+    "registrationUrl": "https://tpl.bibliocommons.com/events/6a0e4c0ec7d3cd58005a9292",
+    "providerContact": "+1-416-396-8890",
+    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
+    "lastVerified": "2026-07-20",
+    "trustedSource": true,
+    "volunteerHoursEligible": false,
+    "coopEligible": false,
+    "paidPosition": false,
+    "tags": [
+      "family learning",
+      "computer basics & office software",
+      "adults (18+)",
+      "older adults",
+      "english"
+    ],
+    "sources": [
+      {
+        "label": "Official Toronto Public Library event page",
+        "url": "https://tpl.bibliocommons.com/events/6a0e4c0ec7d3cd58005a9292",
+        "capturedAt": "2026-07-20T04:06:15.033Z",
+        "confidence": "high"
+      }
+    ],
+    "adminAuditTrail": [
+      {
+        "label": "Generated from official feed",
+        "at": "2026-07-20T04:06:15.033Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -11402,8 +12001,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a283f6e7550c8bf9f5c142b",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -11416,7 +12015,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a283f6e7550c8bf9f5c142b",
     "providerContact": "+1-416-394-1000",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -11431,14 +12030,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a283f6e7550c8bf9f5c142b",
-        "capturedAt": "2026-07-19T19:33:19.576Z",
+        "capturedAt": "2026-07-20T04:06:15.033Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:19.576Z",
+        "at": "2026-07-20T04:06:15.033Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -11491,8 +12090,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a46e54a48c98c3600a40dc2",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -11505,7 +12104,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a46e54a48c98c3600a40dc2",
     "providerContact": "+1-416-394-5120",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -11520,14 +12119,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a46e54a48c98c3600a40dc2",
-        "capturedAt": "2026-07-19T19:33:19.576Z",
+        "capturedAt": "2026-07-20T04:06:15.034Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:19.576Z",
+        "at": "2026-07-20T04:06:15.034Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -11580,8 +12179,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a3028924407827f8aa50beb",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -11594,7 +12193,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a3028924407827f8aa50beb",
     "providerContact": "+1-416-395-5750",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -11609,14 +12208,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a3028924407827f8aa50beb",
-        "capturedAt": "2026-07-19T19:33:19.576Z",
+        "capturedAt": "2026-07-20T04:06:15.034Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:19.576Z",
+        "at": "2026-07-20T04:06:15.034Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -11669,8 +12268,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a357f2a296ea565de2d692c",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -11683,7 +12282,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a357f2a296ea565de2d692c",
     "providerContact": "ask@tpl.ca",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -11698,14 +12297,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a357f2a296ea565de2d692c",
-        "capturedAt": "2026-07-19T19:33:19.576Z",
+        "capturedAt": "2026-07-20T04:06:15.034Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:19.576Z",
+        "at": "2026-07-20T04:06:15.034Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -11758,8 +12357,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a3c0f2a296ea565de2e7858",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -11772,7 +12371,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a3c0f2a296ea565de2e7858",
     "providerContact": "ask@tpl.ca",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -11788,14 +12387,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a3c0f2a296ea565de2e7858",
-        "capturedAt": "2026-07-19T19:33:19.576Z",
+        "capturedAt": "2026-07-20T04:06:15.034Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:19.576Z",
+        "at": "2026-07-20T04:06:15.034Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -11851,8 +12450,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a551edacca66c2f00a3247c",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -11865,7 +12464,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a551edacca66c2f00a3247c",
     "providerContact": "+1-416-393-7660",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -11881,14 +12480,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a551edacca66c2f00a3247c",
-        "capturedAt": "2026-07-19T19:33:19.576Z",
+        "capturedAt": "2026-07-20T04:06:15.034Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:19.576Z",
+        "at": "2026-07-20T04:06:15.034Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -11941,8 +12540,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a4c04adbf8ea89c03acfd60",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -11955,7 +12554,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a4c04adbf8ea89c03acfd60",
     "providerContact": "ask@tpl.ca",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -11970,14 +12569,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a4c04adbf8ea89c03acfd60",
-        "capturedAt": "2026-07-19T19:33:19.576Z",
+        "capturedAt": "2026-07-20T04:06:15.034Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:19.576Z",
+        "at": "2026-07-20T04:06:15.034Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -12030,8 +12629,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a205a5c43b41b3d006b6993",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -12044,7 +12643,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a205a5c43b41b3d006b6993",
     "providerContact": "+1-416-396-8890",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -12060,14 +12659,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a205a5c43b41b3d006b6993",
-        "capturedAt": "2026-07-19T19:33:19.577Z",
+        "capturedAt": "2026-07-20T04:06:15.034Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:19.577Z",
+        "at": "2026-07-20T04:06:15.034Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -12120,8 +12719,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a2ae0d516554cd59fc807e8",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -12134,7 +12733,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a2ae0d516554cd59fc807e8",
     "providerContact": "ask@tpl.ca",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -12149,14 +12748,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a2ae0d516554cd59fc807e8",
-        "capturedAt": "2026-07-19T19:33:19.577Z",
+        "capturedAt": "2026-07-20T04:06:15.034Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:19.577Z",
+        "at": "2026-07-20T04:06:15.034Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -12211,8 +12810,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a32ec1bf56bd86e00b762a8",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -12225,7 +12824,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a32ec1bf56bd86e00b762a8",
     "providerContact": "nestaff@tpl.ca",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -12240,14 +12839,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a32ec1bf56bd86e00b762a8",
-        "capturedAt": "2026-07-19T19:33:19.577Z",
+        "capturedAt": "2026-07-20T04:06:15.799Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:19.577Z",
+        "at": "2026-07-20T04:06:15.799Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -12300,8 +12899,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a32fdd44407827f8aa59fa3",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -12314,7 +12913,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a32fdd44407827f8aa59fa3",
     "providerContact": "ask@tpl.ca",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -12329,14 +12928,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a32fdd44407827f8aa59fa3",
-        "capturedAt": "2026-07-19T19:33:19.577Z",
+        "capturedAt": "2026-07-20T04:06:15.799Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:19.577Z",
+        "at": "2026-07-20T04:06:15.799Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -12389,8 +12988,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a35828c72ddb7360081d1ac",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -12403,7 +13002,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a35828c72ddb7360081d1ac",
     "providerContact": "+1-416-394-5170",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -12418,14 +13017,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a35828c72ddb7360081d1ac",
-        "capturedAt": "2026-07-19T19:33:20.478Z",
+        "capturedAt": "2026-07-20T04:06:15.799Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:20.478Z",
+        "at": "2026-07-20T04:06:15.799Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -12478,8 +13077,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a3420b9ba0ec7dc22617873",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -12492,7 +13091,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a3420b9ba0ec7dc22617873",
     "providerContact": "+1-416-393-7610",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -12507,14 +13106,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a3420b9ba0ec7dc22617873",
-        "capturedAt": "2026-07-19T19:33:20.478Z",
+        "capturedAt": "2026-07-20T04:06:15.799Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:20.478Z",
+        "at": "2026-07-20T04:06:15.799Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -12566,8 +13165,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a56c066fb418a28009b0345",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -12580,7 +13179,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a56c066fb418a28009b0345",
     "providerContact": "ask@tpl.ca",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": true,
     "coopEligible": false,
@@ -12595,14 +13194,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a56c066fb418a28009b0345",
-        "capturedAt": "2026-07-19T19:33:20.478Z",
+        "capturedAt": "2026-07-20T04:06:15.799Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:20.478Z",
+        "at": "2026-07-20T04:06:15.799Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -12657,8 +13256,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a4bbe9c24b39f59000b3f82",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -12671,7 +13270,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a4bbe9c24b39f59000b3f82",
     "providerContact": "+1-416-393-7737",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -12686,14 +13285,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a4bbe9c24b39f59000b3f82",
-        "capturedAt": "2026-07-19T19:33:20.478Z",
+        "capturedAt": "2026-07-20T04:06:15.799Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:20.478Z",
+        "at": "2026-07-20T04:06:15.799Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -12738,8 +13337,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/697119e36724c63d00ed73ab",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -12752,7 +13351,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/697119e36724c63d00ed73ab",
     "providerContact": "+1-416-396-3835",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -12770,14 +13369,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/697119e36724c63d00ed73ab",
-        "capturedAt": "2026-07-19T19:33:20.479Z",
+        "capturedAt": "2026-07-20T04:06:15.799Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:20.479Z",
+        "at": "2026-07-20T04:06:15.799Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -12821,8 +13420,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a1f236b46d5f64f7dcdb905",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -12835,7 +13434,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a1f236b46d5f64f7dcdb905",
     "providerContact": "+1-416-394-5350",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -12851,14 +13450,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a1f236b46d5f64f7dcdb905",
-        "capturedAt": "2026-07-19T19:33:20.479Z",
+        "capturedAt": "2026-07-20T04:06:15.799Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:20.479Z",
+        "at": "2026-07-20T04:06:15.799Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -12903,8 +13502,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a0768faf56bd86e00afefe5",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -12917,7 +13516,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a0768faf56bd86e00afefe5",
     "providerContact": "+1-416-393-6240",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -12932,14 +13531,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a0768faf56bd86e00afefe5",
-        "capturedAt": "2026-07-19T19:33:20.479Z",
+        "capturedAt": "2026-07-20T04:06:15.799Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:20.479Z",
+        "at": "2026-07-20T04:06:15.799Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -12991,8 +13590,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a36b3487550c8bf9f5ea631",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -13005,7 +13604,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a36b3487550c8bf9f5ea631",
     "providerContact": "+1-416-396-3599",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -13021,14 +13620,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a36b3487550c8bf9f5ea631",
-        "capturedAt": "2026-07-19T19:33:20.479Z",
+        "capturedAt": "2026-07-20T04:06:15.800Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:20.479Z",
+        "at": "2026-07-20T04:06:15.800Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -13072,8 +13671,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a3aae4e90cc4e3a79102623",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -13086,7 +13685,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a3aae4e90cc4e3a79102623",
     "providerContact": "vgomes@culturelink.ca",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -13102,14 +13701,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a3aae4e90cc4e3a79102623",
-        "capturedAt": "2026-07-19T19:33:20.479Z",
+        "capturedAt": "2026-07-20T04:06:15.800Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:20.479Z",
+        "at": "2026-07-20T04:06:15.800Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -13153,8 +13752,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a47e8a0f47779f28bbe12b5",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -13167,7 +13766,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a47e8a0f47779f28bbe12b5",
     "providerContact": "+1-416-396-8740",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -13183,14 +13782,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a47e8a0f47779f28bbe12b5",
-        "capturedAt": "2026-07-19T19:33:20.480Z",
+        "capturedAt": "2026-07-20T04:06:15.800Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:20.480Z",
+        "at": "2026-07-20T04:06:15.800Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -13234,8 +13833,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a3ede77c52cdc3600ed1cb5",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -13248,7 +13847,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a3ede77c52cdc3600ed1cb5",
     "providerContact": "anstaff@tpl.ca",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -13264,14 +13863,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a3ede77c52cdc3600ed1cb5",
-        "capturedAt": "2026-07-19T19:33:20.480Z",
+        "capturedAt": "2026-07-20T04:06:15.800Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:20.480Z",
+        "at": "2026-07-20T04:06:15.800Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -13316,8 +13915,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a0e089cfab4ff0f649a747a",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -13330,7 +13929,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a0e089cfab4ff0f649a747a",
     "providerContact": "+1-416-396-8916",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -13346,14 +13945,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a0e089cfab4ff0f649a747a",
-        "capturedAt": "2026-07-19T19:33:20.480Z",
+        "capturedAt": "2026-07-20T04:06:16.496Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:20.480Z",
+        "at": "2026-07-20T04:06:16.496Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -13401,8 +14000,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1db1",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -13415,7 +14014,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1db1",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -13430,14 +14029,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1db1",
-        "capturedAt": "2026-07-19T19:33:21.988Z",
+        "capturedAt": "2026-07-20T04:06:17.851Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:21.988Z",
+        "at": "2026-07-20T04:06:17.851Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -13481,8 +14080,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a10b7dd43b41b3d006870cb",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -13495,7 +14094,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a10b7dd43b41b3d006870cb",
     "providerContact": "learnai@tpl.ca",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -13510,14 +14109,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a10b7dd43b41b3d006870cb",
-        "capturedAt": "2026-07-19T19:33:21.236Z",
+        "capturedAt": "2026-07-20T04:06:16.496Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:21.236Z",
+        "at": "2026-07-20T04:06:16.496Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -13572,8 +14171,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a04d542f56bd86e00af7c76",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -13586,7 +14185,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a04d542f56bd86e00af7c76",
     "providerContact": "+1-416-396-8979",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -13601,14 +14200,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a04d542f56bd86e00af7c76",
-        "capturedAt": "2026-07-19T19:33:21.236Z",
+        "capturedAt": "2026-07-20T04:06:16.497Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:21.236Z",
+        "at": "2026-07-20T04:06:16.497Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -13652,8 +14251,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a29b885caf934360062172d",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -13666,7 +14265,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a29b885caf934360062172d",
     "providerContact": "ask@tpl.ca",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -13681,14 +14280,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a29b885caf934360062172d",
-        "capturedAt": "2026-07-19T19:33:21.237Z",
+        "capturedAt": "2026-07-20T04:06:16.497Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:21.237Z",
+        "at": "2026-07-20T04:06:16.497Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -13743,8 +14342,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a2991371e67cd9cb338dfe9",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -13757,7 +14356,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a2991371e67cd9cb338dfe9",
     "providerContact": "+1-416-395-5630",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -13773,14 +14372,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a2991371e67cd9cb338dfe9",
-        "capturedAt": "2026-07-19T19:33:21.237Z",
+        "capturedAt": "2026-07-20T04:06:16.497Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:21.237Z",
+        "at": "2026-07-20T04:06:16.497Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -13831,8 +14430,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a1893d9c7d3cd58005c612b",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -13845,7 +14444,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a1893d9c7d3cd58005c612b",
     "providerContact": "+1-416-396-8975",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -13861,14 +14460,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a1893d9c7d3cd58005c612b",
-        "capturedAt": "2026-07-19T19:33:21.237Z",
+        "capturedAt": "2026-07-20T04:06:16.497Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:21.237Z",
+        "at": "2026-07-20T04:06:16.497Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -13923,8 +14522,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/69fa2d0843b41b3d00644d9b",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -13937,7 +14536,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/69fa2d0843b41b3d00644d9b",
     "providerContact": "+1-416-394-1014",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -13953,14 +14552,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69fa2d0843b41b3d00644d9b",
-        "capturedAt": "2026-07-19T19:33:21.237Z",
+        "capturedAt": "2026-07-20T04:06:16.497Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:21.237Z",
+        "at": "2026-07-20T04:06:16.497Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -14004,8 +14603,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a170c06c6a1dc3d00d66910",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -14018,7 +14617,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a170c06c6a1dc3d00d66910",
     "providerContact": "+1-416-395-5720",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -14034,14 +14633,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a170c06c6a1dc3d00d66910",
-        "capturedAt": "2026-07-19T19:33:21.237Z",
+        "capturedAt": "2026-07-20T04:06:16.497Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:21.237Z",
+        "at": "2026-07-20T04:06:16.497Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -14096,8 +14695,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a32ab0ecaf934360063ba14",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -14110,7 +14709,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a32ab0ecaf934360063ba14",
     "providerContact": "ask@tpl.ca",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -14126,14 +14725,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a32ab0ecaf934360063ba14",
-        "capturedAt": "2026-07-19T19:33:21.237Z",
+        "capturedAt": "2026-07-20T04:06:16.497Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:21.237Z",
+        "at": "2026-07-20T04:06:16.497Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -14188,8 +14787,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a2b30e390cc4e3a790d728b",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -14202,7 +14801,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a2b30e390cc4e3a790d728b",
     "providerContact": "eaprograms@tpl.ca",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -14218,14 +14817,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a2b30e390cc4e3a790d728b",
-        "capturedAt": "2026-07-19T19:33:21.237Z",
+        "capturedAt": "2026-07-20T04:06:16.497Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:21.237Z",
+        "at": "2026-07-20T04:06:16.497Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -14280,8 +14879,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/69b1b7c26583d22e3c0ea98f",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -14294,7 +14893,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/69b1b7c26583d22e3c0ea98f",
     "providerContact": "+1-416-393-7666",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -14310,14 +14909,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69b1b7c26583d22e3c0ea98f",
-        "capturedAt": "2026-07-19T19:33:21.237Z",
+        "capturedAt": "2026-07-20T04:06:16.498Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:21.237Z",
+        "at": "2026-07-20T04:06:16.498Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -14372,8 +14971,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/69f8cec1e7108c0f03d0def7",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -14386,7 +14985,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/69f8cec1e7108c0f03d0def7",
     "providerContact": "+1-416-393-7680",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -14402,14 +15001,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/69f8cec1e7108c0f03d0def7",
-        "capturedAt": "2026-07-19T19:33:21.237Z",
+        "capturedAt": "2026-07-20T04:06:16.498Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:21.237Z",
+        "at": "2026-07-20T04:06:16.498Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -14459,8 +15058,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a0361b9f56bd86e00af2d69",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -14473,7 +15072,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a0361b9f56bd86e00af2d69",
     "providerContact": "+1-416-395-5750",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -14490,14 +15089,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a0361b9f56bd86e00af2d69",
-        "capturedAt": "2026-07-19T19:33:21.237Z",
+        "capturedAt": "2026-07-20T04:06:16.498Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:21.237Z",
+        "at": "2026-07-20T04:06:16.498Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -14552,8 +15151,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a14b9de90cc4e3a7908ea78",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -14566,7 +15165,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a14b9de90cc4e3a7908ea78",
     "providerContact": "+1-416-393-7660",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -14582,14 +15181,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a14b9de90cc4e3a7908ea78",
-        "capturedAt": "2026-07-19T19:33:21.237Z",
+        "capturedAt": "2026-07-20T04:06:16.498Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:21.237Z",
+        "at": "2026-07-20T04:06:16.498Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -14644,8 +15243,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a1af4c4e13d3b4603b5d8ed",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -14658,7 +15257,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a1af4c4e13d3b4603b5d8ed",
     "providerContact": "+1-416-395-5710",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -14674,14 +15273,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a1af4c4e13d3b4603b5d8ed",
-        "capturedAt": "2026-07-19T19:33:21.237Z",
+        "capturedAt": "2026-07-20T04:06:16.498Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:21.237Z",
+        "at": "2026-07-20T04:06:16.498Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -14736,8 +15335,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a1dd2758ea300e2631a2f88",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -14750,7 +15349,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a1dd2758ea300e2631a2f88",
     "providerContact": "+1-416-394-5200",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -14766,14 +15365,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a1dd2758ea300e2631a2f88",
-        "capturedAt": "2026-07-19T19:33:21.237Z",
+        "capturedAt": "2026-07-20T04:06:16.498Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:21.237Z",
+        "at": "2026-07-20T04:06:16.498Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -14828,8 +15427,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a35a5dc2ea730c17ab829a9",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -14842,7 +15441,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a35a5dc2ea730c17ab829a9",
     "providerContact": "vvstaff@tpl.ca",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -14858,14 +15457,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a35a5dc2ea730c17ab829a9",
-        "capturedAt": "2026-07-19T19:33:21.237Z",
+        "capturedAt": "2026-07-20T04:06:16.498Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:21.237Z",
+        "at": "2026-07-20T04:06:16.498Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -14920,8 +15519,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a4bde21541102b7fa8aba67",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -14934,7 +15533,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a4bde21541102b7fa8aba67",
     "providerContact": "ask@tpl.ca",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -14950,14 +15549,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a4bde21541102b7fa8aba67",
-        "capturedAt": "2026-07-19T19:33:21.238Z",
+        "capturedAt": "2026-07-20T04:06:16.498Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:21.238Z",
+        "at": "2026-07-20T04:06:16.498Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -15012,8 +15611,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a2d91822ea730c17ab6a77c",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -15026,7 +15625,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a2d91822ea730c17ab6a77c",
     "providerContact": "+1-416-393-7730",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -15042,14 +15641,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a2d91822ea730c17ab6a77c",
-        "capturedAt": "2026-07-19T19:33:21.238Z",
+        "capturedAt": "2026-07-20T04:06:16.498Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:21.238Z",
+        "at": "2026-07-20T04:06:16.498Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -15104,8 +15703,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a3b0dd3c134422d50e9e88f",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -15118,7 +15717,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a3b0dd3c134422d50e9e88f",
     "providerContact": "ask@tpl.ca",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -15134,14 +15733,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a3b0dd3c134422d50e9e88f",
-        "capturedAt": "2026-07-19T19:33:21.238Z",
+        "capturedAt": "2026-07-20T04:06:17.279Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:21.238Z",
+        "at": "2026-07-20T04:06:17.279Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -15196,8 +15795,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a281af24407827f8aa3a334",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -15210,7 +15809,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a281af24407827f8aa3a334",
     "providerContact": "+1-416-395-5440",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -15226,14 +15825,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a281af24407827f8aa3a334",
-        "capturedAt": "2026-07-19T19:33:21.238Z",
+        "capturedAt": "2026-07-20T04:06:17.279Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:21.238Z",
+        "at": "2026-07-20T04:06:17.279Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -15281,8 +15880,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://tpl.bibliocommons.com/events/6a3302f28ea300e2631e6fd6",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -15295,7 +15894,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://tpl.bibliocommons.com/events/6a3302f28ea300e2631e6fd6",
     "providerContact": "slstaff@tpl.ca",
     "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -15311,14 +15910,192 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Toronto Public Library event page",
         "url": "https://tpl.bibliocommons.com/events/6a3302f28ea300e2631e6fd6",
-        "capturedAt": "2026-07-19T19:33:21.238Z",
+        "capturedAt": "2026-07-20T04:06:17.279Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:21.238Z",
+        "at": "2026-07-20T04:06:17.279Z",
+        "actor": "Library RSS generator",
+        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
+      }
+    ]
+  },
+  {
+    "id": "tpl-rss-6a160041278f7c2f008fc796",
+    "title": "Toddler Time",
+    "organization": "Toronto Public Library",
+    "provider": "Toronto Public Library",
+    "description": "Join us for stories, songs and rhymes in this program for children, 19 months to 3 years, and their parents or caregivers. Toddler Time runs from 10:30 to 11:00 am . Children, parents and caregivers are invited to Stay and Play, and make a craft from 11:00 to ",
+    "summary": "Join us for stories, songs and rhymes in this program for children, 19 months to 3 years, and their parents or caregivers. Toddler Time runs from 10:30 to 11:00 am . Children, parents and caregivers are invited to Stay and Play, and make a craft from 11:00 to ",
+    "type": "One-time event",
+    "category": "Makerspace & Fabrication",
+    "categories": [
+      "STEM",
+      "Makerspace & Fabrication"
+    ],
+    "communityFocus": [
+      "Open to all",
+      "Newcomer-friendly"
+    ],
+    "city": "Toronto",
+    "region": "Toronto",
+    "address": "Humber Summit, 2990 Islington Avenue, Toronto, ON, M9L 2K6",
+    "latitude": 43.7590426,
+    "longitude": -79.5715992,
+    "virtual": false,
+    "startDate": "2026-07-22T14:30:00.000Z",
+    "endDate": "2026-07-22T15:30:00.000Z",
+    "deadline": "2026-07-22T14:30:00.000Z",
+    "ageMin": 0,
+    "ageMax": 12,
+    "ages": {
+      "min": 0,
+      "max": 12
+    },
+    "grades": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "language": [
+      "en"
+    ],
+    "languages": [
+      "en"
+    ],
+    "cost": "Free to join",
+    "sourceUrl": "https://tpl.bibliocommons.com/events/6a160041278f7c2f008fc796",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
+    "status": "active",
+    "accessibility": [
+      "Library accessibility services available on request",
+      "Public library location"
+    ],
+    "equipment": "Materials provided unless the source says otherwise.",
+    "food": "No food listed.",
+    "capacity": "Check the source page for availability.",
+    "commitment": "Single scheduled library program or series date from source feed.",
+    "registrationUrl": "https://tpl.bibliocommons.com/events/6a160041278f7c2f008fc796",
+    "providerContact": "ask@tpl.ca",
+    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
+    "lastVerified": "2026-07-20",
+    "trustedSource": true,
+    "volunteerHoursEligible": false,
+    "coopEligible": false,
+    "paidPosition": false,
+    "tags": [
+      "makerspace & fabrication",
+      "ready for reading storytimes",
+      "reading programs & storytimes",
+      "preschool children (0-5)",
+      "english"
+    ],
+    "sources": [
+      {
+        "label": "Official Toronto Public Library event page",
+        "url": "https://tpl.bibliocommons.com/events/6a160041278f7c2f008fc796",
+        "capturedAt": "2026-07-20T04:06:17.279Z",
+        "confidence": "high"
+      }
+    ],
+    "adminAuditTrail": [
+      {
+        "label": "Generated from official feed",
+        "at": "2026-07-20T04:06:17.279Z",
+        "actor": "Library RSS generator",
+        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
+      }
+    ]
+  },
+  {
+    "id": "tpl-rss-6a59177f9943bdf31e9f5790",
+    "title": "EarlyON Family Fun Time",
+    "organization": "Toronto Public Library",
+    "provider": "Toronto Public Library",
+    "description": "Join us for a fun and interactive play program. Children and their parents/caregivers can access a variety of activities to play and learn together. You will also have opportunities to connect with others or speak to staff about your child's development or par",
+    "summary": "Join us for a fun and interactive play program. Children and their parents/caregivers can access a variety of activities to play and learn together. You will also have opportunities to connect with others or speak to staff about your child's development or par",
+    "type": "One-time event",
+    "category": "Family Learning",
+    "categories": [
+      "Family Learning"
+    ],
+    "communityFocus": [
+      "Open to all",
+      "Newcomer-friendly"
+    ],
+    "city": "Toronto",
+    "region": "Toronto",
+    "address": "Dufferin/St.Clair, 1625 Dufferin Street, Toronto, ON, M6H 3L9",
+    "latitude": 43.6769841,
+    "longitude": -79.4423807,
+    "virtual": false,
+    "startDate": "2026-07-22T14:30:00.000Z",
+    "endDate": "2026-07-22T16:30:00.000Z",
+    "deadline": "2026-07-22T14:30:00.000Z",
+    "ageMin": 0,
+    "ageMax": 6,
+    "ages": {
+      "min": 0,
+      "max": 6
+    },
+    "grades": [
+      "0",
+      "1"
+    ],
+    "language": [
+      "en"
+    ],
+    "languages": [
+      "en"
+    ],
+    "cost": "Free to join",
+    "sourceUrl": "https://tpl.bibliocommons.com/events/6a59177f9943bdf31e9f5790",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
+    "status": "active",
+    "accessibility": [
+      "Library accessibility services available on request",
+      "Public library location"
+    ],
+    "equipment": "Materials provided unless the source says otherwise.",
+    "food": "No food listed.",
+    "capacity": "Check the source page for availability.",
+    "commitment": "Single scheduled library program or series date from source feed.",
+    "registrationUrl": "https://tpl.bibliocommons.com/events/6a59177f9943bdf31e9f5790",
+    "providerContact": "+1-416-393-7712",
+    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
+    "lastVerified": "2026-07-20",
+    "trustedSource": true,
+    "volunteerHoursEligible": false,
+    "coopEligible": false,
+    "paidPosition": false,
+    "tags": [
+      "family learning",
+      "reading programs & storytimes",
+      "preschool children (0-5)",
+      "english"
+    ],
+    "sources": [
+      {
+        "label": "Official Toronto Public Library event page",
+        "url": "https://tpl.bibliocommons.com/events/6a59177f9943bdf31e9f5790",
+        "capturedAt": "2026-07-20T04:06:17.280Z",
+        "confidence": "high"
+      }
+    ],
+    "adminAuditTrail": [
+      {
+        "label": "Generated from official feed",
+        "at": "2026-07-20T04:06:17.280Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -15366,8 +16143,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbdc8bd272945e0068ed58",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -15380,7 +16157,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbdc8bd272945e0068ed58",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -15395,14 +16172,748 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdc8bd272945e0068ed58",
-        "capturedAt": "2026-07-19T19:33:21.988Z",
+        "capturedAt": "2026-07-20T04:06:17.851Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:21.988Z",
+        "at": "2026-07-20T04:06:17.851Z",
+        "actor": "Library RSS generator",
+        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
+      }
+    ]
+  },
+  {
+    "id": "tpl-rss-69ef9053bd9a3c316a55a7e2",
+    "title": "Family Time",
+    "organization": "Toronto Public Library",
+    "provider": "Toronto Public Library",
+    "description": "Join us for stories, songs, rhymes and activities in this program for children ages 5 and under and their parents or caregivers.",
+    "summary": "Join us for stories, songs, rhymes and activities in this program for children ages 5 and under and their parents or caregivers.",
+    "type": "One-time event",
+    "category": "Family Learning",
+    "categories": [
+      "Family Learning"
+    ],
+    "communityFocus": [
+      "Open to all",
+      "Newcomer-friendly"
+    ],
+    "city": "Toronto",
+    "region": "Toronto",
+    "address": "Queen/Saulter, 765 Queen Street East, Toronto, ON, M4M 1H3",
+    "latitude": 43.659131,
+    "longitude": -79.3475824,
+    "virtual": false,
+    "startDate": "2026-07-22T14:45:00.000Z",
+    "endDate": "2026-07-22T15:15:00.000Z",
+    "deadline": "2026-07-22T14:45:00.000Z",
+    "ageMin": 0,
+    "ageMax": 12,
+    "ages": {
+      "min": 0,
+      "max": 12
+    },
+    "grades": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "language": [
+      "en"
+    ],
+    "languages": [
+      "en"
+    ],
+    "cost": "Free to join",
+    "sourceUrl": "https://tpl.bibliocommons.com/events/69ef9053bd9a3c316a55a7e2",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
+    "status": "active",
+    "accessibility": [
+      "Library accessibility services available on request",
+      "Public library location"
+    ],
+    "equipment": "Materials provided unless the source says otherwise.",
+    "food": "No food listed.",
+    "capacity": "Check the source page for availability.",
+    "commitment": "Single scheduled library program or series date from source feed.",
+    "registrationUrl": "https://tpl.bibliocommons.com/events/69ef9053bd9a3c316a55a7e2",
+    "providerContact": "+1-416-393-7723",
+    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
+    "lastVerified": "2026-07-20",
+    "trustedSource": true,
+    "volunteerHoursEligible": false,
+    "coopEligible": false,
+    "paidPosition": false,
+    "tags": [
+      "family learning",
+      "ready for reading storytimes",
+      "reading programs & storytimes",
+      "preschool children (0-5)",
+      "english"
+    ],
+    "sources": [
+      {
+        "label": "Official Toronto Public Library event page",
+        "url": "https://tpl.bibliocommons.com/events/69ef9053bd9a3c316a55a7e2",
+        "capturedAt": "2026-07-20T04:06:17.280Z",
+        "confidence": "high"
+      }
+    ],
+    "adminAuditTrail": [
+      {
+        "label": "Generated from official feed",
+        "at": "2026-07-20T04:06:17.280Z",
+        "actor": "Library RSS generator",
+        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
+      }
+    ]
+  },
+  {
+    "id": "tpl-rss-69ced3e1fca21471b7ee1284",
+    "title": "Family Time",
+    "organization": "Toronto Public Library",
+    "provider": "Toronto Public Library",
+    "description": "Join us for stories, songs, rhymes and activities in this program for children ages 5 and under and their parents or caregivers.",
+    "summary": "Join us for stories, songs, rhymes and activities in this program for children ages 5 and under and their parents or caregivers.",
+    "type": "One-time event",
+    "category": "Family Learning",
+    "categories": [
+      "Family Learning"
+    ],
+    "communityFocus": [
+      "Open to all",
+      "Newcomer-friendly"
+    ],
+    "city": "Toronto",
+    "region": "Toronto",
+    "address": "Queen/Saulter, 765 Queen Street East, Toronto, ON, M4M 1H3",
+    "latitude": 43.659131,
+    "longitude": -79.3475824,
+    "virtual": false,
+    "startDate": "2026-07-22T14:45:00.000Z",
+    "endDate": "2026-07-22T15:15:00.000Z",
+    "deadline": "2026-07-22T14:45:00.000Z",
+    "ageMin": 0,
+    "ageMax": 12,
+    "ages": {
+      "min": 0,
+      "max": 12
+    },
+    "grades": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "language": [
+      "en"
+    ],
+    "languages": [
+      "en"
+    ],
+    "cost": "Free to join",
+    "sourceUrl": "https://tpl.bibliocommons.com/events/69ced3e1fca21471b7ee1284",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
+    "status": "active",
+    "accessibility": [
+      "Library accessibility services available on request",
+      "Public library location"
+    ],
+    "equipment": "Materials provided unless the source says otherwise.",
+    "food": "No food listed.",
+    "capacity": "Check the source page for availability.",
+    "commitment": "Single scheduled library program or series date from source feed.",
+    "registrationUrl": "https://tpl.bibliocommons.com/events/69ced3e1fca21471b7ee1284",
+    "providerContact": "+1-416-393-7723",
+    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
+    "lastVerified": "2026-07-20",
+    "trustedSource": true,
+    "volunteerHoursEligible": false,
+    "coopEligible": false,
+    "paidPosition": false,
+    "tags": [
+      "family learning",
+      "ready for reading storytimes",
+      "reading programs & storytimes",
+      "preschool children (0-5)",
+      "english"
+    ],
+    "sources": [
+      {
+        "label": "Official Toronto Public Library event page",
+        "url": "https://tpl.bibliocommons.com/events/69ced3e1fca21471b7ee1284",
+        "capturedAt": "2026-07-20T04:06:17.280Z",
+        "confidence": "high"
+      }
+    ],
+    "adminAuditTrail": [
+      {
+        "label": "Generated from official feed",
+        "at": "2026-07-20T04:06:17.280Z",
+        "actor": "Library RSS generator",
+        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
+      }
+    ]
+  },
+  {
+    "id": "tpl-rss-6a299e70f56bd86e00b5d688",
+    "title": "Family Time",
+    "organization": "Toronto Public Library",
+    "provider": "Toronto Public Library",
+    "description": "Join us for stories, songs, rhymes and activities in this program for children ages 5 and under and their parents or caregivers.",
+    "summary": "Join us for stories, songs, rhymes and activities in this program for children ages 5 and under and their parents or caregivers.",
+    "type": "One-time event",
+    "category": "Family Learning",
+    "categories": [
+      "Family Learning"
+    ],
+    "communityFocus": [
+      "Open to all",
+      "Newcomer-friendly"
+    ],
+    "city": "Toronto",
+    "region": "Toronto",
+    "address": "New Toronto, 110 Eleventh Street, Toronto, ON, M8V 3G5",
+    "latitude": 43.5990523,
+    "longitude": -79.5098493,
+    "virtual": false,
+    "startDate": "2026-07-22T15:00:00.000Z",
+    "endDate": "2026-07-22T15:30:00.000Z",
+    "deadline": "2026-07-22T15:00:00.000Z",
+    "ageMin": 0,
+    "ageMax": 12,
+    "ages": {
+      "min": 0,
+      "max": 12
+    },
+    "grades": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "language": [
+      "en"
+    ],
+    "languages": [
+      "en"
+    ],
+    "cost": "Free to join",
+    "sourceUrl": "https://tpl.bibliocommons.com/events/6a299e70f56bd86e00b5d688",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
+    "status": "active",
+    "accessibility": [
+      "Library accessibility services available on request",
+      "Public library location"
+    ],
+    "equipment": "Materials provided unless the source says otherwise.",
+    "food": "No food listed.",
+    "capacity": "Check the source page for availability.",
+    "commitment": "Single scheduled library program or series date from source feed.",
+    "registrationUrl": "https://tpl.bibliocommons.com/events/6a299e70f56bd86e00b5d688",
+    "providerContact": "+1-416-394-5350",
+    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
+    "lastVerified": "2026-07-20",
+    "trustedSource": true,
+    "volunteerHoursEligible": false,
+    "coopEligible": false,
+    "paidPosition": false,
+    "tags": [
+      "family learning",
+      "ready for reading storytimes",
+      "reading programs & storytimes",
+      "preschool children (0-5)",
+      "english"
+    ],
+    "sources": [
+      {
+        "label": "Official Toronto Public Library event page",
+        "url": "https://tpl.bibliocommons.com/events/6a299e70f56bd86e00b5d688",
+        "capturedAt": "2026-07-20T04:06:17.280Z",
+        "confidence": "high"
+      }
+    ],
+    "adminAuditTrail": [
+      {
+        "label": "Generated from official feed",
+        "at": "2026-07-20T04:06:17.280Z",
+        "actor": "Library RSS generator",
+        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
+      }
+    ]
+  },
+  {
+    "id": "tpl-rss-6a20a8cd52c88111723cd76b",
+    "title": "Summer Makers Club",
+    "organization": "Toronto Public Library",
+    "provider": "Toronto Public Library",
+    "description": "Join us for an afternoon of fun! Get hands on, boost your creativity, and explore fun new activities with friends and family.",
+    "summary": "Join us for an afternoon of fun! Get hands on, boost your creativity, and explore fun new activities with friends and family.",
+    "type": "One-time event",
+    "category": "Makerspace & Fabrication",
+    "categories": [
+      "STEM",
+      "Makerspace & Fabrication"
+    ],
+    "communityFocus": [
+      "Open to all",
+      "Newcomer-friendly"
+    ],
+    "city": "Toronto",
+    "region": "Toronto",
+    "address": "Leaside, 165 McRae Drive, Toronto, ON, M4G 1S8",
+    "latitude": 43.7062979,
+    "longitude": -79.3677821,
+    "virtual": false,
+    "startDate": "2026-07-22T15:00:00.000Z",
+    "endDate": "2026-07-22T16:00:00.000Z",
+    "deadline": "2026-07-22T15:00:00.000Z",
+    "ageMin": 6,
+    "ageMax": 12,
+    "ages": {
+      "min": 6,
+      "max": 12
+    },
+    "grades": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "language": [
+      "en"
+    ],
+    "languages": [
+      "en"
+    ],
+    "cost": "Free to join",
+    "sourceUrl": "https://tpl.bibliocommons.com/events/6a20a8cd52c88111723cd76b",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
+    "status": "active",
+    "accessibility": [
+      "Library accessibility services available on request",
+      "Public library location"
+    ],
+    "equipment": "Materials provided unless the source says otherwise.",
+    "food": "No food listed.",
+    "capacity": "Check the source page for availability.",
+    "commitment": "Single scheduled library program or series date from source feed.",
+    "registrationUrl": "https://tpl.bibliocommons.com/events/6a20a8cd52c88111723cd76b",
+    "providerContact": "+1-416-396-3835",
+    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
+    "lastVerified": "2026-07-20",
+    "trustedSource": true,
+    "volunteerHoursEligible": false,
+    "coopEligible": false,
+    "paidPosition": false,
+    "tags": [
+      "makerspace & fabrication",
+      "crafts & hobbies",
+      "school age children (6-12)",
+      "english"
+    ],
+    "sources": [
+      {
+        "label": "Official Toronto Public Library event page",
+        "url": "https://tpl.bibliocommons.com/events/6a20a8cd52c88111723cd76b",
+        "capturedAt": "2026-07-20T04:06:17.280Z",
+        "confidence": "high"
+      }
+    ],
+    "adminAuditTrail": [
+      {
+        "label": "Generated from official feed",
+        "at": "2026-07-20T04:06:17.280Z",
+        "actor": "Library RSS generator",
+        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
+      }
+    ]
+  },
+  {
+    "id": "tpl-rss-6a0743fc43b41b3d0066b462",
+    "title": "Family Time",
+    "organization": "Toronto Public Library",
+    "provider": "Toronto Public Library",
+    "description": "Join us for stories, songs, rhymes and activities in this program for children ages 5 and under and their parents or caregivers. Family Time runs from 11am to 11:30am. Children, parents and caregivers are invited to Stay and Play, from 11:30am to 12:00pm.",
+    "summary": "Join us for stories, songs, rhymes and activities in this program for children ages 5 and under and their parents or caregivers. Family Time runs from 11am to 11:30am. Children, parents and caregivers are invited to Stay and Play, from 11:30am to 12:00pm.",
+    "type": "One-time event",
+    "category": "Family Learning",
+    "categories": [
+      "Family Learning"
+    ],
+    "communityFocus": [
+      "Open to all",
+      "Newcomer-friendly"
+    ],
+    "city": "Toronto",
+    "region": "Toronto",
+    "address": "Fort York, 190 Fort York Boulevard, Toronto, ON, M5V 0E7",
+    "latitude": 43.6393148,
+    "longitude": -79.4003321,
+    "virtual": false,
+    "startDate": "2026-07-22T15:00:00.000Z",
+    "endDate": "2026-07-22T15:30:00.000Z",
+    "deadline": "2026-07-22T15:00:00.000Z",
+    "ageMin": 0,
+    "ageMax": 12,
+    "ages": {
+      "min": 0,
+      "max": 12
+    },
+    "grades": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "language": [
+      "en"
+    ],
+    "languages": [
+      "en"
+    ],
+    "cost": "Free to join",
+    "sourceUrl": "https://tpl.bibliocommons.com/events/6a0743fc43b41b3d0066b462",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
+    "status": "active",
+    "accessibility": [
+      "Library accessibility services available on request",
+      "Public library location"
+    ],
+    "equipment": "Materials provided unless the source says otherwise.",
+    "food": "No food listed.",
+    "capacity": "Check the source page for availability.",
+    "commitment": "Single scheduled library program or series date from source feed.",
+    "registrationUrl": "https://tpl.bibliocommons.com/events/6a0743fc43b41b3d0066b462",
+    "providerContact": "+1-416-393-6240",
+    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
+    "lastVerified": "2026-07-20",
+    "trustedSource": true,
+    "volunteerHoursEligible": false,
+    "coopEligible": false,
+    "paidPosition": false,
+    "tags": [
+      "family learning",
+      "ready for reading storytimes",
+      "reading programs & storytimes",
+      "preschool children (0-5)",
+      "english"
+    ],
+    "sources": [
+      {
+        "label": "Official Toronto Public Library event page",
+        "url": "https://tpl.bibliocommons.com/events/6a0743fc43b41b3d0066b462",
+        "capturedAt": "2026-07-20T04:06:17.280Z",
+        "confidence": "high"
+      }
+    ],
+    "adminAuditTrail": [
+      {
+        "label": "Generated from official feed",
+        "at": "2026-07-20T04:06:17.280Z",
+        "actor": "Library RSS generator",
+        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
+      }
+    ]
+  },
+  {
+    "id": "tpl-rss-69f0e9fd129f1274383b5869",
+    "title": "Summer Family Time",
+    "organization": "Toronto Public Library",
+    "provider": "Toronto Public Library",
+    "description": "Join us for stories, songs, rhymes and activities in this program for children ages 5 and under and their parents or caregivers. For the months of July and August, weekday Family Time will take place on Wednesdays. Toddler Time and Baby Time will resume some t",
+    "summary": "Join us for stories, songs, rhymes and activities in this program for children ages 5 and under and their parents or caregivers. For the months of July and August, weekday Family Time will take place on Wednesdays. Toddler Time and Baby Time will resume some t",
+    "type": "One-time event",
+    "category": "Family Learning",
+    "categories": [
+      "Family Learning"
+    ],
+    "communityFocus": [
+      "Open to all",
+      "Newcomer-friendly"
+    ],
+    "city": "Toronto",
+    "region": "Toronto",
+    "address": "Northern District, 40 Orchard View Boulevard, Toronto, ON, M4R 1B9",
+    "latitude": 43.7081884,
+    "longitude": -79.3997234,
+    "virtual": false,
+    "startDate": "2026-07-22T15:00:00.000Z",
+    "endDate": "2026-07-22T15:30:00.000Z",
+    "deadline": "2026-07-22T15:00:00.000Z",
+    "ageMin": 0,
+    "ageMax": 12,
+    "ages": {
+      "min": 0,
+      "max": 12
+    },
+    "grades": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "language": [
+      "en"
+    ],
+    "languages": [
+      "en"
+    ],
+    "cost": "Free to join",
+    "sourceUrl": "https://tpl.bibliocommons.com/events/69f0e9fd129f1274383b5869",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
+    "status": "active",
+    "accessibility": [
+      "Library accessibility services available on request",
+      "Public library location"
+    ],
+    "equipment": "Materials provided unless the source says otherwise.",
+    "food": "No food listed.",
+    "capacity": "Check the source page for availability.",
+    "commitment": "Single scheduled library program or series date from source feed.",
+    "registrationUrl": "https://tpl.bibliocommons.com/events/69f0e9fd129f1274383b5869",
+    "providerContact": "+1-416-393-7610",
+    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
+    "lastVerified": "2026-07-20",
+    "trustedSource": true,
+    "volunteerHoursEligible": false,
+    "coopEligible": false,
+    "paidPosition": false,
+    "tags": [
+      "family learning",
+      "ready for reading storytimes",
+      "reading programs & storytimes",
+      "preschool children (0-5)",
+      "english"
+    ],
+    "sources": [
+      {
+        "label": "Official Toronto Public Library event page",
+        "url": "https://tpl.bibliocommons.com/events/69f0e9fd129f1274383b5869",
+        "capturedAt": "2026-07-20T04:06:17.280Z",
+        "confidence": "high"
+      }
+    ],
+    "adminAuditTrail": [
+      {
+        "label": "Generated from official feed",
+        "at": "2026-07-20T04:06:17.280Z",
+        "actor": "Library RSS generator",
+        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
+      }
+    ]
+  },
+  {
+    "id": "tpl-rss-6a1090f8fab4ff0f649af048",
+    "title": "Wonder Workshop: Pollution Challenge",
+    "organization": "Toronto Public Library",
+    "provider": "Toronto Public Library",
+    "description": "Do you ever think about the impact of one little person or one tiny thing on the planet? When one pollutant becomes many, the planet hurts. But when one person becomes many, positive change can happen. In this workshop, you will design and build your own creat",
+    "summary": "Do you ever think about the impact of one little person or one tiny thing on the planet? When one pollutant becomes many, the planet hurts. But when one person becomes many, positive change can happen. In this workshop, you will design and build your own creat",
+    "type": "One-time event",
+    "category": "Science & Engineering",
+    "categories": [
+      "STEM",
+      "Science & Engineering"
+    ],
+    "communityFocus": [
+      "Open to all",
+      "Newcomer-friendly"
+    ],
+    "city": "Toronto",
+    "region": "Toronto",
+    "address": "Taylor Memorial, 1440 Kingston Road, Toronto, ON, M1N 1R3",
+    "latitude": 43.68783450000001,
+    "longitude": -79.27132089999999,
+    "virtual": false,
+    "startDate": "2026-07-22T15:00:00.000Z",
+    "endDate": "2026-07-22T16:30:00.000Z",
+    "deadline": "2026-07-22T15:00:00.000Z",
+    "ageMin": 6,
+    "ageMax": 12,
+    "ages": {
+      "min": 6,
+      "max": 12
+    },
+    "grades": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "language": [
+      "en"
+    ],
+    "languages": [
+      "en"
+    ],
+    "cost": "Free to join",
+    "sourceUrl": "https://tpl.bibliocommons.com/events/6a1090f8fab4ff0f649af048",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
+    "status": "active",
+    "accessibility": [
+      "Library accessibility services available on request",
+      "Public library location"
+    ],
+    "equipment": "Materials provided unless the source says otherwise.",
+    "food": "No food listed.",
+    "capacity": "10 spots listed by source.",
+    "commitment": "Single scheduled library program or series date from source feed.",
+    "registrationUrl": "https://tpl.bibliocommons.com/events/6a1090f8fab4ff0f649af048",
+    "providerContact": "ask@tpl.ca",
+    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
+    "lastVerified": "2026-07-20",
+    "trustedSource": true,
+    "volunteerHoursEligible": false,
+    "coopEligible": false,
+    "paidPosition": false,
+    "tags": [
+      "science & engineering",
+      "summer wonder",
+      "school age children (6-12)",
+      "english"
+    ],
+    "sources": [
+      {
+        "label": "Official Toronto Public Library event page",
+        "url": "https://tpl.bibliocommons.com/events/6a1090f8fab4ff0f649af048",
+        "capturedAt": "2026-07-20T04:06:17.280Z",
+        "confidence": "high"
+      }
+    ],
+    "adminAuditTrail": [
+      {
+        "label": "Generated from official feed",
+        "at": "2026-07-20T04:06:17.280Z",
+        "actor": "Library RSS generator",
+        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
+      }
+    ]
+  },
+  {
+    "id": "tpl-rss-6a15bffc490f176f7dd668b9",
+    "title": "Family Time",
+    "organization": "Toronto Public Library",
+    "provider": "Toronto Public Library",
+    "description": "Join us for stories, songs, rhymes and activities in this program for children ages 5 and under and their parents or caregivers. Family Time runs from 11:00 to 11:30 . Children, parents and caregivers are invited to Stay and Play from 11:30 to 12:00 .",
+    "summary": "Join us for stories, songs, rhymes and activities in this program for children ages 5 and under and their parents or caregivers. Family Time runs from 11:00 to 11:30 . Children, parents and caregivers are invited to Stay and Play from 11:30 to 12:00 .",
+    "type": "One-time event",
+    "category": "Family Learning",
+    "categories": [
+      "Family Learning"
+    ],
+    "communityFocus": [
+      "Open to all",
+      "Newcomer-friendly"
+    ],
+    "city": "Toronto",
+    "region": "Toronto",
+    "address": "Forest Hill, 700 Eglinton Avenue West, Toronto, ON, M5N 1B9",
+    "latitude": 43.70234970000001,
+    "longitude": -79.4207275,
+    "virtual": false,
+    "startDate": "2026-07-22T15:00:00.000Z",
+    "endDate": "2026-07-22T15:30:00.000Z",
+    "deadline": "2026-07-22T15:00:00.000Z",
+    "ageMin": 0,
+    "ageMax": 12,
+    "ages": {
+      "min": 0,
+      "max": 12
+    },
+    "grades": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "language": [
+      "en"
+    ],
+    "languages": [
+      "en"
+    ],
+    "cost": "Free to join",
+    "sourceUrl": "https://tpl.bibliocommons.com/events/6a15bffc490f176f7dd668b9",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
+    "status": "active",
+    "accessibility": [
+      "Library accessibility services available on request",
+      "Public library location"
+    ],
+    "equipment": "Materials provided unless the source says otherwise.",
+    "food": "No food listed.",
+    "capacity": "Check the source page for availability.",
+    "commitment": "Single scheduled library program or series date from source feed.",
+    "registrationUrl": "https://tpl.bibliocommons.com/events/6a15bffc490f176f7dd668b9",
+    "providerContact": "fhstaff@tpl.ca",
+    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
+    "lastVerified": "2026-07-20",
+    "trustedSource": true,
+    "volunteerHoursEligible": false,
+    "coopEligible": false,
+    "paidPosition": false,
+    "tags": [
+      "family learning",
+      "ready for reading storytimes",
+      "reading programs & storytimes",
+      "preschool children (0-5)",
+      "english"
+    ],
+    "sources": [
+      {
+        "label": "Official Toronto Public Library event page",
+        "url": "https://tpl.bibliocommons.com/events/6a15bffc490f176f7dd668b9",
+        "capturedAt": "2026-07-20T04:06:17.280Z",
+        "confidence": "high"
+      }
+    ],
+    "adminAuditTrail": [
+      {
+        "label": "Generated from official feed",
+        "at": "2026-07-20T04:06:17.280Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -15450,8 +16961,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbde97d272945e0068ee65",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -15464,7 +16975,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbde97d272945e0068ee65",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -15479,14 +16990,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbde97d272945e0068ee65",
-        "capturedAt": "2026-07-19T19:33:21.988Z",
+        "capturedAt": "2026-07-20T04:06:17.851Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:21.988Z",
+        "at": "2026-07-20T04:06:17.851Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -15541,8 +17052,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/6a146aa4748daf857d59b65d",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -15555,7 +17066,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/6a146aa4748daf857d59b65d",
     "providerContact": "mplchats@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -15572,14 +17083,505 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a146aa4748daf857d59b65d",
-        "capturedAt": "2026-07-19T19:33:21.988Z",
+        "capturedAt": "2026-07-20T04:06:17.851Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:21.988Z",
+        "at": "2026-07-20T04:06:17.851Z",
+        "actor": "Library RSS generator",
+        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
+      }
+    ]
+  },
+  {
+    "id": "tpl-rss-6a5909f9e5d5fbb123bf0dbc",
+    "title": "Employment Workshops for Newcomers",
+    "organization": "Toronto Public Library",
+    "provider": "Toronto Public Library",
+    "description": "Build your career with practical job search skills. In this workshop you will learn how to create resumes, search for jobs, and practice interview skills. This is a partnered program with North York Community House.",
+    "summary": "Build your career with practical job search skills. In this workshop you will learn how to create resumes, search for jobs, and practice interview skills. This is a partnered program with North York Community House.",
+    "type": "One-time event",
+    "category": "Career & Mentorship",
+    "categories": [
+      "Career & Mentorship"
+    ],
+    "communityFocus": [
+      "Open to all",
+      "Newcomer-friendly"
+    ],
+    "city": "Toronto",
+    "region": "Toronto",
+    "address": "York Woods, 1785 Finch Avenue West, Toronto, ON, M3N 1M6",
+    "latitude": 43.75889979999999,
+    "longitude": -79.5073389,
+    "virtual": false,
+    "startDate": "2026-07-22T16:00:00.000Z",
+    "endDate": "2026-07-22T18:00:00.000Z",
+    "deadline": "2026-07-22T16:00:00.000Z",
+    "ageMin": 18,
+    "ages": {
+      "min": 18
+    },
+    "grades": [],
+    "language": [
+      "en"
+    ],
+    "languages": [
+      "en"
+    ],
+    "cost": "Free to join",
+    "sourceUrl": "https://tpl.bibliocommons.com/events/6a5909f9e5d5fbb123bf0dbc",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
+    "status": "active",
+    "accessibility": [
+      "Library accessibility services available on request",
+      "Public library location"
+    ],
+    "equipment": "Materials provided unless the source says otherwise.",
+    "food": "No food listed.",
+    "capacity": "Check the source page for availability.",
+    "commitment": "Single scheduled library program or series date from source feed.",
+    "registrationUrl": "https://tpl.bibliocommons.com/events/6a5909f9e5d5fbb123bf0dbc",
+    "providerContact": "ask@tpl.ca",
+    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
+    "lastVerified": "2026-07-20",
+    "trustedSource": true,
+    "volunteerHoursEligible": false,
+    "coopEligible": false,
+    "paidPosition": false,
+    "tags": [
+      "career & mentorship",
+      "library settlement partnerships​",
+      "career & job search",
+      "adults (18+)",
+      "english"
+    ],
+    "sources": [
+      {
+        "label": "Official Toronto Public Library event page",
+        "url": "https://tpl.bibliocommons.com/events/6a5909f9e5d5fbb123bf0dbc",
+        "capturedAt": "2026-07-20T04:06:17.281Z",
+        "confidence": "high"
+      }
+    ],
+    "adminAuditTrail": [
+      {
+        "label": "Generated from official feed",
+        "at": "2026-07-20T04:06:17.281Z",
+        "actor": "Library RSS generator",
+        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
+      }
+    ]
+  },
+  {
+    "id": "tpl-rss-6a47e4aee6e135e78be03d88",
+    "title": "Summer Settlement Services",
+    "organization": "Toronto Public Library",
+    "provider": "Toronto Public Library",
+    "description": "New to Canada? Need information on employment, housing, language learning, schools, or other topics? A Settlement Worker can help. Drop in to meet our settlement worker every Tuesday, Wednesday, or Thursday from 12:30 pm - 8:30 pm. In partnership with Catholic",
+    "summary": "New to Canada? Need information on employment, housing, language learning, schools, or other topics? A Settlement Worker can help. Drop in to meet our settlement worker every Tuesday, Wednesday, or Thursday from 12:30 pm - 8:30 pm. In partnership with Catholic",
+    "type": "Drop-in",
+    "category": "Newcomer & Settlement",
+    "categories": [
+      "Newcomer & Settlement"
+    ],
+    "communityFocus": [
+      "Open to all",
+      "Newcomer-friendly"
+    ],
+    "city": "Toronto",
+    "region": "Toronto",
+    "address": "Burrows Hall, 1081 Progress Ave, Toronto, ON, M1B 5Z6",
+    "latitude": 43.7939492,
+    "longitude": -79.23422219999999,
+    "virtual": false,
+    "startDate": "2026-07-22T16:30:00.000Z",
+    "endDate": "2026-07-23T00:30:00.000Z",
+    "deadline": "2026-07-22T16:30:00.000Z",
+    "ageMin": 18,
+    "ages": {
+      "min": 18
+    },
+    "grades": [],
+    "language": [
+      "en"
+    ],
+    "languages": [
+      "en"
+    ],
+    "cost": "Free to join",
+    "sourceUrl": "https://tpl.bibliocommons.com/events/6a47e4aee6e135e78be03d88",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
+    "status": "active",
+    "accessibility": [
+      "Library accessibility services available on request",
+      "Public library location"
+    ],
+    "equipment": "Materials provided unless the source says otherwise.",
+    "food": "No food listed.",
+    "capacity": "Check the source page for availability.",
+    "commitment": "Single scheduled library program or series date from source feed.",
+    "registrationUrl": "https://tpl.bibliocommons.com/events/6a47e4aee6e135e78be03d88",
+    "providerContact": "+1-416-396-8740",
+    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
+    "lastVerified": "2026-07-20",
+    "trustedSource": true,
+    "volunteerHoursEligible": false,
+    "coopEligible": false,
+    "paidPosition": false,
+    "tags": [
+      "newcomer & settlement",
+      "newcomer",
+      "civic & community engagement",
+      "adults (18+)",
+      "older adults",
+      "english"
+    ],
+    "sources": [
+      {
+        "label": "Official Toronto Public Library event page",
+        "url": "https://tpl.bibliocommons.com/events/6a47e4aee6e135e78be03d88",
+        "capturedAt": "2026-07-20T04:06:17.281Z",
+        "confidence": "high"
+      }
+    ],
+    "adminAuditTrail": [
+      {
+        "label": "Generated from official feed",
+        "at": "2026-07-20T04:06:17.281Z",
+        "actor": "Library RSS generator",
+        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
+      }
+    ]
+  },
+  {
+    "id": "tpl-rss-6a26efc62ea730c17ab5428c",
+    "title": "Preschool Time",
+    "organization": "Toronto Public Library",
+    "provider": "Toronto Public Library",
+    "description": "Join us for stories, songs and fun activities that will help your preschooler get a head start on school, in this program for children ages 3-5 year, and their parent or caregiver. Preschool Time runs from 1:00 PM to 2:00 PM . Children, parents and caregivers ",
+    "summary": "Join us for stories, songs and fun activities that will help your preschooler get a head start on school, in this program for children ages 3-5 year, and their parent or caregiver. Preschool Time runs from 1:00 PM to 2:00 PM . Children, parents and caregivers ",
+    "type": "One-time event",
+    "category": "Family Learning",
+    "categories": [
+      "Family Learning"
+    ],
+    "communityFocus": [
+      "Open to all",
+      "Newcomer-friendly"
+    ],
+    "city": "Toronto",
+    "region": "Toronto",
+    "address": "Albert Campbell, 496 Birchmount Road, Toronto, ON, M1K 1N8",
+    "latitude": 43.7080744,
+    "longitude": -79.2692964,
+    "virtual": false,
+    "startDate": "2026-07-22T17:00:00.000Z",
+    "endDate": "2026-07-22T18:00:00.000Z",
+    "deadline": "2026-07-22T17:00:00.000Z",
+    "ageMin": 3,
+    "ageMax": 5,
+    "ages": {
+      "min": 3,
+      "max": 5
+    },
+    "grades": [
+      "0"
+    ],
+    "language": [
+      "en"
+    ],
+    "languages": [
+      "en"
+    ],
+    "cost": "Free to join",
+    "sourceUrl": "https://tpl.bibliocommons.com/events/6a26efc62ea730c17ab5428c",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
+    "status": "active",
+    "accessibility": [
+      "Library accessibility services available on request",
+      "Public library location"
+    ],
+    "equipment": "Materials provided unless the source says otherwise.",
+    "food": "No food listed.",
+    "capacity": "Check the source page for availability.",
+    "commitment": "Single scheduled library program or series date from source feed.",
+    "registrationUrl": "https://tpl.bibliocommons.com/events/6a26efc62ea730c17ab5428c",
+    "providerContact": "+1-416-396-8890",
+    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
+    "lastVerified": "2026-07-20",
+    "trustedSource": true,
+    "volunteerHoursEligible": false,
+    "coopEligible": false,
+    "paidPosition": false,
+    "tags": [
+      "family learning",
+      "ready for reading storytimes",
+      "reading programs & storytimes",
+      "preschool children (0-5)",
+      "english"
+    ],
+    "sources": [
+      {
+        "label": "Official Toronto Public Library event page",
+        "url": "https://tpl.bibliocommons.com/events/6a26efc62ea730c17ab5428c",
+        "capturedAt": "2026-07-20T04:06:17.281Z",
+        "confidence": "high"
+      }
+    ],
+    "adminAuditTrail": [
+      {
+        "label": "Generated from official feed",
+        "at": "2026-07-20T04:06:17.281Z",
+        "actor": "Library RSS generator",
+        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
+      }
+    ]
+  },
+  {
+    "id": "tpl-rss-6a35d4bccaf934360064503c",
+    "title": "Downsview Senior Social",
+    "organization": "Toronto Public Library",
+    "provider": "Toronto Public Library",
+    "description": "Join other seniors at the Downsview branch every Wednesday afternoon for coffee, crafts, games, and social activities! July 8: Volunteer Toronto: How to Volunteer & Give Back to Your Community July 15: Bingo July 22: Mod Podge Photo Transfers July 29: Wheel of",
+    "summary": "Join other seniors at the Downsview branch every Wednesday afternoon for coffee, crafts, games, and social activities! July 8: Volunteer Toronto: How to Volunteer & Give Back to Your Community July 15: Bingo July 22: Mod Podge Photo Transfers July 29: Wheel of",
+    "type": "Volunteer role",
+    "category": "Volunteer Hours",
+    "categories": [
+      "Volunteer Hours"
+    ],
+    "communityFocus": [
+      "Open to all",
+      "Newcomer-friendly"
+    ],
+    "city": "Toronto",
+    "region": "Toronto",
+    "address": "Downsview, 2793 Keele Street, Toronto, ON, M3M 2G3",
+    "latitude": 43.7288401,
+    "longitude": -79.4820428,
+    "virtual": false,
+    "startDate": "2026-07-22T17:00:00.000Z",
+    "endDate": "2026-07-22T18:30:00.000Z",
+    "deadline": "2026-07-22T17:00:00.000Z",
+    "ageMin": 18,
+    "ages": {
+      "min": 18
+    },
+    "grades": [],
+    "language": [
+      "en"
+    ],
+    "languages": [
+      "en"
+    ],
+    "cost": "Free to join",
+    "sourceUrl": "https://tpl.bibliocommons.com/events/6a35d4bccaf934360064503c",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
+    "status": "active",
+    "accessibility": [
+      "Library accessibility services available on request",
+      "Public library location"
+    ],
+    "equipment": "Materials provided unless the source says otherwise.",
+    "food": "No food listed.",
+    "capacity": "Check the source page for availability.",
+    "commitment": "Single scheduled library program or series date from source feed.",
+    "registrationUrl": "https://tpl.bibliocommons.com/events/6a35d4bccaf934360064503c",
+    "providerContact": "+1-416-395-5720",
+    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
+    "lastVerified": "2026-07-20",
+    "trustedSource": true,
+    "volunteerHoursEligible": true,
+    "coopEligible": false,
+    "paidPosition": false,
+    "tags": [
+      "volunteer hours",
+      "crafts & hobbies",
+      "older adults",
+      "english"
+    ],
+    "sources": [
+      {
+        "label": "Official Toronto Public Library event page",
+        "url": "https://tpl.bibliocommons.com/events/6a35d4bccaf934360064503c",
+        "capturedAt": "2026-07-20T04:06:17.282Z",
+        "confidence": "high"
+      }
+    ],
+    "adminAuditTrail": [
+      {
+        "label": "Generated from official feed",
+        "at": "2026-07-20T04:06:17.282Z",
+        "actor": "Library RSS generator",
+        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
+      }
+    ]
+  },
+  {
+    "id": "tpl-rss-6a18abbc46d5f64f7dcd369e",
+    "title": "Finding Recovery Through Exercise Skills and Hope (FRESH)",
+    "organization": "Toronto Public Library",
+    "provider": "Toronto Public Library",
+    "description": "This program helps people stay active, make friends, learn new skills, and have fun. It involves peer-led group activities which can include crafts, games, walking, yoga, and more. Meet new folks, build social connections, and tell us about programs and servic",
+    "summary": "This program helps people stay active, make friends, learn new skills, and have fun. It involves peer-led group activities which can include crafts, games, walking, yoga, and more. Meet new folks, build social connections, and tell us about programs and servic",
+    "type": "Drop-in",
+    "category": "Makerspace & Fabrication",
+    "categories": [
+      "STEM",
+      "Makerspace & Fabrication"
+    ],
+    "communityFocus": [
+      "Open to all",
+      "Newcomer-friendly"
+    ],
+    "city": "Toronto",
+    "region": "Toronto",
+    "address": "Maria A. Shchuka, 1745 Eglinton Avenue West, Toronto, ON, M6E 2H4",
+    "latitude": 43.6960925,
+    "longitude": -79.4472591,
+    "virtual": false,
+    "startDate": "2026-07-22T17:00:00.000Z",
+    "endDate": "2026-07-22T19:00:00.000Z",
+    "deadline": "2026-07-22T17:00:00.000Z",
+    "ageMin": 18,
+    "ages": {
+      "min": 18
+    },
+    "grades": [],
+    "language": [
+      "en"
+    ],
+    "languages": [
+      "en"
+    ],
+    "cost": "Free to join",
+    "sourceUrl": "https://tpl.bibliocommons.com/events/6a18abbc46d5f64f7dcd369e",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
+    "status": "active",
+    "accessibility": [
+      "Library accessibility services available on request",
+      "Public library location"
+    ],
+    "equipment": "Materials provided unless the source says otherwise.",
+    "food": "No food listed.",
+    "capacity": "Check the source page for availability.",
+    "commitment": "Single scheduled library program or series date from source feed.",
+    "registrationUrl": "https://tpl.bibliocommons.com/events/6a18abbc46d5f64f7dcd369e",
+    "providerContact": "+1-416-394-1000",
+    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
+    "lastVerified": "2026-07-20",
+    "trustedSource": true,
+    "volunteerHoursEligible": false,
+    "coopEligible": false,
+    "paidPosition": false,
+    "tags": [
+      "makerspace & fabrication",
+      "social & crisis support services​",
+      "personal development",
+      "adults (18+)",
+      "english"
+    ],
+    "sources": [
+      {
+        "label": "Official Toronto Public Library event page",
+        "url": "https://tpl.bibliocommons.com/events/6a18abbc46d5f64f7dcd369e",
+        "capturedAt": "2026-07-20T04:06:17.282Z",
+        "confidence": "high"
+      }
+    ],
+    "adminAuditTrail": [
+      {
+        "label": "Generated from official feed",
+        "at": "2026-07-20T04:06:17.282Z",
+        "actor": "Library RSS generator",
+        "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
+      }
+    ]
+  },
+  {
+    "id": "tpl-rss-6a2ef263414ef43d0096d7e9",
+    "title": "Everyday Courage, Everyday Resilience: Finding your resilient flow in times of change and complexity.",
+    "organization": "Toronto Public Library",
+    "provider": "Toronto Public Library",
+    "description": "Join us for an interactive discussion with Career Coach in Residence Sangeetha Dikshit and guest speaker, Abirambika Ravivarman. Resilience is more than bouncing back, it's our capacity to navigate change, uncertainty, and challenges with greater awareness, ad",
+    "summary": "Join us for an interactive discussion with Career Coach in Residence Sangeetha Dikshit and guest speaker, Abirambika Ravivarman. Resilience is more than bouncing back, it's our capacity to navigate change, uncertainty, and challenges with greater awareness, ad",
+    "type": "One-time event",
+    "category": "Career & Mentorship",
+    "categories": [
+      "Career & Mentorship"
+    ],
+    "communityFocus": [
+      "Open to all",
+      "Newcomer-friendly"
+    ],
+    "city": "Toronto",
+    "region": "Toronto",
+    "address": "Online event hosted by Toronto Public Library",
+    "latitude": 43.6532,
+    "longitude": -79.3832,
+    "virtual": true,
+    "startDate": "2026-07-22T17:00:00.000Z",
+    "endDate": "2026-07-22T18:00:00.000Z",
+    "deadline": "2026-07-22T17:00:00.000Z",
+    "ageMin": 18,
+    "ages": {
+      "min": 18
+    },
+    "grades": [],
+    "language": [
+      "en"
+    ],
+    "languages": [
+      "en"
+    ],
+    "cost": "Free to join",
+    "sourceUrl": "https://tpl.bibliocommons.com/events/6a2ef263414ef43d0096d7e9",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
+    "status": "active",
+    "accessibility": [
+      "Library accessibility services available on request",
+      "Online access"
+    ],
+    "equipment": "Internet-connected device may be needed.",
+    "food": "No food listed.",
+    "capacity": "100 spots listed by source.",
+    "commitment": "Single scheduled library program or series date from source feed.",
+    "registrationUrl": "https://tpl.bibliocommons.com/events/6a2ef263414ef43d0096d7e9",
+    "providerContact": "ccir@tpl.ca",
+    "freeStatusProof": "Official Toronto Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
+    "lastVerified": "2026-07-20",
+    "trustedSource": true,
+    "volunteerHoursEligible": false,
+    "coopEligible": false,
+    "paidPosition": false,
+    "tags": [
+      "career & mentorship",
+      "career coaches in residence",
+      "career & job search",
+      "younger adults (18-24)",
+      "english"
+    ],
+    "sources": [
+      {
+        "label": "Official Toronto Public Library event page",
+        "url": "https://tpl.bibliocommons.com/events/6a2ef263414ef43d0096d7e9",
+        "capturedAt": "2026-07-20T04:06:17.282Z",
+        "confidence": "high"
+      }
+    ],
+    "adminAuditTrail": [
+      {
+        "label": "Generated from official feed",
+        "at": "2026-07-20T04:06:17.282Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -15623,8 +17625,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/6a06106246d5f64f7dcbb82e",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -15637,7 +17639,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/6a06106246d5f64f7dcbb82e",
     "providerContact": "mplcommunitylibrarians@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": true,
     "coopEligible": false,
@@ -15653,14 +17655,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a06106246d5f64f7dcbb82e",
-        "capturedAt": "2026-07-19T19:33:22.736Z",
+        "capturedAt": "2026-07-20T04:06:18.321Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:22.736Z",
+        "at": "2026-07-20T04:06:18.321Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -15715,8 +17717,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/692dbdf9d923da4200b3179f",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -15729,7 +17731,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/692dbdf9d923da4200b3179f",
     "providerContact": "mplchats@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -15744,14 +17746,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/692dbdf9d923da4200b3179f",
-        "capturedAt": "2026-07-19T19:33:22.736Z",
+        "capturedAt": "2026-07-20T04:06:18.322Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:22.736Z",
+        "at": "2026-07-20T04:06:18.322Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -15799,8 +17801,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbde1fe59a13000d3e1cfd",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -15813,7 +17815,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbde1fe59a13000d3e1cfd",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -15828,14 +17830,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbde1fe59a13000d3e1cfd",
-        "capturedAt": "2026-07-19T19:33:22.736Z",
+        "capturedAt": "2026-07-20T04:06:18.322Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:22.736Z",
+        "at": "2026-07-20T04:06:18.322Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -15890,8 +17892,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/6a1469f0a99bdd027d42cccb",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -15904,7 +17906,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/6a1469f0a99bdd027d42cccb",
     "providerContact": "mplchats@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -15921,14 +17923,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a1469f0a99bdd027d42cccb",
-        "capturedAt": "2026-07-19T19:33:22.736Z",
+        "capturedAt": "2026-07-20T04:06:18.322Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:22.736Z",
+        "at": "2026-07-20T04:06:18.322Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -15976,8 +17978,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1db2",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -15990,7 +17992,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1db2",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -16005,14 +18007,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1db2",
-        "capturedAt": "2026-07-19T19:33:22.736Z",
+        "capturedAt": "2026-07-20T04:06:18.322Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:22.736Z",
+        "at": "2026-07-20T04:06:18.322Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -16060,8 +18062,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/69274b3f44d0e96d007b8754",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -16074,7 +18076,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/69274b3f44d0e96d007b8754",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -16089,14 +18091,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/69274b3f44d0e96d007b8754",
-        "capturedAt": "2026-07-19T19:33:22.736Z",
+        "capturedAt": "2026-07-20T04:06:18.322Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:22.736Z",
+        "at": "2026-07-20T04:06:18.322Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -16144,8 +18146,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbd37875911f28001a233a",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -16158,7 +18160,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbd37875911f28001a233a",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -16173,14 +18175,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbd37875911f28001a233a",
-        "capturedAt": "2026-07-19T19:33:22.736Z",
+        "capturedAt": "2026-07-20T04:06:18.322Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:22.736Z",
+        "at": "2026-07-20T04:06:18.322Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -16228,8 +18230,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbdc50e59a13000d3e1c8d",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -16242,7 +18244,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbdc50e59a13000d3e1c8d",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -16257,14 +18259,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdc50e59a13000d3e1c8d",
-        "capturedAt": "2026-07-19T19:33:22.737Z",
+        "capturedAt": "2026-07-20T04:06:18.322Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:22.737Z",
+        "at": "2026-07-20T04:06:18.322Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -16312,8 +18314,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbde97d272945e0068ee66",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -16326,7 +18328,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbde97d272945e0068ee66",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -16341,14 +18343,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbde97d272945e0068ee66",
-        "capturedAt": "2026-07-19T19:33:22.737Z",
+        "capturedAt": "2026-07-20T04:06:18.322Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:22.737Z",
+        "at": "2026-07-20T04:06:18.322Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -16403,8 +18405,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/6a14693a46d5f64f7dccccfa",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -16417,7 +18419,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/6a14693a46d5f64f7dccccfa",
     "providerContact": "mplchats@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -16434,14 +18436,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a14693a46d5f64f7dccccfa",
-        "capturedAt": "2026-07-19T19:33:22.737Z",
+        "capturedAt": "2026-07-20T04:06:18.322Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:22.737Z",
+        "at": "2026-07-20T04:06:18.322Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -16489,8 +18491,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbd37875911f28001a233b",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -16503,7 +18505,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbd37875911f28001a233b",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -16518,14 +18520,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbd37875911f28001a233b",
-        "capturedAt": "2026-07-19T19:33:22.737Z",
+        "capturedAt": "2026-07-20T04:06:18.322Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:22.737Z",
+        "at": "2026-07-20T04:06:18.322Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -16573,8 +18575,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbdd1b0176055300fe809b",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -16587,7 +18589,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbdd1b0176055300fe809b",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -16602,14 +18604,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdd1b0176055300fe809b",
-        "capturedAt": "2026-07-19T19:33:22.737Z",
+        "capturedAt": "2026-07-20T04:06:18.322Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:22.737Z",
+        "at": "2026-07-20T04:06:18.322Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -16657,8 +18659,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbdc50e59a13000d3e1c8e",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -16671,7 +18673,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbdc50e59a13000d3e1c8e",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -16686,14 +18688,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdc50e59a13000d3e1c8e",
-        "capturedAt": "2026-07-19T19:33:22.737Z",
+        "capturedAt": "2026-07-20T04:06:18.322Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:22.737Z",
+        "at": "2026-07-20T04:06:18.322Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -16741,8 +18743,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/694992cb4be11d3d00d95e2f",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -16755,7 +18757,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/694992cb4be11d3d00d95e2f",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -16770,14 +18772,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/694992cb4be11d3d00d95e2f",
-        "capturedAt": "2026-07-19T19:33:22.737Z",
+        "capturedAt": "2026-07-20T04:06:18.322Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:22.737Z",
+        "at": "2026-07-20T04:06:18.322Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -16832,8 +18834,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbd36ee647c8ff0c387294",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -16846,7 +18848,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbd36ee647c8ff0c387294",
     "providerContact": "mplchats@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -16861,14 +18863,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbd36ee647c8ff0c387294",
-        "capturedAt": "2026-07-19T19:33:23.209Z",
+        "capturedAt": "2026-07-20T04:06:18.877Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:23.209Z",
+        "at": "2026-07-20T04:06:18.877Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -16923,8 +18925,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbe20064ad59251cb9d999",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -16937,7 +18939,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbe20064ad59251cb9d999",
     "providerContact": "mplchats@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -16952,14 +18954,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbe20064ad59251cb9d999",
-        "capturedAt": "2026-07-19T19:33:23.209Z",
+        "capturedAt": "2026-07-20T04:06:18.877Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:23.209Z",
+        "at": "2026-07-20T04:06:18.877Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -17007,8 +19009,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbde1fe59a13000d3e1cfe",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -17021,7 +19023,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbde1fe59a13000d3e1cfe",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -17036,14 +19038,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbde1fe59a13000d3e1cfe",
-        "capturedAt": "2026-07-19T19:33:23.209Z",
+        "capturedAt": "2026-07-20T04:06:18.877Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:23.209Z",
+        "at": "2026-07-20T04:06:18.877Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -17098,8 +19100,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbe0e82edc686d00f5c89f",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -17112,7 +19114,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbe0e82edc686d00f5c89f",
     "providerContact": "mplchats@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -17127,14 +19129,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbe0e82edc686d00f5c89f",
-        "capturedAt": "2026-07-19T19:33:23.209Z",
+        "capturedAt": "2026-07-20T04:06:18.877Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:23.209Z",
+        "at": "2026-07-20T04:06:18.877Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -17189,8 +19191,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbe12275911f28001a2539",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -17203,7 +19205,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbe12275911f28001a2539",
     "providerContact": "mplchats@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -17219,14 +19221,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbe12275911f28001a2539",
-        "capturedAt": "2026-07-19T19:33:23.210Z",
+        "capturedAt": "2026-07-20T04:06:18.877Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:23.210Z",
+        "at": "2026-07-20T04:06:18.877Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -17281,8 +19283,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbe0cde647c8ff0c387431",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -17295,7 +19297,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbe0cde647c8ff0c387431",
     "providerContact": "mplchats@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -17310,14 +19312,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbe0cde647c8ff0c387431",
-        "capturedAt": "2026-07-19T19:33:23.210Z",
+        "capturedAt": "2026-07-20T04:06:18.877Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:23.210Z",
+        "at": "2026-07-20T04:06:18.877Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -17365,8 +19367,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbdda72edc686d00f5c7f5",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -17379,7 +19381,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbdda72edc686d00f5c7f5",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -17394,14 +19396,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdda72edc686d00f5c7f5",
-        "capturedAt": "2026-07-19T19:33:23.210Z",
+        "capturedAt": "2026-07-20T04:06:18.877Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:23.210Z",
+        "at": "2026-07-20T04:06:18.877Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -17456,8 +19458,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/6a1469a7748daf857d59b63f",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -17470,7 +19472,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/6a1469a7748daf857d59b63f",
     "providerContact": "mplchats@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -17487,14 +19489,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a1469a7748daf857d59b63f",
-        "capturedAt": "2026-07-19T19:33:23.210Z",
+        "capturedAt": "2026-07-20T04:06:18.877Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:23.210Z",
+        "at": "2026-07-20T04:06:18.877Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -17549,8 +19551,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbe0a50176055300fe8150",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -17563,7 +19565,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbe0a50176055300fe8150",
     "providerContact": "mplchats@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -17578,14 +19580,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbe0a50176055300fe8150",
-        "capturedAt": "2026-07-19T19:33:23.210Z",
+        "capturedAt": "2026-07-20T04:06:18.877Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:23.210Z",
+        "at": "2026-07-20T04:06:18.877Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -17640,8 +19642,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbe1952edc686d00f5c970",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -17654,7 +19656,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbe1952edc686d00f5c970",
     "providerContact": "mplchats@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -17669,14 +19671,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbe1952edc686d00f5c970",
-        "capturedAt": "2026-07-19T19:33:23.210Z",
+        "capturedAt": "2026-07-20T04:06:18.877Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:23.210Z",
+        "at": "2026-07-20T04:06:18.877Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -17724,8 +19726,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1db3",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -17738,7 +19740,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1db3",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -17753,14 +19755,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1db3",
-        "capturedAt": "2026-07-19T19:33:23.210Z",
+        "capturedAt": "2026-07-20T04:06:18.877Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:23.210Z",
+        "at": "2026-07-20T04:06:18.877Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -17815,8 +19817,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/6a146a1c46d5f64f7dcccd0b",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -17829,7 +19831,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/6a146a1c46d5f64f7dcccd0b",
     "providerContact": "mplchats@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -17846,14 +19848,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a146a1c46d5f64f7dcccd0b",
-        "capturedAt": "2026-07-19T19:33:23.210Z",
+        "capturedAt": "2026-07-20T04:06:18.877Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:23.210Z",
+        "at": "2026-07-20T04:06:18.877Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -17908,8 +19910,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbe07a2edc686d00f5c869",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -17922,7 +19924,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbe07a2edc686d00f5c869",
     "providerContact": "mplchats@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -17937,14 +19939,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbe07a2edc686d00f5c869",
-        "capturedAt": "2026-07-19T19:33:23.210Z",
+        "capturedAt": "2026-07-20T04:06:18.877Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:23.210Z",
+        "at": "2026-07-20T04:06:18.877Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -17992,8 +19994,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbdda72edc686d00f5c7f6",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -18006,7 +20008,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbdda72edc686d00f5c7f6",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -18021,14 +20023,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdda72edc686d00f5c7f6",
-        "capturedAt": "2026-07-19T19:33:23.805Z",
+        "capturedAt": "2026-07-20T04:06:19.502Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:23.805Z",
+        "at": "2026-07-20T04:06:19.502Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -18076,8 +20078,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1db4",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -18090,7 +20092,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1db4",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -18105,14 +20107,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1db4",
-        "capturedAt": "2026-07-19T19:33:23.805Z",
+        "capturedAt": "2026-07-20T04:06:19.502Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:23.805Z",
+        "at": "2026-07-20T04:06:19.502Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -18157,8 +20159,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/6a062977f6bd012f0067f360",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -18171,7 +20173,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/6a062977f6bd012f0067f360",
     "providerContact": "digitalspecialist@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -18186,14 +20188,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a062977f6bd012f0067f360",
-        "capturedAt": "2026-07-19T19:33:23.805Z",
+        "capturedAt": "2026-07-20T04:06:19.502Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:23.805Z",
+        "at": "2026-07-20T04:06:19.502Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -18248,8 +20250,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/6a146a4e8360de907d8846c5",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -18262,7 +20264,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/6a146a4e8360de907d8846c5",
     "providerContact": "mplchats@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -18279,14 +20281,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a146a4e8360de907d8846c5",
-        "capturedAt": "2026-07-19T19:33:23.805Z",
+        "capturedAt": "2026-07-20T04:06:19.503Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:23.805Z",
+        "at": "2026-07-20T04:06:19.503Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -18334,8 +20336,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbd37875911f28001a233c",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -18348,7 +20350,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbd37875911f28001a233c",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -18363,14 +20365,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbd37875911f28001a233c",
-        "capturedAt": "2026-07-19T19:33:23.805Z",
+        "capturedAt": "2026-07-20T04:06:19.503Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:23.805Z",
+        "at": "2026-07-20T04:06:19.503Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -18425,8 +20427,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/6a146abda99bdd027d42cd49",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -18439,7 +20441,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/6a146abda99bdd027d42cd49",
     "providerContact": "mplchats@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -18456,14 +20458,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a146abda99bdd027d42cd49",
-        "capturedAt": "2026-07-19T19:33:23.805Z",
+        "capturedAt": "2026-07-20T04:06:19.503Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:23.805Z",
+        "at": "2026-07-20T04:06:19.503Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -18518,8 +20520,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/6a16edaa52c88111723afec1",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -18532,7 +20534,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/6a16edaa52c88111723afec1",
     "providerContact": "mplchats@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -18549,14 +20551,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a16edaa52c88111723afec1",
-        "capturedAt": "2026-07-19T19:33:23.805Z",
+        "capturedAt": "2026-07-20T04:06:19.503Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:23.805Z",
+        "at": "2026-07-20T04:06:19.503Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -18604,8 +20606,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbdd1b0176055300fe809c",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -18618,7 +20620,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbdd1b0176055300fe809c",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -18633,14 +20635,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdd1b0176055300fe809c",
-        "capturedAt": "2026-07-19T19:33:23.805Z",
+        "capturedAt": "2026-07-20T04:06:19.503Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:23.805Z",
+        "at": "2026-07-20T04:06:19.503Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -18684,8 +20686,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/6a0616e00c0f2c4503fa235a",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -18698,7 +20700,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/6a0616e00c0f2c4503fa235a",
     "providerContact": "mplcommunitylibrarians@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -18713,14 +20715,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a0616e00c0f2c4503fa235a",
-        "capturedAt": "2026-07-19T19:33:23.805Z",
+        "capturedAt": "2026-07-20T04:06:19.503Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:23.805Z",
+        "at": "2026-07-20T04:06:19.503Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -18764,8 +20766,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/6a06223bc6a1dc3d00d3c0f2",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -18778,7 +20780,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/6a06223bc6a1dc3d00d3c0f2",
     "providerContact": "mplcommunitylibrarians@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -18794,14 +20796,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a06223bc6a1dc3d00d3c0f2",
-        "capturedAt": "2026-07-19T19:33:23.805Z",
+        "capturedAt": "2026-07-20T04:06:19.503Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:23.805Z",
+        "at": "2026-07-20T04:06:19.503Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -18849,8 +20851,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1db5",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -18863,7 +20865,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1db5",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -18878,14 +20880,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1db5",
-        "capturedAt": "2026-07-19T19:33:23.805Z",
+        "capturedAt": "2026-07-20T04:06:19.503Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:23.805Z",
+        "at": "2026-07-20T04:06:19.503Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -18933,8 +20935,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbdc8bd272945e0068ed59",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -18947,7 +20949,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbdc8bd272945e0068ed59",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -18962,14 +20964,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdc8bd272945e0068ed59",
-        "capturedAt": "2026-07-19T19:33:23.805Z",
+        "capturedAt": "2026-07-20T04:06:19.503Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:23.805Z",
+        "at": "2026-07-20T04:06:19.503Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -19017,8 +21019,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbde97d272945e0068ee68",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -19031,7 +21033,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbde97d272945e0068ee68",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -19046,14 +21048,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbde97d272945e0068ee68",
-        "capturedAt": "2026-07-19T19:33:23.805Z",
+        "capturedAt": "2026-07-20T04:06:19.503Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:23.805Z",
+        "at": "2026-07-20T04:06:19.503Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -19108,8 +21110,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/6a146aa4748daf857d59b65e",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -19122,7 +21124,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/6a146aa4748daf857d59b65e",
     "providerContact": "mplchats@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -19139,14 +21141,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a146aa4748daf857d59b65e",
-        "capturedAt": "2026-07-19T19:33:23.805Z",
+        "capturedAt": "2026-07-20T04:06:19.503Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:23.805Z",
+        "at": "2026-07-20T04:06:19.503Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -19200,8 +21202,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/6a061768e13d3b4603b44f5d",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -19214,7 +21216,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/6a061768e13d3b4603b44f5d",
     "providerContact": "mplcommunitylibrarians@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -19230,14 +21232,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a061768e13d3b4603b44f5d",
-        "capturedAt": "2026-07-19T19:33:23.805Z",
+        "capturedAt": "2026-07-20T04:06:19.503Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:23.805Z",
+        "at": "2026-07-20T04:06:19.503Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -19292,8 +21294,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/692dbdf9d923da4200b317a0",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -19306,7 +21308,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/692dbdf9d923da4200b317a0",
     "providerContact": "mplchats@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -19321,14 +21323,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/692dbdf9d923da4200b317a0",
-        "capturedAt": "2026-07-19T19:33:23.806Z",
+        "capturedAt": "2026-07-20T04:06:19.503Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:23.806Z",
+        "at": "2026-07-20T04:06:19.503Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -19376,8 +21378,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbde1fe59a13000d3e1cff",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -19390,7 +21392,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbde1fe59a13000d3e1cff",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -19405,14 +21407,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbde1fe59a13000d3e1cff",
-        "capturedAt": "2026-07-19T19:33:24.289Z",
+        "capturedAt": "2026-07-20T04:06:19.993Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:24.289Z",
+        "at": "2026-07-20T04:06:19.993Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -19467,8 +21469,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/6a1469f0a99bdd027d42cccc",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -19481,7 +21483,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/6a1469f0a99bdd027d42cccc",
     "providerContact": "mplchats@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -19498,14 +21500,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a1469f0a99bdd027d42cccc",
-        "capturedAt": "2026-07-19T19:33:24.289Z",
+        "capturedAt": "2026-07-20T04:06:19.993Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:24.289Z",
+        "at": "2026-07-20T04:06:19.993Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -19553,8 +21555,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1db6",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -19567,7 +21569,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1db6",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -19582,14 +21584,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1db6",
-        "capturedAt": "2026-07-19T19:33:24.289Z",
+        "capturedAt": "2026-07-20T04:06:19.993Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:24.289Z",
+        "at": "2026-07-20T04:06:19.993Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -19637,8 +21639,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/69274b3f44d0e96d007b8755",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -19651,7 +21653,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/69274b3f44d0e96d007b8755",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -19666,14 +21668,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/69274b3f44d0e96d007b8755",
-        "capturedAt": "2026-07-19T19:33:24.289Z",
+        "capturedAt": "2026-07-20T04:06:19.993Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:24.289Z",
+        "at": "2026-07-20T04:06:19.993Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -19721,8 +21723,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbd37875911f28001a233d",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -19735,7 +21737,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbd37875911f28001a233d",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -19750,14 +21752,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbd37875911f28001a233d",
-        "capturedAt": "2026-07-19T19:33:24.289Z",
+        "capturedAt": "2026-07-20T04:06:19.993Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:24.289Z",
+        "at": "2026-07-20T04:06:19.993Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -19805,8 +21807,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbdc50e59a13000d3e1c8f",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -19819,7 +21821,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbdc50e59a13000d3e1c8f",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -19834,14 +21836,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdc50e59a13000d3e1c8f",
-        "capturedAt": "2026-07-19T19:33:24.290Z",
+        "capturedAt": "2026-07-20T04:06:19.993Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:24.290Z",
+        "at": "2026-07-20T04:06:19.993Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -19889,8 +21891,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbde97d272945e0068ee69",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -19903,7 +21905,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbde97d272945e0068ee69",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -19918,14 +21920,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbde97d272945e0068ee69",
-        "capturedAt": "2026-07-19T19:33:24.290Z",
+        "capturedAt": "2026-07-20T04:06:19.993Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:24.290Z",
+        "at": "2026-07-20T04:06:19.993Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -19980,8 +21982,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/6a14693a46d5f64f7dccccfb",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -19994,7 +21996,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/6a14693a46d5f64f7dccccfb",
     "providerContact": "mplchats@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -20011,14 +22013,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a14693a46d5f64f7dccccfb",
-        "capturedAt": "2026-07-19T19:33:24.290Z",
+        "capturedAt": "2026-07-20T04:06:19.993Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:24.290Z",
+        "at": "2026-07-20T04:06:19.993Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -20066,8 +22068,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbd37875911f28001a233e",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -20080,7 +22082,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbd37875911f28001a233e",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -20095,14 +22097,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbd37875911f28001a233e",
-        "capturedAt": "2026-07-19T19:33:24.290Z",
+        "capturedAt": "2026-07-20T04:06:19.993Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:24.290Z",
+        "at": "2026-07-20T04:06:19.993Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -20150,8 +22152,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbdd1b0176055300fe809d",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -20164,7 +22166,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbdd1b0176055300fe809d",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -20179,14 +22181,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdd1b0176055300fe809d",
-        "capturedAt": "2026-07-19T19:33:24.290Z",
+        "capturedAt": "2026-07-20T04:06:19.993Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:24.290Z",
+        "at": "2026-07-20T04:06:19.993Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -20234,8 +22236,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbdc50e59a13000d3e1c90",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -20248,7 +22250,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbdc50e59a13000d3e1c90",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -20263,14 +22265,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdc50e59a13000d3e1c90",
-        "capturedAt": "2026-07-19T19:33:24.290Z",
+        "capturedAt": "2026-07-20T04:06:19.993Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:24.290Z",
+        "at": "2026-07-20T04:06:19.993Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -20318,8 +22320,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/694992cb4be11d3d00d95e30",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -20332,7 +22334,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/694992cb4be11d3d00d95e30",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -20347,14 +22349,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/694992cb4be11d3d00d95e30",
-        "capturedAt": "2026-07-19T19:33:24.290Z",
+        "capturedAt": "2026-07-20T04:06:19.993Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:24.290Z",
+        "at": "2026-07-20T04:06:19.993Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -20409,8 +22411,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbd36ee647c8ff0c387295",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -20423,7 +22425,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbd36ee647c8ff0c387295",
     "providerContact": "mplchats@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -20438,14 +22440,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbd36ee647c8ff0c387295",
-        "capturedAt": "2026-07-19T19:33:24.290Z",
+        "capturedAt": "2026-07-20T04:06:19.993Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:24.290Z",
+        "at": "2026-07-20T04:06:19.993Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -20500,8 +22502,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbe20064ad59251cb9d99a",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -20514,7 +22516,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbe20064ad59251cb9d99a",
     "providerContact": "mplchats@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -20529,14 +22531,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbe20064ad59251cb9d99a",
-        "capturedAt": "2026-07-19T19:33:24.290Z",
+        "capturedAt": "2026-07-20T04:06:19.993Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:24.290Z",
+        "at": "2026-07-20T04:06:19.993Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -20584,8 +22586,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbde1fe59a13000d3e1d00",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -20598,7 +22600,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbde1fe59a13000d3e1d00",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -20613,14 +22615,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbde1fe59a13000d3e1d00",
-        "capturedAt": "2026-07-19T19:33:24.290Z",
+        "capturedAt": "2026-07-20T04:06:19.994Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:24.290Z",
+        "at": "2026-07-20T04:06:19.994Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -20675,8 +22677,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbe0e82edc686d00f5c8a0",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -20689,7 +22691,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbe0e82edc686d00f5c8a0",
     "providerContact": "mplchats@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -20704,14 +22706,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbe0e82edc686d00f5c8a0",
-        "capturedAt": "2026-07-19T19:33:24.290Z",
+        "capturedAt": "2026-07-20T04:06:19.994Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:24.290Z",
+        "at": "2026-07-20T04:06:19.994Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -20766,8 +22768,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbe12275911f28001a253a",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -20780,7 +22782,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbe12275911f28001a253a",
     "providerContact": "mplchats@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -20796,14 +22798,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbe12275911f28001a253a",
-        "capturedAt": "2026-07-19T19:33:24.290Z",
+        "capturedAt": "2026-07-20T04:06:19.994Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:24.290Z",
+        "at": "2026-07-20T04:06:19.994Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -20858,8 +22860,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbe0cde647c8ff0c387432",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -20872,7 +22874,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbe0cde647c8ff0c387432",
     "providerContact": "mplchats@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -20887,14 +22889,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbe0cde647c8ff0c387432",
-        "capturedAt": "2026-07-19T19:33:24.290Z",
+        "capturedAt": "2026-07-20T04:06:19.994Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:24.290Z",
+        "at": "2026-07-20T04:06:19.994Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -20942,8 +22944,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbdda72edc686d00f5c7f7",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -20956,7 +22958,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbdda72edc686d00f5c7f7",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -20971,14 +22973,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdda72edc686d00f5c7f7",
-        "capturedAt": "2026-07-19T19:33:24.290Z",
+        "capturedAt": "2026-07-20T04:06:19.994Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:24.290Z",
+        "at": "2026-07-20T04:06:19.994Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -21033,8 +23035,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/6a1469a7748daf857d59b640",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -21047,7 +23049,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/6a1469a7748daf857d59b640",
     "providerContact": "mplchats@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -21064,14 +23066,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a1469a7748daf857d59b640",
-        "capturedAt": "2026-07-19T19:33:24.290Z",
+        "capturedAt": "2026-07-20T04:06:19.994Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:24.290Z",
+        "at": "2026-07-20T04:06:19.994Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -21126,8 +23128,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbe0a50176055300fe8151",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -21140,7 +23142,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbe0a50176055300fe8151",
     "providerContact": "mplchats@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -21155,14 +23157,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbe0a50176055300fe8151",
-        "capturedAt": "2026-07-19T19:33:24.290Z",
+        "capturedAt": "2026-07-20T04:06:19.994Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:24.290Z",
+        "at": "2026-07-20T04:06:19.994Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -21217,8 +23219,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbe1952edc686d00f5c971",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -21231,7 +23233,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbe1952edc686d00f5c971",
     "providerContact": "mplchats@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -21246,14 +23248,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbe1952edc686d00f5c971",
-        "capturedAt": "2026-07-19T19:33:24.290Z",
+        "capturedAt": "2026-07-20T04:06:19.994Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:24.290Z",
+        "at": "2026-07-20T04:06:19.994Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -21301,8 +23303,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1db7",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -21315,7 +23317,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1db7",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -21330,14 +23332,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1db7",
-        "capturedAt": "2026-07-19T19:33:24.834Z",
+        "capturedAt": "2026-07-20T04:06:20.746Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:24.834Z",
+        "at": "2026-07-20T04:06:20.746Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -21392,8 +23394,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/6a146a1c46d5f64f7dcccd0c",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -21406,7 +23408,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/6a146a1c46d5f64f7dcccd0c",
     "providerContact": "mplchats@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -21423,14 +23425,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a146a1c46d5f64f7dcccd0c",
-        "capturedAt": "2026-07-19T19:33:24.834Z",
+        "capturedAt": "2026-07-20T04:06:20.746Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:24.834Z",
+        "at": "2026-07-20T04:06:20.746Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -21485,8 +23487,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbe07a2edc686d00f5c86a",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -21499,7 +23501,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbe07a2edc686d00f5c86a",
     "providerContact": "mplchats@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -21514,14 +23516,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbe07a2edc686d00f5c86a",
-        "capturedAt": "2026-07-19T19:33:24.834Z",
+        "capturedAt": "2026-07-20T04:06:20.746Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:24.834Z",
+        "at": "2026-07-20T04:06:20.746Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -21569,8 +23571,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbd37875911f28001a233f",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -21583,7 +23585,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbd37875911f28001a233f",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -21598,14 +23600,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbd37875911f28001a233f",
-        "capturedAt": "2026-07-19T19:33:24.834Z",
+        "capturedAt": "2026-07-20T04:06:20.746Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:24.834Z",
+        "at": "2026-07-20T04:06:20.746Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -21660,8 +23662,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/6a146abda99bdd027d42cd4a",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -21674,7 +23676,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/6a146abda99bdd027d42cd4a",
     "providerContact": "mplchats@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -21691,14 +23693,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a146abda99bdd027d42cd4a",
-        "capturedAt": "2026-07-19T19:33:24.834Z",
+        "capturedAt": "2026-07-20T04:06:20.746Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:24.834Z",
+        "at": "2026-07-20T04:06:20.746Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -21753,8 +23755,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/6a16edaa52c88111723afec2",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -21767,7 +23769,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/6a16edaa52c88111723afec2",
     "providerContact": "mplchats@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -21784,14 +23786,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a16edaa52c88111723afec2",
-        "capturedAt": "2026-07-19T19:33:24.834Z",
+        "capturedAt": "2026-07-20T04:06:20.746Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:24.834Z",
+        "at": "2026-07-20T04:06:20.746Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -21839,8 +23841,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbdd1b0176055300fe809e",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -21853,7 +23855,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbdd1b0176055300fe809e",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -21868,14 +23870,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdd1b0176055300fe809e",
-        "capturedAt": "2026-07-19T19:33:24.834Z",
+        "capturedAt": "2026-07-20T04:06:20.746Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:24.834Z",
+        "at": "2026-07-20T04:06:20.746Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -21923,8 +23925,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1db8",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -21937,7 +23939,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1db8",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -21952,14 +23954,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1db8",
-        "capturedAt": "2026-07-19T19:33:24.834Z",
+        "capturedAt": "2026-07-20T04:06:20.746Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:24.834Z",
+        "at": "2026-07-20T04:06:20.746Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -22007,8 +24009,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbdc8bd272945e0068ed5a",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -22021,7 +24023,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbdc8bd272945e0068ed5a",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -22036,14 +24038,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdc8bd272945e0068ed5a",
-        "capturedAt": "2026-07-19T19:33:24.834Z",
+        "capturedAt": "2026-07-20T04:06:20.746Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:24.834Z",
+        "at": "2026-07-20T04:06:20.746Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -22091,8 +24093,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbde97d272945e0068ee6a",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -22105,7 +24107,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbde97d272945e0068ee6a",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -22120,14 +24122,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbde97d272945e0068ee6a",
-        "capturedAt": "2026-07-19T19:33:24.834Z",
+        "capturedAt": "2026-07-20T04:06:20.746Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:24.834Z",
+        "at": "2026-07-20T04:06:20.746Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -22182,8 +24184,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/6a146aa4748daf857d59b65f",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -22196,7 +24198,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/6a146aa4748daf857d59b65f",
     "providerContact": "mplchats@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -22213,14 +24215,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a146aa4748daf857d59b65f",
-        "capturedAt": "2026-07-19T19:33:25.369Z",
+        "capturedAt": "2026-07-20T04:06:21.290Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:25.369Z",
+        "at": "2026-07-20T04:06:21.290Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -22275,8 +24277,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/692dbdf9d923da4200b317a1",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -22289,7 +24291,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/692dbdf9d923da4200b317a1",
     "providerContact": "mplchats@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -22304,14 +24306,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/692dbdf9d923da4200b317a1",
-        "capturedAt": "2026-07-19T19:33:25.369Z",
+        "capturedAt": "2026-07-20T04:06:21.290Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:25.369Z",
+        "at": "2026-07-20T04:06:21.290Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -22359,8 +24361,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbde1fe59a13000d3e1d01",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -22373,7 +24375,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbde1fe59a13000d3e1d01",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -22388,14 +24390,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbde1fe59a13000d3e1d01",
-        "capturedAt": "2026-07-19T19:33:25.370Z",
+        "capturedAt": "2026-07-20T04:06:21.290Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:25.370Z",
+        "at": "2026-07-20T04:06:21.290Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -22450,8 +24452,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/6a1469f0a99bdd027d42cccd",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -22464,7 +24466,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/6a1469f0a99bdd027d42cccd",
     "providerContact": "mplchats@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -22481,14 +24483,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a1469f0a99bdd027d42cccd",
-        "capturedAt": "2026-07-19T19:33:25.370Z",
+        "capturedAt": "2026-07-20T04:06:21.290Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:25.370Z",
+        "at": "2026-07-20T04:06:21.290Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -22533,8 +24535,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/6917539dfbf38a280023aa38",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -22547,7 +24549,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/6917539dfbf38a280023aa38",
     "providerContact": "mplcommunitylibrarians@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -22563,14 +24565,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6917539dfbf38a280023aa38",
-        "capturedAt": "2026-07-19T19:33:25.370Z",
+        "capturedAt": "2026-07-20T04:06:21.290Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:25.370Z",
+        "at": "2026-07-20T04:06:21.290Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -22618,8 +24620,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1db9",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -22632,7 +24634,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1db9",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -22647,14 +24649,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1db9",
-        "capturedAt": "2026-07-19T19:33:25.371Z",
+        "capturedAt": "2026-07-20T04:06:21.291Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:25.371Z",
+        "at": "2026-07-20T04:06:21.291Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -22702,8 +24704,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/69274b3f44d0e96d007b8756",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -22716,7 +24718,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/69274b3f44d0e96d007b8756",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -22731,14 +24733,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/69274b3f44d0e96d007b8756",
-        "capturedAt": "2026-07-19T19:33:25.371Z",
+        "capturedAt": "2026-07-20T04:06:21.291Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:25.371Z",
+        "at": "2026-07-20T04:06:21.291Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -22786,8 +24788,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbd37875911f28001a2340",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -22800,7 +24802,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbd37875911f28001a2340",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -22815,14 +24817,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbd37875911f28001a2340",
-        "capturedAt": "2026-07-19T19:33:25.371Z",
+        "capturedAt": "2026-07-20T04:06:21.291Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:25.371Z",
+        "at": "2026-07-20T04:06:21.291Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -22870,8 +24872,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbdc50e59a13000d3e1c91",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -22884,7 +24886,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbdc50e59a13000d3e1c91",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -22899,14 +24901,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdc50e59a13000d3e1c91",
-        "capturedAt": "2026-07-19T19:33:25.371Z",
+        "capturedAt": "2026-07-20T04:06:21.291Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:25.371Z",
+        "at": "2026-07-20T04:06:21.291Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -22961,8 +24963,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/6a146a78490f176f7dd65331",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -22975,7 +24977,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/6a146a78490f176f7dd65331",
     "providerContact": "mplchats@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -22992,14 +24994,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a146a78490f176f7dd65331",
-        "capturedAt": "2026-07-19T19:33:25.371Z",
+        "capturedAt": "2026-07-20T04:06:21.291Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:25.371Z",
+        "at": "2026-07-20T04:06:21.291Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -23047,8 +25049,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbde97d272945e0068ee6b",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -23061,7 +25063,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbde97d272945e0068ee6b",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -23076,14 +25078,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbde97d272945e0068ee6b",
-        "capturedAt": "2026-07-19T19:33:25.371Z",
+        "capturedAt": "2026-07-20T04:06:21.291Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:25.371Z",
+        "at": "2026-07-20T04:06:21.291Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -23138,8 +25140,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/6a14693a46d5f64f7dccccfc",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -23152,7 +25154,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/6a14693a46d5f64f7dccccfc",
     "providerContact": "mplchats@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -23169,14 +25171,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a14693a46d5f64f7dccccfc",
-        "capturedAt": "2026-07-19T19:33:25.371Z",
+        "capturedAt": "2026-07-20T04:06:21.291Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:25.371Z",
+        "at": "2026-07-20T04:06:21.291Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -23224,8 +25226,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbd37875911f28001a2341",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -23238,7 +25240,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbd37875911f28001a2341",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -23253,14 +25255,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbd37875911f28001a2341",
-        "capturedAt": "2026-07-19T19:33:25.371Z",
+        "capturedAt": "2026-07-20T04:06:21.291Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:25.371Z",
+        "at": "2026-07-20T04:06:21.291Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -23308,8 +25310,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbdd1b0176055300fe809f",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -23322,7 +25324,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbdd1b0176055300fe809f",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -23337,14 +25339,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdd1b0176055300fe809f",
-        "capturedAt": "2026-07-19T19:33:25.371Z",
+        "capturedAt": "2026-07-20T04:06:21.291Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:25.371Z",
+        "at": "2026-07-20T04:06:21.291Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -23392,8 +25394,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbdc50e59a13000d3e1c92",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -23406,7 +25408,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbdc50e59a13000d3e1c92",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -23421,14 +25423,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdc50e59a13000d3e1c92",
-        "capturedAt": "2026-07-19T19:33:25.371Z",
+        "capturedAt": "2026-07-20T04:06:21.291Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:25.371Z",
+        "at": "2026-07-20T04:06:21.291Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -23476,8 +25478,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/694992cb4be11d3d00d95e31",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -23490,7 +25492,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/694992cb4be11d3d00d95e31",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -23505,14 +25507,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/694992cb4be11d3d00d95e31",
-        "capturedAt": "2026-07-19T19:33:25.371Z",
+        "capturedAt": "2026-07-20T04:06:21.291Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:25.371Z",
+        "at": "2026-07-20T04:06:21.291Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -23567,8 +25569,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbd36ee647c8ff0c387296",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -23581,7 +25583,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbd36ee647c8ff0c387296",
     "providerContact": "mplchats@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -23596,14 +25598,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbd36ee647c8ff0c387296",
-        "capturedAt": "2026-07-19T19:33:25.371Z",
+        "capturedAt": "2026-07-20T04:06:21.291Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:25.371Z",
+        "at": "2026-07-20T04:06:21.291Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -23658,8 +25660,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbe20064ad59251cb9d99b",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -23672,7 +25674,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbe20064ad59251cb9d99b",
     "providerContact": "mplchats@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -23687,14 +25689,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbe20064ad59251cb9d99b",
-        "capturedAt": "2026-07-19T19:33:25.371Z",
+        "capturedAt": "2026-07-20T04:06:21.291Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:25.371Z",
+        "at": "2026-07-20T04:06:21.291Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -23742,8 +25744,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbde1fe59a13000d3e1d02",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -23756,7 +25758,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbde1fe59a13000d3e1d02",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -23771,14 +25773,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbde1fe59a13000d3e1d02",
-        "capturedAt": "2026-07-19T19:33:25.371Z",
+        "capturedAt": "2026-07-20T04:06:21.291Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:25.371Z",
+        "at": "2026-07-20T04:06:21.291Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -23833,8 +25835,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbe0e82edc686d00f5c8a1",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -23847,7 +25849,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbe0e82edc686d00f5c8a1",
     "providerContact": "mplchats@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -23862,14 +25864,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbe0e82edc686d00f5c8a1",
-        "capturedAt": "2026-07-19T19:33:25.371Z",
+        "capturedAt": "2026-07-20T04:06:21.291Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:25.371Z",
+        "at": "2026-07-20T04:06:21.291Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -23924,8 +25926,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbe12275911f28001a253b",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -23938,7 +25940,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbe12275911f28001a253b",
     "providerContact": "mplchats@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -23954,14 +25956,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbe12275911f28001a253b",
-        "capturedAt": "2026-07-19T19:33:25.812Z",
+        "capturedAt": "2026-07-20T04:06:21.763Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:25.812Z",
+        "at": "2026-07-20T04:06:21.763Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -24016,8 +26018,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbe0cde647c8ff0c387433",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -24030,7 +26032,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbe0cde647c8ff0c387433",
     "providerContact": "mplchats@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -24045,14 +26047,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbe0cde647c8ff0c387433",
-        "capturedAt": "2026-07-19T19:33:25.812Z",
+        "capturedAt": "2026-07-20T04:06:21.764Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:25.812Z",
+        "at": "2026-07-20T04:06:21.764Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -24106,8 +26108,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/6a025696c6a1dc3d00d319b5",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -24120,7 +26122,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/6a025696c6a1dc3d00d319b5",
     "providerContact": "tchau@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -24136,14 +26138,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a025696c6a1dc3d00d319b5",
-        "capturedAt": "2026-07-19T19:33:25.812Z",
+        "capturedAt": "2026-07-20T04:06:21.764Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:25.812Z",
+        "at": "2026-07-20T04:06:21.764Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -24197,8 +26199,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/6a061b704dc267647da98983",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -24211,7 +26213,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/6a061b704dc267647da98983",
     "providerContact": "mplcommunitylibrarians@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -24226,14 +26228,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a061b704dc267647da98983",
-        "capturedAt": "2026-07-19T19:33:25.812Z",
+        "capturedAt": "2026-07-20T04:06:21.764Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:25.812Z",
+        "at": "2026-07-20T04:06:21.764Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -24281,8 +26283,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbdda72edc686d00f5c7f8",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -24295,7 +26297,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbdda72edc686d00f5c7f8",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -24310,14 +26312,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdda72edc686d00f5c7f8",
-        "capturedAt": "2026-07-19T19:33:25.812Z",
+        "capturedAt": "2026-07-20T04:06:21.764Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:25.812Z",
+        "at": "2026-07-20T04:06:21.764Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -24372,8 +26374,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/6a1469a7748daf857d59b641",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -24386,7 +26388,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/6a1469a7748daf857d59b641",
     "providerContact": "mplchats@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -24403,14 +26405,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a1469a7748daf857d59b641",
-        "capturedAt": "2026-07-19T19:33:25.812Z",
+        "capturedAt": "2026-07-20T04:06:21.764Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:25.812Z",
+        "at": "2026-07-20T04:06:21.764Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -24465,8 +26467,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbe0a50176055300fe8152",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -24479,7 +26481,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbe0a50176055300fe8152",
     "providerContact": "mplchats@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -24494,14 +26496,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbe0a50176055300fe8152",
-        "capturedAt": "2026-07-19T19:33:25.812Z",
+        "capturedAt": "2026-07-20T04:06:21.764Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:25.812Z",
+        "at": "2026-07-20T04:06:21.764Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -24545,8 +26547,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/6a096514f6bd012f0068760d",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -24559,7 +26561,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/6a096514f6bd012f0068760d",
     "providerContact": "mplcommunitylibrarians@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": true,
     "coopEligible": false,
@@ -24575,14 +26577,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a096514f6bd012f0068760d",
-        "capturedAt": "2026-07-19T19:33:25.812Z",
+        "capturedAt": "2026-07-20T04:06:21.764Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:25.812Z",
+        "at": "2026-07-20T04:06:21.764Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -24637,8 +26639,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbe1952edc686d00f5c972",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -24651,7 +26653,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbe1952edc686d00f5c972",
     "providerContact": "mplchats@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -24666,14 +26668,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbe1952edc686d00f5c972",
-        "capturedAt": "2026-07-19T19:33:25.812Z",
+        "capturedAt": "2026-07-20T04:06:21.765Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:25.812Z",
+        "at": "2026-07-20T04:06:21.765Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -24721,8 +26723,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1dba",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -24735,7 +26737,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1dba",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -24750,14 +26752,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1dba",
-        "capturedAt": "2026-07-19T19:33:25.812Z",
+        "capturedAt": "2026-07-20T04:06:21.765Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:25.812Z",
+        "at": "2026-07-20T04:06:21.765Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -24812,8 +26814,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/6a146a1c46d5f64f7dcccd0d",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -24826,7 +26828,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/6a146a1c46d5f64f7dcccd0d",
     "providerContact": "mplchats@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -24843,14 +26845,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a146a1c46d5f64f7dcccd0d",
-        "capturedAt": "2026-07-19T19:33:25.812Z",
+        "capturedAt": "2026-07-20T04:06:21.765Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:25.812Z",
+        "at": "2026-07-20T04:06:21.765Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -24905,8 +26907,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbe07a2edc686d00f5c86b",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -24919,7 +26921,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbe07a2edc686d00f5c86b",
     "providerContact": "mplchats@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -24934,14 +26936,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbe07a2edc686d00f5c86b",
-        "capturedAt": "2026-07-19T19:33:25.812Z",
+        "capturedAt": "2026-07-20T04:06:21.765Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:25.812Z",
+        "at": "2026-07-20T04:06:21.765Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -24989,8 +26991,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbdda72edc686d00f5c7f9",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -25003,7 +27005,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbdda72edc686d00f5c7f9",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -25018,14 +27020,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdda72edc686d00f5c7f9",
-        "capturedAt": "2026-07-19T19:33:25.813Z",
+        "capturedAt": "2026-07-20T04:06:21.765Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:25.813Z",
+        "at": "2026-07-20T04:06:21.765Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -25073,8 +27075,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1dbb",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -25087,7 +27089,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1dbb",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -25102,14 +27104,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1dbb",
-        "capturedAt": "2026-07-19T19:33:25.813Z",
+        "capturedAt": "2026-07-20T04:06:21.765Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:25.813Z",
+        "at": "2026-07-20T04:06:21.765Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -25153,8 +27155,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/6a061bbc8360de907d873cda",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -25167,7 +27169,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/6a061bbc8360de907d873cda",
     "providerContact": "mplcommunitylibrarians@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -25182,14 +27184,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a061bbc8360de907d873cda",
-        "capturedAt": "2026-07-19T19:33:25.813Z",
+        "capturedAt": "2026-07-20T04:06:21.765Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:25.813Z",
+        "at": "2026-07-20T04:06:21.765Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -25244,8 +27246,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/6a146a4e8360de907d8846c6",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -25258,7 +27260,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/6a146a4e8360de907d8846c6",
     "providerContact": "mplchats@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -25275,14 +27277,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a146a4e8360de907d8846c6",
-        "capturedAt": "2026-07-19T19:33:25.813Z",
+        "capturedAt": "2026-07-20T04:06:21.765Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:25.813Z",
+        "at": "2026-07-20T04:06:21.765Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -25330,8 +27332,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbd37875911f28001a2342",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -25344,7 +27346,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbd37875911f28001a2342",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -25359,14 +27361,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbd37875911f28001a2342",
-        "capturedAt": "2026-07-19T19:33:26.322Z",
+        "capturedAt": "2026-07-20T04:06:22.417Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:26.322Z",
+        "at": "2026-07-20T04:06:22.417Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -25421,8 +27423,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/6a146abda99bdd027d42cd4b",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -25435,7 +27437,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/6a146abda99bdd027d42cd4b",
     "providerContact": "mplchats@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -25452,14 +27454,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a146abda99bdd027d42cd4b",
-        "capturedAt": "2026-07-19T19:33:26.322Z",
+        "capturedAt": "2026-07-20T04:06:22.417Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:26.322Z",
+        "at": "2026-07-20T04:06:22.417Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -25514,8 +27516,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/6a16edaa52c88111723afec3",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -25528,7 +27530,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/6a16edaa52c88111723afec3",
     "providerContact": "mplchats@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -25545,14 +27547,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a16edaa52c88111723afec3",
-        "capturedAt": "2026-07-19T19:33:26.322Z",
+        "capturedAt": "2026-07-20T04:06:22.417Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:26.322Z",
+        "at": "2026-07-20T04:06:22.417Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -25600,8 +27602,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbdd1b0176055300fe80a0",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -25614,7 +27616,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbdd1b0176055300fe80a0",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -25629,14 +27631,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdd1b0176055300fe80a0",
-        "capturedAt": "2026-07-19T19:33:26.322Z",
+        "capturedAt": "2026-07-20T04:06:22.418Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:26.322Z",
+        "at": "2026-07-20T04:06:22.418Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -25684,8 +27686,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1dbc",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -25698,7 +27700,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1dbc",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -25713,14 +27715,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1dbc",
-        "capturedAt": "2026-07-19T19:33:26.322Z",
+        "capturedAt": "2026-07-20T04:06:22.418Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:26.322Z",
+        "at": "2026-07-20T04:06:22.418Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -25764,8 +27766,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/6a061df60c0f2c4503fa2461",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -25778,7 +27780,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/6a061df60c0f2c4503fa2461",
     "providerContact": "mplcommunitylibrarians@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -25794,14 +27796,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a061df60c0f2c4503fa2461",
-        "capturedAt": "2026-07-19T19:33:26.323Z",
+        "capturedAt": "2026-07-20T04:06:22.418Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:26.323Z",
+        "at": "2026-07-20T04:06:22.418Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -25849,8 +27851,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbdc8bd272945e0068ed5b",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -25863,7 +27865,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbdc8bd272945e0068ed5b",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -25878,14 +27880,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdc8bd272945e0068ed5b",
-        "capturedAt": "2026-07-19T19:33:26.323Z",
+        "capturedAt": "2026-07-20T04:06:22.418Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:26.323Z",
+        "at": "2026-07-20T04:06:22.418Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -25933,8 +27935,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbde97d272945e0068ee6d",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -25947,7 +27949,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbde97d272945e0068ee6d",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -25962,14 +27964,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbde97d272945e0068ee6d",
-        "capturedAt": "2026-07-19T19:33:26.323Z",
+        "capturedAt": "2026-07-20T04:06:22.418Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:26.323Z",
+        "at": "2026-07-20T04:06:22.418Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -26024,8 +28026,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/6a146aa4748daf857d59b660",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -26038,7 +28040,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/6a146aa4748daf857d59b660",
     "providerContact": "mplchats@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -26055,14 +28057,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a146aa4748daf857d59b660",
-        "capturedAt": "2026-07-19T19:33:26.323Z",
+        "capturedAt": "2026-07-20T04:06:22.418Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:26.323Z",
+        "at": "2026-07-20T04:06:22.418Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -26106,8 +28108,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/6a05e945c3c4a4217ae157b1",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -26120,7 +28122,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/6a05e945c3c4a4217ae157b1",
     "providerContact": "mplcommunitylibrarians@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -26135,14 +28137,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a05e945c3c4a4217ae157b1",
-        "capturedAt": "2026-07-19T19:33:26.323Z",
+        "capturedAt": "2026-07-20T04:06:22.418Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:26.323Z",
+        "at": "2026-07-20T04:06:22.418Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -26197,8 +28199,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/692dbdf9d923da4200b317a2",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -26211,7 +28213,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/692dbdf9d923da4200b317a2",
     "providerContact": "mplchats@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -26226,14 +28228,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/692dbdf9d923da4200b317a2",
-        "capturedAt": "2026-07-19T19:33:26.324Z",
+        "capturedAt": "2026-07-20T04:06:22.418Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:26.324Z",
+        "at": "2026-07-20T04:06:22.418Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -26281,8 +28283,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbde1fe59a13000d3e1d03",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -26295,7 +28297,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbde1fe59a13000d3e1d03",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -26310,14 +28312,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbde1fe59a13000d3e1d03",
-        "capturedAt": "2026-07-19T19:33:26.324Z",
+        "capturedAt": "2026-07-20T04:06:22.418Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:26.324Z",
+        "at": "2026-07-20T04:06:22.418Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -26372,8 +28374,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/6a1469f0a99bdd027d42ccce",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -26386,7 +28388,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/6a1469f0a99bdd027d42ccce",
     "providerContact": "mplchats@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -26403,14 +28405,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a1469f0a99bdd027d42ccce",
-        "capturedAt": "2026-07-19T19:33:26.324Z",
+        "capturedAt": "2026-07-20T04:06:22.418Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:26.324Z",
+        "at": "2026-07-20T04:06:22.418Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -26465,8 +28467,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/6a0669fc278f7c2f008d434a",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -26479,7 +28481,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/6a0669fc278f7c2f008d434a",
     "providerContact": "mplcommunitylibrarians@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -26496,14 +28498,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a0669fc278f7c2f008d434a",
-        "capturedAt": "2026-07-19T19:33:26.324Z",
+        "capturedAt": "2026-07-20T04:06:22.418Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:26.324Z",
+        "at": "2026-07-20T04:06:22.418Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -26551,8 +28553,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1dbd",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -26565,7 +28567,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1dbd",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -26580,14 +28582,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1dbd",
-        "capturedAt": "2026-07-19T19:33:26.948Z",
+        "capturedAt": "2026-07-20T04:06:22.890Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:26.948Z",
+        "at": "2026-07-20T04:06:22.890Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -26635,8 +28637,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/69274b3f44d0e96d007b8757",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -26649,7 +28651,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/69274b3f44d0e96d007b8757",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -26664,14 +28666,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/69274b3f44d0e96d007b8757",
-        "capturedAt": "2026-07-19T19:33:26.948Z",
+        "capturedAt": "2026-07-20T04:06:22.890Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:26.948Z",
+        "at": "2026-07-20T04:06:22.890Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -26719,8 +28721,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbd37875911f28001a2343",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -26733,7 +28735,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbd37875911f28001a2343",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -26748,14 +28750,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbd37875911f28001a2343",
-        "capturedAt": "2026-07-19T19:33:26.948Z",
+        "capturedAt": "2026-07-20T04:06:22.890Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:26.948Z",
+        "at": "2026-07-20T04:06:22.890Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -26803,8 +28805,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbdc50e59a13000d3e1c93",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -26817,7 +28819,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbdc50e59a13000d3e1c93",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -26832,14 +28834,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdc50e59a13000d3e1c93",
-        "capturedAt": "2026-07-19T19:33:26.948Z",
+        "capturedAt": "2026-07-20T04:06:22.890Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:26.948Z",
+        "at": "2026-07-20T04:06:22.890Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -26887,8 +28889,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbde97d272945e0068ee6e",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -26901,7 +28903,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbde97d272945e0068ee6e",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -26916,14 +28918,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbde97d272945e0068ee6e",
-        "capturedAt": "2026-07-19T19:33:26.948Z",
+        "capturedAt": "2026-07-20T04:06:22.890Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:26.948Z",
+        "at": "2026-07-20T04:06:22.890Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -26978,8 +28980,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/6a14693a46d5f64f7dccccfd",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -26992,7 +28994,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/6a14693a46d5f64f7dccccfd",
     "providerContact": "mplchats@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -27009,14 +29011,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a14693a46d5f64f7dccccfd",
-        "capturedAt": "2026-07-19T19:33:26.948Z",
+        "capturedAt": "2026-07-20T04:06:22.890Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:26.948Z",
+        "at": "2026-07-20T04:06:22.890Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -27064,8 +29066,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbd37875911f28001a2344",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -27078,7 +29080,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbd37875911f28001a2344",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -27093,14 +29095,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbd37875911f28001a2344",
-        "capturedAt": "2026-07-19T19:33:26.948Z",
+        "capturedAt": "2026-07-20T04:06:22.890Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:26.948Z",
+        "at": "2026-07-20T04:06:22.890Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -27148,8 +29150,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbdd1b0176055300fe80a1",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -27162,7 +29164,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbdd1b0176055300fe80a1",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -27177,14 +29179,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdd1b0176055300fe80a1",
-        "capturedAt": "2026-07-19T19:33:26.949Z",
+        "capturedAt": "2026-07-20T04:06:22.890Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:26.949Z",
+        "at": "2026-07-20T04:06:22.890Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -27232,8 +29234,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbdc50e59a13000d3e1c94",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -27246,7 +29248,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbdc50e59a13000d3e1c94",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -27261,14 +29263,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdc50e59a13000d3e1c94",
-        "capturedAt": "2026-07-19T19:33:26.949Z",
+        "capturedAt": "2026-07-20T04:06:22.890Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:26.949Z",
+        "at": "2026-07-20T04:06:22.890Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -27316,8 +29318,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/694992cb4be11d3d00d95e32",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -27330,7 +29332,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/694992cb4be11d3d00d95e32",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -27345,14 +29347,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/694992cb4be11d3d00d95e32",
-        "capturedAt": "2026-07-19T19:33:26.949Z",
+        "capturedAt": "2026-07-20T04:06:22.890Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:26.949Z",
+        "at": "2026-07-20T04:06:22.890Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -27407,8 +29409,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbd36ee647c8ff0c387297",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -27421,7 +29423,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbd36ee647c8ff0c387297",
     "providerContact": "mplchats@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -27436,14 +29438,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbd36ee647c8ff0c387297",
-        "capturedAt": "2026-07-19T19:33:26.949Z",
+        "capturedAt": "2026-07-20T04:06:22.890Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:26.949Z",
+        "at": "2026-07-20T04:06:22.890Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -27498,8 +29500,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbe20064ad59251cb9d99c",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -27512,7 +29514,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbe20064ad59251cb9d99c",
     "providerContact": "mplchats@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -27527,14 +29529,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbe20064ad59251cb9d99c",
-        "capturedAt": "2026-07-19T19:33:26.949Z",
+        "capturedAt": "2026-07-20T04:06:22.890Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:26.949Z",
+        "at": "2026-07-20T04:06:22.890Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -27582,8 +29584,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbde1fe59a13000d3e1d04",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -27596,7 +29598,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbde1fe59a13000d3e1d04",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -27611,14 +29613,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbde1fe59a13000d3e1d04",
-        "capturedAt": "2026-07-19T19:33:26.949Z",
+        "capturedAt": "2026-07-20T04:06:22.890Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:26.949Z",
+        "at": "2026-07-20T04:06:22.890Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -27673,8 +29675,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbe0e82edc686d00f5c8a2",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -27687,7 +29689,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbe0e82edc686d00f5c8a2",
     "providerContact": "mplchats@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -27702,14 +29704,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbe0e82edc686d00f5c8a2",
-        "capturedAt": "2026-07-19T19:33:26.949Z",
+        "capturedAt": "2026-07-20T04:06:22.890Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:26.949Z",
+        "at": "2026-07-20T04:06:22.890Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -27764,8 +29766,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbe12275911f28001a253c",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -27778,7 +29780,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbe12275911f28001a253c",
     "providerContact": "mplchats@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -27794,14 +29796,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbe12275911f28001a253c",
-        "capturedAt": "2026-07-19T19:33:26.949Z",
+        "capturedAt": "2026-07-20T04:06:22.890Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:26.949Z",
+        "at": "2026-07-20T04:06:22.890Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -27856,8 +29858,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbe0cde647c8ff0c387434",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -27870,7 +29872,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbe0cde647c8ff0c387434",
     "providerContact": "mplchats@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -27885,14 +29887,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbe0cde647c8ff0c387434",
-        "capturedAt": "2026-07-19T19:33:26.949Z",
+        "capturedAt": "2026-07-20T04:06:22.891Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:26.949Z",
+        "at": "2026-07-20T04:06:22.891Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -27946,8 +29948,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/6a025696c6a1dc3d00d319b6",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -27960,7 +29962,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/6a025696c6a1dc3d00d319b6",
     "providerContact": "tchau@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -27976,14 +29978,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a025696c6a1dc3d00d319b6",
-        "capturedAt": "2026-07-19T19:33:26.949Z",
+        "capturedAt": "2026-07-20T04:06:22.891Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:26.949Z",
+        "at": "2026-07-20T04:06:22.891Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -28031,8 +30033,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbdda72edc686d00f5c7fa",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -28045,7 +30047,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbdda72edc686d00f5c7fa",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -28060,14 +30062,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdda72edc686d00f5c7fa",
-        "capturedAt": "2026-07-19T19:33:26.949Z",
+        "capturedAt": "2026-07-20T04:06:22.891Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:26.949Z",
+        "at": "2026-07-20T04:06:22.891Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -28122,8 +30124,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/6a1469a7748daf857d59b642",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -28136,7 +30138,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/6a1469a7748daf857d59b642",
     "providerContact": "mplchats@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -28153,14 +30155,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a1469a7748daf857d59b642",
-        "capturedAt": "2026-07-19T19:33:26.949Z",
+        "capturedAt": "2026-07-20T04:06:22.891Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:26.949Z",
+        "at": "2026-07-20T04:06:22.891Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -28215,8 +30217,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbe0a50176055300fe8153",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -28229,7 +30231,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbe0a50176055300fe8153",
     "providerContact": "mplchats@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -28244,14 +30246,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbe0a50176055300fe8153",
-        "capturedAt": "2026-07-19T19:33:26.949Z",
+        "capturedAt": "2026-07-20T04:06:22.891Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:26.949Z",
+        "at": "2026-07-20T04:06:22.891Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -28306,8 +30308,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbe1952edc686d00f5c973",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -28320,7 +30322,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbe1952edc686d00f5c973",
     "providerContact": "mplchats@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -28335,14 +30337,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbe1952edc686d00f5c973",
-        "capturedAt": "2026-07-19T19:33:27.519Z",
+        "capturedAt": "2026-07-20T04:06:23.374Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:27.519Z",
+        "at": "2026-07-20T04:06:23.374Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -28390,8 +30392,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1dbe",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -28404,7 +30406,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1dbe",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -28419,14 +30421,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1dbe",
-        "capturedAt": "2026-07-19T19:33:27.519Z",
+        "capturedAt": "2026-07-20T04:06:23.374Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:27.519Z",
+        "at": "2026-07-20T04:06:23.374Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -28481,8 +30483,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/6a146a1c46d5f64f7dcccd0e",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -28495,7 +30497,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/6a146a1c46d5f64f7dcccd0e",
     "providerContact": "mplchats@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -28512,14 +30514,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a146a1c46d5f64f7dcccd0e",
-        "capturedAt": "2026-07-19T19:33:27.519Z",
+        "capturedAt": "2026-07-20T04:06:23.374Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:27.519Z",
+        "at": "2026-07-20T04:06:23.374Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -28574,8 +30576,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbe07a2edc686d00f5c86c",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -28588,7 +30590,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbe07a2edc686d00f5c86c",
     "providerContact": "mplchats@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -28603,14 +30605,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbe07a2edc686d00f5c86c",
-        "capturedAt": "2026-07-19T19:33:27.519Z",
+        "capturedAt": "2026-07-20T04:06:23.374Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:27.519Z",
+        "at": "2026-07-20T04:06:23.374Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -28658,8 +30660,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbdda72edc686d00f5c7fb",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -28672,7 +30674,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbdda72edc686d00f5c7fb",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -28687,14 +30689,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdda72edc686d00f5c7fb",
-        "capturedAt": "2026-07-19T19:33:27.519Z",
+        "capturedAt": "2026-07-20T04:06:23.374Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:27.519Z",
+        "at": "2026-07-20T04:06:23.374Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -28742,8 +30744,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1dbf",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -28756,7 +30758,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1dbf",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -28771,14 +30773,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1dbf",
-        "capturedAt": "2026-07-19T19:33:27.519Z",
+        "capturedAt": "2026-07-20T04:06:23.375Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:27.519Z",
+        "at": "2026-07-20T04:06:23.375Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -28826,8 +30828,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbd37875911f28001a2345",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -28840,7 +30842,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbd37875911f28001a2345",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -28855,14 +30857,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbd37875911f28001a2345",
-        "capturedAt": "2026-07-19T19:33:27.519Z",
+        "capturedAt": "2026-07-20T04:06:23.375Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:27.519Z",
+        "at": "2026-07-20T04:06:23.375Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -28910,8 +30912,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbdd1b0176055300fe80a2",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -28924,7 +30926,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbdd1b0176055300fe80a2",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -28939,14 +30941,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdd1b0176055300fe80a2",
-        "capturedAt": "2026-07-19T19:33:27.519Z",
+        "capturedAt": "2026-07-20T04:06:23.375Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:27.519Z",
+        "at": "2026-07-20T04:06:23.375Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -28990,8 +30992,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/69ff58d0c6a1dc3d00d29c35",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -29004,7 +31006,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/69ff58d0c6a1dc3d00d29c35",
     "providerContact": "mplcommunitylibrarians@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -29019,14 +31021,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/69ff58d0c6a1dc3d00d29c35",
-        "capturedAt": "2026-07-19T19:33:27.519Z",
+        "capturedAt": "2026-07-20T04:06:23.375Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:27.519Z",
+        "at": "2026-07-20T04:06:23.375Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -29074,8 +31076,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1dc0",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -29088,7 +31090,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1dc0",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -29103,14 +31105,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1dc0",
-        "capturedAt": "2026-07-19T19:33:27.519Z",
+        "capturedAt": "2026-07-20T04:06:23.375Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:27.519Z",
+        "at": "2026-07-20T04:06:23.375Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -29154,8 +31156,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/6a05c0a6278f7c2f008d15c8",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -29168,7 +31170,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/6a05c0a6278f7c2f008d15c8",
     "providerContact": "mplcommunitylibrarians@markham.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -29184,14 +31186,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a05c0a6278f7c2f008d15c8",
-        "capturedAt": "2026-07-19T19:33:27.519Z",
+        "capturedAt": "2026-07-20T04:06:23.375Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:27.519Z",
+        "at": "2026-07-20T04:06:23.375Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -29239,8 +31241,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbdc8bd272945e0068ed5c",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -29253,7 +31255,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbdc8bd272945e0068ed5c",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -29268,14 +31270,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdc8bd272945e0068ed5c",
-        "capturedAt": "2026-07-19T19:33:27.519Z",
+        "capturedAt": "2026-07-20T04:06:23.375Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:27.519Z",
+        "at": "2026-07-20T04:06:23.375Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -29323,8 +31325,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbde97d272945e0068ee70",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -29337,7 +31339,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbde97d272945e0068ee70",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -29352,14 +31354,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbde97d272945e0068ee70",
-        "capturedAt": "2026-07-19T19:33:28.118Z",
+        "capturedAt": "2026-07-20T04:06:23.848Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:28.118Z",
+        "at": "2026-07-20T04:06:23.848Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -29411,8 +31413,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/6a0622690c0f2c4503fa253c",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -29425,7 +31427,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/6a0622690c0f2c4503fa253c",
     "providerContact": "mplcommunitylibrarians@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -29442,14 +31444,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a0622690c0f2c4503fa253c",
-        "capturedAt": "2026-07-19T19:33:28.118Z",
+        "capturedAt": "2026-07-20T04:06:23.848Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:28.118Z",
+        "at": "2026-07-20T04:06:23.848Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -29504,8 +31506,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/692dbdf9d923da4200b317a3",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -29518,7 +31520,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/692dbdf9d923da4200b317a3",
     "providerContact": "mplchats@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -29533,14 +31535,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/692dbdf9d923da4200b317a3",
-        "capturedAt": "2026-07-19T19:33:28.118Z",
+        "capturedAt": "2026-07-20T04:06:23.848Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:28.118Z",
+        "at": "2026-07-20T04:06:23.848Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -29585,8 +31587,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/6a062b42703c33630027a19e",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -29599,7 +31601,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/6a062b42703c33630027a19e",
     "providerContact": "digitalspecialist@markhamlibrary.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -29614,14 +31616,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/6a062b42703c33630027a19e",
-        "capturedAt": "2026-07-19T19:33:28.118Z",
+        "capturedAt": "2026-07-20T04:06:23.848Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:28.118Z",
+        "at": "2026-07-20T04:06:23.848Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -29666,8 +31668,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbdad58b53c0241cd1b501",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -29680,7 +31682,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbdad58b53c0241cd1b501",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -29696,14 +31698,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdad58b53c0241cd1b501",
-        "capturedAt": "2026-07-19T19:33:28.118Z",
+        "capturedAt": "2026-07-20T04:06:23.848Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:28.118Z",
+        "at": "2026-07-20T04:06:23.848Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -29751,8 +31753,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbde1fe59a13000d3e1d05",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -29765,7 +31767,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbde1fe59a13000d3e1d05",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -29780,14 +31782,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbde1fe59a13000d3e1d05",
-        "capturedAt": "2026-07-19T19:33:28.118Z",
+        "capturedAt": "2026-07-20T04:06:23.848Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:28.118Z",
+        "at": "2026-07-20T04:06:23.848Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -29835,8 +31837,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1dc1",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -29849,7 +31851,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1dc1",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -29864,14 +31866,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdf2de59a13000d3e1dc1",
-        "capturedAt": "2026-07-19T19:33:28.118Z",
+        "capturedAt": "2026-07-20T04:06:23.848Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:28.118Z",
+        "at": "2026-07-20T04:06:23.848Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -29919,8 +31921,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/69274b3f44d0e96d007b8758",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -29933,7 +31935,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/69274b3f44d0e96d007b8758",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -29948,14 +31950,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/69274b3f44d0e96d007b8758",
-        "capturedAt": "2026-07-19T19:33:28.118Z",
+        "capturedAt": "2026-07-20T04:06:23.849Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:28.118Z",
+        "at": "2026-07-20T04:06:23.849Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -30003,8 +32005,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbd37875911f28001a2346",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -30017,7 +32019,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbd37875911f28001a2346",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -30032,14 +32034,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbd37875911f28001a2346",
-        "capturedAt": "2026-07-19T19:33:28.118Z",
+        "capturedAt": "2026-07-20T04:06:23.849Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:28.118Z",
+        "at": "2026-07-20T04:06:23.849Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -30087,8 +32089,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbdc50e59a13000d3e1c95",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -30101,7 +32103,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbdc50e59a13000d3e1c95",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -30116,14 +32118,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdc50e59a13000d3e1c95",
-        "capturedAt": "2026-07-19T19:33:28.118Z",
+        "capturedAt": "2026-07-20T04:06:23.849Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:28.118Z",
+        "at": "2026-07-20T04:06:23.849Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -30171,8 +32173,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbde97d272945e0068ee71",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -30185,7 +32187,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbde97d272945e0068ee71",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -30200,14 +32202,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbde97d272945e0068ee71",
-        "capturedAt": "2026-07-19T19:33:28.118Z",
+        "capturedAt": "2026-07-20T04:06:23.849Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:28.118Z",
+        "at": "2026-07-20T04:06:23.849Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -30255,8 +32257,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbd37875911f28001a2347",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -30269,7 +32271,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbd37875911f28001a2347",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -30284,14 +32286,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbd37875911f28001a2347",
-        "capturedAt": "2026-07-19T19:33:28.118Z",
+        "capturedAt": "2026-07-20T04:06:23.849Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:28.118Z",
+        "at": "2026-07-20T04:06:23.849Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -30339,8 +32341,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbdd1b0176055300fe80a3",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -30353,7 +32355,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbdd1b0176055300fe80a3",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -30368,14 +32370,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdd1b0176055300fe80a3",
-        "capturedAt": "2026-07-19T19:33:28.119Z",
+        "capturedAt": "2026-07-20T04:06:23.849Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:28.119Z",
+        "at": "2026-07-20T04:06:23.849Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -30423,8 +32425,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/68fbdc50e59a13000d3e1c96",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -30437,7 +32439,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/68fbdc50e59a13000d3e1c96",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -30452,14 +32454,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/68fbdc50e59a13000d3e1c96",
-        "capturedAt": "2026-07-19T19:33:28.119Z",
+        "capturedAt": "2026-07-20T04:06:23.849Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:28.119Z",
+        "at": "2026-07-20T04:06:23.849Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
@@ -30507,8 +32509,8 @@ export const generatedLibraryOpportunities = [
     ],
     "cost": "Free to join",
     "sourceUrl": "https://markham.bibliocommons.com/events/694992cb4be11d3d00d95e33",
-    "lastChecked": "2026-07-19",
-    "lastSeen": "2026-07-19",
+    "lastChecked": "2026-07-20",
+    "lastSeen": "2026-07-20",
     "status": "active",
     "accessibility": [
       "Library accessibility services available on request",
@@ -30521,7 +32523,7 @@ export const generatedLibraryOpportunities = [
     "registrationUrl": "https://markham.bibliocommons.com/events/694992cb4be11d3d00d95e33",
     "providerContact": "mplchats@markham.library.on.ca",
     "freeStatusProof": "Official Markham Public Library public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.",
-    "lastVerified": "2026-07-19",
+    "lastVerified": "2026-07-20",
     "trustedSource": true,
     "volunteerHoursEligible": false,
     "coopEligible": false,
@@ -30536,14 +32538,14 @@ export const generatedLibraryOpportunities = [
       {
         "label": "Official Markham Public Library event page",
         "url": "https://markham.bibliocommons.com/events/694992cb4be11d3d00d95e33",
-        "capturedAt": "2026-07-19T19:33:28.119Z",
+        "capturedAt": "2026-07-20T04:06:23.849Z",
         "confidence": "high"
       }
     ],
     "adminAuditTrail": [
       {
         "label": "Generated from official feed",
-        "at": "2026-07-19T19:33:28.119Z",
+        "at": "2026-07-20T04:06:23.849Z",
         "actor": "Library RSS generator",
         "detail": "Structured public event feed supplied title, date, source URL, location, category, and registration status."
       }
