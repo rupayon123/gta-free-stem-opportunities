@@ -3,15 +3,14 @@ import type { DiscoveredOpportunity } from "./discovery";
 export const generatedDiscoverySummary = {
   "mode": "deterministic",
   "sourcesChecked": 30,
-  "candidatesFound": 224,
-  "newCandidates": 20,
-  "duplicatesSkipped": 76,
+  "candidatesFound": 239,
+  "newCandidates": 29,
+  "duplicatesSkipped": 62,
   "warnings": [
-    "Could not check Toronto Public Library coding events: The operation was aborted due to timeout.",
-    "Could not check Markham Public Library events: The operation was aborted due to timeout.",
-    "Could not check Mississauga Library events: The operation was aborted due to timeout.",
+    "Could not check Markham Public Library youth volunteer events: The operation was aborted due to timeout.",
     "Could not check Credit Valley Conservation youth opportunities: 403 Forbidden.",
     "Could not check Volunteer MBC youth opportunities: 403 Forbidden.",
+    "Could not check University of Toronto Engineering Outreach: The operation was aborted due to timeout.",
     "Could not check Eventbrite free science and technology events: 405 Not Allowed.",
     "Could not check Eventbrite free online science and technology events: 405 Not Allowed."
   ]
@@ -19,25 +18,26 @@ export const generatedDiscoverySummary = {
 
 export const generatedDiscoveryReviewCandidates = [
   {
-    "id": "discovered-vaughan-library-programs-steam-camps-a329039c210e",
-    "title": "STEAM Camps",
+    "id": "discovered-vaughan-library-programs-volunteer-opportunities-e775e833a50b",
+    "title": "Volunteer Opportunities",
     "organization": "Vaughan Public Libraries",
-    "description": "STEAM Camps listed by Vaughan Public Libraries programs.",
+    "description": "Volunteer Opportunities listed by Vaughan Public Libraries programs.",
     "city": "Vaughan",
     "region": "York",
     "ageMin": 1,
     "ageMax": 18,
-    "category": "STEM",
+    "category": "Volunteer Hours",
     "cost": "Free to join",
     "language": [
       "en"
     ],
     "startDate": "2026-07-28T09:00:00-04:00",
-    "sourceUrl": "https://www.vaughanpl.info/programs/category/40",
+    "sourceUrl": "https://www.vaughanpl.info/volunteer",
     "lastChecked": "2026-07-28",
     "lastSeen": "2026-07-28",
     "status": "needs_review",
     "tags": [
+      "volunteer hours",
       "stem",
       "coding",
       "robotics",
@@ -52,46 +52,12 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Vaughan Public Libraries programs"
   },
   {
-    "id": "discovered-richmond-hill-library-programs-volunteer-at-rhpl-e9cf3759163d",
-    "title": "Volunteer at RHPL",
-    "organization": "Richmond Hill Public Library",
-    "description": "Volunteer at RHPL listed by Richmond Hill Public Library programs.",
-    "city": "Richmond Hill",
-    "region": "York",
-    "ageMin": 1,
-    "ageMax": 18,
-    "category": "Volunteer Hours",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-07-28T09:00:00-04:00",
-    "sourceUrl": "https://www.rhpl.ca/working-with-the-library/volunteer-opportunities",
-    "lastChecked": "2026-07-28",
-    "lastSeen": "2026-07-28",
-    "status": "needs_review",
-    "tags": [
-      "volunteer hours",
-      "stem",
-      "coding",
-      "technology",
-      "science",
-      "maker",
-      "teen"
-    ],
-    "confidence": "high",
-    "reviewReasons": [
-      "No clear future date found on the crawled page."
-    ],
-    "sourceName": "Richmond Hill Public Library programs"
-  },
-  {
-    "id": "discovered-aurora-library-stem-steam-workshop-7178e73dedad",
-    "title": "STEAM Workshop",
-    "organization": "Aurora Public Library",
-    "description": "Explore the world of Science, Technology, Engineering, Arts, and Math with our weekly program! It’ll be learning and experiments galore! Drop-in program, no registration required.",
-    "city": "Aurora",
-    "region": "York",
+    "id": "discovered-pickering-library-tech-science-and-technology-f36c250b8680",
+    "title": "Science and Technology",
+    "organization": "Pickering Public Library",
+    "description": "Science and Technology listed by Pickering Public Library technology events.",
+    "city": "Pickering",
+    "region": "Durham",
     "ageMin": 1,
     "ageMax": 18,
     "category": "Science & Engineering",
@@ -99,134 +65,32 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "deadline": "2026-07-28T14:30:00-04:00",
-    "startDate": "2026-07-28T14:30:00-04:00",
-    "endDate": "2026-07-28T16:30:00-04:00",
-    "sourceUrl": "https://aurora.bibliocommons.com/events/68d6bdb862a8786065c4e2ad",
+    "startDate": "2026-07-28T09:00:00-04:00",
+    "sourceUrl": "https://pickeringlibrary.ca/resources/science-technology",
     "lastChecked": "2026-07-28",
     "lastSeen": "2026-07-28",
-    "status": "active",
+    "status": "needs_review",
     "tags": [
       "science & engineering",
       "stem",
-      "creative studio",
-      "maker",
-      "coding",
       "technology",
-      "science"
-    ],
-    "confidence": "high",
-    "reviewReasons": [],
-    "sourceName": "Aurora Public Library STEM events"
-  },
-  {
-    "id": "discovered-aurora-library-stem-teen-summer-reading-challenge-2026-09e2060f3588",
-    "title": "Teen Summer Reading Challenge 2026",
-    "organization": "Aurora Public Library",
-    "description": "Books + Activities + New Friends + Prizes = Your Best Summer Yet! Join the Teen Summer Reading Challenge 2026 and unlock awesome activities, cool vibes, and real rewards. Activities include: Guess the Number – Weekly Candy Jar Challenge Each week, a new candy-filled jar will be on display at the library. Think you can guess how many are inside? Submit your name, contact info, and your best guess for a chance to win the special prizes! Closest guess wins - and yes, there’s a new chance to play every week. Raffle Contest – Read More, Win More! For every YA book you check out, you'll receive a raffle ticket. The more you read, the more entries you collect, and the better your chances of winning amazing prizes! Winners will be announced on September 1 st 2026. Beanstack Reading Challenge – Log",
-    "city": "Aurora",
-    "region": "York",
-    "ageMin": 13,
-    "ageMax": 18,
-    "category": "Volunteer Hours",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "deadline": "2026-06-29T08:00:00-04:00",
-    "startDate": "2026-06-29T08:00:00-04:00",
-    "endDate": "2026-08-31T09:00:00-04:00",
-    "sourceUrl": "https://aurora.bibliocommons.com/events/6933515b94297d36009e7d53",
-    "lastChecked": "2026-07-28",
-    "lastSeen": "2026-07-28",
-    "status": "needs_review",
-    "tags": [
-      "volunteer hours",
-      "stem",
-      "creative studio",
       "maker",
+      "computers",
       "coding",
-      "technology",
-      "science"
-    ],
-    "confidence": "high",
-    "reviewReasons": [
-      "Cost-related words appeared near the listing."
-    ],
-    "sourceName": "Aurora Public Library STEM events"
-  },
-  {
-    "id": "discovered-aurora-library-volunteers-volunteers-9a6997e9e36a",
-    "title": "Volunteers",
-    "organization": "Aurora Public Library",
-    "description": "Volunteering at the Library Volunteering can be a great way to build experience, learn new skills, connect with others and give&hellip;",
-    "city": "Aurora",
-    "region": "York",
-    "ageMin": 1,
-    "ageMax": 18,
-    "category": "Volunteer Hours",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-07-28T09:00:00-04:00",
-    "sourceUrl": "https://aurorapl.ca/volunteers",
-    "lastChecked": "2026-07-28",
-    "lastSeen": "2026-07-28",
-    "status": "needs_review",
-    "tags": [
-      "volunteer hours",
-      "volunteer",
-      "teen",
-      "youth",
-      "hours",
-      "service",
-      "leadership"
+      "youth"
     ],
     "confidence": "high",
     "reviewReasons": [
       "No clear future date found on the crawled page."
     ],
-    "sourceName": "Aurora Public Library volunteer opportunities"
+    "sourceName": "Pickering Public Library technology events"
   },
   {
-    "id": "discovered-whitby-programs-ontario-tech-stem-workshop-f2115d8bbfe8",
-    "title": "Ontario Tech STEM Workshop",
-    "organization": "Whitby Public Library",
-    "description": "Ontario Tech STEM Workshop listed by Whitby Public Library programs.",
-    "city": "Whitby",
-    "region": "Durham",
-    "ageMin": 1,
-    "ageMax": 18,
-    "category": "STEM",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-07-28T09:00:00-04:00",
-    "sourceUrl": "https://whitbylibrary.libcal.com/event/4014091",
-    "lastChecked": "2026-07-28",
-    "lastSeen": "2026-07-28",
-    "status": "needs_review",
-    "tags": [
-      "stem",
-      "coding",
-      "science",
-      "technology",
-      "girls in stem"
-    ],
-    "confidence": "high",
-    "reviewReasons": [
-      "No clear future date found on the crawled page."
-    ],
-    "sourceName": "Whitby Public Library programs"
-  },
-  {
-    "id": "discovered-ajax-library-stem-makerspace-mclean-79e320ceb204",
-    "title": "Makerspace @ McLean",
-    "organization": "Ajax Public Library",
-    "description": "Makerspace @ McLean listed by Ajax Public Library STEM events.",
-    "city": "Ajax",
+    "id": "discovered-pickering-library-tech-technology-and-maker-space-9189ff2faf8e",
+    "title": "Technology and Maker Space",
+    "organization": "Pickering Public Library",
+    "description": "Technology and Maker Space listed by Pickering Public Library technology events.",
+    "city": "Pickering",
     "region": "Durham",
     "ageMin": 1,
     "ageMax": 18,
@@ -236,31 +100,672 @@ export const generatedDiscoveryReviewCandidates = [
       "en"
     ],
     "startDate": "2026-07-28T09:00:00-04:00",
-    "sourceUrl": "https://ajaxlibrary.ca/Makerspace",
+    "sourceUrl": "https://pickeringlibrary.ca/makerspace",
     "lastChecked": "2026-07-28",
     "lastSeen": "2026-07-28",
     "status": "needs_review",
     "tags": [
       "makerspace & fabrication",
       "stem",
+      "technology",
+      "maker",
+      "computers",
       "coding",
+      "youth"
+    ],
+    "confidence": "high",
+    "reviewReasons": [
+      "No clear future date found on the crawled page."
+    ],
+    "sourceName": "Pickering Public Library technology events"
+  },
+  {
+    "id": "discovered-pickering-library-tech-technology-for-health-fitness-c25f6de4b42e",
+    "title": "Technology for Health & Fitness",
+    "organization": "Pickering Public Library",
+    "description": "Technology for Health & Fitness listed by Pickering Public Library technology events.",
+    "city": "Pickering",
+    "region": "Durham",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "STEM",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-07-28T09:00:00-04:00",
+    "sourceUrl": "https://pickering.bibliocommons.com/v2/list/display/1491301049/3037093477",
+    "lastChecked": "2026-07-28",
+    "lastSeen": "2026-07-28",
+    "status": "needs_review",
+    "tags": [
+      "stem",
+      "technology",
+      "maker",
+      "computers",
+      "coding",
+      "youth"
+    ],
+    "confidence": "high",
+    "reviewReasons": [
+      "No clear future date found on the crawled page."
+    ],
+    "sourceName": "Pickering Public Library technology events"
+  },
+  {
+    "id": "discovered-clarington-library-programs-learning-technology-230c06781e35",
+    "title": "Learning & Technology",
+    "organization": "Clarington Library, Museums & Archives",
+    "description": "Learning & Technology listed by Clarington Library programs.",
+    "city": "Clarington",
+    "region": "Durham",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "STEM",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-07-28T09:00:00-04:00",
+    "sourceUrl": "http://www.cplma.ca/learning-technology",
+    "lastChecked": "2026-07-28",
+    "lastSeen": "2026-07-28",
+    "status": "needs_review",
+    "tags": [
+      "stem",
       "science",
+      "technology",
+      "programs",
+      "museum",
+      "youth"
+    ],
+    "confidence": "high",
+    "reviewReasons": [
+      "No clear future date found on the crawled page."
+    ],
+    "sourceName": "Clarington Library programs"
+  },
+  {
+    "id": "discovered-clarington-library-programs-computers-internet-access-3cb588204464",
+    "title": "Computers & Internet Access",
+    "organization": "Clarington Library, Museums & Archives",
+    "description": "Computers & Internet Access listed by Clarington Library programs.",
+    "city": "Clarington",
+    "region": "Durham",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "STEM",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-07-28T09:00:00-04:00",
+    "sourceUrl": "http://www.cplma.ca/learning-technology/computers-and-internet-access",
+    "lastChecked": "2026-07-28",
+    "lastSeen": "2026-07-28",
+    "status": "needs_review",
+    "tags": [
+      "stem",
+      "science",
+      "technology",
+      "programs",
+      "museum",
+      "youth"
+    ],
+    "confidence": "high",
+    "reviewReasons": [
+      "No clear future date found on the crawled page."
+    ],
+    "sourceName": "Clarington Library programs"
+  },
+  {
+    "id": "discovered-clarington-library-programs-maker-s-space-2a794c50bde2",
+    "title": "Maker's Space",
+    "organization": "Clarington Library, Museums & Archives",
+    "description": "Maker's Space listed by Clarington Library programs.",
+    "city": "Clarington",
+    "region": "Durham",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "Makerspace & Fabrication",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-07-28T09:00:00-04:00",
+    "sourceUrl": "http://www.cplma.ca/learning-technology/makers-space-the-studio",
+    "lastChecked": "2026-07-28",
+    "lastSeen": "2026-07-28",
+    "status": "needs_review",
+    "tags": [
+      "makerspace & fabrication",
+      "stem",
+      "science",
+      "technology",
+      "programs",
+      "museum",
+      "youth"
+    ],
+    "confidence": "high",
+    "reviewReasons": [
+      "No clear future date found on the crawled page."
+    ],
+    "sourceName": "Clarington Library programs"
+  },
+  {
+    "id": "discovered-clarington-library-programs-jobs-volunteering-034bd1adb633",
+    "title": "Jobs & Volunteering",
+    "organization": "Clarington Library, Museums & Archives",
+    "description": "Jobs & Volunteering listed by Clarington Library programs.",
+    "city": "Clarington",
+    "region": "Durham",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "Volunteer Hours",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-07-28T09:00:00-04:00",
+    "sourceUrl": "http://www.cplma.ca/about-us/jobs-and-volunteering",
+    "lastChecked": "2026-07-28",
+    "lastSeen": "2026-07-28",
+    "status": "needs_review",
+    "tags": [
+      "volunteer hours",
+      "stem",
+      "science",
+      "technology",
+      "programs",
+      "museum",
+      "youth"
+    ],
+    "confidence": "high",
+    "reviewReasons": [
+      "No clear future date found on the crawled page."
+    ],
+    "sourceName": "Clarington Library programs"
+  },
+  {
+    "id": "discovered-clarington-library-programs-reading-and-math-buddies-3e183b053cf3",
+    "title": "Reading and Math Buddies",
+    "organization": "Clarington Library, Museums & Archives",
+    "description": "Reading and Math Buddies listed by Clarington Library programs.",
+    "city": "Clarington",
+    "region": "Durham",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "STEM",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-07-28T09:00:00-04:00",
+    "sourceUrl": "https://www.cplma.ca/programs-services/reading-and-math-buddies",
+    "lastChecked": "2026-07-28",
+    "lastSeen": "2026-07-28",
+    "status": "needs_review",
+    "tags": [
+      "stem",
+      "science",
+      "technology",
+      "programs",
+      "museum",
+      "youth"
+    ],
+    "confidence": "high",
+    "reviewReasons": [
+      "No clear future date found on the crawled page."
+    ],
+    "sourceName": "Clarington Library programs"
+  },
+  {
+    "id": "discovered-milton-library-programs-volunteer-opportunities-b6ad7428d58f",
+    "title": "Volunteer Opportunities",
+    "organization": "Milton Public Library",
+    "description": "Volunteer Opportunities listed by Milton Public Library programs.",
+    "city": "Milton",
+    "region": "Halton",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "Volunteer Hours",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-07-28T09:00:00-04:00",
+    "sourceUrl": "https://beinspired.ca/volunteer-opportunities",
+    "lastChecked": "2026-07-28",
+    "lastSeen": "2026-07-28",
+    "status": "needs_review",
+    "tags": [
+      "volunteer hours",
+      "stem",
+      "coding",
+      "maker",
+      "technology",
+      "volunteer",
+      "programs"
+    ],
+    "confidence": "high",
+    "reviewReasons": [
+      "No clear future date found on the crawled page."
+    ],
+    "sourceName": "Milton Public Library programs"
+  },
+  {
+    "id": "discovered-milton-library-programs-computer-services-02850eef3932",
+    "title": "Computer Services",
+    "organization": "Milton Public Library",
+    "description": "Computer Services listed by Milton Public Library programs.",
+    "city": "Milton",
+    "region": "Halton",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "STEM",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-07-28T09:00:00-04:00",
+    "sourceUrl": "https://beinspired.ca",
+    "lastChecked": "2026-07-28",
+    "lastSeen": "2026-07-28",
+    "status": "needs_review",
+    "tags": [
+      "stem",
+      "coding",
+      "maker",
+      "technology",
+      "volunteer",
+      "programs"
+    ],
+    "confidence": "high",
+    "reviewReasons": [
+      "No clear future date found on the crawled page."
+    ],
+    "sourceName": "Milton Public Library programs"
+  },
+  {
+    "id": "discovered-milton-library-programs-public-access-computers-wireless-access-bo-9651b4edfb4b",
+    "title": "Public Access Computers, Wireless Access, Borrow Laptops",
+    "organization": "Milton Public Library",
+    "description": "Public Access Computers, Wireless Access, Borrow Laptops listed by Milton Public Library programs.",
+    "city": "Milton",
+    "region": "Halton",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "STEM",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-07-28T09:00:00-04:00",
+    "sourceUrl": "https://beinspired.ca/computer-services",
+    "lastChecked": "2026-07-28",
+    "lastSeen": "2026-07-28",
+    "status": "needs_review",
+    "tags": [
+      "stem",
+      "coding",
+      "maker",
+      "technology",
+      "volunteer",
+      "programs"
+    ],
+    "confidence": "high",
+    "reviewReasons": [
+      "No clear future date found on the crawled page."
+    ],
+    "sourceName": "Milton Public Library programs"
+  },
+  {
+    "id": "discovered-halton-hills-library-programs-technology-resources-f6eda0d3bfa5",
+    "title": "Technology Resources",
+    "organization": "Halton Hills Public Library",
+    "description": "Technology Resources listed by Halton Hills Public Library programs.",
+    "city": "Halton Hills",
+    "region": "Halton",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "STEM",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-07-28T09:00:00-04:00",
+    "sourceUrl": "https://www.hhpl.ca/services/technology-resources",
+    "lastChecked": "2026-07-28",
+    "lastSeen": "2026-07-28",
+    "status": "needs_review",
+    "tags": [
+      "stem",
+      "coding",
+      "technology",
+      "lego",
+      "maker",
+      "programs"
+    ],
+    "confidence": "high",
+    "reviewReasons": [
+      "No clear future date found on the crawled page."
+    ],
+    "sourceName": "Halton Hills Public Library programs"
+  },
+  {
+    "id": "discovered-halton-hills-library-programs-computers-2d82aa6ec575",
+    "title": "Computers",
+    "organization": "Halton Hills Public Library",
+    "description": "Computers listed by Halton Hills Public Library programs.",
+    "city": "Halton Hills",
+    "region": "Halton",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "STEM",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-07-28T09:00:00-04:00",
+    "sourceUrl": "https://www.hhpl.ca/computers",
+    "lastChecked": "2026-07-28",
+    "lastSeen": "2026-07-28",
+    "status": "needs_review",
+    "tags": [
+      "stem",
+      "coding",
+      "technology",
+      "lego",
+      "maker",
+      "programs"
+    ],
+    "confidence": "high",
+    "reviewReasons": [
+      "No clear future date found on the crawled page."
+    ],
+    "sourceName": "Halton Hills Public Library programs"
+  },
+  {
+    "id": "discovered-trca-youth-youth-opportunities-at-trca-bd0e50237819",
+    "title": "Youth Opportunities at TRCA",
+    "organization": "Toronto and Region Conservation Authority",
+    "description": "TRCA offers programs to support youth and young adults who are interested in getting involved in the conservation sector.",
+    "city": "Toronto",
+    "region": "Toronto",
+    "ageMin": 13,
+    "ageMax": 18,
+    "category": "STEM",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-07-28T09:00:00-04:00",
+    "sourceUrl": "https://trca.ca/get-involved/youth-opportunities",
+    "lastChecked": "2026-07-28",
+    "lastSeen": "2026-07-28",
+    "status": "needs_review",
+    "tags": [
+      "stem",
+      "youth",
+      "volunteer",
+      "conservation",
+      "environment",
+      "science"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "No clear future date found on the crawled page.",
+      "Free access wording needs human confirmation."
+    ],
+    "sourceName": "TRCA youth volunteer opportunities"
+  },
+  {
+    "id": "discovered-trca-youth-volunteer-with-trca-cdffdd979d6f",
+    "title": "Volunteer with TRCA",
+    "organization": "Toronto and Region Conservation Authority",
+    "description": "Volunteer with TRCA listed by TRCA youth volunteer opportunities.",
+    "city": "Toronto",
+    "region": "Toronto",
+    "ageMin": 13,
+    "ageMax": 18,
+    "category": "Volunteer Hours",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-07-28T09:00:00-04:00",
+    "sourceUrl": "https://trca.ca/get-involved/volunteer",
+    "lastChecked": "2026-07-28",
+    "lastSeen": "2026-07-28",
+    "status": "needs_review",
+    "tags": [
+      "volunteer hours",
+      "youth",
+      "volunteer",
+      "conservation",
+      "environment",
+      "science"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "No clear future date found on the crawled page.",
+      "Free access wording needs human confirmation."
+    ],
+    "sourceName": "TRCA youth volunteer opportunities"
+  },
+  {
+    "id": "discovered-trca-youth-young-conservation-professionals-leadershi-275035142ede",
+    "title": "Young Conservation Professionals Leadership Program",
+    "organization": "Toronto and Region Conservation Authority",
+    "description": "Young Conservation Professionals Leadership Program listed by TRCA youth volunteer opportunities.",
+    "city": "Toronto",
+    "region": "Toronto",
+    "ageMin": 13,
+    "ageMax": 18,
+    "category": "Volunteer Hours",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-07-28T09:00:00-04:00",
+    "sourceUrl": "https://trca.ca/learning/adult/young-conservation-professionals",
+    "lastChecked": "2026-07-28",
+    "lastSeen": "2026-07-28",
+    "status": "needs_review",
+    "tags": [
+      "volunteer hours",
+      "youth",
+      "volunteer",
+      "conservation",
+      "environment",
+      "science"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "No clear future date found on the crawled page.",
+      "Free access wording needs human confirmation."
+    ],
+    "sourceName": "TRCA youth volunteer opportunities"
+  },
+  {
+    "id": "discovered-uhn-stem-pathways-uhn-stem-pathways-7847b49cfe74",
+    "title": "UHN STEM Pathways",
+    "organization": "UHN STEM Pathways",
+    "description": "UHN STEM Pathways from UHN STEM Pathways.",
+    "city": "Toronto",
+    "region": "Toronto",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "STEM",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-07-28T09:00:00-04:00",
+    "sourceUrl": "https://uhnstempathways.ca",
+    "lastChecked": "2026-07-28",
+    "lastSeen": "2026-07-28",
+    "status": "needs_review",
+    "tags": [
+      "stem",
+      "science",
+      "health",
+      "workshop",
+      "underserved",
+      "youth"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "No clear future date found on the crawled page.",
+      "Free access wording needs human confirmation."
+    ],
+    "sourceName": "UHN STEM Pathways"
+  },
+  {
+    "id": "discovered-uhn-stem-pathways-volunteer-spotlight-ff9c6a9238e5",
+    "title": "Volunteer Spotlight",
+    "organization": "UHN STEM Pathways",
+    "description": "Volunteer Spotlight listed by UHN STEM Pathways.",
+    "city": "Toronto",
+    "region": "Toronto",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "Volunteer Hours",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-07-28T09:00:00-04:00",
+    "sourceUrl": "https://uhnstempathways.ca/volunteer-spotlight",
+    "lastChecked": "2026-07-28",
+    "lastSeen": "2026-07-28",
+    "status": "needs_review",
+    "tags": [
+      "volunteer hours",
+      "stem",
+      "science",
+      "health",
+      "workshop",
+      "underserved",
+      "youth"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "No clear future date found on the crawled page.",
+      "Free access wording needs human confirmation."
+    ],
+    "sourceName": "UHN STEM Pathways"
+  },
+  {
+    "id": "discovered-uhn-stem-pathways-folder-volunteers-04eb7154ed70",
+    "title": "Folder: Volunteers",
+    "organization": "UHN STEM Pathways",
+    "description": "Folder: Volunteers listed by UHN STEM Pathways.",
+    "city": "Toronto",
+    "region": "Toronto",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "Volunteer Hours",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-07-28T09:00:00-04:00",
+    "sourceUrl": "https://uhnstempathways.ca/volunteers",
+    "lastChecked": "2026-07-28",
+    "lastSeen": "2026-07-28",
+    "status": "needs_review",
+    "tags": [
+      "volunteer hours",
+      "stem",
+      "science",
+      "health",
+      "workshop",
+      "underserved",
+      "youth"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "No clear future date found on the crawled page.",
+      "Free access wording needs human confirmation."
+    ],
+    "sourceName": "UHN STEM Pathways"
+  },
+  {
+    "id": "discovered-uhn-stem-pathways-upcoming-stem-talks-2025-26-213b62cbcb46",
+    "title": "Upcoming STEM Talks - 2025/26",
+    "organization": "UHN STEM Pathways",
+    "description": "Upcoming STEM Talks - 2025/26 listed by UHN STEM Pathways.",
+    "city": "Toronto",
+    "region": "Toronto",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "STEM",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-07-28T09:00:00-04:00",
+    "sourceUrl": "https://uhnstempathways.ca/upcoming/stem-talks-2025-overview",
+    "lastChecked": "2026-07-28",
+    "lastSeen": "2026-07-28",
+    "status": "needs_review",
+    "tags": [
+      "stem",
+      "science",
+      "health",
+      "workshop",
+      "underserved",
+      "youth"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "No clear future date found on the crawled page.",
+      "Free access wording needs human confirmation."
+    ],
+    "sourceName": "UHN STEM Pathways"
+  },
+  {
+    "id": "discovered-ontario-tech-engineering-outreach-engineering-outreach-b8a6272b9876",
+    "title": "Engineering Outreach",
+    "organization": "Ontario Tech University Engineering Outreach",
+    "description": "Engineering Outreach from Ontario Tech Engineering Outreach.",
+    "city": "Oshawa",
+    "region": "Durham",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "Science & Engineering",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-07-28T09:00:00-04:00",
+    "sourceUrl": "https://engineering.ontariotechu.ca/outreach/index.php",
+    "lastChecked": "2026-07-28",
+    "lastSeen": "2026-07-28",
+    "status": "needs_review",
+    "tags": [
+      "science & engineering",
       "engineering",
-      "technology",
-      "black youth"
+      "stem",
+      "science",
+      "coding",
+      "youth",
+      "workshop"
     ],
-    "confidence": "high",
+    "confidence": "medium",
     "reviewReasons": [
-      "No clear future date found on the crawled page."
+      "No clear future date found on the crawled page.",
+      "Free access wording needs human confirmation."
     ],
-    "sourceName": "Ajax Public Library STEM events"
+    "sourceName": "Ontario Tech Engineering Outreach"
   },
   {
-    "id": "discovered-pickering-library-tech-ai-series-prompt-engineering-77c16b9c99b0",
-    "title": "AI Series: Prompt Engineering",
-    "organization": "Pickering Public Library",
-    "description": "AI Series: Prompt Engineering listed by Pickering Public Library technology events.",
-    "city": "Pickering",
+    "id": "discovered-ontario-tech-engineering-outreach-engineering-outreach-supporters-182433c06ecc",
+    "title": "Engineering Outreach Supporters",
+    "organization": "Ontario Tech University Engineering Outreach",
+    "description": "Engineering Outreach Supporters listed by Ontario Tech Engineering Outreach.",
+    "city": "Oshawa",
     "region": "Durham",
     "ageMin": 1,
     "ageMax": 18,
@@ -270,397 +775,209 @@ export const generatedDiscoveryReviewCandidates = [
       "en"
     ],
     "startDate": "2026-07-28T09:00:00-04:00",
-    "sourceUrl": "https://cal.pickeringlibrary.ca/event/ai-series-prompt-engineering-how-construct-perfect-prompt-get-most-out-ai-49319",
+    "sourceUrl": "https://engineering.ontariotechu.ca/outreach/about-us/outreach-supporters.php",
     "lastChecked": "2026-07-28",
     "lastSeen": "2026-07-28",
     "status": "needs_review",
     "tags": [
       "science & engineering",
+      "engineering",
       "stem",
-      "technology",
-      "maker",
-      "computers",
-      "coding",
-      "youth"
-    ],
-    "confidence": "high",
-    "reviewReasons": [
-      "No clear future date found on the crawled page."
-    ],
-    "sourceName": "Pickering Public Library technology events"
-  },
-  {
-    "id": "discovered-pickering-library-tech-computers-and-technology-99e4cbcf5f11",
-    "title": "Computers and Technology",
-    "organization": "Pickering Public Library",
-    "description": "Computers and Technology listed by Pickering Public Library technology events.",
-    "city": "Pickering",
-    "region": "Durham",
-    "ageMin": 1,
-    "ageMax": 18,
-    "category": "STEM",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-07-28T09:00:00-04:00",
-    "sourceUrl": "https://pickeringlibrary.ca/explore/?programs=computers-and-technology",
-    "lastChecked": "2026-07-28",
-    "lastSeen": "2026-07-28",
-    "status": "needs_review",
-    "tags": [
-      "stem",
-      "technology",
-      "maker",
-      "computers",
-      "coding",
-      "youth"
-    ],
-    "confidence": "high",
-    "reviewReasons": [
-      "No clear future date found on the crawled page."
-    ],
-    "sourceName": "Pickering Public Library technology events"
-  },
-  {
-    "id": "discovered-oshawa-library-stem-adult-summer-reading-challenge-f4980264b496",
-    "title": "Adult Summer Reading Challenge",
-    "organization": "Oshawa Public Libraries",
-    "description": "Adult Summer Reading Challenge from Oshawa Public Libraries STEM events.",
-    "city": "Oshawa",
-    "region": "Durham",
-    "ageMin": 18,
-    "category": "STEM",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-07-28T09:00:00-04:00",
-    "sourceUrl": "https://oshlib.bibliocommons.com/events/69dd02d3c1cf6f9a75850754",
-    "lastChecked": "2026-07-28",
-    "lastSeen": "2026-07-28",
-    "status": "needs_review",
-    "tags": [
-      "stem",
-      "coding",
       "science",
-      "technology",
-      "teen",
-      "volunteer"
-    ],
-    "confidence": "high",
-    "reviewReasons": [
-      "No clear future date found on the crawled page."
-    ],
-    "sourceName": "Oshawa Public Libraries STEM events"
-  },
-  {
-    "id": "discovered-oshawa-library-stem-teen-summer-reading-challenge-18e265e8adcb",
-    "title": "Teen Summer Reading Challenge",
-    "organization": "Oshawa Public Libraries",
-    "description": "Teen Summer Reading Challenge from Oshawa Public Libraries STEM events.",
-    "city": "Oshawa",
-    "region": "Durham",
-    "ageMin": 13,
-    "ageMax": 18,
-    "category": "STEM",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-07-28T09:00:00-04:00",
-    "sourceUrl": "https://oshlib.bibliocommons.com/events/69dd0b47b6c4ac1fedcc079e",
-    "lastChecked": "2026-07-28",
-    "lastSeen": "2026-07-28",
-    "status": "needs_review",
-    "tags": [
-      "stem",
       "coding",
-      "science",
-      "technology",
-      "teen",
-      "volunteer"
-    ],
-    "confidence": "high",
-    "reviewReasons": [
-      "No clear future date found on the crawled page."
-    ],
-    "sourceName": "Oshawa Public Libraries STEM events"
-  },
-  {
-    "id": "discovered-oshawa-library-stem-td-summer-reading-club-8c963ca1c97f",
-    "title": "TD Summer Reading Club",
-    "organization": "Oshawa Public Libraries",
-    "description": "TD Summer Reading Club from Oshawa Public Libraries STEM events.",
-    "city": "Oshawa",
-    "region": "Durham",
-    "ageMin": 1,
-    "ageMax": 18,
-    "category": "STEM",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-07-28T09:00:00-04:00",
-    "sourceUrl": "https://oshlib.bibliocommons.com/events/69dd1476e2a2952aed0e7278",
-    "lastChecked": "2026-07-28",
-    "lastSeen": "2026-07-28",
-    "status": "needs_review",
-    "tags": [
-      "stem",
-      "coding",
-      "science",
-      "technology",
-      "teen",
-      "volunteer"
-    ],
-    "confidence": "high",
-    "reviewReasons": [
-      "No clear future date found on the crawled page."
-    ],
-    "sourceName": "Oshawa Public Libraries STEM events"
-  },
-  {
-    "id": "discovered-oshawa-library-stem-ocean-sensory-playtime-7bca49410939",
-    "title": "Ocean Sensory Playtime",
-    "organization": "Oshawa Public Libraries",
-    "description": "Ocean Sensory Playtime from Oshawa Public Libraries STEM events.",
-    "city": "Oshawa",
-    "region": "Durham",
-    "ageMin": 1,
-    "ageMax": 18,
-    "category": "STEM",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-07-28T09:00:00-04:00",
-    "sourceUrl": "https://oshlib.bibliocommons.com/events/69dd31a0c1cf6f9a75851461",
-    "lastChecked": "2026-07-28",
-    "lastSeen": "2026-07-28",
-    "status": "needs_review",
-    "tags": [
-      "stem",
-      "coding",
-      "science",
-      "technology",
-      "teen",
-      "volunteer"
-    ],
-    "confidence": "high",
-    "reviewReasons": [
-      "No clear future date found on the crawled page."
-    ],
-    "sourceName": "Oshawa Public Libraries STEM events"
-  },
-  {
-    "id": "discovered-oshawa-library-stem-the-reading-reef-ca8ca32fbfc0",
-    "title": "The Reading Reef",
-    "organization": "Oshawa Public Libraries",
-    "description": "The Reading Reef from Oshawa Public Libraries STEM events.",
-    "city": "Oshawa",
-    "region": "Durham",
-    "ageMin": 1,
-    "ageMax": 18,
-    "category": "STEM",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-07-28T09:00:00-04:00",
-    "sourceUrl": "https://oshlib.bibliocommons.com/events/69dd2f60c1cf6f9a7585137a",
-    "lastChecked": "2026-07-28",
-    "lastSeen": "2026-07-28",
-    "status": "needs_review",
-    "tags": [
-      "stem",
-      "coding",
-      "science",
-      "technology",
-      "teen",
-      "volunteer"
-    ],
-    "confidence": "high",
-    "reviewReasons": [
-      "No clear future date found on the crawled page."
-    ],
-    "sourceName": "Oshawa Public Libraries STEM events"
-  },
-  {
-    "id": "discovered-oshawa-library-stem-hands-on-exotics-giant-snake-friends-6df3914d39c2",
-    "title": "Hands-On Exotics: Giant Snake & Friends",
-    "organization": "Oshawa Public Libraries",
-    "description": "Hands-On Exotics: Giant Snake & Friends from Oshawa Public Libraries STEM events.",
-    "city": "Oshawa",
-    "region": "Durham",
-    "ageMin": 1,
-    "ageMax": 18,
-    "category": "STEM",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-07-28T09:00:00-04:00",
-    "sourceUrl": "https://oshlib.bibliocommons.com/events/69dd31e3b6c4ac1fedcc15be",
-    "lastChecked": "2026-07-28",
-    "lastSeen": "2026-07-28",
-    "status": "needs_review",
-    "tags": [
-      "stem",
-      "coding",
-      "science",
-      "technology",
-      "teen",
-      "volunteer"
-    ],
-    "confidence": "high",
-    "reviewReasons": [
-      "No clear future date found on the crawled page."
-    ],
-    "sourceName": "Oshawa Public Libraries STEM events"
-  },
-  {
-    "id": "discovered-oshawa-library-stem-creative-writing-circle-97d10304b0ee",
-    "title": "Creative Writing Circle",
-    "organization": "Oshawa Public Libraries",
-    "description": "Creative Writing Circle from Oshawa Public Libraries STEM events.",
-    "city": "Oshawa",
-    "region": "Durham",
-    "ageMin": 1,
-    "ageMax": 18,
-    "category": "STEM",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-07-28T09:00:00-04:00",
-    "sourceUrl": "https://oshlib.bibliocommons.com/events/69dd0a8ab6c4ac1fedcc078b",
-    "lastChecked": "2026-07-28",
-    "lastSeen": "2026-07-28",
-    "status": "needs_review",
-    "tags": [
-      "stem",
-      "coding",
-      "science",
-      "technology",
-      "teen",
-      "volunteer"
-    ],
-    "confidence": "high",
-    "reviewReasons": [
-      "No clear future date found on the crawled page."
-    ],
-    "sourceName": "Oshawa Public Libraries STEM events"
-  },
-  {
-    "id": "discovered-oshawa-library-stem-makerspace-6bb095888b6a",
-    "title": "Makerspace",
-    "organization": "Oshawa Public Libraries",
-    "description": "Makerspace listed by Oshawa Public Libraries STEM events.",
-    "city": "Oshawa",
-    "region": "Durham",
-    "ageMin": 1,
-    "ageMax": 18,
-    "category": "Makerspace & Fabrication",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-07-28T09:00:00-04:00",
-    "sourceUrl": "https://oshawalibrary.ca/technology/makerspace",
-    "lastChecked": "2026-07-28",
-    "lastSeen": "2026-07-28",
-    "status": "needs_review",
-    "tags": [
-      "makerspace & fabrication",
-      "stem",
-      "coding",
-      "science",
-      "technology",
-      "teen",
-      "volunteer"
-    ],
-    "confidence": "high",
-    "reviewReasons": [
-      "No clear future date found on the crawled page."
-    ],
-    "sourceName": "Oshawa Public Libraries STEM events"
-  },
-  {
-    "id": "discovered-oshawa-library-stem-volunteer-at-opl-2fa4d7078a11",
-    "title": "Volunteer at OPL",
-    "organization": "Oshawa Public Libraries",
-    "description": "Volunteer at OPL listed by Oshawa Public Libraries STEM events.",
-    "city": "Oshawa",
-    "region": "Durham",
-    "ageMin": 1,
-    "ageMax": 18,
-    "category": "Volunteer Hours",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-07-28T09:00:00-04:00",
-    "sourceUrl": "https://oshawalibrary.ca/volunteer",
-    "lastChecked": "2026-07-28",
-    "lastSeen": "2026-07-28",
-    "status": "needs_review",
-    "tags": [
-      "volunteer hours",
-      "stem",
-      "coding",
-      "science",
-      "technology",
-      "teen",
-      "volunteer"
-    ],
-    "confidence": "high",
-    "reviewReasons": [
-      "No clear future date found on the crawled page."
-    ],
-    "sourceName": "Oshawa Public Libraries STEM events"
-  },
-  {
-    "id": "discovered-mississauga-library-volunteers-library-jobs-and-volunteer-4e330c1fa4cc",
-    "title": "Library jobs and volunteer",
-    "organization": "Mississauga Library",
-    "description": "View current job opportunities and volunteer information for people who want to work at the Mississauga Library or volunteer with the Friends of the Library.",
-    "city": "Mississauga",
-    "region": "Peel",
-    "ageMin": 1,
-    "ageMax": 18,
-    "category": "Volunteer Hours",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-07-28T09:00:00-04:00",
-    "sourceUrl": "https://www.mississauga.ca/library/library-jobs-and-volunteer",
-    "lastChecked": "2026-07-28",
-    "lastSeen": "2026-07-28",
-    "status": "needs_review",
-    "tags": [
-      "volunteer hours",
-      "volunteer",
-      "teen",
       "youth",
-      "hours",
-      "community service"
+      "workshop"
     ],
-    "confidence": "high",
+    "confidence": "medium",
     "reviewReasons": [
-      "No clear future date found on the crawled page."
+      "No clear future date found on the crawled page.",
+      "Free access wording needs human confirmation."
     ],
-    "sourceName": "Mississauga Library volunteer opportunities"
+    "sourceName": "Ontario Tech Engineering Outreach"
   },
   {
-    "id": "discovered-mississauga-library-volunteers-volunteer-at-the-library-teens-can-join-a--8e063ada33da",
-    "title": "Volunteer at the library Teens can join a teen advisory group. Adults can volunteer for special events and more.",
-    "organization": "Mississauga Library",
-    "description": "Volunteer at the library Teens can join a teen advisory group. Adults can volunteer for special events and more. listed by Mississauga Library volunteer opportunities.",
-    "city": "Mississauga",
-    "region": "Peel",
-    "ageMin": 13,
+    "id": "discovered-ontario-tech-engineering-outreach-engineering-outreach-in-the-community-97cd2a77dd32",
+    "title": "Engineering Outreach in the Community",
+    "organization": "Ontario Tech University Engineering Outreach",
+    "description": "Engineering Outreach in the Community listed by Ontario Tech Engineering Outreach.",
+    "city": "Oshawa",
+    "region": "Durham",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "Science & Engineering",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-07-28T09:00:00-04:00",
+    "sourceUrl": "https://engineering.ontariotechu.ca/outreach/about-us/in-the-community.php",
+    "lastChecked": "2026-07-28",
+    "lastSeen": "2026-07-28",
+    "status": "needs_review",
+    "tags": [
+      "science & engineering",
+      "engineering",
+      "stem",
+      "science",
+      "coding",
+      "youth",
+      "workshop"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "No clear future date found on the crawled page.",
+      "Free access wording needs human confirmation."
+    ],
+    "sourceName": "Ontario Tech Engineering Outreach"
+  },
+  {
+    "id": "discovered-ontario-tech-engineering-outreach-junior-robotics-and-automation-lab-92a2a37ec79c",
+    "title": "Junior Robotics and Automation Lab",
+    "organization": "Ontario Tech University Engineering Outreach",
+    "description": "Junior Robotics and Automation Lab listed by Ontario Tech Engineering Outreach.",
+    "city": "Oshawa",
+    "region": "Durham",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "Coding & Robotics",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-07-28T09:00:00-04:00",
+    "sourceUrl": "https://form.jotform.com/262024827303248",
+    "lastChecked": "2026-07-28",
+    "lastSeen": "2026-07-28",
+    "status": "needs_review",
+    "tags": [
+      "coding & robotics",
+      "engineering",
+      "stem",
+      "science",
+      "coding",
+      "youth",
+      "workshop"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "No clear future date found on the crawled page.",
+      "Free access wording needs human confirmation."
+    ],
+    "sourceName": "Ontario Tech Engineering Outreach"
+  },
+  {
+    "id": "discovered-ontario-tech-engineering-outreach-intermediate-robotics-and-automation-lab-447c6d6e191b",
+    "title": "Intermediate Robotics and Automation Lab",
+    "organization": "Ontario Tech University Engineering Outreach",
+    "description": "Intermediate Robotics and Automation Lab listed by Ontario Tech Engineering Outreach.",
+    "city": "Oshawa",
+    "region": "Durham",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "Coding & Robotics",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-07-28T09:00:00-04:00",
+    "sourceUrl": "https://form.jotform.com/262044502244244",
+    "lastChecked": "2026-07-28",
+    "lastSeen": "2026-07-28",
+    "status": "needs_review",
+    "tags": [
+      "coding & robotics",
+      "engineering",
+      "stem",
+      "science",
+      "coding",
+      "youth",
+      "workshop"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "No clear future date found on the crawled page.",
+      "Free access wording needs human confirmation."
+    ],
+    "sourceName": "Ontario Tech Engineering Outreach"
+  },
+  {
+    "id": "discovered-ontario-tech-engineering-outreach-code-your-canvas-a0d7b5deb938",
+    "title": "Code Your Canvas",
+    "organization": "Ontario Tech University Engineering Outreach",
+    "description": "Code Your Canvas listed by Ontario Tech Engineering Outreach.",
+    "city": "Oshawa",
+    "region": "Durham",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "Science & Engineering",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-07-28T09:00:00-04:00",
+    "sourceUrl": "https://form.jotform.com/262024693453255",
+    "lastChecked": "2026-07-28",
+    "lastSeen": "2026-07-28",
+    "status": "needs_review",
+    "tags": [
+      "science & engineering",
+      "engineering",
+      "stem",
+      "science",
+      "coding",
+      "youth",
+      "workshop"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "No clear future date found on the crawled page.",
+      "Free access wording needs human confirmation."
+    ],
+    "sourceName": "Ontario Tech Engineering Outreach"
+  },
+  {
+    "id": "discovered-ontario-tech-engineering-outreach-inside-engineering-767d7b98d1cf",
+    "title": "Inside Engineering",
+    "organization": "Ontario Tech University Engineering Outreach",
+    "description": "Inside Engineering listed by Ontario Tech Engineering Outreach.",
+    "city": "Oshawa",
+    "region": "Durham",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "Science & Engineering",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-07-28T09:00:00-04:00",
+    "sourceUrl": "https://form.jotform.com/262074762834260",
+    "lastChecked": "2026-07-28",
+    "lastSeen": "2026-07-28",
+    "status": "needs_review",
+    "tags": [
+      "science & engineering",
+      "engineering",
+      "stem",
+      "science",
+      "coding",
+      "youth",
+      "workshop"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "No clear future date found on the crawled page.",
+      "Free access wording needs human confirmation."
+    ],
+    "sourceName": "Ontario Tech Engineering Outreach"
+  },
+  {
+    "id": "discovered-ontario-tech-engineering-outreach-volunteer-with-us-fd0687f56430",
+    "title": "Volunteer With Us",
+    "organization": "Ontario Tech University Engineering Outreach",
+    "description": "Volunteer With Us listed by Ontario Tech Engineering Outreach.",
+    "city": "Oshawa",
+    "region": "Durham",
+    "ageMin": 1,
     "ageMax": 18,
     "category": "Volunteer Hours",
     "cost": "Free to join",
@@ -668,22 +985,24 @@ export const generatedDiscoveryReviewCandidates = [
       "en"
     ],
     "startDate": "2026-07-28T09:00:00-04:00",
-    "sourceUrl": "https://app.betterimpact.com/PublicEnterprise/e3200288-2b64-4ed8-a26d-5bd0f4c5170b",
+    "sourceUrl": "https://engineering.ontariotechu.ca/outreach/about-us/volunteer.php",
     "lastChecked": "2026-07-28",
     "lastSeen": "2026-07-28",
     "status": "needs_review",
     "tags": [
       "volunteer hours",
-      "volunteer",
-      "teen",
+      "engineering",
+      "stem",
+      "science",
+      "coding",
       "youth",
-      "hours",
-      "community service"
+      "workshop"
     ],
-    "confidence": "high",
+    "confidence": "medium",
     "reviewReasons": [
-      "No clear future date found on the crawled page."
+      "No clear future date found on the crawled page.",
+      "Free access wording needs human confirmation."
     ],
-    "sourceName": "Mississauga Library volunteer opportunities"
+    "sourceName": "Ontario Tech Engineering Outreach"
   }
 ] satisfies DiscoveredOpportunity[];
