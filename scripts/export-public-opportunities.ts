@@ -1,6 +1,8 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 import { dirname } from "node:path";
 import { languagePreferenceOrder, opportunities } from "../lib/data";
+import { generatedDiscoverySummary } from "../lib/generatedDiscoveryReview";
+import { generatedLibrarySourceHealth } from "../lib/generatedLibraryOpportunities";
 import { translatedCategory, translatedFreeCost, translatedSummary } from "../lib/i18n";
 import { publicOpportunities } from "../lib/opportunityStatus";
 import type { LanguageCode, Opportunity } from "../lib/types";
@@ -77,6 +79,13 @@ const payload = {
   schemaVersion: 1,
   count: publicListings.length,
   lastDataChange,
+  sourceHealth: {
+    library: generatedLibrarySourceHealth,
+    discovery: {
+      ...generatedDiscoverySummary.sourceHealth,
+      reviewCandidates: generatedDiscoverySummary.newCandidates
+    }
+  },
   opportunities: publicListings
 };
 

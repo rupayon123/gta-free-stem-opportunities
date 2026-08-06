@@ -20,11 +20,11 @@ GTA FREE STEM uses Apple resources where they genuinely help, while keeping the 
 The search hunting engine stays backend/static-data driven:
 
 1. GitHub Actions refreshes public GTA sources every few hours.
-2. Expired listings are hidden from public search.
+2. Only active listings with a current or future date window are included; expired and needs-review discoveries stay out of public search.
 3. The static website reads generated TypeScript data.
 4. The app can fetch the same data from `https://gta-free-stem.vercel.app/opportunities.json`.
 
-This keeps app and website separate, but makes them share one clean opportunity feed.
+This keeps app and website separate, but makes them share one clean opportunity feed. The feed includes source-health metadata so each client can distinguish a healthy refresh from an older cached or bundled fallback.
 
 ## Future Apple-Facing Enhancements
 

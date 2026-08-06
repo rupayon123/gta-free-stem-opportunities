@@ -41,6 +41,12 @@ import {
   type ReactNode
 } from "react";
 import { categories, cityOptions, languagePreferenceOrder, opportunities, regions } from "@/lib/data";
+import {
+  communityFormFields,
+  type CommunityFormField,
+  type CommunityFormFieldName,
+  type CommunityFormKind
+} from "@/lib/communityForms";
 import { generatedDiscoveryReviewCandidates, generatedDiscoverySummary } from "@/lib/generatedDiscoveryReview";
 import {
   betaBackendMode,
@@ -88,6 +94,7 @@ import {
   type Coordinates
 } from "@/lib/utils";
 import { StorybookMark } from "./StorybookMark";
+import { LegalFooter } from "./LegalFooter";
 
 type ThemePreference = "light" | "dark" | "system";
 type ViewMode = "list" | "map";
@@ -143,11 +150,6 @@ const DEMO_ADMIN_EMAIL = "admin.demo@example.test";
 const DEMO_ADMIN_ID = `${STORAGE_PREFIX}-demo-admin`;
 const DEMO_ACCOUNT_PASSWORD = "local-preview-only";
 const DEMO_PARENT_SAVED_IDS = ["cvc-conservation-youth-corps-2026", "oakville-youth-library-leaders-2026"];
-const RESEARCH_WORKFLOW_OWNER = process.env.NEXT_PUBLIC_GITHUB_WORKFLOW_OWNER ?? "";
-const RESEARCH_WORKFLOW_REPO = process.env.NEXT_PUBLIC_GITHUB_WORKFLOW_REPO ?? "";
-const RESEARCH_WORKFLOW_FILE = process.env.NEXT_PUBLIC_GITHUB_WORKFLOW_FILE ?? "refresh-opportunities.yml";
-const RESEARCH_WORKFLOW_REF = process.env.NEXT_PUBLIC_GITHUB_WORKFLOW_REF ?? "main";
-const RESEARCH_REFRESH_ENDPOINT = process.env.NEXT_PUBLIC_RESEARCH_REFRESH_ENDPOINT ?? "";
 
 const emptyAdminReviewBundle: AdminReviewBundle = {
   opportunities: [],
@@ -342,8 +344,6 @@ export function HomePage({ initialSurface = "home", initialFilterOverrides = {} 
   const [localQueueCount, setLocalQueueCount] = useState(0);
   const [backendMode, setBackendMode] = useState<BackendMode>("local");
   const [backendStatus, setBackendStatus] = useState("");
-  const [researchStatus, setResearchStatus] = useState("");
-  const [researchRefreshing, setResearchRefreshing] = useState(false);
   const [currentUser, setCurrentUser] = useState<VerifiedAccount | null>(null);
   const [authOpen, setAuthOpen] = useState(false);
   const [authMode, setAuthMode] = useState<AuthMode>("signin");
@@ -643,37 +643,12 @@ export function HomePage({ initialSurface = "home", initialFilterOverrides = {} 
     setAccountDashboardOpen(false);
   };
 
-  const refreshResearch = useCallback(async () => {
-    setResearchRefreshing(true);
-    setResearchStatus(t(language, "searchEngineAuto"));
-    try {
-      if (RESEARCH_REFRESH_ENDPOINT) {
-        const response = await fetch(RESEARCH_REFRESH_ENDPOINT, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            ref: RESEARCH_WORKFLOW_REF,
-            source: "gta-free-stem-opportunities"
-          })
-        });
-        if (!response.ok) throw new Error("The refresh endpoint did not accept the request.");
-      } else if (RESEARCH_WORKFLOW_OWNER && RESEARCH_WORKFLOW_REPO) {
-        const workflowUrl = `https://github.com/${RESEARCH_WORKFLOW_OWNER}/${RESEARCH_WORKFLOW_REPO}/actions/workflows/${RESEARCH_WORKFLOW_FILE}`;
-        window.open(workflowUrl, "_blank", "noopener,noreferrer");
-      } else {
-        await fetch(`${window.location.origin}/?research-refresh=${Date.now()}`, { cache: "reload" });
-      }
-      const scanLabel = t(language, "sourceScoutMiniText")
-        .replace("{sources}", String(generatedDiscoverySummary.sourcesChecked))
-        .replace("{review}", String(generatedDiscoverySummary.newCandidates));
-      setResearchStatus(`${scanLabel}. ${t(language, "expiredHidden")}`);
-    } catch (error) {
-      setResearchStatus(error instanceof Error ? error.message : t(language, "searchEngineAuto"));
-    } finally {
-      setResearchRefreshing(false);
-      window.setTimeout(() => setResearchStatus(""), 6200);
-    }
-  }, [language]);
+  const reloadPublishedResearch = useCallback(() => {
+    // The hunting engine runs in the scheduled, health-gated GitHub workflow.
+    // This public control only reloads the latest published artifact; it must
+    // never claim that a new scan ran when no authenticated trigger exists.
+    window.location.reload();
+  }, []);
 
   const handleSignup = async (formData: FormData) => {
     const name = String(formData.get("name") ?? "").trim();
@@ -899,18 +874,18 @@ export function HomePage({ initialSurface = "home", initialFilterOverrides = {} 
     URL.revokeObjectURL(url);
   };
 
-  const submitReviewItem = async (kind: string, formData: FormData) => {
-    const fields = Object.fromEntries(formData.entries());
+  const submitReviewItem = async (kind: CommunityFormKind, formData: FormData) => {
+    const fieldValue = (name: CommunityFormFieldName) => String(formData.get(name) ?? "").trim();
     if (backendMode === "supabase") {
       try {
         if (kind === "report") {
           await submitSupabaseFeedback({
-            opportunityId: String(fields["Listing title"] ?? "").trim() || undefined,
-            email: String(fields["Contact email"] ?? "").trim() || undefined,
+            opportunityId: fieldValue("listingTitle") || undefined,
+            email: fieldValue("contactEmail") || undefined,
             message: [
-              String(fields["Listing title"] ?? "").trim(),
-              String(fields["What needs fixing"] ?? "").trim(),
-              String(fields["Source link"] ?? "").trim()
+              fieldValue("listingTitle"),
+              fieldValue("whatNeedsFixing"),
+              fieldValue("sourceLink")
             ]
               .filter(Boolean)
               .join("\n")
@@ -918,16 +893,16 @@ export function HomePage({ initialSurface = "home", initialFilterOverrides = {} 
         } else {
           await submitSupabaseMissingOpportunity({
             title:
-              String(fields["Official opportunity link"] ?? "").trim() ||
-              String(fields["Organization name"] ?? "").trim() ||
+              fieldValue("officialOpportunityLink") ||
+              fieldValue("organizationName") ||
               "Community-submitted STEM opportunity",
-            organization: String(fields["Organization name"] ?? "").trim() || undefined,
-            city: String(fields["City or region"] ?? "").trim() || undefined,
-            sourceUrl: String(fields["Official opportunity link"] ?? fields["Website"] ?? "").trim() || undefined,
-            contactEmail: String(fields["Contact email"] ?? "").trim() || undefined,
+            organization: fieldValue("organizationName") || undefined,
+            city: fieldValue("cityRegion") || undefined,
+            sourceUrl: fieldValue("officialOpportunityLink") || fieldValue("website") || undefined,
+            contactEmail: fieldValue("contactEmail") || undefined,
             notes: [
-              String(fields["Why it is free and useful"] ?? "").trim(),
-              String(fields["STEM, co-op, SHSM, or volunteer-hours idea"] ?? "").trim()
+              fieldValue("whyFreeUseful"),
+              fieldValue("hostIdea")
             ]
               .filter(Boolean)
               .join("\n")
@@ -935,14 +910,15 @@ export function HomePage({ initialSurface = "home", initialFilterOverrides = {} 
         }
         setLocalQueueCount((current) => current + 1);
         setBackendStatus("Submission saved for admin review.");
-        return;
+        return true;
       } catch (error) {
         setBackendStatus(error instanceof Error ? error.message : "Submission could not be saved.");
-        return;
+        return false;
       }
     }
 
     const existing = safeJson<unknown[]>(window.localStorage.getItem(REVIEW_KEY), []);
+    const fields = Object.fromEntries(formData.entries());
     const payload = {
       id: `local-${Date.now()}`,
       kind,
@@ -951,6 +927,7 @@ export function HomePage({ initialSurface = "home", initialFilterOverrides = {} 
     };
     window.localStorage.setItem(REVIEW_KEY, JSON.stringify([payload, ...existing]));
     setLocalQueueCount(existing.length + 1);
+    return true;
   };
 
   const submitAdminEventEdit = (formData: FormData) => {
@@ -1363,8 +1340,8 @@ export function HomePage({ initialSurface = "home", initialFilterOverrides = {} 
                 </div>
                 <div className="toolbar-controls">
                   {filterButton}
-                  <button type="button" className="soft-button research-refresh-button" onClick={refreshResearch} disabled={researchRefreshing}>
-                    <RefreshCw size={16} aria-hidden="true" className={researchRefreshing ? "spinning" : ""} />
+                  <button type="button" className="soft-button research-refresh-button" onClick={reloadPublishedResearch}>
+                    <RefreshCw size={16} aria-hidden="true" />
                     {t(language, "refreshResearch")}
                   </button>
                   <div className="segmented" aria-label={t(language, "viewMode")}>
@@ -1390,7 +1367,6 @@ export function HomePage({ initialSurface = "home", initialFilterOverrides = {} 
                 </div>
               </div>
             </div>
-            {researchStatus ? <p className="research-status-line" role="status">{researchStatus}</p> : null}
 
             <div className="cards-column">
               {visibleOpportunities.length ? (
@@ -1458,8 +1434,10 @@ export function HomePage({ initialSurface = "home", initialFilterOverrides = {} 
         </>
       ) : null}
       {activeSurface === "community-hosts" ? (
-        <ContributeSection language={language} onSubmit={submitReviewItem} localQueueCount={localQueueCount} />
+        <ContributeSection language={language} backendMode={backendMode} onSubmit={submitReviewItem} localQueueCount={localQueueCount} />
       ) : null}
+
+      <LegalFooter />
 
       {filterModal}
 
@@ -2095,33 +2073,24 @@ function SupportSection({ language }: { language: LanguageCode }) {
 
 function ContributeSection({
   language,
+  backendMode,
   onSubmit,
   localQueueCount
 }: {
   language: LanguageCode;
-  onSubmit: (kind: string, formData: FormData) => void | Promise<void>;
+  backendMode: BackendMode;
+  onSubmit: (kind: CommunityFormKind, formData: FormData) => boolean | Promise<boolean>;
   localQueueCount: number;
 }) {
-  const hostFields = [
-    t(language, "hostOrgName"),
-    t(language, "website"),
-    t(language, "contactEmail"),
-    t(language, "cityRegion"),
-    t(language, "hostIdea")
-  ];
-  const suggestFields = [
-    t(language, "officialOpportunityLink"),
-    t(language, "contactEmail"),
-    t(language, "cityRegion"),
-    t(language, "whyFreeUseful")
-  ];
-  const reportFields = [
-    t(language, "listingTitle"),
-    t(language, "contactEmail"),
-    t(language, "whatNeedsFixing"),
-    t(language, "sourceLink")
-  ];
-  const localSubmissions = t(language, "localSubmissionsBrowser").replace("{count}", String(localQueueCount));
+  const fields = communityFormFields(language);
+  const isLocalOnly = backendMode !== "supabase";
+  const submitLabel = isLocalOnly ? t(language, "saveOnThisDevice") : t(language, "submit");
+  const submittedLabel = isLocalOnly ? t(language, "localFormNotice") : t(language, "submitted");
+  const localFormNotice = isLocalOnly ? t(language, "localFormNotice") : undefined;
+  const calloutText = isLocalOnly ? localFormNotice : t(language, "communityCalloutText");
+  const localSubmissions = isLocalOnly
+    ? t(language, "localSubmissionsBrowser").replace("{count}", String(localQueueCount))
+    : "";
 
   return (
     <section id="community-hosts" className="workspace-band contribute-band" aria-label="Community participation">
@@ -2133,26 +2102,29 @@ function ContributeSection({
         <MiniForm
           title={t(language, "partner")}
           icon={<Handshake size={18} aria-hidden="true" />}
-          fields={hostFields}
-          submitLabel={t(language, "submit")}
-          submittedLabel={t(language, "submitted")}
+          fields={fields.host}
+          submitLabel={submitLabel}
+          submittedLabel={submittedLabel}
+          notice={localFormNotice}
           onSubmit={(formData) => onSubmit("host", formData)}
         />
         <MiniForm
           title={t(language, "suggest")}
           icon={<Send size={18} aria-hidden="true" />}
-          fields={suggestFields}
-          submitLabel={t(language, "submit")}
-          submittedLabel={t(language, "submitted")}
+          fields={fields.suggest}
+          submitLabel={submitLabel}
+          submittedLabel={submittedLabel}
+          notice={localFormNotice}
           onSubmit={(formData) => onSubmit("suggest", formData)}
         />
         <MiniForm
           id="feedback"
           title={t(language, "report")}
           icon={<AlertTriangle size={18} aria-hidden="true" />}
-          fields={reportFields}
-          submitLabel={t(language, "submit")}
-          submittedLabel={t(language, "submitted")}
+          fields={fields.report}
+          submitLabel={submitLabel}
+          submittedLabel={submittedLabel}
+          notice={localFormNotice}
           onSubmit={(formData) => onSubmit("report", formData)}
         />
         <div className="community-callout">
@@ -2160,8 +2132,8 @@ function ContributeSection({
             <Building2 size={18} aria-hidden="true" />
             <span>{t(language, "localHostsWanted")}</span>
           </div>
-          <p>{t(language, "communityCalloutText")}</p>
-          <span className="chip success">{localSubmissions}</span>
+          <p>{calloutText}</p>
+          {localSubmissions ? <span className="chip success">{localSubmissions}</span> : null}
         </div>
       </div>
     </section>
@@ -2192,23 +2164,27 @@ function MiniForm({
   fields,
   submitLabel,
   submittedLabel,
+  notice,
   onSubmit
 }: {
   id?: string;
   title: string;
   icon: ReactNode;
-  fields: string[];
+  fields: CommunityFormField[];
   submitLabel: string;
   submittedLabel: string;
-  onSubmit: (formData: FormData) => void | Promise<void>;
+  notice?: string;
+  onSubmit: (formData: FormData) => boolean | Promise<boolean>;
 }) {
   const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = useCallback(
-    (event: FormEvent<HTMLFormElement>) => {
+    async (event: FormEvent<HTMLFormElement>) => {
       event.preventDefault();
-      void onSubmit(new FormData(event.currentTarget));
-      event.currentTarget.reset();
+      const form = event.currentTarget;
+      const saved = await onSubmit(new FormData(form));
+      if (!saved) return;
+      form.reset();
       setSubmitted(true);
       window.setTimeout(() => setSubmitted(false), 2200);
     },
@@ -2222,16 +2198,17 @@ function MiniForm({
         <span>{title}</span>
       </div>
       {fields.map((field) => (
-        <label className="field" key={field}>
-          <span>{field}</span>
-          <input name={field} required />
+        <label className="field" key={field.name}>
+          <span>{field.label}</span>
+          <input name={field.name} type={field.type ?? "text"} autoComplete={field.autoComplete} required />
         </label>
       ))}
+      {notice ? <p className="account-note">{notice}</p> : null}
       <button type="submit" className="primary-button">
         {submitLabel}
         <ChevronRight size={17} aria-hidden="true" />
       </button>
-      {submitted ? <p className="status-line">{submittedLabel}</p> : null}
+      {submitted ? <p className="status-line" role="status" aria-live="polite" aria-atomic="true">{submittedLabel}</p> : null}
     </form>
   );
 }

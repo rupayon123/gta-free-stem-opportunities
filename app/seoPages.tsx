@@ -83,16 +83,46 @@ const pages = {
     path: "/privacy/",
     title: "Privacy Policy",
     description:
-      "Privacy policy for GTA FREE STEM Opportunities, including public browsing, optional location use, local storage, accounts, feedback, submissions, and provider links.",
+      "Privacy policy for GTA FREE STEM Opportunities, including public browsing, optional location use, local storage, website-only services, provider links, and the Apple app's local-only data flow.",
     heading: "Privacy policy",
     intro:
-      "GTA FREE STEM Opportunities is designed for public browsing first, with optional account, save, feedback, and submission features when the production backend is connected.",
+      "GTA FREE STEM Opportunities is designed for public browsing first. The website can offer optional services when its production backend is configured; Apple app build 1.0 (12) uses only on-device Profile, saved-item, hunt-state, and cache storage.",
     points: [
       "Browse public STEM opportunity listings without creating an account.",
       "Use optional location only when you choose nearby search.",
       "Manage local settings, saved searches, and cached public listings on your device."
     ],
     keywords: "GTA FREE STEM privacy policy, STEM opportunities privacy, Toronto education app privacy"
+  },
+  terms: {
+    path: "/terms/",
+    title: "Terms of Use",
+    description:
+      "Terms for the GTA FREE STEM public opportunity directory and Apple app, including provider links, listing accuracy, acceptable use, disclaimers, and the Apple Standard EULA.",
+    heading: "Terms of Use",
+    intro:
+      "Clear rules for using the free GTA FREE STEM public directory, website, and Apple app.",
+    points: [
+      "The directory is informational and does not replace official provider details.",
+      "Program providers and linked services apply their own terms and privacy practices.",
+      "The Apple app licence is governed by Apple's Standard EULA."
+    ],
+    keywords: "GTA FREE STEM terms of use, STEM opportunities app terms, Apple app terms"
+  },
+  support: {
+    path: "/support/",
+    title: "Support",
+    description:
+      "Public support for the GTA FREE STEM Apple app and website, including app problems, listing corrections, accessibility concerns, and privacy questions.",
+    heading: "GTA FREE STEM support",
+    intro:
+      "Get help with the Apple app or website, report a broken listing, or start a privacy request without a paid support service.",
+    points: [
+      "Open a public support ticket for an app or website problem.",
+      "Report listing corrections with a public provider source.",
+      "Keep passwords, precise location, child information, and other private facts out of public tickets."
+    ],
+    keywords: "GTA FREE STEM support, STEM opportunity app help, GTA FREE STEM privacy support"
   },
   communityHosts: {
     path: "/community-hosts/",

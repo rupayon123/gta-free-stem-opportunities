@@ -184,6 +184,8 @@ type UiKey =
   | "sourceLink"
   | "localHostsWanted"
   | "communityCalloutText"
+  | "saveOnThisDevice"
+  | "localFormNotice"
   | "localSubmissionsBrowser"
   | "newFind"
   | "checkSourceDates";
@@ -251,7 +253,7 @@ const ui: Record<LanguageCode, Partial<Record<UiKey, string>>> = {
     launchLanguages: "Site languages",
     teenPathways: "Teen pathways",
     sourceScout: "Actively looking",
-    sourceScoutText: "{count} listings loaded. {sources} sources scan every 6 hours; {review} new finds are ready to browse.",
+    sourceScoutText: "{count} listings loaded. {sources} sources scan every 6 hours; {review} new finds are awaiting review.",
     refreshResearch: "Refresh",
     registerApply: "Register or apply",
     saved: "Saved",
@@ -276,7 +278,7 @@ const ui: Record<LanguageCode, Partial<Record<UiKey, string>>> = {
     contributeHeading: "Be part of the community",
     adminQueueSummary: "items need cost checks, duplicate merges, translation review, or partner approval.",
     submit: "Submit",
-    submitted: "Sent to the local review queue."
+    submitted: "Saved for review."
   },
   fr: {
     brand: "GTA FREE STEM Opportunities",
@@ -621,7 +623,7 @@ const ui: Record<LanguageCode, Partial<Record<UiKey, string>>> = {
     contributeHeading: "Be part of the community",
     adminQueueSummary: "items cost check, duplicate merge, translation review, বা partner approval দরকার।",
     submit: "জমা দিন",
-    submitted: "Local review queue-তে পাঠানো হয়েছে।"
+    submitted: "রিভিউয়ের জন্য সেভ করা হয়েছে।"
   },
   ja: {
     brand: "GTA FREE STEM Opportunities",
@@ -693,7 +695,7 @@ const ui: Record<LanguageCode, Partial<Record<UiKey, string>>> = {
     contributeHeading: "コミュニティに参加",
     adminQueueSummary: "件は費用確認、重複統合、翻訳確認、または承認が必要です。",
     submit: "送信",
-    submitted: "ローカル確認キューに送信しました。"
+    submitted: "確認用に保存しました。"
   },
   ko: {
     brand: "GTA FREE STEM Opportunities",
@@ -771,7 +773,7 @@ const ui: Record<LanguageCode, Partial<Record<UiKey, string>>> = {
     contributeHeading: "커뮤니티에 참여하기",
     adminQueueSummary: "항목은 비용 확인, 중복 병합, 번역 검토 또는 파트너 승인이 필요합니다.",
     submit: "제출",
-    submitted: "로컬 검토 대기열로 보냈습니다."
+    submitted: "검토를 위해 저장했습니다."
   },
   hu: {
     brand: "GTA FREE STEM Opportunities",
@@ -849,7 +851,7 @@ const ui: Record<LanguageCode, Partial<Record<UiKey, string>>> = {
     contributeHeading: "Légy része a közösségnek",
     adminQueueSummary: "elem vár költségellenőrzésre, duplikációk összevonására, fordításra vagy partner-jóváhagyásra.",
     submit: "Beküldés",
-    submitted: "Elküldve a helyi ellenőrzési sorba."
+    submitted: "Ellenőrzésre mentve."
   }
 };
 
@@ -1323,7 +1325,7 @@ const pageUi: Partial<Record<LanguageCode, Partial<Record<UiKey, string>>>> = {
     projectBackgroundP2: "The frontend uses Next.js, TypeScript, responsive design, a mobile-first interface, light/dark mode, multilingual controls, and a map/list view.",
     projectBackgroundP3: "The backend and data layer are planned around Supabase for user accounts, saved opportunities, feedback, missing opportunity submissions, and admin review.",
     projectBackgroundP4: "Users can browse without an account, use list view instead of map view, search by city, region, and age, and read plain-language descriptions.",
-    sourceScoutMiniText: "{sources} sources · {review} new finds ready",
+    sourceScoutMiniText: "{sources} sources · {review} finds awaiting review",
     hostOrgName: "Organization name",
     website: "Website",
     contactEmail: "Contact email",
@@ -1336,7 +1338,9 @@ const pageUi: Partial<Record<LanguageCode, Partial<Record<UiKey, string>>>> = {
     sourceLink: "Source link",
     localHostsWanted: "Local hosts wanted",
     communityCalloutText: "Be part of the community by hosting real STEM placements, high school co-op, SHSM-aligned career exploration, or volunteer-hour opportunities. Submissions are reviewed before publishing.",
-    localSubmissionsBrowser: "{count} local submissions in this browser"
+    saveOnThisDevice: "Save on this device",
+    localFormNotice: "This form is saved only on this device. It is not sent for review.",
+    localSubmissionsBrowser: "{count} form entries saved in this browser only; not sent for review."
   },
   fr: {
     mentorshipCardText: "Trouvez du mentorat STEM, du leadership et de l'exploration de carrieres pour les eleves du secondaire.",
@@ -1367,7 +1371,9 @@ const pageUi: Partial<Record<LanguageCode, Partial<Record<UiKey, string>>>> = {
     sourceLink: "Lien source",
     localHostsWanted: "Organismes locaux recherches",
     communityCalloutText: "Participez en offrant des stages STEM, co-op, SHSM ou des heures de benevolat. Les propositions sont revisees avant publication.",
-    localSubmissionsBrowser: "{count} propositions locales dans ce navigateur"
+    saveOnThisDevice: "Enregistrer sur cet appareil",
+    localFormNotice: "Ce formulaire est enregistre uniquement sur cet appareil. Il n'est pas envoye pour revision.",
+    localSubmissionsBrowser: "{count} formulaires enregistres uniquement dans ce navigateur; ils ne sont pas envoyes pour revision."
   },
   zh: {
     mentorshipCardText: "为高中生寻找 STEM 导师、领导力和职业探索机会。",
@@ -1398,7 +1404,9 @@ const pageUi: Partial<Record<LanguageCode, Partial<Record<UiKey, string>>>> = {
     sourceLink: "来源链接",
     localHostsWanted: "寻找本地合作方",
     communityCalloutText: "欢迎提供真实 STEM 实习、高中 co-op、SHSM 职业探索或义工小时机会。提交内容会先审核再发布。",
-    localSubmissionsBrowser: "此浏览器中有 {count} 个本地提交"
+    saveOnThisDevice: "保存在此设备上",
+    localFormNotice: "此表单仅保存在此设备上，不会发送供审核。",
+    localSubmissionsBrowser: "此浏览器仅保存了 {count} 条表单记录；未发送审核。"
   },
   yue: {
     mentorshipCardText: "為中學生搵 STEM 導師、領導力同職業探索機會。",
@@ -1429,7 +1437,9 @@ const pageUi: Partial<Record<LanguageCode, Partial<Record<UiKey, string>>>> = {
     sourceLink: "來源連結",
     localHostsWanted: "尋找本地合作機構",
     communityCalloutText: "歡迎提供真實 STEM 實習、高中 co-op、SHSM 職業探索或義工時數機會。提交會先審核。",
-    localSubmissionsBrowser: "此瀏覽器有 {count} 個本地提交"
+    saveOnThisDevice: "儲存喺呢部裝置",
+    localFormNotice: "呢份表格只會儲存喺呢部裝置，唔會送去審核。",
+    localSubmissionsBrowser: "呢個瀏覽器只儲存咗 {count} 份表格，未有送去審核。"
   },
   pa: {
     mentorshipCardText: "ਹਾਈ ਸਕੂਲ ਵਿਦਿਆਰਥੀਆਂ ਲਈ STEM ਮੈਨਟਰਸ਼ਿਪ, ਲੀਡਰਸ਼ਿਪ ਅਤੇ ਕਰੀਅਰ ਖੋਜ ਮੌਕੇ ਲੱਭੋ।",
@@ -1460,7 +1470,9 @@ const pageUi: Partial<Record<LanguageCode, Partial<Record<UiKey, string>>>> = {
     sourceLink: "ਸਰੋਤ ਲਿੰਕ",
     localHostsWanted: "ਸਥਾਨਕ ਹੋਸਟ ਚਾਹੀਦੇ",
     communityCalloutText: "ਅਸਲੀ STEM placements, high school co-op, SHSM career exploration ਜਾਂ volunteer-hour opportunities ਹੋਸਟ ਕਰੋ। ਜਮ੍ਹਾਂ ਕੀਤੇ ਮੌਕੇ ਪ੍ਰਕਾਸ਼ਨ ਤੋਂ ਪਹਿਲਾਂ ਜਾਂਚੇ ਜਾਂਦੇ ਹਨ।",
-    localSubmissionsBrowser: "ਇਸ ਬਰਾਊਜ਼ਰ ਵਿੱਚ {count} ਸਥਾਨਕ submissions"
+    saveOnThisDevice: "ਇਸ ਡਿਵਾਈਸ 'ਤੇ ਸੇਵ ਕਰੋ",
+    localFormNotice: "ਇਹ ਫਾਰਮ ਸਿਰਫ਼ ਇਸ ਡਿਵਾਈਸ 'ਤੇ ਸੇਵ ਹੁੰਦਾ ਹੈ। ਇਹ ਸਮੀਖਿਆ ਲਈ ਨਹੀਂ ਭੇਜਿਆ ਜਾਂਦਾ।",
+    localSubmissionsBrowser: "ਇਸ ਬਰਾਊਜ਼ਰ ਵਿੱਚ ਸਿਰਫ਼ {count} ਫਾਰਮ ਸੇਵ ਹਨ; ਸਮੀਖਿਆ ਲਈ ਨਹੀਂ ਭੇਜੇ ਗਏ।"
   },
   ur: {
     mentorshipCardText: "ہائی اسکول طلبہ کے لیے STEM رہنمائی، قیادت اور کیریئر تلاش کے مواقع تلاش کریں۔",
@@ -1491,7 +1503,9 @@ const pageUi: Partial<Record<LanguageCode, Partial<Record<UiKey, string>>>> = {
     sourceLink: "سورس لنک",
     localHostsWanted: "مقامی میزبان مطلوب",
     communityCalloutText: "حقیقی STEM placements، high school co-op، SHSM career exploration یا volunteer-hour opportunities host کریں۔ اشاعت سے پہلے submissions review ہوتے ہیں۔",
-    localSubmissionsBrowser: "اس browser میں {count} مقامی submissions"
+    saveOnThisDevice: "اس آلہ پر محفوظ کریں",
+    localFormNotice: "یہ فارم صرف اس آلہ پر محفوظ ہوتا ہے۔ اسے جائزے کے لیے نہیں بھیجا جاتا۔",
+    localSubmissionsBrowser: "اس براؤزر میں صرف {count} فارم محفوظ ہیں؛ جائزے کے لیے نہیں بھیجے گئے۔"
   },
   ta: {
     mentorshipCardText: "உயர்நிலை மாணவர்களுக்கு STEM வழிகாட்டல், தலைமை, தொழில் அறிமுக வாய்ப்புகள்.",
@@ -1522,7 +1536,9 @@ const pageUi: Partial<Record<LanguageCode, Partial<Record<UiKey, string>>>> = {
     sourceLink: "Source link",
     localHostsWanted: "உள்ளூர் hosts தேவை",
     communityCalloutText: "உண்மையான STEM placements, high school co-op, SHSM career exploration அல்லது volunteer-hour opportunities host செய்யுங்கள். வெளியீட்டுக்கு முன் review செய்யப்படும்.",
-    localSubmissionsBrowser: "இந்த browser இல் {count} உள்ளூர் submissions"
+    saveOnThisDevice: "இந்த சாதனத்தில் சேமிக்கவும்",
+    localFormNotice: "இந்த படிவம் இந்த சாதனத்தில் மட்டும் சேமிக்கப்படும். மதிப்பாய்வுக்கு அனுப்பப்படாது.",
+    localSubmissionsBrowser: "இந்த உலாவியில் மட்டும் {count} படிவங்கள் சேமிக்கப்பட்டுள்ளன; மதிப்பாய்வுக்கு அனுப்பப்படவில்லை."
   },
   tl: {
     mentorshipCardText: "Maghanap ng STEM mentorship, leadership, at career exploration para sa high school students.",
@@ -1553,7 +1569,9 @@ const pageUi: Partial<Record<LanguageCode, Partial<Record<UiKey, string>>>> = {
     sourceLink: "Source link",
     localHostsWanted: "Kailangan ang local hosts",
     communityCalloutText: "Maging bahagi ng community sa pag-host ng real STEM placements, high school co-op, SHSM career exploration, o volunteer-hour opportunities. Nire-review muna bago i-publish.",
-    localSubmissionsBrowser: "{count} local submissions sa browser na ito"
+    saveOnThisDevice: "I-save sa device na ito",
+    localFormNotice: "Ang form na ito ay nase-save lang sa device na ito. Hindi ito ipinapadala para sa review.",
+    localSubmissionsBrowser: "{count} form entry ang naka-save lang sa browser na ito; hindi ipinadala para sa review."
   },
   es: {
     mentorshipCardText: "Encuentra mentorias STEM, liderazgo y exploracion profesional para estudiantes de secundaria.",
@@ -1584,7 +1602,9 @@ const pageUi: Partial<Record<LanguageCode, Partial<Record<UiKey, string>>>> = {
     sourceLink: "Enlace de fuente",
     localHostsWanted: "Se buscan anfitriones locales",
     communityCalloutText: "Se parte de la comunidad ofreciendo placements STEM, co-op, SHSM o horas voluntarias. Los envios se revisan antes de publicarse.",
-    localSubmissionsBrowser: "{count} envios locales en este navegador"
+    saveOnThisDevice: "Guardar en este dispositivo",
+    localFormNotice: "Este formulario se guarda solo en este dispositivo. No se envia para revision.",
+    localSubmissionsBrowser: "{count} formularios guardados solo en este navegador; no se enviaron para revision."
   },
   ar: {
     mentorshipCardText: "ابحث عن إرشاد STEM وقيادة واستكشاف مهني لطلاب المرحلة الثانوية.",
@@ -1615,7 +1635,9 @@ const pageUi: Partial<Record<LanguageCode, Partial<Record<UiKey, string>>>> = {
     sourceLink: "رابط المصدر",
     localHostsWanted: "نبحث عن مضيفين محليين",
     communityCalloutText: "شارك باستضافة فرص STEM حقيقية أو co-op أو SHSM أو ساعات تطوع. تتم مراجعة الإرسالات قبل النشر.",
-    localSubmissionsBrowser: "{count} إرسالات محلية في هذا المتصفح"
+    saveOnThisDevice: "حفظ على هذا الجهاز",
+    localFormNotice: "يُحفظ هذا النموذج على هذا الجهاز فقط. ولا يُرسل للمراجعة.",
+    localSubmissionsBrowser: "تم حفظ {count} نموذجًا في هذا المتصفح فقط؛ ولم تُرسل للمراجعة."
   },
   fa: {
     mentorshipCardText: "فرص راهنمایی STEM، رهبری و آشنایی شغلی برای دانش آموزان دبیرستان پیدا کنید.",
@@ -1646,7 +1668,9 @@ const pageUi: Partial<Record<LanguageCode, Partial<Record<UiKey, string>>>> = {
     sourceLink: "لینک منبع",
     localHostsWanted: "میزبان محلی لازم است",
     communityCalloutText: "با میزبانی فرصت های واقعی STEM، co-op، SHSM یا ساعت داوطلبی کمک کنید. ارسال ها پیش از انتشار بررسی می شوند.",
-    localSubmissionsBrowser: "{count} ارسال محلی در این مرورگر"
+    saveOnThisDevice: "ذخیره در این دستگاه",
+    localFormNotice: "این فرم فقط در این دستگاه ذخیره می‌شود و برای بررسی ارسال نمی‌شود.",
+    localSubmissionsBrowser: "{count} فرم فقط در این مرورگر ذخیره شده‌اند؛ برای بررسی ارسال نشده‌اند."
   },
   hi: {
     mentorshipCardText: "हाई स्कूल छात्रों के लिए STEM मेंटरशिप, नेतृत्व और करियर खोज के अवसर खोजें।",
@@ -1677,7 +1701,9 @@ const pageUi: Partial<Record<LanguageCode, Partial<Record<UiKey, string>>>> = {
     sourceLink: "स्रोत लिंक",
     localHostsWanted: "स्थानीय hosts चाहिए",
     communityCalloutText: "असली STEM placements, high school co-op, SHSM career exploration या volunteer-hour opportunities host करें। प्रकाशित करने से पहले submissions review होते हैं।",
-    localSubmissionsBrowser: "इस browser में {count} स्थानीय submissions"
+    saveOnThisDevice: "इस डिवाइस पर सहेजें",
+    localFormNotice: "यह फ़ॉर्म केवल इस डिवाइस पर सहेजा जाता है। इसे समीक्षा के लिए नहीं भेजा जाता।",
+    localSubmissionsBrowser: "इस ब्राउज़र में केवल {count} फ़ॉर्म सहेजे गए हैं; समीक्षा के लिए नहीं भेजे गए।"
   },
   pt: {
     mentorshipCardText: "Encontre mentoria STEM, liderança e exploração de carreira para estudantes do ensino médio.",
@@ -1708,7 +1734,9 @@ const pageUi: Partial<Record<LanguageCode, Partial<Record<UiKey, string>>>> = {
     sourceLink: "Link da fonte",
     localHostsWanted: "Procuramos anfitriões locais",
     communityCalloutText: "Participe hospedando placements STEM, co-op, SHSM ou oportunidades de horas voluntárias. Submissões são revisadas antes da publicação.",
-    localSubmissionsBrowser: "{count} submissões locais neste navegador"
+    saveOnThisDevice: "Salvar neste dispositivo",
+    localFormNotice: "Este formulário é salvo somente neste dispositivo. Não é enviado para revisão.",
+    localSubmissionsBrowser: "{count} formulários salvos somente neste navegador; não foram enviados para revisão."
   },
   gu: {
     mentorshipCardText: "હાઈ સ્કૂલ વિદ્યાર્થીઓ માટે STEM mentorship, leadership અને career exploration તકો શોધો.",
@@ -1739,7 +1767,9 @@ const pageUi: Partial<Record<LanguageCode, Partial<Record<UiKey, string>>>> = {
     sourceLink: "Source link",
     localHostsWanted: "Local hosts wanted",
     communityCalloutText: "Real STEM placements, high school co-op, SHSM career exploration અથવા volunteer-hour opportunities host કરો. Publish પહેલા submissions review થાય છે.",
-    localSubmissionsBrowser: "આ browser માં {count} local submissions"
+    saveOnThisDevice: "આ ઉપકરણમાં સાચવો",
+    localFormNotice: "આ ફોર્મ ફક્ત આ ઉપકરણમાં જ સાચવાય છે. સમીક્ષા માટે મોકલાતું નથી.",
+    localSubmissionsBrowser: "આ બ્રાઉઝરમાં ફક્ત {count} ફોર્મ સાચવાયા છે; સમીક્ષા માટે મોકલાયા નથી."
   },
   bn: {
     mentorshipCardText: "হাই স্কুল শিক্ষার্থীদের জন্য STEM মেন্টরশিপ, নেতৃত্ব এবং ক্যারিয়ার খোঁজার সুযোগ খুঁজুন।",
@@ -1770,7 +1800,9 @@ const pageUi: Partial<Record<LanguageCode, Partial<Record<UiKey, string>>>> = {
     sourceLink: "Source link",
     localHostsWanted: "Local hosts wanted",
     communityCalloutText: "Real STEM placements, high school co-op, SHSM career exploration বা volunteer-hour opportunities host করুন। প্রকাশের আগে submissions review হয়।",
-    localSubmissionsBrowser: "এই browser-এ {count} local submissions"
+    saveOnThisDevice: "এই ডিভাইসে সেভ করুন",
+    localFormNotice: "এই ফর্মটি শুধু এই ডিভাইসে সেভ হয়। রিভিউয়ের জন্য পাঠানো হয় না।",
+    localSubmissionsBrowser: "এই ব্রাউজারে শুধু {count} ফর্ম সেভ আছে; রিভিউয়ের জন্য পাঠানো হয়নি।"
   },
   ja: {
     mentorshipCardText: "高校生向けのSTEMメンター、リーダーシップ、キャリア探索の機会を探せます。",
@@ -1801,7 +1833,9 @@ const pageUi: Partial<Record<LanguageCode, Partial<Record<UiKey, string>>>> = {
     sourceLink: "ソースリンク",
     localHostsWanted: "地域ホスト募集中",
     communityCalloutText: "本物のSTEM体験、高校co-op、SHSMキャリア探索、ボランティア時間の機会を提供してください。公開前に確認されます。",
-    localSubmissionsBrowser: "このブラウザの地域提出 {count} 件"
+    saveOnThisDevice: "この端末に保存",
+    localFormNotice: "このフォームはこの端末にのみ保存され、審査には送信されません。",
+    localSubmissionsBrowser: "このブラウザにのみ保存されたフォームは {count} 件です。審査には送信されません。"
   },
   ko: {
     mentorshipCardText: "고등학생을 위한 STEM 멘토십, 리더십, 진로 탐색 기회를 찾으세요.",
@@ -1832,7 +1866,9 @@ const pageUi: Partial<Record<LanguageCode, Partial<Record<UiKey, string>>>> = {
     sourceLink: "출처 링크",
     localHostsWanted: "지역 호스트 모집",
     communityCalloutText: "실제 STEM placement, 고등학교 co-op, SHSM 진로 탐색 또는 봉사 시간 기회를 제공해 주세요. 제출은 게시 전 검토됩니다.",
-    localSubmissionsBrowser: "이 브라우저의 지역 제출 {count}개"
+    saveOnThisDevice: "이 기기에 저장",
+    localFormNotice: "이 양식은 이 기기에만 저장되며 검토를 위해 전송되지 않습니다.",
+    localSubmissionsBrowser: "이 브라우저에만 저장된 양식은 {count}개이며 검토를 위해 전송되지 않습니다."
   },
   hu: {
     mentorshipCardText: "Keress mentorált STEM, vezetői és karrierfelfedező lehetőségeket középiskolásoknak.",
@@ -1863,7 +1899,9 @@ const pageUi: Partial<Record<LanguageCode, Partial<Record<UiKey, string>>>> = {
     sourceLink: "Forrás link",
     localHostsWanted: "Helyi fogadók keresése",
     communityCalloutText: "Legyél része a közösségnek valódi STEM helyek, középiskolai co-op, SHSM karrierfelfedezés vagy önkéntes órák biztosításával. A beküldéseket publikálás előtt ellenőrizzük.",
-    localSubmissionsBrowser: "{count} helyi beküldés ebben a böngészőben"
+    saveOnThisDevice: "Mentés erre az eszközre",
+    localFormNotice: "Ez az űrlap csak ezen az eszközön mentődik el. Nem kerül elküldésre ellenőrzésre.",
+    localSubmissionsBrowser: "{count} űrlap csak ebben a böngészőben van elmentve; nem kerülnek ellenőrzésre elküldésre."
   }
 };
 
@@ -2628,8 +2666,8 @@ const publicBrowseUi: Record<LanguageCode, Partial<Record<UiKey, string>>> = {
     verifiedFree: "Free listing",
     verifiedListings: "Listings",
     lastVerified: "Last checked",
-    sourceScoutText: "{count} listings loaded. {sources} public sources scan every 6 hours; {review} new finds are ready to browse.",
-    sourceScoutMiniText: "{sources} sources · {review} new finds ready",
+    sourceScoutText: "{count} listings loaded. {sources} public sources scan every 6 hours; {review} new finds are awaiting review.",
+    sourceScoutMiniText: "{sources} sources · {review} finds awaiting review",
     searchEngineAuto: "The search refresh checks public GTA opportunity sources.",
     expiredHidden: "Listings are hidden from public search after their date passes.",
     translationNote: "Listing summary translated for browsing; source links stay available for details.",
