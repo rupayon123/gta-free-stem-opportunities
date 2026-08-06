@@ -23,3 +23,7 @@ Important search context:
 - Filters include city, region, age, category, volunteer hours, co-op, SHSM, mentorship, and EDI-focused opportunities such as Black youth-focused, girls/women-focused, and Indigenous-focused programs.
 - The interface supports many Greater Toronto Area community languages.
 
+Public policies and support:
+- Privacy Policy: https://gta-free-stem.vercel.app/privacy/
+- Terms of Use: https://gta-free-stem.vercel.app/terms/
+- Support: https://gta-free-stem.vercel.app/support/

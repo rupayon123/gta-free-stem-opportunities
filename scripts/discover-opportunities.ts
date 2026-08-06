@@ -1,8 +1,16 @@
 import { createHash } from "node:crypto";
 import { writeFileSync } from "node:fs";
+import {
+  discoverySourceRequiresSpecificStemEvidence,
+  evidenceBackedDiscoveryTags,
+  inferDiscoveryCategory,
+  isGeneratedDiscoveryOpportunityId
+} from "../lib/discoveryClassification";
 import { discoverySources, type DiscoveredOpportunity, type DiscoverySource } from "../lib/discovery";
+import { isLibraryOpportunityStemRelevant } from "../lib/libraryOpportunityClassification";
 import { opportunities } from "../lib/data";
-import type { Category, LanguageCode, Region } from "../lib/types";
+import { evaluateDiscoverySourceHealth, type DiscoverySourceHealth } from "../lib/refreshHealth";
+import type { LanguageCode, Region } from "../lib/types";
 
 type RawCandidate = {
   title: string;
@@ -25,6 +33,7 @@ type DiscoveryOutput = {
   duplicatesSkipped: number;
   opportunities: DiscoveredOpportunity[];
   warnings: string[];
+  sourceHealth: DiscoverySourceHealth;
 };
 
 const args = new Set(process.argv.slice(2));
@@ -34,6 +43,13 @@ const includeDuplicates = args.has("--include-duplicates");
 const today = new Date();
 const todayIsoDate = today.toISOString().slice(0, 10);
 const discoveryMaxCandidatesPerSource = Math.max(40, Number.parseInt(process.env.GTA_DISCOVERY_MAX_CANDIDATES_PER_SOURCE ?? "250", 10));
+
+function numericEnv(name: string) {
+  const value = process.env[name];
+  if (!value) return undefined;
+  const parsed = Number(value);
+  return Number.isFinite(parsed) ? parsed : undefined;
+}
 
 const stemSignalPatterns = [
   /\bai\b/i,
@@ -82,9 +98,16 @@ const blockedSupportProgramPatterns = [
   /\btest\s+prep(aration)?\b/i
 ];
 
-const existingSourceUrls = new Set(opportunities.map((opportunity) => normalizeUrl(opportunity.sourceUrl)));
+const nonDiscoveryOpportunities = opportunities.filter(
+  (opportunity) => !isGeneratedDiscoveryOpportunityId(opportunity.id)
+);
+const existingSourceUrls = new Set(
+  nonDiscoveryOpportunities.map((opportunity) => normalizeUrl(opportunity.sourceUrl))
+);
 const existingKeys = new Set(
-  opportunities.map((opportunity) => normalizedKey(opportunity.title, opportunity.organization, opportunity.city))
+  nonDiscoveryOpportunities.map((opportunity) =>
+    normalizedKey(opportunity.title, opportunity.organization, opportunity.city)
+  )
 );
 
 function decodeHtml(value: string) {
@@ -177,22 +200,6 @@ function hasFreeSignal(text: string, source: DiscoverySource) {
     lower.includes("included with") ||
     source.sourceType === "library"
   );
-}
-
-function inferCategory(text: string): Category {
-  const lower = text.toLowerCase();
-  if (lower.includes("volunteer")) return "Volunteer Hours";
-  if (lower.includes("co-op") || lower.includes("coop") || lower.includes("shsm")) return "Co-op & SHSM";
-  if (lower.includes("hackathon") || lower.includes("competition")) return "Hackathons & Competitions";
-  if (lower.includes("mentor") || lower.includes("career")) return "Career & Mentorship";
-  if (lower.includes("robot") || lower.includes("coding") || lower.includes("python") || lower.includes("arduino")) {
-    return "Coding & Robotics";
-  }
-  if (lower.includes("maker") || lower.includes("fabrication") || lower.includes("3d print")) return "Makerspace & Fabrication";
-  if (lower.includes("science") || lower.includes("engineering") || lower.includes("environment")) {
-    return "Science & Engineering";
-  }
-  return "STEM";
 }
 
 function inferAges(text: string) {
@@ -302,6 +309,16 @@ function buildOpportunity(source: DiscoverySource, candidate: RawCandidate): Dis
   ) {
     return null;
   }
+  if (
+    discoverySourceRequiresSpecificStemEvidence(source) &&
+    !isLibraryOpportunityStemRelevant({
+      title,
+      description,
+      categories: candidate.tags ?? []
+    })
+  ) {
+    return null;
+  }
   if (title.length < 5 || !hasStemSignal(combinedText)) return null;
   if (hasBlockedSupportProgramSignal(combinedText)) return null;
   if (/\$\s*\d|resident:\s*\$|non-resident:\s*\$|cost of the program|program cost|tuition|paid program/i.test(combinedText)) {
@@ -326,7 +343,7 @@ function buildOpportunity(source: DiscoverySource, candidate: RawCandidate): Dis
   const city = candidate.city || source.city || "Toronto";
   const organization = candidate.organization || source.organization;
   const region = candidate.region || source.region || "Toronto";
-  const category = inferCategory(combinedText);
+  const category = inferDiscoveryCategory(combinedText);
   const status = reviewReasons.length ? "needs_review" : "active";
   const confidence = reviewReasons.length <= 1 && source.trusted ? "high" : reviewReasons.length <= 3 ? "medium" : "needs_review";
 
@@ -349,7 +366,15 @@ function buildOpportunity(source: DiscoverySource, candidate: RawCandidate): Dis
     lastChecked: todayIsoDate,
     lastSeen: todayIsoDate,
     status,
-    tags: Array.from(new Set([category.toLowerCase(), ...source.keywords, ...(candidate.tags || [])])).slice(0, 12),
+    tags: evidenceBackedDiscoveryTags({
+      category,
+      title,
+      description,
+      sourceName: source.name,
+      sourceOrganization: source.organization,
+      sourceKeywords: source.keywords,
+      candidateTags: candidate.tags
+    }),
     confidence,
     reviewReasons,
     sourceName: source.name
@@ -561,7 +586,8 @@ function writeDiscoveryReviewFile(result: DiscoveryOutput) {
     candidatesFound: result.candidatesFound,
     newCandidates: result.newCandidates,
     duplicatesSkipped: result.duplicatesSkipped,
-    warnings: result.warnings
+    warnings: result.warnings,
+    sourceHealth: result.sourceHealth
   };
   const output = `import type { DiscoveredOpportunity } from "./discovery";
 
@@ -576,10 +602,12 @@ async function main() {
   const warnings: string[] = [];
   const discovered: DiscoveredOpportunity[] = [];
   let candidatesFound = 0;
+  let successfulSources = 0;
 
   for (const source of discoverySources) {
     try {
       const html = await fetchSource(source);
+      successfulSources += 1;
       const deterministicCandidates = (source.url.includes("bibliocommons.com")
         ? extractBiblioCommonsCandidates(html, source)
         : [...extractBiblioCommonsCandidates(html, source), ...extractGenericCandidates(html, source)]
@@ -596,6 +624,12 @@ async function main() {
   }
 
   const { output, duplicatesSkipped } = dedupeCandidates(discovered);
+  const discoveryAssessment = evaluateDiscoverySourceHealth({
+    generatedAt: new Date().toISOString(),
+    sourcesChecked: discoverySources.length,
+    successfulSources,
+    minimumSourceSuccessRatio: numericEnv("GTA_MIN_DISCOVERY_SOURCE_SUCCESS_RATIO")
+  });
   const result: DiscoveryOutput = {
     generatedAt: new Date().toISOString(),
     mode: "deterministic",
@@ -604,10 +638,16 @@ async function main() {
     newCandidates: output.length,
     duplicatesSkipped,
     opportunities: output,
-    warnings
+    warnings,
+    sourceHealth: discoveryAssessment.health
   };
 
   if (writeReviewFile) {
+    if (!discoveryAssessment.healthy) {
+      console.error("Discovery refresh was rejected before review files were written. The previous committed review queue remains intact.");
+      for (const reason of discoveryAssessment.health.failureReasons) console.error(`REJECTED: ${reason}`);
+      throw new Error("Discovery source health did not meet the publication policy.");
+    }
     writeDiscoveryReviewFile(result);
   }
 
@@ -626,6 +666,11 @@ async function main() {
     console.log(`Raw candidates found: ${result.candidatesFound}`);
     console.log(`New review candidates: ${result.newCandidates}`);
     console.log(`Duplicates skipped: ${result.duplicatesSkipped}`);
+    console.log(
+      `Source health: ${result.sourceHealth.successfulSources}/${result.sourceHealth.sourcesChecked} sources (${(
+        result.sourceHealth.sourceSuccessRatio * 100
+      ).toFixed(1)}%).`
+    );
     console.log(`Warnings: ${result.warnings.length}`);
     for (const opportunity of result.opportunities.slice(0, 12)) {
       console.log(`- ${opportunity.title} | ${opportunity.organization} | ${opportunity.city} | ${opportunity.status}`);

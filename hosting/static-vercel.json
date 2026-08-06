@@ -49,6 +49,22 @@
       "destination": "/privacy.html"
     },
     {
+      "source": "/terms",
+      "destination": "/terms.html"
+    },
+    {
+      "source": "/terms/",
+      "destination": "/terms.html"
+    },
+    {
+      "source": "/support",
+      "destination": "/support.html"
+    },
+    {
+      "source": "/support/",
+      "destination": "/support.html"
+    },
+    {
       "source": "/community-hosts",
       "destination": "/community-hosts.html"
     },
@@ -63,7 +79,7 @@
       "headers": [
         {
           "key": "Content-Security-Policy",
-          "value": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline' https://tiles.openfreemap.org https://*.openfreemap.org; img-src 'self' data: blob: https://tiles.openfreemap.org https://*.openfreemap.org; font-src 'self' data: https://*.openfreemap.org; connect-src 'self' https://*.supabase.co wss://*.supabase.co https://tiles.openfreemap.org https://*.openfreemap.org; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests"
+          "value": "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://tiles.openfreemap.org https://*.openfreemap.org; img-src 'self' data: blob: https://tiles.openfreemap.org https://*.openfreemap.org; font-src 'self' data: https://*.openfreemap.org; connect-src 'self' https://*.supabase.co wss://*.supabase.co https://tiles.openfreemap.org https://*.openfreemap.org; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests"
         },
         {
           "key": "X-Content-Type-Options",

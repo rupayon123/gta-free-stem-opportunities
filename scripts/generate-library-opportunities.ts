@@ -1,4 +1,10 @@
-import { writeFileSync } from "node:fs";
+import { readFileSync, writeFileSync } from "node:fs";
+import {
+  countClassifierRelevantLibraryOpportunities,
+  inferLibraryOpportunityCategory,
+  isLibraryOpportunityStemRelevant
+} from "../lib/libraryOpportunityClassification";
+import { evaluateLibraryRefreshHealth } from "../lib/refreshHealth";
 import type { Category, CommunityFocus, LanguageCode, Opportunity, OpportunityType, Region } from "../lib/types";
 
 const maxLibraryOpportunities = Math.max(
@@ -12,6 +18,13 @@ const staleCutoff = todayTime - 1000 * 60 * 60 * 24;
 const lookaheadCutoff = todayTime + lookaheadDays * 24 * 60 * 60 * 1000;
 const timestampNow = () => new Date().toISOString();
 
+function numericEnv(name: string) {
+  const value = process.env[name];
+  if (!value) return undefined;
+  const parsed = Number(value);
+  return Number.isFinite(parsed) ? parsed : undefined;
+}
+
 type LibraryFeed = {
   id: string;
   libraryId: string;
@@ -20,6 +33,14 @@ type LibraryFeed = {
   region: Region;
   city: string;
   pages: number;
+};
+
+type FeedRefreshStats = {
+  sourceId: string;
+  organization: string;
+  attemptedPages: number;
+  successfulPages: number;
+  acceptedListings: number;
 };
 
 type RssItem = {
@@ -65,47 +86,6 @@ const feeds: LibraryFeed[] = [
     city: "Markham",
     pages: 12
   }
-];
-
-const includeCategorySignals = [
-  "STEAM",
-  "Lifelong Learning",
-  "Computers",
-  "Technology",
-  "Digital",
-  "Crafts & Hobbies",
-  "Reading Programs & Storytimes",
-  "Storytime",
-  "Business & Finance",
-  "New to Canada",
-  "Jobs & Careers",
-  "PA Day & Holiday Programs"
-];
-
-const includeTextSignals = [
-  /\bAI\b/i,
-  /\bArduino\b/i,
-  /\bcareer\b/i,
-  /\bcod(e|ing|er|ers)\b/i,
-  /\bcomputer(s)?\b/i,
-  /\bcraft(s)?\b/i,
-  /\bcricut\b/i,
-  /\bdata\b/i,
-  /\bdigital\b/i,
-  /\bengineering\b/i,
-  /\bexperiment(s)?\b/i,
-  /\bfinancial literacy\b/i,
-  /\blearning\b/i,
-  /\bmaker(space)?\b/i,
-  /\bmath\b/i,
-  /\bpython\b/i,
-  /\brobot(ic|ics|s)?\b/i,
-  /\bscience\b/i,
-  /\bSTEAM\b/i,
-  /\bSTEM\b/i,
-  /\bstorytime\b/i,
-  /\btechnology\b/i,
-  /\bvolunteer(ing|s)?\b/i
 ];
 
 const rejectSignals = [
@@ -224,39 +204,15 @@ function shouldInclude(item: RssItem) {
   const text = `${item.title} ${item.description} ${item.categories.join(" ")}`;
   if (item.cancelled || item.full || !item.link || !isCurrent(item)) return false;
   if (/\bFULL\b/i.test(item.title)) return false;
+  if (/\b(?:CANCELLED|CANCELED)\b/i.test(item.title)) return false;
   if (item.categories.some((category) => category.toLowerCase().includes("health & wellness"))) return false;
   if (/\$\s*\d/.test(text)) return false;
   if (rejectSignals.some((signal) => text.toLowerCase().includes(signal.toLowerCase()))) return false;
-  return (
-    item.categories.some((category) =>
-      includeCategorySignals.some((signal) => category.toLowerCase().includes(signal.toLowerCase()))
-    ) || includeTextSignals.some((signal) => signal.test(text))
-  );
+  return isLibraryOpportunityStemRelevant(item);
 }
 
 function inferCategory(item: RssItem): Category {
-  const text = `${item.title} ${item.description} ${item.categories.join(" ")}`.toLowerCase();
-  if (/\b(new to canada|newcomer)\b/i.test(text)) return "Newcomer & Settlement";
-  if (/\bvolunteer(ing|s)?\b/i.test(text)) return "Volunteer Hours";
-  if (/\bco-?op\b|\bshsm\b/i.test(text)) return "Co-op & SHSM";
-  if (/\b(business|finance|career|job)\b/i.test(text)) {
-    return "Career & Mentorship";
-  }
-  if (/\brobot(ic|ics|s)?\b|\bcod(e|ing|er|ers)\b|\bpython\b|\barduino\b/i.test(text)) {
-    return "Coding & Robotics";
-  }
-  if (/\bcricut\b|\bmaker(space)?\b|\bcraft(s)?\b|\bcrochet\b|\bknit(ting)?\b|\blego\b/i.test(text)) {
-    return "Makerspace & Fabrication";
-  }
-  if (/\bstorytime\b|\bearlyon\b|\bbaby\b|\btoddler\b|\bfamily time\b/i.test(text)) {
-    return "Family Learning";
-  }
-  if (/\banimation\b|\bmedia\b|\bart\b|\bpainting\b|\bwatercolour\b|\borigami\b/i.test(text)) return "Arts & Media";
-  if (/\bscience\b|\bengineering\b|\bsteam\b|\bstem\b/i.test(text)) {
-    return "Science & Engineering";
-  }
-  if (/\bdigital\b|\btechnology\b|\bAI\b/i.test(text)) return "AI & Digital Media";
-  return "Family Learning";
+  return inferLibraryOpportunityCategory(item);
 }
 
 function inferType(item: RssItem): OpportunityType {
@@ -352,7 +308,7 @@ function toOpportunity(item: RssItem, feed: LibraryFeed): Opportunity {
   const locationLatitude = item.latitude || (feed.region === "Toronto" ? 43.6532 : 43.8561);
   const locationLongitude = item.longitude || (feed.region === "Toronto" ? -79.3832 : -79.337);
   const summary = item.description.slice(0, 260) || `${item.title} from ${feed.organization}.`;
-  const tags = Array.from(new Set([category.toLowerCase(), ...item.categories.map((category) => category.toLowerCase())])).slice(0, 10);
+  const tags = Array.from(new Set(item.categories.map((sourceCategory) => sourceCategory.toLowerCase()))).slice(0, 10);
 
   return {
     id: `${feed.id}-${slug(item.link.split("/").pop() || item.title)}`,
@@ -428,19 +384,47 @@ async function fetchFeed(feed: LibraryFeed, page: number) {
   return response.text();
 }
 
+function previousPublishedLibraryCount() {
+  try {
+    const source = readFileSync("lib/generatedLibraryOpportunities.ts", "utf8");
+    const currentExport = source.match(/export const generatedLibraryOpportunities = ([\s\S]*?) satisfies Opportunity\[\];/);
+    if (!currentExport) return 0;
+    const parsed: unknown = JSON.parse(currentExport[1]);
+    return Array.isArray(parsed) ? countClassifierRelevantLibraryOpportunities(parsed) : 0;
+  } catch {
+    return 0;
+  }
+}
+
 async function main() {
   const seen = new Set<string>();
   const generated: Opportunity[] = [];
   const warnings: string[] = [];
+  const feedStats = new Map<string, FeedRefreshStats>(
+    feeds.map((feed) => [
+      feed.id,
+      {
+        sourceId: feed.id,
+        organization: feed.organization,
+        attemptedPages: 0,
+        successfulPages: 0,
+        acceptedListings: 0
+      }
+    ])
+  );
   const removedExpired = {
     stale: 0,
     duplicatesOrOverflow: 0
   };
 
   for (const feed of feeds) {
+    const stats = feedStats.get(feed.id);
+    if (!stats) throw new Error(`Missing refresh statistics for ${feed.id}.`);
     for (let page = 1; page <= feed.pages; page += 1) {
+      stats.attemptedPages += 1;
       try {
         const xml = await fetchFeed(feed, page);
+        stats.successfulPages += 1;
         for (const item of parseItems(xml)) {
           if (!shouldInclude(item)) continue;
           if (!isWithinActiveWindow(item)) {
@@ -450,6 +434,7 @@ async function main() {
           if (seen.has(item.link)) continue;
           seen.add(item.link);
           generated.push(toOpportunity(item, feed));
+          stats.acceptedListings += 1;
         }
       } catch (error) {
         warnings.push(error instanceof Error ? error.message : `${feed.organization} page ${page}: unknown error`);
@@ -460,13 +445,38 @@ async function main() {
   generated.sort((a, b) => new Date(a.startDate).getTime() - new Date(b.startDate).getTime());
   const selected = generated.slice(0, maxLibraryOpportunities);
   removedExpired.duplicatesOrOverflow = Math.max(0, generated.length - selected.length);
-  const output = `import type { Opportunity } from "./types";
+  const refreshAssessment = evaluateLibraryRefreshHealth({
+    generatedAt: timestampNow(),
+    sources: Array.from(feedStats.values()),
+    acceptedListings: selected.length,
+    previousPublishedListings: previousPublishedLibraryCount(),
+    minimumPageSuccessRatio: numericEnv("GTA_MIN_LIBRARY_PAGE_SUCCESS_RATIO"),
+    minimumPerSourceSuccessRatio: numericEnv("GTA_MIN_LIBRARY_SOURCE_SUCCESS_RATIO"),
+    minimumOutputRatio: numericEnv("GTA_MIN_LIBRARY_OUTPUT_RATIO"),
+    minimumPublishedListings: numericEnv("GTA_MIN_LIBRARY_OPPORTUNITIES")
+  });
+
+  if (!refreshAssessment.healthy) {
+    console.error("Library refresh was rejected before generated files were written. The previous committed feed remains intact.");
+    for (const reason of refreshAssessment.health.failureReasons) console.error(`REJECTED: ${reason}`);
+    throw new Error("Library source health did not meet the publication policy.");
+  }
+
+  const output = `import type { LibrarySourceHealth } from "./refreshHealth";
+import type { Opportunity } from "./types";
 
 export const generatedLibraryOpportunities = ${JSON.stringify(selected, null, 2)} satisfies Opportunity[];
+
+export const generatedLibrarySourceHealth = ${JSON.stringify(refreshAssessment.health, null, 2)} satisfies LibrarySourceHealth;
 `;
   writeFileSync("lib/generatedLibraryOpportunities.ts", output);
 
   console.log(`Generated ${selected.length} source-backed library opportunities within ${lookaheadDays} days (max ${maxLibraryOpportunities}).`);
+  console.log(
+    `Source health: ${refreshAssessment.health.successfulPages}/${refreshAssessment.health.attemptedPages} pages (${(
+      refreshAssessment.health.pageSuccessRatio * 100
+    ).toFixed(1)}%), ${refreshAssessment.health.acceptedListings}/${refreshAssessment.health.minimumAcceptedListings} required listings.`
+  );
   console.log(`Skipped stale/ended opportunities: ${removedExpired.stale}.`);
   console.log(`Skipped duplicates/raw overflow: ${removedExpired.duplicatesOrOverflow}.`);
   for (const warning of warnings) console.warn(`WARNING: ${warning}`);

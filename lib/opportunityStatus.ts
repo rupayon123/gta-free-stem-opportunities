@@ -6,11 +6,36 @@ function dateValue(value?: string) {
   return Number.isNaN(timestamp) ? null : timestamp;
 }
 
-export function isOpportunityDateExpired(opportunity: Opportunity, now = new Date()) {
-  if (opportunity.status === "needs_review" && opportunity.tags.includes("date-to-confirm")) return false;
+const dayInMilliseconds = 24 * 60 * 60 * 1000;
 
-  const visibleUntil =
-    dateValue(opportunity.endDate) ?? dateValue(opportunity.deadline) ?? dateValue(opportunity.startDate);
+function isDistinctRegistrationDeadline(opportunity: Opportunity) {
+  const deadline = dateValue(opportunity.deadline);
+  if (!deadline) return false;
+
+  const start = dateValue(opportunity.startDate);
+  // Library calendars frequently mirror an event's start time into `deadline`.
+  // That value is not a separate enrollment cutoff and must not hide an
+  // ongoing or multi-day drop-in as soon as it begins.
+  return !start || deadline !== start;
+}
+
+export function isOpportunityVerificationStale(
+  lastChecked: string,
+  now = new Date(),
+  maximumAgeDays = 14
+) {
+  const checked = /^\d{4}-\d{2}-\d{2}$/.test(lastChecked)
+    ? Date.parse(`${lastChecked}T23:59:59.999Z`)
+    : Date.parse(lastChecked);
+  if (Number.isNaN(checked)) return true;
+  return checked + maximumAgeDays * dayInMilliseconds < now.getTime();
+}
+
+export function isOpportunityDateExpired(opportunity: Opportunity, now = new Date()) {
+  const end = dateValue(opportunity.endDate);
+  const deadline = isDistinctRegistrationDeadline(opportunity) ? dateValue(opportunity.deadline) : null;
+  const start = dateValue(opportunity.startDate);
+  const visibleUntil = deadline && end ? Math.min(deadline, end) : deadline ?? end ?? start;
   if (!visibleUntil) return false;
 
   const endOfDay = new Date(visibleUntil);
@@ -26,7 +51,7 @@ export function computedOpportunityStatus(opportunity: Opportunity, now = new Da
 }
 
 export function isPublicOpportunity(opportunity: Opportunity, now = new Date()) {
-  return (opportunity.status === "active" || opportunity.status === "needs_review") && !isOpportunityDateExpired(opportunity, now);
+  return opportunity.status === "active" && !isOpportunityDateExpired(opportunity, now);
 }
 
 export function publicOpportunities(opportunities: Opportunity[], now = new Date()) {

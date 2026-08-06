@@ -24,7 +24,7 @@ This project is open source so other cities can fork it, replace the region/sour
 - Source-backed opportunity data from public GTA library, community, conservation, nonprofit, and education sources.
 - Scheduled refresh workflow for rebuilding public listing data from trusted sources.
 - High-school pathway pages for volunteer hours, co-op/SHSM, mentorship, leadership, and career exploration.
-- Accessibility/support, privacy-policy, and community-host pages.
+- Accessibility, support, privacy-policy, terms-of-use, and community-host pages.
 - Light/dark themes, multilingual interface, keyboard-accessible controls, and plain-language listing details.
 
 ## Repo Layout
@@ -41,7 +41,7 @@ This project is open source so other cities can fork it, replace the region/sour
 ## Run For Development
 
 ```bash
-npm install
+npm ci
 npm run dev
 ```
 
@@ -93,9 +93,9 @@ npm run discover:sql
 npm run generate:library
 ```
 
-Public search hides listings after their `endDate`, `deadline`, or `startDate` passes. Saved items and admin history can still keep archive context later.
+Public search and the app feed include only `active` listings with a current or future date window. Expired, hidden, and `needs_review` records (including `date-to-confirm` discoveries) stay in the review queue until a reviewer confirms them. The scheduled workflow commits accepted refreshes, so Git history preserves an audit archive without sending expired records to every device.
 
-The scheduled workflow reference is in `docs/refresh-opportunities-workflow.yml`. It is designed to refresh public data, run QA/build checks, and commit updated static listing files when source feeds change.
+The canonical scheduled workflow is [`.github/workflows/refresh-opportunities.yml`](.github/workflows/refresh-opportunities.yml); `docs/refresh-opportunities-workflow.yml` is its exact documented copy. The workflow uses the tracked npm lockfile, audits production dependencies, rejects materially degraded source refreshes before generated files are written, runs QA/build checks, and commits updated static listing files only after those gates pass. The public feed exposes non-sensitive `sourceHealth` counters so the website and app can tell whether the last committed refresh was healthy.
 
 The public feed export adds generated summary translations, localized category metadata, and localized cost metadata for every non-English launch language under each listing's `translations` payload. These are free, deterministic browsing summaries built from listing metadata. Full public-release content translation still needs reviewed translated titles, organization names, addresses, source-specific tags, and richer descriptions before every dynamic field can be considered fully translated.
 
@@ -105,6 +105,8 @@ The public feed export adds generated summary translations, localized category m
 - Saving requires an account once production auth is connected.
 - Browser location is optional and session-only.
 - Public privacy policy route: `/privacy/`.
+- Public terms route: `/terms/`.
+- Public support route: `/support/`; its current zero-cost ticket flow is public, so sensitive information must never be posted there.
 - Public listing pages show source details, not internal admin audit logs.
 - Supabase admin access must be controlled by database rules, not client-side fields.
 - `.env`, `.env.*`, `.vercel`, `.next`, `out`, local artifacts, and build output are ignored by git.

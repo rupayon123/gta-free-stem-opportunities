@@ -2,9 +2,10 @@ import { generatedLibraryOpportunities } from "./generatedLibraryOpportunities";
 import { generatedDiscoveryReviewCandidates } from "./generatedDiscoveryReview";
 import type { DiscoveredOpportunity } from "./discovery";
 import type { Category, LanguageCode, Opportunity, Region, ReviewItem } from "./types";
-import { isOpportunityDateExpired } from "./opportunityStatus";
+import { isOpportunityDateExpired, isOpportunityVerificationStale } from "./opportunityStatus";
 
 const now = new Date();
+export const curatedVerificationMaximumAgeDays = 14;
 
 export const regions: Region[] = ["Toronto", "Peel", "York", "Durham", "Halton"];
 
@@ -557,7 +558,6 @@ const seedOpportunities: SeedOpportunity[] = [
     virtual: false,
     startDate: "2026-07-06T08:00:00-04:00",
     endDate: "2026-08-28T15:00:00-04:00",
-    deadline: "2026-07-01T23:59:00-04:00",
     ages: { min: 14, max: 18 },
     grades: ["9", "10", "11", "12"],
     languages: ["en"],
@@ -569,7 +569,7 @@ const seedOpportunities: SeedOpportunity[] = [
     registrationUrl: "https://cvc.ca/for-teens/conservation-youth-corps-cyc/",
     providerContact: "https://cvc.ca/contact/",
     freeStatusProof: "Official CVC youth program page describes volunteering and earning hours; no application or participation fee shown.",
-    lastVerified: "2026-05-26",
+    lastVerified: "2026-08-06",
     trustedSource: true,
     volunteerHoursEligible: true,
     coopEligible: false,
@@ -579,16 +579,16 @@ const seedOpportunities: SeedOpportunity[] = [
       {
         label: "Official Credit Valley Conservation CYC page",
         url: "https://cvc.ca/for-teens/conservation-youth-corps-cyc/",
-        capturedAt: "2026-05-26T12:50:00-04:00",
+        capturedAt: "2026-08-06T09:00:00-04:00",
         confidence: "high"
       }
     ],
     adminAuditTrail: [
       {
         label: "Verified source",
-        at: "2026-05-26T12:50:00-04:00",
+        at: "2026-08-06T09:00:00-04:00",
         actor: "Reviewer",
-        detail: "Official source confirms ages 14 to 18, completed grade 8, returning to high school, and up to 35 volunteer hours."
+        detail: "Official source confirms summer 2026 registration is open, ages 14 to 18, returning-to-school eligibility, a free program, and up to 35 volunteer hours."
       }
     ]
   },
@@ -609,7 +609,6 @@ const seedOpportunities: SeedOpportunity[] = [
     virtual: false,
     startDate: "2026-07-06T08:00:00-04:00",
     endDate: "2026-08-28T15:00:00-04:00",
-    deadline: "2026-07-01T23:59:00-04:00",
     ages: { min: 14, max: 18 },
     grades: ["9", "10", "11", "12"],
     languages: ["en"],
@@ -621,7 +620,7 @@ const seedOpportunities: SeedOpportunity[] = [
     registrationUrl: "https://trca.ca/get-involved/conservation-youth-corps/",
     providerContact: "https://trca.ca/about/contact-us/",
     freeStatusProof: "Official TRCA page describes a volunteer program to earn community service hours; no fee shown.",
-    lastVerified: "2026-05-26",
+    lastVerified: "2026-08-06",
     trustedSource: true,
     volunteerHoursEligible: true,
     coopEligible: false,
@@ -631,16 +630,16 @@ const seedOpportunities: SeedOpportunity[] = [
       {
         label: "Official TRCA Conservation Youth Corps page",
         url: "https://trca.ca/get-involved/conservation-youth-corps/",
-        capturedAt: "2026-05-26T13:00:00-04:00",
+        capturedAt: "2026-08-06T09:10:00-04:00",
         confidence: "high"
       }
     ],
     adminAuditTrail: [
       {
         label: "Verified source",
-        at: "2026-05-26T13:00:00-04:00",
+        at: "2026-08-06T09:10:00-04:00",
         actor: "Reviewer",
-        detail: "Official source confirms Peel Region high school eligibility and up to 30 community service hours."
+        detail: "Official source confirms current July and August 2026 Peel programs, high school eligibility, and up to 30 community service hours."
       }
     ]
   },
@@ -672,7 +671,7 @@ const seedOpportunities: SeedOpportunity[] = [
     registrationUrl: "https://www.pactprogram.ca/volunteer-opportunities",
     providerContact: "madison@pactprogram.ca or tcigarden@pactprogram.ca",
     freeStatusProof: "Official PACT volunteer page lists student volunteer hours and sign-up contact; no fee shown.",
-    lastVerified: "2026-05-26",
+    lastVerified: "2026-08-06",
     trustedSource: true,
     volunteerHoursEligible: true,
     coopEligible: true,
@@ -682,20 +681,20 @@ const seedOpportunities: SeedOpportunity[] = [
       {
         label: "Official PACT volunteer opportunities page",
         url: "https://www.pactprogram.ca/volunteer-opportunities",
-        capturedAt: "2026-05-26T13:10:00-04:00",
+        capturedAt: "2026-08-06T09:20:00-04:00",
         confidence: "high"
       },
       {
         label: "Official PACT Grow-to-Learn page",
         url: "https://www.pactprogram.ca/about-gtl",
-        capturedAt: "2026-05-26T13:10:00-04:00",
+        capturedAt: "2026-08-06T09:20:00-04:00",
         confidence: "high"
       }
     ],
     adminAuditTrail: [
       {
         label: "Verified source",
-        at: "2026-05-26T13:10:00-04:00",
+        at: "2026-08-06T09:20:00-04:00",
         actor: "Reviewer",
         detail: "Official source confirms student volunteer hours, garden locations, recurring time, and contact emails."
       }
@@ -718,7 +717,7 @@ const seedOpportunities: SeedOpportunity[] = [
     virtual: false,
     startDate: "2026-08-01T09:00:00-04:00",
     endDate: "2027-05-31T20:00:00-04:00",
-    deadline: "2026-08-31T23:59:00-04:00",
+    status: "needs_review",
     ages: { min: 14, max: 18 },
     grades: ["9", "10", "11", "12"],
     languages: ["en"],
@@ -727,10 +726,10 @@ const seedOpportunities: SeedOpportunity[] = [
     food: "No food listed.",
     capacity: "Official source lists 30 spots for the annual program.",
     commitment: "Monthly two-hour meetings from September to May plus project time.",
-    registrationUrl: "https://opl.ca/About-OPL/Volunteer/Youth-Library-Leaders",
-    providerContact: "https://opl.ca/Contact-Us",
+    registrationUrl: "https://opl.ca/about-opl/volunteer/youth-library-leaders",
+    providerContact: "https://opl.ca/contact-us",
     freeStatusProof: "Official Oakville Public Library volunteer page describes volunteer hours and no fee shown.",
-    lastVerified: "2026-05-26",
+    lastVerified: "2026-08-06",
     trustedSource: true,
     volunteerHoursEligible: true,
     coopEligible: false,
@@ -739,23 +738,23 @@ const seedOpportunities: SeedOpportunity[] = [
     sources: [
       {
         label: "Official Oakville Public Library Youth Library Leaders page",
-        url: "https://opl.ca/About-OPL/Volunteer/Youth-Library-Leaders",
-        capturedAt: "2026-05-26T13:20:00-04:00",
+        url: "https://opl.ca/about-opl/volunteer/youth-library-leaders",
+        capturedAt: "2026-08-06T09:30:00-04:00",
         confidence: "high"
       },
       {
         label: "Official Oakville Public Library volunteer page",
-        url: "https://opl.ca/about/oplvolunteering",
-        capturedAt: "2026-05-26T13:20:00-04:00",
+        url: "https://opl.ca/about-opl/volunteer",
+        capturedAt: "2026-08-06T09:30:00-04:00",
         confidence: "high"
       }
     ],
     adminAuditTrail: [
       {
         label: "Verified source",
-        at: "2026-05-26T13:20:00-04:00",
+        at: "2026-08-06T09:30:00-04:00",
         actor: "Reviewer",
-        detail: "Official source confirms ages 14 to 18, secondary school enrollment, volunteer hours, and August application window."
+        detail: "Official source confirms the annual teen program but still says the prior season is closed and to check again in August 2026; quarantine until a current application is actually available."
       }
     ]
   },
@@ -764,7 +763,7 @@ const seedOpportunities: SeedOpportunity[] = [
     title: "Applied STEM Beyond Barriers",
     provider: "Afro Canadian Development Inc.",
     summary:
-      "Free applied STEM program for children and youth from underserved communities, with coding, robotics, 3D printing, animation, microcontrollers, and related technologies.",
+      "The free February-to-June 2026 applied STEM cohort for underserved children and youth has completed.",
     type: "Multi-week program",
     categories: ["STEM", "Coding & Robotics", "Makerspace & Fabrication", "AI & Digital Media"],
     communityFocus: ["Black-focused", "Open to all", "Low-income priority"],
@@ -774,22 +773,22 @@ const seedOpportunities: SeedOpportunity[] = [
     latitude: 43.6532,
     longitude: -79.3832,
     virtual: false,
-    startDate: "2026-06-01T17:00:00-04:00",
-    endDate: "2026-12-31T17:00:00-05:00",
+    startDate: "2026-02-01T17:00:00-05:00",
+    endDate: "2026-06-30T23:59:00-04:00",
+    status: "expired",
     ages: { min: 6, max: 13 },
     grades: ["1", "2", "3", "4", "5", "6", "7", "8"],
     languages: ["en"],
-    accessibility: ["Registration now open according to official provider announcement", "Cost-barrier removal stated by provider"],
+    accessibility: ["Cost-barrier removal stated by provider"],
     equipment: "Program materials are part of the applied STEM sessions.",
     food: "No food listed.",
-    capacity: "Registration open; capacity not listed.",
-    commitment: "Weekly cohort schedule to be confirmed by provider after registration.",
-    registrationUrl:
-      "https://afrocanadiandevelopment.org/2026/01/09/afro-canadian-development-inc-announces-2026-cohort-of-applied-stem-beyond-barriers-empowering-children-and-youth-from-underserved-communities/",
+    capacity: "The February-to-June 2026 cohort is closed.",
+    commitment: "The February-to-June 2026 cohort has completed.",
+    registrationUrl: "https://afrocanadiandevelopment.org/stem-program/",
     providerContact: "info@afrocanadiandevelopment.org, 416-638-8525",
     freeStatusProof:
       "Official provider announcement calls it a free STEM program and says cost is never a barrier to participation.",
-    lastVerified: "2026-05-26",
+    lastVerified: "2026-08-06",
     trustedSource: true,
     volunteerHoursEligible: false,
     coopEligible: false,
@@ -800,16 +799,23 @@ const seedOpportunities: SeedOpportunity[] = [
         label: "Official Afro Canadian Development announcement",
         url:
           "https://afrocanadiandevelopment.org/2026/01/09/afro-canadian-development-inc-announces-2026-cohort-of-applied-stem-beyond-barriers-empowering-children-and-youth-from-underserved-communities/",
-        capturedAt: "2026-05-26T13:30:00-04:00",
+        capturedAt: "2026-08-06T09:40:00-04:00",
+        confidence: "high"
+      },
+      {
+        label: "Official provider completion announcement",
+        url:
+          "https://afrocanadiandevelopment.org/2026/07/03/afro-canadian-development-inc-celebrates-the-successful-completion-of-the-february-june-2026-applied-stem-beyond-barriers-program-empowering-the-next-generation-of-innovators/",
+        capturedAt: "2026-08-06T09:40:00-04:00",
         confidence: "high"
       }
     ],
     adminAuditTrail: [
       {
         label: "Verified source",
-        at: "2026-05-26T13:30:00-04:00",
+        at: "2026-08-06T09:40:00-04:00",
         actor: "Reviewer",
-        detail: "Official source confirms free STEM program, registration open, ages 6 to 13, and applied technologies covered."
+        detail: "Official provider pages state registration is closed and the February-to-June 2026 cohort completed; archive it from public search."
       }
     ]
   },
@@ -866,6 +872,8 @@ const seedOpportunities: SeedOpportunity[] = [
   }
 ];
 
+export const curatedOpportunityIds = seedOpportunities.map((opportunity) => opportunity.id);
+
 function applyLiveExpiration(opportunity: Opportunity): Opportunity {
   if (!isOpportunityDateExpired(opportunity, now)) return opportunity;
   return {
@@ -877,20 +885,29 @@ function applyLiveExpiration(opportunity: Opportunity): Opportunity {
 }
 
 export const opportunities: Opportunity[] = [
-  ...seedOpportunities.map((opportunity) => ({
-    ...opportunity,
-    organization: opportunity.provider,
-    description: opportunity.summary,
-    category: opportunity.categories[0],
-    ageMin: opportunity.ages.min,
-    ageMax: opportunity.ages.max,
-    language: opportunity.languages,
-    cost: "Free to join" as const,
-    sourceUrl: opportunity.sources[0]?.url ?? opportunity.registrationUrl,
-    lastChecked: opportunity.lastVerified,
-    lastSeen: opportunity.lastVerified,
-    status: opportunity.status ?? "active"
-  })),
+  ...seedOpportunities.map((opportunity) => {
+    const declaredStatus = opportunity.status ?? "active";
+    const status =
+      declaredStatus === "active" &&
+      isOpportunityVerificationStale(opportunity.lastVerified, now, curatedVerificationMaximumAgeDays)
+        ? "needs_review"
+        : declaredStatus;
+
+    return {
+      ...opportunity,
+      organization: opportunity.provider,
+      description: opportunity.summary,
+      category: opportunity.categories[0],
+      ageMin: opportunity.ages.min,
+      ageMax: opportunity.ages.max,
+      language: opportunity.languages,
+      cost: "Free to join" as const,
+      sourceUrl: opportunity.sources[0]?.url ?? opportunity.registrationUrl,
+      lastChecked: opportunity.lastVerified,
+      lastSeen: opportunity.lastVerified,
+      status
+    };
+  }),
   ...generatedLibraryOpportunities,
   ...generatedDiscoveryReviewCandidates.map(discoveryCandidateToOpportunity)
 ].map(applyLiveExpiration);
