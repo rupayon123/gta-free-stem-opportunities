@@ -1,6 +1,7 @@
 import { readFileSync, writeFileSync } from "node:fs";
 import {
   countClassifierRelevantLibraryOpportunities,
+  inferLibraryOpportunityAges,
   inferLibraryOpportunityCategory,
   isLibraryOpportunityStemRelevant
 } from "../lib/libraryOpportunityClassification";
@@ -246,33 +247,6 @@ function inferCommunityFocus(item: RssItem): CommunityFocus[] {
   return Array.from(new Set(focus));
 }
 
-function inferAges(item: RssItem) {
-  const text = `${item.title} ${item.description} ${item.categories.join(" ")}`.toLowerCase();
-  const ages = [...text.matchAll(/ages?\s*:?\s*(\d{1,2})\s*(?:-|to|–|—)\s*(\d{1,2})/g)];
-  if (ages[0]) return { min: Number(ages[0][1]), max: Number(ages[0][2]) };
-  const mins: number[] = [];
-  const maxes: number[] = [];
-  if (text.includes("birth to five") || text.includes("preschool") || text.includes("infants")) {
-    mins.push(0);
-    maxes.push(5);
-  }
-  if (text.includes("school age") || text.includes("children")) {
-    mins.push(6);
-    maxes.push(12);
-  }
-  if (text.includes("teen")) {
-    mins.push(13);
-    maxes.push(17);
-  }
-  if (text.includes("adult")) {
-    mins.push(18);
-  }
-  if (text.includes("all ages")) {
-    mins.push(0);
-  }
-  return { min: mins.length ? Math.min(...mins) : 0, max: maxes.length ? Math.max(...maxes) : undefined };
-}
-
 function gradesFromAges(min: number, max?: number) {
   if (max === undefined || max < 4) return [];
   const gradeMin = Math.max(0, min - 5);
@@ -302,7 +276,7 @@ function contactFor(item: RssItem, feed: LibraryFeed) {
 
 function toOpportunity(item: RssItem, feed: LibraryFeed): Opportunity {
   const category = inferCategory(item);
-  const ages = inferAges(item);
+  const ages = inferLibraryOpportunityAges(item);
   const startDate = normalizeDate(item.startDate) || timestampNow();
   const endDate = normalizeDate(item.endDate);
   const locationLatitude = item.latitude || (feed.region === "Toronto" ? 43.6532 : 43.8561);

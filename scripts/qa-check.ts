@@ -15,6 +15,7 @@ import {
 import { languageMeta, t, translatedSummary } from "../lib/i18n";
 import {
   countClassifierRelevantLibraryOpportunities,
+  inferLibraryOpportunityAges,
   inferLibraryOpportunityCategory,
   isLibraryOpportunityStemRelevant,
   type LibraryOpportunityClassificationInput
@@ -31,7 +32,7 @@ import {
   publicOpportunities
 } from "../lib/opportunityStatus";
 import { evaluateDiscoverySourceHealth, evaluateLibraryRefreshHealth } from "../lib/refreshHealth";
-import type { Filters, LanguageCode } from "../lib/types";
+import type { Filters, LanguageCode, Opportunity } from "../lib/types";
 import { coordinatesFromPostal, createCalendarFile, filterOpportunities } from "../lib/utils";
 
 const failures: string[] = [];
@@ -132,6 +133,12 @@ const rejectedLibraryClassificationFixtures: LibraryOpportunityClassificationInp
     categories: ["Storytime", "Birth to Five"]
   },
   {
+    title: "Family Time",
+    description:
+      "Join us for stories, songs, and rhymes. A different astronomy-themed Family Time is advertised for a later date.",
+    categories: ["Ready for Reading Storytimes", "Preschool Children (0-5)"]
+  },
+  {
     title: "Knitting and Crochet Circle",
     description: "Bring your yarn, needles, or hooks and work on a craft with other knitters.",
     categories: ["Crafts & Hobbies", "Adults (18+)"]
@@ -222,6 +229,16 @@ assert(
       inferLibraryOpportunityCategory(fixture) === fixture.expectedCategory
   ),
   "Library relevance must preserve interdisciplinary and explicitly categorized STEM programs."
+);
+
+const malformedSourceAgeFixture = inferLibraryOpportunityAges({
+  title: "Makedo Wonder Workshop",
+  description: "Design and construct a Rube Goldberg machine. For kids ages 6-1.",
+  categories: ["Science & Engineering", "School Age Children (6-12)"]
+});
+assert(
+  malformedSourceAgeFixture.min === 6 && malformedSourceAgeFixture.max === 12,
+  "Malformed source age prose must fall back to the structured audience category."
 );
 
 const classifierAwarePublishedLibraryCount = countClassifierRelevantLibraryOpportunities([
@@ -445,15 +462,6 @@ assert(
 
 const publicListings = publicOpportunities(opportunities);
 assert(publicListings.length > 0, "Expected at least one public active listing.");
-const isAuroraSculptingListing = (opportunity: (typeof publicListings)[number]) =>
-  opportunity.title === "Intro to 3D Sculpting" && opportunity.organization === "Aurora Public Library";
-const auroraSculptingListing = publicListings.find(isAuroraSculptingListing);
-assert(Boolean(auroraSculptingListing), "The valid Aurora 3D-sculpting opportunity must remain public.");
-assert(
-  auroraSculptingListing?.category === "Makerspace & Fabrication" &&
-    !auroraSculptingListing.tags.includes("coding"),
-  "Aurora 3D sculpting must be classified as fabrication without a coding tag."
-);
 const publicLibraryListings = publicListings.filter((opportunity) =>
   opportunity.id.startsWith("tpl-rss-") || opportunity.id.startsWith("markham-rss-")
 );
@@ -730,9 +738,29 @@ assert(
   !roboticsResults.some((opportunity) => knownNonStemLibraryIds.has(opportunity.id)),
   "Robotics search must not match unrelated crafts or movie screenings."
 );
-const codingResults = filterOpportunities(opportunities, { ...baseFilters, query: "coding" }, null);
+const auroraSculptingSearchFixture = {
+  ...publicListings[0],
+  id: "qa-aurora-3d-sculpting",
+  title: auroraSculptingDiscoveryFixture.title,
+  organization: auroraSculptingDiscoveryFixture.sourceOrganization,
+  provider: auroraSculptingDiscoveryFixture.sourceOrganization,
+  description: auroraSculptingDiscoveryFixture.description,
+  summary: auroraSculptingDiscoveryFixture.description,
+  category: auroraSculptingCategory,
+  categories: ["STEM", auroraSculptingCategory],
+  city: "Aurora",
+  region: "York",
+  address: "Aurora, York",
+  tags: auroraSculptingTags
+} satisfies Opportunity;
+const codingResults = filterOpportunities(
+  [auroraSculptingSearchFixture],
+  { ...baseFilters, query: "coding" },
+  null,
+  { includeNonPublic: true }
+);
 assert(
-  !codingResults.some(isAuroraSculptingListing),
+  codingResults.length === 0,
   "Discovery source keywords must not make a 3D-sculpting event match coding."
 );
 

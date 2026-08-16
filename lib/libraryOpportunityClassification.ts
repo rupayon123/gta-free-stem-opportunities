@@ -6,6 +6,11 @@ export type LibraryOpportunityClassificationInput = {
   categories: readonly string[];
 };
 
+export type LibraryOpportunityAgeRange = {
+  min: number;
+  max?: number;
+};
+
 type PublishedLibraryOpportunityClassificationInput = {
   title?: unknown;
   description?: unknown;
@@ -26,7 +31,7 @@ const trustedStemSourceCategories = new Set([
 ]);
 
 const obviousNonStemFormats =
-  /\b(?:board game|book club|concert|craft(?:ing)?|crafternoon|creative writing|crochet|film|game night|gaming night|karaoke|knit(?:ting)?|movie|painting|poetry|storytime|watch party|writing club)\b/i;
+  /\b(?:board game|book club|concert|craft(?:ing)?|crafternoon|creative writing|crochet|family time|film|game night|gaming night|karaoke|knit(?:ting)?|movie|painting|poetry|storytime|watch party|writing club)\b/i;
 
 const titleStemSignals =
   /\b(?:3d (?:design|model(?:ing|ling)|print(?:er|ing)?)|adobe|ai|animat(?:e|ion)|app development|arduino|artificial intelligence|astronomy|blocks? challenges?|build with (?:blocks?|duplo|keva|lego)|builders? club|canva|circuit(?:ry|s)?|climate|code|coder|coding|computer|conservation|cricut|cyber ?security|data science|digital|ecology|electronics?|engineering|experiment(?:s)?|fabrication|game design|graphic design|illustrator|laser engrav(?:e|er|ing)|makedo|math(?:ematics)?|makerspace|programming|python|robot(?:ics|s)?|science|scratch|screen ?print(?:er|ing)?|steam|stem|stop[ -]motion|sublimation print(?:er|ing)|technology|tinkercad|virtual reality|vr|wacom|web design)\b/i;
@@ -95,6 +100,44 @@ export function isLibraryOpportunityStemRelevant(input: LibraryOpportunityClassi
   if (obviousNonStemFormats.test(title)) return titleStemSignals.test(title);
 
   return titleStemSignals.test(title) || descriptionHasStemEvidence;
+}
+
+/**
+ * Prefer a valid explicit age range, then fall back to structured audience
+ * categories when a source publishes malformed prose such as "ages 6-1".
+ */
+export function inferLibraryOpportunityAges(
+  input: LibraryOpportunityClassificationInput
+): LibraryOpportunityAgeRange {
+  const text = normalized(`${input.title} ${input.description} ${input.categories.join(" ")}`);
+  const explicitRange = text.match(/ages?\s*:?\s*(\d{1,2})\s*(?:-|to|–|—)\s*(\d{1,2})/);
+  if (explicitRange) {
+    const min = Number(explicitRange[1]);
+    const max = Number(explicitRange[2]);
+    if (max >= min) return { min, max };
+  }
+
+  const mins: number[] = [];
+  const maxes: number[] = [];
+  if (text.includes("birth to five") || text.includes("preschool") || text.includes("infants")) {
+    mins.push(0);
+    maxes.push(5);
+  }
+  if (text.includes("school age") || text.includes("children")) {
+    mins.push(6);
+    maxes.push(12);
+  }
+  if (text.includes("teen")) {
+    mins.push(13);
+    maxes.push(17);
+  }
+  if (text.includes("adult")) mins.push(18);
+  if (text.includes("all ages")) mins.push(0);
+
+  return {
+    min: mins.length ? Math.min(...mins) : 0,
+    max: maxes.length ? Math.max(...maxes) : undefined
+  };
 }
 
 function stringValues(value: unknown) {
