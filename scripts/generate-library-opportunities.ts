@@ -1,0 +1,462 @@
+import { readFileSync, writeFileSync } from "node:fs";
+import {
+  countClassifierRelevantLibraryOpportunities,
+  inferLibraryOpportunityAges,
+  inferLibraryOpportunityCategory,
+  isLibraryOpportunityStemRelevant
+} from "../lib/libraryOpportunityClassification";
+import { evaluateLibraryRefreshHealth } from "../lib/refreshHealth";
+import type { Category, CommunityFocus, LanguageCode, Opportunity, OpportunityType, Region } from "../lib/types";
+
+const maxLibraryOpportunities = Math.max(
+  160,
+  Math.min(1200, Number.parseInt(process.env.GTA_MAX_LIBRARY_OPPORTUNITIES ?? "420", 10))
+);
+const lookaheadDays = Math.max(30, Number.parseInt(process.env.GTA_LOOKAHEAD_DAYS ?? "365", 10));
+const today = new Date();
+const todayTime = today.getTime();
+const staleCutoff = todayTime - 1000 * 60 * 60 * 24;
+const lookaheadCutoff = todayTime + lookaheadDays * 24 * 60 * 60 * 1000;
+const timestampNow = () => new Date().toISOString();
+
+function numericEnv(name: string) {
+  const value = process.env[name];
+  if (!value) return undefined;
+  const parsed = Number(value);
+  return Number.isFinite(parsed) ? parsed : undefined;
+}
+
+type LibraryFeed = {
+  id: string;
+  libraryId: string;
+  organization: string;
+  providerContact: string;
+  region: Region;
+  city: string;
+  pages: number;
+};
+
+type FeedRefreshStats = {
+  sourceId: string;
+  organization: string;
+  attemptedPages: number;
+  successfulPages: number;
+  acceptedListings: number;
+};
+
+type RssItem = {
+  title: string;
+  description: string;
+  link: string;
+  categories: string[];
+  startDate: string;
+  endDate?: string;
+  cancelled: boolean;
+  virtual: boolean;
+  full: boolean;
+  locationName?: string;
+  number?: string;
+  street?: string;
+  city?: string;
+  zip?: string;
+  state?: string;
+  latitude?: number;
+  longitude?: number;
+  contactName?: string;
+  contactPhone?: string;
+  contactEmail?: string;
+  capacity?: string;
+};
+
+const feeds: LibraryFeed[] = [
+  {
+    id: "tpl-rss",
+    libraryId: "tpl",
+    organization: "Toronto Public Library",
+    providerContact: "ask@tpl.ca",
+    region: "Toronto",
+    city: "Toronto",
+    pages: 12
+  },
+  {
+    id: "markham-rss",
+    libraryId: "markham",
+    organization: "Markham Public Library",
+    providerContact: "mplchats@markhamlibrary.ca",
+    region: "York",
+    city: "Markham",
+    pages: 12
+  }
+];
+
+const rejectSignals = [
+  "Branch Art Exhibit",
+  "Exhibit",
+  "fee:",
+  "fees",
+  "paid program",
+  "payment",
+  "Resident:",
+  "Non-resident:",
+  "tuition",
+  "tutor",
+  "tutoring",
+  "homework",
+  "resume help"
+];
+
+const allLanguages: LanguageCode[] = ["en"];
+
+function decodeHtml(value: string) {
+  return value
+    .replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, "$1")
+    .replace(/&#(\d+);/g, (_match, code) => String.fromCharCode(Number(code)))
+    .replace(/&#x([a-f0-9]+);/gi, (_match, code) => String.fromCharCode(Number.parseInt(code, 16)))
+    .replace(/&amp;/g, "&")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/&nbsp;/g, " ");
+}
+
+function stripTags(value: string) {
+  return decodeHtml(value)
+    .replace(/<script[\s\S]*?<\/script>/gi, " ")
+    .replace(/<style[\s\S]*?<\/style>/gi, " ")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function tagValue(block: string, tag: string) {
+  return decodeHtml(block.match(new RegExp(`<${tag}(?:\\s[^>]*)?>([\\s\\S]*?)</${tag}>`, "i"))?.[1] || "").trim();
+}
+
+function tagValues(block: string, tag: string) {
+  return [...block.matchAll(new RegExp(`<${tag}(?:\\s[^>]*)?>([\\s\\S]*?)</${tag}>`, "gi"))].map((match) =>
+    decodeHtml(match[1]).trim()
+  );
+}
+
+function numberValue(block: string, tag: string) {
+  const value = tagValue(block, tag);
+  if (!value) return undefined;
+  const number = Number(value);
+  return Number.isFinite(number) ? number : undefined;
+}
+
+function parseItems(xml: string): RssItem[] {
+  return [...xml.matchAll(/<item>([\s\S]*?)<\/item>/gi)].map((match) => {
+    const block = match[1];
+    const location = block.match(/<bc:location>([\s\S]*?)<\/bc:location>/i)?.[1] || "";
+    const contact = block.match(/<bc_contact>([\s\S]*?)<\/bc_contact>/i)?.[1] || "";
+    const registration = block.match(/<bc:registration_info>([\s\S]*?)<\/bc:registration_info>/i)?.[1] || "";
+
+    return {
+      title: stripTags(tagValue(block, "title")),
+      description: stripTags(tagValue(block, "description")),
+      link: tagValue(block, "link"),
+      categories: tagValues(block, "category").map(stripTags),
+      startDate: tagValue(block, "bc:start_date") || tagValue(block, "bc:start_date_local"),
+      endDate: tagValue(block, "bc:end_date") || tagValue(block, "bc:end_date_local") || undefined,
+      cancelled: tagValue(block, "bc:is_cancelled") === "true",
+      virtual: tagValue(block, "bc:is_virtual") === "true",
+      full: tagValue(registration, "bc:is_full") === "true",
+      locationName: tagValue(location, "bc:name") || undefined,
+      number: tagValue(location, "bc:number") || undefined,
+      street: tagValue(location, "bc:street") || undefined,
+      city: tagValue(location, "bc:city") || undefined,
+      zip: tagValue(location, "bc:zip") || undefined,
+      state: tagValue(location, "bc:state") || undefined,
+      latitude: numberValue(location, "bc:latitude"),
+      longitude: numberValue(location, "bc:longitude"),
+      contactName: tagValue(contact, "bc:name") || undefined,
+      contactPhone: tagValue(contact, "bc:phone") || undefined,
+      contactEmail: tagValue(contact, "bc:email") || undefined,
+      capacity: tagValue(registration, "bc:capacity") || undefined
+    };
+  });
+}
+
+function normalizeDate(value: string | undefined) {
+  if (!value) return undefined;
+  const cleaned = value.trim();
+  if (/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}$/.test(cleaned)) return `${cleaned}:00-04:00`;
+  if (/^\d{4}-\d{2}-\d{2}$/.test(cleaned)) return `${cleaned}T09:00:00-04:00`;
+  const date = new Date(cleaned);
+  return Number.isNaN(date.getTime()) ? undefined : date.toISOString();
+}
+
+function isCurrent(item: RssItem) {
+  const endOrStart = normalizeDate(item.endDate) || normalizeDate(item.startDate);
+  if (!endOrStart) return false;
+  return new Date(endOrStart).getTime() >= Date.now() - 1000 * 60 * 60 * 24;
+}
+
+function isWithinActiveWindow(item: RssItem) {
+  const endOrStart = normalizeDate(item.endDate) || normalizeDate(item.startDate);
+  if (!endOrStart) return false;
+  const dateMs = new Date(endOrStart).getTime();
+  return dateMs >= staleCutoff && dateMs <= lookaheadCutoff;
+}
+
+function shouldInclude(item: RssItem) {
+  const text = `${item.title} ${item.description} ${item.categories.join(" ")}`;
+  if (item.cancelled || item.full || !item.link || !isCurrent(item)) return false;
+  if (/\bFULL\b/i.test(item.title)) return false;
+  if (/\b(?:CANCELLED|CANCELED)\b/i.test(item.title)) return false;
+  if (item.categories.some((category) => category.toLowerCase().includes("health & wellness"))) return false;
+  if (/\$\s*\d/.test(text)) return false;
+  if (rejectSignals.some((signal) => text.toLowerCase().includes(signal.toLowerCase()))) return false;
+  return isLibraryOpportunityStemRelevant(item);
+}
+
+function inferCategory(item: RssItem): Category {
+  return inferLibraryOpportunityCategory(item);
+}
+
+function inferType(item: RssItem): OpportunityType {
+  const text = `${item.title} ${item.description}`.toLowerCase();
+  if (text.includes("drop-in") || text.includes("drop in")) return "Drop-in";
+  if (text.includes("volunteer")) return "Volunteer role";
+  if (text.includes("course") || text.includes("series") || text.includes("weekly")) return "Multi-week program";
+  if (text.includes("camp")) return "Camp";
+  if (text.includes("hackathon") || text.includes("competition")) return "Competition or hackathon";
+  return "One-time event";
+}
+
+function isStemishCategory(category: Category) {
+  return [
+    "STEM",
+    "Coding & Robotics",
+    "Science & Engineering",
+    "AI & Digital Media",
+    "Makerspace & Fabrication",
+    "Hackathons & Competitions",
+    "Co-op & SHSM"
+  ].includes(category);
+}
+
+function inferCommunityFocus(item: RssItem): CommunityFocus[] {
+  const text = `${item.title} ${item.description}`.toLowerCase();
+  const focus: CommunityFocus[] = ["Open to all", "Newcomer-friendly"];
+  if (text.includes("indigenous")) focus.push("Indigenous-focused");
+  if (text.includes("girls") || text.includes("women")) focus.push("Girls/women-focused");
+  if (text.includes("black")) focus.push("Black-focused");
+  return Array.from(new Set(focus));
+}
+
+function gradesFromAges(min: number, max?: number) {
+  if (max === undefined || max < 4) return [];
+  const gradeMin = Math.max(0, min - 5);
+  const gradeMax = Math.max(0, Math.min(12, max - 5));
+  return Array.from({ length: gradeMax - gradeMin + 1 }, (_value, index) => String(gradeMin + index));
+}
+
+function slug(value: string) {
+  return value
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "")
+    .slice(0, 80);
+}
+
+function addressFor(item: RssItem, feed: LibraryFeed) {
+  if (item.virtual) return `Online event hosted by ${feed.organization}`;
+  const parts = [item.locationName, [item.number, item.street].filter(Boolean).join(" "), item.city || feed.city, item.state || "ON", item.zip]
+    .filter(Boolean)
+    .join(", ");
+  return parts || `${feed.city}, ON`;
+}
+
+function contactFor(item: RssItem, feed: LibraryFeed) {
+  return item.contactEmail || item.contactPhone || item.contactName || feed.providerContact;
+}
+
+function toOpportunity(item: RssItem, feed: LibraryFeed): Opportunity {
+  const category = inferCategory(item);
+  const ages = inferLibraryOpportunityAges(item);
+  const startDate = normalizeDate(item.startDate) || timestampNow();
+  const endDate = normalizeDate(item.endDate);
+  const locationLatitude = item.latitude || (feed.region === "Toronto" ? 43.6532 : 43.8561);
+  const locationLongitude = item.longitude || (feed.region === "Toronto" ? -79.3832 : -79.337);
+  const summary = item.description.slice(0, 260) || `${item.title} from ${feed.organization}.`;
+  const tags = Array.from(new Set(item.categories.map((sourceCategory) => sourceCategory.toLowerCase()))).slice(0, 10);
+
+  return {
+    id: `${feed.id}-${slug(item.link.split("/").pop() || item.title)}`,
+    title: item.title,
+    organization: feed.organization,
+    provider: feed.organization,
+    description: summary,
+    summary,
+    type: inferType(item),
+    category,
+    categories: Array.from(new Set<Category>(isStemishCategory(category) ? ["STEM", category] : [category])),
+    communityFocus: inferCommunityFocus(item),
+    city: feed.city,
+    region: feed.region,
+    address: addressFor(item, feed),
+    latitude: locationLatitude,
+    longitude: locationLongitude,
+    virtual: item.virtual,
+    startDate,
+    endDate,
+    deadline: startDate,
+    ageMin: ages.min,
+    ageMax: ages.max,
+    ages,
+    grades: gradesFromAges(ages.min, ages.max),
+    language: allLanguages,
+    languages: allLanguages,
+    cost: "Free to join",
+    sourceUrl: item.link,
+    lastChecked: timestampNow().slice(0, 10),
+    lastSeen: timestampNow().slice(0, 10),
+    status: "active",
+    accessibility: ["Library accessibility services available on request", item.virtual ? "Online access" : "Public library location"],
+    equipment: item.virtual ? "Internet-connected device may be needed." : "Materials provided unless the source says otherwise.",
+    food: "No food listed.",
+    capacity: item.capacity ? `${item.capacity} spots listed by source.` : "Check the source page for availability.",
+    commitment: endDate ? "Single scheduled library program or series date from source feed." : "Check the source page for time commitment.",
+    registrationUrl: item.link,
+    providerContact: contactFor(item, feed),
+    freeStatusProof: `Official ${feed.organization} public event feed. No-cost library programs only; items with charges, full registration, cancellation, or exhibit-only pages are filtered out before publishing.`,
+    lastVerified: timestampNow().slice(0, 10),
+    trustedSource: true,
+    volunteerHoursEligible: category === "Volunteer Hours",
+    coopEligible: category === "Co-op & SHSM",
+    paidPosition: false,
+    tags,
+    sources: [
+      {
+        label: `Official ${feed.organization} event page`,
+        url: item.link,
+        capturedAt: timestampNow(),
+        confidence: "high"
+      }
+    ],
+    adminAuditTrail: [
+      {
+        label: "Generated from official feed",
+        at: timestampNow(),
+        actor: "Library RSS generator",
+        detail: "Structured public event feed supplied title, date, source URL, location, category, and registration status."
+      }
+    ]
+  };
+}
+
+async function fetchFeed(feed: LibraryFeed, page: number) {
+  const url = `https://gateway.bibliocommons.com/v2/libraries/${feed.libraryId}/rss/events?page=${page}`;
+  const response = await fetch(url, {
+    signal: AbortSignal.timeout(15000),
+    headers: { "User-Agent": "GTA FREE STEM Opportunities static feed generator; review-safe public data" }
+  });
+  if (!response.ok) throw new Error(`${feed.organization} page ${page}: ${response.status} ${response.statusText}`);
+  return response.text();
+}
+
+function previousPublishedLibraryCount() {
+  try {
+    const source = readFileSync("lib/generatedLibraryOpportunities.ts", "utf8");
+    const currentExport = source.match(/export const generatedLibraryOpportunities = ([\s\S]*?) satisfies Opportunity\[\];/);
+    if (!currentExport) return 0;
+    const parsed: unknown = JSON.parse(currentExport[1]);
+    return Array.isArray(parsed) ? countClassifierRelevantLibraryOpportunities(parsed) : 0;
+  } catch {
+    return 0;
+  }
+}
+
+async function main() {
+  const seen = new Set<string>();
+  const generated: Opportunity[] = [];
+  const warnings: string[] = [];
+  const feedStats = new Map<string, FeedRefreshStats>(
+    feeds.map((feed) => [
+      feed.id,
+      {
+        sourceId: feed.id,
+        organization: feed.organization,
+        attemptedPages: 0,
+        successfulPages: 0,
+        acceptedListings: 0
+      }
+    ])
+  );
+  const removedExpired = {
+    stale: 0,
+    duplicatesOrOverflow: 0
+  };
+
+  for (const feed of feeds) {
+    const stats = feedStats.get(feed.id);
+    if (!stats) throw new Error(`Missing refresh statistics for ${feed.id}.`);
+    for (let page = 1; page <= feed.pages; page += 1) {
+      stats.attemptedPages += 1;
+      try {
+        const xml = await fetchFeed(feed, page);
+        stats.successfulPages += 1;
+        for (const item of parseItems(xml)) {
+          if (!shouldInclude(item)) continue;
+          if (!isWithinActiveWindow(item)) {
+            removedExpired.stale += 1;
+            continue;
+          }
+          if (seen.has(item.link)) continue;
+          seen.add(item.link);
+          generated.push(toOpportunity(item, feed));
+          stats.acceptedListings += 1;
+        }
+      } catch (error) {
+        warnings.push(error instanceof Error ? error.message : `${feed.organization} page ${page}: unknown error`);
+      }
+    }
+  }
+
+  generated.sort((a, b) => new Date(a.startDate).getTime() - new Date(b.startDate).getTime());
+  const selected = generated.slice(0, maxLibraryOpportunities);
+  removedExpired.duplicatesOrOverflow = Math.max(0, generated.length - selected.length);
+  const refreshAssessment = evaluateLibraryRefreshHealth({
+    generatedAt: timestampNow(),
+    sources: Array.from(feedStats.values()),
+    acceptedListings: selected.length,
+    previousPublishedListings: previousPublishedLibraryCount(),
+    minimumPageSuccessRatio: numericEnv("GTA_MIN_LIBRARY_PAGE_SUCCESS_RATIO"),
+    minimumPerSourceSuccessRatio: numericEnv("GTA_MIN_LIBRARY_SOURCE_SUCCESS_RATIO"),
+    minimumOutputRatio: numericEnv("GTA_MIN_LIBRARY_OUTPUT_RATIO"),
+    minimumPublishedListings: numericEnv("GTA_MIN_LIBRARY_OPPORTUNITIES")
+  });
+
+  if (!refreshAssessment.healthy) {
+    console.error("Library refresh was rejected before generated files were written. The previous committed feed remains intact.");
+    for (const reason of refreshAssessment.health.failureReasons) console.error(`REJECTED: ${reason}`);
+    throw new Error("Library source health did not meet the publication policy.");
+  }
+
+  const output = `import type { LibrarySourceHealth } from "./refreshHealth";
+import type { Opportunity } from "./types";
+
+export const generatedLibraryOpportunities = ${JSON.stringify(selected, null, 2)} satisfies Opportunity[];
+
+export const generatedLibrarySourceHealth = ${JSON.stringify(refreshAssessment.health, null, 2)} satisfies LibrarySourceHealth;
+`;
+  writeFileSync("lib/generatedLibraryOpportunities.ts", output);
+
+  console.log(`Generated ${selected.length} source-backed library opportunities within ${lookaheadDays} days (max ${maxLibraryOpportunities}).`);
+  console.log(
+    `Source health: ${refreshAssessment.health.successfulPages}/${refreshAssessment.health.attemptedPages} pages (${(
+      refreshAssessment.health.pageSuccessRatio * 100
+    ).toFixed(1)}%), ${refreshAssessment.health.acceptedListings}/${refreshAssessment.health.minimumAcceptedListings} required listings.`
+  );
+  console.log(`Skipped stale/ended opportunities: ${removedExpired.stale}.`);
+  console.log(`Skipped duplicates/raw overflow: ${removedExpired.duplicatesOrOverflow}.`);
+  for (const warning of warnings) console.warn(`WARNING: ${warning}`);
+}
+
+main().catch((error) => {
+  console.error(error instanceof Error ? error.message : error);
+  process.exit(1);
+});

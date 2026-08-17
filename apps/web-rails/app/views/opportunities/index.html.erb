@@ -1,0 +1,52 @@
+<% content_for :title, "Opportunities | GTA FREE STEM" %>
+
+<section class="search-shell">
+  <div class="page-heading">
+    <p class="eyebrow">Browse the GTA database</p>
+    <h1>Free STEM Opportunities</h1>
+    <p>Search public listings. Accounts are only needed for saving, feedback, and missing-program submissions.</p>
+  </div>
+
+  <section class="toolbar-card">
+    <%= form_with url: opportunities_path, method: :get, class: "filter-toolbar" do |form| %>
+      <%= form.search_field :query, value: params[:query], placeholder: "Search title, provider, tag...", aria: { label: "Search listings" } %>
+      <%= form.select :region, options_for_select([ "All", "Toronto", "Peel", "York", "Durham", "Halton" ], params[:region]), {}, aria: { label: "Region" } %>
+      <%= form.select :category, options_for_select([ "All", "STEM", "Coding & Robotics", "Science & Engineering", "Makerspace & Fabrication", "Hackathons & Competitions", "Volunteer Hours", "Co-op & SHSM", "Career & Mentorship", "Youth Leadership" ], params[:category]), {}, aria: { label: "Category" } %>
+      <%= form.number_field :age, value: params[:age], min: 0, max: 99, placeholder: "Age", aria: { label: "Age" } %>
+      <%= form.submit "Refresh" %>
+    <% end %>
+    <div class="mini-status">
+      <span class="pulse-dot" aria-hidden="true"></span>
+      <span><%= number_with_delimiter(@active_count) %> visible</span>
+      <span><%= @last_checked.present? ? "Updated #{l(@last_checked.to_date, format: :medium)}" : "Ready for import" %></span>
+    </div>
+  </section>
+
+  <section class="results-layout">
+    <aside class="result-list" aria-label="Opportunity results">
+      <% @opportunities.each do |opportunity| %>
+        <%= link_to opportunity_path(opportunity), class: "opportunity-card" do %>
+          <span class="pill"><%= opportunity.category %></span>
+          <h2><%= opportunity.title %></h2>
+          <p><%= opportunity.organization %> · <%= opportunity.city %></p>
+          <small>
+            Ages <%= opportunity.age_min %><%= opportunity.age_max.present? ? "–#{opportunity.age_max}" : "+" %>
+            <% if opportunity.volunteer_hours_eligible? %> · Volunteer hours<% end %>
+            <% if opportunity.coop_eligible? %> · Co-op / SHSM<% end %>
+          </small>
+        <% end %>
+      <% end %>
+      <% if @opportunities.empty? %>
+        <div class="empty-state">No visible listings matched this search yet. Try a broader region, category, or age.</div>
+      <% end %>
+    </aside>
+
+    <section class="details-pane" aria-label="Selected opportunity preview">
+      <% if @selected %>
+        <%= render "opportunities/preview", opportunity: @selected %>
+      <% else %>
+        <div class="empty-state">Choose an opportunity to view details.</div>
+      <% end %>
+    </section>
+  </section>
+</section>

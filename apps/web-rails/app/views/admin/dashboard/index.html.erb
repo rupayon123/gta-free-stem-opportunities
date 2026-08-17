@@ -1,0 +1,20 @@
+<% content_for :title, "Admin Review | GTA FREE STEM" %>
+
+<section class="single-page">
+  <article class="content-card">
+    <h1>Admin Review</h1>
+    <p>Review opportunities, submissions, feedback, crawler logs, and listings that need attention.</p>
+    <div class="feature-grid">
+      <div><strong><%= @needs_review.count %></strong><span>Needs review shown</span></div>
+      <div><strong><%= @expired.count %></strong><span>Expired shown</span></div>
+      <div><strong><%= @feedback.count %></strong><span>New feedback</span></div>
+      <div><strong><%= @missing_submissions.count %></strong><span>Missing submissions</span></div>
+    </div>
+  </article>
+  <article class="content-card">
+    <h2>Needs Review</h2>
+    <% @needs_review.each do |opportunity| %>
+      <p><strong><%= opportunity.title %></strong> · <%= opportunity.organization %> · <%= opportunity.city %></p>
+    <% end %>
+  </article>
+</section>

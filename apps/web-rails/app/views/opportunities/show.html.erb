@@ -1,0 +1,17 @@
+<% content_for :title, "#{@opportunity.title} | GTA FREE STEM" %>
+
+<section class="single-page">
+  <%= render "opportunities/preview", opportunity: @opportunity %>
+  <article class="content-card">
+    <h2>Full Details</h2>
+    <p><%= @opportunity.description %></p>
+    <h3>Access Notes</h3>
+    <ul>
+      <% @opportunity.accessibility.each do |item| %>
+        <li><%= item %></li>
+      <% end %>
+    </ul>
+    <h3>Source Proof</h3>
+    <p><%= @opportunity.free_status_proof.presence || "Imported from a public community source for admin review." %></p>
+  </article>
+</section>

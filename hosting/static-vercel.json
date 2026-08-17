@@ -1,0 +1,107 @@
+{
+  "rewrites": [
+    {
+      "source": "/opportunities",
+      "destination": "/opportunities.html"
+    },
+    {
+      "source": "/opportunities/",
+      "destination": "/opportunities.html"
+    },
+    {
+      "source": "/high-school",
+      "destination": "/high-school.html"
+    },
+    {
+      "source": "/high-school/",
+      "destination": "/high-school.html"
+    },
+    {
+      "source": "/volunteer-hours",
+      "destination": "/volunteer-hours.html"
+    },
+    {
+      "source": "/volunteer-hours/",
+      "destination": "/volunteer-hours.html"
+    },
+    {
+      "source": "/coop-shsm",
+      "destination": "/coop-shsm.html"
+    },
+    {
+      "source": "/coop-shsm/",
+      "destination": "/coop-shsm.html"
+    },
+    {
+      "source": "/accessibility-support",
+      "destination": "/accessibility-support.html"
+    },
+    {
+      "source": "/accessibility-support/",
+      "destination": "/accessibility-support.html"
+    },
+    {
+      "source": "/privacy",
+      "destination": "/privacy.html"
+    },
+    {
+      "source": "/privacy/",
+      "destination": "/privacy.html"
+    },
+    {
+      "source": "/terms",
+      "destination": "/terms.html"
+    },
+    {
+      "source": "/terms/",
+      "destination": "/terms.html"
+    },
+    {
+      "source": "/support",
+      "destination": "/support.html"
+    },
+    {
+      "source": "/support/",
+      "destination": "/support.html"
+    },
+    {
+      "source": "/community-hosts",
+      "destination": "/community-hosts.html"
+    },
+    {
+      "source": "/community-hosts/",
+      "destination": "/community-hosts.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://tiles.openfreemap.org https://*.openfreemap.org; img-src 'self' data: blob: https://tiles.openfreemap.org https://*.openfreemap.org; font-src 'self' data: https://*.openfreemap.org; connect-src 'self' https://*.supabase.co wss://*.supabase.co https://tiles.openfreemap.org https://*.openfreemap.org; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "geolocation=(self), camera=(), microphone=(), payment=(), usb=(), accelerometer=(), gyroscope=(), magnetometer=(), interest-cohort=()"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=63072000; includeSubDomains; preload"
+        }
+      ]
+    }
+  ]
+}

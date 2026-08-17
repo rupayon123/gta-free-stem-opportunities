@@ -1,0 +1,961 @@
+import { generatedLibraryOpportunities } from "./generatedLibraryOpportunities";
+import { generatedDiscoveryReviewCandidates } from "./generatedDiscoveryReview";
+import type { DiscoveredOpportunity } from "./discovery";
+import type { Category, LanguageCode, Opportunity, Region, ReviewItem } from "./types";
+import { isOpportunityDateExpired, isOpportunityVerificationStale } from "./opportunityStatus";
+
+const now = new Date();
+export const curatedVerificationMaximumAgeDays = 14;
+
+export const regions: Region[] = ["Toronto", "Peel", "York", "Durham", "Halton"];
+
+type SeedOpportunity = Omit<
+  Opportunity,
+  | "organization"
+  | "description"
+  | "category"
+  | "ageMin"
+  | "ageMax"
+  | "language"
+  | "cost"
+  | "sourceUrl"
+  | "lastChecked"
+  | "lastSeen"
+  | "status"
+> & {
+  status?: Opportunity["status"];
+};
+
+export const categories: Category[] = [
+  "STEM",
+  "Coding & Robotics",
+  "Science & Engineering",
+  "AI & Digital Media",
+  "Makerspace & Fabrication",
+  "Camps",
+  "Hackathons & Competitions",
+  "Career & Mentorship",
+  "Scholarships",
+  "Newcomer & Settlement",
+  "Family Learning",
+  "Arts & Media",
+  "Family STEM",
+  "Volunteer Hours",
+  "Co-op & SHSM",
+  "Youth Leadership"
+];
+
+export const cityOptions = [
+  "Ajax",
+  "Aurora",
+  "Brampton",
+  "Burlington",
+  "Clarington",
+  "Halton Hills",
+  "Markham",
+  "Milton",
+  "Mississauga",
+  "Newmarket",
+  "Oakville",
+  "Oshawa",
+  "Pickering",
+  "Richmond Hill",
+  "Toronto",
+  "Vaughan",
+  "Whitby"
+];
+
+export const gtaFsaCentres: Record<string, { label: string; latitude: number; longitude: number }> = {
+  M1B: { label: "Scarborough", latitude: 43.8067, longitude: -79.1944 },
+  M2N: { label: "North York", latitude: 43.7615, longitude: -79.4111 },
+  M4B: { label: "East York", latitude: 43.7064, longitude: -79.3099 },
+  M5T: { label: "Downtown Toronto", latitude: 43.6532, longitude: -79.3972 },
+  M6H: { label: "West Toronto", latitude: 43.669, longitude: -79.4423 },
+  M9W: { label: "North Etobicoke", latitude: 43.7284, longitude: -79.5797 },
+  L3R: { label: "Markham", latitude: 43.8561, longitude: -79.337 },
+  L3T: { label: "Thornhill", latitude: 43.8167, longitude: -79.4244 },
+  L4B: { label: "Richmond Hill", latitude: 43.8414, longitude: -79.3991 },
+  L4K: { label: "Vaughan", latitude: 43.827, longitude: -79.536 },
+  L5B: { label: "Mississauga", latitude: 43.589, longitude: -79.6441 },
+  L5N: { label: "Meadowvale", latitude: 43.5904, longitude: -79.7283 },
+  L6P: { label: "Brampton", latitude: 43.7735, longitude: -79.6534 },
+  L1S: { label: "Ajax", latitude: 43.8509, longitude: -79.0204 },
+  L1T: { label: "Ajax North", latitude: 43.8769, longitude: -79.043 },
+  L1V: { label: "Pickering", latitude: 43.839, longitude: -79.087 },
+  L1G: { label: "Oshawa", latitude: 43.8971, longitude: -78.8658 },
+  L1N: { label: "Whitby", latitude: 43.8975, longitude: -78.9429 },
+  L6H: { label: "Oakville", latitude: 43.4675, longitude: -79.6877 },
+  L7L: { label: "Burlington", latitude: 43.3795, longitude: -79.7626 }
+};
+
+const gtaCityCentres: Record<string, { latitude: number; longitude: number }> = {
+  Ajax: { latitude: 43.8509, longitude: -79.0204 },
+  Aurora: { latitude: 44.0065, longitude: -79.4504 },
+  Brampton: { latitude: 43.7315, longitude: -79.7624 },
+  Burlington: { latitude: 43.3255, longitude: -79.799 },
+  Clarington: { latitude: 43.935, longitude: -78.608 },
+  "Halton Hills": { latitude: 43.6306, longitude: -79.9512 },
+  Markham: { latitude: 43.8561, longitude: -79.337 },
+  Milton: { latitude: 43.5183, longitude: -79.8774 },
+  Mississauga: { latitude: 43.589, longitude: -79.6441 },
+  Newmarket: { latitude: 44.0592, longitude: -79.4613 },
+  Oakville: { latitude: 43.4675, longitude: -79.6877 },
+  Oshawa: { latitude: 43.8971, longitude: -78.8658 },
+  Pickering: { latitude: 43.839, longitude: -79.087 },
+  "Richmond Hill": { latitude: 43.8828, longitude: -79.4403 },
+  Toronto: { latitude: 43.6532, longitude: -79.3832 },
+  Vaughan: { latitude: 43.8372, longitude: -79.5083 },
+  Whitby: { latitude: 43.8975, longitude: -78.9429 }
+};
+
+const regionCentres: Record<Region, { latitude: number; longitude: number }> = {
+  Toronto: gtaCityCentres.Toronto,
+  Peel: gtaCityCentres.Mississauga,
+  York: gtaCityCentres.Markham,
+  Durham: gtaCityCentres.Oshawa,
+  Halton: gtaCityCentres.Oakville
+};
+
+function centreForDiscovery(candidate: DiscoveredOpportunity) {
+  return gtaCityCentres[candidate.city] ?? regionCentres[candidate.region];
+}
+
+function gradesForAges(ageMin: number, ageMax?: number) {
+  const max = ageMax ?? 18;
+  if (ageMin >= 18) return ["18+"];
+  if (max <= 5) return ["Pre-K", "K"];
+  const grades: string[] = [];
+  const firstGrade = Math.max(1, ageMin - 5);
+  const lastGrade = Math.min(12, Math.max(firstGrade, max - 5));
+  for (let grade = firstGrade; grade <= lastGrade; grade += 1) grades.push(String(grade));
+  if (max >= 18) grades.push("18+");
+  return grades;
+}
+
+function typeForDiscovery(candidate: DiscoveredOpportunity): Opportunity["type"] {
+  const text = `${candidate.title} ${candidate.description} ${candidate.tags.join(" ")}`.toLowerCase();
+  if (candidate.category === "Volunteer Hours" || text.includes("volunteer")) return "Volunteer role";
+  if (candidate.category === "Co-op & SHSM" || text.includes("co-op") || text.includes("shsm")) return "Co-op opportunity";
+  if (candidate.category === "Hackathons & Competitions" || text.includes("hackathon") || text.includes("competition")) {
+    return "Competition or hackathon";
+  }
+  if (candidate.category === "Camps" || text.includes("camp")) return "Camp";
+  if (candidate.category === "Career & Mentorship" || text.includes("mentor")) return "Mentorship";
+  return "Drop-in";
+}
+
+function discoveryCandidateToOpportunity(candidate: DiscoveredOpportunity): Opportunity {
+  const centre = centreForDiscovery(candidate);
+  const dateNeedsCheck = candidate.reviewReasons.some((reason) =>
+    reason.toLowerCase().includes("no clear future date")
+  );
+  const candidateTags = Array.from(new Set([...candidate.tags, "new find", dateNeedsCheck ? "date-to-confirm" : "source-review"]));
+  const volunteerHoursEligible =
+    candidate.category === "Volunteer Hours" ||
+    candidateTags.some((tag) => tag.toLowerCase().includes("volunteer"));
+  const coopEligible = candidateTags.some((tag) => {
+    const lower = tag.toLowerCase();
+    return lower.includes("co-op") || lower.includes("shsm") || lower.includes("placement");
+  });
+  const sourceConfidence = candidate.confidence === "needs_review" ? "needs-review" : candidate.confidence;
+
+  return {
+    id: candidate.id,
+    title: candidate.title,
+    organization: candidate.organization,
+    provider: candidate.organization,
+    description: candidate.description,
+    summary: candidate.description,
+    type: typeForDiscovery(candidate),
+    category: candidate.category,
+    categories: candidate.category === "STEM" ? ["STEM"] : [candidate.category, "STEM"],
+    communityFocus: ["Open to all", "Newcomer-friendly"],
+    city: candidate.city,
+    region: candidate.region,
+    address: `${candidate.city}, ${candidate.region}`,
+    latitude: centre.latitude,
+    longitude: centre.longitude,
+    virtual: candidate.tags.some((tag) => tag.toLowerCase().includes("online")),
+    startDate: candidate.startDate,
+    endDate: candidate.endDate,
+    deadline: candidate.deadline,
+    ageMin: candidate.ageMin,
+    ageMax: candidate.ageMax,
+    ages: { min: candidate.ageMin, max: candidate.ageMax },
+    grades: gradesForAges(candidate.ageMin, candidate.ageMax),
+    language: candidate.language,
+    languages: candidate.language,
+    cost: candidate.cost,
+    sourceUrl: candidate.sourceUrl,
+    lastChecked: candidate.lastChecked,
+    lastSeen: candidate.lastSeen,
+    status: candidate.status,
+    accessibility: ["Check the source link for current access details."],
+    equipment: "Check the source link for supplies or equipment.",
+    food: "No food listed.",
+    capacity: "Check the source link for current availability.",
+    commitment: dateNeedsCheck ? "Check the source link for current dates and times." : "Check the source link for schedule details.",
+    registrationUrl: candidate.sourceUrl,
+    providerContact: candidate.sourceUrl,
+    freeStatusProof: "Found from a public opportunity source; free access should be checked on the source page.",
+    lastVerified: candidate.lastChecked,
+    trustedSource: candidate.confidence === "high",
+    volunteerHoursEligible,
+    coopEligible,
+    paidPosition: false,
+    tags: candidateTags,
+    sources: [
+      {
+        label: candidate.sourceName,
+        url: candidate.sourceUrl,
+        capturedAt: `${candidate.lastChecked}T09:00:00-04:00`,
+        confidence: sourceConfidence
+      }
+    ],
+    adminAuditTrail: [
+      {
+        label: "Found by source scan",
+        at: `${candidate.lastChecked}T09:00:00-04:00`,
+        actor: "Discovery job",
+        detail: candidate.reviewReasons.join(" ") || "Public source matched the GTA free opportunity search."
+      }
+    ]
+  };
+}
+
+const seedOpportunities: SeedOpportunity[] = [
+  {
+    id: "tpl-stem-programming-forest-hill-2026-06-04",
+    title: "STEM Programming For Children",
+    provider: "Toronto Public Library",
+    summary: "After-school robotics and snap circuit activities for school-age children at Forest Hill Branch.",
+    type: "One-time event",
+    categories: ["STEM", "Coding & Robotics", "Science & Engineering"],
+    communityFocus: ["Open to all", "Newcomer-friendly", "Disability-inclusive"],
+    city: "Toronto",
+    region: "Toronto",
+    address: "Forest Hill Branch, 700 Eglinton Avenue West, Toronto, ON M5N 1B9",
+    latitude: 43.7042,
+    longitude: -79.4215,
+    virtual: false,
+    startDate: "2026-06-04T15:45:00-04:00",
+    endDate: "2026-06-04T16:45:00-04:00",
+    deadline: "2026-06-04T15:45:00-04:00",
+    ages: { min: 6, max: 12 },
+    grades: ["1", "2", "3", "4", "5", "6", "7"],
+    languages: ["en"],
+    accessibility: ["Accessibility services available on request", "Transit nearby"],
+    equipment: "Library robotics and circuit materials provided.",
+    food: "No food listed.",
+    capacity: "Registration required; source page listed remaining seats when verified.",
+    commitment: "One hour.",
+    registrationUrl: "https://tpl.bibliocommons.com/v2/events/69d825bf4dacf581ff87bc0b",
+    providerContact: "416-397-5981",
+    freeStatusProof: "Official Toronto Public Library event page with registration and no fee listed.",
+    lastVerified: "2026-05-26",
+    trustedSource: true,
+    volunteerHoursEligible: false,
+    coopEligible: false,
+    paidPosition: false,
+    tags: ["robotics", "snap circuits", "library", "children"],
+    sources: [
+      {
+        label: "Official Toronto Public Library event page",
+        url: "https://tpl.bibliocommons.com/v2/events/69d825bf4dacf581ff87bc0b",
+        capturedAt: "2026-05-26T12:00:00-04:00",
+        confidence: "high"
+      }
+    ],
+    adminAuditTrail: [
+      {
+        label: "Verified source",
+        at: "2026-05-26T12:00:00-04:00",
+        actor: "Reviewer",
+        detail: "Official library event page includes date, age group, location, accessibility note, and registration status."
+      }
+    ]
+  },
+  {
+    id: "tpl-coding-python-online-2026-06-02",
+    title: "Coding with Python I",
+    provider: "Toronto Public Library",
+    summary: "Online beginner Python class for teens and adults covering variables, loops, conditionals, and setup instructions.",
+    type: "One-time event",
+    categories: ["STEM", "Coding & Robotics", "Career & Mentorship"],
+    communityFocus: ["Open to all", "Newcomer-friendly", "Disability-inclusive"],
+    city: "Toronto",
+    region: "Toronto",
+    address: "Online event hosted by Toronto Public Library",
+    latitude: 43.6532,
+    longitude: -79.3832,
+    virtual: true,
+    startDate: "2026-06-02T18:00:00-04:00",
+    endDate: "2026-06-02T20:00:00-04:00",
+    deadline: "2026-06-02T18:00:00-04:00",
+    ages: { min: 13 },
+    grades: ["8", "9", "10", "11", "12", "18+"],
+    languages: ["en"],
+    accessibility: ["Online event", "Accessibility services available on request"],
+    equipment: "Personal computer required; source says Python and VS Code installation guides are provided after registration.",
+    food: "Not applicable.",
+    capacity: "Registration required.",
+    commitment: "Two hours.",
+    registrationUrl: "https://tpl.bibliocommons.com/v2/events/69fa1734e8af4a2f0070505b",
+    providerContact: "dihonline@tpl.ca",
+    freeStatusProof: "Official Toronto Public Library online event page with no fee listed.",
+    lastVerified: "2026-05-26",
+    trustedSource: true,
+    volunteerHoursEligible: false,
+    coopEligible: false,
+    paidPosition: false,
+    tags: ["python", "online", "teens", "adults", "coding"],
+    sources: [
+      {
+        label: "Official Toronto Public Library event page",
+        url: "https://tpl.bibliocommons.com/v2/events/69fa1734e8af4a2f0070505b",
+        capturedAt: "2026-05-26T12:10:00-04:00",
+        confidence: "high"
+      }
+    ],
+    adminAuditTrail: [
+      {
+        label: "Verified source",
+        at: "2026-05-26T12:10:00-04:00",
+        actor: "Reviewer",
+        detail: "Official source confirms online format, registration, teen/adult audience, and program description."
+      }
+    ]
+  },
+  {
+    id: "tpl-animation-piskel-kids-2026-06-03",
+    title: "Animation with Piskel for Kids",
+    provider: "Toronto Public Library",
+    summary: "Kids ages 9 to 12 learn pixel art and game-sprite animation using Piskel at Armour Heights Branch.",
+    type: "One-time event",
+    categories: ["AI & Digital Media", "Makerspace & Fabrication", "STEM"],
+    communityFocus: ["Open to all", "Disability-inclusive"],
+    city: "Toronto",
+    region: "Toronto",
+    address: "Armour Heights Branch, 2140 Avenue Road, Toronto, ON M5M 4M7",
+    latitude: 43.7389,
+    longitude: -79.4216,
+    virtual: false,
+    startDate: "2026-06-03T16:00:00-04:00",
+    endDate: "2026-06-03T17:00:00-04:00",
+    deadline: "2026-06-03T16:00:00-04:00",
+    ages: { min: 9, max: 12 },
+    grades: ["4", "5", "6", "7"],
+    languages: ["en"],
+    accessibility: ["Accessibility services available on request", "Transit nearby"],
+    equipment: "Library computers and Piskel access provided.",
+    food: "No food listed.",
+    capacity: "Registration required; source page listed remaining seats when verified.",
+    commitment: "One hour.",
+    registrationUrl: "https://tpl.bibliocommons.com/v2/events/69f6057c2866a5b4884c34ee",
+    providerContact: "416-395-5430",
+    freeStatusProof: "Official Toronto Public Library event page with registration and no fee listed.",
+    lastVerified: "2026-05-26",
+    trustedSource: true,
+    volunteerHoursEligible: false,
+    coopEligible: false,
+    paidPosition: false,
+    tags: ["animation", "pixel art", "game sprites", "digital media"],
+    sources: [
+      {
+        label: "Official Toronto Public Library event page",
+        url: "https://tpl.bibliocommons.com/v2/events/69f6057c2866a5b4884c34ee",
+        capturedAt: "2026-05-26T12:15:00-04:00",
+        confidence: "high"
+      }
+    ],
+    adminAuditTrail: [
+      {
+        label: "Verified source",
+        at: "2026-05-26T12:15:00-04:00",
+        actor: "Reviewer",
+        detail: "Official source confirms date, age range, branch address, and activity description."
+      }
+    ]
+  },
+  {
+    id: "tpl-introduction-arduino-2026-06-04",
+    title: "Introduction to Arduino",
+    provider: "Toronto Public Library",
+    summary: "Teens and adults learn how an Arduino microcontroller can be coded to interact with electronics and circuits.",
+    type: "One-time event",
+    categories: ["STEM", "Coding & Robotics", "Science & Engineering"],
+    communityFocus: ["Open to all", "Disability-inclusive"],
+    city: "Toronto",
+    region: "Toronto",
+    address: "Jane/Sheppard Branch, 1906 Sheppard Avenue West, Toronto, ON M3L 1Y7",
+    latitude: 43.739,
+    longitude: -79.5128,
+    virtual: false,
+    startDate: "2026-06-04T13:00:00-04:00",
+    endDate: "2026-06-04T15:00:00-04:00",
+    deadline: "2026-06-04T13:00:00-04:00",
+    ages: { min: 13 },
+    grades: ["8", "9", "10", "11", "12", "18+"],
+    languages: ["en"],
+    accessibility: ["Accessibility services available on request", "Transit nearby"],
+    equipment: "Arduino and electronics materials provided by the library.",
+    food: "No food listed.",
+    capacity: "Registration required; source page listed remaining seats when verified.",
+    commitment: "Two hours.",
+    registrationUrl: "https://tpl.bibliocommons.com/v2/events/69fb7806177319280017d91b",
+    providerContact: "416-395-5966",
+    freeStatusProof: "Official Toronto Public Library event page with registration and no fee listed.",
+    lastVerified: "2026-05-26",
+    trustedSource: true,
+    volunteerHoursEligible: false,
+    coopEligible: false,
+    paidPosition: false,
+    tags: ["arduino", "circuits", "electronics", "microcontroller"],
+    sources: [
+      {
+        label: "Official Toronto Public Library event page",
+        url: "https://tpl.bibliocommons.com/v2/events/69fb7806177319280017d91b",
+        capturedAt: "2026-05-26T12:20:00-04:00",
+        confidence: "high"
+      }
+    ],
+    adminAuditTrail: [
+      {
+        label: "Verified source",
+        at: "2026-05-26T12:20:00-04:00",
+        actor: "Reviewer",
+        detail: "Official source confirms teen/adult audience, date, branch address, and electronics description."
+      }
+    ]
+  },
+  {
+    id: "markham-mini-makers-thornhill-village-2026-05-31",
+    title: "Mini-Makers",
+    provider: "Markham Public Library",
+    summary: "Drop-in STEAM hour with hands-on activities and creative LEGO builds for children and families.",
+    type: "Drop-in",
+    categories: ["STEM", "Family STEM", "Makerspace & Fabrication"],
+    communityFocus: ["Open to all", "Newcomer-friendly"],
+    city: "Markham",
+    region: "York",
+    address: "Thornhill Village Branch, 10 Colborne Street, Thornhill, ON L3T 1Z6",
+    latitude: 43.8167,
+    longitude: -79.4244,
+    virtual: false,
+    startDate: "2026-05-31T14:00:00-04:00",
+    endDate: "2026-05-31T15:00:00-04:00",
+    ages: { min: 4, max: 12 },
+    grades: ["JK", "SK", "1", "2", "3", "4", "5", "6", "7"],
+    languages: ["en"],
+    accessibility: ["Library branch access", "Caregivers welcome"],
+    equipment: "Materials available while supplies last.",
+    food: "No food listed.",
+    capacity: "Drop in; materials available while supplies last.",
+    commitment: "One hour.",
+    registrationUrl: "https://markham.bibliocommons.com/events/68fbe1952edc686d00f5c968",
+    providerContact: "905-513-7977",
+    freeStatusProof: "Official Markham Public Library event page and calendar with no fee listed.",
+    lastVerified: "2026-05-26",
+    trustedSource: true,
+    volunteerHoursEligible: false,
+    coopEligible: false,
+    paidPosition: false,
+    tags: ["steam", "lego", "families", "drop-in", "library"],
+    sources: [
+      {
+        label: "Official Markham Public Library event page",
+        url: "https://markham.bibliocommons.com/events/68fbe1952edc686d00f5c968",
+        capturedAt: "2026-05-26T12:30:00-04:00",
+        confidence: "high"
+      },
+      {
+        label: "Official Markham Public Library event series calendar",
+        url: "https://markham.bibliocommons.com/v2/events?series=68fbe194e59a13000d3e1ec3",
+        capturedAt: "2026-05-26T12:30:00-04:00",
+        confidence: "high"
+      }
+    ],
+    adminAuditTrail: [
+      {
+        label: "Verified source",
+        at: "2026-05-26T12:30:00-04:00",
+        actor: "Reviewer",
+        detail: "Official event page confirms description, branch, children audience, STEAM type, and language."
+      }
+    ]
+  },
+  {
+    id: "whitby-girls-in-stem-2026-05-27",
+    title: "Girls in STEM",
+    provider: "Whitby Public Library",
+    summary:
+      "Girls and non-binary students in grades 4 to 6 explore how electricity moves from a nuclear power plant into homes.",
+    type: "One-time event",
+    categories: ["STEM", "Science & Engineering", "Career & Mentorship"],
+    communityFocus: ["Girls/women-focused", "Open to all"],
+    city: "Whitby",
+    region: "Durham",
+    address: "Central Library, 405 Dundas Street West, Whitby, ON L1N 6A1",
+    latitude: 43.8791,
+    longitude: -78.9444,
+    virtual: false,
+    startDate: "2026-05-27T18:30:00-04:00",
+    endDate: "2026-05-27T19:30:00-04:00",
+    ages: { min: 9, max: 12 },
+    grades: ["4", "5", "6"],
+    languages: ["en"],
+    accessibility: ["Library branch access", "Registration required"],
+    equipment: "Hands-on program materials provided.",
+    food: "No food listed.",
+    capacity: "Registration required.",
+    commitment: "One hour.",
+    registrationUrl: "https://whitbylibrary.ca/sites/default/files/images/WPL-PG-Spring-2026_FINAL.pdf",
+    providerContact: "905-668-6531",
+    freeStatusProof: "Official Whitby Public Library Spring 2026 program guide lists this library program with registration required and no fee shown.",
+    lastVerified: "2026-05-26",
+    trustedSource: true,
+    volunteerHoursEligible: false,
+    coopEligible: false,
+    paidPosition: false,
+    tags: ["girls in STEM", "engineering", "electricity", "nuclear", "library"],
+    sources: [
+      {
+        label: "Official Whitby Public Library Spring 2026 program guide",
+        url: "https://whitbylibrary.ca/sites/default/files/images/WPL-PG-Spring-2026_FINAL.pdf",
+        capturedAt: "2026-05-26T12:40:00-04:00",
+        confidence: "high"
+      },
+      {
+        label: "Whitby Public Library programs page",
+        url: "https://whitbylibrary.ca/programs",
+        capturedAt: "2026-05-26T12:40:00-04:00",
+        confidence: "high"
+      }
+    ],
+    adminAuditTrail: [
+      {
+        label: "Verified source",
+        at: "2026-05-26T12:40:00-04:00",
+        actor: "Reviewer",
+        detail: "Official program guide confirms grades, topic, date, location, and registration requirement."
+      }
+    ]
+  },
+  {
+    id: "cvc-conservation-youth-corps-2026",
+    title: "Conservation Youth Corps",
+    provider: "Credit Valley Conservation",
+    summary:
+      "Five-day outdoor environmental stewardship program where teens work with CVC staff and can earn up to 35 volunteer hours.",
+    type: "Volunteer role",
+    categories: ["Volunteer Hours", "Science & Engineering", "Youth Leadership"],
+    communityFocus: ["Open to all", "Newcomer-friendly"],
+    city: "Mississauga",
+    region: "Peel",
+    address: "CVC watershed pickup/drop-off locations selected during registration, Mississauga, ON",
+    latitude: 43.5904,
+    longitude: -79.7283,
+    virtual: false,
+    startDate: "2026-07-06T08:00:00-04:00",
+    endDate: "2026-08-28T15:00:00-04:00",
+    ages: { min: 14, max: 18 },
+    grades: ["9", "10", "11", "12"],
+    languages: ["en"],
+    accessibility: ["Outdoor stewardship sites", "Supervised by CVC staff", "Pickup/drop-off selected during registration"],
+    equipment: "Outdoor clothing and closed-toe shoes likely needed; check CVC instructions after registration.",
+    food: "Bring lunch and water unless CVC instructions say otherwise.",
+    capacity: "First come basis according to official source.",
+    commitment: "Five weekdays plus online AODA training.",
+    registrationUrl: "https://cvc.ca/for-teens/conservation-youth-corps-cyc/",
+    providerContact: "https://cvc.ca/contact/",
+    freeStatusProof: "Official CVC youth program page describes volunteering and earning hours; no application or participation fee shown.",
+    lastVerified: "2026-08-06",
+    trustedSource: true,
+    volunteerHoursEligible: true,
+    coopEligible: false,
+    paidPosition: false,
+    tags: ["volunteer hours", "environment", "stewardship", "data collection", "field work"],
+    sources: [
+      {
+        label: "Official Credit Valley Conservation CYC page",
+        url: "https://cvc.ca/for-teens/conservation-youth-corps-cyc/",
+        capturedAt: "2026-08-06T09:00:00-04:00",
+        confidence: "high"
+      }
+    ],
+    adminAuditTrail: [
+      {
+        label: "Verified source",
+        at: "2026-08-06T09:00:00-04:00",
+        actor: "Reviewer",
+        detail: "Official source confirms summer 2026 registration is open, ages 14 to 18, returning-to-school eligibility, a free program, and up to 35 volunteer hours."
+      }
+    ]
+  },
+  {
+    id: "trca-conservation-youth-corps-peel-2026",
+    title: "TRCA Conservation Youth Corps - Peel Region",
+    provider: "Toronto and Region Conservation Authority",
+    summary:
+      "Peel Region high school students volunteer for a July or August conservation project week and can earn community service hours.",
+    type: "Volunteer role",
+    categories: ["Volunteer Hours", "Science & Engineering", "Youth Leadership"],
+    communityFocus: ["Open to all", "Newcomer-friendly"],
+    city: "Brampton",
+    region: "Peel",
+    address: "Peel Region pickup/drop-off locations selected through TRCA registration",
+    latitude: 43.7315,
+    longitude: -79.7624,
+    virtual: false,
+    startDate: "2026-07-06T08:00:00-04:00",
+    endDate: "2026-08-28T15:00:00-04:00",
+    ages: { min: 14, max: 18 },
+    grades: ["9", "10", "11", "12"],
+    languages: ["en"],
+    accessibility: ["Outdoor stewardship sites", "High-school return requirement", "Peel Region program"],
+    equipment: "Outdoor clothing likely needed; confirm with TRCA registration instructions.",
+    food: "Bring lunch and water unless TRCA instructions say otherwise.",
+    capacity: "Program slots vary by selected week and site.",
+    commitment: "One week in July or August.",
+    registrationUrl: "https://trca.ca/get-involved/conservation-youth-corps/",
+    providerContact: "https://trca.ca/about/contact-us/",
+    freeStatusProof: "Official TRCA page describes a volunteer program to earn community service hours; no fee shown.",
+    lastVerified: "2026-08-06",
+    trustedSource: true,
+    volunteerHoursEligible: true,
+    coopEligible: false,
+    paidPosition: false,
+    tags: ["volunteer hours", "conservation", "Peel", "restoration", "field work"],
+    sources: [
+      {
+        label: "Official TRCA Conservation Youth Corps page",
+        url: "https://trca.ca/get-involved/conservation-youth-corps/",
+        capturedAt: "2026-08-06T09:10:00-04:00",
+        confidence: "high"
+      }
+    ],
+    adminAuditTrail: [
+      {
+        label: "Verified source",
+        at: "2026-08-06T09:10:00-04:00",
+        actor: "Reviewer",
+        detail: "Official source confirms current July and August 2026 Peel programs, high school eligibility, and up to 30 community service hours."
+      }
+    ]
+  },
+  {
+    id: "pact-grow-to-learn-volunteer-hours-2026",
+    title: "Grow-to-Learn Garden Student Volunteer Hours",
+    provider: "PACT Urban Peace Program",
+    summary:
+      "High school students can volunteer in school gardens, support urban agriculture, and earn student volunteer hours.",
+    type: "Volunteer role",
+    categories: ["Volunteer Hours", "Science & Engineering", "Co-op & SHSM", "Youth Leadership"],
+    communityFocus: ["Open to all", "Low-income priority", "Newcomer-friendly"],
+    city: "Toronto",
+    region: "Toronto",
+    address: "John Polanyi CI and Thistletown Collegiate Institute garden sites, Toronto, ON",
+    latitude: 43.7166,
+    longitude: -79.4438,
+    virtual: false,
+    startDate: "2026-05-28T15:30:00-04:00",
+    endDate: "2026-08-27T16:30:00-04:00",
+    ages: { min: 14, max: 18 },
+    grades: ["9", "10", "11", "12"],
+    languages: ["en"],
+    accessibility: ["Outdoor school garden sites", "Student volunteer hours listed by provider"],
+    equipment: "Outdoor clothing and garden-safe shoes recommended.",
+    food: "No food listed.",
+    capacity: "Contact PACT for availability and sign-up.",
+    commitment: "Tuesdays and Thursdays, 3:30pm to 4:30pm at listed student volunteer sites.",
+    registrationUrl: "https://www.pactprogram.ca/volunteer-opportunities",
+    providerContact: "madison@pactprogram.ca or tcigarden@pactprogram.ca",
+    freeStatusProof: "Official PACT volunteer page lists student volunteer hours and sign-up contact; no fee shown.",
+    lastVerified: "2026-08-06",
+    trustedSource: true,
+    volunteerHoursEligible: true,
+    coopEligible: true,
+    paidPosition: false,
+    tags: ["volunteer hours", "co-op", "shsm", "urban agriculture", "sustainability"],
+    sources: [
+      {
+        label: "Official PACT volunteer opportunities page",
+        url: "https://www.pactprogram.ca/volunteer-opportunities",
+        capturedAt: "2026-08-06T09:20:00-04:00",
+        confidence: "high"
+      },
+      {
+        label: "Official PACT Grow-to-Learn page",
+        url: "https://www.pactprogram.ca/about-gtl",
+        capturedAt: "2026-08-06T09:20:00-04:00",
+        confidence: "high"
+      }
+    ],
+    adminAuditTrail: [
+      {
+        label: "Verified source",
+        at: "2026-08-06T09:20:00-04:00",
+        actor: "Reviewer",
+        detail: "Official source confirms student volunteer hours, garden locations, recurring time, and contact emails."
+      }
+    ]
+  },
+  {
+    id: "oakville-youth-library-leaders-2026",
+    title: "Youth Library Leaders",
+    provider: "Oakville Public Library",
+    summary:
+      "Teen volunteer leadership program where high school students help shape library services, plan events, and earn volunteer hours.",
+    type: "Youth leadership",
+    categories: ["Volunteer Hours", "Youth Leadership", "Career & Mentorship"],
+    communityFocus: ["Open to all", "Newcomer-friendly"],
+    city: "Oakville",
+    region: "Halton",
+    address: "Various Oakville Public Library branches, Oakville, ON",
+    latitude: 43.4675,
+    longitude: -79.6877,
+    virtual: false,
+    startDate: "2026-08-01T09:00:00-04:00",
+    endDate: "2027-05-31T20:00:00-04:00",
+    status: "needs_review",
+    ages: { min: 14, max: 18 },
+    grades: ["9", "10", "11", "12"],
+    languages: ["en"],
+    accessibility: ["Various library branches", "Monthly meetings", "Applications reopen once a year"],
+    equipment: "No special equipment listed.",
+    food: "No food listed.",
+    capacity: "Official source lists 30 spots for the annual program.",
+    commitment: "Monthly two-hour meetings from September to May plus project time.",
+    registrationUrl: "https://opl.ca/about-opl/volunteer/youth-library-leaders",
+    providerContact: "https://opl.ca/contact-us",
+    freeStatusProof: "Official Oakville Public Library volunteer page describes volunteer hours and no fee shown.",
+    lastVerified: "2026-08-06",
+    trustedSource: true,
+    volunteerHoursEligible: true,
+    coopEligible: false,
+    paidPosition: false,
+    tags: ["volunteer hours", "library", "leadership", "digital literacy", "events"],
+    sources: [
+      {
+        label: "Official Oakville Public Library Youth Library Leaders page",
+        url: "https://opl.ca/about-opl/volunteer/youth-library-leaders",
+        capturedAt: "2026-08-06T09:30:00-04:00",
+        confidence: "high"
+      },
+      {
+        label: "Official Oakville Public Library volunteer page",
+        url: "https://opl.ca/about-opl/volunteer",
+        capturedAt: "2026-08-06T09:30:00-04:00",
+        confidence: "high"
+      }
+    ],
+    adminAuditTrail: [
+      {
+        label: "Verified source",
+        at: "2026-08-06T09:30:00-04:00",
+        actor: "Reviewer",
+        detail: "Official source confirms the annual teen program but still says the prior season is closed and to check again in August 2026; quarantine until a current application is actually available."
+      }
+    ]
+  },
+  {
+    id: "afro-canadian-applied-stem-beyond-barriers-2026",
+    title: "Applied STEM Beyond Barriers",
+    provider: "Afro Canadian Development Inc.",
+    summary:
+      "The free February-to-June 2026 applied STEM cohort for underserved children and youth has completed.",
+    type: "Multi-week program",
+    categories: ["STEM", "Coding & Robotics", "Makerspace & Fabrication", "AI & Digital Media"],
+    communityFocus: ["Black-focused", "Open to all", "Low-income priority"],
+    city: "Toronto",
+    region: "Toronto",
+    address: "Toronto, ON - registration details provided by Afro Canadian Development Inc.",
+    latitude: 43.6532,
+    longitude: -79.3832,
+    virtual: false,
+    startDate: "2026-02-01T17:00:00-05:00",
+    endDate: "2026-06-30T23:59:00-04:00",
+    status: "expired",
+    ages: { min: 6, max: 13 },
+    grades: ["1", "2", "3", "4", "5", "6", "7", "8"],
+    languages: ["en"],
+    accessibility: ["Cost-barrier removal stated by provider"],
+    equipment: "Program materials are part of the applied STEM sessions.",
+    food: "No food listed.",
+    capacity: "The February-to-June 2026 cohort is closed.",
+    commitment: "The February-to-June 2026 cohort has completed.",
+    registrationUrl: "https://afrocanadiandevelopment.org/stem-program/",
+    providerContact: "info@afrocanadiandevelopment.org, 416-638-8525",
+    freeStatusProof:
+      "Official provider announcement calls it a free STEM program and says cost is never a barrier to participation.",
+    lastVerified: "2026-08-06",
+    trustedSource: true,
+    volunteerHoursEligible: false,
+    coopEligible: false,
+    paidPosition: false,
+    tags: ["Black youth", "coding", "robotics", "3D printing", "microcontrollers"],
+    sources: [
+      {
+        label: "Official Afro Canadian Development announcement",
+        url:
+          "https://afrocanadiandevelopment.org/2026/01/09/afro-canadian-development-inc-announces-2026-cohort-of-applied-stem-beyond-barriers-empowering-children-and-youth-from-underserved-communities/",
+        capturedAt: "2026-08-06T09:40:00-04:00",
+        confidence: "high"
+      },
+      {
+        label: "Official provider completion announcement",
+        url:
+          "https://afrocanadiandevelopment.org/2026/07/03/afro-canadian-development-inc-celebrates-the-successful-completion-of-the-february-june-2026-applied-stem-beyond-barriers-program-empowering-the-next-generation-of-innovators/",
+        capturedAt: "2026-08-06T09:40:00-04:00",
+        confidence: "high"
+      }
+    ],
+    adminAuditTrail: [
+      {
+        label: "Verified source",
+        at: "2026-08-06T09:40:00-04:00",
+        actor: "Reviewer",
+        detail: "Official provider pages state registration is closed and the February-to-June 2026 cohort completed; archive it from public search."
+      }
+    ]
+  },
+  {
+    id: "ontario-science-centre-indigenous-celebration-2026",
+    title: "Indigenous Celebration 2026",
+    provider: "Ontario Science Centre",
+    summary:
+      "Free family-friendly event celebrating Indigenous ways of knowing through interactive workshops, performances, and activities at Evergreen Brick Works.",
+    type: "One-time event",
+    categories: ["STEM", "Family STEM", "Science & Engineering"],
+    communityFocus: ["Indigenous-focused", "Open to all"],
+    city: "Toronto",
+    region: "Toronto",
+    address: "Evergreen Brick Works, 550 Bayview Avenue, Toronto, ON M4W 3X8",
+    latitude: 43.6845,
+    longitude: -79.3655,
+    virtual: false,
+    startDate: "2026-06-06T09:00:00-04:00",
+    endDate: "2026-06-06T16:00:00-04:00",
+    ages: { min: 0 },
+    grades: ["Family", "All ages"],
+    languages: ["en"],
+    accessibility: ["Wheelchair accessible venue", "Transit accessible", "Free shuttle from Broadview Station"],
+    equipment: "No equipment required.",
+    food: "No food listed.",
+    capacity: "Registration encouraged but not required for entry.",
+    commitment: "Drop in during the 9am to 4pm event window.",
+    registrationUrl: "https://www.ontariosciencecentre.ca/whats-on/pop-ups-plus-events/indigenous-celebration-2026",
+    providerContact: "https://www.ontariosciencecentre.ca/contact-us",
+    freeStatusProof: "Official Ontario Science Centre event page calls it a free, family-friendly event.",
+    lastVerified: "2026-05-26",
+    trustedSource: true,
+    volunteerHoursEligible: false,
+    coopEligible: false,
+    paidPosition: false,
+    tags: ["Indigenous ways of knowing", "science centre", "workshops", "family"],
+    sources: [
+      {
+        label: "Official Ontario Science Centre event page",
+        url: "https://www.ontariosciencecentre.ca/whats-on/pop-ups-plus-events/indigenous-celebration-2026",
+        capturedAt: "2026-05-26T13:40:00-04:00",
+        confidence: "high"
+      }
+    ],
+    adminAuditTrail: [
+      {
+        label: "Verified source",
+        at: "2026-05-26T13:40:00-04:00",
+        actor: "Reviewer",
+        detail: "Official source confirms free event, Indigenous focus, venue, date, time, and accessibility notes."
+      }
+    ]
+  }
+];
+
+export const curatedOpportunityIds = seedOpportunities.map((opportunity) => opportunity.id);
+
+function applyLiveExpiration(opportunity: Opportunity): Opportunity {
+  if (!isOpportunityDateExpired(opportunity, now)) return opportunity;
+  return {
+    ...opportunity,
+    status: "expired",
+    freeStatusProof:
+      opportunity.freeStatusProof || "Opportunity date has passed; it is no longer shown in active search results."
+  };
+}
+
+export const opportunities: Opportunity[] = [
+  ...seedOpportunities.map((opportunity) => {
+    const declaredStatus = opportunity.status ?? "active";
+    const status =
+      declaredStatus === "active" &&
+      isOpportunityVerificationStale(opportunity.lastVerified, now, curatedVerificationMaximumAgeDays)
+        ? "needs_review"
+        : declaredStatus;
+
+    return {
+      ...opportunity,
+      organization: opportunity.provider,
+      description: opportunity.summary,
+      category: opportunity.categories[0],
+      ageMin: opportunity.ages.min,
+      ageMax: opportunity.ages.max,
+      language: opportunity.languages,
+      cost: "Free to join" as const,
+      sourceUrl: opportunity.sources[0]?.url ?? opportunity.registrationUrl,
+      lastChecked: opportunity.lastVerified,
+      lastSeen: opportunity.lastVerified,
+      status
+    };
+  }),
+  ...generatedLibraryOpportunities,
+  ...generatedDiscoveryReviewCandidates.map(discoveryCandidateToOpportunity)
+].map(applyLiveExpiration);
+
+export const reviewQueue: ReviewItem[] = [
+  {
+    id: "queue-unclear-cost-camp",
+    title: "Private summer robotics camp",
+    source: "Public calendar suggestion",
+    reason: "Looks STEM-related but has a tuition price, so it must stay out of public search.",
+    recommendedAction: "quarantine",
+    createdAt: "2026-05-26T10:10:00-04:00"
+  },
+  {
+    id: "queue-duplicate-library",
+    title: "TPL Arduino duplicate",
+    source: "Library calendar plus newsletter",
+    reason: "Likely duplicate of the official TPL Arduino listing. Needs merge review on the admin side.",
+    recommendedAction: "merge",
+    createdAt: "2026-05-26T11:35:00-04:00"
+  },
+  {
+    id: "queue-translation-needed",
+    title: "Girls in STEM translated summaries",
+    source: "Official library program guide",
+    reason: "Approved source, but community-reviewed Bengali, Japanese, and Korean summaries are pending.",
+    recommendedAction: "translate",
+    createdAt: "2026-05-26T12:00:00-04:00"
+  }
+];
+
+export const languagePreferenceOrder: LanguageCode[] = [
+  "en",
+  "fr",
+  "zh",
+  "yue",
+  "pa",
+  "ur",
+  "ta",
+  "tl",
+  "es",
+  "ar",
+  "fa",
+  "hi",
+  "pt",
+  "gu",
+  "bn",
+  "ja",
+  "ko",
+  "hu"
+];

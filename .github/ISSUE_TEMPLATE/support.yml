@@ -1,0 +1,47 @@
+name: App or website support
+description: Report a GTA FREE STEM problem, listing correction, accessibility concern, or privacy question.
+title: "[Support] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve GTA FREE STEM Opportunities. This issue is public. Never include passwords, login codes, precise location, home or school address, phone number, birth date, medical details, or a child's identity.
+  - type: dropdown
+    id: category
+    attributes:
+      label: What do you need help with?
+      options:
+        - Apple app problem
+        - Apple Watch problem
+        - Website problem
+        - Listing correction
+        - Accessibility concern
+        - Privacy question
+        - Other support
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: App or website version
+      description: For example, iPhone app 1.0 (12), or the date you used the website.
+  - type: input
+    id: device
+    attributes:
+      label: Device and operating system
+      description: Do not include a device serial number or other unique identifier.
+  - type: textarea
+    id: details
+    attributes:
+      label: What happened?
+      description: Explain the problem and the steps that caused it. For a listing correction, include the public provider source URL.
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Public-ticket privacy check
+      options:
+        - label: I confirm this public ticket contains no password, code, precise location, private address, child identity, or other sensitive personal information.
+          required: true
