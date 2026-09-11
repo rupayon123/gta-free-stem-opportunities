@@ -1,111 +1,34 @@
-# GTA FREE STEM Opportunities
+# GTA FREE STEM
+
+I'm building GTA FREE STEM to help students and families find free STEM programs across the Greater Toronto Area. This repository contains the website and the opportunity feed used by the native apps.
+
+[Open the website](https://gta-free-stem.vercel.app/) | [iOS app](https://github.com/rupayon123/gta-free-stem-ios) | [Android app](https://github.com/rupayon123/gta-free-stem-android)
 
 ## The web experience
 
-Find free STEM programs, compare source details, and explore opportunities on a map. [Open the live website](https://gta-free-stem.vercel.app).
-
-**Light and dark, screen by screen.** Select any screenshot to view the original at full size.
-
-### Start with discovery
-
-Search from the landing page or open the opportunity browser.
-
 <table>
-  <tr><th width="50%">Light</th><th width="50%">Dark</th></tr>
-  <tr>
-    <td align="center"><a href="docs/showcase/home-light.png"><img src="docs/showcase/home-light.png" alt="web start with discovery in light mode" width="440"></a></td>
-    <td align="center"><a href="docs/showcase/home-dark.png"><img src="docs/showcase/home-dark.png" alt="web start with discovery in dark mode" width="440"></a></td>
-  </tr>
+<tr><th width="50%">Home</th><th width="50%">Search</th></tr>
+<tr><td align="center"><a href="docs/showcase/home.png"><img src="docs/showcase/home.png" alt="Home" width="440"></a></td><td align="center"><a href="docs/showcase/search.png"><img src="docs/showcase/search.png" alt="Search" width="440"></a></td></tr>
+<tr><th>High School Search</th><th>Profile / Sign in</th></tr>
+<tr><td align="center"><a href="docs/showcase/hs-search.png"><img src="docs/showcase/hs-search.png" alt="High School Search" width="440"></a></td><td align="center"><a href="docs/showcase/profile.png"><img src="docs/showcase/profile.png" alt="Profile / Sign in" width="440"></a></td></tr>
 </table>
 
-### Browse and inspect programs
+## About the site
 
-Compare listings with provider information, dates, ages, and source links alongside the results.
+Browse programs by city, region, age, category, and language. The High School section covers volunteer hours, co-op, SHSM, mentorship, and career pathways. Listings include dates, provider information, source links, and a map where location data is available.
 
-<table>
-  <tr><th width="50%">Light</th><th width="50%">Dark</th></tr>
-  <tr>
-    <td align="center"><a href="docs/showcase/browse-light.png"><img src="docs/showcase/browse-light.png" alt="web browse and inspect programs in light mode" width="440"></a></td>
-    <td align="center"><a href="docs/showcase/browse-dark.png"><img src="docs/showcase/browse-dark.png" alt="web browse and inspect programs in dark mode" width="440"></a></td>
-  </tr>
-</table>
+You don't need an account to browse. The profile area currently shows the sign-in screen; production accounts still need Supabase Auth connected. Account-based saves, feedback, submissions, and admin review depend on that setup.
 
-### Narrow the search
+The site uses Next.js and TypeScript, with MapLibre and OpenFreeMap for maps. It builds as a static export.
 
-Choose a region, city, category, age, language, or distance in the filter panel.
-
-<table>
-  <tr><th width="50%">Light</th><th width="50%">Dark</th></tr>
-  <tr>
-    <td align="center"><a href="docs/showcase/filters-light.png"><img src="docs/showcase/filters-light.png" alt="web narrow the search in light mode" width="440"></a></td>
-    <td align="center"><a href="docs/showcase/filters-dark.png"><img src="docs/showcase/filters-dark.png" alt="web narrow the search in dark mode" width="440"></a></td>
-  </tr>
-</table>
-
-### Explore by location
-
-See program locations on the map while keeping the selected listing in view.
-
-<table>
-  <tr><th width="50%">Light</th><th width="50%">Dark</th></tr>
-  <tr>
-    <td align="center"><a href="docs/showcase/map-light.png"><img src="docs/showcase/map-light.png" alt="web explore by location in light mode" width="440"></a></td>
-    <td align="center"><a href="docs/showcase/map-dark.png"><img src="docs/showcase/map-dark.png" alt="web explore by location in dark mode" width="440"></a></td>
-  </tr>
-</table>
-
-Captured from the live website on September 11, 2026. [Capture details and original image checksums](docs/showcase/README.md).
-
----
-
-[![Next.js](https://img.shields.io/badge/Next.js-16-black)](https://nextjs.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)](https://www.typescriptlang.org/)
-[![Supabase Ready](https://img.shields.io/badge/Supabase-ready-3ecf8e)](https://supabase.com/)
-[![Static Export](https://img.shields.io/badge/hosting-static%20export-6aa9ff)](https://vercel.com/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-
-Public website for finding free and accessible STEM programs, library events, volunteer-hour opportunities, co-op/SHSM pathways, mentorship, hackathons, and youth leadership opportunities across the Greater Toronto Area.
-
-Live site: [gta-free-stem.vercel.app](https://gta-free-stem.vercel.app)
-
-Companion iOS app: [rupayon123/gta-free-stem-ios](https://github.com/rupayon123/gta-free-stem-ios)
-
-This project is open source so other cities can fork it, replace the region/source data, and launch their own free-learning opportunity finder.
-
-## What Is Included
-
-- Static Next.js website with TypeScript.
-- Public browsing without an account.
-- Search by city, region, age, category, language, volunteer hours, co-op/SHSM, mentorship, leadership, and focused community supports.
-- List and map discovery using MapLibre and OpenFreeMap.
-- Supabase-ready accounts, saved opportunities, feedback, missing-program submissions, announcements, and admin review.
-- Source-backed opportunity data from public GTA library, community, conservation, nonprofit, and education sources.
-- Scheduled refresh workflow for rebuilding public listing data from trusted sources.
-- High-school pathway pages for volunteer hours, co-op/SHSM, mentorship, leadership, and career exploration.
-- Accessibility, support, privacy-policy, terms-of-use, and community-host pages.
-- Light/dark themes, multilingual interface, keyboard-accessible controls, and plain-language listing details.
-
-## Repo Layout
-
-- `app/` - Next.js app routes.
-- `components/` - website UI components.
-- `lib/` - opportunity data, search/filter logic, Supabase client, and shared types.
-- `scripts/` - source refresh, data export, QA, and Supabase utility scripts.
-- `supabase/` - beta database schema.
-- `docs/` - setup, deployment, crawler, traffic, and release planning notes.
-- `apps/web-rails/` - Rails backend prototype for future API/admin work.
-- `public/` - static assets, sitemap, robots file, manifests, and verification files.
-
-## Run For Development
+## Run locally
 
 ```bash
 npm ci
 npm run dev
 ```
 
-Local development is only for private checks. Do not share localhost, local servers, or temporary tunnel URLs as the public website.
-
-## Build And Deploy
+To check and build the site:
 
 ```bash
 npm run typecheck
@@ -113,36 +36,24 @@ npm run qa
 npm run build
 ```
 
-The static export is written to `out/` and can be hosted on Vercel Hobby or Cloudflare Pages at zero out-of-pocket cost.
+The static site is written to `out/`. Vercel uses the repository's `vercel.json`; Cloudflare Pages deployment is available through `npm run deploy:pages`.
 
-Cloudflare Pages:
+## Accounts
 
-```bash
-npm run deploy:pages
-```
-
-Vercel uses `vercel.json` and serves the generated static export.
-
-## Supabase Setup
-
-Supabase is optional for browsing and required for production accounts, saves, feedback, submissions, and admin review.
-
-Required public env vars:
+Supabase is optional for public browsing. To connect account features, configure:
 
 ```bash
 NEXT_PUBLIC_SUPABASE_URL=
 NEXT_PUBLIC_SUPABASE_ANON_KEY=
 ```
 
-Never commit Supabase service-role keys, OAuth secrets, deploy tokens, database passwords, or private API keys.
+Use `npm run supabase:check` to check the connection. Keep service-role keys, passwords, OAuth secrets, and deployment tokens out of the repository. Admin permissions must be enforced by database rules.
 
-Verify the connection:
+## Opportunity data
 
-```bash
-npm run supabase:check
-```
+Listings come from public library, community, nonprofit, conservation, and education sources. Public search includes active listings with current or future dates. Expired and unreviewed finds stay out of the public results.
 
-## Opportunity Refresh
+The [refresh workflow](.github/workflows/refresh-opportunities.yml) collects updates, checks source health, and runs QA and build checks before committing listing data. The native apps read the exported public feed in `public/opportunities.json`.
 
 ```bash
 npm run discover
@@ -151,33 +62,28 @@ npm run discover:sql
 npm run generate:library
 ```
 
-Public search and the app feed include only `active` listings with a current or future date window. Expired, hidden, and `needs_review` records (including `date-to-confirm` discoveries) stay in the review queue until a reviewer confirms them. The scheduled workflow commits accepted refreshes, so Git history preserves an audit archive without sending expired records to every device.
+Generated translations are browsing summaries, not fully reviewed translations of every provider's content.
 
-The canonical scheduled workflow is [`.github/workflows/refresh-opportunities.yml`](.github/workflows/refresh-opportunities.yml); `docs/refresh-opportunities-workflow.yml` is its exact documented copy. The workflow uses the tracked npm lockfile, audits production dependencies, rejects materially degraded source refreshes before generated files are written, runs QA/build checks, and commits updated static listing files only after those gates pass. The public feed exposes non-sensitive `sourceHealth` counters so the website and app can tell whether the last committed refresh was healthy.
+## Project layout
 
-The public feed export adds generated summary translations, localized category metadata, and localized cost metadata for every non-English launch language under each listing's `translations` payload. These are free, deterministic browsing summaries built from listing metadata. Full public-release content translation still needs reviewed translated titles, organization names, addresses, source-specific tags, and richer descriptions before every dynamic field can be considered fully translated.
+- `app/`: routes and pages.
+- `components/`: interface components.
+- `lib/`: search, filters, data types, and Supabase client.
+- `scripts/`: feed refresh and build tools.
+- `supabase/`: database schema.
+- `public/`: feed and static assets.
+- `docs/`: setup and deployment notes.
 
-## Security And Privacy
+## Privacy and support
 
-- Browsing requires no account.
-- Saving requires an account once production auth is connected.
-- Browser location is optional and session-only.
-- Public privacy policy route: `/privacy/`.
-- Public terms route: `/terms/`.
-- Public support route: `/support/`; its current zero-cost ticket flow is public, so sensitive information must never be posted there.
-- Public listing pages show source details, not internal admin audit logs.
-- Supabase admin access must be controlled by database rules, not client-side fields.
-- `.env`, `.env.*`, `.vercel`, `.next`, `out`, local artifacts, and build output are ignored by git.
-- Under-13 account storage should stay disabled until a parent-consent/legal compliance flow exists.
+Location is optional and session-only. The public support flow is public, so don't include private or sensitive information. Under-13 account storage should remain disabled until a parent-consent flow is in place.
 
-## Reuse For Another City
+[Privacy policy](https://gta-free-stem.vercel.app/privacy/) | [Terms](https://gta-free-stem.vercel.app/terms/) | [Support](https://gta-free-stem.vercel.app/support/)
 
-1. Fork the repo.
-2. Replace the city/region data and public source list.
-3. Update metadata, sitemap, and deployment name.
-4. Connect a free Supabase project if accounts or admin review are needed.
-5. Deploy the static export to Vercel Hobby or Cloudflare Pages.
+## Make it work for your city
+
+Fork the project, replace the regions and source list, update the site metadata, and deploy the static export. Connect Supabase if you need accounts or admin review.
 
 ## License
 
-MIT. Use it, adapt it, and improve access to free learning opportunities in more communities.
+[MIT](LICENSE) for the site's source and documentation. Program descriptions and third-party names and materials belong to their respective owners.
