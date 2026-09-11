@@ -1,50 +1,64 @@
 # GTA FREE STEM Opportunities
 
-## Across iOS, Android, and the web
+## The web experience
 
-Find your next free STEM opportunity in the Greater Toronto Area.
+Find free STEM programs, compare source details, and explore opportunities on a map. [Open the live website](https://gta-free-stem.vercel.app).
 
-[Explore the live website](https://gta-free-stem.vercel.app) &nbsp; · &nbsp; [iOS source](https://github.com/rupayon123/gta-free-stem-ios) &nbsp; · &nbsp; [Android source](https://github.com/rupayon123/gta-free-stem-android) &nbsp; · &nbsp; [Web source](https://github.com/rupayon123/gta-free-stem-opportunities)
+**Light and dark, screen by screen.** Select any screenshot to view the original at full size.
 
-### Discover on the web
+### Start with discovery
 
-<a href="https://gta-free-stem.vercel.app"><img src="docs/showcase/web-home.png" alt="GTA FREE STEM live website with its illustrated STEM logo, program search, and opportunity discovery actions" width="960"></a>
-
-### Native experiences on your phone
+Search from the landing page or open the opportunity browser.
 
 <table>
+  <tr><th width="50%">Light</th><th width="50%">Dark</th></tr>
   <tr>
-    <th width="50%">iOS · SwiftUI</th>
-    <th width="50%">Android · Jetpack Compose</th>
-  </tr>
-  <tr>
-    <td align="center"><img src="docs/showcase/ios-home.png" alt="GTA FREE STEM iOS home screen with search, high-school discovery, and native bottom navigation" width="280"></td>
-    <td align="center"><img src="docs/showcase/android-home.png" alt="GTA FREE STEM Android home screen with pathway filters and a loaded Mini-Makers opportunity card" width="280"></td>
-  </tr>
-  <tr>
-    <td align="center">Search and explore with a native iPhone interface.</td>
-    <td align="center">Browse opportunities with Android-native navigation.</td>
+    <td align="center"><a href="docs/showcase/home-light.png"><img src="docs/showcase/home-light.png" alt="web start with discovery in light mode" width="440"></a></td>
+    <td align="center"><a href="docs/showcase/home-dark.png"><img src="docs/showcase/home-dark.png" alt="web start with discovery in dark mode" width="440"></a></td>
   </tr>
 </table>
 
-<details>
-<summary><strong>Take a closer look: program details and web browsing</strong></summary>
+### Browse and inspect programs
 
-### iOS program details
+Compare listings with provider information, dates, ages, and source links alongside the results.
 
-<img src="docs/showcase/ios-detail.png" alt="iOS Mini-Makers detail screen showing the program's map, provider, category, and description" width="320">
+<table>
+  <tr><th width="50%">Light</th><th width="50%">Dark</th></tr>
+  <tr>
+    <td align="center"><a href="docs/showcase/browse-light.png"><img src="docs/showcase/browse-light.png" alt="web browse and inspect programs in light mode" width="440"></a></td>
+    <td align="center"><a href="docs/showcase/browse-dark.png"><img src="docs/showcase/browse-dark.png" alt="web browse and inspect programs in dark mode" width="440"></a></td>
+  </tr>
+</table>
 
-### Web opportunity browser
+### Narrow the search
 
-<img src="docs/showcase/web-browse.png" alt="Live web opportunity browser with listings, program details, source links, and map preview" width="960">
+Choose a region, city, category, age, language, or distance in the filter panel.
 
-</details>
+<table>
+  <tr><th width="50%">Light</th><th width="50%">Dark</th></tr>
+  <tr>
+    <td align="center"><a href="docs/showcase/filters-light.png"><img src="docs/showcase/filters-light.png" alt="web narrow the search in light mode" width="440"></a></td>
+    <td align="center"><a href="docs/showcase/filters-dark.png"><img src="docs/showcase/filters-dark.png" alt="web narrow the search in dark mode" width="440"></a></td>
+  </tr>
+</table>
 
-<sub>Actual running screens captured on a Mac on September 11, 2026. Phone images show simulator/emulator builds; the web images show the live site. [Capture notes](docs/showcase/README.md).</sub>
+### Explore by location
+
+See program locations on the map while keeping the selected listing in view.
+
+<table>
+  <tr><th width="50%">Light</th><th width="50%">Dark</th></tr>
+  <tr>
+    <td align="center"><a href="docs/showcase/map-light.png"><img src="docs/showcase/map-light.png" alt="web explore by location in light mode" width="440"></a></td>
+    <td align="center"><a href="docs/showcase/map-dark.png"><img src="docs/showcase/map-dark.png" alt="web explore by location in dark mode" width="440"></a></td>
+  </tr>
+</table>
+
+Captured from the live website on September 11, 2026. [Capture details and original image checksums](docs/showcase/README.md).
 
 ---
 
-[![Next.js](https://img.shields.io/badge/Next.js-16-black)](https://nextjs.org/)
+[Next.js](https://img.shields.io/badge/Next.js-16-black)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)](https://www.typescriptlang.org/)
 [![Supabase Ready](https://img.shields.io/badge/Supabase-ready-3ecf8e)](https://supabase.com/)
 [![Static Export](https://img.shields.io/badge/hosting-static%20export-6aa9ff)](https://vercel.com/)

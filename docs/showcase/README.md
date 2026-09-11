@@ -1,29 +1,20 @@
-# Product screenshot capture notes
+# The web experience - screenshot provenance
 
-Captured on September 11, 2026 on the project owner's Mac. These are unaltered runtime captures, not generated mockups or app-store release screenshots.
+Captured from https://gta-free-stem.vercel.app/ in a desktop browser on the owner's Mac. The website's own Light and Dark controls were used. The capture sequence covers the landing page, loaded opportunity results and details, the filter dialog, and the map view. All screenshots use the same 1280 by 720 viewport. These are live-site observations, not a deployment of the local working tree. Availability and listing counts change over time.
 
-| Asset | Capture source | Observed state |
-| --- | --- | --- |
-| ios-home.png | iOS 26.5 Simulator, installed GTA FREE STEM 1.0 (12) | Home and search; the screen explicitly reports an offline backup dated August 20, 2026. |
-| ios-detail.png | Same iOS app and simulator | Opened Mini-Makers details with a rendered Apple Maps preview. |
-| android-home.png | Android API 36 emulator, GTA FREE STEM 1.1.0 (3), existing local debug APK | Home with a loaded Mini-Makers listing. |
-| web-home.png | https://gta-free-stem.vercel.app/ in the Mac's Codex browser | Live landing page. |
-| web-browse.png | Same live website | Opportunity browser with listing and provider details. |
+Captured September 11, 2026. These are unaltered app/page screenshots with original status bars and source attribution retained. No generated mockups, recolored screens, or fabricated listing data. Theme pairs use the same screen and comparable framing. This gallery contains only this repository's platform.
 
-The Android APK SHA-256 was 1b3cd8345d2ca05efac72ed7d104149b409a2041c23202379529f9f1a8dd25d7. The installed iOS app and Android APK were existing local builds; their exact source commits were not established. These images document the observed interfaces, not a rebuild of the latest source or full functional verification. Listing counts and content can differ between cached native data and the live website.
+The screen captures are product documentation, not comprehensive functional or release evidence. Provider information and map content remain subject to their original owners' rights.
 
-The Android emulator's first boot displayed a System UI startup warning. After an emulator restart, the app opened and loaded the listing shown in the published capture. The warning and loading-state captures were not published.
-
-Screenshots contain only the app or webpage, without the Mac desktop, unrelated windows, or account details. Original pixels and platform status bars are retained. No sample data was inserted or UI labels retouched. Provider content and map attribution remain owned by their respective sources.
-
-This documentation update does not assert App Store or Google Play availability, physical-device signoff, or completion of release gates. See each repository's existing release documentation for distribution status.
-
-## Original image checksums
+## SHA-256
 
 ```text
-d93d35848e1978f7e3f6097252ed2c970287032eef7b11dda0e877577d6b4178  web-home.png
-ea29e08eb847ba0e50630dcd224fe591be88a138772396d1b6234f4f0378c3d8  web-browse.png
-b3a93ba00e1ff575c31df10fb2c9820576ec942c3aea06ee48672134693754db  ios-home.png
-a0be035c4e24349579624ac7691ff727f1327044a3279a01b32c5f04b9ca2be5  ios-detail.png
-2c7e7b8d483c1786eb43b50f3c1a9ed1e1fb0cc5b836bf3b053e88368b07f344  android-home.png
+fffca6d3ec813b1ebca70265c064621612844480c66a96151ac5bc7ae5a9f3fa  home-light.png
+0bc674d5e6d3bcbac1e4b044d44cee92f89c116cf7a633d1ef65613dc0f34543  home-dark.png
+7a31df6c60816ccfa04dff86967081c4e15bb2993b350987a2c925f85e4a5ca4  browse-light.png
+9bff07675906c57768848a411e495238cc7b022ef626f0d46bfe83c29454dcbd  browse-dark.png
+885740a0822512185dd550e7c5bdd98d1c3ee971c74485e82c45679635c9e5be  filters-light.png
+02fac39f2b84812ed476d08fdd1b8e391f87335b02a1e2886944a3c87b3dda9a  filters-dark.png
+827706e659a8edf5fb2b6c8686d500fb37dd57fdbc25f70f9c45a363db068a9e  map-light.png
+f58ad5dcafe98cad7da5a820cdd3c820a27b20f8b5be66f238c3449a1d7e1222  map-dark.png
 ```
