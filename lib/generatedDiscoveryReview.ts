@@ -4,8 +4,8 @@ export const generatedDiscoverySummary = {
   "mode": "deterministic",
   "sourcesChecked": 30,
   "candidatesFound": 276,
-  "newCandidates": 48,
-  "duplicatesSkipped": 57,
+  "newCandidates": 47,
+  "duplicatesSkipped": 52,
   "warnings": [
     "Could not check Credit Valley Conservation youth opportunities: 403 Forbidden.",
     "Could not check Volunteer MBC youth opportunities: 403 Forbidden.",
@@ -14,7 +14,7 @@ export const generatedDiscoverySummary = {
   ],
   "sourceHealth": {
     "schemaVersion": 1,
-    "generatedAt": "2026-09-11T20:29:53.039Z",
+    "generatedAt": "2026-09-11T20:59:57.714Z",
     "status": "healthy",
     "failureReasons": [],
     "sourcesChecked": 30,
@@ -26,37 +26,6 @@ export const generatedDiscoverySummary = {
 } as const;
 
 export const generatedDiscoveryReviewCandidates = [
-  {
-    "id": "discovered-tpl-events-stem-lego-spike-robotics-for-kids-c2927b70a0e7",
-    "title": "Lego SPIKE Robotics for Kids",
-    "organization": "Toronto Public Library",
-    "description": "Ages 9-12 Dive into hands-on STEM fun by building and coding interactive LEGO SPIKE models. Working in teams, children 9-12 will solve exciting challenges and bring their creations to life! Information Collection Notice: The personal information on this form is collected by the Toronto Public Library under the Public Libraries Act, sections 20(a), 20(c), and 20(d). The information will only be used for event and program registration, delivery and evaluation. Questions about how the library handles your information can be directed to Answerline staff at answerline@tpl.ca , 416-397-5981, 789 Yonge Street, Toronto ON M4W 2G8.",
-    "city": "Toronto",
-    "region": "Toronto",
-    "ageMin": 9,
-    "ageMax": 12,
-    "category": "Coding & Robotics",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "deadline": "2026-09-11T15:30:00-04:00",
-    "startDate": "2026-09-11T15:30:00-04:00",
-    "endDate": "2026-09-11T16:30:00-04:00",
-    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6a909e5058433600542b8fe4",
-    "lastChecked": "2026-09-11",
-    "lastSeen": "2026-09-11",
-    "status": "active",
-    "tags": [
-      "coding & robotics",
-      "stem",
-      "coding",
-      "robotics"
-    ],
-    "confidence": "high",
-    "reviewReasons": [],
-    "sourceName": "Toronto Public Library events"
-  },
   {
     "id": "discovered-tpl-events-volunteer-set-phasers-to-celebrate-60-years-of-star--4ed8324a47c8",
     "title": "Set Phasers to Celebrate! 60 Years of Star Trek: A Merril Collection Exhibit",
