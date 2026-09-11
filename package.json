@@ -30,13 +30,16 @@
     "supabase:check": "tsx scripts/check-supabase.ts",
     "supabase:seed": "tsx scripts/export-supabase-seed.ts",
     "qa": "tsx scripts/qa-check.ts",
-    "deploy:pages": "npm run build && npx --yes wrangler pages deploy out --project-name=gta-free-stem"
+    "deploy:pages": "npm run build && npx --yes wrangler pages deploy out --project-name=gta-free-stem",
+    "prepare:map": "tsx scripts/prepare-map-assets.ts",
+    "predev": "npm run prepare:map",
+    "prebuild": "npm run prepare:map"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.107.0",
     "lucide-react": "^1.16.0",
-    "maplibre-gl": "^5.24.0",
-    "next": "^16.3.0",
+    "maplibre-gl": "^6.4.1",
+    "next": "^16.3.3",
     "react": "^19.2.6",
     "react-dom": "^19.2.6"
   },
@@ -50,6 +53,6 @@
   "overrides": {
     "esbuild": "^0.28.1",
     "postcss": "^8.5.25",
-    "sharp": "^0.35.3"
+    "sharp": "^0.35.4"
   }
 }

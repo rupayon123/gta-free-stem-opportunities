@@ -1803,6 +1803,7 @@ function MapPanel({
       if (!mapContainer.current || mapRef.current) return;
       const maplibregl = await import("maplibre-gl");
       if (cancelled || !mapContainer.current) return;
+      maplibregl.setWorkerUrl("/vendor/maplibre/maplibre-gl-worker.mjs");
       mapRef.current = new maplibregl.Map({
         container: mapContainer.current,
         style: "https://tiles.openfreemap.org/styles/liberty",

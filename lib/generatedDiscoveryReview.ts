@@ -3,54 +3,80 @@ import type { DiscoveredOpportunity } from "./discovery";
 export const generatedDiscoverySummary = {
   "mode": "deterministic",
   "sourcesChecked": 30,
-  "candidatesFound": 270,
-  "newCandidates": 52,
-  "duplicatesSkipped": 38,
+  "candidatesFound": 340,
+  "newCandidates": 69,
+  "duplicatesSkipped": 82,
   "warnings": [
-    "Could not check Credit Valley Conservation youth opportunities: 403 Forbidden.",
-    "Could not check Volunteer MBC youth opportunities: 403 Forbidden.",
-    "Could not check Eventbrite free science and technology events: 405 Not Allowed.",
-    "Could not check Eventbrite free online science and technology events: 405 Not Allowed."
+    "Could not check Halton Hills Public Library programs: fetch failed."
   ],
   "sourceHealth": {
     "schemaVersion": 1,
-    "generatedAt": "2026-08-17T18:58:55.666Z",
+    "generatedAt": "2026-09-11T20:20:59.074Z",
     "status": "healthy",
     "failureReasons": [],
     "sourcesChecked": 30,
-    "successfulSources": 26,
-    "failedSources": 4,
-    "sourceSuccessRatio": 0.8667,
+    "successfulSources": 29,
+    "failedSources": 1,
+    "sourceSuccessRatio": 0.9667,
     "minimumSourceSuccessRatio": 0.75
   }
 } as const;
 
 export const generatedDiscoveryReviewCandidates = [
   {
-    "id": "discovered-tpl-events-volunteer-summer-camp-for-newcomer-youth-42d7f394f001",
-    "title": "Summer Camp for Newcomer Youth",
+    "id": "discovered-tpl-events-stem-lego-spike-robotics-for-kids-c2927b70a0e7",
+    "title": "Lego SPIKE Robotics for Kids",
     "organization": "Toronto Public Library",
-    "description": "Join our free Summer Camp for newcomer youth ages 14-18. Participants should expect: Art and creative activities, Employment workshops, Field trips and volunteer hours. Snacks, refreshments and Lunch are provided. Questions? Contact Nasim: 647-332-5711 or email nzand@nych.ca In partnership with Immigration, Refugees and Citizenship Canada, North York Community House & Toronto Public Library. North York Community House is solely responsible for the protection of personal information collected through the program registration process.",
+    "description": "Ages 9-12 Dive into hands-on STEM fun by building and coding interactive LEGO SPIKE models. Working in teams, children 9-12 will solve exciting challenges and bring their creations to life! Information Collection Notice: The personal information on this form is collected by the Toronto Public Library under the Public Libraries Act, sections 20(a), 20(c), and 20(d). The information will only be used for event and program registration, delivery and evaluation. Questions about how the library handles your information can be directed to Answerline staff at answerline@tpl.ca , 416-397-5981, 789 Yonge Street, Toronto ON M4W 2G8.",
     "city": "Toronto",
     "region": "Toronto",
-    "ageMin": 14,
-    "ageMax": 18,
-    "category": "Volunteer Hours",
+    "ageMin": 9,
+    "ageMax": 12,
+    "category": "Coding & Robotics",
     "cost": "Free to join",
     "language": [
       "en"
     ],
-    "deadline": "2026-07-13T09:30:00-04:00",
-    "startDate": "2026-07-13T09:30:00-04:00",
-    "endDate": "2026-08-21T15:00:00-04:00",
-    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6a676290c7e02e3d006bed48",
-    "lastChecked": "2026-08-17",
-    "lastSeen": "2026-08-17",
+    "deadline": "2026-09-11T15:30:00-04:00",
+    "startDate": "2026-09-11T15:30:00-04:00",
+    "endDate": "2026-09-11T16:30:00-04:00",
+    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6a909e5058433600542b8fe4",
+    "lastChecked": "2026-09-11",
+    "lastSeen": "2026-09-11",
     "status": "active",
     "tags": [
-      "volunteer hours",
-      "volunteer",
-      "youth"
+      "coding & robotics",
+      "stem",
+      "coding",
+      "robotics"
+    ],
+    "confidence": "high",
+    "reviewReasons": [],
+    "sourceName": "Toronto Public Library events"
+  },
+  {
+    "id": "discovered-tpl-events-volunteer-set-phasers-to-celebrate-60-years-of-star--4ed8324a47c8",
+    "title": "Set Phasers to Celebrate! 60 Years of Star Trek: A Merril Collection Exhibit",
+    "organization": "Toronto Public Library",
+    "description": "Beam yourself up to the Merril Collection of Science Fiction, Speculation and Fantasy and boldly embark on a 60-year journey that celebrates all things Star Trek! For decades, the original television series turned global franchise has inspired generations of fans, artists, and scientists alike. Visitors can explore voyages, characters, and new frontiers through our collection highlights such as novels, RPGs, fanzines, original artwork and more! This exhibit can be viewed during the Merril Collection's regular open hours.",
+    "city": "Toronto",
+    "region": "Toronto",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "Science & Engineering",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "deadline": "2026-08-17T09:00:00-04:00",
+    "startDate": "2026-08-17T09:00:00-04:00",
+    "endDate": "2026-11-01T09:00:00-04:00",
+    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6a875a463b6c71003e5a39be",
+    "lastChecked": "2026-09-11",
+    "lastSeen": "2026-09-11",
+    "status": "active",
+    "tags": [
+      "science & engineering"
     ],
     "confidence": "high",
     "reviewReasons": [],
@@ -70,10 +96,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-08-17T09:00:00-04:00",
+    "startDate": "2026-09-11T09:00:00-04:00",
     "sourceUrl": "https://www.vaughanpl.info/volunteer",
-    "lastChecked": "2026-08-17",
-    "lastSeen": "2026-08-17",
+    "lastChecked": "2026-09-11",
+    "lastSeen": "2026-09-11",
     "status": "needs_review",
     "tags": [
       "volunteer hours",
@@ -86,55 +112,26 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Vaughan Public Libraries programs"
   },
   {
-    "id": "discovered-vaughan-library-programs-steam-camps-a329039c210e",
-    "title": "STEAM Camps",
+    "id": "discovered-vaughan-library-programs-volunteering-vpl-93f28ddcf896",
+    "title": "Volunteering @ VPL",
     "organization": "Vaughan Public Libraries",
-    "description": "STEAM Camps listed by Vaughan Public Libraries programs.",
+    "description": "Volunteering @ VPL listed by Vaughan Public Libraries programs.",
     "city": "Vaughan",
     "region": "York",
     "ageMin": 1,
     "ageMax": 18,
-    "category": "Science & Engineering",
+    "category": "Volunteer Hours",
     "cost": "Free to join",
     "language": [
       "en"
     ],
-    "startDate": "2026-08-17T09:00:00-04:00",
-    "sourceUrl": "https://www.vaughanpl.info/programs/category/40",
-    "lastChecked": "2026-08-17",
-    "lastSeen": "2026-08-17",
+    "startDate": "2026-09-11T09:00:00-04:00",
+    "sourceUrl": "https://www.vaughanpl.info/programs/view/4058",
+    "lastChecked": "2026-09-11",
+    "lastSeen": "2026-09-11",
     "status": "needs_review",
     "tags": [
-      "science & engineering"
-    ],
-    "confidence": "high",
-    "reviewReasons": [
-      "No clear future date found on the crawled page."
-    ],
-    "sourceName": "Vaughan Public Libraries programs"
-  },
-  {
-    "id": "discovered-vaughan-library-programs-coding-buddies-5aee8640a30f",
-    "title": "Coding Buddies",
-    "organization": "Vaughan Public Libraries",
-    "description": "Coding Buddies listed by Vaughan Public Libraries programs.",
-    "city": "Vaughan",
-    "region": "York",
-    "ageMin": 1,
-    "ageMax": 18,
-    "category": "Coding & Robotics",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-08-17T09:00:00-04:00",
-    "sourceUrl": "https://www.vaughanpl.info/programs/view/3085",
-    "lastChecked": "2026-08-17",
-    "lastSeen": "2026-08-17",
-    "status": "needs_review",
-    "tags": [
-      "coding & robotics",
-      "coding"
+      "volunteer hours"
     ],
     "confidence": "high",
     "reviewReasons": [
@@ -156,10 +153,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-08-17T09:00:00-04:00",
+    "startDate": "2026-09-11T09:00:00-04:00",
     "sourceUrl": "https://www.rhpl.ca/working-with-the-library/volunteer-opportunities",
-    "lastChecked": "2026-08-17",
-    "lastSeen": "2026-08-17",
+    "lastChecked": "2026-09-11",
+    "lastSeen": "2026-09-11",
     "status": "needs_review",
     "tags": [
       "volunteer hours"
@@ -169,36 +166,6 @@ export const generatedDiscoveryReviewCandidates = [
       "No clear future date found on the crawled page."
     ],
     "sourceName": "Richmond Hill Public Library programs"
-  },
-  {
-    "id": "discovered-aurora-library-stem-steam-workshop-53c30bcddb04",
-    "title": "STEAM Workshop",
-    "organization": "Aurora Public Library",
-    "description": "Explore the world of Science, Technology, Engineering, Arts, and Math with our weekly program! It’ll be learning and experiments galore! Drop-in program, no registration required.",
-    "city": "Aurora",
-    "region": "York",
-    "ageMin": 1,
-    "ageMax": 18,
-    "category": "Science & Engineering",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "deadline": "2026-08-18T14:30:00-04:00",
-    "startDate": "2026-08-18T14:30:00-04:00",
-    "endDate": "2026-08-18T16:30:00-04:00",
-    "sourceUrl": "https://aurora.bibliocommons.com/events/6945883c7ed7c62f00ab3c2b",
-    "lastChecked": "2026-08-17",
-    "lastSeen": "2026-08-17",
-    "status": "active",
-    "tags": [
-      "science & engineering",
-      "technology",
-      "science"
-    ],
-    "confidence": "high",
-    "reviewReasons": [],
-    "sourceName": "Aurora Public Library STEM events"
   },
   {
     "id": "discovered-aurora-library-volunteers-volunteers-9a6997e9e36a",
@@ -214,10 +181,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-08-17T09:00:00-04:00",
+    "startDate": "2026-09-11T09:00:00-04:00",
     "sourceUrl": "https://aurorapl.ca/volunteers",
-    "lastChecked": "2026-08-17",
-    "lastSeen": "2026-08-17",
+    "lastChecked": "2026-09-11",
+    "lastSeen": "2026-09-11",
     "status": "needs_review",
     "tags": [
       "volunteer hours"
@@ -242,10 +209,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-08-17T09:00:00-04:00",
+    "startDate": "2026-09-11T09:00:00-04:00",
     "sourceUrl": "https://ajaxlibrary.ca/Makerspace",
-    "lastChecked": "2026-08-17",
-    "lastSeen": "2026-08-17",
+    "lastChecked": "2026-09-11",
+    "lastSeen": "2026-09-11",
     "status": "needs_review",
     "tags": [
       "makerspace & fabrication"
@@ -270,10 +237,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-08-17T09:00:00-04:00",
+    "startDate": "2026-09-11T09:00:00-04:00",
     "sourceUrl": "https://pickeringlibrary.ca/resources/science-technology",
-    "lastChecked": "2026-08-17",
-    "lastSeen": "2026-08-17",
+    "lastChecked": "2026-09-11",
+    "lastSeen": "2026-09-11",
     "status": "needs_review",
     "tags": [
       "science & engineering",
@@ -299,15 +266,44 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-08-17T09:00:00-04:00",
+    "startDate": "2026-09-11T09:00:00-04:00",
     "sourceUrl": "https://pickeringlibrary.ca/makerspace",
-    "lastChecked": "2026-08-17",
-    "lastSeen": "2026-08-17",
+    "lastChecked": "2026-09-11",
+    "lastSeen": "2026-09-11",
     "status": "needs_review",
     "tags": [
       "makerspace & fabrication",
       "technology",
       "maker"
+    ],
+    "confidence": "high",
+    "reviewReasons": [
+      "No clear future date found on the crawled page."
+    ],
+    "sourceName": "Pickering Public Library technology events"
+  },
+  {
+    "id": "discovered-pickering-library-tech-developing-responsible-technology-4c170fc272c9",
+    "title": "Developing Responsible Technology",
+    "organization": "Pickering Public Library",
+    "description": "Developing Responsible Technology listed by Pickering Public Library technology events.",
+    "city": "Pickering",
+    "region": "Durham",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "STEM",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-09-11T09:00:00-04:00",
+    "sourceUrl": "https://pickering.bibliocommons.com/v2/list/display/1491301049/3106000637",
+    "lastChecked": "2026-09-11",
+    "lastSeen": "2026-09-11",
+    "status": "needs_review",
+    "tags": [
+      "stem",
+      "technology"
     ],
     "confidence": "high",
     "reviewReasons": [
@@ -329,10 +325,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-08-17T09:00:00-04:00",
+    "startDate": "2026-09-11T09:00:00-04:00",
     "sourceUrl": "https://pickeringlibrary.ca/explore/?programs=computers-and-technology",
-    "lastChecked": "2026-08-17",
-    "lastSeen": "2026-08-17",
+    "lastChecked": "2026-09-11",
+    "lastSeen": "2026-09-11",
     "status": "needs_review",
     "tags": [
       "stem",
@@ -359,10 +355,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-08-17T09:00:00-04:00",
+    "startDate": "2026-09-11T09:00:00-04:00",
     "sourceUrl": "https://pickering.bibliocommons.com/v2/list/display/1491301049/3037093477",
-    "lastChecked": "2026-08-17",
-    "lastSeen": "2026-08-17",
+    "lastChecked": "2026-09-11",
+    "lastSeen": "2026-09-11",
     "status": "needs_review",
     "tags": [
       "stem",
@@ -375,66 +371,10 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Pickering Public Library technology events"
   },
   {
-    "id": "discovered-oshawa-library-stem-adult-summer-reading-challenge-f4980264b496",
-    "title": "Adult Summer Reading Challenge",
+    "id": "discovered-oshawa-library-stem-steam-saturday-8bdd183e9f58",
+    "title": "STEAM Saturday",
     "organization": "Oshawa Public Libraries",
-    "description": "Adult Summer Reading Challenge from Oshawa Public Libraries STEM events.",
-    "city": "Oshawa",
-    "region": "Durham",
-    "ageMin": 18,
-    "category": "Science & Engineering",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-08-17T09:00:00-04:00",
-    "sourceUrl": "https://oshlib.bibliocommons.com/events/69dd02d3c1cf6f9a75850754",
-    "lastChecked": "2026-08-17",
-    "lastSeen": "2026-08-17",
-    "status": "needs_review",
-    "tags": [
-      "science & engineering"
-    ],
-    "confidence": "high",
-    "reviewReasons": [
-      "No clear future date found on the crawled page."
-    ],
-    "sourceName": "Oshawa Public Libraries STEM events"
-  },
-  {
-    "id": "discovered-oshawa-library-stem-teen-summer-reading-challenge-18e265e8adcb",
-    "title": "Teen Summer Reading Challenge",
-    "organization": "Oshawa Public Libraries",
-    "description": "Teen Summer Reading Challenge from Oshawa Public Libraries STEM events.",
-    "city": "Oshawa",
-    "region": "Durham",
-    "ageMin": 13,
-    "ageMax": 18,
-    "category": "Science & Engineering",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-08-17T09:00:00-04:00",
-    "sourceUrl": "https://oshlib.bibliocommons.com/events/69dd0b47b6c4ac1fedcc079e",
-    "lastChecked": "2026-08-17",
-    "lastSeen": "2026-08-17",
-    "status": "needs_review",
-    "tags": [
-      "science & engineering",
-      "teen"
-    ],
-    "confidence": "high",
-    "reviewReasons": [
-      "No clear future date found on the crawled page."
-    ],
-    "sourceName": "Oshawa Public Libraries STEM events"
-  },
-  {
-    "id": "discovered-oshawa-library-stem-scientists-in-school-science-meets-art-b429b3a3cf7b",
-    "title": "Scientists in School: Science Meets Art",
-    "organization": "Oshawa Public Libraries",
-    "description": "Scientists in School: Science Meets Art from Oshawa Public Libraries STEM events.",
+    "description": "STEAM Saturday from Oshawa Public Libraries STEM events.",
     "city": "Oshawa",
     "region": "Durham",
     "ageMin": 1,
@@ -444,14 +384,13 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-08-17T09:00:00-04:00",
-    "sourceUrl": "https://oshlib.bibliocommons.com/events/6a1dd2e6bd892a0672e6f213",
-    "lastChecked": "2026-08-17",
-    "lastSeen": "2026-08-17",
+    "startDate": "2026-09-11T09:00:00-04:00",
+    "sourceUrl": "https://oshlib.bibliocommons.com/events/6a68d83ae9de6536001ecbb2",
+    "lastChecked": "2026-09-11",
+    "lastSeen": "2026-09-11",
     "status": "needs_review",
     "tags": [
-      "science & engineering",
-      "science"
+      "science & engineering"
     ],
     "confidence": "high",
     "reviewReasons": [
@@ -473,10 +412,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-08-17T09:00:00-04:00",
+    "startDate": "2026-09-11T09:00:00-04:00",
     "sourceUrl": "https://oshawalibrary.ca/technology/makerspace",
-    "lastChecked": "2026-08-17",
-    "lastSeen": "2026-08-17",
+    "lastChecked": "2026-09-11",
+    "lastSeen": "2026-09-11",
     "status": "needs_review",
     "tags": [
       "makerspace & fabrication"
@@ -501,10 +440,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-08-17T09:00:00-04:00",
+    "startDate": "2026-09-11T09:00:00-04:00",
     "sourceUrl": "http://www.cplma.ca/learning-technology",
-    "lastChecked": "2026-08-17",
-    "lastSeen": "2026-08-17",
+    "lastChecked": "2026-09-11",
+    "lastSeen": "2026-09-11",
     "status": "needs_review",
     "tags": [
       "stem",
@@ -530,10 +469,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-08-17T09:00:00-04:00",
+    "startDate": "2026-09-11T09:00:00-04:00",
     "sourceUrl": "http://www.cplma.ca/learning-technology/computers-and-internet-access",
-    "lastChecked": "2026-08-17",
-    "lastSeen": "2026-08-17",
+    "lastChecked": "2026-09-11",
+    "lastSeen": "2026-09-11",
     "status": "needs_review",
     "tags": [
       "stem"
@@ -558,10 +497,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-08-17T09:00:00-04:00",
+    "startDate": "2026-09-11T09:00:00-04:00",
     "sourceUrl": "http://www.cplma.ca/learning-technology/makers-space-the-studio",
-    "lastChecked": "2026-08-17",
-    "lastSeen": "2026-08-17",
+    "lastChecked": "2026-09-11",
+    "lastSeen": "2026-09-11",
     "status": "needs_review",
     "tags": [
       "makerspace & fabrication"
@@ -586,10 +525,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-08-17T09:00:00-04:00",
+    "startDate": "2026-09-11T09:00:00-04:00",
     "sourceUrl": "http://www.cplma.ca/about-us/jobs-and-volunteering",
-    "lastChecked": "2026-08-17",
-    "lastSeen": "2026-08-17",
+    "lastChecked": "2026-09-11",
+    "lastSeen": "2026-09-11",
     "status": "needs_review",
     "tags": [
       "volunteer hours"
@@ -614,10 +553,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-08-17T09:00:00-04:00",
+    "startDate": "2026-09-11T09:00:00-04:00",
     "sourceUrl": "https://www.cplma.ca/programs-services/reading-and-math-buddies",
-    "lastChecked": "2026-08-17",
-    "lastSeen": "2026-08-17",
+    "lastChecked": "2026-09-11",
+    "lastSeen": "2026-09-11",
     "status": "needs_review",
     "tags": [
       "science & engineering"
@@ -642,10 +581,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-08-17T09:00:00-04:00",
+    "startDate": "2026-09-11T09:00:00-04:00",
     "sourceUrl": "https://www.mississauga.ca/library/library-jobs-and-volunteer",
-    "lastChecked": "2026-08-17",
-    "lastSeen": "2026-08-17",
+    "lastChecked": "2026-09-11",
+    "lastSeen": "2026-09-11",
     "status": "needs_review",
     "tags": [
       "volunteer hours",
@@ -671,10 +610,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-08-17T09:00:00-04:00",
+    "startDate": "2026-09-11T09:00:00-04:00",
     "sourceUrl": "https://app.betterimpact.com/PublicEnterprise/EnterpriseSearch?EnterpriseGuid=e3200288-2b64-4ed8-a26d-5bd0f4c5170b&SearchType=OrganizationClassification&SearchId=9624",
-    "lastChecked": "2026-08-17",
-    "lastSeen": "2026-08-17",
+    "lastChecked": "2026-09-11",
+    "lastSeen": "2026-09-11",
     "status": "needs_review",
     "tags": [
       "volunteer hours",
@@ -701,10 +640,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-08-17T09:00:00-04:00",
+    "startDate": "2026-09-11T09:00:00-04:00",
     "sourceUrl": "https://beinspired.ca/volunteer-opportunities",
-    "lastChecked": "2026-08-17",
-    "lastSeen": "2026-08-17",
+    "lastChecked": "2026-09-11",
+    "lastSeen": "2026-09-11",
     "status": "needs_review",
     "tags": [
       "volunteer hours",
@@ -730,10 +669,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-08-17T09:00:00-04:00",
+    "startDate": "2026-09-11T09:00:00-04:00",
     "sourceUrl": "https://beinspired.ca",
-    "lastChecked": "2026-08-17",
-    "lastSeen": "2026-08-17",
+    "lastChecked": "2026-09-11",
+    "lastSeen": "2026-09-11",
     "status": "needs_review",
     "tags": [
       "stem"
@@ -758,10 +697,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-08-17T09:00:00-04:00",
+    "startDate": "2026-09-11T09:00:00-04:00",
     "sourceUrl": "https://beinspired.ca/computer-services",
-    "lastChecked": "2026-08-17",
-    "lastSeen": "2026-08-17",
+    "lastChecked": "2026-09-11",
+    "lastSeen": "2026-09-11",
     "status": "needs_review",
     "tags": [
       "stem"
@@ -773,61 +712,97 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Milton Public Library programs"
   },
   {
-    "id": "discovered-halton-hills-library-programs-technology-resources-f6eda0d3bfa5",
-    "title": "Technology Resources",
-    "organization": "Halton Hills Public Library",
-    "description": "Technology Resources listed by Halton Hills Public Library programs.",
-    "city": "Halton Hills",
-    "region": "Halton",
-    "ageMin": 1,
+    "id": "discovered-cvc-youth-conservation-youth-corps-cyc-db9075c7642f",
+    "title": "Conservation Youth Corps (CYC)",
+    "organization": "Credit Valley Conservation",
+    "description": "Conservation Youth Corps is an opportunity for teen volunteers to participate in environmental stewardship projects and earn volunteer hours.",
+    "city": "Mississauga",
+    "region": "Peel",
+    "ageMin": 13,
     "ageMax": 18,
-    "category": "STEM",
+    "category": "Volunteer Hours",
     "cost": "Free to join",
     "language": [
       "en"
     ],
-    "startDate": "2026-08-17T09:00:00-04:00",
-    "sourceUrl": "https://www.hhpl.ca/services/technology-resources",
-    "lastChecked": "2026-08-17",
-    "lastSeen": "2026-08-17",
+    "startDate": "2026-09-11T09:00:00-04:00",
+    "sourceUrl": "https://cvc.ca/discover-our-parks/get-involved/conservation-youth-corps",
+    "lastChecked": "2026-09-11",
+    "lastSeen": "2026-09-11",
     "status": "needs_review",
     "tags": [
-      "stem",
-      "technology"
+      "volunteer hours",
+      "youth",
+      "conservation",
+      "volunteer"
     ],
-    "confidence": "high",
+    "confidence": "medium",
     "reviewReasons": [
-      "No clear future date found on the crawled page."
+      "No clear future date found on the crawled page.",
+      "Free access wording needs human confirmation."
     ],
-    "sourceName": "Halton Hills Public Library programs"
+    "sourceName": "Credit Valley Conservation youth opportunities"
   },
   {
-    "id": "discovered-halton-hills-library-programs-computers-2d82aa6ec575",
-    "title": "Computers",
-    "organization": "Halton Hills Public Library",
-    "description": "Computers listed by Halton Hills Public Library programs.",
-    "city": "Halton Hills",
-    "region": "Halton",
-    "ageMin": 1,
+    "id": "discovered-cvc-youth-volunteer-with-us-82fdd6348cc9",
+    "title": "Volunteer with Us",
+    "organization": "Credit Valley Conservation",
+    "description": "Volunteer with Us listed by Credit Valley Conservation youth opportunities.",
+    "city": "Mississauga",
+    "region": "Peel",
+    "ageMin": 13,
     "ageMax": 18,
-    "category": "STEM",
+    "category": "Volunteer Hours",
     "cost": "Free to join",
     "language": [
       "en"
     ],
-    "startDate": "2026-08-17T09:00:00-04:00",
-    "sourceUrl": "https://www.hhpl.ca/computers",
-    "lastChecked": "2026-08-17",
-    "lastSeen": "2026-08-17",
+    "startDate": "2026-09-11T09:00:00-04:00",
+    "sourceUrl": "https://cvc.ca/events",
+    "lastChecked": "2026-09-11",
+    "lastSeen": "2026-09-11",
     "status": "needs_review",
     "tags": [
-      "stem"
+      "volunteer hours",
+      "volunteer"
     ],
-    "confidence": "high",
+    "confidence": "medium",
     "reviewReasons": [
-      "No clear future date found on the crawled page."
+      "No clear future date found on the crawled page.",
+      "Free access wording needs human confirmation."
     ],
-    "sourceName": "Halton Hills Public Library programs"
+    "sourceName": "Credit Valley Conservation youth opportunities"
+  },
+  {
+    "id": "discovered-cvc-youth-credit-valley-conservation-and-the-greenbe-e9617e6953d9",
+    "title": "Credit Valley Conservation and the Greenbelt Foundation Partner to Support Youth Environmental Action in the Greenbelt",
+    "organization": "Credit Valley Conservation",
+    "description": "Credit Valley Conservation and the Greenbelt Foundation Partner to Support Youth Environmental Action in the Greenbelt listed by Credit Valley Conservation youth opportunities.",
+    "city": "Mississauga",
+    "region": "Peel",
+    "ageMin": 13,
+    "ageMax": 18,
+    "category": "Science & Engineering",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-09-11T09:00:00-04:00",
+    "sourceUrl": "https://cvc.ca/news/credit-valley-conservation-and-the-greenbelt-foundation-partner-to-support-youth-environmental-action-in-the-greenbelt",
+    "lastChecked": "2026-09-11",
+    "lastSeen": "2026-09-11",
+    "status": "needs_review",
+    "tags": [
+      "science & engineering",
+      "youth",
+      "conservation"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "No clear future date found on the crawled page.",
+      "Free access wording needs human confirmation."
+    ],
+    "sourceName": "Credit Valley Conservation youth opportunities"
   },
   {
     "id": "discovered-trca-youth-youth-opportunities-at-trca-bd0e50237819",
@@ -843,10 +818,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-08-17T09:00:00-04:00",
+    "startDate": "2026-09-11T09:00:00-04:00",
     "sourceUrl": "https://trca.ca/get-involved/youth-opportunities",
-    "lastChecked": "2026-08-17",
-    "lastSeen": "2026-08-17",
+    "lastChecked": "2026-09-11",
+    "lastSeen": "2026-09-11",
     "status": "needs_review",
     "tags": [
       "science & engineering",
@@ -874,10 +849,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-08-17T09:00:00-04:00",
+    "startDate": "2026-09-11T09:00:00-04:00",
     "sourceUrl": "https://trca.ca/get-involved/volunteer",
-    "lastChecked": "2026-08-17",
-    "lastSeen": "2026-08-17",
+    "lastChecked": "2026-09-11",
+    "lastSeen": "2026-09-11",
     "status": "needs_review",
     "tags": [
       "volunteer hours",
@@ -904,10 +879,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-08-17T09:00:00-04:00",
+    "startDate": "2026-09-11T09:00:00-04:00",
     "sourceUrl": "https://trca.ca/learning/adult/young-conservation-professionals",
-    "lastChecked": "2026-08-17",
-    "lastSeen": "2026-08-17",
+    "lastChecked": "2026-09-11",
+    "lastSeen": "2026-09-11",
     "status": "needs_review",
     "tags": [
       "volunteer hours",
@@ -934,10 +909,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-08-17T09:00:00-04:00",
+    "startDate": "2026-09-11T09:00:00-04:00",
     "sourceUrl": "https://uhnstempathways.ca",
-    "lastChecked": "2026-08-17",
-    "lastSeen": "2026-08-17",
+    "lastChecked": "2026-09-11",
+    "lastSeen": "2026-09-11",
     "status": "needs_review",
     "tags": [
       "science & engineering",
@@ -964,10 +939,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-08-17T09:00:00-04:00",
+    "startDate": "2026-09-11T09:00:00-04:00",
     "sourceUrl": "https://uhnstempathways.ca/volunteer-spotlight",
-    "lastChecked": "2026-08-17",
-    "lastSeen": "2026-08-17",
+    "lastChecked": "2026-09-11",
+    "lastSeen": "2026-09-11",
     "status": "needs_review",
     "tags": [
       "volunteer hours"
@@ -993,10 +968,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-08-17T09:00:00-04:00",
+    "startDate": "2026-09-11T09:00:00-04:00",
     "sourceUrl": "https://uhnstempathways.ca/volunteers",
-    "lastChecked": "2026-08-17",
-    "lastSeen": "2026-08-17",
+    "lastChecked": "2026-09-11",
+    "lastSeen": "2026-09-11",
     "status": "needs_review",
     "tags": [
       "volunteer hours"
@@ -1009,10 +984,10 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "UHN STEM Pathways"
   },
   {
-    "id": "discovered-uhn-stem-pathways-previous-stem-talks-recordings-2025-26-f6c69765b687",
-    "title": "Previous STEM Talks Recordings - 2025/26",
+    "id": "discovered-uhn-stem-pathways-stem-talks-world-heart-day-sep-28-5-6pm-f0c3a4c8f723",
+    "title": "STEM Talks - World Heart Day - Sep 28, 5-6pm",
     "organization": "UHN STEM Pathways",
-    "description": "Previous STEM Talks Recordings - 2025/26 listed by UHN STEM Pathways.",
+    "description": "STEM Talks - World Heart Day - Sep 28, 5-6pm listed by UHN STEM Pathways.",
     "city": "Toronto",
     "region": "Toronto",
     "ageMin": 1,
@@ -1022,10 +997,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-08-17T09:00:00-04:00",
-    "sourceUrl": "https://uhnstempathways.ca/current/recordings",
-    "lastChecked": "2026-08-17",
-    "lastSeen": "2026-08-17",
+    "startDate": "2026-09-11T09:00:00-04:00",
+    "sourceUrl": "https://uhnstempathways.ca/upcoming/world-heart-day-2026",
+    "lastChecked": "2026-09-11",
+    "lastSeen": "2026-09-11",
     "status": "needs_review",
     "tags": [
       "science & engineering",
@@ -1037,6 +1012,127 @@ export const generatedDiscoveryReviewCandidates = [
       "Free access wording needs human confirmation."
     ],
     "sourceName": "UHN STEM Pathways"
+  },
+  {
+    "id": "discovered-uhn-stem-pathways-upcoming-stem-talks-2026-27-0c5834151a27",
+    "title": "Upcoming STEM Talks - 2026/27",
+    "organization": "UHN STEM Pathways",
+    "description": "Upcoming STEM Talks - 2026/27 listed by UHN STEM Pathways.",
+    "city": "Toronto",
+    "region": "Toronto",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "Science & Engineering",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-09-11T09:00:00-04:00",
+    "sourceUrl": "https://uhnstempathways.ca/upcoming",
+    "lastChecked": "2026-09-11",
+    "lastSeen": "2026-09-11",
+    "status": "needs_review",
+    "tags": [
+      "science & engineering",
+      "stem"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "No clear future date found on the crawled page.",
+      "Free access wording needs human confirmation."
+    ],
+    "sourceName": "UHN STEM Pathways"
+  },
+  {
+    "id": "discovered-volunteer-mbc-youth-learning-centre-3de7bf8325ab",
+    "title": "Learning Centre",
+    "organization": "Volunteer MBC",
+    "description": "Learning Centre from Volunteer MBC youth opportunities.",
+    "city": "Mississauga",
+    "region": "Peel",
+    "ageMin": 13,
+    "ageMax": 18,
+    "category": "Volunteer Hours",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-09-11T09:00:00-04:00",
+    "sourceUrl": "https://volunteermbc.org/events/category/learning-centre",
+    "lastChecked": "2026-09-11",
+    "lastSeen": "2026-09-11",
+    "status": "needs_review",
+    "tags": [
+      "volunteer hours"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "No clear future date found on the crawled page.",
+      "Free access wording needs human confirmation.",
+      "Source is a broad public event index, so official provider confirmation is needed."
+    ],
+    "sourceName": "Volunteer MBC youth opportunities"
+  },
+  {
+    "id": "discovered-volunteer-mbc-youth-volunteer-mbc-care-community-connection-de9216e03693",
+    "title": "Volunteer MBC – Care. Community. Connection.",
+    "organization": "Volunteer MBC",
+    "description": "Volunteer MBC – Care. Community. Connection. from Volunteer MBC youth opportunities.",
+    "city": "Mississauga",
+    "region": "Peel",
+    "ageMin": 13,
+    "ageMax": 18,
+    "category": "Volunteer Hours",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-09-11T09:00:00-04:00",
+    "sourceUrl": "https://www.volunteermbc.org",
+    "lastChecked": "2026-09-11",
+    "lastSeen": "2026-09-11",
+    "status": "needs_review",
+    "tags": [
+      "volunteer hours",
+      "volunteer"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "No clear future date found on the crawled page.",
+      "Free access wording needs human confirmation.",
+      "Source is a broad public event index, so official provider confirmation is needed."
+    ],
+    "sourceName": "Volunteer MBC youth opportunities"
+  },
+  {
+    "id": "discovered-volunteer-mbc-youth-volunteers-686021394b9a",
+    "title": "Volunteers",
+    "organization": "Volunteer MBC",
+    "description": "Volunteers listed by Volunteer MBC youth opportunities.",
+    "city": "Mississauga",
+    "region": "Peel",
+    "ageMin": 13,
+    "ageMax": 18,
+    "category": "Volunteer Hours",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-09-11T09:00:00-04:00",
+    "sourceUrl": "https://volunteermbc.org/i-want-to-volunteer",
+    "lastChecked": "2026-09-11",
+    "lastSeen": "2026-09-11",
+    "status": "needs_review",
+    "tags": [
+      "volunteer hours"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "No clear future date found on the crawled page.",
+      "Free access wording needs human confirmation.",
+      "Source is a broad public event index, so official provider confirmation is needed."
+    ],
+    "sourceName": "Volunteer MBC youth opportunities"
   },
   {
     "id": "discovered-uoft-engineering-outreach-home-engineering-outreach-9f92ae9e4cb2",
@@ -1052,10 +1148,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-08-17T09:00:00-04:00",
+    "startDate": "2026-09-11T09:00:00-04:00",
     "sourceUrl": "https://outreach.engineering.utoronto.ca",
-    "lastChecked": "2026-08-17",
-    "lastSeen": "2026-08-17",
+    "lastChecked": "2026-09-11",
+    "lastSeen": "2026-09-11",
     "status": "needs_review",
     "tags": [
       "science & engineering",
@@ -1083,10 +1179,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-08-17T09:00:00-04:00",
+    "startDate": "2026-09-11T09:00:00-04:00",
     "sourceUrl": "https://www.engineering.utoronto.ca",
-    "lastChecked": "2026-08-17",
-    "lastSeen": "2026-08-17",
+    "lastChecked": "2026-09-11",
+    "lastSeen": "2026-09-11",
     "status": "needs_review",
     "tags": [
       "science & engineering",
@@ -1113,10 +1209,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-08-17T09:00:00-04:00",
+    "startDate": "2026-09-11T09:00:00-04:00",
     "sourceUrl": "https://outreach.engineering.utoronto.ca/about-us",
-    "lastChecked": "2026-08-17",
-    "lastSeen": "2026-08-17",
+    "lastChecked": "2026-09-11",
+    "lastSeen": "2026-09-11",
     "status": "needs_review",
     "tags": [
       "science & engineering",
@@ -1143,10 +1239,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-08-17T09:00:00-04:00",
+    "startDate": "2026-09-11T09:00:00-04:00",
     "sourceUrl": "https://outreach.engineering.utoronto.ca/pre-university-programs/high-school-program/create",
-    "lastChecked": "2026-08-17",
-    "lastSeen": "2026-08-17",
+    "lastChecked": "2026-09-11",
+    "lastSeen": "2026-09-11",
     "status": "needs_review",
     "tags": [
       "science & engineering",
@@ -1173,10 +1269,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-08-17T09:00:00-04:00",
+    "startDate": "2026-09-11T09:00:00-04:00",
     "sourceUrl": "https://outreach.engineering.utoronto.ca/pre-university-programs/elementary/ready-set-code",
-    "lastChecked": "2026-08-17",
-    "lastSeen": "2026-08-17",
+    "lastChecked": "2026-09-11",
+    "lastSeen": "2026-09-11",
     "status": "needs_review",
     "tags": [
       "science & engineering"
@@ -1202,10 +1298,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-08-17T09:00:00-04:00",
+    "startDate": "2026-09-11T09:00:00-04:00",
     "sourceUrl": "https://outreach.engineering.utoronto.ca/pre-university-programs/elementary/engineering-discovery-day",
-    "lastChecked": "2026-08-17",
-    "lastSeen": "2026-08-17",
+    "lastChecked": "2026-09-11",
+    "lastSeen": "2026-09-11",
     "status": "needs_review",
     "tags": [
       "science & engineering",
@@ -1232,10 +1328,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-08-17T09:00:00-04:00",
+    "startDate": "2026-09-11T09:00:00-04:00",
     "sourceUrl": "https://outreach.engineering.utoronto.ca/about-us/volunteer-opportunities",
-    "lastChecked": "2026-08-17",
-    "lastSeen": "2026-08-17",
+    "lastChecked": "2026-09-11",
+    "lastSeen": "2026-09-11",
     "status": "needs_review",
     "tags": [
       "volunteer hours"
@@ -1261,10 +1357,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-08-17T09:00:00-04:00",
+    "startDate": "2026-09-11T09:00:00-04:00",
     "sourceUrl": "https://data.viceprovoststudents.utoronto.ca",
-    "lastChecked": "2026-08-17",
-    "lastSeen": "2026-08-17",
+    "lastChecked": "2026-09-11",
+    "lastSeen": "2026-09-11",
     "status": "needs_review",
     "tags": [
       "science & engineering"
@@ -1290,10 +1386,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-08-17T09:00:00-04:00",
+    "startDate": "2026-09-11T09:00:00-04:00",
     "sourceUrl": "https://engineering.ontariotechu.ca/outreach/index.php",
-    "lastChecked": "2026-08-17",
-    "lastSeen": "2026-08-17",
+    "lastChecked": "2026-09-11",
+    "lastSeen": "2026-09-11",
     "status": "needs_review",
     "tags": [
       "science & engineering",
@@ -1320,10 +1416,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-08-17T09:00:00-04:00",
+    "startDate": "2026-09-11T09:00:00-04:00",
     "sourceUrl": "https://engineering.ontariotechu.ca/outreach/about-us/outreach-supporters.php",
-    "lastChecked": "2026-08-17",
-    "lastSeen": "2026-08-17",
+    "lastChecked": "2026-09-11",
+    "lastSeen": "2026-09-11",
     "status": "needs_review",
     "tags": [
       "science & engineering",
@@ -1350,101 +1446,14 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-08-17T09:00:00-04:00",
+    "startDate": "2026-09-11T09:00:00-04:00",
     "sourceUrl": "https://engineering.ontariotechu.ca/outreach/about-us/in-the-community.php",
-    "lastChecked": "2026-08-17",
-    "lastSeen": "2026-08-17",
+    "lastChecked": "2026-09-11",
+    "lastSeen": "2026-09-11",
     "status": "needs_review",
     "tags": [
       "science & engineering",
       "engineering"
-    ],
-    "confidence": "medium",
-    "reviewReasons": [
-      "No clear future date found on the crawled page.",
-      "Free access wording needs human confirmation."
-    ],
-    "sourceName": "Ontario Tech Engineering Outreach"
-  },
-  {
-    "id": "discovered-ontario-tech-engineering-outreach-junior-robotics-and-automation-lab-92a2a37ec79c",
-    "title": "Junior Robotics and Automation Lab",
-    "organization": "Ontario Tech University Engineering Outreach",
-    "description": "Junior Robotics and Automation Lab listed by Ontario Tech Engineering Outreach.",
-    "city": "Oshawa",
-    "region": "Durham",
-    "ageMin": 1,
-    "ageMax": 18,
-    "category": "Coding & Robotics",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-08-17T09:00:00-04:00",
-    "sourceUrl": "https://form.jotform.com/262024827303248",
-    "lastChecked": "2026-08-17",
-    "lastSeen": "2026-08-17",
-    "status": "needs_review",
-    "tags": [
-      "coding & robotics"
-    ],
-    "confidence": "medium",
-    "reviewReasons": [
-      "No clear future date found on the crawled page.",
-      "Free access wording needs human confirmation."
-    ],
-    "sourceName": "Ontario Tech Engineering Outreach"
-  },
-  {
-    "id": "discovered-ontario-tech-engineering-outreach-intermediate-robotics-and-automation-lab-447c6d6e191b",
-    "title": "Intermediate Robotics and Automation Lab",
-    "organization": "Ontario Tech University Engineering Outreach",
-    "description": "Intermediate Robotics and Automation Lab listed by Ontario Tech Engineering Outreach.",
-    "city": "Oshawa",
-    "region": "Durham",
-    "ageMin": 1,
-    "ageMax": 18,
-    "category": "Coding & Robotics",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-08-17T09:00:00-04:00",
-    "sourceUrl": "https://form.jotform.com/262044502244244",
-    "lastChecked": "2026-08-17",
-    "lastSeen": "2026-08-17",
-    "status": "needs_review",
-    "tags": [
-      "coding & robotics"
-    ],
-    "confidence": "medium",
-    "reviewReasons": [
-      "No clear future date found on the crawled page.",
-      "Free access wording needs human confirmation."
-    ],
-    "sourceName": "Ontario Tech Engineering Outreach"
-  },
-  {
-    "id": "discovered-ontario-tech-engineering-outreach-code-your-canvas-a0d7b5deb938",
-    "title": "Code Your Canvas",
-    "organization": "Ontario Tech University Engineering Outreach",
-    "description": "Code Your Canvas listed by Ontario Tech Engineering Outreach.",
-    "city": "Oshawa",
-    "region": "Durham",
-    "ageMin": 1,
-    "ageMax": 18,
-    "category": "Science & Engineering",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-08-17T09:00:00-04:00",
-    "sourceUrl": "https://form.jotform.com/262024693453255",
-    "lastChecked": "2026-08-17",
-    "lastSeen": "2026-08-17",
-    "status": "needs_review",
-    "tags": [
-      "science & engineering"
     ],
     "confidence": "medium",
     "reviewReasons": [
@@ -1467,10 +1476,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-08-17T09:00:00-04:00",
+    "startDate": "2026-09-11T09:00:00-04:00",
     "sourceUrl": "https://form.jotform.com/262074762834260",
-    "lastChecked": "2026-08-17",
-    "lastSeen": "2026-08-17",
+    "lastChecked": "2026-09-11",
+    "lastSeen": "2026-09-11",
     "status": "needs_review",
     "tags": [
       "science & engineering",
@@ -1497,10 +1506,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-08-17T09:00:00-04:00",
+    "startDate": "2026-09-11T09:00:00-04:00",
     "sourceUrl": "https://forms.gle/bDWdmyHJ4pVqsxpy5",
-    "lastChecked": "2026-08-17",
-    "lastSeen": "2026-08-17",
+    "lastChecked": "2026-09-11",
+    "lastSeen": "2026-09-11",
     "status": "needs_review",
     "tags": [
       "science & engineering",
@@ -1527,10 +1536,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-08-17T09:00:00-04:00",
+    "startDate": "2026-09-11T09:00:00-04:00",
     "sourceUrl": "https://engineering.ontariotechu.ca/outreach/about-us/volunteer.php",
-    "lastChecked": "2026-08-17",
-    "lastSeen": "2026-08-17",
+    "lastChecked": "2026-09-11",
+    "lastSeen": "2026-09-11",
     "status": "needs_review",
     "tags": [
       "volunteer hours"
@@ -1541,5 +1550,509 @@ export const generatedDiscoveryReviewCandidates = [
       "Free access wording needs human confirmation."
     ],
     "sourceName": "Ontario Tech Engineering Outreach"
+  },
+  {
+    "id": "discovered-eventbrite-free-science-tech-toronto-youth-stem-and-innovation-conferen-01b7759b0979",
+    "title": "Toronto Youth STEM and Innovation Conference (TYSIC)",
+    "organization": "Eventbrite public event search",
+    "description": "Toronto Youth STEM and Innovation Conference (TYSIC) listed by Eventbrite free science and technology events.",
+    "city": "Toronto",
+    "region": "Toronto",
+    "ageMin": 13,
+    "ageMax": 18,
+    "category": "Science & Engineering",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-09-11T09:00:00-04:00",
+    "sourceUrl": "https://www.eventbrite.ca/e/toronto-youth-stem-and-innovation-conference-tysic-tickets-1981276214492?aff=ebdssbdestsearch",
+    "lastChecked": "2026-09-11",
+    "lastSeen": "2026-09-11",
+    "status": "needs_review",
+    "tags": [
+      "science & engineering"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "No clear future date found on the crawled page.",
+      "Source is a broad public event index, so official provider confirmation is needed."
+    ],
+    "sourceName": "Eventbrite free science and technology events"
+  },
+  {
+    "id": "discovered-eventbrite-free-science-tech-designing-science-innovations-in-health-re-11496863ca9f",
+    "title": "Designing Science - Innovations in Health Research Fall 2026",
+    "organization": "Eventbrite public event search",
+    "description": "Designing Science - Innovations in Health Research Fall 2026 listed by Eventbrite free science and technology events.",
+    "city": "Toronto",
+    "region": "Toronto",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "Science & Engineering",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-09-11T09:00:00-04:00",
+    "sourceUrl": "https://www.eventbrite.ca/e/designing-science-innovations-in-health-research-fall-2026-tickets-1990783742765?aff=ebdssbdestsearch",
+    "lastChecked": "2026-09-11",
+    "lastSeen": "2026-09-11",
+    "status": "needs_review",
+    "tags": [
+      "science & engineering",
+      "science"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "No clear future date found on the crawled page.",
+      "Source is a broad public event index, so official provider confirmation is needed."
+    ],
+    "sourceName": "Eventbrite free science and technology events"
+  },
+  {
+    "id": "discovered-eventbrite-free-science-tech-data-sciences-institute-aging-and-ai-works-9f1bf57f6043",
+    "title": "Data Sciences Institute - Aging and AI Workshop on September 28-29, 2026",
+    "organization": "Eventbrite public event search",
+    "description": "Data Sciences Institute - Aging and AI Workshop on September 28-29, 2026 listed by Eventbrite free science and technology events.",
+    "city": "Toronto",
+    "region": "Toronto",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "AI & Digital Media",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-09-11T09:00:00-04:00",
+    "sourceUrl": "https://www.eventbrite.ca/e/data-sciences-institute-aging-and-ai-workshop-on-september-28-29-2026-tickets-1996169239932?aff=ebdssbdestsearch",
+    "lastChecked": "2026-09-11",
+    "lastSeen": "2026-09-11",
+    "status": "needs_review",
+    "tags": [
+      "ai & digital media"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "No clear future date found on the crawled page.",
+      "Source is a broad public event index, so official provider confirmation is needed."
+    ],
+    "sourceName": "Eventbrite free science and technology events"
+  },
+  {
+    "id": "discovered-eventbrite-free-science-tech-3rd-science-of-care-institute-research-and-520aae8d07a2",
+    "title": "3rd Science of Care Institute Research and Innovation Expo",
+    "organization": "Eventbrite public event search",
+    "description": "3rd Science of Care Institute Research and Innovation Expo listed by Eventbrite free science and technology events.",
+    "city": "Toronto",
+    "region": "Toronto",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "Science & Engineering",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-09-11T09:00:00-04:00",
+    "sourceUrl": "https://www.eventbrite.ca/e/3rd-science-of-care-institute-research-and-innovation-expo-tickets-1980674259027?aff=ebdssbdestsearch",
+    "lastChecked": "2026-09-11",
+    "lastSeen": "2026-09-11",
+    "status": "needs_review",
+    "tags": [
+      "science & engineering",
+      "science"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "No clear future date found on the crawled page.",
+      "Source is a broad public event index, so official provider confirmation is needed."
+    ],
+    "sourceName": "Eventbrite free science and technology events"
+  },
+  {
+    "id": "discovered-eventbrite-free-science-tech-data-sciences-institute-industry-speaker-s-58fe44979e9f",
+    "title": "Data Sciences Institute - Industry Speaker Series",
+    "organization": "Eventbrite public event search",
+    "description": "Data Sciences Institute - Industry Speaker Series listed by Eventbrite free science and technology events.",
+    "city": "Toronto",
+    "region": "Toronto",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "Science & Engineering",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-09-11T09:00:00-04:00",
+    "sourceUrl": "https://www.eventbrite.ca/e/data-sciences-institute-industry-speaker-series-tickets-1996808430769?aff=ebdssbdestsearch",
+    "lastChecked": "2026-09-11",
+    "lastSeen": "2026-09-11",
+    "status": "needs_review",
+    "tags": [
+      "science & engineering"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "No clear future date found on the crawled page.",
+      "Source is a broad public event index, so official provider confirmation is needed."
+    ],
+    "sourceName": "Eventbrite free science and technology events"
+  },
+  {
+    "id": "discovered-eventbrite-free-science-tech-my-body-my-brain-my-choices-science-commun-b76a95b9710b",
+    "title": "My Body, My Brain, My Choices: Science Communication Hackathon",
+    "organization": "Eventbrite public event search",
+    "description": "My Body, My Brain, My Choices: Science Communication Hackathon listed by Eventbrite free science and technology events.",
+    "city": "Toronto",
+    "region": "Toronto",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "Hackathons & Competitions",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-09-11T09:00:00-04:00",
+    "sourceUrl": "https://www.eventbrite.ca/e/my-body-my-brain-my-choices-science-communication-hackathon-tickets-1995457604411?aff=ebdssbdestsearch",
+    "lastChecked": "2026-09-11",
+    "lastSeen": "2026-09-11",
+    "status": "needs_review",
+    "tags": [
+      "hackathons & competitions",
+      "science",
+      "hackathon"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "No clear future date found on the crawled page.",
+      "Source is a broad public event index, so official provider confirmation is needed."
+    ],
+    "sourceName": "Eventbrite free science and technology events"
+  },
+  {
+    "id": "discovered-eventbrite-free-science-tech-ai-engineering-summit-toronto-2026-71a16dbeb045",
+    "title": "AI Engineering Summit | Toronto | 2026",
+    "organization": "Eventbrite public event search",
+    "description": "AI Engineering Summit | Toronto | 2026 listed by Eventbrite free science and technology events.",
+    "city": "Toronto",
+    "region": "Toronto",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "AI & Digital Media",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-09-11T09:00:00-04:00",
+    "sourceUrl": "https://www.eventbrite.com/e/ai-engineering-summit-toronto-2026-tickets-1995176894801?aff=ebdssbdestsearch",
+    "lastChecked": "2026-09-11",
+    "lastSeen": "2026-09-11",
+    "status": "needs_review",
+    "tags": [
+      "ai & digital media"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "No clear future date found on the crawled page.",
+      "Source is a broad public event index, so official provider confirmation is needed."
+    ],
+    "sourceName": "Eventbrite free science and technology events"
+  },
+  {
+    "id": "discovered-eventbrite-free-science-tech-black-boys-code-toronto-think-like-a-coder-7e5153a17ce5",
+    "title": "Black Boys Code Toronto - Think Like a Coder: Your First Algorithm",
+    "organization": "Eventbrite public event search",
+    "description": "Black Boys Code Toronto - Think Like a Coder: Your First Algorithm listed by Eventbrite free science and technology events.",
+    "city": "Toronto",
+    "region": "Toronto",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "Science & Engineering",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-09-11T09:00:00-04:00",
+    "sourceUrl": "https://www.eventbrite.ca/e/black-boys-code-toronto-think-like-a-coder-your-first-algorithm-tickets-1999313339017?aff=ebdssbdestsearch",
+    "lastChecked": "2026-09-11",
+    "lastSeen": "2026-09-11",
+    "status": "needs_review",
+    "tags": [
+      "science & engineering"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "No clear future date found on the crawled page.",
+      "Source is a broad public event index, so official provider confirmation is needed."
+    ],
+    "sourceName": "Eventbrite free science and technology events"
+  },
+  {
+    "id": "discovered-eventbrite-free-science-tech-beyond-the-hype-scaling-ai-in-construction-8de38da157b5",
+    "title": "Beyond the Hype: Scaling AI in Construction",
+    "organization": "Eventbrite public event search",
+    "description": "Beyond the Hype: Scaling AI in Construction listed by Eventbrite free science and technology events.",
+    "city": "Toronto",
+    "region": "Toronto",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "AI & Digital Media",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-09-11T09:00:00-04:00",
+    "sourceUrl": "https://www.eventbrite.ca/e/beyond-the-hype-scaling-ai-in-construction-tickets-1997309029072?aff=ebdssbdestsearch",
+    "lastChecked": "2026-09-11",
+    "lastSeen": "2026-09-11",
+    "status": "needs_review",
+    "tags": [
+      "ai & digital media"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "No clear future date found on the crawled page.",
+      "Source is a broad public event index, so official provider confirmation is needed."
+    ],
+    "sourceName": "Eventbrite free science and technology events"
+  },
+  {
+    "id": "discovered-eventbrite-free-online-science-tech-social-media-seo-made-simple-reaching-audi-46af0702d7df",
+    "title": "Social media SEO made simple: Reaching audiences, algorithms and AI",
+    "organization": "Eventbrite public event search",
+    "description": "Social media SEO made simple: Reaching audiences, algorithms and AI listed by Eventbrite free online science and technology events.",
+    "city": "Toronto",
+    "region": "Toronto",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "AI & Digital Media",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-09-11T09:00:00-04:00",
+    "sourceUrl": "https://www.eventbrite.co.uk/e/social-media-seo-made-simple-reaching-audiences-algorithms-and-ai-tickets-1993835435460?aff=ebdssbdestsearch",
+    "lastChecked": "2026-09-11",
+    "lastSeen": "2026-09-11",
+    "status": "needs_review",
+    "tags": [
+      "ai & digital media"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "No clear future date found on the crawled page.",
+      "Source is a broad public event index, so official provider confirmation is needed."
+    ],
+    "sourceName": "Eventbrite free online science and technology events"
+  },
+  {
+    "id": "discovered-eventbrite-free-online-science-tech-4-lessons-youtubers-taught-a-data-scientis-4f3089af63e6",
+    "title": "4 Lessons YouTubers Taught a Data Scientist About Data Visualization",
+    "organization": "Eventbrite public event search",
+    "description": "4 Lessons YouTubers Taught a Data Scientist About Data Visualization listed by Eventbrite free online science and technology events.",
+    "city": "Toronto",
+    "region": "Toronto",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "Science & Engineering",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-09-11T09:00:00-04:00",
+    "sourceUrl": "https://www.eventbrite.com/e/4-lessons-youtubers-taught-a-data-scientist-about-data-visualization-tickets-1999283561953?aff=ebdssbdestsearch",
+    "lastChecked": "2026-09-11",
+    "lastSeen": "2026-09-11",
+    "status": "needs_review",
+    "tags": [
+      "science & engineering"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "No clear future date found on the crawled page.",
+      "Source is a broad public event index, so official provider confirmation is needed."
+    ],
+    "sourceName": "Eventbrite free online science and technology events"
+  },
+  {
+    "id": "discovered-eventbrite-free-online-science-tech-national-disability-ai-enabling-technology-ee3c3d2470a9",
+    "title": "National Disability AI & Enabling Technology Virtual Summit",
+    "organization": "Eventbrite public event search",
+    "description": "National Disability AI & Enabling Technology Virtual Summit listed by Eventbrite free online science and technology events.",
+    "city": "Toronto",
+    "region": "Toronto",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "AI & Digital Media",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-09-11T09:00:00-04:00",
+    "sourceUrl": "https://www.eventbrite.com/e/national-disability-ai-enabling-technology-virtual-summit-tickets-1993608021258?aff=ebdssbdestsearch",
+    "lastChecked": "2026-09-11",
+    "lastSeen": "2026-09-11",
+    "status": "needs_review",
+    "tags": [
+      "ai & digital media",
+      "technology"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "No clear future date found on the crawled page.",
+      "Source is a broad public event index, so official provider confirmation is needed."
+    ],
+    "sourceName": "Eventbrite free online science and technology events"
+  },
+  {
+    "id": "discovered-eventbrite-free-online-science-tech-get-to-know-the-national-health-data-hub-95ea7dad2b45",
+    "title": "Get to Know the National Health Data Hub",
+    "organization": "Eventbrite public event search",
+    "description": "Get to Know the National Health Data Hub listed by Eventbrite free online science and technology events.",
+    "city": "Toronto",
+    "region": "Toronto",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "Science & Engineering",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-09-11T09:00:00-04:00",
+    "sourceUrl": "https://www.eventbrite.com.au/e/get-to-know-the-national-health-data-hub-tickets-1992963000985?aff=ebdssbdestsearch",
+    "lastChecked": "2026-09-11",
+    "lastSeen": "2026-09-11",
+    "status": "needs_review",
+    "tags": [
+      "science & engineering"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "No clear future date found on the crawled page.",
+      "Source is a broad public event index, so official provider confirmation is needed."
+    ],
+    "sourceName": "Eventbrite free online science and technology events"
+  },
+  {
+    "id": "discovered-eventbrite-free-online-science-tech-cypress-college-radiologic-technology-info-b598f602dcdf",
+    "title": "CYPRESS COLLEGE RADIOLOGIC TECHNOLOGY INFORMATION WORKSHOP - ONLINE",
+    "organization": "Eventbrite public event search",
+    "description": "CYPRESS COLLEGE RADIOLOGIC TECHNOLOGY INFORMATION WORKSHOP - ONLINE listed by Eventbrite free online science and technology events.",
+    "city": "Toronto",
+    "region": "Toronto",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "Science & Engineering",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-09-11T09:00:00-04:00",
+    "sourceUrl": "https://www.eventbrite.com/e/cypress-college-radiologic-technology-information-workshop-online-tickets-1993630686049?aff=ebdssbdestsearch",
+    "lastChecked": "2026-09-11",
+    "lastSeen": "2026-09-11",
+    "status": "needs_review",
+    "tags": [
+      "science & engineering",
+      "online",
+      "technology"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "No clear future date found on the crawled page.",
+      "Source is a broad public event index, so official provider confirmation is needed."
+    ],
+    "sourceName": "Eventbrite free online science and technology events"
+  },
+  {
+    "id": "discovered-eventbrite-free-online-science-tech-batsense-ai-powered-bat-monitoring-for-eco-4d9b34ff92df",
+    "title": "BatSense: AI-Powered Bat Monitoring for Ecology",
+    "organization": "Eventbrite public event search",
+    "description": "BatSense: AI-Powered Bat Monitoring for Ecology listed by Eventbrite free online science and technology events.",
+    "city": "Toronto",
+    "region": "Toronto",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "AI & Digital Media",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-09-11T09:00:00-04:00",
+    "sourceUrl": "https://www.eventbrite.co.uk/e/batsense-ai-powered-bat-monitoring-for-ecology-tickets-1993873818264?aff=ebdssbdestsearch",
+    "lastChecked": "2026-09-11",
+    "lastSeen": "2026-09-11",
+    "status": "needs_review",
+    "tags": [
+      "ai & digital media"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "No clear future date found on the crawled page.",
+      "Source is a broad public event index, so official provider confirmation is needed."
+    ],
+    "sourceName": "Eventbrite free online science and technology events"
+  },
+  {
+    "id": "discovered-eventbrite-free-online-science-tech-applied-ai-technology-conference-2026-free-d63945aedf29",
+    "title": "Applied AI Technology Conference 2026 | Free Online AI Conference",
+    "organization": "Eventbrite public event search",
+    "description": "Applied AI Technology Conference 2026 | Free Online AI Conference listed by Eventbrite free online science and technology events.",
+    "city": "Toronto",
+    "region": "Toronto",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "AI & Digital Media",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-09-11T09:00:00-04:00",
+    "sourceUrl": "https://www.eventbrite.com/e/applied-ai-technology-conference-2026-free-online-ai-conference-tickets-1998413786431?aff=ebdssbdestsearch",
+    "lastChecked": "2026-09-11",
+    "lastSeen": "2026-09-11",
+    "status": "needs_review",
+    "tags": [
+      "ai & digital media",
+      "free",
+      "online",
+      "technology"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "No clear future date found on the crawled page.",
+      "Source is a broad public event index, so official provider confirmation is needed."
+    ],
+    "sourceName": "Eventbrite free online science and technology events"
+  },
+  {
+    "id": "discovered-eventbrite-free-online-science-tech-5-hackathon-9d09857cb031",
+    "title": "5 . Hackathon",
+    "organization": "Eventbrite public event search",
+    "description": "5 . Hackathon listed by Eventbrite free online science and technology events.",
+    "city": "Toronto",
+    "region": "Toronto",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "Hackathons & Competitions",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-09-11T09:00:00-04:00",
+    "sourceUrl": "https://www.eventbrite.ca/d/online/hackathon",
+    "lastChecked": "2026-09-11",
+    "lastSeen": "2026-09-11",
+    "status": "needs_review",
+    "tags": [
+      "hackathons & competitions",
+      "hackathon"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "No clear future date found on the crawled page.",
+      "Source is a broad public event index, so official provider confirmation is needed."
+    ],
+    "sourceName": "Eventbrite free online science and technology events"
   }
 ] satisfies DiscoveredOpportunity[];

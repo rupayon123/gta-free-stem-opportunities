@@ -289,7 +289,8 @@ function toOpportunity(item: RssItem, feed: LibraryFeed): Opportunity {
     title: item.title,
     organization: feed.organization,
     provider: feed.organization,
-    description: summary,
+    // Keep the source evidence even when the card summary is shortened.
+    description: item.description || summary,
     summary,
     type: inferType(item),
     category,

@@ -31,3 +31,6 @@ xcuserdata/
 
 verification/
 artifacts/
+
+# Generated from the locked MapLibre package by prepare:map.
+/public/vendor/maplibre/

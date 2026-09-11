@@ -764,12 +764,21 @@ assert(
   "Discovery source keywords must not make a 3D-sculpting event match coding."
 );
 
+// Filter behavior must remain testable when seasonal co-op listings expire.
+// These fixtures are private to QA and are never exported as opportunities.
+const coopFixture: Opportunity = {
+  ...publicListings[0],
+  id: "qa-coop",
+  title: "Engineering co-op",
+  coopEligible: true
+};
+const nonCoopFixture: Opportunity = { ...coopFixture, id: "qa-not-coop", coopEligible: false };
 const coopResults = filterOpportunities(
-  opportunities,
+  [coopFixture, nonCoopFixture],
   { ...baseFilters, query: "co-op", coop: true },
   null
 );
-assert(coopResults.length >= 1, "Co-op filter should find at least one public co-op opportunity.");
+assert(coopResults.length === 1 && coopResults[0].id === coopFixture.id, "Co-op filter must include the eligible fixture and exclude the control.");
 assert(coopResults.every((opportunity) => opportunity.coopEligible === true), "Co-op filter returned a non-co-op opportunity.");
 
 const blackFocused = filterOpportunities(opportunities, { ...baseFilters, blackFocused: true }, null);
@@ -797,7 +806,21 @@ for (const language of languagePreferenceOrder) {
 
 const postalLocation = coordinatesFromPostal("L5B 0A1");
 assert(Boolean(postalLocation), "Known GTA postal FSA should resolve.");
-const nearbyResults = filterOpportunities(opportunities, { ...baseFilters, distanceKm: 10 }, postalLocation);
+const nearbyFixture: Opportunity = {
+  ...publicListings[0],
+  id: "qa-nearby",
+  city: "Mississauga",
+  virtual: false,
+  latitude: postalLocation!.latitude,
+  longitude: postalLocation!.longitude
+};
+const distantFixture: Opportunity = {
+  ...nearbyFixture, id: "qa-distant", city: "Toronto", latitude: 43.6532, longitude: -79.3832
+};
+const nearbyResults = filterOpportunities(
+  [nearbyFixture, distantFixture], { ...baseFilters, distanceKm: 10 }, postalLocation
+);
+assert(nearbyResults.length === 1 && nearbyResults[0].id === nearbyFixture.id, "Distance filter must include the nearby fixture and exclude the distant control.");
 assert(nearbyResults.some((opportunity) => opportunity.city === "Mississauga"), "Postal-distance search should find Mississauga listings.");
 
 for (const opportunity of opportunities.slice(0, 3)) {
