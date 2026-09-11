@@ -58,7 +58,7 @@ Captured from the live website on September 11, 2026. [Capture details and origi
 
 ---
 
-[Next.js](https://img.shields.io/badge/Next.js-16-black)](https://nextjs.org/)
+[![Next.js](https://img.shields.io/badge/Next.js-16-black)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)](https://www.typescriptlang.org/)
 [![Supabase Ready](https://img.shields.io/badge/Supabase-ready-3ecf8e)](https://supabase.com/)
 [![Static Export](https://img.shields.io/badge/hosting-static%20export-6aa9ff)](https://vercel.com/)
