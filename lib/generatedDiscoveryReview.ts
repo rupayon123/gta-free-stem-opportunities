@@ -3,21 +3,24 @@ import type { DiscoveredOpportunity } from "./discovery";
 export const generatedDiscoverySummary = {
   "mode": "deterministic",
   "sourcesChecked": 30,
-  "candidatesFound": 340,
-  "newCandidates": 69,
-  "duplicatesSkipped": 82,
+  "candidatesFound": 276,
+  "newCandidates": 48,
+  "duplicatesSkipped": 57,
   "warnings": [
-    "Could not check Halton Hills Public Library programs: fetch failed."
+    "Could not check Credit Valley Conservation youth opportunities: 403 Forbidden.",
+    "Could not check Volunteer MBC youth opportunities: 403 Forbidden.",
+    "Could not check Eventbrite free science and technology events: 405 Not Allowed.",
+    "Could not check Eventbrite free online science and technology events: 405 Not Allowed."
   ],
   "sourceHealth": {
     "schemaVersion": 1,
-    "generatedAt": "2026-09-11T20:20:59.074Z",
+    "generatedAt": "2026-09-11T20:29:53.039Z",
     "status": "healthy",
     "failureReasons": [],
     "sourcesChecked": 30,
-    "successfulSources": 29,
-    "failedSources": 1,
-    "sourceSuccessRatio": 0.9667,
+    "successfulSources": 26,
+    "failedSources": 4,
+    "sourceSuccessRatio": 0.8667,
     "minimumSourceSuccessRatio": 0.75
   }
 } as const;
@@ -712,97 +715,61 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Milton Public Library programs"
   },
   {
-    "id": "discovered-cvc-youth-conservation-youth-corps-cyc-db9075c7642f",
-    "title": "Conservation Youth Corps (CYC)",
-    "organization": "Credit Valley Conservation",
-    "description": "Conservation Youth Corps is an opportunity for teen volunteers to participate in environmental stewardship projects and earn volunteer hours.",
-    "city": "Mississauga",
-    "region": "Peel",
-    "ageMin": 13,
+    "id": "discovered-halton-hills-library-programs-technology-resources-f6eda0d3bfa5",
+    "title": "Technology Resources",
+    "organization": "Halton Hills Public Library",
+    "description": "Technology Resources listed by Halton Hills Public Library programs.",
+    "city": "Halton Hills",
+    "region": "Halton",
+    "ageMin": 1,
     "ageMax": 18,
-    "category": "Volunteer Hours",
+    "category": "STEM",
     "cost": "Free to join",
     "language": [
       "en"
     ],
     "startDate": "2026-09-11T09:00:00-04:00",
-    "sourceUrl": "https://cvc.ca/discover-our-parks/get-involved/conservation-youth-corps",
+    "sourceUrl": "https://www.hhpl.ca/services/technology-resources",
     "lastChecked": "2026-09-11",
     "lastSeen": "2026-09-11",
     "status": "needs_review",
     "tags": [
-      "volunteer hours",
-      "youth",
-      "conservation",
-      "volunteer"
+      "stem",
+      "technology"
     ],
-    "confidence": "medium",
+    "confidence": "high",
     "reviewReasons": [
-      "No clear future date found on the crawled page.",
-      "Free access wording needs human confirmation."
+      "No clear future date found on the crawled page."
     ],
-    "sourceName": "Credit Valley Conservation youth opportunities"
+    "sourceName": "Halton Hills Public Library programs"
   },
   {
-    "id": "discovered-cvc-youth-volunteer-with-us-82fdd6348cc9",
-    "title": "Volunteer with Us",
-    "organization": "Credit Valley Conservation",
-    "description": "Volunteer with Us listed by Credit Valley Conservation youth opportunities.",
-    "city": "Mississauga",
-    "region": "Peel",
-    "ageMin": 13,
+    "id": "discovered-halton-hills-library-programs-computers-2d82aa6ec575",
+    "title": "Computers",
+    "organization": "Halton Hills Public Library",
+    "description": "Computers listed by Halton Hills Public Library programs.",
+    "city": "Halton Hills",
+    "region": "Halton",
+    "ageMin": 1,
     "ageMax": 18,
-    "category": "Volunteer Hours",
+    "category": "STEM",
     "cost": "Free to join",
     "language": [
       "en"
     ],
     "startDate": "2026-09-11T09:00:00-04:00",
-    "sourceUrl": "https://cvc.ca/events",
+    "sourceUrl": "https://www.hhpl.ca/computers",
     "lastChecked": "2026-09-11",
     "lastSeen": "2026-09-11",
     "status": "needs_review",
     "tags": [
-      "volunteer hours",
-      "volunteer"
+      "stem"
     ],
-    "confidence": "medium",
+    "confidence": "high",
     "reviewReasons": [
-      "No clear future date found on the crawled page.",
-      "Free access wording needs human confirmation."
+      "No clear future date found on the crawled page."
     ],
-    "sourceName": "Credit Valley Conservation youth opportunities"
-  },
-  {
-    "id": "discovered-cvc-youth-credit-valley-conservation-and-the-greenbe-e9617e6953d9",
-    "title": "Credit Valley Conservation and the Greenbelt Foundation Partner to Support Youth Environmental Action in the Greenbelt",
-    "organization": "Credit Valley Conservation",
-    "description": "Credit Valley Conservation and the Greenbelt Foundation Partner to Support Youth Environmental Action in the Greenbelt listed by Credit Valley Conservation youth opportunities.",
-    "city": "Mississauga",
-    "region": "Peel",
-    "ageMin": 13,
-    "ageMax": 18,
-    "category": "Science & Engineering",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-09-11T09:00:00-04:00",
-    "sourceUrl": "https://cvc.ca/news/credit-valley-conservation-and-the-greenbelt-foundation-partner-to-support-youth-environmental-action-in-the-greenbelt",
-    "lastChecked": "2026-09-11",
-    "lastSeen": "2026-09-11",
-    "status": "needs_review",
-    "tags": [
-      "science & engineering",
-      "youth",
-      "conservation"
-    ],
-    "confidence": "medium",
-    "reviewReasons": [
-      "No clear future date found on the crawled page.",
-      "Free access wording needs human confirmation."
-    ],
-    "sourceName": "Credit Valley Conservation youth opportunities"
+    "sourceName": "Halton Hills Public Library programs"
   },
   {
     "id": "discovered-trca-youth-youth-opportunities-at-trca-bd0e50237819",
@@ -1042,97 +1009,6 @@ export const generatedDiscoveryReviewCandidates = [
       "Free access wording needs human confirmation."
     ],
     "sourceName": "UHN STEM Pathways"
-  },
-  {
-    "id": "discovered-volunteer-mbc-youth-learning-centre-3de7bf8325ab",
-    "title": "Learning Centre",
-    "organization": "Volunteer MBC",
-    "description": "Learning Centre from Volunteer MBC youth opportunities.",
-    "city": "Mississauga",
-    "region": "Peel",
-    "ageMin": 13,
-    "ageMax": 18,
-    "category": "Volunteer Hours",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-09-11T09:00:00-04:00",
-    "sourceUrl": "https://volunteermbc.org/events/category/learning-centre",
-    "lastChecked": "2026-09-11",
-    "lastSeen": "2026-09-11",
-    "status": "needs_review",
-    "tags": [
-      "volunteer hours"
-    ],
-    "confidence": "medium",
-    "reviewReasons": [
-      "No clear future date found on the crawled page.",
-      "Free access wording needs human confirmation.",
-      "Source is a broad public event index, so official provider confirmation is needed."
-    ],
-    "sourceName": "Volunteer MBC youth opportunities"
-  },
-  {
-    "id": "discovered-volunteer-mbc-youth-volunteer-mbc-care-community-connection-de9216e03693",
-    "title": "Volunteer MBC – Care. Community. Connection.",
-    "organization": "Volunteer MBC",
-    "description": "Volunteer MBC – Care. Community. Connection. from Volunteer MBC youth opportunities.",
-    "city": "Mississauga",
-    "region": "Peel",
-    "ageMin": 13,
-    "ageMax": 18,
-    "category": "Volunteer Hours",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-09-11T09:00:00-04:00",
-    "sourceUrl": "https://www.volunteermbc.org",
-    "lastChecked": "2026-09-11",
-    "lastSeen": "2026-09-11",
-    "status": "needs_review",
-    "tags": [
-      "volunteer hours",
-      "volunteer"
-    ],
-    "confidence": "medium",
-    "reviewReasons": [
-      "No clear future date found on the crawled page.",
-      "Free access wording needs human confirmation.",
-      "Source is a broad public event index, so official provider confirmation is needed."
-    ],
-    "sourceName": "Volunteer MBC youth opportunities"
-  },
-  {
-    "id": "discovered-volunteer-mbc-youth-volunteers-686021394b9a",
-    "title": "Volunteers",
-    "organization": "Volunteer MBC",
-    "description": "Volunteers listed by Volunteer MBC youth opportunities.",
-    "city": "Mississauga",
-    "region": "Peel",
-    "ageMin": 13,
-    "ageMax": 18,
-    "category": "Volunteer Hours",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-09-11T09:00:00-04:00",
-    "sourceUrl": "https://volunteermbc.org/i-want-to-volunteer",
-    "lastChecked": "2026-09-11",
-    "lastSeen": "2026-09-11",
-    "status": "needs_review",
-    "tags": [
-      "volunteer hours"
-    ],
-    "confidence": "medium",
-    "reviewReasons": [
-      "No clear future date found on the crawled page.",
-      "Free access wording needs human confirmation.",
-      "Source is a broad public event index, so official provider confirmation is needed."
-    ],
-    "sourceName": "Volunteer MBC youth opportunities"
   },
   {
     "id": "discovered-uoft-engineering-outreach-home-engineering-outreach-9f92ae9e4cb2",
@@ -1550,509 +1426,5 @@ export const generatedDiscoveryReviewCandidates = [
       "Free access wording needs human confirmation."
     ],
     "sourceName": "Ontario Tech Engineering Outreach"
-  },
-  {
-    "id": "discovered-eventbrite-free-science-tech-toronto-youth-stem-and-innovation-conferen-01b7759b0979",
-    "title": "Toronto Youth STEM and Innovation Conference (TYSIC)",
-    "organization": "Eventbrite public event search",
-    "description": "Toronto Youth STEM and Innovation Conference (TYSIC) listed by Eventbrite free science and technology events.",
-    "city": "Toronto",
-    "region": "Toronto",
-    "ageMin": 13,
-    "ageMax": 18,
-    "category": "Science & Engineering",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-09-11T09:00:00-04:00",
-    "sourceUrl": "https://www.eventbrite.ca/e/toronto-youth-stem-and-innovation-conference-tysic-tickets-1981276214492?aff=ebdssbdestsearch",
-    "lastChecked": "2026-09-11",
-    "lastSeen": "2026-09-11",
-    "status": "needs_review",
-    "tags": [
-      "science & engineering"
-    ],
-    "confidence": "medium",
-    "reviewReasons": [
-      "No clear future date found on the crawled page.",
-      "Source is a broad public event index, so official provider confirmation is needed."
-    ],
-    "sourceName": "Eventbrite free science and technology events"
-  },
-  {
-    "id": "discovered-eventbrite-free-science-tech-designing-science-innovations-in-health-re-11496863ca9f",
-    "title": "Designing Science - Innovations in Health Research Fall 2026",
-    "organization": "Eventbrite public event search",
-    "description": "Designing Science - Innovations in Health Research Fall 2026 listed by Eventbrite free science and technology events.",
-    "city": "Toronto",
-    "region": "Toronto",
-    "ageMin": 1,
-    "ageMax": 18,
-    "category": "Science & Engineering",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-09-11T09:00:00-04:00",
-    "sourceUrl": "https://www.eventbrite.ca/e/designing-science-innovations-in-health-research-fall-2026-tickets-1990783742765?aff=ebdssbdestsearch",
-    "lastChecked": "2026-09-11",
-    "lastSeen": "2026-09-11",
-    "status": "needs_review",
-    "tags": [
-      "science & engineering",
-      "science"
-    ],
-    "confidence": "medium",
-    "reviewReasons": [
-      "No clear future date found on the crawled page.",
-      "Source is a broad public event index, so official provider confirmation is needed."
-    ],
-    "sourceName": "Eventbrite free science and technology events"
-  },
-  {
-    "id": "discovered-eventbrite-free-science-tech-data-sciences-institute-aging-and-ai-works-9f1bf57f6043",
-    "title": "Data Sciences Institute - Aging and AI Workshop on September 28-29, 2026",
-    "organization": "Eventbrite public event search",
-    "description": "Data Sciences Institute - Aging and AI Workshop on September 28-29, 2026 listed by Eventbrite free science and technology events.",
-    "city": "Toronto",
-    "region": "Toronto",
-    "ageMin": 1,
-    "ageMax": 18,
-    "category": "AI & Digital Media",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-09-11T09:00:00-04:00",
-    "sourceUrl": "https://www.eventbrite.ca/e/data-sciences-institute-aging-and-ai-workshop-on-september-28-29-2026-tickets-1996169239932?aff=ebdssbdestsearch",
-    "lastChecked": "2026-09-11",
-    "lastSeen": "2026-09-11",
-    "status": "needs_review",
-    "tags": [
-      "ai & digital media"
-    ],
-    "confidence": "medium",
-    "reviewReasons": [
-      "No clear future date found on the crawled page.",
-      "Source is a broad public event index, so official provider confirmation is needed."
-    ],
-    "sourceName": "Eventbrite free science and technology events"
-  },
-  {
-    "id": "discovered-eventbrite-free-science-tech-3rd-science-of-care-institute-research-and-520aae8d07a2",
-    "title": "3rd Science of Care Institute Research and Innovation Expo",
-    "organization": "Eventbrite public event search",
-    "description": "3rd Science of Care Institute Research and Innovation Expo listed by Eventbrite free science and technology events.",
-    "city": "Toronto",
-    "region": "Toronto",
-    "ageMin": 1,
-    "ageMax": 18,
-    "category": "Science & Engineering",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-09-11T09:00:00-04:00",
-    "sourceUrl": "https://www.eventbrite.ca/e/3rd-science-of-care-institute-research-and-innovation-expo-tickets-1980674259027?aff=ebdssbdestsearch",
-    "lastChecked": "2026-09-11",
-    "lastSeen": "2026-09-11",
-    "status": "needs_review",
-    "tags": [
-      "science & engineering",
-      "science"
-    ],
-    "confidence": "medium",
-    "reviewReasons": [
-      "No clear future date found on the crawled page.",
-      "Source is a broad public event index, so official provider confirmation is needed."
-    ],
-    "sourceName": "Eventbrite free science and technology events"
-  },
-  {
-    "id": "discovered-eventbrite-free-science-tech-data-sciences-institute-industry-speaker-s-58fe44979e9f",
-    "title": "Data Sciences Institute - Industry Speaker Series",
-    "organization": "Eventbrite public event search",
-    "description": "Data Sciences Institute - Industry Speaker Series listed by Eventbrite free science and technology events.",
-    "city": "Toronto",
-    "region": "Toronto",
-    "ageMin": 1,
-    "ageMax": 18,
-    "category": "Science & Engineering",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-09-11T09:00:00-04:00",
-    "sourceUrl": "https://www.eventbrite.ca/e/data-sciences-institute-industry-speaker-series-tickets-1996808430769?aff=ebdssbdestsearch",
-    "lastChecked": "2026-09-11",
-    "lastSeen": "2026-09-11",
-    "status": "needs_review",
-    "tags": [
-      "science & engineering"
-    ],
-    "confidence": "medium",
-    "reviewReasons": [
-      "No clear future date found on the crawled page.",
-      "Source is a broad public event index, so official provider confirmation is needed."
-    ],
-    "sourceName": "Eventbrite free science and technology events"
-  },
-  {
-    "id": "discovered-eventbrite-free-science-tech-my-body-my-brain-my-choices-science-commun-b76a95b9710b",
-    "title": "My Body, My Brain, My Choices: Science Communication Hackathon",
-    "organization": "Eventbrite public event search",
-    "description": "My Body, My Brain, My Choices: Science Communication Hackathon listed by Eventbrite free science and technology events.",
-    "city": "Toronto",
-    "region": "Toronto",
-    "ageMin": 1,
-    "ageMax": 18,
-    "category": "Hackathons & Competitions",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-09-11T09:00:00-04:00",
-    "sourceUrl": "https://www.eventbrite.ca/e/my-body-my-brain-my-choices-science-communication-hackathon-tickets-1995457604411?aff=ebdssbdestsearch",
-    "lastChecked": "2026-09-11",
-    "lastSeen": "2026-09-11",
-    "status": "needs_review",
-    "tags": [
-      "hackathons & competitions",
-      "science",
-      "hackathon"
-    ],
-    "confidence": "medium",
-    "reviewReasons": [
-      "No clear future date found on the crawled page.",
-      "Source is a broad public event index, so official provider confirmation is needed."
-    ],
-    "sourceName": "Eventbrite free science and technology events"
-  },
-  {
-    "id": "discovered-eventbrite-free-science-tech-ai-engineering-summit-toronto-2026-71a16dbeb045",
-    "title": "AI Engineering Summit | Toronto | 2026",
-    "organization": "Eventbrite public event search",
-    "description": "AI Engineering Summit | Toronto | 2026 listed by Eventbrite free science and technology events.",
-    "city": "Toronto",
-    "region": "Toronto",
-    "ageMin": 1,
-    "ageMax": 18,
-    "category": "AI & Digital Media",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-09-11T09:00:00-04:00",
-    "sourceUrl": "https://www.eventbrite.com/e/ai-engineering-summit-toronto-2026-tickets-1995176894801?aff=ebdssbdestsearch",
-    "lastChecked": "2026-09-11",
-    "lastSeen": "2026-09-11",
-    "status": "needs_review",
-    "tags": [
-      "ai & digital media"
-    ],
-    "confidence": "medium",
-    "reviewReasons": [
-      "No clear future date found on the crawled page.",
-      "Source is a broad public event index, so official provider confirmation is needed."
-    ],
-    "sourceName": "Eventbrite free science and technology events"
-  },
-  {
-    "id": "discovered-eventbrite-free-science-tech-black-boys-code-toronto-think-like-a-coder-7e5153a17ce5",
-    "title": "Black Boys Code Toronto - Think Like a Coder: Your First Algorithm",
-    "organization": "Eventbrite public event search",
-    "description": "Black Boys Code Toronto - Think Like a Coder: Your First Algorithm listed by Eventbrite free science and technology events.",
-    "city": "Toronto",
-    "region": "Toronto",
-    "ageMin": 1,
-    "ageMax": 18,
-    "category": "Science & Engineering",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-09-11T09:00:00-04:00",
-    "sourceUrl": "https://www.eventbrite.ca/e/black-boys-code-toronto-think-like-a-coder-your-first-algorithm-tickets-1999313339017?aff=ebdssbdestsearch",
-    "lastChecked": "2026-09-11",
-    "lastSeen": "2026-09-11",
-    "status": "needs_review",
-    "tags": [
-      "science & engineering"
-    ],
-    "confidence": "medium",
-    "reviewReasons": [
-      "No clear future date found on the crawled page.",
-      "Source is a broad public event index, so official provider confirmation is needed."
-    ],
-    "sourceName": "Eventbrite free science and technology events"
-  },
-  {
-    "id": "discovered-eventbrite-free-science-tech-beyond-the-hype-scaling-ai-in-construction-8de38da157b5",
-    "title": "Beyond the Hype: Scaling AI in Construction",
-    "organization": "Eventbrite public event search",
-    "description": "Beyond the Hype: Scaling AI in Construction listed by Eventbrite free science and technology events.",
-    "city": "Toronto",
-    "region": "Toronto",
-    "ageMin": 1,
-    "ageMax": 18,
-    "category": "AI & Digital Media",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-09-11T09:00:00-04:00",
-    "sourceUrl": "https://www.eventbrite.ca/e/beyond-the-hype-scaling-ai-in-construction-tickets-1997309029072?aff=ebdssbdestsearch",
-    "lastChecked": "2026-09-11",
-    "lastSeen": "2026-09-11",
-    "status": "needs_review",
-    "tags": [
-      "ai & digital media"
-    ],
-    "confidence": "medium",
-    "reviewReasons": [
-      "No clear future date found on the crawled page.",
-      "Source is a broad public event index, so official provider confirmation is needed."
-    ],
-    "sourceName": "Eventbrite free science and technology events"
-  },
-  {
-    "id": "discovered-eventbrite-free-online-science-tech-social-media-seo-made-simple-reaching-audi-46af0702d7df",
-    "title": "Social media SEO made simple: Reaching audiences, algorithms and AI",
-    "organization": "Eventbrite public event search",
-    "description": "Social media SEO made simple: Reaching audiences, algorithms and AI listed by Eventbrite free online science and technology events.",
-    "city": "Toronto",
-    "region": "Toronto",
-    "ageMin": 1,
-    "ageMax": 18,
-    "category": "AI & Digital Media",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-09-11T09:00:00-04:00",
-    "sourceUrl": "https://www.eventbrite.co.uk/e/social-media-seo-made-simple-reaching-audiences-algorithms-and-ai-tickets-1993835435460?aff=ebdssbdestsearch",
-    "lastChecked": "2026-09-11",
-    "lastSeen": "2026-09-11",
-    "status": "needs_review",
-    "tags": [
-      "ai & digital media"
-    ],
-    "confidence": "medium",
-    "reviewReasons": [
-      "No clear future date found on the crawled page.",
-      "Source is a broad public event index, so official provider confirmation is needed."
-    ],
-    "sourceName": "Eventbrite free online science and technology events"
-  },
-  {
-    "id": "discovered-eventbrite-free-online-science-tech-4-lessons-youtubers-taught-a-data-scientis-4f3089af63e6",
-    "title": "4 Lessons YouTubers Taught a Data Scientist About Data Visualization",
-    "organization": "Eventbrite public event search",
-    "description": "4 Lessons YouTubers Taught a Data Scientist About Data Visualization listed by Eventbrite free online science and technology events.",
-    "city": "Toronto",
-    "region": "Toronto",
-    "ageMin": 1,
-    "ageMax": 18,
-    "category": "Science & Engineering",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-09-11T09:00:00-04:00",
-    "sourceUrl": "https://www.eventbrite.com/e/4-lessons-youtubers-taught-a-data-scientist-about-data-visualization-tickets-1999283561953?aff=ebdssbdestsearch",
-    "lastChecked": "2026-09-11",
-    "lastSeen": "2026-09-11",
-    "status": "needs_review",
-    "tags": [
-      "science & engineering"
-    ],
-    "confidence": "medium",
-    "reviewReasons": [
-      "No clear future date found on the crawled page.",
-      "Source is a broad public event index, so official provider confirmation is needed."
-    ],
-    "sourceName": "Eventbrite free online science and technology events"
-  },
-  {
-    "id": "discovered-eventbrite-free-online-science-tech-national-disability-ai-enabling-technology-ee3c3d2470a9",
-    "title": "National Disability AI & Enabling Technology Virtual Summit",
-    "organization": "Eventbrite public event search",
-    "description": "National Disability AI & Enabling Technology Virtual Summit listed by Eventbrite free online science and technology events.",
-    "city": "Toronto",
-    "region": "Toronto",
-    "ageMin": 1,
-    "ageMax": 18,
-    "category": "AI & Digital Media",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-09-11T09:00:00-04:00",
-    "sourceUrl": "https://www.eventbrite.com/e/national-disability-ai-enabling-technology-virtual-summit-tickets-1993608021258?aff=ebdssbdestsearch",
-    "lastChecked": "2026-09-11",
-    "lastSeen": "2026-09-11",
-    "status": "needs_review",
-    "tags": [
-      "ai & digital media",
-      "technology"
-    ],
-    "confidence": "medium",
-    "reviewReasons": [
-      "No clear future date found on the crawled page.",
-      "Source is a broad public event index, so official provider confirmation is needed."
-    ],
-    "sourceName": "Eventbrite free online science and technology events"
-  },
-  {
-    "id": "discovered-eventbrite-free-online-science-tech-get-to-know-the-national-health-data-hub-95ea7dad2b45",
-    "title": "Get to Know the National Health Data Hub",
-    "organization": "Eventbrite public event search",
-    "description": "Get to Know the National Health Data Hub listed by Eventbrite free online science and technology events.",
-    "city": "Toronto",
-    "region": "Toronto",
-    "ageMin": 1,
-    "ageMax": 18,
-    "category": "Science & Engineering",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-09-11T09:00:00-04:00",
-    "sourceUrl": "https://www.eventbrite.com.au/e/get-to-know-the-national-health-data-hub-tickets-1992963000985?aff=ebdssbdestsearch",
-    "lastChecked": "2026-09-11",
-    "lastSeen": "2026-09-11",
-    "status": "needs_review",
-    "tags": [
-      "science & engineering"
-    ],
-    "confidence": "medium",
-    "reviewReasons": [
-      "No clear future date found on the crawled page.",
-      "Source is a broad public event index, so official provider confirmation is needed."
-    ],
-    "sourceName": "Eventbrite free online science and technology events"
-  },
-  {
-    "id": "discovered-eventbrite-free-online-science-tech-cypress-college-radiologic-technology-info-b598f602dcdf",
-    "title": "CYPRESS COLLEGE RADIOLOGIC TECHNOLOGY INFORMATION WORKSHOP - ONLINE",
-    "organization": "Eventbrite public event search",
-    "description": "CYPRESS COLLEGE RADIOLOGIC TECHNOLOGY INFORMATION WORKSHOP - ONLINE listed by Eventbrite free online science and technology events.",
-    "city": "Toronto",
-    "region": "Toronto",
-    "ageMin": 1,
-    "ageMax": 18,
-    "category": "Science & Engineering",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-09-11T09:00:00-04:00",
-    "sourceUrl": "https://www.eventbrite.com/e/cypress-college-radiologic-technology-information-workshop-online-tickets-1993630686049?aff=ebdssbdestsearch",
-    "lastChecked": "2026-09-11",
-    "lastSeen": "2026-09-11",
-    "status": "needs_review",
-    "tags": [
-      "science & engineering",
-      "online",
-      "technology"
-    ],
-    "confidence": "medium",
-    "reviewReasons": [
-      "No clear future date found on the crawled page.",
-      "Source is a broad public event index, so official provider confirmation is needed."
-    ],
-    "sourceName": "Eventbrite free online science and technology events"
-  },
-  {
-    "id": "discovered-eventbrite-free-online-science-tech-batsense-ai-powered-bat-monitoring-for-eco-4d9b34ff92df",
-    "title": "BatSense: AI-Powered Bat Monitoring for Ecology",
-    "organization": "Eventbrite public event search",
-    "description": "BatSense: AI-Powered Bat Monitoring for Ecology listed by Eventbrite free online science and technology events.",
-    "city": "Toronto",
-    "region": "Toronto",
-    "ageMin": 1,
-    "ageMax": 18,
-    "category": "AI & Digital Media",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-09-11T09:00:00-04:00",
-    "sourceUrl": "https://www.eventbrite.co.uk/e/batsense-ai-powered-bat-monitoring-for-ecology-tickets-1993873818264?aff=ebdssbdestsearch",
-    "lastChecked": "2026-09-11",
-    "lastSeen": "2026-09-11",
-    "status": "needs_review",
-    "tags": [
-      "ai & digital media"
-    ],
-    "confidence": "medium",
-    "reviewReasons": [
-      "No clear future date found on the crawled page.",
-      "Source is a broad public event index, so official provider confirmation is needed."
-    ],
-    "sourceName": "Eventbrite free online science and technology events"
-  },
-  {
-    "id": "discovered-eventbrite-free-online-science-tech-applied-ai-technology-conference-2026-free-d63945aedf29",
-    "title": "Applied AI Technology Conference 2026 | Free Online AI Conference",
-    "organization": "Eventbrite public event search",
-    "description": "Applied AI Technology Conference 2026 | Free Online AI Conference listed by Eventbrite free online science and technology events.",
-    "city": "Toronto",
-    "region": "Toronto",
-    "ageMin": 1,
-    "ageMax": 18,
-    "category": "AI & Digital Media",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-09-11T09:00:00-04:00",
-    "sourceUrl": "https://www.eventbrite.com/e/applied-ai-technology-conference-2026-free-online-ai-conference-tickets-1998413786431?aff=ebdssbdestsearch",
-    "lastChecked": "2026-09-11",
-    "lastSeen": "2026-09-11",
-    "status": "needs_review",
-    "tags": [
-      "ai & digital media",
-      "free",
-      "online",
-      "technology"
-    ],
-    "confidence": "medium",
-    "reviewReasons": [
-      "No clear future date found on the crawled page.",
-      "Source is a broad public event index, so official provider confirmation is needed."
-    ],
-    "sourceName": "Eventbrite free online science and technology events"
-  },
-  {
-    "id": "discovered-eventbrite-free-online-science-tech-5-hackathon-9d09857cb031",
-    "title": "5 . Hackathon",
-    "organization": "Eventbrite public event search",
-    "description": "5 . Hackathon listed by Eventbrite free online science and technology events.",
-    "city": "Toronto",
-    "region": "Toronto",
-    "ageMin": 1,
-    "ageMax": 18,
-    "category": "Hackathons & Competitions",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-09-11T09:00:00-04:00",
-    "sourceUrl": "https://www.eventbrite.ca/d/online/hackathon",
-    "lastChecked": "2026-09-11",
-    "lastSeen": "2026-09-11",
-    "status": "needs_review",
-    "tags": [
-      "hackathons & competitions",
-      "hackathon"
-    ],
-    "confidence": "medium",
-    "reviewReasons": [
-      "No clear future date found on the crawled page.",
-      "Source is a broad public event index, so official provider confirmation is needed."
-    ],
-    "sourceName": "Eventbrite free online science and technology events"
   }
 ] satisfies DiscoveredOpportunity[];
