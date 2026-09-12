@@ -3,9 +3,9 @@ import type { DiscoveredOpportunity } from "./discovery";
 export const generatedDiscoverySummary = {
   "mode": "deterministic",
   "sourcesChecked": 30,
-  "candidatesFound": 276,
-  "newCandidates": 50,
-  "duplicatesSkipped": 63,
+  "candidatesFound": 277,
+  "newCandidates": 51,
+  "duplicatesSkipped": 44,
   "warnings": [
     "Could not check Credit Valley Conservation youth opportunities: 403 Forbidden.",
     "Could not check Volunteer MBC youth opportunities: 403 Forbidden.",
@@ -14,7 +14,7 @@ export const generatedDiscoverySummary = {
   ],
   "sourceHealth": {
     "schemaVersion": 1,
-    "generatedAt": "2026-09-12T15:34:06.600Z",
+    "generatedAt": "2026-09-12T20:35:17.455Z",
     "status": "healthy",
     "failureReasons": [],
     "sourcesChecked": 30,
@@ -27,35 +27,7 @@ export const generatedDiscoverySummary = {
 
 export const generatedDiscoveryReviewCandidates = [
   {
-    "id": "discovered-tpl-events-volunteer-game-on-board-game-playtime-2eee9ad2af55",
-    "title": "Game on! Board Game Playtime",
-    "organization": "Toronto Public Library",
-    "description": "Join us for a fun-filled day of board games and puzzles! Play your favourites or try something new! Brings your friends and family or meet new people at the library. Games available for use in the Children's Area. Available games include: Ball Fall Jumbo (Ages 3+), STEM Pretend Flower Garden Toy Set (Ages 3-6), Operation (Ages 6+), STEM Road Builder Game (Ages 4-8), Dinosaur Tetra Tower Balance Stacking Blocks Game (Ages 6+) Available puzzles include: Giant World Map Puzzle (Ages 4+), Canada Map Jigsaw Puzzle (Ages 4-12), ABC Puzzle (Ages 3+)",
-    "city": "Toronto",
-    "region": "Toronto",
-    "ageMin": 3,
-    "ageMax": 6,
-    "category": "Science & Engineering",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "deadline": "2026-09-12T09:00:00-04:00",
-    "startDate": "2026-09-12T09:00:00-04:00",
-    "endDate": "2026-09-12T16:30:00-04:00",
-    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6a4d01876bd493f6008f06ce",
-    "lastChecked": "2026-09-12",
-    "lastSeen": "2026-09-12",
-    "status": "active",
-    "tags": [
-      "science & engineering"
-    ],
-    "confidence": "high",
-    "reviewReasons": [],
-    "sourceName": "Toronto Public Library youth volunteer events"
-  },
-  {
-    "id": "discovered-tpl-events-volunteer-set-phasers-to-celebrate-60-years-of-star--097d4eec99f5",
+    "id": "discovered-tpl-events-volunteer-set-phasers-to-celebrate-60-years-of-star--fe274995835f",
     "title": "Set Phasers to Celebrate! 60 Years of Star Trek: A Merril Collection Exhibit",
     "organization": "Toronto Public Library",
     "description": "Beam yourself up to the Merril Collection of Science Fiction, Speculation and Fantasy and boldly embark on a 60-year journey that celebrates all things Star Trek! For decades, the original television series turned global franchise has inspired generations of fans, artists, and scientists alike. Visitors can explore voyages, characters, and new frontiers through our collection highlights such as novels, RPGs, fanzines, original artwork and more! This exhibit can be viewed during the Merril Collection's regular open hours.",
@@ -71,7 +43,7 @@ export const generatedDiscoveryReviewCandidates = [
     "deadline": "2026-08-17T09:00:00-04:00",
     "startDate": "2026-08-17T09:00:00-04:00",
     "endDate": "2026-11-01T09:00:00-04:00",
-    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6a8850a83b6c71003e5a57be",
+    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6a5299330e562e2800993112",
     "lastChecked": "2026-09-12",
     "lastSeen": "2026-09-12",
     "status": "active",
@@ -83,32 +55,62 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Toronto Public Library youth volunteer events"
   },
   {
-    "id": "discovered-tpl-events-volunteer-saturday-morning-movies-485c3f37d56f",
-    "title": "Saturday Morning Movies",
-    "organization": "Toronto Public Library",
-    "description": "Come join us for a Saturday morning movie. Bring your own snacks and enjoy our feature film. Drop-in. No registration required. For ages 0-12 accompanied by a parent or caregiver. Aug. 22 - The Wild Robot (2024) Aug. 29 - Sing (2016) Sept. 5 - Sing 2 (2021) Sept. 12 - Trolls (2016) Sept. 19 - Luca (2021) Sept. 26 - Brave (2012)",
-    "city": "Toronto",
-    "region": "Toronto",
-    "ageMin": 0,
-    "ageMax": 12,
-    "category": "Coding & Robotics",
+    "id": "discovered-markham-events-volunteer-knitting-circle-49fe267429c3",
+    "title": "Knitting Circle",
+    "organization": "Markham Public Library",
+    "description": "Do you like to knit or crochet? Come join our knitting circle! This knitting circle is run in partnership with Casting Off the Cold, which is a volunteer organization that collects hand knitted and crocheted blankets, hats, scarves, mitts, baby clothes and similar items to donate to charities in York Region that support people in need in our community. We have been donating annually since 2006. Our group members knit at home, and we like to meet once a month to show and collect our completed projects which are donated in the autumn. Any interested knitter or crocheter is welcome to join us. We have a Facebook page: casting off the cold, and a blog: castingoffthecold.blogspot.ca with more information and contact details. Please note: this is not a knitting class.",
+    "city": "Markham",
+    "region": "York",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "Volunteer Hours",
     "cost": "Free to join",
     "language": [
       "en"
     ],
-    "deadline": "2026-09-12T10:00:00-04:00",
-    "startDate": "2026-09-12T10:00:00-04:00",
-    "endDate": "2026-09-12T12:00:00-04:00",
-    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6a5540820e562e2800999a53",
+    "deadline": "2026-09-13T13:00:00-04:00",
+    "startDate": "2026-09-13T13:00:00-04:00",
+    "endDate": "2026-09-13T15:00:00-04:00",
+    "sourceUrl": "https://markham.bibliocommons.com/events/6a1f46c6caf9343600603132",
     "lastChecked": "2026-09-12",
     "lastSeen": "2026-09-12",
     "status": "active",
     "tags": [
-      "coding & robotics"
+      "volunteer hours",
+      "volunteer"
     ],
     "confidence": "high",
     "reviewReasons": [],
-    "sourceName": "Toronto Public Library youth volunteer events"
+    "sourceName": "Markham Public Library youth volunteer events"
+  },
+  {
+    "id": "discovered-markham-events-volunteer-reading-to-success-3a2d7fab6bdd",
+    "title": "Reading to Success",
+    "organization": "Markham Public Library",
+    "description": "Read a story with us! Reading to Success is a volunteer facilitated reading program established to motivate children to read regularly. YPAM in partnership with the Markham Public Library provides this weekly literacy program, where volunteers read grade specific books for children in Junior Kindergarten, Senior Kindergarten, Grade 1, Grade 2 and IEP kids. Make Reading to Success part of your child's reading habit and build a love of reading together. To register, please visit: https://www.ypam.ca/reading *Please note that through registering, you are giving YPAM your information.",
+    "city": "Markham",
+    "region": "York",
+    "ageMin": 6,
+    "ageMax": 12,
+    "category": "Volunteer Hours",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "deadline": "2026-09-14T18:00:00-04:00",
+    "startDate": "2026-09-14T18:00:00-04:00",
+    "endDate": "2026-09-14T19:30:00-04:00",
+    "sourceUrl": "https://markham.bibliocommons.com/events/6a725b26cca66c2f00a83966",
+    "lastChecked": "2026-09-12",
+    "lastSeen": "2026-09-12",
+    "status": "active",
+    "tags": [
+      "volunteer hours",
+      "volunteer"
+    ],
+    "confidence": "high",
+    "reviewReasons": [],
+    "sourceName": "Markham Public Library youth volunteer events"
   },
   {
     "id": "discovered-vaughan-library-programs-volunteer-opportunities-e775e833a50b",
@@ -219,6 +221,35 @@ export const generatedDiscoveryReviewCandidates = [
     "tags": [
       "makerspace & fabrication",
       "maker"
+    ],
+    "confidence": "high",
+    "reviewReasons": [],
+    "sourceName": "Aurora Public Library STEM events"
+  },
+  {
+    "id": "discovered-aurora-library-stem-intro-to-coding-for-kids-b4a293e8015d",
+    "title": "Intro to Coding for Kids",
+    "organization": "Aurora Public Library",
+    "description": "Join us the APL this september to learn the exciting world of coding through Scratch ! In this beginner-friendly program, participants will learn fundamental coding concepts while creating their very own video game: Brick Breaker . Through hands-on activities, participants will explore programming concepts such as sequences, loops, conditionals, variables and events. They’ll put these skills into practice by designing game elements, programming player controls, creating movement and collisions, keeping score, and adding challenges to their game. By the end of the program, participants will have a playable Brick Breaker game that they designed and coded themselves, along with a strong foundation of the building blocks of programming. No prior coding experience is required—just curiosity, cr",
+    "city": "Aurora",
+    "region": "York",
+    "ageMin": 6,
+    "ageMax": 12,
+    "category": "Coding & Robotics",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "deadline": "2026-09-13T14:00:00-04:00",
+    "startDate": "2026-09-13T14:00:00-04:00",
+    "endDate": "2026-09-13T16:00:00-04:00",
+    "sourceUrl": "https://aurora.bibliocommons.com/events/6a872e35db86e4004d867aca",
+    "lastChecked": "2026-09-12",
+    "lastSeen": "2026-09-12",
+    "status": "active",
+    "tags": [
+      "coding & robotics",
+      "coding"
     ],
     "confidence": "high",
     "reviewReasons": [],
@@ -340,6 +371,34 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Pickering Public Library technology events"
   },
   {
+    "id": "discovered-pickering-library-tech-introduction-to-generative-ai-98fa41664b90",
+    "title": "Introduction to Generative AI",
+    "organization": "Pickering Public Library",
+    "description": "Introduction to Generative AI listed by Pickering Public Library technology events.",
+    "city": "Pickering",
+    "region": "Durham",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "AI & Digital Media",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-09-12T09:00:00-04:00",
+    "sourceUrl": "https://cal.pickeringlibrary.ca/event/introduction-generative-ai-54386",
+    "lastChecked": "2026-09-12",
+    "lastSeen": "2026-09-12",
+    "status": "needs_review",
+    "tags": [
+      "ai & digital media"
+    ],
+    "confidence": "high",
+    "reviewReasons": [
+      "No clear future date found on the crawled page."
+    ],
+    "sourceName": "Pickering Public Library technology events"
+  },
+  {
     "id": "discovered-pickering-library-tech-developing-responsible-technology-4c170fc272c9",
     "title": "Developing Responsible Technology",
     "organization": "Pickering Public Library",
@@ -426,34 +485,6 @@ export const generatedDiscoveryReviewCandidates = [
       "No clear future date found on the crawled page."
     ],
     "sourceName": "Pickering Public Library technology events"
-  },
-  {
-    "id": "discovered-oshawa-library-stem-steam-saturday-8bdd183e9f58",
-    "title": "STEAM Saturday",
-    "organization": "Oshawa Public Libraries",
-    "description": "STEAM Saturday from Oshawa Public Libraries STEM events.",
-    "city": "Oshawa",
-    "region": "Durham",
-    "ageMin": 1,
-    "ageMax": 18,
-    "category": "Science & Engineering",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-09-12T09:00:00-04:00",
-    "sourceUrl": "https://oshlib.bibliocommons.com/events/6a68d83ae9de6536001ecbb2",
-    "lastChecked": "2026-09-12",
-    "lastSeen": "2026-09-12",
-    "status": "needs_review",
-    "tags": [
-      "science & engineering"
-    ],
-    "confidence": "high",
-    "reviewReasons": [
-      "No clear future date found on the crawled page."
-    ],
-    "sourceName": "Oshawa Public Libraries STEM events"
   },
   {
     "id": "discovered-oshawa-library-stem-makerspace-6bb095888b6a",
