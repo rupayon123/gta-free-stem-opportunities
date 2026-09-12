@@ -3,25 +3,24 @@ import type { DiscoveredOpportunity } from "./discovery";
 export const generatedDiscoverySummary = {
   "mode": "deterministic",
   "sourcesChecked": 30,
-  "candidatesFound": 241,
-  "newCandidates": 47,
-  "duplicatesSkipped": 47,
+  "candidatesFound": 276,
+  "newCandidates": 50,
+  "duplicatesSkipped": 63,
   "warnings": [
     "Could not check Credit Valley Conservation youth opportunities: 403 Forbidden.",
-    "Could not check TRCA youth volunteer opportunities: fetch failed.",
     "Could not check Volunteer MBC youth opportunities: 403 Forbidden.",
     "Could not check Eventbrite free science and technology events: 405 Not Allowed.",
     "Could not check Eventbrite free online science and technology events: 405 Not Allowed."
   ],
   "sourceHealth": {
     "schemaVersion": 1,
-    "generatedAt": "2026-09-12T10:50:31.086Z",
+    "generatedAt": "2026-09-12T15:34:06.600Z",
     "status": "healthy",
     "failureReasons": [],
     "sourcesChecked": 30,
-    "successfulSources": 25,
-    "failedSources": 5,
-    "sourceSuccessRatio": 0.8333,
+    "successfulSources": 26,
+    "failedSources": 4,
+    "sourceSuccessRatio": 0.8667,
     "minimumSourceSuccessRatio": 0.75
   }
 } as const;
@@ -56,34 +55,6 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Toronto Public Library youth volunteer events"
   },
   {
-    "id": "discovered-tpl-events-volunteer-saturday-morning-movies-6161129cfff6",
-    "title": "Saturday Morning Movies",
-    "organization": "Toronto Public Library",
-    "description": "Come join us for a Saturday morning movie. Bring your own snacks and enjoy our feature film. Drop-in. No registration required. For ages 0-12 accompanied by a parent or caregiver. Aug. 22 - The Wild Robot (2024) Aug. 29 - Sing (2016) Sept. 5 - Sing 2 (2021) Sept. 12 - Trolls (2016) Sept. 19 - Luca (2021) Sept. 26 - Brave (2012)",
-    "city": "Toronto",
-    "region": "Toronto",
-    "ageMin": 0,
-    "ageMax": 12,
-    "category": "Coding & Robotics",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "deadline": "2026-09-12T10:00:00-04:00",
-    "startDate": "2026-09-12T10:00:00-04:00",
-    "endDate": "2026-09-12T12:00:00-04:00",
-    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6a875a463b6c71003e5a39be",
-    "lastChecked": "2026-09-12",
-    "lastSeen": "2026-09-12",
-    "status": "active",
-    "tags": [
-      "coding & robotics"
-    ],
-    "confidence": "high",
-    "reviewReasons": [],
-    "sourceName": "Toronto Public Library youth volunteer events"
-  },
-  {
     "id": "discovered-tpl-events-volunteer-set-phasers-to-celebrate-60-years-of-star--097d4eec99f5",
     "title": "Set Phasers to Celebrate! 60 Years of Star Trek: A Merril Collection Exhibit",
     "organization": "Toronto Public Library",
@@ -106,6 +77,34 @@ export const generatedDiscoveryReviewCandidates = [
     "status": "active",
     "tags": [
       "science & engineering"
+    ],
+    "confidence": "high",
+    "reviewReasons": [],
+    "sourceName": "Toronto Public Library youth volunteer events"
+  },
+  {
+    "id": "discovered-tpl-events-volunteer-saturday-morning-movies-485c3f37d56f",
+    "title": "Saturday Morning Movies",
+    "organization": "Toronto Public Library",
+    "description": "Come join us for a Saturday morning movie. Bring your own snacks and enjoy our feature film. Drop-in. No registration required. For ages 0-12 accompanied by a parent or caregiver. Aug. 22 - The Wild Robot (2024) Aug. 29 - Sing (2016) Sept. 5 - Sing 2 (2021) Sept. 12 - Trolls (2016) Sept. 19 - Luca (2021) Sept. 26 - Brave (2012)",
+    "city": "Toronto",
+    "region": "Toronto",
+    "ageMin": 0,
+    "ageMax": 12,
+    "category": "Coding & Robotics",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "deadline": "2026-09-12T10:00:00-04:00",
+    "startDate": "2026-09-12T10:00:00-04:00",
+    "endDate": "2026-09-12T12:00:00-04:00",
+    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6a5540820e562e2800999a53",
+    "lastChecked": "2026-09-12",
+    "lastSeen": "2026-09-12",
+    "status": "active",
+    "tags": [
+      "coding & robotics"
     ],
     "confidence": "high",
     "reviewReasons": [],
@@ -825,6 +824,97 @@ export const generatedDiscoveryReviewCandidates = [
       "No clear future date found on the crawled page."
     ],
     "sourceName": "Halton Hills Public Library programs"
+  },
+  {
+    "id": "discovered-trca-youth-youth-opportunities-at-trca-bd0e50237819",
+    "title": "Youth Opportunities at TRCA",
+    "organization": "Toronto and Region Conservation Authority",
+    "description": "TRCA offers programs to support youth and young adults who are interested in getting involved in the conservation sector.",
+    "city": "Toronto",
+    "region": "Toronto",
+    "ageMin": 13,
+    "ageMax": 18,
+    "category": "Science & Engineering",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-09-12T09:00:00-04:00",
+    "sourceUrl": "https://trca.ca/get-involved/youth-opportunities",
+    "lastChecked": "2026-09-12",
+    "lastSeen": "2026-09-12",
+    "status": "needs_review",
+    "tags": [
+      "science & engineering",
+      "youth",
+      "conservation"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "No clear future date found on the crawled page.",
+      "Free access wording needs human confirmation."
+    ],
+    "sourceName": "TRCA youth volunteer opportunities"
+  },
+  {
+    "id": "discovered-trca-youth-volunteer-with-trca-cdffdd979d6f",
+    "title": "Volunteer with TRCA",
+    "organization": "Toronto and Region Conservation Authority",
+    "description": "Volunteer with TRCA listed by TRCA youth volunteer opportunities.",
+    "city": "Toronto",
+    "region": "Toronto",
+    "ageMin": 13,
+    "ageMax": 18,
+    "category": "Volunteer Hours",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-09-12T09:00:00-04:00",
+    "sourceUrl": "https://trca.ca/get-involved/volunteer",
+    "lastChecked": "2026-09-12",
+    "lastSeen": "2026-09-12",
+    "status": "needs_review",
+    "tags": [
+      "volunteer hours",
+      "volunteer"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "No clear future date found on the crawled page.",
+      "Free access wording needs human confirmation."
+    ],
+    "sourceName": "TRCA youth volunteer opportunities"
+  },
+  {
+    "id": "discovered-trca-youth-young-conservation-professionals-leadershi-275035142ede",
+    "title": "Young Conservation Professionals Leadership Program",
+    "organization": "Toronto and Region Conservation Authority",
+    "description": "Young Conservation Professionals Leadership Program listed by TRCA youth volunteer opportunities.",
+    "city": "Toronto",
+    "region": "Toronto",
+    "ageMin": 13,
+    "ageMax": 18,
+    "category": "Volunteer Hours",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-09-12T09:00:00-04:00",
+    "sourceUrl": "https://trca.ca/learning/adult/young-conservation-professionals",
+    "lastChecked": "2026-09-12",
+    "lastSeen": "2026-09-12",
+    "status": "needs_review",
+    "tags": [
+      "volunteer hours",
+      "conservation"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "No clear future date found on the crawled page.",
+      "Free access wording needs human confirmation."
+    ],
+    "sourceName": "TRCA youth volunteer opportunities"
   },
   {
     "id": "discovered-uhn-stem-pathways-uhn-stem-pathways-7847b49cfe74",

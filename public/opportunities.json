@@ -1,12 +1,12 @@
 {
   "name": "GTA FREE STEM Opportunities public feed",
   "schemaVersion": 1,
-  "count": 141,
+  "count": 147,
   "lastDataChange": "2026-09-12",
   "sourceHealth": {
     "library": {
       "schemaVersion": 1,
-      "generatedAt": "2026-09-12T10:50:03.193Z",
+      "generatedAt": "2026-09-12T15:33:49.458Z",
       "status": "healthy",
       "failureReasons": [],
       "sourceCount": 2,
@@ -16,7 +16,7 @@
       "pageSuccessRatio": 1,
       "minimumPageSuccessRatio": 0.75,
       "minimumPerSourceSuccessRatio": 0.5,
-      "acceptedListings": 137,
+      "acceptedListings": 143,
       "previousPublishedListings": 137,
       "minimumAcceptedListings": 90,
       "sources": [
@@ -25,7 +25,7 @@
           "organization": "Toronto Public Library",
           "attemptedPages": 12,
           "successfulPages": 12,
-          "acceptedListings": 80,
+          "acceptedListings": 83,
           "failedPages": 0,
           "pageSuccessRatio": 1
         },
@@ -34,7 +34,7 @@
           "organization": "Markham Public Library",
           "attemptedPages": 12,
           "successfulPages": 12,
-          "acceptedListings": 57,
+          "acceptedListings": 60,
           "failedPages": 0,
           "pageSuccessRatio": 1
         }
@@ -42,531 +42,18 @@
     },
     "discovery": {
       "schemaVersion": 1,
-      "generatedAt": "2026-09-12T10:50:31.086Z",
+      "generatedAt": "2026-09-12T15:34:06.600Z",
       "status": "healthy",
       "failureReasons": [],
       "sourcesChecked": 30,
-      "successfulSources": 25,
-      "failedSources": 5,
-      "sourceSuccessRatio": 0.8333,
+      "successfulSources": 26,
+      "failedSources": 4,
+      "sourceSuccessRatio": 0.8667,
       "minimumSourceSuccessRatio": 0.75,
-      "reviewCandidates": 47
+      "reviewCandidates": 50
     }
   },
   "opportunities": [
-    {
-      "id": "tpl-rss-6a7cbf862dac6e00371e9e41",
-      "title": "Computers for Beginners 4: Use Google Search and Maps",
-      "organization": "Toronto Public Library",
-      "description": "A class on using Google's filters, tools, and Maps for absolute beginners with little computer experience. In this fourth session you will: Use Google search tools more effectively to find websites, images, and news sites Explore Google Maps to find addresses and get directions for transit and road travel. Upon completion of this class students will be able to use more advanced search engine features and use Google Maps at a basic level. Prerequisites: Computers for Beginners 1, 2 & 3 or basic mouse, keyboarding and internet skills Format: Hands-on with demonstrations Information Collection Notice: The personal information on this form is collected by the Toronto Public Library under the Public Libraries Act, sections 20(a), 20(c), and 20(d). The information will only be used for event and program registration, delivery and evaluation. Questions about how the library handles your information can be directed to Answerline staff at answerline@tpl.ca , 416-397-5981, 789 Yonge Street, Toronto ON M4W 2G8.",
-      "city": "Toronto",
-      "region": "Toronto",
-      "ageMin": 18,
-      "category": "AI & Digital Media",
-      "categories": [
-        "STEM",
-        "AI & Digital Media"
-      ],
-      "cost": "Free to join",
-      "language": [
-        "en"
-      ],
-      "deadline": "2026-09-12T14:00:00.000Z",
-      "startDate": "2026-09-12T14:00:00.000Z",
-      "endDate": "2026-09-12T15:30:00.000Z",
-      "sourceUrl": "https://tpl.bibliocommons.com/events/6a7cbf862dac6e00371e9e41",
-      "registrationUrl": "https://tpl.bibliocommons.com/events/6a7cbf862dac6e00371e9e41",
-      "lastChecked": "2026-09-12",
-      "lastSeen": "2026-09-12",
-      "status": "active",
-      "tags": [
-        "computer basics & office software",
-        "adults (18+)",
-        "older adults",
-        "english"
-      ],
-      "communityFocus": [
-        "Open to all",
-        "Newcomer-friendly"
-      ],
-      "latitude": 43.8089406,
-      "longitude": -79.2164074,
-      "address": "Malvern, 30 Sewells Road, Toronto, ON, M1B 3G5",
-      "volunteerHoursEligible": false,
-      "coopEligible": false,
-      "trustedSource": true,
-      "sources": [
-        {
-          "label": "Official Toronto Public Library event page",
-          "url": "https://tpl.bibliocommons.com/events/6a7cbf862dac6e00371e9e41",
-          "capturedAt": "2026-09-12T10:49:53.410Z",
-          "confidence": "high"
-        }
-      ],
-      "translations": {
-        "fr": {
-          "title": "Occasion gratuite de STEM offerte par Toronto Public Library a Toronto",
-          "summary": "Occasion gratuite de STEM offerte par Toronto Public Library a Toronto. Ages 18+. Consultez la source pour les details.",
-          "description": "Occasion gratuite de STEM offerte par Toronto Public Library a Toronto. Ages 18+. Consultez la source pour les details.",
-          "category": "STEM",
-          "cost": "Fiche gratuite",
-          "tags": [
-            "STEM",
-            "IA et medias numeriques"
-          ],
-          "translationSource": "generated-summary-template"
-        },
-        "zh": {
-          "title": "Toronto Public Library在Toronto提供免费的STEM机会。适合18+岁。请查看来源了解详情。",
-          "summary": "Toronto Public Library在Toronto提供免费的STEM机会。适合18+岁。请查看来源了解详情。",
-          "description": "Toronto Public Library在Toronto提供免费的STEM机会。适合18+岁。请查看来源了解详情。",
-          "category": "STEM",
-          "cost": "免费列表",
-          "tags": [
-            "STEM",
-            "人工智能与数字媒体"
-          ],
-          "translationSource": "generated-summary-template"
-        },
-        "yue": {
-          "title": "Toronto Public Library喺Toronto提供免費STEM機會。適合18+歲。請查看來源了解詳情。",
-          "summary": "Toronto Public Library喺Toronto提供免費STEM機會。適合18+歲。請查看來源了解詳情。",
-          "description": "Toronto Public Library喺Toronto提供免費STEM機會。適合18+歲。請查看來源了解詳情。",
-          "category": "STEM",
-          "cost": "免費項目",
-          "tags": [
-            "STEM",
-            "人工智能同數碼媒體"
-          ],
-          "translationSource": "generated-summary-template"
-        },
-        "pa": {
-          "title": "Toronto Public Library ਵੱਲੋਂ Toronto ਵਿੱਚ ਮੁਫ਼ਤ STEM ਮੌਕਾ। ਉਮਰ 18+",
-          "summary": "Toronto Public Library ਵੱਲੋਂ Toronto ਵਿੱਚ ਮੁਫ਼ਤ STEM ਮੌਕਾ। ਉਮਰ 18+. ਵੇਰਵਿਆਂ ਲਈ ਸਰੋਤ ਵੇਖੋ।",
-          "description": "Toronto Public Library ਵੱਲੋਂ Toronto ਵਿੱਚ ਮੁਫ਼ਤ STEM ਮੌਕਾ। ਉਮਰ 18+. ਵੇਰਵਿਆਂ ਲਈ ਸਰੋਤ ਵੇਖੋ।",
-          "category": "STEM",
-          "cost": "ਮੁਫ਼ਤ ਲਿਸਟਿੰਗ",
-          "tags": [
-            "STEM",
-            "AI ਅਤੇ ਡਿਜ਼ਿਟਲ ਮੀਡੀਆ"
-          ],
-          "translationSource": "generated-summary-template"
-        },
-        "ur": {
-          "title": "Toronto میں Toronto Public Library کی طرف سے مفت STEM موقع۔ عمر 18+",
-          "summary": "Toronto میں Toronto Public Library کی طرف سے مفت STEM موقع۔ عمر 18+. تفصیلات کے لیے ذریعہ دیکھیں۔",
-          "description": "Toronto میں Toronto Public Library کی طرف سے مفت STEM موقع۔ عمر 18+. تفصیلات کے لیے ذریعہ دیکھیں۔",
-          "category": "STEM",
-          "cost": "مفت لسٹنگ",
-          "tags": [
-            "STEM",
-            "AI اور ڈیجیٹل میڈیا"
-          ],
-          "translationSource": "generated-summary-template"
-        },
-        "ta": {
-          "title": "Toronto நகரில் Toronto Public Library வழங்கும் இலவச STEM வாய்ப்பு",
-          "summary": "Toronto நகரில் Toronto Public Library வழங்கும் இலவச STEM வாய்ப்பு. வயது 18+. விவரங்களுக்கு மூலத்தை பார்க்கவும்.",
-          "description": "Toronto நகரில் Toronto Public Library வழங்கும் இலவச STEM வாய்ப்பு. வயது 18+. விவரங்களுக்கு மூலத்தை பார்க்கவும்.",
-          "category": "STEM",
-          "cost": "இலவச பட்டியல்",
-          "tags": [
-            "STEM",
-            "AI மற்றும் டிஜிட்டல் மீடியா"
-          ],
-          "translationSource": "generated-summary-template"
-        },
-        "tl": {
-          "title": "Libreng STEM opportunity mula sa Toronto Public Library sa Toronto",
-          "summary": "Libreng STEM opportunity mula sa Toronto Public Library sa Toronto. Edad 18+. Tingnan ang source para sa detalye.",
-          "description": "Libreng STEM opportunity mula sa Toronto Public Library sa Toronto. Edad 18+. Tingnan ang source para sa detalye.",
-          "category": "STEM",
-          "cost": "Libreng listing",
-          "tags": [
-            "STEM",
-            "AI at digital media"
-          ],
-          "translationSource": "generated-summary-template"
-        },
-        "es": {
-          "title": "Oportunidad gratis de STEM de Toronto Public Library en Toronto",
-          "summary": "Oportunidad gratis de STEM de Toronto Public Library en Toronto. Edades 18+. Revise la fuente para detalles.",
-          "description": "Oportunidad gratis de STEM de Toronto Public Library en Toronto. Edades 18+. Revise la fuente para detalles.",
-          "category": "STEM",
-          "cost": "Listado gratis",
-          "tags": [
-            "STEM",
-            "IA y medios digitales"
-          ],
-          "translationSource": "generated-summary-template"
-        },
-        "ar": {
-          "title": "فرصة STEM مجانية من Toronto Public Library في Toronto",
-          "summary": "فرصة STEM مجانية من Toronto Public Library في Toronto. الأعمار 18+. راجع المصدر للتفاصيل.",
-          "description": "فرصة STEM مجانية من Toronto Public Library في Toronto. الأعمار 18+. راجع المصدر للتفاصيل.",
-          "category": "STEM",
-          "cost": "قائمة مجانية",
-          "tags": [
-            "STEM",
-            "الذكاء الاصطناعي والإعلام الرقمي"
-          ],
-          "translationSource": "generated-summary-template"
-        },
-        "fa": {
-          "title": "فرصت رایگان STEM از Toronto Public Library در Toronto",
-          "summary": "فرصت رایگان STEM از Toronto Public Library در Toronto. سنین 18+. برای جزئیات منبع را بررسی کنید.",
-          "description": "فرصت رایگان STEM از Toronto Public Library در Toronto. سنین 18+. برای جزئیات منبع را بررسی کنید.",
-          "category": "STEM",
-          "cost": "فهرست رایگان",
-          "tags": [
-            "STEM",
-            "هوش مصنوعی و رسانه دیجیتال"
-          ],
-          "translationSource": "generated-summary-template"
-        },
-        "hi": {
-          "title": "Toronto में Toronto Public Library की मुफ्त STEM opportunity",
-          "summary": "Toronto में Toronto Public Library की मुफ्त STEM opportunity. उम्र 18+. Details के लिए source देखें.",
-          "description": "Toronto में Toronto Public Library की मुफ्त STEM opportunity. उम्र 18+. Details के लिए source देखें.",
-          "category": "STEM",
-          "cost": "Free listing",
-          "tags": [
-            "STEM",
-            "AI और डिजिटल मीडिया"
-          ],
-          "translationSource": "generated-summary-template"
-        },
-        "pt": {
-          "title": "Oportunidade gratuita de STEM da Toronto Public Library em Toronto",
-          "summary": "Oportunidade gratuita de STEM da Toronto Public Library em Toronto. Idades 18+. Veja a fonte para detalhes.",
-          "description": "Oportunidade gratuita de STEM da Toronto Public Library em Toronto. Idades 18+. Veja a fonte para detalhes.",
-          "category": "STEM",
-          "cost": "Lista gratuita",
-          "tags": [
-            "STEM",
-            "IA e midia digital"
-          ],
-          "translationSource": "generated-summary-template"
-        },
-        "gu": {
-          "title": "Toronto માં Toronto Public Library તરફથી મફત STEM તક",
-          "summary": "Toronto માં Toronto Public Library તરફથી મફત STEM તક. ઉંમર 18+. વિગત માટે સ્રોત જુઓ.",
-          "description": "Toronto માં Toronto Public Library તરફથી મફત STEM તક. ઉંમર 18+. વિગત માટે સ્રોત જુઓ.",
-          "category": "STEM",
-          "cost": "મફત લિસ્ટિંગ",
-          "tags": [
-            "STEM",
-            "AI અને ડિજિટલ મીડિયા"
-          ],
-          "translationSource": "generated-summary-template"
-        },
-        "bn": {
-          "title": "Toronto-এ Toronto Public Library এর ফ্রি STEM opportunity",
-          "summary": "Toronto-এ Toronto Public Library এর ফ্রি STEM opportunity. বয়স 18+. বিস্তারিত জানতে উৎস দেখুন.",
-          "description": "Toronto-এ Toronto Public Library এর ফ্রি STEM opportunity. বয়স 18+. বিস্তারিত জানতে উৎস দেখুন.",
-          "category": "STEM",
-          "cost": "ফ্রি তালিকা",
-          "tags": [
-            "STEM",
-            "AI ও ডিজিটাল মিডিয়া"
-          ],
-          "translationSource": "generated-summary-template"
-        },
-        "ja": {
-          "title": "TorontoのToronto Public Libraryによる無料のSTEM機会です。対象年齢は18+。詳細は情報源をご確認ください。",
-          "summary": "TorontoのToronto Public Libraryによる無料のSTEM機会です。対象年齢は18+。詳細は情報源をご確認ください。",
-          "description": "TorontoのToronto Public Libraryによる無料のSTEM機会です。対象年齢は18+。詳細は情報源をご確認ください。",
-          "category": "STEM",
-          "cost": "無料リスト",
-          "tags": [
-            "STEM",
-            "AIとデジタルメディア"
-          ],
-          "translationSource": "generated-summary-template"
-        },
-        "ko": {
-          "title": "Toronto에서 Toronto Public Library이 제공하는 무료 STEM 기회입니다",
-          "summary": "Toronto에서 Toronto Public Library이 제공하는 무료 STEM 기회입니다. 대상 나이는 18+입니다. 자세한 내용은 출처를 확인하세요.",
-          "description": "Toronto에서 Toronto Public Library이 제공하는 무료 STEM 기회입니다. 대상 나이는 18+입니다. 자세한 내용은 출처를 확인하세요.",
-          "category": "STEM",
-          "cost": "무료 목록",
-          "tags": [
-            "STEM",
-            "AI 및 디지털 미디어"
-          ],
-          "translationSource": "generated-summary-template"
-        },
-        "hu": {
-          "title": "Ingyenes STEM lehetőség a(z) Toronto Public Library szervezőtől itt: Toronto",
-          "summary": "Ingyenes STEM lehetőség a(z) Toronto Public Library szervezőtől itt: Toronto. Korosztály: 18+. Részletekért nézd meg a forrást.",
-          "description": "Ingyenes STEM lehetőség a(z) Toronto Public Library szervezőtől itt: Toronto. Korosztály: 18+. Részletekért nézd meg a forrást.",
-          "category": "STEM",
-          "cost": "Ingyenes lista",
-          "tags": [
-            "STEM",
-            "MI es digitalis media"
-          ],
-          "translationSource": "generated-summary-template"
-        }
-      }
-    },
-    {
-      "id": "tpl-rss-6a8f674caafa6100295f6648",
-      "title": "Builders Club",
-      "organization": "Toronto Public Library",
-      "description": "Do you like to build with LEGO, DUPLO, Feltro, Snap Circuits or KEVA? Join us every Saturday morning for some fun building challenges! All children welcome with their caregivers. Drop-in, no registration required.",
-      "city": "Toronto",
-      "region": "Toronto",
-      "ageMin": 0,
-      "ageMax": 12,
-      "category": "Science & Engineering",
-      "categories": [
-        "STEM",
-        "Science & Engineering"
-      ],
-      "cost": "Free to join",
-      "language": [
-        "en"
-      ],
-      "deadline": "2026-09-12T14:00:00.000Z",
-      "startDate": "2026-09-12T14:00:00.000Z",
-      "endDate": "2026-09-12T15:30:00.000Z",
-      "sourceUrl": "https://tpl.bibliocommons.com/events/6a8f674caafa6100295f6648",
-      "registrationUrl": "https://tpl.bibliocommons.com/events/6a8f674caafa6100295f6648",
-      "lastChecked": "2026-09-12",
-      "lastSeen": "2026-09-12",
-      "status": "active",
-      "tags": [
-        "games & sports",
-        "preschool children (0-5)",
-        "school age children (6-12)",
-        "english"
-      ],
-      "communityFocus": [
-        "Open to all",
-        "Newcomer-friendly"
-      ],
-      "latitude": 43.6451162,
-      "longitude": -79.44896399999999,
-      "address": "High Park, 228 Roncesvalles Avenue, Toronto, ON, M6R 2L7",
-      "volunteerHoursEligible": false,
-      "coopEligible": false,
-      "trustedSource": true,
-      "sources": [
-        {
-          "label": "Official Toronto Public Library event page",
-          "url": "https://tpl.bibliocommons.com/events/6a8f674caafa6100295f6648",
-          "capturedAt": "2026-09-12T10:49:53.411Z",
-          "confidence": "high"
-        }
-      ],
-      "translations": {
-        "fr": {
-          "title": "Occasion gratuite de STEM offerte par Toronto Public Library a Toronto",
-          "summary": "Occasion gratuite de STEM offerte par Toronto Public Library a Toronto. Ages 0-12. Consultez la source pour les details.",
-          "description": "Occasion gratuite de STEM offerte par Toronto Public Library a Toronto. Ages 0-12. Consultez la source pour les details.",
-          "category": "STEM",
-          "cost": "Fiche gratuite",
-          "tags": [
-            "STEM",
-            "Sciences et ingenierie"
-          ],
-          "translationSource": "generated-summary-template"
-        },
-        "zh": {
-          "title": "Toronto Public Library在Toronto提供免费的STEM机会。适合0-12岁。请查看来源了解详情。",
-          "summary": "Toronto Public Library在Toronto提供免费的STEM机会。适合0-12岁。请查看来源了解详情。",
-          "description": "Toronto Public Library在Toronto提供免费的STEM机会。适合0-12岁。请查看来源了解详情。",
-          "category": "STEM",
-          "cost": "免费列表",
-          "tags": [
-            "STEM",
-            "科学与工程"
-          ],
-          "translationSource": "generated-summary-template"
-        },
-        "yue": {
-          "title": "Toronto Public Library喺Toronto提供免費STEM機會。適合0-12歲。請查看來源了解詳情。",
-          "summary": "Toronto Public Library喺Toronto提供免費STEM機會。適合0-12歲。請查看來源了解詳情。",
-          "description": "Toronto Public Library喺Toronto提供免費STEM機會。適合0-12歲。請查看來源了解詳情。",
-          "category": "STEM",
-          "cost": "免費項目",
-          "tags": [
-            "STEM",
-            "科學同工程"
-          ],
-          "translationSource": "generated-summary-template"
-        },
-        "pa": {
-          "title": "Toronto Public Library ਵੱਲੋਂ Toronto ਵਿੱਚ ਮੁਫ਼ਤ STEM ਮੌਕਾ। ਉਮਰ 0-12",
-          "summary": "Toronto Public Library ਵੱਲੋਂ Toronto ਵਿੱਚ ਮੁਫ਼ਤ STEM ਮੌਕਾ। ਉਮਰ 0-12. ਵੇਰਵਿਆਂ ਲਈ ਸਰੋਤ ਵੇਖੋ।",
-          "description": "Toronto Public Library ਵੱਲੋਂ Toronto ਵਿੱਚ ਮੁਫ਼ਤ STEM ਮੌਕਾ। ਉਮਰ 0-12. ਵੇਰਵਿਆਂ ਲਈ ਸਰੋਤ ਵੇਖੋ।",
-          "category": "STEM",
-          "cost": "ਮੁਫ਼ਤ ਲਿਸਟਿੰਗ",
-          "tags": [
-            "STEM",
-            "ਵਿਗਿਆਨ ਅਤੇ ਇੰਜੀਨੀਅਰਿੰਗ"
-          ],
-          "translationSource": "generated-summary-template"
-        },
-        "ur": {
-          "title": "Toronto میں Toronto Public Library کی طرف سے مفت STEM موقع۔ عمر 0-12",
-          "summary": "Toronto میں Toronto Public Library کی طرف سے مفت STEM موقع۔ عمر 0-12. تفصیلات کے لیے ذریعہ دیکھیں۔",
-          "description": "Toronto میں Toronto Public Library کی طرف سے مفت STEM موقع۔ عمر 0-12. تفصیلات کے لیے ذریعہ دیکھیں۔",
-          "category": "STEM",
-          "cost": "مفت لسٹنگ",
-          "tags": [
-            "STEM",
-            "سائنس اور انجینئرنگ"
-          ],
-          "translationSource": "generated-summary-template"
-        },
-        "ta": {
-          "title": "Toronto நகரில் Toronto Public Library வழங்கும் இலவச STEM வாய்ப்பு",
-          "summary": "Toronto நகரில் Toronto Public Library வழங்கும் இலவச STEM வாய்ப்பு. வயது 0-12. விவரங்களுக்கு மூலத்தை பார்க்கவும்.",
-          "description": "Toronto நகரில் Toronto Public Library வழங்கும் இலவச STEM வாய்ப்பு. வயது 0-12. விவரங்களுக்கு மூலத்தை பார்க்கவும்.",
-          "category": "STEM",
-          "cost": "இலவச பட்டியல்",
-          "tags": [
-            "STEM",
-            "அறிவியல் மற்றும் பொறியியல்"
-          ],
-          "translationSource": "generated-summary-template"
-        },
-        "tl": {
-          "title": "Libreng STEM opportunity mula sa Toronto Public Library sa Toronto",
-          "summary": "Libreng STEM opportunity mula sa Toronto Public Library sa Toronto. Edad 0-12. Tingnan ang source para sa detalye.",
-          "description": "Libreng STEM opportunity mula sa Toronto Public Library sa Toronto. Edad 0-12. Tingnan ang source para sa detalye.",
-          "category": "STEM",
-          "cost": "Libreng listing",
-          "tags": [
-            "STEM",
-            "Agham at inhinyeriya"
-          ],
-          "translationSource": "generated-summary-template"
-        },
-        "es": {
-          "title": "Oportunidad gratis de STEM de Toronto Public Library en Toronto",
-          "summary": "Oportunidad gratis de STEM de Toronto Public Library en Toronto. Edades 0-12. Revise la fuente para detalles.",
-          "description": "Oportunidad gratis de STEM de Toronto Public Library en Toronto. Edades 0-12. Revise la fuente para detalles.",
-          "category": "STEM",
-          "cost": "Listado gratis",
-          "tags": [
-            "STEM",
-            "Ciencia e ingenieria"
-          ],
-          "translationSource": "generated-summary-template"
-        },
-        "ar": {
-          "title": "فرصة STEM مجانية من Toronto Public Library في Toronto",
-          "summary": "فرصة STEM مجانية من Toronto Public Library في Toronto. الأعمار 0-12. راجع المصدر للتفاصيل.",
-          "description": "فرصة STEM مجانية من Toronto Public Library في Toronto. الأعمار 0-12. راجع المصدر للتفاصيل.",
-          "category": "STEM",
-          "cost": "قائمة مجانية",
-          "tags": [
-            "STEM",
-            "العلوم والهندسة"
-          ],
-          "translationSource": "generated-summary-template"
-        },
-        "fa": {
-          "title": "فرصت رایگان STEM از Toronto Public Library در Toronto",
-          "summary": "فرصت رایگان STEM از Toronto Public Library در Toronto. سنین 0-12. برای جزئیات منبع را بررسی کنید.",
-          "description": "فرصت رایگان STEM از Toronto Public Library در Toronto. سنین 0-12. برای جزئیات منبع را بررسی کنید.",
-          "category": "STEM",
-          "cost": "فهرست رایگان",
-          "tags": [
-            "STEM",
-            "علوم و مهندسی"
-          ],
-          "translationSource": "generated-summary-template"
-        },
-        "hi": {
-          "title": "Toronto में Toronto Public Library की मुफ्त STEM opportunity",
-          "summary": "Toronto में Toronto Public Library की मुफ्त STEM opportunity. उम्र 0-12. Details के लिए source देखें.",
-          "description": "Toronto में Toronto Public Library की मुफ्त STEM opportunity. उम्र 0-12. Details के लिए source देखें.",
-          "category": "STEM",
-          "cost": "Free listing",
-          "tags": [
-            "STEM",
-            "विज्ञान और इंजीनियरिंग"
-          ],
-          "translationSource": "generated-summary-template"
-        },
-        "pt": {
-          "title": "Oportunidade gratuita de STEM da Toronto Public Library em Toronto",
-          "summary": "Oportunidade gratuita de STEM da Toronto Public Library em Toronto. Idades 0-12. Veja a fonte para detalhes.",
-          "description": "Oportunidade gratuita de STEM da Toronto Public Library em Toronto. Idades 0-12. Veja a fonte para detalhes.",
-          "category": "STEM",
-          "cost": "Lista gratuita",
-          "tags": [
-            "STEM",
-            "Ciencia e engenharia"
-          ],
-          "translationSource": "generated-summary-template"
-        },
-        "gu": {
-          "title": "Toronto માં Toronto Public Library તરફથી મફત STEM તક",
-          "summary": "Toronto માં Toronto Public Library તરફથી મફત STEM તક. ઉંમર 0-12. વિગત માટે સ્રોત જુઓ.",
-          "description": "Toronto માં Toronto Public Library તરફથી મફત STEM તક. ઉંમર 0-12. વિગત માટે સ્રોત જુઓ.",
-          "category": "STEM",
-          "cost": "મફત લિસ્ટિંગ",
-          "tags": [
-            "STEM",
-            "વિજ્ઞાન અને ઇજનેરી"
-          ],
-          "translationSource": "generated-summary-template"
-        },
-        "bn": {
-          "title": "Toronto-এ Toronto Public Library এর ফ্রি STEM opportunity",
-          "summary": "Toronto-এ Toronto Public Library এর ফ্রি STEM opportunity. বয়স 0-12. বিস্তারিত জানতে উৎস দেখুন.",
-          "description": "Toronto-এ Toronto Public Library এর ফ্রি STEM opportunity. বয়স 0-12. বিস্তারিত জানতে উৎস দেখুন.",
-          "category": "STEM",
-          "cost": "ফ্রি তালিকা",
-          "tags": [
-            "STEM",
-            "বিজ্ঞান ও প্রকৌশল"
-          ],
-          "translationSource": "generated-summary-template"
-        },
-        "ja": {
-          "title": "TorontoのToronto Public Libraryによる無料のSTEM機会です。対象年齢は0-12。詳細は情報源をご確認ください。",
-          "summary": "TorontoのToronto Public Libraryによる無料のSTEM機会です。対象年齢は0-12。詳細は情報源をご確認ください。",
-          "description": "TorontoのToronto Public Libraryによる無料のSTEM機会です。対象年齢は0-12。詳細は情報源をご確認ください。",
-          "category": "STEM",
-          "cost": "無料リスト",
-          "tags": [
-            "STEM",
-            "科学と工学"
-          ],
-          "translationSource": "generated-summary-template"
-        },
-        "ko": {
-          "title": "Toronto에서 Toronto Public Library이 제공하는 무료 STEM 기회입니다",
-          "summary": "Toronto에서 Toronto Public Library이 제공하는 무료 STEM 기회입니다. 대상 나이는 0-12입니다. 자세한 내용은 출처를 확인하세요.",
-          "description": "Toronto에서 Toronto Public Library이 제공하는 무료 STEM 기회입니다. 대상 나이는 0-12입니다. 자세한 내용은 출처를 확인하세요.",
-          "category": "STEM",
-          "cost": "무료 목록",
-          "tags": [
-            "STEM",
-            "과학 및 공학"
-          ],
-          "translationSource": "generated-summary-template"
-        },
-        "hu": {
-          "title": "Ingyenes STEM lehetőség a(z) Toronto Public Library szervezőtől itt: Toronto",
-          "summary": "Ingyenes STEM lehetőség a(z) Toronto Public Library szervezőtől itt: Toronto. Korosztály: 0-12. Részletekért nézd meg a forrást.",
-          "description": "Ingyenes STEM lehetőség a(z) Toronto Public Library szervezőtől itt: Toronto. Korosztály: 0-12. Részletekért nézd meg a forrást.",
-          "category": "STEM",
-          "cost": "Ingyenes lista",
-          "tags": [
-            "STEM",
-            "Termeszettudomany es mernoki tudomany"
-          ],
-          "translationSource": "generated-summary-template"
-        }
-      }
-    },
     {
       "id": "tpl-rss-69a07659cbf6405d3568b156",
       "title": "Builder's Club",
@@ -615,7 +102,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69a07659cbf6405d3568b156",
-          "capturedAt": "2026-09-12T10:49:53.882Z",
+          "capturedAt": "2026-09-12T15:33:38.072Z",
           "confidence": "high"
         }
       ],
@@ -871,7 +358,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a5540820e562e2800999a53",
-          "capturedAt": "2026-09-12T10:49:53.882Z",
+          "capturedAt": "2026-09-12T15:33:38.073Z",
           "confidence": "high"
         }
       ],
@@ -1127,7 +614,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a85c45f69166f088b934310",
-          "capturedAt": "2026-09-12T10:49:53.883Z",
+          "capturedAt": "2026-09-12T15:33:38.073Z",
           "confidence": "high"
         }
       ],
@@ -1383,7 +870,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbd36ee647c8ff0c38729b",
-          "capturedAt": "2026-09-12T10:49:59.190Z",
+          "capturedAt": "2026-09-12T15:33:44.799Z",
           "confidence": "high"
         }
       ],
@@ -1639,7 +1126,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe20064ad59251cb9d9a0",
-          "capturedAt": "2026-09-12T10:49:59.190Z",
+          "capturedAt": "2026-09-12T15:33:44.799Z",
           "confidence": "high"
         }
       ],
@@ -1895,7 +1382,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe0e82edc686d00f5c8a6",
-          "capturedAt": "2026-09-12T10:49:59.191Z",
+          "capturedAt": "2026-09-12T15:33:44.799Z",
           "confidence": "high"
         }
       ],
@@ -2152,7 +1639,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe12275911f28001a2540",
-          "capturedAt": "2026-09-12T10:49:59.191Z",
+          "capturedAt": "2026-09-12T15:33:44.799Z",
           "confidence": "high"
         }
       ],
@@ -2408,7 +1895,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe0cde647c8ff0c387438",
-          "capturedAt": "2026-09-12T10:49:59.191Z",
+          "capturedAt": "2026-09-12T15:33:44.799Z",
           "confidence": "high"
         }
       ],
@@ -2667,7 +2154,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a7b96ac452bb101b5747f5e",
-          "capturedAt": "2026-09-12T10:49:54.381Z",
+          "capturedAt": "2026-09-12T15:33:38.960Z",
           "confidence": "high"
         }
       ],
@@ -2927,7 +2414,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a91f10c36204e08fbb7f462",
-          "capturedAt": "2026-09-12T10:49:54.382Z",
+          "capturedAt": "2026-09-12T15:33:38.961Z",
           "confidence": "high"
         }
       ],
@@ -3185,7 +2672,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a85ad8cbe14820029886433",
-          "capturedAt": "2026-09-12T10:49:54.382Z",
+          "capturedAt": "2026-09-12T15:33:38.961Z",
           "confidence": "high"
         }
       ],
@@ -3441,7 +2928,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a7a17cf88e9bf280036e909",
-          "capturedAt": "2026-09-12T10:49:54.382Z",
+          "capturedAt": "2026-09-12T15:33:38.961Z",
           "confidence": "high"
         }
       ],
@@ -3697,7 +3184,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a46eac2ed35742f00000810",
-          "capturedAt": "2026-09-12T10:49:54.383Z",
+          "capturedAt": "2026-09-12T15:33:38.961Z",
           "confidence": "high"
         }
       ],
@@ -3953,7 +3440,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a90a0cc58433600542b90e2",
-          "capturedAt": "2026-09-12T10:49:54.383Z",
+          "capturedAt": "2026-09-12T15:33:38.961Z",
           "confidence": "high"
         }
       ],
@@ -4208,7 +3695,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a8862fadb86e4004d8698b1",
-          "capturedAt": "2026-09-12T10:49:54.383Z",
+          "capturedAt": "2026-09-12T15:33:38.962Z",
           "confidence": "high"
         }
       ],
@@ -4464,7 +3951,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe0a50176055300fe8157",
-          "capturedAt": "2026-09-12T10:49:59.191Z",
+          "capturedAt": "2026-09-12T15:33:44.800Z",
           "confidence": "high"
         }
       ],
@@ -4720,7 +4207,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a0f6d2b8e677a28001d9dd6",
-          "capturedAt": "2026-09-12T10:49:54.768Z",
+          "capturedAt": "2026-09-12T15:33:39.633Z",
           "confidence": "high"
         }
       ],
@@ -4977,7 +4464,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a445a9c7e16a03d00e93da3",
-          "capturedAt": "2026-09-12T10:49:54.768Z",
+          "capturedAt": "2026-09-12T15:33:39.633Z",
           "confidence": "high"
         }
       ],
@@ -5233,7 +4720,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a5299330e562e2800993112",
-          "capturedAt": "2026-09-12T10:49:54.769Z",
+          "capturedAt": "2026-09-12T15:33:39.633Z",
           "confidence": "high"
         }
       ],
@@ -5491,7 +4978,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a600c150d65ac3600416199",
-          "capturedAt": "2026-09-12T10:49:54.769Z",
+          "capturedAt": "2026-09-12T15:33:39.633Z",
           "confidence": "high"
         }
       ],
@@ -5749,7 +5236,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69f26a14fb87a3c2e2acb12a",
-          "capturedAt": "2026-09-12T10:49:54.769Z",
+          "capturedAt": "2026-09-12T15:33:39.633Z",
           "confidence": "high"
         }
       ],
@@ -6006,7 +5493,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69a861c92866a5b4883fd3ba",
-          "capturedAt": "2026-09-12T10:49:54.769Z",
+          "capturedAt": "2026-09-12T15:33:39.633Z",
           "confidence": "high"
         }
       ],
@@ -6264,7 +5751,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a29a5d490cc4e3a790d1685",
-          "capturedAt": "2026-09-12T10:49:54.770Z",
+          "capturedAt": "2026-09-12T15:33:39.634Z",
           "confidence": "high"
         }
       ],
@@ -6522,7 +6009,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a19ac06c6a1dc3d00d6ef4a",
-          "capturedAt": "2026-09-12T10:49:54.770Z",
+          "capturedAt": "2026-09-12T15:33:39.634Z",
           "confidence": "high"
         }
       ],
@@ -6784,7 +6271,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a0f4adf8e677a28001d8c7c",
-          "capturedAt": "2026-09-12T10:49:54.770Z",
+          "capturedAt": "2026-09-12T15:33:39.634Z",
           "confidence": "high"
         }
       ],
@@ -7042,7 +6529,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a174305703c3363002a6035",
-          "capturedAt": "2026-09-12T10:49:54.770Z",
+          "capturedAt": "2026-09-12T15:33:39.634Z",
           "confidence": "high"
         }
       ],
@@ -7301,7 +6788,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a2ed9232ea730c17ab6d200",
-          "capturedAt": "2026-09-12T10:49:54.770Z",
+          "capturedAt": "2026-09-12T15:33:40.306Z",
           "confidence": "high"
         }
       ],
@@ -7559,7 +7046,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a42aa030e851028002df8b5",
-          "capturedAt": "2026-09-12T10:49:54.770Z",
+          "capturedAt": "2026-09-12T15:33:40.306Z",
           "confidence": "high"
         }
       ],
@@ -7815,7 +7302,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a58198f82c03c5c17d84f7e",
-          "capturedAt": "2026-09-12T10:49:54.770Z",
+          "capturedAt": "2026-09-12T15:33:40.306Z",
           "confidence": "high"
         }
       ],
@@ -8074,7 +7561,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a6636640e562e28009c8e0b",
-          "capturedAt": "2026-09-12T10:49:55.446Z",
+          "capturedAt": "2026-09-12T15:33:40.306Z",
           "confidence": "high"
         }
       ],
@@ -8330,7 +7817,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a675304c7e02e3d006bea9c",
-          "capturedAt": "2026-09-12T10:49:55.446Z",
+          "capturedAt": "2026-09-12T15:33:40.306Z",
           "confidence": "high"
         }
       ],
@@ -8587,7 +8074,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a60e790f213992f00c627f2",
-          "capturedAt": "2026-09-12T10:49:55.446Z",
+          "capturedAt": "2026-09-12T15:33:40.306Z",
           "confidence": "high"
         }
       ],
@@ -8844,7 +8331,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a60e6f17b79214226aa5ca1",
-          "capturedAt": "2026-09-12T10:49:55.446Z",
+          "capturedAt": "2026-09-12T15:33:40.306Z",
           "confidence": "high"
         }
       ],
@@ -9102,7 +8589,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69e162a4129f12743839076c",
-          "capturedAt": "2026-09-12T10:49:55.446Z",
+          "capturedAt": "2026-09-12T15:33:40.307Z",
           "confidence": "high"
         }
       ],
@@ -9362,7 +8849,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a84cf314cb69d003e21b170",
-          "capturedAt": "2026-09-12T10:49:55.446Z",
+          "capturedAt": "2026-09-12T15:33:40.307Z",
           "confidence": "high"
         }
       ],
@@ -9620,7 +9107,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a9710ec36204e08fbb8cd2b",
-          "capturedAt": "2026-09-12T10:49:55.447Z",
+          "capturedAt": "2026-09-12T15:33:40.307Z",
           "confidence": "high"
         }
       ],
@@ -9876,7 +9363,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a8f7dd957c264087ad417e7",
-          "capturedAt": "2026-09-12T10:49:55.447Z",
+          "capturedAt": "2026-09-12T15:33:40.307Z",
           "confidence": "high"
         }
       ],
@@ -10133,7 +9620,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a57e4dac7e02e3d00695b96",
-          "capturedAt": "2026-09-12T10:49:55.447Z",
+          "capturedAt": "2026-09-12T15:33:40.307Z",
           "confidence": "high"
         }
       ],
@@ -10389,7 +9876,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a85e1a057c264087ad23a3a",
-          "capturedAt": "2026-09-12T10:49:55.447Z",
+          "capturedAt": "2026-09-12T15:33:40.308Z",
           "confidence": "high"
         }
       ],
@@ -10647,7 +10134,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a88b5febe1482002989167b",
-          "capturedAt": "2026-09-12T10:49:55.447Z",
+          "capturedAt": "2026-09-12T15:33:40.723Z",
           "confidence": "high"
         }
       ],
@@ -10903,7 +10390,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a8e145f58433600542b5732",
-          "capturedAt": "2026-09-12T10:49:55.974Z",
+          "capturedAt": "2026-09-12T15:33:40.724Z",
           "confidence": "high"
         }
       ],
@@ -11160,7 +10647,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a99cf484995480655ed79db",
-          "capturedAt": "2026-09-12T10:49:55.974Z",
+          "capturedAt": "2026-09-12T15:33:40.724Z",
           "confidence": "high"
         }
       ],
@@ -11419,7 +10906,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a03beec43b41b3d00661803",
-          "capturedAt": "2026-09-12T10:49:55.974Z",
+          "capturedAt": "2026-09-12T15:33:40.724Z",
           "confidence": "high"
         }
       ],
@@ -11675,7 +11162,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe1952edc686d00f5c977",
-          "capturedAt": "2026-09-12T10:49:59.191Z",
+          "capturedAt": "2026-09-12T15:33:44.800Z",
           "confidence": "high"
         }
       ],
@@ -11931,7 +11418,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69546b1e6724c63d00e96a88",
-          "capturedAt": "2026-09-12T10:49:55.974Z",
+          "capturedAt": "2026-09-12T15:33:40.724Z",
           "confidence": "high"
         }
       ],
@@ -12187,7 +11674,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69ecea0c4dacf581ff8b17ef",
-          "capturedAt": "2026-09-12T10:49:55.974Z",
+          "capturedAt": "2026-09-12T15:33:40.724Z",
           "confidence": "high"
         }
       ],
@@ -12445,7 +11932,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a527df8489285b703d87817",
-          "capturedAt": "2026-09-12T10:49:55.974Z",
+          "capturedAt": "2026-09-12T15:33:40.724Z",
           "confidence": "high"
         }
       ],
@@ -12705,7 +12192,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a8dd6ce60ccaf01c020e9c4",
-          "capturedAt": "2026-09-12T10:49:55.974Z",
+          "capturedAt": "2026-09-12T15:33:40.724Z",
           "confidence": "high"
         }
       ],
@@ -12961,7 +12448,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe07a2edc686d00f5c870",
-          "capturedAt": "2026-09-12T10:49:59.191Z",
+          "capturedAt": "2026-09-12T15:33:44.800Z",
           "confidence": "high"
         }
       ],
@@ -13218,7 +12705,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a60e7d50ed7b4521ed6cf78",
-          "capturedAt": "2026-09-12T10:49:55.974Z",
+          "capturedAt": "2026-09-12T15:33:41.337Z",
           "confidence": "high"
         }
       ],
@@ -13475,7 +12962,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69ff9658e8af4a2f00715c07",
-          "capturedAt": "2026-09-12T10:49:55.975Z",
+          "capturedAt": "2026-09-12T15:33:41.337Z",
           "confidence": "high"
         }
       ],
@@ -13732,7 +13219,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a90c74760ccaf01c0218e38",
-          "capturedAt": "2026-09-12T10:49:55.975Z",
+          "capturedAt": "2026-09-12T15:33:41.338Z",
           "confidence": "high"
         }
       ],
@@ -13988,7 +13475,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69dbd871129f127438381349",
-          "capturedAt": "2026-09-12T10:49:56.419Z",
+          "capturedAt": "2026-09-12T15:33:41.339Z",
           "confidence": "high"
         }
       ],
@@ -14244,7 +13731,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a909bf6b204780029960889",
-          "capturedAt": "2026-09-12T10:49:56.420Z",
+          "capturedAt": "2026-09-12T15:33:41.339Z",
           "confidence": "high"
         }
       ],
@@ -14500,7 +13987,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a6b856c0e562e28009d8862",
-          "capturedAt": "2026-09-12T10:49:56.871Z",
+          "capturedAt": "2026-09-12T15:33:41.849Z",
           "confidence": "high"
         }
       ],
@@ -14756,7 +14243,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a9327ca2dac6e0037229f96",
-          "capturedAt": "2026-09-12T10:49:56.871Z",
+          "capturedAt": "2026-09-12T15:33:41.849Z",
           "confidence": "high"
         }
       ],
@@ -15012,7 +14499,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a4e7b43fb18bf3d00bef3b8",
-          "capturedAt": "2026-09-12T10:49:56.871Z",
+          "capturedAt": "2026-09-12T15:33:41.849Z",
           "confidence": "high"
         }
       ],
@@ -15268,7 +14755,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a4ec1f5e9de6536001a4fb0",
-          "capturedAt": "2026-09-12T10:49:56.871Z",
+          "capturedAt": "2026-09-12T15:33:41.849Z",
           "confidence": "high"
         }
       ],
@@ -15524,7 +15011,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a8dc7ad4cb69d003e233faf",
-          "capturedAt": "2026-09-12T10:49:56.872Z",
+          "capturedAt": "2026-09-12T15:33:41.850Z",
           "confidence": "high"
         }
       ],
@@ -15779,7 +15266,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a8342dc2dac6e00371faa11",
-          "capturedAt": "2026-09-12T10:49:56.872Z",
+          "capturedAt": "2026-09-12T15:33:41.850Z",
           "confidence": "high"
         }
       ],
@@ -16039,7 +15526,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69fa2603e13d3b4603b35d80",
-          "capturedAt": "2026-09-12T10:49:56.872Z",
+          "capturedAt": "2026-09-12T15:33:42.297Z",
           "confidence": "high"
         }
       ],
@@ -16299,7 +15786,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a84927e4c610f00389536dc",
-          "capturedAt": "2026-09-12T10:49:56.872Z",
+          "capturedAt": "2026-09-12T15:33:42.297Z",
           "confidence": "high"
         }
       ],
@@ -16557,7 +16044,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a85e6b036204e08fbb5974a",
-          "capturedAt": "2026-09-12T10:49:57.313Z",
+          "capturedAt": "2026-09-12T15:33:42.297Z",
           "confidence": "high"
         }
       ],
@@ -16817,7 +16304,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a7b5dbef68ff70029b6f583",
-          "capturedAt": "2026-09-12T10:49:57.313Z",
+          "capturedAt": "2026-09-12T15:33:42.297Z",
           "confidence": "high"
         }
       ],
@@ -17073,7 +16560,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a86136193b500003ff625de",
-          "capturedAt": "2026-09-12T10:49:57.314Z",
+          "capturedAt": "2026-09-12T15:33:42.298Z",
           "confidence": "high"
         }
       ],
@@ -17332,7 +16819,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a80645c3f18f80030bb4992",
-          "capturedAt": "2026-09-12T10:49:57.314Z",
+          "capturedAt": "2026-09-12T15:33:42.298Z",
           "confidence": "high"
         }
       ],
@@ -17592,7 +17079,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a7f4f20aafa6100295c9ec6",
-          "capturedAt": "2026-09-12T10:49:57.314Z",
+          "capturedAt": "2026-09-12T15:33:42.298Z",
           "confidence": "high"
         }
       ],
@@ -17852,7 +17339,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a7b5e291401fd00606c0377",
-          "capturedAt": "2026-09-12T10:49:57.314Z",
+          "capturedAt": "2026-09-12T15:33:42.684Z",
           "confidence": "high"
         }
       ],
@@ -18111,7 +17598,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a83975daafa6100295d5246",
-          "capturedAt": "2026-09-12T10:49:57.315Z",
+          "capturedAt": "2026-09-12T15:33:42.684Z",
           "confidence": "high"
         }
       ],
@@ -18368,7 +17855,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a848b26e0d84e0bb43e8547",
-          "capturedAt": "2026-09-12T10:49:57.838Z",
+          "capturedAt": "2026-09-12T15:33:42.684Z",
           "confidence": "high"
         }
       ],
@@ -18626,7 +18113,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a84b5b8be14820029883658",
-          "capturedAt": "2026-09-12T10:49:57.838Z",
+          "capturedAt": "2026-09-12T15:33:42.684Z",
           "confidence": "high"
         }
       ],
@@ -18884,7 +18371,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a847e622dac6e00371fe8a2",
-          "capturedAt": "2026-09-12T10:49:57.839Z",
+          "capturedAt": "2026-09-12T15:33:42.684Z",
           "confidence": "high"
         }
       ],
@@ -19144,7 +18631,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a90a7624cb69d003e23de08",
-          "capturedAt": "2026-09-12T10:49:57.839Z",
+          "capturedAt": "2026-09-12T15:33:42.685Z",
           "confidence": "high"
         }
       ],
@@ -19404,7 +18891,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a92fc73aafa61002960076d",
-          "capturedAt": "2026-09-12T10:49:57.839Z",
+          "capturedAt": "2026-09-12T15:33:42.685Z",
           "confidence": "high"
         }
       ],
@@ -19663,7 +19150,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a85d2c44c610f00389552b5",
-          "capturedAt": "2026-09-12T10:49:57.839Z",
+          "capturedAt": "2026-09-12T15:33:42.685Z",
           "confidence": "high"
         }
       ],
@@ -19923,7 +19410,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a885951be1482002988fbb3",
-          "capturedAt": "2026-09-12T10:49:57.839Z",
+          "capturedAt": "2026-09-12T15:33:42.685Z",
           "confidence": "high"
         }
       ],
@@ -20182,7 +19669,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a6ce7a333ca713c89d49df4",
-          "capturedAt": "2026-09-12T10:49:57.839Z",
+          "capturedAt": "2026-09-12T15:33:42.685Z",
           "confidence": "high"
         }
       ],
@@ -20437,7 +19924,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a8eee63db86e4004d8736df",
-          "capturedAt": "2026-09-12T10:49:58.335Z",
+          "capturedAt": "2026-09-12T15:33:43.262Z",
           "confidence": "high"
         }
       ],
@@ -20693,7 +20180,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a7f252a4cb69d003e20c582",
-          "capturedAt": "2026-09-12T10:49:58.337Z",
+          "capturedAt": "2026-09-12T15:33:43.785Z",
           "confidence": "high"
         }
       ],
@@ -20948,7 +20435,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a6e2f95e9de6536001fc8dd",
-          "capturedAt": "2026-09-12T10:49:58.808Z",
+          "capturedAt": "2026-09-12T15:33:43.785Z",
           "confidence": "high"
         }
       ],
@@ -21204,7 +20691,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a7f1fdfb20478002992d194",
-          "capturedAt": "2026-09-12T10:49:58.808Z",
+          "capturedAt": "2026-09-12T15:33:43.785Z",
           "confidence": "high"
         }
       ],
@@ -21460,7 +20947,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a2afd9cf56bd86e00b61dd9",
-          "capturedAt": "2026-09-12T10:49:58.809Z",
+          "capturedAt": "2026-09-12T15:33:43.786Z",
           "confidence": "high"
         }
       ],
@@ -21717,7 +21204,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a6ba3bc88e9bf2800346ba0",
-          "capturedAt": "2026-09-12T10:49:58.809Z",
+          "capturedAt": "2026-09-12T15:33:43.786Z",
           "confidence": "high"
         }
       ],
@@ -21973,7 +21460,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a5e56d6daaaf4f51a205f9b",
-          "capturedAt": "2026-09-12T10:49:58.809Z",
+          "capturedAt": "2026-09-12T15:33:43.786Z",
           "confidence": "high"
         }
       ],
@@ -22230,7 +21717,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a89fdf158433600542afec6",
-          "capturedAt": "2026-09-12T10:49:58.809Z",
+          "capturedAt": "2026-09-12T15:33:44.312Z",
           "confidence": "high"
         }
       ],
@@ -22486,7 +21973,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a834ee0a821f90037ee7253",
-          "capturedAt": "2026-09-12T10:49:58.809Z",
+          "capturedAt": "2026-09-12T15:33:44.312Z",
           "confidence": "high"
         }
       ],
@@ -22698,6 +22185,1300 @@
       }
     },
     {
+      "id": "tpl-rss-6a7cbe654cb69d003e2060f6",
+      "title": "LEGO Free Play",
+      "organization": "Toronto Public Library",
+      "description": "Do you love to build and to create? Check out Yorkville's LEGO program! Have fun, meet friends, and build something awesome in a relaxed drop-in environment. For children ages 4 and up. No registration is required. Building toys for younger children are available in the Children's Department.",
+      "city": "Toronto",
+      "region": "Toronto",
+      "ageMin": 0,
+      "ageMax": 12,
+      "category": "Science & Engineering",
+      "categories": [
+        "STEM",
+        "Science & Engineering"
+      ],
+      "cost": "Free to join",
+      "language": [
+        "en"
+      ],
+      "deadline": "2026-09-15T19:30:00.000Z",
+      "startDate": "2026-09-15T19:30:00.000Z",
+      "endDate": "2026-09-15T21:00:00.000Z",
+      "sourceUrl": "https://tpl.bibliocommons.com/events/6a7cbe654cb69d003e2060f6",
+      "registrationUrl": "https://tpl.bibliocommons.com/events/6a7cbe654cb69d003e2060f6",
+      "lastChecked": "2026-09-12",
+      "lastSeen": "2026-09-12",
+      "status": "active",
+      "tags": [
+        "crafts & hobbies",
+        "preschool children (0-5)",
+        "school age children (6-12)",
+        "english"
+      ],
+      "communityFocus": [
+        "Open to all",
+        "Newcomer-friendly"
+      ],
+      "latitude": 43.6720537,
+      "longitude": -79.38869129999999,
+      "address": "Yorkville, 22 Yorkville Avenue, Toronto, ON, M4W 1L4",
+      "volunteerHoursEligible": false,
+      "coopEligible": false,
+      "trustedSource": true,
+      "sources": [
+        {
+          "label": "Official Toronto Public Library event page",
+          "url": "https://tpl.bibliocommons.com/events/6a7cbe654cb69d003e2060f6",
+          "capturedAt": "2026-09-12T15:33:44.313Z",
+          "confidence": "high"
+        }
+      ],
+      "translations": {
+        "fr": {
+          "title": "Occasion gratuite de STEM offerte par Toronto Public Library a Toronto",
+          "summary": "Occasion gratuite de STEM offerte par Toronto Public Library a Toronto. Ages 0-12. Consultez la source pour les details.",
+          "description": "Occasion gratuite de STEM offerte par Toronto Public Library a Toronto. Ages 0-12. Consultez la source pour les details.",
+          "category": "STEM",
+          "cost": "Fiche gratuite",
+          "tags": [
+            "STEM",
+            "Sciences et ingenierie"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "zh": {
+          "title": "Toronto Public Library在Toronto提供免费的STEM机会。适合0-12岁。请查看来源了解详情。",
+          "summary": "Toronto Public Library在Toronto提供免费的STEM机会。适合0-12岁。请查看来源了解详情。",
+          "description": "Toronto Public Library在Toronto提供免费的STEM机会。适合0-12岁。请查看来源了解详情。",
+          "category": "STEM",
+          "cost": "免费列表",
+          "tags": [
+            "STEM",
+            "科学与工程"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "yue": {
+          "title": "Toronto Public Library喺Toronto提供免費STEM機會。適合0-12歲。請查看來源了解詳情。",
+          "summary": "Toronto Public Library喺Toronto提供免費STEM機會。適合0-12歲。請查看來源了解詳情。",
+          "description": "Toronto Public Library喺Toronto提供免費STEM機會。適合0-12歲。請查看來源了解詳情。",
+          "category": "STEM",
+          "cost": "免費項目",
+          "tags": [
+            "STEM",
+            "科學同工程"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "pa": {
+          "title": "Toronto Public Library ਵੱਲੋਂ Toronto ਵਿੱਚ ਮੁਫ਼ਤ STEM ਮੌਕਾ। ਉਮਰ 0-12",
+          "summary": "Toronto Public Library ਵੱਲੋਂ Toronto ਵਿੱਚ ਮੁਫ਼ਤ STEM ਮੌਕਾ। ਉਮਰ 0-12. ਵੇਰਵਿਆਂ ਲਈ ਸਰੋਤ ਵੇਖੋ।",
+          "description": "Toronto Public Library ਵੱਲੋਂ Toronto ਵਿੱਚ ਮੁਫ਼ਤ STEM ਮੌਕਾ। ਉਮਰ 0-12. ਵੇਰਵਿਆਂ ਲਈ ਸਰੋਤ ਵੇਖੋ।",
+          "category": "STEM",
+          "cost": "ਮੁਫ਼ਤ ਲਿਸਟਿੰਗ",
+          "tags": [
+            "STEM",
+            "ਵਿਗਿਆਨ ਅਤੇ ਇੰਜੀਨੀਅਰਿੰਗ"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "ur": {
+          "title": "Toronto میں Toronto Public Library کی طرف سے مفت STEM موقع۔ عمر 0-12",
+          "summary": "Toronto میں Toronto Public Library کی طرف سے مفت STEM موقع۔ عمر 0-12. تفصیلات کے لیے ذریعہ دیکھیں۔",
+          "description": "Toronto میں Toronto Public Library کی طرف سے مفت STEM موقع۔ عمر 0-12. تفصیلات کے لیے ذریعہ دیکھیں۔",
+          "category": "STEM",
+          "cost": "مفت لسٹنگ",
+          "tags": [
+            "STEM",
+            "سائنس اور انجینئرنگ"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "ta": {
+          "title": "Toronto நகரில் Toronto Public Library வழங்கும் இலவச STEM வாய்ப்பு",
+          "summary": "Toronto நகரில் Toronto Public Library வழங்கும் இலவச STEM வாய்ப்பு. வயது 0-12. விவரங்களுக்கு மூலத்தை பார்க்கவும்.",
+          "description": "Toronto நகரில் Toronto Public Library வழங்கும் இலவச STEM வாய்ப்பு. வயது 0-12. விவரங்களுக்கு மூலத்தை பார்க்கவும்.",
+          "category": "STEM",
+          "cost": "இலவச பட்டியல்",
+          "tags": [
+            "STEM",
+            "அறிவியல் மற்றும் பொறியியல்"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "tl": {
+          "title": "Libreng STEM opportunity mula sa Toronto Public Library sa Toronto",
+          "summary": "Libreng STEM opportunity mula sa Toronto Public Library sa Toronto. Edad 0-12. Tingnan ang source para sa detalye.",
+          "description": "Libreng STEM opportunity mula sa Toronto Public Library sa Toronto. Edad 0-12. Tingnan ang source para sa detalye.",
+          "category": "STEM",
+          "cost": "Libreng listing",
+          "tags": [
+            "STEM",
+            "Agham at inhinyeriya"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "es": {
+          "title": "Oportunidad gratis de STEM de Toronto Public Library en Toronto",
+          "summary": "Oportunidad gratis de STEM de Toronto Public Library en Toronto. Edades 0-12. Revise la fuente para detalles.",
+          "description": "Oportunidad gratis de STEM de Toronto Public Library en Toronto. Edades 0-12. Revise la fuente para detalles.",
+          "category": "STEM",
+          "cost": "Listado gratis",
+          "tags": [
+            "STEM",
+            "Ciencia e ingenieria"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "ar": {
+          "title": "فرصة STEM مجانية من Toronto Public Library في Toronto",
+          "summary": "فرصة STEM مجانية من Toronto Public Library في Toronto. الأعمار 0-12. راجع المصدر للتفاصيل.",
+          "description": "فرصة STEM مجانية من Toronto Public Library في Toronto. الأعمار 0-12. راجع المصدر للتفاصيل.",
+          "category": "STEM",
+          "cost": "قائمة مجانية",
+          "tags": [
+            "STEM",
+            "العلوم والهندسة"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "fa": {
+          "title": "فرصت رایگان STEM از Toronto Public Library در Toronto",
+          "summary": "فرصت رایگان STEM از Toronto Public Library در Toronto. سنین 0-12. برای جزئیات منبع را بررسی کنید.",
+          "description": "فرصت رایگان STEM از Toronto Public Library در Toronto. سنین 0-12. برای جزئیات منبع را بررسی کنید.",
+          "category": "STEM",
+          "cost": "فهرست رایگان",
+          "tags": [
+            "STEM",
+            "علوم و مهندسی"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "hi": {
+          "title": "Toronto में Toronto Public Library की मुफ्त STEM opportunity",
+          "summary": "Toronto में Toronto Public Library की मुफ्त STEM opportunity. उम्र 0-12. Details के लिए source देखें.",
+          "description": "Toronto में Toronto Public Library की मुफ्त STEM opportunity. उम्र 0-12. Details के लिए source देखें.",
+          "category": "STEM",
+          "cost": "Free listing",
+          "tags": [
+            "STEM",
+            "विज्ञान और इंजीनियरिंग"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "pt": {
+          "title": "Oportunidade gratuita de STEM da Toronto Public Library em Toronto",
+          "summary": "Oportunidade gratuita de STEM da Toronto Public Library em Toronto. Idades 0-12. Veja a fonte para detalhes.",
+          "description": "Oportunidade gratuita de STEM da Toronto Public Library em Toronto. Idades 0-12. Veja a fonte para detalhes.",
+          "category": "STEM",
+          "cost": "Lista gratuita",
+          "tags": [
+            "STEM",
+            "Ciencia e engenharia"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "gu": {
+          "title": "Toronto માં Toronto Public Library તરફથી મફત STEM તક",
+          "summary": "Toronto માં Toronto Public Library તરફથી મફત STEM તક. ઉંમર 0-12. વિગત માટે સ્રોત જુઓ.",
+          "description": "Toronto માં Toronto Public Library તરફથી મફત STEM તક. ઉંમર 0-12. વિગત માટે સ્રોત જુઓ.",
+          "category": "STEM",
+          "cost": "મફત લિસ્ટિંગ",
+          "tags": [
+            "STEM",
+            "વિજ્ઞાન અને ઇજનેરી"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "bn": {
+          "title": "Toronto-এ Toronto Public Library এর ফ্রি STEM opportunity",
+          "summary": "Toronto-এ Toronto Public Library এর ফ্রি STEM opportunity. বয়স 0-12. বিস্তারিত জানতে উৎস দেখুন.",
+          "description": "Toronto-এ Toronto Public Library এর ফ্রি STEM opportunity. বয়স 0-12. বিস্তারিত জানতে উৎস দেখুন.",
+          "category": "STEM",
+          "cost": "ফ্রি তালিকা",
+          "tags": [
+            "STEM",
+            "বিজ্ঞান ও প্রকৌশল"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "ja": {
+          "title": "TorontoのToronto Public Libraryによる無料のSTEM機会です。対象年齢は0-12。詳細は情報源をご確認ください。",
+          "summary": "TorontoのToronto Public Libraryによる無料のSTEM機会です。対象年齢は0-12。詳細は情報源をご確認ください。",
+          "description": "TorontoのToronto Public Libraryによる無料のSTEM機会です。対象年齢は0-12。詳細は情報源をご確認ください。",
+          "category": "STEM",
+          "cost": "無料リスト",
+          "tags": [
+            "STEM",
+            "科学と工学"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "ko": {
+          "title": "Toronto에서 Toronto Public Library이 제공하는 무료 STEM 기회입니다",
+          "summary": "Toronto에서 Toronto Public Library이 제공하는 무료 STEM 기회입니다. 대상 나이는 0-12입니다. 자세한 내용은 출처를 확인하세요.",
+          "description": "Toronto에서 Toronto Public Library이 제공하는 무료 STEM 기회입니다. 대상 나이는 0-12입니다. 자세한 내용은 출처를 확인하세요.",
+          "category": "STEM",
+          "cost": "무료 목록",
+          "tags": [
+            "STEM",
+            "과학 및 공학"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "hu": {
+          "title": "Ingyenes STEM lehetőség a(z) Toronto Public Library szervezőtől itt: Toronto",
+          "summary": "Ingyenes STEM lehetőség a(z) Toronto Public Library szervezőtől itt: Toronto. Korosztály: 0-12. Részletekért nézd meg a forrást.",
+          "description": "Ingyenes STEM lehetőség a(z) Toronto Public Library szervezőtől itt: Toronto. Korosztály: 0-12. Részletekért nézd meg a forrást.",
+          "category": "STEM",
+          "cost": "Ingyenes lista",
+          "tags": [
+            "STEM",
+            "Termeszettudomany es mernoki tudomany"
+          ],
+          "translationSource": "generated-summary-template"
+        }
+      }
+    },
+    {
+      "id": "tpl-rss-6a90b4d8be148200298a9765",
+      "title": "After School Club",
+      "organization": "Toronto Public Library",
+      "description": "Looking for something to do after school? Come out to our After School Club every Tuesday and learn new things, make stuff, meet other kids and have fun! For ages 6-12. Drop in. No registration required. Snacks are offered during the After School Club for participants. Food may contain or have come into contact with common allergens. Ingredient lists will be available. Snacks are generously supported, in part, by donors. Upcoming programs: September 15 - Snap Circuits September 22 - Dash robots September 29 - Sphero robots Live or automated closed captioning, sign language interpretation, intervenor services, or attendant services are available upon request. Please submit your request at least 2 weeks in advance to: tpl.ca/accessibility-events.",
+      "city": "Toronto",
+      "region": "Toronto",
+      "ageMin": 6,
+      "ageMax": 12,
+      "category": "Coding & Robotics",
+      "categories": [
+        "STEM",
+        "Coding & Robotics"
+      ],
+      "cost": "Free to join",
+      "language": [
+        "en"
+      ],
+      "deadline": "2026-09-15T19:30:00.000Z",
+      "startDate": "2026-09-15T19:30:00.000Z",
+      "endDate": "2026-09-15T20:30:00.000Z",
+      "sourceUrl": "https://tpl.bibliocommons.com/events/6a90b4d8be148200298a9765",
+      "registrationUrl": "https://tpl.bibliocommons.com/events/6a90b4d8be148200298a9765",
+      "lastChecked": "2026-09-12",
+      "lastSeen": "2026-09-12",
+      "status": "active",
+      "tags": [
+        "after school clubs",
+        "coding & robotics",
+        "crafts & hobbies",
+        "school age children (6-12)",
+        "english"
+      ],
+      "communityFocus": [
+        "Open to all",
+        "Newcomer-friendly"
+      ],
+      "latitude": 43.6659465,
+      "longitude": -79.3345198,
+      "address": "Jones, 118 Jones Avenue, Toronto, ON, M4M 2Z9",
+      "volunteerHoursEligible": false,
+      "coopEligible": false,
+      "trustedSource": true,
+      "sources": [
+        {
+          "label": "Official Toronto Public Library event page",
+          "url": "https://tpl.bibliocommons.com/events/6a90b4d8be148200298a9765",
+          "capturedAt": "2026-09-12T15:33:44.313Z",
+          "confidence": "high"
+        }
+      ],
+      "translations": {
+        "fr": {
+          "title": "Occasion gratuite de STEM offerte par Toronto Public Library a Toronto",
+          "summary": "Occasion gratuite de STEM offerte par Toronto Public Library a Toronto. Ages 6-12. Consultez la source pour les details.",
+          "description": "Occasion gratuite de STEM offerte par Toronto Public Library a Toronto. Ages 6-12. Consultez la source pour les details.",
+          "category": "STEM",
+          "cost": "Fiche gratuite",
+          "tags": [
+            "STEM",
+            "Codage et robotique"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "zh": {
+          "title": "Toronto Public Library在Toronto提供免费的STEM机会。适合6-12岁。请查看来源了解详情。",
+          "summary": "Toronto Public Library在Toronto提供免费的STEM机会。适合6-12岁。请查看来源了解详情。",
+          "description": "Toronto Public Library在Toronto提供免费的STEM机会。适合6-12岁。请查看来源了解详情。",
+          "category": "STEM",
+          "cost": "免费列表",
+          "tags": [
+            "STEM",
+            "编程与机器人"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "yue": {
+          "title": "Toronto Public Library喺Toronto提供免費STEM機會。適合6-12歲。請查看來源了解詳情。",
+          "summary": "Toronto Public Library喺Toronto提供免費STEM機會。適合6-12歲。請查看來源了解詳情。",
+          "description": "Toronto Public Library喺Toronto提供免費STEM機會。適合6-12歲。請查看來源了解詳情。",
+          "category": "STEM",
+          "cost": "免費項目",
+          "tags": [
+            "STEM",
+            "編程同機械人"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "pa": {
+          "title": "Toronto Public Library ਵੱਲੋਂ Toronto ਵਿੱਚ ਮੁਫ਼ਤ STEM ਮੌਕਾ। ਉਮਰ 6-12",
+          "summary": "Toronto Public Library ਵੱਲੋਂ Toronto ਵਿੱਚ ਮੁਫ਼ਤ STEM ਮੌਕਾ। ਉਮਰ 6-12. ਵੇਰਵਿਆਂ ਲਈ ਸਰੋਤ ਵੇਖੋ।",
+          "description": "Toronto Public Library ਵੱਲੋਂ Toronto ਵਿੱਚ ਮੁਫ਼ਤ STEM ਮੌਕਾ। ਉਮਰ 6-12. ਵੇਰਵਿਆਂ ਲਈ ਸਰੋਤ ਵੇਖੋ।",
+          "category": "STEM",
+          "cost": "ਮੁਫ਼ਤ ਲਿਸਟਿੰਗ",
+          "tags": [
+            "STEM",
+            "ਕੋਡਿੰਗ ਅਤੇ ਰੋਬੋਟਿਕਸ"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "ur": {
+          "title": "Toronto میں Toronto Public Library کی طرف سے مفت STEM موقع۔ عمر 6-12",
+          "summary": "Toronto میں Toronto Public Library کی طرف سے مفت STEM موقع۔ عمر 6-12. تفصیلات کے لیے ذریعہ دیکھیں۔",
+          "description": "Toronto میں Toronto Public Library کی طرف سے مفت STEM موقع۔ عمر 6-12. تفصیلات کے لیے ذریعہ دیکھیں۔",
+          "category": "STEM",
+          "cost": "مفت لسٹنگ",
+          "tags": [
+            "STEM",
+            "کوڈنگ اور روبوٹکس"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "ta": {
+          "title": "Toronto நகரில் Toronto Public Library வழங்கும் இலவச STEM வாய்ப்பு",
+          "summary": "Toronto நகரில் Toronto Public Library வழங்கும் இலவச STEM வாய்ப்பு. வயது 6-12. விவரங்களுக்கு மூலத்தை பார்க்கவும்.",
+          "description": "Toronto நகரில் Toronto Public Library வழங்கும் இலவச STEM வாய்ப்பு. வயது 6-12. விவரங்களுக்கு மூலத்தை பார்க்கவும்.",
+          "category": "STEM",
+          "cost": "இலவச பட்டியல்",
+          "tags": [
+            "STEM",
+            "கோடிங் மற்றும் ரோபோடிக்ஸ்"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "tl": {
+          "title": "Libreng STEM opportunity mula sa Toronto Public Library sa Toronto",
+          "summary": "Libreng STEM opportunity mula sa Toronto Public Library sa Toronto. Edad 6-12. Tingnan ang source para sa detalye.",
+          "description": "Libreng STEM opportunity mula sa Toronto Public Library sa Toronto. Edad 6-12. Tingnan ang source para sa detalye.",
+          "category": "STEM",
+          "cost": "Libreng listing",
+          "tags": [
+            "STEM",
+            "Pagko-code at robotika"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "es": {
+          "title": "Oportunidad gratis de STEM de Toronto Public Library en Toronto",
+          "summary": "Oportunidad gratis de STEM de Toronto Public Library en Toronto. Edades 6-12. Revise la fuente para detalles.",
+          "description": "Oportunidad gratis de STEM de Toronto Public Library en Toronto. Edades 6-12. Revise la fuente para detalles.",
+          "category": "STEM",
+          "cost": "Listado gratis",
+          "tags": [
+            "STEM",
+            "Programacion y robotica"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "ar": {
+          "title": "فرصة STEM مجانية من Toronto Public Library في Toronto",
+          "summary": "فرصة STEM مجانية من Toronto Public Library في Toronto. الأعمار 6-12. راجع المصدر للتفاصيل.",
+          "description": "فرصة STEM مجانية من Toronto Public Library في Toronto. الأعمار 6-12. راجع المصدر للتفاصيل.",
+          "category": "STEM",
+          "cost": "قائمة مجانية",
+          "tags": [
+            "STEM",
+            "البرمجة والروبوتات"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "fa": {
+          "title": "فرصت رایگان STEM از Toronto Public Library در Toronto",
+          "summary": "فرصت رایگان STEM از Toronto Public Library در Toronto. سنین 6-12. برای جزئیات منبع را بررسی کنید.",
+          "description": "فرصت رایگان STEM از Toronto Public Library در Toronto. سنین 6-12. برای جزئیات منبع را بررسی کنید.",
+          "category": "STEM",
+          "cost": "فهرست رایگان",
+          "tags": [
+            "STEM",
+            "برنامه‌نویسی و رباتیک"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "hi": {
+          "title": "Toronto में Toronto Public Library की मुफ्त STEM opportunity",
+          "summary": "Toronto में Toronto Public Library की मुफ्त STEM opportunity. उम्र 6-12. Details के लिए source देखें.",
+          "description": "Toronto में Toronto Public Library की मुफ्त STEM opportunity. उम्र 6-12. Details के लिए source देखें.",
+          "category": "STEM",
+          "cost": "Free listing",
+          "tags": [
+            "STEM",
+            "कोडिंग और रोबोटिक्स"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "pt": {
+          "title": "Oportunidade gratuita de STEM da Toronto Public Library em Toronto",
+          "summary": "Oportunidade gratuita de STEM da Toronto Public Library em Toronto. Idades 6-12. Veja a fonte para detalhes.",
+          "description": "Oportunidade gratuita de STEM da Toronto Public Library em Toronto. Idades 6-12. Veja a fonte para detalhes.",
+          "category": "STEM",
+          "cost": "Lista gratuita",
+          "tags": [
+            "STEM",
+            "Programacao e robotica"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "gu": {
+          "title": "Toronto માં Toronto Public Library તરફથી મફત STEM તક",
+          "summary": "Toronto માં Toronto Public Library તરફથી મફત STEM તક. ઉંમર 6-12. વિગત માટે સ્રોત જુઓ.",
+          "description": "Toronto માં Toronto Public Library તરફથી મફત STEM તક. ઉંમર 6-12. વિગત માટે સ્રોત જુઓ.",
+          "category": "STEM",
+          "cost": "મફત લિસ્ટિંગ",
+          "tags": [
+            "STEM",
+            "કોડિંગ અને રોબોટિક્સ"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "bn": {
+          "title": "Toronto-এ Toronto Public Library এর ফ্রি STEM opportunity",
+          "summary": "Toronto-এ Toronto Public Library এর ফ্রি STEM opportunity. বয়স 6-12. বিস্তারিত জানতে উৎস দেখুন.",
+          "description": "Toronto-এ Toronto Public Library এর ফ্রি STEM opportunity. বয়স 6-12. বিস্তারিত জানতে উৎস দেখুন.",
+          "category": "STEM",
+          "cost": "ফ্রি তালিকা",
+          "tags": [
+            "STEM",
+            "কোডিং ও রোবোটিক্স"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "ja": {
+          "title": "TorontoのToronto Public Libraryによる無料のSTEM機会です。対象年齢は6-12。詳細は情報源をご確認ください。",
+          "summary": "TorontoのToronto Public Libraryによる無料のSTEM機会です。対象年齢は6-12。詳細は情報源をご確認ください。",
+          "description": "TorontoのToronto Public Libraryによる無料のSTEM機会です。対象年齢は6-12。詳細は情報源をご確認ください。",
+          "category": "STEM",
+          "cost": "無料リスト",
+          "tags": [
+            "STEM",
+            "コーディングとロボット工学"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "ko": {
+          "title": "Toronto에서 Toronto Public Library이 제공하는 무료 STEM 기회입니다",
+          "summary": "Toronto에서 Toronto Public Library이 제공하는 무료 STEM 기회입니다. 대상 나이는 6-12입니다. 자세한 내용은 출처를 확인하세요.",
+          "description": "Toronto에서 Toronto Public Library이 제공하는 무료 STEM 기회입니다. 대상 나이는 6-12입니다. 자세한 내용은 출처를 확인하세요.",
+          "category": "STEM",
+          "cost": "무료 목록",
+          "tags": [
+            "STEM",
+            "코딩 및 로봇공학"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "hu": {
+          "title": "Ingyenes STEM lehetőség a(z) Toronto Public Library szervezőtől itt: Toronto",
+          "summary": "Ingyenes STEM lehetőség a(z) Toronto Public Library szervezőtől itt: Toronto. Korosztály: 6-12. Részletekért nézd meg a forrást.",
+          "description": "Ingyenes STEM lehetőség a(z) Toronto Public Library szervezőtől itt: Toronto. Korosztály: 6-12. Részletekért nézd meg a forrást.",
+          "category": "STEM",
+          "cost": "Ingyenes lista",
+          "tags": [
+            "STEM",
+            "Kodolas es robotika"
+          ],
+          "translationSource": "generated-summary-template"
+        }
+      }
+    },
+    {
+      "id": "tpl-rss-6a8f14ba0116850960382e38",
+      "title": "After School Club",
+      "organization": "Toronto Public Library",
+      "description": "Looking for something to do after school? Come out to our After School Club and learn new things, make stuff, meet other kids and have fun! For ages 6-12. Snacks are offered during the After School Club for participants. Ingredient lists will be available. Snacks are generously supported, in part, by donors.",
+      "city": "Toronto",
+      "region": "Toronto",
+      "ageMin": 6,
+      "ageMax": 12,
+      "category": "Coding & Robotics",
+      "categories": [
+        "STEM",
+        "Coding & Robotics"
+      ],
+      "cost": "Free to join",
+      "language": [
+        "en"
+      ],
+      "deadline": "2026-09-15T19:45:00.000Z",
+      "startDate": "2026-09-15T19:45:00.000Z",
+      "endDate": "2026-09-15T20:45:00.000Z",
+      "sourceUrl": "https://tpl.bibliocommons.com/events/6a8f14ba0116850960382e38",
+      "registrationUrl": "https://tpl.bibliocommons.com/events/6a8f14ba0116850960382e38",
+      "lastChecked": "2026-09-12",
+      "lastSeen": "2026-09-12",
+      "status": "active",
+      "tags": [
+        "after school clubs",
+        "coding & robotics",
+        "crafts & hobbies",
+        "culture, arts & entertainment",
+        "science & engineering",
+        "school age children (6-12)",
+        "english"
+      ],
+      "communityFocus": [
+        "Open to all",
+        "Newcomer-friendly"
+      ],
+      "latitude": 43.7179325,
+      "longitude": -79.331811,
+      "address": "Flemingdon Park, 29 St. Dennis Drive, Toronto, ON, M3C 3J3",
+      "volunteerHoursEligible": false,
+      "coopEligible": false,
+      "trustedSource": true,
+      "sources": [
+        {
+          "label": "Official Toronto Public Library event page",
+          "url": "https://tpl.bibliocommons.com/events/6a8f14ba0116850960382e38",
+          "capturedAt": "2026-09-12T15:33:44.313Z",
+          "confidence": "high"
+        }
+      ],
+      "translations": {
+        "fr": {
+          "title": "Occasion gratuite de STEM offerte par Toronto Public Library a Toronto",
+          "summary": "Occasion gratuite de STEM offerte par Toronto Public Library a Toronto. Ages 6-12. Consultez la source pour les details.",
+          "description": "Occasion gratuite de STEM offerte par Toronto Public Library a Toronto. Ages 6-12. Consultez la source pour les details.",
+          "category": "STEM",
+          "cost": "Fiche gratuite",
+          "tags": [
+            "STEM",
+            "Codage et robotique"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "zh": {
+          "title": "Toronto Public Library在Toronto提供免费的STEM机会。适合6-12岁。请查看来源了解详情。",
+          "summary": "Toronto Public Library在Toronto提供免费的STEM机会。适合6-12岁。请查看来源了解详情。",
+          "description": "Toronto Public Library在Toronto提供免费的STEM机会。适合6-12岁。请查看来源了解详情。",
+          "category": "STEM",
+          "cost": "免费列表",
+          "tags": [
+            "STEM",
+            "编程与机器人"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "yue": {
+          "title": "Toronto Public Library喺Toronto提供免費STEM機會。適合6-12歲。請查看來源了解詳情。",
+          "summary": "Toronto Public Library喺Toronto提供免費STEM機會。適合6-12歲。請查看來源了解詳情。",
+          "description": "Toronto Public Library喺Toronto提供免費STEM機會。適合6-12歲。請查看來源了解詳情。",
+          "category": "STEM",
+          "cost": "免費項目",
+          "tags": [
+            "STEM",
+            "編程同機械人"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "pa": {
+          "title": "Toronto Public Library ਵੱਲੋਂ Toronto ਵਿੱਚ ਮੁਫ਼ਤ STEM ਮੌਕਾ। ਉਮਰ 6-12",
+          "summary": "Toronto Public Library ਵੱਲੋਂ Toronto ਵਿੱਚ ਮੁਫ਼ਤ STEM ਮੌਕਾ। ਉਮਰ 6-12. ਵੇਰਵਿਆਂ ਲਈ ਸਰੋਤ ਵੇਖੋ।",
+          "description": "Toronto Public Library ਵੱਲੋਂ Toronto ਵਿੱਚ ਮੁਫ਼ਤ STEM ਮੌਕਾ। ਉਮਰ 6-12. ਵੇਰਵਿਆਂ ਲਈ ਸਰੋਤ ਵੇਖੋ।",
+          "category": "STEM",
+          "cost": "ਮੁਫ਼ਤ ਲਿਸਟਿੰਗ",
+          "tags": [
+            "STEM",
+            "ਕੋਡਿੰਗ ਅਤੇ ਰੋਬੋਟਿਕਸ"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "ur": {
+          "title": "Toronto میں Toronto Public Library کی طرف سے مفت STEM موقع۔ عمر 6-12",
+          "summary": "Toronto میں Toronto Public Library کی طرف سے مفت STEM موقع۔ عمر 6-12. تفصیلات کے لیے ذریعہ دیکھیں۔",
+          "description": "Toronto میں Toronto Public Library کی طرف سے مفت STEM موقع۔ عمر 6-12. تفصیلات کے لیے ذریعہ دیکھیں۔",
+          "category": "STEM",
+          "cost": "مفت لسٹنگ",
+          "tags": [
+            "STEM",
+            "کوڈنگ اور روبوٹکس"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "ta": {
+          "title": "Toronto நகரில் Toronto Public Library வழங்கும் இலவச STEM வாய்ப்பு",
+          "summary": "Toronto நகரில் Toronto Public Library வழங்கும் இலவச STEM வாய்ப்பு. வயது 6-12. விவரங்களுக்கு மூலத்தை பார்க்கவும்.",
+          "description": "Toronto நகரில் Toronto Public Library வழங்கும் இலவச STEM வாய்ப்பு. வயது 6-12. விவரங்களுக்கு மூலத்தை பார்க்கவும்.",
+          "category": "STEM",
+          "cost": "இலவச பட்டியல்",
+          "tags": [
+            "STEM",
+            "கோடிங் மற்றும் ரோபோடிக்ஸ்"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "tl": {
+          "title": "Libreng STEM opportunity mula sa Toronto Public Library sa Toronto",
+          "summary": "Libreng STEM opportunity mula sa Toronto Public Library sa Toronto. Edad 6-12. Tingnan ang source para sa detalye.",
+          "description": "Libreng STEM opportunity mula sa Toronto Public Library sa Toronto. Edad 6-12. Tingnan ang source para sa detalye.",
+          "category": "STEM",
+          "cost": "Libreng listing",
+          "tags": [
+            "STEM",
+            "Pagko-code at robotika"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "es": {
+          "title": "Oportunidad gratis de STEM de Toronto Public Library en Toronto",
+          "summary": "Oportunidad gratis de STEM de Toronto Public Library en Toronto. Edades 6-12. Revise la fuente para detalles.",
+          "description": "Oportunidad gratis de STEM de Toronto Public Library en Toronto. Edades 6-12. Revise la fuente para detalles.",
+          "category": "STEM",
+          "cost": "Listado gratis",
+          "tags": [
+            "STEM",
+            "Programacion y robotica"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "ar": {
+          "title": "فرصة STEM مجانية من Toronto Public Library في Toronto",
+          "summary": "فرصة STEM مجانية من Toronto Public Library في Toronto. الأعمار 6-12. راجع المصدر للتفاصيل.",
+          "description": "فرصة STEM مجانية من Toronto Public Library في Toronto. الأعمار 6-12. راجع المصدر للتفاصيل.",
+          "category": "STEM",
+          "cost": "قائمة مجانية",
+          "tags": [
+            "STEM",
+            "البرمجة والروبوتات"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "fa": {
+          "title": "فرصت رایگان STEM از Toronto Public Library در Toronto",
+          "summary": "فرصت رایگان STEM از Toronto Public Library در Toronto. سنین 6-12. برای جزئیات منبع را بررسی کنید.",
+          "description": "فرصت رایگان STEM از Toronto Public Library در Toronto. سنین 6-12. برای جزئیات منبع را بررسی کنید.",
+          "category": "STEM",
+          "cost": "فهرست رایگان",
+          "tags": [
+            "STEM",
+            "برنامه‌نویسی و رباتیک"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "hi": {
+          "title": "Toronto में Toronto Public Library की मुफ्त STEM opportunity",
+          "summary": "Toronto में Toronto Public Library की मुफ्त STEM opportunity. उम्र 6-12. Details के लिए source देखें.",
+          "description": "Toronto में Toronto Public Library की मुफ्त STEM opportunity. उम्र 6-12. Details के लिए source देखें.",
+          "category": "STEM",
+          "cost": "Free listing",
+          "tags": [
+            "STEM",
+            "कोडिंग और रोबोटिक्स"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "pt": {
+          "title": "Oportunidade gratuita de STEM da Toronto Public Library em Toronto",
+          "summary": "Oportunidade gratuita de STEM da Toronto Public Library em Toronto. Idades 6-12. Veja a fonte para detalhes.",
+          "description": "Oportunidade gratuita de STEM da Toronto Public Library em Toronto. Idades 6-12. Veja a fonte para detalhes.",
+          "category": "STEM",
+          "cost": "Lista gratuita",
+          "tags": [
+            "STEM",
+            "Programacao e robotica"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "gu": {
+          "title": "Toronto માં Toronto Public Library તરફથી મફત STEM તક",
+          "summary": "Toronto માં Toronto Public Library તરફથી મફત STEM તક. ઉંમર 6-12. વિગત માટે સ્રોત જુઓ.",
+          "description": "Toronto માં Toronto Public Library તરફથી મફત STEM તક. ઉંમર 6-12. વિગત માટે સ્રોત જુઓ.",
+          "category": "STEM",
+          "cost": "મફત લિસ્ટિંગ",
+          "tags": [
+            "STEM",
+            "કોડિંગ અને રોબોટિક્સ"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "bn": {
+          "title": "Toronto-এ Toronto Public Library এর ফ্রি STEM opportunity",
+          "summary": "Toronto-এ Toronto Public Library এর ফ্রি STEM opportunity. বয়স 6-12. বিস্তারিত জানতে উৎস দেখুন.",
+          "description": "Toronto-এ Toronto Public Library এর ফ্রি STEM opportunity. বয়স 6-12. বিস্তারিত জানতে উৎস দেখুন.",
+          "category": "STEM",
+          "cost": "ফ্রি তালিকা",
+          "tags": [
+            "STEM",
+            "কোডিং ও রোবোটিক্স"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "ja": {
+          "title": "TorontoのToronto Public Libraryによる無料のSTEM機会です。対象年齢は6-12。詳細は情報源をご確認ください。",
+          "summary": "TorontoのToronto Public Libraryによる無料のSTEM機会です。対象年齢は6-12。詳細は情報源をご確認ください。",
+          "description": "TorontoのToronto Public Libraryによる無料のSTEM機会です。対象年齢は6-12。詳細は情報源をご確認ください。",
+          "category": "STEM",
+          "cost": "無料リスト",
+          "tags": [
+            "STEM",
+            "コーディングとロボット工学"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "ko": {
+          "title": "Toronto에서 Toronto Public Library이 제공하는 무료 STEM 기회입니다",
+          "summary": "Toronto에서 Toronto Public Library이 제공하는 무료 STEM 기회입니다. 대상 나이는 6-12입니다. 자세한 내용은 출처를 확인하세요.",
+          "description": "Toronto에서 Toronto Public Library이 제공하는 무료 STEM 기회입니다. 대상 나이는 6-12입니다. 자세한 내용은 출처를 확인하세요.",
+          "category": "STEM",
+          "cost": "무료 목록",
+          "tags": [
+            "STEM",
+            "코딩 및 로봇공학"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "hu": {
+          "title": "Ingyenes STEM lehetőség a(z) Toronto Public Library szervezőtől itt: Toronto",
+          "summary": "Ingyenes STEM lehetőség a(z) Toronto Public Library szervezőtől itt: Toronto. Korosztály: 6-12. Részletekért nézd meg a forrást.",
+          "description": "Ingyenes STEM lehetőség a(z) Toronto Public Library szervezőtől itt: Toronto. Korosztály: 6-12. Részletekért nézd meg a forrást.",
+          "category": "STEM",
+          "cost": "Ingyenes lista",
+          "tags": [
+            "STEM",
+            "Kodolas es robotika"
+          ],
+          "translationSource": "generated-summary-template"
+        }
+      }
+    },
+    {
+      "id": "tpl-rss-6a7d04481401fd00606c3072",
+      "title": "After School Club -Marble Run",
+      "organization": "Toronto Public Library",
+      "description": "Looking for something to do after school? Come out to our After School Club and learn new things, make stuff, meet other kids and have fun! For ages 6-12. Snacks are offered during the After School Club for participants. Ingredient lists will be available. Snacks are generously supported, in part, by donors. September: Marble Run Marble Run is a fun track where marbles roll down using gravity. Children can build tracks with tubes, ramps, and tunnels, then watch the marbles race to the finish. In this program, kids will explore, create, test, and improve their own marble runs. They will learn about gravity, speed, and problem-solving while having fun. Let's build, play, and discover together!",
+      "city": "Toronto",
+      "region": "Toronto",
+      "ageMin": 6,
+      "ageMax": 12,
+      "category": "Science & Engineering",
+      "categories": [
+        "STEM",
+        "Science & Engineering"
+      ],
+      "cost": "Free to join",
+      "language": [
+        "en"
+      ],
+      "deadline": "2026-09-15T19:45:00.000Z",
+      "startDate": "2026-09-15T19:45:00.000Z",
+      "endDate": "2026-09-15T20:45:00.000Z",
+      "sourceUrl": "https://tpl.bibliocommons.com/events/6a7d04481401fd00606c3072",
+      "registrationUrl": "https://tpl.bibliocommons.com/events/6a7d04481401fd00606c3072",
+      "lastChecked": "2026-09-12",
+      "lastSeen": "2026-09-12",
+      "status": "active",
+      "tags": [
+        "after school clubs",
+        "crafts & hobbies",
+        "culture, arts & entertainment",
+        "science & engineering",
+        "school age children (6-12)",
+        "english"
+      ],
+      "communityFocus": [
+        "Open to all",
+        "Newcomer-friendly"
+      ],
+      "latitude": 43.815527,
+      "longitude": -79.3221013,
+      "address": "Steeles, C107-375 Bamburgh Circle, Toronto, ON, M1W 3Y1",
+      "volunteerHoursEligible": false,
+      "coopEligible": false,
+      "trustedSource": true,
+      "sources": [
+        {
+          "label": "Official Toronto Public Library event page",
+          "url": "https://tpl.bibliocommons.com/events/6a7d04481401fd00606c3072",
+          "capturedAt": "2026-09-12T15:33:44.314Z",
+          "confidence": "high"
+        }
+      ],
+      "translations": {
+        "fr": {
+          "title": "Occasion gratuite de STEM offerte par Toronto Public Library a Toronto",
+          "summary": "Occasion gratuite de STEM offerte par Toronto Public Library a Toronto. Ages 6-12. Consultez la source pour les details.",
+          "description": "Occasion gratuite de STEM offerte par Toronto Public Library a Toronto. Ages 6-12. Consultez la source pour les details.",
+          "category": "STEM",
+          "cost": "Fiche gratuite",
+          "tags": [
+            "STEM",
+            "Sciences et ingenierie"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "zh": {
+          "title": "Toronto Public Library在Toronto提供免费的STEM机会。适合6-12岁。请查看来源了解详情。",
+          "summary": "Toronto Public Library在Toronto提供免费的STEM机会。适合6-12岁。请查看来源了解详情。",
+          "description": "Toronto Public Library在Toronto提供免费的STEM机会。适合6-12岁。请查看来源了解详情。",
+          "category": "STEM",
+          "cost": "免费列表",
+          "tags": [
+            "STEM",
+            "科学与工程"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "yue": {
+          "title": "Toronto Public Library喺Toronto提供免費STEM機會。適合6-12歲。請查看來源了解詳情。",
+          "summary": "Toronto Public Library喺Toronto提供免費STEM機會。適合6-12歲。請查看來源了解詳情。",
+          "description": "Toronto Public Library喺Toronto提供免費STEM機會。適合6-12歲。請查看來源了解詳情。",
+          "category": "STEM",
+          "cost": "免費項目",
+          "tags": [
+            "STEM",
+            "科學同工程"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "pa": {
+          "title": "Toronto Public Library ਵੱਲੋਂ Toronto ਵਿੱਚ ਮੁਫ਼ਤ STEM ਮੌਕਾ। ਉਮਰ 6-12",
+          "summary": "Toronto Public Library ਵੱਲੋਂ Toronto ਵਿੱਚ ਮੁਫ਼ਤ STEM ਮੌਕਾ। ਉਮਰ 6-12. ਵੇਰਵਿਆਂ ਲਈ ਸਰੋਤ ਵੇਖੋ।",
+          "description": "Toronto Public Library ਵੱਲੋਂ Toronto ਵਿੱਚ ਮੁਫ਼ਤ STEM ਮੌਕਾ। ਉਮਰ 6-12. ਵੇਰਵਿਆਂ ਲਈ ਸਰੋਤ ਵੇਖੋ।",
+          "category": "STEM",
+          "cost": "ਮੁਫ਼ਤ ਲਿਸਟਿੰਗ",
+          "tags": [
+            "STEM",
+            "ਵਿਗਿਆਨ ਅਤੇ ਇੰਜੀਨੀਅਰਿੰਗ"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "ur": {
+          "title": "Toronto میں Toronto Public Library کی طرف سے مفت STEM موقع۔ عمر 6-12",
+          "summary": "Toronto میں Toronto Public Library کی طرف سے مفت STEM موقع۔ عمر 6-12. تفصیلات کے لیے ذریعہ دیکھیں۔",
+          "description": "Toronto میں Toronto Public Library کی طرف سے مفت STEM موقع۔ عمر 6-12. تفصیلات کے لیے ذریعہ دیکھیں۔",
+          "category": "STEM",
+          "cost": "مفت لسٹنگ",
+          "tags": [
+            "STEM",
+            "سائنس اور انجینئرنگ"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "ta": {
+          "title": "Toronto நகரில் Toronto Public Library வழங்கும் இலவச STEM வாய்ப்பு",
+          "summary": "Toronto நகரில் Toronto Public Library வழங்கும் இலவச STEM வாய்ப்பு. வயது 6-12. விவரங்களுக்கு மூலத்தை பார்க்கவும்.",
+          "description": "Toronto நகரில் Toronto Public Library வழங்கும் இலவச STEM வாய்ப்பு. வயது 6-12. விவரங்களுக்கு மூலத்தை பார்க்கவும்.",
+          "category": "STEM",
+          "cost": "இலவச பட்டியல்",
+          "tags": [
+            "STEM",
+            "அறிவியல் மற்றும் பொறியியல்"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "tl": {
+          "title": "Libreng STEM opportunity mula sa Toronto Public Library sa Toronto",
+          "summary": "Libreng STEM opportunity mula sa Toronto Public Library sa Toronto. Edad 6-12. Tingnan ang source para sa detalye.",
+          "description": "Libreng STEM opportunity mula sa Toronto Public Library sa Toronto. Edad 6-12. Tingnan ang source para sa detalye.",
+          "category": "STEM",
+          "cost": "Libreng listing",
+          "tags": [
+            "STEM",
+            "Agham at inhinyeriya"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "es": {
+          "title": "Oportunidad gratis de STEM de Toronto Public Library en Toronto",
+          "summary": "Oportunidad gratis de STEM de Toronto Public Library en Toronto. Edades 6-12. Revise la fuente para detalles.",
+          "description": "Oportunidad gratis de STEM de Toronto Public Library en Toronto. Edades 6-12. Revise la fuente para detalles.",
+          "category": "STEM",
+          "cost": "Listado gratis",
+          "tags": [
+            "STEM",
+            "Ciencia e ingenieria"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "ar": {
+          "title": "فرصة STEM مجانية من Toronto Public Library في Toronto",
+          "summary": "فرصة STEM مجانية من Toronto Public Library في Toronto. الأعمار 6-12. راجع المصدر للتفاصيل.",
+          "description": "فرصة STEM مجانية من Toronto Public Library في Toronto. الأعمار 6-12. راجع المصدر للتفاصيل.",
+          "category": "STEM",
+          "cost": "قائمة مجانية",
+          "tags": [
+            "STEM",
+            "العلوم والهندسة"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "fa": {
+          "title": "فرصت رایگان STEM از Toronto Public Library در Toronto",
+          "summary": "فرصت رایگان STEM از Toronto Public Library در Toronto. سنین 6-12. برای جزئیات منبع را بررسی کنید.",
+          "description": "فرصت رایگان STEM از Toronto Public Library در Toronto. سنین 6-12. برای جزئیات منبع را بررسی کنید.",
+          "category": "STEM",
+          "cost": "فهرست رایگان",
+          "tags": [
+            "STEM",
+            "علوم و مهندسی"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "hi": {
+          "title": "Toronto में Toronto Public Library की मुफ्त STEM opportunity",
+          "summary": "Toronto में Toronto Public Library की मुफ्त STEM opportunity. उम्र 6-12. Details के लिए source देखें.",
+          "description": "Toronto में Toronto Public Library की मुफ्त STEM opportunity. उम्र 6-12. Details के लिए source देखें.",
+          "category": "STEM",
+          "cost": "Free listing",
+          "tags": [
+            "STEM",
+            "विज्ञान और इंजीनियरिंग"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "pt": {
+          "title": "Oportunidade gratuita de STEM da Toronto Public Library em Toronto",
+          "summary": "Oportunidade gratuita de STEM da Toronto Public Library em Toronto. Idades 6-12. Veja a fonte para detalhes.",
+          "description": "Oportunidade gratuita de STEM da Toronto Public Library em Toronto. Idades 6-12. Veja a fonte para detalhes.",
+          "category": "STEM",
+          "cost": "Lista gratuita",
+          "tags": [
+            "STEM",
+            "Ciencia e engenharia"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "gu": {
+          "title": "Toronto માં Toronto Public Library તરફથી મફત STEM તક",
+          "summary": "Toronto માં Toronto Public Library તરફથી મફત STEM તક. ઉંમર 6-12. વિગત માટે સ્રોત જુઓ.",
+          "description": "Toronto માં Toronto Public Library તરફથી મફત STEM તક. ઉંમર 6-12. વિગત માટે સ્રોત જુઓ.",
+          "category": "STEM",
+          "cost": "મફત લિસ્ટિંગ",
+          "tags": [
+            "STEM",
+            "વિજ્ઞાન અને ઇજનેરી"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "bn": {
+          "title": "Toronto-এ Toronto Public Library এর ফ্রি STEM opportunity",
+          "summary": "Toronto-এ Toronto Public Library এর ফ্রি STEM opportunity. বয়স 6-12. বিস্তারিত জানতে উৎস দেখুন.",
+          "description": "Toronto-এ Toronto Public Library এর ফ্রি STEM opportunity. বয়স 6-12. বিস্তারিত জানতে উৎস দেখুন.",
+          "category": "STEM",
+          "cost": "ফ্রি তালিকা",
+          "tags": [
+            "STEM",
+            "বিজ্ঞান ও প্রকৌশল"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "ja": {
+          "title": "TorontoのToronto Public Libraryによる無料のSTEM機会です。対象年齢は6-12。詳細は情報源をご確認ください。",
+          "summary": "TorontoのToronto Public Libraryによる無料のSTEM機会です。対象年齢は6-12。詳細は情報源をご確認ください。",
+          "description": "TorontoのToronto Public Libraryによる無料のSTEM機会です。対象年齢は6-12。詳細は情報源をご確認ください。",
+          "category": "STEM",
+          "cost": "無料リスト",
+          "tags": [
+            "STEM",
+            "科学と工学"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "ko": {
+          "title": "Toronto에서 Toronto Public Library이 제공하는 무료 STEM 기회입니다",
+          "summary": "Toronto에서 Toronto Public Library이 제공하는 무료 STEM 기회입니다. 대상 나이는 6-12입니다. 자세한 내용은 출처를 확인하세요.",
+          "description": "Toronto에서 Toronto Public Library이 제공하는 무료 STEM 기회입니다. 대상 나이는 6-12입니다. 자세한 내용은 출처를 확인하세요.",
+          "category": "STEM",
+          "cost": "무료 목록",
+          "tags": [
+            "STEM",
+            "과학 및 공학"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "hu": {
+          "title": "Ingyenes STEM lehetőség a(z) Toronto Public Library szervezőtől itt: Toronto",
+          "summary": "Ingyenes STEM lehetőség a(z) Toronto Public Library szervezőtől itt: Toronto. Korosztály: 6-12. Részletekért nézd meg a forrást.",
+          "description": "Ingyenes STEM lehetőség a(z) Toronto Public Library szervezőtől itt: Toronto. Korosztály: 6-12. Részletekért nézd meg a forrást.",
+          "category": "STEM",
+          "cost": "Ingyenes lista",
+          "tags": [
+            "STEM",
+            "Termeszettudomany es mernoki tudomany"
+          ],
+          "translationSource": "generated-summary-template"
+        }
+      }
+    },
+    {
+      "id": "tpl-rss-6a848f4e2f41840bbfc2ebd1",
+      "title": "After School Club",
+      "organization": "Toronto Public Library",
+      "description": "Looking for something to do after school? Come out to our After School Club and learn new things, make stuff, meet other kids and have fun! Drop in. For ages 6-12 . Snacks are offered during the After School Club for participants. Ingredient lists will be available. Snacks are generously supported, in part, by donors.",
+      "city": "Toronto",
+      "region": "Toronto",
+      "ageMin": 6,
+      "ageMax": 12,
+      "category": "Coding & Robotics",
+      "categories": [
+        "STEM",
+        "Coding & Robotics"
+      ],
+      "cost": "Free to join",
+      "language": [
+        "en"
+      ],
+      "deadline": "2026-09-15T20:00:00.000Z",
+      "startDate": "2026-09-15T20:00:00.000Z",
+      "endDate": "2026-09-15T21:00:00.000Z",
+      "sourceUrl": "https://tpl.bibliocommons.com/events/6a848f4e2f41840bbfc2ebd1",
+      "registrationUrl": "https://tpl.bibliocommons.com/events/6a848f4e2f41840bbfc2ebd1",
+      "lastChecked": "2026-09-12",
+      "lastSeen": "2026-09-12",
+      "status": "active",
+      "tags": [
+        "after school clubs",
+        "coding & robotics",
+        "crafts & hobbies",
+        "culture, arts & entertainment",
+        "science & engineering",
+        "school age children (6-12)",
+        "english"
+      ],
+      "communityFocus": [
+        "Open to all",
+        "Newcomer-friendly"
+      ],
+      "latitude": 43.785235,
+      "longitude": -79.2934973,
+      "address": "Agincourt, 155 Bonis Ave, Toronto, ON, M1T 3W6",
+      "volunteerHoursEligible": false,
+      "coopEligible": false,
+      "trustedSource": true,
+      "sources": [
+        {
+          "label": "Official Toronto Public Library event page",
+          "url": "https://tpl.bibliocommons.com/events/6a848f4e2f41840bbfc2ebd1",
+          "capturedAt": "2026-09-12T15:33:44.314Z",
+          "confidence": "high"
+        }
+      ],
+      "translations": {
+        "fr": {
+          "title": "Occasion gratuite de STEM offerte par Toronto Public Library a Toronto",
+          "summary": "Occasion gratuite de STEM offerte par Toronto Public Library a Toronto. Ages 6-12. Consultez la source pour les details.",
+          "description": "Occasion gratuite de STEM offerte par Toronto Public Library a Toronto. Ages 6-12. Consultez la source pour les details.",
+          "category": "STEM",
+          "cost": "Fiche gratuite",
+          "tags": [
+            "STEM",
+            "Codage et robotique"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "zh": {
+          "title": "Toronto Public Library在Toronto提供免费的STEM机会。适合6-12岁。请查看来源了解详情。",
+          "summary": "Toronto Public Library在Toronto提供免费的STEM机会。适合6-12岁。请查看来源了解详情。",
+          "description": "Toronto Public Library在Toronto提供免费的STEM机会。适合6-12岁。请查看来源了解详情。",
+          "category": "STEM",
+          "cost": "免费列表",
+          "tags": [
+            "STEM",
+            "编程与机器人"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "yue": {
+          "title": "Toronto Public Library喺Toronto提供免費STEM機會。適合6-12歲。請查看來源了解詳情。",
+          "summary": "Toronto Public Library喺Toronto提供免費STEM機會。適合6-12歲。請查看來源了解詳情。",
+          "description": "Toronto Public Library喺Toronto提供免費STEM機會。適合6-12歲。請查看來源了解詳情。",
+          "category": "STEM",
+          "cost": "免費項目",
+          "tags": [
+            "STEM",
+            "編程同機械人"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "pa": {
+          "title": "Toronto Public Library ਵੱਲੋਂ Toronto ਵਿੱਚ ਮੁਫ਼ਤ STEM ਮੌਕਾ। ਉਮਰ 6-12",
+          "summary": "Toronto Public Library ਵੱਲੋਂ Toronto ਵਿੱਚ ਮੁਫ਼ਤ STEM ਮੌਕਾ। ਉਮਰ 6-12. ਵੇਰਵਿਆਂ ਲਈ ਸਰੋਤ ਵੇਖੋ।",
+          "description": "Toronto Public Library ਵੱਲੋਂ Toronto ਵਿੱਚ ਮੁਫ਼ਤ STEM ਮੌਕਾ। ਉਮਰ 6-12. ਵੇਰਵਿਆਂ ਲਈ ਸਰੋਤ ਵੇਖੋ।",
+          "category": "STEM",
+          "cost": "ਮੁਫ਼ਤ ਲਿਸਟਿੰਗ",
+          "tags": [
+            "STEM",
+            "ਕੋਡਿੰਗ ਅਤੇ ਰੋਬੋਟਿਕਸ"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "ur": {
+          "title": "Toronto میں Toronto Public Library کی طرف سے مفت STEM موقع۔ عمر 6-12",
+          "summary": "Toronto میں Toronto Public Library کی طرف سے مفت STEM موقع۔ عمر 6-12. تفصیلات کے لیے ذریعہ دیکھیں۔",
+          "description": "Toronto میں Toronto Public Library کی طرف سے مفت STEM موقع۔ عمر 6-12. تفصیلات کے لیے ذریعہ دیکھیں۔",
+          "category": "STEM",
+          "cost": "مفت لسٹنگ",
+          "tags": [
+            "STEM",
+            "کوڈنگ اور روبوٹکس"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "ta": {
+          "title": "Toronto நகரில் Toronto Public Library வழங்கும் இலவச STEM வாய்ப்பு",
+          "summary": "Toronto நகரில் Toronto Public Library வழங்கும் இலவச STEM வாய்ப்பு. வயது 6-12. விவரங்களுக்கு மூலத்தை பார்க்கவும்.",
+          "description": "Toronto நகரில் Toronto Public Library வழங்கும் இலவச STEM வாய்ப்பு. வயது 6-12. விவரங்களுக்கு மூலத்தை பார்க்கவும்.",
+          "category": "STEM",
+          "cost": "இலவச பட்டியல்",
+          "tags": [
+            "STEM",
+            "கோடிங் மற்றும் ரோபோடிக்ஸ்"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "tl": {
+          "title": "Libreng STEM opportunity mula sa Toronto Public Library sa Toronto",
+          "summary": "Libreng STEM opportunity mula sa Toronto Public Library sa Toronto. Edad 6-12. Tingnan ang source para sa detalye.",
+          "description": "Libreng STEM opportunity mula sa Toronto Public Library sa Toronto. Edad 6-12. Tingnan ang source para sa detalye.",
+          "category": "STEM",
+          "cost": "Libreng listing",
+          "tags": [
+            "STEM",
+            "Pagko-code at robotika"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "es": {
+          "title": "Oportunidad gratis de STEM de Toronto Public Library en Toronto",
+          "summary": "Oportunidad gratis de STEM de Toronto Public Library en Toronto. Edades 6-12. Revise la fuente para detalles.",
+          "description": "Oportunidad gratis de STEM de Toronto Public Library en Toronto. Edades 6-12. Revise la fuente para detalles.",
+          "category": "STEM",
+          "cost": "Listado gratis",
+          "tags": [
+            "STEM",
+            "Programacion y robotica"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "ar": {
+          "title": "فرصة STEM مجانية من Toronto Public Library في Toronto",
+          "summary": "فرصة STEM مجانية من Toronto Public Library في Toronto. الأعمار 6-12. راجع المصدر للتفاصيل.",
+          "description": "فرصة STEM مجانية من Toronto Public Library في Toronto. الأعمار 6-12. راجع المصدر للتفاصيل.",
+          "category": "STEM",
+          "cost": "قائمة مجانية",
+          "tags": [
+            "STEM",
+            "البرمجة والروبوتات"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "fa": {
+          "title": "فرصت رایگان STEM از Toronto Public Library در Toronto",
+          "summary": "فرصت رایگان STEM از Toronto Public Library در Toronto. سنین 6-12. برای جزئیات منبع را بررسی کنید.",
+          "description": "فرصت رایگان STEM از Toronto Public Library در Toronto. سنین 6-12. برای جزئیات منبع را بررسی کنید.",
+          "category": "STEM",
+          "cost": "فهرست رایگان",
+          "tags": [
+            "STEM",
+            "برنامه‌نویسی و رباتیک"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "hi": {
+          "title": "Toronto में Toronto Public Library की मुफ्त STEM opportunity",
+          "summary": "Toronto में Toronto Public Library की मुफ्त STEM opportunity. उम्र 6-12. Details के लिए source देखें.",
+          "description": "Toronto में Toronto Public Library की मुफ्त STEM opportunity. उम्र 6-12. Details के लिए source देखें.",
+          "category": "STEM",
+          "cost": "Free listing",
+          "tags": [
+            "STEM",
+            "कोडिंग और रोबोटिक्स"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "pt": {
+          "title": "Oportunidade gratuita de STEM da Toronto Public Library em Toronto",
+          "summary": "Oportunidade gratuita de STEM da Toronto Public Library em Toronto. Idades 6-12. Veja a fonte para detalhes.",
+          "description": "Oportunidade gratuita de STEM da Toronto Public Library em Toronto. Idades 6-12. Veja a fonte para detalhes.",
+          "category": "STEM",
+          "cost": "Lista gratuita",
+          "tags": [
+            "STEM",
+            "Programacao e robotica"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "gu": {
+          "title": "Toronto માં Toronto Public Library તરફથી મફત STEM તક",
+          "summary": "Toronto માં Toronto Public Library તરફથી મફત STEM તક. ઉંમર 6-12. વિગત માટે સ્રોત જુઓ.",
+          "description": "Toronto માં Toronto Public Library તરફથી મફત STEM તક. ઉંમર 6-12. વિગત માટે સ્રોત જુઓ.",
+          "category": "STEM",
+          "cost": "મફત લિસ્ટિંગ",
+          "tags": [
+            "STEM",
+            "કોડિંગ અને રોબોટિક્સ"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "bn": {
+          "title": "Toronto-এ Toronto Public Library এর ফ্রি STEM opportunity",
+          "summary": "Toronto-এ Toronto Public Library এর ফ্রি STEM opportunity. বয়স 6-12. বিস্তারিত জানতে উৎস দেখুন.",
+          "description": "Toronto-এ Toronto Public Library এর ফ্রি STEM opportunity. বয়স 6-12. বিস্তারিত জানতে উৎস দেখুন.",
+          "category": "STEM",
+          "cost": "ফ্রি তালিকা",
+          "tags": [
+            "STEM",
+            "কোডিং ও রোবোটিক্স"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "ja": {
+          "title": "TorontoのToronto Public Libraryによる無料のSTEM機会です。対象年齢は6-12。詳細は情報源をご確認ください。",
+          "summary": "TorontoのToronto Public Libraryによる無料のSTEM機会です。対象年齢は6-12。詳細は情報源をご確認ください。",
+          "description": "TorontoのToronto Public Libraryによる無料のSTEM機会です。対象年齢は6-12。詳細は情報源をご確認ください。",
+          "category": "STEM",
+          "cost": "無料リスト",
+          "tags": [
+            "STEM",
+            "コーディングとロボット工学"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "ko": {
+          "title": "Toronto에서 Toronto Public Library이 제공하는 무료 STEM 기회입니다",
+          "summary": "Toronto에서 Toronto Public Library이 제공하는 무료 STEM 기회입니다. 대상 나이는 6-12입니다. 자세한 내용은 출처를 확인하세요.",
+          "description": "Toronto에서 Toronto Public Library이 제공하는 무료 STEM 기회입니다. 대상 나이는 6-12입니다. 자세한 내용은 출처를 확인하세요.",
+          "category": "STEM",
+          "cost": "무료 목록",
+          "tags": [
+            "STEM",
+            "코딩 및 로봇공학"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "hu": {
+          "title": "Ingyenes STEM lehetőség a(z) Toronto Public Library szervezőtől itt: Toronto",
+          "summary": "Ingyenes STEM lehetőség a(z) Toronto Public Library szervezőtől itt: Toronto. Korosztály: 6-12. Részletekért nézd meg a forrást.",
+          "description": "Ingyenes STEM lehetőség a(z) Toronto Public Library szervezőtől itt: Toronto. Korosztály: 6-12. Részletekért nézd meg a forrást.",
+          "category": "STEM",
+          "cost": "Ingyenes lista",
+          "tags": [
+            "STEM",
+            "Kodolas es robotika"
+          ],
+          "translationSource": "generated-summary-template"
+        }
+      }
+    },
+    {
       "id": "markham-rss-6a972c6a4cb69d003e24fe6d",
       "title": "What the Heck is Roblox? Kids, KidTech and Digital Play",
       "organization": "Markham Public Library",
@@ -22742,7 +23523,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a972c6a4cb69d003e24fe6d",
-          "capturedAt": "2026-09-12T10:49:59.541Z",
+          "capturedAt": "2026-09-12T15:33:45.257Z",
           "confidence": "high"
         }
       ],
@@ -22998,7 +23779,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/692dbdf9d923da4200b317a7",
-          "capturedAt": "2026-09-12T10:49:59.841Z",
+          "capturedAt": "2026-09-12T15:33:45.257Z",
           "confidence": "high"
         }
       ],
@@ -23254,7 +24035,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbd36ee647c8ff0c38729c",
-          "capturedAt": "2026-09-12T10:50:00.164Z",
+          "capturedAt": "2026-09-12T15:33:45.664Z",
           "confidence": "high"
         }
       ],
@@ -23510,7 +24291,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe20064ad59251cb9d9a1",
-          "capturedAt": "2026-09-12T10:50:00.164Z",
+          "capturedAt": "2026-09-12T15:33:46.023Z",
           "confidence": "high"
         }
       ],
@@ -23766,7 +24547,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe0e82edc686d00f5c8a7",
-          "capturedAt": "2026-09-12T10:50:00.164Z",
+          "capturedAt": "2026-09-12T15:33:46.023Z",
           "confidence": "high"
         }
       ],
@@ -24023,7 +24804,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe12275911f28001a2541",
-          "capturedAt": "2026-09-12T10:50:00.164Z",
+          "capturedAt": "2026-09-12T15:33:46.023Z",
           "confidence": "high"
         }
       ],
@@ -24279,7 +25060,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe0cde647c8ff0c387439",
-          "capturedAt": "2026-09-12T10:50:00.165Z",
+          "capturedAt": "2026-09-12T15:33:46.023Z",
           "confidence": "high"
         }
       ],
@@ -24535,7 +25316,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe0a50176055300fe8158",
-          "capturedAt": "2026-09-12T10:50:00.166Z",
+          "capturedAt": "2026-09-12T15:33:46.024Z",
           "confidence": "high"
         }
       ],
@@ -24791,7 +25572,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe1952edc686d00f5c978",
-          "capturedAt": "2026-09-12T10:50:00.580Z",
+          "capturedAt": "2026-09-12T15:33:46.024Z",
           "confidence": "high"
         }
       ],
@@ -25047,7 +25828,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe07a2edc686d00f5c871",
-          "capturedAt": "2026-09-12T10:50:00.580Z",
+          "capturedAt": "2026-09-12T15:33:46.024Z",
           "confidence": "high"
         }
       ],
@@ -25304,7 +26085,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a888de64cb69d003e225613",
-          "capturedAt": "2026-09-12T10:50:00.580Z",
+          "capturedAt": "2026-09-12T15:33:46.363Z",
           "confidence": "high"
         }
       ],
@@ -25560,7 +26341,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/692dbdf9d923da4200b317a8",
-          "capturedAt": "2026-09-12T10:50:00.947Z",
+          "capturedAt": "2026-09-12T15:33:46.945Z",
           "confidence": "high"
         }
       ],
@@ -25815,7 +26596,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a062a9bc7d3cd580059437a",
-          "capturedAt": "2026-09-12T10:50:00.947Z",
+          "capturedAt": "2026-09-12T15:33:46.945Z",
           "confidence": "high"
         }
       ],
@@ -26071,7 +26852,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a5cc712a41369ab2c670fb6",
-          "capturedAt": "2026-09-12T10:50:01.277Z",
+          "capturedAt": "2026-09-12T15:33:47.402Z",
           "confidence": "high"
         }
       ],
@@ -26327,7 +27108,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbd36ee647c8ff0c38729d",
-          "capturedAt": "2026-09-12T10:50:01.278Z",
+          "capturedAt": "2026-09-12T15:33:47.402Z",
           "confidence": "high"
         }
       ],
@@ -26583,7 +27364,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe20064ad59251cb9d9a2",
-          "capturedAt": "2026-09-12T10:50:01.278Z",
+          "capturedAt": "2026-09-12T15:33:47.402Z",
           "confidence": "high"
         }
       ],
@@ -26839,7 +27620,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe0e82edc686d00f5c8a8",
-          "capturedAt": "2026-09-12T10:50:01.278Z",
+          "capturedAt": "2026-09-12T15:33:47.403Z",
           "confidence": "high"
         }
       ],
@@ -27096,7 +27877,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe12275911f28001a2542",
-          "capturedAt": "2026-09-12T10:50:01.278Z",
+          "capturedAt": "2026-09-12T15:33:47.403Z",
           "confidence": "high"
         }
       ],
@@ -27352,7 +28133,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe0cde647c8ff0c38743a",
-          "capturedAt": "2026-09-12T10:50:01.278Z",
+          "capturedAt": "2026-09-12T15:33:47.403Z",
           "confidence": "high"
         }
       ],
@@ -27608,7 +28389,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe0a50176055300fe8159",
-          "capturedAt": "2026-09-12T10:50:01.752Z",
+          "capturedAt": "2026-09-12T15:33:47.403Z",
           "confidence": "high"
         }
       ],
@@ -27864,7 +28645,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe1952edc686d00f5c979",
-          "capturedAt": "2026-09-12T10:50:01.753Z",
+          "capturedAt": "2026-09-12T15:33:47.403Z",
           "confidence": "high"
         }
       ],
@@ -28120,7 +28901,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe07a2edc686d00f5c872",
-          "capturedAt": "2026-09-12T10:50:01.753Z",
+          "capturedAt": "2026-09-12T15:33:47.753Z",
           "confidence": "high"
         }
       ],
@@ -28376,7 +29157,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a888de64cb69d003e225614",
-          "capturedAt": "2026-09-12T10:50:01.753Z",
+          "capturedAt": "2026-09-12T15:33:47.754Z",
           "confidence": "high"
         }
       ],
@@ -28633,7 +29414,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a062a9e46d5f64f7dcbbd61",
-          "capturedAt": "2026-09-12T10:50:01.753Z",
+          "capturedAt": "2026-09-12T15:33:47.754Z",
           "confidence": "high"
         }
       ],
@@ -28889,7 +29670,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/692dbdf9d923da4200b317a9",
-          "capturedAt": "2026-09-12T10:50:02.134Z",
+          "capturedAt": "2026-09-12T15:33:48.282Z",
           "confidence": "high"
         }
       ],
@@ -29144,7 +29925,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a062a71c7d3cd5800594377",
-          "capturedAt": "2026-09-12T10:50:02.134Z",
+          "capturedAt": "2026-09-12T15:33:48.282Z",
           "confidence": "high"
         }
       ],
@@ -29401,7 +30182,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbdb930176055300fe7fec",
-          "capturedAt": "2026-09-12T10:50:02.134Z",
+          "capturedAt": "2026-09-12T15:33:48.282Z",
           "confidence": "high"
         }
       ],
@@ -29658,7 +30439,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a67e529f213992f00c78e87",
-          "capturedAt": "2026-09-12T10:50:02.134Z",
+          "capturedAt": "2026-09-12T15:33:48.282Z",
           "confidence": "high"
         }
       ],
@@ -29915,7 +30696,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a67a4a99943bdf31ea1f1a7",
-          "capturedAt": "2026-09-12T10:50:02.135Z",
+          "capturedAt": "2026-09-12T15:33:48.283Z",
           "confidence": "high"
         }
       ],
@@ -30172,7 +30953,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a67a7349943bdf31ea1f229",
-          "capturedAt": "2026-09-12T10:50:02.450Z",
+          "capturedAt": "2026-09-12T15:33:48.691Z",
           "confidence": "high"
         }
       ],
@@ -30430,7 +31211,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a5fa9e7a41369ab2c679f4c",
-          "capturedAt": "2026-09-12T10:50:02.450Z",
+          "capturedAt": "2026-09-12T15:33:48.692Z",
           "confidence": "high"
         }
       ],
@@ -30686,7 +31467,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbd36ee647c8ff0c38729e",
-          "capturedAt": "2026-09-12T10:50:02.450Z",
+          "capturedAt": "2026-09-12T15:33:48.692Z",
           "confidence": "high"
         }
       ],
@@ -30942,7 +31723,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe20064ad59251cb9d9a3",
-          "capturedAt": "2026-09-12T10:50:02.450Z",
+          "capturedAt": "2026-09-12T15:33:48.692Z",
           "confidence": "high"
         }
       ],
@@ -31198,7 +31979,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe0e82edc686d00f5c8a9",
-          "capturedAt": "2026-09-12T10:50:02.451Z",
+          "capturedAt": "2026-09-12T15:33:48.692Z",
           "confidence": "high"
         }
       ],
@@ -31455,7 +32236,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe12275911f28001a2543",
-          "capturedAt": "2026-09-12T10:50:02.770Z",
+          "capturedAt": "2026-09-12T15:33:48.692Z",
           "confidence": "high"
         }
       ],
@@ -31711,7 +32492,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe0cde647c8ff0c38743b",
-          "capturedAt": "2026-09-12T10:50:02.770Z",
+          "capturedAt": "2026-09-12T15:33:48.693Z",
           "confidence": "high"
         }
       ],
@@ -31968,7 +32749,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a67e8249943bdf31ea20ec5",
-          "capturedAt": "2026-09-12T10:50:02.770Z",
+          "capturedAt": "2026-09-12T15:33:48.693Z",
           "confidence": "high"
         }
       ],
@@ -32226,7 +33007,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a6799d5a41369ab2c691e60",
-          "capturedAt": "2026-09-12T10:50:02.770Z",
+          "capturedAt": "2026-09-12T15:33:48.693Z",
           "confidence": "high"
         }
       ],
@@ -32484,7 +33265,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a679af1f213992f00c7674b",
-          "capturedAt": "2026-09-12T10:50:02.771Z",
+          "capturedAt": "2026-09-12T15:33:49.081Z",
           "confidence": "high"
         }
       ],
@@ -32740,7 +33521,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe0a50176055300fe815a",
-          "capturedAt": "2026-09-12T10:50:02.771Z",
+          "capturedAt": "2026-09-12T15:33:49.081Z",
           "confidence": "high"
         }
       ],
@@ -32996,7 +33777,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe1952edc686d00f5c97a",
-          "capturedAt": "2026-09-12T10:50:02.771Z",
+          "capturedAt": "2026-09-12T15:33:49.081Z",
           "confidence": "high"
         }
       ],
@@ -33252,7 +34033,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe07a2edc686d00f5c873",
-          "capturedAt": "2026-09-12T10:50:02.771Z",
+          "capturedAt": "2026-09-12T15:33:49.081Z",
           "confidence": "high"
         }
       ],
@@ -33508,7 +34289,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a6135237d824676437cd57e",
-          "capturedAt": "2026-09-12T10:50:02.771Z",
+          "capturedAt": "2026-09-12T15:33:49.081Z",
           "confidence": "high"
         }
       ],
@@ -33764,7 +34545,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a613604daaaf4f51a20a669",
-          "capturedAt": "2026-09-12T10:50:02.771Z",
+          "capturedAt": "2026-09-12T15:33:49.081Z",
           "confidence": "high"
         }
       ],
@@ -34020,7 +34801,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a6137871bbbb30f3e80e325",
-          "capturedAt": "2026-09-12T10:50:02.771Z",
+          "capturedAt": "2026-09-12T15:33:49.082Z",
           "confidence": "high"
         }
       ],
@@ -34278,7 +35059,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a67e125f213992f00c78d8e",
-          "capturedAt": "2026-09-12T10:50:02.772Z",
+          "capturedAt": "2026-09-12T15:33:49.082Z",
           "confidence": "high"
         }
       ],
@@ -34535,7 +35316,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a5957b5fa641fe01af3b3fb",
-          "capturedAt": "2026-09-12T10:50:02.772Z",
+          "capturedAt": "2026-09-12T15:33:49.082Z",
           "confidence": "high"
         }
       ],
@@ -34792,7 +35573,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a4fe4b50d65ac36003e8ee8",
-          "capturedAt": "2026-09-12T10:50:03.191Z",
+          "capturedAt": "2026-09-12T15:33:49.457Z",
           "confidence": "high"
         }
       ],
@@ -35048,7 +35829,776 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a67970da41369ab2c691d3b",
-          "capturedAt": "2026-09-12T10:50:03.192Z",
+          "capturedAt": "2026-09-12T15:33:49.457Z",
+          "confidence": "high"
+        }
+      ],
+      "translations": {
+        "fr": {
+          "title": "Occasion gratuite de STEM offerte par Markham Public Library a Markham",
+          "summary": "Occasion gratuite de STEM offerte par Markham Public Library a Markham. Ages 18+. Consultez la source pour les details.",
+          "description": "Occasion gratuite de STEM offerte par Markham Public Library a Markham. Ages 18+. Consultez la source pour les details.",
+          "category": "STEM",
+          "cost": "Fiche gratuite",
+          "tags": [
+            "STEM",
+            "IA et medias numeriques"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "zh": {
+          "title": "Markham Public Library在Markham提供免费的STEM机会。适合18+岁。请查看来源了解详情。",
+          "summary": "Markham Public Library在Markham提供免费的STEM机会。适合18+岁。请查看来源了解详情。",
+          "description": "Markham Public Library在Markham提供免费的STEM机会。适合18+岁。请查看来源了解详情。",
+          "category": "STEM",
+          "cost": "免费列表",
+          "tags": [
+            "STEM",
+            "人工智能与数字媒体"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "yue": {
+          "title": "Markham Public Library喺Markham提供免費STEM機會。適合18+歲。請查看來源了解詳情。",
+          "summary": "Markham Public Library喺Markham提供免費STEM機會。適合18+歲。請查看來源了解詳情。",
+          "description": "Markham Public Library喺Markham提供免費STEM機會。適合18+歲。請查看來源了解詳情。",
+          "category": "STEM",
+          "cost": "免費項目",
+          "tags": [
+            "STEM",
+            "人工智能同數碼媒體"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "pa": {
+          "title": "Markham Public Library ਵੱਲੋਂ Markham ਵਿੱਚ ਮੁਫ਼ਤ STEM ਮੌਕਾ। ਉਮਰ 18+",
+          "summary": "Markham Public Library ਵੱਲੋਂ Markham ਵਿੱਚ ਮੁਫ਼ਤ STEM ਮੌਕਾ। ਉਮਰ 18+. ਵੇਰਵਿਆਂ ਲਈ ਸਰੋਤ ਵੇਖੋ।",
+          "description": "Markham Public Library ਵੱਲੋਂ Markham ਵਿੱਚ ਮੁਫ਼ਤ STEM ਮੌਕਾ। ਉਮਰ 18+. ਵੇਰਵਿਆਂ ਲਈ ਸਰੋਤ ਵੇਖੋ।",
+          "category": "STEM",
+          "cost": "ਮੁਫ਼ਤ ਲਿਸਟਿੰਗ",
+          "tags": [
+            "STEM",
+            "AI ਅਤੇ ਡਿਜ਼ਿਟਲ ਮੀਡੀਆ"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "ur": {
+          "title": "Markham میں Markham Public Library کی طرف سے مفت STEM موقع۔ عمر 18+",
+          "summary": "Markham میں Markham Public Library کی طرف سے مفت STEM موقع۔ عمر 18+. تفصیلات کے لیے ذریعہ دیکھیں۔",
+          "description": "Markham میں Markham Public Library کی طرف سے مفت STEM موقع۔ عمر 18+. تفصیلات کے لیے ذریعہ دیکھیں۔",
+          "category": "STEM",
+          "cost": "مفت لسٹنگ",
+          "tags": [
+            "STEM",
+            "AI اور ڈیجیٹل میڈیا"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "ta": {
+          "title": "Markham நகரில் Markham Public Library வழங்கும் இலவச STEM வாய்ப்பு",
+          "summary": "Markham நகரில் Markham Public Library வழங்கும் இலவச STEM வாய்ப்பு. வயது 18+. விவரங்களுக்கு மூலத்தை பார்க்கவும்.",
+          "description": "Markham நகரில் Markham Public Library வழங்கும் இலவச STEM வாய்ப்பு. வயது 18+. விவரங்களுக்கு மூலத்தை பார்க்கவும்.",
+          "category": "STEM",
+          "cost": "இலவச பட்டியல்",
+          "tags": [
+            "STEM",
+            "AI மற்றும் டிஜிட்டல் மீடியா"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "tl": {
+          "title": "Libreng STEM opportunity mula sa Markham Public Library sa Markham",
+          "summary": "Libreng STEM opportunity mula sa Markham Public Library sa Markham. Edad 18+. Tingnan ang source para sa detalye.",
+          "description": "Libreng STEM opportunity mula sa Markham Public Library sa Markham. Edad 18+. Tingnan ang source para sa detalye.",
+          "category": "STEM",
+          "cost": "Libreng listing",
+          "tags": [
+            "STEM",
+            "AI at digital media"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "es": {
+          "title": "Oportunidad gratis de STEM de Markham Public Library en Markham",
+          "summary": "Oportunidad gratis de STEM de Markham Public Library en Markham. Edades 18+. Revise la fuente para detalles.",
+          "description": "Oportunidad gratis de STEM de Markham Public Library en Markham. Edades 18+. Revise la fuente para detalles.",
+          "category": "STEM",
+          "cost": "Listado gratis",
+          "tags": [
+            "STEM",
+            "IA y medios digitales"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "ar": {
+          "title": "فرصة STEM مجانية من Markham Public Library في Markham",
+          "summary": "فرصة STEM مجانية من Markham Public Library في Markham. الأعمار 18+. راجع المصدر للتفاصيل.",
+          "description": "فرصة STEM مجانية من Markham Public Library في Markham. الأعمار 18+. راجع المصدر للتفاصيل.",
+          "category": "STEM",
+          "cost": "قائمة مجانية",
+          "tags": [
+            "STEM",
+            "الذكاء الاصطناعي والإعلام الرقمي"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "fa": {
+          "title": "فرصت رایگان STEM از Markham Public Library در Markham",
+          "summary": "فرصت رایگان STEM از Markham Public Library در Markham. سنین 18+. برای جزئیات منبع را بررسی کنید.",
+          "description": "فرصت رایگان STEM از Markham Public Library در Markham. سنین 18+. برای جزئیات منبع را بررسی کنید.",
+          "category": "STEM",
+          "cost": "فهرست رایگان",
+          "tags": [
+            "STEM",
+            "هوش مصنوعی و رسانه دیجیتال"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "hi": {
+          "title": "Markham में Markham Public Library की मुफ्त STEM opportunity",
+          "summary": "Markham में Markham Public Library की मुफ्त STEM opportunity. उम्र 18+. Details के लिए source देखें.",
+          "description": "Markham में Markham Public Library की मुफ्त STEM opportunity. उम्र 18+. Details के लिए source देखें.",
+          "category": "STEM",
+          "cost": "Free listing",
+          "tags": [
+            "STEM",
+            "AI और डिजिटल मीडिया"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "pt": {
+          "title": "Oportunidade gratuita de STEM da Markham Public Library em Markham",
+          "summary": "Oportunidade gratuita de STEM da Markham Public Library em Markham. Idades 18+. Veja a fonte para detalhes.",
+          "description": "Oportunidade gratuita de STEM da Markham Public Library em Markham. Idades 18+. Veja a fonte para detalhes.",
+          "category": "STEM",
+          "cost": "Lista gratuita",
+          "tags": [
+            "STEM",
+            "IA e midia digital"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "gu": {
+          "title": "Markham માં Markham Public Library તરફથી મફત STEM તક",
+          "summary": "Markham માં Markham Public Library તરફથી મફત STEM તક. ઉંમર 18+. વિગત માટે સ્રોત જુઓ.",
+          "description": "Markham માં Markham Public Library તરફથી મફત STEM તક. ઉંમર 18+. વિગત માટે સ્રોત જુઓ.",
+          "category": "STEM",
+          "cost": "મફત લિસ્ટિંગ",
+          "tags": [
+            "STEM",
+            "AI અને ડિજિટલ મીડિયા"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "bn": {
+          "title": "Markham-এ Markham Public Library এর ফ্রি STEM opportunity",
+          "summary": "Markham-এ Markham Public Library এর ফ্রি STEM opportunity. বয়স 18+. বিস্তারিত জানতে উৎস দেখুন.",
+          "description": "Markham-এ Markham Public Library এর ফ্রি STEM opportunity. বয়স 18+. বিস্তারিত জানতে উৎস দেখুন.",
+          "category": "STEM",
+          "cost": "ফ্রি তালিকা",
+          "tags": [
+            "STEM",
+            "AI ও ডিজিটাল মিডিয়া"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "ja": {
+          "title": "MarkhamのMarkham Public Libraryによる無料のSTEM機会です。対象年齢は18+。詳細は情報源をご確認ください。",
+          "summary": "MarkhamのMarkham Public Libraryによる無料のSTEM機会です。対象年齢は18+。詳細は情報源をご確認ください。",
+          "description": "MarkhamのMarkham Public Libraryによる無料のSTEM機会です。対象年齢は18+。詳細は情報源をご確認ください。",
+          "category": "STEM",
+          "cost": "無料リスト",
+          "tags": [
+            "STEM",
+            "AIとデジタルメディア"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "ko": {
+          "title": "Markham에서 Markham Public Library이 제공하는 무료 STEM 기회입니다",
+          "summary": "Markham에서 Markham Public Library이 제공하는 무료 STEM 기회입니다. 대상 나이는 18+입니다. 자세한 내용은 출처를 확인하세요.",
+          "description": "Markham에서 Markham Public Library이 제공하는 무료 STEM 기회입니다. 대상 나이는 18+입니다. 자세한 내용은 출처를 확인하세요.",
+          "category": "STEM",
+          "cost": "무료 목록",
+          "tags": [
+            "STEM",
+            "AI 및 디지털 미디어"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "hu": {
+          "title": "Ingyenes STEM lehetőség a(z) Markham Public Library szervezőtől itt: Markham",
+          "summary": "Ingyenes STEM lehetőség a(z) Markham Public Library szervezőtől itt: Markham. Korosztály: 18+. Részletekért nézd meg a forrást.",
+          "description": "Ingyenes STEM lehetőség a(z) Markham Public Library szervezőtől itt: Markham. Korosztály: 18+. Részletekért nézd meg a forrást.",
+          "category": "STEM",
+          "cost": "Ingyenes lista",
+          "tags": [
+            "STEM",
+            "MI es digitalis media"
+          ],
+          "translationSource": "generated-summary-template"
+        }
+      }
+    },
+    {
+      "id": "markham-rss-692dbdf9d923da4200b317aa",
+      "title": "STEAM Drop-In",
+      "organization": "Markham Public Library",
+      "description": "Join us anytime between 6:30 - 7:30 PM to explore all things STEAM (Science, Technology, Engineering, Arts, and Math). This drop-in program is designed for families to get curious and creative together!",
+      "city": "Markham",
+      "region": "York",
+      "ageMin": 6,
+      "ageMax": 12,
+      "category": "Science & Engineering",
+      "categories": [
+        "STEM",
+        "Science & Engineering"
+      ],
+      "cost": "Free to join",
+      "language": [
+        "en"
+      ],
+      "deadline": "2026-10-07T22:30:00.000Z",
+      "startDate": "2026-10-07T22:30:00.000Z",
+      "endDate": "2026-10-07T23:30:00.000Z",
+      "sourceUrl": "https://markham.bibliocommons.com/events/692dbdf9d923da4200b317aa",
+      "registrationUrl": "https://markham.bibliocommons.com/events/692dbdf9d923da4200b317aa",
+      "lastChecked": "2026-09-12",
+      "lastSeen": "2026-09-12",
+      "status": "active",
+      "tags": [
+        "steam",
+        "children",
+        "english"
+      ],
+      "communityFocus": [
+        "Open to all",
+        "Newcomer-friendly"
+      ],
+      "latitude": 43.8200327,
+      "longitude": -79.39987339999999,
+      "address": "Thornhill Comm. Ctr. Branch, 7755 Bayview Avenue, Thornhill, Ontario, L3T 4P1",
+      "volunteerHoursEligible": false,
+      "coopEligible": false,
+      "trustedSource": true,
+      "sources": [
+        {
+          "label": "Official Markham Public Library event page",
+          "url": "https://markham.bibliocommons.com/events/692dbdf9d923da4200b317aa",
+          "capturedAt": "2026-09-12T15:33:49.458Z",
+          "confidence": "high"
+        }
+      ],
+      "translations": {
+        "fr": {
+          "title": "Occasion gratuite de STEM offerte par Markham Public Library a Markham",
+          "summary": "Occasion gratuite de STEM offerte par Markham Public Library a Markham. Ages 6-12. Consultez la source pour les details.",
+          "description": "Occasion gratuite de STEM offerte par Markham Public Library a Markham. Ages 6-12. Consultez la source pour les details.",
+          "category": "STEM",
+          "cost": "Fiche gratuite",
+          "tags": [
+            "STEM",
+            "Sciences et ingenierie"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "zh": {
+          "title": "Markham Public Library在Markham提供免费的STEM机会。适合6-12岁。请查看来源了解详情。",
+          "summary": "Markham Public Library在Markham提供免费的STEM机会。适合6-12岁。请查看来源了解详情。",
+          "description": "Markham Public Library在Markham提供免费的STEM机会。适合6-12岁。请查看来源了解详情。",
+          "category": "STEM",
+          "cost": "免费列表",
+          "tags": [
+            "STEM",
+            "科学与工程"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "yue": {
+          "title": "Markham Public Library喺Markham提供免費STEM機會。適合6-12歲。請查看來源了解詳情。",
+          "summary": "Markham Public Library喺Markham提供免費STEM機會。適合6-12歲。請查看來源了解詳情。",
+          "description": "Markham Public Library喺Markham提供免費STEM機會。適合6-12歲。請查看來源了解詳情。",
+          "category": "STEM",
+          "cost": "免費項目",
+          "tags": [
+            "STEM",
+            "科學同工程"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "pa": {
+          "title": "Markham Public Library ਵੱਲੋਂ Markham ਵਿੱਚ ਮੁਫ਼ਤ STEM ਮੌਕਾ। ਉਮਰ 6-12",
+          "summary": "Markham Public Library ਵੱਲੋਂ Markham ਵਿੱਚ ਮੁਫ਼ਤ STEM ਮੌਕਾ। ਉਮਰ 6-12. ਵੇਰਵਿਆਂ ਲਈ ਸਰੋਤ ਵੇਖੋ।",
+          "description": "Markham Public Library ਵੱਲੋਂ Markham ਵਿੱਚ ਮੁਫ਼ਤ STEM ਮੌਕਾ। ਉਮਰ 6-12. ਵੇਰਵਿਆਂ ਲਈ ਸਰੋਤ ਵੇਖੋ।",
+          "category": "STEM",
+          "cost": "ਮੁਫ਼ਤ ਲਿਸਟਿੰਗ",
+          "tags": [
+            "STEM",
+            "ਵਿਗਿਆਨ ਅਤੇ ਇੰਜੀਨੀਅਰਿੰਗ"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "ur": {
+          "title": "Markham میں Markham Public Library کی طرف سے مفت STEM موقع۔ عمر 6-12",
+          "summary": "Markham میں Markham Public Library کی طرف سے مفت STEM موقع۔ عمر 6-12. تفصیلات کے لیے ذریعہ دیکھیں۔",
+          "description": "Markham میں Markham Public Library کی طرف سے مفت STEM موقع۔ عمر 6-12. تفصیلات کے لیے ذریعہ دیکھیں۔",
+          "category": "STEM",
+          "cost": "مفت لسٹنگ",
+          "tags": [
+            "STEM",
+            "سائنس اور انجینئرنگ"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "ta": {
+          "title": "Markham நகரில் Markham Public Library வழங்கும் இலவச STEM வாய்ப்பு",
+          "summary": "Markham நகரில் Markham Public Library வழங்கும் இலவச STEM வாய்ப்பு. வயது 6-12. விவரங்களுக்கு மூலத்தை பார்க்கவும்.",
+          "description": "Markham நகரில் Markham Public Library வழங்கும் இலவச STEM வாய்ப்பு. வயது 6-12. விவரங்களுக்கு மூலத்தை பார்க்கவும்.",
+          "category": "STEM",
+          "cost": "இலவச பட்டியல்",
+          "tags": [
+            "STEM",
+            "அறிவியல் மற்றும் பொறியியல்"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "tl": {
+          "title": "Libreng STEM opportunity mula sa Markham Public Library sa Markham",
+          "summary": "Libreng STEM opportunity mula sa Markham Public Library sa Markham. Edad 6-12. Tingnan ang source para sa detalye.",
+          "description": "Libreng STEM opportunity mula sa Markham Public Library sa Markham. Edad 6-12. Tingnan ang source para sa detalye.",
+          "category": "STEM",
+          "cost": "Libreng listing",
+          "tags": [
+            "STEM",
+            "Agham at inhinyeriya"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "es": {
+          "title": "Oportunidad gratis de STEM de Markham Public Library en Markham",
+          "summary": "Oportunidad gratis de STEM de Markham Public Library en Markham. Edades 6-12. Revise la fuente para detalles.",
+          "description": "Oportunidad gratis de STEM de Markham Public Library en Markham. Edades 6-12. Revise la fuente para detalles.",
+          "category": "STEM",
+          "cost": "Listado gratis",
+          "tags": [
+            "STEM",
+            "Ciencia e ingenieria"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "ar": {
+          "title": "فرصة STEM مجانية من Markham Public Library في Markham",
+          "summary": "فرصة STEM مجانية من Markham Public Library في Markham. الأعمار 6-12. راجع المصدر للتفاصيل.",
+          "description": "فرصة STEM مجانية من Markham Public Library في Markham. الأعمار 6-12. راجع المصدر للتفاصيل.",
+          "category": "STEM",
+          "cost": "قائمة مجانية",
+          "tags": [
+            "STEM",
+            "العلوم والهندسة"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "fa": {
+          "title": "فرصت رایگان STEM از Markham Public Library در Markham",
+          "summary": "فرصت رایگان STEM از Markham Public Library در Markham. سنین 6-12. برای جزئیات منبع را بررسی کنید.",
+          "description": "فرصت رایگان STEM از Markham Public Library در Markham. سنین 6-12. برای جزئیات منبع را بررسی کنید.",
+          "category": "STEM",
+          "cost": "فهرست رایگان",
+          "tags": [
+            "STEM",
+            "علوم و مهندسی"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "hi": {
+          "title": "Markham में Markham Public Library की मुफ्त STEM opportunity",
+          "summary": "Markham में Markham Public Library की मुफ्त STEM opportunity. उम्र 6-12. Details के लिए source देखें.",
+          "description": "Markham में Markham Public Library की मुफ्त STEM opportunity. उम्र 6-12. Details के लिए source देखें.",
+          "category": "STEM",
+          "cost": "Free listing",
+          "tags": [
+            "STEM",
+            "विज्ञान और इंजीनियरिंग"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "pt": {
+          "title": "Oportunidade gratuita de STEM da Markham Public Library em Markham",
+          "summary": "Oportunidade gratuita de STEM da Markham Public Library em Markham. Idades 6-12. Veja a fonte para detalhes.",
+          "description": "Oportunidade gratuita de STEM da Markham Public Library em Markham. Idades 6-12. Veja a fonte para detalhes.",
+          "category": "STEM",
+          "cost": "Lista gratuita",
+          "tags": [
+            "STEM",
+            "Ciencia e engenharia"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "gu": {
+          "title": "Markham માં Markham Public Library તરફથી મફત STEM તક",
+          "summary": "Markham માં Markham Public Library તરફથી મફત STEM તક. ઉંમર 6-12. વિગત માટે સ્રોત જુઓ.",
+          "description": "Markham માં Markham Public Library તરફથી મફત STEM તક. ઉંમર 6-12. વિગત માટે સ્રોત જુઓ.",
+          "category": "STEM",
+          "cost": "મફત લિસ્ટિંગ",
+          "tags": [
+            "STEM",
+            "વિજ્ઞાન અને ઇજનેરી"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "bn": {
+          "title": "Markham-এ Markham Public Library এর ফ্রি STEM opportunity",
+          "summary": "Markham-এ Markham Public Library এর ফ্রি STEM opportunity. বয়স 6-12. বিস্তারিত জানতে উৎস দেখুন.",
+          "description": "Markham-এ Markham Public Library এর ফ্রি STEM opportunity. বয়স 6-12. বিস্তারিত জানতে উৎস দেখুন.",
+          "category": "STEM",
+          "cost": "ফ্রি তালিকা",
+          "tags": [
+            "STEM",
+            "বিজ্ঞান ও প্রকৌশল"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "ja": {
+          "title": "MarkhamのMarkham Public Libraryによる無料のSTEM機会です。対象年齢は6-12。詳細は情報源をご確認ください。",
+          "summary": "MarkhamのMarkham Public Libraryによる無料のSTEM機会です。対象年齢は6-12。詳細は情報源をご確認ください。",
+          "description": "MarkhamのMarkham Public Libraryによる無料のSTEM機会です。対象年齢は6-12。詳細は情報源をご確認ください。",
+          "category": "STEM",
+          "cost": "無料リスト",
+          "tags": [
+            "STEM",
+            "科学と工学"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "ko": {
+          "title": "Markham에서 Markham Public Library이 제공하는 무료 STEM 기회입니다",
+          "summary": "Markham에서 Markham Public Library이 제공하는 무료 STEM 기회입니다. 대상 나이는 6-12입니다. 자세한 내용은 출처를 확인하세요.",
+          "description": "Markham에서 Markham Public Library이 제공하는 무료 STEM 기회입니다. 대상 나이는 6-12입니다. 자세한 내용은 출처를 확인하세요.",
+          "category": "STEM",
+          "cost": "무료 목록",
+          "tags": [
+            "STEM",
+            "과학 및 공학"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "hu": {
+          "title": "Ingyenes STEM lehetőség a(z) Markham Public Library szervezőtől itt: Markham",
+          "summary": "Ingyenes STEM lehetőség a(z) Markham Public Library szervezőtől itt: Markham. Korosztály: 6-12. Részletekért nézd meg a forrást.",
+          "description": "Ingyenes STEM lehetőség a(z) Markham Public Library szervezőtől itt: Markham. Korosztály: 6-12. Részletekért nézd meg a forrást.",
+          "category": "STEM",
+          "cost": "Ingyenes lista",
+          "tags": [
+            "STEM",
+            "Termeszettudomany es mernoki tudomany"
+          ],
+          "translationSource": "generated-summary-template"
+        }
+      }
+    },
+    {
+      "id": "markham-rss-6a67ac717b79214226aba8ec",
+      "title": "AI Prompting: How to Talk to AI",
+      "organization": "Markham Public Library",
+      "description": "Get better results from AI tools by learning how to craft clear, effective prompts. This workshop covers different types of prompts and practical strategies for asking AI to write, research, create images, brainstorm ideas, and solve problems. You'll explore examples and hands-on exercises, and share tips to help you better communicate with AI. Note: There will be a hands-on component to this program so we highly recommend bringing a laptop or mobile device so you can try out what we've talked about on your own!",
+      "city": "Markham",
+      "region": "York",
+      "ageMin": 18,
+      "category": "AI & Digital Media",
+      "categories": [
+        "STEM",
+        "AI & Digital Media"
+      ],
+      "cost": "Free to join",
+      "language": [
+        "en"
+      ],
+      "deadline": "2026-10-07T22:30:00.000Z",
+      "startDate": "2026-10-07T22:30:00.000Z",
+      "endDate": "2026-10-08T00:00:00.000Z",
+      "sourceUrl": "https://markham.bibliocommons.com/events/6a67ac717b79214226aba8ec",
+      "registrationUrl": "https://markham.bibliocommons.com/events/6a67ac717b79214226aba8ec",
+      "lastChecked": "2026-09-12",
+      "lastSeen": "2026-09-12",
+      "status": "active",
+      "tags": [
+        "digital innovation month",
+        "digital literacy",
+        "adult",
+        "english"
+      ],
+      "communityFocus": [
+        "Open to all",
+        "Newcomer-friendly"
+      ],
+      "latitude": 43.8947178,
+      "longitude": -79.33652219999999,
+      "address": "Angus Glen Branch, 3990 Major Mackenzie Drive East, Markham, Ontario, L6C 1P8",
+      "volunteerHoursEligible": false,
+      "coopEligible": false,
+      "trustedSource": true,
+      "sources": [
+        {
+          "label": "Official Markham Public Library event page",
+          "url": "https://markham.bibliocommons.com/events/6a67ac717b79214226aba8ec",
+          "capturedAt": "2026-09-12T15:33:49.458Z",
+          "confidence": "high"
+        }
+      ],
+      "translations": {
+        "fr": {
+          "title": "Occasion gratuite de STEM offerte par Markham Public Library a Markham",
+          "summary": "Occasion gratuite de STEM offerte par Markham Public Library a Markham. Ages 18+. Consultez la source pour les details.",
+          "description": "Occasion gratuite de STEM offerte par Markham Public Library a Markham. Ages 18+. Consultez la source pour les details.",
+          "category": "STEM",
+          "cost": "Fiche gratuite",
+          "tags": [
+            "STEM",
+            "IA et medias numeriques"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "zh": {
+          "title": "Markham Public Library在Markham提供免费的STEM机会。适合18+岁。请查看来源了解详情。",
+          "summary": "Markham Public Library在Markham提供免费的STEM机会。适合18+岁。请查看来源了解详情。",
+          "description": "Markham Public Library在Markham提供免费的STEM机会。适合18+岁。请查看来源了解详情。",
+          "category": "STEM",
+          "cost": "免费列表",
+          "tags": [
+            "STEM",
+            "人工智能与数字媒体"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "yue": {
+          "title": "Markham Public Library喺Markham提供免費STEM機會。適合18+歲。請查看來源了解詳情。",
+          "summary": "Markham Public Library喺Markham提供免費STEM機會。適合18+歲。請查看來源了解詳情。",
+          "description": "Markham Public Library喺Markham提供免費STEM機會。適合18+歲。請查看來源了解詳情。",
+          "category": "STEM",
+          "cost": "免費項目",
+          "tags": [
+            "STEM",
+            "人工智能同數碼媒體"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "pa": {
+          "title": "Markham Public Library ਵੱਲੋਂ Markham ਵਿੱਚ ਮੁਫ਼ਤ STEM ਮੌਕਾ। ਉਮਰ 18+",
+          "summary": "Markham Public Library ਵੱਲੋਂ Markham ਵਿੱਚ ਮੁਫ਼ਤ STEM ਮੌਕਾ। ਉਮਰ 18+. ਵੇਰਵਿਆਂ ਲਈ ਸਰੋਤ ਵੇਖੋ।",
+          "description": "Markham Public Library ਵੱਲੋਂ Markham ਵਿੱਚ ਮੁਫ਼ਤ STEM ਮੌਕਾ। ਉਮਰ 18+. ਵੇਰਵਿਆਂ ਲਈ ਸਰੋਤ ਵੇਖੋ।",
+          "category": "STEM",
+          "cost": "ਮੁਫ਼ਤ ਲਿਸਟਿੰਗ",
+          "tags": [
+            "STEM",
+            "AI ਅਤੇ ਡਿਜ਼ਿਟਲ ਮੀਡੀਆ"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "ur": {
+          "title": "Markham میں Markham Public Library کی طرف سے مفت STEM موقع۔ عمر 18+",
+          "summary": "Markham میں Markham Public Library کی طرف سے مفت STEM موقع۔ عمر 18+. تفصیلات کے لیے ذریعہ دیکھیں۔",
+          "description": "Markham میں Markham Public Library کی طرف سے مفت STEM موقع۔ عمر 18+. تفصیلات کے لیے ذریعہ دیکھیں۔",
+          "category": "STEM",
+          "cost": "مفت لسٹنگ",
+          "tags": [
+            "STEM",
+            "AI اور ڈیجیٹل میڈیا"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "ta": {
+          "title": "Markham நகரில் Markham Public Library வழங்கும் இலவச STEM வாய்ப்பு",
+          "summary": "Markham நகரில் Markham Public Library வழங்கும் இலவச STEM வாய்ப்பு. வயது 18+. விவரங்களுக்கு மூலத்தை பார்க்கவும்.",
+          "description": "Markham நகரில் Markham Public Library வழங்கும் இலவச STEM வாய்ப்பு. வயது 18+. விவரங்களுக்கு மூலத்தை பார்க்கவும்.",
+          "category": "STEM",
+          "cost": "இலவச பட்டியல்",
+          "tags": [
+            "STEM",
+            "AI மற்றும் டிஜிட்டல் மீடியா"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "tl": {
+          "title": "Libreng STEM opportunity mula sa Markham Public Library sa Markham",
+          "summary": "Libreng STEM opportunity mula sa Markham Public Library sa Markham. Edad 18+. Tingnan ang source para sa detalye.",
+          "description": "Libreng STEM opportunity mula sa Markham Public Library sa Markham. Edad 18+. Tingnan ang source para sa detalye.",
+          "category": "STEM",
+          "cost": "Libreng listing",
+          "tags": [
+            "STEM",
+            "AI at digital media"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "es": {
+          "title": "Oportunidad gratis de STEM de Markham Public Library en Markham",
+          "summary": "Oportunidad gratis de STEM de Markham Public Library en Markham. Edades 18+. Revise la fuente para detalles.",
+          "description": "Oportunidad gratis de STEM de Markham Public Library en Markham. Edades 18+. Revise la fuente para detalles.",
+          "category": "STEM",
+          "cost": "Listado gratis",
+          "tags": [
+            "STEM",
+            "IA y medios digitales"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "ar": {
+          "title": "فرصة STEM مجانية من Markham Public Library في Markham",
+          "summary": "فرصة STEM مجانية من Markham Public Library في Markham. الأعمار 18+. راجع المصدر للتفاصيل.",
+          "description": "فرصة STEM مجانية من Markham Public Library في Markham. الأعمار 18+. راجع المصدر للتفاصيل.",
+          "category": "STEM",
+          "cost": "قائمة مجانية",
+          "tags": [
+            "STEM",
+            "الذكاء الاصطناعي والإعلام الرقمي"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "fa": {
+          "title": "فرصت رایگان STEM از Markham Public Library در Markham",
+          "summary": "فرصت رایگان STEM از Markham Public Library در Markham. سنین 18+. برای جزئیات منبع را بررسی کنید.",
+          "description": "فرصت رایگان STEM از Markham Public Library در Markham. سنین 18+. برای جزئیات منبع را بررسی کنید.",
+          "category": "STEM",
+          "cost": "فهرست رایگان",
+          "tags": [
+            "STEM",
+            "هوش مصنوعی و رسانه دیجیتال"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "hi": {
+          "title": "Markham में Markham Public Library की मुफ्त STEM opportunity",
+          "summary": "Markham में Markham Public Library की मुफ्त STEM opportunity. उम्र 18+. Details के लिए source देखें.",
+          "description": "Markham में Markham Public Library की मुफ्त STEM opportunity. उम्र 18+. Details के लिए source देखें.",
+          "category": "STEM",
+          "cost": "Free listing",
+          "tags": [
+            "STEM",
+            "AI और डिजिटल मीडिया"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "pt": {
+          "title": "Oportunidade gratuita de STEM da Markham Public Library em Markham",
+          "summary": "Oportunidade gratuita de STEM da Markham Public Library em Markham. Idades 18+. Veja a fonte para detalhes.",
+          "description": "Oportunidade gratuita de STEM da Markham Public Library em Markham. Idades 18+. Veja a fonte para detalhes.",
+          "category": "STEM",
+          "cost": "Lista gratuita",
+          "tags": [
+            "STEM",
+            "IA e midia digital"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "gu": {
+          "title": "Markham માં Markham Public Library તરફથી મફત STEM તક",
+          "summary": "Markham માં Markham Public Library તરફથી મફત STEM તક. ઉંમર 18+. વિગત માટે સ્રોત જુઓ.",
+          "description": "Markham માં Markham Public Library તરફથી મફત STEM તક. ઉંમર 18+. વિગત માટે સ્રોત જુઓ.",
+          "category": "STEM",
+          "cost": "મફત લિસ્ટિંગ",
+          "tags": [
+            "STEM",
+            "AI અને ડિજિટલ મીડિયા"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "bn": {
+          "title": "Markham-এ Markham Public Library এর ফ্রি STEM opportunity",
+          "summary": "Markham-এ Markham Public Library এর ফ্রি STEM opportunity. বয়স 18+. বিস্তারিত জানতে উৎস দেখুন.",
+          "description": "Markham-এ Markham Public Library এর ফ্রি STEM opportunity. বয়স 18+. বিস্তারিত জানতে উৎস দেখুন.",
+          "category": "STEM",
+          "cost": "ফ্রি তালিকা",
+          "tags": [
+            "STEM",
+            "AI ও ডিজিটাল মিডিয়া"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "ja": {
+          "title": "MarkhamのMarkham Public Libraryによる無料のSTEM機会です。対象年齢は18+。詳細は情報源をご確認ください。",
+          "summary": "MarkhamのMarkham Public Libraryによる無料のSTEM機会です。対象年齢は18+。詳細は情報源をご確認ください。",
+          "description": "MarkhamのMarkham Public Libraryによる無料のSTEM機会です。対象年齢は18+。詳細は情報源をご確認ください。",
+          "category": "STEM",
+          "cost": "無料リスト",
+          "tags": [
+            "STEM",
+            "AIとデジタルメディア"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "ko": {
+          "title": "Markham에서 Markham Public Library이 제공하는 무료 STEM 기회입니다",
+          "summary": "Markham에서 Markham Public Library이 제공하는 무료 STEM 기회입니다. 대상 나이는 18+입니다. 자세한 내용은 출처를 확인하세요.",
+          "description": "Markham에서 Markham Public Library이 제공하는 무료 STEM 기회입니다. 대상 나이는 18+입니다. 자세한 내용은 출처를 확인하세요.",
+          "category": "STEM",
+          "cost": "무료 목록",
+          "tags": [
+            "STEM",
+            "AI 및 디지털 미디어"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "hu": {
+          "title": "Ingyenes STEM lehetőség a(z) Markham Public Library szervezőtől itt: Markham",
+          "summary": "Ingyenes STEM lehetőség a(z) Markham Public Library szervezőtől itt: Markham. Korosztály: 18+. Részletekért nézd meg a forrást.",
+          "description": "Ingyenes STEM lehetőség a(z) Markham Public Library szervezőtől itt: Markham. Korosztály: 18+. Részletekért nézd meg a forrást.",
+          "category": "STEM",
+          "cost": "Ingyenes lista",
+          "tags": [
+            "STEM",
+            "MI es digitalis media"
+          ],
+          "translationSource": "generated-summary-template"
+        }
+      }
+    },
+    {
+      "id": "markham-rss-68fbdbb88b53c0241cd1b508",
+      "title": "Recognizing Fake News",
+      "organization": "Markham Public Library",
+      "description": "Participants will learn how to be critical of what they read and see online! Recognize the signs that information is not credible, is biased, or incorrect to easily identify fake news when you see it.",
+      "city": "Markham",
+      "region": "York",
+      "ageMin": 18,
+      "category": "AI & Digital Media",
+      "categories": [
+        "STEM",
+        "AI & Digital Media"
+      ],
+      "cost": "Free to join",
+      "language": [
+        "en"
+      ],
+      "deadline": "2026-10-07T23:00:00.000Z",
+      "startDate": "2026-10-07T23:00:00.000Z",
+      "endDate": "2026-10-08T00:00:00.000Z",
+      "sourceUrl": "https://markham.bibliocommons.com/events/68fbdbb88b53c0241cd1b508",
+      "registrationUrl": "https://markham.bibliocommons.com/events/68fbdbb88b53c0241cd1b508",
+      "lastChecked": "2026-09-12",
+      "lastSeen": "2026-09-12",
+      "status": "active",
+      "tags": [
+        "digital innovation month",
+        "digital literacy",
+        "adult",
+        "older adult",
+        "english"
+      ],
+      "communityFocus": [
+        "Open to all",
+        "Newcomer-friendly"
+      ],
+      "latitude": 43.8732112,
+      "longitude": -79.25847479999999,
+      "address": "Markham Village Branch, 6031 Highway 7, Markham, Ontario, L3P 3A7",
+      "volunteerHoursEligible": false,
+      "coopEligible": false,
+      "trustedSource": true,
+      "sources": [
+        {
+          "label": "Official Markham Public Library event page",
+          "url": "https://markham.bibliocommons.com/events/68fbdbb88b53c0241cd1b508",
+          "capturedAt": "2026-09-12T15:33:49.458Z",
           "confidence": "high"
         }
       ],
@@ -35516,262 +37066,6 @@
       }
     },
     {
-      "id": "discovered-tpl-events-volunteer-saturday-morning-movies-6161129cfff6",
-      "title": "Saturday Morning Movies",
-      "organization": "Toronto Public Library",
-      "description": "Come join us for a Saturday morning movie. Bring your own snacks and enjoy our feature film. Drop-in. No registration required. For ages 0-12 accompanied by a parent or caregiver. Aug. 22 - The Wild Robot (2024) Aug. 29 - Sing (2016) Sept. 5 - Sing 2 (2021) Sept. 12 - Trolls (2016) Sept. 19 - Luca (2021) Sept. 26 - Brave (2012)",
-      "city": "Toronto",
-      "region": "Toronto",
-      "ageMin": 0,
-      "ageMax": 12,
-      "category": "Coding & Robotics",
-      "categories": [
-        "Coding & Robotics",
-        "STEM"
-      ],
-      "cost": "Free to join",
-      "language": [
-        "en"
-      ],
-      "deadline": "2026-09-12T10:00:00-04:00",
-      "startDate": "2026-09-12T10:00:00-04:00",
-      "endDate": "2026-09-12T12:00:00-04:00",
-      "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6a875a463b6c71003e5a39be",
-      "registrationUrl": "https://tpl.bibliocommons.com/v2/events/6a875a463b6c71003e5a39be",
-      "lastChecked": "2026-09-12",
-      "lastSeen": "2026-09-12",
-      "status": "active",
-      "tags": [
-        "coding & robotics",
-        "new find",
-        "source-review"
-      ],
-      "communityFocus": [
-        "Open to all",
-        "Newcomer-friendly"
-      ],
-      "latitude": 43.6532,
-      "longitude": -79.3832,
-      "address": "Toronto, Toronto",
-      "volunteerHoursEligible": false,
-      "coopEligible": false,
-      "trustedSource": true,
-      "sources": [
-        {
-          "label": "Toronto Public Library youth volunteer events",
-          "url": "https://tpl.bibliocommons.com/v2/events/6a875a463b6c71003e5a39be",
-          "capturedAt": "2026-09-12T09:00:00-04:00",
-          "confidence": "high"
-        }
-      ],
-      "translations": {
-        "fr": {
-          "title": "Occasion gratuite de Codage et robotique offerte par Toronto Public Library a Toronto",
-          "summary": "Occasion gratuite de Codage et robotique offerte par Toronto Public Library a Toronto. Ages 0-12. Consultez la source pour les details.",
-          "description": "Occasion gratuite de Codage et robotique offerte par Toronto Public Library a Toronto. Ages 0-12. Consultez la source pour les details.",
-          "category": "Codage et robotique",
-          "cost": "Fiche gratuite",
-          "tags": [
-            "Codage et robotique",
-            "STEM"
-          ],
-          "translationSource": "generated-summary-template"
-        },
-        "zh": {
-          "title": "Toronto Public Library在Toronto提供免费的编程与机器人机会。适合0-12岁。请查看来源了解详情。",
-          "summary": "Toronto Public Library在Toronto提供免费的编程与机器人机会。适合0-12岁。请查看来源了解详情。",
-          "description": "Toronto Public Library在Toronto提供免费的编程与机器人机会。适合0-12岁。请查看来源了解详情。",
-          "category": "编程与机器人",
-          "cost": "免费列表",
-          "tags": [
-            "编程与机器人",
-            "STEM"
-          ],
-          "translationSource": "generated-summary-template"
-        },
-        "yue": {
-          "title": "Toronto Public Library喺Toronto提供免費編程同機械人機會。適合0-12歲。請查看來源了解詳情。",
-          "summary": "Toronto Public Library喺Toronto提供免費編程同機械人機會。適合0-12歲。請查看來源了解詳情。",
-          "description": "Toronto Public Library喺Toronto提供免費編程同機械人機會。適合0-12歲。請查看來源了解詳情。",
-          "category": "編程同機械人",
-          "cost": "免費項目",
-          "tags": [
-            "編程同機械人",
-            "STEM"
-          ],
-          "translationSource": "generated-summary-template"
-        },
-        "pa": {
-          "title": "Toronto Public Library ਵੱਲੋਂ Toronto ਵਿੱਚ ਮੁਫ਼ਤ ਕੋਡਿੰਗ ਅਤੇ ਰੋਬੋਟਿਕਸ ਮੌਕਾ। ਉਮਰ 0-12",
-          "summary": "Toronto Public Library ਵੱਲੋਂ Toronto ਵਿੱਚ ਮੁਫ਼ਤ ਕੋਡਿੰਗ ਅਤੇ ਰੋਬੋਟਿਕਸ ਮੌਕਾ। ਉਮਰ 0-12. ਵੇਰਵਿਆਂ ਲਈ ਸਰੋਤ ਵੇਖੋ।",
-          "description": "Toronto Public Library ਵੱਲੋਂ Toronto ਵਿੱਚ ਮੁਫ਼ਤ ਕੋਡਿੰਗ ਅਤੇ ਰੋਬੋਟਿਕਸ ਮੌਕਾ। ਉਮਰ 0-12. ਵੇਰਵਿਆਂ ਲਈ ਸਰੋਤ ਵੇਖੋ।",
-          "category": "ਕੋਡਿੰਗ ਅਤੇ ਰੋਬੋਟਿਕਸ",
-          "cost": "ਮੁਫ਼ਤ ਲਿਸਟਿੰਗ",
-          "tags": [
-            "ਕੋਡਿੰਗ ਅਤੇ ਰੋਬੋਟਿਕਸ",
-            "STEM"
-          ],
-          "translationSource": "generated-summary-template"
-        },
-        "ur": {
-          "title": "Toronto میں Toronto Public Library کی طرف سے مفت کوڈنگ اور روبوٹکس موقع۔ عمر 0-12",
-          "summary": "Toronto میں Toronto Public Library کی طرف سے مفت کوڈنگ اور روبوٹکس موقع۔ عمر 0-12. تفصیلات کے لیے ذریعہ دیکھیں۔",
-          "description": "Toronto میں Toronto Public Library کی طرف سے مفت کوڈنگ اور روبوٹکس موقع۔ عمر 0-12. تفصیلات کے لیے ذریعہ دیکھیں۔",
-          "category": "کوڈنگ اور روبوٹکس",
-          "cost": "مفت لسٹنگ",
-          "tags": [
-            "کوڈنگ اور روبوٹکس",
-            "STEM"
-          ],
-          "translationSource": "generated-summary-template"
-        },
-        "ta": {
-          "title": "Toronto நகரில் Toronto Public Library வழங்கும் இலவச கோடிங் மற்றும் ரோபோடிக்ஸ் வாய்ப்பு",
-          "summary": "Toronto நகரில் Toronto Public Library வழங்கும் இலவச கோடிங் மற்றும் ரோபோடிக்ஸ் வாய்ப்பு. வயது 0-12. விவரங்களுக்கு மூலத்தை பார்க்கவும்.",
-          "description": "Toronto நகரில் Toronto Public Library வழங்கும் இலவச கோடிங் மற்றும் ரோபோடிக்ஸ் வாய்ப்பு. வயது 0-12. விவரங்களுக்கு மூலத்தை பார்க்கவும்.",
-          "category": "கோடிங் மற்றும் ரோபோடிக்ஸ்",
-          "cost": "இலவச பட்டியல்",
-          "tags": [
-            "கோடிங் மற்றும் ரோபோடிக்ஸ்",
-            "STEM"
-          ],
-          "translationSource": "generated-summary-template"
-        },
-        "tl": {
-          "title": "Libreng Pagko-code at robotika opportunity mula sa Toronto Public Library sa Toronto",
-          "summary": "Libreng Pagko-code at robotika opportunity mula sa Toronto Public Library sa Toronto. Edad 0-12. Tingnan ang source para sa detalye.",
-          "description": "Libreng Pagko-code at robotika opportunity mula sa Toronto Public Library sa Toronto. Edad 0-12. Tingnan ang source para sa detalye.",
-          "category": "Pagko-code at robotika",
-          "cost": "Libreng listing",
-          "tags": [
-            "Pagko-code at robotika",
-            "STEM"
-          ],
-          "translationSource": "generated-summary-template"
-        },
-        "es": {
-          "title": "Oportunidad gratis de Programacion y robotica de Toronto Public Library en Toronto",
-          "summary": "Oportunidad gratis de Programacion y robotica de Toronto Public Library en Toronto. Edades 0-12. Revise la fuente para detalles.",
-          "description": "Oportunidad gratis de Programacion y robotica de Toronto Public Library en Toronto. Edades 0-12. Revise la fuente para detalles.",
-          "category": "Programacion y robotica",
-          "cost": "Listado gratis",
-          "tags": [
-            "Programacion y robotica",
-            "STEM"
-          ],
-          "translationSource": "generated-summary-template"
-        },
-        "ar": {
-          "title": "فرصة البرمجة والروبوتات مجانية من Toronto Public Library في Toronto",
-          "summary": "فرصة البرمجة والروبوتات مجانية من Toronto Public Library في Toronto. الأعمار 0-12. راجع المصدر للتفاصيل.",
-          "description": "فرصة البرمجة والروبوتات مجانية من Toronto Public Library في Toronto. الأعمار 0-12. راجع المصدر للتفاصيل.",
-          "category": "البرمجة والروبوتات",
-          "cost": "قائمة مجانية",
-          "tags": [
-            "البرمجة والروبوتات",
-            "STEM"
-          ],
-          "translationSource": "generated-summary-template"
-        },
-        "fa": {
-          "title": "فرصت رایگان برنامه‌نویسی و رباتیک از Toronto Public Library در Toronto",
-          "summary": "فرصت رایگان برنامه‌نویسی و رباتیک از Toronto Public Library در Toronto. سنین 0-12. برای جزئیات منبع را بررسی کنید.",
-          "description": "فرصت رایگان برنامه‌نویسی و رباتیک از Toronto Public Library در Toronto. سنین 0-12. برای جزئیات منبع را بررسی کنید.",
-          "category": "برنامه‌نویسی و رباتیک",
-          "cost": "فهرست رایگان",
-          "tags": [
-            "برنامه‌نویسی و رباتیک",
-            "STEM"
-          ],
-          "translationSource": "generated-summary-template"
-        },
-        "hi": {
-          "title": "Toronto में Toronto Public Library की मुफ्त कोडिंग और रोबोटिक्स opportunity",
-          "summary": "Toronto में Toronto Public Library की मुफ्त कोडिंग और रोबोटिक्स opportunity. उम्र 0-12. Details के लिए source देखें.",
-          "description": "Toronto में Toronto Public Library की मुफ्त कोडिंग और रोबोटिक्स opportunity. उम्र 0-12. Details के लिए source देखें.",
-          "category": "कोडिंग और रोबोटिक्स",
-          "cost": "Free listing",
-          "tags": [
-            "कोडिंग और रोबोटिक्स",
-            "STEM"
-          ],
-          "translationSource": "generated-summary-template"
-        },
-        "pt": {
-          "title": "Oportunidade gratuita de Programacao e robotica da Toronto Public Library em Toronto",
-          "summary": "Oportunidade gratuita de Programacao e robotica da Toronto Public Library em Toronto. Idades 0-12. Veja a fonte para detalhes.",
-          "description": "Oportunidade gratuita de Programacao e robotica da Toronto Public Library em Toronto. Idades 0-12. Veja a fonte para detalhes.",
-          "category": "Programacao e robotica",
-          "cost": "Lista gratuita",
-          "tags": [
-            "Programacao e robotica",
-            "STEM"
-          ],
-          "translationSource": "generated-summary-template"
-        },
-        "gu": {
-          "title": "Toronto માં Toronto Public Library તરફથી મફત કોડિંગ અને રોબોટિક્સ તક",
-          "summary": "Toronto માં Toronto Public Library તરફથી મફત કોડિંગ અને રોબોટિક્સ તક. ઉંમર 0-12. વિગત માટે સ્રોત જુઓ.",
-          "description": "Toronto માં Toronto Public Library તરફથી મફત કોડિંગ અને રોબોટિક્સ તક. ઉંમર 0-12. વિગત માટે સ્રોત જુઓ.",
-          "category": "કોડિંગ અને રોબોટિક્સ",
-          "cost": "મફત લિસ્ટિંગ",
-          "tags": [
-            "કોડિંગ અને રોબોટિક્સ",
-            "STEM"
-          ],
-          "translationSource": "generated-summary-template"
-        },
-        "bn": {
-          "title": "Toronto-এ Toronto Public Library এর ফ্রি কোডিং ও রোবোটিক্স opportunity",
-          "summary": "Toronto-এ Toronto Public Library এর ফ্রি কোডিং ও রোবোটিক্স opportunity. বয়স 0-12. বিস্তারিত জানতে উৎস দেখুন.",
-          "description": "Toronto-এ Toronto Public Library এর ফ্রি কোডিং ও রোবোটিক্স opportunity. বয়স 0-12. বিস্তারিত জানতে উৎস দেখুন.",
-          "category": "কোডিং ও রোবোটিক্স",
-          "cost": "ফ্রি তালিকা",
-          "tags": [
-            "কোডিং ও রোবোটিক্স",
-            "STEM"
-          ],
-          "translationSource": "generated-summary-template"
-        },
-        "ja": {
-          "title": "TorontoのToronto Public Libraryによる無料のコーディングとロボット工学機会です。対象年齢は0-12。詳細は情報源をご確認ください。",
-          "summary": "TorontoのToronto Public Libraryによる無料のコーディングとロボット工学機会です。対象年齢は0-12。詳細は情報源をご確認ください。",
-          "description": "TorontoのToronto Public Libraryによる無料のコーディングとロボット工学機会です。対象年齢は0-12。詳細は情報源をご確認ください。",
-          "category": "コーディングとロボット工学",
-          "cost": "無料リスト",
-          "tags": [
-            "コーディングとロボット工学",
-            "STEM"
-          ],
-          "translationSource": "generated-summary-template"
-        },
-        "ko": {
-          "title": "Toronto에서 Toronto Public Library이 제공하는 무료 코딩 및 로봇공학 기회입니다",
-          "summary": "Toronto에서 Toronto Public Library이 제공하는 무료 코딩 및 로봇공학 기회입니다. 대상 나이는 0-12입니다. 자세한 내용은 출처를 확인하세요.",
-          "description": "Toronto에서 Toronto Public Library이 제공하는 무료 코딩 및 로봇공학 기회입니다. 대상 나이는 0-12입니다. 자세한 내용은 출처를 확인하세요.",
-          "category": "코딩 및 로봇공학",
-          "cost": "무료 목록",
-          "tags": [
-            "코딩 및 로봇공학",
-            "STEM"
-          ],
-          "translationSource": "generated-summary-template"
-        },
-        "hu": {
-          "title": "Ingyenes Kodolas es robotika lehetőség a(z) Toronto Public Library szervezőtől itt: Toronto",
-          "summary": "Ingyenes Kodolas es robotika lehetőség a(z) Toronto Public Library szervezőtől itt: Toronto. Korosztály: 0-12. Részletekért nézd meg a forrást.",
-          "description": "Ingyenes Kodolas es robotika lehetőség a(z) Toronto Public Library szervezőtől itt: Toronto. Korosztály: 0-12. Részletekért nézd meg a forrást.",
-          "category": "Kodolas es robotika",
-          "cost": "Ingyenes lista",
-          "tags": [
-            "Kodolas es robotika",
-            "STEM"
-          ],
-          "translationSource": "generated-summary-template"
-        }
-      }
-    },
-    {
       "id": "discovered-tpl-events-volunteer-set-phasers-to-celebrate-60-years-of-star--097d4eec99f5",
       "title": "Set Phasers to Celebrate! 60 Years of Star Trek: A Merril Collection Exhibit",
       "organization": "Toronto Public Library",
@@ -36021,6 +37315,262 @@
           "cost": "Ingyenes lista",
           "tags": [
             "Termeszettudomany es mernoki tudomany",
+            "STEM"
+          ],
+          "translationSource": "generated-summary-template"
+        }
+      }
+    },
+    {
+      "id": "discovered-tpl-events-volunteer-saturday-morning-movies-485c3f37d56f",
+      "title": "Saturday Morning Movies",
+      "organization": "Toronto Public Library",
+      "description": "Come join us for a Saturday morning movie. Bring your own snacks and enjoy our feature film. Drop-in. No registration required. For ages 0-12 accompanied by a parent or caregiver. Aug. 22 - The Wild Robot (2024) Aug. 29 - Sing (2016) Sept. 5 - Sing 2 (2021) Sept. 12 - Trolls (2016) Sept. 19 - Luca (2021) Sept. 26 - Brave (2012)",
+      "city": "Toronto",
+      "region": "Toronto",
+      "ageMin": 0,
+      "ageMax": 12,
+      "category": "Coding & Robotics",
+      "categories": [
+        "Coding & Robotics",
+        "STEM"
+      ],
+      "cost": "Free to join",
+      "language": [
+        "en"
+      ],
+      "deadline": "2026-09-12T10:00:00-04:00",
+      "startDate": "2026-09-12T10:00:00-04:00",
+      "endDate": "2026-09-12T12:00:00-04:00",
+      "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6a5540820e562e2800999a53",
+      "registrationUrl": "https://tpl.bibliocommons.com/v2/events/6a5540820e562e2800999a53",
+      "lastChecked": "2026-09-12",
+      "lastSeen": "2026-09-12",
+      "status": "active",
+      "tags": [
+        "coding & robotics",
+        "new find",
+        "source-review"
+      ],
+      "communityFocus": [
+        "Open to all",
+        "Newcomer-friendly"
+      ],
+      "latitude": 43.6532,
+      "longitude": -79.3832,
+      "address": "Toronto, Toronto",
+      "volunteerHoursEligible": false,
+      "coopEligible": false,
+      "trustedSource": true,
+      "sources": [
+        {
+          "label": "Toronto Public Library youth volunteer events",
+          "url": "https://tpl.bibliocommons.com/v2/events/6a5540820e562e2800999a53",
+          "capturedAt": "2026-09-12T09:00:00-04:00",
+          "confidence": "high"
+        }
+      ],
+      "translations": {
+        "fr": {
+          "title": "Occasion gratuite de Codage et robotique offerte par Toronto Public Library a Toronto",
+          "summary": "Occasion gratuite de Codage et robotique offerte par Toronto Public Library a Toronto. Ages 0-12. Consultez la source pour les details.",
+          "description": "Occasion gratuite de Codage et robotique offerte par Toronto Public Library a Toronto. Ages 0-12. Consultez la source pour les details.",
+          "category": "Codage et robotique",
+          "cost": "Fiche gratuite",
+          "tags": [
+            "Codage et robotique",
+            "STEM"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "zh": {
+          "title": "Toronto Public Library在Toronto提供免费的编程与机器人机会。适合0-12岁。请查看来源了解详情。",
+          "summary": "Toronto Public Library在Toronto提供免费的编程与机器人机会。适合0-12岁。请查看来源了解详情。",
+          "description": "Toronto Public Library在Toronto提供免费的编程与机器人机会。适合0-12岁。请查看来源了解详情。",
+          "category": "编程与机器人",
+          "cost": "免费列表",
+          "tags": [
+            "编程与机器人",
+            "STEM"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "yue": {
+          "title": "Toronto Public Library喺Toronto提供免費編程同機械人機會。適合0-12歲。請查看來源了解詳情。",
+          "summary": "Toronto Public Library喺Toronto提供免費編程同機械人機會。適合0-12歲。請查看來源了解詳情。",
+          "description": "Toronto Public Library喺Toronto提供免費編程同機械人機會。適合0-12歲。請查看來源了解詳情。",
+          "category": "編程同機械人",
+          "cost": "免費項目",
+          "tags": [
+            "編程同機械人",
+            "STEM"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "pa": {
+          "title": "Toronto Public Library ਵੱਲੋਂ Toronto ਵਿੱਚ ਮੁਫ਼ਤ ਕੋਡਿੰਗ ਅਤੇ ਰੋਬੋਟਿਕਸ ਮੌਕਾ। ਉਮਰ 0-12",
+          "summary": "Toronto Public Library ਵੱਲੋਂ Toronto ਵਿੱਚ ਮੁਫ਼ਤ ਕੋਡਿੰਗ ਅਤੇ ਰੋਬੋਟਿਕਸ ਮੌਕਾ। ਉਮਰ 0-12. ਵੇਰਵਿਆਂ ਲਈ ਸਰੋਤ ਵੇਖੋ।",
+          "description": "Toronto Public Library ਵੱਲੋਂ Toronto ਵਿੱਚ ਮੁਫ਼ਤ ਕੋਡਿੰਗ ਅਤੇ ਰੋਬੋਟਿਕਸ ਮੌਕਾ। ਉਮਰ 0-12. ਵੇਰਵਿਆਂ ਲਈ ਸਰੋਤ ਵੇਖੋ।",
+          "category": "ਕੋਡਿੰਗ ਅਤੇ ਰੋਬੋਟਿਕਸ",
+          "cost": "ਮੁਫ਼ਤ ਲਿਸਟਿੰਗ",
+          "tags": [
+            "ਕੋਡਿੰਗ ਅਤੇ ਰੋਬੋਟਿਕਸ",
+            "STEM"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "ur": {
+          "title": "Toronto میں Toronto Public Library کی طرف سے مفت کوڈنگ اور روبوٹکس موقع۔ عمر 0-12",
+          "summary": "Toronto میں Toronto Public Library کی طرف سے مفت کوڈنگ اور روبوٹکس موقع۔ عمر 0-12. تفصیلات کے لیے ذریعہ دیکھیں۔",
+          "description": "Toronto میں Toronto Public Library کی طرف سے مفت کوڈنگ اور روبوٹکس موقع۔ عمر 0-12. تفصیلات کے لیے ذریعہ دیکھیں۔",
+          "category": "کوڈنگ اور روبوٹکس",
+          "cost": "مفت لسٹنگ",
+          "tags": [
+            "کوڈنگ اور روبوٹکس",
+            "STEM"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "ta": {
+          "title": "Toronto நகரில் Toronto Public Library வழங்கும் இலவச கோடிங் மற்றும் ரோபோடிக்ஸ் வாய்ப்பு",
+          "summary": "Toronto நகரில் Toronto Public Library வழங்கும் இலவச கோடிங் மற்றும் ரோபோடிக்ஸ் வாய்ப்பு. வயது 0-12. விவரங்களுக்கு மூலத்தை பார்க்கவும்.",
+          "description": "Toronto நகரில் Toronto Public Library வழங்கும் இலவச கோடிங் மற்றும் ரோபோடிக்ஸ் வாய்ப்பு. வயது 0-12. விவரங்களுக்கு மூலத்தை பார்க்கவும்.",
+          "category": "கோடிங் மற்றும் ரோபோடிக்ஸ்",
+          "cost": "இலவச பட்டியல்",
+          "tags": [
+            "கோடிங் மற்றும் ரோபோடிக்ஸ்",
+            "STEM"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "tl": {
+          "title": "Libreng Pagko-code at robotika opportunity mula sa Toronto Public Library sa Toronto",
+          "summary": "Libreng Pagko-code at robotika opportunity mula sa Toronto Public Library sa Toronto. Edad 0-12. Tingnan ang source para sa detalye.",
+          "description": "Libreng Pagko-code at robotika opportunity mula sa Toronto Public Library sa Toronto. Edad 0-12. Tingnan ang source para sa detalye.",
+          "category": "Pagko-code at robotika",
+          "cost": "Libreng listing",
+          "tags": [
+            "Pagko-code at robotika",
+            "STEM"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "es": {
+          "title": "Oportunidad gratis de Programacion y robotica de Toronto Public Library en Toronto",
+          "summary": "Oportunidad gratis de Programacion y robotica de Toronto Public Library en Toronto. Edades 0-12. Revise la fuente para detalles.",
+          "description": "Oportunidad gratis de Programacion y robotica de Toronto Public Library en Toronto. Edades 0-12. Revise la fuente para detalles.",
+          "category": "Programacion y robotica",
+          "cost": "Listado gratis",
+          "tags": [
+            "Programacion y robotica",
+            "STEM"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "ar": {
+          "title": "فرصة البرمجة والروبوتات مجانية من Toronto Public Library في Toronto",
+          "summary": "فرصة البرمجة والروبوتات مجانية من Toronto Public Library في Toronto. الأعمار 0-12. راجع المصدر للتفاصيل.",
+          "description": "فرصة البرمجة والروبوتات مجانية من Toronto Public Library في Toronto. الأعمار 0-12. راجع المصدر للتفاصيل.",
+          "category": "البرمجة والروبوتات",
+          "cost": "قائمة مجانية",
+          "tags": [
+            "البرمجة والروبوتات",
+            "STEM"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "fa": {
+          "title": "فرصت رایگان برنامه‌نویسی و رباتیک از Toronto Public Library در Toronto",
+          "summary": "فرصت رایگان برنامه‌نویسی و رباتیک از Toronto Public Library در Toronto. سنین 0-12. برای جزئیات منبع را بررسی کنید.",
+          "description": "فرصت رایگان برنامه‌نویسی و رباتیک از Toronto Public Library در Toronto. سنین 0-12. برای جزئیات منبع را بررسی کنید.",
+          "category": "برنامه‌نویسی و رباتیک",
+          "cost": "فهرست رایگان",
+          "tags": [
+            "برنامه‌نویسی و رباتیک",
+            "STEM"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "hi": {
+          "title": "Toronto में Toronto Public Library की मुफ्त कोडिंग और रोबोटिक्स opportunity",
+          "summary": "Toronto में Toronto Public Library की मुफ्त कोडिंग और रोबोटिक्स opportunity. उम्र 0-12. Details के लिए source देखें.",
+          "description": "Toronto में Toronto Public Library की मुफ्त कोडिंग और रोबोटिक्स opportunity. उम्र 0-12. Details के लिए source देखें.",
+          "category": "कोडिंग और रोबोटिक्स",
+          "cost": "Free listing",
+          "tags": [
+            "कोडिंग और रोबोटिक्स",
+            "STEM"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "pt": {
+          "title": "Oportunidade gratuita de Programacao e robotica da Toronto Public Library em Toronto",
+          "summary": "Oportunidade gratuita de Programacao e robotica da Toronto Public Library em Toronto. Idades 0-12. Veja a fonte para detalhes.",
+          "description": "Oportunidade gratuita de Programacao e robotica da Toronto Public Library em Toronto. Idades 0-12. Veja a fonte para detalhes.",
+          "category": "Programacao e robotica",
+          "cost": "Lista gratuita",
+          "tags": [
+            "Programacao e robotica",
+            "STEM"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "gu": {
+          "title": "Toronto માં Toronto Public Library તરફથી મફત કોડિંગ અને રોબોટિક્સ તક",
+          "summary": "Toronto માં Toronto Public Library તરફથી મફત કોડિંગ અને રોબોટિક્સ તક. ઉંમર 0-12. વિગત માટે સ્રોત જુઓ.",
+          "description": "Toronto માં Toronto Public Library તરફથી મફત કોડિંગ અને રોબોટિક્સ તક. ઉંમર 0-12. વિગત માટે સ્રોત જુઓ.",
+          "category": "કોડિંગ અને રોબોટિક્સ",
+          "cost": "મફત લિસ્ટિંગ",
+          "tags": [
+            "કોડિંગ અને રોબોટિક્સ",
+            "STEM"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "bn": {
+          "title": "Toronto-এ Toronto Public Library এর ফ্রি কোডিং ও রোবোটিক্স opportunity",
+          "summary": "Toronto-এ Toronto Public Library এর ফ্রি কোডিং ও রোবোটিক্স opportunity. বয়স 0-12. বিস্তারিত জানতে উৎস দেখুন.",
+          "description": "Toronto-এ Toronto Public Library এর ফ্রি কোডিং ও রোবোটিক্স opportunity. বয়স 0-12. বিস্তারিত জানতে উৎস দেখুন.",
+          "category": "কোডিং ও রোবোটিক্স",
+          "cost": "ফ্রি তালিকা",
+          "tags": [
+            "কোডিং ও রোবোটিক্স",
+            "STEM"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "ja": {
+          "title": "TorontoのToronto Public Libraryによる無料のコーディングとロボット工学機会です。対象年齢は0-12。詳細は情報源をご確認ください。",
+          "summary": "TorontoのToronto Public Libraryによる無料のコーディングとロボット工学機会です。対象年齢は0-12。詳細は情報源をご確認ください。",
+          "description": "TorontoのToronto Public Libraryによる無料のコーディングとロボット工学機会です。対象年齢は0-12。詳細は情報源をご確認ください。",
+          "category": "コーディングとロボット工学",
+          "cost": "無料リスト",
+          "tags": [
+            "コーディングとロボット工学",
+            "STEM"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "ko": {
+          "title": "Toronto에서 Toronto Public Library이 제공하는 무료 코딩 및 로봇공학 기회입니다",
+          "summary": "Toronto에서 Toronto Public Library이 제공하는 무료 코딩 및 로봇공학 기회입니다. 대상 나이는 0-12입니다. 자세한 내용은 출처를 확인하세요.",
+          "description": "Toronto에서 Toronto Public Library이 제공하는 무료 코딩 및 로봇공학 기회입니다. 대상 나이는 0-12입니다. 자세한 내용은 출처를 확인하세요.",
+          "category": "코딩 및 로봇공학",
+          "cost": "무료 목록",
+          "tags": [
+            "코딩 및 로봇공학",
+            "STEM"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "hu": {
+          "title": "Ingyenes Kodolas es robotika lehetőség a(z) Toronto Public Library szervezőtől itt: Toronto",
+          "summary": "Ingyenes Kodolas es robotika lehetőség a(z) Toronto Public Library szervezőtől itt: Toronto. Korosztály: 0-12. Részletekért nézd meg a forrást.",
+          "description": "Ingyenes Kodolas es robotika lehetőség a(z) Toronto Public Library szervezőtől itt: Toronto. Korosztály: 0-12. Részletekért nézd meg a forrást.",
+          "category": "Kodolas es robotika",
+          "cost": "Ingyenes lista",
+          "tags": [
+            "Kodolas es robotika",
             "STEM"
           ],
           "translationSource": "generated-summary-template"
