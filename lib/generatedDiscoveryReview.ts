@@ -14,7 +14,7 @@ export const generatedDiscoverySummary = {
   ],
   "sourceHealth": {
     "schemaVersion": 1,
-    "generatedAt": "2026-09-13T11:56:14.451Z",
+    "generatedAt": "2026-09-13T16:20:06.540Z",
     "status": "healthy",
     "failureReasons": [],
     "sourcesChecked": 30,
@@ -55,35 +55,6 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Toronto Public Library youth volunteer events"
   },
   {
-    "id": "discovered-markham-events-volunteer-knitting-circle-49fe267429c3",
-    "title": "Knitting Circle",
-    "organization": "Markham Public Library",
-    "description": "Do you like to knit or crochet? Come join our knitting circle! This knitting circle is run in partnership with Casting Off the Cold, which is a volunteer organization that collects hand knitted and crocheted blankets, hats, scarves, mitts, baby clothes and similar items to donate to charities in York Region that support people in need in our community. We have been donating annually since 2006. Our group members knit at home, and we like to meet once a month to show and collect our completed projects which are donated in the autumn. Any interested knitter or crocheter is welcome to join us. We have a Facebook page: casting off the cold, and a blog: castingoffthecold.blogspot.ca with more information and contact details. Please note: this is not a knitting class.",
-    "city": "Markham",
-    "region": "York",
-    "ageMin": 1,
-    "ageMax": 18,
-    "category": "Volunteer Hours",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "deadline": "2026-09-13T13:00:00-04:00",
-    "startDate": "2026-09-13T13:00:00-04:00",
-    "endDate": "2026-09-13T15:00:00-04:00",
-    "sourceUrl": "https://markham.bibliocommons.com/events/6a1f46c6caf9343600603132",
-    "lastChecked": "2026-09-13",
-    "lastSeen": "2026-09-13",
-    "status": "active",
-    "tags": [
-      "volunteer hours",
-      "volunteer"
-    ],
-    "confidence": "high",
-    "reviewReasons": [],
-    "sourceName": "Markham Public Library youth volunteer events"
-  },
-  {
     "id": "discovered-markham-events-volunteer-reading-to-success-3a2d7fab6bdd",
     "title": "Reading to Success",
     "organization": "Markham Public Library",
@@ -101,6 +72,35 @@ export const generatedDiscoveryReviewCandidates = [
     "startDate": "2026-09-14T18:00:00-04:00",
     "endDate": "2026-09-14T19:30:00-04:00",
     "sourceUrl": "https://markham.bibliocommons.com/events/6a725b26cca66c2f00a83966",
+    "lastChecked": "2026-09-13",
+    "lastSeen": "2026-09-13",
+    "status": "active",
+    "tags": [
+      "volunteer hours",
+      "volunteer"
+    ],
+    "confidence": "high",
+    "reviewReasons": [],
+    "sourceName": "Markham Public Library youth volunteer events"
+  },
+  {
+    "id": "discovered-markham-events-volunteer-knitting-circle-4306cc9343d9",
+    "title": "Knitting Circle",
+    "organization": "Markham Public Library",
+    "description": "Do you like to knit or crochet? Come join our knitting circle! This knitting circle is run in partnership with Casting Off the Cold, which is a volunteer organization that collects hand knitted and crocheted blankets, hats, scarves, mitts, baby clothes and similar items to donate to charities in York Region that support people in need in our community. We have been donating annually since 2006. Our group members knit at home, and we like to meet once a month to show and collect our completed projects which are donated in the autumn. Any interested knitter or crocheter is welcome to join us. We have a Facebook page: casting off the cold, and a blog: castingoffthecold.blogspot.ca with more information and contact details. Please note: this is not a knitting class.",
+    "city": "Markham",
+    "region": "York",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "Volunteer Hours",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "deadline": "2026-09-13T13:00:00-04:00",
+    "startDate": "2026-09-13T13:00:00-04:00",
+    "endDate": "2026-09-13T15:00:00-04:00",
+    "sourceUrl": "https://markham.bibliocommons.com/events/6a61080a7b79214226aa68c6",
     "lastChecked": "2026-09-13",
     "lastSeen": "2026-09-13",
     "status": "active",
