@@ -14,7 +14,7 @@ export const generatedDiscoverySummary = {
   ],
   "sourceHealth": {
     "schemaVersion": 1,
-    "generatedAt": "2026-09-12T20:35:17.455Z",
+    "generatedAt": "2026-09-13T04:51:58.730Z",
     "status": "healthy",
     "failureReasons": [],
     "sourcesChecked": 30,
@@ -44,8 +44,8 @@ export const generatedDiscoveryReviewCandidates = [
     "startDate": "2026-08-17T09:00:00-04:00",
     "endDate": "2026-11-01T09:00:00-04:00",
     "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6a5299330e562e2800993112",
-    "lastChecked": "2026-09-12",
-    "lastSeen": "2026-09-12",
+    "lastChecked": "2026-09-13",
+    "lastSeen": "2026-09-13",
     "status": "active",
     "tags": [
       "science & engineering"
@@ -72,8 +72,8 @@ export const generatedDiscoveryReviewCandidates = [
     "startDate": "2026-09-13T13:00:00-04:00",
     "endDate": "2026-09-13T15:00:00-04:00",
     "sourceUrl": "https://markham.bibliocommons.com/events/6a1f46c6caf9343600603132",
-    "lastChecked": "2026-09-12",
-    "lastSeen": "2026-09-12",
+    "lastChecked": "2026-09-13",
+    "lastSeen": "2026-09-13",
     "status": "active",
     "tags": [
       "volunteer hours",
@@ -101,8 +101,8 @@ export const generatedDiscoveryReviewCandidates = [
     "startDate": "2026-09-14T18:00:00-04:00",
     "endDate": "2026-09-14T19:30:00-04:00",
     "sourceUrl": "https://markham.bibliocommons.com/events/6a725b26cca66c2f00a83966",
-    "lastChecked": "2026-09-12",
-    "lastSeen": "2026-09-12",
+    "lastChecked": "2026-09-13",
+    "lastSeen": "2026-09-13",
     "status": "active",
     "tags": [
       "volunteer hours",
@@ -126,10 +126,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-09-12T09:00:00-04:00",
+    "startDate": "2026-09-13T09:00:00-04:00",
     "sourceUrl": "https://www.vaughanpl.info/volunteer",
-    "lastChecked": "2026-09-12",
-    "lastSeen": "2026-09-12",
+    "lastChecked": "2026-09-13",
+    "lastSeen": "2026-09-13",
     "status": "needs_review",
     "tags": [
       "volunteer hours",
@@ -155,10 +155,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-09-12T09:00:00-04:00",
+    "startDate": "2026-09-13T09:00:00-04:00",
     "sourceUrl": "https://www.vaughanpl.info/programs/view/4058",
-    "lastChecked": "2026-09-12",
-    "lastSeen": "2026-09-12",
+    "lastChecked": "2026-09-13",
+    "lastSeen": "2026-09-13",
     "status": "needs_review",
     "tags": [
       "volunteer hours"
@@ -183,10 +183,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-09-12T09:00:00-04:00",
+    "startDate": "2026-09-13T09:00:00-04:00",
     "sourceUrl": "https://www.rhpl.ca/working-with-the-library/volunteer-opportunities",
-    "lastChecked": "2026-09-12",
-    "lastSeen": "2026-09-12",
+    "lastChecked": "2026-09-13",
+    "lastSeen": "2026-09-13",
     "status": "needs_review",
     "tags": [
       "volunteer hours"
@@ -198,7 +198,7 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Richmond Hill Public Library programs"
   },
   {
-    "id": "discovered-aurora-library-stem-maker-workshop-custom-mug-f40ec49273f8",
+    "id": "discovered-aurora-library-stem-maker-workshop-custom-mug-9b2fef4542d2",
     "title": "Maker Workshop: Custom Mug",
     "organization": "Aurora Public Library",
     "description": "Learn how to design and make a custom mug with a sublimation printer and Cricut Mug Press. All required materials will be provided. Please note that spots will be prioritized for first-time attendees. teen/adult program 13+",
@@ -214,9 +214,9 @@ export const generatedDiscoveryReviewCandidates = [
     "deadline": "2026-09-14T18:30:00-04:00",
     "startDate": "2026-09-14T18:30:00-04:00",
     "endDate": "2026-09-14T20:00:00-04:00",
-    "sourceUrl": "https://aurora.bibliocommons.com/events/6a9ac687e1fb8f13578bdc64",
-    "lastChecked": "2026-09-12",
-    "lastSeen": "2026-09-12",
+    "sourceUrl": "https://aurora.bibliocommons.com/events/68d56cdd15946f2800d59b0f",
+    "lastChecked": "2026-09-13",
+    "lastSeen": "2026-09-13",
     "status": "active",
     "tags": [
       "makerspace & fabrication",
@@ -244,8 +244,8 @@ export const generatedDiscoveryReviewCandidates = [
     "startDate": "2026-09-13T14:00:00-04:00",
     "endDate": "2026-09-13T16:00:00-04:00",
     "sourceUrl": "https://aurora.bibliocommons.com/events/6a872e35db86e4004d867aca",
-    "lastChecked": "2026-09-12",
-    "lastSeen": "2026-09-12",
+    "lastChecked": "2026-09-13",
+    "lastSeen": "2026-09-13",
     "status": "active",
     "tags": [
       "coding & robotics",
@@ -269,10 +269,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-09-12T09:00:00-04:00",
+    "startDate": "2026-09-13T09:00:00-04:00",
     "sourceUrl": "https://aurorapl.ca/volunteers",
-    "lastChecked": "2026-09-12",
-    "lastSeen": "2026-09-12",
+    "lastChecked": "2026-09-13",
+    "lastSeen": "2026-09-13",
     "status": "needs_review",
     "tags": [
       "volunteer hours"
@@ -297,10 +297,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-09-12T09:00:00-04:00",
+    "startDate": "2026-09-13T09:00:00-04:00",
     "sourceUrl": "https://ajaxlibrary.ca/Makerspace",
-    "lastChecked": "2026-09-12",
-    "lastSeen": "2026-09-12",
+    "lastChecked": "2026-09-13",
+    "lastSeen": "2026-09-13",
     "status": "needs_review",
     "tags": [
       "makerspace & fabrication"
@@ -325,10 +325,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-09-12T09:00:00-04:00",
+    "startDate": "2026-09-13T09:00:00-04:00",
     "sourceUrl": "https://pickeringlibrary.ca/resources/science-technology",
-    "lastChecked": "2026-09-12",
-    "lastSeen": "2026-09-12",
+    "lastChecked": "2026-09-13",
+    "lastSeen": "2026-09-13",
     "status": "needs_review",
     "tags": [
       "science & engineering",
@@ -354,10 +354,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-09-12T09:00:00-04:00",
+    "startDate": "2026-09-13T09:00:00-04:00",
     "sourceUrl": "https://pickeringlibrary.ca/makerspace",
-    "lastChecked": "2026-09-12",
-    "lastSeen": "2026-09-12",
+    "lastChecked": "2026-09-13",
+    "lastSeen": "2026-09-13",
     "status": "needs_review",
     "tags": [
       "makerspace & fabrication",
@@ -384,10 +384,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-09-12T09:00:00-04:00",
+    "startDate": "2026-09-13T09:00:00-04:00",
     "sourceUrl": "https://cal.pickeringlibrary.ca/event/introduction-generative-ai-54386",
-    "lastChecked": "2026-09-12",
-    "lastSeen": "2026-09-12",
+    "lastChecked": "2026-09-13",
+    "lastSeen": "2026-09-13",
     "status": "needs_review",
     "tags": [
       "ai & digital media"
@@ -412,10 +412,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-09-12T09:00:00-04:00",
+    "startDate": "2026-09-13T09:00:00-04:00",
     "sourceUrl": "https://pickering.bibliocommons.com/v2/list/display/1491301049/3106000637",
-    "lastChecked": "2026-09-12",
-    "lastSeen": "2026-09-12",
+    "lastChecked": "2026-09-13",
+    "lastSeen": "2026-09-13",
     "status": "needs_review",
     "tags": [
       "stem",
@@ -441,10 +441,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-09-12T09:00:00-04:00",
+    "startDate": "2026-09-13T09:00:00-04:00",
     "sourceUrl": "https://pickeringlibrary.ca/explore/?programs=computers-and-technology",
-    "lastChecked": "2026-09-12",
-    "lastSeen": "2026-09-12",
+    "lastChecked": "2026-09-13",
+    "lastSeen": "2026-09-13",
     "status": "needs_review",
     "tags": [
       "stem",
@@ -471,10 +471,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-09-12T09:00:00-04:00",
+    "startDate": "2026-09-13T09:00:00-04:00",
     "sourceUrl": "https://pickering.bibliocommons.com/v2/list/display/1491301049/3037093477",
-    "lastChecked": "2026-09-12",
-    "lastSeen": "2026-09-12",
+    "lastChecked": "2026-09-13",
+    "lastSeen": "2026-09-13",
     "status": "needs_review",
     "tags": [
       "stem",
@@ -500,10 +500,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-09-12T09:00:00-04:00",
+    "startDate": "2026-09-13T09:00:00-04:00",
     "sourceUrl": "https://oshawalibrary.ca/technology/makerspace",
-    "lastChecked": "2026-09-12",
-    "lastSeen": "2026-09-12",
+    "lastChecked": "2026-09-13",
+    "lastSeen": "2026-09-13",
     "status": "needs_review",
     "tags": [
       "makerspace & fabrication"
@@ -528,10 +528,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-09-12T09:00:00-04:00",
+    "startDate": "2026-09-13T09:00:00-04:00",
     "sourceUrl": "http://www.cplma.ca/learning-technology",
-    "lastChecked": "2026-09-12",
-    "lastSeen": "2026-09-12",
+    "lastChecked": "2026-09-13",
+    "lastSeen": "2026-09-13",
     "status": "needs_review",
     "tags": [
       "stem",
@@ -557,10 +557,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-09-12T09:00:00-04:00",
+    "startDate": "2026-09-13T09:00:00-04:00",
     "sourceUrl": "http://www.cplma.ca/learning-technology/computers-and-internet-access",
-    "lastChecked": "2026-09-12",
-    "lastSeen": "2026-09-12",
+    "lastChecked": "2026-09-13",
+    "lastSeen": "2026-09-13",
     "status": "needs_review",
     "tags": [
       "stem"
@@ -585,10 +585,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-09-12T09:00:00-04:00",
+    "startDate": "2026-09-13T09:00:00-04:00",
     "sourceUrl": "http://www.cplma.ca/learning-technology/makers-space-the-studio",
-    "lastChecked": "2026-09-12",
-    "lastSeen": "2026-09-12",
+    "lastChecked": "2026-09-13",
+    "lastSeen": "2026-09-13",
     "status": "needs_review",
     "tags": [
       "makerspace & fabrication"
@@ -613,10 +613,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-09-12T09:00:00-04:00",
+    "startDate": "2026-09-13T09:00:00-04:00",
     "sourceUrl": "http://www.cplma.ca/about-us/jobs-and-volunteering",
-    "lastChecked": "2026-09-12",
-    "lastSeen": "2026-09-12",
+    "lastChecked": "2026-09-13",
+    "lastSeen": "2026-09-13",
     "status": "needs_review",
     "tags": [
       "volunteer hours"
@@ -641,10 +641,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-09-12T09:00:00-04:00",
+    "startDate": "2026-09-13T09:00:00-04:00",
     "sourceUrl": "https://www.cplma.ca/programs-services/reading-and-math-buddies",
-    "lastChecked": "2026-09-12",
-    "lastSeen": "2026-09-12",
+    "lastChecked": "2026-09-13",
+    "lastSeen": "2026-09-13",
     "status": "needs_review",
     "tags": [
       "science & engineering"
@@ -669,10 +669,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-09-12T09:00:00-04:00",
+    "startDate": "2026-09-13T09:00:00-04:00",
     "sourceUrl": "https://www.mississauga.ca/library/library-jobs-and-volunteer",
-    "lastChecked": "2026-09-12",
-    "lastSeen": "2026-09-12",
+    "lastChecked": "2026-09-13",
+    "lastSeen": "2026-09-13",
     "status": "needs_review",
     "tags": [
       "volunteer hours",
@@ -698,10 +698,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-09-12T09:00:00-04:00",
+    "startDate": "2026-09-13T09:00:00-04:00",
     "sourceUrl": "https://app.betterimpact.com/PublicEnterprise/EnterpriseSearch?EnterpriseGuid=e3200288-2b64-4ed8-a26d-5bd0f4c5170b&SearchType=OrganizationClassification&SearchId=9624",
-    "lastChecked": "2026-09-12",
-    "lastSeen": "2026-09-12",
+    "lastChecked": "2026-09-13",
+    "lastSeen": "2026-09-13",
     "status": "needs_review",
     "tags": [
       "volunteer hours",
@@ -728,10 +728,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-09-12T09:00:00-04:00",
+    "startDate": "2026-09-13T09:00:00-04:00",
     "sourceUrl": "https://beinspired.ca/volunteer-opportunities",
-    "lastChecked": "2026-09-12",
-    "lastSeen": "2026-09-12",
+    "lastChecked": "2026-09-13",
+    "lastSeen": "2026-09-13",
     "status": "needs_review",
     "tags": [
       "volunteer hours",
@@ -757,10 +757,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-09-12T09:00:00-04:00",
+    "startDate": "2026-09-13T09:00:00-04:00",
     "sourceUrl": "https://beinspired.ca",
-    "lastChecked": "2026-09-12",
-    "lastSeen": "2026-09-12",
+    "lastChecked": "2026-09-13",
+    "lastSeen": "2026-09-13",
     "status": "needs_review",
     "tags": [
       "stem"
@@ -785,10 +785,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-09-12T09:00:00-04:00",
+    "startDate": "2026-09-13T09:00:00-04:00",
     "sourceUrl": "https://beinspired.ca/computer-services",
-    "lastChecked": "2026-09-12",
-    "lastSeen": "2026-09-12",
+    "lastChecked": "2026-09-13",
+    "lastSeen": "2026-09-13",
     "status": "needs_review",
     "tags": [
       "stem"
@@ -813,10 +813,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-09-12T09:00:00-04:00",
+    "startDate": "2026-09-13T09:00:00-04:00",
     "sourceUrl": "https://www.hhpl.ca/services/technology-resources",
-    "lastChecked": "2026-09-12",
-    "lastSeen": "2026-09-12",
+    "lastChecked": "2026-09-13",
+    "lastSeen": "2026-09-13",
     "status": "needs_review",
     "tags": [
       "stem",
@@ -842,10 +842,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-09-12T09:00:00-04:00",
+    "startDate": "2026-09-13T09:00:00-04:00",
     "sourceUrl": "https://www.hhpl.ca/computers",
-    "lastChecked": "2026-09-12",
-    "lastSeen": "2026-09-12",
+    "lastChecked": "2026-09-13",
+    "lastSeen": "2026-09-13",
     "status": "needs_review",
     "tags": [
       "stem"
@@ -870,10 +870,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-09-12T09:00:00-04:00",
+    "startDate": "2026-09-13T09:00:00-04:00",
     "sourceUrl": "https://trca.ca/get-involved/youth-opportunities",
-    "lastChecked": "2026-09-12",
-    "lastSeen": "2026-09-12",
+    "lastChecked": "2026-09-13",
+    "lastSeen": "2026-09-13",
     "status": "needs_review",
     "tags": [
       "science & engineering",
@@ -901,10 +901,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-09-12T09:00:00-04:00",
+    "startDate": "2026-09-13T09:00:00-04:00",
     "sourceUrl": "https://trca.ca/get-involved/volunteer",
-    "lastChecked": "2026-09-12",
-    "lastSeen": "2026-09-12",
+    "lastChecked": "2026-09-13",
+    "lastSeen": "2026-09-13",
     "status": "needs_review",
     "tags": [
       "volunteer hours",
@@ -931,10 +931,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-09-12T09:00:00-04:00",
+    "startDate": "2026-09-13T09:00:00-04:00",
     "sourceUrl": "https://trca.ca/learning/adult/young-conservation-professionals",
-    "lastChecked": "2026-09-12",
-    "lastSeen": "2026-09-12",
+    "lastChecked": "2026-09-13",
+    "lastSeen": "2026-09-13",
     "status": "needs_review",
     "tags": [
       "volunteer hours",
@@ -961,10 +961,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-09-12T09:00:00-04:00",
+    "startDate": "2026-09-13T09:00:00-04:00",
     "sourceUrl": "https://uhnstempathways.ca",
-    "lastChecked": "2026-09-12",
-    "lastSeen": "2026-09-12",
+    "lastChecked": "2026-09-13",
+    "lastSeen": "2026-09-13",
     "status": "needs_review",
     "tags": [
       "science & engineering",
@@ -991,10 +991,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-09-12T09:00:00-04:00",
+    "startDate": "2026-09-13T09:00:00-04:00",
     "sourceUrl": "https://uhnstempathways.ca/volunteer-spotlight",
-    "lastChecked": "2026-09-12",
-    "lastSeen": "2026-09-12",
+    "lastChecked": "2026-09-13",
+    "lastSeen": "2026-09-13",
     "status": "needs_review",
     "tags": [
       "volunteer hours"
@@ -1020,10 +1020,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-09-12T09:00:00-04:00",
+    "startDate": "2026-09-13T09:00:00-04:00",
     "sourceUrl": "https://uhnstempathways.ca/volunteers",
-    "lastChecked": "2026-09-12",
-    "lastSeen": "2026-09-12",
+    "lastChecked": "2026-09-13",
+    "lastSeen": "2026-09-13",
     "status": "needs_review",
     "tags": [
       "volunteer hours"
@@ -1049,10 +1049,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-09-12T09:00:00-04:00",
+    "startDate": "2026-09-13T09:00:00-04:00",
     "sourceUrl": "https://uhnstempathways.ca/upcoming/world-heart-day-2026",
-    "lastChecked": "2026-09-12",
-    "lastSeen": "2026-09-12",
+    "lastChecked": "2026-09-13",
+    "lastSeen": "2026-09-13",
     "status": "needs_review",
     "tags": [
       "science & engineering",
@@ -1079,10 +1079,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-09-12T09:00:00-04:00",
+    "startDate": "2026-09-13T09:00:00-04:00",
     "sourceUrl": "https://uhnstempathways.ca/upcoming",
-    "lastChecked": "2026-09-12",
-    "lastSeen": "2026-09-12",
+    "lastChecked": "2026-09-13",
+    "lastSeen": "2026-09-13",
     "status": "needs_review",
     "tags": [
       "science & engineering",
@@ -1109,10 +1109,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-09-12T09:00:00-04:00",
+    "startDate": "2026-09-13T09:00:00-04:00",
     "sourceUrl": "https://outreach.engineering.utoronto.ca",
-    "lastChecked": "2026-09-12",
-    "lastSeen": "2026-09-12",
+    "lastChecked": "2026-09-13",
+    "lastSeen": "2026-09-13",
     "status": "needs_review",
     "tags": [
       "science & engineering",
@@ -1140,10 +1140,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-09-12T09:00:00-04:00",
+    "startDate": "2026-09-13T09:00:00-04:00",
     "sourceUrl": "https://www.engineering.utoronto.ca",
-    "lastChecked": "2026-09-12",
-    "lastSeen": "2026-09-12",
+    "lastChecked": "2026-09-13",
+    "lastSeen": "2026-09-13",
     "status": "needs_review",
     "tags": [
       "science & engineering",
@@ -1170,10 +1170,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-09-12T09:00:00-04:00",
+    "startDate": "2026-09-13T09:00:00-04:00",
     "sourceUrl": "https://outreach.engineering.utoronto.ca/about-us",
-    "lastChecked": "2026-09-12",
-    "lastSeen": "2026-09-12",
+    "lastChecked": "2026-09-13",
+    "lastSeen": "2026-09-13",
     "status": "needs_review",
     "tags": [
       "science & engineering",
@@ -1200,10 +1200,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-09-12T09:00:00-04:00",
+    "startDate": "2026-09-13T09:00:00-04:00",
     "sourceUrl": "https://outreach.engineering.utoronto.ca/pre-university-programs/high-school-program/create",
-    "lastChecked": "2026-09-12",
-    "lastSeen": "2026-09-12",
+    "lastChecked": "2026-09-13",
+    "lastSeen": "2026-09-13",
     "status": "needs_review",
     "tags": [
       "science & engineering",
@@ -1230,10 +1230,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-09-12T09:00:00-04:00",
+    "startDate": "2026-09-13T09:00:00-04:00",
     "sourceUrl": "https://outreach.engineering.utoronto.ca/pre-university-programs/elementary/ready-set-code",
-    "lastChecked": "2026-09-12",
-    "lastSeen": "2026-09-12",
+    "lastChecked": "2026-09-13",
+    "lastSeen": "2026-09-13",
     "status": "needs_review",
     "tags": [
       "science & engineering"
@@ -1259,10 +1259,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-09-12T09:00:00-04:00",
+    "startDate": "2026-09-13T09:00:00-04:00",
     "sourceUrl": "https://outreach.engineering.utoronto.ca/pre-university-programs/elementary/engineering-discovery-day",
-    "lastChecked": "2026-09-12",
-    "lastSeen": "2026-09-12",
+    "lastChecked": "2026-09-13",
+    "lastSeen": "2026-09-13",
     "status": "needs_review",
     "tags": [
       "science & engineering",
@@ -1289,10 +1289,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-09-12T09:00:00-04:00",
+    "startDate": "2026-09-13T09:00:00-04:00",
     "sourceUrl": "https://outreach.engineering.utoronto.ca/about-us/volunteer-opportunities",
-    "lastChecked": "2026-09-12",
-    "lastSeen": "2026-09-12",
+    "lastChecked": "2026-09-13",
+    "lastSeen": "2026-09-13",
     "status": "needs_review",
     "tags": [
       "volunteer hours"
@@ -1318,10 +1318,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-09-12T09:00:00-04:00",
+    "startDate": "2026-09-13T09:00:00-04:00",
     "sourceUrl": "https://data.viceprovoststudents.utoronto.ca",
-    "lastChecked": "2026-09-12",
-    "lastSeen": "2026-09-12",
+    "lastChecked": "2026-09-13",
+    "lastSeen": "2026-09-13",
     "status": "needs_review",
     "tags": [
       "science & engineering"
@@ -1347,10 +1347,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-09-12T09:00:00-04:00",
+    "startDate": "2026-09-13T09:00:00-04:00",
     "sourceUrl": "https://engineering.ontariotechu.ca/outreach/index.php",
-    "lastChecked": "2026-09-12",
-    "lastSeen": "2026-09-12",
+    "lastChecked": "2026-09-13",
+    "lastSeen": "2026-09-13",
     "status": "needs_review",
     "tags": [
       "science & engineering",
@@ -1377,10 +1377,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-09-12T09:00:00-04:00",
+    "startDate": "2026-09-13T09:00:00-04:00",
     "sourceUrl": "https://engineering.ontariotechu.ca/outreach/about-us/outreach-supporters.php",
-    "lastChecked": "2026-09-12",
-    "lastSeen": "2026-09-12",
+    "lastChecked": "2026-09-13",
+    "lastSeen": "2026-09-13",
     "status": "needs_review",
     "tags": [
       "science & engineering",
@@ -1407,10 +1407,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-09-12T09:00:00-04:00",
+    "startDate": "2026-09-13T09:00:00-04:00",
     "sourceUrl": "https://engineering.ontariotechu.ca/outreach/about-us/in-the-community.php",
-    "lastChecked": "2026-09-12",
-    "lastSeen": "2026-09-12",
+    "lastChecked": "2026-09-13",
+    "lastSeen": "2026-09-13",
     "status": "needs_review",
     "tags": [
       "science & engineering",
@@ -1437,10 +1437,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-09-12T09:00:00-04:00",
+    "startDate": "2026-09-13T09:00:00-04:00",
     "sourceUrl": "https://form.jotform.com/262074762834260",
-    "lastChecked": "2026-09-12",
-    "lastSeen": "2026-09-12",
+    "lastChecked": "2026-09-13",
+    "lastSeen": "2026-09-13",
     "status": "needs_review",
     "tags": [
       "science & engineering",
@@ -1467,10 +1467,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-09-12T09:00:00-04:00",
+    "startDate": "2026-09-13T09:00:00-04:00",
     "sourceUrl": "https://forms.gle/bDWdmyHJ4pVqsxpy5",
-    "lastChecked": "2026-09-12",
-    "lastSeen": "2026-09-12",
+    "lastChecked": "2026-09-13",
+    "lastSeen": "2026-09-13",
     "status": "needs_review",
     "tags": [
       "science & engineering",
@@ -1497,10 +1497,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-09-12T09:00:00-04:00",
+    "startDate": "2026-09-13T09:00:00-04:00",
     "sourceUrl": "https://engineering.ontariotechu.ca/outreach/about-us/volunteer.php",
-    "lastChecked": "2026-09-12",
-    "lastSeen": "2026-09-12",
+    "lastChecked": "2026-09-13",
+    "lastSeen": "2026-09-13",
     "status": "needs_review",
     "tags": [
       "volunteer hours"
