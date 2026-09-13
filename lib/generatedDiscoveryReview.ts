@@ -4,8 +4,8 @@ export const generatedDiscoverySummary = {
   "mode": "deterministic",
   "sourcesChecked": 30,
   "candidatesFound": 277,
-  "newCandidates": 51,
-  "duplicatesSkipped": 44,
+  "newCandidates": 49,
+  "duplicatesSkipped": 37,
   "warnings": [
     "Could not check Credit Valley Conservation youth opportunities: 403 Forbidden.",
     "Could not check Volunteer MBC youth opportunities: 403 Forbidden.",
@@ -14,7 +14,7 @@ export const generatedDiscoverySummary = {
   ],
   "sourceHealth": {
     "schemaVersion": 1,
-    "generatedAt": "2026-09-13T16:20:06.540Z",
+    "generatedAt": "2026-09-13T20:52:40.945Z",
     "status": "healthy",
     "failureReasons": [],
     "sourcesChecked": 30,
@@ -27,7 +27,7 @@ export const generatedDiscoverySummary = {
 
 export const generatedDiscoveryReviewCandidates = [
   {
-    "id": "discovered-tpl-events-volunteer-set-phasers-to-celebrate-60-years-of-star--fe274995835f",
+    "id": "discovered-tpl-events-volunteer-set-phasers-to-celebrate-60-years-of-star--4ed8324a47c8",
     "title": "Set Phasers to Celebrate! 60 Years of Star Trek: A Merril Collection Exhibit",
     "organization": "Toronto Public Library",
     "description": "Beam yourself up to the Merril Collection of Science Fiction, Speculation and Fantasy and boldly embark on a 60-year journey that celebrates all things Star Trek! For decades, the original television series turned global franchise has inspired generations of fans, artists, and scientists alike. Visitors can explore voyages, characters, and new frontiers through our collection highlights such as novels, RPGs, fanzines, original artwork and more! This exhibit can be viewed during the Merril Collection's regular open hours.",
@@ -43,7 +43,7 @@ export const generatedDiscoveryReviewCandidates = [
     "deadline": "2026-08-17T09:00:00-04:00",
     "startDate": "2026-08-17T09:00:00-04:00",
     "endDate": "2026-11-01T09:00:00-04:00",
-    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6a5299330e562e2800993112",
+    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6a875a463b6c71003e5a39be",
     "lastChecked": "2026-09-13",
     "lastSeen": "2026-09-13",
     "status": "active",
@@ -55,7 +55,7 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Toronto Public Library youth volunteer events"
   },
   {
-    "id": "discovered-markham-events-volunteer-reading-to-success-3a2d7fab6bdd",
+    "id": "discovered-markham-events-volunteer-reading-to-success-cf445073d81b",
     "title": "Reading to Success",
     "organization": "Markham Public Library",
     "description": "Read a story with us! Reading to Success is a volunteer facilitated reading program established to motivate children to read regularly. YPAM in partnership with the Markham Public Library provides this weekly literacy program, where volunteers read grade specific books for children in Junior Kindergarten, Senior Kindergarten, Grade 1, Grade 2 and IEP kids. Make Reading to Success part of your child's reading habit and build a love of reading together. To register, please visit: https://www.ypam.ca/reading *Please note that through registering, you are giving YPAM your information.",
@@ -71,36 +71,7 @@ export const generatedDiscoveryReviewCandidates = [
     "deadline": "2026-09-14T18:00:00-04:00",
     "startDate": "2026-09-14T18:00:00-04:00",
     "endDate": "2026-09-14T19:30:00-04:00",
-    "sourceUrl": "https://markham.bibliocommons.com/events/6a725b26cca66c2f00a83966",
-    "lastChecked": "2026-09-13",
-    "lastSeen": "2026-09-13",
-    "status": "active",
-    "tags": [
-      "volunteer hours",
-      "volunteer"
-    ],
-    "confidence": "high",
-    "reviewReasons": [],
-    "sourceName": "Markham Public Library youth volunteer events"
-  },
-  {
-    "id": "discovered-markham-events-volunteer-knitting-circle-4306cc9343d9",
-    "title": "Knitting Circle",
-    "organization": "Markham Public Library",
-    "description": "Do you like to knit or crochet? Come join our knitting circle! This knitting circle is run in partnership with Casting Off the Cold, which is a volunteer organization that collects hand knitted and crocheted blankets, hats, scarves, mitts, baby clothes and similar items to donate to charities in York Region that support people in need in our community. We have been donating annually since 2006. Our group members knit at home, and we like to meet once a month to show and collect our completed projects which are donated in the autumn. Any interested knitter or crocheter is welcome to join us. We have a Facebook page: casting off the cold, and a blog: castingoffthecold.blogspot.ca with more information and contact details. Please note: this is not a knitting class.",
-    "city": "Markham",
-    "region": "York",
-    "ageMin": 1,
-    "ageMax": 18,
-    "category": "Volunteer Hours",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "deadline": "2026-09-13T13:00:00-04:00",
-    "startDate": "2026-09-13T13:00:00-04:00",
-    "endDate": "2026-09-13T15:00:00-04:00",
-    "sourceUrl": "https://markham.bibliocommons.com/events/6a61080a7b79214226aa68c6",
+    "sourceUrl": "https://markham.bibliocommons.com/events/6a6108979943bdf31ea0c595",
     "lastChecked": "2026-09-13",
     "lastSeen": "2026-09-13",
     "status": "active",
@@ -221,35 +192,6 @@ export const generatedDiscoveryReviewCandidates = [
     "tags": [
       "makerspace & fabrication",
       "maker"
-    ],
-    "confidence": "high",
-    "reviewReasons": [],
-    "sourceName": "Aurora Public Library STEM events"
-  },
-  {
-    "id": "discovered-aurora-library-stem-intro-to-coding-for-kids-b4a293e8015d",
-    "title": "Intro to Coding for Kids",
-    "organization": "Aurora Public Library",
-    "description": "Join us the APL this september to learn the exciting world of coding through Scratch ! In this beginner-friendly program, participants will learn fundamental coding concepts while creating their very own video game: Brick Breaker . Through hands-on activities, participants will explore programming concepts such as sequences, loops, conditionals, variables and events. They’ll put these skills into practice by designing game elements, programming player controls, creating movement and collisions, keeping score, and adding challenges to their game. By the end of the program, participants will have a playable Brick Breaker game that they designed and coded themselves, along with a strong foundation of the building blocks of programming. No prior coding experience is required—just curiosity, cr",
-    "city": "Aurora",
-    "region": "York",
-    "ageMin": 6,
-    "ageMax": 12,
-    "category": "Coding & Robotics",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "deadline": "2026-09-13T14:00:00-04:00",
-    "startDate": "2026-09-13T14:00:00-04:00",
-    "endDate": "2026-09-13T16:00:00-04:00",
-    "sourceUrl": "https://aurora.bibliocommons.com/events/6a872e35db86e4004d867aca",
-    "lastChecked": "2026-09-13",
-    "lastSeen": "2026-09-13",
-    "status": "active",
-    "tags": [
-      "coding & robotics",
-      "coding"
     ],
     "confidence": "high",
     "reviewReasons": [],
