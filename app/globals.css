@@ -90,38 +90,42 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-/* Final product polish pass */
+/* Apple-inspired system styling */
 :root {
-  --app-font-body: "Poppins", "Manrope", "Nunito Sans", "Avenir Next", "Avenir", "Segoe UI", sans-serif;
-  --app-font-display: "Sora", "Manrope", "Poppins", "Segoe UI", sans-serif;
-  --section-max: min(1120px, calc(100% - 32px));
-  --section-line-height: 1.6;
-  --polish-shadow-soft: 0 16px 34px rgba(5, 57, 92, 0.08), 0 8px 18px rgba(0, 0, 0, 0.03);
+  --app-font-body: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+  --app-font-display: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+  --section-max: min(1120px, calc(100% - 28px));
+  --section-content-gutter: clamp(16px, 3vw, 44px);
+  --apple-shadow-soft: 0 18px 38px color-mix(in srgb, #0b2b48 12%, transparent);
+  --apple-shadow-strong: 0 20px 46px color-mix(in srgb, #0b2b48 16%, transparent);
+  --apple-border-strong: color-mix(in srgb, var(--line) 62%, transparent);
 }
 
 :root[data-theme="dark"] {
-  --polish-shadow-soft: 0 18px 38px rgba(0, 0, 0, 0.58), 0 10px 18px rgba(0, 0, 0, 0.35);
+  --apple-shadow-soft: 0 18px 38px color-mix(in srgb, #000 50%, transparent);
+  --apple-shadow-strong: 0 24px 48px color-mix(in srgb, #000 64%, transparent);
+  --apple-border-strong: color-mix(in srgb, var(--line) 74%, transparent);
 }
 
 body {
   font-family: var(--app-font-body);
-  line-height: var(--section-line-height);
+  line-height: 1.55;
 }
 
 .site-shell {
   background:
-    radial-gradient(circle at 8% 10%, color-mix(in srgb, var(--blue) 16%, transparent) 0 280px, transparent 56%),
-    radial-gradient(circle at 93% 14%, color-mix(in srgb, var(--mint) 14%, transparent) 0 220px, transparent 52%),
-    radial-gradient(circle at 50% 102%, color-mix(in srgb, var(--yellow) 22%, transparent) 0 380px, transparent 44%),
+    linear-gradient(180deg, color-mix(in srgb, var(--surface) 94%, var(--surface-strong)) 0%, var(--bg) 100%),
     var(--bg);
 }
 
 .site-shell::before {
-  opacity: 0.12;
+  display: none;
 }
 
 .workspace-band {
   width: var(--section-max);
+  padding-left: var(--section-content-gutter);
+  padding-right: var(--section-content-gutter);
 }
 
 .site-menu-wrap,
@@ -139,69 +143,79 @@ body {
 }
 
 .topbar {
-  border-radius: 20px;
-  backdrop-filter: blur(20px) saturate(1.08);
-  box-shadow: 0 8px 0 color-mix(in srgb, var(--line) 26%, transparent), 0 26px 42px color-mix(in srgb, var(--blue) 16%, transparent);
+  top: 10px;
+  width: min(var(--section-max), 100%);
+  border: 1px solid var(--apple-border-strong);
+  border-radius: 18px;
+  background: color-mix(in srgb, var(--surface) 86%, var(--surface-glass) 14%);
+  box-shadow: var(--apple-shadow-soft);
+  backdrop-filter: saturate(1.4) blur(16px);
 }
 
 .topbar.with-nav .header-actions,
 .topbar.home-topbar .header-actions {
-  column-gap: 10px;
+  column-gap: 8px;
 }
 
 .brand-mark {
-  gap: 12px;
+  gap: 10px;
 }
 
 .brand-mark strong {
-  letter-spacing: 0.02em;
+  letter-spacing: -0.01em;
   text-transform: none;
 }
 
 .primary-nav button {
   font-family: var(--app-font-display);
-  letter-spacing: 0.01em;
+  font-weight: 590;
+  color: color-mix(in srgb, var(--ink) 86%, var(--muted));
 }
 
 .hero-card-shell {
-  gap: 14px;
+  gap: 11px;
 }
 
 .hero-card-shell h1 {
   font-family: var(--app-font-display);
-  letter-spacing: -0.014em;
-  font-weight: 800;
-}
-
-.hero-search-form {
-  max-width: 840px;
-  border-radius: 999px;
+  font-size: clamp(1.95rem, 6vw, 3.8rem);
+  letter-spacing: -0.028em;
+  line-height: 1.01;
+  font-weight: 740;
 }
 
 .hero-actions {
-  justify-content: center;
-  width: min(900px, 100%);
+  gap: 10px;
 }
 
 .hero-actions .primary-button,
 .hero-actions .soft-button {
-  min-height: 46px;
+  min-height: 44px;
 }
 
-.hero-actions .primary-button {
-  gap: 10px;
-  padding-inline: 18px;
-  box-shadow:
-    0 0 0 1px color-mix(in srgb, var(--blue-strong) 28%, transparent),
-    0 14px 28px color-mix(in srgb, var(--blue) 22%, transparent);
+.hero-card-shell h1,
+.hero-card-shell > p {
+  text-wrap: balance;
 }
 
-.hero-status-card {
-  width: min(900px, 100%);
-  margin-inline: auto;
-  background:
-    linear-gradient(145deg, color-mix(in srgb, var(--mint-soft) 88%, var(--surface)), color-mix(in srgb, var(--blue-soft) 72%, var(--surface))),
-    var(--surface);
+.hero-status-card,
+.hero-copy p {
+  max-width: 880px;
+}
+
+.hero-search-form {
+  max-width: 840px;
+  width: min(840px, 100%);
+  border-radius: 14px;
+  border: 1px solid var(--apple-border-strong);
+  background: color-mix(in srgb, var(--surface) 92%, transparent);
+  padding-left: 10px;
+  padding-right: 4px;
+  box-shadow: none;
+}
+
+.hero-search-form input {
+  min-height: 38px;
 }
 
 .section-heading h2,
@@ -209,7 +223,8 @@ body {
 .detail-main h2,
 .results-toolbar h2 {
   font-family: var(--app-font-display);
-  font-weight: 830;
+  font-weight: 710;
+  letter-spacing: -0.014em;
 }
 
 .announcement-strip,
@@ -230,7 +245,10 @@ body {
 .auth-backdrop,
 .auth-notice,
 .auth-error {
-  box-shadow: var(--polish-shadow-soft);
+  border: 1px solid var(--apple-border-strong);
+  border-radius: 18px;
+  box-shadow: var(--apple-shadow-soft);
+  backdrop-filter: blur(18px);
 }
 
 .opportunity-card,
@@ -241,53 +259,40 @@ body {
 .project-background-card,
 .account-panel,
 .admin-panel {
-  border-width: 2px;
+  border-width: 1px;
 }
 
 .opportunity-card {
-  border-radius: 24px;
+  border-radius: 18px;
 }
 
 .opportunity-card h3 {
   font-family: var(--app-font-display);
   font-size: 1.08rem;
-  font-weight: 820;
+  font-weight: 650;
 }
 
-.card-kicker {
+.card-kicker,
+.chip,
+.pathway-card {
   border-radius: 999px;
 }
 
-.chip {
-  font-weight: 780;
-}
-
-.pathway-card {
-  border-radius: 22px;
-}
-
 .pathway-card svg {
-  width: 40px;
-  height: 40px;
-  border-radius: 18px;
-}
-
-.detail-facts {
-  border-radius: 24px;
+  width: 36px;
+  height: 36px;
+  border-radius: 14px;
 }
 
 .search-layout {
-  gap: 18px;
+  gap: 16px;
 }
 
 .cards-column {
   gap: 12px;
 }
 
-.results-toolbar {
-  align-items: center;
-}
-
+.results-toolbar,
 .results-actions {
   align-items: center;
 }
@@ -301,22 +306,32 @@ body {
 .oauth-button,
 .filter-toggle-button {
   font-family: var(--app-font-display);
-  letter-spacing: 0.01em;
+  border-radius: 12px;
 }
 
 .primary-button {
-  border-width: 2px;
+  border: 0;
+  background: linear-gradient(180deg, #0a84ff, #0065d6);
+  color: #ffffff;
+  font-weight: 690;
+  box-shadow: 0 12px 24px color-mix(in srgb, #005fcc 28%, transparent);
+}
+
+.soft-button {
+  border: 1px solid var(--line);
+  background: color-mix(in srgb, var(--surface) 90%, transparent);
+  color: var(--ink);
 }
 
 .account-dashboard-grid,
 .admin-dashboard-grid {
-  gap: 16px;
+  gap: 14px;
 }
 
 .account-dashboard-hero,
 .admin-dashboard-hero,
 .auth-header {
-  border-radius: 20px;
+  border-radius: 14px;
 }
 
 .auth-tabs {
@@ -330,8 +345,35 @@ body {
 }
 
 .legal-footer {
-  width: min(900px, calc(100% - clamp(20px, 5vw, 48px)));
+  width: min(940px, calc(100% - clamp(20px, 5vw, 48px)));
   max-width: 100%;
+}
+
+.hero-shell-glow {
+  display: none !important;
+}
+
+:where(
+  .selected-details-card,
+  .metric,
+  .pathway-card,
+  .mini-form,
+  .community-callout,
+  .announcement-strip,
+  .announcement-item,
+  .source-panel,
+  .map-shell,
+  .account-panel,
+  .admin-panel,
+  .saved-list a,
+  .source-list a
+) {
+  transform: translate3d(0, 0, 0);
+}
+
+.site-shell :is(.hero-card-shell, .results-panel, .filter-panel, .search-band, .pathway-card, .opportunity-card):hover,
+.site-shell :is(.hero-card-shell, .results-panel, .filter-panel, .search-band, .pathway-card, .opportunity-card):focus-visible {
+  transform: none;
 }
 
 @media (max-width: 1080px) {
@@ -347,7 +389,8 @@ body {
 
 @media (max-width: 760px) {
   .topbar {
-    border-radius: 0 0 20px 20px;
+    width: calc(100% - 16px);
+    border-radius: 16px;
   }
 
   .workspace-band {
@@ -355,7 +398,7 @@ body {
   }
 
   .hero-card-shell {
-    text-align: center;
+    text-align: left;
   }
 
   .hero-card-shell h1 {
