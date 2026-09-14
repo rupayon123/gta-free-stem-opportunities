@@ -13705,7 +13705,7 @@ body {
 .storybook-mark-pin,
 .storybook-mark-main,
 .storybook-mark-sub,
-.storyboard-mark-doodles,
+.storybook-mark-doodles,
 .storybook-mark-doodles span {
   text-shadow: none !important;
   box-shadow: none !important;
@@ -13735,4 +13735,44 @@ body {
   border-width: 1px !important;
   border-style: solid !important;
   border-color: var(--apple-outline) !important;
+}
+
+/* Last-pass strip of legacy animated/illustrative brand treatments. */
+.storybook-mark:is(:hover, :focus-visible, :active) .storybook-mark-card,
+.hero-logo:hover,
+.hero-logo:focus-visible,
+.brand-icon:hover,
+.brand-mark:hover .storybook-mark-card,
+.seo-logo-link:hover .storybook-mark-image,
+.story-content .storybook-mark-image,
+.source-scout-radar::before,
+.source-scout-radar::after {
+  animation: none !important;
+  transform: none !important;
+  box-shadow: none !important;
+  filter: none !important;
+}
+
+.source-scout-radar::before,
+.source-scout-radar::after,
+.hero-shell-glow,
+.hero-glow,
+.hero-grid::after,
+.hero-grid::before,
+.back-to-top-button {
+  animation: none !important;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+.story-shadow-band,
+.story-gradient-strip,
+.badge-sweep,
+.bubble-pop,
+.scout-spin,
+.friendly-wiggle,
+.hero-logo-float,
+.storybook-giggle,
+.real-logo-giggle {
+  animation-name: none !important;
 }
