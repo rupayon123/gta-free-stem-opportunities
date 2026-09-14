@@ -11754,6 +11754,36 @@ textarea:focus-visible,
   background: color-mix(in srgb, #007aff 24%, transparent);
 }
 
+.site-shell::before,
+.site-shell::after,
+.hero-shell-glow,
+.hero-grid::before,
+.hero-grid::after,
+.landing-hero::before,
+.landing-hero::after,
+.search-band::before,
+.search-band::after,
+.opportunity-grid::before,
+.opportunity-grid::after,
+.section-shell::before,
+.section-shell::after,
+.filter-panel::before,
+.filter-panel::after,
+.hero-card-shell::before,
+.hero-card-shell::after,
+.announcement-strip::before,
+.announcement-strip::after,
+.community-callout::before,
+.community-callout::after,
+.support-card::before,
+.support-card::after,
+.pathway-card::before,
+.pathway-card::after {
+  display: none !important;
+  content: none !important;
+  background-image: none !important;
+}
+
 @media (max-width: 820px) {
   .topbar,
   .hero-card-shell,
