@@ -86,8 +86,299 @@ body {
   background-size: 34px 34px, auto, auto, auto, auto, auto;
   color: var(--ink);
   font-family:
-    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    "Poppins", "Manrope", "Nunito Sans", "Avenir Next", "Avenir", "Segoe UI", sans-serif;
   text-rendering: optimizeLegibility;
+}
+
+/* Final product polish pass */
+:root {
+  --app-font-body: "Poppins", "Manrope", "Nunito Sans", "Avenir Next", "Avenir", "Segoe UI", sans-serif;
+  --app-font-display: "Sora", "Manrope", "Poppins", "Segoe UI", sans-serif;
+  --section-max: min(1120px, calc(100% - 32px));
+  --section-line-height: 1.6;
+  --polish-shadow-soft: 0 16px 34px rgba(5, 57, 92, 0.08), 0 8px 18px rgba(0, 0, 0, 0.03);
+}
+
+:root[data-theme="dark"] {
+  --polish-shadow-soft: 0 18px 38px rgba(0, 0, 0, 0.58), 0 10px 18px rgba(0, 0, 0, 0.35);
+}
+
+body {
+  font-family: var(--app-font-body);
+  line-height: var(--section-line-height);
+}
+
+.site-shell {
+  background:
+    radial-gradient(circle at 8% 10%, color-mix(in srgb, var(--blue) 16%, transparent) 0 280px, transparent 56%),
+    radial-gradient(circle at 93% 14%, color-mix(in srgb, var(--mint) 14%, transparent) 0 220px, transparent 52%),
+    radial-gradient(circle at 50% 102%, color-mix(in srgb, var(--yellow) 22%, transparent) 0 380px, transparent 44%),
+    var(--bg);
+}
+
+.site-shell::before {
+  opacity: 0.12;
+}
+
+.workspace-band {
+  width: var(--section-max);
+}
+
+.site-menu-wrap,
+.hero-card-shell,
+.hero-copy,
+.search-layout,
+.section-heading,
+.pathway-grid,
+.contribute-grid,
+.support-grid,
+.account-dashboard-grid,
+.admin-dashboard-grid,
+.legal-footer {
+  width: min(100%, var(--section-max));
+}
+
+.topbar {
+  border-radius: 20px;
+  backdrop-filter: blur(20px) saturate(1.08);
+  box-shadow: 0 8px 0 color-mix(in srgb, var(--line) 26%, transparent), 0 26px 42px color-mix(in srgb, var(--blue) 16%, transparent);
+}
+
+.topbar.with-nav .header-actions,
+.topbar.home-topbar .header-actions {
+  column-gap: 10px;
+}
+
+.brand-mark {
+  gap: 12px;
+}
+
+.brand-mark strong {
+  letter-spacing: 0.02em;
+  text-transform: none;
+}
+
+.primary-nav button {
+  font-family: var(--app-font-display);
+  letter-spacing: 0.01em;
+}
+
+.hero-card-shell {
+  gap: 14px;
+}
+
+.hero-card-shell h1 {
+  font-family: var(--app-font-display);
+  letter-spacing: -0.014em;
+  font-weight: 800;
+}
+
+.hero-search-form {
+  max-width: 840px;
+  border-radius: 999px;
+}
+
+.hero-actions {
+  justify-content: center;
+  width: min(900px, 100%);
+}
+
+.hero-actions .primary-button,
+.hero-actions .soft-button {
+  min-height: 46px;
+}
+
+.hero-actions .primary-button {
+  gap: 10px;
+  padding-inline: 18px;
+  box-shadow:
+    0 0 0 1px color-mix(in srgb, var(--blue-strong) 28%, transparent),
+    0 14px 28px color-mix(in srgb, var(--blue) 22%, transparent);
+}
+
+.hero-status-card {
+  width: min(900px, 100%);
+  margin-inline: auto;
+  background:
+    linear-gradient(145deg, color-mix(in srgb, var(--mint-soft) 88%, var(--surface)), color-mix(in srgb, var(--blue-soft) 72%, var(--surface))),
+    var(--surface);
+}
+
+.section-heading h2,
+.hero-card-shell h1,
+.detail-main h2,
+.results-toolbar h2 {
+  font-family: var(--app-font-display);
+  font-weight: 830;
+}
+
+.announcement-strip,
+.filter-panel,
+.results-panel,
+.source-panel,
+.detail-facts,
+.pathway-card,
+.mini-form,
+.community-callout,
+.support-card,
+.project-background-card,
+.opportunity-card,
+.account-panel,
+.admin-panel,
+.account-dashboard-modal,
+.auth-modal,
+.auth-backdrop,
+.auth-notice,
+.auth-error {
+  box-shadow: var(--polish-shadow-soft);
+}
+
+.opportunity-card,
+.pathway-card,
+.mini-form,
+.support-card,
+.community-callout,
+.project-background-card,
+.account-panel,
+.admin-panel {
+  border-width: 2px;
+}
+
+.opportunity-card {
+  border-radius: 24px;
+}
+
+.opportunity-card h3 {
+  font-family: var(--app-font-display);
+  font-size: 1.08rem;
+  font-weight: 820;
+}
+
+.card-kicker {
+  border-radius: 999px;
+}
+
+.chip {
+  font-weight: 780;
+}
+
+.pathway-card {
+  border-radius: 22px;
+}
+
+.pathway-card svg {
+  width: 40px;
+  height: 40px;
+  border-radius: 18px;
+}
+
+.detail-facts {
+  border-radius: 24px;
+}
+
+.search-layout {
+  gap: 18px;
+}
+
+.cards-column {
+  gap: 12px;
+}
+
+.results-toolbar {
+  align-items: center;
+}
+
+.results-actions {
+  align-items: center;
+}
+
+.primary-button,
+.soft-button,
+.icon-text-button,
+.toolbar-filter-button,
+.account-button,
+.auth-tabs button,
+.oauth-button,
+.filter-toggle-button {
+  font-family: var(--app-font-display);
+  letter-spacing: 0.01em;
+}
+
+.primary-button {
+  border-width: 2px;
+}
+
+.account-dashboard-grid,
+.admin-dashboard-grid {
+  gap: 16px;
+}
+
+.account-dashboard-hero,
+.admin-dashboard-hero,
+.auth-header {
+  border-radius: 20px;
+}
+
+.auth-tabs {
+  border-radius: 999px;
+}
+
+.auth-modal,
+.account-dashboard-modal,
+.account-dashboard-hero {
+  max-height: min(900px, calc(100vh - 36px));
+}
+
+.legal-footer {
+  width: min(900px, calc(100% - clamp(20px, 5vw, 48px)));
+  max-width: 100%;
+}
+
+@media (max-width: 1080px) {
+  .workspace-band,
+  .search-layout,
+  .hero-copy,
+  .section-heading,
+  .support-grid,
+  .project-background-card {
+    width: min(100%, calc(100% - 12px));
+  }
+}
+
+@media (max-width: 760px) {
+  .topbar {
+    border-radius: 0 0 20px 20px;
+  }
+
+  .workspace-band {
+    padding-inline: 12px;
+  }
+
+  .hero-card-shell {
+    text-align: center;
+  }
+
+  .hero-card-shell h1 {
+    line-height: 1.08;
+  }
+
+  .hero-actions {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+
+  .results-toolbar {
+    display: block;
+  }
+
+  .results-toolbar > div:first-child {
+    margin-bottom: 12px;
+  }
+
+  .results-actions {
+    display: grid;
+    gap: 8px;
+  }
 }
 
 :root[data-theme="dark"] body {
