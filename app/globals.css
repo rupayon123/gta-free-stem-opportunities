@@ -11078,3 +11078,292 @@ body {
     --mark-width: clamp(130px, 48vw, 176px) !important;
   }
 }
+
+/* Final iOS-pass refinement: remove decorative excess and standardize surface language. */
+:root {
+  --ios-font-body: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+  --ios-font-display: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+  --ios-card-radius: 16px;
+  --ios-shadow-subtle: 0 10px 24px color-mix(in srgb, #000 10%, transparent);
+  --ios-shadow-hover: 0 14px 28px color-mix(in srgb, #000 15%, transparent);
+}
+
+:root[data-theme="light"] {
+  --ios-bg: #f2f2f7;
+  --ios-surface: #ffffff;
+  --ios-ink: #1d1d1f;
+  --ios-muted: #6e6e73;
+  --ios-line: color-mix(in srgb, #86868b 50%, transparent);
+  --bg: var(--ios-bg);
+  --surface: var(--ios-surface);
+  --surface-strong: #fff;
+  --ink: var(--ios-ink);
+  --muted: var(--ios-muted);
+  --line: var(--ios-line);
+  --blue: #007aff;
+  --blue-strong: #005ec4;
+  --blue-soft: #e6f2ff;
+  --mint-soft: #e4fff1;
+  --yellow-soft: #fff9cf;
+  --lavender-soft: #eee8ff;
+  --coral-soft: #ffe1e8;
+}
+
+:root[data-theme="dark"] {
+  --ios-bg: #000000;
+  --ios-surface: #1c1c1e;
+  --ios-ink: #f5f5f7;
+  --ios-muted: #b3b3b8;
+  --ios-line: color-mix(in srgb, #3a3a3c 76%, transparent);
+  --bg: var(--ios-bg);
+  --surface: var(--ios-surface);
+  --surface-strong: #2c2c2e;
+  --ink: var(--ios-ink);
+  --muted: var(--ios-muted);
+  --line: var(--ios-line);
+  --blue: #0a84ff;
+  --blue-strong: #cde3ff;
+  --blue-soft: #0d2a47;
+  --mint-soft: #14372f;
+  --yellow-soft: #4d3d12;
+  --lavender-soft: #352f6e;
+  --coral-soft: #5a2f46;
+}
+
+body {
+  font-family: var(--ios-font-body) !important;
+  background: var(--bg) !important;
+  background-image: linear-gradient(180deg, color-mix(in srgb, var(--surface) 92%, transparent) 0%, var(--bg) 42%, var(--bg) 100%) !important;
+}
+
+.site-shell {
+  background: transparent !important;
+}
+
+.site-shell::before,
+.hero-shell-glow,
+.hero-grid::after,
+.landing-hero::after {
+  display: none !important;
+}
+
+.topbar,
+.hero-card-shell,
+.search-band,
+.search-layout,
+.filter-panel,
+.results-panel,
+.opportunity-card,
+.pathway-card,
+.community-callout,
+.support-card,
+.project-background-card,
+.account-panel,
+.admin-panel,
+.source-panel,
+.auth-modal,
+.auth-backdrop,
+.hero-copy,
+.announcement-strip,
+.account-dashboard-hero,
+.admin-dashboard-hero {
+  border: 1px solid var(--line) !important;
+  border-radius: var(--ios-card-radius) !important;
+  box-shadow: var(--ios-shadow-subtle) !important;
+  background: color-mix(in srgb, var(--surface) 96%, transparent) !important;
+  backdrop-filter: blur(20px);
+}
+
+.topbar {
+  width: min(var(--section-max), calc(100% - 20px));
+  border-radius: 999px !important;
+  top: 10px;
+  background: color-mix(in srgb, var(--surface) 94%, var(--bg) 6%) !important;
+  box-shadow: 0 12px 24px color-mix(in srgb, #000 12%, transparent) !important;
+}
+
+.hero-card-shell {
+  padding: clamp(18px, 3.8vw, 32px) !important;
+  gap: 10px !important;
+}
+
+.hero-card-shell h1,
+.section-heading h2,
+.results-toolbar h2,
+.detail-main h2 {
+  font-family: var(--ios-font-display);
+  letter-spacing: -0.02em;
+}
+
+.hero-card-shell h1 {
+  max-width: 18ch;
+}
+
+.hero-card-shell > p,
+.hero-copy p,
+.hero-status-copy p,
+.card-main p,
+.detail-summary,
+.support-card p,
+.project-background-card p {
+  max-width: 74ch;
+}
+
+.hero-search-form,
+.search-band .compact-select,
+.theme-toggle,
+.toolbar-controls {
+  border-radius: 999px !important;
+  border: 1px solid var(--line) !important;
+  background: color-mix(in srgb, var(--surface) 94%, transparent) !important;
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--bg) 56%, var(--line));
+}
+
+.hero-search-form {
+  max-width: min(860px, 100%);
+  padding: 6px 8px;
+  gap: 6px;
+}
+
+.hero-search-form input,
+.hero-search-form button,
+.hero-search-form select {
+  border-radius: 10px !important;
+  border: 0;
+}
+
+.primary-button,
+.soft-button,
+.icon-text-button,
+.toolbar-filter-button,
+.auth-tabs button,
+.oauth-button,
+.filter-toggle-button {
+  min-height: 40px !important;
+  border-radius: 10px !important;
+  font-family: var(--ios-font-display);
+}
+
+.primary-button {
+  background: linear-gradient(180deg, #007aff, #0064d3) !important;
+  color: #fff !important;
+  border: 0 !important;
+  box-shadow: 0 10px 20px color-mix(in srgb, #0064d3 30%, transparent);
+}
+
+.soft-button {
+  border: 1px solid var(--line) !important;
+  background: color-mix(in srgb, var(--surface) 92%, transparent) !important;
+}
+
+.hero-actions {
+  gap: 8px;
+  max-width: min(590px, 100%);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+}
+
+.hero-actions :is(.primary-button, .soft-button) {
+  min-height: 38px !important;
+}
+
+.opportunity-card,
+.pathway-card,
+.community-callout,
+.account-panel,
+.admin-panel,
+.source-panel,
+.detail-facts,
+.support-card,
+.project-background-card {
+  background: color-mix(in srgb, var(--surface) 94%, transparent) !important;
+}
+
+.opportunity-card::before,
+.opportunity-card::after,
+.search-chip::after,
+.chip::after {
+  content: none !important;
+}
+
+.opportunity-card:nth-child(4n + 1),
+.opportunity-card:nth-child(4n + 2),
+.opportunity-card:nth-child(4n + 3),
+.opportunity-card:nth-child(4n + 4) {
+  background: color-mix(in srgb, var(--surface) 94%, transparent) !important;
+}
+
+.opportunity-card.selected {
+  border-color: var(--blue) !important;
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--blue) 28%, transparent) !important;
+}
+
+.opportunity-card:hover,
+.pathway-card:hover,
+.community-callout:hover,
+.opportunity-card:focus-visible,
+.pathway-card:focus-visible {
+  transform: translateY(-1px);
+  box-shadow: var(--ios-shadow-hover) !important;
+}
+
+.beta-pill,
+.chip {
+  border-radius: 999px !important;
+  background: color-mix(in srgb, var(--surface) 88%, transparent) !important;
+  border: 1px solid color-mix(in srgb, var(--line) 66%, transparent) !important;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+.hero-search-form:focus-within {
+  outline: none !important;
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--blue) 30%, transparent) !important;
+}
+
+* {
+  animation-duration: 260ms;
+  transition-duration: 180ms;
+}
+
+.hero-card-shell .storybook-mark-image,
+.brand-mark .storybook-mark-card,
+.hero-storybook-mark .storybook-mark-image,
+.hero-logo {
+  animation: none !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+
+@media (max-width: 820px) {
+  .topbar,
+  .hero-card-shell,
+  .opportunity-card,
+  .search-band,
+  .workspace-band,
+  .search-layout,
+  .pathway-grid,
+  .support-grid {
+    width: min(100%, calc(100% - 14px));
+  }
+
+  .hero-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-card-shell h1 {
+    font-size: clamp(1.9rem, 7.8vw, 2.7rem);
+    max-width: 100%;
+  }
+}
