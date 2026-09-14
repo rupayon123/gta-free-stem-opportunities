@@ -14368,3 +14368,156 @@ body {
 .project-background-card {
   backdrop-filter: blur(16px) saturate(1.1) !important;
 }
+
+/* Final polish pass: remove overly decorative surfaces and align with clean Apple proportions. */
+.primary-button,
+.soft-button,
+.icon-text-button,
+.toolbar-filter-button,
+.research-refresh-button,
+.oauth-button,
+.primary-nav button,
+.theme-toggle button,
+.segmented button,
+.source-scout-refresh,
+.account-button,
+.account-chip button,
+.compact-select,
+.theme-toggle,
+.toolbar-controls,
+.account-chip,
+.account-chip-main {
+  border-radius: 12px !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+  border-color: color-mix(in srgb, var(--line) 72%, transparent) !important;
+  box-shadow: 0 10px 20px color-mix(in srgb, #09284a 6%, transparent) !important;
+  backdrop-filter: blur(14px) !important;
+}
+
+.primary-button,
+.soft-button,
+.icon-text-button,
+.primary-nav button,
+.toolbar-controls button,
+.theme-toggle button,
+.segmented button {
+  min-height: var(--gta-apple-control-height) !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.004em !important;
+}
+
+.toolbar-controls button,
+.theme-toggle button,
+.segmented button,
+.compact-select select,
+.account-chip button {
+  min-height: 38px !important;
+}
+
+.home-shell,
+.search-band,
+.announcement-strip,
+.section-heading,
+.search-band .opportunity-card,
+.search-band .pathway-card,
+.search-band .community-callout,
+.search-band .detail-summary,
+.search-band .source-panel,
+.search-band .detail-facts,
+.search-band .trust-banner {
+  border-radius: 18px !important;
+}
+
+.filter-modal,
+.results-panel,
+.selected-details-card,
+.map-shell,
+.mini-form,
+.account-panel,
+.admin-panel,
+.seo-content article,
+.announcement-strip {
+  border-width: 1px !important;
+  border-style: solid !important;
+  border-color: color-mix(in srgb, var(--line) 72%, transparent) !important;
+  border-radius: 18px !important;
+  box-shadow: var(--apple-shadow-soft) !important;
+}
+
+.hero-card-shell h1,
+.hero-card-shell > p,
+.seo-hero h1,
+.seo-hero p:not(.beta-pill) {
+  text-shadow: none !important;
+  color: color-mix(in srgb, var(--ink) 88%, var(--muted)) !important;
+  letter-spacing: -0.01em !important;
+}
+
+.hero-card-shell h1,
+.seo-hero h1 {
+  font-weight: 760 !important;
+}
+
+.hero-card-shell > p,
+.seo-hero p:not(.beta-pill) {
+  font-weight: 500 !important;
+}
+
+.hero-search-form,
+.search-band .search-layout,
+.search-band .results-panel,
+.search-band .selected-column,
+.search-band .detail-main,
+.home-shell .hero-card-shell,
+.account-dashboard-modal .workspace-band,
+.admin-dashboard-modal .workspace-band {
+  margin-inline: auto;
+}
+
+.hero-search-form,
+.home-shell .hero-search-form,
+.search-band .results-summary,
+.search-band .selected-details-card,
+.detail-main,
+.trust-banner,
+.source-list,
+.source-panel,
+.detail-facts {
+  border: 1px solid color-mix(in srgb, var(--line) 72%, transparent) !important;
+  border-radius: 16px !important;
+}
+
+:root {
+  --apple-card-line-soft: color-mix(in srgb, var(--line) 70%, transparent);
+}
+
+.home-shell .hero-search-form,
+.search-band .opportunity-card,
+.search-band .pathway-card,
+.search-band .community-callout,
+.account-dashboard-grid .account-panel,
+.admin-dashboard-grid .admin-panel {
+  border-color: var(--apple-card-line-soft) !important;
+}
+
+@media (max-width: 900px) {
+  .home-shell .hero-card-shell {
+    padding-inline: 0 !important;
+  }
+
+  .hero-search-form,
+  .home-shell .hero-actions,
+  .search-band .search-layout,
+  .search-band .results-toolbar,
+  .search-band .toolbar-controls,
+  .search-band .results-actions {
+    width: 100%;
+  }
+
+  .search-band .results-panel,
+  .search-band .selected-column,
+  .search-band .map-shell {
+    width: 100% !important;
+  }
+}
