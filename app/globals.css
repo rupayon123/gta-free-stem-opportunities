@@ -12377,6 +12377,7 @@ span,
 body {
   min-height: 100svh;
   background: var(--bg) !important;
+  background-image: none !important;
 }
 
 .card-kicker,
@@ -12430,11 +12431,18 @@ body {
 .section-shell,
 .topbar,
 .hero-card-shell,
+.hero-grid,
 .search-band,
 .search-layout,
 .filter-panel,
-.results-panel,
+.pathway-grid,
+.contribute-grid,
+.support-grid,
 .announcement-strip,
+.admin-dashboard-grid,
+.account-dashboard-grid,
+.hero-band,
+.results-panel,
 .opportunity-card,
 .pathway-card,
 .community-callout,
