@@ -14010,9 +14010,10 @@ body {
 }
 
 /* Apple-inspired production polish for home/search/profile.
-   One pass, no cluttered overrides, tuned for calm motion and readable rhythm. */
+   Tightened rhythm, cleaner cards, and fluid responsive width discipline. */
 :root {
-  --gta-apple-shell-gutter: clamp(14px, 3.4vw, 30px);
+  --gta-apple-shell-gutter: clamp(14px, 3.4vw, 28px);
+  --gta-apple-shell-max: 1120px;
   --gta-apple-stack-gap: clamp(10px, 1.8vw, 18px);
   --gta-apple-control-height: 44px;
   --gta-apple-radius-card: 18px;
@@ -14033,6 +14034,9 @@ body {
 .support-grid,
 .contribute-grid,
 .announcement-strip {
+  width: min(100%, calc(100% - (var(--gta-apple-shell-gutter) * 2)));
+  max-width: var(--gta-apple-shell-max);
+  margin-inline: auto;
   padding-inline: var(--gta-apple-shell-gutter);
 }
 
@@ -14070,9 +14074,28 @@ body {
 .detail-facts,
 .detail-main,
 .trust-banner,
-.source-list {
+.source-list,
+.pathway-card,
+.opportunity-card,
+.community-callout,
+.support-card,
+.project-background-card {
   padding: clamp(12px, 2.8vw, 18px);
   border-radius: var(--gta-apple-radius-card);
+}
+
+.hero-card-shell,
+.results-panel,
+.pathway-card,
+.opportunity-card,
+.community-callout,
+.support-card,
+.project-background-card,
+.detail-summary,
+.source-panel,
+.trust-banner {
+  border-color: color-mix(in srgb, var(--line) 82%, transparent);
+  box-shadow: var(--apple-shadow-soft);
 }
 
 .hero-search-form input,
@@ -14098,9 +14121,13 @@ body {
 .account-chip button,
 .toolbar-filter-button,
 .results-toolbar .toolbar-filter-button,
-.results-toolbar .research-refresh-button {
+.results-toolbar .research-refresh-button,
+.search-band .source-scout-mini,
+.search-band .source-scout-badge,
+.search-band .source-scout-refresh {
   min-height: var(--gta-apple-control-height);
   border-radius: 12px;
+  min-width: 0;
 }
 
 .toolbar-controls {
@@ -14207,6 +14234,21 @@ body {
 @media (max-width: 899px) {
   :root {
     --gta-apple-stack-gap: 12px;
+  }
+
+  .home-shell,
+  .search-band,
+  .workspace-band,
+  .section-heading,
+  .pathway-grid,
+  .contribute-grid,
+  .announcement-strip,
+  .account-dashboard-modal,
+  .admin-dashboard-modal,
+  .auth-modal,
+  .results-panel {
+    width: min(100%, calc(100% - 16px));
+    padding-inline: 10px;
   }
 
   .toolbar-controls {
