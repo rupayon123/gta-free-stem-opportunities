@@ -12577,3 +12577,68 @@ body {
   background-image: none !important;
   display: none !important;
 }
+
+/* Final hardening: neutralize remaining legacy search/result motifs not covered by prior pass. */
+.results-panel,
+.search-band .results-panel,
+.search-band .selected-details-card,
+.search-band .map-shell,
+.selected-details-card,
+.search-band .detail-facts,
+.search-band .source-panel,
+.search-band .trust-banner,
+.search-band .source-list a,
+.search-band .source-scout-mini,
+.search-band .source-scout-radar,
+.search-band .toolbar-filter-button,
+.search-band .research-refresh-button,
+.search-band .segmented,
+.search-band .detail-actions :is(.primary-button, .soft-button),
+.search-band .card-actions .soft-button,
+.search-band .results-actions .primary-button,
+.search-band .results-actions .soft-button,
+.search-band .account-consent-panel {
+  border-width: 1px !important;
+  border-style: solid !important;
+  border-radius: 18px !important;
+  border-color: color-mix(in srgb, var(--line) 70%, transparent) !important;
+  box-shadow: 0 10px 22px color-mix(in srgb, #000 8%, transparent) !important;
+  background: var(--site-surface) !important;
+  background-image: none !important;
+}
+
+.results-panel::before,
+.results-panel::after,
+.selected-details-card::before,
+.map-shell::before,
+.search-band .opportunity-card::before,
+.search-band .opportunity-card::after,
+.auth-modal::before,
+.segmented::before,
+.toolbar-controls::before,
+.source-scout-mini::before,
+.search-band .detail-actions :is(.primary-button, .soft-button)::before,
+.results-summary::before,
+.results-toolbar::before,
+.source-list a::after,
+.story-paper {
+  content: none !important;
+  display: none !important;
+}
+
+.toolbar-filter-button:is(:hover, :focus-visible),
+.research-refresh-button:is(:hover, :focus-visible),
+.segmented:is(:hover, :focus-visible),
+.search-band .toolbar-filter-button:is(:hover, :focus-visible, .motion-active),
+.search-band .research-refresh-button:is(:hover, :focus-visible, .motion-active),
+.search-band .segmented:is(:hover, :focus-visible, .motion-active) {
+  box-shadow: 0 10px 22px color-mix(in srgb, #000 8%, transparent) !important;
+  transform: translateY(-1px) !important;
+}
+
+.toolbar-filter-button,
+.research-refresh-button,
+.segmented {
+  border-width: 1px !important;
+  border-style: solid !important;
+}
