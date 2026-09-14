@@ -12642,3 +12642,76 @@ body {
   border-width: 1px !important;
   border-style: solid !important;
 }
+
+/* Global legacy-pattern kill-switch for non-search contexts too. */
+:root[data-theme="light"],
+:root[data-theme="dark"] {
+  --story-paper: color-mix(in srgb, var(--surface) 96%, transparent);
+  --story-paper-blue: color-mix(in srgb, var(--surface) 92%, var(--blue-soft));
+  --story-paper-yellow: color-mix(in srgb, var(--surface) 92%, var(--yellow-soft));
+  --story-shadow: color-mix(in srgb, #000 8%, transparent);
+}
+
+.opportunity-card:nth-child(4n + 1),
+.opportunity-card:nth-child(4n + 2),
+.opportunity-card:nth-child(4n + 3),
+.opportunity-card:nth-child(4n + 4),
+.pathway-card,
+.results-panel,
+.selected-details-card,
+.source-panel,
+.trust-banner,
+.community-callout,
+.detail-facts,
+.search-band .pathway-card,
+.search-band .community-callout,
+.search-band .selected-details-card,
+.search-band .source-list a,
+.search-band .map-shell {
+  background: var(--site-surface) !important;
+  background-image: none !important;
+  background-clip: padding-box !important;
+}
+
+.opportunity-card:nth-child(4n + 1),
+.opportunity-card:nth-child(4n + 2),
+.opportunity-card:nth-child(4n + 3),
+.opportunity-card:nth-child(4n + 4) {
+  box-shadow: 0 10px 22px color-mix(in srgb, #000 8%, transparent) !important;
+  border: 1px solid color-mix(in srgb, var(--line) 70%, transparent) !important;
+}
+
+.opportunity-card::before,
+.opportunity-card::after,
+.pathway-card::before,
+.pathway-card::after,
+.results-panel::before,
+.results-panel::after,
+.selected-details-card::before,
+.map-shell::before,
+.trust-banner::before,
+.detail-facts::before,
+.community-callout::before,
+.community-callout::after,
+.account-consent-panel::before,
+.account-consent-panel::after {
+  content: none !important;
+  background-image: none !important;
+  display: none !important;
+}
+
+.toolbar-filter-button:is(:hover, :focus-visible, .motion-active),
+.research-refresh-button:is(:hover, :focus-visible, .motion-active),
+.segmented:is(:hover, :focus-visible, .motion-active),
+.opportunity-card:is(:hover, :focus-visible, .motion-active),
+.pathway-card:is(:hover, :focus-visible, .motion-active),
+.community-callout:is(:hover, :focus-visible, .motion-active) {
+  transform: translateY(-1px) !important;
+  box-shadow: 0 10px 22px color-mix(in srgb, #000 8%, transparent) !important;
+}
+
+.hero-glow,
+.hero-logo,
+.hero-storybook-mark {
+  animation-name: none !important;
+}
