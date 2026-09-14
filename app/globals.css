@@ -14009,19 +14009,56 @@ body {
     transform var(--apple-timing) var(--apple-ease) !important;
 }
 
-/* Homepage, search, and profile flow polish for stronger iOS finish. */
-.home-shell {
-  --apple-content-gutter: clamp(12px, 3vw, 24px);
+/* Apple-inspired production polish for home/search/profile.
+   One pass, no cluttered overrides, tuned for calm motion and readable rhythm. */
+:root {
+  --gta-apple-shell-gutter: clamp(14px, 3.4vw, 30px);
+  --gta-apple-stack-gap: clamp(10px, 1.8vw, 18px);
+  --gta-apple-control-height: 44px;
+  --gta-apple-radius-card: 18px;
 }
 
-.hero-actions,
+.home-shell,
+.search-band,
+.hero-card-shell,
+.results-panel,
+.account-dashboard-modal,
+.admin-dashboard-modal,
+.auth-modal,
+.account-dashboard-grid,
+.admin-dashboard-grid,
+.workspace-band,
+.section-heading,
+.pathway-grid,
+.support-grid,
+.contribute-grid,
+.announcement-strip {
+  padding-inline: var(--gta-apple-shell-gutter);
+}
+
+.home-shell .landing-hero,
+.hero-copy,
+.search-layout,
+.results-layout,
+.detail-main,
+.section-heading,
+.pathway-grid,
+.contribute-grid,
+.account-dashboard-grid,
+.admin-dashboard-grid {
+  gap: var(--gta-apple-stack-gap);
+}
+
+.home-shell .hero-card-shell,
+.search-band .search-layout,
+.results-toolbar,
 .results-actions,
-.toolbar-controls,
 .detail-actions,
+.toolbar-controls,
 .auth-tabs,
-.card-actions,
-.mini-form {
-  gap: 10px !important;
+.mini-form,
+.card-actions {
+  gap: 10px;
 }
 
 .hero-search-form,
@@ -14034,7 +14071,8 @@ body {
 .detail-main,
 .trust-banner,
 .source-list {
-  padding: clamp(12px, 3vw, 18px) !important;
+  padding: clamp(12px, 2.8vw, 18px);
+  border-radius: var(--gta-apple-radius-card);
 }
 
 .hero-search-form input,
@@ -14043,39 +14081,46 @@ body {
 .search-band input,
 .search-band select,
 .search-band button,
-.results-toolbar .toolbar-filter-button,
-.results-toolbar .research-refresh-button,
+.toolbar-controls .toolbar-filter-button,
+.toolbar-controls .research-refresh-button,
 .detail-actions .primary-button,
 .detail-actions .soft-button,
 .card-actions .primary-button,
 .card-actions .soft-button,
-.detail-facts button,
 .admin-tool-form button.primary-button,
 .admin-tool-form button.soft-button,
 .account-dashboard-grid .primary-button,
-.admin-dashboard-grid .soft-button {
-  min-height: 44px !important;
-  border-radius: 12px !important;
+.admin-dashboard-grid .soft-button,
+.account-chip,
+.account-chip-main,
+.compact-status-select select,
+.compact-status-select button,
+.account-chip button,
+.toolbar-filter-button,
+.results-toolbar .toolbar-filter-button,
+.results-toolbar .research-refresh-button {
+  min-height: var(--gta-apple-control-height);
+  border-radius: 12px;
 }
 
 .toolbar-controls {
-  align-items: stretch !important;
+  align-items: stretch;
 }
 
 .toolbar-controls .toolbar-filter-button,
 .toolbar-controls .research-refresh-button,
 .toolbar-controls .segmented {
-  flex: 1 1 auto !important;
+  flex: 1 1 auto;
 }
 
 .results-toolbar {
-  align-items: flex-start !important;
-  flex-wrap: wrap !important;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .results-actions {
-  align-items: center !important;
-  justify-content: space-between !important;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .hero-copy > p,
@@ -14088,21 +14133,23 @@ body {
 .auth-inline-warning,
 .account-button-full,
 .panel-title,
-.toolbar-status {
-  color: color-mix(in srgb, var(--ink) 80%, var(--muted)) !important;
-  font-weight: 500 !important;
+.toolbar-status,
+.translation-note {
+  color: color-mix(in srgb, var(--ink) 82%, var(--muted));
+  font-weight: 510;
 }
 
 .card-kicker,
 .meta-line,
-.chip-row {
-  letter-spacing: -0.005em !important;
-  gap: 8px !important;
+.chip-row,
+.toolbar-status {
+  letter-spacing: -0.002em;
 }
 
 .chip-row {
-  display: flex !important;
-  flex-wrap: wrap !important;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 .account-dashboard-grid .account-panel,
@@ -14112,23 +14159,59 @@ body {
 .search-band .community-callout,
 .source-panel,
 .trust-banner {
-  margin: 0 !important;
+  margin: 0;
 }
 
 .account-dashboard-modal .account-button,
 .admin-dashboard-modal .soft-button,
 .admin-dashboard-grid .primary-button,
 .admin-dashboard-grid .soft-button {
-  width: 100% !important;
+  width: 100%;
 }
 
-.account-chip,
-.account-chip-main,
-.compact-status-select select,
-.compact-status-select button {
-  min-height: 40px !important;
+.search-band .results-panel,
+.search-band .map-shell,
+.results-toolbar,
+.search-band .search-layout {
+  row-gap: var(--gta-apple-stack-gap);
 }
 
-.hero-grid {
-  gap: clamp(14px, 3vw, 22px) !important;
+.home-shell .hero-grid,
+.search-band .search-layout,
+.account-dashboard-modal .workspace-band,
+.admin-dashboard-modal .workspace-band {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.search-band .results-toolbar,
+.search-band .cards-column,
+.search-band .selected-column {
+  width: 100%;
+}
+
+@media (min-width: 900px) {
+  .home-shell .hero-grid {
+    grid-template-columns: minmax(0, 1fr) minmax(280px, 540px);
+  }
+
+  .search-band .search-layout {
+    grid-template-columns: minmax(0, 1.6fr) minmax(280px, 1fr) minmax(240px, 1fr);
+  }
+
+  .results-toolbar,
+  .detail-main {
+    width: 100%;
+  }
+}
+
+@media (max-width: 899px) {
+  :root {
+    --gta-apple-stack-gap: 12px;
+  }
+
+  .toolbar-controls {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
 }
