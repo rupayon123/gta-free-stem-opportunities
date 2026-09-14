@@ -14008,3 +14008,127 @@ body {
   transition: border-color var(--apple-timing) var(--apple-ease),
     transform var(--apple-timing) var(--apple-ease) !important;
 }
+
+/* Homepage, search, and profile flow polish for stronger iOS finish. */
+.home-shell {
+  --apple-content-gutter: clamp(12px, 3vw, 24px);
+}
+
+.hero-actions,
+.results-actions,
+.toolbar-controls,
+.detail-actions,
+.auth-tabs,
+.card-actions,
+.mini-form {
+  gap: 10px !important;
+}
+
+.hero-search-form,
+.results-summary,
+.results-panel,
+.selected-details-card,
+.detail-summary,
+.source-panel,
+.detail-facts,
+.detail-main,
+.trust-banner,
+.source-list {
+  padding: clamp(12px, 3vw, 18px) !important;
+}
+
+.hero-search-form input,
+.hero-search-form select,
+.hero-search-form button,
+.search-band input,
+.search-band select,
+.search-band button,
+.results-toolbar .toolbar-filter-button,
+.results-toolbar .research-refresh-button,
+.detail-actions .primary-button,
+.detail-actions .soft-button,
+.card-actions .primary-button,
+.card-actions .soft-button,
+.detail-facts button,
+.admin-tool-form button.primary-button,
+.admin-tool-form button.soft-button,
+.account-dashboard-grid .primary-button,
+.admin-dashboard-grid .soft-button {
+  min-height: 44px !important;
+  border-radius: 12px !important;
+}
+
+.toolbar-controls {
+  align-items: stretch !important;
+}
+
+.toolbar-controls .toolbar-filter-button,
+.toolbar-controls .research-refresh-button,
+.toolbar-controls .segmented {
+  flex: 1 1 auto !important;
+}
+
+.results-toolbar {
+  align-items: flex-start !important;
+  flex-wrap: wrap !important;
+}
+
+.results-actions {
+  align-items: center !important;
+  justify-content: space-between !important;
+}
+
+.hero-copy > p,
+.seo-hero p,
+.detail-summary,
+.status-line,
+.account-note,
+.verified-line,
+.eyebrow,
+.auth-inline-warning,
+.account-button-full,
+.panel-title,
+.toolbar-status {
+  color: color-mix(in srgb, var(--ink) 80%, var(--muted)) !important;
+  font-weight: 500 !important;
+}
+
+.card-kicker,
+.meta-line,
+.chip-row {
+  letter-spacing: -0.005em !important;
+  gap: 8px !important;
+}
+
+.chip-row {
+  display: flex !important;
+  flex-wrap: wrap !important;
+}
+
+.account-dashboard-grid .account-panel,
+.admin-dashboard-grid .admin-panel,
+.search-band .opportunity-card,
+.search-band .pathway-card,
+.search-band .community-callout,
+.source-panel,
+.trust-banner {
+  margin: 0 !important;
+}
+
+.account-dashboard-modal .account-button,
+.admin-dashboard-modal .soft-button,
+.admin-dashboard-grid .primary-button,
+.admin-dashboard-grid .soft-button {
+  width: 100% !important;
+}
+
+.account-chip,
+.account-chip-main,
+.compact-status-select select,
+.compact-status-select button {
+  min-height: 40px !important;
+}
+
+.hero-grid {
+  gap: clamp(14px, 3vw, 22px) !important;
+}
