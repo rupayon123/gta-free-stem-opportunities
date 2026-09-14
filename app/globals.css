@@ -1,32 +1,32 @@
 :root {
   color-scheme: light;
-  --bg: #fff8e7;
-  --surface: #fffefa;
-  --surface-strong: #e5f9ff;
-  --surface-glass: color-mix(in srgb, #ffffff 84%, transparent);
-  --ink: #12375c;
-  --muted: #506b84;
-  --line: #79c9ea;
-  --blue: #29baff;
-  --blue-strong: #006fb6;
-  --blue-soft: #d8f5ff;
-  --mint: #39dcae;
-  --mint-soft: #dcfff4;
-  --yellow: #ffd94c;
-  --yellow-soft: #fff4be;
-  --coral: #ff6683;
-  --coral-soft: #ffe1e8;
-  --lavender: #a58cff;
-  --lavender-soft: #eee7ff;
-  --peach: #ffb36f;
-  --peach-soft: #fff0df;
+  --bg: #f3f6fb;
+  --surface: #f8fbff;
+  --surface-strong: #edf3fd;
+  --surface-glass: color-mix(in srgb, #ffffff 88%, transparent);
+  --ink: #0f2941;
+  --muted: #4f6175;
+  --line: #d4dfed;
+  --blue: #2b79da;
+  --blue-strong: #0d5dbf;
+  --blue-soft: #dce9ff;
+  --mint: #2fd3a5;
+  --mint-soft: #d8f5ea;
+  --yellow: #f0b429;
+  --yellow-soft: #fff1c6;
+  --coral: #f56f8c;
+  --coral-soft: #ffd7e0;
+  --lavender: #b09cff;
+  --lavender-soft: #efeaff;
+  --peach: #f9a25f;
+  --peach-soft: #ffead8;
   --panel-wash: color-mix(in srgb, var(--surface) 95%, transparent);
   --control-bg: color-mix(in srgb, #ffffff 84%, var(--blue-soft));
   --control-bg-strong: color-mix(in srgb, #ffffff 72%, var(--yellow-soft));
   --track-bg: color-mix(in srgb, var(--yellow) 54%, var(--mint) 28%);
-  --shadow: 0 24px 0 rgba(17, 70, 117, 0.08), 0 26px 64px rgba(13, 121, 171, 0.18), 0 8px 18px rgba(255, 102, 131, 0.11);
-  --shadow-soft: 0 10px 0 rgba(17, 70, 117, 0.06), 0 14px 30px rgba(13, 121, 171, 0.12);
-  --shadow-float: 0 18px 0 rgba(17, 70, 117, 0.07), 0 30px 74px rgba(0, 111, 182, 0.22), 0 10px 26px rgba(255, 102, 131, 0.18);
+  --shadow: 0 18px 34px rgba(18, 42, 86, 0.11);
+  --shadow-soft: 0 10px 24px rgba(20, 49, 94, 0.08);
+  --shadow-float: 0 18px 40px rgba(20, 50, 97, 0.16);
   --radius: 24px;
   --radius-sm: 16px;
   --focus: 0 0 0 4px rgba(255, 217, 76, 0.42), 0 0 0 7px rgba(41, 186, 255, 0.28);
@@ -60,9 +60,9 @@
   --control-bg: color-mix(in srgb, #102844 82%, var(--blue) 10%);
   --control-bg-strong: color-mix(in srgb, #153f62 78%, var(--yellow) 8%);
   --track-bg: color-mix(in srgb, var(--blue) 54%, var(--mint) 30%);
-  --shadow: 0 24px 0 rgba(0, 0, 0, 0.18), 0 32px 90px rgba(0, 0, 0, 0.46), 0 8px 22px rgba(84, 208, 255, 0.14);
-  --shadow-soft: 0 10px 0 rgba(0, 0, 0, 0.15), 0 16px 38px rgba(0, 0, 0, 0.3);
-  --shadow-float: 0 20px 0 rgba(0, 0, 0, 0.2), 0 38px 100px rgba(0, 0, 0, 0.52), 0 12px 32px rgba(97, 240, 191, 0.16);
+  --shadow: 0 18px 38px rgba(0, 0, 0, 0.30);
+  --shadow-soft: 0 10px 24px rgba(0, 0, 0, 0.22);
+  --shadow-float: 0 18px 42px rgba(0, 0, 0, 0.42);
 }
 
 * {
@@ -12821,4 +12821,129 @@ body {
 .search-band .research-refresh-button,
 .search-band .segmented {
   min-height: 40px !important;
+}
+
+:root {
+  --site-radius: 16px;
+  --site-surface: color-mix(in srgb, var(--surface) 95%, transparent);
+  --site-shadow-subtle: 0 10px 24px color-mix(in srgb, #000 8%, transparent);
+  --site-shadow-hover: 0 14px 30px color-mix(in srgb, #000 12%, transparent);
+  --site-border-soft: color-mix(in srgb, var(--line) 58%, transparent);
+}
+
+:root[data-theme="dark"] {
+  --site-shadow-subtle: 0 8px 22px color-mix(in srgb, #000 10%, transparent);
+  --site-shadow-hover: 0 12px 30px color-mix(in srgb, #000 16%, transparent);
+}
+
+.site-shell,
+.home-shell,
+.section-shell,
+.search-band,
+.search-layout,
+.hero-grid,
+.hero-band,
+.hero-card-shell,
+.hero-status-card,
+.hero-copy,
+.hero-actions,
+.landing-hero,
+.section-heading,
+.pathway-grid,
+.contribute-grid,
+.support-grid,
+.account-dashboard-grid,
+.admin-dashboard-grid,
+.announcement-strip,
+.announcement,
+.filter-panel,
+.results-summary,
+.results-toolbar,
+.toolbar-controls,
+.account-dashboard-modal,
+.admin-dashboard-modal,
+.auth-backdrop,
+.account-dashboard-modal,
+.hero-search-form,
+.opportunity-card,
+.pathway-card,
+.community-callout,
+.support-card,
+.project-background-card,
+.story-paper,
+.selected-details-card,
+.source-panel,
+.source-scout-badge,
+.source-scout-radar,
+.detail-facts,
+.detail-actions,
+.search-band .opportunity-card,
+.search-band .cards-column,
+.search-band .selected-column,
+.search-band .map-shell,
+.search-band .results-panel {
+  background: var(--site-surface) !important;
+  border: 1px solid var(--site-border-soft) !important;
+  border-radius: var(--site-radius) !important;
+  box-shadow: var(--site-shadow-subtle) !important;
+}
+
+.site-shell::before,
+.site-shell::after,
+.hero-shell-glow,
+.hero-grid::before,
+.hero-grid::after,
+.topbar::before,
+.topbar::after,
+.search-band::before,
+.search-band::after,
+.account-dashboard-modal::before,
+.auth-backdrop::before,
+.opportunity-card::before,
+.opportunity-card::after,
+.pathway-card::before,
+.pathway-card::after,
+.support-card::before,
+.support-card::after,
+.project-background-card::before,
+.project-background-card::after,
+.account-panel::before,
+.account-panel::after,
+.admin-panel::before,
+.admin-panel::after {
+  content: none !important;
+  display: none !important;
+  background: transparent !important;
+  background-image: none !important;
+}
+
+.opportunity-card:hover,
+.pathway-card:hover,
+.community-callout:hover,
+.toolbar-filter-button:hover,
+.research-refresh-button:hover,
+.segmented:hover,
+.primary-button:hover,
+.soft-button:hover,
+.icon-text-button:hover,
+.account-button:hover {
+  transform: translateY(-1px) !important;
+  box-shadow: var(--site-shadow-hover) !important;
+}
+
+.opportunity-card:active,
+.pathway-card:active,
+.community-callout:active {
+  transform: translateY(0) !important;
+}
+
+.toolbar-filter-button,
+.research-refresh-button,
+.segmented,
+.primary-button,
+.soft-button,
+.icon-text-button,
+.account-button,
+.account-consent-panel {
+  border-radius: 12px !important;
 }
