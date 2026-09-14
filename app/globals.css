@@ -12647,6 +12647,26 @@ body {
   background-image: none !important;
 }
 
+.hero-band,
+.hero-grid,
+.hero-copy,
+.hero-actions,
+.metric,
+.beta-pill,
+.source-scout-badge,
+.source-scout-radar,
+.source-scout-copy,
+.announcement-strip,
+.filter-panel,
+.results-summary,
+.results-toolbar,
+.admin-preview,
+.admin-panel,
+.account-panel {
+  background: var(--site-surface) !important;
+  background-image: none !important;
+}
+
 .results-panel::before,
 .results-panel::after,
 .selected-details-card::before,
