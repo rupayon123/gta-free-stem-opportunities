@@ -12510,3 +12510,36 @@ body {
   min-height: 40px;
   border-radius: 12px !important;
 }
+
+/* Search/results/flow polish finalization: flatten legacy story-paper gradients and offsets. */
+:root {
+  --story-paper: color-mix(in srgb, var(--surface) 92%, transparent);
+  --story-paper-blue: color-mix(in srgb, var(--surface-strong) 94%, var(--blue-soft));
+  --story-paper-yellow: color-mix(in srgb, var(--surface-strong) 94%, var(--yellow-soft));
+  --story-shadow: color-mix(in srgb, #000 8%, transparent);
+}
+
+.story-paper,
+.search-band .opportunity-card,
+.search-band .results-panel,
+.search-band .cards-column,
+.search-band .selected-column,
+.search-band .map-shell,
+.community-callout,
+.detail-facts,
+.source-panel {
+  background: color-mix(in srgb, var(--surface) 96%, transparent) !important;
+  box-shadow: 0 10px 24px color-mix(in srgb, #000 8%, transparent) !important;
+}
+
+.story-paper:nth-child(n + 2),
+.search-band .cards-column {
+  background-image: none !important;
+}
+
+.search-band .selected-column .story-paper,
+.search-band .results-panel .story-paper,
+.search-band .opportunity-card .story-paper,
+.search-band .map-shell .story-paper {
+  box-shadow: none !important;
+}
