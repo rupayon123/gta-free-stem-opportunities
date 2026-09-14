@@ -13583,3 +13583,92 @@ body {
     transition-timing-function: ease-in-out !important;
   }
 }
+
+/* Legal, SEO, and brand mark polishing pass for production consistency. */
+.legal-page,
+.seo-page,
+.seo-content,
+.legal-document {
+  width: min(1120px, 100%) !important;
+  margin-inline: auto !important;
+}
+
+.legal-document,
+.legal-document p,
+.legal-document li,
+.legal-document dd,
+.seo-content,
+.seo-content p,
+.seo-content li,
+.seo-content dd {
+  color: color-mix(in srgb, var(--ink) 88%, var(--muted)) !important;
+  line-height: 1.58 !important;
+}
+
+.seo-hero,
+.legal-document,
+.legal-footer,
+.announcement-item,
+.detail-actions,
+.results-summary,
+.account-note,
+.status-line,
+.verified-line,
+.copyright-note {
+  border: 1px solid var(--apple-outline) !important;
+  border-radius: 16px !important;
+  background: var(--apple-section-bg) !important;
+  box-shadow: var(--apple-shadow-soft) !important;
+}
+
+.seo-logo-link,
+.logo-link,
+.brand-storybook-mark,
+.hero-storybook-mark,
+.seo-storybook-mark,
+.storybook-mark-card,
+.storybook-mark.compact .storybook-mark-card,
+.storybook-mark-image {
+  text-decoration: none !important;
+  border-radius: 16px !important;
+  border-color: var(--apple-outline) !important;
+  background: color-mix(in srgb, var(--surface) 94%, transparent) !important;
+  box-shadow: none !important;
+  filter: none !important;
+  transform: none !important;
+}
+
+.storybook-mark-pin,
+.storybook-mark-main,
+.storybook-mark-sub,
+.storyboard-mark-doodles,
+.storybook-mark-doodles span {
+  text-shadow: none !important;
+  box-shadow: none !important;
+  transform: none !important;
+  border: 1px solid var(--apple-outline) !important;
+  border-radius: 12px !important;
+}
+
+.hero-card-shell h1,
+.seo-hero h1,
+.section-heading h2 {
+  text-shadow: none !important;
+  letter-spacing: -0.02em !important;
+}
+
+.primary-nav button,
+.theme-toggle,
+.compact-select,
+.theme-toggle button,
+.segmented,
+.account-chip,
+.toolbar-filter-button,
+.research-refresh-button,
+.icon-text-button,
+.soft-button,
+.primary-button {
+  border-width: 1px !important;
+  border-style: solid !important;
+  border-color: var(--apple-outline) !important;
+}
