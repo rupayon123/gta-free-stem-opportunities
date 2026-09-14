@@ -10787,8 +10787,6 @@ body {
 }
 
 .hero-logo::after,
-.hero-storybook-mark .storybook-mark-image,
-.home-shell .hero-logo,
 .primary-nav *,
 .source-list a::after,
 .saved-list a::after {
@@ -11329,13 +11327,6 @@ textarea:focus-visible,
   transition-duration: 180ms;
 }
 
-.hero-card-shell .storybook-mark-image,
-.brand-mark .storybook-mark-card,
-.hero-storybook-mark .storybook-mark-image,
-.hero-logo {
-  animation: none !important;
-}
-
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -11425,12 +11416,6 @@ textarea:focus-visible,
 .community-callout p,
 .project-background-card p {
   letter-spacing: -0.006em;
-}
-
-.hero-logo,
-.hero-storybook-mark,
-.storybook-mark {
-  animation: none !important;
 }
 
 .hero-storybook-mark,
@@ -11729,16 +11714,6 @@ textarea:focus-visible,
   box-shadow: var(--focus) !important;
 }
 
-.hero-storybook-mark .storybook-mark-image,
-.hero-card-shell .storybook-mark-image,
-.hero-logo,
-.brand-storybook-mark,
-.brand-mark .storybook-mark-card,
-.hero-storybook-mark {
-  animation: none !important;
-  filter: none !important;
-}
-
 .hero-storybook-mark {
   --mark-width: clamp(140px, 22vw, 220px) !important;
 }
@@ -11792,25 +11767,6 @@ textarea:focus-visible,
   min-height: auto !important;
 }
 
-.hero-logo,
-.hero-storybook-mark,
-.storybook-mark,
-.hero-storybook-mark .storybook-mark-image,
-.hero-card-shell .hero-storybook-mark,
-.brand-storybook-mark {
-  animation: none !important;
-  transform: none !important;
-}
-
-.hero-logo.is-giggling,
-.hero-logo:hover,
-.hero-storybook-mark .storybook-mark-image:hover,
-.storyboard .hero-storybook-mark:hover,
-.brand-mark .storybook-mark-card:hover {
-  animation: none !important;
-  transform: none !important;
-}
-
 .site-shell::before,
 .hero-shell-glow,
 .landing-hero::after,
@@ -11821,7 +11777,7 @@ textarea:focus-visible,
 .primary-button:hover,
 .filter-toggle-button:hover,
 .toolbar-filter-button:hover {
-  transform: none !important;
+  transform: translateY(-1px) !important;
 }
 
 .hero-search-form button,
@@ -11834,8 +11790,7 @@ textarea:focus-visible,
 .oauth-button,
 .auth-tabs button,
 .topbar .theme-toggle button {
-  transition-property: background-color, box-shadow, color !important;
-  transition-timing-function: cubic-bezier(0.2, 0.8, 0, 1) !important;
+  transition: transform var(--motion), background-color var(--pop), box-shadow var(--pop), border-color var(--pop);
 }
 
 .primary-button,
@@ -11916,34 +11871,44 @@ textarea:focus-visible,
 
 @media (prefers-reduced-motion: no-preference) {
   .hero-logo,
+  .hero-storybook-mark,
   .hero-storybook-mark .storybook-mark-image,
   .hero-card-shell .storybook-mark-image {
-    animation-name: gta-gentle-pulse;
-    animation-duration: 12s;
     animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+  }
+
+  .hero-storybook-mark,
+  .hero-storybook-mark .storybook-mark-image {
+    animation-duration: 14s;
+    animation-name: hero-logo-float;
+  }
+
+  .hero-logo,
+  .hero-card-shell .hero-logo {
+    animation-duration: 6s;
+    animation-name: hero-logo-giggle;
+  }
+
+  .hero-storybook-mark:is(:hover, :focus-visible, .is-giggling),
+  .hero-storybook-mark .storybook-mark-image:is(:hover, :focus-visible, :active),
+  .brand-mark:hover .storybook-mark-image,
+  .brand-mark:hover .storybook-mark-card {
+    animation-duration: 560ms;
+    animation-name: real-logo-giggle;
+    animation-iteration-count: 1;
   }
 
   .hero-logo,
   .hero-storybook-mark,
-  .home-shell .hero-card-shell,
   .hero-search-form button,
   .soft-button,
   .primary-button,
   .toolbar-filter-button,
   .filter-toggle-button {
-    transition: transform 260ms cubic-bezier(0.22, 0.61, 0.36, 1), box-shadow 240ms ease, background-color 200ms ease, border-color 200ms ease;
-  }
-}
-
-@keyframes gta-gentle-pulse {
-  0%,
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-  50% {
-    transform: translateY(0);
-    opacity: 0.995;
+    transition-duration: var(--motion) !important;
+    transition-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
   }
 }
 
