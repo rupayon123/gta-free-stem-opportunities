@@ -13584,6 +13584,70 @@ body {
   }
 }
 
+/* Remove lingering decorative animation and accent residue from earlier style layers. */
+.home-shell .hero-card-shell .hero-logo,
+.home-shell .hero-card-shell .hero-logo:hover,
+.home-shell .hero-card-shell .hero-logo.is-giggling,
+.hero-logo.is-giggling,
+.hero-logo:hover,
+.hero-logo img,
+.hero-storybook-mark,
+.hero-storybook-mark .storybook-mark-image,
+.hero-storybook-mark .storybook-mark-card,
+.brand-icon:hover,
+.brand-storybook-mark,
+.brand-storybook-mark .storybook-mark-card,
+.seo-logo-link:hover .storybook-mark-card,
+.hero-glow,
+.hero-shell-glow,
+.hero-grid::after,
+.primary-nav button:hover,
+.primary-nav button:focus-visible,
+.source-scout-radar::before,
+.source-scout-radar::after {
+  animation: none !important;
+  transform: none !important;
+  box-shadow: none !important;
+  filter: none !important;
+}
+
+.home-shell .hero-card-shell .hero-logo,
+.hero-storybook-mark,
+.brand-storybook-mark,
+.seo-storybook-mark,
+.source-scout-radar,
+.hero-grid::after {
+  border: 1px solid var(--apple-outline) !important;
+  border-radius: 16px !important;
+}
+
+.source-scout-radar::before,
+.source-scout-radar::after {
+  background: none !important;
+}
+
+.hero-glow,
+.hero-shell-glow,
+.hero-grid::after {
+  display: none !important;
+}
+
+.hero-copy h1,
+.seo-hero h1,
+.hero-card-shell > p,
+.card-main p,
+.detail-summary,
+.community-callout p,
+.support-card p,
+.project-background-card p,
+.legal-document p,
+.legal-document li,
+.legal-document dd,
+.seo-content p,
+.seo-content li {
+  text-shadow: none !important;
+}
+
 /* Legal, SEO, and brand mark polishing pass for production consistency. */
 .legal-page,
 .seo-page,
