@@ -12947,3 +12947,104 @@ body {
 .account-consent-panel {
   border-radius: 12px !important;
 }
+
+/* Final Apple identity lock: override legacy storybook-style accents and gradient-heavy tokens. */
+:root {
+  --apple-glass-bg: color-mix(in srgb, var(--surface) 94%, transparent);
+}
+
+body {
+  background: color-mix(in srgb, var(--surface) 96%, var(--bg) 4%) !important;
+  color: var(--ink) !important;
+  font-family: var(--app-font-body) !important;
+}
+
+.story-content,
+.storybook-mark,
+.storybook-mark-card,
+.storybook-mark-image,
+.storybook-mark-pin,
+.storybook-mark-main,
+.storybook-mark-sub,
+.storybook-mark-doodles span,
+.hero-storybook-mark,
+.brand-storybook-mark,
+.seo-storybook-mark {
+  animation: none !important;
+  filter: none !important;
+  text-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.story-content,
+.storybook-mark-card,
+.hero-card-shell,
+.search-band .opportunity-card:nth-child(4n + 1),
+.search-band .opportunity-card:nth-child(4n + 2),
+.search-band .opportunity-card:nth-child(4n + 3),
+.search-band .opportunity-card:nth-child(4n + 4),
+.opportunity-card,
+.pathway-card,
+.support-card,
+.project-background-card,
+.community-callout {
+  background: var(--site-surface) !important;
+  background-image: none !important;
+  border: 1px solid var(--site-border-soft) !important;
+}
+
+.hero-card-shell h1,
+.seo-hero h1,
+.section-heading h2,
+.detail-main h2,
+.hero-card-shell > p,
+.seo-hero p:not(.beta-pill),
+.card-main p,
+.detail-summary,
+.card-kicker,
+.chip,
+.beta-pill,
+.pathway-card p,
+.opportunity-card p,
+.support-card p,
+.project-background-card p,
+.source-list a,
+.account-panel p,
+.admin-panel p {
+  color: color-mix(in srgb, var(--ink) 80%, var(--muted)) !important;
+  font-weight: normal !important;
+  text-shadow: none !important;
+}
+
+.hero-card-shell h1,
+.seo-hero h1 {
+  font-family: var(--app-font-display) !important;
+  font-weight: 720 !important;
+  letter-spacing: -0.02em !important;
+}
+
+.topbar.home-topbar,
+.topbar.with-nav,
+.topbar {
+  border-radius: var(--site-radius) !important;
+  border-width: 1px !important;
+  backdrop-filter: none !important;
+}
+
+.brand-mark strong,
+.brand-mark small,
+.topbar .brand-mark {
+  font-weight: 640 !important;
+  letter-spacing: -0.01em !important;
+}
+
+.primary-nav button,
+.theme-toggle button,
+.compact-select,
+.theme-toggle,
+.account-button,
+.account-chip {
+  border-width: 1px !important;
+  border-color: var(--site-border-soft) !important;
+  border-radius: 10px !important;
+}
