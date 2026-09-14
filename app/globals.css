@@ -12715,3 +12715,35 @@ body {
 .hero-storybook-mark {
   animation-name: none !important;
 }
+
+/* Final card/tile radius and tone consistency pass. */
+.opportunity-card,
+.pathway-card,
+.community-callout,
+.support-card,
+.project-background-card,
+.results-panel,
+.selected-details-card,
+.detail-facts,
+.source-panel,
+.trust-banner,
+.account-consent-panel,
+.search-band .opportunity-card,
+.search-band .pathway-card,
+.search-band .community-callout,
+.search-band .selected-details-card,
+.search-band .detail-facts {
+  border-radius: var(--ios-radius, 18px) !important;
+  border: 1px solid color-mix(in srgb, var(--line) 68%, transparent) !important;
+  background: var(--site-surface) !important;
+  box-shadow: 0 10px 22px color-mix(in srgb, #000 8%, transparent) !important;
+}
+
+.toolbar-filter-button,
+.research-refresh-button,
+.segmented,
+.search-band .toolbar-filter-button,
+.search-band .research-refresh-button,
+.search-band .segmented {
+  min-height: 40px !important;
+}
