@@ -1550,6 +1550,16 @@ a {
   margin: 0;
 }
 
+.full {
+  width: 100%;
+}
+
+.distance-field {
+  display: grid;
+  gap: 8px;
+  width: 100%;
+}
+
 .two-col,
 .location-tools {
   display: grid;
