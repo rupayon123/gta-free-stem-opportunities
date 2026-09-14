@@ -12423,3 +12423,90 @@ body {
   animation-fill-mode: none !important;
   animation-play-state: running !important;
 }
+
+/* Final Apple visual authority: consistent, restrained surfaces across all showcase pages. */
+:root {
+  --site-surface: color-mix(in srgb, var(--surface) 95%, transparent);
+}
+
+.site-shell,
+.home-shell,
+.section-shell,
+.topbar,
+.hero-card-shell,
+.search-band,
+.search-layout,
+.filter-panel,
+.results-panel,
+.announcement-strip,
+.opportunity-card,
+.pathway-card,
+.community-callout,
+.support-card,
+.project-background-card,
+.account-panel,
+.admin-panel,
+.source-panel,
+.auth-modal,
+.account-dashboard-hero,
+.admin-dashboard-hero,
+.search-band .cards-column,
+.search-band .selected-column,
+.search-band .results-panel,
+.search-band .map-shell {
+  background: var(--site-surface) !important;
+  border-radius: var(--ios-radius, 18px) !important;
+  border: 1px solid color-mix(in srgb, var(--line) 64%, transparent) !important;
+  box-shadow: 0 12px 24px color-mix(in srgb, #000 9%, transparent) !important;
+}
+
+.site-shell::before,
+.site-shell::after,
+.hero-card-shell::before,
+.hero-card-shell::after,
+.topbar::before,
+.topbar::after,
+.search-band::before,
+.search-band::after,
+.filter-panel::before,
+.filter-panel::after,
+.opportunity-card::before,
+.opportunity-card::after,
+.pathway-card::before,
+.pathway-card::after {
+  content: none !important;
+  display: none !important;
+  background: none !important;
+  background-image: none !important;
+}
+
+.hero-storybook-mark .storybook-mark-image,
+.hero-storybook-mark .storybook-mark-card,
+.brand-mark .storybook-mark-image,
+.hero-card-shell .storybook-mark-image,
+.hero-card-shell .storybook-mark-card {
+  transition: transform 170ms ease, filter 170ms ease;
+}
+
+.hero-storybook-mark:hover .storybook-mark-image,
+.hero-storybook-mark:focus-visible .storybook-mark-image,
+.hero-storybook-mark:hover .storybook-mark-card,
+.hero-storybook-mark:focus-visible .storybook-mark-card {
+  transform: scale(1.005) translateY(-1px);
+}
+
+.search-band .opportunity-card:hover,
+.search-band .pathway-card:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 28px color-mix(in srgb, #000 10%, transparent) !important;
+}
+
+.primary-button,
+.soft-button,
+.icon-text-button,
+.toolbar-filter-button,
+.account-button,
+.topbar .theme-toggle button {
+  min-height: 40px;
+  border-radius: 12px !important;
+}
