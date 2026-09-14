@@ -14726,3 +14726,146 @@ body {
     width: 100% !important;
   }
 }
+
+/* Final cleanup: remove decorative ornamentation and keep pages visually crisp. */
+.site-shell::before,
+.site-shell::after,
+.home-shell::before,
+.home-shell::after,
+.search-band::before,
+.search-band::after,
+.pathway-card::before,
+.pathway-card::after,
+.community-callout::before,
+.community-callout::after,
+.announcement-strip::before,
+.announcement-strip::after,
+.results-panel::before,
+.results-panel::after,
+.selected-details-card::before,
+.selected-details-card::after,
+.map-shell::before,
+.map-shell::after,
+.account-dashboard-modal::before,
+.account-dashboard-modal::after,
+.admin-dashboard-modal::before,
+.admin-dashboard-modal::after,
+.auth-modal::before,
+.auth-modal::after,
+.source-scout-mini::before,
+.source-scout-mini::after,
+.source-scout-badge::before,
+.source-scout-badge::after,
+.source-scout-refresh::before,
+.source-scout-refresh::after {
+  display: none !important;
+  content: none !important;
+}
+
+.home-shell,
+.search-band,
+.hero-card-shell,
+.results-panel,
+.account-dashboard-modal,
+.admin-dashboard-modal,
+.auth-modal,
+.pathway-card,
+.community-callout,
+.support-card,
+.project-background-card {
+  border-style: solid !important;
+  border-color: color-mix(in srgb, var(--line) 72%, transparent) !important;
+  border-width: 1px !important;
+  border-radius: 18px !important;
+  backdrop-filter: blur(12px) saturate(1.05) !important;
+}
+
+.search-band .results-panel,
+.search-band .selected-details-card,
+.search-band .map-shell,
+.search-band .source-panel,
+.search-band .detail-facts,
+.search-band .trust-banner,
+.search-band .toolbar-controls,
+.search-band .results-actions {
+  background: var(--surface) !important;
+}
+
+.home-shell .hero-card-shell,
+.search-band .search-layout,
+.account-dashboard-modal .account-dashboard-grid,
+.admin-dashboard-modal .admin-dashboard-grid {
+  gap: clamp(12px, 1.8vw, 18px) !important;
+}
+
+:root {
+  --gta-apple-shell-gutter: clamp(12px, 3.2vw, 26px);
+}
+
+.home-shell,
+.search-band,
+.workspace-band,
+.section-heading,
+.pathway-grid,
+.support-grid,
+.contribute-grid,
+.announcement-strip,
+.account-dashboard-modal,
+.admin-dashboard-modal,
+.auth-modal {
+  padding-inline: var(--gta-apple-shell-gutter) !important;
+}
+
+.account-dashboard-grid .auth-tabs,
+.admin-dashboard-grid .auth-tabs,
+.auth-tabs {
+  border-radius: 12px !important;
+  overflow: hidden !important;
+}
+
+.home-shell .primary-button,
+.search-band .primary-button,
+.account-dashboard-modal .primary-button,
+.admin-dashboard-modal .primary-button,
+.auth-modal .primary-button,
+.home-shell .soft-button,
+.search-band .soft-button,
+.account-dashboard-modal .soft-button,
+.admin-dashboard-modal .soft-button,
+.auth-modal .soft-button {
+  transition: transform 180ms cubic-bezier(0.2, 0, 0, 1),
+    box-shadow 220ms cubic-bezier(0.2, 0, 0, 1),
+    border-color 200ms cubic-bezier(0.2, 0, 0, 1) !important;
+}
+
+.home-shell .primary-button:focus-visible,
+.search-band .primary-button:focus-visible,
+.account-dashboard-modal .primary-button:focus-visible,
+.admin-dashboard-modal .primary-button:focus-visible,
+.auth-modal .primary-button:focus-visible,
+.home-shell .soft-button:focus-visible,
+.search-band .soft-button:focus-visible,
+.account-dashboard-modal .soft-button:focus-visible,
+.admin-dashboard-modal .soft-button:focus-visible,
+.auth-modal .soft-button:focus-visible {
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--blue) 24%, transparent) !important;
+  border-color: color-mix(in srgb, var(--blue) 72%, transparent) !important;
+}
+
+@media (max-width: 900px) {
+  .home-shell,
+  .search-band,
+  .workspace-band,
+  .section-heading,
+  .pathway-grid,
+  .contribute-grid,
+  .announcement-strip {
+    padding-inline: 10px !important;
+  }
+
+  .hero-card-shell .hero-actions,
+  .search-band .results-actions,
+  .search-band .toolbar-controls {
+    gap: 8px !important;
+  }
+}
