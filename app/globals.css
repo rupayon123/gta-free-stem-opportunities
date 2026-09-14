@@ -12278,6 +12278,70 @@ textarea:focus-visible,
   }
 }
 
+/* Apple-grade interaction and typography polish. */
+:root {
+  --ios-font-body: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+  --ios-font-display: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: var(--ios-font-body);
+  font-feature-settings: "ss01", "ss02", "cv02", "cv03";
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+.primary-nav button,
+.topbar,
+.card-kicker,
+.chip,
+.beta-pill {
+  font-family: var(--ios-font-display);
+}
+
+h1 {
+  letter-spacing: -0.028em;
+}
+
+h2,
+h3,
+h4 {
+  letter-spacing: -0.02em;
+}
+
+p,
+li,
+dd,
+dt,
+label,
+span,
+.card-main p {
+  line-height: 1.48;
+}
+
+.home-shell .hero-card-shell h1 {
+  text-wrap: pretty;
+}
+
+.primary-button,
+.soft-button,
+.toolbar-filter-button,
+.source-scout-refresh,
+.filter-toggle-button,
+.account-button,
+.icon-text-button {
+  -webkit-font-smoothing: antialiased;
+  text-wrap: balance;
+}
+
 /* Final interaction/paint lock: clean Apple-like touch behavior without gimmicks. */
 .hero-card-shell .storybook-mark-image,
 .hero-card-shell .storybook-mark-card,
