@@ -14302,3 +14302,69 @@ body {
   background: color-mix(in srgb, var(--surface) 94%, transparent);
   box-shadow: var(--apple-shadow-soft);
 }
+
+/* Apple interaction language: calm controls and readable card surfaces. */
+.home-shell .primary-button,
+.home-shell .soft-button,
+.search-band .primary-button,
+.search-band .soft-button,
+.search-band .toolbar-filter-button,
+.search-band .research-refresh-button,
+.account-dashboard-modal .primary-button,
+.account-dashboard-modal .soft-button,
+.admin-dashboard-modal .primary-button,
+.admin-dashboard-modal .soft-button,
+.auth-modal .primary-button,
+.auth-modal .soft-button {
+  border: 1px solid color-mix(in srgb, var(--line) 78%, transparent) !important;
+  border-radius: 14px !important;
+  background: linear-gradient(180deg, color-mix(in srgb, var(--surface) 94%, var(--surface-glass)), color-mix(in srgb, var(--surface-glass) 78%, var(--surface))) !important;
+  color: var(--ink) !important;
+  font-weight: 640 !important;
+  letter-spacing: -0.004em !important;
+  box-shadow: 0 6px 16px color-mix(in srgb, #0b2640 8%, transparent) !important;
+}
+
+.home-shell .primary-button:is(:hover, .motion-active, :focus-visible),
+.home-shell .soft-button:is(:hover, .motion-active, :focus-visible),
+.search-band .primary-button:is(:hover, .motion-active, :focus-visible),
+.search-band .soft-button:is(:hover, .motion-active, :focus-visible),
+.account-dashboard-modal .primary-button:is(:hover, .motion-active, :focus-visible),
+.account-dashboard-modal .soft-button:is(:hover, .motion-active, :focus-visible),
+.admin-dashboard-modal .primary-button:is(:hover, .motion-active, :focus-visible),
+.admin-dashboard-modal .soft-button:is(:hover, .motion-active, :focus-visible),
+.auth-modal .primary-button:is(:hover, .motion-active, :focus-visible),
+.auth-modal .soft-button:is(:hover, .motion-active, :focus-visible) {
+  transform: translateY(-1px);
+  box-shadow: 0 11px 20px color-mix(in srgb, #0b2640 10%, transparent) !important;
+}
+
+.home-shell input,
+.home-shell select,
+.search-band input,
+.search-band select,
+.account-dashboard-modal input,
+.account-dashboard-modal select,
+.admin-dashboard-modal input,
+.admin-dashboard-modal select,
+.auth-modal input,
+.auth-modal select {
+  border: 1px solid color-mix(in srgb, var(--line) 72%, transparent) !important;
+  border-radius: 12px !important;
+  min-height: 44px !important;
+  padding-inline: 12px !important;
+  background: color-mix(in srgb, var(--surface) 95%, transparent) !important;
+}
+
+.account-dashboard-modal,
+.admin-dashboard-modal,
+.auth-modal,
+.hero-card-shell,
+.results-panel,
+.pathway-card,
+.opportunity-card,
+.community-callout,
+.support-card,
+.project-background-card {
+  backdrop-filter: blur(16px) saturate(1.1) !important;
+}
