@@ -3,8 +3,8 @@ import type { DiscoveredOpportunity } from "./discovery";
 export const generatedDiscoverySummary = {
   "mode": "deterministic",
   "sourcesChecked": 30,
-  "candidatesFound": 277,
-  "newCandidates": 49,
+  "candidatesFound": 276,
+  "newCandidates": 48,
   "duplicatesSkipped": 37,
   "warnings": [
     "Could not check Credit Valley Conservation youth opportunities: 403 Forbidden.",
@@ -14,7 +14,7 @@ export const generatedDiscoverySummary = {
   ],
   "sourceHealth": {
     "schemaVersion": 1,
-    "generatedAt": "2026-09-14T02:20:08.332Z",
+    "generatedAt": "2026-09-14T05:00:00.818Z",
     "status": "healthy",
     "failureReasons": [],
     "sourcesChecked": 30,
@@ -105,34 +105,6 @@ export const generatedDiscoveryReviewCandidates = [
     "tags": [
       "volunteer hours",
       "volunteer"
-    ],
-    "confidence": "high",
-    "reviewReasons": [
-      "No clear future date found on the crawled page."
-    ],
-    "sourceName": "Vaughan Public Libraries programs"
-  },
-  {
-    "id": "discovered-vaughan-library-programs-volunteering-vpl-93f28ddcf896",
-    "title": "Volunteering @ VPL",
-    "organization": "Vaughan Public Libraries",
-    "description": "Volunteering @ VPL listed by Vaughan Public Libraries programs.",
-    "city": "Vaughan",
-    "region": "York",
-    "ageMin": 1,
-    "ageMax": 18,
-    "category": "Volunteer Hours",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-09-14T09:00:00-04:00",
-    "sourceUrl": "https://www.vaughanpl.info/programs/view/4058",
-    "lastChecked": "2026-09-14",
-    "lastSeen": "2026-09-14",
-    "status": "needs_review",
-    "tags": [
-      "volunteer hours"
     ],
     "confidence": "high",
     "reviewReasons": [
