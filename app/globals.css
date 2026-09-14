@@ -246,13 +246,15 @@ a {
 
 @media (prefers-reduced-motion: no-preference) {
   .hero-copy,
+  .landing-hero,
   .mission-strip,
   .filter-panel,
   .results-panel,
   .section-heading,
   .pathway-card,
   .mini-form,
-  .community-callout {
+  .community-callout,
+  .opportunity-card {
     animation: rise-in 680ms cubic-bezier(0.16, 1, 0.3, 1) both;
   }
 
@@ -262,6 +264,22 @@ a {
 
   .results-panel {
     animation-delay: 160ms;
+  }
+
+  .search-band {
+    animation-delay: 60ms;
+  }
+
+  .opportunity-card:nth-child(2) {
+    animation-delay: 120ms;
+  }
+
+  .opportunity-card:nth-child(3) {
+    animation-delay: 150ms;
+  }
+
+  .opportunity-card:nth-child(4) {
+    animation-delay: 190ms;
   }
 
   .pathway-card:nth-child(2),
