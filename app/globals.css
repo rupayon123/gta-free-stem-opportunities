@@ -14369,6 +14369,118 @@ body {
   backdrop-filter: blur(16px) saturate(1.1) !important;
 }
 
+/* Dark-mode parity for clean iOS-style balance and contrast. */
+:root[data-theme="dark"] .home-shell,
+:root[data-theme="dark"] .search-band,
+:root[data-theme="dark"] .announcement-strip,
+:root[data-theme="dark"] .section-heading,
+:root[data-theme="dark"] .pathway-grid,
+:root[data-theme="dark"] .contribute-grid,
+:root[data-theme="dark"] .account-dashboard-modal,
+:root[data-theme="dark"] .admin-dashboard-modal,
+:root[data-theme="dark"] .auth-modal,
+:root[data-theme="dark"] .hero-card-shell,
+:root[data-theme="dark"] .results-panel,
+:root[data-theme="dark"] .pathway-card,
+:root[data-theme="dark"] .opportunity-card,
+:root[data-theme="dark"] .community-callout,
+:root[data-theme="dark"] .support-card,
+:root[data-theme="dark"] .project-background-card {
+  border-color: color-mix(in srgb, var(--line) 72%, transparent) !important;
+  box-shadow: var(--apple-shadow-soft) !important;
+}
+
+:root[data-theme="dark"] .primary-button,
+:root[data-theme="dark"] .soft-button,
+:root[data-theme="dark"] .icon-text-button,
+:root[data-theme="dark"] .toolbar-filter-button,
+:root[data-theme="dark"] .research-refresh-button,
+:root[data-theme="dark"] .oauth-button {
+  color: #f5f7ff !important;
+  border-color: color-mix(in srgb, #4f7ea9 72%, transparent) !important;
+  background: color-mix(in srgb, var(--surface) 90%, #111a2e) !important;
+  box-shadow: 0 8px 16px color-mix(in srgb, #000 45%, transparent) !important;
+}
+
+:root[data-theme="dark"] .hero-search-form,
+:root[data-theme="dark"] .search-band input,
+:root[data-theme="dark"] .search-band select,
+:root[data-theme="dark"] .home-shell input,
+:root[data-theme="dark"] .home-shell select,
+:root[data-theme="dark"] .account-dashboard-modal input,
+:root[data-theme="dark"] .admin-dashboard-modal input,
+:root[data-theme="dark"] .auth-modal input,
+:root[data-theme="dark"] .account-dashboard-modal select,
+:root[data-theme="dark"] .admin-dashboard-modal select,
+:root[data-theme="dark"] .auth-modal select {
+  color: #f2f6fc !important;
+  border-color: color-mix(in srgb, #4f7ea9 74%, transparent) !important;
+}
+
+:root[data-theme="dark"] .hero-card-shell h1,
+:root[data-theme="dark"] .seo-hero h1,
+:root[data-theme="dark"] .section-heading h2,
+:root[data-theme="dark"] .results-toolbar h2,
+:root[data-theme="dark"] .search-band .opportunity-card h3,
+:root[data-theme="dark"] .search-band .pathway-card h3 {
+  color: #f3f8ff !important;
+}
+
+:root[data-theme="dark"] .hero-card-shell > p,
+:root[data-theme="dark"] .seo-hero p:not(.beta-pill),
+:root[data-theme="dark"] .detail-summary,
+:root[data-theme="dark"] .community-callout p,
+:root[data-theme="dark"] .support-card p,
+:root[data-theme="dark"] .project-background-card p,
+:root[data-theme="dark"] .toolbar-status,
+:root[data-theme="dark"] .translation-note,
+:root[data-theme="dark"] .verified-line {
+  color: #b7c6d9 !important;
+}
+
+:root[data-theme="dark"] .search-band .results-toolbar,
+:root[data-theme="dark"] .results-toolbar h2,
+:root[data-theme="dark"] .results-actions,
+:root[data-theme="dark"] .source-panel,
+:root[data-theme="dark"] .trust-banner {
+  gap: 12px !important;
+}
+
+:root[data-theme="dark"] .search-band .toolbar-controls {
+  grid-auto-flow: row;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root[data-theme="dark"] {
+    --apple-hero-ease: cubic-bezier(0.16, 1, 0.3, 1);
+  }
+}
+
+@media (min-width: 900px) {
+  :root[data-theme="dark"] .home-shell .hero-card-shell {
+    padding-inline: 16px;
+  }
+}
+
+/* iOS-style micro-details: calmer line weight and cleaner profile stacks. */
+.section-heading h2,
+.home-shell .hero-copy h1,
+.search-band h2,
+.account-dashboard-modal h2,
+.admin-dashboard-modal h2,
+.auth-modal h2,
+.results-toolbar h2 {
+  letter-spacing: -0.01em !important;
+}
+
+.account-dashboard-modal .account-dashboard-grid,
+.admin-dashboard-modal .admin-dashboard-grid,
+.hero-copy,
+.search-layout,
+.detail-main {
+  row-gap: var(--gta-apple-stack-gap) !important;
+}
+
 /* Final polish pass: remove overly decorative surfaces and align with clean Apple proportions. */
 .primary-button,
 .soft-button,
