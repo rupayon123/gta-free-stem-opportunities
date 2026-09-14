@@ -12278,6 +12278,74 @@ textarea:focus-visible,
   }
 }
 
+/* Final interaction/paint lock: clean Apple-like touch behavior without gimmicks. */
+.hero-card-shell .storybook-mark-image,
+.hero-card-shell .storybook-mark-card,
+.hero-storybook-mark,
+.hero-storybook-mark .storybook-mark-image,
+.hero-storybook-mark .storybook-mark-card,
+.brand-mark .storybook-mark-card {
+  will-change: transform, opacity, filter;
+  transition:
+    transform 180ms cubic-bezier(0.16, 1, 0.3, 1),
+    filter 180ms cubic-bezier(0.16, 1, 0.3, 1),
+    opacity 180ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hero-storybook-mark:hover .storybook-mark-image,
+.hero-storybook-mark:hover .storybook-mark-card,
+.hero-storybook-mark:focus-visible .storybook-mark-image,
+.hero-storybook-mark:focus-visible .storybook-mark-card,
+.brand-mark:hover .storybook-mark-image,
+.brand-mark:focus-visible .storybook-mark-image {
+  transform: translateY(-1px);
+  filter: drop-shadow(0 8px 20px color-mix(in srgb, #000 10%, transparent));
+}
+
+.hero-card-shell,
+.search-band,
+.opportunity-card,
+.pathway-card,
+.community-callout,
+.support-card,
+.project-background-card {
+  background-clip: padding-box;
+}
+
+:root,
+:root[data-theme="light"],
+:root[data-theme="dark"] {
+  background: var(--bg);
+}
+
+body {
+  min-height: 100svh;
+  background: var(--bg) !important;
+}
+
+.card-kicker,
+.chip,
+.beta-pill,
+.search-chip,
+.source-list a,
+.saved-list a {
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .primary-button:hover,
+  .soft-button:hover,
+  .icon-text-button:hover,
+  .toolbar-filter-button:hover,
+  .account-button:hover,
+  .opportunity-card:hover,
+  .pathway-card:hover,
+  .community-callout:hover {
+    transform: translateY(-1px);
+  }
+}
+
 /* Final motion lockdown to eliminate leftover gimmicky keyframe behavior. */
 *,
 *::before,
