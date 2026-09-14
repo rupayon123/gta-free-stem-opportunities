@@ -13902,3 +13902,109 @@ body {
     width: calc(100% - 16px) !important;
   }
 }
+
+/* Dashboard, account, and admin surface polish for iOS production consistency. */
+.account-dashboard-modal,
+.admin-dashboard-modal,
+.auth-modal {
+  border: 1px solid var(--apple-outline) !important;
+  border-radius: 18px !important;
+  background: var(--apple-section-bg) !important;
+  box-shadow: var(--apple-shadow-soft) !important;
+}
+
+.account-dashboard-modal .auth-header,
+.admin-dashboard-modal .auth-header,
+.auth-modal .auth-header {
+  margin: 0 !important;
+  padding: 4px 0 14px !important;
+}
+
+.account-dashboard-grid,
+.admin-dashboard-grid {
+  margin-top: 6px !important;
+  gap: 12px !important;
+  align-items: stretch !important;
+}
+
+.account-panel,
+.admin-panel,
+.admin-review-item,
+.compact-status-select,
+.admin-tool-form .field,
+.mini-form,
+.filter-modal {
+  border: 1px solid var(--apple-outline) !important;
+  border-radius: 16px !important;
+  background: var(--site-surface) !important;
+  box-shadow: var(--site-shadow-subtle) !important;
+}
+
+.account-panel,
+.admin-panel,
+.admin-review-item {
+  transition: transform var(--apple-timing) var(--apple-ease),
+    box-shadow var(--apple-timing) var(--apple-ease) !important;
+}
+
+.account-panel:hover,
+.admin-panel:hover,
+.admin-review-item:hover {
+  transform: translateY(-1px) !important;
+  box-shadow: var(--apple-shadow-hover) !important;
+}
+
+.panel-title {
+  font-family: var(--app-font-display) !important;
+  font-size: 0.93rem !important;
+  letter-spacing: -0.01em !important;
+  text-transform: uppercase !important;
+}
+
+.account-stat {
+  font-family: var(--app-font-display) !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.02em !important;
+}
+
+.account-note,
+.status-line,
+.verified-line {
+  color: color-mix(in srgb, var(--muted) 78%, var(--ink)) !important;
+  line-height: 1.45 !important;
+}
+
+.admin-tool-form .field input,
+.admin-tool-form .field select,
+.admin-tool-form .field textarea {
+  min-height: 42px !important;
+}
+
+.auth-tabs,
+.admin-dashboard-grid .auth-tabs,
+.account-dashboard-modal .auth-tabs {
+  border: 1px solid var(--apple-outline) !important;
+  border-radius: 12px !important;
+  padding: 3px !important;
+}
+
+.auth-tabs button,
+.compact-status-select button {
+  min-height: 34px !important;
+  border: 0 !important;
+  border-radius: 10px !important;
+}
+
+.auth-tabs button.active,
+.compact-status-select button.active,
+.segmented button.active {
+  background: var(--blue) !important;
+  color: #fff !important;
+}
+
+.source-scout-mini,
+.source-scout-badge,
+.source-list a {
+  transition: border-color var(--apple-timing) var(--apple-ease),
+    transform var(--apple-timing) var(--apple-ease) !important;
+}
