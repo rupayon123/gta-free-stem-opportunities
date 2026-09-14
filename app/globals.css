@@ -13776,3 +13776,129 @@ body {
 .real-logo-giggle {
   animation-name: none !important;
 }
+
+/* iOS-quality layout and interaction polish for production feel. */
+:root {
+  --apple-timing: 220ms;
+  --apple-ease: cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.site-shell {
+  padding-top: clamp(10px, 2.5vw, 20px) !important;
+}
+
+.topbar {
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+}
+
+.hero-card-shell,
+.search-band,
+.account-dashboard-grid,
+.admin-dashboard-grid {
+  gap: 14px !important;
+}
+
+.hero-card-shell,
+.search-band,
+.opportunity-card,
+.pathway-card,
+.community-callout,
+.support-card,
+.project-background-card,
+.result-actions,
+.results-toolbar,
+.account-panel,
+.admin-panel,
+.detail-facts {
+  transition: transform var(--apple-timing) var(--apple-ease),
+    box-shadow var(--apple-timing) var(--apple-ease),
+    border-color var(--apple-timing) var(--apple-ease),
+    background-color var(--apple-timing) var(--apple-ease) !important;
+}
+
+.hero-card-shell h1 {
+  font-size: clamp(2rem, 4.4vw, 4rem) !important;
+  line-height: 1.04 !important;
+}
+
+.section-heading h2,
+.account-dashboard-grid h2,
+.admin-dashboard-grid h2 {
+  letter-spacing: -0.02em !important;
+}
+
+.topbar .brand-mark,
+.hero-copy,
+.section-heading p,
+.card-main,
+.detail-summary,
+.detail-actions,
+.seo-content {
+  font-family: var(--app-font-body) !important;
+}
+
+.primary-button:hover,
+.soft-button:hover,
+.icon-text-button:hover,
+.toolbar-filter-button:hover,
+.segmented:hover,
+.account-button:hover,
+.research-refresh-button:hover {
+  transform: translateY(-1px) !important;
+}
+
+.primary-button:focus-visible,
+.soft-button:focus-visible,
+.icon-text-button:focus-visible,
+.toolbar-filter-button:focus-visible,
+.segmented:focus-visible,
+.account-button:focus-visible,
+.research-refresh-button:focus-visible,
+.search-band input:focus-visible,
+.search-band select:focus-visible {
+  box-shadow: var(--focus) !important;
+  outline: none !important;
+}
+
+.hero-logo,
+.storybook-mark,
+.logo-link,
+.seo-logo-link,
+.brand-icon {
+  border-radius: 14px !important;
+}
+
+.hero-logo img,
+.storybook-mark-image {
+  border-radius: 12px !important;
+  object-fit: contain !important;
+}
+
+.back-to-top-button {
+  border: 1px solid var(--apple-outline) !important;
+  border-radius: 999px !important;
+  background: var(--apple-hover-bg) !important;
+  box-shadow: var(--apple-shadow-soft) !important;
+  transition: transform var(--apple-timing) var(--apple-ease),
+    box-shadow var(--apple-timing) var(--apple-ease) !important;
+}
+
+.back-to-top-button:hover {
+  transform: translateY(-1px) !important;
+  box-shadow: var(--apple-shadow-hover) !important;
+}
+
+@media (max-width: 700px) {
+  .hero-card-shell,
+  .search-band,
+  .results-panel,
+  .account-dashboard-grid,
+  .admin-dashboard-grid {
+    padding-inline: clamp(10px, 4vw, 16px) !important;
+  }
+
+  .topbar {
+    width: calc(100% - 16px) !important;
+  }
+}
