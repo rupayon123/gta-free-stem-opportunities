@@ -10609,3 +10609,254 @@ body {
     scroll-behavior: auto !important;
   }
 }
+
+.site-shell-final-polish {
+  --apple-surface: color-mix(in srgb, #f5f5f7 96%, transparent);
+}
+
+:root[data-theme="light"] {
+  --apple-surface: #f5f5f7;
+  --apple-ink: #0c1f3a;
+  --apple-muted: #667589;
+  --apple-line: color-mix(in srgb, #9aa8ba 74%, transparent);
+  --apple-shadow-soft: 0 12px 34px color-mix(in srgb, #0a2048 7%, transparent);
+  --apple-shadow-strong: 0 18px 42px color-mix(in srgb, #0a2048 10%, transparent);
+  --surface: #f5f5f7;
+  --bg: #f5f5f7;
+  --surface-strong: #ffffff;
+  --ink: var(--apple-ink);
+  --muted: var(--apple-muted);
+  --line: var(--apple-line);
+  --shadow-soft: 0 10px 24px color-mix(in srgb, #0a2048 8%, transparent);
+}
+
+:root[data-theme="dark"] {
+  --apple-surface: #0b1020;
+  --apple-ink: #f5f7fb;
+  --apple-muted: #a5bbd2;
+  --apple-line: color-mix(in srgb, #4f7ea9 72%, transparent);
+  --apple-shadow-soft: 0 10px 30px color-mix(in srgb, #000 58%, transparent);
+  --apple-shadow-strong: 0 16px 40px color-mix(in srgb, #000 68%, transparent);
+  --surface: #111726;
+  --bg: #0a1020;
+  --surface-strong: #19223b;
+  --ink: var(--apple-ink);
+  --muted: var(--apple-muted);
+  --line: var(--apple-line);
+  --shadow-soft: 0 12px 30px color-mix(in srgb, #000 62%, transparent);
+}
+
+body {
+  background:
+    linear-gradient(180deg, var(--apple-surface) 0%, var(--bg) 100%),
+    var(--apple-surface) !important;
+  background-size: auto;
+}
+
+.site-shell {
+  background: transparent;
+}
+
+.site-shell::before,
+.hero-shell-glow,
+.hero-grid::after {
+  display: none !important;
+}
+
+.topbar,
+.hero-card-shell,
+.filter-panel,
+.results-panel,
+.announcement-strip,
+.pathway-card,
+.search-band,
+.opportunity-card,
+.support-card,
+.community-callout,
+.project-background-card,
+.account-panel,
+.admin-panel,
+.account-dashboard-hero,
+.admin-dashboard-hero,
+.source-panel {
+  border: 1px solid var(--apple-line) !important;
+  border-radius: 16px !important;
+  box-shadow: var(--apple-shadow-soft) !important;
+  backdrop-filter: blur(18px) saturate(1.08);
+  background: color-mix(in srgb, var(--surface) 95%, transparent) !important;
+}
+
+.topbar {
+  width: min(var(--section-max), calc(100% - 22px));
+  border-radius: 18px;
+  background: color-mix(in srgb, var(--surface) 88%, #ffffff 12%) !important;
+  box-shadow: var(--apple-shadow-soft);
+}
+
+.brand-mark strong {
+  letter-spacing: -0.02em;
+}
+
+.primary-button,
+.soft-button,
+.icon-text-button,
+.toolbar-filter-button,
+.account-button,
+.oauth-button,
+.filter-toggle-button {
+  font-family: var(--app-font-display);
+  border-radius: 10px !important;
+}
+
+.primary-button {
+  border: 0 !important;
+  background: linear-gradient(180deg, #007aff, #005ec2) !important;
+  color: #fff !important;
+  font-weight: 590;
+  box-shadow: 0 8px 24px color-mix(in srgb, #005ec2 20%, transparent) !important;
+}
+
+.primary-button:is(:hover, :focus-visible) {
+  transform: translateY(-1px);
+}
+
+.soft-button {
+  border: 1px solid var(--apple-line) !important;
+  background: color-mix(in srgb, var(--surface) 96%, var(--apple-surface) 4%) !important;
+  color: var(--ink) !important;
+  font-weight: 540;
+}
+
+.hero-card-shell h1,
+.topbar .brand-mark strong,
+.section-heading h2,
+.results-toolbar h2,
+.detail-main h2 {
+  font-family: var(--app-font-display);
+  font-weight: 700;
+  letter-spacing: -0.022em;
+}
+
+.hero-card-shell h1 {
+  font-size: clamp(2rem, 5.4vw, 3.4rem);
+  max-width: 12ch;
+}
+
+.hero-card-shell > p,
+.hero-copy p,
+.hero-status-copy p {
+  color: color-mix(in srgb, var(--muted) 84%, var(--ink));
+  line-height: 1.52;
+}
+
+.hero-search-form {
+  border-radius: 15px !important;
+  border: 1px solid var(--apple-line) !important;
+  background: color-mix(in srgb, var(--surface) 94%, transparent) !important;
+  box-shadow: var(--apple-shadow-soft) !important;
+  gap: 10px;
+}
+
+.hero-search-form button,
+.source-scout-mini,
+.oauth-button {
+  min-height: 38px !important;
+}
+
+.hero-search-form input,
+.hero-search-form button,
+.hero-search-form select {
+  border-radius: 10px;
+}
+
+.hero-search-form button,
+.hero-search-form :is(input, button, select):is(:focus-visible) {
+  outline: none;
+}
+
+.opportunity-card::after,
+.search-chip::after,
+.chip::after {
+  content: none !important;
+}
+
+.opportunity-card:hover,
+.opportunity-card:focus-visible,
+.pathway-card:hover,
+.pathway-card:focus-visible,
+.community-callout:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--apple-shadow-strong) !important;
+}
+
+.opportunity-card,
+.opportunity-card::before,
+.results-toolbar,
+.results-actions,
+.map-shell,
+.source-list a {
+  transition-property: transform, box-shadow, border-color;
+  transition-duration: 220ms;
+}
+
+.opportunity-card h3 {
+  font-size: 1.04rem;
+  letter-spacing: -0.01em;
+}
+
+.cards-column,
+.pathway-grid,
+.support-grid,
+.home-shell .landing-hero,
+.workspace-band {
+  row-gap: 14px;
+}
+
+.home-shell .landing-hero {
+  align-content: center;
+  min-height: min(100svh - 128px, 860px);
+}
+
+.hero-storybook-mark {
+  width: min(200px, 56vw) !important;
+  --mark-width: clamp(150px, 21vw, 220px) !important;
+  margin-top: 0 !important;
+}
+
+.hero-actions {
+  max-width: min(560px, 100%);
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+}
+
+.beta-pill,
+.chip {
+  border-radius: 999px !important;
+  border: 1px solid color-mix(in srgb, var(--blue) 28%, transparent);
+  background: color-mix(in srgb, var(--surface) 94%, transparent);
+}
+
+@media (max-width: 760px) {
+  .topbar,
+  .hero-card-shell,
+  .search-layout,
+  .opportunity-card {
+    border-radius: 14px !important;
+  }
+
+  .hero-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-card-shell h1 {
+    max-width: 100%;
+    font-size: clamp(1.8rem, 8vw, 2.6rem);
+  }
+
+  .hero-search-form {
+    padding: 5px 7px !important;
+  }
+
+  .hero-storybook-mark {
+    --mark-width: clamp(130px, 48vw, 176px) !important;
+  }
+}
