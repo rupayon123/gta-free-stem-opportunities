@@ -11761,10 +11761,6 @@ textarea:focus-visible,
   background: none !important;
 }
 
-* {
-  transition-duration: 180ms !important;
-}
-
 *::selection {
   background: color-mix(in srgb, #007aff 24%, transparent);
 }
@@ -11901,8 +11897,7 @@ textarea:focus-visible,
   max-width: min(74ch, 100%) !important;
 }
 
-@media (prefers-reduced-motion: reduce),
-        (max-width: 100000px) {
+@media (prefers-reduced-motion: reduce) {
   .hero-logo,
   .hero-storybook-mark,
   .hero-storybook-mark .storybook-mark-image,
@@ -11911,7 +11906,7 @@ textarea:focus-visible,
   .hero-storybook-mark .storybook-mark-card,
   * {
     animation: none !important;
-    transition-duration: 170ms !important;
+    transition-duration: 120ms !important;
   }
 
   * {
@@ -11921,12 +11916,34 @@ textarea:focus-visible,
 
 @media (prefers-reduced-motion: no-preference) {
   .hero-logo,
-  .hero-storybook-mark,
   .hero-storybook-mark .storybook-mark-image,
-  .story-card .storybook-mark-image,
-  .hero-card-shell .storybook-mark-image,
-  .story-card .story-mark-image {
-    animation: none !important;
+  .hero-card-shell .storybook-mark-image {
+    animation-name: gta-gentle-pulse;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+  }
+
+  .hero-logo,
+  .hero-storybook-mark,
+  .home-shell .hero-card-shell,
+  .hero-search-form button,
+  .soft-button,
+  .primary-button,
+  .toolbar-filter-button,
+  .filter-toggle-button {
+    transition: transform 260ms cubic-bezier(0.22, 0.61, 0.36, 1), box-shadow 240ms ease, background-color 200ms ease, border-color 200ms ease;
+  }
+}
+
+@keyframes gta-gentle-pulse {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(0);
+    opacity: 0.995;
   }
 }
 
