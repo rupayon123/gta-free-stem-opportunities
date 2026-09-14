@@ -14257,3 +14257,48 @@ body {
     gap: 10px;
   }
 }
+
+/* Apple dashboard profile finish: calm depth, natural motion, high-legibility. */
+.account-dashboard-modal,
+.admin-dashboard-modal,
+.auth-modal {
+  background: linear-gradient(180deg, color-mix(in srgb, var(--surface) 96%, transparent), color-mix(in srgb, var(--surface-strong) 78%, transparent));
+  border-color: color-mix(in srgb, var(--line) 82%, transparent);
+  box-shadow: var(--apple-shadow-soft);
+}
+
+.account-dashboard-modal .auth-header,
+.admin-dashboard-modal .auth-header,
+.auth-modal .auth-header {
+  border-bottom: 1px solid color-mix(in srgb, var(--line) 72%, transparent);
+  background: color-mix(in srgb, var(--surface) 95%, transparent);
+}
+
+.account-dashboard-grid,
+.admin-dashboard-grid,
+.account-dashboard-modal .account-dashboard-grid,
+.admin-dashboard-modal .admin-dashboard-grid {
+  gap: clamp(12px, 2vw, 20px);
+}
+
+.account-dashboard-grid .auth-tabs,
+.admin-dashboard-grid .auth-tabs,
+.auth-tabs {
+  max-width: min(560px, 100%);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.account-dashboard-grid .auth-tabs button,
+.admin-dashboard-grid .auth-tabs button,
+.auth-tabs button {
+  min-height: 34px;
+  border-radius: 10px;
+}
+
+.source-scout-mini,
+.source-scout-badge {
+  border: 1px solid color-mix(in srgb, var(--apple-outline, var(--line)) 78%, transparent);
+  background: color-mix(in srgb, var(--surface) 94%, transparent);
+  box-shadow: var(--apple-shadow-soft);
+}
