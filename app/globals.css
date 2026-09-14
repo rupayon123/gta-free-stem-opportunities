@@ -7463,10 +7463,38 @@ body {
   min-height: calc(100svh - 78px) !important;
   place-items: center;
   padding: clamp(10px, 2vh, 22px) 0 !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-shell-glow {
+  position: absolute;
+  inset: -30% auto auto -28%;
+  width: 68%;
+  aspect-ratio: 1;
+  border-radius: 999px;
+  background:
+    radial-gradient(circle at 25% 25%, color-mix(in srgb, var(--blue) 28%, transparent), transparent 68%),
+    radial-gradient(circle at 75% 72%, color-mix(in srgb, var(--mint) 24%, transparent), transparent 64%),
+    radial-gradient(circle at 18% 84%, color-mix(in srgb, var(--yellow) 18%, transparent), transparent 72%);
+  filter: blur(0.5rem);
+  opacity: 0.72;
+  pointer-events: none;
+  animation: hero-glow 14s linear infinite alternate;
+}
+
+@keyframes hero-glow {
+  from {
+    transform: translate3d(-6px, 0, 0) scale(1);
+  }
+  to {
+    transform: translate3d(6px, -4px, 0) scale(1.04);
+  }
 }
 
 .hero-card-shell {
   display: grid;
+  position: relative;
   width: min(960px, 100%);
   justify-items: center;
   gap: clamp(8px, 1.2vh, 14px) !important;
@@ -10063,6 +10091,10 @@ body {
 .legal-page .seo-hero h1 {
   font-size: clamp(2.35rem, 5vw, 4.35rem);
   line-height: 1.02;
+}
+
+.legal-page .hero-actions :is(.primary-button, .soft-button) {
+  min-height: 44px;
 }
 
 .legal-document {

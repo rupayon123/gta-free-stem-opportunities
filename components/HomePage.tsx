@@ -10,6 +10,7 @@ import {
   ClipboardCheck,
   Compass,
   Edit3,
+  ExternalLink,
   Handshake,
   Languages,
   ListChecks,
@@ -70,6 +71,7 @@ import {
 } from "@/lib/betaBackend";
 import type { SupabaseOAuthProvider } from "@/lib/betaBackend";
 import { languageMeta, t, translatedSummary } from "@/lib/i18n";
+import { isHighSchoolAgeEligible } from "@/lib/opportunityAudience";
 import { adminReviewOpportunities, computedOpportunityStatus, publicOpportunities } from "@/lib/opportunityStatus";
 import { warnAboutLocalFallback } from "@/lib/supabaseClient";
 import type {
@@ -141,6 +143,7 @@ const THEME_KEY = `${STORAGE_PREFIX}-theme`;
 const LANGUAGE_KEY = `${STORAGE_PREFIX}-language`;
 const ACCOUNTS_KEY = `${STORAGE_PREFIX}-accounts`;
 const CURRENT_USER_KEY = `${STORAGE_PREFIX}-current-user-id`;
+const ANONYMOUS_SAVED_KEY = `${STORAGE_PREFIX}-saved-anonymous`;
 const REVIEW_KEY = `${STORAGE_PREFIX}-community-submissions`;
 const ADMIN_ANNOUNCEMENTS_KEY = `${STORAGE_PREFIX}-admin-announcements`;
 const ADMIN_EVENT_EDITS_KEY = `${STORAGE_PREFIX}-admin-event-edits`;
@@ -217,21 +220,7 @@ function directionsUrl(opportunity: Opportunity) {
 }
 
 function isHighSchoolOpportunity(opportunity: Opportunity) {
-  const haystack = [...opportunity.tags, opportunity.type, opportunity.category, ...opportunity.categories, ...opportunity.grades]
-    .join(" ")
-    .toLowerCase();
-  return (
-    opportunity.volunteerHoursEligible ||
-    opportunity.coopEligible ||
-    opportunity.categories.includes("Career & Mentorship") ||
-    opportunity.categories.includes("Youth Leadership") ||
-    haystack.includes("shsm") ||
-    haystack.includes("high school") ||
-    haystack.includes("grade 9") ||
-    haystack.includes("grade 10") ||
-    haystack.includes("grade 11") ||
-    haystack.includes("grade 12")
-  );
+  return isHighSchoolAgeEligible(opportunity);
 }
 
 async function hashPassword(email: string, password: string) {
@@ -339,6 +328,7 @@ export function HomePage({ initialSurface = "home", initialFilterOverrides = {} 
   const [selectedId, setSelectedId] = useState("");
   const [showBackToTop, setShowBackToTop] = useState(false);
   const [savedIds, setSavedIds] = useState<string[]>([]);
+  const [storageHydrated, setStorageHydrated] = useState(false);
   const [userLocation, setUserLocation] = useState<Coordinates | null>(null);
   const [locationStatus, setLocationStatus] = useState("");
   const [localQueueCount, setLocalQueueCount] = useState(0);
@@ -380,6 +370,7 @@ export function HomePage({ initialSurface = "home", initialFilterOverrides = {} 
           if (!active) return;
           setBackendStatus(error instanceof Error ? error.message : "Supabase connection needs review.");
         }
+        setStorageHydrated(true);
         return;
       }
 
@@ -402,6 +393,11 @@ export function HomePage({ initialSurface = "home", initialFilterOverrides = {} 
       if (localPreviewAccountsEnabled && storedAccount) {
         setCurrentUser(publicAccount(storedAccount));
         setSavedIds(safeJson<string[]>(window.localStorage.getItem(savedKey(storedAccount.id)), []));
+      } else {
+        const publicIds = new Set(publicOpportunities(opportunities).map((opportunity) => opportunity.id));
+        setSavedIds(
+          safeJson<string[]>(window.localStorage.getItem(ANONYMOUS_SAVED_KEY), []).filter((id) => publicIds.has(id))
+        );
       }
       setLocalQueueCount(storedQueue.length);
       setAdminAnnouncements(storedAnnouncements.map((announcement) => ({ ...announcement, status: announcement.status ?? "active" })));
@@ -411,6 +407,7 @@ export function HomePage({ initialSurface = "home", initialFilterOverrides = {} 
           ? "Static beta preview is running locally. Connect Supabase for production accounts."
           : "Public browsing is active. Connect Supabase for production accounts, saves, and admin review."
       );
+      setStorageHydrated(true);
     }
     hydrateFromStorage();
     return () => {
@@ -473,9 +470,10 @@ export function HomePage({ initialSurface = "home", initialFilterOverrides = {} 
   }, [activeSurface]);
 
   useEffect(() => {
-    if (!currentUser || backendMode !== "local" || !canUseLocalPreviewAccounts()) return;
-    window.localStorage.setItem(savedKey(currentUser.id), JSON.stringify(savedIds));
-  }, [backendMode, currentUser, savedIds]);
+    if (!storageHydrated || backendMode !== "local") return;
+    const storageKey = currentUser && canUseLocalPreviewAccounts() ? savedKey(currentUser.id) : ANONYMOUS_SAVED_KEY;
+    window.localStorage.setItem(storageKey, JSON.stringify(savedIds));
+  }, [backendMode, currentUser, savedIds, storageHydrated]);
 
   useEffect(() => {
     if (!filtersOpen) return;
@@ -502,6 +500,20 @@ export function HomePage({ initialSurface = "home", initialFilterOverrides = {} 
   const savedIdSet = useMemo(() => new Set(savedIds), [savedIds]);
 
   const publicVisibleOpportunities = useMemo(() => publicOpportunities(displayOpportunities), [displayOpportunities]);
+  const highSchoolPathwayCounts = useMemo(() => {
+    const currentHighSchoolListings = publicVisibleOpportunities.filter(isHighSchoolOpportunity);
+    return {
+      volunteerHours: currentHighSchoolListings.filter((opportunity) => opportunity.volunteerHoursEligible).length,
+      coop: currentHighSchoolListings.filter((opportunity) => opportunity.coopEligible).length,
+      mentorship: currentHighSchoolListings.filter((opportunity) =>
+        opportunity.categories.includes("Career & Mentorship")
+      ).length
+    };
+  }, [publicVisibleOpportunities]);
+  const savedPublicOpportunities = useMemo(
+    () => publicVisibleOpportunities.filter((opportunity) => savedIdSet.has(opportunity.id)),
+    [publicVisibleOpportunities, savedIdSet]
+  );
   const selectedOpportunity = useMemo(
     () =>
       visibleOpportunities.find((opportunity) => opportunity.id === selectedId) ??
@@ -638,7 +650,11 @@ export function HomePage({ initialSurface = "home", initialFilterOverrides = {} 
       window.localStorage.removeItem(CURRENT_USER_KEY);
     }
     setCurrentUser(null);
-    setSavedIds([]);
+    setSavedIds(
+      backendMode === "local"
+        ? safeJson<string[]>(window.localStorage.getItem(ANONYMOUS_SAVED_KEY), [])
+        : []
+    );
     setSaveGateMessage("");
     setAccountDashboardOpen(false);
   };
@@ -839,7 +855,7 @@ export function HomePage({ initialSurface = "home", initialFilterOverrides = {} 
   };
 
   const toggleSaved = async (id: string) => {
-    if (!currentUser?.emailVerified) {
+    if (backendMode === "supabase" && !currentUser?.emailVerified) {
       const message = "Create or sign in with a verified account to save STEM opportunities.";
       setSaveGateMessage(message);
       openAuth("signin", message);
@@ -1083,7 +1099,9 @@ export function HomePage({ initialSurface = "home", initialFilterOverrides = {} 
               value={filters.region}
               onChange={(event) => updateFilter("region", event.target.value as Filters["region"])}
             >
-              <option value="All">{t(language, "allGta")}</option>
+              <option value="All">
+                {t(language, "region")}: {t(language, "any")}
+              </option>
               {regions.map((region) => (
                 <option key={region} value={region}>
                   {region}
@@ -1249,6 +1267,7 @@ export function HomePage({ initialSurface = "home", initialFilterOverrides = {} 
         theme={theme}
         setTheme={setTheme}
         currentUser={currentUser}
+        accountsAvailable={backendMode === "supabase" || canUseLocalPreviewAccounts()}
         onAuthClick={() => openAuth("signin")}
         onAccountClick={() => setAccountDashboardOpen(true)}
         onSignOut={signOut}
@@ -1258,14 +1277,17 @@ export function HomePage({ initialSurface = "home", initialFilterOverrides = {} 
 
       {activeSurface === "home" ? (
       <section className="workspace-band hero-band landing-hero" aria-labelledby="landing-title">
+        <div className="hero-shell-glow" aria-hidden="true" />
         <div className="hero-card-shell">
           <StorybookMark className="hero-storybook-mark" ariaHidden />
           <span className="beta-pill">
             <Sparkles size={16} aria-hidden="true" />
-            {t(language, "beta")}
+            {t(language, "region")}: Toronto · York
           </span>
           <h1 id="landing-title">{t(language, "brand")}</h1>
-          <p>{t(language, "mission")}</p>
+          <p>
+            {t(language, "verifiedListings")}: Toronto · Markham · {t(language, "freeOnly")}
+          </p>
           <form className="hero-search-form" onSubmit={handleHeroSearch}>
             <Search size={20} aria-hidden="true" />
             <input
@@ -1309,6 +1331,7 @@ export function HomePage({ initialSurface = "home", initialFilterOverrides = {} 
       {activeSurface === "high-school" ? (
         <HighSchoolSection
           language={language}
+          pathwayCounts={highSchoolPathwayCounts}
           onVolunteerFilter={navigation.volunteerHours}
           onCoopFilter={navigation.coop}
           onMentorshipFilter={navigation.mentorship}
@@ -1481,8 +1504,8 @@ export function HomePage({ initialSurface = "home", initialFilterOverrides = {} 
       ) : accountDashboardOpen && currentUser ? (
         <AccountDashboard
           user={currentUser}
-          savedOpportunities={displayOpportunities.filter((opportunity) => savedIdSet.has(opportunity.id))}
-          savedCount={savedIds.length}
+          savedOpportunities={savedPublicOpportunities}
+          savedCount={savedPublicOpportunities.length}
           language={language}
           theme={theme}
           localQueueCount={localQueueCount}
@@ -1512,6 +1535,7 @@ function Header({
   theme,
   setTheme,
   currentUser,
+  accountsAvailable,
   onAuthClick,
   onAccountClick,
   onSignOut,
@@ -1523,6 +1547,7 @@ function Header({
   theme: ThemePreference;
   setTheme: (theme: ThemePreference) => void;
   currentUser: VerifiedAccount | null;
+  accountsAvailable: boolean;
   onAuthClick: () => void;
   onAccountClick: () => void;
   onSignOut: () => void;
@@ -1628,12 +1653,12 @@ function Header({
               <LogOut size={15} aria-hidden="true" />
             </button>
           </div>
-        ) : (
+        ) : accountsAvailable ? (
           <button type="button" className="account-button" onClick={onAuthClick}>
             <UserRound size={16} aria-hidden="true" />
             <span className="account-button-full">{t(language, "accountAdmin")}</span>
           </button>
-        )}
+        ) : null}
       </div>
     </header>
   );
@@ -1763,6 +1788,16 @@ function OpportunityCard({
         {opportunity.communityFocus.includes("Indigenous-focused") ? <span className="chip mint">{t(language, "indigenous")}</span> : null}
       </div>
       <div className="card-actions">
+        <a
+          href={opportunity.sourceUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="soft-button"
+          aria-label={`${t(language, "source")}: ${opportunity.title}`}
+        >
+          <ExternalLink size={16} aria-hidden="true" />
+          {t(language, "source")}
+        </a>
         <button type="button" onClick={onSave} className={saved ? "soft-button saved" : "soft-button"}>
           <CheckCircle2 size={16} aria-hidden="true" />
           {saved ? t(language, "saved") : t(language, "save")}
@@ -1836,7 +1871,7 @@ function MapPanel({
         const markerElement = document.createElement("button");
         markerElement.type = "button";
         markerElement.className = opportunity.id === selectedId ? "map-marker selected" : "map-marker";
-        markerElement.setAttribute("aria-label", opportunity.title);
+        markerElement.setAttribute("aria-label", t(language, "opportunityPin"));
         markerElement.addEventListener("click", () => onSelect(opportunity.id));
 
         const marker = new maplibregl.Marker({ element: markerElement, anchor: "bottom" })
@@ -1979,11 +2014,17 @@ function Fact({ label, value }: { label: string; value: string }) {
 
 function HighSchoolSection({
   language,
+  pathwayCounts,
   onVolunteerFilter,
   onCoopFilter,
   onMentorshipFilter
 }: {
   language: LanguageCode;
+  pathwayCounts: {
+    volunteerHours: number;
+    coop: number;
+    mentorship: number;
+  };
   onVolunteerFilter: () => void;
   onCoopFilter: () => void;
   onMentorshipFilter: () => void;
@@ -1992,28 +2033,32 @@ function HighSchoolSection({
     {
       icon: UsersRound,
       title: t(language, "volunteerHours"),
-      text: t(language, "volunteerCardText"),
+      count: pathwayCounts.volunteerHours,
       action: onVolunteerFilter
     },
     {
       icon: Building2,
       title: t(language, "coop"),
-      text: t(language, "coopCardText"),
+      count: pathwayCounts.coop,
       action: onCoopFilter
     },
     {
       icon: Compass,
       title: t(language, "mentorship"),
-      text: t(language, "mentorshipCardText"),
+      count: pathwayCounts.mentorship,
       action: onMentorshipFilter
     }
-  ];
+  ].filter((card) => card.count > 0);
+
+  if (!pathwayCards.length) return null;
 
   return (
     <section id="high-school" className="workspace-band highschool-band" aria-label="High school pathways">
       <div className="section-heading">
         <p className="eyebrow">{t(language, "highSchool")}</p>
-        <h2>{t(language, "highSchoolHeading")}</h2>
+        <h2>
+          {t(language, "highSchool")} · {t(language, "verifiedListings")}
+        </h2>
       </div>
       <div className="pathway-grid">
         {pathwayCards.map((card) => {
@@ -2022,7 +2067,9 @@ function HighSchoolSection({
             <button key={card.title} type="button" className="pathway-card" onClick={card.action}>
               <Icon size={22} aria-hidden="true" />
               <strong>{card.title}</strong>
-              <span>{card.text}</span>
+              <span>
+                {card.count} {t(language, "results")}
+              </span>
             </button>
           );
         })}
@@ -2101,7 +2148,7 @@ function ContributeSection({
       </div>
       <div className="contribute-grid community-grid">
         <MiniForm
-          title={t(language, "partner")}
+          title={t(language, "communityNetwork")}
           icon={<Handshake size={18} aria-hidden="true" />}
           fields={fields.host}
           submitLabel={submitLabel}

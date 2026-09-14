@@ -30,12 +30,17 @@
     "supabase:check": "tsx scripts/check-supabase.ts",
     "supabase:seed": "tsx scripts/export-supabase-seed.ts",
     "qa": "tsx scripts/qa-check.ts",
+    "verify:legal": "tsx scripts/verify-public-legal-pages.ts",
+    "verify:legal:release": "VERIFY_DEPLOYED_LEGAL=0 REQUIRE_MONITORED_SUPPORT=1 npm run verify:legal",
+    "verify:legal:production": "VERIFY_DEPLOYED_LEGAL=1 REQUIRE_MONITORED_SUPPORT=1 npm run verify:legal",
+    "build:app-release": "npm run build && npm run verify:legal:release",
     "deploy:pages": "npm run build && npx --yes wrangler pages deploy out --project-name=gta-free-stem",
     "prepare:map": "tsx scripts/prepare-map-assets.ts",
     "predev": "npm run prepare:map",
     "prebuild": "npm run prepare:map"
   },
   "dependencies": {
+    "@next/env": "^16.3.0",
     "@supabase/supabase-js": "^2.107.0",
     "lucide-react": "^1.16.0",
     "maplibre-gl": "^6.4.1",
