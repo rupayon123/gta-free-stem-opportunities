@@ -20,7 +20,7 @@
   --lavender-soft: #eee7ff;
   --peach: #ffb36f;
   --peach-soft: #fff0df;
-  --panel-wash: linear-gradient(145deg, rgba(255, 254, 250, 0.98), rgba(218, 247, 255, 0.9) 42%, rgba(255, 244, 190, 0.78));
+  --panel-wash: color-mix(in srgb, var(--surface) 95%, transparent);
   --control-bg: color-mix(in srgb, #ffffff 84%, var(--blue-soft));
   --control-bg-strong: color-mix(in srgb, #ffffff 72%, var(--yellow-soft));
   --track-bg: color-mix(in srgb, var(--yellow) 54%, var(--mint) 28%);
@@ -56,7 +56,7 @@
   --lavender-soft: #382f70;
   --peach: #ffc078;
   --peach-soft: #63411f;
-  --panel-wash: linear-gradient(145deg, rgba(16, 40, 68, 0.97), rgba(14, 75, 68, 0.78) 44%, rgba(56, 47, 112, 0.7));
+  --panel-wash: color-mix(in srgb, var(--surface) 95%, transparent);
   --control-bg: color-mix(in srgb, #102844 82%, var(--blue) 10%);
   --control-bg-strong: color-mix(in srgb, #153f62 78%, var(--yellow) 8%);
   --track-bg: color-mix(in srgb, var(--blue) 54%, var(--mint) 30%);
@@ -76,17 +76,9 @@ html {
 body {
   min-width: 320px;
   margin: 0;
-  background:
-    radial-gradient(circle at 20px 20px, color-mix(in srgb, var(--blue) 18%, transparent) 0 2px, transparent 2px 100%),
-    linear-gradient(135deg, rgba(216, 245, 255, 0.9), rgba(255, 248, 231, 0) 34rem),
-    linear-gradient(225deg, rgba(255, 225, 232, 0.85), rgba(255, 248, 231, 0) 32rem),
-    linear-gradient(315deg, rgba(220, 255, 244, 0.72), rgba(255, 248, 231, 0) 36rem),
-    linear-gradient(180deg, rgba(255, 248, 231, 0.96), rgba(255, 244, 190, 0.48) 44rem),
-    var(--bg);
-  background-size: 34px 34px, auto, auto, auto, auto, auto;
+  background: color-mix(in srgb, var(--surface) 96%, var(--bg) 4%);
   color: var(--ink);
-  font-family:
-    "Poppins", "Manrope", "Nunito Sans", "Avenir Next", "Avenir", "Segoe UI", sans-serif;
+  font-family: var(--app-font-body);
   text-rendering: optimizeLegibility;
 }
 
@@ -12478,6 +12470,37 @@ body {
   display: none !important;
   background: none !important;
   background-image: none !important;
+}
+
+.site-shell::before,
+.site-shell::after,
+.hero-grid::before,
+.hero-grid::after {
+  display: none !important;
+}
+
+.hero-grid::after,
+.brand-icon,
+.metric {
+  border: none !important;
+  box-shadow: none !important;
+  background: var(--site-surface) !important;
+}
+
+.hero-copy h1 {
+  text-shadow: none !important;
+}
+
+.metric,
+.metric:nth-child(2),
+.metric:nth-child(3),
+.source-scout-badge,
+.source-scout-radar {
+  background: var(--site-surface) !important;
+}
+
+.source-scout-radar {
+  color: inherit !important;
 }
 
 .hero-storybook-mark .storybook-mark-image,
