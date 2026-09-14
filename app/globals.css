@@ -11367,3 +11367,177 @@ textarea:focus-visible,
     max-width: 100%;
   }
 }
+
+/* Final polish lock: keep it restrained, tactile, and consistent with iOS product surfaces. */
+:root {
+  --shadow: 0 10px 24px color-mix(in srgb, #000 10%, transparent);
+  --shadow-soft: 0 8px 18px color-mix(in srgb, #000 8%, transparent);
+  --shadow-float: 0 14px 30px color-mix(in srgb, #000 12%, transparent);
+  --motion: 210ms cubic-bezier(0.2, 0.8, 0.2, 1);
+  --pop: 180ms cubic-bezier(0.2, 0.9, 0.2, 1);
+}
+
+:root[data-theme="light"] {
+  --focus: 0 0 0 3px color-mix(in srgb, #007aff 28%, transparent);
+}
+
+:root[data-theme="dark"] {
+  --focus: 0 0 0 3px color-mix(in srgb, #0a84ff 28%, transparent);
+}
+
+.site-shell {
+  background: var(--bg) !important;
+}
+
+.hero-card-shell,
+.topbar,
+.search-band,
+.search-layout,
+.filter-panel,
+.results-panel,
+.opportunity-card,
+.pathway-card,
+.community-callout,
+.support-card,
+.project-background-card,
+.account-panel,
+.admin-panel,
+.source-panel,
+.auth-modal,
+.account-dashboard-hero,
+.admin-dashboard-hero,
+.legal-document section {
+  border-radius: var(--ios-card-radius, 16px) !important;
+  border-color: color-mix(in srgb, var(--line) 74%, transparent) !important;
+  box-shadow: var(--ios-shadow-subtle) !important;
+  backdrop-filter: blur(16px) saturate(1.05);
+}
+
+.hero-card-shell h1 {
+  letter-spacing: -0.024em;
+  text-wrap: balance;
+}
+
+.hero-card-shell > p,
+.hero-copy p,
+.hero-status-copy p,
+.detail-summary,
+.community-callout p,
+.project-background-card p {
+  letter-spacing: -0.006em;
+}
+
+.hero-logo,
+.hero-storybook-mark,
+.storybook-mark {
+  animation: none !important;
+}
+
+.hero-storybook-mark,
+.hero-card-shell .hero-storybook-mark {
+  --mark-width: clamp(140px, 21vw, 210px) !important;
+  width: auto !important;
+  margin: 0 auto !important;
+}
+
+.hero-search-form,
+.hero-search-form input,
+.hero-search-form button,
+.search-band .compact-select,
+.theme-toggle,
+.toolbar-controls,
+.search-band .compact-select select {
+  border-radius: 12px !important;
+}
+
+.hero-search-form input,
+.field input,
+.field select,
+.field textarea,
+.compact-status-select select {
+  border: 1px solid color-mix(in srgb, var(--line) 80%, transparent) !important;
+  background: color-mix(in srgb, var(--surface) 94%, var(--bg) 6%) !important;
+  box-shadow: inset 0 0 0 1px transparent !important;
+}
+
+.hero-search-form button,
+.primary-button,
+.soft-button,
+.toolbar-filter-button,
+.icon-text-button,
+.account-button,
+.auth-tabs button,
+.oauth-button,
+.filter-toggle-button,
+.topbar .theme-toggle button {
+  transition: transform 170ms ease, background-color 170ms ease, box-shadow 170ms ease;
+}
+
+.primary-button:is(:hover, :focus-visible),
+.soft-button:is(:hover, :focus-visible),
+.toolbar-filter-button:is(:hover, :focus-visible),
+.filter-toggle-button:is(:hover, :focus-visible),
+.account-button:is(:hover, :focus-visible) {
+  transform: translateY(-1px);
+}
+
+.chip,
+.card-kicker,
+.beta-pill,
+.search-chip,
+.source-list a,
+.saved-list a {
+  background: color-mix(in srgb, var(--surface) 90%, var(--bg) 10%) !important;
+  border-color: color-mix(in srgb, var(--line) 60%, transparent) !important;
+}
+
+.chip.success,
+.chip.berry,
+.chip.mint,
+.chip.lavender,
+:root[data-theme="dark"] .chip.success,
+:root[data-theme="dark"] .chip.berry,
+:root[data-theme="dark"] .chip.mint,
+:root[data-theme="dark"] .chip.lavender {
+  background: color-mix(in srgb, var(--surface) 90%, transparent) !important;
+  color: inherit !important;
+  text-shadow: none !important;
+}
+
+.opportunity-card:nth-child(4n + 1),
+.opportunity-card:nth-child(4n + 2),
+.opportunity-card:nth-child(4n + 3),
+.opportunity-card:nth-child(4n + 4) {
+  background: color-mix(in srgb, var(--surface) 94%, transparent) !important;
+}
+
+.opportunity-card.selected {
+  border-color: color-mix(in srgb, var(--blue) 56%, transparent) !important;
+}
+
+.filter-modal-backdrop,
+.auth-backdrop,
+.map-shell {
+  background: color-mix(in srgb, #000 22%, transparent) !important;
+}
+
+.filter-modal-header,
+.account-dashboard-hero,
+.admin-dashboard-hero {
+  border-bottom: 1px solid color-mix(in srgb, var(--line) 58%, transparent) !important;
+}
+
+@media (max-width: 560px) {
+  .topbar.home-topbar {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+
+  .home-shell .hero-card-shell {
+    gap: 8px !important;
+    padding: 16px !important;
+  }
+
+  .home-shell .hero-card-shell h1 {
+    line-height: 1.02 !important;
+  }
+}
