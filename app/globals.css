@@ -12125,6 +12125,7 @@ textarea:focus-visible,
   transition:
     transform var(--motion),
     filter var(--motion);
+  animation: none;
 }
 
 .hero-storybook-mark:hover .storybook-mark-image,
@@ -12135,7 +12136,19 @@ textarea:focus-visible,
 .hero-logo:focus-visible,
 .brand-mark:hover .storybook-mark-image {
   transform: translateY(-1px);
-  animation: real-logo-giggle 620ms var(--motion) both;
+}
+
+.hero-logo:active,
+.hero-logo.is-giggling {
+  animation: none !important;
+}
+
+.home-shell .hero-card-shell .hero-logo {
+  will-change: transform;
+  transition:
+    transform var(--motion),
+    filter var(--motion),
+    opacity var(--motion);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -12155,12 +12168,38 @@ textarea:focus-visible,
 }
 
 @media (prefers-reduced-motion: no-preference) {
+  .hero-copy,
+  .landing-hero,
+  .mission-strip,
+  .filter-panel,
+  .results-panel,
+  .section-heading,
+  .pathway-card,
+  .mini-form,
+  .opportunity-card,
+  .search-band,
+  .search-band .cards-column,
+  .home-shell .hero-card-shell .hero-logo,
+  .hero-card-shell,
+  .hero-card-shell .storybook-mark-image,
+  .hero-card-shell .storybook-mark-card,
+  .site-shell,
+  .topbar,
   .hero-logo,
   .hero-storybook-mark,
   .hero-storybook-mark .storybook-mark-image,
   .hero-card-shell .storybook-mark-image,
   .hero-card-shell .storybook-mark-card {
-    animation: none;
+    animation: none !important;
+  }
+
+  .hero-card-shell,
+  .search-band,
+  .opportunity-card,
+  .pathway-card,
+  .results-panel,
+  .filter-panel {
+    transform: none !important;
   }
 }
 
