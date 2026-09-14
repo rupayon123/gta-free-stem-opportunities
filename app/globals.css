@@ -13500,3 +13500,86 @@ body {
     grid-template-columns: 1fr !important;
   }
 }
+
+/* Final motion discipline for professional production feel (no decorative gimmicks). */
+.hero-logo.is-giggling,
+.hero-logo.is-giggling img,
+.story-content,
+.story-content *,
+.storybook-mark,
+.storybook-mark-card,
+.storybook-mark-image,
+.storybook-mark-pin,
+.storybook-mark-main,
+.storybook-mark-sub,
+.storybook-mark-doodles span,
+.hero-storybook-mark,
+.brand-storybook-mark,
+.seo-storybook-mark,
+.brand-storybook-mark .storybook-mark-card,
+.hero-storybook-mark .storybook-mark-card,
+.seo-storybook-mark .storybook-mark-card,
+.account-consent-panel,
+.map-shell,
+.results-panel,
+.community-callout,
+.opportunity-card,
+.pathway-card,
+.support-card,
+.project-background-card,
+.admin-review-item,
+.announcement-item,
+.trusted-banner,
+.source-scout-badge,
+.source-scout-radar {
+  animation: none !important;
+  transition: transform var(--motion), background-color var(--motion), border-color var(--motion), box-shadow var(--motion), color var(--motion) !important;
+}
+
+.hero-logo,
+.hero-logo img,
+.hero-storybook-mark .storybook-mark-card,
+.brand-storybook-mark .storybook-mark-card,
+.seo-storybook-mark .storybook-mark-card {
+  filter: none !important;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+.hero-logo img,
+.brand-storybook-mark .storybook-mark-main,
+.hero-storybook-mark .storybook-mark-main,
+.seo-storybook-mark .storybook-mark-main {
+  animation: none !important;
+  transition: none !important;
+}
+
+.source-scout-mini,
+.source-scout-radar .legend-dot {
+  animation: none !important;
+}
+
+*,
+*::before,
+*::after {
+  animation-delay: 0s !important;
+  animation-iteration-count: 1 !important;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .home-shell .hero-card-shell,
+  .search-band,
+  .results-panel,
+  .filter-modal,
+  .auth-modal,
+  .account-dashboard-modal,
+  .admin-dashboard-modal,
+  .hero-copy,
+  .section-heading,
+  .pathway-grid,
+  .support-grid,
+  .contribute-grid {
+    transition-duration: 220ms !important;
+    transition-timing-function: ease-in-out !important;
+  }
+}
