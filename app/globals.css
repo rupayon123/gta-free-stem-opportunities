@@ -11786,6 +11786,7 @@ textarea:focus-visible,
   --ios-font-display: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, sans-serif;
   --focus: 0 0 0 3px color-mix(in srgb, var(--ios-blue) 28%, transparent);
   --motion: 220ms cubic-bezier(0.22, 0.61, 0.36, 1);
+  color-scheme: light;
 }
 
 :root[data-theme="light"] {
@@ -11801,6 +11802,7 @@ textarea:focus-visible,
 }
 
 :root[data-theme="dark"] {
+  color-scheme: dark;
   --bg: #000000;
   --surface: #1c1c1e;
   --surface-strong: #2c2c2e;
@@ -11808,7 +11810,7 @@ textarea:focus-visible,
   --muted: #aeaeb2;
   --line: color-mix(in srgb, #3a3a3c 84%, transparent);
   --blue: #0a84ff;
-  --blue-strong: #e4f0ff;
+  --blue-strong: #0059dd;
   --blue-soft: #132b4b;
 }
 
@@ -12120,6 +12122,9 @@ textarea:focus-visible,
 .brand-mark .storybook-mark-image,
 .hero-storybook-mark .storybook-mark-card {
   will-change: transform;
+  transition:
+    transform var(--motion),
+    filter var(--motion);
 }
 
 .hero-storybook-mark:hover .storybook-mark-image,
@@ -12153,12 +12158,9 @@ textarea:focus-visible,
   .hero-logo,
   .hero-storybook-mark,
   .hero-storybook-mark .storybook-mark-image,
-  .hero-card-shell .storybook-mark-image {
-    animation-iteration-count: infinite;
-    animation-duration: 14s;
-    animation-name: gentle-float;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: both;
+  .hero-card-shell .storybook-mark-image,
+  .hero-card-shell .storybook-mark-card {
+    animation: none;
   }
 }
 
