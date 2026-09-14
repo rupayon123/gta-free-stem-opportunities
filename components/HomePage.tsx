@@ -71,7 +71,6 @@ import {
 } from "@/lib/betaBackend";
 import type { SupabaseOAuthProvider } from "@/lib/betaBackend";
 import { languageMeta, t, translatedSummary } from "@/lib/i18n";
-import { isHighSchoolAgeEligible } from "@/lib/opportunityAudience";
 import { adminReviewOpportunities, computedOpportunityStatus, publicOpportunities } from "@/lib/opportunityStatus";
 import { warnAboutLocalFallback } from "@/lib/supabaseClient";
 import type {
@@ -217,6 +216,27 @@ function clampDistance(value: number) {
 
 function directionsUrl(opportunity: Opportunity) {
   return `https://www.google.com/maps/dir/?api=1&destination=${opportunity.latitude},${opportunity.longitude}`;
+}
+
+function isHighSchoolAgeEligible(opportunity: Opportunity) {
+  const overlapsHighSchoolAges = opportunity.ageMin <= 18 && (opportunity.ageMax ?? Number.POSITIVE_INFINITY) >= 14;
+  const searchableText = [
+    opportunity.title,
+    opportunity.summary,
+    opportunity.description,
+    opportunity.category,
+    ...opportunity.categories,
+    ...opportunity.tags
+  ]
+    .join(" ")
+    .toLowerCase();
+  const hasHighSchoolSignal =
+    opportunity.volunteerHoursEligible ||
+    opportunity.coopEligible ||
+    ["high school", "secondary school", "teen", "youth", "shsm", "mentor", "career coaching"].some((token) =>
+      searchableText.includes(token)
+    );
+  return overlapsHighSchoolAges || hasHighSchoolSignal;
 }
 
 function isHighSchoolOpportunity(opportunity: Opportunity) {
