@@ -12485,9 +12485,22 @@ body {
   border: none !important;
   box-shadow: none !important;
   background: var(--site-surface) !important;
+  filter: none !important;
 }
 
 .hero-copy h1 {
+  text-shadow: none !important;
+}
+
+.hero-copy p,
+.panel-title,
+.metric strong,
+.metric span,
+.search-band .story-title,
+.search-band .opportunity-card h3,
+.search-band .pathway-card h3,
+.opportunity-card h3,
+.pathway-card h3 {
   text-shadow: none !important;
 }
 
