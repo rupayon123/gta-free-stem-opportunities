@@ -1,4 +1,42 @@
 import { HomePage } from "@/components/HomePage";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "GTA FREE STEM Opportunities | Free STEM programs in GTA",
+  description:
+    "Find free and accessible STEM opportunities for students, families, educators, and community groups across the Greater Toronto Area.",
+  keywords: [
+    "free STEM programs GTA",
+    "GTA youth opportunities",
+    "volunteer hours Toronto",
+    "school co-op opportunities",
+    "SHSM and mentorship programs GTA"
+  ],
+  alternates: {
+    canonical: "https://gta-free-stem.vercel.app/",
+    languages: {
+      en: "https://gta-free-stem.vercel.app/",
+      "en-CA": "https://gta-free-stem.vercel.app/",
+      "x-default": "https://gta-free-stem.vercel.app/"
+    }
+  },
+  openGraph: {
+    title: "GTA FREE STEM Opportunities | Free STEM programs in the Greater Toronto Area",
+    description:
+      "Find free and accessible STEM opportunities for students, caregivers, parents, educators, and community groups across the GTA.",
+    url: "https://gta-free-stem.vercel.app/",
+    siteName: "GTA FREE STEM Opportunities",
+    type: "website",
+    images: [
+      {
+        url: "/icon.png",
+        width: 1200,
+        height: 630,
+        alt: "GTA FREE STEM Opportunities cover"
+      }
+    ]
+  }
+};
 
 export default function Page() {
   return (

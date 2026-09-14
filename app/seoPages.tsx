@@ -150,7 +150,12 @@ export function metadataForPage(key: SeoPageKey): Metadata {
     description: page.description,
     keywords: page.keywords,
     alternates: {
-      canonical: `${siteUrl}${page.path}`
+      canonical: `${siteUrl}${page.path}`,
+      languages: {
+        "en": `${siteUrl}${page.path}`,
+        "en-CA": `${siteUrl}${page.path}`,
+        "x-default": `${siteUrl}${page.path}`
+      }
     },
     robots: {
       index: true,

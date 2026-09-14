@@ -10,6 +10,8 @@ const siteDescription =
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   applicationName: siteTitle,
+  category: "Education",
+  creator: "GTA FREE STEM",
   title: {
     default: `${siteTitle} | Free STEM programs in the Greater Toronto Area`,
     template: `%s | ${siteTitle}`
@@ -36,7 +38,12 @@ export const metadata: Metadata = {
     "newcomer family STEM programs"
   ],
   alternates: {
-    canonical: siteUrl
+    canonical: siteUrl,
+    languages: {
+      "en": siteUrl,
+      "en-CA": siteUrl,
+      "x-default": siteUrl
+    }
   },
   robots: {
     index: true,
@@ -59,8 +66,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/icon.png",
-        width: 1024,
-        height: 1024,
+        width: 1200,
+        height: 630,
         alt: "GTA FREE STEM Opportunities brand mark"
       }
     ]
@@ -140,6 +147,15 @@ export default function RootLayout({
           "Multilingual interface for Greater Toronto Area communities",
           "Public browsing without an account"
         ]
+      },
+      {
+        "@type": "Organization",
+        "@id": `${siteUrl}/#organization`,
+        name: siteTitle,
+        url: siteUrl,
+        description: siteDescription,
+        areaServed: ["Toronto", "Peel", "York", "Durham", "Halton", "Greater Toronto Area"],
+        knowsAbout: ["STEM education", "co-op", "SHSM", "volunteer learning", "youth mentorship"]
       }
     ]
   };
