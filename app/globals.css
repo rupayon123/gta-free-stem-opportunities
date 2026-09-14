@@ -14481,6 +14481,99 @@ body {
   row-gap: var(--gta-apple-stack-gap) !important;
 }
 
+/* Hard reset for rounded visual noise: keep surfaces clean and iOS-consistent. */
+.home-shell,
+.search-band,
+.hero-card-shell,
+.results-panel,
+.section-heading,
+.pathway-grid,
+.contribute-grid,
+.announcement-strip,
+.account-dashboard-modal,
+.admin-dashboard-modal,
+.auth-modal,
+.account-dashboard-grid,
+.admin-dashboard-grid,
+.account-panel,
+.admin-panel,
+.filter-modal,
+.selected-details-card,
+.map-shell,
+.mini-form,
+.pathway-card,
+.community-callout,
+.support-card,
+.project-background-card,
+.detail-summary,
+.detail-facts,
+.source-panel,
+.trust-banner,
+.hero-search-form,
+.home-shell .hero-actions,
+.search-band .search-layout,
+.search-band .results-toolbar,
+.search-band .results-actions,
+.search-band .toolbar-controls {
+  border-width: 1px !important;
+  border-radius: 18px !important;
+}
+
+:root[data-theme="light"] .home-shell,
+:root[data-theme="light"] .search-band,
+:root[data-theme="light"] .hero-card-shell,
+:root[data-theme="light"] .results-panel,
+:root[data-theme="light"] .pathway-grid,
+:root[data-theme="light"] .contribute-grid,
+:root[data-theme="light"] .announcement-strip,
+:root[data-theme="light"] .account-dashboard-modal,
+:root[data-theme="light"] .admin-dashboard-modal,
+:root[data-theme="light"] .auth-modal {
+  background: linear-gradient(180deg, color-mix(in srgb, var(--surface) 96%, transparent) 0%, var(--bg) 100%);
+}
+
+:root[data-theme="dark"] .home-shell,
+:root[data-theme="dark"] .search-band,
+:root[data-theme="dark"] .hero-card-shell,
+:root[data-theme="dark"] .results-panel,
+:root[data-theme="dark"] .pathway-grid,
+:root[data-theme="dark"] .contribute-grid,
+:root[data-theme="dark"] .announcement-strip,
+:root[data-theme="dark"] .account-dashboard-modal,
+:root[data-theme="dark"] .admin-dashboard-modal,
+:root[data-theme="dark"] .auth-modal {
+  background:
+    radial-gradient(circle at 22px 22px, color-mix(in srgb, var(--blue) 10%, transparent) 0 2px, transparent 2px 100%),
+    color-mix(in srgb, var(--surface) 96%, #030b17);
+}
+
+.home-shell :is(.primary-button, .soft-button, .toolbar-filter-button, .research-refresh-button, .source-scout-refresh, .icon-text-button),
+.search-band :is(.primary-button, .soft-button, .toolbar-filter-button, .research-refresh-button, .source-scout-refresh, .icon-text-button) {
+  border-color: color-mix(in srgb, var(--line) 68%, transparent) !important;
+  box-shadow: 0 6px 14px color-mix(in srgb, #06223f 10%, transparent) !important;
+}
+
+@media (max-width: 900px) {
+  .home-shell,
+  .search-band,
+  .workspace-band,
+  .section-heading,
+  .pathway-grid,
+  .contribute-grid,
+  .announcement-strip {
+    width: min(100%, calc(100% - 20px)) !important;
+    padding-inline: 10px !important;
+    margin-inline: auto !important;
+  }
+
+  .hero-card-shell,
+  .search-band .results-toolbar,
+  .search-band .toolbar-controls,
+  .search-band .results-actions {
+    padding-inline: 0 !important;
+  }
+}
+
 /* Final polish pass: remove overly decorative surfaces and align with clean Apple proportions. */
 .primary-button,
 .soft-button,
