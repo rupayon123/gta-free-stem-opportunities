@@ -12543,3 +12543,37 @@ body {
 .search-band .map-shell .story-paper {
   box-shadow: none !important;
 }
+
+/* Flatten remaining legacy search card variant patterns from prior visual passes. */
+.search-band .opportunity-card:nth-child(4n + 1),
+.search-band .opportunity-card:nth-child(4n + 2),
+.search-band .opportunity-card:nth-child(4n + 3),
+.search-band .opportunity-card:nth-child(4n + 4),
+.search-band .opportunity-card,
+.search-band .pathway-card,
+.search-band .community-callout,
+.search-band .detail-facts {
+  background: var(--site-surface) !important;
+  background-image: none !important;
+}
+
+.search-band .opportunity-card:nth-child(4n + 1):hover,
+.search-band .opportunity-card:nth-child(4n + 2):hover,
+.search-band .opportunity-card:nth-child(4n + 3):hover,
+.search-band .opportunity-card:nth-child(4n + 4):hover,
+.search-band .pathway-card:hover,
+.search-band .community-callout:hover {
+  box-shadow: 0 10px 22px color-mix(in srgb, #000 8%, transparent) !important;
+  transform: translateY(-1px) !important;
+}
+
+.search-band .opportunity-card::before,
+.search-band .opportunity-card::after,
+.search-band .pathway-card::before,
+.search-band .pathway-card::after,
+.search-band .community-callout::before,
+.search-band .community-callout::after {
+  content: none !important;
+  background-image: none !important;
+  display: none !important;
+}
