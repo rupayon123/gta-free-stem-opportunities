@@ -4,8 +4,8 @@ export const generatedDiscoverySummary = {
   "mode": "deterministic",
   "sourcesChecked": 30,
   "candidatesFound": 243,
-  "newCandidates": 46,
-  "duplicatesSkipped": 27,
+  "newCandidates": 48,
+  "duplicatesSkipped": 29,
   "warnings": [
     "Could not check Credit Valley Conservation youth opportunities: 403 Forbidden.",
     "Could not check TRCA youth volunteer opportunities: fetch failed.",
@@ -15,7 +15,7 @@ export const generatedDiscoverySummary = {
   ],
   "sourceHealth": {
     "schemaVersion": 1,
-    "generatedAt": "2026-09-15T11:47:18.688Z",
+    "generatedAt": "2026-09-15T17:02:33.484Z",
     "status": "healthy",
     "failureReasons": [],
     "sourcesChecked": 30,
@@ -27,6 +27,34 @@ export const generatedDiscoverySummary = {
 } as const;
 
 export const generatedDiscoveryReviewCandidates = [
+  {
+    "id": "discovered-tpl-events-volunteer-back-to-school-scavenger-hunt-05e31b39d069",
+    "title": "Back-to-School Scavenger Hunt",
+    "organization": "Toronto Public Library",
+    "description": "Back-to-School Scavenger Hunt from Toronto Public Library youth volunteer events.",
+    "city": "Toronto",
+    "region": "Toronto",
+    "ageMin": 13,
+    "ageMax": 18,
+    "category": "Volunteer Hours",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-09-15T09:00:00-04:00",
+    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6a846b8fd4b10d0030074917",
+    "lastChecked": "2026-09-15",
+    "lastSeen": "2026-09-15",
+    "status": "needs_review",
+    "tags": [
+      "volunteer hours"
+    ],
+    "confidence": "high",
+    "reviewReasons": [
+      "No clear future date found on the crawled page."
+    ],
+    "sourceName": "Toronto Public Library youth volunteer events"
+  },
   {
     "id": "discovered-tpl-events-volunteer-set-phasers-to-celebrate-60-years-of-star--4ed8324a47c8",
     "title": "Set Phasers to Celebrate! 60 Years of Star Trek: A Merril Collection Exhibit",
@@ -170,7 +198,7 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Richmond Hill Public Library programs"
   },
   {
-    "id": "discovered-aurora-library-stem-intro-to-3d-sculpting-24dd3fc94af7",
+    "id": "discovered-aurora-library-stem-intro-to-3d-sculpting-f5ab20e19764",
     "title": "Intro to 3D Sculpting",
     "organization": "Aurora Public Library",
     "description": "Learn how to create basic 3D models with SculptGL, a free web-based 3D sculpting tool. Basic computer knowledge and skills are required for attendance. Please note that spots will be prioritized for first-time attendees. teen/adult program 13+",
@@ -186,12 +214,42 @@ export const generatedDiscoveryReviewCandidates = [
     "deadline": "2026-09-17T11:00:00-04:00",
     "startDate": "2026-09-17T11:00:00-04:00",
     "endDate": "2026-09-17T12:30:00-04:00",
-    "sourceUrl": "https://aurora.bibliocommons.com/events/6a563b5182c03c5c17d7d794",
+    "sourceUrl": "https://aurora.bibliocommons.com/events/6a6b624be30fe4845965985c",
     "lastChecked": "2026-09-15",
     "lastSeen": "2026-09-15",
     "status": "active",
     "tags": [
       "makerspace & fabrication"
+    ],
+    "confidence": "high",
+    "reviewReasons": [],
+    "sourceName": "Aurora Public Library STEM events"
+  },
+  {
+    "id": "discovered-aurora-library-stem-steam-for-homeschoolers-526e478f40e1",
+    "title": "STEAM for Homeschoolers",
+    "organization": "Aurora Public Library",
+    "description": "Explore science, technology, engineering, art, and math in the company of other homeschoolers. For kids ages 6-12. Register on Eventbrite: https://www.eventbrite.ca/e/st...",
+    "city": "Aurora",
+    "region": "York",
+    "ageMin": 6,
+    "ageMax": 12,
+    "category": "Science & Engineering",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "deadline": "2026-09-17T14:30:00-04:00",
+    "startDate": "2026-09-17T14:30:00-04:00",
+    "endDate": "2026-09-17T16:00:00-04:00",
+    "sourceUrl": "https://aurora.bibliocommons.com/events/6933515b94297d36009e7d61",
+    "lastChecked": "2026-09-15",
+    "lastSeen": "2026-09-15",
+    "status": "active",
+    "tags": [
+      "science & engineering",
+      "technology",
+      "science"
     ],
     "confidence": "high",
     "reviewReasons": [],
