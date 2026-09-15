@@ -15,7 +15,7 @@ export const generatedDiscoverySummary = {
   ],
   "sourceHealth": {
     "schemaVersion": 1,
-    "generatedAt": "2026-09-15T17:02:33.484Z",
+    "generatedAt": "2026-09-15T21:24:07.374Z",
     "status": "healthy",
     "failureReasons": [],
     "sourcesChecked": 30,
@@ -28,35 +28,7 @@ export const generatedDiscoverySummary = {
 
 export const generatedDiscoveryReviewCandidates = [
   {
-    "id": "discovered-tpl-events-volunteer-back-to-school-scavenger-hunt-05e31b39d069",
-    "title": "Back-to-School Scavenger Hunt",
-    "organization": "Toronto Public Library",
-    "description": "Back-to-School Scavenger Hunt from Toronto Public Library youth volunteer events.",
-    "city": "Toronto",
-    "region": "Toronto",
-    "ageMin": 13,
-    "ageMax": 18,
-    "category": "Volunteer Hours",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-09-15T09:00:00-04:00",
-    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6a846b8fd4b10d0030074917",
-    "lastChecked": "2026-09-15",
-    "lastSeen": "2026-09-15",
-    "status": "needs_review",
-    "tags": [
-      "volunteer hours"
-    ],
-    "confidence": "high",
-    "reviewReasons": [
-      "No clear future date found on the crawled page."
-    ],
-    "sourceName": "Toronto Public Library youth volunteer events"
-  },
-  {
-    "id": "discovered-tpl-events-volunteer-set-phasers-to-celebrate-60-years-of-star--4ed8324a47c8",
+    "id": "discovered-tpl-events-volunteer-set-phasers-to-celebrate-60-years-of-star--73965b416bf6",
     "title": "Set Phasers to Celebrate! 60 Years of Star Trek: A Merril Collection Exhibit",
     "organization": "Toronto Public Library",
     "description": "Beam yourself up to the Merril Collection of Science Fiction, Speculation and Fantasy and boldly embark on a 60-year journey that celebrates all things Star Trek! For decades, the original television series turned global franchise has inspired generations of fans, artists, and scientists alike. Visitors can explore voyages, characters, and new frontiers through our collection highlights such as novels, RPGs, fanzines, original artwork and more! This exhibit can be viewed during the Merril Collection's regular open hours.",
@@ -72,7 +44,7 @@ export const generatedDiscoveryReviewCandidates = [
     "deadline": "2026-08-17T09:00:00-04:00",
     "startDate": "2026-08-17T09:00:00-04:00",
     "endDate": "2026-11-01T09:00:00-04:00",
-    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6a875a463b6c71003e5a39be",
+    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6a85d69257c264087ad233d8",
     "lastChecked": "2026-09-15",
     "lastSeen": "2026-09-15",
     "status": "active",
@@ -220,6 +192,35 @@ export const generatedDiscoveryReviewCandidates = [
     "status": "active",
     "tags": [
       "makerspace & fabrication"
+    ],
+    "confidence": "high",
+    "reviewReasons": [],
+    "sourceName": "Aurora Public Library STEM events"
+  },
+  {
+    "id": "discovered-aurora-library-stem-stem-engineering-adventures-a2089d8dcfdf",
+    "title": "STEM Engineering Adventures",
+    "organization": "Aurora Public Library",
+    "description": "Discover the power of hands-on learning with our scientific, intriguing, interactive STEM activities and projects that you get to take home after completion! This is in collaboration with and funded by Robotics Rock STEM Youth Association. If you are unable to attend, please cancel your registration as soon as possible so that another child may take your spot. Repeated no-shows without cancelling may affect eligibility for future registrations, as we strive to provide fair access to all families interested in the program.",
+    "city": "Aurora",
+    "region": "York",
+    "ageMin": 13,
+    "ageMax": 18,
+    "category": "Coding & Robotics",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "deadline": "2026-09-17T17:30:00-04:00",
+    "startDate": "2026-09-17T17:30:00-04:00",
+    "endDate": "2026-09-17T18:30:00-04:00",
+    "sourceUrl": "https://aurora.bibliocommons.com/events/6a7e1bce452bb101b574fdc5",
+    "lastChecked": "2026-09-15",
+    "lastSeen": "2026-09-15",
+    "status": "active",
+    "tags": [
+      "coding & robotics",
+      "stem"
     ],
     "confidence": "high",
     "reviewReasons": [],
