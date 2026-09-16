@@ -8,14 +8,14 @@ export const generatedDiscoverySummary = {
   "duplicatesSkipped": 32,
   "warnings": [
     "Could not check Credit Valley Conservation youth opportunities: 403 Forbidden.",
-    "Could not check TRCA youth volunteer opportunities: 500 Internal Server Error.",
+    "Could not check TRCA youth volunteer opportunities: fetch failed.",
     "Could not check Volunteer MBC youth opportunities: 403 Forbidden.",
     "Could not check Eventbrite free science and technology events: 405 Not Allowed.",
     "Could not check Eventbrite free online science and technology events: 405 Not Allowed."
   ],
   "sourceHealth": {
     "schemaVersion": 1,
-    "generatedAt": "2026-09-16T11:38:32.748Z",
+    "generatedAt": "2026-09-16T17:00:38.696Z",
     "status": "healthy",
     "failureReasons": [],
     "sourcesChecked": 30,
@@ -28,7 +28,7 @@ export const generatedDiscoverySummary = {
 
 export const generatedDiscoveryReviewCandidates = [
   {
-    "id": "discovered-tpl-events-volunteer-set-phasers-to-celebrate-60-years-of-star--4ed8324a47c8",
+    "id": "discovered-tpl-events-volunteer-set-phasers-to-celebrate-60-years-of-star--abf781fea77c",
     "title": "Set Phasers to Celebrate! 60 Years of Star Trek: A Merril Collection Exhibit",
     "organization": "Toronto Public Library",
     "description": "Beam yourself up to the Merril Collection of Science Fiction, Speculation and Fantasy and boldly embark on a 60-year journey that celebrates all things Star Trek! For decades, the original television series turned global franchise has inspired generations of fans, artists, and scientists alike. Visitors can explore voyages, characters, and new frontiers through our collection highlights such as novels, RPGs, fanzines, original artwork and more! This exhibit can be viewed during the Merril Collection's regular open hours.",
@@ -44,7 +44,7 @@ export const generatedDiscoveryReviewCandidates = [
     "deadline": "2026-08-17T09:00:00-04:00",
     "startDate": "2026-08-17T09:00:00-04:00",
     "endDate": "2026-11-01T09:00:00-04:00",
-    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6a875a463b6c71003e5a39be",
+    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/69681b0dc967cb412081e6c4",
     "lastChecked": "2026-09-16",
     "lastSeen": "2026-09-16",
     "status": "active",
