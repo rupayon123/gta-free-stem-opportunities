@@ -3,32 +3,31 @@ import type { DiscoveredOpportunity } from "./discovery";
 export const generatedDiscoverySummary = {
   "mode": "deterministic",
   "sourcesChecked": 30,
-  "candidatesFound": 245,
-  "newCandidates": 49,
-  "duplicatesSkipped": 32,
+  "candidatesFound": 282,
+  "newCandidates": 52,
+  "duplicatesSkipped": 37,
   "warnings": [
     "Could not check Credit Valley Conservation youth opportunities: 403 Forbidden.",
-    "Could not check TRCA youth volunteer opportunities: fetch failed.",
     "Could not check Volunteer MBC youth opportunities: 403 Forbidden.",
     "Could not check Eventbrite free science and technology events: 405 Not Allowed.",
     "Could not check Eventbrite free online science and technology events: 405 Not Allowed."
   ],
   "sourceHealth": {
     "schemaVersion": 1,
-    "generatedAt": "2026-09-16T17:00:38.696Z",
+    "generatedAt": "2026-09-16T21:20:34.888Z",
     "status": "healthy",
     "failureReasons": [],
     "sourcesChecked": 30,
-    "successfulSources": 25,
-    "failedSources": 5,
-    "sourceSuccessRatio": 0.8333,
+    "successfulSources": 26,
+    "failedSources": 4,
+    "sourceSuccessRatio": 0.8667,
     "minimumSourceSuccessRatio": 0.75
   }
 } as const;
 
 export const generatedDiscoveryReviewCandidates = [
   {
-    "id": "discovered-tpl-events-volunteer-set-phasers-to-celebrate-60-years-of-star--abf781fea77c",
+    "id": "discovered-tpl-events-volunteer-set-phasers-to-celebrate-60-years-of-star--4ed8324a47c8",
     "title": "Set Phasers to Celebrate! 60 Years of Star Trek: A Merril Collection Exhibit",
     "organization": "Toronto Public Library",
     "description": "Beam yourself up to the Merril Collection of Science Fiction, Speculation and Fantasy and boldly embark on a 60-year journey that celebrates all things Star Trek! For decades, the original television series turned global franchise has inspired generations of fans, artists, and scientists alike. Visitors can explore voyages, characters, and new frontiers through our collection highlights such as novels, RPGs, fanzines, original artwork and more! This exhibit can be viewed during the Merril Collection's regular open hours.",
@@ -44,7 +43,7 @@ export const generatedDiscoveryReviewCandidates = [
     "deadline": "2026-08-17T09:00:00-04:00",
     "startDate": "2026-08-17T09:00:00-04:00",
     "endDate": "2026-11-01T09:00:00-04:00",
-    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/69681b0dc967cb412081e6c4",
+    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6a875a463b6c71003e5a39be",
     "lastChecked": "2026-09-16",
     "lastSeen": "2026-09-16",
     "status": "active",
@@ -54,34 +53,6 @@ export const generatedDiscoveryReviewCandidates = [
     "confidence": "high",
     "reviewReasons": [],
     "sourceName": "Toronto Public Library youth volunteer events"
-  },
-  {
-    "id": "discovered-markham-events-volunteer-book-club-discussion-the-riveter-8b1d72484878",
-    "title": "Book Club Discussion - The Riveter",
-    "organization": "Markham Public Library",
-    "description": "Want to connect with others over the love of reading? Join our book club to discuss Jack Wang's book The Riveter . This title should be on shelves and ready to borrow approximately 5 weeks prior to the discussion date. Check with a staff member if you have questions on how to access a copy. Book Description: \" A cross-cultural love story set against the dramatic backdrop of the Allied invasion of Europe in WWII. Vancouver, 1942. Josiah Chang arrives in the bustling city ready to serve his country in the war against fascism, but Chinese Canadians are barred from joining the army out of fear they might expect citizenship in return. So, Josiah heads to the shipyard to find work as a riveter, fastening together the ribs and steel plates of Victory ships. One night, Josiah spots Poppy singing a",
-    "city": "Markham",
-    "region": "York",
-    "ageMin": 1,
-    "ageMax": 18,
-    "category": "Volunteer Hours",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "deadline": "2026-09-16T14:00:00-04:00",
-    "startDate": "2026-09-16T14:00:00-04:00",
-    "endDate": "2026-09-16T15:30:00-04:00",
-    "sourceUrl": "https://markham.bibliocommons.com/events/6a72586088e9bf2800358342",
-    "lastChecked": "2026-09-16",
-    "lastSeen": "2026-09-16",
-    "status": "active",
-    "tags": [
-      "volunteer hours"
-    ],
-    "confidence": "high",
-    "reviewReasons": [],
-    "sourceName": "Markham Public Library youth volunteer events"
   },
   {
     "id": "discovered-vaughan-library-programs-volunteer-opportunities-e775e833a50b",
@@ -196,34 +167,6 @@ export const generatedDiscoveryReviewCandidates = [
       "No clear future date found on the crawled page."
     ],
     "sourceName": "Richmond Hill Public Library programs"
-  },
-  {
-    "id": "discovered-aurora-library-stem-intro-to-3d-sculpting-f5ab20e19764",
-    "title": "Intro to 3D Sculpting",
-    "organization": "Aurora Public Library",
-    "description": "Learn how to create basic 3D models with SculptGL, a free web-based 3D sculpting tool. Basic computer knowledge and skills are required for attendance. Please note that spots will be prioritized for first-time attendees. teen/adult program 13+",
-    "city": "Aurora",
-    "region": "York",
-    "ageMin": 13,
-    "ageMax": 18,
-    "category": "Makerspace & Fabrication",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "deadline": "2026-09-17T11:00:00-04:00",
-    "startDate": "2026-09-17T11:00:00-04:00",
-    "endDate": "2026-09-17T12:30:00-04:00",
-    "sourceUrl": "https://aurora.bibliocommons.com/events/6a6b624be30fe4845965985c",
-    "lastChecked": "2026-09-16",
-    "lastSeen": "2026-09-16",
-    "status": "active",
-    "tags": [
-      "makerspace & fabrication"
-    ],
-    "confidence": "high",
-    "reviewReasons": [],
-    "sourceName": "Aurora Public Library STEM events"
   },
   {
     "id": "discovered-aurora-library-stem-stem-engineering-adventures-a2089d8dcfdf",
@@ -886,6 +829,97 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Halton Hills Public Library programs"
   },
   {
+    "id": "discovered-trca-youth-youth-opportunities-at-trca-bd0e50237819",
+    "title": "Youth Opportunities at TRCA",
+    "organization": "Toronto and Region Conservation Authority",
+    "description": "TRCA offers programs to support youth and young adults who are interested in getting involved in the conservation sector.",
+    "city": "Toronto",
+    "region": "Toronto",
+    "ageMin": 13,
+    "ageMax": 18,
+    "category": "Science & Engineering",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-09-16T09:00:00-04:00",
+    "sourceUrl": "https://trca.ca/get-involved/youth-opportunities",
+    "lastChecked": "2026-09-16",
+    "lastSeen": "2026-09-16",
+    "status": "needs_review",
+    "tags": [
+      "science & engineering",
+      "youth",
+      "conservation"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "No clear future date found on the crawled page.",
+      "Free access wording needs human confirmation."
+    ],
+    "sourceName": "TRCA youth volunteer opportunities"
+  },
+  {
+    "id": "discovered-trca-youth-volunteer-with-trca-cdffdd979d6f",
+    "title": "Volunteer with TRCA",
+    "organization": "Toronto and Region Conservation Authority",
+    "description": "Volunteer with TRCA listed by TRCA youth volunteer opportunities.",
+    "city": "Toronto",
+    "region": "Toronto",
+    "ageMin": 13,
+    "ageMax": 18,
+    "category": "Volunteer Hours",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-09-16T09:00:00-04:00",
+    "sourceUrl": "https://trca.ca/get-involved/volunteer",
+    "lastChecked": "2026-09-16",
+    "lastSeen": "2026-09-16",
+    "status": "needs_review",
+    "tags": [
+      "volunteer hours",
+      "volunteer"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "No clear future date found on the crawled page.",
+      "Free access wording needs human confirmation."
+    ],
+    "sourceName": "TRCA youth volunteer opportunities"
+  },
+  {
+    "id": "discovered-trca-youth-young-conservation-professionals-leadershi-275035142ede",
+    "title": "Young Conservation Professionals Leadership Program",
+    "organization": "Toronto and Region Conservation Authority",
+    "description": "Young Conservation Professionals Leadership Program listed by TRCA youth volunteer opportunities.",
+    "city": "Toronto",
+    "region": "Toronto",
+    "ageMin": 13,
+    "ageMax": 18,
+    "category": "Volunteer Hours",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-09-16T09:00:00-04:00",
+    "sourceUrl": "https://trca.ca/learning/adult/young-conservation-professionals",
+    "lastChecked": "2026-09-16",
+    "lastSeen": "2026-09-16",
+    "status": "needs_review",
+    "tags": [
+      "volunteer hours",
+      "conservation"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "No clear future date found on the crawled page.",
+      "Free access wording needs human confirmation."
+    ],
+    "sourceName": "TRCA youth volunteer opportunities"
+  },
+  {
     "id": "discovered-uhn-stem-pathways-uhn-stem-pathways-7847b49cfe74",
     "title": "UHN STEM Pathways",
     "organization": "UHN STEM Pathways",
@@ -1353,6 +1387,68 @@ export const generatedDiscoveryReviewCandidates = [
     "tags": [
       "science & engineering",
       "engineering"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "No clear future date found on the crawled page.",
+      "Free access wording needs human confirmation."
+    ],
+    "sourceName": "Ontario Tech Engineering Outreach"
+  },
+  {
+    "id": "discovered-ontario-tech-engineering-outreach-black-youth-coding-club-5623ef1ddc63",
+    "title": "Black Youth Coding Club",
+    "organization": "Ontario Tech University Engineering Outreach",
+    "description": "Black Youth Coding Club listed by Ontario Tech Engineering Outreach.",
+    "city": "Oshawa",
+    "region": "Durham",
+    "ageMin": 13,
+    "ageMax": 18,
+    "category": "Coding & Robotics",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-09-16T09:00:00-04:00",
+    "sourceUrl": "https://forms.gle/5Y7pZiQ7tZEa1vnQ6",
+    "lastChecked": "2026-09-16",
+    "lastSeen": "2026-09-16",
+    "status": "needs_review",
+    "tags": [
+      "coding & robotics",
+      "coding",
+      "youth"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "No clear future date found on the crawled page.",
+      "Free access wording needs human confirmation."
+    ],
+    "sourceName": "Ontario Tech Engineering Outreach"
+  },
+  {
+    "id": "discovered-ontario-tech-engineering-outreach-black-youth-stem-club-a9b4220dac73",
+    "title": "Black Youth STEM Club",
+    "organization": "Ontario Tech University Engineering Outreach",
+    "description": "Black Youth STEM Club listed by Ontario Tech Engineering Outreach.",
+    "city": "Oshawa",
+    "region": "Durham",
+    "ageMin": 13,
+    "ageMax": 18,
+    "category": "Science & Engineering",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-09-16T09:00:00-04:00",
+    "sourceUrl": "https://forms.gle/wXnD2K9nVE3wvLvN9",
+    "lastChecked": "2026-09-16",
+    "lastSeen": "2026-09-16",
+    "status": "needs_review",
+    "tags": [
+      "science & engineering",
+      "stem",
+      "youth"
     ],
     "confidence": "medium",
     "reviewReasons": [
