@@ -3,10 +3,11 @@ import type { DiscoveredOpportunity } from "./discovery";
 export const generatedDiscoverySummary = {
   "mode": "deterministic",
   "sourcesChecked": 30,
-  "candidatesFound": 276,
+  "candidatesFound": 257,
   "newCandidates": 52,
   "duplicatesSkipped": 37,
   "warnings": [
+    "Could not check Toronto Public Library youth volunteer events: 500 Internal Server Error.",
     "Could not check Credit Valley Conservation youth opportunities: 403 Forbidden.",
     "Could not check Volunteer MBC youth opportunities: 403 Forbidden.",
     "Could not check Eventbrite free science and technology events: 405 Not Allowed.",
@@ -14,46 +15,18 @@ export const generatedDiscoverySummary = {
   ],
   "sourceHealth": {
     "schemaVersion": 1,
-    "generatedAt": "2026-09-17T17:02:17.697Z",
+    "generatedAt": "2026-09-17T21:25:04.057Z",
     "status": "healthy",
     "failureReasons": [],
     "sourcesChecked": 30,
-    "successfulSources": 26,
-    "failedSources": 4,
-    "sourceSuccessRatio": 0.8667,
+    "successfulSources": 25,
+    "failedSources": 5,
+    "sourceSuccessRatio": 0.8333,
     "minimumSourceSuccessRatio": 0.75
   }
 } as const;
 
 export const generatedDiscoveryReviewCandidates = [
-  {
-    "id": "discovered-tpl-events-volunteer-set-phasers-to-celebrate-60-years-of-star--4ed8324a47c8",
-    "title": "Set Phasers to Celebrate! 60 Years of Star Trek: A Merril Collection Exhibit",
-    "organization": "Toronto Public Library",
-    "description": "Beam yourself up to the Merril Collection of Science Fiction, Speculation and Fantasy and boldly embark on a 60-year journey that celebrates all things Star Trek! For decades, the original television series turned global franchise has inspired generations of fans, artists, and scientists alike. Visitors can explore voyages, characters, and new frontiers through our collection highlights such as novels, RPGs, fanzines, original artwork and more! This exhibit can be viewed during the Merril Collection's regular open hours.",
-    "city": "Toronto",
-    "region": "Toronto",
-    "ageMin": 1,
-    "ageMax": 18,
-    "category": "Science & Engineering",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "deadline": "2026-08-17T09:00:00-04:00",
-    "startDate": "2026-08-17T09:00:00-04:00",
-    "endDate": "2026-11-01T09:00:00-04:00",
-    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6a875a463b6c71003e5a39be",
-    "lastChecked": "2026-09-17",
-    "lastSeen": "2026-09-17",
-    "status": "active",
-    "tags": [
-      "science & engineering"
-    ],
-    "confidence": "high",
-    "reviewReasons": [],
-    "sourceName": "Toronto Public Library youth volunteer events"
-  },
   {
     "id": "discovered-vaughan-library-programs-volunteer-opportunities-e775e833a50b",
     "title": "Volunteer Opportunities",
@@ -140,6 +113,35 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Vaughan Public Libraries programs"
   },
   {
+    "id": "discovered-vaughan-library-programs-mini-robotics-club-4b63efc79fb0",
+    "title": "Mini Robotics Club",
+    "organization": "Vaughan Public Libraries",
+    "description": "Mini Robotics Club listed by Vaughan Public Libraries programs.",
+    "city": "Vaughan",
+    "region": "York",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "Coding & Robotics",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-09-17T09:00:00-04:00",
+    "sourceUrl": "https://www.vaughanpl.info/programs/view/3971",
+    "lastChecked": "2026-09-17",
+    "lastSeen": "2026-09-17",
+    "status": "needs_review",
+    "tags": [
+      "coding & robotics",
+      "robotics"
+    ],
+    "confidence": "high",
+    "reviewReasons": [
+      "No clear future date found on the crawled page."
+    ],
+    "sourceName": "Vaughan Public Libraries programs"
+  },
+  {
     "id": "discovered-richmond-hill-library-programs-volunteer-at-rhpl-e9cf3759163d",
     "title": "Volunteer at RHPL",
     "organization": "Richmond Hill Public Library",
@@ -166,36 +168,6 @@ export const generatedDiscoveryReviewCandidates = [
       "No clear future date found on the crawled page."
     ],
     "sourceName": "Richmond Hill Public Library programs"
-  },
-  {
-    "id": "discovered-aurora-library-stem-steam-for-homeschoolers-526e478f40e1",
-    "title": "STEAM for Homeschoolers",
-    "organization": "Aurora Public Library",
-    "description": "Explore science, technology, engineering, art, and math in the company of other homeschoolers. For kids ages 6-12. Register on Eventbrite: https://www.eventbrite.ca/e/st...",
-    "city": "Aurora",
-    "region": "York",
-    "ageMin": 6,
-    "ageMax": 12,
-    "category": "Science & Engineering",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "deadline": "2026-09-17T14:30:00-04:00",
-    "startDate": "2026-09-17T14:30:00-04:00",
-    "endDate": "2026-09-17T16:00:00-04:00",
-    "sourceUrl": "https://aurora.bibliocommons.com/events/6933515b94297d36009e7d61",
-    "lastChecked": "2026-09-17",
-    "lastSeen": "2026-09-17",
-    "status": "active",
-    "tags": [
-      "science & engineering",
-      "technology",
-      "science"
-    ],
-    "confidence": "high",
-    "reviewReasons": [],
-    "sourceName": "Aurora Public Library STEM events"
   },
   {
     "id": "discovered-aurora-library-stem-reading-math-buddies-drop-in-02a2523c7fde",
@@ -456,6 +428,35 @@ export const generatedDiscoveryReviewCandidates = [
       "No clear future date found on the crawled page."
     ],
     "sourceName": "Pickering Public Library technology events"
+  },
+  {
+    "id": "discovered-oshawa-library-stem-french-steam-story-time-9d2a2e29e0d8",
+    "title": "French STEAM Story Time",
+    "organization": "Oshawa Public Libraries",
+    "description": "French STEAM Story Time from Oshawa Public Libraries STEM events.",
+    "city": "Oshawa",
+    "region": "Durham",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "Science & Engineering",
+    "cost": "Free to join",
+    "language": [
+      "en",
+      "fr"
+    ],
+    "startDate": "2026-09-17T09:00:00-04:00",
+    "sourceUrl": "https://oshlib.bibliocommons.com/events/6a68f1640e562e28009d0afa",
+    "lastChecked": "2026-09-17",
+    "lastSeen": "2026-09-17",
+    "status": "needs_review",
+    "tags": [
+      "science & engineering"
+    ],
+    "confidence": "high",
+    "reviewReasons": [
+      "No clear future date found on the crawled page."
+    ],
+    "sourceName": "Oshawa Public Libraries STEM events"
   },
   {
     "id": "discovered-oshawa-library-stem-makerspace-6bb095888b6a",
