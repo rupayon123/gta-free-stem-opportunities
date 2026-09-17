@@ -4,8 +4,8 @@ export const generatedDiscoverySummary = {
   "mode": "deterministic",
   "sourcesChecked": 30,
   "candidatesFound": 276,
-  "newCandidates": 51,
-  "duplicatesSkipped": 35,
+  "newCandidates": 52,
+  "duplicatesSkipped": 37,
   "warnings": [
     "Could not check Credit Valley Conservation youth opportunities: 403 Forbidden.",
     "Could not check Volunteer MBC youth opportunities: 403 Forbidden.",
@@ -14,7 +14,7 @@ export const generatedDiscoverySummary = {
   ],
   "sourceHealth": {
     "schemaVersion": 1,
-    "generatedAt": "2026-09-17T11:45:17.835Z",
+    "generatedAt": "2026-09-17T17:02:17.697Z",
     "status": "healthy",
     "failureReasons": [],
     "sourcesChecked": 30,
@@ -27,7 +27,7 @@ export const generatedDiscoverySummary = {
 
 export const generatedDiscoveryReviewCandidates = [
   {
-    "id": "discovered-tpl-events-volunteer-set-phasers-to-celebrate-60-years-of-star--4bb61f0b8657",
+    "id": "discovered-tpl-events-volunteer-set-phasers-to-celebrate-60-years-of-star--4ed8324a47c8",
     "title": "Set Phasers to Celebrate! 60 Years of Star Trek: A Merril Collection Exhibit",
     "organization": "Toronto Public Library",
     "description": "Beam yourself up to the Merril Collection of Science Fiction, Speculation and Fantasy and boldly embark on a 60-year journey that celebrates all things Star Trek! For decades, the original television series turned global franchise has inspired generations of fans, artists, and scientists alike. Visitors can explore voyages, characters, and new frontiers through our collection highlights such as novels, RPGs, fanzines, original artwork and more! This exhibit can be viewed during the Merril Collection's regular open hours.",
@@ -43,7 +43,7 @@ export const generatedDiscoveryReviewCandidates = [
     "deadline": "2026-08-17T09:00:00-04:00",
     "startDate": "2026-08-17T09:00:00-04:00",
     "endDate": "2026-11-01T09:00:00-04:00",
-    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6a78aeaa88e9bf280036a73b",
+    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6a875a463b6c71003e5a39be",
     "lastChecked": "2026-09-17",
     "lastSeen": "2026-09-17",
     "status": "active",
@@ -192,6 +192,34 @@ export const generatedDiscoveryReviewCandidates = [
       "science & engineering",
       "technology",
       "science"
+    ],
+    "confidence": "high",
+    "reviewReasons": [],
+    "sourceName": "Aurora Public Library STEM events"
+  },
+  {
+    "id": "discovered-aurora-library-stem-reading-math-buddies-drop-in-02a2523c7fde",
+    "title": "Reading & Math Buddies Drop-In",
+    "organization": "Aurora Public Library",
+    "description": "Looking for extra support in reading or math? Drop in for one-on-one help with a volunteer buddy who will encourage learning, build confidence, and help children strengthen their skills in a fun and supportive environment. To help accommodate as many children as possible, participants are encouraged to register for one session per day and select either the 2:00–3:00 p.m. or 3:00–4:00 p.m. time slot. Space is limited. Participants must arrive at the time they registered for. If a participant has not arrived within 10 minutes of the session start time, their spot may be offered to a child on the waitlist. If you are unable to attend, please cancel your registration as soon as possible so that another child may take your spot. Repeated no-shows without cancelling may affect eligibility for fu",
+    "city": "Aurora",
+    "region": "York",
+    "ageMin": 6,
+    "ageMax": 12,
+    "category": "Volunteer Hours",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "deadline": "2026-09-19T14:00:00-04:00",
+    "startDate": "2026-09-19T14:00:00-04:00",
+    "endDate": "2026-09-19T15:00:00-04:00",
+    "sourceUrl": "https://aurora.bibliocommons.com/events/6a98b7021c197d11325cdf54",
+    "lastChecked": "2026-09-17",
+    "lastSeen": "2026-09-17",
+    "status": "active",
+    "tags": [
+      "volunteer hours"
     ],
     "confidence": "high",
     "reviewReasons": [],
