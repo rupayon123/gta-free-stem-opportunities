@@ -3,31 +3,32 @@ import type { DiscoveredOpportunity } from "./discovery";
 export const generatedDiscoverySummary = {
   "mode": "deterministic",
   "sourcesChecked": 30,
-  "candidatesFound": 278,
-  "newCandidates": 51,
-  "duplicatesSkipped": 50,
+  "candidatesFound": 243,
+  "newCandidates": 49,
+  "duplicatesSkipped": 40,
   "warnings": [
     "Could not check Credit Valley Conservation youth opportunities: 403 Forbidden.",
+    "Could not check TRCA youth volunteer opportunities: fetch failed.",
     "Could not check Volunteer MBC youth opportunities: 403 Forbidden.",
     "Could not check Eventbrite free science and technology events: 405 Not Allowed.",
     "Could not check Eventbrite free online science and technology events: 405 Not Allowed."
   ],
   "sourceHealth": {
     "schemaVersion": 1,
-    "generatedAt": "2026-09-18T16:26:32.322Z",
+    "generatedAt": "2026-09-18T20:56:28.428Z",
     "status": "healthy",
     "failureReasons": [],
     "sourcesChecked": 30,
-    "successfulSources": 26,
-    "failedSources": 4,
-    "sourceSuccessRatio": 0.8667,
+    "successfulSources": 25,
+    "failedSources": 5,
+    "sourceSuccessRatio": 0.8333,
     "minimumSourceSuccessRatio": 0.75
   }
 } as const;
 
 export const generatedDiscoveryReviewCandidates = [
   {
-    "id": "discovered-tpl-events-volunteer-set-phasers-to-celebrate-60-years-of-star--59eb9baadc8d",
+    "id": "discovered-tpl-events-volunteer-set-phasers-to-celebrate-60-years-of-star--4ed8324a47c8",
     "title": "Set Phasers to Celebrate! 60 Years of Star Trek: A Merril Collection Exhibit",
     "organization": "Toronto Public Library",
     "description": "Beam yourself up to the Merril Collection of Science Fiction, Speculation and Fantasy and boldly embark on a 60-year journey that celebrates all things Star Trek! For decades, the original television series turned global franchise has inspired generations of fans, artists, and scientists alike. Visitors can explore voyages, characters, and new frontiers through our collection highlights such as novels, RPGs, fanzines, original artwork and more! This exhibit can be viewed during the Merril Collection's regular open hours.",
@@ -43,7 +44,7 @@ export const generatedDiscoveryReviewCandidates = [
     "deadline": "2026-08-17T09:00:00-04:00",
     "startDate": "2026-08-17T09:00:00-04:00",
     "endDate": "2026-11-01T09:00:00-04:00",
-    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/69496312c967cb41207dfcc8",
+    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6a875a463b6c71003e5a39be",
     "lastChecked": "2026-09-18",
     "lastSeen": "2026-09-18",
     "status": "active",
@@ -191,6 +192,35 @@ export const generatedDiscoveryReviewCandidates = [
     "status": "active",
     "tags": [
       "volunteer hours"
+    ],
+    "confidence": "high",
+    "reviewReasons": [],
+    "sourceName": "Aurora Public Library STEM events"
+  },
+  {
+    "id": "discovered-aurora-library-stem-maker-workshop-layered-art-7e8ca259e404",
+    "title": "Maker Workshop: Layered Art",
+    "organization": "Aurora Public Library",
+    "description": "Learn how to create multi-layered artwork using Adobe Illustrator and a laser cutter. All materials will be provided. Basic computer knowledge and skills are required for attendance. Please note that spots will be prioritized for first-time attendees. teen/adult program 13+",
+    "city": "Aurora",
+    "region": "York",
+    "ageMin": 13,
+    "ageMax": 18,
+    "category": "Makerspace & Fabrication",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "deadline": "2026-09-21T18:00:00-04:00",
+    "startDate": "2026-09-21T18:00:00-04:00",
+    "endDate": "2026-09-21T20:00:00-04:00",
+    "sourceUrl": "https://aurora.bibliocommons.com/events/6a3d9836c52cdc3600ece4df",
+    "lastChecked": "2026-09-18",
+    "lastSeen": "2026-09-18",
+    "status": "active",
+    "tags": [
+      "makerspace & fabrication",
+      "maker"
     ],
     "confidence": "high",
     "reviewReasons": [],
@@ -797,97 +827,6 @@ export const generatedDiscoveryReviewCandidates = [
       "No clear future date found on the crawled page."
     ],
     "sourceName": "Halton Hills Public Library programs"
-  },
-  {
-    "id": "discovered-trca-youth-youth-opportunities-at-trca-bd0e50237819",
-    "title": "Youth Opportunities at TRCA",
-    "organization": "Toronto and Region Conservation Authority",
-    "description": "TRCA offers programs to support youth and young adults who are interested in getting involved in the conservation sector.",
-    "city": "Toronto",
-    "region": "Toronto",
-    "ageMin": 13,
-    "ageMax": 18,
-    "category": "Science & Engineering",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-09-18T09:00:00-04:00",
-    "sourceUrl": "https://trca.ca/get-involved/youth-opportunities",
-    "lastChecked": "2026-09-18",
-    "lastSeen": "2026-09-18",
-    "status": "needs_review",
-    "tags": [
-      "science & engineering",
-      "youth",
-      "conservation"
-    ],
-    "confidence": "medium",
-    "reviewReasons": [
-      "No clear future date found on the crawled page.",
-      "Free access wording needs human confirmation."
-    ],
-    "sourceName": "TRCA youth volunteer opportunities"
-  },
-  {
-    "id": "discovered-trca-youth-volunteer-with-trca-cdffdd979d6f",
-    "title": "Volunteer with TRCA",
-    "organization": "Toronto and Region Conservation Authority",
-    "description": "Volunteer with TRCA listed by TRCA youth volunteer opportunities.",
-    "city": "Toronto",
-    "region": "Toronto",
-    "ageMin": 13,
-    "ageMax": 18,
-    "category": "Volunteer Hours",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-09-18T09:00:00-04:00",
-    "sourceUrl": "https://trca.ca/get-involved/volunteer",
-    "lastChecked": "2026-09-18",
-    "lastSeen": "2026-09-18",
-    "status": "needs_review",
-    "tags": [
-      "volunteer hours",
-      "volunteer"
-    ],
-    "confidence": "medium",
-    "reviewReasons": [
-      "No clear future date found on the crawled page.",
-      "Free access wording needs human confirmation."
-    ],
-    "sourceName": "TRCA youth volunteer opportunities"
-  },
-  {
-    "id": "discovered-trca-youth-young-conservation-professionals-leadershi-275035142ede",
-    "title": "Young Conservation Professionals Leadership Program",
-    "organization": "Toronto and Region Conservation Authority",
-    "description": "Young Conservation Professionals Leadership Program listed by TRCA youth volunteer opportunities.",
-    "city": "Toronto",
-    "region": "Toronto",
-    "ageMin": 13,
-    "ageMax": 18,
-    "category": "Volunteer Hours",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-09-18T09:00:00-04:00",
-    "sourceUrl": "https://trca.ca/learning/adult/young-conservation-professionals",
-    "lastChecked": "2026-09-18",
-    "lastSeen": "2026-09-18",
-    "status": "needs_review",
-    "tags": [
-      "volunteer hours",
-      "conservation"
-    ],
-    "confidence": "medium",
-    "reviewReasons": [
-      "No clear future date found on the crawled page.",
-      "Free access wording needs human confirmation."
-    ],
-    "sourceName": "TRCA youth volunteer opportunities"
   },
   {
     "id": "discovered-uhn-stem-pathways-uhn-stem-pathways-7847b49cfe74",
