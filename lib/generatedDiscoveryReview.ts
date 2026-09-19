@@ -3,9 +3,9 @@ import type { DiscoveredOpportunity } from "./discovery";
 export const generatedDiscoverySummary = {
   "mode": "deterministic",
   "sourcesChecked": 30,
-  "candidatesFound": 277,
-  "newCandidates": 55,
-  "duplicatesSkipped": 47,
+  "candidatesFound": 278,
+  "newCandidates": 54,
+  "duplicatesSkipped": 44,
   "warnings": [
     "Could not check Credit Valley Conservation youth opportunities: 403 Forbidden.",
     "Could not check Volunteer MBC youth opportunities: 403 Forbidden.",
@@ -14,7 +14,7 @@ export const generatedDiscoverySummary = {
   ],
   "sourceHealth": {
     "schemaVersion": 1,
-    "generatedAt": "2026-09-19T15:54:40.447Z",
+    "generatedAt": "2026-09-19T20:43:30.264Z",
     "status": "healthy",
     "failureReasons": [],
     "sourcesChecked": 30,
@@ -26,36 +26,6 @@ export const generatedDiscoverySummary = {
 } as const;
 
 export const generatedDiscoveryReviewCandidates = [
-  {
-    "id": "discovered-tpl-events-volunteer-seniors-e-connect-56c23955b71d",
-    "title": "Seniors E-Connect",
-    "organization": "Toronto Public Library",
-    "description": "Seniors E-Connect matches older adults with a teen volunteer to provide tech help, under the guidance of library staff. Learn the basics of using mobile devices and learn about topics such as library e-resources. Get one on one support in a welcoming and friendly environment. Please register with your phone number if you want to be reminded with a phone call. One registration per person. Do not register twice, contact staff to confirm if needed. Information Collection Notice: The personal information on this form is collected by the Toronto Public Library under the Public Libraries Act, sections 20(a), 20(c), and 20(d). The information will only be used for event and program registration, delivery and evaluation. Questions about how the library handles your information can be directed to A",
-    "city": "Toronto",
-    "region": "Toronto",
-    "ageMin": 13,
-    "ageMax": 18,
-    "category": "Volunteer Hours",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "deadline": "2026-09-19T10:30:00-04:00",
-    "startDate": "2026-09-19T10:30:00-04:00",
-    "endDate": "2026-09-19T12:00:00-04:00",
-    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6a98400c5e6fc10d0550e863",
-    "lastChecked": "2026-09-19",
-    "lastSeen": "2026-09-19",
-    "status": "active",
-    "tags": [
-      "volunteer hours",
-      "volunteer",
-      "teen"
-    ],
-    "confidence": "high",
-    "reviewReasons": [],
-    "sourceName": "Toronto Public Library youth volunteer events"
-  },
   {
     "id": "discovered-tpl-events-volunteer-set-phasers-to-celebrate-60-years-of-star--4ed8324a47c8",
     "title": "Set Phasers to Celebrate! 60 Years of Star Trek: A Merril Collection Exhibit",
@@ -85,32 +55,33 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Toronto Public Library youth volunteer events"
   },
   {
-    "id": "discovered-tpl-events-volunteer-game-on-board-game-playtime-f86dcbad426a",
-    "title": "Game on! Board Game Playtime",
-    "organization": "Toronto Public Library",
-    "description": "Join us for a fun-filled day of board games and puzzles! Play your favourites or try something new! Brings your friends and family or meet new people at the library. Games available for use in the Children's Area. Available games include: Ball Fall Jumbo (Ages 3+), STEM Pretend Flower Garden Toy Set (Ages 3-6), Operation (Ages 6+), STEM Road Builder Game (Ages 4-8), Dinosaur Tetra Tower Balance Stacking Blocks Game (Ages 6+) Available puzzles include: Giant World Map Puzzle (Ages 4+), Canada Map Jigsaw Puzzle (Ages 4-12), ABC Puzzle (Ages 3+)",
-    "city": "Toronto",
-    "region": "Toronto",
-    "ageMin": 3,
-    "ageMax": 6,
-    "category": "Science & Engineering",
+    "id": "discovered-markham-events-volunteer-reading-to-success-5d5f0aa61d2d",
+    "title": "Reading to Success",
+    "organization": "Markham Public Library",
+    "description": "Read a story with us! Reading to Success is a volunteer facilitated reading program established to motivate children to read regularly. YPAM in partnership with the Markham Public Library provides this weekly literacy program, where volunteers read grade specific books for children in Junior Kindergarten, Senior Kindergarten, Grade 1, Grade 2 and IEP kids. Make Reading to Success part of your child's reading habit and build a love of reading together. To register, please visit: https://www.ypam.ca/reading *Please note that through registering, you are giving YPAM your information.",
+    "city": "Markham",
+    "region": "York",
+    "ageMin": 6,
+    "ageMax": 12,
+    "category": "Volunteer Hours",
     "cost": "Free to join",
     "language": [
       "en"
     ],
-    "deadline": "2026-09-19T09:00:00-04:00",
-    "startDate": "2026-09-19T09:00:00-04:00",
-    "endDate": "2026-09-19T16:30:00-04:00",
-    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6a8850a83b6c71003e5a57bf",
+    "deadline": "2026-09-21T18:00:00-04:00",
+    "startDate": "2026-09-21T18:00:00-04:00",
+    "endDate": "2026-09-21T19:30:00-04:00",
+    "sourceUrl": "https://markham.bibliocommons.com/events/6a061c0e0c0f2c4503fa23fa",
     "lastChecked": "2026-09-19",
     "lastSeen": "2026-09-19",
     "status": "active",
     "tags": [
-      "science & engineering"
+      "volunteer hours",
+      "volunteer"
     ],
     "confidence": "high",
     "reviewReasons": [],
-    "sourceName": "Toronto Public Library youth volunteer events"
+    "sourceName": "Markham Public Library youth volunteer events"
   },
   {
     "id": "discovered-vaughan-library-programs-volunteer-opportunities-e775e833a50b",
@@ -284,35 +255,7 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Richmond Hill Public Library programs"
   },
   {
-    "id": "discovered-aurora-library-stem-reading-math-buddies-drop-in-268fab722ce4",
-    "title": "Reading & Math Buddies Drop-In",
-    "organization": "Aurora Public Library",
-    "description": "Looking for extra support in reading or math? Drop in for one-on-one help with a volunteer buddy who will encourage learning, build confidence, and help children strengthen their skills in a fun and supportive environment. To help accommodate as many children as possible, participants are encouraged to register for one session per day and select either the 2:00–3:00 p.m. or 3:00–4:00 p.m. time slot. Space is limited. Participants must arrive at the time they registered for. If a participant has not arrived within 10 minutes of the session start time, their spot may be offered to a child on the waitlist. If you are unable to attend, please cancel your registration as soon as possible so that another child may take your spot. Repeated no-shows without cancelling may affect eligibility for fu",
-    "city": "Aurora",
-    "region": "York",
-    "ageMin": 6,
-    "ageMax": 12,
-    "category": "Volunteer Hours",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "deadline": "2026-09-20T14:00:00-04:00",
-    "startDate": "2026-09-20T14:00:00-04:00",
-    "endDate": "2026-09-20T15:00:00-04:00",
-    "sourceUrl": "https://aurora.bibliocommons.com/events/6a3d94b8cf21930366acc8c6",
-    "lastChecked": "2026-09-19",
-    "lastSeen": "2026-09-19",
-    "status": "active",
-    "tags": [
-      "volunteer hours"
-    ],
-    "confidence": "high",
-    "reviewReasons": [],
-    "sourceName": "Aurora Public Library STEM events"
-  },
-  {
-    "id": "discovered-aurora-library-stem-maker-workshop-layered-art-7e8ca259e404",
+    "id": "discovered-aurora-library-stem-maker-workshop-layered-art-1432ede1dfd4",
     "title": "Maker Workshop: Layered Art",
     "organization": "Aurora Public Library",
     "description": "Learn how to create multi-layered artwork using Adobe Illustrator and a laser cutter. All materials will be provided. Basic computer knowledge and skills are required for attendance. Please note that spots will be prioritized for first-time attendees. teen/adult program 13+",
@@ -328,13 +271,41 @@ export const generatedDiscoveryReviewCandidates = [
     "deadline": "2026-09-21T18:00:00-04:00",
     "startDate": "2026-09-21T18:00:00-04:00",
     "endDate": "2026-09-21T20:00:00-04:00",
-    "sourceUrl": "https://aurora.bibliocommons.com/events/6a3d9836c52cdc3600ece4df",
+    "sourceUrl": "https://aurora.bibliocommons.com/events/6a563acefb418a28009ad5b6",
     "lastChecked": "2026-09-19",
     "lastSeen": "2026-09-19",
     "status": "active",
     "tags": [
       "makerspace & fabrication",
       "maker"
+    ],
+    "confidence": "high",
+    "reviewReasons": [],
+    "sourceName": "Aurora Public Library STEM events"
+  },
+  {
+    "id": "discovered-aurora-library-stem-reading-math-buddies-drop-in-05c0198c127e",
+    "title": "Reading & Math Buddies Drop-In",
+    "organization": "Aurora Public Library",
+    "description": "Looking for extra support in reading or math? Drop in for one-on-one help with a volunteer buddy who will encourage learning, build confidence, and help children strengthen their skills in a fun and supportive environment. To help accommodate as many children as possible, participants are encouraged to register for one session per day and select either the 2:00–3:00 p.m. or 3:00–4:00 p.m. time slot. Space is limited. Participants must arrive at the time they registered for. If a participant has not arrived within 10 minutes of the session start time, their spot may be offered to a child on the waitlist. If you are unable to attend, please cancel your registration as soon as possible so that another child may take your spot. Repeated no-shows without cancelling may affect eligibility for fu",
+    "city": "Aurora",
+    "region": "York",
+    "ageMin": 6,
+    "ageMax": 12,
+    "category": "Volunteer Hours",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "deadline": "2026-09-20T15:00:00-04:00",
+    "startDate": "2026-09-20T15:00:00-04:00",
+    "endDate": "2026-09-20T16:00:00-04:00",
+    "sourceUrl": "https://aurora.bibliocommons.com/events/69c40e2fad384e40edb6aec3",
+    "lastChecked": "2026-09-19",
+    "lastSeen": "2026-09-19",
+    "status": "active",
+    "tags": [
+      "volunteer hours"
     ],
     "confidence": "high",
     "reviewReasons": [],
