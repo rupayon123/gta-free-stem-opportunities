@@ -1,12 +1,12 @@
 {
   "name": "GTA FREE STEM Opportunities public feed",
   "schemaVersion": 1,
-  "count": 143,
+  "count": 142,
   "lastDataChange": "2026-09-20",
   "sourceHealth": {
     "library": {
       "schemaVersion": 1,
-      "generatedAt": "2026-09-20T04:56:30.731Z",
+      "generatedAt": "2026-09-20T11:27:44.467Z",
       "status": "healthy",
       "failureReasons": [],
       "sourceCount": 2,
@@ -16,7 +16,7 @@
       "pageSuccessRatio": 1,
       "minimumPageSuccessRatio": 0.75,
       "minimumPerSourceSuccessRatio": 0.5,
-      "acceptedListings": 139,
+      "acceptedListings": 138,
       "previousPublishedListings": 139,
       "minimumAcceptedListings": 91,
       "sources": [
@@ -34,7 +34,7 @@
           "organization": "Markham Public Library",
           "attemptedPages": 12,
           "successfulPages": 12,
-          "acceptedListings": 59,
+          "acceptedListings": 58,
           "failedPages": 0,
           "pageSuccessRatio": 1
         }
@@ -42,7 +42,7 @@
     },
     "discovery": {
       "schemaVersion": 1,
-      "generatedAt": "2026-09-20T04:56:53.407Z",
+      "generatedAt": "2026-09-20T11:28:03.644Z",
       "status": "healthy",
       "failureReasons": [],
       "sourcesChecked": 30,
@@ -99,7 +99,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a0f6d2b8e677a28001d9dd7",
-          "capturedAt": "2026-09-20T04:56:18.298Z",
+          "capturedAt": "2026-09-20T11:27:32.682Z",
           "confidence": "high"
         }
       ],
@@ -356,7 +356,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a445a9c7e16a03d00e93da4",
-          "capturedAt": "2026-09-20T04:56:18.300Z",
+          "capturedAt": "2026-09-20T11:27:32.683Z",
           "confidence": "high"
         }
       ],
@@ -612,7 +612,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a5299330e562e2800993113",
-          "capturedAt": "2026-09-20T04:56:18.301Z",
+          "capturedAt": "2026-09-20T11:27:32.683Z",
           "confidence": "high"
         }
       ],
@@ -870,7 +870,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a600c150d65ac360041619a",
-          "capturedAt": "2026-09-20T04:56:18.301Z",
+          "capturedAt": "2026-09-20T11:27:32.684Z",
           "confidence": "high"
         }
       ],
@@ -1128,7 +1128,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69f26a14fb87a3c2e2acb12b",
-          "capturedAt": "2026-09-20T04:56:18.301Z",
+          "capturedAt": "2026-09-20T11:27:32.684Z",
           "confidence": "high"
         }
       ],
@@ -1385,7 +1385,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69a861c92866a5b4883fd3bb",
-          "capturedAt": "2026-09-20T04:56:18.302Z",
+          "capturedAt": "2026-09-20T11:27:32.684Z",
           "confidence": "high"
         }
       ],
@@ -1643,7 +1643,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a19ac06c6a1dc3d00d6ef4b",
-          "capturedAt": "2026-09-20T04:56:18.302Z",
+          "capturedAt": "2026-09-20T11:27:32.685Z",
           "confidence": "high"
         }
       ],
@@ -1905,7 +1905,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a0f4adf8e677a28001d8c7d",
-          "capturedAt": "2026-09-20T04:56:18.835Z",
+          "capturedAt": "2026-09-20T11:27:33.233Z",
           "confidence": "high"
         }
       ],
@@ -2163,7 +2163,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a174305703c3363002a6036",
-          "capturedAt": "2026-09-20T04:56:18.835Z",
+          "capturedAt": "2026-09-20T11:27:33.233Z",
           "confidence": "high"
         }
       ],
@@ -2422,7 +2422,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a2ed9232ea730c17ab6d201",
-          "capturedAt": "2026-09-20T04:56:18.835Z",
+          "capturedAt": "2026-09-20T11:27:33.233Z",
           "confidence": "high"
         }
       ],
@@ -2680,7 +2680,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a42aa030e851028002df8b6",
-          "capturedAt": "2026-09-20T04:56:18.835Z",
+          "capturedAt": "2026-09-20T11:27:33.234Z",
           "confidence": "high"
         }
       ],
@@ -2936,7 +2936,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a58198f82c03c5c17d84f7f",
-          "capturedAt": "2026-09-20T04:56:18.835Z",
+          "capturedAt": "2026-09-20T11:27:33.234Z",
           "confidence": "high"
         }
       ],
@@ -3192,7 +3192,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a675304c7e02e3d006bea9d",
-          "capturedAt": "2026-09-20T04:56:18.835Z",
+          "capturedAt": "2026-09-20T11:27:33.234Z",
           "confidence": "high"
         }
       ],
@@ -3449,7 +3449,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a60e790f213992f00c627f3",
-          "capturedAt": "2026-09-20T04:56:18.836Z",
+          "capturedAt": "2026-09-20T11:27:33.234Z",
           "confidence": "high"
         }
       ],
@@ -3706,7 +3706,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a60e6f17b79214226aa5ca2",
-          "capturedAt": "2026-09-20T04:56:18.836Z",
+          "capturedAt": "2026-09-20T11:27:33.234Z",
           "confidence": "high"
         }
       ],
@@ -3964,7 +3964,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a9710ec36204e08fbb8cd2c",
-          "capturedAt": "2026-09-20T04:56:18.836Z",
+          "capturedAt": "2026-09-20T11:27:33.234Z",
           "confidence": "high"
         }
       ],
@@ -4220,7 +4220,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a8f7d7bb20478002995d07a",
-          "capturedAt": "2026-09-20T04:56:18.836Z",
+          "capturedAt": "2026-09-20T11:27:33.234Z",
           "confidence": "high"
         }
       ],
@@ -4476,7 +4476,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a9096d44cb69d003e23d850",
-          "capturedAt": "2026-09-20T04:56:18.836Z",
+          "capturedAt": "2026-09-20T11:27:33.235Z",
           "confidence": "high"
         }
       ],
@@ -4732,7 +4732,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a6bc74b74e3b8b75db6457d",
-          "capturedAt": "2026-09-20T04:56:18.837Z",
+          "capturedAt": "2026-09-20T11:27:33.235Z",
           "confidence": "high"
         }
       ],
@@ -4989,7 +4989,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a57e4dac7e02e3d00695b97",
-          "capturedAt": "2026-09-20T04:56:18.837Z",
+          "capturedAt": "2026-09-20T11:27:33.235Z",
           "confidence": "high"
         }
       ],
@@ -5245,7 +5245,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a85e1a057c264087ad23a3b",
-          "capturedAt": "2026-09-20T04:56:18.837Z",
+          "capturedAt": "2026-09-20T11:27:33.235Z",
           "confidence": "high"
         }
       ],
@@ -5501,7 +5501,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a8c781d46e4c80031cc46c4",
-          "capturedAt": "2026-09-20T04:56:19.424Z",
+          "capturedAt": "2026-09-20T11:27:33.774Z",
           "confidence": "high"
         }
       ],
@@ -5757,7 +5757,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a8e145f58433600542b5733",
-          "capturedAt": "2026-09-20T04:56:19.424Z",
+          "capturedAt": "2026-09-20T11:27:33.774Z",
           "confidence": "high"
         }
       ],
@@ -6014,7 +6014,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a99cf484995480655ed79dc",
-          "capturedAt": "2026-09-20T04:56:19.425Z",
+          "capturedAt": "2026-09-20T11:27:33.774Z",
           "confidence": "high"
         }
       ],
@@ -6273,7 +6273,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a6636640e562e28009c8e0c",
-          "capturedAt": "2026-09-20T04:56:19.425Z",
+          "capturedAt": "2026-09-20T11:27:33.774Z",
           "confidence": "high"
         }
       ],
@@ -6533,7 +6533,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a84cf314cb69d003e21b171",
-          "capturedAt": "2026-09-20T04:56:19.425Z",
+          "capturedAt": "2026-09-20T11:27:33.774Z",
           "confidence": "high"
         }
       ],
@@ -6792,7 +6792,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a03beec43b41b3d00661804",
-          "capturedAt": "2026-09-20T04:56:19.425Z",
+          "capturedAt": "2026-09-20T11:27:33.774Z",
           "confidence": "high"
         }
       ],
@@ -7048,7 +7048,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a723557cca66c2f00a8273e",
-          "capturedAt": "2026-09-20T04:56:19.425Z",
+          "capturedAt": "2026-09-20T11:27:33.774Z",
           "confidence": "high"
         }
       ],
@@ -7304,7 +7304,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe1952edc686d00f5c978",
-          "capturedAt": "2026-09-20T04:56:25.436Z",
+          "capturedAt": "2026-09-20T11:27:39.211Z",
           "confidence": "high"
         }
       ],
@@ -7560,7 +7560,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69546b1e6724c63d00e96a89",
-          "capturedAt": "2026-09-20T04:56:19.425Z",
+          "capturedAt": "2026-09-20T11:27:33.774Z",
           "confidence": "high"
         }
       ],
@@ -7816,7 +7816,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69ecea0c4dacf581ff8b17f0",
-          "capturedAt": "2026-09-20T04:56:19.425Z",
+          "capturedAt": "2026-09-20T11:27:33.774Z",
           "confidence": "high"
         }
       ],
@@ -8074,7 +8074,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a527df8489285b703d87818",
-          "capturedAt": "2026-09-20T04:56:19.425Z",
+          "capturedAt": "2026-09-20T11:27:33.774Z",
           "confidence": "high"
         }
       ],
@@ -8334,7 +8334,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a8dd6ce60ccaf01c020e9c5",
-          "capturedAt": "2026-09-20T04:56:19.425Z",
+          "capturedAt": "2026-09-20T11:27:33.774Z",
           "confidence": "high"
         }
       ],
@@ -8590,7 +8590,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe07a2edc686d00f5c871",
-          "capturedAt": "2026-09-20T04:56:25.437Z",
+          "capturedAt": "2026-09-20T11:27:39.211Z",
           "confidence": "high"
         }
       ],
@@ -8847,7 +8847,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a60e7d50ed7b4521ed6cf79",
-          "capturedAt": "2026-09-20T04:56:19.985Z",
+          "capturedAt": "2026-09-20T11:27:34.392Z",
           "confidence": "high"
         }
       ],
@@ -9104,7 +9104,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69ff9658e8af4a2f00715c08",
-          "capturedAt": "2026-09-20T04:56:19.985Z",
+          "capturedAt": "2026-09-20T11:27:34.392Z",
           "confidence": "high"
         }
       ],
@@ -9361,7 +9361,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a888de64cb69d003e225613",
-          "capturedAt": "2026-09-20T04:56:25.437Z",
+          "capturedAt": "2026-09-20T11:27:39.212Z",
           "confidence": "high"
         }
       ],
@@ -9617,7 +9617,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69dbd871129f12743838134a",
-          "capturedAt": "2026-09-20T04:56:20.582Z",
+          "capturedAt": "2026-09-20T11:27:34.923Z",
           "confidence": "high"
         }
       ],
@@ -9873,7 +9873,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a909ca669166f088b955fc6",
-          "capturedAt": "2026-09-20T04:56:20.582Z",
+          "capturedAt": "2026-09-20T11:27:34.923Z",
           "confidence": "high"
         }
       ],
@@ -10129,7 +10129,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a9327ca2dac6e0037229f97",
-          "capturedAt": "2026-09-20T04:56:20.583Z",
+          "capturedAt": "2026-09-20T11:27:34.924Z",
           "confidence": "high"
         }
       ],
@@ -10385,7 +10385,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a4e7b43fb18bf3d00bef3b9",
-          "capturedAt": "2026-09-20T04:56:20.583Z",
+          "capturedAt": "2026-09-20T11:27:34.924Z",
           "confidence": "high"
         }
       ],
@@ -10642,7 +10642,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a87646f58433600542abc3c",
-          "capturedAt": "2026-09-20T04:56:21.224Z",
+          "capturedAt": "2026-09-20T11:27:35.471Z",
           "confidence": "high"
         }
       ],
@@ -10898,7 +10898,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a8dc7ad4cb69d003e233fb0",
-          "capturedAt": "2026-09-20T04:56:21.224Z",
+          "capturedAt": "2026-09-20T11:27:35.471Z",
           "confidence": "high"
         }
       ],
@@ -11158,7 +11158,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69fa2603e13d3b4603b35d81",
-          "capturedAt": "2026-09-20T04:56:21.225Z",
+          "capturedAt": "2026-09-20T11:27:35.472Z",
           "confidence": "high"
         }
       ],
@@ -11418,7 +11418,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a84927e4c610f00389536dd",
-          "capturedAt": "2026-09-20T04:56:21.225Z",
+          "capturedAt": "2026-09-20T11:27:35.472Z",
           "confidence": "high"
         }
       ],
@@ -11678,7 +11678,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a7b5dbef68ff70029b6f584",
-          "capturedAt": "2026-09-20T04:56:21.225Z",
+          "capturedAt": "2026-09-20T11:27:35.472Z",
           "confidence": "high"
         }
       ],
@@ -11934,7 +11934,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a86136193b500003ff625df",
-          "capturedAt": "2026-09-20T04:56:21.225Z",
+          "capturedAt": "2026-09-20T11:27:35.472Z",
           "confidence": "high"
         }
       ],
@@ -12191,7 +12191,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6aa81c42101eb7003f2ff00a",
-          "capturedAt": "2026-09-20T04:56:21.225Z",
+          "capturedAt": "2026-09-20T11:27:35.473Z",
           "confidence": "high"
         }
       ],
@@ -12448,7 +12448,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a60e4417b79214226aa5b2d",
-          "capturedAt": "2026-09-20T04:56:21.225Z",
+          "capturedAt": "2026-09-20T11:27:35.473Z",
           "confidence": "high"
         }
       ],
@@ -12707,7 +12707,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a80645c3f18f80030bb4993",
-          "capturedAt": "2026-09-20T04:56:21.736Z",
+          "capturedAt": "2026-09-20T11:27:35.948Z",
           "confidence": "high"
         }
       ],
@@ -12967,7 +12967,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a7f4f20aafa6100295c9ec7",
-          "capturedAt": "2026-09-20T04:56:21.737Z",
+          "capturedAt": "2026-09-20T11:27:35.949Z",
           "confidence": "high"
         }
       ],
@@ -13225,7 +13225,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a83987daafa6100295d5292",
-          "capturedAt": "2026-09-20T04:56:21.737Z",
+          "capturedAt": "2026-09-20T11:27:35.949Z",
           "confidence": "high"
         }
       ],
@@ -13483,7 +13483,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a84b5b8be14820029883659",
-          "capturedAt": "2026-09-20T04:56:21.737Z",
+          "capturedAt": "2026-09-20T11:27:35.949Z",
           "confidence": "high"
         }
       ],
@@ -13741,7 +13741,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a847e622dac6e00371fe8a3",
-          "capturedAt": "2026-09-20T04:56:21.737Z",
+          "capturedAt": "2026-09-20T11:27:35.949Z",
           "confidence": "high"
         }
       ],
@@ -14001,7 +14001,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a90a7624cb69d003e23de09",
-          "capturedAt": "2026-09-20T04:56:21.737Z",
+          "capturedAt": "2026-09-20T11:27:35.949Z",
           "confidence": "high"
         }
       ],
@@ -14261,7 +14261,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a92fc73aafa61002960076e",
-          "capturedAt": "2026-09-20T04:56:21.737Z",
+          "capturedAt": "2026-09-20T11:27:35.949Z",
           "confidence": "high"
         }
       ],
@@ -14520,7 +14520,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a85d2c44c610f00389552b6",
-          "capturedAt": "2026-09-20T04:56:21.737Z",
+          "capturedAt": "2026-09-20T11:27:35.949Z",
           "confidence": "high"
         }
       ],
@@ -14780,7 +14780,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a7b5e291401fd00606c0378",
-          "capturedAt": "2026-09-20T04:56:21.737Z",
+          "capturedAt": "2026-09-20T11:27:35.949Z",
           "confidence": "high"
         }
       ],
@@ -15036,7 +15036,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a848cdfb20478002993b37c",
-          "capturedAt": "2026-09-20T04:56:22.529Z",
+          "capturedAt": "2026-09-20T11:27:36.635Z",
           "confidence": "high"
         }
       ],
@@ -15291,7 +15291,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a8eee63db86e4004d8736e0",
-          "capturedAt": "2026-09-20T04:56:22.529Z",
+          "capturedAt": "2026-09-20T11:27:36.636Z",
           "confidence": "high"
         }
       ],
@@ -15547,7 +15547,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a7f203ea821f90037edc2ce",
-          "capturedAt": "2026-09-20T04:56:23.846Z",
+          "capturedAt": "2026-09-20T11:27:37.682Z",
           "confidence": "high"
         }
       ],
@@ -15803,7 +15803,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a2afd9cf56bd86e00b61dda",
-          "capturedAt": "2026-09-20T04:56:23.846Z",
+          "capturedAt": "2026-09-20T11:27:37.682Z",
           "confidence": "high"
         }
       ],
@@ -16059,7 +16059,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a9073a658433600542b8926",
-          "capturedAt": "2026-09-20T04:56:23.847Z",
+          "capturedAt": "2026-09-20T11:27:37.682Z",
           "confidence": "high"
         }
       ],
@@ -16315,7 +16315,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6aa177a94b3b060030827937",
-          "capturedAt": "2026-09-20T04:56:23.848Z",
+          "capturedAt": "2026-09-20T11:27:37.683Z",
           "confidence": "high"
         }
       ],
@@ -16571,7 +16571,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a888a1bfeae960038072b55",
-          "capturedAt": "2026-09-20T04:56:23.848Z",
+          "capturedAt": "2026-09-20T11:27:37.684Z",
           "confidence": "high"
         }
       ],
@@ -16829,7 +16829,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a90b4d8be148200298a9766",
-          "capturedAt": "2026-09-20T04:56:23.849Z",
+          "capturedAt": "2026-09-20T11:27:37.684Z",
           "confidence": "high"
         }
       ],
@@ -17086,7 +17086,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a7cbe654cb69d003e2060f7",
-          "capturedAt": "2026-09-20T04:56:24.451Z",
+          "capturedAt": "2026-09-20T11:27:38.190Z",
           "confidence": "high"
         }
       ],
@@ -17346,7 +17346,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a8f14ba0116850960382e39",
-          "capturedAt": "2026-09-20T04:56:24.451Z",
+          "capturedAt": "2026-09-20T11:27:38.190Z",
           "confidence": "high"
         }
       ],
@@ -17605,7 +17605,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a7d04481401fd00606c3073",
-          "capturedAt": "2026-09-20T04:56:24.451Z",
+          "capturedAt": "2026-09-20T11:27:38.190Z",
           "confidence": "high"
         }
       ],
@@ -17865,7 +17865,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a848f4e2f41840bbfc2ebd2",
-          "capturedAt": "2026-09-20T04:56:24.452Z",
+          "capturedAt": "2026-09-20T11:27:38.190Z",
           "confidence": "high"
         }
       ],
@@ -18125,7 +18125,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a9311651c197d11325bb330",
-          "capturedAt": "2026-09-20T04:56:24.452Z",
+          "capturedAt": "2026-09-20T11:27:38.191Z",
           "confidence": "high"
         }
       ],
@@ -18384,7 +18384,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a88969265b929006b169dc9",
-          "capturedAt": "2026-09-20T04:56:24.452Z",
+          "capturedAt": "2026-09-20T11:27:38.191Z",
           "confidence": "high"
         }
       ],
@@ -18641,7 +18641,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a6cb73374e3b8b75db66935",
-          "capturedAt": "2026-09-20T04:56:24.452Z",
+          "capturedAt": "2026-09-20T11:27:38.191Z",
           "confidence": "high"
         }
       ],
@@ -18897,7 +18897,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a85f7f3be14820029888297",
-          "capturedAt": "2026-09-20T04:56:24.452Z",
+          "capturedAt": "2026-09-20T11:27:38.191Z",
           "confidence": "high"
         }
       ],
@@ -19154,7 +19154,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a89e62436204e08fbb65af5",
-          "capturedAt": "2026-09-20T04:56:24.452Z",
+          "capturedAt": "2026-09-20T11:27:38.191Z",
           "confidence": "high"
         }
       ],
@@ -19414,7 +19414,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a8c440329a7dd0d67461d81",
-          "capturedAt": "2026-09-20T04:56:24.452Z",
+          "capturedAt": "2026-09-20T11:27:38.191Z",
           "confidence": "high"
         }
       ],
@@ -19671,7 +19671,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a8e1b6757c264087ad3c9f5",
-          "capturedAt": "2026-09-20T04:56:24.975Z",
+          "capturedAt": "2026-09-20T11:27:38.712Z",
           "confidence": "high"
         }
       ],
@@ -19931,7 +19931,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a88a6614cb69d003e2261e0",
-          "capturedAt": "2026-09-20T04:56:24.975Z",
+          "capturedAt": "2026-09-20T11:27:38.712Z",
           "confidence": "high"
         }
       ],
@@ -20191,7 +20191,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a7e541b452bb101b57511cc",
-          "capturedAt": "2026-09-20T04:56:24.975Z",
+          "capturedAt": "2026-09-20T11:27:38.712Z",
           "confidence": "high"
         }
       ],
@@ -20447,7 +20447,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a7a19450d65ac360045bede",
-          "capturedAt": "2026-09-20T04:56:24.975Z",
+          "capturedAt": "2026-09-20T11:27:38.712Z",
           "confidence": "high"
         }
       ],
@@ -20702,7 +20702,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a7336b04523092f0034e111",
-          "capturedAt": "2026-09-20T04:56:24.976Z",
+          "capturedAt": "2026-09-20T11:27:38.713Z",
           "confidence": "high"
         }
       ],
@@ -20960,7 +20960,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a7b995760ccaf01c01d8c96",
-          "capturedAt": "2026-09-20T04:56:24.976Z",
+          "capturedAt": "2026-09-20T11:27:38.713Z",
           "confidence": "high"
         }
       ],
@@ -21218,7 +21218,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a972e7369166f088b968dba",
-          "capturedAt": "2026-09-20T04:56:24.976Z",
+          "capturedAt": "2026-09-20T11:27:38.713Z",
           "confidence": "high"
         }
       ],
@@ -21474,7 +21474,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/692dbdf9d923da4200b317a8",
-          "capturedAt": "2026-09-20T04:56:25.902Z",
+          "capturedAt": "2026-09-20T11:27:39.848Z",
           "confidence": "high"
         }
       ],
@@ -21730,7 +21730,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a5cc712a41369ab2c670fb6",
-          "capturedAt": "2026-09-20T04:56:26.331Z",
+          "capturedAt": "2026-09-20T11:27:40.450Z",
           "confidence": "high"
         }
       ],
@@ -21986,7 +21986,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbd36ee647c8ff0c38729d",
-          "capturedAt": "2026-09-20T04:56:26.332Z",
+          "capturedAt": "2026-09-20T11:27:40.450Z",
           "confidence": "high"
         }
       ],
@@ -22242,7 +22242,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe20064ad59251cb9d9a2",
-          "capturedAt": "2026-09-20T04:56:26.332Z",
+          "capturedAt": "2026-09-20T11:27:40.450Z",
           "confidence": "high"
         }
       ],
@@ -22498,7 +22498,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe0e82edc686d00f5c8a8",
-          "capturedAt": "2026-09-20T04:56:26.332Z",
+          "capturedAt": "2026-09-20T11:27:40.450Z",
           "confidence": "high"
         }
       ],
@@ -22755,7 +22755,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe12275911f28001a2542",
-          "capturedAt": "2026-09-20T04:56:26.332Z",
+          "capturedAt": "2026-09-20T11:27:40.450Z",
           "confidence": "high"
         }
       ],
@@ -23011,7 +23011,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe0cde647c8ff0c38743a",
-          "capturedAt": "2026-09-20T04:56:26.332Z",
+          "capturedAt": "2026-09-20T11:27:40.450Z",
           "confidence": "high"
         }
       ],
@@ -23267,7 +23267,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe0a50176055300fe8159",
-          "capturedAt": "2026-09-20T04:56:26.793Z",
+          "capturedAt": "2026-09-20T11:27:40.867Z",
           "confidence": "high"
         }
       ],
@@ -23523,7 +23523,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe1952edc686d00f5c979",
-          "capturedAt": "2026-09-20T04:56:26.794Z",
+          "capturedAt": "2026-09-20T11:27:40.868Z",
           "confidence": "high"
         }
       ],
@@ -23779,7 +23779,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe07a2edc686d00f5c872",
-          "capturedAt": "2026-09-20T04:56:26.794Z",
+          "capturedAt": "2026-09-20T11:27:40.868Z",
           "confidence": "high"
         }
       ],
@@ -24035,7 +24035,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a888de64cb69d003e225614",
-          "capturedAt": "2026-09-20T04:56:26.794Z",
+          "capturedAt": "2026-09-20T11:27:40.868Z",
           "confidence": "high"
         }
       ],
@@ -24292,7 +24292,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a062a9e46d5f64f7dcbbd61",
-          "capturedAt": "2026-09-20T04:56:26.795Z",
+          "capturedAt": "2026-09-20T11:27:40.868Z",
           "confidence": "high"
         }
       ],
@@ -24548,7 +24548,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/692dbdf9d923da4200b317a9",
-          "capturedAt": "2026-09-20T04:56:27.221Z",
+          "capturedAt": "2026-09-20T11:27:41.400Z",
           "confidence": "high"
         }
       ],
@@ -24803,7 +24803,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a062a71c7d3cd5800594377",
-          "capturedAt": "2026-09-20T04:56:27.221Z",
+          "capturedAt": "2026-09-20T11:27:41.400Z",
           "confidence": "high"
         }
       ],
@@ -25061,7 +25061,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbdb930176055300fe7fec",
-          "capturedAt": "2026-09-20T04:56:27.221Z",
+          "capturedAt": "2026-09-20T11:27:41.400Z",
           "confidence": "high"
         }
       ],
@@ -25318,7 +25318,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a67e529f213992f00c78e87",
-          "capturedAt": "2026-09-20T04:56:27.221Z",
+          "capturedAt": "2026-09-20T11:27:41.400Z",
           "confidence": "high"
         }
       ],
@@ -25576,7 +25576,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a67a4a99943bdf31ea1f1a7",
-          "capturedAt": "2026-09-20T04:56:27.222Z",
+          "capturedAt": "2026-09-20T11:27:41.401Z",
           "confidence": "high"
         }
       ],
@@ -25833,7 +25833,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a67a7349943bdf31ea1f229",
-          "capturedAt": "2026-09-20T04:56:27.618Z",
+          "capturedAt": "2026-09-20T11:27:41.774Z",
           "confidence": "high"
         }
       ],
@@ -26091,7 +26091,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a5fa9e7a41369ab2c679f4c",
-          "capturedAt": "2026-09-20T04:56:27.618Z",
+          "capturedAt": "2026-09-20T11:27:41.774Z",
           "confidence": "high"
         }
       ],
@@ -26347,7 +26347,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbd36ee647c8ff0c38729e",
-          "capturedAt": "2026-09-20T04:56:27.619Z",
+          "capturedAt": "2026-09-20T11:27:41.774Z",
           "confidence": "high"
         }
       ],
@@ -26603,7 +26603,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe20064ad59251cb9d9a3",
-          "capturedAt": "2026-09-20T04:56:27.619Z",
+          "capturedAt": "2026-09-20T11:27:41.774Z",
           "confidence": "high"
         }
       ],
@@ -26859,7 +26859,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe0e82edc686d00f5c8a9",
-          "capturedAt": "2026-09-20T04:56:28.535Z",
+          "capturedAt": "2026-09-20T11:27:42.312Z",
           "confidence": "high"
         }
       ],
@@ -27116,7 +27116,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe12275911f28001a2543",
-          "capturedAt": "2026-09-20T04:56:28.535Z",
+          "capturedAt": "2026-09-20T11:27:42.312Z",
           "confidence": "high"
         }
       ],
@@ -27372,7 +27372,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe0cde647c8ff0c38743b",
-          "capturedAt": "2026-09-20T04:56:28.535Z",
+          "capturedAt": "2026-09-20T11:27:42.312Z",
           "confidence": "high"
         }
       ],
@@ -27629,7 +27629,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a67e8249943bdf31ea20ec5",
-          "capturedAt": "2026-09-20T04:56:28.535Z",
+          "capturedAt": "2026-09-20T11:27:42.312Z",
           "confidence": "high"
         }
       ],
@@ -27885,7 +27885,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe0a50176055300fe815a",
-          "capturedAt": "2026-09-20T04:56:28.535Z",
+          "capturedAt": "2026-09-20T11:27:42.312Z",
           "confidence": "high"
         }
       ],
@@ -28141,7 +28141,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe1952edc686d00f5c97a",
-          "capturedAt": "2026-09-20T04:56:28.536Z",
+          "capturedAt": "2026-09-20T11:27:42.312Z",
           "confidence": "high"
         }
       ],
@@ -28397,7 +28397,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe07a2edc686d00f5c873",
-          "capturedAt": "2026-09-20T04:56:28.536Z",
+          "capturedAt": "2026-09-20T11:27:42.313Z",
           "confidence": "high"
         }
       ],
@@ -28653,7 +28653,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6aaae32f4b3b06003084352e",
-          "capturedAt": "2026-09-20T04:56:28.536Z",
+          "capturedAt": "2026-09-20T11:27:42.313Z",
           "confidence": "high"
         }
       ],
@@ -28909,7 +28909,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a6135237d824676437cd57e",
-          "capturedAt": "2026-09-20T04:56:28.536Z",
+          "capturedAt": "2026-09-20T11:27:42.313Z",
           "confidence": "high"
         }
       ],
@@ -29165,7 +29165,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a613604daaaf4f51a20a669",
-          "capturedAt": "2026-09-20T04:56:28.537Z",
+          "capturedAt": "2026-09-20T11:27:42.313Z",
           "confidence": "high"
         }
       ],
@@ -29421,7 +29421,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a6137871bbbb30f3e80e325",
-          "capturedAt": "2026-09-20T04:56:28.537Z",
+          "capturedAt": "2026-09-20T11:27:42.313Z",
           "confidence": "high"
         }
       ],
@@ -29678,7 +29678,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a5957b5fa641fe01af3b3fb",
-          "capturedAt": "2026-09-20T04:56:29.013Z",
+          "capturedAt": "2026-09-20T11:27:42.742Z",
           "confidence": "high"
         }
       ],
@@ -29937,7 +29937,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a67e125f213992f00c78d8e",
-          "capturedAt": "2026-09-20T04:56:29.013Z",
+          "capturedAt": "2026-09-20T11:27:42.743Z",
           "confidence": "high"
         }
       ],
@@ -30194,7 +30194,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a4fe4b50d65ac36003e8ee8",
-          "capturedAt": "2026-09-20T04:56:29.013Z",
+          "capturedAt": "2026-09-20T11:27:42.743Z",
           "confidence": "high"
         }
       ],
@@ -30450,7 +30450,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a67970da41369ab2c691d3b",
-          "capturedAt": "2026-09-20T04:56:29.463Z",
+          "capturedAt": "2026-09-20T11:27:43.160Z",
           "confidence": "high"
         }
       ],
@@ -30706,7 +30706,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/692dbdf9d923da4200b317aa",
-          "capturedAt": "2026-09-20T04:56:29.463Z",
+          "capturedAt": "2026-09-20T11:27:43.160Z",
           "confidence": "high"
         }
       ],
@@ -30962,7 +30962,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a67ac717b79214226aba8ec",
-          "capturedAt": "2026-09-20T04:56:29.463Z",
+          "capturedAt": "2026-09-20T11:27:43.160Z",
           "confidence": "high"
         }
       ],
@@ -31220,7 +31220,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbdbb88b53c0241cd1b508",
-          "capturedAt": "2026-09-20T04:56:29.463Z",
+          "capturedAt": "2026-09-20T11:27:43.160Z",
           "confidence": "high"
         }
       ],
@@ -31432,263 +31432,6 @@
       }
     },
     {
-      "id": "markham-rss-6a65428e9943bdf31ea197fb",
-      "title": "STEM in Action - Engineering Activities: Aerospace",
-      "organization": "Markham Public Library",
-      "description": "Aerospace Engineering: Landing Rockets! In this workshop, students will explore the challenges of spacecraft landings by designing and testing a protective landing system for a model rocket carrying a delicate payload. Using the Engineering Design Process, participants will investigate forces, stability, and energy absorption while building, testing, and improving their designs through multiple landings. Discover how aerospace engineers design systems that enable safe landings on other planets Learning Outcomes Understand the role of landing systems for spacecrafts Identify and apply basic engineering design principles such as momentum, energy, drag, and absorption in a building challenge. Build, test, and improve the design of a rocket prototype Participants: Children aged 8 - 13 years old Note: Please sign up for each of the four sessions for your child(ren) to be able to attend all four unique sessions in this program series.",
-      "city": "Markham",
-      "region": "York",
-      "ageMin": 6,
-      "ageMax": 12,
-      "category": "Science & Engineering",
-      "categories": [
-        "STEM",
-        "Science & Engineering"
-      ],
-      "cost": "Free to join",
-      "language": [
-        "en"
-      ],
-      "deadline": "2026-10-08T21:30:00.000Z",
-      "startDate": "2026-10-08T21:30:00.000Z",
-      "endDate": "2026-10-08T23:00:00.000Z",
-      "sourceUrl": "https://markham.bibliocommons.com/events/6a65428e9943bdf31ea197fb",
-      "registrationUrl": "https://markham.bibliocommons.com/events/6a65428e9943bdf31ea197fb",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
-      "status": "active",
-      "tags": [
-        "science literacy week",
-        "steam",
-        "children",
-        "english"
-      ],
-      "communityFocus": [
-        "Open to all",
-        "Newcomer-friendly"
-      ],
-      "latitude": 43.8849972,
-      "longitude": -79.22996080000001,
-      "address": "Cornell Branch, 3201 Bur Oak Avenue, Markham, Ontario, L6B 0T2",
-      "volunteerHoursEligible": false,
-      "coopEligible": false,
-      "trustedSource": true,
-      "sources": [
-        {
-          "label": "Official Markham Public Library event page",
-          "url": "https://markham.bibliocommons.com/events/6a65428e9943bdf31ea197fb",
-          "capturedAt": "2026-09-20T04:56:29.463Z",
-          "confidence": "high"
-        }
-      ],
-      "translations": {
-        "fr": {
-          "title": "Occasion gratuite de STEM offerte par Markham Public Library a Markham",
-          "summary": "Occasion gratuite de STEM offerte par Markham Public Library a Markham. Ages 6-12. Consultez la source pour les details.",
-          "description": "Occasion gratuite de STEM offerte par Markham Public Library a Markham. Ages 6-12. Consultez la source pour les details.",
-          "category": "STEM",
-          "cost": "Fiche gratuite",
-          "tags": [
-            "STEM",
-            "Sciences et ingenierie"
-          ],
-          "translationSource": "generated-summary-template"
-        },
-        "zh": {
-          "title": "Markham Public Library在Markham提供免费的STEM机会。适合6-12岁。请查看来源了解详情。",
-          "summary": "Markham Public Library在Markham提供免费的STEM机会。适合6-12岁。请查看来源了解详情。",
-          "description": "Markham Public Library在Markham提供免费的STEM机会。适合6-12岁。请查看来源了解详情。",
-          "category": "STEM",
-          "cost": "免费列表",
-          "tags": [
-            "STEM",
-            "科学与工程"
-          ],
-          "translationSource": "generated-summary-template"
-        },
-        "yue": {
-          "title": "Markham Public Library喺Markham提供免費STEM機會。適合6-12歲。請查看來源了解詳情。",
-          "summary": "Markham Public Library喺Markham提供免費STEM機會。適合6-12歲。請查看來源了解詳情。",
-          "description": "Markham Public Library喺Markham提供免費STEM機會。適合6-12歲。請查看來源了解詳情。",
-          "category": "STEM",
-          "cost": "免費項目",
-          "tags": [
-            "STEM",
-            "科學同工程"
-          ],
-          "translationSource": "generated-summary-template"
-        },
-        "pa": {
-          "title": "Markham Public Library ਵੱਲੋਂ Markham ਵਿੱਚ ਮੁਫ਼ਤ STEM ਮੌਕਾ। ਉਮਰ 6-12",
-          "summary": "Markham Public Library ਵੱਲੋਂ Markham ਵਿੱਚ ਮੁਫ਼ਤ STEM ਮੌਕਾ। ਉਮਰ 6-12. ਵੇਰਵਿਆਂ ਲਈ ਸਰੋਤ ਵੇਖੋ।",
-          "description": "Markham Public Library ਵੱਲੋਂ Markham ਵਿੱਚ ਮੁਫ਼ਤ STEM ਮੌਕਾ। ਉਮਰ 6-12. ਵੇਰਵਿਆਂ ਲਈ ਸਰੋਤ ਵੇਖੋ।",
-          "category": "STEM",
-          "cost": "ਮੁਫ਼ਤ ਲਿਸਟਿੰਗ",
-          "tags": [
-            "STEM",
-            "ਵਿਗਿਆਨ ਅਤੇ ਇੰਜੀਨੀਅਰਿੰਗ"
-          ],
-          "translationSource": "generated-summary-template"
-        },
-        "ur": {
-          "title": "Markham میں Markham Public Library کی طرف سے مفت STEM موقع۔ عمر 6-12",
-          "summary": "Markham میں Markham Public Library کی طرف سے مفت STEM موقع۔ عمر 6-12. تفصیلات کے لیے ذریعہ دیکھیں۔",
-          "description": "Markham میں Markham Public Library کی طرف سے مفت STEM موقع۔ عمر 6-12. تفصیلات کے لیے ذریعہ دیکھیں۔",
-          "category": "STEM",
-          "cost": "مفت لسٹنگ",
-          "tags": [
-            "STEM",
-            "سائنس اور انجینئرنگ"
-          ],
-          "translationSource": "generated-summary-template"
-        },
-        "ta": {
-          "title": "Markham நகரில் Markham Public Library வழங்கும் இலவச STEM வாய்ப்பு",
-          "summary": "Markham நகரில் Markham Public Library வழங்கும் இலவச STEM வாய்ப்பு. வயது 6-12. விவரங்களுக்கு மூலத்தை பார்க்கவும்.",
-          "description": "Markham நகரில் Markham Public Library வழங்கும் இலவச STEM வாய்ப்பு. வயது 6-12. விவரங்களுக்கு மூலத்தை பார்க்கவும்.",
-          "category": "STEM",
-          "cost": "இலவச பட்டியல்",
-          "tags": [
-            "STEM",
-            "அறிவியல் மற்றும் பொறியியல்"
-          ],
-          "translationSource": "generated-summary-template"
-        },
-        "tl": {
-          "title": "Libreng STEM opportunity mula sa Markham Public Library sa Markham",
-          "summary": "Libreng STEM opportunity mula sa Markham Public Library sa Markham. Edad 6-12. Tingnan ang source para sa detalye.",
-          "description": "Libreng STEM opportunity mula sa Markham Public Library sa Markham. Edad 6-12. Tingnan ang source para sa detalye.",
-          "category": "STEM",
-          "cost": "Libreng listing",
-          "tags": [
-            "STEM",
-            "Agham at inhinyeriya"
-          ],
-          "translationSource": "generated-summary-template"
-        },
-        "es": {
-          "title": "Oportunidad gratis de STEM de Markham Public Library en Markham",
-          "summary": "Oportunidad gratis de STEM de Markham Public Library en Markham. Edades 6-12. Revise la fuente para detalles.",
-          "description": "Oportunidad gratis de STEM de Markham Public Library en Markham. Edades 6-12. Revise la fuente para detalles.",
-          "category": "STEM",
-          "cost": "Listado gratis",
-          "tags": [
-            "STEM",
-            "Ciencia e ingenieria"
-          ],
-          "translationSource": "generated-summary-template"
-        },
-        "ar": {
-          "title": "فرصة STEM مجانية من Markham Public Library في Markham",
-          "summary": "فرصة STEM مجانية من Markham Public Library في Markham. الأعمار 6-12. راجع المصدر للتفاصيل.",
-          "description": "فرصة STEM مجانية من Markham Public Library في Markham. الأعمار 6-12. راجع المصدر للتفاصيل.",
-          "category": "STEM",
-          "cost": "قائمة مجانية",
-          "tags": [
-            "STEM",
-            "العلوم والهندسة"
-          ],
-          "translationSource": "generated-summary-template"
-        },
-        "fa": {
-          "title": "فرصت رایگان STEM از Markham Public Library در Markham",
-          "summary": "فرصت رایگان STEM از Markham Public Library در Markham. سنین 6-12. برای جزئیات منبع را بررسی کنید.",
-          "description": "فرصت رایگان STEM از Markham Public Library در Markham. سنین 6-12. برای جزئیات منبع را بررسی کنید.",
-          "category": "STEM",
-          "cost": "فهرست رایگان",
-          "tags": [
-            "STEM",
-            "علوم و مهندسی"
-          ],
-          "translationSource": "generated-summary-template"
-        },
-        "hi": {
-          "title": "Markham में Markham Public Library की मुफ्त STEM opportunity",
-          "summary": "Markham में Markham Public Library की मुफ्त STEM opportunity. उम्र 6-12. Details के लिए source देखें.",
-          "description": "Markham में Markham Public Library की मुफ्त STEM opportunity. उम्र 6-12. Details के लिए source देखें.",
-          "category": "STEM",
-          "cost": "Free listing",
-          "tags": [
-            "STEM",
-            "विज्ञान और इंजीनियरिंग"
-          ],
-          "translationSource": "generated-summary-template"
-        },
-        "pt": {
-          "title": "Oportunidade gratuita de STEM da Markham Public Library em Markham",
-          "summary": "Oportunidade gratuita de STEM da Markham Public Library em Markham. Idades 6-12. Veja a fonte para detalhes.",
-          "description": "Oportunidade gratuita de STEM da Markham Public Library em Markham. Idades 6-12. Veja a fonte para detalhes.",
-          "category": "STEM",
-          "cost": "Lista gratuita",
-          "tags": [
-            "STEM",
-            "Ciencia e engenharia"
-          ],
-          "translationSource": "generated-summary-template"
-        },
-        "gu": {
-          "title": "Markham માં Markham Public Library તરફથી મફત STEM તક",
-          "summary": "Markham માં Markham Public Library તરફથી મફત STEM તક. ઉંમર 6-12. વિગત માટે સ્રોત જુઓ.",
-          "description": "Markham માં Markham Public Library તરફથી મફત STEM તક. ઉંમર 6-12. વિગત માટે સ્રોત જુઓ.",
-          "category": "STEM",
-          "cost": "મફત લિસ્ટિંગ",
-          "tags": [
-            "STEM",
-            "વિજ્ઞાન અને ઇજનેરી"
-          ],
-          "translationSource": "generated-summary-template"
-        },
-        "bn": {
-          "title": "Markham-এ Markham Public Library এর ফ্রি STEM opportunity",
-          "summary": "Markham-এ Markham Public Library এর ফ্রি STEM opportunity. বয়স 6-12. বিস্তারিত জানতে উৎস দেখুন.",
-          "description": "Markham-এ Markham Public Library এর ফ্রি STEM opportunity. বয়স 6-12. বিস্তারিত জানতে উৎস দেখুন.",
-          "category": "STEM",
-          "cost": "ফ্রি তালিকা",
-          "tags": [
-            "STEM",
-            "বিজ্ঞান ও প্রকৌশল"
-          ],
-          "translationSource": "generated-summary-template"
-        },
-        "ja": {
-          "title": "MarkhamのMarkham Public Libraryによる無料のSTEM機会です。対象年齢は6-12。詳細は情報源をご確認ください。",
-          "summary": "MarkhamのMarkham Public Libraryによる無料のSTEM機会です。対象年齢は6-12。詳細は情報源をご確認ください。",
-          "description": "MarkhamのMarkham Public Libraryによる無料のSTEM機会です。対象年齢は6-12。詳細は情報源をご確認ください。",
-          "category": "STEM",
-          "cost": "無料リスト",
-          "tags": [
-            "STEM",
-            "科学と工学"
-          ],
-          "translationSource": "generated-summary-template"
-        },
-        "ko": {
-          "title": "Markham에서 Markham Public Library이 제공하는 무료 STEM 기회입니다",
-          "summary": "Markham에서 Markham Public Library이 제공하는 무료 STEM 기회입니다. 대상 나이는 6-12입니다. 자세한 내용은 출처를 확인하세요.",
-          "description": "Markham에서 Markham Public Library이 제공하는 무료 STEM 기회입니다. 대상 나이는 6-12입니다. 자세한 내용은 출처를 확인하세요.",
-          "category": "STEM",
-          "cost": "무료 목록",
-          "tags": [
-            "STEM",
-            "과학 및 공학"
-          ],
-          "translationSource": "generated-summary-template"
-        },
-        "hu": {
-          "title": "Ingyenes STEM lehetőség a(z) Markham Public Library szervezőtől itt: Markham",
-          "summary": "Ingyenes STEM lehetőség a(z) Markham Public Library szervezőtől itt: Markham. Korosztály: 6-12. Részletekért nézd meg a forrást.",
-          "description": "Ingyenes STEM lehetőség a(z) Markham Public Library szervezőtől itt: Markham. Korosztály: 6-12. Részletekért nézd meg a forrást.",
-          "category": "STEM",
-          "cost": "Ingyenes lista",
-          "tags": [
-            "STEM",
-            "Termeszettudomany es mernoki tudomany"
-          ],
-          "translationSource": "generated-summary-template"
-        }
-      }
-    },
-    {
       "id": "markham-rss-6a6790769943bdf31ea1e934",
       "title": "How We Stay Relevant in the Age of AI",
       "organization": "Markham Public Library",
@@ -31734,7 +31477,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a6790769943bdf31ea1e934",
-          "capturedAt": "2026-09-20T04:56:29.464Z",
+          "capturedAt": "2026-09-20T11:27:43.161Z",
           "confidence": "high"
         }
       ],
@@ -31990,7 +31733,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbd36ee647c8ff0c38729f",
-          "capturedAt": "2026-09-20T04:56:29.867Z",
+          "capturedAt": "2026-09-20T11:27:43.556Z",
           "confidence": "high"
         }
       ],
@@ -32246,7 +31989,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe20064ad59251cb9d9a4",
-          "capturedAt": "2026-09-20T04:56:29.867Z",
+          "capturedAt": "2026-09-20T11:27:43.556Z",
           "confidence": "high"
         }
       ],
@@ -32502,7 +32245,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe0e82edc686d00f5c8aa",
-          "capturedAt": "2026-09-20T04:56:29.867Z",
+          "capturedAt": "2026-09-20T11:27:43.557Z",
           "confidence": "high"
         }
       ],
@@ -32759,7 +32502,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe12275911f28001a2544",
-          "capturedAt": "2026-09-20T04:56:29.867Z",
+          "capturedAt": "2026-09-20T11:27:43.557Z",
           "confidence": "high"
         }
       ],
@@ -33015,7 +32758,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe0cde647c8ff0c38743c",
-          "capturedAt": "2026-09-20T04:56:29.867Z",
+          "capturedAt": "2026-09-20T11:27:43.557Z",
           "confidence": "high"
         }
       ],
@@ -33271,7 +33014,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe0a50176055300fe815b",
-          "capturedAt": "2026-09-20T04:56:29.867Z",
+          "capturedAt": "2026-09-20T11:27:43.557Z",
           "confidence": "high"
         }
       ],
@@ -33527,7 +33270,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe1952edc686d00f5c97b",
-          "capturedAt": "2026-09-20T04:56:29.867Z",
+          "capturedAt": "2026-09-20T11:27:43.557Z",
           "confidence": "high"
         }
       ],
@@ -33783,7 +33526,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe07a2edc686d00f5c874",
-          "capturedAt": "2026-09-20T04:56:29.867Z",
+          "capturedAt": "2026-09-20T11:27:43.557Z",
           "confidence": "high"
         }
       ],
@@ -34041,7 +33784,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a4fe4df0d65ac36003e8eef",
-          "capturedAt": "2026-09-20T04:56:30.324Z",
+          "capturedAt": "2026-09-20T11:27:44.024Z",
           "confidence": "high"
         }
       ],
@@ -34297,7 +34040,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/692dbdf9d923da4200b317ab",
-          "capturedAt": "2026-09-20T04:56:30.325Z",
+          "capturedAt": "2026-09-20T11:27:44.024Z",
           "confidence": "high"
         }
       ],
@@ -34553,7 +34296,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a67ad077b79214226aba92d",
-          "capturedAt": "2026-09-20T04:56:30.325Z",
+          "capturedAt": "2026-09-20T11:27:44.025Z",
           "confidence": "high"
         }
       ],
@@ -34809,7 +34552,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6aaa9a00101eb7003f3084af",
-          "capturedAt": "2026-09-20T04:56:30.729Z",
+          "capturedAt": "2026-09-20T11:27:44.466Z",
           "confidence": "high"
         }
       ],
@@ -35066,7 +34809,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/69039e6c9b87934100934ec1",
-          "capturedAt": "2026-09-20T04:56:30.730Z",
+          "capturedAt": "2026-09-20T11:27:44.466Z",
           "confidence": "high"
         }
       ],
@@ -35323,7 +35066,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a67e8b2f213992f00c78fad",
-          "capturedAt": "2026-09-20T04:56:30.730Z",
+          "capturedAt": "2026-09-20T11:27:44.466Z",
           "confidence": "high"
         }
       ],
@@ -35580,7 +35323,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a67e8b2f213992f00c78fae",
-          "capturedAt": "2026-09-20T04:56:30.730Z",
+          "capturedAt": "2026-09-20T11:27:44.467Z",
           "confidence": "high"
         }
       ],
