@@ -4,8 +4,8 @@ export const generatedDiscoverySummary = {
   "mode": "deterministic",
   "sourcesChecked": 30,
   "candidatesFound": 277,
-  "newCandidates": 54,
-  "duplicatesSkipped": 44,
+  "newCandidates": 53,
+  "duplicatesSkipped": 36,
   "warnings": [
     "Could not check Credit Valley Conservation youth opportunities: 403 Forbidden.",
     "Could not check Volunteer MBC youth opportunities: 403 Forbidden.",
@@ -14,7 +14,7 @@ export const generatedDiscoverySummary = {
   ],
   "sourceHealth": {
     "schemaVersion": 1,
-    "generatedAt": "2026-09-20T16:10:00.021Z",
+    "generatedAt": "2026-09-20T20:51:54.195Z",
     "status": "healthy",
     "failureReasons": [],
     "sourcesChecked": 30,
@@ -278,34 +278,6 @@ export const generatedDiscoveryReviewCandidates = [
     "tags": [
       "makerspace & fabrication",
       "maker"
-    ],
-    "confidence": "high",
-    "reviewReasons": [],
-    "sourceName": "Aurora Public Library STEM events"
-  },
-  {
-    "id": "discovered-aurora-library-stem-reading-math-buddies-drop-in-05c0198c127e",
-    "title": "Reading & Math Buddies Drop-In",
-    "organization": "Aurora Public Library",
-    "description": "Looking for extra support in reading or math? Drop in for one-on-one help with a volunteer buddy who will encourage learning, build confidence, and help children strengthen their skills in a fun and supportive environment. To help accommodate as many children as possible, participants are encouraged to register for one session per day and select either the 2:00–3:00 p.m. or 3:00–4:00 p.m. time slot. Space is limited. Participants must arrive at the time they registered for. If a participant has not arrived within 10 minutes of the session start time, their spot may be offered to a child on the waitlist. If you are unable to attend, please cancel your registration as soon as possible so that another child may take your spot. Repeated no-shows without cancelling may affect eligibility for fu",
-    "city": "Aurora",
-    "region": "York",
-    "ageMin": 6,
-    "ageMax": 12,
-    "category": "Volunteer Hours",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "deadline": "2026-09-20T15:00:00-04:00",
-    "startDate": "2026-09-20T15:00:00-04:00",
-    "endDate": "2026-09-20T16:00:00-04:00",
-    "sourceUrl": "https://aurora.bibliocommons.com/events/69c40e2fad384e40edb6aec3",
-    "lastChecked": "2026-09-20",
-    "lastSeen": "2026-09-20",
-    "status": "active",
-    "tags": [
-      "volunteer hours"
     ],
     "confidence": "high",
     "reviewReasons": [],
