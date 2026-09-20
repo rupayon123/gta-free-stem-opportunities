@@ -2,11 +2,11 @@
   "name": "GTA FREE STEM Opportunities public feed",
   "schemaVersion": 1,
   "count": 143,
-  "lastDataChange": "2026-09-19",
+  "lastDataChange": "2026-09-20",
   "sourceHealth": {
     "library": {
       "schemaVersion": 1,
-      "generatedAt": "2026-09-19T20:43:08.180Z",
+      "generatedAt": "2026-09-20T04:56:30.731Z",
       "status": "healthy",
       "failureReasons": [],
       "sourceCount": 2,
@@ -17,8 +17,8 @@
       "minimumPageSuccessRatio": 0.75,
       "minimumPerSourceSuccessRatio": 0.5,
       "acceptedListings": 139,
-      "previousPublishedListings": 133,
-      "minimumAcceptedListings": 87,
+      "previousPublishedListings": 139,
+      "minimumAcceptedListings": 91,
       "sources": [
         {
           "sourceId": "tpl-rss",
@@ -42,7 +42,7 @@
     },
     "discovery": {
       "schemaVersion": 1,
-      "generatedAt": "2026-09-19T20:43:30.264Z",
+      "generatedAt": "2026-09-20T04:56:53.407Z",
       "status": "healthy",
       "failureReasons": [],
       "sourcesChecked": 30,
@@ -77,8 +77,8 @@
       "endDate": "2026-09-20T18:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a0f6d2b8e677a28001d9dd7",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a0f6d2b8e677a28001d9dd7",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "coding & robotics",
@@ -99,7 +99,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a0f6d2b8e677a28001d9dd7",
-          "capturedAt": "2026-09-19T20:42:55.031Z",
+          "capturedAt": "2026-09-20T04:56:18.298Z",
           "confidence": "high"
         }
       ],
@@ -333,8 +333,8 @@
       "endDate": "2026-09-20T18:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a445a9c7e16a03d00e93da4",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a445a9c7e16a03d00e93da4",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "games & sports",
@@ -356,7 +356,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a445a9c7e16a03d00e93da4",
-          "capturedAt": "2026-09-19T20:42:55.032Z",
+          "capturedAt": "2026-09-20T04:56:18.300Z",
           "confidence": "high"
         }
       ],
@@ -590,8 +590,8 @@
       "endDate": "2026-09-20T19:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a5299330e562e2800993113",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a5299330e562e2800993113",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "games & sports",
@@ -612,7 +612,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a5299330e562e2800993113",
-          "capturedAt": "2026-09-19T20:42:55.033Z",
+          "capturedAt": "2026-09-20T04:56:18.301Z",
           "confidence": "high"
         }
       ],
@@ -846,8 +846,8 @@
       "endDate": "2026-09-20T19:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a600c150d65ac360041619a",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a600c150d65ac360041619a",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "summer wonder",
@@ -870,7 +870,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a600c150d65ac360041619a",
-          "capturedAt": "2026-09-19T20:42:55.034Z",
+          "capturedAt": "2026-09-20T04:56:18.301Z",
           "confidence": "high"
         }
       ],
@@ -1104,8 +1104,8 @@
       "endDate": "2026-09-20T19:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/69f26a14fb87a3c2e2acb12b",
       "registrationUrl": "https://tpl.bibliocommons.com/events/69f26a14fb87a3c2e2acb12b",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "coding & robotics",
@@ -1128,7 +1128,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69f26a14fb87a3c2e2acb12b",
-          "capturedAt": "2026-09-19T20:42:55.034Z",
+          "capturedAt": "2026-09-20T04:56:18.301Z",
           "confidence": "high"
         }
       ],
@@ -1362,8 +1362,8 @@
       "endDate": "2026-09-20T19:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/69a861c92866a5b4883fd3bb",
       "registrationUrl": "https://tpl.bibliocommons.com/events/69a861c92866a5b4883fd3bb",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "crafts & hobbies",
@@ -1385,7 +1385,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69a861c92866a5b4883fd3bb",
-          "capturedAt": "2026-09-19T20:42:55.034Z",
+          "capturedAt": "2026-09-20T04:56:18.302Z",
           "confidence": "high"
         }
       ],
@@ -1619,8 +1619,8 @@
       "endDate": "2026-09-20T18:45:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a19ac06c6a1dc3d00d6ef4b",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a19ac06c6a1dc3d00d6ef4b",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "crafts & hobbies",
@@ -1643,7 +1643,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a19ac06c6a1dc3d00d6ef4b",
-          "capturedAt": "2026-09-19T20:42:55.035Z",
+          "capturedAt": "2026-09-20T04:56:18.302Z",
           "confidence": "high"
         }
       ],
@@ -1877,8 +1877,8 @@
       "endDate": "2026-09-20T19:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a0f4adf8e677a28001d8c7d",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a0f4adf8e677a28001d8c7d",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "coding & robotics",
@@ -1905,7 +1905,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a0f4adf8e677a28001d8c7d",
-          "capturedAt": "2026-09-19T20:42:55.507Z",
+          "capturedAt": "2026-09-20T04:56:18.835Z",
           "confidence": "high"
         }
       ],
@@ -2139,8 +2139,8 @@
       "endDate": "2026-09-20T19:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a174305703c3363002a6036",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a174305703c3363002a6036",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "coding & robotics",
@@ -2163,7 +2163,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a174305703c3363002a6036",
-          "capturedAt": "2026-09-19T20:42:55.507Z",
+          "capturedAt": "2026-09-20T04:56:18.835Z",
           "confidence": "high"
         }
       ],
@@ -2397,8 +2397,8 @@
       "endDate": "2026-09-20T19:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a2ed9232ea730c17ab6d201",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a2ed9232ea730c17ab6d201",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "crafts & hobbies",
@@ -2422,7 +2422,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a2ed9232ea730c17ab6d201",
-          "capturedAt": "2026-09-19T20:42:55.507Z",
+          "capturedAt": "2026-09-20T04:56:18.835Z",
           "confidence": "high"
         }
       ],
@@ -2656,8 +2656,8 @@
       "endDate": "2026-09-20T19:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a42aa030e851028002df8b6",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a42aa030e851028002df8b6",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "coding & robotics",
@@ -2680,7 +2680,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a42aa030e851028002df8b6",
-          "capturedAt": "2026-09-19T20:42:55.507Z",
+          "capturedAt": "2026-09-20T04:56:18.835Z",
           "confidence": "high"
         }
       ],
@@ -2914,8 +2914,8 @@
       "endDate": "2026-09-20T18:45:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a58198f82c03c5c17d84f7f",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a58198f82c03c5c17d84f7f",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "science & engineering",
@@ -2936,7 +2936,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a58198f82c03c5c17d84f7f",
-          "capturedAt": "2026-09-19T20:42:55.507Z",
+          "capturedAt": "2026-09-20T04:56:18.835Z",
           "confidence": "high"
         }
       ],
@@ -3170,8 +3170,8 @@
       "endDate": "2026-09-20T19:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a675304c7e02e3d006bea9d",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a675304c7e02e3d006bea9d",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "science & engineering",
@@ -3192,7 +3192,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a675304c7e02e3d006bea9d",
-          "capturedAt": "2026-09-19T20:42:55.507Z",
+          "capturedAt": "2026-09-20T04:56:18.835Z",
           "confidence": "high"
         }
       ],
@@ -3426,8 +3426,8 @@
       "endDate": "2026-09-20T19:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a60e790f213992f00c627f3",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a60e790f213992f00c627f3",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "games & sports",
@@ -3449,7 +3449,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a60e790f213992f00c627f3",
-          "capturedAt": "2026-09-19T20:42:55.507Z",
+          "capturedAt": "2026-09-20T04:56:18.836Z",
           "confidence": "high"
         }
       ],
@@ -3683,8 +3683,8 @@
       "endDate": "2026-09-20T19:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a60e6f17b79214226aa5ca2",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a60e6f17b79214226aa5ca2",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "games & sports",
@@ -3706,7 +3706,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a60e6f17b79214226aa5ca2",
-          "capturedAt": "2026-09-19T20:42:55.508Z",
+          "capturedAt": "2026-09-20T04:56:18.836Z",
           "confidence": "high"
         }
       ],
@@ -3940,8 +3940,8 @@
       "endDate": "2026-09-20T19:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a9710ec36204e08fbb8cd2c",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a9710ec36204e08fbb8cd2c",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "science & engineering",
@@ -3964,7 +3964,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a9710ec36204e08fbb8cd2c",
-          "capturedAt": "2026-09-19T20:42:55.508Z",
+          "capturedAt": "2026-09-20T04:56:18.836Z",
           "confidence": "high"
         }
       ],
@@ -4198,8 +4198,8 @@
       "endDate": "2026-09-20T19:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a8f7d7bb20478002995d07a",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a8f7d7bb20478002995d07a",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "crafts & hobbies",
@@ -4220,7 +4220,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a8f7d7bb20478002995d07a",
-          "capturedAt": "2026-09-19T20:42:55.508Z",
+          "capturedAt": "2026-09-20T04:56:18.836Z",
           "confidence": "high"
         }
       ],
@@ -4454,8 +4454,8 @@
       "endDate": "2026-09-20T19:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a9096d44cb69d003e23d850",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a9096d44cb69d003e23d850",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "coding & robotics",
@@ -4476,7 +4476,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a9096d44cb69d003e23d850",
-          "capturedAt": "2026-09-19T20:42:55.508Z",
+          "capturedAt": "2026-09-20T04:56:18.836Z",
           "confidence": "high"
         }
       ],
@@ -4709,8 +4709,8 @@
       "endDate": "2026-09-20T19:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a6bc74b74e3b8b75db6457d",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a6bc74b74e3b8b75db6457d",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "computer basics & office software",
@@ -4732,7 +4732,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a6bc74b74e3b8b75db6457d",
-          "capturedAt": "2026-09-19T20:42:55.509Z",
+          "capturedAt": "2026-09-20T04:56:18.837Z",
           "confidence": "high"
         }
       ],
@@ -4966,8 +4966,8 @@
       "endDate": "2026-09-20T19:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a57e4dac7e02e3d00695b97",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a57e4dac7e02e3d00695b97",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "coding & robotics",
@@ -4989,7 +4989,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a57e4dac7e02e3d00695b97",
-          "capturedAt": "2026-09-19T20:42:55.509Z",
+          "capturedAt": "2026-09-20T04:56:18.837Z",
           "confidence": "high"
         }
       ],
@@ -5223,8 +5223,8 @@
       "endDate": "2026-09-20T19:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a85e1a057c264087ad23a3b",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a85e1a057c264087ad23a3b",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "science & engineering",
@@ -5245,7 +5245,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a85e1a057c264087ad23a3b",
-          "capturedAt": "2026-09-19T20:42:55.509Z",
+          "capturedAt": "2026-09-20T04:56:18.837Z",
           "confidence": "high"
         }
       ],
@@ -5479,8 +5479,8 @@
       "endDate": "2026-09-20T19:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a8c781d46e4c80031cc46c4",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a8c781d46e4c80031cc46c4",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "coding & robotics",
@@ -5501,7 +5501,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a8c781d46e4c80031cc46c4",
-          "capturedAt": "2026-09-19T20:42:56.249Z",
+          "capturedAt": "2026-09-20T04:56:19.424Z",
           "confidence": "high"
         }
       ],
@@ -5735,8 +5735,8 @@
       "endDate": "2026-09-20T19:30:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a8e145f58433600542b5733",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a8e145f58433600542b5733",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "crafts & hobbies",
@@ -5757,7 +5757,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a8e145f58433600542b5733",
-          "capturedAt": "2026-09-19T20:42:56.249Z",
+          "capturedAt": "2026-09-20T04:56:19.424Z",
           "confidence": "high"
         }
       ],
@@ -5991,8 +5991,8 @@
       "endDate": "2026-09-20T19:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a99cf484995480655ed79dc",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a99cf484995480655ed79dc",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "coding & robotics",
@@ -6014,7 +6014,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a99cf484995480655ed79dc",
-          "capturedAt": "2026-09-19T20:42:56.249Z",
+          "capturedAt": "2026-09-20T04:56:19.425Z",
           "confidence": "high"
         }
       ],
@@ -6248,8 +6248,8 @@
       "endDate": "2026-09-20T19:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a6636640e562e28009c8e0c",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a6636640e562e28009c8e0c",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "coding & robotics",
@@ -6273,7 +6273,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a6636640e562e28009c8e0c",
-          "capturedAt": "2026-09-19T20:42:56.249Z",
+          "capturedAt": "2026-09-20T04:56:19.425Z",
           "confidence": "high"
         }
       ],
@@ -6507,8 +6507,8 @@
       "endDate": "2026-09-20T19:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a84cf314cb69d003e21b171",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a84cf314cb69d003e21b171",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "crafts & hobbies",
@@ -6533,7 +6533,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a84cf314cb69d003e21b171",
-          "capturedAt": "2026-09-19T20:42:56.249Z",
+          "capturedAt": "2026-09-20T04:56:19.425Z",
           "confidence": "high"
         }
       ],
@@ -6767,8 +6767,8 @@
       "endDate": "2026-09-20T19:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a03beec43b41b3d00661804",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a03beec43b41b3d00661804",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "coding & robotics",
@@ -6792,7 +6792,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a03beec43b41b3d00661804",
-          "capturedAt": "2026-09-19T20:42:56.249Z",
+          "capturedAt": "2026-09-20T04:56:19.425Z",
           "confidence": "high"
         }
       ],
@@ -7026,8 +7026,8 @@
       "endDate": "2026-09-20T19:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a723557cca66c2f00a8273e",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a723557cca66c2f00a8273e",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "coding & robotics",
@@ -7048,7 +7048,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a723557cca66c2f00a8273e",
-          "capturedAt": "2026-09-19T20:42:56.249Z",
+          "capturedAt": "2026-09-20T04:56:19.425Z",
           "confidence": "high"
         }
       ],
@@ -7282,8 +7282,8 @@
       "endDate": "2026-09-20T19:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/68fbe1952edc686d00f5c978",
       "registrationUrl": "https://markham.bibliocommons.com/events/68fbe1952edc686d00f5c978",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "steam",
@@ -7304,7 +7304,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe1952edc686d00f5c978",
-          "capturedAt": "2026-09-19T20:43:02.024Z",
+          "capturedAt": "2026-09-20T04:56:25.436Z",
           "confidence": "high"
         }
       ],
@@ -7538,8 +7538,8 @@
       "endDate": "2026-09-20T19:30:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/69546b1e6724c63d00e96a89",
       "registrationUrl": "https://tpl.bibliocommons.com/events/69546b1e6724c63d00e96a89",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "science & engineering",
@@ -7560,7 +7560,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69546b1e6724c63d00e96a89",
-          "capturedAt": "2026-09-19T20:42:56.249Z",
+          "capturedAt": "2026-09-20T04:56:19.425Z",
           "confidence": "high"
         }
       ],
@@ -7794,8 +7794,8 @@
       "endDate": "2026-09-20T19:30:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/69ecea0c4dacf581ff8b17f0",
       "registrationUrl": "https://tpl.bibliocommons.com/events/69ecea0c4dacf581ff8b17f0",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "crafts & hobbies",
@@ -7816,7 +7816,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69ecea0c4dacf581ff8b17f0",
-          "capturedAt": "2026-09-19T20:42:56.249Z",
+          "capturedAt": "2026-09-20T04:56:19.425Z",
           "confidence": "high"
         }
       ],
@@ -8050,8 +8050,8 @@
       "endDate": "2026-09-20T19:30:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a527df8489285b703d87818",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a527df8489285b703d87818",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "coding & robotics",
@@ -8074,7 +8074,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a527df8489285b703d87818",
-          "capturedAt": "2026-09-19T20:42:56.249Z",
+          "capturedAt": "2026-09-20T04:56:19.425Z",
           "confidence": "high"
         }
       ],
@@ -8308,8 +8308,8 @@
       "endDate": "2026-09-20T19:30:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a8dd6ce60ccaf01c020e9c5",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a8dd6ce60ccaf01c020e9c5",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "coding & robotics",
@@ -8334,7 +8334,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a8dd6ce60ccaf01c020e9c5",
-          "capturedAt": "2026-09-19T20:42:56.249Z",
+          "capturedAt": "2026-09-20T04:56:19.425Z",
           "confidence": "high"
         }
       ],
@@ -8568,8 +8568,8 @@
       "endDate": "2026-09-20T19:30:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/68fbe07a2edc686d00f5c871",
       "registrationUrl": "https://markham.bibliocommons.com/events/68fbe07a2edc686d00f5c871",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "steam",
@@ -8590,7 +8590,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe07a2edc686d00f5c871",
-          "capturedAt": "2026-09-19T20:43:02.024Z",
+          "capturedAt": "2026-09-20T04:56:25.437Z",
           "confidence": "high"
         }
       ],
@@ -8824,8 +8824,8 @@
       "endDate": "2026-09-20T20:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a60e7d50ed7b4521ed6cf79",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a60e7d50ed7b4521ed6cf79",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "crafts & hobbies",
@@ -8847,7 +8847,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a60e7d50ed7b4521ed6cf79",
-          "capturedAt": "2026-09-19T20:42:56.945Z",
+          "capturedAt": "2026-09-20T04:56:19.985Z",
           "confidence": "high"
         }
       ],
@@ -9081,8 +9081,8 @@
       "endDate": "2026-09-20T20:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/69ff9658e8af4a2f00715c08",
       "registrationUrl": "https://tpl.bibliocommons.com/events/69ff9658e8af4a2f00715c08",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "crafts & hobbies",
@@ -9104,7 +9104,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69ff9658e8af4a2f00715c08",
-          "capturedAt": "2026-09-19T20:42:56.945Z",
+          "capturedAt": "2026-09-20T04:56:19.985Z",
           "confidence": "high"
         }
       ],
@@ -9338,8 +9338,8 @@
       "endDate": "2026-09-21T16:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/6a888de64cb69d003e225613",
       "registrationUrl": "https://markham.bibliocommons.com/events/6a888de64cb69d003e225613",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "lifelong learning",
@@ -9361,7 +9361,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a888de64cb69d003e225613",
-          "capturedAt": "2026-09-19T20:43:02.024Z",
+          "capturedAt": "2026-09-20T04:56:25.437Z",
           "confidence": "high"
         }
       ],
@@ -9594,8 +9594,8 @@
       "endDate": "2026-09-21T18:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/69dbd871129f12743838134a",
       "registrationUrl": "https://tpl.bibliocommons.com/events/69dbd871129f12743838134a",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "computer basics & office software",
@@ -9617,7 +9617,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69dbd871129f12743838134a",
-          "capturedAt": "2026-09-19T20:42:57.546Z",
+          "capturedAt": "2026-09-20T04:56:20.582Z",
           "confidence": "high"
         }
       ],
@@ -9850,8 +9850,8 @@
       "endDate": "2026-09-21T18:30:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a909ca669166f088b955fc6",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a909ca669166f088b955fc6",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "computer basics & office software",
@@ -9873,7 +9873,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a909ca669166f088b955fc6",
-          "capturedAt": "2026-09-19T20:42:57.547Z",
+          "capturedAt": "2026-09-20T04:56:20.582Z",
           "confidence": "high"
         }
       ],
@@ -10106,8 +10106,8 @@
       "endDate": "2026-09-21T19:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a9327ca2dac6e0037229f97",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a9327ca2dac6e0037229f97",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "computer basics & office software",
@@ -10129,7 +10129,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a9327ca2dac6e0037229f97",
-          "capturedAt": "2026-09-19T20:42:57.547Z",
+          "capturedAt": "2026-09-20T04:56:20.583Z",
           "confidence": "high"
         }
       ],
@@ -10362,8 +10362,8 @@
       "endDate": "2026-09-21T19:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a4e7b43fb18bf3d00bef3b9",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a4e7b43fb18bf3d00bef3b9",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "computer basics & office software",
@@ -10385,7 +10385,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a4e7b43fb18bf3d00bef3b9",
-          "capturedAt": "2026-09-19T20:42:57.547Z",
+          "capturedAt": "2026-09-20T04:56:20.583Z",
           "confidence": "high"
         }
       ],
@@ -10619,8 +10619,8 @@
       "endDate": "2026-09-21T19:30:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a87646f58433600542abc3c",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a87646f58433600542abc3c",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "audio & visual",
@@ -10642,7 +10642,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a87646f58433600542abc3c",
-          "capturedAt": "2026-09-19T20:42:58.043Z",
+          "capturedAt": "2026-09-20T04:56:21.224Z",
           "confidence": "high"
         }
       ],
@@ -10875,8 +10875,8 @@
       "endDate": "2026-09-21T19:30:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a8dc7ad4cb69d003e233fb0",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a8dc7ad4cb69d003e233fb0",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "computer basics & office software",
@@ -10898,7 +10898,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a8dc7ad4cb69d003e233fb0",
-          "capturedAt": "2026-09-19T20:42:58.044Z",
+          "capturedAt": "2026-09-20T04:56:21.224Z",
           "confidence": "high"
         }
       ],
@@ -11132,8 +11132,8 @@
       "endDate": "2026-09-21T20:30:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/69fa2603e13d3b4603b35d81",
       "registrationUrl": "https://tpl.bibliocommons.com/events/69fa2603e13d3b4603b35d81",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "after school clubs",
@@ -11158,7 +11158,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69fa2603e13d3b4603b35d81",
-          "capturedAt": "2026-09-19T20:42:58.044Z",
+          "capturedAt": "2026-09-20T04:56:21.225Z",
           "confidence": "high"
         }
       ],
@@ -11392,8 +11392,8 @@
       "endDate": "2026-09-21T20:30:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a84927e4c610f00389536dd",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a84927e4c610f00389536dd",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "after school clubs",
@@ -11418,7 +11418,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a84927e4c610f00389536dd",
-          "capturedAt": "2026-09-19T20:42:58.044Z",
+          "capturedAt": "2026-09-20T04:56:21.225Z",
           "confidence": "high"
         }
       ],
@@ -11652,8 +11652,8 @@
       "endDate": "2026-09-21T20:30:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a7b5dbef68ff70029b6f584",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a7b5dbef68ff70029b6f584",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "after school clubs",
@@ -11678,7 +11678,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a7b5dbef68ff70029b6f584",
-          "capturedAt": "2026-09-19T20:42:58.044Z",
+          "capturedAt": "2026-09-20T04:56:21.225Z",
           "confidence": "high"
         }
       ],
@@ -11912,8 +11912,8 @@
       "endDate": "2026-09-21T20:30:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a86136193b500003ff625df",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a86136193b500003ff625df",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "science & engineering",
@@ -11934,7 +11934,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a86136193b500003ff625df",
-          "capturedAt": "2026-09-19T20:42:58.044Z",
+          "capturedAt": "2026-09-20T04:56:21.225Z",
           "confidence": "high"
         }
       ],
@@ -12168,8 +12168,8 @@
       "endDate": "2026-09-21T20:30:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6aa81c42101eb7003f2ff00a",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6aa81c42101eb7003f2ff00a",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "crafts & hobbies",
@@ -12191,7 +12191,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6aa81c42101eb7003f2ff00a",
-          "capturedAt": "2026-09-19T20:42:58.045Z",
+          "capturedAt": "2026-09-20T04:56:21.225Z",
           "confidence": "high"
         }
       ],
@@ -12425,8 +12425,8 @@
       "endDate": "2026-09-21T20:45:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a60e4417b79214226aa5b2d",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a60e4417b79214226aa5b2d",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "crafts & hobbies",
@@ -12448,7 +12448,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a60e4417b79214226aa5b2d",
-          "capturedAt": "2026-09-19T20:42:58.045Z",
+          "capturedAt": "2026-09-20T04:56:21.225Z",
           "confidence": "high"
         }
       ],
@@ -12682,8 +12682,8 @@
       "endDate": "2026-09-21T20:45:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a80645c3f18f80030bb4993",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a80645c3f18f80030bb4993",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "coding & robotics",
@@ -12707,7 +12707,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a80645c3f18f80030bb4993",
-          "capturedAt": "2026-09-19T20:42:58.632Z",
+          "capturedAt": "2026-09-20T04:56:21.736Z",
           "confidence": "high"
         }
       ],
@@ -12941,8 +12941,8 @@
       "endDate": "2026-09-21T21:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a7f4f20aafa6100295c9ec7",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a7f4f20aafa6100295c9ec7",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "after school clubs",
@@ -12967,7 +12967,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a7f4f20aafa6100295c9ec7",
-          "capturedAt": "2026-09-19T20:42:58.632Z",
+          "capturedAt": "2026-09-20T04:56:21.737Z",
           "confidence": "high"
         }
       ],
@@ -13201,8 +13201,8 @@
       "endDate": "2026-09-21T21:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a83987daafa6100295d5292",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a83987daafa6100295d5292",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "after school clubs",
@@ -13225,7 +13225,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a83987daafa6100295d5292",
-          "capturedAt": "2026-09-19T20:42:58.632Z",
+          "capturedAt": "2026-09-20T04:56:21.737Z",
           "confidence": "high"
         }
       ],
@@ -13459,8 +13459,8 @@
       "endDate": "2026-09-21T21:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a84b5b8be14820029883659",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a84b5b8be14820029883659",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "after school clubs",
@@ -13483,7 +13483,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a84b5b8be14820029883659",
-          "capturedAt": "2026-09-19T20:42:58.632Z",
+          "capturedAt": "2026-09-20T04:56:21.737Z",
           "confidence": "high"
         }
       ],
@@ -13717,8 +13717,8 @@
       "endDate": "2026-09-21T21:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a847e622dac6e00371fe8a3",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a847e622dac6e00371fe8a3",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "after school clubs",
@@ -13741,7 +13741,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a847e622dac6e00371fe8a3",
-          "capturedAt": "2026-09-19T20:42:58.633Z",
+          "capturedAt": "2026-09-20T04:56:21.737Z",
           "confidence": "high"
         }
       ],
@@ -13975,8 +13975,8 @@
       "endDate": "2026-09-21T21:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a90a7624cb69d003e23de09",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a90a7624cb69d003e23de09",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "after school clubs",
@@ -14001,7 +14001,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a90a7624cb69d003e23de09",
-          "capturedAt": "2026-09-19T20:42:58.633Z",
+          "capturedAt": "2026-09-20T04:56:21.737Z",
           "confidence": "high"
         }
       ],
@@ -14235,8 +14235,8 @@
       "endDate": "2026-09-21T21:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a92fc73aafa61002960076e",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a92fc73aafa61002960076e",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "after school clubs",
@@ -14261,7 +14261,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a92fc73aafa61002960076e",
-          "capturedAt": "2026-09-19T20:42:58.633Z",
+          "capturedAt": "2026-09-20T04:56:21.737Z",
           "confidence": "high"
         }
       ],
@@ -14495,8 +14495,8 @@
       "endDate": "2026-09-21T21:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a85d2c44c610f00389552b6",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a85d2c44c610f00389552b6",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "coding & robotics",
@@ -14520,7 +14520,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a85d2c44c610f00389552b6",
-          "capturedAt": "2026-09-19T20:42:58.633Z",
+          "capturedAt": "2026-09-20T04:56:21.737Z",
           "confidence": "high"
         }
       ],
@@ -14754,8 +14754,8 @@
       "endDate": "2026-09-21T21:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a7b5e291401fd00606c0378",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a7b5e291401fd00606c0378",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "after school clubs",
@@ -14780,7 +14780,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a7b5e291401fd00606c0378",
-          "capturedAt": "2026-09-19T20:42:58.633Z",
+          "capturedAt": "2026-09-20T04:56:21.737Z",
           "confidence": "high"
         }
       ],
@@ -15013,8 +15013,8 @@
       "endDate": "2026-09-21T23:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a848cdfb20478002993b37c",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a848cdfb20478002993b37c",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "audio & visual",
@@ -15036,7 +15036,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a848cdfb20478002993b37c",
-          "capturedAt": "2026-09-19T20:42:59.131Z",
+          "capturedAt": "2026-09-20T04:56:22.529Z",
           "confidence": "high"
         }
       ],
@@ -15269,8 +15269,8 @@
       "endDate": "2026-09-22T00:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a8eee63db86e4004d8736e0",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a8eee63db86e4004d8736e0",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "computer basics & office software",
@@ -15291,7 +15291,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a8eee63db86e4004d8736e0",
-          "capturedAt": "2026-09-19T20:42:59.132Z",
+          "capturedAt": "2026-09-20T04:56:22.529Z",
           "confidence": "high"
         }
       ],
@@ -15524,8 +15524,8 @@
       "endDate": "2026-09-22T19:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a7f203ea821f90037edc2ce",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a7f203ea821f90037edc2ce",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "computer basics & office software",
@@ -15547,7 +15547,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a7f203ea821f90037edc2ce",
-          "capturedAt": "2026-09-19T20:43:00.302Z",
+          "capturedAt": "2026-09-20T04:56:23.846Z",
           "confidence": "high"
         }
       ],
@@ -15780,8 +15780,8 @@
       "endDate": "2026-09-22T19:30:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a2afd9cf56bd86e00b61dda",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a2afd9cf56bd86e00b61dda",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "let’s learn tech",
@@ -15803,7 +15803,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a2afd9cf56bd86e00b61dda",
-          "capturedAt": "2026-09-19T20:43:00.302Z",
+          "capturedAt": "2026-09-20T04:56:23.846Z",
           "confidence": "high"
         }
       ],
@@ -16036,8 +16036,8 @@
       "endDate": "2026-09-22T19:30:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a9073a658433600542b8926",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a9073a658433600542b8926",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "computer basics & office software",
@@ -16059,7 +16059,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a9073a658433600542b8926",
-          "capturedAt": "2026-09-19T20:43:00.303Z",
+          "capturedAt": "2026-09-20T04:56:23.847Z",
           "confidence": "high"
         }
       ],
@@ -16292,8 +16292,8 @@
       "endDate": "2026-09-22T19:30:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6aa177a94b3b060030827937",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6aa177a94b3b060030827937",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "computer basics & office software",
@@ -16315,7 +16315,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6aa177a94b3b060030827937",
-          "capturedAt": "2026-09-19T20:43:00.304Z",
+          "capturedAt": "2026-09-20T04:56:23.848Z",
           "confidence": "high"
         }
       ],
@@ -16549,8 +16549,8 @@
       "endDate": "2026-09-22T23:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a888a1bfeae960038072b55",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a888a1bfeae960038072b55",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "crafts & hobbies",
@@ -16571,7 +16571,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a888a1bfeae960038072b55",
-          "capturedAt": "2026-09-19T20:43:00.304Z",
+          "capturedAt": "2026-09-20T04:56:23.848Z",
           "confidence": "high"
         }
       ],
@@ -16805,8 +16805,8 @@
       "endDate": "2026-09-22T20:30:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a90b4d8be148200298a9766",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a90b4d8be148200298a9766",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "after school clubs",
@@ -16829,7 +16829,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a90b4d8be148200298a9766",
-          "capturedAt": "2026-09-19T20:43:00.304Z",
+          "capturedAt": "2026-09-20T04:56:23.849Z",
           "confidence": "high"
         }
       ],
@@ -17063,8 +17063,8 @@
       "endDate": "2026-09-22T21:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a7cbe654cb69d003e2060f7",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a7cbe654cb69d003e2060f7",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "crafts & hobbies",
@@ -17086,7 +17086,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a7cbe654cb69d003e2060f7",
-          "capturedAt": "2026-09-19T20:43:00.818Z",
+          "capturedAt": "2026-09-20T04:56:24.451Z",
           "confidence": "high"
         }
       ],
@@ -17320,8 +17320,8 @@
       "endDate": "2026-09-22T20:45:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a8f14ba0116850960382e39",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a8f14ba0116850960382e39",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "after school clubs",
@@ -17346,7 +17346,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a8f14ba0116850960382e39",
-          "capturedAt": "2026-09-19T20:43:00.819Z",
+          "capturedAt": "2026-09-20T04:56:24.451Z",
           "confidence": "high"
         }
       ],
@@ -17580,8 +17580,8 @@
       "endDate": "2026-09-22T20:45:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a7d04481401fd00606c3073",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a7d04481401fd00606c3073",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "after school clubs",
@@ -17605,7 +17605,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a7d04481401fd00606c3073",
-          "capturedAt": "2026-09-19T20:43:00.819Z",
+          "capturedAt": "2026-09-20T04:56:24.451Z",
           "confidence": "high"
         }
       ],
@@ -17839,8 +17839,8 @@
       "endDate": "2026-09-22T21:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a848f4e2f41840bbfc2ebd2",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a848f4e2f41840bbfc2ebd2",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "after school clubs",
@@ -17865,7 +17865,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a848f4e2f41840bbfc2ebd2",
-          "capturedAt": "2026-09-19T20:43:00.819Z",
+          "capturedAt": "2026-09-20T04:56:24.452Z",
           "confidence": "high"
         }
       ],
@@ -18099,8 +18099,8 @@
       "endDate": "2026-09-22T21:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a9311651c197d11325bb330",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a9311651c197d11325bb330",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "after school clubs",
@@ -18125,7 +18125,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a9311651c197d11325bb330",
-          "capturedAt": "2026-09-19T20:43:00.819Z",
+          "capturedAt": "2026-09-20T04:56:24.452Z",
           "confidence": "high"
         }
       ],
@@ -18359,8 +18359,8 @@
       "endDate": "2026-09-22T21:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a88969265b929006b169dc9",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a88969265b929006b169dc9",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "coding & robotics",
@@ -18384,7 +18384,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a88969265b929006b169dc9",
-          "capturedAt": "2026-09-19T20:43:00.819Z",
+          "capturedAt": "2026-09-20T04:56:24.452Z",
           "confidence": "high"
         }
       ],
@@ -18618,8 +18618,8 @@
       "endDate": "2026-09-22T21:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a6cb73374e3b8b75db66935",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a6cb73374e3b8b75db66935",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "culture, arts & entertainment",
@@ -18641,7 +18641,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a6cb73374e3b8b75db66935",
-          "capturedAt": "2026-09-19T20:43:00.819Z",
+          "capturedAt": "2026-09-20T04:56:24.452Z",
           "confidence": "high"
         }
       ],
@@ -18875,8 +18875,8 @@
       "endDate": "2026-09-22T21:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a85f7f3be14820029888297",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a85f7f3be14820029888297",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "science & engineering",
@@ -18897,7 +18897,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a85f7f3be14820029888297",
-          "capturedAt": "2026-09-19T20:43:00.819Z",
+          "capturedAt": "2026-09-20T04:56:24.452Z",
           "confidence": "high"
         }
       ],
@@ -19131,8 +19131,8 @@
       "endDate": "2026-09-22T21:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a89e62436204e08fbb65af5",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a89e62436204e08fbb65af5",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "crafts & hobbies",
@@ -19154,7 +19154,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a89e62436204e08fbb65af5",
-          "capturedAt": "2026-09-19T20:43:00.820Z",
+          "capturedAt": "2026-09-20T04:56:24.452Z",
           "confidence": "high"
         }
       ],
@@ -19388,8 +19388,8 @@
       "endDate": "2026-09-22T21:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a8c440329a7dd0d67461d81",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a8c440329a7dd0d67461d81",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "after school clubs",
@@ -19414,7 +19414,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a8c440329a7dd0d67461d81",
-          "capturedAt": "2026-09-19T20:43:00.820Z",
+          "capturedAt": "2026-09-20T04:56:24.452Z",
           "confidence": "high"
         }
       ],
@@ -19648,8 +19648,8 @@
       "endDate": "2026-09-22T21:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a8e1b6757c264087ad3c9f5",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a8e1b6757c264087ad3c9f5",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "after school clubs",
@@ -19671,7 +19671,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a8e1b6757c264087ad3c9f5",
-          "capturedAt": "2026-09-19T20:43:01.441Z",
+          "capturedAt": "2026-09-20T04:56:24.975Z",
           "confidence": "high"
         }
       ],
@@ -19905,8 +19905,8 @@
       "endDate": "2026-09-22T21:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a88a6614cb69d003e2261e0",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a88a6614cb69d003e2261e0",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "after school clubs",
@@ -19931,7 +19931,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a88a6614cb69d003e2261e0",
-          "capturedAt": "2026-09-19T20:43:01.442Z",
+          "capturedAt": "2026-09-20T04:56:24.975Z",
           "confidence": "high"
         }
       ],
@@ -20165,8 +20165,8 @@
       "endDate": "2026-09-22T21:30:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a7e541b452bb101b57511cc",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a7e541b452bb101b57511cc",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "after school clubs",
@@ -20191,7 +20191,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a7e541b452bb101b57511cc",
-          "capturedAt": "2026-09-19T20:43:01.442Z",
+          "capturedAt": "2026-09-20T04:56:24.975Z",
           "confidence": "high"
         }
       ],
@@ -20425,8 +20425,8 @@
       "endDate": "2026-09-22T22:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a7a19450d65ac360045bede",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a7a19450d65ac360045bede",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "coding & robotics",
@@ -20447,7 +20447,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a7a19450d65ac360045bede",
-          "capturedAt": "2026-09-19T20:43:01.442Z",
+          "capturedAt": "2026-09-20T04:56:24.975Z",
           "confidence": "high"
         }
       ],
@@ -20680,8 +20680,8 @@
       "endDate": "2026-09-23T00:30:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a7336b04523092f0034e111",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a7336b04523092f0034e111",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "artificial intelligence",
@@ -20702,7 +20702,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a7336b04523092f0034e111",
-          "capturedAt": "2026-09-19T20:43:01.442Z",
+          "capturedAt": "2026-09-20T04:56:24.976Z",
           "confidence": "high"
         }
       ],
@@ -20936,8 +20936,8 @@
       "endDate": "2026-09-23T00:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a7b995760ccaf01c01d8c96",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a7b995760ccaf01c01d8c96",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "pop up learning labs",
@@ -20960,7 +20960,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a7b995760ccaf01c01d8c96",
-          "capturedAt": "2026-09-19T20:43:01.443Z",
+          "capturedAt": "2026-09-20T04:56:24.976Z",
           "confidence": "high"
         }
       ],
@@ -21193,8 +21193,8 @@
       "endDate": "2026-09-23T00:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a972e7369166f088b968dba",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a972e7369166f088b968dba",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "pop up learning labs",
@@ -21218,7 +21218,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a972e7369166f088b968dba",
-          "capturedAt": "2026-09-19T20:43:01.443Z",
+          "capturedAt": "2026-09-20T04:56:24.976Z",
           "confidence": "high"
         }
       ],
@@ -21452,8 +21452,8 @@
       "endDate": "2026-09-23T23:30:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/692dbdf9d923da4200b317a8",
       "registrationUrl": "https://markham.bibliocommons.com/events/692dbdf9d923da4200b317a8",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "steam",
@@ -21474,7 +21474,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/692dbdf9d923da4200b317a8",
-          "capturedAt": "2026-09-19T20:43:02.427Z",
+          "capturedAt": "2026-09-20T04:56:25.902Z",
           "confidence": "high"
         }
       ],
@@ -21707,8 +21707,8 @@
       "endDate": "2026-09-26T15:30:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/6a5cc712a41369ab2c670fb6",
       "registrationUrl": "https://markham.bibliocommons.com/events/6a5cc712a41369ab2c670fb6",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "newcomer",
@@ -21730,7 +21730,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a5cc712a41369ab2c670fb6",
-          "capturedAt": "2026-09-19T20:43:02.999Z",
+          "capturedAt": "2026-09-20T04:56:26.331Z",
           "confidence": "high"
         }
       ],
@@ -21964,8 +21964,8 @@
       "endDate": "2026-09-26T16:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/68fbd36ee647c8ff0c38729d",
       "registrationUrl": "https://markham.bibliocommons.com/events/68fbd36ee647c8ff0c38729d",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "steam",
@@ -21986,7 +21986,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbd36ee647c8ff0c38729d",
-          "capturedAt": "2026-09-19T20:43:02.999Z",
+          "capturedAt": "2026-09-20T04:56:26.332Z",
           "confidence": "high"
         }
       ],
@@ -22220,8 +22220,8 @@
       "endDate": "2026-09-26T16:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/68fbe20064ad59251cb9d9a2",
       "registrationUrl": "https://markham.bibliocommons.com/events/68fbe20064ad59251cb9d9a2",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "steam",
@@ -22242,7 +22242,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe20064ad59251cb9d9a2",
-          "capturedAt": "2026-09-19T20:43:03.000Z",
+          "capturedAt": "2026-09-20T04:56:26.332Z",
           "confidence": "high"
         }
       ],
@@ -22476,8 +22476,8 @@
       "endDate": "2026-09-26T16:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/68fbe0e82edc686d00f5c8a8",
       "registrationUrl": "https://markham.bibliocommons.com/events/68fbe0e82edc686d00f5c8a8",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "steam",
@@ -22498,7 +22498,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe0e82edc686d00f5c8a8",
-          "capturedAt": "2026-09-19T20:43:03.000Z",
+          "capturedAt": "2026-09-20T04:56:26.332Z",
           "confidence": "high"
         }
       ],
@@ -22732,8 +22732,8 @@
       "endDate": "2026-09-26T16:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/68fbe12275911f28001a2542",
       "registrationUrl": "https://markham.bibliocommons.com/events/68fbe12275911f28001a2542",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "creative expression",
@@ -22755,7 +22755,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe12275911f28001a2542",
-          "capturedAt": "2026-09-19T20:43:03.000Z",
+          "capturedAt": "2026-09-20T04:56:26.332Z",
           "confidence": "high"
         }
       ],
@@ -22989,8 +22989,8 @@
       "endDate": "2026-09-26T16:30:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/68fbe0cde647c8ff0c38743a",
       "registrationUrl": "https://markham.bibliocommons.com/events/68fbe0cde647c8ff0c38743a",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "steam",
@@ -23011,7 +23011,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe0cde647c8ff0c38743a",
-          "capturedAt": "2026-09-19T20:43:03.000Z",
+          "capturedAt": "2026-09-20T04:56:26.332Z",
           "confidence": "high"
         }
       ],
@@ -23245,8 +23245,8 @@
       "endDate": "2026-09-26T20:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/68fbe0a50176055300fe8159",
       "registrationUrl": "https://markham.bibliocommons.com/events/68fbe0a50176055300fe8159",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "steam",
@@ -23267,7 +23267,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe0a50176055300fe8159",
-          "capturedAt": "2026-09-19T20:43:03.417Z",
+          "capturedAt": "2026-09-20T04:56:26.793Z",
           "confidence": "high"
         }
       ],
@@ -23501,8 +23501,8 @@
       "endDate": "2026-09-27T19:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/68fbe1952edc686d00f5c979",
       "registrationUrl": "https://markham.bibliocommons.com/events/68fbe1952edc686d00f5c979",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "steam",
@@ -23523,7 +23523,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe1952edc686d00f5c979",
-          "capturedAt": "2026-09-19T20:43:03.418Z",
+          "capturedAt": "2026-09-20T04:56:26.794Z",
           "confidence": "high"
         }
       ],
@@ -23757,8 +23757,8 @@
       "endDate": "2026-09-27T19:30:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/68fbe07a2edc686d00f5c872",
       "registrationUrl": "https://markham.bibliocommons.com/events/68fbe07a2edc686d00f5c872",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "steam",
@@ -23779,7 +23779,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe07a2edc686d00f5c872",
-          "capturedAt": "2026-09-19T20:43:03.418Z",
+          "capturedAt": "2026-09-20T04:56:26.794Z",
           "confidence": "high"
         }
       ],
@@ -24013,8 +24013,8 @@
       "endDate": "2026-09-28T16:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/6a888de64cb69d003e225614",
       "registrationUrl": "https://markham.bibliocommons.com/events/6a888de64cb69d003e225614",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "lifelong learning",
@@ -24035,7 +24035,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a888de64cb69d003e225614",
-          "capturedAt": "2026-09-19T20:43:03.418Z",
+          "capturedAt": "2026-09-20T04:56:26.794Z",
           "confidence": "high"
         }
       ],
@@ -24268,8 +24268,8 @@
       "endDate": "2026-09-28T16:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/6a062a9e46d5f64f7dcbbd61",
       "registrationUrl": "https://markham.bibliocommons.com/events/6a062a9e46d5f64f7dcbbd61",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "digital innovation month",
@@ -24292,7 +24292,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a062a9e46d5f64f7dcbbd61",
-          "capturedAt": "2026-09-19T20:43:03.418Z",
+          "capturedAt": "2026-09-20T04:56:26.795Z",
           "confidence": "high"
         }
       ],
@@ -24526,8 +24526,8 @@
       "endDate": "2026-09-30T23:30:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/692dbdf9d923da4200b317a9",
       "registrationUrl": "https://markham.bibliocommons.com/events/692dbdf9d923da4200b317a9",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "steam",
@@ -24548,7 +24548,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/692dbdf9d923da4200b317a9",
-          "capturedAt": "2026-09-19T20:43:03.920Z",
+          "capturedAt": "2026-09-20T04:56:27.221Z",
           "confidence": "high"
         }
       ],
@@ -24781,8 +24781,8 @@
       "endDate": "2026-09-30T23:30:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/6a062a71c7d3cd5800594377",
       "registrationUrl": "https://markham.bibliocommons.com/events/6a062a71c7d3cd5800594377",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "makerspace",
@@ -24803,7 +24803,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a062a71c7d3cd5800594377",
-          "capturedAt": "2026-09-19T20:43:03.920Z",
+          "capturedAt": "2026-09-20T04:56:27.221Z",
           "confidence": "high"
         }
       ],
@@ -25036,8 +25036,8 @@
       "endDate": "2026-10-01T00:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/68fbdb930176055300fe7fec",
       "registrationUrl": "https://markham.bibliocommons.com/events/68fbdb930176055300fe7fec",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "digital innovation month",
@@ -25061,7 +25061,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbdb930176055300fe7fec",
-          "capturedAt": "2026-09-19T20:43:03.920Z",
+          "capturedAt": "2026-09-20T04:56:27.221Z",
           "confidence": "high"
         }
       ],
@@ -25294,8 +25294,8 @@
       "endDate": "2026-10-01T19:30:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/6a67e529f213992f00c78e87",
       "registrationUrl": "https://markham.bibliocommons.com/events/6a67e529f213992f00c78e87",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "digital innovation month",
@@ -25318,7 +25318,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a67e529f213992f00c78e87",
-          "capturedAt": "2026-09-19T20:43:03.920Z",
+          "capturedAt": "2026-09-20T04:56:27.221Z",
           "confidence": "high"
         }
       ],
@@ -25551,8 +25551,8 @@
       "endDate": "2026-10-01T20:45:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/6a67a4a99943bdf31ea1f1a7",
       "registrationUrl": "https://markham.bibliocommons.com/events/6a67a4a99943bdf31ea1f1a7",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "digital innovation month",
@@ -25576,7 +25576,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a67a4a99943bdf31ea1f1a7",
-          "capturedAt": "2026-09-19T20:43:03.920Z",
+          "capturedAt": "2026-09-20T04:56:27.222Z",
           "confidence": "high"
         }
       ],
@@ -25809,8 +25809,8 @@
       "endDate": "2026-10-03T15:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/6a67a7349943bdf31ea1f229",
       "registrationUrl": "https://markham.bibliocommons.com/events/6a67a7349943bdf31ea1f229",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "digital innovation month",
@@ -25833,7 +25833,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a67a7349943bdf31ea1f229",
-          "capturedAt": "2026-09-19T20:43:04.551Z",
+          "capturedAt": "2026-09-20T04:56:27.618Z",
           "confidence": "high"
         }
       ],
@@ -26066,8 +26066,8 @@
       "endDate": "2026-10-03T15:30:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/6a5fa9e7a41369ab2c679f4c",
       "registrationUrl": "https://markham.bibliocommons.com/events/6a5fa9e7a41369ab2c679f4c",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "digital innovation month",
@@ -26091,7 +26091,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a5fa9e7a41369ab2c679f4c",
-          "capturedAt": "2026-09-19T20:43:04.551Z",
+          "capturedAt": "2026-09-20T04:56:27.618Z",
           "confidence": "high"
         }
       ],
@@ -26325,8 +26325,8 @@
       "endDate": "2026-10-03T16:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/68fbd36ee647c8ff0c38729e",
       "registrationUrl": "https://markham.bibliocommons.com/events/68fbd36ee647c8ff0c38729e",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "steam",
@@ -26347,7 +26347,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbd36ee647c8ff0c38729e",
-          "capturedAt": "2026-09-19T20:43:04.551Z",
+          "capturedAt": "2026-09-20T04:56:27.619Z",
           "confidence": "high"
         }
       ],
@@ -26581,8 +26581,8 @@
       "endDate": "2026-10-03T16:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/68fbe20064ad59251cb9d9a3",
       "registrationUrl": "https://markham.bibliocommons.com/events/68fbe20064ad59251cb9d9a3",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "steam",
@@ -26603,7 +26603,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe20064ad59251cb9d9a3",
-          "capturedAt": "2026-09-19T20:43:04.551Z",
+          "capturedAt": "2026-09-20T04:56:27.619Z",
           "confidence": "high"
         }
       ],
@@ -26837,8 +26837,8 @@
       "endDate": "2026-10-03T16:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/68fbe0e82edc686d00f5c8a9",
       "registrationUrl": "https://markham.bibliocommons.com/events/68fbe0e82edc686d00f5c8a9",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "steam",
@@ -26859,7 +26859,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe0e82edc686d00f5c8a9",
-          "capturedAt": "2026-09-19T20:43:05.467Z",
+          "capturedAt": "2026-09-20T04:56:28.535Z",
           "confidence": "high"
         }
       ],
@@ -27093,8 +27093,8 @@
       "endDate": "2026-10-03T16:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/68fbe12275911f28001a2543",
       "registrationUrl": "https://markham.bibliocommons.com/events/68fbe12275911f28001a2543",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "creative expression",
@@ -27116,7 +27116,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe12275911f28001a2543",
-          "capturedAt": "2026-09-19T20:43:05.467Z",
+          "capturedAt": "2026-09-20T04:56:28.535Z",
           "confidence": "high"
         }
       ],
@@ -27350,8 +27350,8 @@
       "endDate": "2026-10-03T16:30:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/68fbe0cde647c8ff0c38743b",
       "registrationUrl": "https://markham.bibliocommons.com/events/68fbe0cde647c8ff0c38743b",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "steam",
@@ -27372,7 +27372,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe0cde647c8ff0c38743b",
-          "capturedAt": "2026-09-19T20:43:05.467Z",
+          "capturedAt": "2026-09-20T04:56:28.535Z",
           "confidence": "high"
         }
       ],
@@ -27605,8 +27605,8 @@
       "endDate": "2026-10-03T20:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/6a67e8249943bdf31ea20ec5",
       "registrationUrl": "https://markham.bibliocommons.com/events/6a67e8249943bdf31ea20ec5",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "digital innovation month",
@@ -27629,7 +27629,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a67e8249943bdf31ea20ec5",
-          "capturedAt": "2026-09-19T20:43:05.467Z",
+          "capturedAt": "2026-09-20T04:56:28.535Z",
           "confidence": "high"
         }
       ],
@@ -27863,8 +27863,8 @@
       "endDate": "2026-10-03T20:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/68fbe0a50176055300fe815a",
       "registrationUrl": "https://markham.bibliocommons.com/events/68fbe0a50176055300fe815a",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "steam",
@@ -27885,7 +27885,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe0a50176055300fe815a",
-          "capturedAt": "2026-09-19T20:43:05.467Z",
+          "capturedAt": "2026-09-20T04:56:28.535Z",
           "confidence": "high"
         }
       ],
@@ -28119,8 +28119,8 @@
       "endDate": "2026-10-04T19:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/68fbe1952edc686d00f5c97a",
       "registrationUrl": "https://markham.bibliocommons.com/events/68fbe1952edc686d00f5c97a",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "steam",
@@ -28141,7 +28141,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe1952edc686d00f5c97a",
-          "capturedAt": "2026-09-19T20:43:05.467Z",
+          "capturedAt": "2026-09-20T04:56:28.536Z",
           "confidence": "high"
         }
       ],
@@ -28375,8 +28375,8 @@
       "endDate": "2026-10-04T19:30:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/68fbe07a2edc686d00f5c873",
       "registrationUrl": "https://markham.bibliocommons.com/events/68fbe07a2edc686d00f5c873",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "steam",
@@ -28397,7 +28397,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe07a2edc686d00f5c873",
-          "capturedAt": "2026-09-19T20:43:05.468Z",
+          "capturedAt": "2026-09-20T04:56:28.536Z",
           "confidence": "high"
         }
       ],
@@ -28631,8 +28631,8 @@
       "endDate": "2026-10-05T16:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/6aaae32f4b3b06003084352e",
       "registrationUrl": "https://markham.bibliocommons.com/events/6aaae32f4b3b06003084352e",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "lifelong learning",
@@ -28653,7 +28653,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6aaae32f4b3b06003084352e",
-          "capturedAt": "2026-09-19T20:43:05.468Z",
+          "capturedAt": "2026-09-20T04:56:28.536Z",
           "confidence": "high"
         }
       ],
@@ -28887,8 +28887,8 @@
       "endDate": "2026-10-05T21:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/6a6135237d824676437cd57e",
       "registrationUrl": "https://markham.bibliocommons.com/events/6a6135237d824676437cd57e",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "lifelong learning",
@@ -28909,7 +28909,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a6135237d824676437cd57e",
-          "capturedAt": "2026-09-19T20:43:05.468Z",
+          "capturedAt": "2026-09-20T04:56:28.536Z",
           "confidence": "high"
         }
       ],
@@ -29143,8 +29143,8 @@
       "endDate": "2026-10-05T21:30:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/6a613604daaaf4f51a20a669",
       "registrationUrl": "https://markham.bibliocommons.com/events/6a613604daaaf4f51a20a669",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "lifelong learning",
@@ -29165,7 +29165,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a613604daaaf4f51a20a669",
-          "capturedAt": "2026-09-19T20:43:05.468Z",
+          "capturedAt": "2026-09-20T04:56:28.537Z",
           "confidence": "high"
         }
       ],
@@ -29399,8 +29399,8 @@
       "endDate": "2026-10-05T22:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/6a6137871bbbb30f3e80e325",
       "registrationUrl": "https://markham.bibliocommons.com/events/6a6137871bbbb30f3e80e325",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "lifelong learning",
@@ -29421,7 +29421,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a6137871bbbb30f3e80e325",
-          "capturedAt": "2026-09-19T20:43:05.468Z",
+          "capturedAt": "2026-09-20T04:56:28.537Z",
           "confidence": "high"
         }
       ],
@@ -29654,8 +29654,8 @@
       "endDate": "2026-10-05T22:45:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/6a5957b5fa641fe01af3b3fb",
       "registrationUrl": "https://markham.bibliocommons.com/events/6a5957b5fa641fe01af3b3fb",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "jobs & career",
@@ -29678,7 +29678,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a5957b5fa641fe01af3b3fb",
-          "capturedAt": "2026-09-19T20:43:05.962Z",
+          "capturedAt": "2026-09-20T04:56:29.013Z",
           "confidence": "high"
         }
       ],
@@ -29912,8 +29912,8 @@
       "endDate": "2026-10-05T23:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/6a67e125f213992f00c78d8e",
       "registrationUrl": "https://markham.bibliocommons.com/events/6a67e125f213992f00c78d8e",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "digital innovation month",
@@ -29937,7 +29937,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a67e125f213992f00c78d8e",
-          "capturedAt": "2026-09-19T20:43:05.962Z",
+          "capturedAt": "2026-09-20T04:56:29.013Z",
           "confidence": "high"
         }
       ],
@@ -30170,8 +30170,8 @@
       "endDate": "2026-10-06T19:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/6a4fe4b50d65ac36003e8ee8",
       "registrationUrl": "https://markham.bibliocommons.com/events/6a4fe4b50d65ac36003e8ee8",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "digital innovation month",
@@ -30194,7 +30194,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a4fe4b50d65ac36003e8ee8",
-          "capturedAt": "2026-09-19T20:43:05.962Z",
+          "capturedAt": "2026-09-20T04:56:29.013Z",
           "confidence": "high"
         }
       ],
@@ -30427,8 +30427,8 @@
       "endDate": "2026-10-07T23:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/6a67970da41369ab2c691d3b",
       "registrationUrl": "https://markham.bibliocommons.com/events/6a67970da41369ab2c691d3b",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "digital innovation month",
@@ -30450,7 +30450,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a67970da41369ab2c691d3b",
-          "capturedAt": "2026-09-19T20:43:06.664Z",
+          "capturedAt": "2026-09-20T04:56:29.463Z",
           "confidence": "high"
         }
       ],
@@ -30684,8 +30684,8 @@
       "endDate": "2026-10-07T23:30:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/692dbdf9d923da4200b317aa",
       "registrationUrl": "https://markham.bibliocommons.com/events/692dbdf9d923da4200b317aa",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "steam",
@@ -30706,7 +30706,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/692dbdf9d923da4200b317aa",
-          "capturedAt": "2026-09-19T20:43:06.664Z",
+          "capturedAt": "2026-09-20T04:56:29.463Z",
           "confidence": "high"
         }
       ],
@@ -30939,8 +30939,8 @@
       "endDate": "2026-10-08T00:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/6a67ac717b79214226aba8ec",
       "registrationUrl": "https://markham.bibliocommons.com/events/6a67ac717b79214226aba8ec",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "digital innovation month",
@@ -30962,7 +30962,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a67ac717b79214226aba8ec",
-          "capturedAt": "2026-09-19T20:43:06.664Z",
+          "capturedAt": "2026-09-20T04:56:29.463Z",
           "confidence": "high"
         }
       ],
@@ -31195,8 +31195,8 @@
       "endDate": "2026-10-08T00:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/68fbdbb88b53c0241cd1b508",
       "registrationUrl": "https://markham.bibliocommons.com/events/68fbdbb88b53c0241cd1b508",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "digital innovation month",
@@ -31220,7 +31220,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbdbb88b53c0241cd1b508",
-          "capturedAt": "2026-09-19T20:43:06.665Z",
+          "capturedAt": "2026-09-20T04:56:29.463Z",
           "confidence": "high"
         }
       ],
@@ -31454,8 +31454,8 @@
       "endDate": "2026-10-08T23:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/6a65428e9943bdf31ea197fb",
       "registrationUrl": "https://markham.bibliocommons.com/events/6a65428e9943bdf31ea197fb",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "science literacy week",
@@ -31477,7 +31477,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a65428e9943bdf31ea197fb",
-          "capturedAt": "2026-09-19T20:43:06.665Z",
+          "capturedAt": "2026-09-20T04:56:29.463Z",
           "confidence": "high"
         }
       ],
@@ -31710,8 +31710,8 @@
       "endDate": "2026-10-08T23:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/6a6790769943bdf31ea1e934",
       "registrationUrl": "https://markham.bibliocommons.com/events/6a6790769943bdf31ea1e934",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "digital innovation month",
@@ -31734,7 +31734,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a6790769943bdf31ea1e934",
-          "capturedAt": "2026-09-19T20:43:06.665Z",
+          "capturedAt": "2026-09-20T04:56:29.464Z",
           "confidence": "high"
         }
       ],
@@ -31968,8 +31968,8 @@
       "endDate": "2026-10-10T16:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/68fbd36ee647c8ff0c38729f",
       "registrationUrl": "https://markham.bibliocommons.com/events/68fbd36ee647c8ff0c38729f",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "steam",
@@ -31990,7 +31990,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbd36ee647c8ff0c38729f",
-          "capturedAt": "2026-09-19T20:43:07.038Z",
+          "capturedAt": "2026-09-20T04:56:29.867Z",
           "confidence": "high"
         }
       ],
@@ -32224,8 +32224,8 @@
       "endDate": "2026-10-10T16:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/68fbe20064ad59251cb9d9a4",
       "registrationUrl": "https://markham.bibliocommons.com/events/68fbe20064ad59251cb9d9a4",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "steam",
@@ -32246,7 +32246,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe20064ad59251cb9d9a4",
-          "capturedAt": "2026-09-19T20:43:07.038Z",
+          "capturedAt": "2026-09-20T04:56:29.867Z",
           "confidence": "high"
         }
       ],
@@ -32480,8 +32480,8 @@
       "endDate": "2026-10-10T16:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/68fbe0e82edc686d00f5c8aa",
       "registrationUrl": "https://markham.bibliocommons.com/events/68fbe0e82edc686d00f5c8aa",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "steam",
@@ -32502,7 +32502,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe0e82edc686d00f5c8aa",
-          "capturedAt": "2026-09-19T20:43:07.038Z",
+          "capturedAt": "2026-09-20T04:56:29.867Z",
           "confidence": "high"
         }
       ],
@@ -32736,8 +32736,8 @@
       "endDate": "2026-10-10T16:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/68fbe12275911f28001a2544",
       "registrationUrl": "https://markham.bibliocommons.com/events/68fbe12275911f28001a2544",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "creative expression",
@@ -32759,7 +32759,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe12275911f28001a2544",
-          "capturedAt": "2026-09-19T20:43:07.038Z",
+          "capturedAt": "2026-09-20T04:56:29.867Z",
           "confidence": "high"
         }
       ],
@@ -32993,8 +32993,8 @@
       "endDate": "2026-10-10T16:30:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/68fbe0cde647c8ff0c38743c",
       "registrationUrl": "https://markham.bibliocommons.com/events/68fbe0cde647c8ff0c38743c",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "steam",
@@ -33015,7 +33015,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe0cde647c8ff0c38743c",
-          "capturedAt": "2026-09-19T20:43:07.038Z",
+          "capturedAt": "2026-09-20T04:56:29.867Z",
           "confidence": "high"
         }
       ],
@@ -33249,8 +33249,8 @@
       "endDate": "2026-10-10T20:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/68fbe0a50176055300fe815b",
       "registrationUrl": "https://markham.bibliocommons.com/events/68fbe0a50176055300fe815b",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "steam",
@@ -33271,7 +33271,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe0a50176055300fe815b",
-          "capturedAt": "2026-09-19T20:43:07.038Z",
+          "capturedAt": "2026-09-20T04:56:29.867Z",
           "confidence": "high"
         }
       ],
@@ -33505,8 +33505,8 @@
       "endDate": "2026-10-11T19:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/68fbe1952edc686d00f5c97b",
       "registrationUrl": "https://markham.bibliocommons.com/events/68fbe1952edc686d00f5c97b",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "steam",
@@ -33527,7 +33527,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe1952edc686d00f5c97b",
-          "capturedAt": "2026-09-19T20:43:07.038Z",
+          "capturedAt": "2026-09-20T04:56:29.867Z",
           "confidence": "high"
         }
       ],
@@ -33761,8 +33761,8 @@
       "endDate": "2026-10-11T19:30:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/68fbe07a2edc686d00f5c874",
       "registrationUrl": "https://markham.bibliocommons.com/events/68fbe07a2edc686d00f5c874",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "steam",
@@ -33783,7 +33783,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe07a2edc686d00f5c874",
-          "capturedAt": "2026-09-19T20:43:07.038Z",
+          "capturedAt": "2026-09-20T04:56:29.867Z",
           "confidence": "high"
         }
       ],
@@ -34016,8 +34016,8 @@
       "endDate": "2026-10-13T19:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/6a4fe4df0d65ac36003e8eef",
       "registrationUrl": "https://markham.bibliocommons.com/events/6a4fe4df0d65ac36003e8eef",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "digital innovation month",
@@ -34041,7 +34041,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a4fe4df0d65ac36003e8eef",
-          "capturedAt": "2026-09-19T20:43:07.652Z",
+          "capturedAt": "2026-09-20T04:56:30.324Z",
           "confidence": "high"
         }
       ],
@@ -34275,8 +34275,8 @@
       "endDate": "2026-10-14T23:30:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/692dbdf9d923da4200b317ab",
       "registrationUrl": "https://markham.bibliocommons.com/events/692dbdf9d923da4200b317ab",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "steam",
@@ -34297,7 +34297,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/692dbdf9d923da4200b317ab",
-          "capturedAt": "2026-09-19T20:43:07.653Z",
+          "capturedAt": "2026-09-20T04:56:30.325Z",
           "confidence": "high"
         }
       ],
@@ -34530,8 +34530,8 @@
       "endDate": "2026-10-15T00:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/6a67ad077b79214226aba92d",
       "registrationUrl": "https://markham.bibliocommons.com/events/6a67ad077b79214226aba92d",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "digital innovation month",
@@ -34553,7 +34553,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a67ad077b79214226aba92d",
-          "capturedAt": "2026-09-19T20:43:07.653Z",
+          "capturedAt": "2026-09-20T04:56:30.325Z",
           "confidence": "high"
         }
       ],
@@ -34786,8 +34786,8 @@
       "endDate": "2026-10-15T00:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/6aaa9a00101eb7003f3084af",
       "registrationUrl": "https://markham.bibliocommons.com/events/6aaa9a00101eb7003f3084af",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "lifelong learning",
@@ -34809,7 +34809,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6aaa9a00101eb7003f3084af",
-          "capturedAt": "2026-09-19T20:43:08.178Z",
+          "capturedAt": "2026-09-20T04:56:30.729Z",
           "confidence": "high"
         }
       ],
@@ -35042,8 +35042,8 @@
       "endDate": "2026-10-15T19:30:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/69039e6c9b87934100934ec1",
       "registrationUrl": "https://markham.bibliocommons.com/events/69039e6c9b87934100934ec1",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "book club",
@@ -35066,7 +35066,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/69039e6c9b87934100934ec1",
-          "capturedAt": "2026-09-19T20:43:08.179Z",
+          "capturedAt": "2026-09-20T04:56:30.730Z",
           "confidence": "high"
         }
       ],
@@ -35299,8 +35299,8 @@
       "endDate": "2026-10-15T20:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/6a67e8b2f213992f00c78fad",
       "registrationUrl": "https://markham.bibliocommons.com/events/6a67e8b2f213992f00c78fad",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "digital innovation month",
@@ -35323,7 +35323,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a67e8b2f213992f00c78fad",
-          "capturedAt": "2026-09-19T20:43:08.179Z",
+          "capturedAt": "2026-09-20T04:56:30.730Z",
           "confidence": "high"
         }
       ],
@@ -35556,8 +35556,8 @@
       "endDate": "2026-10-16T00:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/6a67e8b2f213992f00c78fae",
       "registrationUrl": "https://markham.bibliocommons.com/events/6a67e8b2f213992f00c78fae",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "digital innovation month",
@@ -35580,7 +35580,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a67e8b2f213992f00c78fae",
-          "capturedAt": "2026-09-19T20:43:08.180Z",
+          "capturedAt": "2026-09-20T04:56:30.730Z",
           "confidence": "high"
         }
       ],
@@ -35814,8 +35814,8 @@
       "endDate": "2026-11-01T09:00:00-04:00",
       "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6a875a463b6c71003e5a39be",
       "registrationUrl": "https://tpl.bibliocommons.com/v2/events/6a875a463b6c71003e5a39be",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "science & engineering",
@@ -35836,7 +35836,7 @@
         {
           "label": "Toronto Public Library youth volunteer events",
           "url": "https://tpl.bibliocommons.com/v2/events/6a875a463b6c71003e5a39be",
-          "capturedAt": "2026-09-19T09:00:00-04:00",
+          "capturedAt": "2026-09-20T09:00:00-04:00",
           "confidence": "high"
         }
       ],
@@ -36070,8 +36070,8 @@
       "endDate": "2026-09-21T19:30:00-04:00",
       "sourceUrl": "https://markham.bibliocommons.com/events/6a061c0e0c0f2c4503fa23fa",
       "registrationUrl": "https://markham.bibliocommons.com/events/6a061c0e0c0f2c4503fa23fa",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "volunteer hours",
@@ -36093,7 +36093,7 @@
         {
           "label": "Markham Public Library youth volunteer events",
           "url": "https://markham.bibliocommons.com/events/6a061c0e0c0f2c4503fa23fa",
-          "capturedAt": "2026-09-19T09:00:00-04:00",
+          "capturedAt": "2026-09-20T09:00:00-04:00",
           "confidence": "high"
         }
       ],
@@ -36327,8 +36327,8 @@
       "endDate": "2026-09-21T20:00:00-04:00",
       "sourceUrl": "https://aurora.bibliocommons.com/events/6a563acefb418a28009ad5b6",
       "registrationUrl": "https://aurora.bibliocommons.com/events/6a563acefb418a28009ad5b6",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "makerspace & fabrication",
@@ -36350,7 +36350,7 @@
         {
           "label": "Aurora Public Library STEM events",
           "url": "https://aurora.bibliocommons.com/events/6a563acefb418a28009ad5b6",
-          "capturedAt": "2026-09-19T09:00:00-04:00",
+          "capturedAt": "2026-09-20T09:00:00-04:00",
           "confidence": "high"
         }
       ],
@@ -36584,8 +36584,8 @@
       "endDate": "2026-09-20T16:00:00-04:00",
       "sourceUrl": "https://aurora.bibliocommons.com/events/69c40e2fad384e40edb6aec3",
       "registrationUrl": "https://aurora.bibliocommons.com/events/69c40e2fad384e40edb6aec3",
-      "lastChecked": "2026-09-19",
-      "lastSeen": "2026-09-19",
+      "lastChecked": "2026-09-20",
+      "lastSeen": "2026-09-20",
       "status": "active",
       "tags": [
         "volunteer hours",
@@ -36606,7 +36606,7 @@
         {
           "label": "Aurora Public Library STEM events",
           "url": "https://aurora.bibliocommons.com/events/69c40e2fad384e40edb6aec3",
-          "capturedAt": "2026-09-19T09:00:00-04:00",
+          "capturedAt": "2026-09-20T09:00:00-04:00",
           "confidence": "high"
         }
       ],
