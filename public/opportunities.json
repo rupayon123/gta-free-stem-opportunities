@@ -1,12 +1,12 @@
 {
   "name": "GTA FREE STEM Opportunities public feed",
   "schemaVersion": 1,
-  "count": 113,
-  "lastDataChange": "2026-09-20",
+  "count": 116,
+  "lastDataChange": "2026-09-21",
   "sourceHealth": {
     "library": {
       "schemaVersion": 1,
-      "generatedAt": "2026-09-20T20:51:35.004Z",
+      "generatedAt": "2026-09-21T04:59:00.991Z",
       "status": "healthy",
       "failureReasons": [],
       "sourceCount": 2,
@@ -16,16 +16,16 @@
       "pageSuccessRatio": 1,
       "minimumPageSuccessRatio": 0.75,
       "minimumPerSourceSuccessRatio": 0.5,
-      "acceptedListings": 110,
-      "previousPublishedListings": 140,
-      "minimumAcceptedListings": 91,
+      "acceptedListings": 113,
+      "previousPublishedListings": 110,
+      "minimumAcceptedListings": 72,
       "sources": [
         {
           "sourceId": "tpl-rss",
           "organization": "Toronto Public Library",
           "attemptedPages": 12,
           "successfulPages": 12,
-          "acceptedListings": 54,
+          "acceptedListings": 57,
           "failedPages": 0,
           "pageSuccessRatio": 1
         },
@@ -42,7 +42,7 @@
     },
     "discovery": {
       "schemaVersion": 1,
-      "generatedAt": "2026-09-20T20:51:54.195Z",
+      "generatedAt": "2026-09-21T04:59:21.510Z",
       "status": "healthy",
       "failureReasons": [],
       "sourcesChecked": 30,
@@ -77,8 +77,8 @@
       "endDate": "2026-09-21T16:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/6a888de64cb69d003e225613",
       "registrationUrl": "https://markham.bibliocommons.com/events/6a888de64cb69d003e225613",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "lifelong learning",
@@ -100,7 +100,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a888de64cb69d003e225613",
-          "capturedAt": "2026-09-20T20:51:30.649Z",
+          "capturedAt": "2026-09-21T04:58:55.435Z",
           "confidence": "high"
         }
       ],
@@ -333,8 +333,8 @@
       "endDate": "2026-09-21T18:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/69dbd871129f12743838134a",
       "registrationUrl": "https://tpl.bibliocommons.com/events/69dbd871129f12743838134a",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "computer basics & office software",
@@ -356,7 +356,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69dbd871129f12743838134a",
-          "capturedAt": "2026-09-20T20:51:24.246Z",
+          "capturedAt": "2026-09-21T04:58:49.607Z",
           "confidence": "high"
         }
       ],
@@ -589,8 +589,8 @@
       "endDate": "2026-09-21T18:30:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a909ca669166f088b955fc6",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a909ca669166f088b955fc6",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "computer basics & office software",
@@ -612,7 +612,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a909ca669166f088b955fc6",
-          "capturedAt": "2026-09-20T20:51:24.248Z",
+          "capturedAt": "2026-09-21T04:58:49.608Z",
           "confidence": "high"
         }
       ],
@@ -845,8 +845,8 @@
       "endDate": "2026-09-21T19:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a9327ca2dac6e0037229f97",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a9327ca2dac6e0037229f97",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "computer basics & office software",
@@ -868,7 +868,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a9327ca2dac6e0037229f97",
-          "capturedAt": "2026-09-20T20:51:24.764Z",
+          "capturedAt": "2026-09-21T04:58:50.112Z",
           "confidence": "high"
         }
       ],
@@ -1101,8 +1101,8 @@
       "endDate": "2026-09-21T19:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a4e7b43fb18bf3d00bef3b9",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a4e7b43fb18bf3d00bef3b9",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "computer basics & office software",
@@ -1124,7 +1124,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a4e7b43fb18bf3d00bef3b9",
-          "capturedAt": "2026-09-20T20:51:24.764Z",
+          "capturedAt": "2026-09-21T04:58:50.112Z",
           "confidence": "high"
         }
       ],
@@ -1358,8 +1358,8 @@
       "endDate": "2026-09-21T19:30:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a87646f58433600542abc3c",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a87646f58433600542abc3c",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "audio & visual",
@@ -1381,7 +1381,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a87646f58433600542abc3c",
-          "capturedAt": "2026-09-20T20:51:24.765Z",
+          "capturedAt": "2026-09-21T04:58:50.113Z",
           "confidence": "high"
         }
       ],
@@ -1593,6 +1593,517 @@
       }
     },
     {
+      "id": "tpl-rss-6a8343f5d4b10d00300711a2",
+      "title": "Excel Basics II",
+      "organization": "Toronto Public Library",
+      "description": "Excel Basics II will discuss creating charts and tables, sorting your data, and more, using Microsoft Excel. Basic Keyboarding and mouse skills required. Information Collection Notice: The personal information on this form is collected by the Toronto Public Library under the Public Libraries Act, sections 20(a), 20(c), and 20(d). The information will only be used for event and program registration, delivery and evaluation. Questions about how the library handles your information can be directed to Answerline staff at answerline@tpl.ca , 416-397-5981, 789 Yonge Street, Toronto ON M4W 2G8.",
+      "city": "Toronto",
+      "region": "Toronto",
+      "ageMin": 18,
+      "category": "AI & Digital Media",
+      "categories": [
+        "STEM",
+        "AI & Digital Media"
+      ],
+      "cost": "Free to join",
+      "language": [
+        "en"
+      ],
+      "deadline": "2026-09-21T18:00:00.000Z",
+      "startDate": "2026-09-21T18:00:00.000Z",
+      "endDate": "2026-09-21T19:30:00.000Z",
+      "sourceUrl": "https://tpl.bibliocommons.com/events/6a8343f5d4b10d00300711a2",
+      "registrationUrl": "https://tpl.bibliocommons.com/events/6a8343f5d4b10d00300711a2",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
+      "status": "active",
+      "tags": [
+        "computer basics & office software",
+        "adults (18+)",
+        "english"
+      ],
+      "communityFocus": [
+        "Open to all",
+        "Newcomer-friendly"
+      ],
+      "latitude": 43.6960925,
+      "longitude": -79.4472591,
+      "address": "Maria A. Shchuka, 1745 Eglinton Avenue West, Toronto, ON, M6E 2H4",
+      "volunteerHoursEligible": false,
+      "coopEligible": false,
+      "trustedSource": true,
+      "sources": [
+        {
+          "label": "Official Toronto Public Library event page",
+          "url": "https://tpl.bibliocommons.com/events/6a8343f5d4b10d00300711a2",
+          "capturedAt": "2026-09-21T04:58:50.113Z",
+          "confidence": "high"
+        }
+      ],
+      "translations": {
+        "fr": {
+          "title": "Occasion gratuite de STEM offerte par Toronto Public Library a Toronto",
+          "summary": "Occasion gratuite de STEM offerte par Toronto Public Library a Toronto. Ages 18+. Consultez la source pour les details.",
+          "description": "Occasion gratuite de STEM offerte par Toronto Public Library a Toronto. Ages 18+. Consultez la source pour les details.",
+          "category": "STEM",
+          "cost": "Fiche gratuite",
+          "tags": [
+            "STEM",
+            "IA et medias numeriques"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "zh": {
+          "title": "Toronto Public Library在Toronto提供免费的STEM机会。适合18+岁。请查看来源了解详情。",
+          "summary": "Toronto Public Library在Toronto提供免费的STEM机会。适合18+岁。请查看来源了解详情。",
+          "description": "Toronto Public Library在Toronto提供免费的STEM机会。适合18+岁。请查看来源了解详情。",
+          "category": "STEM",
+          "cost": "免费列表",
+          "tags": [
+            "STEM",
+            "人工智能与数字媒体"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "yue": {
+          "title": "Toronto Public Library喺Toronto提供免費STEM機會。適合18+歲。請查看來源了解詳情。",
+          "summary": "Toronto Public Library喺Toronto提供免費STEM機會。適合18+歲。請查看來源了解詳情。",
+          "description": "Toronto Public Library喺Toronto提供免費STEM機會。適合18+歲。請查看來源了解詳情。",
+          "category": "STEM",
+          "cost": "免費項目",
+          "tags": [
+            "STEM",
+            "人工智能同數碼媒體"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "pa": {
+          "title": "Toronto Public Library ਵੱਲੋਂ Toronto ਵਿੱਚ ਮੁਫ਼ਤ STEM ਮੌਕਾ। ਉਮਰ 18+",
+          "summary": "Toronto Public Library ਵੱਲੋਂ Toronto ਵਿੱਚ ਮੁਫ਼ਤ STEM ਮੌਕਾ। ਉਮਰ 18+. ਵੇਰਵਿਆਂ ਲਈ ਸਰੋਤ ਵੇਖੋ।",
+          "description": "Toronto Public Library ਵੱਲੋਂ Toronto ਵਿੱਚ ਮੁਫ਼ਤ STEM ਮੌਕਾ। ਉਮਰ 18+. ਵੇਰਵਿਆਂ ਲਈ ਸਰੋਤ ਵੇਖੋ।",
+          "category": "STEM",
+          "cost": "ਮੁਫ਼ਤ ਲਿਸਟਿੰਗ",
+          "tags": [
+            "STEM",
+            "AI ਅਤੇ ਡਿਜ਼ਿਟਲ ਮੀਡੀਆ"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "ur": {
+          "title": "Toronto میں Toronto Public Library کی طرف سے مفت STEM موقع۔ عمر 18+",
+          "summary": "Toronto میں Toronto Public Library کی طرف سے مفت STEM موقع۔ عمر 18+. تفصیلات کے لیے ذریعہ دیکھیں۔",
+          "description": "Toronto میں Toronto Public Library کی طرف سے مفت STEM موقع۔ عمر 18+. تفصیلات کے لیے ذریعہ دیکھیں۔",
+          "category": "STEM",
+          "cost": "مفت لسٹنگ",
+          "tags": [
+            "STEM",
+            "AI اور ڈیجیٹل میڈیا"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "ta": {
+          "title": "Toronto நகரில் Toronto Public Library வழங்கும் இலவச STEM வாய்ப்பு",
+          "summary": "Toronto நகரில் Toronto Public Library வழங்கும் இலவச STEM வாய்ப்பு. வயது 18+. விவரங்களுக்கு மூலத்தை பார்க்கவும்.",
+          "description": "Toronto நகரில் Toronto Public Library வழங்கும் இலவச STEM வாய்ப்பு. வயது 18+. விவரங்களுக்கு மூலத்தை பார்க்கவும்.",
+          "category": "STEM",
+          "cost": "இலவச பட்டியல்",
+          "tags": [
+            "STEM",
+            "AI மற்றும் டிஜிட்டல் மீடியா"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "tl": {
+          "title": "Libreng STEM opportunity mula sa Toronto Public Library sa Toronto",
+          "summary": "Libreng STEM opportunity mula sa Toronto Public Library sa Toronto. Edad 18+. Tingnan ang source para sa detalye.",
+          "description": "Libreng STEM opportunity mula sa Toronto Public Library sa Toronto. Edad 18+. Tingnan ang source para sa detalye.",
+          "category": "STEM",
+          "cost": "Libreng listing",
+          "tags": [
+            "STEM",
+            "AI at digital media"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "es": {
+          "title": "Oportunidad gratis de STEM de Toronto Public Library en Toronto",
+          "summary": "Oportunidad gratis de STEM de Toronto Public Library en Toronto. Edades 18+. Revise la fuente para detalles.",
+          "description": "Oportunidad gratis de STEM de Toronto Public Library en Toronto. Edades 18+. Revise la fuente para detalles.",
+          "category": "STEM",
+          "cost": "Listado gratis",
+          "tags": [
+            "STEM",
+            "IA y medios digitales"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "ar": {
+          "title": "فرصة STEM مجانية من Toronto Public Library في Toronto",
+          "summary": "فرصة STEM مجانية من Toronto Public Library في Toronto. الأعمار 18+. راجع المصدر للتفاصيل.",
+          "description": "فرصة STEM مجانية من Toronto Public Library في Toronto. الأعمار 18+. راجع المصدر للتفاصيل.",
+          "category": "STEM",
+          "cost": "قائمة مجانية",
+          "tags": [
+            "STEM",
+            "الذكاء الاصطناعي والإعلام الرقمي"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "fa": {
+          "title": "فرصت رایگان STEM از Toronto Public Library در Toronto",
+          "summary": "فرصت رایگان STEM از Toronto Public Library در Toronto. سنین 18+. برای جزئیات منبع را بررسی کنید.",
+          "description": "فرصت رایگان STEM از Toronto Public Library در Toronto. سنین 18+. برای جزئیات منبع را بررسی کنید.",
+          "category": "STEM",
+          "cost": "فهرست رایگان",
+          "tags": [
+            "STEM",
+            "هوش مصنوعی و رسانه دیجیتال"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "hi": {
+          "title": "Toronto में Toronto Public Library की मुफ्त STEM opportunity",
+          "summary": "Toronto में Toronto Public Library की मुफ्त STEM opportunity. उम्र 18+. Details के लिए source देखें.",
+          "description": "Toronto में Toronto Public Library की मुफ्त STEM opportunity. उम्र 18+. Details के लिए source देखें.",
+          "category": "STEM",
+          "cost": "Free listing",
+          "tags": [
+            "STEM",
+            "AI और डिजिटल मीडिया"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "pt": {
+          "title": "Oportunidade gratuita de STEM da Toronto Public Library em Toronto",
+          "summary": "Oportunidade gratuita de STEM da Toronto Public Library em Toronto. Idades 18+. Veja a fonte para detalhes.",
+          "description": "Oportunidade gratuita de STEM da Toronto Public Library em Toronto. Idades 18+. Veja a fonte para detalhes.",
+          "category": "STEM",
+          "cost": "Lista gratuita",
+          "tags": [
+            "STEM",
+            "IA e midia digital"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "gu": {
+          "title": "Toronto માં Toronto Public Library તરફથી મફત STEM તક",
+          "summary": "Toronto માં Toronto Public Library તરફથી મફત STEM તક. ઉંમર 18+. વિગત માટે સ્રોત જુઓ.",
+          "description": "Toronto માં Toronto Public Library તરફથી મફત STEM તક. ઉંમર 18+. વિગત માટે સ્રોત જુઓ.",
+          "category": "STEM",
+          "cost": "મફત લિસ્ટિંગ",
+          "tags": [
+            "STEM",
+            "AI અને ડિજિટલ મીડિયા"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "bn": {
+          "title": "Toronto-এ Toronto Public Library এর ফ্রি STEM opportunity",
+          "summary": "Toronto-এ Toronto Public Library এর ফ্রি STEM opportunity. বয়স 18+. বিস্তারিত জানতে উৎস দেখুন.",
+          "description": "Toronto-এ Toronto Public Library এর ফ্রি STEM opportunity. বয়স 18+. বিস্তারিত জানতে উৎস দেখুন.",
+          "category": "STEM",
+          "cost": "ফ্রি তালিকা",
+          "tags": [
+            "STEM",
+            "AI ও ডিজিটাল মিডিয়া"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "ja": {
+          "title": "TorontoのToronto Public Libraryによる無料のSTEM機会です。対象年齢は18+。詳細は情報源をご確認ください。",
+          "summary": "TorontoのToronto Public Libraryによる無料のSTEM機会です。対象年齢は18+。詳細は情報源をご確認ください。",
+          "description": "TorontoのToronto Public Libraryによる無料のSTEM機会です。対象年齢は18+。詳細は情報源をご確認ください。",
+          "category": "STEM",
+          "cost": "無料リスト",
+          "tags": [
+            "STEM",
+            "AIとデジタルメディア"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "ko": {
+          "title": "Toronto에서 Toronto Public Library이 제공하는 무료 STEM 기회입니다",
+          "summary": "Toronto에서 Toronto Public Library이 제공하는 무료 STEM 기회입니다. 대상 나이는 18+입니다. 자세한 내용은 출처를 확인하세요.",
+          "description": "Toronto에서 Toronto Public Library이 제공하는 무료 STEM 기회입니다. 대상 나이는 18+입니다. 자세한 내용은 출처를 확인하세요.",
+          "category": "STEM",
+          "cost": "무료 목록",
+          "tags": [
+            "STEM",
+            "AI 및 디지털 미디어"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "hu": {
+          "title": "Ingyenes STEM lehetőség a(z) Toronto Public Library szervezőtől itt: Toronto",
+          "summary": "Ingyenes STEM lehetőség a(z) Toronto Public Library szervezőtől itt: Toronto. Korosztály: 18+. Részletekért nézd meg a forrást.",
+          "description": "Ingyenes STEM lehetőség a(z) Toronto Public Library szervezőtől itt: Toronto. Korosztály: 18+. Részletekért nézd meg a forrást.",
+          "category": "STEM",
+          "cost": "Ingyenes lista",
+          "tags": [
+            "STEM",
+            "MI es digitalis media"
+          ],
+          "translationSource": "generated-summary-template"
+        }
+      }
+    },
+    {
+      "id": "tpl-rss-6a8309aed4b10d003006fe4a",
+      "title": "Excel Basics 2: Do More with your Data",
+      "organization": "Toronto Public Library",
+      "description": "An introductory class on Microsoft Excel for beginners with little or no Excel experience. Build on your basic Microsoft Excel skills and learn to use Excel data effectively. In this second session, you will: Practice data entry and formatting Manipulate rows and columns Create and copy simple formulas Convert data to a Table then sort and filter Create your first chart Upon completion of this class, you will be able to get more from your data using tables, filters and charts. Prerequisites: Excel Basics Part 1 or equivalent knowledge. Basic mouse and keyboard skills required. Information Collection Notice: The personal information on this form is collected by the Toronto Public Library under the Public Libraries Act, sections 20(a), 20(c), and 20(d). The information will only be used for event and program registration, delivery and evaluation. Questions about how the library handles your information can be directed to Answerline staff at answerline@tpl.ca , 416-397-5981, 789 Yonge Street, Toronto ON M4W 2G8.",
+      "city": "Toronto",
+      "region": "Toronto",
+      "ageMin": 18,
+      "category": "AI & Digital Media",
+      "categories": [
+        "STEM",
+        "AI & Digital Media"
+      ],
+      "cost": "Free to join",
+      "language": [
+        "en"
+      ],
+      "deadline": "2026-09-21T18:00:00.000Z",
+      "startDate": "2026-09-21T18:00:00.000Z",
+      "endDate": "2026-09-21T19:00:00.000Z",
+      "sourceUrl": "https://tpl.bibliocommons.com/events/6a8309aed4b10d003006fe4a",
+      "registrationUrl": "https://tpl.bibliocommons.com/events/6a8309aed4b10d003006fe4a",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
+      "status": "active",
+      "tags": [
+        "computer basics & office software",
+        "adults (18+)",
+        "older adults",
+        "english"
+      ],
+      "communityFocus": [
+        "Open to all",
+        "Newcomer-friendly"
+      ],
+      "latitude": 43.7207918,
+      "longitude": -79.4321866,
+      "address": "Barbara Frum, 20 Covington Road, Toronto, ON, M6A 3C1",
+      "volunteerHoursEligible": false,
+      "coopEligible": false,
+      "trustedSource": true,
+      "sources": [
+        {
+          "label": "Official Toronto Public Library event page",
+          "url": "https://tpl.bibliocommons.com/events/6a8309aed4b10d003006fe4a",
+          "capturedAt": "2026-09-21T04:58:50.113Z",
+          "confidence": "high"
+        }
+      ],
+      "translations": {
+        "fr": {
+          "title": "Occasion gratuite de STEM offerte par Toronto Public Library a Toronto",
+          "summary": "Occasion gratuite de STEM offerte par Toronto Public Library a Toronto. Ages 18+. Consultez la source pour les details.",
+          "description": "Occasion gratuite de STEM offerte par Toronto Public Library a Toronto. Ages 18+. Consultez la source pour les details.",
+          "category": "STEM",
+          "cost": "Fiche gratuite",
+          "tags": [
+            "STEM",
+            "IA et medias numeriques"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "zh": {
+          "title": "Toronto Public Library在Toronto提供免费的STEM机会。适合18+岁。请查看来源了解详情。",
+          "summary": "Toronto Public Library在Toronto提供免费的STEM机会。适合18+岁。请查看来源了解详情。",
+          "description": "Toronto Public Library在Toronto提供免费的STEM机会。适合18+岁。请查看来源了解详情。",
+          "category": "STEM",
+          "cost": "免费列表",
+          "tags": [
+            "STEM",
+            "人工智能与数字媒体"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "yue": {
+          "title": "Toronto Public Library喺Toronto提供免費STEM機會。適合18+歲。請查看來源了解詳情。",
+          "summary": "Toronto Public Library喺Toronto提供免費STEM機會。適合18+歲。請查看來源了解詳情。",
+          "description": "Toronto Public Library喺Toronto提供免費STEM機會。適合18+歲。請查看來源了解詳情。",
+          "category": "STEM",
+          "cost": "免費項目",
+          "tags": [
+            "STEM",
+            "人工智能同數碼媒體"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "pa": {
+          "title": "Toronto Public Library ਵੱਲੋਂ Toronto ਵਿੱਚ ਮੁਫ਼ਤ STEM ਮੌਕਾ। ਉਮਰ 18+",
+          "summary": "Toronto Public Library ਵੱਲੋਂ Toronto ਵਿੱਚ ਮੁਫ਼ਤ STEM ਮੌਕਾ। ਉਮਰ 18+. ਵੇਰਵਿਆਂ ਲਈ ਸਰੋਤ ਵੇਖੋ।",
+          "description": "Toronto Public Library ਵੱਲੋਂ Toronto ਵਿੱਚ ਮੁਫ਼ਤ STEM ਮੌਕਾ। ਉਮਰ 18+. ਵੇਰਵਿਆਂ ਲਈ ਸਰੋਤ ਵੇਖੋ।",
+          "category": "STEM",
+          "cost": "ਮੁਫ਼ਤ ਲਿਸਟਿੰਗ",
+          "tags": [
+            "STEM",
+            "AI ਅਤੇ ਡਿਜ਼ਿਟਲ ਮੀਡੀਆ"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "ur": {
+          "title": "Toronto میں Toronto Public Library کی طرف سے مفت STEM موقع۔ عمر 18+",
+          "summary": "Toronto میں Toronto Public Library کی طرف سے مفت STEM موقع۔ عمر 18+. تفصیلات کے لیے ذریعہ دیکھیں۔",
+          "description": "Toronto میں Toronto Public Library کی طرف سے مفت STEM موقع۔ عمر 18+. تفصیلات کے لیے ذریعہ دیکھیں۔",
+          "category": "STEM",
+          "cost": "مفت لسٹنگ",
+          "tags": [
+            "STEM",
+            "AI اور ڈیجیٹل میڈیا"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "ta": {
+          "title": "Toronto நகரில் Toronto Public Library வழங்கும் இலவச STEM வாய்ப்பு",
+          "summary": "Toronto நகரில் Toronto Public Library வழங்கும் இலவச STEM வாய்ப்பு. வயது 18+. விவரங்களுக்கு மூலத்தை பார்க்கவும்.",
+          "description": "Toronto நகரில் Toronto Public Library வழங்கும் இலவச STEM வாய்ப்பு. வயது 18+. விவரங்களுக்கு மூலத்தை பார்க்கவும்.",
+          "category": "STEM",
+          "cost": "இலவச பட்டியல்",
+          "tags": [
+            "STEM",
+            "AI மற்றும் டிஜிட்டல் மீடியா"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "tl": {
+          "title": "Libreng STEM opportunity mula sa Toronto Public Library sa Toronto",
+          "summary": "Libreng STEM opportunity mula sa Toronto Public Library sa Toronto. Edad 18+. Tingnan ang source para sa detalye.",
+          "description": "Libreng STEM opportunity mula sa Toronto Public Library sa Toronto. Edad 18+. Tingnan ang source para sa detalye.",
+          "category": "STEM",
+          "cost": "Libreng listing",
+          "tags": [
+            "STEM",
+            "AI at digital media"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "es": {
+          "title": "Oportunidad gratis de STEM de Toronto Public Library en Toronto",
+          "summary": "Oportunidad gratis de STEM de Toronto Public Library en Toronto. Edades 18+. Revise la fuente para detalles.",
+          "description": "Oportunidad gratis de STEM de Toronto Public Library en Toronto. Edades 18+. Revise la fuente para detalles.",
+          "category": "STEM",
+          "cost": "Listado gratis",
+          "tags": [
+            "STEM",
+            "IA y medios digitales"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "ar": {
+          "title": "فرصة STEM مجانية من Toronto Public Library في Toronto",
+          "summary": "فرصة STEM مجانية من Toronto Public Library في Toronto. الأعمار 18+. راجع المصدر للتفاصيل.",
+          "description": "فرصة STEM مجانية من Toronto Public Library في Toronto. الأعمار 18+. راجع المصدر للتفاصيل.",
+          "category": "STEM",
+          "cost": "قائمة مجانية",
+          "tags": [
+            "STEM",
+            "الذكاء الاصطناعي والإعلام الرقمي"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "fa": {
+          "title": "فرصت رایگان STEM از Toronto Public Library در Toronto",
+          "summary": "فرصت رایگان STEM از Toronto Public Library در Toronto. سنین 18+. برای جزئیات منبع را بررسی کنید.",
+          "description": "فرصت رایگان STEM از Toronto Public Library در Toronto. سنین 18+. برای جزئیات منبع را بررسی کنید.",
+          "category": "STEM",
+          "cost": "فهرست رایگان",
+          "tags": [
+            "STEM",
+            "هوش مصنوعی و رسانه دیجیتال"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "hi": {
+          "title": "Toronto में Toronto Public Library की मुफ्त STEM opportunity",
+          "summary": "Toronto में Toronto Public Library की मुफ्त STEM opportunity. उम्र 18+. Details के लिए source देखें.",
+          "description": "Toronto में Toronto Public Library की मुफ्त STEM opportunity. उम्र 18+. Details के लिए source देखें.",
+          "category": "STEM",
+          "cost": "Free listing",
+          "tags": [
+            "STEM",
+            "AI और डिजिटल मीडिया"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "pt": {
+          "title": "Oportunidade gratuita de STEM da Toronto Public Library em Toronto",
+          "summary": "Oportunidade gratuita de STEM da Toronto Public Library em Toronto. Idades 18+. Veja a fonte para detalhes.",
+          "description": "Oportunidade gratuita de STEM da Toronto Public Library em Toronto. Idades 18+. Veja a fonte para detalhes.",
+          "category": "STEM",
+          "cost": "Lista gratuita",
+          "tags": [
+            "STEM",
+            "IA e midia digital"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "gu": {
+          "title": "Toronto માં Toronto Public Library તરફથી મફત STEM તક",
+          "summary": "Toronto માં Toronto Public Library તરફથી મફત STEM તક. ઉંમર 18+. વિગત માટે સ્રોત જુઓ.",
+          "description": "Toronto માં Toronto Public Library તરફથી મફત STEM તક. ઉંમર 18+. વિગત માટે સ્રોત જુઓ.",
+          "category": "STEM",
+          "cost": "મફત લિસ્ટિંગ",
+          "tags": [
+            "STEM",
+            "AI અને ડિજિટલ મીડિયા"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "bn": {
+          "title": "Toronto-এ Toronto Public Library এর ফ্রি STEM opportunity",
+          "summary": "Toronto-এ Toronto Public Library এর ফ্রি STEM opportunity. বয়স 18+. বিস্তারিত জানতে উৎস দেখুন.",
+          "description": "Toronto-এ Toronto Public Library এর ফ্রি STEM opportunity. বয়স 18+. বিস্তারিত জানতে উৎস দেখুন.",
+          "category": "STEM",
+          "cost": "ফ্রি তালিকা",
+          "tags": [
+            "STEM",
+            "AI ও ডিজিটাল মিডিয়া"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "ja": {
+          "title": "TorontoのToronto Public Libraryによる無料のSTEM機会です。対象年齢は18+。詳細は情報源をご確認ください。",
+          "summary": "TorontoのToronto Public Libraryによる無料のSTEM機会です。対象年齢は18+。詳細は情報源をご確認ください。",
+          "description": "TorontoのToronto Public Libraryによる無料のSTEM機会です。対象年齢は18+。詳細は情報源をご確認ください。",
+          "category": "STEM",
+          "cost": "無料リスト",
+          "tags": [
+            "STEM",
+            "AIとデジタルメディア"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "ko": {
+          "title": "Toronto에서 Toronto Public Library이 제공하는 무료 STEM 기회입니다",
+          "summary": "Toronto에서 Toronto Public Library이 제공하는 무료 STEM 기회입니다. 대상 나이는 18+입니다. 자세한 내용은 출처를 확인하세요.",
+          "description": "Toronto에서 Toronto Public Library이 제공하는 무료 STEM 기회입니다. 대상 나이는 18+입니다. 자세한 내용은 출처를 확인하세요.",
+          "category": "STEM",
+          "cost": "무료 목록",
+          "tags": [
+            "STEM",
+            "AI 및 디지털 미디어"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "hu": {
+          "title": "Ingyenes STEM lehetőség a(z) Toronto Public Library szervezőtől itt: Toronto",
+          "summary": "Ingyenes STEM lehetőség a(z) Toronto Public Library szervezőtől itt: Toronto. Korosztály: 18+. Részletekért nézd meg a forrást.",
+          "description": "Ingyenes STEM lehetőség a(z) Toronto Public Library szervezőtől itt: Toronto. Korosztály: 18+. Részletekért nézd meg a forrást.",
+          "category": "STEM",
+          "cost": "Ingyenes lista",
+          "tags": [
+            "STEM",
+            "MI es digitalis media"
+          ],
+          "translationSource": "generated-summary-template"
+        }
+      }
+    },
+    {
       "id": "tpl-rss-6a8dc7ad4cb69d003e233fb0",
       "title": "Computers for Beginners 1: Use the Mouse",
       "organization": "Toronto Public Library",
@@ -1614,8 +2125,8 @@
       "endDate": "2026-09-21T19:30:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a8dc7ad4cb69d003e233fb0",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a8dc7ad4cb69d003e233fb0",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "computer basics & office software",
@@ -1637,7 +2148,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a8dc7ad4cb69d003e233fb0",
-          "capturedAt": "2026-09-20T20:51:24.765Z",
+          "capturedAt": "2026-09-21T04:58:50.113Z",
           "confidence": "high"
         }
       ],
@@ -1871,8 +2382,8 @@
       "endDate": "2026-09-21T20:30:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/69fa2603e13d3b4603b35d81",
       "registrationUrl": "https://tpl.bibliocommons.com/events/69fa2603e13d3b4603b35d81",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "after school clubs",
@@ -1897,7 +2408,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/69fa2603e13d3b4603b35d81",
-          "capturedAt": "2026-09-20T20:51:24.765Z",
+          "capturedAt": "2026-09-21T04:58:50.113Z",
           "confidence": "high"
         }
       ],
@@ -2131,8 +2642,8 @@
       "endDate": "2026-09-21T20:30:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a84927e4c610f00389536dd",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a84927e4c610f00389536dd",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "after school clubs",
@@ -2157,7 +2668,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a84927e4c610f00389536dd",
-          "capturedAt": "2026-09-20T20:51:24.765Z",
+          "capturedAt": "2026-09-21T04:58:50.114Z",
           "confidence": "high"
         }
       ],
@@ -2391,8 +2902,8 @@
       "endDate": "2026-09-21T20:30:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a7b5dbef68ff70029b6f584",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a7b5dbef68ff70029b6f584",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "after school clubs",
@@ -2417,7 +2928,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a7b5dbef68ff70029b6f584",
-          "capturedAt": "2026-09-20T20:51:24.766Z",
+          "capturedAt": "2026-09-21T04:58:50.114Z",
           "confidence": "high"
         }
       ],
@@ -2651,8 +3162,8 @@
       "endDate": "2026-09-21T20:30:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a86136193b500003ff625df",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a86136193b500003ff625df",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "science & engineering",
@@ -2673,7 +3184,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a86136193b500003ff625df",
-          "capturedAt": "2026-09-20T20:51:24.766Z",
+          "capturedAt": "2026-09-21T04:58:50.114Z",
           "confidence": "high"
         }
       ],
@@ -2907,8 +3418,8 @@
       "endDate": "2026-09-21T20:30:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6aa81c42101eb7003f2ff00a",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6aa81c42101eb7003f2ff00a",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "crafts & hobbies",
@@ -2930,7 +3441,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6aa81c42101eb7003f2ff00a",
-          "capturedAt": "2026-09-20T20:51:25.398Z",
+          "capturedAt": "2026-09-21T04:58:50.820Z",
           "confidence": "high"
         }
       ],
@@ -3164,8 +3675,8 @@
       "endDate": "2026-09-21T20:45:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a60e4417b79214226aa5b2d",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a60e4417b79214226aa5b2d",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "crafts & hobbies",
@@ -3187,7 +3698,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a60e4417b79214226aa5b2d",
-          "capturedAt": "2026-09-20T20:51:25.398Z",
+          "capturedAt": "2026-09-21T04:58:50.820Z",
           "confidence": "high"
         }
       ],
@@ -3421,8 +3932,8 @@
       "endDate": "2026-09-21T20:45:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a80645c3f18f80030bb4993",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a80645c3f18f80030bb4993",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "coding & robotics",
@@ -3446,7 +3957,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a80645c3f18f80030bb4993",
-          "capturedAt": "2026-09-20T20:51:25.398Z",
+          "capturedAt": "2026-09-21T04:58:50.821Z",
           "confidence": "high"
         }
       ],
@@ -3680,8 +4191,8 @@
       "endDate": "2026-09-21T21:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a7f4f20aafa6100295c9ec7",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a7f4f20aafa6100295c9ec7",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "after school clubs",
@@ -3706,7 +4217,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a7f4f20aafa6100295c9ec7",
-          "capturedAt": "2026-09-20T20:51:25.399Z",
+          "capturedAt": "2026-09-21T04:58:50.821Z",
           "confidence": "high"
         }
       ],
@@ -3940,8 +4451,8 @@
       "endDate": "2026-09-21T21:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a83987daafa6100295d5292",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a83987daafa6100295d5292",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "after school clubs",
@@ -3964,7 +4475,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a83987daafa6100295d5292",
-          "capturedAt": "2026-09-20T20:51:25.399Z",
+          "capturedAt": "2026-09-21T04:58:50.822Z",
           "confidence": "high"
         }
       ],
@@ -4198,8 +4709,8 @@
       "endDate": "2026-09-21T21:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a84b5b8be14820029883659",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a84b5b8be14820029883659",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "after school clubs",
@@ -4222,7 +4733,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a84b5b8be14820029883659",
-          "capturedAt": "2026-09-20T20:51:25.399Z",
+          "capturedAt": "2026-09-21T04:58:50.822Z",
           "confidence": "high"
         }
       ],
@@ -4456,8 +4967,8 @@
       "endDate": "2026-09-21T21:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a847e622dac6e00371fe8a3",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a847e622dac6e00371fe8a3",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "after school clubs",
@@ -4480,7 +4991,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a847e622dac6e00371fe8a3",
-          "capturedAt": "2026-09-20T20:51:25.399Z",
+          "capturedAt": "2026-09-21T04:58:50.822Z",
           "confidence": "high"
         }
       ],
@@ -4714,8 +5225,8 @@
       "endDate": "2026-09-21T21:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a90a7624cb69d003e23de09",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a90a7624cb69d003e23de09",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "after school clubs",
@@ -4740,7 +5251,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a90a7624cb69d003e23de09",
-          "capturedAt": "2026-09-20T20:51:25.400Z",
+          "capturedAt": "2026-09-21T04:58:50.822Z",
           "confidence": "high"
         }
       ],
@@ -4974,8 +5485,8 @@
       "endDate": "2026-09-21T21:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a92fc73aafa61002960076e",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a92fc73aafa61002960076e",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "after school clubs",
@@ -5000,7 +5511,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a92fc73aafa61002960076e",
-          "capturedAt": "2026-09-20T20:51:25.400Z",
+          "capturedAt": "2026-09-21T04:58:50.823Z",
           "confidence": "high"
         }
       ],
@@ -5234,8 +5745,8 @@
       "endDate": "2026-09-21T21:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a85d2c44c610f00389552b6",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a85d2c44c610f00389552b6",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "coding & robotics",
@@ -5259,7 +5770,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a85d2c44c610f00389552b6",
-          "capturedAt": "2026-09-20T20:51:25.400Z",
+          "capturedAt": "2026-09-21T04:58:50.823Z",
           "confidence": "high"
         }
       ],
@@ -5493,8 +6004,8 @@
       "endDate": "2026-09-21T21:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a7b5e291401fd00606c0378",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a7b5e291401fd00606c0378",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "after school clubs",
@@ -5519,7 +6030,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a7b5e291401fd00606c0378",
-          "capturedAt": "2026-09-20T20:51:25.400Z",
+          "capturedAt": "2026-09-21T04:58:50.823Z",
           "confidence": "high"
         }
       ],
@@ -5731,10 +6242,10 @@
       }
     },
     {
-      "id": "tpl-rss-6a91f6a060ccaf01c021ca92",
-      "title": "Photoshop for Beginners",
+      "id": "tpl-rss-6a8c9ef1be1482002989b4a6",
+      "title": "Photo Editing with Photoshop (Advanced)",
       "organization": "Toronto Public Library",
-      "description": "Adobe Photoshop is the world’s best imaging and graphic design software and is at the core of just about every creative project, from photo editing and compositing to digital painting, animation, and graphic design. Join us for an introductory lesson and learn about the most common tools. We'll explore the workspace and enhance images while investigating tools such as crop, levels, colour balance and more. See how an image can be altered and repaired using patch tools such as the clone and healing brush tools. We'll also dive deep into the world of layers and how you can manage them for those really unique and fun projects. Registration is required. Information Collection Notice: The personal information on this form is collected by the Toronto Public Library under the Public Libraries Act, sections 20(a), 20(c), and 20(d). The information will only be used for event and program registration, delivery and evaluation. Questions about how the library handles your information can be directed to Answerline staff at answerline@tpl.ca , 416-397-5981, 789 Yonge Street, Toronto ON M4W 2G8.",
+      "description": "Adobe Photoshop is the world’s best imaging and graphic design software and is at the core of just about every creative project, from photo editing and compositing to digital painting, animation, and graphic design. This is an advanced class. Basic computer and photo editing skills required. Attendants must have an account to sign into Adobe Photoshop. It could be a google account, apple account, Facebook account, Instagram account or an account created by signing in to adobe.com. This is an in-person event, registration required via Eventbrite two weeks before. For safety reason, no child under 6 years old allowed in this program. Each child 6-12 years old should accompany with an adult. Please be noted that your spot will be taken by others if you failed to show up 5 mins after class begins. Information Collection Notice: The personal information on this form is collected by the Toronto Public Library under the Public Libraries Act, sections 20(a), 20(c), and 20(d). The information will only be used for event and program registration, delivery and evaluation. Questions about how the library handles your information can be directed to Answerline staff at answerline@tpl.ca , 416-397-5981, 789 Yonge Street, Toronto ON M4W 2G8.",
       "city": "Toronto",
       "region": "Toronto",
       "ageMin": 13,
@@ -5751,10 +6262,10 @@
       "deadline": "2026-09-21T21:30:00.000Z",
       "startDate": "2026-09-21T21:30:00.000Z",
       "endDate": "2026-09-21T23:00:00.000Z",
-      "sourceUrl": "https://tpl.bibliocommons.com/events/6a91f6a060ccaf01c021ca92",
-      "registrationUrl": "https://tpl.bibliocommons.com/events/6a91f6a060ccaf01c021ca92",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "sourceUrl": "https://tpl.bibliocommons.com/events/6a8c9ef1be1482002989b4a6",
+      "registrationUrl": "https://tpl.bibliocommons.com/events/6a8c9ef1be1482002989b4a6",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "audio & visual",
@@ -5766,17 +6277,17 @@
         "Open to all",
         "Newcomer-friendly"
       ],
-      "latitude": 43.7288401,
-      "longitude": -79.4820428,
-      "address": "Downsview, 2793 Keele Street, Toronto, ON, M3M 2G3",
+      "latitude": 43.7790599,
+      "longitude": -79.3468197,
+      "address": "Fairview, 35 Fairview Mall Drive, Toronto, ON, M2J 4S4",
       "volunteerHoursEligible": false,
       "coopEligible": false,
       "trustedSource": true,
       "sources": [
         {
           "label": "Official Toronto Public Library event page",
-          "url": "https://tpl.bibliocommons.com/events/6a91f6a060ccaf01c021ca92",
-          "capturedAt": "2026-09-20T20:51:26.305Z",
+          "url": "https://tpl.bibliocommons.com/events/6a8c9ef1be1482002989b4a6",
+          "capturedAt": "2026-09-21T04:58:51.465Z",
           "confidence": "high"
         }
       ],
@@ -6010,8 +6521,8 @@
       "endDate": "2026-09-21T22:30:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a764021c80d09476c93304c",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a764021c80d09476c93304c",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "3d printing",
@@ -6035,7 +6546,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a764021c80d09476c93304c",
-          "capturedAt": "2026-09-20T20:51:26.306Z",
+          "capturedAt": "2026-09-21T04:58:51.465Z",
           "confidence": "high"
         }
       ],
@@ -6268,8 +6779,8 @@
       "endDate": "2026-09-21T23:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a848cdfb20478002993b37c",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a848cdfb20478002993b37c",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "audio & visual",
@@ -6291,7 +6802,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a848cdfb20478002993b37c",
-          "capturedAt": "2026-09-20T20:51:26.306Z",
+          "capturedAt": "2026-09-21T04:58:51.465Z",
           "confidence": "high"
         }
       ],
@@ -6524,8 +7035,8 @@
       "endDate": "2026-09-22T00:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a8eee63db86e4004d8736e0",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a8eee63db86e4004d8736e0",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "computer basics & office software",
@@ -6546,7 +7057,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a8eee63db86e4004d8736e0",
-          "capturedAt": "2026-09-20T20:51:26.306Z",
+          "capturedAt": "2026-09-21T04:58:51.466Z",
           "confidence": "high"
         }
       ],
@@ -6758,6 +7269,266 @@
       }
     },
     {
+      "id": "tpl-rss-6a8c4ddf2dac6e003721420c",
+      "title": "Introduction to 3D Printing",
+      "organization": "Toronto Public Library",
+      "description": "Learn how 3D printers work and how you can print at the Toronto Public Library’s Digital Innovation Hubs. This class includes hands-on instruction with Prusa Slicer, the software used to prepare your 3D object file for printing on a Prusa MK3S+ & Prusa MK4S 3D printer. Note: Customers are no longer required to attend a mandatory 3D printing class prior to using a 3D printer at the Toronto Public Library’s Digital Innovation Hubs. This class is for those who are interested in learning more about 3D printing and how to use the Prusa software. Registration is required. Information Collection Notice: The personal information on this form is collected by the Toronto Public Library under the Public Libraries Act, sections 20(a), 20(c), and 20(d). The information will only be used for event and program registration, delivery and evaluation. Questions about how the library handles your information can be directed to Answerline staff at answerline@tpl.ca , 416-397-5981, 789 Yonge Street, Toronto ON M4W 2G8.",
+      "city": "Toronto",
+      "region": "Toronto",
+      "ageMin": 6,
+      "ageMax": 17,
+      "category": "Makerspace & Fabrication",
+      "categories": [
+        "STEM",
+        "Makerspace & Fabrication"
+      ],
+      "cost": "Free to join",
+      "language": [
+        "en"
+      ],
+      "deadline": "2026-09-22T17:00:00.000Z",
+      "startDate": "2026-09-22T17:00:00.000Z",
+      "endDate": "2026-09-22T18:00:00.000Z",
+      "sourceUrl": "https://tpl.bibliocommons.com/events/6a8c4ddf2dac6e003721420c",
+      "registrationUrl": "https://tpl.bibliocommons.com/events/6a8c4ddf2dac6e003721420c",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
+      "status": "active",
+      "tags": [
+        "3d printing",
+        "adults (18+)",
+        "older adults",
+        "school age children (6-12)",
+        "teens (13-17)",
+        "younger adults (18-24)",
+        "english"
+      ],
+      "communityFocus": [
+        "Open to all",
+        "Newcomer-friendly"
+      ],
+      "latitude": 43.7790599,
+      "longitude": -79.3468197,
+      "address": "Fairview, 35 Fairview Mall Drive, Toronto, ON, M2J 4S4",
+      "volunteerHoursEligible": false,
+      "coopEligible": false,
+      "trustedSource": true,
+      "sources": [
+        {
+          "label": "Official Toronto Public Library event page",
+          "url": "https://tpl.bibliocommons.com/events/6a8c4ddf2dac6e003721420c",
+          "capturedAt": "2026-09-21T04:58:52.391Z",
+          "confidence": "high"
+        }
+      ],
+      "translations": {
+        "fr": {
+          "title": "Occasion gratuite de STEM offerte par Toronto Public Library a Toronto",
+          "summary": "Occasion gratuite de STEM offerte par Toronto Public Library a Toronto. Ages 6-17. Consultez la source pour les details.",
+          "description": "Occasion gratuite de STEM offerte par Toronto Public Library a Toronto. Ages 6-17. Consultez la source pour les details.",
+          "category": "STEM",
+          "cost": "Fiche gratuite",
+          "tags": [
+            "STEM",
+            "Atelier de creation et fabrication"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "zh": {
+          "title": "Toronto Public Library在Toronto提供免费的STEM机会。适合6-17岁。请查看来源了解详情。",
+          "summary": "Toronto Public Library在Toronto提供免费的STEM机会。适合6-17岁。请查看来源了解详情。",
+          "description": "Toronto Public Library在Toronto提供免费的STEM机会。适合6-17岁。请查看来源了解详情。",
+          "category": "STEM",
+          "cost": "免费列表",
+          "tags": [
+            "STEM",
+            "创客空间与制作"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "yue": {
+          "title": "Toronto Public Library喺Toronto提供免費STEM機會。適合6-17歲。請查看來源了解詳情。",
+          "summary": "Toronto Public Library喺Toronto提供免費STEM機會。適合6-17歲。請查看來源了解詳情。",
+          "description": "Toronto Public Library喺Toronto提供免費STEM機會。適合6-17歲。請查看來源了解詳情。",
+          "category": "STEM",
+          "cost": "免費項目",
+          "tags": [
+            "STEM",
+            "創客空間同製作"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "pa": {
+          "title": "Toronto Public Library ਵੱਲੋਂ Toronto ਵਿੱਚ ਮੁਫ਼ਤ STEM ਮੌਕਾ। ਉਮਰ 6-17",
+          "summary": "Toronto Public Library ਵੱਲੋਂ Toronto ਵਿੱਚ ਮੁਫ਼ਤ STEM ਮੌਕਾ। ਉਮਰ 6-17. ਵੇਰਵਿਆਂ ਲਈ ਸਰੋਤ ਵੇਖੋ।",
+          "description": "Toronto Public Library ਵੱਲੋਂ Toronto ਵਿੱਚ ਮੁਫ਼ਤ STEM ਮੌਕਾ। ਉਮਰ 6-17. ਵੇਰਵਿਆਂ ਲਈ ਸਰੋਤ ਵੇਖੋ।",
+          "category": "STEM",
+          "cost": "ਮੁਫ਼ਤ ਲਿਸਟਿੰਗ",
+          "tags": [
+            "STEM",
+            "ਮੇਕਰਸਪੇਸ ਅਤੇ ਫੈਬਰਿਕੇਸ਼ਨ"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "ur": {
+          "title": "Toronto میں Toronto Public Library کی طرف سے مفت STEM موقع۔ عمر 6-17",
+          "summary": "Toronto میں Toronto Public Library کی طرف سے مفت STEM موقع۔ عمر 6-17. تفصیلات کے لیے ذریعہ دیکھیں۔",
+          "description": "Toronto میں Toronto Public Library کی طرف سے مفت STEM موقع۔ عمر 6-17. تفصیلات کے لیے ذریعہ دیکھیں۔",
+          "category": "STEM",
+          "cost": "مفت لسٹنگ",
+          "tags": [
+            "STEM",
+            "میکر اسپیس اور تیاری"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "ta": {
+          "title": "Toronto நகரில் Toronto Public Library வழங்கும் இலவச STEM வாய்ப்பு",
+          "summary": "Toronto நகரில் Toronto Public Library வழங்கும் இலவச STEM வாய்ப்பு. வயது 6-17. விவரங்களுக்கு மூலத்தை பார்க்கவும்.",
+          "description": "Toronto நகரில் Toronto Public Library வழங்கும் இலவச STEM வாய்ப்பு. வயது 6-17. விவரங்களுக்கு மூலத்தை பார்க்கவும்.",
+          "category": "STEM",
+          "cost": "இலவச பட்டியல்",
+          "tags": [
+            "STEM",
+            "மேக்கர்ஸ்பேஸ் மற்றும் தயாரிப்பு"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "tl": {
+          "title": "Libreng STEM opportunity mula sa Toronto Public Library sa Toronto",
+          "summary": "Libreng STEM opportunity mula sa Toronto Public Library sa Toronto. Edad 6-17. Tingnan ang source para sa detalye.",
+          "description": "Libreng STEM opportunity mula sa Toronto Public Library sa Toronto. Edad 6-17. Tingnan ang source para sa detalye.",
+          "category": "STEM",
+          "cost": "Libreng listing",
+          "tags": [
+            "STEM",
+            "Makerspace at paggawa"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "es": {
+          "title": "Oportunidad gratis de STEM de Toronto Public Library en Toronto",
+          "summary": "Oportunidad gratis de STEM de Toronto Public Library en Toronto. Edades 6-17. Revise la fuente para detalles.",
+          "description": "Oportunidad gratis de STEM de Toronto Public Library en Toronto. Edades 6-17. Revise la fuente para detalles.",
+          "category": "STEM",
+          "cost": "Listado gratis",
+          "tags": [
+            "STEM",
+            "Makerspace y fabricacion"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "ar": {
+          "title": "فرصة STEM مجانية من Toronto Public Library في Toronto",
+          "summary": "فرصة STEM مجانية من Toronto Public Library في Toronto. الأعمار 6-17. راجع المصدر للتفاصيل.",
+          "description": "فرصة STEM مجانية من Toronto Public Library في Toronto. الأعمار 6-17. راجع المصدر للتفاصيل.",
+          "category": "STEM",
+          "cost": "قائمة مجانية",
+          "tags": [
+            "STEM",
+            "مساحات الابتكار والتصنيع"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "fa": {
+          "title": "فرصت رایگان STEM از Toronto Public Library در Toronto",
+          "summary": "فرصت رایگان STEM از Toronto Public Library در Toronto. سنین 6-17. برای جزئیات منبع را بررسی کنید.",
+          "description": "فرصت رایگان STEM از Toronto Public Library در Toronto. سنین 6-17. برای جزئیات منبع را بررسی کنید.",
+          "category": "STEM",
+          "cost": "فهرست رایگان",
+          "tags": [
+            "STEM",
+            "فضای ساخت و تولید"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "hi": {
+          "title": "Toronto में Toronto Public Library की मुफ्त STEM opportunity",
+          "summary": "Toronto में Toronto Public Library की मुफ्त STEM opportunity. उम्र 6-17. Details के लिए source देखें.",
+          "description": "Toronto में Toronto Public Library की मुफ्त STEM opportunity. उम्र 6-17. Details के लिए source देखें.",
+          "category": "STEM",
+          "cost": "Free listing",
+          "tags": [
+            "STEM",
+            "मेकरस्पेस और निर्माण"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "pt": {
+          "title": "Oportunidade gratuita de STEM da Toronto Public Library em Toronto",
+          "summary": "Oportunidade gratuita de STEM da Toronto Public Library em Toronto. Idades 6-17. Veja a fonte para detalhes.",
+          "description": "Oportunidade gratuita de STEM da Toronto Public Library em Toronto. Idades 6-17. Veja a fonte para detalhes.",
+          "category": "STEM",
+          "cost": "Lista gratuita",
+          "tags": [
+            "STEM",
+            "Makerspace e fabricacao"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "gu": {
+          "title": "Toronto માં Toronto Public Library તરફથી મફત STEM તક",
+          "summary": "Toronto માં Toronto Public Library તરફથી મફત STEM તક. ઉંમર 6-17. વિગત માટે સ્રોત જુઓ.",
+          "description": "Toronto માં Toronto Public Library તરફથી મફત STEM તક. ઉંમર 6-17. વિગત માટે સ્રોત જુઓ.",
+          "category": "STEM",
+          "cost": "મફત લિસ્ટિંગ",
+          "tags": [
+            "STEM",
+            "મેકરસ્પેસ અને બનાવટ"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "bn": {
+          "title": "Toronto-এ Toronto Public Library এর ফ্রি STEM opportunity",
+          "summary": "Toronto-এ Toronto Public Library এর ফ্রি STEM opportunity. বয়স 6-17. বিস্তারিত জানতে উৎস দেখুন.",
+          "description": "Toronto-এ Toronto Public Library এর ফ্রি STEM opportunity. বয়স 6-17. বিস্তারিত জানতে উৎস দেখুন.",
+          "category": "STEM",
+          "cost": "ফ্রি তালিকা",
+          "tags": [
+            "STEM",
+            "মেকারস্পেস ও তৈরি"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "ja": {
+          "title": "TorontoのToronto Public Libraryによる無料のSTEM機会です。対象年齢は6-17。詳細は情報源をご確認ください。",
+          "summary": "TorontoのToronto Public Libraryによる無料のSTEM機会です。対象年齢は6-17。詳細は情報源をご確認ください。",
+          "description": "TorontoのToronto Public Libraryによる無料のSTEM機会です。対象年齢は6-17。詳細は情報源をご確認ください。",
+          "category": "STEM",
+          "cost": "無料リスト",
+          "tags": [
+            "STEM",
+            "メイカースペースと製作"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "ko": {
+          "title": "Toronto에서 Toronto Public Library이 제공하는 무료 STEM 기회입니다",
+          "summary": "Toronto에서 Toronto Public Library이 제공하는 무료 STEM 기회입니다. 대상 나이는 6-17입니다. 자세한 내용은 출처를 확인하세요.",
+          "description": "Toronto에서 Toronto Public Library이 제공하는 무료 STEM 기회입니다. 대상 나이는 6-17입니다. 자세한 내용은 출처를 확인하세요.",
+          "category": "STEM",
+          "cost": "무료 목록",
+          "tags": [
+            "STEM",
+            "메이커스페이스 및 제작"
+          ],
+          "translationSource": "generated-summary-template"
+        },
+        "hu": {
+          "title": "Ingyenes STEM lehetőség a(z) Toronto Public Library szervezőtől itt: Toronto",
+          "summary": "Ingyenes STEM lehetőség a(z) Toronto Public Library szervezőtől itt: Toronto. Korosztály: 6-17. Részletekért nézd meg a forrást.",
+          "description": "Ingyenes STEM lehetőség a(z) Toronto Public Library szervezőtől itt: Toronto. Korosztály: 6-17. Részletekért nézd meg a forrást.",
+          "category": "STEM",
+          "cost": "Ingyenes lista",
+          "tags": [
+            "STEM",
+            "Alkotomuhely es gyartas"
+          ],
+          "translationSource": "generated-summary-template"
+        }
+      }
+    },
+    {
       "id": "tpl-rss-6a7f203ea821f90037edc2ce",
       "title": "Computers for Beginners 4: Use Google Search and Maps",
       "organization": "Toronto Public Library",
@@ -6779,8 +7550,8 @@
       "endDate": "2026-09-22T19:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a7f203ea821f90037edc2ce",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a7f203ea821f90037edc2ce",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "computer basics & office software",
@@ -6802,7 +7573,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a7f203ea821f90037edc2ce",
-          "capturedAt": "2026-09-20T20:51:27.335Z",
+          "capturedAt": "2026-09-21T04:58:52.391Z",
           "confidence": "high"
         }
       ],
@@ -7035,8 +7806,8 @@
       "endDate": "2026-09-22T19:30:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a2afd9cf56bd86e00b61dda",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a2afd9cf56bd86e00b61dda",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "let’s learn tech",
@@ -7058,7 +7829,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a2afd9cf56bd86e00b61dda",
-          "capturedAt": "2026-09-20T20:51:27.336Z",
+          "capturedAt": "2026-09-21T04:58:52.392Z",
           "confidence": "high"
         }
       ],
@@ -7291,8 +8062,8 @@
       "endDate": "2026-09-22T19:30:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a9073a658433600542b8926",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a9073a658433600542b8926",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "computer basics & office software",
@@ -7314,7 +8085,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a9073a658433600542b8926",
-          "capturedAt": "2026-09-20T20:51:27.336Z",
+          "capturedAt": "2026-09-21T04:58:52.392Z",
           "confidence": "high"
         }
       ],
@@ -7547,8 +8318,8 @@
       "endDate": "2026-09-22T19:30:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6aa177a94b3b060030827937",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6aa177a94b3b060030827937",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "computer basics & office software",
@@ -7570,7 +8341,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6aa177a94b3b060030827937",
-          "capturedAt": "2026-09-20T20:51:27.336Z",
+          "capturedAt": "2026-09-21T04:58:52.392Z",
           "confidence": "high"
         }
       ],
@@ -7804,8 +8575,8 @@
       "endDate": "2026-09-22T23:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a888a1bfeae960038072b55",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a888a1bfeae960038072b55",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "crafts & hobbies",
@@ -7826,7 +8597,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a888a1bfeae960038072b55",
-          "capturedAt": "2026-09-20T20:51:27.787Z",
+          "capturedAt": "2026-09-21T04:58:52.886Z",
           "confidence": "high"
         }
       ],
@@ -8060,8 +8831,8 @@
       "endDate": "2026-09-22T20:30:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a90b4d8be148200298a9766",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a90b4d8be148200298a9766",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "after school clubs",
@@ -8084,7 +8855,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a90b4d8be148200298a9766",
-          "capturedAt": "2026-09-20T20:51:27.787Z",
+          "capturedAt": "2026-09-21T04:58:52.887Z",
           "confidence": "high"
         }
       ],
@@ -8318,8 +9089,8 @@
       "endDate": "2026-09-22T21:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a7cbe654cb69d003e2060f7",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a7cbe654cb69d003e2060f7",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "crafts & hobbies",
@@ -8341,7 +9112,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a7cbe654cb69d003e2060f7",
-          "capturedAt": "2026-09-20T20:51:27.787Z",
+          "capturedAt": "2026-09-21T04:58:52.887Z",
           "confidence": "high"
         }
       ],
@@ -8575,8 +9346,8 @@
       "endDate": "2026-09-22T20:45:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a8f14ba0116850960382e39",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a8f14ba0116850960382e39",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "after school clubs",
@@ -8601,7 +9372,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a8f14ba0116850960382e39",
-          "capturedAt": "2026-09-20T20:51:27.787Z",
+          "capturedAt": "2026-09-21T04:58:52.887Z",
           "confidence": "high"
         }
       ],
@@ -8835,8 +9606,8 @@
       "endDate": "2026-09-22T20:45:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a7d04481401fd00606c3073",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a7d04481401fd00606c3073",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "after school clubs",
@@ -8860,7 +9631,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a7d04481401fd00606c3073",
-          "capturedAt": "2026-09-20T20:51:27.788Z",
+          "capturedAt": "2026-09-21T04:58:52.887Z",
           "confidence": "high"
         }
       ],
@@ -9094,8 +9865,8 @@
       "endDate": "2026-09-22T21:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a848f4e2f41840bbfc2ebd2",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a848f4e2f41840bbfc2ebd2",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "after school clubs",
@@ -9120,7 +9891,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a848f4e2f41840bbfc2ebd2",
-          "capturedAt": "2026-09-20T20:51:27.788Z",
+          "capturedAt": "2026-09-21T04:58:52.887Z",
           "confidence": "high"
         }
       ],
@@ -9354,8 +10125,8 @@
       "endDate": "2026-09-22T21:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a9311651c197d11325bb330",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a9311651c197d11325bb330",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "after school clubs",
@@ -9380,7 +10151,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a9311651c197d11325bb330",
-          "capturedAt": "2026-09-20T20:51:27.788Z",
+          "capturedAt": "2026-09-21T04:58:52.888Z",
           "confidence": "high"
         }
       ],
@@ -9614,8 +10385,8 @@
       "endDate": "2026-09-22T21:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a88969265b929006b169dc9",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a88969265b929006b169dc9",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "coding & robotics",
@@ -9639,7 +10410,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a88969265b929006b169dc9",
-          "capturedAt": "2026-09-20T20:51:27.788Z",
+          "capturedAt": "2026-09-21T04:58:52.888Z",
           "confidence": "high"
         }
       ],
@@ -9873,8 +10644,8 @@
       "endDate": "2026-09-22T21:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a6cb73374e3b8b75db66935",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a6cb73374e3b8b75db66935",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "culture, arts & entertainment",
@@ -9896,7 +10667,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a6cb73374e3b8b75db66935",
-          "capturedAt": "2026-09-20T20:51:28.573Z",
+          "capturedAt": "2026-09-21T04:58:53.444Z",
           "confidence": "high"
         }
       ],
@@ -10130,8 +10901,8 @@
       "endDate": "2026-09-22T21:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a85f7f3be14820029888297",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a85f7f3be14820029888297",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "science & engineering",
@@ -10152,7 +10923,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a85f7f3be14820029888297",
-          "capturedAt": "2026-09-20T20:51:28.573Z",
+          "capturedAt": "2026-09-21T04:58:53.444Z",
           "confidence": "high"
         }
       ],
@@ -10386,8 +11157,8 @@
       "endDate": "2026-09-22T21:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a89e62436204e08fbb65af5",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a89e62436204e08fbb65af5",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "crafts & hobbies",
@@ -10409,7 +11180,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a89e62436204e08fbb65af5",
-          "capturedAt": "2026-09-20T20:51:28.573Z",
+          "capturedAt": "2026-09-21T04:58:53.444Z",
           "confidence": "high"
         }
       ],
@@ -10643,8 +11414,8 @@
       "endDate": "2026-09-22T21:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a8c440329a7dd0d67461d81",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a8c440329a7dd0d67461d81",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "after school clubs",
@@ -10669,7 +11440,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a8c440329a7dd0d67461d81",
-          "capturedAt": "2026-09-20T20:51:28.573Z",
+          "capturedAt": "2026-09-21T04:58:53.444Z",
           "confidence": "high"
         }
       ],
@@ -10903,8 +11674,8 @@
       "endDate": "2026-09-22T21:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a8e1b6757c264087ad3c9f5",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a8e1b6757c264087ad3c9f5",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "after school clubs",
@@ -10926,7 +11697,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a8e1b6757c264087ad3c9f5",
-          "capturedAt": "2026-09-20T20:51:28.574Z",
+          "capturedAt": "2026-09-21T04:58:53.445Z",
           "confidence": "high"
         }
       ],
@@ -11160,8 +11931,8 @@
       "endDate": "2026-09-22T21:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a88a6614cb69d003e2261e0",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a88a6614cb69d003e2261e0",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "after school clubs",
@@ -11186,7 +11957,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a88a6614cb69d003e2261e0",
-          "capturedAt": "2026-09-20T20:51:28.574Z",
+          "capturedAt": "2026-09-21T04:58:53.445Z",
           "confidence": "high"
         }
       ],
@@ -11420,8 +12191,8 @@
       "endDate": "2026-09-22T21:30:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a7e541b452bb101b57511cc",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a7e541b452bb101b57511cc",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "after school clubs",
@@ -11446,7 +12217,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a7e541b452bb101b57511cc",
-          "capturedAt": "2026-09-20T20:51:28.574Z",
+          "capturedAt": "2026-09-21T04:58:53.445Z",
           "confidence": "high"
         }
       ],
@@ -11680,8 +12451,8 @@
       "endDate": "2026-09-22T22:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a7a19450d65ac360045bede",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a7a19450d65ac360045bede",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "coding & robotics",
@@ -11702,7 +12473,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a7a19450d65ac360045bede",
-          "capturedAt": "2026-09-20T20:51:28.575Z",
+          "capturedAt": "2026-09-21T04:58:53.446Z",
           "confidence": "high"
         }
       ],
@@ -11935,8 +12706,8 @@
       "endDate": "2026-09-23T00:30:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a7336b04523092f0034e111",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a7336b04523092f0034e111",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "artificial intelligence",
@@ -11957,7 +12728,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a7336b04523092f0034e111",
-          "capturedAt": "2026-09-20T20:51:28.575Z",
+          "capturedAt": "2026-09-21T04:58:53.446Z",
           "confidence": "high"
         }
       ],
@@ -12191,8 +12962,8 @@
       "endDate": "2026-09-23T00:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a7b995760ccaf01c01d8c96",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a7b995760ccaf01c01d8c96",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "pop up learning labs",
@@ -12215,7 +12986,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a7b995760ccaf01c01d8c96",
-          "capturedAt": "2026-09-20T20:51:28.575Z",
+          "capturedAt": "2026-09-21T04:58:53.446Z",
           "confidence": "high"
         }
       ],
@@ -12448,8 +13219,8 @@
       "endDate": "2026-09-23T00:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a972e7369166f088b968dba",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a972e7369166f088b968dba",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "pop up learning labs",
@@ -12473,7 +13244,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a972e7369166f088b968dba",
-          "capturedAt": "2026-09-20T20:51:29.183Z",
+          "capturedAt": "2026-09-21T04:58:54.038Z",
           "confidence": "high"
         }
       ],
@@ -12707,8 +13478,8 @@
       "endDate": "2026-09-22T23:30:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a7e54b83f18f80030baff8e",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a7e54b83f18f80030baff8e",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "pop up learning labs",
@@ -12731,7 +13502,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a7e54b83f18f80030baff8e",
-          "capturedAt": "2026-09-20T20:51:29.183Z",
+          "capturedAt": "2026-09-21T04:58:54.038Z",
           "confidence": "high"
         }
       ],
@@ -12964,8 +13735,8 @@
       "endDate": "2026-09-22T23:30:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a84cb893b6c71003e59c174",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a84cb893b6c71003e59c174",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "book clubs",
@@ -12987,7 +13758,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a84cb893b6c71003e59c174",
-          "capturedAt": "2026-09-20T20:51:29.183Z",
+          "capturedAt": "2026-09-21T04:58:54.039Z",
           "confidence": "high"
         }
       ],
@@ -13221,8 +13992,8 @@
       "endDate": "2026-09-22T23:15:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a83a10e4cb69d003e217b07",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a83a10e4cb69d003e217b07",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "coding & robotics",
@@ -13244,7 +14015,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a83a10e4cb69d003e217b07",
-          "capturedAt": "2026-09-20T20:51:29.183Z",
+          "capturedAt": "2026-09-21T04:58:54.039Z",
           "confidence": "high"
         }
       ],
@@ -13477,8 +14248,8 @@
       "endDate": "2026-09-23T16:00:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a73375d4523092f0034e125",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a73375d4523092f0034e125",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "artificial intelligence",
@@ -13499,7 +14270,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a73375d4523092f0034e125",
-          "capturedAt": "2026-09-20T20:51:29.184Z",
+          "capturedAt": "2026-09-21T04:58:54.040Z",
           "confidence": "high"
         }
       ],
@@ -13732,8 +14503,8 @@
       "endDate": "2026-09-23T19:30:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a7a25ddc7e02e3d006f46b1",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a7a25ddc7e02e3d006f46b1",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "computer basics & office software",
@@ -13755,7 +14526,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a7a25ddc7e02e3d006f46b1",
-          "capturedAt": "2026-09-20T20:51:30.200Z",
+          "capturedAt": "2026-09-21T04:58:55.089Z",
           "confidence": "high"
         }
       ],
@@ -13988,8 +14759,8 @@
       "endDate": "2026-09-23T19:30:00.000Z",
       "sourceUrl": "https://tpl.bibliocommons.com/events/6a8f2182aafa6100295f4e29",
       "registrationUrl": "https://tpl.bibliocommons.com/events/6a8f2182aafa6100295f4e29",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "computer basics & office software",
@@ -14011,7 +14782,7 @@
         {
           "label": "Official Toronto Public Library event page",
           "url": "https://tpl.bibliocommons.com/events/6a8f2182aafa6100295f4e29",
-          "capturedAt": "2026-09-20T20:51:30.201Z",
+          "capturedAt": "2026-09-21T04:58:55.089Z",
           "confidence": "high"
         }
       ],
@@ -14245,8 +15016,8 @@
       "endDate": "2026-09-23T23:30:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/692dbdf9d923da4200b317a8",
       "registrationUrl": "https://markham.bibliocommons.com/events/692dbdf9d923da4200b317a8",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "steam",
@@ -14267,7 +15038,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/692dbdf9d923da4200b317a8",
-          "capturedAt": "2026-09-20T20:51:31.021Z",
+          "capturedAt": "2026-09-21T04:58:56.020Z",
           "confidence": "high"
         }
       ],
@@ -14500,8 +15271,8 @@
       "endDate": "2026-09-26T15:30:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/6a5cc712a41369ab2c670fb6",
       "registrationUrl": "https://markham.bibliocommons.com/events/6a5cc712a41369ab2c670fb6",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "newcomer",
@@ -14523,7 +15294,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a5cc712a41369ab2c670fb6",
-          "capturedAt": "2026-09-20T20:51:31.396Z",
+          "capturedAt": "2026-09-21T04:58:56.363Z",
           "confidence": "high"
         }
       ],
@@ -14757,8 +15528,8 @@
       "endDate": "2026-09-26T16:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/68fbd36ee647c8ff0c38729d",
       "registrationUrl": "https://markham.bibliocommons.com/events/68fbd36ee647c8ff0c38729d",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "steam",
@@ -14779,7 +15550,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbd36ee647c8ff0c38729d",
-          "capturedAt": "2026-09-20T20:51:31.398Z",
+          "capturedAt": "2026-09-21T04:58:56.364Z",
           "confidence": "high"
         }
       ],
@@ -15013,8 +15784,8 @@
       "endDate": "2026-09-26T16:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/68fbe20064ad59251cb9d9a2",
       "registrationUrl": "https://markham.bibliocommons.com/events/68fbe20064ad59251cb9d9a2",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "steam",
@@ -15035,7 +15806,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe20064ad59251cb9d9a2",
-          "capturedAt": "2026-09-20T20:51:31.398Z",
+          "capturedAt": "2026-09-21T04:58:56.364Z",
           "confidence": "high"
         }
       ],
@@ -15269,8 +16040,8 @@
       "endDate": "2026-09-26T16:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/68fbe0e82edc686d00f5c8a8",
       "registrationUrl": "https://markham.bibliocommons.com/events/68fbe0e82edc686d00f5c8a8",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "steam",
@@ -15291,7 +16062,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe0e82edc686d00f5c8a8",
-          "capturedAt": "2026-09-20T20:51:31.398Z",
+          "capturedAt": "2026-09-21T04:58:56.364Z",
           "confidence": "high"
         }
       ],
@@ -15525,8 +16296,8 @@
       "endDate": "2026-09-26T16:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/68fbe12275911f28001a2542",
       "registrationUrl": "https://markham.bibliocommons.com/events/68fbe12275911f28001a2542",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "creative expression",
@@ -15548,7 +16319,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe12275911f28001a2542",
-          "capturedAt": "2026-09-20T20:51:31.398Z",
+          "capturedAt": "2026-09-21T04:58:56.364Z",
           "confidence": "high"
         }
       ],
@@ -15782,8 +16553,8 @@
       "endDate": "2026-09-26T16:30:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/68fbe0cde647c8ff0c38743a",
       "registrationUrl": "https://markham.bibliocommons.com/events/68fbe0cde647c8ff0c38743a",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "steam",
@@ -15804,7 +16575,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe0cde647c8ff0c38743a",
-          "capturedAt": "2026-09-20T20:51:31.398Z",
+          "capturedAt": "2026-09-21T04:58:56.364Z",
           "confidence": "high"
         }
       ],
@@ -16038,8 +16809,8 @@
       "endDate": "2026-09-26T20:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/68fbe0a50176055300fe8159",
       "registrationUrl": "https://markham.bibliocommons.com/events/68fbe0a50176055300fe8159",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "steam",
@@ -16060,7 +16831,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe0a50176055300fe8159",
-          "capturedAt": "2026-09-20T20:51:31.398Z",
+          "capturedAt": "2026-09-21T04:58:56.364Z",
           "confidence": "high"
         }
       ],
@@ -16294,8 +17065,8 @@
       "endDate": "2026-09-27T19:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/68fbe1952edc686d00f5c979",
       "registrationUrl": "https://markham.bibliocommons.com/events/68fbe1952edc686d00f5c979",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "steam",
@@ -16316,7 +17087,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe1952edc686d00f5c979",
-          "capturedAt": "2026-09-20T20:51:31.929Z",
+          "capturedAt": "2026-09-21T04:58:56.788Z",
           "confidence": "high"
         }
       ],
@@ -16550,8 +17321,8 @@
       "endDate": "2026-09-27T19:30:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/68fbe07a2edc686d00f5c872",
       "registrationUrl": "https://markham.bibliocommons.com/events/68fbe07a2edc686d00f5c872",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "steam",
@@ -16572,7 +17343,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe07a2edc686d00f5c872",
-          "capturedAt": "2026-09-20T20:51:31.929Z",
+          "capturedAt": "2026-09-21T04:58:56.788Z",
           "confidence": "high"
         }
       ],
@@ -16806,8 +17577,8 @@
       "endDate": "2026-09-28T16:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/6a888de64cb69d003e225614",
       "registrationUrl": "https://markham.bibliocommons.com/events/6a888de64cb69d003e225614",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "lifelong learning",
@@ -16828,7 +17599,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a888de64cb69d003e225614",
-          "capturedAt": "2026-09-20T20:51:31.930Z",
+          "capturedAt": "2026-09-21T04:58:56.788Z",
           "confidence": "high"
         }
       ],
@@ -17061,8 +17832,8 @@
       "endDate": "2026-09-28T16:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/6a062a9e46d5f64f7dcbbd61",
       "registrationUrl": "https://markham.bibliocommons.com/events/6a062a9e46d5f64f7dcbbd61",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "digital innovation month",
@@ -17085,7 +17856,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a062a9e46d5f64f7dcbbd61",
-          "capturedAt": "2026-09-20T20:51:31.930Z",
+          "capturedAt": "2026-09-21T04:58:56.788Z",
           "confidence": "high"
         }
       ],
@@ -17319,8 +18090,8 @@
       "endDate": "2026-09-30T23:30:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/692dbdf9d923da4200b317a9",
       "registrationUrl": "https://markham.bibliocommons.com/events/692dbdf9d923da4200b317a9",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "steam",
@@ -17341,7 +18112,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/692dbdf9d923da4200b317a9",
-          "capturedAt": "2026-09-20T20:51:32.347Z",
+          "capturedAt": "2026-09-21T04:58:57.115Z",
           "confidence": "high"
         }
       ],
@@ -17574,8 +18345,8 @@
       "endDate": "2026-09-30T23:30:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/6a062a71c7d3cd5800594377",
       "registrationUrl": "https://markham.bibliocommons.com/events/6a062a71c7d3cd5800594377",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "makerspace",
@@ -17596,7 +18367,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a062a71c7d3cd5800594377",
-          "capturedAt": "2026-09-20T20:51:32.347Z",
+          "capturedAt": "2026-09-21T04:58:57.115Z",
           "confidence": "high"
         }
       ],
@@ -17829,8 +18600,8 @@
       "endDate": "2026-10-01T00:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/68fbdb930176055300fe7fec",
       "registrationUrl": "https://markham.bibliocommons.com/events/68fbdb930176055300fe7fec",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "digital innovation month",
@@ -17854,7 +18625,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbdb930176055300fe7fec",
-          "capturedAt": "2026-09-20T20:51:32.347Z",
+          "capturedAt": "2026-09-21T04:58:57.115Z",
           "confidence": "high"
         }
       ],
@@ -18087,8 +18858,8 @@
       "endDate": "2026-10-01T19:30:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/6a67e529f213992f00c78e87",
       "registrationUrl": "https://markham.bibliocommons.com/events/6a67e529f213992f00c78e87",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "digital innovation month",
@@ -18111,7 +18882,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a67e529f213992f00c78e87",
-          "capturedAt": "2026-09-20T20:51:32.347Z",
+          "capturedAt": "2026-09-21T04:58:57.115Z",
           "confidence": "high"
         }
       ],
@@ -18344,8 +19115,8 @@
       "endDate": "2026-10-01T20:45:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/6a67a4a99943bdf31ea1f1a7",
       "registrationUrl": "https://markham.bibliocommons.com/events/6a67a4a99943bdf31ea1f1a7",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "digital innovation month",
@@ -18369,7 +19140,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a67a4a99943bdf31ea1f1a7",
-          "capturedAt": "2026-09-20T20:51:32.348Z",
+          "capturedAt": "2026-09-21T04:58:57.116Z",
           "confidence": "high"
         }
       ],
@@ -18602,8 +19373,8 @@
       "endDate": "2026-10-03T15:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/6a67a7349943bdf31ea1f229",
       "registrationUrl": "https://markham.bibliocommons.com/events/6a67a7349943bdf31ea1f229",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "digital innovation month",
@@ -18626,7 +19397,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a67a7349943bdf31ea1f229",
-          "capturedAt": "2026-09-20T20:51:32.714Z",
+          "capturedAt": "2026-09-21T04:58:57.465Z",
           "confidence": "high"
         }
       ],
@@ -18859,8 +19630,8 @@
       "endDate": "2026-10-03T15:30:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/6a5fa9e7a41369ab2c679f4c",
       "registrationUrl": "https://markham.bibliocommons.com/events/6a5fa9e7a41369ab2c679f4c",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "digital innovation month",
@@ -18884,7 +19655,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a5fa9e7a41369ab2c679f4c",
-          "capturedAt": "2026-09-20T20:51:32.714Z",
+          "capturedAt": "2026-09-21T04:58:57.465Z",
           "confidence": "high"
         }
       ],
@@ -19118,8 +19889,8 @@
       "endDate": "2026-10-03T16:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/68fbd36ee647c8ff0c38729e",
       "registrationUrl": "https://markham.bibliocommons.com/events/68fbd36ee647c8ff0c38729e",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "steam",
@@ -19140,7 +19911,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbd36ee647c8ff0c38729e",
-          "capturedAt": "2026-09-20T20:51:32.714Z",
+          "capturedAt": "2026-09-21T04:58:57.465Z",
           "confidence": "high"
         }
       ],
@@ -19374,8 +20145,8 @@
       "endDate": "2026-10-03T16:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/68fbe20064ad59251cb9d9a3",
       "registrationUrl": "https://markham.bibliocommons.com/events/68fbe20064ad59251cb9d9a3",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "steam",
@@ -19396,7 +20167,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe20064ad59251cb9d9a3",
-          "capturedAt": "2026-09-20T20:51:32.714Z",
+          "capturedAt": "2026-09-21T04:58:57.465Z",
           "confidence": "high"
         }
       ],
@@ -19630,8 +20401,8 @@
       "endDate": "2026-10-03T16:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/68fbe0e82edc686d00f5c8a9",
       "registrationUrl": "https://markham.bibliocommons.com/events/68fbe0e82edc686d00f5c8a9",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "steam",
@@ -19652,7 +20423,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe0e82edc686d00f5c8a9",
-          "capturedAt": "2026-09-20T20:51:32.714Z",
+          "capturedAt": "2026-09-21T04:58:57.465Z",
           "confidence": "high"
         }
       ],
@@ -19886,8 +20657,8 @@
       "endDate": "2026-10-03T16:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/68fbe12275911f28001a2543",
       "registrationUrl": "https://markham.bibliocommons.com/events/68fbe12275911f28001a2543",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "creative expression",
@@ -19909,7 +20680,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe12275911f28001a2543",
-          "capturedAt": "2026-09-20T20:51:32.715Z",
+          "capturedAt": "2026-09-21T04:58:57.465Z",
           "confidence": "high"
         }
       ],
@@ -20143,8 +20914,8 @@
       "endDate": "2026-10-03T16:30:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/68fbe0cde647c8ff0c38743b",
       "registrationUrl": "https://markham.bibliocommons.com/events/68fbe0cde647c8ff0c38743b",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "steam",
@@ -20165,7 +20936,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe0cde647c8ff0c38743b",
-          "capturedAt": "2026-09-20T20:51:32.715Z",
+          "capturedAt": "2026-09-21T04:58:57.465Z",
           "confidence": "high"
         }
       ],
@@ -20398,8 +21169,8 @@
       "endDate": "2026-10-03T20:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/6a67e8249943bdf31ea20ec5",
       "registrationUrl": "https://markham.bibliocommons.com/events/6a67e8249943bdf31ea20ec5",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "digital innovation month",
@@ -20422,7 +21193,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a67e8249943bdf31ea20ec5",
-          "capturedAt": "2026-09-20T20:51:33.056Z",
+          "capturedAt": "2026-09-21T04:58:57.813Z",
           "confidence": "high"
         }
       ],
@@ -20656,8 +21427,8 @@
       "endDate": "2026-10-03T20:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/68fbe0a50176055300fe815a",
       "registrationUrl": "https://markham.bibliocommons.com/events/68fbe0a50176055300fe815a",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "steam",
@@ -20678,7 +21449,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe0a50176055300fe815a",
-          "capturedAt": "2026-09-20T20:51:33.057Z",
+          "capturedAt": "2026-09-21T04:58:57.813Z",
           "confidence": "high"
         }
       ],
@@ -20912,8 +21683,8 @@
       "endDate": "2026-10-04T19:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/68fbe1952edc686d00f5c97a",
       "registrationUrl": "https://markham.bibliocommons.com/events/68fbe1952edc686d00f5c97a",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "steam",
@@ -20934,7 +21705,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe1952edc686d00f5c97a",
-          "capturedAt": "2026-09-20T20:51:33.057Z",
+          "capturedAt": "2026-09-21T04:58:57.814Z",
           "confidence": "high"
         }
       ],
@@ -21168,8 +21939,8 @@
       "endDate": "2026-10-04T19:30:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/68fbe07a2edc686d00f5c873",
       "registrationUrl": "https://markham.bibliocommons.com/events/68fbe07a2edc686d00f5c873",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "steam",
@@ -21190,7 +21961,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe07a2edc686d00f5c873",
-          "capturedAt": "2026-09-20T20:51:33.057Z",
+          "capturedAt": "2026-09-21T04:58:57.814Z",
           "confidence": "high"
         }
       ],
@@ -21424,8 +22195,8 @@
       "endDate": "2026-10-05T16:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/6aaae32f4b3b06003084352e",
       "registrationUrl": "https://markham.bibliocommons.com/events/6aaae32f4b3b06003084352e",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "lifelong learning",
@@ -21446,7 +22217,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6aaae32f4b3b06003084352e",
-          "capturedAt": "2026-09-20T20:51:33.057Z",
+          "capturedAt": "2026-09-21T04:58:57.814Z",
           "confidence": "high"
         }
       ],
@@ -21680,8 +22451,8 @@
       "endDate": "2026-10-05T21:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/6a6135237d824676437cd57e",
       "registrationUrl": "https://markham.bibliocommons.com/events/6a6135237d824676437cd57e",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "lifelong learning",
@@ -21702,7 +22473,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a6135237d824676437cd57e",
-          "capturedAt": "2026-09-20T20:51:33.057Z",
+          "capturedAt": "2026-09-21T04:58:57.814Z",
           "confidence": "high"
         }
       ],
@@ -21936,8 +22707,8 @@
       "endDate": "2026-10-05T21:30:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/6a613604daaaf4f51a20a669",
       "registrationUrl": "https://markham.bibliocommons.com/events/6a613604daaaf4f51a20a669",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "lifelong learning",
@@ -21958,7 +22729,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a613604daaaf4f51a20a669",
-          "capturedAt": "2026-09-20T20:51:33.057Z",
+          "capturedAt": "2026-09-21T04:58:57.814Z",
           "confidence": "high"
         }
       ],
@@ -22192,8 +22963,8 @@
       "endDate": "2026-10-05T22:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/6a6137871bbbb30f3e80e325",
       "registrationUrl": "https://markham.bibliocommons.com/events/6a6137871bbbb30f3e80e325",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "lifelong learning",
@@ -22214,7 +22985,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a6137871bbbb30f3e80e325",
-          "capturedAt": "2026-09-20T20:51:33.057Z",
+          "capturedAt": "2026-09-21T04:58:57.814Z",
           "confidence": "high"
         }
       ],
@@ -22447,8 +23218,8 @@
       "endDate": "2026-10-05T22:45:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/6a5957b5fa641fe01af3b3fb",
       "registrationUrl": "https://markham.bibliocommons.com/events/6a5957b5fa641fe01af3b3fb",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "jobs & career",
@@ -22471,7 +23242,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a5957b5fa641fe01af3b3fb",
-          "capturedAt": "2026-09-20T20:51:33.058Z",
+          "capturedAt": "2026-09-21T04:58:57.815Z",
           "confidence": "high"
         }
       ],
@@ -22705,8 +23476,8 @@
       "endDate": "2026-10-05T23:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/6a67e125f213992f00c78d8e",
       "registrationUrl": "https://markham.bibliocommons.com/events/6a67e125f213992f00c78d8e",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "digital innovation month",
@@ -22730,7 +23501,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a67e125f213992f00c78d8e",
-          "capturedAt": "2026-09-20T20:51:33.058Z",
+          "capturedAt": "2026-09-21T04:58:57.815Z",
           "confidence": "high"
         }
       ],
@@ -22963,8 +23734,8 @@
       "endDate": "2026-10-06T19:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/6a4fe4b50d65ac36003e8ee8",
       "registrationUrl": "https://markham.bibliocommons.com/events/6a4fe4b50d65ac36003e8ee8",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "digital innovation month",
@@ -22987,7 +23758,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a4fe4b50d65ac36003e8ee8",
-          "capturedAt": "2026-09-20T20:51:33.415Z",
+          "capturedAt": "2026-09-21T04:58:59.419Z",
           "confidence": "high"
         }
       ],
@@ -23220,8 +23991,8 @@
       "endDate": "2026-10-07T23:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/6a67970da41369ab2c691d3b",
       "registrationUrl": "https://markham.bibliocommons.com/events/6a67970da41369ab2c691d3b",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "digital innovation month",
@@ -23243,7 +24014,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a67970da41369ab2c691d3b",
-          "capturedAt": "2026-09-20T20:51:33.416Z",
+          "capturedAt": "2026-09-21T04:58:59.420Z",
           "confidence": "high"
         }
       ],
@@ -23477,8 +24248,8 @@
       "endDate": "2026-10-07T23:30:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/692dbdf9d923da4200b317aa",
       "registrationUrl": "https://markham.bibliocommons.com/events/692dbdf9d923da4200b317aa",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "steam",
@@ -23499,7 +24270,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/692dbdf9d923da4200b317aa",
-          "capturedAt": "2026-09-20T20:51:33.416Z",
+          "capturedAt": "2026-09-21T04:58:59.421Z",
           "confidence": "high"
         }
       ],
@@ -23732,8 +24503,8 @@
       "endDate": "2026-10-08T00:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/6a67ac717b79214226aba8ec",
       "registrationUrl": "https://markham.bibliocommons.com/events/6a67ac717b79214226aba8ec",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "digital innovation month",
@@ -23755,7 +24526,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a67ac717b79214226aba8ec",
-          "capturedAt": "2026-09-20T20:51:33.416Z",
+          "capturedAt": "2026-09-21T04:58:59.421Z",
           "confidence": "high"
         }
       ],
@@ -23988,8 +24759,8 @@
       "endDate": "2026-10-08T00:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/68fbdbb88b53c0241cd1b508",
       "registrationUrl": "https://markham.bibliocommons.com/events/68fbdbb88b53c0241cd1b508",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "digital innovation month",
@@ -24013,7 +24784,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbdbb88b53c0241cd1b508",
-          "capturedAt": "2026-09-20T20:51:33.836Z",
+          "capturedAt": "2026-09-21T04:58:59.775Z",
           "confidence": "high"
         }
       ],
@@ -24246,8 +25017,8 @@
       "endDate": "2026-10-08T23:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/6a6790769943bdf31ea1e934",
       "registrationUrl": "https://markham.bibliocommons.com/events/6a6790769943bdf31ea1e934",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "digital innovation month",
@@ -24270,7 +25041,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a6790769943bdf31ea1e934",
-          "capturedAt": "2026-09-20T20:51:33.837Z",
+          "capturedAt": "2026-09-21T04:58:59.776Z",
           "confidence": "high"
         }
       ],
@@ -24504,8 +25275,8 @@
       "endDate": "2026-10-10T16:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/68fbd36ee647c8ff0c38729f",
       "registrationUrl": "https://markham.bibliocommons.com/events/68fbd36ee647c8ff0c38729f",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "steam",
@@ -24526,7 +25297,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbd36ee647c8ff0c38729f",
-          "capturedAt": "2026-09-20T20:51:34.154Z",
+          "capturedAt": "2026-09-21T04:59:00.151Z",
           "confidence": "high"
         }
       ],
@@ -24760,8 +25531,8 @@
       "endDate": "2026-10-10T16:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/68fbe20064ad59251cb9d9a4",
       "registrationUrl": "https://markham.bibliocommons.com/events/68fbe20064ad59251cb9d9a4",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "steam",
@@ -24782,7 +25553,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe20064ad59251cb9d9a4",
-          "capturedAt": "2026-09-20T20:51:34.154Z",
+          "capturedAt": "2026-09-21T04:59:00.151Z",
           "confidence": "high"
         }
       ],
@@ -25016,8 +25787,8 @@
       "endDate": "2026-10-10T16:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/68fbe0e82edc686d00f5c8aa",
       "registrationUrl": "https://markham.bibliocommons.com/events/68fbe0e82edc686d00f5c8aa",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "steam",
@@ -25038,7 +25809,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe0e82edc686d00f5c8aa",
-          "capturedAt": "2026-09-20T20:51:34.154Z",
+          "capturedAt": "2026-09-21T04:59:00.151Z",
           "confidence": "high"
         }
       ],
@@ -25272,8 +26043,8 @@
       "endDate": "2026-10-10T16:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/68fbe12275911f28001a2544",
       "registrationUrl": "https://markham.bibliocommons.com/events/68fbe12275911f28001a2544",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "creative expression",
@@ -25295,7 +26066,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe12275911f28001a2544",
-          "capturedAt": "2026-09-20T20:51:34.154Z",
+          "capturedAt": "2026-09-21T04:59:00.151Z",
           "confidence": "high"
         }
       ],
@@ -25529,8 +26300,8 @@
       "endDate": "2026-10-10T16:30:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/68fbe0cde647c8ff0c38743c",
       "registrationUrl": "https://markham.bibliocommons.com/events/68fbe0cde647c8ff0c38743c",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "steam",
@@ -25551,7 +26322,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe0cde647c8ff0c38743c",
-          "capturedAt": "2026-09-20T20:51:34.154Z",
+          "capturedAt": "2026-09-21T04:59:00.151Z",
           "confidence": "high"
         }
       ],
@@ -25785,8 +26556,8 @@
       "endDate": "2026-10-10T20:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/68fbe0a50176055300fe815b",
       "registrationUrl": "https://markham.bibliocommons.com/events/68fbe0a50176055300fe815b",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "steam",
@@ -25807,7 +26578,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe0a50176055300fe815b",
-          "capturedAt": "2026-09-20T20:51:34.154Z",
+          "capturedAt": "2026-09-21T04:59:00.151Z",
           "confidence": "high"
         }
       ],
@@ -26041,8 +26812,8 @@
       "endDate": "2026-10-11T19:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/68fbe1952edc686d00f5c97b",
       "registrationUrl": "https://markham.bibliocommons.com/events/68fbe1952edc686d00f5c97b",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "steam",
@@ -26063,7 +26834,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe1952edc686d00f5c97b",
-          "capturedAt": "2026-09-20T20:51:34.154Z",
+          "capturedAt": "2026-09-21T04:59:00.151Z",
           "confidence": "high"
         }
       ],
@@ -26297,8 +27068,8 @@
       "endDate": "2026-10-11T19:30:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/68fbe07a2edc686d00f5c874",
       "registrationUrl": "https://markham.bibliocommons.com/events/68fbe07a2edc686d00f5c874",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "steam",
@@ -26319,7 +27090,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/68fbe07a2edc686d00f5c874",
-          "capturedAt": "2026-09-20T20:51:34.154Z",
+          "capturedAt": "2026-09-21T04:59:00.151Z",
           "confidence": "high"
         }
       ],
@@ -26552,8 +27323,8 @@
       "endDate": "2026-10-13T19:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/6a4fe4df0d65ac36003e8eef",
       "registrationUrl": "https://markham.bibliocommons.com/events/6a4fe4df0d65ac36003e8eef",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "digital innovation month",
@@ -26577,7 +27348,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a4fe4df0d65ac36003e8eef",
-          "capturedAt": "2026-09-20T20:51:34.542Z",
+          "capturedAt": "2026-09-21T04:59:00.592Z",
           "confidence": "high"
         }
       ],
@@ -26811,8 +27582,8 @@
       "endDate": "2026-10-14T23:30:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/692dbdf9d923da4200b317ab",
       "registrationUrl": "https://markham.bibliocommons.com/events/692dbdf9d923da4200b317ab",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "steam",
@@ -26833,7 +27604,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/692dbdf9d923da4200b317ab",
-          "capturedAt": "2026-09-20T20:51:34.543Z",
+          "capturedAt": "2026-09-21T04:59:00.593Z",
           "confidence": "high"
         }
       ],
@@ -27066,8 +27837,8 @@
       "endDate": "2026-10-15T00:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/6a67ad077b79214226aba92d",
       "registrationUrl": "https://markham.bibliocommons.com/events/6a67ad077b79214226aba92d",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "digital innovation month",
@@ -27089,7 +27860,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a67ad077b79214226aba92d",
-          "capturedAt": "2026-09-20T20:51:34.543Z",
+          "capturedAt": "2026-09-21T04:59:00.593Z",
           "confidence": "high"
         }
       ],
@@ -27322,8 +28093,8 @@
       "endDate": "2026-10-15T00:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/6aaa9a00101eb7003f3084af",
       "registrationUrl": "https://markham.bibliocommons.com/events/6aaa9a00101eb7003f3084af",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "lifelong learning",
@@ -27345,7 +28116,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6aaa9a00101eb7003f3084af",
-          "capturedAt": "2026-09-20T20:51:34.543Z",
+          "capturedAt": "2026-09-21T04:59:00.593Z",
           "confidence": "high"
         }
       ],
@@ -27578,8 +28349,8 @@
       "endDate": "2026-10-15T19:30:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/69039e6c9b87934100934ec1",
       "registrationUrl": "https://markham.bibliocommons.com/events/69039e6c9b87934100934ec1",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "book club",
@@ -27602,7 +28373,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/69039e6c9b87934100934ec1",
-          "capturedAt": "2026-09-20T20:51:35.003Z",
+          "capturedAt": "2026-09-21T04:59:00.989Z",
           "confidence": "high"
         }
       ],
@@ -27835,8 +28606,8 @@
       "endDate": "2026-10-15T20:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/6a67e8b2f213992f00c78fad",
       "registrationUrl": "https://markham.bibliocommons.com/events/6a67e8b2f213992f00c78fad",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "digital innovation month",
@@ -27859,7 +28630,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a67e8b2f213992f00c78fad",
-          "capturedAt": "2026-09-20T20:51:35.003Z",
+          "capturedAt": "2026-09-21T04:59:00.990Z",
           "confidence": "high"
         }
       ],
@@ -28092,8 +28863,8 @@
       "endDate": "2026-10-16T00:00:00.000Z",
       "sourceUrl": "https://markham.bibliocommons.com/events/6a67e8b2f213992f00c78fae",
       "registrationUrl": "https://markham.bibliocommons.com/events/6a67e8b2f213992f00c78fae",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "digital innovation month",
@@ -28116,7 +28887,7 @@
         {
           "label": "Official Markham Public Library event page",
           "url": "https://markham.bibliocommons.com/events/6a67e8b2f213992f00c78fae",
-          "capturedAt": "2026-09-20T20:51:35.004Z",
+          "capturedAt": "2026-09-21T04:59:00.990Z",
           "confidence": "high"
         }
       ],
@@ -28350,8 +29121,8 @@
       "endDate": "2026-11-01T09:00:00-04:00",
       "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6a875a463b6c71003e5a39be",
       "registrationUrl": "https://tpl.bibliocommons.com/v2/events/6a875a463b6c71003e5a39be",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "science & engineering",
@@ -28372,7 +29143,7 @@
         {
           "label": "Toronto Public Library youth volunteer events",
           "url": "https://tpl.bibliocommons.com/v2/events/6a875a463b6c71003e5a39be",
-          "capturedAt": "2026-09-20T09:00:00-04:00",
+          "capturedAt": "2026-09-21T09:00:00-04:00",
           "confidence": "high"
         }
       ],
@@ -28606,8 +29377,8 @@
       "endDate": "2026-09-21T19:30:00-04:00",
       "sourceUrl": "https://markham.bibliocommons.com/events/6a061c0e0c0f2c4503fa23fa",
       "registrationUrl": "https://markham.bibliocommons.com/events/6a061c0e0c0f2c4503fa23fa",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "volunteer hours",
@@ -28629,7 +29400,7 @@
         {
           "label": "Markham Public Library youth volunteer events",
           "url": "https://markham.bibliocommons.com/events/6a061c0e0c0f2c4503fa23fa",
-          "capturedAt": "2026-09-20T09:00:00-04:00",
+          "capturedAt": "2026-09-21T09:00:00-04:00",
           "confidence": "high"
         }
       ],
@@ -28863,8 +29634,8 @@
       "endDate": "2026-09-21T20:00:00-04:00",
       "sourceUrl": "https://aurora.bibliocommons.com/events/6a563acefb418a28009ad5b6",
       "registrationUrl": "https://aurora.bibliocommons.com/events/6a563acefb418a28009ad5b6",
-      "lastChecked": "2026-09-20",
-      "lastSeen": "2026-09-20",
+      "lastChecked": "2026-09-21",
+      "lastSeen": "2026-09-21",
       "status": "active",
       "tags": [
         "makerspace & fabrication",
@@ -28886,7 +29657,7 @@
         {
           "label": "Aurora Public Library STEM events",
           "url": "https://aurora.bibliocommons.com/events/6a563acefb418a28009ad5b6",
-          "capturedAt": "2026-09-20T09:00:00-04:00",
+          "capturedAt": "2026-09-21T09:00:00-04:00",
           "confidence": "high"
         }
       ],
