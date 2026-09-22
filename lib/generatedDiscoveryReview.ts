@@ -5,7 +5,7 @@ export const generatedDiscoverySummary = {
   "sourcesChecked": 30,
   "candidatesFound": 277,
   "newCandidates": 53,
-  "duplicatesSkipped": 36,
+  "duplicatesSkipped": 38,
   "warnings": [
     "Could not check Credit Valley Conservation youth opportunities: 403 Forbidden.",
     "Could not check Volunteer MBC youth opportunities: 403 Forbidden.",
@@ -14,7 +14,7 @@ export const generatedDiscoverySummary = {
   ],
   "sourceHealth": {
     "schemaVersion": 1,
-    "generatedAt": "2026-09-22T16:59:37.435Z",
+    "generatedAt": "2026-09-22T21:21:52.442Z",
     "status": "healthy",
     "failureReasons": [],
     "sourcesChecked": 30,
@@ -226,37 +226,7 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Richmond Hill Public Library programs"
   },
   {
-    "id": "discovered-aurora-library-stem-steam-for-homeschoolers-0aed924a4366",
-    "title": "STEAM for Homeschoolers",
-    "organization": "Aurora Public Library",
-    "description": "Explore science, technology, engineering, art, and math in the company of other homeschoolers. For kids ages 6-12. Register on Eventbrite: https://www.eventbrite.ca/e/st...",
-    "city": "Aurora",
-    "region": "York",
-    "ageMin": 6,
-    "ageMax": 12,
-    "category": "Science & Engineering",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "deadline": "2026-09-24T14:30:00-04:00",
-    "startDate": "2026-09-24T14:30:00-04:00",
-    "endDate": "2026-09-24T16:00:00-04:00",
-    "sourceUrl": "https://aurora.bibliocommons.com/events/6933515b94297d36009e7d62",
-    "lastChecked": "2026-09-22",
-    "lastSeen": "2026-09-22",
-    "status": "active",
-    "tags": [
-      "science & engineering",
-      "technology",
-      "science"
-    ],
-    "confidence": "high",
-    "reviewReasons": [],
-    "sourceName": "Aurora Public Library STEM events"
-  },
-  {
-    "id": "discovered-aurora-library-stem-stem-engineering-adventures-fb7bd6488268",
+    "id": "discovered-aurora-library-stem-stem-engineering-adventures-2dba814a2d17",
     "title": "STEM Engineering Adventures",
     "organization": "Aurora Public Library",
     "description": "Discover the power of hands-on learning with our scientific, intriguing, interactive STEM activities and projects that you get to take home after completion! This is in collaboration with and funded by Robotics Rock STEM Youth Association. If you are unable to attend, please cancel your registration as soon as possible so that another child may take your spot. Repeated no-shows without cancelling may affect eligibility for future registrations, as we strive to provide fair access to all families interested in the program.",
@@ -272,7 +242,7 @@ export const generatedDiscoveryReviewCandidates = [
     "deadline": "2026-09-24T17:30:00-04:00",
     "startDate": "2026-09-24T17:30:00-04:00",
     "endDate": "2026-09-24T18:30:00-04:00",
-    "sourceUrl": "https://aurora.bibliocommons.com/events/6a19a83ac6a1dc3d00d6eee5",
+    "sourceUrl": "https://aurora.bibliocommons.com/events/6a7cbdc69d8416003f694487",
     "lastChecked": "2026-09-22",
     "lastSeen": "2026-09-22",
     "status": "active",
@@ -285,7 +255,37 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Aurora Public Library STEM events"
   },
   {
-    "id": "discovered-aurora-library-stem-maker-workshop-laser-cut-keychain-9f265c9d61ad",
+    "id": "discovered-aurora-library-stem-steam-for-homeschoolers-87ae1b8edfa2",
+    "title": "STEAM for Homeschoolers",
+    "organization": "Aurora Public Library",
+    "description": "Explore science, technology, engineering, art, and math in the company of other homeschoolers. For kids ages 6-12. Register on Eventbrite: https://www.eventbrite.ca/e/st...",
+    "city": "Aurora",
+    "region": "York",
+    "ageMin": 6,
+    "ageMax": 12,
+    "category": "Science & Engineering",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "deadline": "2026-09-24T14:30:00-04:00",
+    "startDate": "2026-09-24T14:30:00-04:00",
+    "endDate": "2026-09-24T16:00:00-04:00",
+    "sourceUrl": "https://aurora.bibliocommons.com/events/6a3d7a57c52cdc3600ecdd16",
+    "lastChecked": "2026-09-22",
+    "lastSeen": "2026-09-22",
+    "status": "active",
+    "tags": [
+      "science & engineering",
+      "technology",
+      "science"
+    ],
+    "confidence": "high",
+    "reviewReasons": [],
+    "sourceName": "Aurora Public Library STEM events"
+  },
+  {
+    "id": "discovered-aurora-library-stem-maker-workshop-laser-cut-keychain-ebe41d4ff8e4",
     "title": "Maker Workshop: Laser Cut Keychain",
     "organization": "Aurora Public Library",
     "description": "Learn how to design a custom phone stand keychain using Adobe Illustrator and the laser cutter. All required materials will be provided. Please note that spots will be prioritized for first-time attendees. teen/adult program 13+",
@@ -301,7 +301,7 @@ export const generatedDiscoveryReviewCandidates = [
     "deadline": "2026-09-24T11:00:00-04:00",
     "startDate": "2026-09-24T11:00:00-04:00",
     "endDate": "2026-09-24T12:30:00-04:00",
-    "sourceUrl": "https://aurora.bibliocommons.com/events/69f3edf15c04bc0fc0640b9e",
+    "sourceUrl": "https://aurora.bibliocommons.com/events/6a79fc311d5d03c3a6bba1e0",
     "lastChecked": "2026-09-22",
     "lastSeen": "2026-09-22",
     "status": "active",
@@ -545,7 +545,7 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Oshawa Public Libraries STEM events"
   },
   {
-    "id": "discovered-clarington-library-programs-learning-technology-230c06781e35",
+    "id": "discovered-clarington-library-programs-learning-technology-ef1f52444b44",
     "title": "Learning & Technology",
     "organization": "Clarington Library, Museums & Archives",
     "description": "Learning & Technology listed by Clarington Library programs.",
@@ -559,7 +559,7 @@ export const generatedDiscoveryReviewCandidates = [
       "en"
     ],
     "startDate": "2026-09-22T09:00:00-04:00",
-    "sourceUrl": "http://www.cplma.ca/learning-technology",
+    "sourceUrl": "https://www.cplma.ca/learning-technology",
     "lastChecked": "2026-09-22",
     "lastSeen": "2026-09-22",
     "status": "needs_review",
@@ -574,7 +574,7 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Clarington Library programs"
   },
   {
-    "id": "discovered-clarington-library-programs-computers-internet-access-3cb588204464",
+    "id": "discovered-clarington-library-programs-computers-internet-access-541dee3079cc",
     "title": "Computers & Internet Access",
     "organization": "Clarington Library, Museums & Archives",
     "description": "Computers & Internet Access listed by Clarington Library programs.",
@@ -588,7 +588,7 @@ export const generatedDiscoveryReviewCandidates = [
       "en"
     ],
     "startDate": "2026-09-22T09:00:00-04:00",
-    "sourceUrl": "http://www.cplma.ca/learning-technology/computers-and-internet-access",
+    "sourceUrl": "https://www.cplma.ca/learning-technology/computers-and-internet-access",
     "lastChecked": "2026-09-22",
     "lastSeen": "2026-09-22",
     "status": "needs_review",
@@ -602,7 +602,7 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Clarington Library programs"
   },
   {
-    "id": "discovered-clarington-library-programs-maker-s-space-2a794c50bde2",
+    "id": "discovered-clarington-library-programs-maker-s-space-73692ec01a1b",
     "title": "Maker's Space",
     "organization": "Clarington Library, Museums & Archives",
     "description": "Maker's Space listed by Clarington Library programs.",
@@ -616,7 +616,7 @@ export const generatedDiscoveryReviewCandidates = [
       "en"
     ],
     "startDate": "2026-09-22T09:00:00-04:00",
-    "sourceUrl": "http://www.cplma.ca/learning-technology/makers-space-the-studio",
+    "sourceUrl": "https://www.cplma.ca/learning-technology/makers-space-the-studio",
     "lastChecked": "2026-09-22",
     "lastSeen": "2026-09-22",
     "status": "needs_review",
@@ -630,7 +630,7 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Clarington Library programs"
   },
   {
-    "id": "discovered-clarington-library-programs-jobs-volunteering-034bd1adb633",
+    "id": "discovered-clarington-library-programs-jobs-volunteering-812e9b03cdd9",
     "title": "Jobs & Volunteering",
     "organization": "Clarington Library, Museums & Archives",
     "description": "Jobs & Volunteering listed by Clarington Library programs.",
@@ -644,7 +644,7 @@ export const generatedDiscoveryReviewCandidates = [
       "en"
     ],
     "startDate": "2026-09-22T09:00:00-04:00",
-    "sourceUrl": "http://www.cplma.ca/about-us/jobs-and-volunteering",
+    "sourceUrl": "https://www.cplma.ca/about-us/jobs-and-volunteering",
     "lastChecked": "2026-09-22",
     "lastSeen": "2026-09-22",
     "status": "needs_review",
