@@ -4,7 +4,7 @@ export const generatedDiscoverySummary = {
   "mode": "deterministic",
   "sourcesChecked": 30,
   "candidatesFound": 275,
-  "newCandidates": 52,
+  "newCandidates": 53,
   "duplicatesSkipped": 41,
   "warnings": [
     "Could not check Credit Valley Conservation youth opportunities: 403 Forbidden.",
@@ -14,7 +14,7 @@ export const generatedDiscoverySummary = {
   ],
   "sourceHealth": {
     "schemaVersion": 1,
-    "generatedAt": "2026-09-23T11:40:58.986Z",
+    "generatedAt": "2026-09-23T17:04:45.837Z",
     "status": "healthy",
     "failureReasons": [],
     "sourcesChecked": 30,
@@ -27,7 +27,7 @@ export const generatedDiscoverySummary = {
 
 export const generatedDiscoveryReviewCandidates = [
   {
-    "id": "discovered-tpl-events-volunteer-set-phasers-to-celebrate-60-years-of-star--0a1b085e8c78",
+    "id": "discovered-tpl-events-volunteer-set-phasers-to-celebrate-60-years-of-star--c42f0bcb7cdd",
     "title": "Set Phasers to Celebrate! 60 Years of Star Trek: A Merril Collection Exhibit",
     "organization": "Toronto Public Library",
     "description": "Beam yourself up to the Merril Collection of Science Fiction, Speculation and Fantasy and boldly embark on a 60-year journey that celebrates all things Star Trek! For decades, the original television series turned global franchise has inspired generations of fans, artists, and scientists alike. Visitors can explore voyages, characters, and new frontiers through our collection highlights such as novels, RPGs, fanzines, original artwork and more! This exhibit can be viewed during the Merril Collection's regular open hours.",
@@ -43,7 +43,7 @@ export const generatedDiscoveryReviewCandidates = [
     "deadline": "2026-08-17T09:00:00-04:00",
     "startDate": "2026-08-17T09:00:00-04:00",
     "endDate": "2026-11-01T09:00:00-04:00",
-    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6a775b32b3bdcec4a6672522",
+    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6a8dd7903b6c71003e5b46db",
     "lastChecked": "2026-09-23",
     "lastSeen": "2026-09-23",
     "status": "active",
@@ -53,6 +53,35 @@ export const generatedDiscoveryReviewCandidates = [
     "confidence": "high",
     "reviewReasons": [],
     "sourceName": "Toronto Public Library youth volunteer events"
+  },
+  {
+    "id": "discovered-markham-events-stem-introduction-to-cricut-e45c54dc6bd3",
+    "title": "Introduction to Cricut",
+    "organization": "Markham Public Library",
+    "description": "Curious about the Cricut? In this introductory class, participants will explore the creative possibilities of this popular cutting machine. We’ll cover what the Cricut can do, the materials it works with, and project ideas for beginners. You’ll also see a demonstration of the machine in action, showing how easy it is to design and cut custom creations. Perfect for anyone looking to get started with the Cricut and learn more about how you can use the Cricut in our makerspace!",
+    "city": "Markham",
+    "region": "York",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "Makerspace & Fabrication",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "deadline": "2026-09-24T18:30:00-04:00",
+    "startDate": "2026-09-24T18:30:00-04:00",
+    "endDate": "2026-09-24T19:30:00-04:00",
+    "sourceUrl": "https://markham.bibliocommons.com/events/6a724994a5e5f025a9ce51d4",
+    "lastChecked": "2026-09-23",
+    "lastSeen": "2026-09-23",
+    "status": "active",
+    "tags": [
+      "makerspace & fabrication",
+      "makerspace"
+    ],
+    "confidence": "high",
+    "reviewReasons": [],
+    "sourceName": "Markham Public Library events"
   },
   {
     "id": "discovered-markham-events-volunteer-moon-harvest-festival-21115261c788",
@@ -200,11 +229,11 @@ export const generatedDiscoveryReviewCandidates = [
     "id": "discovered-aurora-library-stem-stem-engineering-adventures-2dba814a2d17",
     "title": "STEM Engineering Adventures",
     "organization": "Aurora Public Library",
-    "description": "Discover the power of hands-on learning with our scientific, intriguing, interactive STEM activities and projects that you get to take home after completion! This is in collaboration with and funded by Robotics Rock STEM Youth Association. If you are unable to attend, please cancel your registration as soon as possible so that another child may take your spot. Repeated no-shows without cancelling may affect eligibility for future registrations, as we strive to provide fair access to all families interested in the program.",
+    "description": "Discover the power of hands-on learning with our scientific, intriguing, interactive STEM activities and projects that you get to take home after completion! This is in collaboration with and funded by Robotics Rock STEM Youth Association. This session is for ages 11-14. If you are unable to attend, please cancel your registration as soon as possible so that another child may take your spot. Repeated no-shows without cancelling may affect eligibility for future registrations, as we strive to provide fair access to all families interested in the program.",
     "city": "Aurora",
     "region": "York",
-    "ageMin": 13,
-    "ageMax": 18,
+    "ageMin": 11,
+    "ageMax": 14,
     "category": "Coding & Robotics",
     "cost": "Free to join",
     "language": [
