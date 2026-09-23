@@ -3,11 +3,10 @@ import type { DiscoveredOpportunity } from "./discovery";
 export const generatedDiscoverySummary = {
   "mode": "deterministic",
   "sourcesChecked": 30,
-  "candidatesFound": 271,
-  "newCandidates": 49,
-  "duplicatesSkipped": 40,
+  "candidatesFound": 275,
+  "newCandidates": 52,
+  "duplicatesSkipped": 41,
   "warnings": [
-    "Could not check Milton Public Library programs: fetch failed.",
     "Could not check Credit Valley Conservation youth opportunities: 403 Forbidden.",
     "Could not check Volunteer MBC youth opportunities: 403 Forbidden.",
     "Could not check Eventbrite free science and technology events: 405 Not Allowed.",
@@ -15,13 +14,13 @@ export const generatedDiscoverySummary = {
   ],
   "sourceHealth": {
     "schemaVersion": 1,
-    "generatedAt": "2026-09-23T04:48:16.774Z",
+    "generatedAt": "2026-09-23T11:40:58.986Z",
     "status": "healthy",
     "failureReasons": [],
     "sourcesChecked": 30,
-    "successfulSources": 25,
-    "failedSources": 5,
-    "sourceSuccessRatio": 0.8333,
+    "successfulSources": 26,
+    "failedSources": 4,
+    "sourceSuccessRatio": 0.8667,
     "minimumSourceSuccessRatio": 0.75
   }
 } as const;
@@ -715,6 +714,91 @@ export const generatedDiscoveryReviewCandidates = [
       "No clear future date found on the crawled page."
     ],
     "sourceName": "Mississauga Library volunteer opportunities"
+  },
+  {
+    "id": "discovered-milton-library-programs-volunteer-opportunities-b6ad7428d58f",
+    "title": "Volunteer Opportunities",
+    "organization": "Milton Public Library",
+    "description": "Volunteer Opportunities listed by Milton Public Library programs.",
+    "city": "Milton",
+    "region": "Halton",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "Volunteer Hours",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-09-23T09:00:00-04:00",
+    "sourceUrl": "https://beinspired.ca/volunteer-opportunities",
+    "lastChecked": "2026-09-23",
+    "lastSeen": "2026-09-23",
+    "status": "needs_review",
+    "tags": [
+      "volunteer hours",
+      "volunteer"
+    ],
+    "confidence": "high",
+    "reviewReasons": [
+      "No clear future date found on the crawled page."
+    ],
+    "sourceName": "Milton Public Library programs"
+  },
+  {
+    "id": "discovered-milton-library-programs-computer-services-02850eef3932",
+    "title": "Computer Services",
+    "organization": "Milton Public Library",
+    "description": "Computer Services listed by Milton Public Library programs.",
+    "city": "Milton",
+    "region": "Halton",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "STEM",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-09-23T09:00:00-04:00",
+    "sourceUrl": "https://beinspired.ca",
+    "lastChecked": "2026-09-23",
+    "lastSeen": "2026-09-23",
+    "status": "needs_review",
+    "tags": [
+      "stem"
+    ],
+    "confidence": "high",
+    "reviewReasons": [
+      "No clear future date found on the crawled page."
+    ],
+    "sourceName": "Milton Public Library programs"
+  },
+  {
+    "id": "discovered-milton-library-programs-public-access-computers-wireless-access-bo-9651b4edfb4b",
+    "title": "Public Access Computers, Wireless Access, Borrow Laptops",
+    "organization": "Milton Public Library",
+    "description": "Public Access Computers, Wireless Access, Borrow Laptops listed by Milton Public Library programs.",
+    "city": "Milton",
+    "region": "Halton",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "STEM",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-09-23T09:00:00-04:00",
+    "sourceUrl": "https://beinspired.ca/computer-services",
+    "lastChecked": "2026-09-23",
+    "lastSeen": "2026-09-23",
+    "status": "needs_review",
+    "tags": [
+      "stem"
+    ],
+    "confidence": "high",
+    "reviewReasons": [
+      "No clear future date found on the crawled page."
+    ],
+    "sourceName": "Milton Public Library programs"
   },
   {
     "id": "discovered-halton-hills-library-programs-technology-resources-f6eda0d3bfa5",
