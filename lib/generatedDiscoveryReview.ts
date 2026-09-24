@@ -3,9 +3,9 @@ import type { DiscoveredOpportunity } from "./discovery";
 export const generatedDiscoverySummary = {
   "mode": "deterministic",
   "sourcesChecked": 30,
-  "candidatesFound": 273,
+  "candidatesFound": 274,
   "newCandidates": 50,
-  "duplicatesSkipped": 38,
+  "duplicatesSkipped": 42,
   "warnings": [
     "Could not check Credit Valley Conservation youth opportunities: 403 Forbidden.",
     "Could not check Volunteer MBC youth opportunities: 403 Forbidden.",
@@ -14,7 +14,7 @@ export const generatedDiscoverySummary = {
   ],
   "sourceHealth": {
     "schemaVersion": 1,
-    "generatedAt": "2026-09-24T11:49:43.619Z",
+    "generatedAt": "2026-09-24T17:14:25.549Z",
     "status": "healthy",
     "failureReasons": [],
     "sourcesChecked": 30,
@@ -27,7 +27,7 @@ export const generatedDiscoverySummary = {
 
 export const generatedDiscoveryReviewCandidates = [
   {
-    "id": "discovered-tpl-events-volunteer-set-phasers-to-celebrate-60-years-of-star--cc09b69aec42",
+    "id": "discovered-tpl-events-volunteer-set-phasers-to-celebrate-60-years-of-star--4ed8324a47c8",
     "title": "Set Phasers to Celebrate! 60 Years of Star Trek: A Merril Collection Exhibit",
     "organization": "Toronto Public Library",
     "description": "Beam yourself up to the Merril Collection of Science Fiction, Speculation and Fantasy and boldly embark on a 60-year journey that celebrates all things Star Trek! For decades, the original television series turned global franchise has inspired generations of fans, artists, and scientists alike. Visitors can explore voyages, characters, and new frontiers through our collection highlights such as novels, RPGs, fanzines, original artwork and more! This exhibit can be viewed during the Merril Collection's regular open hours.",
@@ -43,7 +43,7 @@ export const generatedDiscoveryReviewCandidates = [
     "deadline": "2026-08-17T09:00:00-04:00",
     "startDate": "2026-08-17T09:00:00-04:00",
     "endDate": "2026-11-01T09:00:00-04:00",
-    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6a7b94563f18f80030ba7c6f",
+    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6a875a463b6c71003e5a39be",
     "lastChecked": "2026-09-24",
     "lastSeen": "2026-09-24",
     "status": "active",
@@ -55,7 +55,7 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Toronto Public Library youth volunteer events"
   },
   {
-    "id": "discovered-markham-events-volunteer-moon-harvest-festival-21115261c788",
+    "id": "discovered-markham-events-volunteer-moon-harvest-festival-cad7fc2d0728",
     "title": "Moon & Harvest Festival 🌕✨",
     "organization": "Markham Public Library",
     "description": "Gather beneath the harvest moon and celebrate with MPL! Inspired by cultural traditions from around the world, our Moon & Harvest Festival honours the season of abundance, the beauty of the full moon, and the joy of coming together as a community. 🌕🏮🍂✨ Enjoy free family-friendly activities, crafts, interactive experiences, and festive fun! Activities will include: Scavenger Hunt & Themed Crafts Korean Hanbok Fashion Show presented by Seshil Hanbok (6:15pm) Bake Code Mooncake Display (and free samples!) Traditional Knot Making Craft Royal Astronomical Society of Canada's Telescope Display Lantern Craft Workshop (1) 5:30-6:00pm (Register here) Lantern Craft Workshop (2) 6:30-7:00pm (Register here) Lastly, heartwarming reunions are a must 🧡 We look forward to welcoming you there! **NOTE: ",
@@ -71,7 +71,7 @@ export const generatedDiscoveryReviewCandidates = [
     "deadline": "2026-09-24T17:00:00-04:00",
     "startDate": "2026-09-24T17:00:00-04:00",
     "endDate": "2026-09-24T20:00:00-04:00",
-    "sourceUrl": "https://markham.bibliocommons.com/events/68fbde1fe59a13000d3e1d0f",
+    "sourceUrl": "https://markham.bibliocommons.com/events/68fbdc50e59a13000d3e1ca0",
     "lastChecked": "2026-09-24",
     "lastSeen": "2026-09-24",
     "status": "active",
@@ -140,36 +140,7 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Richmond Hill Public Library programs"
   },
   {
-    "id": "discovered-aurora-library-stem-stem-engineering-adventures-2dba814a2d17",
-    "title": "STEM Engineering Adventures",
-    "organization": "Aurora Public Library",
-    "description": "Discover the power of hands-on learning with our scientific, intriguing, interactive STEM activities and projects that you get to take home after completion! This is in collaboration with and funded by Robotics Rock STEM Youth Association. This session is for ages 11-14. If you are unable to attend, please cancel your registration as soon as possible so that another child may take your spot. Repeated no-shows without cancelling may affect eligibility for future registrations, as we strive to provide fair access to all families interested in the program.",
-    "city": "Aurora",
-    "region": "York",
-    "ageMin": 11,
-    "ageMax": 14,
-    "category": "Coding & Robotics",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "deadline": "2026-09-24T17:30:00-04:00",
-    "startDate": "2026-09-24T17:30:00-04:00",
-    "endDate": "2026-09-24T18:30:00-04:00",
-    "sourceUrl": "https://aurora.bibliocommons.com/events/6a7cbdc69d8416003f694487",
-    "lastChecked": "2026-09-24",
-    "lastSeen": "2026-09-24",
-    "status": "active",
-    "tags": [
-      "coding & robotics",
-      "stem"
-    ],
-    "confidence": "high",
-    "reviewReasons": [],
-    "sourceName": "Aurora Public Library STEM events"
-  },
-  {
-    "id": "discovered-aurora-library-stem-steam-for-homeschoolers-87ae1b8edfa2",
+    "id": "discovered-aurora-library-stem-steam-for-homeschoolers-d61af5d63c89",
     "title": "STEAM for Homeschoolers",
     "organization": "Aurora Public Library",
     "description": "Explore science, technology, engineering, art, and math in the company of other homeschoolers. For kids ages 6-12. Register on Eventbrite: https://www.eventbrite.ca/e/st...",
@@ -185,7 +156,7 @@ export const generatedDiscoveryReviewCandidates = [
     "deadline": "2026-09-24T14:30:00-04:00",
     "startDate": "2026-09-24T14:30:00-04:00",
     "endDate": "2026-09-24T16:00:00-04:00",
-    "sourceUrl": "https://aurora.bibliocommons.com/events/6a3d7a57c52cdc3600ecdd16",
+    "sourceUrl": "https://aurora.bibliocommons.com/events/6a7cbe905d8bc300315a2a42",
     "lastChecked": "2026-09-24",
     "lastSeen": "2026-09-24",
     "status": "active",
@@ -199,29 +170,29 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Aurora Public Library STEM events"
   },
   {
-    "id": "discovered-aurora-library-stem-maker-workshop-laser-cut-keychain-ebe41d4ff8e4",
-    "title": "Maker Workshop: Laser Cut Keychain",
+    "id": "discovered-aurora-library-stem-stem-engineering-adventures-3bf6270697d4",
+    "title": "STEM Engineering Adventures",
     "organization": "Aurora Public Library",
-    "description": "Learn how to design a custom phone stand keychain using Adobe Illustrator and the laser cutter. All required materials will be provided. Please note that spots will be prioritized for first-time attendees. teen/adult program 13+",
+    "description": "Discover the power of hands-on learning with our scientific, intriguing, interactive STEM activities and projects that you get to take home after completion! This is in collaboration with and funded by Robotics Rock STEM Youth Association. This session is for ages 11-14. If you are unable to attend, please cancel your registration as soon as possible so that another child may take your spot. Repeated no-shows without cancelling may affect eligibility for future registrations, as we strive to provide fair access to all families interested in the program.",
     "city": "Aurora",
     "region": "York",
-    "ageMin": 13,
-    "ageMax": 18,
-    "category": "Makerspace & Fabrication",
+    "ageMin": 11,
+    "ageMax": 14,
+    "category": "Coding & Robotics",
     "cost": "Free to join",
     "language": [
       "en"
     ],
-    "deadline": "2026-09-24T11:00:00-04:00",
-    "startDate": "2026-09-24T11:00:00-04:00",
-    "endDate": "2026-09-24T12:30:00-04:00",
-    "sourceUrl": "https://aurora.bibliocommons.com/events/6a79fc311d5d03c3a6bba1e0",
+    "deadline": "2026-09-24T17:30:00-04:00",
+    "startDate": "2026-09-24T17:30:00-04:00",
+    "endDate": "2026-09-24T18:30:00-04:00",
+    "sourceUrl": "https://aurora.bibliocommons.com/events/6a6b65d8e30fe484596599c5",
     "lastChecked": "2026-09-24",
     "lastSeen": "2026-09-24",
     "status": "active",
     "tags": [
-      "makerspace & fabrication",
-      "maker"
+      "coding & robotics",
+      "stem"
     ],
     "confidence": "high",
     "reviewReasons": [],
@@ -254,6 +225,35 @@ export const generatedDiscoveryReviewCandidates = [
       "No clear future date found on the crawled page."
     ],
     "sourceName": "Aurora Public Library volunteer opportunities"
+  },
+  {
+    "id": "discovered-whitby-programs-ontario-tech-stem-workshop-f41551c77860",
+    "title": "Ontario Tech STEM Workshop",
+    "organization": "Whitby Public Library",
+    "description": "Ontario Tech STEM Workshop listed by Whitby Public Library programs.",
+    "city": "Whitby",
+    "region": "Durham",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "Science & Engineering",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-09-24T09:00:00-04:00",
+    "sourceUrl": "https://whitbylibrary.libcal.com/event/4075287",
+    "lastChecked": "2026-09-24",
+    "lastSeen": "2026-09-24",
+    "status": "needs_review",
+    "tags": [
+      "science & engineering",
+      "stem"
+    ],
+    "confidence": "high",
+    "reviewReasons": [
+      "No clear future date found on the crawled page."
+    ],
+    "sourceName": "Whitby Public Library programs"
   },
   {
     "id": "discovered-ajax-library-stem-makerspace-mclean-79e320ceb204",
