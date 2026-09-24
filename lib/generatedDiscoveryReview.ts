@@ -3,9 +3,9 @@ import type { DiscoveredOpportunity } from "./discovery";
 export const generatedDiscoverySummary = {
   "mode": "deterministic",
   "sourcesChecked": 30,
-  "candidatesFound": 274,
+  "candidatesFound": 276,
   "newCandidates": 50,
-  "duplicatesSkipped": 42,
+  "duplicatesSkipped": 40,
   "warnings": [
     "Could not check Credit Valley Conservation youth opportunities: 403 Forbidden.",
     "Could not check Volunteer MBC youth opportunities: 403 Forbidden.",
@@ -14,7 +14,7 @@ export const generatedDiscoverySummary = {
   ],
   "sourceHealth": {
     "schemaVersion": 1,
-    "generatedAt": "2026-09-24T17:14:25.549Z",
+    "generatedAt": "2026-09-24T21:33:17.410Z",
     "status": "healthy",
     "failureReasons": [],
     "sourcesChecked": 30,
@@ -138,36 +138,6 @@ export const generatedDiscoveryReviewCandidates = [
       "No clear future date found on the crawled page."
     ],
     "sourceName": "Richmond Hill Public Library programs"
-  },
-  {
-    "id": "discovered-aurora-library-stem-steam-for-homeschoolers-d61af5d63c89",
-    "title": "STEAM for Homeschoolers",
-    "organization": "Aurora Public Library",
-    "description": "Explore science, technology, engineering, art, and math in the company of other homeschoolers. For kids ages 6-12. Register on Eventbrite: https://www.eventbrite.ca/e/st...",
-    "city": "Aurora",
-    "region": "York",
-    "ageMin": 6,
-    "ageMax": 12,
-    "category": "Science & Engineering",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "deadline": "2026-09-24T14:30:00-04:00",
-    "startDate": "2026-09-24T14:30:00-04:00",
-    "endDate": "2026-09-24T16:00:00-04:00",
-    "sourceUrl": "https://aurora.bibliocommons.com/events/6a7cbe905d8bc300315a2a42",
-    "lastChecked": "2026-09-24",
-    "lastSeen": "2026-09-24",
-    "status": "active",
-    "tags": [
-      "science & engineering",
-      "technology",
-      "science"
-    ],
-    "confidence": "high",
-    "reviewReasons": [],
-    "sourceName": "Aurora Public Library STEM events"
   },
   {
     "id": "discovered-aurora-library-stem-stem-engineering-adventures-3bf6270697d4",
@@ -429,6 +399,34 @@ export const generatedDiscoveryReviewCandidates = [
       "No clear future date found on the crawled page."
     ],
     "sourceName": "Pickering Public Library technology events"
+  },
+  {
+    "id": "discovered-oshawa-library-stem-steam-saturday-1701f977fcfb",
+    "title": "STEAM Saturday",
+    "organization": "Oshawa Public Libraries",
+    "description": "STEAM Saturday from Oshawa Public Libraries STEM events.",
+    "city": "Oshawa",
+    "region": "Durham",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "Science & Engineering",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-09-24T09:00:00-04:00",
+    "sourceUrl": "https://oshlib.bibliocommons.com/events/6a68d88bf4e5db3d00c4d6ce",
+    "lastChecked": "2026-09-24",
+    "lastSeen": "2026-09-24",
+    "status": "needs_review",
+    "tags": [
+      "science & engineering"
+    ],
+    "confidence": "high",
+    "reviewReasons": [
+      "No clear future date found on the crawled page."
+    ],
+    "sourceName": "Oshawa Public Libraries STEM events"
   },
   {
     "id": "discovered-oshawa-library-stem-makerspace-6bb095888b6a",
