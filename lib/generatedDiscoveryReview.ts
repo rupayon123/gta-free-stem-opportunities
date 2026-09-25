@@ -4,7 +4,7 @@ export const generatedDiscoverySummary = {
   "mode": "deterministic",
   "sourcesChecked": 30,
   "candidatesFound": 276,
-  "newCandidates": 49,
+  "newCandidates": 50,
   "duplicatesSkipped": 46,
   "warnings": [
     "Could not check Credit Valley Conservation youth opportunities: 403 Forbidden.",
@@ -14,7 +14,7 @@ export const generatedDiscoverySummary = {
   ],
   "sourceHealth": {
     "schemaVersion": 1,
-    "generatedAt": "2026-09-25T17:14:54.354Z",
+    "generatedAt": "2026-09-25T21:37:25.041Z",
     "status": "healthy",
     "failureReasons": [],
     "sourcesChecked": 30,
@@ -139,6 +139,35 @@ export const generatedDiscoveryReviewCandidates = [
       "No clear future date found on the crawled page."
     ],
     "sourceName": "Richmond Hill Public Library programs"
+  },
+  {
+    "id": "discovered-aurora-library-stem-maker-workshop-custom-tote-bag-cd79e78b733f",
+    "title": "Maker Workshop: Custom Tote Bag",
+    "organization": "Aurora Public Library",
+    "description": "Learn how to design and make a custom tote bag using Canva and the sublimation printer. All required materials will be provided. Please note that spots will be prioritized for first-time attendees. teen/adult program 13+",
+    "city": "Aurora",
+    "region": "York",
+    "ageMin": 13,
+    "ageMax": 18,
+    "category": "Makerspace & Fabrication",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "deadline": "2026-09-28T18:30:00-04:00",
+    "startDate": "2026-09-28T18:30:00-04:00",
+    "endDate": "2026-09-28T20:00:00-04:00",
+    "sourceUrl": "https://aurora.bibliocommons.com/events/6a7cbe905d8bc300315a2a42",
+    "lastChecked": "2026-09-25",
+    "lastSeen": "2026-09-25",
+    "status": "active",
+    "tags": [
+      "makerspace & fabrication",
+      "maker"
+    ],
+    "confidence": "high",
+    "reviewReasons": [],
+    "sourceName": "Aurora Public Library STEM events"
   },
   {
     "id": "discovered-aurora-library-volunteers-volunteers-9a6997e9e36a",
