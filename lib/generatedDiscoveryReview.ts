@@ -4,8 +4,8 @@ export const generatedDiscoverySummary = {
   "mode": "deterministic",
   "sourcesChecked": 30,
   "candidatesFound": 276,
-  "newCandidates": 48,
-  "duplicatesSkipped": 44,
+  "newCandidates": 49,
+  "duplicatesSkipped": 46,
   "warnings": [
     "Could not check Credit Valley Conservation youth opportunities: 403 Forbidden.",
     "Could not check Volunteer MBC youth opportunities: 403 Forbidden.",
@@ -14,7 +14,7 @@ export const generatedDiscoverySummary = {
   ],
   "sourceHealth": {
     "schemaVersion": 1,
-    "generatedAt": "2026-09-25T11:54:01.846Z",
+    "generatedAt": "2026-09-25T17:14:54.354Z",
     "status": "healthy",
     "failureReasons": [],
     "sourcesChecked": 30,
@@ -53,6 +53,35 @@ export const generatedDiscoveryReviewCandidates = [
     "confidence": "high",
     "reviewReasons": [],
     "sourceName": "Toronto Public Library youth volunteer events"
+  },
+  {
+    "id": "discovered-markham-events-volunteer-reading-to-success-635f1c09b9d5",
+    "title": "Reading to Success",
+    "organization": "Markham Public Library",
+    "description": "Read a story with us! Reading to Success is a volunteer facilitated reading program established to motivate children to read regularly. YPAM in partnership with the Markham Public Library provides this weekly literacy program, where volunteers read grade specific books for children in Junior Kindergarten, Senior Kindergarten, Grade 1, Grade 2 and IEP kids. Make Reading to Success part of your child's reading habit and build a love of reading together. To register, please visit: https://www.ypam.ca/reading *Please note that through registering, you are giving YPAM your information.",
+    "city": "Markham",
+    "region": "York",
+    "ageMin": 6,
+    "ageMax": 12,
+    "category": "Volunteer Hours",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "deadline": "2026-09-26T13:00:00-04:00",
+    "startDate": "2026-09-26T13:00:00-04:00",
+    "endDate": "2026-09-26T14:30:00-04:00",
+    "sourceUrl": "https://markham.bibliocommons.com/events/694992cb4be11d3d00d95e38",
+    "lastChecked": "2026-09-25",
+    "lastSeen": "2026-09-25",
+    "status": "active",
+    "tags": [
+      "volunteer hours",
+      "volunteer"
+    ],
+    "confidence": "high",
+    "reviewReasons": [],
+    "sourceName": "Markham Public Library youth volunteer events"
   },
   {
     "id": "discovered-vaughan-library-programs-volunteer-opportunities-e775e833a50b",
