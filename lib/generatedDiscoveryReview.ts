@@ -3,25 +3,24 @@ import type { DiscoveredOpportunity } from "./discovery";
 export const generatedDiscoverySummary = {
   "mode": "deterministic",
   "sourcesChecked": 30,
-  "candidatesFound": 240,
-  "newCandidates": 49,
-  "duplicatesSkipped": 38,
+  "candidatesFound": 276,
+  "newCandidates": 52,
+  "duplicatesSkipped": 49,
   "warnings": [
     "Could not check Credit Valley Conservation youth opportunities: 403 Forbidden.",
-    "Could not check TRCA youth volunteer opportunities: fetch failed.",
     "Could not check Volunteer MBC youth opportunities: 403 Forbidden.",
     "Could not check Eventbrite free science and technology events: 405 Not Allowed.",
     "Could not check Eventbrite free online science and technology events: 405 Not Allowed."
   ],
   "sourceHealth": {
     "schemaVersion": 1,
-    "generatedAt": "2026-09-26T11:28:30.291Z",
+    "generatedAt": "2026-09-26T16:26:11.018Z",
     "status": "healthy",
     "failureReasons": [],
     "sourcesChecked": 30,
-    "successfulSources": 25,
-    "failedSources": 5,
-    "sourceSuccessRatio": 0.8333,
+    "successfulSources": 26,
+    "failedSources": 4,
+    "sourceSuccessRatio": 0.8667,
     "minimumSourceSuccessRatio": 0.75
   }
 } as const;
@@ -56,34 +55,6 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Toronto Public Library youth volunteer events"
   },
   {
-    "id": "discovered-tpl-events-volunteer-computers-for-beginners-6-use-gmail-e35430b2fefa",
-    "title": "Computers for Beginners 6: Use Gmail",
-    "organization": "Toronto Public Library",
-    "description": "Learn to use Gmail, Google’s free web-based email service. In this sixth session you will: Practice basic email functions: send, read, reply, forward, delete email, and attach files Review how spam and junk mail work Upon completion of this class students will have a basic understanding of how to use email. Instructions on how to set up and manage your own free Gmail account are included in the handout. Prerequisites: Basic keyboarding and mouse skills required. Format: Hands-on with demonstrations Information Collection Notice: The personal information on this form is collected by the Toronto Public Library under the Public Libraries Act, sections 20(a), 20(c), and 20(d). The information will only be used for event and program registration, delivery and evaluation. Questions about how the",
-    "city": "Toronto",
-    "region": "Toronto",
-    "ageMin": 1,
-    "ageMax": 18,
-    "category": "STEM",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "deadline": "2026-09-26T10:00:00-04:00",
-    "startDate": "2026-09-26T10:00:00-04:00",
-    "endDate": "2026-09-26T11:30:00-04:00",
-    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6a98400c5e6fc10d0550e863",
-    "lastChecked": "2026-09-26",
-    "lastSeen": "2026-09-26",
-    "status": "active",
-    "tags": [
-      "stem"
-    ],
-    "confidence": "high",
-    "reviewReasons": [],
-    "sourceName": "Toronto Public Library youth volunteer events"
-  },
-  {
     "id": "discovered-tpl-events-volunteer-set-phasers-to-celebrate-60-years-of-star--4ed8324a47c8",
     "title": "Set Phasers to Celebrate! 60 Years of Star Trek: A Merril Collection Exhibit",
     "organization": "Toronto Public Library",
@@ -112,7 +83,7 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Toronto Public Library youth volunteer events"
   },
   {
-    "id": "discovered-markham-events-volunteer-reading-to-success-635f1c09b9d5",
+    "id": "discovered-markham-events-volunteer-reading-to-success-e844eff808d9",
     "title": "Reading to Success",
     "organization": "Markham Public Library",
     "description": "Read a story with us! Reading to Success is a volunteer facilitated reading program established to motivate children to read regularly. YPAM in partnership with the Markham Public Library provides this weekly literacy program, where volunteers read grade specific books for children in Junior Kindergarten, Senior Kindergarten, Grade 1, Grade 2 and IEP kids. Make Reading to Success part of your child's reading habit and build a love of reading together. To register, please visit: https://www.ypam.ca/reading *Please note that through registering, you are giving YPAM your information.",
@@ -128,13 +99,40 @@ export const generatedDiscoveryReviewCandidates = [
     "deadline": "2026-09-26T13:00:00-04:00",
     "startDate": "2026-09-26T13:00:00-04:00",
     "endDate": "2026-09-26T14:30:00-04:00",
-    "sourceUrl": "https://markham.bibliocommons.com/events/694992cb4be11d3d00d95e38",
+    "sourceUrl": "https://markham.bibliocommons.com/events/6a63cfb3c7e02e3d006b7a2d",
     "lastChecked": "2026-09-26",
     "lastSeen": "2026-09-26",
     "status": "active",
     "tags": [
       "volunteer hours",
       "volunteer"
+    ],
+    "confidence": "high",
+    "reviewReasons": [],
+    "sourceName": "Markham Public Library youth volunteer events"
+  },
+  {
+    "id": "discovered-markham-events-volunteer-chess-meet-up-for-teens-adult-drop-in-see--5535ac6096d9",
+    "title": "Chess Meet up for Teens/Adult (drop-in, see details)",
+    "organization": "Markham Public Library",
+    "description": "Chess Meet up for Teens/Adult (drop-in, see details) from Markham Public Library youth volunteer events.",
+    "city": "Markham",
+    "region": "York",
+    "ageMin": 13,
+    "ageMax": 18,
+    "category": "Volunteer Hours",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "deadline": "2026-09-28T19:00:00-04:00",
+    "startDate": "2026-09-28T19:00:00-04:00",
+    "sourceUrl": "https://markham.bibliocommons.com/events/6a627fe2a41369ab2c6842a4",
+    "lastChecked": "2026-09-26",
+    "lastSeen": "2026-09-26",
+    "status": "active",
+    "tags": [
+      "volunteer hours"
     ],
     "confidence": "high",
     "reviewReasons": [],
@@ -855,6 +853,97 @@ export const generatedDiscoveryReviewCandidates = [
       "No clear future date found on the crawled page."
     ],
     "sourceName": "Halton Hills Public Library programs"
+  },
+  {
+    "id": "discovered-trca-youth-youth-opportunities-at-trca-bd0e50237819",
+    "title": "Youth Opportunities at TRCA",
+    "organization": "Toronto and Region Conservation Authority",
+    "description": "TRCA offers programs to support youth and young adults who are interested in getting involved in the conservation sector.",
+    "city": "Toronto",
+    "region": "Toronto",
+    "ageMin": 13,
+    "ageMax": 18,
+    "category": "Science & Engineering",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-09-26T09:00:00-04:00",
+    "sourceUrl": "https://trca.ca/get-involved/youth-opportunities",
+    "lastChecked": "2026-09-26",
+    "lastSeen": "2026-09-26",
+    "status": "needs_review",
+    "tags": [
+      "science & engineering",
+      "youth",
+      "conservation"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "No clear future date found on the crawled page.",
+      "Free access wording needs human confirmation."
+    ],
+    "sourceName": "TRCA youth volunteer opportunities"
+  },
+  {
+    "id": "discovered-trca-youth-volunteer-with-trca-cdffdd979d6f",
+    "title": "Volunteer with TRCA",
+    "organization": "Toronto and Region Conservation Authority",
+    "description": "Volunteer with TRCA listed by TRCA youth volunteer opportunities.",
+    "city": "Toronto",
+    "region": "Toronto",
+    "ageMin": 13,
+    "ageMax": 18,
+    "category": "Volunteer Hours",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-09-26T09:00:00-04:00",
+    "sourceUrl": "https://trca.ca/get-involved/volunteer",
+    "lastChecked": "2026-09-26",
+    "lastSeen": "2026-09-26",
+    "status": "needs_review",
+    "tags": [
+      "volunteer hours",
+      "volunteer"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "No clear future date found on the crawled page.",
+      "Free access wording needs human confirmation."
+    ],
+    "sourceName": "TRCA youth volunteer opportunities"
+  },
+  {
+    "id": "discovered-trca-youth-young-conservation-professionals-leadershi-275035142ede",
+    "title": "Young Conservation Professionals Leadership Program",
+    "organization": "Toronto and Region Conservation Authority",
+    "description": "Young Conservation Professionals Leadership Program listed by TRCA youth volunteer opportunities.",
+    "city": "Toronto",
+    "region": "Toronto",
+    "ageMin": 13,
+    "ageMax": 18,
+    "category": "Volunteer Hours",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-09-26T09:00:00-04:00",
+    "sourceUrl": "https://trca.ca/learning/adult/young-conservation-professionals",
+    "lastChecked": "2026-09-26",
+    "lastSeen": "2026-09-26",
+    "status": "needs_review",
+    "tags": [
+      "volunteer hours",
+      "conservation"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "No clear future date found on the crawled page.",
+      "Free access wording needs human confirmation."
+    ],
+    "sourceName": "TRCA youth volunteer opportunities"
   },
   {
     "id": "discovered-uhn-stem-pathways-uhn-stem-pathways-7847b49cfe74",
