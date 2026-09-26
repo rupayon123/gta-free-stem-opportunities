@@ -3,9 +3,9 @@ import type { DiscoveredOpportunity } from "./discovery";
 export const generatedDiscoverySummary = {
   "mode": "deterministic",
   "sourcesChecked": 30,
-  "candidatesFound": 276,
-  "newCandidates": 52,
-  "duplicatesSkipped": 49,
+  "candidatesFound": 272,
+  "newCandidates": 49,
+  "duplicatesSkipped": 45,
   "warnings": [
     "Could not check Credit Valley Conservation youth opportunities: 403 Forbidden.",
     "Could not check Volunteer MBC youth opportunities: 403 Forbidden.",
@@ -14,7 +14,7 @@ export const generatedDiscoverySummary = {
   ],
   "sourceHealth": {
     "schemaVersion": 1,
-    "generatedAt": "2026-09-26T16:26:11.018Z",
+    "generatedAt": "2026-09-26T21:13:01.471Z",
     "status": "healthy",
     "failureReasons": [],
     "sourcesChecked": 30,
@@ -26,34 +26,6 @@ export const generatedDiscoverySummary = {
 } as const;
 
 export const generatedDiscoveryReviewCandidates = [
-  {
-    "id": "discovered-tpl-events-volunteer-game-on-board-game-playtime-7c705a41e0e4",
-    "title": "Game on! Board Game Playtime",
-    "organization": "Toronto Public Library",
-    "description": "Join us for a fun-filled day of board games and puzzles! Play your favourites or try something new! Brings your friends and family or meet new people at the library. Games available for use in the Children's Area. Available games include: Ball Fall Jumbo (Ages 3+), STEM Pretend Flower Garden Toy Set (Ages 3-6), Operation (Ages 6+), STEM Road Builder Game (Ages 4-8), Dinosaur Tetra Tower Balance Stacking Blocks Game (Ages 6+) Available puzzles include: Giant World Map Puzzle (Ages 4+), Canada Map Jigsaw Puzzle (Ages 4-12), ABC Puzzle (Ages 3+)",
-    "city": "Toronto",
-    "region": "Toronto",
-    "ageMin": 3,
-    "ageMax": 6,
-    "category": "Science & Engineering",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "deadline": "2026-09-26T09:00:00-04:00",
-    "startDate": "2026-09-26T09:00:00-04:00",
-    "endDate": "2026-09-26T16:30:00-04:00",
-    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6a96db6860ccaf01c0228319",
-    "lastChecked": "2026-09-26",
-    "lastSeen": "2026-09-26",
-    "status": "active",
-    "tags": [
-      "science & engineering"
-    ],
-    "confidence": "high",
-    "reviewReasons": [],
-    "sourceName": "Toronto Public Library youth volunteer events"
-  },
   {
     "id": "discovered-tpl-events-volunteer-set-phasers-to-celebrate-60-years-of-star--4ed8324a47c8",
     "title": "Set Phasers to Celebrate! 60 Years of Star Trek: A Merril Collection Exhibit",
@@ -83,35 +55,6 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Toronto Public Library youth volunteer events"
   },
   {
-    "id": "discovered-markham-events-volunteer-reading-to-success-e844eff808d9",
-    "title": "Reading to Success",
-    "organization": "Markham Public Library",
-    "description": "Read a story with us! Reading to Success is a volunteer facilitated reading program established to motivate children to read regularly. YPAM in partnership with the Markham Public Library provides this weekly literacy program, where volunteers read grade specific books for children in Junior Kindergarten, Senior Kindergarten, Grade 1, Grade 2 and IEP kids. Make Reading to Success part of your child's reading habit and build a love of reading together. To register, please visit: https://www.ypam.ca/reading *Please note that through registering, you are giving YPAM your information.",
-    "city": "Markham",
-    "region": "York",
-    "ageMin": 6,
-    "ageMax": 12,
-    "category": "Volunteer Hours",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "deadline": "2026-09-26T13:00:00-04:00",
-    "startDate": "2026-09-26T13:00:00-04:00",
-    "endDate": "2026-09-26T14:30:00-04:00",
-    "sourceUrl": "https://markham.bibliocommons.com/events/6a63cfb3c7e02e3d006b7a2d",
-    "lastChecked": "2026-09-26",
-    "lastSeen": "2026-09-26",
-    "status": "active",
-    "tags": [
-      "volunteer hours",
-      "volunteer"
-    ],
-    "confidence": "high",
-    "reviewReasons": [],
-    "sourceName": "Markham Public Library youth volunteer events"
-  },
-  {
     "id": "discovered-markham-events-volunteer-chess-meet-up-for-teens-adult-drop-in-see--5535ac6096d9",
     "title": "Chess Meet up for Teens/Adult (drop-in, see details)",
     "organization": "Markham Public Library",
@@ -133,6 +76,35 @@ export const generatedDiscoveryReviewCandidates = [
     "status": "active",
     "tags": [
       "volunteer hours"
+    ],
+    "confidence": "high",
+    "reviewReasons": [],
+    "sourceName": "Markham Public Library youth volunteer events"
+  },
+  {
+    "id": "discovered-markham-events-volunteer-reading-to-success-2fc427a31dd3",
+    "title": "Reading to Success",
+    "organization": "Markham Public Library",
+    "description": "Read a story with us! Reading to Success is a volunteer facilitated reading program established to motivate children to read regularly. YPAM in partnership with the Markham Public Library provides this weekly literacy program, where volunteers read grade specific books for children in Junior Kindergarten, Senior Kindergarten, Grade 1, Grade 2 and IEP kids. Make Reading to Success part of your child's reading habit and build a love of reading together. To register, please visit: https://www.ypam.ca/reading *Please note that through registering, you are giving YPAM your information.",
+    "city": "Markham",
+    "region": "York",
+    "ageMin": 6,
+    "ageMax": 12,
+    "category": "Volunteer Hours",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "deadline": "2026-09-28T18:00:00-04:00",
+    "startDate": "2026-09-28T18:00:00-04:00",
+    "endDate": "2026-09-28T19:30:00-04:00",
+    "sourceUrl": "https://markham.bibliocommons.com/events/68fbdd1b0176055300fe80ae",
+    "lastChecked": "2026-09-26",
+    "lastSeen": "2026-09-26",
+    "status": "active",
+    "tags": [
+      "volunteer hours",
+      "volunteer"
     ],
     "confidence": "high",
     "reviewReasons": [],
@@ -196,7 +168,7 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Richmond Hill Public Library programs"
   },
   {
-    "id": "discovered-aurora-library-stem-maker-workshop-custom-tote-bag-cd79e78b733f",
+    "id": "discovered-aurora-library-stem-maker-workshop-custom-tote-bag-361baff11dac",
     "title": "Maker Workshop: Custom Tote Bag",
     "organization": "Aurora Public Library",
     "description": "Learn how to design and make a custom tote bag using Canva and the sublimation printer. All required materials will be provided. Please note that spots will be prioritized for first-time attendees. teen/adult program 13+",
@@ -212,7 +184,7 @@ export const generatedDiscoveryReviewCandidates = [
     "deadline": "2026-09-28T18:30:00-04:00",
     "startDate": "2026-09-28T18:30:00-04:00",
     "endDate": "2026-09-28T20:00:00-04:00",
-    "sourceUrl": "https://aurora.bibliocommons.com/events/6a7cbe905d8bc300315a2a42",
+    "sourceUrl": "https://aurora.bibliocommons.com/events/6a3dadb5f3bd131b675ff792",
     "lastChecked": "2026-09-26",
     "lastSeen": "2026-09-26",
     "status": "active",
@@ -251,35 +223,6 @@ export const generatedDiscoveryReviewCandidates = [
       "No clear future date found on the crawled page."
     ],
     "sourceName": "Aurora Public Library volunteer opportunities"
-  },
-  {
-    "id": "discovered-whitby-programs-ontario-tech-stem-workshop-f41551c77860",
-    "title": "Ontario Tech STEM Workshop",
-    "organization": "Whitby Public Library",
-    "description": "Ontario Tech STEM Workshop listed by Whitby Public Library programs.",
-    "city": "Whitby",
-    "region": "Durham",
-    "ageMin": 1,
-    "ageMax": 18,
-    "category": "Science & Engineering",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-09-26T09:00:00-04:00",
-    "sourceUrl": "https://whitbylibrary.libcal.com/event/4075287",
-    "lastChecked": "2026-09-26",
-    "lastSeen": "2026-09-26",
-    "status": "needs_review",
-    "tags": [
-      "science & engineering",
-      "stem"
-    ],
-    "confidence": "high",
-    "reviewReasons": [
-      "No clear future date found on the crawled page."
-    ],
-    "sourceName": "Whitby Public Library programs"
   },
   {
     "id": "discovered-ajax-library-stem-makerspace-mclean-79e320ceb204",
@@ -455,34 +398,6 @@ export const generatedDiscoveryReviewCandidates = [
       "No clear future date found on the crawled page."
     ],
     "sourceName": "Pickering Public Library technology events"
-  },
-  {
-    "id": "discovered-oshawa-library-stem-steam-saturday-1701f977fcfb",
-    "title": "STEAM Saturday",
-    "organization": "Oshawa Public Libraries",
-    "description": "STEAM Saturday from Oshawa Public Libraries STEM events.",
-    "city": "Oshawa",
-    "region": "Durham",
-    "ageMin": 1,
-    "ageMax": 18,
-    "category": "Science & Engineering",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-09-26T09:00:00-04:00",
-    "sourceUrl": "https://oshlib.bibliocommons.com/events/6a68d88bf4e5db3d00c4d6ce",
-    "lastChecked": "2026-09-26",
-    "lastSeen": "2026-09-26",
-    "status": "needs_review",
-    "tags": [
-      "science & engineering"
-    ],
-    "confidence": "high",
-    "reviewReasons": [
-      "No clear future date found on the crawled page."
-    ],
-    "sourceName": "Oshawa Public Libraries STEM events"
   },
   {
     "id": "discovered-oshawa-library-stem-makerspace-6bb095888b6a",
