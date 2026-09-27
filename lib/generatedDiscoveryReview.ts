@@ -3,9 +3,9 @@ import type { DiscoveredOpportunity } from "./discovery";
 export const generatedDiscoverySummary = {
   "mode": "deterministic",
   "sourcesChecked": 30,
-  "candidatesFound": 274,
+  "candidatesFound": 278,
   "newCandidates": 51,
-  "duplicatesSkipped": 45,
+  "duplicatesSkipped": 40,
   "warnings": [
     "Could not check Credit Valley Conservation youth opportunities: 403 Forbidden.",
     "Could not check Volunteer MBC youth opportunities: 403 Forbidden.",
@@ -14,7 +14,7 @@ export const generatedDiscoverySummary = {
   ],
   "sourceHealth": {
     "schemaVersion": 1,
-    "generatedAt": "2026-09-27T17:00:12.181Z",
+    "generatedAt": "2026-09-27T21:23:09.613Z",
     "status": "healthy",
     "failureReasons": [],
     "sourcesChecked": 30,
@@ -27,7 +27,7 @@ export const generatedDiscoverySummary = {
 
 export const generatedDiscoveryReviewCandidates = [
   {
-    "id": "discovered-tpl-events-volunteer-set-phasers-to-celebrate-60-years-of-star--4ed8324a47c8",
+    "id": "discovered-tpl-events-volunteer-set-phasers-to-celebrate-60-years-of-star--7b8f4e9b7c85",
     "title": "Set Phasers to Celebrate! 60 Years of Star Trek: A Merril Collection Exhibit",
     "organization": "Toronto Public Library",
     "description": "Beam yourself up to the Merril Collection of Science Fiction, Speculation and Fantasy and boldly embark on a 60-year journey that celebrates all things Star Trek! For decades, the original television series turned global franchise has inspired generations of fans, artists, and scientists alike. Visitors can explore voyages, characters, and new frontiers through our collection highlights such as novels, RPGs, fanzines, original artwork and more! This exhibit can be viewed during the Merril Collection's regular open hours.",
@@ -43,7 +43,7 @@ export const generatedDiscoveryReviewCandidates = [
     "deadline": "2026-08-17T09:00:00-04:00",
     "startDate": "2026-08-17T09:00:00-04:00",
     "endDate": "2026-11-01T09:00:00-04:00",
-    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6a875a463b6c71003e5a39be",
+    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6a7e45f8d4b10d003006584e",
     "lastChecked": "2026-09-27",
     "lastSeen": "2026-09-27",
     "status": "active",
@@ -55,10 +55,10 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Toronto Public Library youth volunteer events"
   },
   {
-    "id": "discovered-markham-events-volunteer-chess-meet-up-for-teens-adult-drop-in-see--5535ac6096d9",
-    "title": "Chess Meet up for Teens/Adult (drop-in, see details)",
+    "id": "discovered-markham-events-volunteer-baby-books-3f7c1e257e0b",
+    "title": "Baby & Books",
     "organization": "Markham Public Library",
-    "description": "Chess Meet up for Teens/Adult (drop-in, see details) from Markham Public Library youth volunteer events.",
+    "description": "Baby & Books from Markham Public Library youth volunteer events.",
     "city": "Markham",
     "region": "York",
     "ageMin": 13,
@@ -70,7 +70,7 @@ export const generatedDiscoveryReviewCandidates = [
     ],
     "deadline": "2026-09-28T19:00:00-04:00",
     "startDate": "2026-09-28T19:00:00-04:00",
-    "sourceUrl": "https://markham.bibliocommons.com/events/6a627fe2a41369ab2c6842a4",
+    "sourceUrl": "https://markham.bibliocommons.com/events/69274d8f94cbff6200286026",
     "lastChecked": "2026-09-27",
     "lastSeen": "2026-09-27",
     "status": "active",
@@ -225,7 +225,7 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Richmond Hill Public Library programs"
   },
   {
-    "id": "discovered-aurora-library-stem-maker-workshop-custom-tote-bag-361baff11dac",
+    "id": "discovered-aurora-library-stem-maker-workshop-custom-tote-bag-6a3caa7fa792",
     "title": "Maker Workshop: Custom Tote Bag",
     "organization": "Aurora Public Library",
     "description": "Learn how to design and make a custom tote bag using Canva and the sublimation printer. All required materials will be provided. Please note that spots will be prioritized for first-time attendees. teen/adult program 13+",
@@ -241,7 +241,7 @@ export const generatedDiscoveryReviewCandidates = [
     "deadline": "2026-09-28T18:30:00-04:00",
     "startDate": "2026-09-28T18:30:00-04:00",
     "endDate": "2026-09-28T20:00:00-04:00",
-    "sourceUrl": "https://aurora.bibliocommons.com/events/6a3dadb5f3bd131b675ff792",
+    "sourceUrl": "https://aurora.bibliocommons.com/events/6ab1556aa5dbde002aa62c26",
     "lastChecked": "2026-09-27",
     "lastSeen": "2026-09-27",
     "status": "active",
@@ -369,35 +369,6 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Pickering Public Library technology events"
   },
   {
-    "id": "discovered-pickering-library-tech-developing-responsible-technology-4c170fc272c9",
-    "title": "Developing Responsible Technology",
-    "organization": "Pickering Public Library",
-    "description": "Developing Responsible Technology listed by Pickering Public Library technology events.",
-    "city": "Pickering",
-    "region": "Durham",
-    "ageMin": 1,
-    "ageMax": 18,
-    "category": "STEM",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-09-27T09:00:00-04:00",
-    "sourceUrl": "https://pickering.bibliocommons.com/v2/list/display/1491301049/3106000637",
-    "lastChecked": "2026-09-27",
-    "lastSeen": "2026-09-27",
-    "status": "needs_review",
-    "tags": [
-      "stem",
-      "technology"
-    ],
-    "confidence": "high",
-    "reviewReasons": [
-      "No clear future date found on the crawled page."
-    ],
-    "sourceName": "Pickering Public Library technology events"
-  },
-  {
     "id": "discovered-pickering-library-tech-computers-and-technology-99e4cbcf5f11",
     "title": "Computers and Technology",
     "organization": "Pickering Public Library",
@@ -420,6 +391,35 @@ export const generatedDiscoveryReviewCandidates = [
       "stem",
       "technology",
       "computers"
+    ],
+    "confidence": "high",
+    "reviewReasons": [
+      "No clear future date found on the crawled page."
+    ],
+    "sourceName": "Pickering Public Library technology events"
+  },
+  {
+    "id": "discovered-pickering-library-tech-developing-responsible-technology-4c170fc272c9",
+    "title": "Developing Responsible Technology",
+    "organization": "Pickering Public Library",
+    "description": "Developing Responsible Technology listed by Pickering Public Library technology events.",
+    "city": "Pickering",
+    "region": "Durham",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "STEM",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-09-27T09:00:00-04:00",
+    "sourceUrl": "https://pickering.bibliocommons.com/v2/list/display/1491301049/3106000637",
+    "lastChecked": "2026-09-27",
+    "lastSeen": "2026-09-27",
+    "status": "needs_review",
+    "tags": [
+      "stem",
+      "technology"
     ],
     "confidence": "high",
     "reviewReasons": [
