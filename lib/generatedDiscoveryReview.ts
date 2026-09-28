@@ -5,7 +5,7 @@ export const generatedDiscoverySummary = {
   "sourcesChecked": 30,
   "candidatesFound": 278,
   "newCandidates": 51,
-  "duplicatesSkipped": 40,
+  "duplicatesSkipped": 36,
   "warnings": [
     "Could not check Credit Valley Conservation youth opportunities: 403 Forbidden.",
     "Could not check Volunteer MBC youth opportunities: 403 Forbidden.",
@@ -14,7 +14,7 @@ export const generatedDiscoverySummary = {
   ],
   "sourceHealth": {
     "schemaVersion": 1,
-    "generatedAt": "2026-09-28T13:59:53.224Z",
+    "generatedAt": "2026-09-28T23:18:38.631Z",
     "status": "healthy",
     "failureReasons": [],
     "sourcesChecked": 30,
@@ -27,7 +27,7 @@ export const generatedDiscoverySummary = {
 
 export const generatedDiscoveryReviewCandidates = [
   {
-    "id": "discovered-tpl-events-volunteer-set-phasers-to-celebrate-60-years-of-star--7b8f4e9b7c85",
+    "id": "discovered-tpl-events-volunteer-set-phasers-to-celebrate-60-years-of-star--545172ad9a3d",
     "title": "Set Phasers to Celebrate! 60 Years of Star Trek: A Merril Collection Exhibit",
     "organization": "Toronto Public Library",
     "description": "Beam yourself up to the Merril Collection of Science Fiction, Speculation and Fantasy and boldly embark on a 60-year journey that celebrates all things Star Trek! For decades, the original television series turned global franchise has inspired generations of fans, artists, and scientists alike. Visitors can explore voyages, characters, and new frontiers through our collection highlights such as novels, RPGs, fanzines, original artwork and more! This exhibit can be viewed during the Merril Collection's regular open hours.",
@@ -43,7 +43,7 @@ export const generatedDiscoveryReviewCandidates = [
     "deadline": "2026-08-17T09:00:00-04:00",
     "startDate": "2026-08-17T09:00:00-04:00",
     "endDate": "2026-11-01T09:00:00-04:00",
-    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6a7e45f8d4b10d003006584e",
+    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6a8071381401fd00606c73e4",
     "lastChecked": "2026-09-28",
     "lastSeen": "2026-09-28",
     "status": "active",
@@ -225,7 +225,7 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Richmond Hill Public Library programs"
   },
   {
-    "id": "discovered-aurora-library-stem-maker-workshop-custom-tote-bag-6a3caa7fa792",
+    "id": "discovered-aurora-library-stem-maker-workshop-custom-tote-bag-eb9a0fa0ec89",
     "title": "Maker Workshop: Custom Tote Bag",
     "organization": "Aurora Public Library",
     "description": "Learn how to design and make a custom tote bag using Canva and the sublimation printer. All required materials will be provided. Please note that spots will be prioritized for first-time attendees. teen/adult program 13+",
@@ -241,7 +241,7 @@ export const generatedDiscoveryReviewCandidates = [
     "deadline": "2026-09-28T18:30:00-04:00",
     "startDate": "2026-09-28T18:30:00-04:00",
     "endDate": "2026-09-28T20:00:00-04:00",
-    "sourceUrl": "https://aurora.bibliocommons.com/events/6ab1556aa5dbde002aa62c26",
+    "sourceUrl": "https://aurora.bibliocommons.com/events/6aba741186d8450031194d13",
     "lastChecked": "2026-09-28",
     "lastSeen": "2026-09-28",
     "status": "active",
