@@ -3,9 +3,9 @@ import type { DiscoveredOpportunity } from "./discovery";
 export const generatedDiscoverySummary = {
   "mode": "deterministic",
   "sourcesChecked": 30,
-  "candidatesFound": 280,
+  "candidatesFound": 276,
   "newCandidates": 48,
-  "duplicatesSkipped": 38,
+  "duplicatesSkipped": 36,
   "warnings": [
     "Could not check Credit Valley Conservation youth opportunities: 403 Forbidden.",
     "Could not check Volunteer MBC youth opportunities: 403 Forbidden.",
@@ -14,7 +14,7 @@ export const generatedDiscoverySummary = {
   ],
   "sourceHealth": {
     "schemaVersion": 1,
-    "generatedAt": "2026-09-29T12:56:49.549Z",
+    "generatedAt": "2026-09-29T22:18:27.933Z",
     "status": "healthy",
     "failureReasons": [],
     "sourcesChecked": 30,
