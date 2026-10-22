@@ -15,10 +15,22 @@ jobs:
     concurrency:
       group: gta-free-stem-opportunities-refresh
       cancel-in-progress: true
+    env:
+      GTA_MAX_LIBRARY_OPPORTUNITIES: "420"
+      GTA_LOOKAHEAD_DAYS: "365"
+      GTA_DISCOVERY_MAX_CANDIDATES_PER_SOURCE: "250"
+      GTA_MIN_LIBRARY_PAGE_SUCCESS_RATIO: "0.75"
+      GTA_MIN_LIBRARY_SOURCE_SUCCESS_RATIO: "0.50"
+      GTA_MIN_LIBRARY_OUTPUT_RATIO: "0.65"
+      GTA_MIN_LIBRARY_OPPORTUNITIES: "30"
+      GTA_MIN_DISCOVERY_SOURCE_SUCCESS_RATIO: "0.75"
 
     steps:
       - name: Check out repository
         uses: actions/checkout@v6
+
+      - name: Verify refresh publication safeguards
+        run: python3 scripts/test-refresh-publication.py
 
       - name: Set up Node
         uses: actions/setup-node@v6
@@ -34,27 +46,9 @@ jobs:
 
       - name: Refresh source-backed website database
         run: npm run engine:refresh
-        env:
-          GTA_MAX_LIBRARY_OPPORTUNITIES: "420"
-          GTA_LOOKAHEAD_DAYS: "365"
-          GTA_DISCOVERY_MAX_CANDIDATES_PER_SOURCE: "250"
-          GTA_MIN_LIBRARY_PAGE_SUCCESS_RATIO: "0.75"
-          GTA_MIN_LIBRARY_SOURCE_SUCCESS_RATIO: "0.50"
-          GTA_MIN_LIBRARY_OUTPUT_RATIO: "0.65"
-          GTA_MIN_LIBRARY_OPPORTUNITIES: "30"
-          GTA_MIN_DISCOVERY_SOURCE_SUCCESS_RATIO: "0.75"
 
       - name: Build static export
         run: npm run build
 
       - name: Commit refreshed database
-        run: |
-          if git diff --quiet -- lib/generatedLibraryOpportunities.ts lib/generatedDiscoveryReview.ts public/opportunities.json; then
-            echo "No opportunity database changes found."
-            exit 0
-          fi
-          git config user.name "gta-free-stem-bot"
-          git config user.email "gta-free-stem-bot@users.noreply.github.com"
-          git add lib/generatedLibraryOpportunities.ts lib/generatedDiscoveryReview.ts public/opportunities.json
-          git commit -m "Refresh generated public opportunities"
-          git push
+        run: bash scripts/publish-refreshed-opportunities.sh

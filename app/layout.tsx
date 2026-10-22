@@ -68,8 +68,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/icon.png",
-        width: 1200,
-        height: 630,
+        width: 512,
+        height: 512,
         alt: "GTA FREE STEM Opportunities brand mark"
       }
     ]
@@ -125,7 +125,7 @@ export default function RootLayout({
         ],
         potentialAction: {
           "@type": "SearchAction",
-          target: `${siteUrl}/?q={search_term_string}`,
+          target: `${siteUrl}/opportunities/?q={search_term_string}`,
           "query-input": "required name=search_term_string"
         }
       },

@@ -12,6 +12,7 @@ import { legalConfig } from "@/lib/legal";
 import type { Filters, LanguageCode } from "@/lib/types";
 import { PlayfulSurface, SaveSpark, ScienceReveal } from "./ScienceMotion";
 import "./PlayfulUI.css";
+import "./SearchHelp.css";
 
 type Surface = "home" | "opportunities" | "high-school" | "support" | "community-hosts";
 
@@ -112,9 +113,10 @@ export function HomePage({ initialSurface = "home", initialFilterOverrides = {} 
                 <label htmlFor="hero-query">{language === "en" ? "What would you like to explore?" : c.interests}</label>
                 <div className="hero-search-field">
                   <Search size={24} aria-hidden="true" />
-                  <input id="hero-query" type="search" name="q" maxLength={250} placeholder={language === "en" ? "Search STEM opportunities" : t(language, "searchPlaceholder")} autoComplete="off" />
+                  <input id="hero-query" type="search" name="q" maxLength={250} placeholder={language === "en" ? "Search STEM opportunities" : t(language, "searchPlaceholder")} autoComplete="off" dir="auto" enterKeyHint="search" spellCheck aria-describedby="hero-search-help" />
                   <button type="submit" data-science-press>{language === "en" ? "Explore" : t(language, "search")}<ArrowRight size={22} aria-hidden="true" data-science-icon /></button>
                 </div>
+                <p className="search-help" id="hero-search-help" lang="en" dir="ltr">Search topics, libraries or cities. Small spelling mistakes are okay.</p>
               </form>
             </ScienceReveal>
             <ScienceReveal className="welcome-art" aria-hidden="true">

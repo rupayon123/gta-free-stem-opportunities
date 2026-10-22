@@ -9,6 +9,7 @@ import { isOpportunityVerificationStale, publicOpportunities } from "@/lib/oppor
 import type { Filters, LanguageCode, Opportunity } from "@/lib/types";
 import { coordinatesFromPostal, createCalendarFile, filterOpportunities, formatDateRange, formatDeadline, haversineKm, type Coordinates } from "@/lib/utils";
 import { ExplorerMap } from "./ExplorerMap";
+import { hasUnresolvedProximityQuery } from "@/lib/search";
 import "./OpportunityExplorer.css";
 
 const SAVED_KEY = "gta-stem-opportunities-saved-anonymous";
@@ -27,7 +28,7 @@ type ExplorerProps = {
   landing?: boolean;
   onSavedCountChange?: (count: number) => void;
 };
-type SortOrder = "soonest" | "recent" | "title" | "distance";
+type SortOrder = "relevance" | "soonest" | "recent" | "title" | "distance";
 const URL_TOGGLES = { black: "blackFocused", girls: "girlsFocused", indigenous: "indigenousFocused", volunteer: "volunteerHours", coop: "coop", mentorship: "mentorship", leadership: "leadership" } as const;
 function filtersFromUrl(base: Partial<Filters>): Filters {
   const filters = { ...DEFAULT_FILTERS, ...base };
@@ -77,7 +78,7 @@ export function OpportunityExplorer({ language, initialFilters = {}, highSchool 
   const [urlReady, setUrlReady] = useState(false);
   const [filterOpen, setFilterOpen] = useState(false);
   const [view, setView] = useState<"list" | "map">("list");
-  const [sort, setSort] = useState<SortOrder>("soonest");
+  const [sort, setSort] = useState<SortOrder>("relevance");
   const [page, setPage] = useState(1);
   const [savedIds, setSavedIds] = useState<string[]>([]);
   const [storageNotice, setStorageNotice] = useState("");
@@ -153,13 +154,13 @@ export function OpportunityExplorer({ language, initialFilters = {}, highSchool 
     const candidates = available.filter((item) => (!savedOnly || savedIds.includes(item.id)) && (!highSchool || (
       item.ages.min <= 17 && (item.ages.max ?? 99) >= 14
     )));
-    const result = filterOpportunities(candidates, filters, null).filter((item) => !location || item.virtual || haversineKm(location, item) <= filters.distanceKm);
+    const result = filterOpportunities(candidates, filters, null, { searchLanguage: language, proximityResolved: Boolean(location) }).filter((item) => !location || item.virtual || haversineKm(location, item) <= filters.distanceKm);
     if (sort === "soonest" || (sort === "distance" && !location)) result.sort((a, b) => Date.parse(a.startDate) - Date.parse(b.startDate));
     if (sort === "title") result.sort((a, b) => a.title.localeCompare(b.title));
     if (sort === "recent") result.sort((a, b) => Date.parse(b.lastVerified) - Date.parse(a.lastVerified));
     if (sort === "distance" && location) result.sort((a, b) => haversineKm(location, a) - haversineKm(location, b));
     return result;
-  }, [available, filters, location, sort, savedIds, savedOnly, highSchool]);
+  }, [available, filters, location, sort, savedIds, savedOnly, highSchool, language]);
   const staleCount = results.filter((item) => isOpportunityVerificationStale(item.lastVerified, now)).length;
   const visibleResults = results.slice(0, PAGE_SIZE * page);
   useEffect(() => { setPage(1); }, [filters, sort, savedOnly, highSchool]);
@@ -262,9 +263,11 @@ export function OpportunityExplorer({ language, initialFilters = {}, highSchool 
     <section className={`oe-explorer${landing ? " oe-landing" : ""}`} id="opportunities" aria-labelledby="oe-heading">
       <h2 id="oe-heading" className="oe-sr-only">{savedOnly ? t(language, "saved") : highSchool ? t(language, "highSchool") : t(language, "navOpportunities")}</h2>
       {!landing && <div className="oe-search-row">
-        <div className="oe-search"><Search size={21} aria-hidden="true" /><label className="oe-sr-only" htmlFor="oe-search">{t(language, "search")}</label><input id="oe-search" type="search" value={filters.query} onChange={(event) => updateFilter("query", event.target.value)} placeholder={t(language, "searchPlaceholder")} autoComplete="off" /></div>
+        <div className="oe-search"><Search size={21} aria-hidden="true" /><label className="oe-sr-only" htmlFor="oe-search">{t(language, "search")}</label><input id="oe-search" type="search" value={filters.query} onChange={(event) => updateFilter("query", event.target.value)} placeholder={t(language, "searchPlaceholder")} autoComplete="off" maxLength={250} dir="auto" enterKeyHint="search" spellCheck aria-describedby="oe-search-help" /></div>
         <button data-science-press type="button" className="oe-filter-toggle" aria-expanded={filterOpen} aria-controls="oe-filters" onClick={() => setFilterOpen((open) => !open)}><SlidersHorizontal size={19} aria-hidden="true" />{t(language, "filters")}{chips.length > 0 && <span>{chips.length}</span>}<ChevronDown size={16} aria-hidden="true" /></button>
       </div>}
+      {!landing && <p className="search-help oe-search-help" id="oe-search-help" lang="en" dir="ltr">Search topics, libraries or cities. Small spelling mistakes are okay.</p>}
+      {hasUnresolvedProximityQuery(filters.query) && !location && !filters.city && <p className="oe-inline-notice" lang="en" dir="ltr">For nearby results, choose a city or postal code in the location filters.</p>}
       <div className="oe-layout">
         {landing ? <aside className="oe-interest-panel" aria-labelledby="oe-interest-heading">
           <h3 id="oe-interest-heading" lang="en">Start with your interests</h3>
@@ -304,10 +307,11 @@ export function OpportunityExplorer({ language, initialFilters = {}, highSchool 
         {landing && <div className="oe-discovery-map"><span className="oe-map-badge"><Map size={18} aria-hidden="true" /><span lang="en">Map preview</span></span><a className="oe-map-skip" href="#oe-results" lang="en">Skip map to opportunity list</a>{now ? <ExplorerMap items={results} onSelect={openDetail} language={language} /> : <div className="oe-map-placeholder" role="status" lang="en">Loading the neighbourhood…</div>}</div>}
         <div className="oe-results" id="oe-results">
           {landing && <div className="oe-landing-results-heading" lang="en"><h3>Opportunities to explore</h3><a href={browseHref}>Browse all<ArrowRight size={17} aria-hidden="true" /></a></div>}
-          {chips.length > 0 && <div className="oe-active-filters" aria-label={t(language, "filters")}>{chips.map((chip) => <button data-science-press type="button" key={chip.key} onClick={chip.reset} aria-label={`${t(language, "clearFilters")}: ${chip.label}`}>{chip.label}<X size={14} aria-hidden="true" /></button>)}<button data-science-press className="oe-clear-all" type="button" onClick={clearFilters}>{t(language, "clearFilters")}</button></div>}
-          <div className="oe-result-toolbar"><p role="status" aria-live="polite" aria-atomic="true" lang={!now ? "en" : language}>{!now ? "Loading opportunities…" : <><strong>{results.length}</strong> {t(language, "results")}</>}</p><div className="oe-result-actions"><div className="oe-sort" lang="en"><label className="oe-sr-only" htmlFor="oe-sort">Sort opportunities</label><select id="oe-sort" value={sort} onChange={(event) => setSort(event.target.value as SortOrder)}><option value="soonest">Starting soon</option><option value="recent">Recently checked</option><option value="title">A to Z</option>{location && <option value="distance">Nearest first</option>}</select></div>{!landing && <div className="oe-view-toggle" role="group" aria-label={t(language, "viewMode")}><button data-science-press type="button" aria-pressed={view === "list"} aria-label={t(language, "list")} onClick={() => setView("list")}><List size={18} aria-hidden="true" /><span>{t(language, "list")}</span></button><button data-science-press type="button" aria-pressed={view === "map"} aria-label={t(language, "map")} onClick={() => setView("map")}><Map size={18} aria-hidden="true" /><span>{t(language, "map")}</span></button></div>}</div></div>
+          {chips.length > 0 && <div className="oe-active-filters" role="group" aria-label={t(language, "filters")}>{chips.map((chip) => <button data-science-press type="button" key={chip.key} onClick={chip.reset} aria-label={`${t(language, "clearFilters")}: ${chip.label}`}>{chip.label}<X size={14} aria-hidden="true" /></button>)}<button data-science-press className="oe-clear-all" type="button" onClick={clearFilters}>{t(language, "clearFilters")}</button></div>}
+          <div className="oe-result-toolbar"><p role="status" aria-live="polite" aria-atomic="true" lang={!now ? "en" : language}>{!now ? "Loading opportunities…" : <><strong>{results.length}</strong> {t(language, "results")}</>}</p><div className="oe-result-actions"><div className="oe-sort" lang="en"><label className="oe-sr-only" htmlFor="oe-sort">Sort opportunities</label><select id="oe-sort" value={sort} onChange={(event) => setSort(event.target.value as SortOrder)}><option value="relevance">Best match</option><option value="soonest">Starting soon</option><option value="recent">Recently checked</option><option value="title">A to Z</option>{location && <option value="distance">Nearest first</option>}</select></div>{!landing && <div className="oe-view-toggle" role="group" aria-label={t(language, "viewMode")}><button data-science-press type="button" aria-pressed={view === "list"} aria-label={t(language, "list")} onClick={() => setView("list")}><List size={18} aria-hidden="true" /><span>{t(language, "list")}</span></button><button data-science-press type="button" aria-pressed={view === "map"} aria-label={t(language, "map")} onClick={() => setView("map")}><Map size={18} aria-hidden="true" /><span>{t(language, "map")}</span></button></div>}</div></div>
           <div className="oe-source-status" lang="en"><p>{!now ? "Loading the published snapshot…" : available.length > 0 ? <>{available.length} published listings · {coverage}<br />Last source check: {shortDate(latestCheck, language)}.</> : "No current listings in this published snapshot."}</p><button data-science-press type="button" onClick={() => window.location.reload()} title="Reload this page for the latest published listings."><RefreshCw size={14} aria-hidden="true" />Refresh listings</button></div>
           {storageNotice && <p className="oe-inline-notice" role="status" lang="en">{storageNotice}</p>}
+          {now && results.length === 0 && filters.query.trim() && <div className="oe-search-options" lang="en" dir="ltr"><button data-science-press type="button" className="oe-secondary" onClick={() => updateFilter("query", "")}>Clear search, keep filters</button><a href="/programs/">Browse the program directory</a><a href="https://www.torontopubliclibrary.ca/programs-and-classes/" target="_blank" rel="noopener noreferrer">Check the library’s full calendar</a></div>}
           {savedOnly && now && <p className="oe-saved-note" lang="en"><Bookmark size={16} aria-hidden="true" />No account needed. Saved opportunities stay in this browser.{pastSavedCount > 0 && ` ${pastSavedCount} past or unavailable ${pastSavedCount === 1 ? "listing is" : "listings are"} kept below.`}</p>}
           {staleCount > 0 && <p className="oe-data-note" lang="en">Some listings were last checked more than 14 days ago. Confirm dates and spaces with the provider.</p>}
           {!now ? <div className="oe-loading" role="status" lang="en"><Search size={24} aria-hidden="true" /><p>Finding your next opportunity…</p></div> : !results.length ? <div className="oe-empty" lang="en"><div className="oe-empty-icon">{savedOnly ? <Bookmark size={27} aria-hidden="true" /> : <Search size={27} aria-hidden="true" />}</div><h3>{savedOnly && !savedCount ? pastSavedCount > 0 ? "Your saved listings are no longer current." : "Your next great find belongs here." : "A different search might open a door."}</h3><p>{savedOnly && !savedCount ? pastSavedCount > 0 ? "Your past or unavailable saves are kept below. Remove them when you’re ready, or explore something new." : "Tap the bookmark on any opportunity to keep it here. Past events are kept separately." : available.length === 0 ? "Our current listings have ended or are awaiting review. Explore the official provider calendars while new opportunities are checked." : "Try a nearby city, another interest, or fewer filters. Only active listings appear here."}</p>{chips.length > 0 ? <button data-science-press className="oe-primary" type="button" onClick={clearFilters} lang={language}>{t(language, "clearFilters")}<ArrowRight size={17} aria-hidden="true" /></button> : <a className="oe-primary" href={savedOnly ? "/opportunities/" : "https://www.torontopubliclibrary.ca/programs-and-classes/"} {...(!savedOnly ? { target: "_blank", rel: "noopener noreferrer" } : {})}>{savedOnly ? "Find opportunities" : "Browse library programs"}<ArrowRight size={17} aria-hidden="true" /></a>}</div> : <>

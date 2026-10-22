@@ -1,0 +1,6 @@
+.search-help { margin: .6rem 0 0; max-width: 62ch; color: var(--muted); font-size: .875rem; line-height: 1.5; overflow-wrap: anywhere; }
+.oe-search-help { margin: -.5rem 0 1rem; }
+.oe-search-options { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem 1rem; padding: 1rem; margin-block: 1rem; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); }
+.oe-search-options a { color: var(--accent); font-weight: 700; text-underline-offset: 3px; overflow-wrap: anywhere; }
+.oe-search-options a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+@media (max-width: 560px) { .oe-search-options { align-items: stretch; flex-direction: column; } .oe-search-options a { padding-block: .45rem; } }

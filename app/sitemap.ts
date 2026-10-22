@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { programLastModified, programUrl, publicProgramPages } from "@/lib/programPages";
 
 export const dynamic = "force-static";
 const siteUrl = "https://gta-free-stem.vercel.app";
@@ -66,6 +67,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: lastUpdated,
       changeFrequency: "monthly",
       priority: 0.75
-    }
+    },
+    {
+      url: `${siteUrl}/programs/`,
+      lastModified: lastUpdated,
+      changeFrequency: "daily",
+      priority: 0.9
+    },
+    ...publicProgramPages.map((program) => ({
+      url: programUrl(program),
+      lastModified: programLastModified(program),
+      changeFrequency: "daily" as const,
+      priority: 0.8
+    }))
   ];
 }

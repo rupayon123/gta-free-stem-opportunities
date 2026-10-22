@@ -29,7 +29,8 @@
     "engine:refresh": "npm run generate:library && npm run discover:write && npm run export:public-feed && npm run qa",
     "supabase:check": "tsx scripts/check-supabase.ts",
     "supabase:seed": "tsx scripts/export-supabase-seed.ts",
-    "qa": "tsx scripts/qa-check.ts",
+    "qa": "tsx scripts/qa-check.ts && npm run qa:search",
+    "qa:search": "tsx scripts/search-regression.ts",
     "verify:legal": "tsx scripts/verify-public-legal-pages.ts",
     "verify:legal:release": "VERIFY_DEPLOYED_LEGAL=0 REQUIRE_MONITORED_SUPPORT=1 npm run verify:legal",
     "verify:legal:production": "VERIFY_DEPLOYED_LEGAL=1 REQUIRE_MONITORED_SUPPORT=1 npm run verify:legal",
@@ -42,6 +43,7 @@
   "dependencies": {
     "@next/env": "^16.4.2",
     "@supabase/supabase-js": "^2.107.0",
+    "fuse.js": "7.5.0",
     "lucide-react": "^1.16.0",
     "maplibre-gl": "^6.4.1",
     "next": "^16.4.2",

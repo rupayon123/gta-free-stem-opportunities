@@ -1,6 +1,7 @@
-import type { Filters, Opportunity } from "./types";
+import type { Filters, LanguageCode, Opportunity } from "./types";
 import { gtaFsaCentres } from "./data";
 import { publicOpportunities } from "./opportunityStatus";
+import { searchOpportunities } from "./search";
 
 export type Coordinates = { latitude: number; longitude: number; label?: string };
 const DISPLAY_TIME_ZONE = "America/Toronto";
@@ -115,39 +116,12 @@ export function filterOpportunities(
   opportunities: Opportunity[],
   filters: Filters,
   location: Coordinates | null,
-  options: { includeNonPublic?: boolean } = {}
+  options: { includeNonPublic?: boolean; searchLanguage?: LanguageCode; proximityResolved?: boolean } = {}
 ) {
-  const query = filters.query.trim().toLowerCase();
   const age = Number(filters.age);
   const candidates = options.includeNonPublic ? opportunities : publicOpportunities(opportunities);
-  return candidates
+  const eligible = candidates
     .filter((opportunity) => {
-      const haystack = [
-        opportunity.title,
-        opportunity.description,
-        opportunity.provider,
-        opportunity.summary,
-        opportunity.city,
-        opportunity.region,
-        opportunity.address,
-        opportunity.type,
-        opportunity.freeStatusProof,
-        opportunity.equipment,
-        opportunity.food,
-        opportunity.capacity,
-        opportunity.commitment,
-        opportunity.providerContact,
-        ...opportunity.categories,
-        ...opportunity.communityFocus,
-        ...opportunity.accessibility,
-        ...opportunity.grades,
-        ...opportunity.languages,
-        ...opportunity.tags
-      ]
-        .join(" ")
-        .toLowerCase();
-
-      if (query && !haystack.includes(query)) return false;
       if (filters.region !== "All" && opportunity.region !== filters.region) return false;
       if (filters.city && opportunity.city !== filters.city) return false;
       if (filters.category !== "All" && !opportunity.categories.includes(filters.category)) return false;
@@ -168,8 +142,12 @@ export function filterOpportunities(
         if (distance > filters.distanceKm) return false;
       }
       return true;
-    })
-    .sort((a, b) => {
+    });
+  const matched = searchOpportunities(eligible, filters.query, options.searchLanguage, {
+    proximityResolved: Boolean(location || filters.city || options.proximityResolved)
+  });
+  if (filters.query.trim()) return matched;
+  return matched.sort((a, b) => {
       if (location) {
         const distanceA = haversineKm(location, a);
         const distanceB = haversineKm(location, b);

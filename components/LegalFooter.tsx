@@ -3,7 +3,8 @@ import { legalConfig } from "@/lib/legal";
 export function LegalFooter() {
   return (
     <footer className="legal-footer">
-      <nav aria-label="Legal and support links">
+      <nav aria-label="Program directory, legal and support links">
+        <a href="/programs/">Program directory</a>
         <a href="/support/">Support</a>
         <a href="/privacy/">Privacy Policy</a>
         <a href="/terms/">Terms of Use</a>

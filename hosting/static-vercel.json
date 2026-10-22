@@ -71,6 +71,22 @@
     {
       "source": "/community-hosts/",
       "destination": "/community-hosts.html"
+    },
+    {
+      "source": "/programs",
+      "destination": "/programs.html"
+    },
+    {
+      "source": "/programs/",
+      "destination": "/programs.html"
+    },
+    {
+      "source": "/programs/:id",
+      "destination": "/programs/:id.html"
+    },
+    {
+      "source": "/programs/:id/",
+      "destination": "/programs/:id.html"
     }
   ],
   "headers": [

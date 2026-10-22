@@ -175,7 +175,7 @@ export function metadataForPage(key: SeoPageKey): Metadata {
       description: page.description,
       siteName: "GTA FREE STEM Opportunities",
       locale: "en_CA",
-      images: [{ url: "/icon.png", width: 1024, height: 1024, alt: "GTA FREE STEM Opportunities brand mark" }]
+      images: [{ url: "/icon.png", width: 512, height: 512, alt: "GTA FREE STEM Opportunities brand mark" }]
     },
     twitter: {
       card: "summary_large_image",
