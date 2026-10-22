@@ -190,7 +190,8 @@ export function OpportunityExplorer({ language, initialFilters = {}, highSchool 
     } catch {
       const message = removing ? "Removed for this visit. Device storage is blocked." : "Saved for this visit only. Device storage is blocked.";
       setStorageNotice(message);
-      setSaveAnnouncement(message);
+      // The visible storage notice already announces this status.
+      setSaveAnnouncement("");
       setSaveFeedback({ text: message, sequence: ++feedbackSequence.current });
     }
   };
