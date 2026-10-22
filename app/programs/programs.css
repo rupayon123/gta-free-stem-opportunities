@@ -22,6 +22,11 @@
 .programs-secondary { color: var(--accent); background: var(--surface); border-color: var(--line); }
 .programs-secondary:hover { background: var(--tint); }
 .programs-snapshot { max-width: 760px; color: var(--muted); font-size: 14px; line-height: 1.75; margin-top: 20px; }
+.programs-provider-calendars { margin-bottom: 32px; padding: 20px 24px; border: 1px solid var(--line); border-radius: 14px; background: var(--surface); scroll-margin-top: 24px; }
+.programs-provider-calendars h2 { margin-bottom: 10px; font-size: 24px; }
+.programs-provider-calendars p { margin-bottom: 12px; color: var(--muted); font-size: 14px; line-height: 1.75; }
+.programs-provider-calendars ul { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 4px 24px; list-style: none; margin: 0; padding: 0; }
+.programs-provider-calendars a { display: flex; align-items: center; min-height: 44px; color: var(--accent); font-weight: 750; overflow-wrap: anywhere; }
 .programs-city-nav { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; margin-bottom: 36px; padding: 16px 20px; border-radius: 14px; background: var(--tint); }
 .programs-city-nav > span { margin-inline-end: 8px; font-weight: 750; }
 .programs-city-nav a { display: inline-flex; align-items: center; min-height: 44px; color: var(--accent); font-weight: 800; }
@@ -72,6 +77,8 @@
   .programs-main { padding: 18px 22px 44px; }
   .programs-breadcrumbs { margin-bottom: 24px; }
   .programs-lead { font-size: 17px; }
+  .programs-provider-calendars { padding: 18px 20px; }
+  .programs-provider-calendars ul { grid-template-columns: minmax(0, 1fr); }
   .programs-grid, .programs-detail-grid { grid-template-columns: minmax(0, 1fr); }
   .programs-card, .programs-fact-panel, .programs-next-step { padding: 22px; }
 }

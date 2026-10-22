@@ -66,6 +66,17 @@ export default function ProgramsPage() {
         <p className="programs-snapshot">{publicProgramPages.length} programs in this snapshot{latestCheck ? <> · Sources last checked <time dateTime={latestCheck}>{formatProgramDate(latestCheck)}</time></> : null}. Programs and spaces can change after publication. Confirm the latest details with the provider.</p>
       </section>
 
+      <section className="programs-provider-calendars" id="provider-calendars" aria-labelledby="provider-calendars-title">
+        <h2 id="provider-calendars-title">More provider calendars</h2>
+        <p>These calendars include activities beyond this directory. Check cost, ages and availability with the provider.</p>
+        <ul>
+          <li><a href="https://www.torontopubliclibrary.ca/programs-and-classes/" rel="external">Toronto Public Library calendar</a></li>
+          <li><a href="https://markham.bibliocommons.com/v2/events" rel="external">Markham Public Library calendar</a></li>
+          <li><a href="https://uhnstempathways.ca/upcoming" rel="external">UHN STEM Pathways events</a></li>
+          <li><a href="https://engineering.ontariotechu.ca/outreach/high-school-programs/index.php" rel="external">Ontario Tech high school outreach</a></li>
+        </ul>
+      </section>
+
       {cities.length > 0 ? <>
         <nav className="programs-city-nav" aria-label="Browse programs by city"><span>Jump to a city</span>{cities.map((city) => <a key={city} href={`#${programCityAnchor(city)}`}>{city}</a>)}</nav>
         {cities.map((city) => <section className="programs-city-section" key={city} aria-labelledby={programCityAnchor(city)}>
