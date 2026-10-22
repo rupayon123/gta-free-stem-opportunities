@@ -4,8 +4,8 @@ export const generatedDiscoverySummary = {
   "mode": "deterministic",
   "sourcesChecked": 30,
   "candidatesFound": 277,
-  "newCandidates": 55,
-  "duplicatesSkipped": 35,
+  "newCandidates": 54,
+  "duplicatesSkipped": 39,
   "warnings": [
     "Could not check Credit Valley Conservation youth opportunities: 403 Forbidden.",
     "Could not check Volunteer MBC youth opportunities: 403 Forbidden.",
@@ -14,7 +14,7 @@ export const generatedDiscoverySummary = {
   ],
   "sourceHealth": {
     "schemaVersion": 1,
-    "generatedAt": "2026-10-22T22:14:16.221Z",
+    "generatedAt": "2026-10-22T23:06:09.593Z",
     "status": "healthy",
     "failureReasons": [],
     "sourcesChecked": 30,
@@ -27,7 +27,7 @@ export const generatedDiscoverySummary = {
 
 export const generatedDiscoveryReviewCandidates = [
   {
-    "id": "discovered-tpl-events-volunteer-set-phasers-to-celebrate-60-years-of-star--b5baa030f73b",
+    "id": "discovered-tpl-events-volunteer-set-phasers-to-celebrate-60-years-of-star--b066b1fadb45",
     "title": "Set Phasers to Celebrate! 60 Years of Star Trek: A Merril Collection Exhibit",
     "organization": "Toronto Public Library",
     "description": "Beam yourself up to the Merril Collection of Science Fiction, Speculation and Fantasy and boldly embark on a 60-year journey that celebrates all things Star Trek! For decades, the original television series turned global franchise has inspired generations of fans, artists, and scientists alike. Visitors can explore voyages, characters, and new frontiers through our collection highlights such as novels, RPGs, fanzines, original artwork and more! This exhibit can be viewed during the Merril Collection's regular open hours.",
@@ -43,7 +43,7 @@ export const generatedDiscoveryReviewCandidates = [
     "deadline": "2026-08-17T09:00:00-04:00",
     "startDate": "2026-08-17T09:00:00-04:00",
     "endDate": "2026-11-01T09:00:00-04:00",
-    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6ab6be2165abe8002a7c0dc6",
+    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6abef55ac6cddb0045955ec1",
     "lastChecked": "2026-10-22",
     "lastSeen": "2026-10-22",
     "status": "needs_review",
@@ -167,35 +167,6 @@ export const generatedDiscoveryReviewCandidates = [
       "No clear future date found on the crawled page."
     ],
     "sourceName": "Richmond Hill Public Library programs"
-  },
-  {
-    "id": "discovered-aurora-library-stem-stem-engineering-adventures-76bfd73c896d",
-    "title": "STEM Engineering Adventures",
-    "organization": "Aurora Public Library",
-    "description": "Discover the power of hands-on learning with our scientific, intriguing, interactive STEM activities and projects that you get to take home after completion! This is in collaboration with and funded by Robotics Rock STEM Youth Association. This session is for ages 11-14. If you are unable to attend, please cancel your registration as soon as possible so that another child may take your spot. Repeated no-shows without cancelling may affect eligibility for future registrations, as we strive to provide fair access to all families interested in the program.",
-    "city": "Aurora",
-    "region": "York",
-    "ageMin": 11,
-    "ageMax": 14,
-    "category": "Coding & Robotics",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "deadline": "2026-10-22T17:30:00-04:00",
-    "startDate": "2026-10-22T17:30:00-04:00",
-    "endDate": "2026-10-22T18:30:00-04:00",
-    "sourceUrl": "https://aurora.bibliocommons.com/events/6ab18ad886d845003117c45f",
-    "lastChecked": "2026-10-22",
-    "lastSeen": "2026-10-22",
-    "status": "needs_review",
-    "tags": [
-      "coding & robotics",
-      "stem"
-    ],
-    "confidence": "high",
-    "reviewReasons": [],
-    "sourceName": "Aurora Public Library STEM events"
   },
   {
     "id": "discovered-aurora-library-volunteers-volunteers-9a6997e9e36a",
