@@ -3,9 +3,9 @@ import type { DiscoveredOpportunity } from "./discovery";
 export const generatedDiscoverySummary = {
   "mode": "deterministic",
   "sourcesChecked": 30,
-  "candidatesFound": 118,
-  "newCandidates": 45,
-  "duplicatesSkipped": 24,
+  "candidatesFound": 277,
+  "newCandidates": 55,
+  "duplicatesSkipped": 35,
   "warnings": [
     "Could not check Credit Valley Conservation youth opportunities: 403 Forbidden.",
     "Could not check Volunteer MBC youth opportunities: 403 Forbidden.",
@@ -14,7 +14,7 @@ export const generatedDiscoverySummary = {
   ],
   "sourceHealth": {
     "schemaVersion": 1,
-    "generatedAt": "2026-10-22T21:17:36.398Z",
+    "generatedAt": "2026-10-22T22:14:16.221Z",
     "status": "healthy",
     "failureReasons": [],
     "sourcesChecked": 30,
@@ -26,6 +26,34 @@ export const generatedDiscoverySummary = {
 } as const;
 
 export const generatedDiscoveryReviewCandidates = [
+  {
+    "id": "discovered-tpl-events-volunteer-set-phasers-to-celebrate-60-years-of-star--b5baa030f73b",
+    "title": "Set Phasers to Celebrate! 60 Years of Star Trek: A Merril Collection Exhibit",
+    "organization": "Toronto Public Library",
+    "description": "Beam yourself up to the Merril Collection of Science Fiction, Speculation and Fantasy and boldly embark on a 60-year journey that celebrates all things Star Trek! For decades, the original television series turned global franchise has inspired generations of fans, artists, and scientists alike. Visitors can explore voyages, characters, and new frontiers through our collection highlights such as novels, RPGs, fanzines, original artwork and more! This exhibit can be viewed during the Merril Collection's regular open hours.",
+    "city": "Toronto",
+    "region": "Toronto",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "Science & Engineering",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "deadline": "2026-08-17T09:00:00-04:00",
+    "startDate": "2026-08-17T09:00:00-04:00",
+    "endDate": "2026-11-01T09:00:00-04:00",
+    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6ab6be2165abe8002a7c0dc6",
+    "lastChecked": "2026-10-22",
+    "lastSeen": "2026-10-22",
+    "status": "needs_review",
+    "tags": [
+      "science & engineering"
+    ],
+    "confidence": "high",
+    "reviewReasons": [],
+    "sourceName": "Toronto Public Library youth volunteer events"
+  },
   {
     "id": "discovered-vaughan-library-programs-volunteer-opportunities-e775e833a50b",
     "title": "Volunteer Opportunities",
@@ -141,6 +169,63 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Richmond Hill Public Library programs"
   },
   {
+    "id": "discovered-aurora-library-stem-stem-engineering-adventures-76bfd73c896d",
+    "title": "STEM Engineering Adventures",
+    "organization": "Aurora Public Library",
+    "description": "Discover the power of hands-on learning with our scientific, intriguing, interactive STEM activities and projects that you get to take home after completion! This is in collaboration with and funded by Robotics Rock STEM Youth Association. This session is for ages 11-14. If you are unable to attend, please cancel your registration as soon as possible so that another child may take your spot. Repeated no-shows without cancelling may affect eligibility for future registrations, as we strive to provide fair access to all families interested in the program.",
+    "city": "Aurora",
+    "region": "York",
+    "ageMin": 11,
+    "ageMax": 14,
+    "category": "Coding & Robotics",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "deadline": "2026-10-22T17:30:00-04:00",
+    "startDate": "2026-10-22T17:30:00-04:00",
+    "endDate": "2026-10-22T18:30:00-04:00",
+    "sourceUrl": "https://aurora.bibliocommons.com/events/6ab18ad886d845003117c45f",
+    "lastChecked": "2026-10-22",
+    "lastSeen": "2026-10-22",
+    "status": "needs_review",
+    "tags": [
+      "coding & robotics",
+      "stem"
+    ],
+    "confidence": "high",
+    "reviewReasons": [],
+    "sourceName": "Aurora Public Library STEM events"
+  },
+  {
+    "id": "discovered-aurora-library-volunteers-volunteers-9a6997e9e36a",
+    "title": "Volunteers",
+    "organization": "Aurora Public Library",
+    "description": "Volunteering at the Library Volunteering can be a great way to build experience, learn new skills, connect&hellip;",
+    "city": "Aurora",
+    "region": "York",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "Volunteer Hours",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-10-22T09:00:00-04:00",
+    "sourceUrl": "https://aurorapl.ca/volunteers",
+    "lastChecked": "2026-10-22",
+    "lastSeen": "2026-10-22",
+    "status": "needs_review",
+    "tags": [
+      "volunteer hours"
+    ],
+    "confidence": "high",
+    "reviewReasons": [
+      "No clear future date found on the crawled page."
+    ],
+    "sourceName": "Aurora Public Library volunteer opportunities"
+  },
+  {
     "id": "discovered-whitby-programs-cancelled-girls-in-stem-4386471c57d4",
     "title": "Cancelled: Girls in Stem",
     "organization": "Whitby Public Library",
@@ -197,6 +282,209 @@ export const generatedDiscoveryReviewCandidates = [
       "No clear future date found on the crawled page."
     ],
     "sourceName": "Ajax Public Library STEM events"
+  },
+  {
+    "id": "discovered-pickering-library-tech-science-and-technology-f36c250b8680",
+    "title": "Science and Technology",
+    "organization": "Pickering Public Library",
+    "description": "Science and Technology listed by Pickering Public Library technology events.",
+    "city": "Pickering",
+    "region": "Durham",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "Science & Engineering",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-10-22T09:00:00-04:00",
+    "sourceUrl": "https://pickeringlibrary.ca/resources/science-technology",
+    "lastChecked": "2026-10-22",
+    "lastSeen": "2026-10-22",
+    "status": "needs_review",
+    "tags": [
+      "science & engineering",
+      "technology"
+    ],
+    "confidence": "high",
+    "reviewReasons": [
+      "No clear future date found on the crawled page."
+    ],
+    "sourceName": "Pickering Public Library technology events"
+  },
+  {
+    "id": "discovered-pickering-library-tech-technology-and-maker-space-9189ff2faf8e",
+    "title": "Technology and Maker Space",
+    "organization": "Pickering Public Library",
+    "description": "Technology and Maker Space listed by Pickering Public Library technology events.",
+    "city": "Pickering",
+    "region": "Durham",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "Makerspace & Fabrication",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-10-22T09:00:00-04:00",
+    "sourceUrl": "https://pickeringlibrary.ca/makerspace",
+    "lastChecked": "2026-10-22",
+    "lastSeen": "2026-10-22",
+    "status": "needs_review",
+    "tags": [
+      "makerspace & fabrication",
+      "technology",
+      "maker"
+    ],
+    "confidence": "high",
+    "reviewReasons": [
+      "No clear future date found on the crawled page."
+    ],
+    "sourceName": "Pickering Public Library technology events"
+  },
+  {
+    "id": "discovered-pickering-library-tech-pa-day-gross-science-with-scientists-in-sc-162723540d69",
+    "title": "PA Day: Gross Science with Scientists in School! (5-8 yrs)",
+    "organization": "Pickering Public Library",
+    "description": "PA Day: Gross Science with Scientists in School! (5-8 yrs) listed by Pickering Public Library technology events.",
+    "city": "Pickering",
+    "region": "Durham",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "Science & Engineering",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-10-22T09:00:00-04:00",
+    "sourceUrl": "https://cal.pickeringlibrary.ca/event/scientists-school-51238",
+    "lastChecked": "2026-10-22",
+    "lastSeen": "2026-10-22",
+    "status": "needs_review",
+    "tags": [
+      "science & engineering"
+    ],
+    "confidence": "high",
+    "reviewReasons": [
+      "No clear future date found on the crawled page."
+    ],
+    "sourceName": "Pickering Public Library technology events"
+  },
+  {
+    "id": "discovered-pickering-library-tech-developing-responsible-technology-4c170fc272c9",
+    "title": "Developing Responsible Technology",
+    "organization": "Pickering Public Library",
+    "description": "Developing Responsible Technology listed by Pickering Public Library technology events.",
+    "city": "Pickering",
+    "region": "Durham",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "STEM",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-10-22T09:00:00-04:00",
+    "sourceUrl": "https://pickering.bibliocommons.com/v2/list/display/1491301049/3106000637",
+    "lastChecked": "2026-10-22",
+    "lastSeen": "2026-10-22",
+    "status": "needs_review",
+    "tags": [
+      "stem",
+      "technology"
+    ],
+    "confidence": "high",
+    "reviewReasons": [
+      "No clear future date found on the crawled page."
+    ],
+    "sourceName": "Pickering Public Library technology events"
+  },
+  {
+    "id": "discovered-pickering-library-tech-computers-and-technology-99e4cbcf5f11",
+    "title": "Computers and Technology",
+    "organization": "Pickering Public Library",
+    "description": "Computers and Technology listed by Pickering Public Library technology events.",
+    "city": "Pickering",
+    "region": "Durham",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "STEM",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-10-22T09:00:00-04:00",
+    "sourceUrl": "https://pickeringlibrary.ca/explore/?programs=computers-and-technology",
+    "lastChecked": "2026-10-22",
+    "lastSeen": "2026-10-22",
+    "status": "needs_review",
+    "tags": [
+      "stem",
+      "technology",
+      "computers"
+    ],
+    "confidence": "high",
+    "reviewReasons": [
+      "No clear future date found on the crawled page."
+    ],
+    "sourceName": "Pickering Public Library technology events"
+  },
+  {
+    "id": "discovered-pickering-library-tech-technology-for-health-fitness-c25f6de4b42e",
+    "title": "Technology for Health & Fitness",
+    "organization": "Pickering Public Library",
+    "description": "Technology for Health & Fitness listed by Pickering Public Library technology events.",
+    "city": "Pickering",
+    "region": "Durham",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "STEM",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-10-22T09:00:00-04:00",
+    "sourceUrl": "https://pickering.bibliocommons.com/v2/list/display/1491301049/3037093477",
+    "lastChecked": "2026-10-22",
+    "lastSeen": "2026-10-22",
+    "status": "needs_review",
+    "tags": [
+      "stem",
+      "technology"
+    ],
+    "confidence": "high",
+    "reviewReasons": [
+      "No clear future date found on the crawled page."
+    ],
+    "sourceName": "Pickering Public Library technology events"
+  },
+  {
+    "id": "discovered-oshawa-library-stem-makerspace-6bb095888b6a",
+    "title": "Makerspace",
+    "organization": "Oshawa Public Libraries",
+    "description": "Makerspace listed by Oshawa Public Libraries STEM events.",
+    "city": "Oshawa",
+    "region": "Durham",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "Makerspace & Fabrication",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-10-22T09:00:00-04:00",
+    "sourceUrl": "https://oshawalibrary.ca/technology/makerspace",
+    "lastChecked": "2026-10-22",
+    "lastSeen": "2026-10-22",
+    "status": "needs_review",
+    "tags": [
+      "makerspace & fabrication"
+    ],
+    "confidence": "high",
+    "reviewReasons": [
+      "No clear future date found on the crawled page."
+    ],
+    "sourceName": "Oshawa Public Libraries STEM events"
   },
   {
     "id": "discovered-clarington-library-programs-learning-technology-230c06781e35",
