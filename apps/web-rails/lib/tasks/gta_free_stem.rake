@@ -7,7 +7,7 @@ namespace :gta_free_stem do
 
   desc "Mark public listings with passed dates as expired"
   task expire_past_listings: :environment do
-    count = Opportunity.expired_by_date.where.not(status: %w[hidden expired]).update_all(status: "expired", updated_at: Time.current)
+    count = Opportunity.expired_by_date.where(status: "active").update_all(status: "expired", updated_at: Time.current)
     puts "Marked #{count} opportunities as expired."
   end
 

@@ -7,7 +7,7 @@ module Api
           data: opportunities.map(&:as_api_json),
           meta: {
             activeCount: Opportunity.publicly_visible.count,
-            lastUpdated: SourceCheck.order(checked_at: :desc).pick(:checked_at)&.iso8601
+            lastUpdated: SourceCheck.last_successful_refresh_at&.iso8601
           }
         }
       end

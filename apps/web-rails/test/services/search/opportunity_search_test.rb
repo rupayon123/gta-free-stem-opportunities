@@ -39,6 +39,30 @@ class Search::OpportunitySearchTest < ActiveSupport::TestCase
     assert_equal [ active ], results.to_a
   end
 
+  test "public callers cannot opt unreviewed finds into search" do
+    active = create_opportunity(id: "public-approved")
+    create_opportunity(id: "private-review", status: "needs_review")
+
+    [ {}, { includeNewFinds: true }, { includeNewFinds: false } ].each do |params|
+      assert_equal [ active ], Search::OpportunitySearch.new(params).results.to_a
+    end
+    assert_equal 2, Search::OpportunitySearch.new({}, admin: true).results.count
+  end
+
+  test "high school search matches the inclusive fourteen to seventeen age overlap" do
+    teen_stem = create_opportunity(id: "teen-stem-no-pathway-tags", age_min: 14, age_max: 17, tags: [])
+    lower_boundary = create_opportunity(id: "ages-up-to-fourteen", age_min: 8, age_max: 14)
+    upper_boundary = create_opportunity(id: "ages-seventeen-plus", age_min: 17, age_max: nil)
+    create_opportunity(id: "adult-only-volunteer", age_min: 18, age_max: nil, volunteer_hours_eligible: true, tags: [ "volunteer", "mentor", "teen" ])
+    create_opportunity(id: "children-only-coop-tag", age_min: 8, age_max: 13, coop_eligible: true, tags: [ "shsm" ])
+
+    results = Search::OpportunitySearch.new({ highSchool: true }).results
+
+    assert_equal [ teen_stem.id, lower_boundary.id, upper_boundary.id ].sort, results.pluck(:id).sort
+    assert_equal 5, Search::OpportunitySearch.new.results.count
+    assert_equal [ teen_stem.id, upper_boundary.id ].sort, Search::OpportunitySearch.new({ highSchool: true, age: 17 }).results.pluck(:id).sort
+  end
+
   test "filters and sorts by distance" do
     nearby = create_opportunity(
       id: "nearby-stem",
@@ -82,7 +106,9 @@ class Search::OpportunitySearchTest < ActiveSupport::TestCase
         age_max: 18,
         cost: "Free to join",
         source_url: "https://example.com/#{SecureRandom.hex(3)}",
-        status: "active"
+        status: "active",
+        start_date: 3.days.from_now,
+        last_checked: Time.current.utc.to_date
       }.merge(attributes)
     )
   end
