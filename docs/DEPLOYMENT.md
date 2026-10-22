@@ -21,9 +21,15 @@ The existing root-linked Vercel project `i-live-in-the-gta-among` has Deployment
 
 The public `gta-free-stem` project is connected to this repository for Git deployments. Production uses `main`, Node 22, `npm ci`, `npm run build`, and output directory `out`. The scheduled source refresh runs every six hours and commits accepted feed changes; confirm that its generated commit produces a READY production deployment and that `/opportunities.json` matches the accepted GitHub feed before declaring recovery complete.
 
-Do not add a `public` key to `vercel.json`: Vercel no longer accepts that property and rejects deployment requests containing it. Public website access is configured through the project's deployment-protection settings; the existing public project has protection disabled.
+The root `vercel.ts` supplies build settings, routes and response headers. Do not add the obsolete `public` property: Vercel rejects it. Public website access is configured through the project's deployment-protection settings; the existing public project has protection disabled.
 
-The project uses npm 10 with the tracked `package-lock.json`; `package.json`, GitHub Actions, and `vercel.json` all enforce that workflow with `npm ci`. Keep local-only package-manager files out of CLI uploads; `.vercelignore` excludes `pnpm-lock.yaml` and `pnpm-workspace.yaml`.
+The project uses npm 10 with the tracked `package-lock.json`; `package.json`, GitHub Actions, and `vercel.ts` all enforce that workflow with `npm ci`. Keep local-only package-manager files out of CLI uploads; `.vercelignore` excludes `pnpm-lock.yaml` and `pnpm-workspace.yaml`.
+
+## Visitors with an older page open
+
+Each Vercel build pins Next.js assets to its own immutable `VERCEL_URL`. The root configuration adds only that exact origin to the existing script, style, font and connection policies. MapLibre's worker remains on the page's own origin. Local builds without `VERCEL_URL` retain relative assets. This keeps an already open page's lazy-loaded code available when the production alias switches to a newer build, without a paid hosting feature.
+
+An early inline guard handles missing Next.js scripts and styles. It permits one automatic reload per minute in a tab, preserves the URL and saved listings, and shows an accessible manual reload action after another failure or when session storage is blocked. The guard cannot restore an offline connection or assets deleted by the hosting provider's retention policy. Verify both normal loading and controlled asset failures against a remote preview before promotion.
 
 ## App Store Support-Contact Gate
 

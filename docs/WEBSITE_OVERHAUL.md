@@ -35,9 +35,11 @@ The frontend also uses bounded motion informed by the user-requested [React Bits
 
 The scheduled refresh stopped before ingestion because the production dependency audit failed. Repository main had a September 30 snapshot while the public Vercel site still served an August 6 snapshot. Compatible patched dependencies restore the local audit gate; source refresh must still pass the original source-health thresholds, and the successful output must actually reach the public deployment. Discovery candidates require review rather than automatic publication. Date and verification checks apply to generated records as well as hand-curated entries.
 
-The October 22 local refresh checked all 24 library pages successfully and produced 107 public records from Toronto and Markham. Discovery candidates remain separate review inputs. These counts are a dated snapshot, not a promise of permanent availability or full GTA coverage.
+The October 22 production recovery passed the original source-health gates in [the real scheduled workflow](https://github.com/rupayon123/gta-free-stem-opportunities/actions/runs/39855936930). All 24 library pages were checked; the accepted public feed contains 105 current records from Toronto and Markham. Discovery reached 26 of 30 sources and kept 45 candidates separate for review. Four sources returned 403/405 responses; those candidates were not published. The public feed matches the generated GitHub commit byte-for-byte. These counts are a dated snapshot, not a promise of permanent availability or full GTA coverage.
 
 The first Git deployment request exposed another existing blocker: the root `vercel.json` retained the unsupported `public` property. Vercel rejected the request before building. That property is removed; website access remains controlled by the existing public project's deployment-protection settings.
+
+Live browser checks during a subsequent feed deployment exposed an asset rollover failure: an older page requested a chunk through the newly updated production alias, received HTML with status 404, and could not initialize the listing interface. Deployment assets are now pinned to the matching immutable build origin through `VERCEL_URL`, with an exact-origin content security policy in root `vercel.ts`. A bounded inline recovery guard and manual reload notice also cover missing scripts and styles. This retains free hosting; the paid skew-protection feature is not required.
 
 ## Release boundary
 

@@ -1,6 +1,8 @@
 import "maplibre-gl/dist/maplibre-gl.css";
 import "./globals.css";
 import type { Metadata } from "next";
+import { createAssetRecoveryScript } from "@/lib/assetRecovery";
+import { getDeploymentAssetOrigin } from "@/lib/deploymentAssets";
 
 const siteUrl = "https://gta-free-stem.vercel.app";
 const siteTitle = "GTA FREE STEM Opportunities";
@@ -163,6 +165,10 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        <script
+          id="gta-asset-recovery"
+          dangerouslySetInnerHTML={{ __html: createAssetRecoveryScript(getDeploymentAssetOrigin()) }}
+        />
         <meta name="geo.region" content="CA-ON" />
         <meta name="geo.placename" content="Greater Toronto Area" />
         <meta name="theme-color" content="#0d6673" />
