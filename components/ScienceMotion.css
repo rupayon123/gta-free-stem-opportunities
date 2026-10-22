@@ -7,6 +7,24 @@
   /* Content is never hidden while waiting for JavaScript or intersection. */
 }
 
+.playful-surface {
+  min-width: 0;
+}
+
+.playful-surface [data-science-press] {
+  transform-origin: center;
+}
+
+.playful-surface [data-science-icon] {
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.playful-surface [data-science-tilt] {
+  transform-origin: center;
+  backface-visibility: hidden;
+}
+
 .save-spark {
   --science-spark-yellow: #ffcd29;
   --science-spark-teal: #008f99;
@@ -40,6 +58,15 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .playful-surface [data-science-press] {
+    scale: none !important;
+  }
+  .playful-surface [data-science-icon] {
+    rotate: none !important;
+  }
+  .playful-surface [data-science-tilt] {
+    transform: none !important;
+  }
   .science-lift {
     transition: none;
   }

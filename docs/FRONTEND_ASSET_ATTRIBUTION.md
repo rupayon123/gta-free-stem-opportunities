@@ -9,6 +9,8 @@ This document records the assets and motion introduced for the selected GTA Free
 - `components/ScienceMotion.tsx` / `SaveSpark`: adapted from the radial line-burst drawing and easing in React Bits `ClickSpark`, by David Haz. The local implementation is deliberately narrower: trusted capture clicks on an unsaved `button.oe-bookmark` only; one short burst; a maximum 96 × 96 CSS-pixel canvas; device-pixel scaling capped at 2; live reduced-motion handling; no idle animation loop; and resize, visibility and unmount cleanup. The original component's pointer-down trigger, general effect options, imperative API and multiple burst engine are not included.
 - `components/ScienceMotion.tsx` / `ScienceReveal`: original React IntersectionObserver and native Web Animations lifecycle implementation, informed by motion-anything's `fade-in-up` recipe. The local version keeps content visible before hydration and without JavaScript, reduces travel to 10px, starts at readable opacity, uses a 300ms entrance only once, and cancels travel on a live reduced-motion change.
 - `components/ScienceMotion.css` / `.science-lift`: modified adaptation of motion-anything's `card-lift-hover` transform pattern and easing. Travel is reduced to 3px; hover movement applies only to a fine pointer with hover; press feedback has a reduced-motion guard; the upstream shadow animation and persistent `will-change` were removed. Apply this class only to interactive cards.
+- `components/ScienceMotion.tsx` / `PlayfulSurface`: local native Web Animations implementation informed by React Bits `TiltedCard` and `Magnet` pointer normalization/settling, plus motion-anything `magnetic-button`, `bounce-cards` and `toggle-spring` recipes. Native controls retain their original hit areas until activation; trusted clicks trigger a bounded scale spring. Artwork tilt is fine-pointer-only, bounded to 5/6 degrees and 5/4 pixels, with no idle animation loop. Live reduced motion, visibility, blur, resize, canceled input and unmount clean up animation work. No upstream flip, gyroscope, registry or continuous spring solver is included.
+- `components/PlayfulUI.css`: local tactile button, card, interest-icon and menu/dialog motion using the same reference principles; finite effects and reduced-motion alternatives preserve the selected third layout.
 - The wrapper APIs, save-button state gate, cleanup logic and GTA Free STEM palette integration are local implementation work. No upstream workbench, agent runtime, motion router or companion skill was installed or bundled.
 - `public/illustrations/neighbourhood-lab-hero.png` is AI-generated artwork created with the built-in image-generation tool from the user-selected GTA Free STEM mockup on 2026-10-22. It combines generated photographic-style Toronto and seedling circles with illustrated science symbols. The `.webp` derivative is a compressed delivery copy of the same artwork. It is decorative artwork, not source evidence of an event or programme.
 
@@ -25,6 +27,16 @@ This document records the assets and motion introduced for the selected GTA Free
   Reviewed blob SHA: `8756853d9c1c4830aaaf70aadc8092acf464026b`.
 - motion-anything card-lift-hover source: https://github.com/nexu-io/motion-anything/blob/main/recipes/web/card-lift-hover/card-lift-hover.css
   Reviewed blob SHA: `b252bf91b738c29992f90b14f195a43d5b692ae5`.
+- React Bits TiltedCard: https://github.com/DavidHDev/react-bits/blob/e12c22192ac7b4b452c5e2feb9b586d74765d696/src/ts-default/Components/TiltedCard/TiltedCard.tsx
+  Reviewed blob SHA: `a961b6b9604340860913d8b0ac266cc92259480a`.
+- React Bits Magnet: https://github.com/DavidHDev/react-bits/blob/e12c22192ac7b4b452c5e2feb9b586d74765d696/src/ts-default/Animations/Magnet/Magnet.tsx
+  Reviewed blob SHA: `41fe23b277c17643cea7bafef8bcafee06390a5f`.
+- motion-anything magnetic-button CSS: https://github.com/nexu-io/motion-anything/blob/b016900d9ee92fc2d3e4dc520359cc8999d2ed4e/recipes/web/magnetic-button/magnetic-button.css
+  Reviewed blob SHA: `7ef874f4ecfbb6264e27914f0a02f8f8e78a2595`; companion JS blob: `72f9122ab6e8bee879140a9cced7d0514a805303`.
+- motion-anything bounce-cards: https://github.com/nexu-io/motion-anything/blob/b016900d9ee92fc2d3e4dc520359cc8999d2ed4e/recipes/web/bounce-cards/bounce-cards.css
+  Reviewed blob SHA: `d39e3c7839e23b5ad15d9bd089f7041abaef1dc7`.
+- motion-anything toggle-spring: https://github.com/nexu-io/motion-anything/blob/b016900d9ee92fc2d3e4dc520359cc8999d2ed4e/recipes/web/toggle-spring/toggle-spring.css
+  Reviewed blob SHA: `df3b9af1f13ad4cedcca7440a999d76f3ffbf3f9`.
 - motion-anything motion standard: https://github.com/nexu-io/motion-anything/blob/main/MOTION-SPEC.md
 - motion-anything licence: https://github.com/nexu-io/motion-anything/blob/main/LICENSE
   Reviewed blob SHA: `e371327f3a1d39fa54365c298a88196a7cdf5207`.
