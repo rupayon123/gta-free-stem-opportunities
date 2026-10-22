@@ -19,6 +19,10 @@ npx --yes vercel deploy --prod --yes --scope rupayon-s-projects
 
 The existing root-linked Vercel project `i-live-in-the-gta-among` has Deployment Protection enabled. Use the `gta-free-stem` project for the public zero-cost website.
 
+The public `gta-free-stem` project is connected to this repository for Git deployments. Production uses `main`, Node 22, `npm ci`, `npm run build`, and output directory `out`. The scheduled source refresh runs every six hours and commits accepted feed changes; confirm that its generated commit produces a READY production deployment and that `/opportunities.json` matches the accepted GitHub feed before declaring recovery complete.
+
+Do not add a `public` key to `vercel.json`: Vercel no longer accepts that property and rejects deployment requests containing it. Public website access is configured through the project's deployment-protection settings; the existing public project has protection disabled.
+
 The project uses npm 10 with the tracked `package-lock.json`; `package.json`, GitHub Actions, and `vercel.json` all enforce that workflow with `npm ci`. Keep local-only package-manager files out of CLI uploads; `.vercelignore` excludes `pnpm-lock.yaml` and `pnpm-workspace.yaml`.
 
 ## App Store Support-Contact Gate

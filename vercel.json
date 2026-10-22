@@ -2,7 +2,6 @@
   "buildCommand": "npm run build",
   "outputDirectory": "out",
   "installCommand": "npm ci",
-  "public": true,
   "rewrites": [
     {
       "source": "/opportunities",

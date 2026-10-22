@@ -37,6 +37,8 @@ The scheduled refresh stopped before ingestion because the production dependency
 
 The October 22 local refresh checked all 24 library pages successfully and produced 107 public records from Toronto and Markham. Discovery candidates remain separate review inputs. These counts are a dated snapshot, not a promise of permanent availability or full GTA coverage.
 
+The first Git deployment request exposed another existing blocker: the root `vercel.json` retained the unsupported `public` property. Vercel rejected the request before building. That property is removed; website access remains controlled by the existing public project's deployment-protection settings.
+
 ## Release boundary
 
 Implementation and verification occur in an isolated checkout, preserving the existing checkout's unrelated uncommitted work. The user explicitly authorized remaining tests, publication and live hunting recovery in the cooperating backend chat on October 22. Release verification must target the public `gta-free-stem` Vercel project and compare its feed with the refreshed GitHub output. The separate Rails foundation needs its Ruby/PostGIS CI; a static website build does not validate a deployed Rails service. Local preview servers are development checks only and must be stopped before handoff.
