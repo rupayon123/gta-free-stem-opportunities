@@ -123,14 +123,21 @@ function queryTokens(query: string, language: LanguageCode): string[] {
   const effectiveLanguage = requestLanguage(query, language);
   const fillers = fillerByLanguage[effectiveLanguage] ?? fillerByLanguage.en;
   let canonical = canonicalizeLibraries(query);
+  // Resolve reviewed activity words in the request's language before ranking.
+  // French "lecture" means reading; an English astronomy lecture must not
+  // become a match just because the same spelling appears in its description.
+  for (const [topic, phrase] of Object.entries(libraryTopicTerms[effectiveLanguage]).sort((a, b) => b[1].length - a[1].length)) {
+    const normalized = normalizeSearchText(phrase);
+    const attached = /[\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}\p{Script=Hangul}]/u.test(normalized);
+    const boundary = "[\\p{L}\\p{M}\\p{N}]";
+    const pattern = new RegExp(`${attached ? "" : `(?<!${boundary})`}${escapePattern(normalized)}${attached ? "" : `(?!${boundary})`}`, "gu");
+    canonical = canonical.replace(pattern, ` ${topic} `);
+  }
   if (["zh", "yue", "ja", "ko"].includes(effectiveLanguage)) {
     // Protect reviewed activity names before removing attached request
     // particles: Japanese おはなし会 contains は as part of the noun.
     // Use only the effective language so e.g. 工作 is not translated across
     // languages with different meanings.
-    for (const [topic, phrase] of Object.entries(libraryTopicTerms[effectiveLanguage]).sort((a, b) => b[1].length - a[1].length)) {
-      canonical = canonical.replaceAll(normalizeSearchText(phrase), ` ${topic} `);
-    }
     // These languages routinely attach request particles without spaces.
     for (const filler of [...searchFillerTerms[effectiveLanguage]].sort((a, b) => b.length - a.length)) {
       canonical = canonical.replaceAll(normalizeSearchText(filler), " ");

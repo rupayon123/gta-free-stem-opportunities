@@ -67,6 +67,10 @@ for (const language of languages) {
   assert.deepEqual(searchOpportunities(items, label, language).map((item) => item.id).sort(), communityIds, language);
 }
 
+const lecture = fixture("lecture", "Archaeoastronomy", "An astronomy lecture about Stonehenge.");
+assert.deepEqual(searchOpportunities([items[1], lecture], "Je cherche des activités de lecture", "en").map(item => item.id), ["book-club"], "French reading intent must exclude an unrelated English lecture");
+assert.deepEqual(searchOpportunities([items[1], lecture], "lecture", "fr").map(item => item.id), ["book-club"]);
+assert.deepEqual(searchOpportunities([items[1], lecture], "lecture", "en").map(item => item.id).sort(), ["book-club", "lecture"], "An ambiguous bare word retains English interface interpretation and source text");
 let multilingualTopics = 0;
 for (const [language, terms] of Object.entries(libraryTopicTerms)) {
   for (const [topic, query] of Object.entries(terms)) {
