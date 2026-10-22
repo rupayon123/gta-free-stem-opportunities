@@ -10,7 +10,8 @@ import { languagePreferenceOrder } from "@/lib/data";
 import { websiteCopy } from "@/lib/websiteCopy";
 import { legalConfig } from "@/lib/legal";
 import type { Filters, LanguageCode } from "@/lib/types";
-import { SaveSpark, ScienceReveal } from "./ScienceMotion";
+import { PlayfulSurface, SaveSpark, ScienceReveal } from "./ScienceMotion";
+import "./PlayfulUI.css";
 
 type Surface = "home" | "opportunities" | "high-school" | "support" | "community-hosts";
 
@@ -79,11 +80,11 @@ export function HomePage({ initialSurface = "home", initialFilterOverrides = {} 
   }, [menuOpen]);
 
   return (
-    <>
+    <PlayfulSurface>
       <a className="skip-link" href="#main-content">Skip to content</a>
       <header className="site-header">
         <div className="header-inner">
-          <a className="brand" href="/" aria-label="GTA Free STEM home">
+          <a data-science-press className="brand" href="/" aria-label="GTA Free STEM home">
             <StorybookMark compact ariaHidden />
           </a>
           <nav className="desktop-nav" aria-label="Main navigation">
@@ -92,10 +93,10 @@ export function HomePage({ initialSurface = "home", initialFilterOverrides = {} 
             <a href="/#how-it-works" lang={copyLanguage}>{language === "en" ? "About" : c.about}</a>
           </nav>
           <div className="site-tools">
-            <a className={`saved-link ${savedOnly ? "is-active" : ""}`} href="/opportunities/?saved=1#discover" lang={copyLanguage} aria-label={`${c.saved} (${savedCount})`}><Bookmark size={18} aria-hidden="true" /><span>{c.saved}</span>{savedCount > 0 && <b>{savedCount}</b>}</a>
+            <a data-science-press className={`saved-link ${savedOnly ? "is-active" : ""}`} href="/opportunities/?saved=1#discover" lang={copyLanguage} aria-label={`${c.saved} (${savedCount})`}><Bookmark size={18} aria-hidden="true" data-science-icon /><span>{c.saved}</span>{savedCount > 0 && <b key={savedCount}>{savedCount}</b>}</a>
             <label className="language-tool"><Languages size={18} aria-hidden="true" /><span className="sr-only">{t(language, "siteLanguage")}</span><select value={language} onChange={e => setLanguage(e.target.value as LanguageCode)}>{languagePreferenceOrder.map(code => <option key={code} value={code}>{languageMeta[code].native}</option>)}</select></label>
-            <button className="icon-button" type="button" lang="en" aria-label={dark ? "Switch to light theme" : "Switch to dark theme"} onClick={() => { setThemePreference(dark ? "light" : "dark"); setDark(!dark); }}>{dark ? <Sun size={19} /> : <Moon size={19} />}</button>
-            <button ref={menuButtonRef} className="icon-button mobile-menu-button" type="button" lang="en" aria-label={menuOpen ? "Close navigation" : "Open navigation"} aria-expanded={menuOpen} aria-controls="mobile-navigation" onClick={() => setMenuOpen(!menuOpen)}>{menuOpen ? <X size={21} /> : <Menu size={21} />}</button>
+            <button data-science-press className="icon-button" type="button" lang="en" aria-label={dark ? "Switch to light theme" : "Switch to dark theme"} onClick={() => { setThemePreference(dark ? "light" : "dark"); setDark(!dark); }}>{dark ? <Sun size={19} /> : <Moon size={19} />}</button>
+            <button data-science-press ref={menuButtonRef} className="icon-button mobile-menu-button" type="button" lang="en" aria-label={menuOpen ? "Close navigation" : "Open navigation"} aria-expanded={menuOpen} aria-controls="mobile-navigation" onClick={() => setMenuOpen(!menuOpen)}>{menuOpen ? <X size={21} /> : <Menu size={21} />}</button>
           </div>
         </div>
         {menuOpen && <nav className="mobile-nav" id="mobile-navigation" aria-label="Mobile navigation" onClick={() => setMenuOpen(false)}><a href="/opportunities/?saved=1#discover">{c.saved} ({savedCount})</a><a href="/opportunities/#discover">{t(language, "navOpportunities")}</a><a href="/high-school/#discover">{t(language, "highSchool")}</a><a href="/#how-it-works">{c.about}</a><a href="/support/">{t(language, "navSupport")}</a></nav>}
@@ -103,7 +104,7 @@ export function HomePage({ initialSurface = "home", initialFilterOverrides = {} 
       <main id="main-content">
         <noscript><section className="noscript-note" lang="en"><h2>Explore the library calendars</h2><p>The interactive search and map need JavaScript. You can also browse free programs directly through <a href="https://www.torontopubliclibrary.ca/programs-and-classes/">Toronto Public Library</a> and <a href="https://markham.bibliocommons.com/v2/events">Markham Public Library</a>, or <a href="/support/">get help</a>.</p></section></noscript>
         {landing && <>
-          <section className="welcome" aria-labelledby="welcome-title">
+          <section className="welcome" aria-labelledby="welcome-title" data-science-scene>
             <ScienceReveal className="welcome-copy" lang={copyLanguage}>
               <h1 id="welcome-title">{heroTitle.split("\n").map((line, index) => <span key={line}>{index > 0 && <br />}{line}</span>)}</h1>
               <p className="welcome-intro">{heroIntro}</p>
@@ -112,23 +113,23 @@ export function HomePage({ initialSurface = "home", initialFilterOverrides = {} 
                 <div className="hero-search-field">
                   <Search size={24} aria-hidden="true" />
                   <input id="hero-query" type="search" name="q" maxLength={250} placeholder={language === "en" ? "Search STEM opportunities" : t(language, "searchPlaceholder")} autoComplete="off" />
-                  <button type="submit">{language === "en" ? "Explore" : t(language, "search")}<ArrowRight size={22} aria-hidden="true" /></button>
+                  <button type="submit" data-science-press>{language === "en" ? "Explore" : t(language, "search")}<ArrowRight size={22} aria-hidden="true" data-science-icon /></button>
                 </div>
               </form>
             </ScienceReveal>
             <ScienceReveal className="welcome-art" aria-hidden="true">
-              <img src="/illustrations/neighbourhood-lab-hero.webp" width={640} height={420} alt="" fetchPriority="high" />
+              <img src="/illustrations/neighbourhood-lab-hero.webp" width={640} height={420} alt="" fetchPriority="high" data-science-tilt />
             </ScienceReveal>
           </section>
         </>}
         {browseSurface ? <section className={`discovery-section${landing ? " discovery-landing" : ""}`} id="discover" aria-label="Explore opportunities">
           {!landing && <div className="section-heading"><div><p className="eyebrow" lang="en">{initialSurface === "high-school" ? "YOUR NEXT CHAPTER" : "EXPLORE YOUR CURIOSITY"}</p><DiscoveryHeading>{savedOnly ? c.saved : initialSurface === "high-school" ? t(language, "navHighSchoolOpportunities") : t(language, "navOpportunities")}</DiscoveryHeading></div><p lang="en">{savedOnly ? "Your shortlist, kept in this browser." : "Find something that makes you want to learn more."}</p></div>}
           <SaveSpark><OpportunityExplorer language={language} landing={landing} highSchool={initialSurface === "high-school"} initialFilters={initialFilterOverrides} savedOnly={savedOnly} onSavedCountChange={setSavedCount} /></SaveSpark>
-        </section> : <section className="information-section" lang="en"><p className="eyebrow">GTA FREE STEM</p><h1>{initialSurface === "support" ? "A little help getting started." : "Bring more learning into the community."}</h1><p>{initialSurface === "support" ? "Browse without an account. Use the search and filters to find a program, then check the full details and registration on the provider’s website." : "Know a free program we should include? Share a public provider link through the project’s support tracker. Suggestions are reviewed before they appear."}</p><div className="hero-actions"><a className="primary-button" href="/opportunities/#discover">Browse opportunities <ArrowRight size={18} /></a><a className="soft-button" href="/support/">Get support</a></div><p className="quiet-note">Support tickets are public. Please keep personal information and children’s details out of them.</p><a href={legalConfig.supportIssueUrl}>Suggest a program or report a problem <ArrowRight size={16} /></a></section>}
+        </section> : <section className="information-section" lang="en"><p className="eyebrow">GTA FREE STEM</p><h1>{initialSurface === "support" ? "A little help getting started." : "Bring more learning into the community."}</h1><p>{initialSurface === "support" ? "Browse without an account. Use the search and filters to find a program, then check the full details and registration on the provider’s website." : "Know a free program we should include? Share a public provider link through the project’s support tracker. Suggestions are reviewed before they appear."}</p><div className="hero-actions"><a data-science-press className="primary-button" href="/opportunities/#discover">Browse opportunities <ArrowRight size={18} /></a><a data-science-press className="soft-button" href="/support/">Get support</a></div><p className="quiet-note">Support tickets are public. Please keep personal information and children’s details out of them.</p><a href={legalConfig.supportIssueUrl}>Suggest a program or report a problem <ArrowRight size={16} /></a></section>}
         {initialSurface === "home" && <><div className="trust-strip" lang={copyLanguage}>{[c.noAccount, c.free, c.direct].map(text => <span key={text}><Check size={17} aria-hidden="true" />{text}</span>)}</div><section className="how-section" lang="en" id="how-it-works" aria-labelledby="how-heading"><div className="how-intro"><p className="eyebrow">HOW IT WORKS</p><h2 id="how-heading">A little curiosity.<br />A new possibility.</h2><p>For students, families, and the people helping them find their next opportunity.</p></div><ol className="how-steps"><li><span>01</span><div><h3>Find your starting point</h3><p>Choose an interest, city, or age. You can browse everything first, too.</p></div></li><li><span>02</span><div><h3>Check the details</h3><p>See the schedule, age range, and original source. Save anything you’d like to come back to.</p></div></li><li><span>03</span><div><h3>Take the next step</h3><p>Follow the provider’s link to confirm availability and register. They’ll handle your booking.</p></div></li></ol></section></>}
-        <section className="community-note" lang="en"><StorybookMark compact ariaHidden /><div><h2>Good opportunities are better shared.</h2><p>Help us keep free learning easy to find.</p></div><a className="text-link" href="/community-hosts/">Suggest an opportunity <ArrowRight size={18} aria-hidden="true" /></a></section>
+        <section className="community-note" lang="en"><StorybookMark compact ariaHidden /><div><h2>Good opportunities are better shared.</h2><p>Help us keep free learning easy to find.</p></div><a data-science-press className="text-link" href="/community-hosts/">Suggest an opportunity <ArrowRight size={18} aria-hidden="true" /></a></section>
       </main>
       <LegalFooter />
-    </>
+    </PlayfulSurface>
   );
 }

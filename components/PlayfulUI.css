@@ -1,0 +1,364 @@
+/* Tactile interaction layer for the selected neighbourhood science-lab layout.
+   Import after the structural styles. Control scale belongs to PlayfulSurface;
+   these controls animate independent translate/rotate properties instead. */
+:root {
+  --playful-spring: cubic-bezier(.22, 1.5, .42, 1);
+  --playful-ease: cubic-bezier(.16, 1, .3, 1);
+  --playful-turn: 1;
+  --playful-edge: #075158;
+  --playful-soft-edge: #b9d6d0;
+  --playful-card-edge: #d2e6de;
+  --playful-yellow-edge: #b58b19;
+  --playful-shadow: #10345214;
+  --playful-button-edge: var(--playful-edge);
+}
+:root[dir="rtl"] { --playful-turn: -1; }
+:root[data-theme="dark"] {
+  --playful-edge: #317477;
+  --playful-soft-edge: #345d65;
+  --playful-card-edge: #294c58;
+  --playful-yellow-edge: #9b7719;
+  --playful-shadow: #000b1540;
+}
+
+/* Keep the responsive artwork clear of copy on smaller desktop windows. */
+@media (min-width: 1151px) and (max-width: 1360px) {
+  .welcome-art { width: 42vw; top: -18px; }
+}
+
+:is(.hero-search button, .oe-nearby-submit, .primary-button, .soft-button,
+    .oe-primary, .oe-secondary, .oe-mobile-apply, .oe-load-more button) {
+  border-radius: 15px;
+  box-shadow: 0 5px 0 var(--playful-button-edge), 0 8px 15px var(--playful-shadow);
+  transform: none;
+  translate: 0 0;
+  rotate: 0deg;
+  transition: translate 380ms var(--playful-spring), rotate 380ms var(--playful-spring),
+    box-shadow 180ms ease, background-color 180ms ease, border-color 180ms ease,
+    color 180ms ease;
+}
+:is(.soft-button, .oe-secondary, .oe-load-more button) {
+  --playful-button-edge: var(--playful-soft-edge);
+  border-color: var(--accent);
+  background: var(--surface);
+}
+.oe-nearby-submit { --playful-button-edge: var(--playful-yellow-edge); }
+.hero-search button { border-radius: 16px; }
+:is(.hero-search button, .oe-nearby-submit, .primary-button, .soft-button,
+    .icon-button, .saved-link, .oe-bookmark, .oe-filter-toggle,
+    .oe-load-more button, .oe-interest-icon, .oe-details-link,
+    .oe-all-filters-link, .oe-landing-results-heading a, .text-link) > svg {
+  transform-origin: center;
+}
+:is(.hero-search button, .oe-nearby-submit, .primary-button, .soft-button,
+    .oe-primary, .oe-secondary, .oe-mobile-apply, .oe-load-more button):focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 5px;
+  translate: 0 0;
+  box-shadow: 0 8px 0 var(--playful-button-edge), 0 12px 20px var(--playful-shadow);
+}
+
+:is(.icon-button, .saved-link, .oe-bookmark, .oe-filter-toggle, .oe-dialog-close) {
+  box-shadow: 0 3px 0 var(--playful-soft-edge);
+  background-color: var(--surface);
+  transform: none;
+  translate: 0 0;
+  rotate: 0deg;
+  transition: translate 350ms var(--playful-spring), rotate 350ms var(--playful-spring),
+    box-shadow 180ms ease, background-color 180ms ease, border-color 180ms ease,
+    color 180ms ease;
+}
+.icon-button { border: 1px solid var(--line); }
+.saved-link { border-radius: 18px; }
+.oe-bookmark { border-radius: 12px; }
+.oe-bookmark[aria-pressed="true"] {
+  background: var(--yellow);
+  color: #103452;
+  box-shadow: 0 3px 0 var(--playful-yellow-edge);
+}
+:is(.icon-button, .saved-link, .oe-bookmark, .oe-filter-toggle, .oe-dialog-close):focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 4px;
+  translate: 0 0;
+  box-shadow: 0 5px 0 var(--playful-soft-edge);
+}
+.saved-link b { animation: gta-count-pop 340ms var(--playful-spring); }
+
+:is(.desktop-nav a, .mobile-nav a, .oe-details-link, .oe-all-filters-link,
+    .oe-landing-results-heading a, .text-link) {
+  position: relative;
+  transform: none;
+  translate: 0 0;
+  rotate: 0deg;
+  transition: translate 320ms var(--playful-spring), rotate 320ms var(--playful-spring),
+    background-color 180ms ease, color 180ms ease, box-shadow 180ms ease;
+}
+.desktop-nav a::after {
+  content: "";
+  position: absolute;
+  inset-inline: 3px;
+  inset-block-end: 3px;
+  height: 4px;
+  border-radius: 4px;
+  background: var(--yellow);
+  opacity: 0;
+  translate: 0 4px;
+  transition: opacity 180ms ease, translate 320ms var(--playful-spring);
+  pointer-events: none;
+}
+.desktop-nav a:focus-visible::after,
+.desktop-nav a[aria-current]::after { opacity: 1; translate: 0 0; }
+.oe-details-link { border-radius: 10px; padding-inline: 11px; background: var(--tint); }
+.oe-view-toggle { border-radius: 13px; box-shadow: 0 3px 0 var(--playful-soft-edge); }
+.oe-view-toggle button {
+  border-radius: 9px;
+  translate: 0 0;
+  rotate: 0deg;
+  transition: translate 300ms var(--playful-spring), rotate 300ms var(--playful-spring),
+    background-color 180ms ease, color 180ms ease;
+}
+.oe-view-toggle button[aria-pressed="true"] { background: var(--yellow); color: #103452; }
+
+.oe-interest-option {
+  border-radius: 14px;
+  box-shadow: 0 3px 0 var(--playful-card-edge);
+  transform: none;
+  translate: 0 0;
+  rotate: 0deg;
+  transition: translate 380ms var(--playful-spring), rotate 380ms var(--playful-spring),
+    box-shadow 180ms ease, background-color 180ms ease, border-color 180ms ease;
+}
+.oe-interest-option:has(input:checked) {
+  border-color: var(--accent);
+  background: var(--tint);
+  box-shadow: 0 4px 0 var(--playful-soft-edge);
+}
+.oe-interest-option:has(input:focus-visible) {
+  outline: 3px solid var(--accent);
+  outline-offset: 4px;
+  translate: 0 0;
+  box-shadow: 0 6px 0 var(--playful-soft-edge);
+}
+.oe-interest-icon {
+  transform: none;
+  translate: 0 0;
+  rotate: 0deg;
+  transition: background-color 180ms ease;
+}
+.oe-interest-option:has(input:checked) .oe-interest-icon {
+  animation: gta-interest-hop 470ms var(--playful-ease);
+}
+
+.oe-card {
+  border-radius: 22px;
+  box-shadow: 0 5px 0 var(--playful-card-edge);
+  transform: none;
+  translate: 0 0;
+  rotate: 0deg;
+  transition: translate 420ms var(--playful-spring), rotate 420ms var(--playful-spring),
+    box-shadow 180ms ease, border-color 180ms ease;
+  animation: gta-card-settle 320ms var(--playful-ease);
+}
+.oe-card:focus-within {
+  border-color: var(--accent);
+  box-shadow: 0 7px 0 var(--playful-soft-edge), 0 12px 22px var(--playful-shadow);
+}
+.oe-detail[open] { animation: gta-dialog-open 280ms var(--playful-ease); }
+.oe-detail[open]::backdrop { animation: gta-backdrop-in 180ms ease; }
+.mobile-nav { animation: gta-menu-open 280ms var(--playful-ease); }
+.mobile-nav a { border-radius: 11px; }
+.mobile-nav a:focus-visible { background: var(--tint); box-shadow: 0 3px 0 var(--playful-soft-edge); }
+.oe-filters-open { animation: gta-menu-open 280ms var(--playful-ease); }
+.oe-interest-more > summary, .oe-more-filters > summary {
+  border-radius: 9px;
+  transition: background-color 160ms ease, box-shadow 160ms ease, color 160ms ease;
+}
+.oe-interest-more > summary:focus-visible, .oe-more-filters > summary:focus-visible {
+  background: var(--tint);
+  box-shadow: 0 3px 0 var(--playful-soft-edge);
+}
+.oe-interest-more > summary > svg, .oe-more-filters > summary > svg {
+  transition: transform 260ms var(--playful-spring);
+}
+.oe-interest-more[open] .oe-interest-option, .oe-more-filters[open] > div {
+  animation: gta-options-open 220ms ease;
+}
+.hero-search-field:focus-within, .oe-nearby-input:focus-within, .oe-search:focus-within {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 4px #f4c43140, 0 3px 0 var(--playful-soft-edge);
+}
+
+.oe-save-feedback {
+  position: fixed;
+  z-index: 60;
+  inset-inline-end: 24px;
+  inset-block-end: calc(24px + env(safe-area-inset-bottom, 0px));
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  width: min(360px, calc(100vw - 32px));
+  padding: 15px 18px;
+  border: 2px solid var(--ink);
+  border-radius: 17px;
+  background: var(--surface);
+  color: var(--ink);
+  box-shadow: 0 5px 0 var(--playful-soft-edge), 0 10px 24px var(--playful-shadow);
+  font-size: 15px;
+  font-weight: 750;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+  pointer-events: none;
+  animation: gta-feedback-pop 340ms var(--playful-ease);
+}
+.oe-save-feedback > svg { flex: 0 0 auto; color: var(--accent); }
+.oe-save-feedback.is-removing { background: var(--tint); }
+
+@media (hover: hover) and (pointer: fine) {
+  :is(.hero-search button, .oe-nearby-submit, .primary-button, .soft-button,
+      .oe-primary, .oe-secondary, .oe-mobile-apply, .oe-load-more button):hover:not(:disabled) {
+    transform: none;
+    translate: 0 0;
+    rotate: 0deg;
+    box-shadow: 0 9px 0 var(--playful-button-edge), 0 15px 22px var(--playful-shadow);
+  }
+  :is(.hero-search button, .primary-button, .oe-primary):hover { background: var(--accent); }
+  .oe-nearby-submit:hover { background: #ffda53; }
+  :is(.icon-button, .saved-link, .oe-bookmark, .oe-filter-toggle, .oe-dialog-close):hover:not(:disabled) {
+    transform: none;
+    translate: 0 0;
+    rotate: 0deg;
+    box-shadow: 0 6px 0 var(--playful-soft-edge);
+  }
+  :is(.icon-button, .saved-link, .oe-bookmark):hover:not([aria-pressed="true"]) { background: var(--tint); }
+  :is(.hero-search button, .oe-nearby-submit, .icon-button, .saved-link,
+      .oe-bookmark, .oe-filter-toggle, .oe-load-more button):hover > svg {
+    animation: gta-icon-wiggle 390ms var(--playful-ease);
+  }
+  .oe-card:hover {
+    transform: none;
+    translate: 0 0;
+    rotate: 0deg;
+    border-color: var(--accent);
+    box-shadow: 0 10px 0 var(--playful-card-edge), 0 18px 26px var(--playful-shadow);
+  }
+  .oe-interest-option:hover {
+    transform: none;
+    translate: 0 0;
+    rotate: 0deg;
+    border-color: var(--accent);
+    box-shadow: 0 6px 0 var(--playful-soft-edge);
+  }
+  .oe-interest-option:hover .oe-interest-icon > svg { animation: gta-icon-wiggle 390ms var(--playful-ease); }
+  :is(.desktop-nav a, .mobile-nav a, .oe-details-link, .oe-all-filters-link,
+      .oe-landing-results-heading a, .text-link):hover {
+    translate: 0 0;
+    rotate: 0deg;
+    color: var(--accent);
+  }
+  .desktop-nav a:hover::after { opacity: 1; translate: 0 0; }
+  .mobile-nav a:hover { background: var(--tint); box-shadow: 0 3px 0 var(--playful-soft-edge); }
+  :is(.oe-details-link, .oe-all-filters-link, .oe-landing-results-heading a, .text-link):hover > svg {
+    animation: gta-arrow-nudge 370ms var(--playful-ease);
+  }
+  .oe-view-toggle button:hover { background: var(--tint); }
+  .oe-view-toggle button[aria-pressed="true"]:hover { background: var(--yellow); }
+  .oe-interest-more > summary:hover, .oe-more-filters > summary:hover { background: var(--tint); }
+}
+
+/* Pre-activation feedback never moves a native hit target. Hover lift is
+   conveyed by shadow; child icons move freely. Whole-control spring motion
+   begins in ScienceMotion only after a trusted native click. */
+:is(.hero-search button, .oe-nearby-submit, .primary-button, .soft-button,
+    .oe-primary, .oe-secondary, .oe-mobile-apply, .oe-load-more button):active:not(:disabled) {
+  box-shadow: 0 1px 0 var(--playful-button-edge), inset 0 2px 2px var(--playful-shadow);
+  transition-duration: 80ms;
+}
+:is(.icon-button, .saved-link, .oe-bookmark, .oe-filter-toggle, .oe-dialog-close):active:not(:disabled),
+.oe-interest-option:active {
+  box-shadow: 0 1px 0 var(--playful-soft-edge), inset 0 2px 2px var(--playful-shadow);
+  transition-duration: 80ms;
+}
+:is(.desktop-nav a, .mobile-nav a, .oe-details-link, .oe-all-filters-link,
+    .oe-landing-results-heading a, .text-link, .oe-view-toggle button):active {
+  background-color: var(--tint);
+  box-shadow: inset 0 -2px 0 var(--playful-soft-edge);
+  transition-duration: 80ms;
+}
+.oe-interest-more > summary:active, .oe-more-filters > summary:active {
+  background: var(--tint);
+  box-shadow: inset 0 2px 2px var(--playful-shadow);
+}
+
+@keyframes gta-interest-hop {
+  0%, 100% { translate: 0 0; rotate: 0deg; }
+  30% { translate: 0 -8px; rotate: calc(-12deg * var(--playful-turn)); }
+  55% { translate: 0 2px; rotate: calc(5deg * var(--playful-turn)); }
+  78% { translate: 0 -2px; rotate: calc(-2deg * var(--playful-turn)); }
+}
+@keyframes gta-icon-wiggle {
+  0%, 100% { translate: 0 0; rotate: 0deg; }
+  28% { translate: 0 -3px; rotate: calc(-12deg * var(--playful-turn)); }
+  58% { translate: 0 0; rotate: calc(8deg * var(--playful-turn)); }
+  80% { rotate: calc(-3deg * var(--playful-turn)); }
+}
+@keyframes gta-arrow-nudge {
+  0%, 100% { translate: 0 0; }
+  45% { translate: calc(5px * var(--playful-turn)) 0; }
+  72% { translate: calc(-1px * var(--playful-turn)) 0; }
+}
+@keyframes gta-count-pop {
+  0%, 100% { translate: 0 0; rotate: 0deg; }
+  36% { translate: 0 -6px; rotate: calc(-8deg * var(--playful-turn)); }
+  65% { translate: 0 1px; rotate: calc(3deg * var(--playful-turn)); }
+}
+@keyframes gta-card-settle {
+  0% { box-shadow: 0 1px 0 var(--playful-card-edge); }
+  70% { box-shadow: 0 7px 0 var(--playful-card-edge); }
+  100% { box-shadow: 0 5px 0 var(--playful-card-edge); }
+}
+@keyframes gta-options-open {
+  from { background-color: var(--tint); }
+  to { background-color: transparent; }
+}
+@keyframes gta-dialog-open {
+  0% { translate: 0 16px; scale: .96; }
+  72% { translate: 0 -2px; scale: 1.01; }
+  100% { translate: 0 0; scale: 1; }
+}
+@keyframes gta-backdrop-in { from { opacity: .5; } to { opacity: 1; } }
+@keyframes gta-menu-open {
+  0% { translate: 0 -9px; }
+  75% { translate: 0 2px; }
+  100% { translate: 0 0; }
+}
+@keyframes gta-feedback-pop {
+  0% { translate: 0 18px; rotate: calc(-2deg * var(--playful-turn)); }
+  72% { translate: 0 -3px; rotate: calc(.5deg * var(--playful-turn)); }
+  100% { translate: 0 0; rotate: 0deg; }
+}
+@media (max-width: 560px) {
+  .oe-save-feedback { inset-inline-end: 16px; inset-block-end: calc(16px + env(safe-area-inset-bottom, 0px)); font-size: 14px; padding: 13px 15px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  :is(.hero-search button, .oe-nearby-submit, .primary-button, .soft-button,
+      .oe-primary, .oe-secondary, .oe-mobile-apply, .oe-load-more button,
+      .icon-button, .saved-link, .saved-link b, .oe-bookmark, .oe-filter-toggle,
+      .oe-dialog-close, .desktop-nav a, .desktop-nav a::after, .mobile-nav,
+      .mobile-nav a, .oe-details-link, .oe-all-filters-link,
+      .oe-landing-results-heading a, .text-link, .oe-view-toggle button,
+      .oe-interest-option, .oe-interest-icon, .oe-card, .oe-detail,
+      .oe-detail::backdrop, .oe-filters-open, .oe-save-feedback,
+      .oe-interest-more > summary, .oe-more-filters > summary,
+      .oe-more-filters[open] > div),
+  :is(.hero-search button, .oe-nearby-submit, .primary-button, .soft-button,
+      .icon-button, .saved-link, .oe-bookmark, .oe-filter-toggle,
+      .oe-load-more button, .oe-interest-icon, .oe-details-link,
+      .oe-all-filters-link, .oe-landing-results-heading a, .text-link) > svg {
+    animation: none !important;
+    transition-duration: .01ms !important;
+    transform: none !important;
+    translate: none !important;
+    rotate: none !important;
+  }
+  .oe-detail { scale: none !important; }
+}
