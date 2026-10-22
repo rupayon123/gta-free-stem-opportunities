@@ -117,26 +117,34 @@ export function inferLibraryOpportunityAges(
     if (max >= min) return { min, max };
   }
 
+  // Official audience categories identify who attends. Narrative mentions of
+  // children in a parenting workshop describe its subject, not its audience.
+  const structuredAudience = normalized(input.categories.join(" "));
+  const audienceText = /\b(?:birth to five|preschool|infants?|school age|children|teens?|adults?|all ages)\b/.test(structuredAudience)
+    ? structuredAudience
+    : text;
   const mins: number[] = [];
   const maxes: number[] = [];
-  if (text.includes("birth to five") || text.includes("preschool") || text.includes("infants")) {
+  if (audienceText.includes("birth to five") || audienceText.includes("preschool") || audienceText.includes("infants")) {
     mins.push(0);
     maxes.push(5);
   }
-  if (text.includes("school age") || text.includes("children")) {
+  if (audienceText.includes("school age") || audienceText.includes("children")) {
     mins.push(6);
     maxes.push(12);
   }
-  if (text.includes("teen")) {
+  if (audienceText.includes("teen")) {
     mins.push(13);
     maxes.push(17);
   }
-  if (text.includes("adult")) mins.push(18);
-  if (text.includes("all ages")) mins.push(0);
+  const includesAdults = audienceText.includes("adult");
+  const includesAllAges = audienceText.includes("all ages");
+  if (includesAdults) mins.push(18);
+  if (includesAllAges) mins.push(0);
 
   return {
     min: mins.length ? Math.min(...mins) : 0,
-    max: maxes.length ? Math.max(...maxes) : undefined
+    max: !includesAdults && !includesAllAges && maxes.length ? Math.max(...maxes) : undefined
   };
 }
 

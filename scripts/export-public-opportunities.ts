@@ -79,6 +79,11 @@ const payload = {
   schemaVersion: 1,
   count: publicListings.length,
   lastDataChange,
+  coverage: {
+    regions: [...new Set(publicListings.map((opportunity) => opportunity.region))].sort(),
+    cities: [...new Set(publicListings.map((opportunity) => opportunity.city))].sort(),
+    organizations: [...new Set(publicListings.map((opportunity) => opportunity.organization))].sort()
+  },
   sourceHealth: {
     library: generatedLibrarySourceHealth,
     discovery: {

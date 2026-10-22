@@ -33,9 +33,7 @@ module Search
 
     def base_scope
       return Opportunity.not_hidden if admin
-      return Opportunity.publicly_visible if include_new_finds?
-
-      Opportunity.publicly_visible.where(status: "active")
+      Opportunity.publicly_visible
     end
 
     def text(scope)
@@ -104,16 +102,7 @@ module Search
     def high_school(scope)
       return scope unless truthy?(params[:highSchool])
 
-      scope.where(
-        "volunteer_hours_eligible = TRUE OR coop_eligible = TRUE OR ? = ANY(tags) OR ? = ANY(tags) OR ? = ANY(tags) OR ? = ANY(tags) OR ? = ANY(tags) OR ? = ANY(tags) OR ? = ANY(tags)",
-        "teen",
-        "high school",
-        "shsm",
-        "mentor",
-        "mentorship",
-        "leadership",
-        "volunteer"
-      )
+      scope.where("age_min <= ? AND (age_max IS NULL OR age_max >= ?)", 17, 14)
     end
 
     def distance(scope)
@@ -183,12 +172,6 @@ module Search
       BigDecimal(params[key].to_s)
     rescue ArgumentError
       nil
-    end
-
-    def include_new_finds?
-      return true unless params.key?(:includeNewFinds)
-
-      truthy?(params[:includeNewFinds])
     end
 
     def truthy?(value)

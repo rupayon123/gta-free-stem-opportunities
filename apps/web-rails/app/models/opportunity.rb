@@ -1,5 +1,11 @@
 class Opportunity < ApplicationRecord
   STATUSES = %w[active expired needs_review hidden].freeze
+  VERIFICATION_MAXIMUM_AGE_DAYS = 14
+  EXPIRED_DATE_SQL = <<~SQL.squish.freeze
+    (end_date IS NOT NULL AND end_date < :now)
+    OR (deadline IS NOT NULL AND (start_date IS NULL OR deadline <> start_date) AND deadline < :now)
+    OR (end_date IS NULL AND (deadline IS NULL OR deadline = start_date) AND start_date IS NOT NULL AND start_date < :now)
+  SQL
 
   belongs_to :organization_record, class_name: "Organization", optional: true
   has_many :saved_opportunities, dependent: :destroy
@@ -11,27 +17,36 @@ class Opportunity < ApplicationRecord
   validates :age_max, numericality: { greater_than_or_equal_to: 0, allow_nil: true }
 
   scope :not_hidden, -> { where.not(status: "hidden") }
-  scope :public_status, -> { where(status: %w[active needs_review]) }
+  scope :public_status, -> { where(status: "active") }
   scope :recent_first, -> { order(Arel.sql("COALESCE(start_date, deadline, end_date) ASC NULLS LAST"), :title) }
   scope :expired_by_date, ->(now = Time.current) {
-    where("COALESCE(end_date, deadline, start_date) < ?", now.beginning_of_day)
+    where(EXPIRED_DATE_SQL, now: now)
   }
   scope :publicly_visible, ->(now = Time.current) {
     public_status
-      .where("COALESCE(end_date, deadline, start_date) IS NULL OR COALESCE(end_date, deadline, start_date) >= ?", now.beginning_of_day)
+      .where("COALESCE(end_date, deadline, start_date) IS NOT NULL")
+      .where.not(EXPIRED_DATE_SQL, now: now)
+      .where("last_checked >= ?", now.utc.to_date - VERIFICATION_MAXIMUM_AGE_DAYS)
   }
 
   before_validation :normalize_arrays
   before_save :refresh_coordinates, if: -> { has_attribute?(:coordinates) && (will_save_change_to_latitude? || will_save_change_to_longitude?) }
 
   def date_expired?(now = Time.current)
-    visible_until = end_date || deadline || start_date
-    visible_until.present? && visible_until.end_of_day < now
+    distinct_deadline = deadline if deadline.present? && (start_date.nil? || deadline != start_date)
+    cutoffs = [ distinct_deadline, end_date ].compact
+    cutoffs = [ start_date ].compact if cutoffs.empty?
+    cutoffs.any? { |cutoff| cutoff < now }
+  end
+
+  def verification_stale?(now = Time.current)
+    last_checked.nil? || last_checked < now.utc.to_date - VERIFICATION_MAXIMUM_AGE_DAYS
   end
 
   def computed_status(now = Time.current)
     return "hidden" if status == "hidden"
     return "expired" if status == "expired" || date_expired?(now)
+    return "needs_review" if status == "active" && verification_stale?(now)
 
     status
   end
@@ -41,7 +56,7 @@ class Opportunity < ApplicationRecord
   end
 
   def high_school?
-    volunteer_hours_eligible? || coop_eligible? || tags.any? { |tag| tag.match?(/teen|high school|shsm|mentor|leadership|volunteer/i) }
+    age_min <= 17 && (age_max.nil? || age_max >= 14)
   end
 
   def as_api_json

@@ -3,11 +3,11 @@ class OpportunitiesController < ApplicationController
     @opportunities = Search::OpportunitySearch.new(search_params).results
     @selected = @opportunities.first
     @active_count = Opportunity.publicly_visible.count
-    @last_checked = SourceCheck.order(checked_at: :desc).pick(:checked_at) || Opportunity.maximum(:last_checked)
+    @last_checked = SourceCheck.last_successful_refresh_at || Opportunity.publicly_visible.maximum(:last_checked)
   end
 
   def show
-    @opportunity = Opportunity.not_hidden.find(params[:id])
+    @opportunity = Opportunity.publicly_visible.find(params[:id])
   end
 
   private

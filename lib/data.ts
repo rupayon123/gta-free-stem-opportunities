@@ -2,10 +2,10 @@ import { generatedLibraryOpportunities } from "./generatedLibraryOpportunities";
 import { generatedDiscoveryReviewCandidates } from "./generatedDiscoveryReview";
 import type { DiscoveredOpportunity } from "./discovery";
 import type { Category, LanguageCode, Opportunity, Region, ReviewItem } from "./types";
-import { isOpportunityDateExpired, isOpportunityVerificationStale } from "./opportunityStatus";
+import { computedOpportunityStatus, isOpportunityVerificationStale, opportunityVerificationMaximumAgeDays } from "./opportunityStatus";
 
 const now = new Date();
-export const curatedVerificationMaximumAgeDays = 14;
+export const curatedVerificationMaximumAgeDays = opportunityVerificationMaximumAgeDays;
 
 export const regions: Region[] = ["Toronto", "Peel", "York", "Durham", "Halton"];
 
@@ -874,13 +874,12 @@ const seedOpportunities: SeedOpportunity[] = [
 
 export const curatedOpportunityIds = seedOpportunities.map((opportunity) => opportunity.id);
 
-function applyLiveExpiration(opportunity: Opportunity): Opportunity {
-  if (!isOpportunityDateExpired(opportunity, now)) return opportunity;
+function applyLiveStatus(opportunity: Opportunity): Opportunity {
+  const status = computedOpportunityStatus(opportunity, now);
+  if (status === opportunity.status) return opportunity;
   return {
     ...opportunity,
-    status: "expired",
-    freeStatusProof:
-      opportunity.freeStatusProof || "Opportunity date has passed; it is no longer shown in active search results."
+    status
   };
 }
 
@@ -910,7 +909,7 @@ export const opportunities: Opportunity[] = [
   }),
   ...generatedLibraryOpportunities,
   ...generatedDiscoveryReviewCandidates.map(discoveryCandidateToOpportunity)
-].map(applyLiveExpiration);
+].map(applyLiveStatus);
 
 export const reviewQueue: ReviewItem[] = [
   {

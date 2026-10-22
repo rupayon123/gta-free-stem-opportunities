@@ -7,6 +7,7 @@ function dateValue(value?: string) {
 }
 
 const dayInMilliseconds = 24 * 60 * 60 * 1000;
+export const opportunityVerificationMaximumAgeDays = 14;
 
 function isDistinctRegistrationDeadline(opportunity: Opportunity) {
   const deadline = dateValue(opportunity.deadline);
@@ -22,7 +23,7 @@ function isDistinctRegistrationDeadline(opportunity: Opportunity) {
 export function isOpportunityVerificationStale(
   lastChecked: string,
   now = new Date(),
-  maximumAgeDays = 14
+  maximumAgeDays = opportunityVerificationMaximumAgeDays
 ) {
   const checked = /^\d{4}-\d{2}-\d{2}$/.test(lastChecked)
     ? Date.parse(`${lastChecked}T23:59:59.999Z`)
@@ -32,26 +33,39 @@ export function isOpportunityVerificationStale(
 }
 
 export function isOpportunityDateExpired(opportunity: Opportunity, now = new Date()) {
-  const end = dateValue(opportunity.endDate);
-  const deadline = isDistinctRegistrationDeadline(opportunity) ? dateValue(opportunity.deadline) : null;
-  const start = dateValue(opportunity.startDate);
-  const visibleUntil = deadline && end ? Math.min(deadline, end) : deadline ?? end ?? start;
-  if (!visibleUntil) return false;
+  const deadline = isDistinctRegistrationDeadline(opportunity) ? opportunity.deadline : undefined;
+  const cutoffs = [deadline, opportunity.endDate].filter((value) => dateValue(value) !== null);
+  if (!cutoffs.length) cutoffs.push(opportunity.startDate);
 
-  const endOfDay = new Date(visibleUntil);
-  endOfDay.setHours(23, 59, 59, 999);
-  return endOfDay.getTime() < now.getTime();
+  return cutoffs.some((value) => {
+    if (!value) return false;
+    // A date without a time stays valid through that GTA calendar day. Exact
+    // source timestamps retain their precision so ended sessions disappear.
+    if (/^\d{4}-\d{2}-\d{2}$/.test(value)) {
+      const parts = new Intl.DateTimeFormat("en-CA", {
+        timeZone: "America/Toronto", year: "numeric", month: "2-digit", day: "2-digit"
+      }).formatToParts(now);
+      const datePart = (type: string) => parts.find((part) => part.type === type)?.value;
+      const gtaDate = `${datePart("year")}-${datePart("month")}-${datePart("day")}`;
+      return value < gtaDate;
+    }
+    const timestamp = dateValue(value);
+    return timestamp !== null && timestamp < now.getTime();
+  });
 }
 
 export function computedOpportunityStatus(opportunity: Opportunity, now = new Date()): OpportunityStatus {
   if (opportunity.status === "hidden") return "hidden";
   if (opportunity.status === "expired") return "expired";
   if (isOpportunityDateExpired(opportunity, now)) return "expired";
+  if (opportunity.status === "active" && isOpportunityVerificationStale(opportunity.lastChecked, now)) {
+    return "needs_review";
+  }
   return opportunity.status;
 }
 
 export function isPublicOpportunity(opportunity: Opportunity, now = new Date()) {
-  return opportunity.status === "active" && !isOpportunityDateExpired(opportunity, now);
+  return computedOpportunityStatus(opportunity, now) === "active";
 }
 
 export function publicOpportunities(opportunities: Opportunity[], now = new Date()) {

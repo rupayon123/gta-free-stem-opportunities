@@ -9,37 +9,29 @@ module Importers
     end
 
     def call
-      imported = import_file(@library_file, "generatedLibraryOpportunities")
-      reviewed = import_file(@review_file, "generatedDiscoveryReviewCandidates")
-      expire_past_opportunities
-      SourceCheck.create!(
-        source_name: "Legacy static opportunity import",
-        source_url: "file://legacy-next-static",
-        status: "ok",
-        checked_at: Time.current,
-        result: { imported: imported, review_candidates: reviewed }
-      )
-      { imported: imported, review_candidates: reviewed }
+      ApplicationRecord.transaction do
+        imported = import_file(@library_file, "generatedLibraryOpportunities")
+        reviewed = import_file(@review_file, "generatedDiscoveryReviewCandidates", review_only: true)
+        expire_past_opportunities
+        SourceCheck.create!(
+          source_name: "Legacy static opportunity import",
+          source_url: "file://legacy-next-static",
+          status: "ok",
+          checked_at: Time.current,
+          result: { imported: imported, review_candidates: reviewed }
+        )
+        { imported: imported, review_candidates: reviewed }
+      end
     end
 
     private
 
-    def import_file(path, constant_name)
-      return 0 unless path.exist?
+    def import_file(path, constant_name, review_only: false)
+      raise "Required opportunity input is missing: #{path.basename}" unless path.file?
 
       extract_array(path.read, constant_name).sum do |raw|
-        import_one(raw)
+        import_one(raw, review_only: review_only)
         1
-      rescue ActiveRecord::RecordInvalid => error
-        SourceCheck.create!(
-          source_name: "Legacy import error",
-          source_url: raw["sourceUrl"].presence || path.to_s,
-          status: "error",
-          checked_at: Time.current,
-          warning: error.message,
-          result: raw
-        )
-        0
       end
     end
 
@@ -50,16 +42,24 @@ module Importers
       raise "Could not parse #{constant_name}: #{error.message}"
     end
 
-    def import_one(raw)
+    def import_one(raw, review_only: false)
       organization = Organization.find_or_create_by!(name: raw["organization"].presence || raw["provider"].presence || "Community provider")
       attrs = map_attributes(raw).merge(organization_record: organization)
       Opportunity.find_or_initialize_by(id: raw.fetch("id")).tap do |opportunity|
+        attrs[:status] = "needs_review" if review_only
+        attrs[:status] = "hidden" if opportunity.persisted? && opportunity.status == "hidden"
         opportunity.assign_attributes(attrs)
         opportunity.save!
       end
     end
 
     def map_attributes(raw)
+      start_at = parse_time(raw["startDate"])
+      deadline_at = raw["deadline"] == raw["startDate"] ? start_at : parse_time(raw["deadline"], date_only_end: true)
+      end_at = parse_time(raw["endDate"], date_only_end: true)
+      if end_at.nil? && raw["startDate"].to_s.match?(/\A\d{4}-\d{2}-\d{2}\z/) && (deadline_at.nil? || deadline_at == start_at)
+        end_at = parse_time(raw["startDate"], date_only_end: true)
+      end
       {
         title: raw["title"],
         organization: raw["organization"].presence || raw["provider"].presence || "Community provider",
@@ -76,9 +76,9 @@ module Importers
         latitude: raw["latitude"],
         longitude: raw["longitude"],
         virtual: raw["virtual"] || false,
-        start_date: parse_time(raw["startDate"]),
-        end_date: parse_time(raw["endDate"]),
-        deadline: parse_time(raw["deadline"]),
+        start_date: start_at,
+        end_date: end_at,
+        deadline: deadline_at,
         age_min: raw["ageMin"].presence || raw.dig("ages", "min") || 0,
         age_max: raw["ageMax"].presence || raw.dig("ages", "max"),
         grades: Array(raw["grades"]),
@@ -112,8 +112,11 @@ module Importers
       Opportunity::STATUSES.include?(status) ? status : "needs_review"
     end
 
-    def parse_time(value)
-      Time.zone.parse(value.to_s) if value.present?
+    def parse_time(value, date_only_end: false)
+      return unless value.present?
+
+      parsed = Time.zone.parse(value.to_s)
+      date_only_end && value.to_s.match?(/\A\d{4}-\d{2}-\d{2}\z/) ? parsed&.end_of_day : parsed
     rescue ArgumentError
       nil
     end
@@ -125,7 +128,7 @@ module Importers
     end
 
     def expire_past_opportunities
-      Opportunity.expired_by_date.where.not(status: "hidden").update_all(status: "expired", updated_at: Time.current)
+      Opportunity.expired_by_date.where(status: "active").update_all(status: "expired", updated_at: Time.current)
     end
   end
 end

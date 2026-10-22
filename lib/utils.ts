@@ -64,7 +64,7 @@ export function createCalendarFile(opportunity: Opportunity) {
     `Provider: ${opportunity.provider}`,
     `Free status: ${opportunity.freeStatusProof}`,
     `Register: ${opportunity.registrationUrl}`
-  ].join("\\n");
+  ].join("\n");
 
   return [
     "BEGIN:VCALENDAR",
@@ -81,7 +81,7 @@ export function createCalendarFile(opportunity: Opportunity) {
     `URL:${opportunity.registrationUrl}`,
     "END:VEVENT",
     "END:VCALENDAR"
-  ].join("\r\n");
+  ].map(foldIcsLine).join("\r\n") + "\r\n";
 }
 
 function toIcsDate(value: string) {
@@ -89,7 +89,26 @@ function toIcsDate(value: string) {
 }
 
 function escapeIcs(value: string) {
-  return value.replace(/\\/g, "\\\\").replace(/\n/g, "\\n").replace(/,/g, "\\,").replace(/;/g, "\\;");
+  return value.replace(/\\/g, "\\\\").replace(/\r\n|\r|\n/g, "\\n").replace(/,/g, "\\,").replace(/;/g, "\\;");
+}
+
+function foldIcsLine(value: string) {
+  const encoder = new TextEncoder();
+  let folded = "";
+  let lineBytes = 0;
+
+  // RFC 5545 section 3.1: fold at 75 UTF-8 octets without splitting a
+  // character. The continuation space itself occupies one octet.
+  for (const character of value) {
+    const characterBytes = encoder.encode(character).length;
+    if (lineBytes + characterBytes > 75) {
+      folded += "\r\n ";
+      lineBytes = 1;
+    }
+    folded += character;
+    lineBytes += characterBytes;
+  }
+  return folded;
 }
 
 export function filterOpportunities(

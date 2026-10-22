@@ -9,13 +9,19 @@ Purpose:
 - Centralize opportunities that are often spread across library pages, school boards, community organizations, public event calendars, and youth outreach sources.
 - Improve access to volunteer hours, co-op, SHSM, mentorship, youth leadership, hackathons, workshops, and library STEM events.
 
-Coverage:
+Search area:
 - Toronto
 - Peel Region
 - York Region
 - Durham Region
 - Halton Region
 - Greater Toronto Area
+
+Published coverage:
+- Availability varies by source and region. Search options do not guarantee current listings in every region.
+- The public feed at https://gta-free-stem.vercel.app/opportunities.json reports current count, lastDataChange, coverage, and sourceHealth.
+- The feed's coverage lists only regions, cities, and organizations with verified, current public listings.
+- Unreviewed discoveries and listings with stale verification or past dates are excluded from public results.
 
 Important search context:
 - GTA means Greater Toronto Area, not Grand Theft Auto.

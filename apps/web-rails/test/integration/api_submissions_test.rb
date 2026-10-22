@@ -31,8 +31,8 @@ class ApiSubmissionsTest < ActionDispatch::IntegrationTest
     assert_equal "new", MissingOpportunitySubmission.last.status
   end
 
-  test "accepts app hunt refresh requests" do
-    assert_difference "SourceCheck.count", 1 do
+  test "reports app hunt refresh unavailable without storing submitted hunt data" do
+    assert_no_difference "SourceCheck.count" do
       post api_v1_hunt_refresh_path,
         params: {
           hunt: {
@@ -47,7 +47,25 @@ class ApiSubmissionsTest < ActionDispatch::IntegrationTest
         as: :json
     end
 
-    assert_response :accepted
-    assert_equal "queued", SourceCheck.last.status
+    assert_response :service_unavailable
+    assert_equal "unavailable", response.parsed_body.dig("data", "status")
+    assert_match /scheduled published-feed refreshes/, response.parsed_body.fetch("error")
+    assert_nil response.parsed_body.dig("data", "id")
+    refute_includes response.body, "robotics"
+    refute_includes response.body, "43.6532"
+    refute_includes response.body, "-79.3832"
+  end
+
+  test "repeated app hunt refresh requests do not create source checks" do
+    assert_no_difference "SourceCheck.count" do
+      3.times do
+        post api_v1_hunt_refresh_path,
+          params: { hunt: { query: "robotics", city: "Toronto", latitude: "43.6532", longitude: "-79.3832" } },
+          as: :json
+
+        assert_response :service_unavailable
+        assert_equal "unavailable", response.parsed_body.dig("data", "status")
+      end
+    end
   end
 end

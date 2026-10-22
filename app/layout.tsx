@@ -165,7 +165,7 @@ export default function RootLayout({
       <head>
         <meta name="geo.region" content="CA-ON" />
         <meta name="geo.placename" content="Greater Toronto Area" />
-        <meta name="theme-color" content="#0b7aa7" />
+        <meta name="theme-color" content="#0d6673" />
         <meta
           name="subject"
           content="Free and accessible STEM opportunities for students, parents, educators, and community groups across the Greater Toronto Area"
@@ -185,12 +185,8 @@ export default function RootLayout({
               (() => {
                 try {
                   const themeKey = "gta-stem-opportunities-theme";
-                  const defaultKey = "gta-stem-opportunities-light-default-v2";
-                  const preference = localStorage.getItem(defaultKey)
-                    ? (localStorage.getItem(themeKey) || "light")
-                    : "light";
-                  localStorage.setItem(themeKey, preference);
-                  localStorage.setItem(defaultKey, "true");
+                  const stored = localStorage.getItem(themeKey);
+                  const preference = ["light", "dark", "system"].includes(stored) ? stored : "light";
                   const resolved = preference === "system"
                     ? (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light")
                     : preference;

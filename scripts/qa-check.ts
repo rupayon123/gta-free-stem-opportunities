@@ -1,4 +1,4 @@
-import { readFileSync } from "node:fs";
+import { readFileSync, readdirSync } from "node:fs";
 import {
   communityFormFields,
   communityFormKinds,
@@ -13,6 +13,7 @@ import {
   opportunities
 } from "../lib/data";
 import { languageMeta, t, translatedSummary } from "../lib/i18n";
+import { generatedDiscoveryReviewCandidates } from "../lib/generatedDiscoveryReview";
 import {
   countClassifierRelevantLibraryOpportunities,
   inferLibraryOpportunityAges,
@@ -27,6 +28,8 @@ import {
   isGeneratedDiscoveryOpportunityId
 } from "../lib/discoveryClassification";
 import {
+  computedOpportunityStatus,
+  isOpportunityDateExpired,
   isOpportunityVerificationStale,
   isPublicOpportunity,
   publicOpportunities
@@ -45,15 +48,18 @@ const privacyPolicySource = readFileSync("app/privacy/page.tsx", "utf8");
 const termsSource = readFileSync("app/terms/page.tsx", "utf8");
 const supportSource = readFileSync("app/support/page.tsx", "utf8");
 const sitemapSource = readFileSync("public/sitemap.xml", "utf8");
-const homePageSource = readFileSync("components/HomePage.tsx", "utf8");
+const publicBrowserSources = readdirSync("components")
+  .filter((filename) => filename.endsWith(".tsx"))
+  .map((filename) => readFileSync(`components/${filename}`, "utf8"))
+  .join("\n");
 
-assert(homePageSource.includes("window.location.reload()"), "Public Refresh must reload the latest published data.");
+assert(/\b(?:window\.)?location\.reload\(\)/.test(publicBrowserSources), "Public Refresh must reload the latest published data.");
 assert(
-  !homePageSource.includes("research-refresh=${Date.now()}"),
+  !publicBrowserSources.includes("research-refresh=${Date.now()}"),
   "Public Refresh must not fake a research run by refetching the current homepage."
 );
 assert(
-  !homePageSource.includes("RESEARCH_REFRESH_ENDPOINT") && !homePageSource.includes("RESEARCH_WORKFLOW_OWNER"),
+  !publicBrowserSources.includes("RESEARCH_REFRESH_ENDPOINT") && !publicBrowserSources.includes("RESEARCH_WORKFLOW_OWNER"),
   "The public browser must not expose an unauthenticated hunting-engine trigger."
 );
 
@@ -239,6 +245,24 @@ const malformedSourceAgeFixture = inferLibraryOpportunityAges({
 assert(
   malformedSourceAgeFixture.min === 6 && malformedSourceAgeFixture.max === 12,
   "Malformed source age prose must fall back to the structured audience category."
+);
+const parentAudienceFixture = inferLibraryOpportunityAges({
+  title: "Parenting in the Digital Age",
+  description: "Parents learn to help children build healthy online habits.",
+  categories: ["Digital Literacy", "Adult"]
+});
+assert(
+  parentAudienceFixture.min === 18 && parentAudienceFixture.max === undefined,
+  "Structured adult audiences must take precedence over narrative mentions of children."
+);
+const mixedAudienceFixture = inferLibraryOpportunityAges({
+  title: "Introduction to Python",
+  description: "Learn basic programming concepts.",
+  categories: ["Teens (13-17)", "Adult"]
+});
+assert(
+  mixedAudienceFixture.min === 13 && mixedAudienceFixture.max === undefined,
+  "Programs for teens and adults must remain available to adult age filters."
 );
 
 const classifierAwarePublishedLibraryCount = countClassifierRelevantLibraryOpportunities([
@@ -481,6 +505,14 @@ assert(
 );
 assert(publicListings.every((opportunity) => isPublicOpportunity(opportunity)), "Public listings must be browseable and unexpired.");
 assert(
+  publicListings.every((opportunity) => !isOpportunityVerificationStale(opportunity.lastChecked)),
+  "Every public listing, including generated feeds, must have current verification evidence."
+);
+assert(
+  generatedDiscoveryReviewCandidates.every((opportunity) => opportunity.status === "needs_review"),
+  "Discovery scans must keep candidates in review until a reviewer confirms their evidence."
+);
+assert(
   publicListings.every((opportunity) => !opportunity.tags.includes("date-to-confirm")),
   "Public listings must not include dates that still need confirmation."
 );
@@ -494,6 +526,51 @@ const expiredClone = {
 };
 assert(!isPublicOpportunity(expiredClone), "Date-expired active listings must be hidden from public search.");
 assert(!publicOpportunities([...opportunities, expiredClone]).some((opportunity) => opportunity.id === expiredClone.id), "Expired listings must not appear in public results.");
+
+const sameDaySession = {
+  ...publicListings[0],
+  startDate: "2026-10-22T10:00:00-04:00",
+  endDate: "2026-10-22T11:00:00-04:00",
+  deadline: "2026-10-22T10:00:00-04:00"
+};
+assert(
+  isOpportunityDateExpired(sameDaySession, new Date("2026-10-22T12:00:00-04:00")),
+  "A session that ended earlier today must disappear at its source end time."
+);
+assert(
+  !isOpportunityDateExpired(sameDaySession, new Date("2026-10-22T10:30:00-04:00")),
+  "An ongoing session must remain available until its source end time."
+);
+const dateOnlySession = { ...sameDaySession, startDate: "2026-10-22", endDate: "2026-10-22", deadline: "2026-10-22" };
+assert(
+  !isOpportunityDateExpired(dateOnlySession, new Date("2026-10-23T02:00:00Z")) &&
+    isOpportunityDateExpired(dateOnlySession, new Date("2026-10-23T04:00:00Z")),
+  "Date-only listings must expire at the GTA day boundary regardless of the server timezone."
+);
+
+const staleGeneratedClone = {
+  ...publicListings[0],
+  id: "tpl-rss-qa-stale-verification",
+  status: "active" as const,
+  lastChecked: "2026-09-30",
+  startDate: "2026-10-29T10:00:00-04:00",
+  endDate: "2026-10-29T12:00:00-04:00",
+  deadline: "2026-10-29T10:00:00-04:00"
+};
+const freshnessCheckTime = new Date("2026-10-22T12:00:00-04:00");
+assert(
+  !isPublicOpportunity(staleGeneratedClone, freshnessCheckTime) &&
+    computedOpportunityStatus(staleGeneratedClone, freshnessCheckTime) === "needs_review",
+  "An upcoming generated listing with stale evidence must leave public search and enter review."
+);
+assert(
+  isPublicOpportunity({ ...staleGeneratedClone, lastChecked: "2026-10-22" }, freshnessCheckTime),
+  "A fresh successful source check must make the same upcoming listing eligible again."
+);
+assert(
+  !isPublicOpportunity({ ...staleGeneratedClone, lastChecked: "invalid-date" }, freshnessCheckTime),
+  "Invalid verification dates must not enter public search."
+);
 
 const enrollmentClosedClone = {
   ...publicListings[0],
@@ -578,6 +655,7 @@ const launchTranslationLanguages = languagePreferenceOrder.filter(
 );
 const exportedFeed = JSON.parse(readFileSync("public/opportunities.json", "utf8")) as {
   count?: number;
+  coverage?: { regions?: string[]; cities?: string[]; organizations?: string[] };
   sourceHealth?: {
     library?: {
       status?: string;
@@ -667,6 +745,14 @@ const hasLocalizedTitle = (opportunity: { id?: string }, translation: { title?: 
 
 assert(exportedFeed.count === exportedListings.length, "Exported feed count must match exported opportunities.");
 assert(exportedListings.length === publicListings.length, "Exported feed must match public listing count.");
+for (const field of ["region", "city", "organization"] as const) {
+  const coverageField = field === "city" ? "cities" : field === "region" ? "regions" : "organizations";
+  assert(
+    JSON.stringify(exportedFeed.coverage?.[coverageField]) ===
+      JSON.stringify([...new Set(publicListings.map((opportunity) => opportunity[field]))].sort()),
+    `Exported ${coverageField} coverage must describe actual published listings.`
+  );
+}
 assert(exportedFeed.sourceHealth?.library?.status === "healthy", "Exported feed must expose healthy library source metadata.");
 assert(
   (exportedFeed.sourceHealth?.library?.successfulPages ?? 0) >= (exportedFeed.sourceHealth?.library?.attemptedPages ?? 1) * 0.75,
@@ -824,11 +910,51 @@ assert(nearbyResults.length === 1 && nearbyResults[0].id === nearbyFixture.id, "
 assert(nearbyResults.some((opportunity) => opportunity.city === "Mississauga"), "Postal-distance search should find Mississauga listings.");
 
 for (const opportunity of opportunities.slice(0, 3)) {
-  const calendar = createCalendarFile(opportunity);
+  const calendar = createCalendarFile(opportunity).replace(/\r\n[ \t]/g, "");
   assert(calendar.includes("BEGIN:VCALENDAR"), `${opportunity.title} calendar is missing BEGIN.`);
   assert(calendar.includes("END:VCALENDAR"), `${opportunity.title} calendar is missing END.`);
   assert(calendar.includes(opportunity.registrationUrl), `${opportunity.title} calendar is missing registration URL.`);
 }
+
+
+// RFC 5545 imports unfold content lines before decoding TEXT values. Exercise
+// paragraphs, literal backslashes, delimiters, and UTF-8 across fold boundaries.
+const calendarFixture: Opportunity = {
+  ...opportunities[0],
+  title: "Curious minds ".padEnd(66, ".") + "🧪 — विज्ञान, 科学; apprendre ".repeat(6),
+  summary: "First paragraph.\r\nSecond line with a literal \\n marker and C:\\STEM; bring tools, please.\rThird line.",
+  provider: "Community Lab; GTA",
+  freeStatusProof: "Free, including kit; confirm with provider.",
+  address: "100 Science Way, Toronto; North Wing",
+  registrationUrl: `https://example.org/program?source=${"long-source-reference-".repeat(10)}`
+};
+// Round-trip through downloaded UTF-8 bytes: splitting an emoji's surrogate
+// pair at the 75-octet boundary must not turn it into replacement characters.
+const calendarFixtureFile = Buffer.from(createCalendarFile(calendarFixture), "utf8").toString("utf8");
+const calendarFixtureUnfolded = calendarFixtureFile.replace(/\r\n[ \t]/g, "");
+const calendarFixtureProperty = (name: string) => calendarFixtureUnfolded.split("\r\n")
+  .find((line) => line.startsWith(`${name}:`))?.slice(name.length + 1) ?? "";
+const decodeCalendarText = (value: string) => value.replace(/\\([nN\\;,])/g,
+  (_match, escaped: string) => escaped === "n" || escaped === "N" ? "\n" : escaped);
+const expectedCalendarDescription = `${calendarFixture.summary.replace(/\r\n|\r/g, "\n")}\n\nProvider: ${calendarFixture.provider}\nFree status: ${calendarFixture.freeStatusProof}\nRegister: ${calendarFixture.registrationUrl}`;
+assert(
+  decodeCalendarText(calendarFixtureProperty("DESCRIPTION")) === expectedCalendarDescription,
+  "Imported calendar description must retain real paragraphs, normalize CRLF/CR, and preserve literal backslashes and delimiters."
+);
+assert(
+  decodeCalendarText(calendarFixtureProperty("SUMMARY")) === calendarFixture.title,
+  "Imported calendar title must preserve multilingual text, emoji, commas, and semicolons across folded lines."
+);
+assert(
+  decodeCalendarText(calendarFixtureProperty("LOCATION")) === calendarFixture.address,
+  "Imported calendar location must preserve punctuation."
+);
+assert(calendarFixtureProperty("URL") === calendarFixture.registrationUrl, "Unfolding must restore the complete calendar registration URL.");
+assert(calendarFixtureFile.endsWith("\r\n"), "Calendar content lines must terminate with CRLF.");
+const calendarPhysicalLines = calendarFixtureFile.split("\r\n");
+assert(calendarPhysicalLines.every((line) => Buffer.byteLength(line, "utf8") <= 75), "Calendar physical lines must stay within 75 UTF-8 octets, including continuation whitespace.");
+assert(calendarPhysicalLines.some((line) => line.startsWith(" ")), "Long calendar properties must use RFC 5545 line folding.");
+assert(!/[\r\n]/.test(calendarFixtureProperty("DESCRIPTION")), "Calendar TEXT must escape embedded newlines rather than emit raw CR or LF inside a property.");
 
 if (failures.length) {
   console.error("QA check failed:");

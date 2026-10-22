@@ -30,6 +30,7 @@ module WebRails
 
     config.active_job.queue_adapter = :solid_queue
     config.active_record.schema_format = :sql
+    config.time_zone = "America/Toronto"
 
     config.ssl_options = {
       redirect: {
