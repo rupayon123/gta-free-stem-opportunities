@@ -1,40 +1,15 @@
-import { mkdirSync, writeFileSync } from "node:fs";
-import { dirname } from "node:path";
-import { languagePreferenceOrder, opportunities } from "../lib/data";
+import assert from "node:assert/strict";
+import { mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from "node:fs";
+import { tmpdir } from "node:os";
+import { dirname, join } from "node:path";
+import { opportunities } from "../lib/data";
 import { generatedDiscoverySummary } from "../lib/generatedDiscoveryReview";
-import { generatedLibrarySourceHealth } from "../lib/generatedLibraryOpportunities";
-import { translatedCategory, translatedFreeCost, translatedSummary } from "../lib/i18n";
+import { generatedLibrarySourceHealth, generatedLibraryCollectionHealth } from "../lib/generatedCoreLibraryOpportunities";
 import { publicOpportunities } from "../lib/opportunityStatus";
-import type { LanguageCode, Opportunity } from "../lib/types";
 
 const outputPath = process.env.GTA_PUBLIC_OPPORTUNITIES_EXPORT ?? "public/opportunities.json";
-
-function opportunityTranslations(opportunity: Opportunity) {
-  return Object.fromEntries(
-    languagePreferenceOrder
-      .filter((language): language is Exclude<LanguageCode, "en"> => language !== "en")
-      .map((language) => {
-        const summary = translatedSummary(opportunity, language);
-        const localizedCategory = translatedCategory(opportunity.categories[0], language);
-        const translatedTitle = translatedSummary(opportunity, language).split(".")[0];
-        const localizedCategoryTags = Array.from(
-          new Set(opportunity.categories.map((category) => translatedCategory(category, language)))
-        );
-        return [
-          language,
-          {
-            title: translatedTitle,
-            summary,
-            description: summary,
-            category: localizedCategory,
-            cost: translatedFreeCost(language),
-            tags: localizedCategoryTags,
-            translationSource: "generated-summary-template"
-          }
-        ];
-      })
-  );
-}
+const maximumNativeBytes = 10_000_000;
+const maximumNativeRecords = 4999;
 
 const publicListings = publicOpportunities(opportunities).map((opportunity) => ({
   id: opportunity.id,
@@ -65,8 +40,7 @@ const publicListings = publicOpportunities(opportunities).map((opportunity) => (
   volunteerHoursEligible: opportunity.volunteerHoursEligible,
   coopEligible: opportunity.coopEligible,
   trustedSource: opportunity.trustedSource,
-  sources: opportunity.sources,
-  translations: opportunityTranslations(opportunity)
+  sources: opportunity.sources
 }));
 
 const lastDataChange = publicListings
@@ -86,6 +60,7 @@ const payload = {
   },
   sourceHealth: {
     library: generatedLibrarySourceHealth,
+    libraryCollection: generatedLibraryCollectionHealth,
     discovery: {
       ...generatedDiscoverySummary.sourceHealth,
       reviewCandidates: generatedDiscoverySummary.newCandidates
@@ -94,6 +69,47 @@ const payload = {
   opportunities: publicListings
 };
 
-mkdirSync(dirname(outputPath), { recursive: true });
-writeFileSync(outputPath, `${JSON.stringify(payload, null, 2)}\n`);
-console.log(`Exported ${publicListings.length} public opportunities to ${outputPath}`);
+type FeedPayload = { count: number; opportunities: readonly unknown[] };
+export function serializeNativeFeed(value: FeedPayload) {
+  if (value.count !== value.opportunities.length || value.count > maximumNativeRecords) {
+    throw new Error(`Native feed count is inconsistent or exceeds ${maximumNativeRecords} records. Previous output was retained.`);
+  }
+  // Optional per-record translations are intentionally omitted. Both native
+  // clients have category/UI localization and factual original-text fallbacks;
+  // repeated generated templates would exceed their shared 10 MB input limit.
+  const contents = `${JSON.stringify(value, null, 2)}\n`;
+  if (Buffer.byteLength(contents, "utf8") > maximumNativeBytes) {
+    throw new Error(`Native feed exceeds ${maximumNativeBytes} UTF-8 bytes. Previous output was retained.`);
+  }
+  return contents;
+}
+
+function writeNativeFeed(path: string, value: FeedPayload) {
+  const contents = serializeNativeFeed(value);
+  // All size/count checks finish before any destination directory/file write.
+  mkdirSync(dirname(path), { recursive: true });
+  writeFileSync(path, contents);
+  return Buffer.byteLength(contents, "utf8");
+}
+
+if (process.argv.includes("--self-test")) {
+  const actual = serializeNativeFeed(payload);
+  assert.equal(JSON.parse(actual).opportunities.length, publicListings.length);
+  assert(publicListings.every((row) => !Object.hasOwn(row, "translations")));
+  const optional = { count: 2, opportunities: [{ id: "missing-translation" }, { id: "empty-translation", translations: {} }] };
+  assert.deepEqual(JSON.parse(serializeNativeFeed(optional)).opportunities, optional.opportunities);
+  assert.throws(() => serializeNativeFeed({ count: 5000, opportunities: Array(5000).fill(null) }), /records/);
+  assert.throws(() => serializeNativeFeed({ count: 2, opportunities: [] }), /inconsistent/);
+  const oversized = { count: 1, opportunities: [{ text: "🧪".repeat(2_500_001) }] };
+  const directory = mkdtempSync(join(tmpdir(), "gta-native-byte-gate-"));
+  try {
+    const path = join(directory, "retained.json");
+    writeFileSync(path, "retained");
+    assert.throws(() => writeNativeFeed(path, oversized), /UTF-8 bytes/);
+    assert.equal(readFileSync(path, "utf8"), "retained");
+  } finally { rmSync(directory, { recursive: true, force: true }); }
+  console.log(JSON.stringify({ nativeExportSelfTest: true, records: publicListings.length, bytes: Buffer.byteLength(actual, "utf8"), optionalTranslations: "missing and empty accepted", overflowPreservesPreviousFile: true }));
+} else {
+  const bytes = writeNativeFeed(outputPath, payload);
+  console.log(`Exported ${publicListings.length} public opportunities (${bytes} bytes, original provider text) to ${outputPath}`);
+}

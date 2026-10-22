@@ -4,3 +4,9 @@
 .oe-search-options a { color: var(--accent); font-weight: 700; text-underline-offset: 3px; overflow-wrap: anywhere; }
 .oe-search-options a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
 @media (max-width: 560px) { .oe-search-options { align-items: stretch; flex-direction: column; } .oe-search-options a { padding-block: .45rem; } }
+
+.oe-catalog-notice { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem 1rem; margin-block: .5rem 1rem; color: var(--muted); font-size: .875rem; line-height: 1.6; }
+.oe-catalog-notice p { margin: 0; }
+.oe-catalog-notice button, .oe-catalog-notice a { min-height: 44px; display: inline-flex; align-items: center; color: var(--accent); font-weight: 750; }
+.oe-catalog-notice button { border: 1px solid var(--line); border-radius: 8px; padding: 8px 12px; background: var(--surface); }
+.oe-search-options a { min-height: 44px; display: inline-flex; align-items: center; }

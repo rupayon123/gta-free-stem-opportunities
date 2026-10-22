@@ -12,6 +12,7 @@ import {
   programSourceUrl,
   programSummary,
   programUrl,
+  publicProgramById,
   publicProgramPages,
   serializeProgramStructuredData
 } from "@/lib/programPages";
@@ -26,7 +27,7 @@ export function generateStaticParams() {
 }
 
 function findProgram(id: string) {
-  const program = publicProgramPages.find((candidate) => candidate.id === id);
+  const program = publicProgramById.get(id);
   if (!program) notFound();
   return program;
 }

@@ -8,11 +8,17 @@ The library generator checks page success, per-source success and output counts 
 
 If a legitimate contributor advances the branch during collection, the publisher fetches the new branch tip and rebuilds the generated files from that source. It repeats every original gate and tries at most three normal pushes. It never force-pushes or merges competing generated data. Authentication failures, divergent history and failed validation stop publication. The reset is restricted to a matching disposable GitHub-hosted branch workspace.
 
-The refresh schedule, health thresholds, permission scope, GitHub repository and Vercel project are unchanged by this repair.
+The refresh schedule, health thresholds, permission scope, GitHub repository and Vercel project remain the same. The all-free library collection now follows each source to its end, within an explicit 300-page budget per source and a 15,000-record bound. A budget or output overflow stops publication rather than silently hiding additional records.
+
+The full collection is partitioned before packaging. The native feed retains the STEM scope and integer age ranges, enforces fewer than 5,000 records and at most 10,000,000 UTF-8 bytes, and preserves original provider text. Optional generated record translations are omitted; both native clients have factual original-text fallbacks. The website loads the remaining free reading, arts, community and other library events from a separately validated same-origin catalog. A failed catalog download leaves the core listings available with a visible retry and provider-calendar link. Month-based ages retain the original source wording and use year fractions for website filters.
+
+Full-collection and native-core health are recorded separately. The collection must pass every original source gate; the core also has its own retained-publication count floor. Partition checks prove that every current master record appears exactly once across the two parts. No unverified discovery candidate is promoted to increase counts.
 
 ## Search behavior
 
 Fuse.js 7.5.0 runs locally in the browser, without a search service or account. Search normalizes compatible Unicode forms and Latin accents while retaining the marks used by Indic scripts. Reviewed library aliases cover the site's 18 languages, and category labels are indexed in those languages. This is not unrestricted machine translation. Unknown topics and unrecognized words can still return no matches.
+
+Nonempty queries run in a same-origin worker so matching does not block typing. Replies are accepted only for the latest query and are intersected with the already-filtered eligible IDs. If the worker fails, the existing matcher falls back over that exact eligible subset.
 
 Meaningful search terms must all match. Small spelling errors in sufficiently long words are tolerated; short terms, numbers and dates remain strict. Title and category relevance rank before weaker body matches. A query does not override date, public-status, age, city, language, equity, pathway or distance filters. Nearby requests require an actual city or supported location before a reviewed proximity phrase can be removed.
 
@@ -20,7 +26,7 @@ Empty results offer an explicit way to clear only the search, a published progra
 
 ## Visibility
 
-The native Next metadata and sitemap include a server-rendered program directory and one factual page per published program. Titles, dates, ages, provider links and a short original summary are readable without JavaScript. Each page has its own canonical URL. Program facts remain provider-confirmed snapshots, not guarantees of spaces or admission. WebPage, CollectionPage and breadcrumb metadata describe the pages; no event-rich-result eligibility, search rank or indexing guarantee is implied.
+The native Next metadata and sitemap include a server-rendered program directory and one factual page per published program. The directory has native pagination with at most 200 cards per page. Titles, dates, ages, provider links and a short original summary are readable without JavaScript. Each page has its own canonical URL. Program facts remain provider-confirmed snapshots, not guarantees of spaces or admission. WebPage, CollectionPage and breadcrumb metadata describe the pages; no event-rich-result eligibility, search rank or indexing guarantee is implied.
 
 SEO Machine was evaluated as a possible match for the remembered GitHub repository. It is a content-production workspace with optional external integrations rather than a drop-in visibility dependency. It is not installed. Fuse.js is the only added runtime dependency.
 

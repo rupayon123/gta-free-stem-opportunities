@@ -1,4 +1,4 @@
-import { generatedLibraryOpportunities } from "./generatedLibraryOpportunities";
+import { generatedLibraryOpportunities } from "./generatedCoreLibraryOpportunities";
 import { generatedDiscoveryReviewCandidates } from "./generatedDiscoveryReview";
 import type { DiscoveredOpportunity } from "./discovery";
 import type { Category, LanguageCode, Opportunity, Region, ReviewItem } from "./types";
@@ -28,6 +28,7 @@ type SeedOpportunity = Omit<
 
 export const categories: Category[] = [
   "STEM",
+  "Library & Community",
   "Coding & Robotics",
   "Science & Engineering",
   "AI & Digital Media",

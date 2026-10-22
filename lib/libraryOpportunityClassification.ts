@@ -9,6 +9,7 @@ export type LibraryOpportunityClassificationInput = {
 export type LibraryOpportunityAgeRange = {
   min: number;
   max?: number;
+  ageLabel?: string;
 };
 
 type PublishedLibraryOpportunityClassificationInput = {
@@ -110,26 +111,49 @@ export function inferLibraryOpportunityAges(
   input: LibraryOpportunityClassificationInput
 ): LibraryOpportunityAgeRange {
   const text = normalized(`${input.title} ${input.description} ${input.categories.join(" ")}`);
+  const structuredAudience = normalized(input.categories.join(" "));
+  const adultsOnly = /\badults?\b/.test(structuredAudience) &&
+    !/\b(?:teens?|children|infants?|bab(?:y|ies)|preschool|birth|all ages)\b/.test(structuredAudience);
+  // Keep source month wording intact for display while storing age filters in
+  // years. A course lasting 6-24 months is not an infant audience restriction.
+  if (!adultsOnly) {
+    for (const [value, structured] of [[input.title, false], [input.categories.join(" "), true], [input.description, false]] as const) {
+      const ranges = value.matchAll(/\b(?:ages?\s*:?\s*)?(birth|\d{1,3}(?:\.\d+)?)\s*(months?|mos?\.?|years?|yrs?\.?)?\s*(?:-|to|through|–|—)\s*(\d{1,3}(?:\.\d+)?)\s*(months?|mos?\.?|years?|yrs?\.?)(?!\w)/gi);
+      for (const match of ranges) {
+        const context = value.slice(Math.max(0, (match.index ?? 0) - 70), match.index);
+        const audience = structured || match[1].toLowerCase() === "birth" || /\bage/i.test(match[0]) ||
+          /\b(?:ages?|bab(?:y|ies)|infants?|toddlers?|children|preschool(?:ers)?|newborns?)\b/i.test(context);
+        const lowerUnit = (match[2] || match[4]).toLowerCase();
+        const upperUnit = match[4].toLowerCase();
+        const monthRange = lowerUnit.startsWith("mo") || upperUnit.startsWith("mo");
+        const min = match[1].toLowerCase() === "birth" ? 0 : Number(match[1]) / (lowerUnit.startsWith("mo") ? 12 : 1);
+        const max = Number(match[3]) / (upperUnit.startsWith("mo") ? 12 : 1);
+        if (audience && monthRange && max >= min && max <= 130) return { min, max, ageLabel: match[0] };
+      }
+    }
+  }
   const explicitRange = text.match(/ages?\s*:?\s*(\d{1,2})\s*(?:-|to|–|—)\s*(\d{1,2})/);
   if (explicitRange) {
     const min = Number(explicitRange[1]);
     const max = Number(explicitRange[2]);
-    if (max >= min) return { min, max };
+    const followingUnit = text.slice((explicitRange.index ?? 0) + explicitRange[0].length);
+    const nonYearUnit = /^\s*(?:months?|mos?\.?|weeks?|days?)\b/.test(followingUnit);
+    if (!nonYearUnit && max >= min && (!adultsOnly || min >= 18)) return { min, max };
   }
 
   // Official audience categories identify who attends. Narrative mentions of
   // children in a parenting workshop describe its subject, not its audience.
-  const structuredAudience = normalized(input.categories.join(" "));
   const audienceText = /\b(?:birth to five|preschool|infants?|school age|children|teens?|adults?|all ages)\b/.test(structuredAudience)
     ? structuredAudience
     : text;
   const mins: number[] = [];
   const maxes: number[] = [];
-  if (audienceText.includes("birth to five") || audienceText.includes("preschool") || audienceText.includes("infants")) {
+  const preschoolAudience = audienceText.includes("birth to five") || audienceText.includes("preschool") || audienceText.includes("infants");
+  if (preschoolAudience) {
     mins.push(0);
     maxes.push(5);
   }
-  if (audienceText.includes("school age") || audienceText.includes("children")) {
+  if (audienceText.includes("school age") || (!preschoolAudience && audienceText.includes("children"))) {
     mins.push(6);
     maxes.push(12);
   }

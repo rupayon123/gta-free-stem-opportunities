@@ -34,3 +34,8 @@ artifacts/
 
 # Generated from the locked MapLibre package by prepare:map.
 /public/vendor/maplibre/
+
+# Derived from the committed full library master before imports/builds.
+/lib/generatedCoreLibraryOpportunities.ts
+/public/library-catalog.json
+/public/vendor/search/

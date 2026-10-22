@@ -81,6 +81,14 @@
       "destination": "/programs.html"
     },
     {
+      "source": "/programs/page/:page",
+      "destination": "/programs/page/:page.html"
+    },
+    {
+      "source": "/programs/page/:page/",
+      "destination": "/programs/page/:page.html"
+    },
+    {
       "source": "/programs/:id",
       "destination": "/programs/:id.html"
     },

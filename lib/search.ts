@@ -1,6 +1,6 @@
 import Fuse from "fuse.js";
 import { languageMeta, translatedCategory } from "./i18n";
-import { categorySearchAliases, librarySearchTerms, proximitySearchPhrases, searchFillerTerms, searchRequestMarkers } from "./searchLexicon";
+import { categorySearchAliases, librarySearchTerms, libraryTopicTerms, proximitySearchPhrases, searchFillerTerms, searchRequestMarkers, sourceTopicSearchAliases } from "./searchLexicon";
 import type { LanguageCode, Opportunity } from "./types";
 
 /** Fold Latin accents without deleting the vowel signs used by Indic scripts. */
@@ -26,6 +26,10 @@ function escapePattern(value: string): string {
 
 const libraryAliases = Array.from(new Set(Object.values(librarySearchTerms).flat().map(normalizeSearchText)))
   .sort((a, b) => b.length - a.length);
+const sourceTopicPatterns = sourceTopicSearchAliases.map(({ signals, aliases }) => ({
+  aliases,
+  pattern: new RegExp(`(?<![\\p{L}\\p{M}\\p{N}])(?:${signals.map((signal) => escapePattern(normalizeSearchText(signal)).replace(/ +/g, "\\s+")).join("|")})(?![\\p{L}\\p{M}\\p{N}])`, "u")
+}));
 const libraryPatterns = libraryAliases.map((alias) => {
   const cjk = /[\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}]/u.test(alias);
   return new RegExp(`${cjk ? "" : "(?<![\\p{L}\\p{M}\\p{N}])"}${escapePattern(alias)}${cjk ? "" : "(?![\\p{L}\\p{M}\\p{N}])"}`, "gu");
@@ -120,6 +124,13 @@ function queryTokens(query: string, language: LanguageCode): string[] {
   const fillers = fillerByLanguage[effectiveLanguage] ?? fillerByLanguage.en;
   let canonical = canonicalizeLibraries(query);
   if (["zh", "yue", "ja", "ko"].includes(effectiveLanguage)) {
+    // Protect reviewed activity names before removing attached request
+    // particles: Japanese おはなし会 contains は as part of the noun.
+    // Use only the effective language so e.g. 工作 is not translated across
+    // languages with different meanings.
+    for (const [topic, phrase] of Object.entries(libraryTopicTerms[effectiveLanguage]).sort((a, b) => b[1].length - a[1].length)) {
+      canonical = canonical.replaceAll(normalizeSearchText(phrase), ` ${topic} `);
+    }
     // These languages routinely attach request particles without spaces.
     for (const filler of [...searchFillerTerms[effectiveLanguage]].sort((a, b) => b.length - a.length)) {
       canonical = canonical.replaceAll(normalizeSearchText(filler), " ");
@@ -155,12 +166,14 @@ function documentFor(item: Opportunity): SearchDocument {
     pattern.lastIndex = 0;
     return pattern.test(normalizeSearchText(provider.join(" ")));
   });
+  const sourceTopicText = normalizeSearchText([item.title, item.description, ...item.tags].join("\n"));
+  const topicAliases = sourceTopicPatterns.flatMap(({ pattern, aliases }) => pattern.test(sourceTopicText) ? aliases : []);
   const fields = {
     title: normalizeSearchText(item.title),
-    categories: ["STEM", ...categories.flatMap((category) => [category, ...languages.map((language) => translatedCategory(category, language)), ...(categorySearchAliases[category] ?? [])])].map(normalizeSearchText),
+    categories: categories.flatMap((category) => [category, ...languages.map((language) => translatedCategory(category, language)), ...(categorySearchAliases[category] ?? [])]).map(normalizeSearchText),
     provider: [...provider, ...(isLibrary ? ["library"] : [])].map(normalizeSearchText),
     description: [item.description, item.summary].map(normalizeSearchText),
-    tags: item.tags.map(normalizeSearchText),
+    tags: [...item.tags, ...topicAliases].map(normalizeSearchText),
     place: [item.city, item.region, item.address].map(normalizeSearchText),
     dates: [item.startDate, item.endDate ?? "", item.deadline ?? ""].map(normalizeSearchText)
   };
@@ -170,7 +183,13 @@ function documentFor(item: Opportunity): SearchDocument {
   return document;
 }
 
-type CachedIndex = { items: readonly Opportunity[]; documents: SearchDocument[]; fuse: Fuse<SearchDocument> };
+type CachedIndex = {
+  items: readonly Opportunity[];
+  documents: SearchDocument[];
+  fuse: Fuse<SearchDocument>;
+  results: Map<string, readonly Opportunity[]>;
+};
+const maximumCachedQueries = 32;
 const indexes: CachedIndex[] = [];
 function indexFor(items: readonly Opportunity[]): CachedIndex {
   const cachedIndex = indexes.findIndex((entry) => entry.items.length === items.length && entry.items.every((item, index) => item === items[index]));
@@ -183,6 +202,7 @@ function indexFor(items: readonly Opportunity[]): CachedIndex {
   const entry: CachedIndex = {
     items: Array.from(items),
     documents,
+    results: new Map(),
     fuse: new Fuse(documents, {
       useTokenSearch: true,
       tokenMatch: "all",
@@ -220,7 +240,20 @@ export function searchOpportunities(items: readonly Opportunity[], query: string
   const tokens = queryTokens(effectiveQuery, language);
   if (!tokens.length) return Array.from(items);
   const index = indexFor(items);
-  return index.fuse.search(tokens.join(" "))
+  // Ranking and whole-token eligibility depend only on this exact ordered
+  // token list and the index's record references/order. Keep a small LRU per
+  // index, including empty matches, and never expose its mutable array.
+  const key = JSON.stringify(tokens);
+  const cached = index.results.get(key);
+  if (cached) {
+    index.results.delete(key);
+    index.results.set(key, cached);
+    return Array.from(cached);
+  }
+  const result = index.fuse.search(tokens.join(" "))
     .filter(({ item }) => tokens.every((token) => item.terms.some((candidate) => tokenMatches(token, candidate))))
     .map(({ item }) => item.item);
+  index.results.set(key, result);
+  if (index.results.size > maximumCachedQueries) index.results.delete(index.results.keys().next().value!);
+  return Array.from(result);
 }

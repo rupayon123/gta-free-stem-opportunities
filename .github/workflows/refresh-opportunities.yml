@@ -16,7 +16,8 @@ jobs:
       group: gta-free-stem-opportunities-refresh
       cancel-in-progress: true
     env:
-      GTA_MAX_LIBRARY_OPPORTUNITIES: "420"
+      GTA_MAX_LIBRARY_OPPORTUNITIES: "15000"
+      GTA_LIBRARY_PAGES_PER_SOURCE: "300"
       GTA_LOOKAHEAD_DAYS: "365"
       GTA_DISCOVERY_MAX_CANDIDATES_PER_SOURCE: "250"
       GTA_MIN_LIBRARY_PAGE_SUCCESS_RATIO: "0.75"

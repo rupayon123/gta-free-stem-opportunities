@@ -2,6 +2,7 @@ export type Region = "Toronto" | "Peel" | "York" | "Durham" | "Halton";
 
 export type Category =
   | "STEM"
+  | "Library & Community"
   | "Coding & Robotics"
   | "Science & Engineering"
   | "AI & Digital Media"
@@ -114,6 +115,8 @@ export type Opportunity = {
   deadline?: string;
   ageMin: number;
   ageMax?: number;
+  /** Provider's explicit age wording, including month-based ranges when supplied. */
+  ageLabel?: string;
   ages: {
     min: number;
     max?: number;

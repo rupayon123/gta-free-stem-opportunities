@@ -1,4 +1,6 @@
+import "server-only";
 import { opportunities } from "./data";
+import { generatedLibraryOpportunities } from "./generatedLibraryOpportunities";
 import { publicOpportunities } from "./opportunityStatus";
 import type { Opportunity } from "./types";
 
@@ -6,9 +8,27 @@ export const programSiteUrl = "https://gta-free-stem.vercel.app";
 
 // This server-rendered directory is a published snapshot. The interactive
 // browser keeps applying the current clock after a page has been published.
-export const publicProgramPages = publicOpportunities(opportunities).sort(
+const publishedPrograms = new Map([...opportunities, ...generatedLibraryOpportunities].map((program) => [program.id, program]));
+export const publicProgramPages = publicOpportunities([...publishedPrograms.values()]).sort(
   (a, b) => Date.parse(a.startDate) - Date.parse(b.startDate) || a.id.localeCompare(b.id)
 );
+export const publicProgramById = new Map(publicProgramPages.map((program) => [program.id, program]));
+export const programDirectoryPageSize = 200;
+export const programDirectoryPageCount = Math.max(1, Math.ceil(publicProgramPages.length / programDirectoryPageSize));
+const metadataTitleGroups = new Map<string, string[]>();
+for (const program of publicProgramPages) {
+  const title = programMetadataBase(program);
+  metadataTitleGroups.set(title, [...(metadataTitleGroups.get(title) ?? []), program.id]);
+}
+
+export function programDirectoryPath(page = 1) {
+  return page === 1 ? "/programs/" : `/programs/page/${page}/`;
+}
+
+export function programDirectoryPage(page: number) {
+  const offset = (page - 1) * programDirectoryPageSize;
+  return publicProgramPages.slice(offset, offset + programDirectoryPageSize);
+}
 
 export function programPath(program: Pick<Opportunity, "id">) {
   return `/programs/${encodeURIComponent(program.id)}/`;
@@ -24,10 +44,14 @@ export function programCategory(program: Opportunity) {
 
 export function programSummary(program: Opportunity) {
   const place = program.virtual ? "online" : `in ${program.city}`;
+  if (programCategory(program) === "Library & Community") {
+    return `A free library event from ${program.provider}, ${place}. Check the provider’s listing for the activity details, eligibility and booking requirements.`;
+  }
   return `A free ${programCategory(program).toLowerCase()} opportunity from ${program.provider}, ${place}. Check the provider’s listing for the activity details, eligibility and booking requirements.`;
 }
 
 export function programAgeRange(program: Opportunity) {
+  if (program.ageLabel) return program.ageLabel;
   return program.ages.max === undefined
     ? `${program.ages.min}+ years`
     : `${program.ages.min}–${program.ages.max} years`;
@@ -87,20 +111,30 @@ export function programCityAnchor(city: string) {
   return `programs-${city.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`;
 }
 
-export function programMetadataTitle(program: Opportunity) {
+function programMetadataBase(program: Opportunity) {
   const location = program.virtual ? "Online" : program.address.split(",")[0] || program.city;
-  return `${program.title} · ${location} · ${formatProgramDateTime(program.startDate)} | GTA Free STEM`;
+  return `${program.title} · ${location} · ${formatProgramDateTime(program.startDate)}`;
 }
 
-export function programBreadcrumbs(program?: Opportunity) {
+export function programMetadataTitle(program: Opportunity) {
+  const base = programMetadataBase(program);
+  const records = metadataTitleGroups.get(base) ?? [];
+  // Some providers publish identical title/venue/time records under distinct
+  // IDs. Identify those entries without inventing a different event detail.
+  const suffix = records.length > 1 ? ` · Listing ${records.indexOf(program.id) + 1}` : "";
+  return `${base}${suffix} | GTA Free STEM`;
+}
+
+export function programBreadcrumbs(program?: Opportunity, directoryPage = 1) {
   const items = [
     { "@type": "ListItem", position: 1, name: "Home", item: `${programSiteUrl}/` },
     { "@type": "ListItem", position: 2, name: "Programs", item: `${programSiteUrl}/programs/` }
   ];
   if (program) items.push({ "@type": "ListItem", position: 3, name: program.title, item: programUrl(program) });
+  else if (directoryPage > 1) items.push({ "@type": "ListItem", position: 3, name: `Page ${directoryPage}`, item: `${programSiteUrl}${programDirectoryPath(directoryPage)}` });
   return {
     "@type": "BreadcrumbList",
-    "@id": `${program ? programUrl(program) : `${programSiteUrl}/programs/`}#breadcrumb`,
+    "@id": `${program ? programUrl(program) : `${programSiteUrl}${programDirectoryPath(directoryPage)}`}#breadcrumb`,
     itemListElement: items
   };
 }

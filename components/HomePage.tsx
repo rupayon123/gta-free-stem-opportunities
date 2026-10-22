@@ -31,7 +31,7 @@ export function HomePage({ initialSurface = "home", initialFilterOverrides = {} 
   const browseSurface = initialSurface === "home" || initialSurface === "opportunities" || initialSurface === "high-school";
   const landing = initialSurface === "home" && !savedOnly;
   const heroTitle = language === "en" ? "Your next discovery\nis closer than you think." : c.title;
-  const heroIntro = language === "en" ? "Explore free STEM opportunities across the Greater Toronto Area." : c.intro;
+  const heroIntro = language === "en" ? "Explore free STEM programs and library events across the Greater Toronto Area." : c.intro;
 
   useEffect(() => {
     try {
@@ -113,7 +113,7 @@ export function HomePage({ initialSurface = "home", initialFilterOverrides = {} 
                 <label htmlFor="hero-query">{language === "en" ? "What would you like to explore?" : c.interests}</label>
                 <div className="hero-search-field">
                   <Search size={24} aria-hidden="true" />
-                  <input id="hero-query" type="search" name="q" maxLength={250} placeholder={language === "en" ? "Search STEM opportunities" : t(language, "searchPlaceholder")} autoComplete="off" dir="auto" enterKeyHint="search" spellCheck aria-describedby="hero-search-help" />
+                  <input id="hero-query" type="search" name="q" maxLength={250} placeholder={t(language, "searchPlaceholder")} autoComplete="off" dir="auto" enterKeyHint="search" spellCheck aria-describedby="hero-search-help" />
                   <button type="submit" data-science-press>{language === "en" ? "Explore" : t(language, "search")}<ArrowRight size={22} aria-hidden="true" data-science-icon /></button>
                 </div>
                 <p className="search-help" id="hero-search-help" lang="en" dir="ltr">Search topics, libraries or cities. Small spelling mistakes are okay.</p>

@@ -2816,12 +2816,89 @@ for (const code of Object.keys(languageMeta) as LanguageCode[]) {
   Object.assign(supplementalUi[code], publicBrowseUi[code]);
 }
 
+const catalogUi: Record<LanguageCode, { searchPlaceholder: string; allCategories: string }> = {
+  "en": {
+    "searchPlaceholder": "Search programs, libraries or topics",
+    "allCategories": "All categories"
+  },
+  "fr": {
+    "searchPlaceholder": "Rechercher des activités, des bibliothèques ou des sujets",
+    "allCategories": "Toutes les catégories"
+  },
+  "zh": {
+    "searchPlaceholder": "搜索活动、图书馆或主题",
+    "allCategories": "所有类别"
+  },
+  "yue": {
+    "searchPlaceholder": "搜尋活動、圖書館或主題",
+    "allCategories": "所有類別"
+  },
+  "pa": {
+    "searchPlaceholder": "ਪ੍ਰੋਗਰਾਮ, ਲਾਇਬ੍ਰੇਰੀਆਂ ਜਾਂ ਵਿਸ਼ੇ ਲੱਭੋ",
+    "allCategories": "ਸਾਰੀਆਂ ਸ਼੍ਰੇਣੀਆਂ"
+  },
+  "ur": {
+    "searchPlaceholder": "پروگرام، لائبریری یا موضوع تلاش کریں",
+    "allCategories": "تمام زمرے"
+  },
+  "ta": {
+    "searchPlaceholder": "நிகழ்ச்சிகள், நூலகங்கள் அல்லது தலைப்புகளைத் தேடுங்கள்",
+    "allCategories": "அனைத்து வகைகள்"
+  },
+  "tl": {
+    "searchPlaceholder": "Maghanap ng programa, aklatan o paksa",
+    "allCategories": "Lahat ng kategorya"
+  },
+  "es": {
+    "searchPlaceholder": "Busca programas, bibliotecas o temas",
+    "allCategories": "Todas las categorías"
+  },
+  "ar": {
+    "searchPlaceholder": "ابحث عن برامج أو مكتبات أو مواضيع",
+    "allCategories": "جميع الفئات"
+  },
+  "fa": {
+    "searchPlaceholder": "برنامه‌ها، کتابخانه‌ها یا موضوعات را جستجو کنید",
+    "allCategories": "همه دسته‌ها"
+  },
+  "hi": {
+    "searchPlaceholder": "कार्यक्रम, पुस्तकालय या विषय खोजें",
+    "allCategories": "सभी श्रेणियाँ"
+  },
+  "pt": {
+    "searchPlaceholder": "Pesquisar programas, bibliotecas ou temas",
+    "allCategories": "Todas as categorias"
+  },
+  "gu": {
+    "searchPlaceholder": "કાર્યક્રમો, પુસ્તકાલયો અથવા વિષયો શોધો",
+    "allCategories": "બધી શ્રેણીઓ"
+  },
+  "bn": {
+    "searchPlaceholder": "প্রোগ্রাম, লাইব্রেরি বা বিষয় খুঁজুন",
+    "allCategories": "সব বিভাগ"
+  },
+  "ja": {
+    "searchPlaceholder": "プログラム、図書館、テーマを検索",
+    "allCategories": "すべてのカテゴリー"
+  },
+  "ko": {
+    "searchPlaceholder": "프로그램, 도서관, 주제 검색",
+    "allCategories": "모든 카테고리"
+  },
+  "hu": {
+    "searchPlaceholder": "Keress programokat, könyvtárakat vagy témákat",
+    "allCategories": "Minden kategória"
+  }
+};
+
 export function t(language: LanguageCode, key: UiKey) {
+  if (key === "searchPlaceholder" || key === "allCategories") return catalogUi[language][key];
   return supplementalUi[language][key] ?? ui[language][key] ?? supplementalUi.en[key] ?? ui.en[key] ?? key;
 }
 
 const categoryLabels: Record<LanguageCode, Record<Category, string>> = {
   en: {
+    "Library & Community": "Library & Community",
     STEM: "STEM",
     "Coding & Robotics": "Coding & Robotics",
     "Science & Engineering": "Science & Engineering",
@@ -2840,6 +2917,7 @@ const categoryLabels: Record<LanguageCode, Record<Category, string>> = {
     "Youth Leadership": "Youth Leadership"
   },
   fr: {
+    "Library & Community": "Bibliothèque et communauté",
     STEM: "STEM",
     "Coding & Robotics": "Codage et robotique",
     "Science & Engineering": "Sciences et ingenierie",
@@ -2858,6 +2936,7 @@ const categoryLabels: Record<LanguageCode, Record<Category, string>> = {
     "Youth Leadership": "Leadership jeunesse"
   },
   zh: {
+    "Library & Community": "图书馆与社区",
     STEM: "STEM",
     "Coding & Robotics": "编程与机器人",
     "Science & Engineering": "科学与工程",
@@ -2876,6 +2955,7 @@ const categoryLabels: Record<LanguageCode, Record<Category, string>> = {
     "Youth Leadership": "青年领导力"
   },
   yue: {
+    "Library & Community": "圖書館同社區",
     STEM: "STEM",
     "Coding & Robotics": "編程同機械人",
     "Science & Engineering": "科學同工程",
@@ -2894,6 +2974,7 @@ const categoryLabels: Record<LanguageCode, Record<Category, string>> = {
     "Youth Leadership": "青年領袖"
   },
   pa: {
+    "Library & Community": "ਲਾਇਬ੍ਰੇਰੀ ਅਤੇ ਭਾਈਚਾਰਾ",
     STEM: "STEM",
     "Coding & Robotics": "ਕੋਡਿੰਗ ਅਤੇ ਰੋਬੋਟਿਕਸ",
     "Science & Engineering": "ਵਿਗਿਆਨ ਅਤੇ ਇੰਜੀਨੀਅਰਿੰਗ",
@@ -2912,6 +2993,7 @@ const categoryLabels: Record<LanguageCode, Record<Category, string>> = {
     "Youth Leadership": "ਯੁਵਾ ਲੀਡਰਸ਼ਿਪ"
   },
   ur: {
+    "Library & Community": "لائبریری اور کمیونٹی",
     STEM: "STEM",
     "Coding & Robotics": "کوڈنگ اور روبوٹکس",
     "Science & Engineering": "سائنس اور انجینئرنگ",
@@ -2930,6 +3012,7 @@ const categoryLabels: Record<LanguageCode, Record<Category, string>> = {
     "Youth Leadership": "نوجوانوں کی قیادت"
   },
   ta: {
+    "Library & Community": "நூலகம் மற்றும் சமூகம்",
     STEM: "STEM",
     "Coding & Robotics": "கோடிங் மற்றும் ரோபோடிக்ஸ்",
     "Science & Engineering": "அறிவியல் மற்றும் பொறியியல்",
@@ -2948,6 +3031,7 @@ const categoryLabels: Record<LanguageCode, Record<Category, string>> = {
     "Youth Leadership": "இளைஞர் தலைமைத்துவம்"
   },
   tl: {
+    "Library & Community": "Aklatan at komunidad",
     STEM: "STEM",
     "Coding & Robotics": "Pagko-code at robotika",
     "Science & Engineering": "Agham at inhinyeriya",
@@ -2966,6 +3050,7 @@ const categoryLabels: Record<LanguageCode, Record<Category, string>> = {
     "Youth Leadership": "Pamumuno ng kabataan"
   },
   es: {
+    "Library & Community": "Biblioteca y comunidad",
     STEM: "STEM",
     "Coding & Robotics": "Programacion y robotica",
     "Science & Engineering": "Ciencia e ingenieria",
@@ -2984,6 +3069,7 @@ const categoryLabels: Record<LanguageCode, Record<Category, string>> = {
     "Youth Leadership": "Liderazgo juvenil"
   },
   ar: {
+    "Library & Community": "المكتبة والمجتمع",
     STEM: "STEM",
     "Coding & Robotics": "البرمجة والروبوتات",
     "Science & Engineering": "العلوم والهندسة",
@@ -3002,6 +3088,7 @@ const categoryLabels: Record<LanguageCode, Record<Category, string>> = {
     "Youth Leadership": "قيادة الشباب"
   },
   fa: {
+    "Library & Community": "کتابخانه و جامعه",
     STEM: "STEM",
     "Coding & Robotics": "برنامه‌نویسی و رباتیک",
     "Science & Engineering": "علوم و مهندسی",
@@ -3020,6 +3107,7 @@ const categoryLabels: Record<LanguageCode, Record<Category, string>> = {
     "Youth Leadership": "رهبری جوانان"
   },
   hi: {
+    "Library & Community": "पुस्तकालय और समुदाय",
     STEM: "STEM",
     "Coding & Robotics": "कोडिंग और रोबोटिक्स",
     "Science & Engineering": "विज्ञान और इंजीनियरिंग",
@@ -3038,6 +3126,7 @@ const categoryLabels: Record<LanguageCode, Record<Category, string>> = {
     "Youth Leadership": "युवा नेतृत्व"
   },
   pt: {
+    "Library & Community": "Biblioteca e comunidade",
     STEM: "STEM",
     "Coding & Robotics": "Programacao e robotica",
     "Science & Engineering": "Ciencia e engenharia",
@@ -3056,6 +3145,7 @@ const categoryLabels: Record<LanguageCode, Record<Category, string>> = {
     "Youth Leadership": "Lideranca juvenil"
   },
   gu: {
+    "Library & Community": "પુસ્તકાલય અને સમુદાય",
     STEM: "STEM",
     "Coding & Robotics": "કોડિંગ અને રોબોટિક્સ",
     "Science & Engineering": "વિજ્ઞાન અને ઇજનેરી",
@@ -3074,6 +3164,7 @@ const categoryLabels: Record<LanguageCode, Record<Category, string>> = {
     "Youth Leadership": "યુવા નેતૃત્વ"
   },
   bn: {
+    "Library & Community": "গ্রন্থাগার ও সম্প্রদায়",
     STEM: "STEM",
     "Coding & Robotics": "কোডিং ও রোবোটিক্স",
     "Science & Engineering": "বিজ্ঞান ও প্রকৌশল",
@@ -3092,6 +3183,7 @@ const categoryLabels: Record<LanguageCode, Record<Category, string>> = {
     "Youth Leadership": "যুব নেতৃত্ব"
   },
   ja: {
+    "Library & Community": "図書館と地域",
     STEM: "STEM",
     "Coding & Robotics": "コーディングとロボット工学",
     "Science & Engineering": "科学と工学",
@@ -3110,6 +3202,7 @@ const categoryLabels: Record<LanguageCode, Record<Category, string>> = {
     "Youth Leadership": "若者のリーダーシップ"
   },
   ko: {
+    "Library & Community": "도서관 및 지역사회",
     STEM: "STEM",
     "Coding & Robotics": "코딩 및 로봇공학",
     "Science & Engineering": "과학 및 공학",
@@ -3128,6 +3221,7 @@ const categoryLabels: Record<LanguageCode, Record<Category, string>> = {
     "Youth Leadership": "청소년 리더십"
   },
   hu: {
+    "Library & Community": "Könyvtár és közösség",
     STEM: "STEM",
     "Coding & Robotics": "Kodolas es robotika",
     "Science & Engineering": "Termeszettudomany es mernoki tudomany",

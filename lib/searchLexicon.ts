@@ -75,6 +75,7 @@ export const proximitySearchPhrases: readonly string[] = [
 // A category alias is attached only to records already in that category.
 // Coding is not inferred from unrelated software or 3D-making descriptions.
 export const categorySearchAliases: Partial<Record<Category, readonly string[]>> = {
+  "Library & Community": ["library", "community"],
   "Coding & Robotics": ["code", "coding", "programming", "robot", "robots", "robotics"],
   "Science & Engineering": ["science", "engineering"],
   "AI & Digital Media": ["ai", "artificial intelligence", "digital media"],
@@ -84,7 +85,61 @@ export const categorySearchAliases: Partial<Record<Category, readonly string[]>>
   "Career & Mentorship": ["career", "careers", "mentor", "mentoring", "mentorship"],
   Scholarships: ["scholarship", "scholarships"],
   "Newcomer & Settlement": ["newcomer", "newcomers", "settlement"],
+  "Arts & Media": ["art", "arts", "media"],
   "Volunteer Hours": ["volunteer", "volunteering"],
   "Co-op & SHSM": ["co-op", "coop", "shsm"],
   "Youth Leadership": ["leadership"]
 };
+
+// Topic aliases need a matching phrase in the provider's title, description or
+// tags. A library name or the broad Library & Community category is not evidence
+// that an event includes reading, art, crafts or language practice.
+// Reviewed topic words describe the activity, not its spoken language. They
+// attach only when an original provider signal below establishes that topic.
+export const libraryTopicTerms: Record<LanguageCode, { reading: string; art: string; crafts: string; storytime: string; conversation: string }> = {
+  en: { reading: "reading", art: "art", crafts: "crafts", storytime: "storytime", conversation: "conversation" },
+  fr: { reading: "lecture", art: "art", crafts: "bricolage", storytime: "heure du conte", conversation: "conversation" },
+  zh: { reading: "阅读", art: "艺术", crafts: "手工", storytime: "故事时间", conversation: "会话" },
+  yue: { reading: "閱讀", art: "藝術", crafts: "手工", storytime: "故事時間", conversation: "會話" },
+  pa: { reading: "ਪੜ੍ਹਨਾ", art: "ਕਲਾ", crafts: "ਦਸਤਕਾਰੀ", storytime: "ਕਹਾਣੀ ਦਾ ਸਮਾਂ", conversation: "ਗੱਲਬਾਤ" },
+  ur: { reading: "پڑھنا", art: "فن", crafts: "دستکاری", storytime: "کہانی کا وقت", conversation: "گفتگو" },
+  ta: { reading: "வாசிப்பு", art: "கலை", crafts: "கைவினை", storytime: "கதைநேரம்", conversation: "உரையாடல்" },
+  tl: { reading: "pagbabasa", art: "sining", crafts: "gawaing kamay", storytime: "oras ng kuwento", conversation: "pag-uusap" },
+  es: { reading: "lectura", art: "arte", crafts: "manualidades", storytime: "hora del cuento", conversation: "conversación" },
+  ar: { reading: "قراءة", art: "فن", crafts: "أشغال يدوية", storytime: "وقت القصة", conversation: "محادثة" },
+  fa: { reading: "مطالعه", art: "هنر", crafts: "کاردستی", storytime: "قصه گویی", conversation: "مکالمه" },
+  hi: { reading: "पढ़ना", art: "कला", crafts: "हस्तशिल्प", storytime: "कहानी का समय", conversation: "बातचीत" },
+  pt: { reading: "leitura", art: "arte", crafts: "artesanato", storytime: "hora do conto", conversation: "conversação" },
+  gu: { reading: "વાંચન", art: "કલા", crafts: "હસ્તકલા", storytime: "વાર્તાનો સમય", conversation: "વાતચીત" },
+  bn: { reading: "পড়া", art: "শিল্প", crafts: "হস্তশিল্প", storytime: "গল্পের সময়", conversation: "কথোপকথন" },
+  ja: { reading: "読書", art: "美術", crafts: "工作", storytime: "おはなし会", conversation: "会話" },
+  ko: { reading: "독서", art: "미술", crafts: "공예", storytime: "이야기 시간", conversation: "회화" },
+  hu: { reading: "olvasás", art: "művészet", crafts: "kézművesség", storytime: "mesedélután", conversation: "beszélgetés" }
+};
+const topicTerms = (topic: keyof typeof libraryTopicTerms.en) => Object.values(libraryTopicTerms).map(terms => terms[topic]);
+
+export const sourceTopicSearchAliases: readonly {
+  signals: readonly string[];
+  aliases: readonly string[];
+}[] = [
+  {
+    signals: ["storytime", "story time", "read aloud", "read-aloud"],
+    aliases: ["storytime", "story time", "read aloud", "reading", "storytelling", ...topicTerms("reading"), ...topicTerms("storytime")]
+  },
+  {
+    signals: ["reading", "book club", "book discussion", "reading circle", "reading buddies"],
+    aliases: ["reading", "books", ...topicTerms("reading")]
+  },
+  {
+    signals: ["art", "arts", "drawing", "painting", "watercolour", "watercolor", "collage", "sculpture", "sketching"],
+    aliases: ["art", "arts", ...topicTerms("art")]
+  },
+  {
+    signals: ["craft", "crafts", "crafting", "knitting", "crochet", "origami", "sewing", "needlework"],
+    aliases: ["art", "arts", "craft", "crafts", "crafting", ...topicTerms("art"), ...topicTerms("crafts")]
+  },
+  {
+    signals: ["conversation circle", "conversation club", "conversation café", "conversation cafe", "language café", "language cafe"],
+    aliases: ["community", "conversation", "language practice", ...topicTerms("conversation")]
+  }
+];

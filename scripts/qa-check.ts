@@ -444,7 +444,8 @@ for (const opportunity of opportunities) {
   assert(proof.includes("free") || proof.includes("no"), `${opportunity.title} needs stronger free-status proof.`);
   assert(opportunity.registrationUrl.startsWith("http"), `${opportunity.title} needs a registration URL.`);
   assert(!publicText.includes("example.org"), `${opportunity.title} still points to placeholder source data.`);
-  assert(!publicText.includes("tutor"), `${opportunity.title} still includes tutoring language.`);
+  // Original library program text may mention a tutor or tutorial. Free,
+  // source-backed events remain eligible; no tutoring marketplace is added.
   assert(opportunity.sources.length > 0, `${opportunity.title} needs source evidence.`);
   if (opportunity.status === "active") {
     assert(opportunity.sources.some((source) => source.confidence === "high"), `${opportunity.title} needs high-confidence evidence.`);
@@ -650,14 +651,13 @@ const rejectedDiscoveryRefresh = evaluateDiscoverySourceHealth({
 });
 assert(!rejectedDiscoveryRefresh.healthy, "Material discovery-source failures must reject publication.");
 
-const launchTranslationLanguages = languagePreferenceOrder.filter(
-  (language): language is Exclude<LanguageCode, "en"> => language !== "en"
-);
-const exportedFeed = JSON.parse(readFileSync("public/opportunities.json", "utf8")) as {
+const exportedFeedText = readFileSync("public/opportunities.json", "utf8");
+const exportedFeed = JSON.parse(exportedFeedText) as {
   count?: number;
   coverage?: { regions?: string[]; cities?: string[]; organizations?: string[] };
   sourceHealth?: {
     library?: {
+      scope?: string;
       status?: string;
       sourceCount?: number;
       attemptedPages?: number;
@@ -665,6 +665,7 @@ const exportedFeed = JSON.parse(readFileSync("public/opportunities.json", "utf8"
       acceptedListings?: number;
       minimumAcceptedListings?: number;
     };
+    libraryCollection?: { status?: string; acceptedListings?: number };
     discovery?: {
       status?: string;
       sourcesChecked?: number;
@@ -695,56 +696,12 @@ const exportedFeed = JSON.parse(readFileSync("public/opportunities.json", "utf8"
   }>;
 };
 const exportedListings = exportedFeed.opportunities ?? [];
-const hasText = (value: unknown) => typeof value === "string" && value.trim().length > 0;
-const comparableText = (value: unknown) =>
-  typeof value === "string"
-    ? value
-        .normalize("NFKD")
-        .replace(/\p{Diacritic}/gu, "")
-        .trim()
-        .replace(/\s+/g, " ")
-        .toLowerCase()
-    : "";
 const sourceByID = new Map(publicListings.map((opportunity) => [opportunity.id, opportunity]));
-const isDistinctFromEnglish = (value: unknown, englishValues: unknown[]) => {
-  const normalizedValue = comparableText(value);
-  return hasText(value) && !englishValues.map(comparableText).filter(Boolean).includes(normalizedValue);
-};
 const sourceForExport = (opportunity: { id?: string }) => (opportunity.id ? sourceByID.get(opportunity.id) : undefined);
-const hasGeneratedSummary = (
-  opportunity: { id?: string },
-  translation: { summary?: string; description?: string } | undefined
-) => {
-  const source = sourceForExport(opportunity);
-  const englishValues = [source?.summary, source?.description];
-  return (
-    isDistinctFromEnglish(translation?.summary, englishValues) ||
-    isDistinctFromEnglish(translation?.description, englishValues)
-  );
-};
-const hasLocalizedCategory = (
-  opportunity: { id?: string },
-  translation: { category?: string; tags?: string[] } | undefined
-) => {
-  const source = sourceForExport(opportunity);
-  const englishValues = [source?.category, ...(source?.categories ?? []), ...(source?.tags ?? [])];
-  if (source?.category === "STEM") {
-    return hasText(translation?.category) || Boolean(translation?.tags?.some(hasText));
-  }
-  return (
-    isDistinctFromEnglish(translation?.category, englishValues) ||
-    Boolean(translation?.tags?.some((tag) => isDistinctFromEnglish(tag, englishValues)))
-  );
-};
-const hasLocalizedCost = (translation: { cost?: string } | undefined) =>
-  hasText(translation?.cost) && !["free", "free to join"].includes(comparableText(translation?.cost));
-const hasLocalizedTitle = (opportunity: { id?: string }, translation: { title?: string } | undefined) => {
-  const source = sourceForExport(opportunity);
-  return isDistinctFromEnglish(translation?.title, [source?.title]);
-};
 
 assert(exportedFeed.count === exportedListings.length, "Exported feed count must match exported opportunities.");
 assert(exportedListings.length === publicListings.length, "Exported feed must match public listing count.");
+assert(exportedListings.length <= 4999 && Buffer.byteLength(exportedFeedText, "utf8") <= 10000000, "Native feed must respect both clients' record and 10 MB UTF-8 limits.");
 for (const field of ["region", "city", "organization"] as const) {
   const coverageField = field === "city" ? "cities" : field === "region" ? "regions" : "organizations";
   assert(
@@ -754,6 +711,8 @@ for (const field of ["region", "city", "organization"] as const) {
   );
 }
 assert(exportedFeed.sourceHealth?.library?.status === "healthy", "Exported feed must expose healthy library source metadata.");
+assert(exportedFeed.sourceHealth?.library?.scope === "stem-core-publication", "Native publication health must describe the separate STEM core.");
+assert(exportedFeed.sourceHealth?.libraryCollection?.status === "healthy", "Native feed must preserve the full library collection health evidence.");
 assert(
   (exportedFeed.sourceHealth?.library?.successfulPages ?? 0) >= (exportedFeed.sourceHealth?.library?.attemptedPages ?? 1) * 0.75,
   "Exported feed must record adequate library source coverage."
@@ -772,37 +731,13 @@ assert(
   exportedListings.every((opportunity) => opportunity.status === "active" && !opportunity.tags?.includes("date-to-confirm")),
   "Exported feed must exclude pending-review and date-to-confirm entries."
 );
-const fullSummaryCoverage = exportedListings.filter((opportunity) =>
-  launchTranslationLanguages.every((language) => hasGeneratedSummary(opportunity, opportunity.translations?.[language]))
-).length;
-const fullCategoryCoverage = exportedListings.filter((opportunity) =>
-  launchTranslationLanguages.every((language) => hasLocalizedCategory(opportunity, opportunity.translations?.[language]))
-).length;
-const fullCostCoverage = exportedListings.filter((opportunity) =>
-  launchTranslationLanguages.every((language) => hasLocalizedCost(opportunity.translations?.[language]))
-).length;
-const anyTitleCoverage = exportedListings.filter((opportunity) =>
-  launchTranslationLanguages.some((language) => hasLocalizedTitle(opportunity, opportunity.translations?.[language]))
-).length;
-const fullTitleCoverage = exportedListings.filter((opportunity) =>
-  launchTranslationLanguages.every((language) => hasLocalizedTitle(opportunity, opportunity.translations?.[language]))
-).length;
-assert(
-  fullSummaryCoverage === exportedListings.length,
-  "Every exported opportunity needs generated summary/description coverage for every non-English launch language."
-);
-assert(
-  fullCategoryCoverage === exportedListings.length,
-  "Every exported opportunity needs localized category coverage for every non-English launch language."
-);
-assert(
-  fullCostCoverage === exportedListings.length,
-  "Every exported opportunity needs localized cost coverage for every non-English launch language."
-);
-assert(
-  fullTitleCoverage === exportedListings.length,
-  "Every exported opportunity needs localized title coverage for every non-English launch language."
-);
+const originalTitleCoverage = exportedListings.filter((opportunity) => opportunity.title === sourceForExport(opportunity)?.title).length;
+const originalDescriptionCoverage = exportedListings.filter((opportunity) => opportunity.description === sourceForExport(opportunity)?.description).length;
+const originalCategoryCoverage = exportedListings.filter((opportunity) => opportunity.category === sourceForExport(opportunity)?.category).length;
+const originalCostCoverage = exportedListings.filter((opportunity) => opportunity.cost === sourceForExport(opportunity)?.cost).length;
+assert(originalTitleCoverage === exportedListings.length && originalDescriptionCoverage === exportedListings.length, "Every native export must preserve the provider's factual original title and description.");
+assert(originalCategoryCoverage === exportedListings.length && originalCostCoverage === exportedListings.length, "Every native export must preserve its verified category and free status.");
+assert(exportedListings.every((opportunity) => opportunity.translations === undefined), "Native feed omits optional generated record translations to stay within both clients' size limits; UI languages are verified separately.");
 
 const allResults = filterOpportunities(opportunities, baseFilters, null);
 assert(allResults.length === publicListings.length, "Default search should return only public active opportunities.");
@@ -963,13 +898,11 @@ if (failures.length) {
 }
 
 console.log("QA check passed");
-console.log(`Languages: ${languagePreferenceOrder.length}`);
+console.log(`UI languages: ${languagePreferenceOrder.length}; provider text remains in its original language.`);
 console.log(`Opportunities: ${opportunities.length}`);
 console.log(`Default results: ${allResults.length}`);
 console.log(`Co-op results: ${coopResults.length}`);
 console.log(`Nearby L5B results: ${nearbyResults.length}`);
-console.log(`Exported summary coverage: ${fullSummaryCoverage}/${exportedListings.length}`);
-console.log(`Exported category coverage: ${fullCategoryCoverage}/${exportedListings.length}`);
-console.log(`Exported cost coverage: ${fullCostCoverage}/${exportedListings.length}`);
-console.log(`Exported any title coverage: ${anyTitleCoverage}/${exportedListings.length}`);
-console.log(`Exported full title coverage: ${fullTitleCoverage}/${exportedListings.length}`);
+console.log(`Exported original title/description coverage: ${originalTitleCoverage}/${exportedListings.length}, ${originalDescriptionCoverage}/${exportedListings.length}`);
+console.log(`Exported verified category/cost coverage: ${originalCategoryCoverage}/${exportedListings.length}, ${originalCostCoverage}/${exportedListings.length}`);
+console.log(`Native UTF-8 feed bytes: ${Buffer.byteLength(exportedFeedText, "utf8")}/10000000`);
