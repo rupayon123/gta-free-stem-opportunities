@@ -45,6 +45,29 @@ export const searchFillerTerms: Record<LanguageCode, readonly string[]> = {
   hu: ["én", "szeretnék", "keresek", "keress", "mutass", "nekem", "kérek", "egy", "a", "az", "és", "ingyenes", "program", "programok", "programokat", "foglalkozás", "foglalkozások", "lehetőség", "lehetőségek"]
 };
 
+// These explicit request markers select one reviewed filler list independently
+// of the interface language. A topic or a library alias alone is not a marker.
+export const searchRequestMarkers: Record<LanguageCode, readonly string[]> = {
+  en: [], // English request words are already shared by every filler list.
+  fr: ["je cherche"],
+  zh: ["我想找"],
+  yue: ["我想搵"],
+  pa: ["ਮੈਨੂੰ"],
+  ur: ["مجھے"],
+  ta: ["எனக்கு"],
+  tl: ["gusto ko"],
+  es: ["quiero"],
+  ar: ["أبحث عن", "أريد", "اريد"],
+  fa: ["من دنبال"],
+  hi: ["मुझे"],
+  pt: ["quero"],
+  gu: ["મને"],
+  bn: ["আমি"],
+  ja: ["探してください"],
+  ko: ["찾아주세요"],
+  hu: ["keresek"]
+};
+
 export const proximitySearchPhrases: readonly string[] = [
   "near me", "nearby", "close to me", "around me", "près de moi", "à proximité", "附近", "我附近", "就近", "ਨਜ਼ਦੀਕ", "ਮੇਰੇ ਨੇੜੇ", "میرے قریب", "எனக்கு அருகில்", "malapit sa akin", "cerca de mí", "cerca de mi", "بالقرب مني", "قريب مني", "نزدیک من", "نزدیکم", "मेरे पास", "मेरे नज़दीक", "perto de mim", "મારી નજીક", "আমার কাছে", "আমার কাছাকাছি", "近く", "近所", "내 근처", "주변", "közelemben", "a közelben"
 ];

@@ -101,7 +101,17 @@ const cases: SearchCase[] = [
   { name: "resolved proximity retains unknown intent", query: "library near me gala", items: markhamEligible, options: { proximityResolved: true }, count: 0 },
   { name: "resolved proximity retains dates", query: "library near me 2026-12-02", items: markhamEligible, options: { proximityResolved: true }, count: 0 },
   { name: "resolved proximity retains numbers", query: "library near me 9", items: markhamEligible, options: { proximityResolved: true }, count: 0 },
-  { name: "unknown intent alongside known library", query: "library gala", count: 0 }
+  { name: "unknown intent alongside known library", query: "library gala", count: 0 },
+  { name: "inferred French retains negation", query: "je cherche bibliothèque pas coding", count: 0 },
+  { name: "inferred Arabic retains negation", query: "أبحث عن المكتبة لا coding", count: 0 },
+  { name: "Arabic want request in English UI", query: "أريد برامج مجانية في المكتبة", count: 2 },
+  { name: "Arabic want request retains unknown topic", query: "أريد برامج مجانية في المكتبة zzyxqv", count: 0 },
+  { name: "inferred Spanish retains negation", query: "quiero biblioteca no coding", count: 0 },
+  { name: "inferred French retains exact number", query: "je cherche bibliothèque 8", count: 0 },
+  { name: "inferred Arabic retains exact date", query: "أبحث عن المكتبة 2026-12-02", count: 0 },
+  { name: "inference is not generic translation", query: "bibliothèque activités gratuites zzyxqv", count: 0 },
+  { name: "mixed request markers do not merge filler lists", query: "je cherche quiero biblioteca", count: 0 },
+  { name: "request marker needs word boundaries", query: "zquiero biblioteca", count: 0 }
 ];
 
 const naturalLibraryQueries: Record<LanguageCode, string> = {
@@ -126,6 +136,8 @@ const naturalLibraryQueries: Record<LanguageCode, string> = {
 };
 for (const language of Object.keys(languageMeta) as LanguageCode[]) {
   cases.push({ name: `natural library request ${language}`, language, query: naturalLibraryQueries[language], count: 2, include: ["coding", "sculpt"] });
+  cases.push({ name: `natural ${language} request in English UI`, language: "en", query: naturalLibraryQueries[language], count: 2, include: ["coding", "sculpt"] });
+  cases.push({ name: `inferred ${language} request retains unknown topic`, language: "en", query: `${naturalLibraryQueries[language]} gala`, count: 0 });
 }
 for (const test of cases) {
   const result = searchOpportunities(test.items ?? fixtures, test.query, test.language, test.options);
@@ -141,6 +153,8 @@ let aliasChecks = 0;
 for (const language of Object.keys(languageMeta) as LanguageCode[]) {
   const ids = searchOpportunities(fixtures, translatedCategory("Coding & Robotics", language), language).map((item) => item.id);
   assert.deepEqual(ids, ["coding"], `${language}: translated coding label must not include 3D sculpting`);
+  labelChecks += 1;
+  assert.deepEqual(searchOpportunities(fixtures, translatedCategory("Coding & Robotics", language), "en").map((item) => item.id), ["coding"], `${language}: translated category is searchable from English UI`);
   labelChecks += 1;
   for (const alias of librarySearchTerms[language]) {
     assert.equal(searchOpportunities(fixtures, alias, language).length, 2, `${language}: library alias ${alias}`);

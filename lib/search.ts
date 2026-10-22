@@ -1,6 +1,6 @@
 import Fuse from "fuse.js";
 import { languageMeta, translatedCategory } from "./i18n";
-import { categorySearchAliases, librarySearchTerms, proximitySearchPhrases, searchFillerTerms } from "./searchLexicon";
+import { categorySearchAliases, librarySearchTerms, proximitySearchPhrases, searchFillerTerms, searchRequestMarkers } from "./searchLexicon";
 import type { LanguageCode, Opportunity } from "./types";
 
 /** Fold Latin accents without deleting the vowel signs used by Indic scripts. */
@@ -39,6 +39,23 @@ const fillerByLanguage = Object.fromEntries(Object.entries(searchFillerTerms).ma
   language,
   new Set([...searchFillerTerms.en, ...terms].flatMap(tokenize))
 ])) as Record<LanguageCode, Set<string>>;
+const requestLanguagePatterns = Object.entries(searchRequestMarkers).map(([language, markers]) => ({
+  language: language as LanguageCode,
+  patterns: markers.map((marker) => {
+    const normalized = normalizeSearchText(marker);
+    const cjk = /[\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}\p{Script=Hangul}]/u.test(normalized);
+    const phrase = escapePattern(normalized).replace(/ +/g, "\\s+");
+    return new RegExp(`${cjk ? "" : "(?<![\\p{L}\\p{M}\\p{N}])"}${phrase}${cjk ? "" : "(?![\\p{L}\\p{M}\\p{N}])"}`, "u");
+  })
+}));
+
+function requestLanguage(query: string, fallback: LanguageCode): LanguageCode {
+  const normalized = normalizeSearchText(query);
+  const matches = requestLanguagePatterns.filter(({ patterns }) => patterns.some((pattern) => pattern.test(normalized)));
+  // Ambiguous mixed requests keep the selected language rather than merging
+  // stopword lists and accidentally discarding another language's topic.
+  return matches.length === 1 ? matches[0].language : fallback;
+}
 
 /** Text search has no location fix. The UI can direct this request to its location controls. */
 export function hasUnresolvedProximityQuery(query: string): boolean {
@@ -99,11 +116,12 @@ function tokenMatches(query: string, candidate: string): boolean {
 }
 
 function queryTokens(query: string, language: LanguageCode): string[] {
-  const fillers = fillerByLanguage[language] ?? fillerByLanguage.en;
+  const effectiveLanguage = requestLanguage(query, language);
+  const fillers = fillerByLanguage[effectiveLanguage] ?? fillerByLanguage.en;
   let canonical = canonicalizeLibraries(query);
-  if (["zh", "yue", "ja", "ko"].includes(language)) {
+  if (["zh", "yue", "ja", "ko"].includes(effectiveLanguage)) {
     // These languages routinely attach request particles without spaces.
-    for (const filler of [...searchFillerTerms[language]].sort((a, b) => b.length - a.length)) {
+    for (const filler of [...searchFillerTerms[effectiveLanguage]].sort((a, b) => b.length - a.length)) {
       canonical = canonical.replaceAll(normalizeSearchText(filler), " ");
     }
   }
