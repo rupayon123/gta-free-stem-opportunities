@@ -38,6 +38,11 @@ type ProjectedMapCluster = {
 
 const MARKER_SEPARATION_PX = 52;
 
+function mapContentPadding(map: import("maplibre-gl").Map) {
+  const attribution = map.getContainer().querySelector<HTMLElement>(".maplibregl-ctrl-attrib");
+  return { top: 110, right: 90, bottom: Math.max(96, (attribution?.offsetHeight ?? 44) + 52), left: 54 };
+}
+
 function screenClusters(locations: MapLocation[], map: import("maplibre-gl").Map): ProjectedMapCluster[] {
   // Stable ordering makes equal-distance decisions repeatable as the map pans.
   const clusters = [...locations]
@@ -195,7 +200,7 @@ export function ExplorerMap({ items, onSelect, language }: {
           if (isCluster) {
             const bounds = new maplibre.LngLatBounds();
             cluster.locations.forEach((location) => bounds.extend([location.longitude, location.latitude]));
-            const padding = Math.min(70, map.getContainer().clientWidth * 0.18);
+            const padding = mapContentPadding(map);
             const camera = map.cameraForBounds(bounds, { padding, maxZoom: 16 });
             if (camera && camera.zoom !== undefined && camera.zoom > map.getZoom() + 0.15) {
               const label = "Zoom to " + count + " programs across " + cluster.locations.length + " locations.";
@@ -341,21 +346,24 @@ export function ExplorerMap({ items, onSelect, language }: {
       };
 
       const boundsKey = locations.map(locationKey).sort().join("|");
+      const fitLocations = () => {
+        if (!locations.length) return;
+        const bounds = new maplibre.LngLatBounds();
+        locations.forEach((location) => bounds.extend([location.longitude, location.latitude]));
+        map.fitBounds(bounds, { padding: mapContentPadding(map), maxZoom: 12, duration: 0 });
+      };
       if (boundsKey !== previousBoundsKey.current) {
         previousBoundsKey.current = boundsKey;
-        if (locations.length) {
-          const bounds = new maplibre.LngLatBounds();
-          locations.forEach((location) => bounds.extend([location.longitude, location.latitude]));
-          map.fitBounds(bounds, { padding: 60, maxZoom: 12, duration: 0 });
-        }
+        fitLocations();
       }
+      const resizeMap = () => { fitLocations(); renderMarkers(); };
       map.on("zoomend", renderMarkers);
       map.on("moveend", renderMarkers);
-      map.on("resize", renderMarkers);
+      map.on("resize", resizeMap);
       removeMapListeners = () => {
         map.off("zoomend", renderMarkers);
         map.off("moveend", renderMarkers);
-        map.off("resize", renderMarkers);
+        map.off("resize", resizeMap);
       };
       renderMarkers();
     }

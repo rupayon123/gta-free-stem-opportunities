@@ -257,10 +257,12 @@ export function PlayfulSurface({ children, className = "", ...props }: MotionCon
     };
     const bounce = (control: HTMLElement) => {
       const from = scaleOf(control);
+      // Full-width dialog actions need room for their keyboard focus outline.
+      const peak = control.matches(":focus-visible") && control.closest(".oe-detail") ? 1.04 : 1.075;
       playControl(control, [
         { scale: from, offset: 0 },
         { scale: 0.92, offset: 0.12, easing: "cubic-bezier(0.16, 1, 0.3, 1)" },
-        { scale: 1.075, offset: 0.42, easing: "ease-in-out" },
+        { scale: peak, offset: 0.42, easing: "ease-in-out" },
         { scale: 0.985, offset: 0.7, easing: "ease-in-out" },
         { scale: 1.012, offset: 0.86, easing: "ease-out" },
         { scale: 1, offset: 1 }

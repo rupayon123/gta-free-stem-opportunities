@@ -22,8 +22,11 @@
 }
 
 /* Keep the responsive artwork clear of copy on smaller desktop windows. */
+@media (min-width: 1151px) {
+  .welcome-art { width: min(600px, 42vw); }
+}
 @media (min-width: 1151px) and (max-width: 1360px) {
-  .welcome-art { width: 42vw; top: -18px; }
+  .welcome-art { top: -18px; }
 }
 
 :is(.hero-search button, .oe-nearby-submit, .primary-button, .soft-button,
@@ -188,30 +191,34 @@
   box-shadow: 0 0 0 4px #f4c43140, 0 3px 0 var(--playful-soft-edge);
 }
 
+.oe-feedback-slot {
+  display: grid;
+  flex: 1 1 220px;
+  min-inline-size: 0;
+  min-block-size: 56px;
+  align-items: center;
+}
+.oe-feedback-slot > * { grid-area: 1 / 1; }
+.oe-feedback-slot.is-active .oe-source-meta { visibility: hidden; }
 .oe-save-feedback {
-  position: fixed;
-  z-index: 60;
-  inset-inline-end: 24px;
-  inset-block-end: calc(24px + env(safe-area-inset-bottom, 0px));
   display: flex;
   align-items: center;
-  gap: 11px;
-  width: min(360px, calc(100vw - 32px));
-  padding: 15px 18px;
-  border: 2px solid var(--ink);
-  border-radius: 17px;
-  background: var(--surface);
+  gap: 9px;
+  padding: 8px 10px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--tint);
   color: var(--ink);
-  box-shadow: 0 5px 0 var(--playful-soft-edge), 0 10px 24px var(--playful-shadow);
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 750;
   line-height: 1.45;
   overflow-wrap: anywhere;
   pointer-events: none;
-  animation: gta-feedback-pop 340ms var(--playful-ease);
+  animation: gta-feedback-pop 240ms var(--playful-ease);
 }
 .oe-save-feedback > svg { flex: 0 0 auto; color: var(--accent); }
-.oe-save-feedback.is-removing { background: var(--tint); }
+.oe-detail-description-link { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; margin-block-start: -16px; margin-block-end: 12px; color: var(--accent); font-size: 14px; font-weight: 750; text-underline-offset: 3px; }
+.oe-detail-description-link > svg { flex: 0 0 auto; }
 
 @media (hover: hover) and (pointer: fine) {
   :is(.hero-search button, .oe-nearby-submit, .primary-button, .soft-button,
@@ -332,12 +339,8 @@
   100% { translate: 0 0; }
 }
 @keyframes gta-feedback-pop {
-  0% { translate: 0 18px; rotate: calc(-2deg * var(--playful-turn)); }
-  72% { translate: 0 -3px; rotate: calc(.5deg * var(--playful-turn)); }
-  100% { translate: 0 0; rotate: 0deg; }
-}
-@media (max-width: 560px) {
-  .oe-save-feedback { inset-inline-end: 16px; inset-block-end: calc(16px + env(safe-area-inset-bottom, 0px)); font-size: 14px; padding: 13px 15px; }
+  from { opacity: .65; }
+  to { opacity: 1; }
 }
 @media (prefers-reduced-motion: reduce) {
   :is(.hero-search button, .oe-nearby-submit, .primary-button, .soft-button,
