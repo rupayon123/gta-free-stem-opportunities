@@ -28,6 +28,10 @@ Meaningful search terms must all match. Small spelling errors in sufficiently lo
 
 Empty results offer an explicit way to clear only the search, a published program directory, and the provider's full library calendar. The site does not quietly discard eligibility filters or include unrelated/expired events to inflate results.
 
+Matching uses provider text and reviewed aliases; it does not understand every sentence or infer unrestricted intent. A replacement activity can still match wording about the original club it mentions. Visitors should read the title and original provider details before choosing an event.
+
+An expanded-library bookmark is unchecked while that catalog is loading or unavailable. It is not classified as expired, and clearing known unavailable saves preserves unchecked IDs. A successful retry can restore their cards; a completed current catalog can identify records that are genuinely no longer listed.
+
 ## Visibility
 
 The native Next metadata and sitemap include a server-rendered program directory and one factual page per published program. The directory has native pagination with at most 200 cards per page. Titles, dates, ages, provider links and a short original summary are readable without JavaScript. Each page has its own canonical URL. Program facts remain provider-confirmed snapshots, not guarantees of spaces or admission. WebPage, CollectionPage and breadcrumb metadata describe the pages; no event-rich-result eligibility, search rank or indexing guarantee is implied.
