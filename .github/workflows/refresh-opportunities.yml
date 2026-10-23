@@ -16,7 +16,6 @@ jobs:
       group: gta-free-stem-opportunities-refresh
       cancel-in-progress: true
     env:
-      GTA_LIBRARY_RSS_CACHE_DIR: ${{ runner.temp }}/gta-library-rss
       GTA_MAX_LIBRARY_OPPORTUNITIES: "15000"
       GTA_LIBRARY_PAGES_PER_SOURCE: "300"
       GTA_LOOKAHEAD_DAYS: "365"
@@ -47,10 +46,14 @@ jobs:
         run: npm audit --omit=dev --audit-level=high
 
       - name: Refresh source-backed website database
+        env:
+          GTA_LIBRARY_RSS_CACHE_DIR: ${{ runner.temp }}/gta-library-rss
         run: npm run engine:refresh
 
       - name: Build static export
         run: npm run build
 
       - name: Commit refreshed database
+        env:
+          GTA_LIBRARY_RSS_CACHE_DIR: ${{ runner.temp }}/gta-library-rss
         run: bash scripts/publish-refreshed-opportunities.sh
