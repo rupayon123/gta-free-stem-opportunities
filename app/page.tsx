@@ -2,9 +2,9 @@ import { HomePage } from "@/components/HomePage";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "GTA FREE STEM Opportunities | Free STEM programs in GTA",
+  title: "GTA FREE STEM Opportunities | Free activities for every age in the GTA",
   description:
-    "Find source-backed free STEM programs for students and families. Browse current Toronto and Markham library events, save favourites, and register with the provider.",
+    "Find free activities for babies, children, teens, adults and older adults in the GTA. Filter library events and STEM programs by city, age and interest.",
   keywords: [
     "free STEM programs GTA",
     "GTA youth opportunities",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "GTA FREE STEM Opportunities | Free STEM programs in the Greater Toronto Area",
     description:
-      "Explore current free STEM library programs in Toronto and Markham. Search by interest, age, and location without an account.",
+      "Explore free library events and STEM activities for every age. Search by interest, age and location without an account.",
     url: "https://gta-free-stem.vercel.app/",
     siteName: "GTA FREE STEM Opportunities",
     type: "website",
