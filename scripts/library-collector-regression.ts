@@ -1,5 +1,6 @@
 import assert from "node:assert/strict";
 import { inferLibraryOpportunityAges } from "../lib/libraryOpportunityClassification";
+import { verifyLibraryRssCache } from "./library-rss-cache-regression";
 import { assertCompleteLibraryPagination, fetchFeed, inferCategory, normalizeDate, parseItems, shouldInclude, toOpportunity, type LibraryFeed, type RssItem } from "./generate-library-opportunities";
 
 const now = new Date("2026-10-22T16:00:00Z");
@@ -110,12 +111,12 @@ async function verifyBoundedRetry() {
     if (attempts === 1) throw new Error("fixture transient timeout");
     return new Response("<rss><channel></channel></rss>");
   }) as typeof fetch;
-  assert.equal(await fetchFeed(feed, 7, recovery), "<rss><channel></channel></rss>");
+  assert.equal((await fetchFeed(feed, 7, recovery, { cacheDirectory: "" })).xml, "<rss><channel></channel></rss>");
   assert.equal(attempts, 2, "A transient failure receives one retry.");
   attempts = 0;
   const persistent = (async () => { attempts += 1; throw new Error("fixture unavailable"); }) as typeof fetch;
-  await assert.rejects(fetchFeed(feed, 8, persistent), /fixture unavailable/);
+  await assert.rejects(fetchFeed(feed, 8, persistent, { cacheDirectory: "" }), /fixture unavailable/);
   assert.equal(attempts, 2, "An unresolved failure stays failed after the one allowed retry.");
   console.log("Library RSS retry regressions passed without network requests.");
 }
-verifyBoundedRetry().catch((error) => { console.error(error); process.exitCode = 1; });
+verifyBoundedRetry().then(verifyLibraryRssCache).catch((error) => { console.error(error); process.exitCode = 1; });

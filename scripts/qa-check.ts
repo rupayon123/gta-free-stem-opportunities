@@ -7,13 +7,18 @@ import {
 } from "../lib/communityForms";
 import {
   categories,
+  cityOptions,
   curatedOpportunityIds,
   curatedVerificationMaximumAgeDays,
   languagePreferenceOrder,
-  opportunities
+  opportunities,
+  publicationSnapshotAt,
+  publicationSnapshotTime,
+  sourceOpportunities
 } from "../lib/data";
 import { languageMeta, t, translatedSummary } from "../lib/i18n";
 import { generatedDiscoveryReviewCandidates } from "../lib/generatedDiscoveryReview";
+import { generatedLibraryOpportunities as allLibraryOpportunities } from "../lib/generatedLibraryOpportunities";
 import {
   countClassifierRelevantLibraryOpportunities,
   inferLibraryOpportunityAges,
@@ -487,6 +492,11 @@ assert(
 
 const publicListings = publicOpportunities(opportunities);
 assert(publicListings.length > 0, "Expected at least one public active listing.");
+const snapshotTime = publicationSnapshotTime();
+const snapshotListings = publicOpportunities(sourceOpportunities, snapshotTime);
+assert(!isOpportunityVerificationStale(publicationSnapshotAt), "The publication snapshot must still have a fresh source check at QA time.");
+assert(snapshotTime.getTime() <= Date.now() + 86400000, "The publication snapshot must not be materially in the future.");
+assert(allLibraryOpportunities.every((opportunity) => cityOptions.includes(opportunity.city)), "Every collected library city must be selectable and accepted in shared links.");
 const publicLibraryListings = publicListings.filter((opportunity) =>
   opportunity.id.startsWith("tpl-rss-") || opportunity.id.startsWith("markham-rss-")
 );
@@ -665,7 +675,7 @@ const exportedFeed = JSON.parse(exportedFeedText) as {
       acceptedListings?: number;
       minimumAcceptedListings?: number;
     };
-    libraryCollection?: { status?: string; acceptedListings?: number };
+    libraryCollection?: { status?: string; acceptedListings?: number; generatedAt?: string };
     discovery?: {
       status?: string;
       sourcesChecked?: number;
@@ -696,23 +706,25 @@ const exportedFeed = JSON.parse(exportedFeedText) as {
   }>;
 };
 const exportedListings = exportedFeed.opportunities ?? [];
-const sourceByID = new Map(publicListings.map((opportunity) => [opportunity.id, opportunity]));
+const sourceByID = new Map(snapshotListings.map((opportunity) => [opportunity.id, opportunity]));
 const sourceForExport = (opportunity: { id?: string }) => (opportunity.id ? sourceByID.get(opportunity.id) : undefined);
 
 assert(exportedFeed.count === exportedListings.length, "Exported feed count must match exported opportunities.");
-assert(exportedListings.length === publicListings.length, "Exported feed must match public listing count.");
+assert(exportedListings.length === snapshotListings.length, "Exported feed must match the fixed source-check snapshot count, independently of the current-clock browser count.");
+assert(exportedListings.every((opportunity) => Boolean(opportunity.id && sourceByID.has(opportunity.id))) && new Set(exportedListings.map((opportunity) => opportunity.id)).size === exportedListings.length, "Exported IDs must match the fixed snapshot without duplicates or unexpected rows.");
 assert(exportedListings.length <= 4999 && Buffer.byteLength(exportedFeedText, "utf8") <= 10000000, "Native feed must respect both clients' record and 10 MB UTF-8 limits.");
 for (const field of ["region", "city", "organization"] as const) {
   const coverageField = field === "city" ? "cities" : field === "region" ? "regions" : "organizations";
   assert(
     JSON.stringify(exportedFeed.coverage?.[coverageField]) ===
-      JSON.stringify([...new Set(publicListings.map((opportunity) => opportunity[field]))].sort()),
+      JSON.stringify([...new Set(snapshotListings.map((opportunity) => opportunity[field]))].sort()),
     `Exported ${coverageField} coverage must describe actual published listings.`
   );
 }
 assert(exportedFeed.sourceHealth?.library?.status === "healthy", "Exported feed must expose healthy library source metadata.");
 assert(exportedFeed.sourceHealth?.library?.scope === "stem-core-publication", "Native publication health must describe the separate STEM core.");
 assert(exportedFeed.sourceHealth?.libraryCollection?.status === "healthy", "Native feed must preserve the full library collection health evidence.");
+assert(exportedFeed.sourceHealth?.libraryCollection?.generatedAt === publicationSnapshotAt, "Native export and static pages must use the same collection snapshot timestamp.");
 assert(
   (exportedFeed.sourceHealth?.library?.successfulPages ?? 0) >= (exportedFeed.sourceHealth?.library?.attemptedPages ?? 1) * 0.75,
   "Exported feed must record adequate library source coverage."
@@ -901,6 +913,7 @@ console.log("QA check passed");
 console.log(`UI languages: ${languagePreferenceOrder.length}; provider text remains in its original language.`);
 console.log(`Opportunities: ${opportunities.length}`);
 console.log(`Default results: ${allResults.length}`);
+console.log(`Static publication snapshot: ${publicationSnapshotAt}; native snapshot records: ${snapshotListings.length}; current browser records: ${publicListings.length}`);
 console.log(`Co-op results: ${coopResults.length}`);
 console.log(`Nearby L5B results: ${nearbyResults.length}`);
 console.log(`Exported original title/description coverage: ${originalTitleCoverage}/${exportedListings.length}, ${originalDescriptionCoverage}/${exportedListings.length}`);

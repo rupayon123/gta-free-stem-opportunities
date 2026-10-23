@@ -113,11 +113,13 @@ function browserRow(row: Opportunity): Opportunity {
   };
 }
 
-export function partitionLibraryCatalog(rows: readonly Opportunity[], collectionHealth: LibrarySourceHealth, previousNativeCount: number, now = new Date()) {
+export function partitionLibraryCatalog(rows: readonly Opportunity[], collectionHealth: LibrarySourceHealth, previousNativeCount: number) {
   assertRows(rows);
   assertCollectionHealth(rows, collectionHealth);
   ensure(Number.isInteger(previousNativeCount) && previousNativeCount >= 0 && previousNativeCount <= MAX_CORE_RECORDS, "previous native payload count is invalid");
-  const eligible = publicOpportunities(Array.from(rows), now);
+  const snapshot = new Date(collectionHealth.generatedAt);
+  ensure(Number.isFinite(snapshot.getTime()), "publication snapshot timestamp is invalid");
+  const eligible = publicOpportunities(Array.from(rows), snapshot);
   const core = eligible.filter((row) => row.categories.includes("STEM") && row.category !== "Library & Community" && Number.isInteger(row.ageMin) && (row.ageMax === undefined || Number.isInteger(row.ageMax)) && !/month/i.test(row.ageLabel ?? ""));
   ensure(core.length <= MAX_CORE_RECORDS, `native STEM core exceeds the ${MAX_CORE_RECORDS}-record bound`);
   const minimumAcceptedListings = Math.max(30, Math.ceil(previousNativeCount * 0.65));
@@ -169,7 +171,7 @@ function selfTest() {
   const healthFor = (count: number): LibrarySourceHealth => ({ schemaVersion: 1, generatedAt: now.toISOString(), status: "healthy", failureReasons: [], sourceCount: 1, attemptedPages: 100, successfulPages: 100, failedPages: 0, pageSuccessRatio: 1, minimumPageSuccessRatio: 0.75, minimumPerSourceSuccessRatio: 0.5, acceptedListings: count, previousPublishedListings: 110, minimumAcceptedListings: 72, sources: [{ sourceId: "fixture", organization: seed.organization, attemptedPages: 100, successfulPages: 100, failedPages: 0, pageSuccessRatio: 1, acceptedListings: count }] });
   const tenThousand = Array.from({ length: 10_000 }, (_, index) => makeRow(index, index < 100));
   const originalHealth = { ...healthFor(tenThousand.length), previousPublishedListings: 10_000, minimumAcceptedListings: 6500 };
-  const prepared = partitionLibraryCatalog(tenThousand, originalHealth, 110, now);
+  const prepared = partitionLibraryCatalog(tenThousand, originalHealth, 110);
   assert.equal(prepared.core.length, 100);
   assert.equal(prepared.coreHealth.minimumAcceptedListings, 72);
   assert.equal(prepared.catalog.count, 9900);
@@ -181,22 +183,49 @@ function selfTest() {
   assert(roundTrip.opportunities.every((row: Opportunity) => row.description.length <= 320 && row.summary.length <= 256 && !prepared.core.some((core) => core.id === row.id)));
   assert(roundTrip.opportunities.every((row: Opportunity) => typeof row.providerContact === "string" && Array.isArray(row.sources) && row.ageMin === row.ages.min));
   assert(!JSON.stringify(roundTrip).includes('"translations"'));
-  assert.throws(() => partitionLibraryCatalog(tenThousand.map((row, index) => index >= 60 && index < 100 ? { ...row, category: "Library & Community", categories: ["Library & Community"] } : row), originalHealth, 110, now), /separate publication minimum is 72/);
-  assert.throws(() => partitionLibraryCatalog(tenThousand, { ...originalHealth, status: "rejected" }, 110, now), /not healthy/);
-  assert.throws(() => partitionLibraryCatalog(tenThousand, { ...originalHealth, pageSuccessRatio: 0.5 }, 110, now), /aggregate page gate/);
+  assert.throws(() => partitionLibraryCatalog(tenThousand.map((row, index) => index >= 60 && index < 100 ? { ...row, category: "Library & Community", categories: ["Library & Community"] } : row), originalHealth, 110), /separate publication minimum is 72/);
+  assert.throws(() => partitionLibraryCatalog(tenThousand, { ...originalHealth, status: "rejected" }, 110), /not healthy/);
+  assert.throws(() => partitionLibraryCatalog(tenThousand, { ...originalHealth, pageSuccessRatio: 0.5 }, 110), /aggregate page gate/);
   const mixed = Array.from({ length: 102 }, (_, index) => makeRow(index, true));
   mixed[100] = { ...mixed[100], ageMin: 0.5, ageMax: 1.5, ages: { min: 0.5, max: 1.5 }, ageLabel: "6–18 months" };
   mixed[101] = { ...mixed[101], ageMin: 0, ageMax: 2, ages: { min: 0, max: 2 }, ageLabel: "0–24 months" };
-  const safeAges = partitionLibraryCatalog(mixed, healthFor(mixed.length), 110, now);
+  const safeAges = partitionLibraryCatalog(mixed, healthFor(mixed.length), 110);
   assert.equal(safeAges.core.length, 100);
   assert.deepEqual(safeAges.catalog.opportunities.map((row) => row.ageLabel), ["6–18 months", "0–24 months"]);
-  assert.throws(() => partitionLibraryCatalog([], healthFor(0), 110, now), /empty or malformed/);
-  assert.throws(() => partitionLibraryCatalog([mixed[0], mixed[0]], healthFor(2), 0, now), /duplicated/);
-  assert.throws(() => partitionLibraryCatalog(Array.from({ length: 15_001 }, (_, index) => makeRow(index)), healthFor(15_001), 110, now), /record bound/);
-  assert.throws(() => partitionLibraryCatalog(Array.from({ length: 5000 }, (_, index) => makeRow(index, true)), healthFor(5000), 110, now), /native STEM core/);
+  assert.throws(() => partitionLibraryCatalog([], healthFor(0), 110), /empty or malformed/);
+  assert.throws(() => partitionLibraryCatalog([mixed[0], mixed[0]], healthFor(2), 0), /duplicated/);
+  assert.throws(() => partitionLibraryCatalog(Array.from({ length: 15_001 }, (_, index) => makeRow(index)), healthFor(15_001), 110), /record bound/);
+  assert.throws(() => partitionLibraryCatalog(Array.from({ length: 5000 }, (_, index) => makeRow(index, true)), healthFor(5000), 110), /native STEM core/);
   const malformed = { ...mixed[0], ages: { min: 9, max: 12 } };
-  assert.throws(() => partitionLibraryCatalog([malformed], healthFor(1), 0, now), /inconsistent/);
-  console.log("Library catalog partition self-test passed: 10,000-row round trip, disjoint IDs, thin fields, month/fraction exclusion, independent core minimum, full-health rejection, duplicate/age/overflow failures.");
+  assert.throws(() => partitionLibraryCatalog([malformed], healthFor(1), 0), /inconsistent/);
+
+  // Simulate two build workers straddling an event's end time. The declared
+  // source set remains the same snapshot; a live reader must still expire it.
+  const boundaryRows = Array.from({ length: 42 }, (_, index) => ({
+    ...makeRow(index, index < 30),
+    startDate: "2030-01-01T11:50:00Z",
+    endDate: index === 40 ? "2030-01-01T11:59:00Z" : "2030-01-01T12:01:00Z",
+    lastChecked: index === 41 ? "2029-12-01" : "2030-01-01"
+  }));
+  const boundaryHealth = { ...healthFor(boundaryRows.length), previousPublishedListings: 0, minimumAcceptedListings: 30 };
+  const earlyBuild = partitionLibraryCatalog(boundaryRows, boundaryHealth, 0);
+  assert.equal(earlyBuild.core.length, 30);
+  assert.equal(earlyBuild.catalog.count, 10);
+  assert.equal(earlyBuild.excludedUnavailableCount, 2, "Already ended and stale rows remain excluded at the snapshot.");
+  const realDate = Date;
+  const lateBuildTime = realDate.parse("2030-01-01T12:02:00Z");
+  globalThis.Date = new Proxy(realDate, {
+    construct(target, argumentsList) { return Reflect.construct(target, argumentsList.length ? argumentsList : [lateBuildTime]); },
+    get(target, property, receiver) { return property === "now" ? () => lateBuildTime : Reflect.get(target, property, receiver); }
+  });
+  try {
+    const lateBuild = partitionLibraryCatalog(boundaryRows, boundaryHealth, 0);
+    assert.deepEqual(lateBuild, earlyBuild, "Partition and snapshot health must not change as build workers cross an end time.");
+    const staticRows = [...lateBuild.core, ...lateBuild.catalog.opportunities];
+    assert.equal(publicOpportunities(staticRows, new Date(boundaryHealth.generatedAt)).length, 40);
+    assert.equal(publicOpportunities(staticRows).length, 0, "Current-clock browser/native readers must expire snapshot rows after their actual end time.");
+  } finally { globalThis.Date = realDate; }
+  console.log("Library catalog partition self-test passed: 10,000-row round trip, disjoint IDs, thin fields, month/fraction exclusion, independent core minimum, full-health rejection, duplicate/age/overflow failures, fixed build snapshot and live expiry boundary.");
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) {

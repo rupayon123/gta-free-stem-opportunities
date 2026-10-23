@@ -1,8 +1,8 @@
-import { generatedLibraryOpportunities } from "./generatedCoreLibraryOpportunities";
+import { generatedLibraryCollectionHealth, generatedLibraryOpportunities } from "./generatedCoreLibraryOpportunities";
 import { generatedDiscoveryReviewCandidates } from "./generatedDiscoveryReview";
 import type { DiscoveredOpportunity } from "./discovery";
 import type { Category, LanguageCode, Opportunity, Region, ReviewItem } from "./types";
-import { computedOpportunityStatus, isOpportunityVerificationStale, opportunityVerificationMaximumAgeDays } from "./opportunityStatus";
+import { computedOpportunityStatus, opportunityVerificationMaximumAgeDays } from "./opportunityStatus";
 
 const now = new Date();
 export const curatedVerificationMaximumAgeDays = opportunityVerificationMaximumAgeDays;
@@ -61,7 +61,9 @@ export const cityOptions = [
   "Oshawa",
   "Pickering",
   "Richmond Hill",
+  "Thornhill",
   "Toronto",
+  "Unionville",
   "Vaughan",
   "Whitby"
 ];
@@ -884,15 +886,19 @@ function applyLiveStatus(opportunity: Opportunity): Opportunity {
   };
 }
 
-export const opportunities: Opportunity[] = [
-  ...seedOpportunities.map((opportunity) => {
-    const declaredStatus = opportunity.status ?? "active";
-    const status =
-      declaredStatus === "active" &&
-      isOpportunityVerificationStale(opportunity.lastVerified, now, curatedVerificationMaximumAgeDays)
-        ? "needs_review"
-        : declaredStatus;
+// Static publications share the collection's source-check instant, including
+// builds whose workers run on opposite sides of an event's end time.
+export const publicationSnapshotAt = generatedLibraryCollectionHealth.generatedAt;
+export function publicationSnapshotTime() {
+  const snapshot = new Date(publicationSnapshotAt);
+  if (!Number.isFinite(snapshot.getTime())) throw new Error("Invalid publication snapshot timestamp.");
+  return snapshot;
+}
 
+// Keep declared source status available to static exporters. Applying a live
+// status first would irreversibly expire a row before an earlier snapshot check.
+export const sourceOpportunities: Opportunity[] = [
+  ...seedOpportunities.map((opportunity) => {
     return {
       ...opportunity,
       organization: opportunity.provider,
@@ -905,12 +911,14 @@ export const opportunities: Opportunity[] = [
       sourceUrl: opportunity.sources[0]?.url ?? opportunity.registrationUrl,
       lastChecked: opportunity.lastVerified,
       lastSeen: opportunity.lastVerified,
-      status
+      status: opportunity.status ?? "active"
     };
   }),
   ...generatedLibraryOpportunities,
   ...generatedDiscoveryReviewCandidates.map(discoveryCandidateToOpportunity)
-].map(applyLiveStatus);
+];
+
+export const opportunities: Opportunity[] = sourceOpportunities.map(applyLiveStatus);
 
 export const reviewQueue: ReviewItem[] = [
   {

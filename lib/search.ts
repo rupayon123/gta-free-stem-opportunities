@@ -108,8 +108,14 @@ function sameScript(a: string, b: string): boolean {
   return scripts.some((script) => script.test(a) && script.test(b));
 }
 
+// Reviewed activity requests already have source-backed canonical aliases in
+// the index. Require that exact token so e.g. reading cannot match leading,
+// crafts cannot match drafts, or conversation cannot match conservation.
+const exactLibraryTopicTokens = new Set(Object.keys(libraryTopicTerms.en));
+
 function tokenMatches(query: string, candidate: string): boolean {
   if (query === candidate) return true;
+  if (exactLibraryTopicTokens.has(query)) return false;
   if (/\p{N}/u.test(query) || /\p{N}/u.test(candidate)) return false;
   const length = Array.from(query).length;
   if (length < 4) return false;
@@ -118,6 +124,16 @@ function tokenMatches(query: string, candidate: string): boolean {
   const maximum = Math.min(2, Math.floor(length * 0.2));
   return editDistanceWithin(query, candidate, maximum);
 }
+
+// Reviewed whole-token misspellings reproduced in the public catalog. Without
+// this preference, "scince" also matches ordinary "since", while "robtics"
+// misses records found by the canonical robotics query. Do not infer a broader
+// spelling dictionary: legitimate words such as since, leading and campus keep
+// their meaning, and unknown terms/numbers remain mandatory query constraints.
+const reviewedQuerySpellings = new Map([
+  ["scince", "science"],
+  ["robtics", "robotics"]
+]);
 
 function queryTokens(query: string, language: LanguageCode): string[] {
   const effectiveLanguage = requestLanguage(query, language);
@@ -144,6 +160,8 @@ function queryTokens(query: string, language: LanguageCode): string[] {
     }
   }
   return Array.from(new Set(tokenize(canonical).filter((token) => !fillers.has(token)).map((token) => {
+    const reviewedSpelling = reviewedQuerySpellings.get(token);
+    if (reviewedSpelling) return reviewedSpelling;
     // Preserve the same reviewed concept when a library name has a small typo.
     if (libraryAliases.some((alias) => !alias.includes(" ") && tokenMatches(token, alias))) return "library";
     return token;

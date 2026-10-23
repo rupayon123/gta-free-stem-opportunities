@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import { mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { dirname, join } from "node:path";
-import { opportunities } from "../lib/data";
+import { publicationSnapshotTime, sourceOpportunities } from "../lib/data";
 import { generatedDiscoverySummary } from "../lib/generatedDiscoveryReview";
 import { generatedLibrarySourceHealth, generatedLibraryCollectionHealth } from "../lib/generatedCoreLibraryOpportunities";
 import { publicOpportunities } from "../lib/opportunityStatus";
@@ -11,7 +11,7 @@ const outputPath = process.env.GTA_PUBLIC_OPPORTUNITIES_EXPORT ?? "public/opport
 const maximumNativeBytes = 10_000_000;
 const maximumNativeRecords = 4999;
 
-const publicListings = publicOpportunities(opportunities).map((opportunity) => ({
+const publicListings = publicOpportunities(sourceOpportunities, publicationSnapshotTime()).map((opportunity) => ({
   id: opportunity.id,
   title: opportunity.title,
   organization: opportunity.organization,

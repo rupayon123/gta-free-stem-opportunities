@@ -1,5 +1,5 @@
 import "server-only";
-import { opportunities } from "./data";
+import { publicationSnapshotTime, sourceOpportunities } from "./data";
 import { generatedLibraryOpportunities } from "./generatedLibraryOpportunities";
 import { publicOpportunities } from "./opportunityStatus";
 import type { Opportunity } from "./types";
@@ -8,8 +8,8 @@ export const programSiteUrl = "https://gta-free-stem.vercel.app";
 
 // This server-rendered directory is a published snapshot. The interactive
 // browser keeps applying the current clock after a page has been published.
-const publishedPrograms = new Map([...opportunities, ...generatedLibraryOpportunities].map((program) => [program.id, program]));
-export const publicProgramPages = publicOpportunities([...publishedPrograms.values()]).sort(
+const publishedPrograms = new Map([...sourceOpportunities, ...generatedLibraryOpportunities].map((program) => [program.id, program]));
+export const publicProgramPages = publicOpportunities([...publishedPrograms.values()], publicationSnapshotTime()).sort(
   (a, b) => Date.parse(a.startDate) - Date.parse(b.startDate) || a.id.localeCompare(b.id)
 );
 export const publicProgramById = new Map(publicProgramPages.map((program) => [program.id, program]));

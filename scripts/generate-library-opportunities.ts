@@ -7,6 +7,7 @@ import {
 } from "../lib/libraryOpportunityClassification";
 import { evaluateLibraryRefreshHealth } from "../lib/refreshHealth";
 import type { Category, CommunityFocus, LanguageCode, Opportunity, OpportunityType, Region } from "../lib/types";
+import { isCompleteLibraryRss, readLibraryRssCache, writeLibraryRssCache, type LibraryRssFetchOptions, type LibraryRssPage } from "./library-rss-cache";
 
 // Official RSS pages currently contain 25 events. The measured source frontier
 // exceeds 6,000 Toronto events; budget explicitly rather than silently slicing.
@@ -309,7 +310,12 @@ function contactFor(item: RssItem, feed: LibraryFeed) {
   return item.contactEmail || item.contactPhone || item.contactName || feed.providerContact;
 }
 
-export function toOpportunity(item: RssItem, feed: LibraryFeed): Opportunity {
+export function toOpportunity(item: RssItem, feed: LibraryFeed, capturedAt = timestampNow()): Opportunity {
+  const capturedDate = new Date(capturedAt);
+  if (Number.isNaN(capturedDate.getTime())) throw new Error("Invalid library source capture timestamp.");
+  const checkedDate = new Intl.DateTimeFormat("en-CA", {
+    timeZone: "America/Toronto", year: "numeric", month: "2-digit", day: "2-digit"
+  }).format(capturedDate);
   const category = inferCategory(item);
   const { ageLabel, ...ages } = inferLibraryOpportunityAges(item);
   const startDate = normalizeDate(item.startDate);
@@ -350,8 +356,8 @@ export function toOpportunity(item: RssItem, feed: LibraryFeed): Opportunity {
     languages: allLanguages,
     cost: "Free to join",
     sourceUrl: item.link,
-    lastChecked: timestampNow().slice(0, 10),
-    lastSeen: timestampNow().slice(0, 10),
+    lastChecked: checkedDate,
+    lastSeen: checkedDate,
     status: "active",
     accessibility: ["Confirm accessibility and accommodation arrangements with the provider.", item.virtual ? "Online event" : "Public library location"],
     equipment: item.virtual ? "Internet-connected device may be needed." : "Check the provider's event page for equipment and materials requirements.",
@@ -361,7 +367,7 @@ export function toOpportunity(item: RssItem, feed: LibraryFeed): Opportunity {
     registrationUrl: item.link,
     providerContact: contactFor(item, feed),
     freeStatusProof: `Official ${feed.organization} public event feed. No-cost library programs only; items with charges, full registration, or cancellation are filtered out before publishing.`,
-    lastVerified: timestampNow().slice(0, 10),
+    lastVerified: checkedDate,
     trustedSource: true,
     volunteerHoursEligible: category === "Volunteer Hours",
     coopEligible: category === "Co-op & SHSM",
@@ -371,7 +377,7 @@ export function toOpportunity(item: RssItem, feed: LibraryFeed): Opportunity {
       {
         label: `Official ${feed.organization} event page`,
         url: item.link,
-        capturedAt: timestampNow(),
+        capturedAt,
         confidence: "high"
       }
     ],
@@ -386,28 +392,44 @@ export function toOpportunity(item: RssItem, feed: LibraryFeed): Opportunity {
   };
 }
 
-async function fetchFeedOnce(feed: LibraryFeed, page: number, fetcher: typeof fetch) {
+export class LibraryProviderAccessError extends Error {}
+type LibraryFeedFetchOptions = LibraryRssFetchOptions & { denialState?: { error?: LibraryProviderAccessError } };
+
+async function fetchFeedOnce(feed: LibraryFeed, page: number, fetcher: typeof fetch, options: LibraryFeedFetchOptions): Promise<LibraryRssPage> {
+  if (options.denialState?.error) throw options.denialState.error;
   const url = `https://gateway.bibliocommons.com/v2/libraries/${feed.libraryId}/rss/events?page=${page}`;
+  const cacheDirectory = options.cacheDirectory ?? process.env.GTA_LIBRARY_RSS_CACHE_DIR;
+  const cached = readLibraryRssCache(url, cacheDirectory, options.now?.() ?? new Date());
+  if (cached) return cached;
   const response = await fetcher(url, {
     signal: AbortSignal.timeout(15000),
     headers: { "User-Agent": "GTA FREE STEM Opportunities static feed generator; review-safe public data" }
   });
+  if (response.status === 403 || response.status === 429) {
+    const error = new LibraryProviderAccessError(`${feed.organization} page ${page}: ${response.status} ${response.statusText}. Provider denied collection; stopping without further requests or publication.`);
+    if (options.denialState) options.denialState.error = error;
+    throw error;
+  }
   if (!response.ok) throw new Error(`${feed.organization} page ${page}: ${response.status} ${response.statusText}`);
   const xml = await response.text();
-  if (!/<rss\b/i.test(xml) || !/<channel\b/i.test(xml) || !/<\/channel\s*>/i.test(xml) || !/<\/rss\s*>/i.test(xml)) {
+  if (!isCompleteLibraryRss(xml)) {
     throw new Error(`${feed.organization} page ${page}: response was not a complete RSS feed.`);
   }
-  return xml;
+  const captured = { xml, capturedAt: (options.now?.() ?? new Date()).toISOString(), fromCache: false };
+  writeLibraryRssCache(url, cacheDirectory, captured);
+  return captured;
 }
 
-export async function fetchFeed(feed: LibraryFeed, page: number, fetcher: typeof fetch = fetch) {
+export async function fetchFeed(feed: LibraryFeed, page: number, fetcher: typeof fetch = fetch, options: LibraryFeedFetchOptions = {}) {
   try {
-    return await fetchFeedOnce(feed, page, fetcher);
+    return await fetchFeedOnce(feed, page, fetcher, options);
   } catch (error) {
+    if (options.denialState?.error) throw options.denialState.error;
+    if (error instanceof LibraryProviderAccessError) throw error;
     console.warn(`Retrying ${feed.organization} page ${page} once: ${error instanceof Error ? error.message : "fetch failed"}.`);
     // Count one final outcome per source page. A retry never turns an
     // unresolved failure into a successful page in the health assessment.
-    return fetchFeedOnce(feed, page, fetcher);
+    return fetchFeedOnce(feed, page, fetcher, options);
   }
 }
 
@@ -423,15 +445,19 @@ function previousPublishedLibraryCount() {
   }
 }
 
-async function main() {
+export async function generateLibraryOpportunities(options: LibraryRssFetchOptions & { fetcher?: typeof fetch; feeds?: LibraryFeed[] } = {}) {
   const startedAt = Date.now();
-  const refreshTime = new Date();
-  let fetchedBytes = 0;
+  const refreshTime = options.now?.() ?? new Date();
+  const collectionFeeds = options.feeds ?? feeds;
+  let rssBytes = 0;
+  let fetchedPages = 0;
+  let cachedPages = 0;
+  let earliestCapture: string | undefined;
   const seen = new Set<string>();
   const generated: Opportunity[] = [];
   const warnings: string[] = [];
   const feedStats = new Map<string, FeedRefreshStats>(
-    feeds.map((feed) => [
+    collectionFeeds.map((feed) => [
       feed.id,
       {
         sourceId: feed.id,
@@ -447,7 +473,7 @@ async function main() {
     duplicates: 0
   };
 
-  for (const feed of feeds) {
+  for (const feed of collectionFeeds) {
     const stats = feedStats.get(feed.id);
     if (!stats) throw new Error(`Missing refresh statistics for ${feed.id}.`);
     let exhausted = false;
@@ -457,15 +483,20 @@ async function main() {
       stats.attemptedPages += pageNumbers.length;
       // Two requests at a time, within one provider only. Process responses in
       // page order and account for both outcomes, including a prefetched tail.
-      const results = await Promise.allSettled(pageNumbers.map((number) => fetchFeed(feed, number)));
+      const denialState: { error?: LibraryProviderAccessError } = {};
+      const results = await Promise.allSettled(pageNumbers.map((number) => fetchFeed(feed, number, options.fetcher ?? fetch, { ...options, denialState })));
+      const denied = results.find((result) => result.status === "rejected" && result.reason instanceof LibraryProviderAccessError);
+      if (denied?.status === "rejected") throw denied.reason;
       for (const [index, result] of results.entries()) {
         if (result.status === "rejected") {
           const detail = result.reason instanceof Error ? result.reason.message : "unknown error";
           warnings.push(`${feed.organization} page ${pageNumbers[index]} failed after one retry: ${detail}`);
           continue;
         }
-        const xml = result.value;
-        fetchedBytes += Buffer.byteLength(xml, "utf8");
+        const { xml, capturedAt, fromCache } = result.value;
+        rssBytes += Buffer.byteLength(xml, "utf8");
+        if (fromCache) cachedPages += 1; else fetchedPages += 1;
+        if (!earliestCapture || capturedAt < earliestCapture) earliestCapture = capturedAt;
         stats.successfulPages += 1;
         const items = parseItems(xml);
         rawItems += items.length;
@@ -477,7 +508,7 @@ async function main() {
           }
           if (seen.has(item.link)) { excluded.duplicates += 1; continue; }
           seen.add(item.link);
-          generated.push(toOpportunity(item, feed));
+          generated.push(toOpportunity(item, feed, capturedAt));
           stats.acceptedListings += 1;
         }
         if (items.length < 25) exhausted = true;
@@ -491,7 +522,7 @@ async function main() {
   generated.sort((a, b) => new Date(a.startDate).getTime() - new Date(b.startDate).getTime());
   const selected = generated;
   const refreshAssessment = evaluateLibraryRefreshHealth({
-    generatedAt: timestampNow(),
+    generatedAt: earliestCapture ?? refreshTime.toISOString(),
     sources: Array.from(feedStats.values()),
     acceptedListings: selected.length,
     previousPublishedListings: previousPublishedLibraryCount(),
@@ -527,7 +558,8 @@ export const generatedLibrarySourceHealth = ${JSON.stringify(refreshAssessment.h
   );
   console.log(`Skipped events outside the date horizon: ${excluded.outsideDateWindow}.`);
   console.log(`Skipped duplicates: ${excluded.duplicates}.`);
-  console.log(`Size: ${fetchedBytes} RSS bytes fetched; ${Buffer.byteLength(JSON.stringify(selected), "utf8")} compact untranslated row JSON bytes; ${Buffer.byteLength(output, "utf8")} generated TypeScript bytes.`);
+  console.log(`RSS pages: ${fetchedPages} newly fetched; ${cachedPages} reused from the bounded job-local raw RSS cache. Earliest actual source capture: ${refreshAssessment.health.generatedAt}.`);
+  console.log(`Size: ${rssBytes} validated RSS bytes processed; ${Buffer.byteLength(JSON.stringify(selected), "utf8")} compact untranslated row JSON bytes; ${Buffer.byteLength(output, "utf8")} generated TypeScript bytes.`);
   console.log(`Month-specific age labels: ${selected.filter((item) => item.ageLabel).length}. Duration: ${((Date.now() - startedAt) / 1000).toFixed(1)} seconds.`);
   for (const warning of warnings) console.warn(`WARNING: ${warning}`);
 }
@@ -536,7 +568,7 @@ export function assertCompleteLibraryPagination(organization: string, exhausted:
   if (!exhausted) throw new Error(`${organization} reached its ${maximumPages}-page budget before the official feed ended. No master file was written; incomplete collections cannot be published.`);
 }
 
-if (process.argv[1] && resolve(process.argv[1]) === resolve("scripts/generate-library-opportunities.ts")) main().catch((error) => {
+if (process.argv[1] && resolve(process.argv[1]) === resolve("scripts/generate-library-opportunities.ts")) generateLibraryOpportunities().catch((error) => {
   console.error(error instanceof Error ? error.message : error);
   process.exit(1);
 });

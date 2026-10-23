@@ -41,8 +41,51 @@ assert.deepEqual(searchOpportunities(items, "library unknown-signal-829"), [], "
 assert.deepEqual(searchOpportunities(items, "library 2026-12-01").map((item) => item.id).sort(), items.map((item) => item.id).sort());
 assert.deepEqual(searchOpportunities(items, "library 2026-12-02"), [], "Dates remain part of the cached query identity");
 
+const spellingItems = [
+  fixture("science", "Science Club", "Explore experiments.", { category: "Science & Engineering", categories: ["Science & Engineering"] }),
+  fixture("since", "A Writer's Life", "Since the first edition, these stories have inspired readers."),
+  fixture("robotics", "Robotics Club", "Build machines.", { category: "Coding & Robotics", categories: ["Coding & Robotics"] }),
+  fixture("robotic", "Robotic Animals", "A film featuring robotic animals."),
+  fixture("leading", "Leading", "Develop presentation skills."),
+  fixture("reading", "Reading", "Discuss a book."),
+  fixture("campus", "Campus", "Tour the university."),
+  fixture("camps", "Camps", "Summer activities.", { category: "Camps", categories: ["Camps"] })
+];
+const spellingIds = (query: string) => searchOpportunities(spellingItems, query).map((item) => item.id);
+assert.deepEqual(spellingIds("scince"), spellingIds("science"), "Reviewed science spelling retains canonical membership and ranking");
+assert(!spellingIds("scince").includes("since"), "The science typo must not match ordinary since in a book talk");
+assert.deepEqual(spellingIds("robtics"), spellingIds("robotics"), "Reviewed robotics spelling retains all canonical source forms");
+assert.deepEqual(spellingIds("ＳＣＩＮＣＥ"), spellingIds("science"));
+assert.deepEqual(spellingIds("since"), ["since"], "A legitimate ordinary word is never rewritten to science");
+assert.equal(spellingIds("leading")[0], "leading", "Legitimate leading intent is not rewritten to reading");
+assert(spellingIds("campus").includes("campus"), "A legitimate campus record remains discoverable");
+assert.deepEqual(spellingIds("scince 2026-12-02"), [], "A reviewed typo must not drop a date constraint");
+assert.deepEqual(spellingIds("robtics zzyxqv"), [], "A reviewed typo must not drop an unknown topic");
+assert.deepEqual(spellingIds("scince8"), [], "A token containing a number is not rewritten");
+
+const topicItems = [
+  fixture("book-club", "Book Club", "Discuss a novel together."),
+  fixture("storytime", "Toddler Storytime", "Stories and songs for toddlers."),
+  fixture("parenting", "Triple P: Positive Parenting Program", "Triple P is a world-leading parenting program. Learn positive parenting skills."),
+  fixture("drafts", "Drafts", "Bring an early draft to this writing session."),
+  fixture("crafts", "Knitting Circle", "Bring a knitting project."),
+  fixture("conservation", "Conservation", "Explore local habitat conservation."),
+  fixture("conversation", "English Conversation Circle", "Practise speaking in a small group."),
+  fixture("storytimestories", "Storytimes", "An introduction to children's songs."),
+  fixture("watercolour", "Watercolour Workshop", "Explore painting with a brush.")
+];
+const topicIds = (query: string, language: "en" | "fr" = "en") => searchOpportunities(topicItems, query, language).map((item) => item.id).sort();
+assert.deepEqual(topicIds("reading"), ["book-club", "storytime"], "Reviewed reading intent needs source-backed reading evidence, not world-leading parenting text");
+assert.deepEqual(topicIds("Je cherche des activités de lecture"), topicIds("reading"), "French request canonicalization retains the same exact reading evidence");
+assert.deepEqual(topicIds("storytime"), ["storytime"], "Canonical storytime must not widen to an unsupported prefix");
+assert.deepEqual(topicIds("crafts"), ["crafts"], "Canonical crafts must not fuzz to ordinary drafts");
+assert.deepEqual(topicIds("conversation"), ["conversation"], "Canonical conversation must not fuzz to conservation");
+assert.deepEqual(topicIds("art"), ["crafts", "watercolour"], "Provider-supported craft and painting aliases retain art discovery");
+assert(topicIds("world-leading").includes("parenting"), "An ordinary source phrase remains discoverable without a topic rewrite");
+assert(topicIds("conservaton").includes("conservation"), "Other unknown words retain the existing bounded typo tolerance");
+
 // Exceed the bounded query cache, then verify the original ranked result can be
 // recomputed without stale membership or ordering. No internal cache is mocked.
 for (let index = 0; index < 40; index += 1) searchOpportunities(items, `unknown${index}`);
 assert.deepEqual(searchOpportunities(items, "astronomy").map((item) => item.id), expected);
-console.log(JSON.stringify({ cacheBehaviorChecks: 8, callerArrayIsolation: true, strictSubsetIsolation: true, recordReplacementInvalidates: true, queryConstraintsPreserved: true, evictionPreservesRanking: true }));
+console.log(JSON.stringify({ cacheBehaviorChecks: 8, reviewedSpellingChecks: 10, sourceTopicPrecisionChecks: 8, callerArrayIsolation: true, strictSubsetIsolation: true, recordReplacementInvalidates: true, queryConstraintsPreserved: true, evictionPreservesRanking: true }));
