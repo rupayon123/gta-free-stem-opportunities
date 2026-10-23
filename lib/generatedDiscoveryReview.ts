@@ -3,9 +3,9 @@ import type { DiscoveredOpportunity } from "./discovery";
 export const generatedDiscoverySummary = {
   "mode": "deterministic",
   "sourcesChecked": 30,
-  "candidatesFound": 278,
-  "newCandidates": 54,
-  "duplicatesSkipped": 38,
+  "candidatesFound": 276,
+  "newCandidates": 53,
+  "duplicatesSkipped": 36,
   "warnings": [
     "Could not check Credit Valley Conservation youth opportunities: 403 Forbidden.",
     "Could not check Volunteer MBC youth opportunities: 403 Forbidden.",
@@ -14,7 +14,7 @@ export const generatedDiscoverySummary = {
   ],
   "sourceHealth": {
     "schemaVersion": 1,
-    "generatedAt": "2026-10-23T00:13:29.463Z",
+    "generatedAt": "2026-10-23T04:55:31.668Z",
     "status": "healthy",
     "failureReasons": [],
     "sourcesChecked": 30,
@@ -112,35 +112,6 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Vaughan Public Libraries programs"
   },
   {
-    "id": "discovered-vaughan-library-programs-robotics-club-ae01ea3163b5",
-    "title": "Robotics Club",
-    "organization": "Vaughan Public Libraries",
-    "description": "Robotics Club listed by Vaughan Public Libraries programs.",
-    "city": "Vaughan",
-    "region": "York",
-    "ageMin": 1,
-    "ageMax": 18,
-    "category": "Coding & Robotics",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-10-23T09:00:00-04:00",
-    "sourceUrl": "https://www.vaughanpl.info/programs/view/2494",
-    "lastChecked": "2026-10-23",
-    "lastSeen": "2026-10-23",
-    "status": "needs_review",
-    "tags": [
-      "coding & robotics",
-      "robotics"
-    ],
-    "confidence": "high",
-    "reviewReasons": [
-      "No clear future date found on the crawled page."
-    ],
-    "sourceName": "Vaughan Public Libraries programs"
-  },
-  {
     "id": "discovered-richmond-hill-library-programs-volunteer-at-rhpl-e9cf3759163d",
     "title": "Volunteer at RHPL",
     "organization": "Richmond Hill Public Library",
@@ -197,10 +168,10 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Aurora Public Library volunteer opportunities"
   },
   {
-    "id": "discovered-whitby-programs-cancelled-girls-in-stem-4386471c57d4",
-    "title": "Cancelled: Girls in Stem",
+    "id": "discovered-whitby-programs-scientists-in-school-ride-n-roll-with-scie-1904cef54b20",
+    "title": "Scientists in School - Ride 'n' Roll with Science",
     "organization": "Whitby Public Library",
-    "description": "Cancelled: Girls in Stem listed by Whitby Public Library programs.",
+    "description": "Scientists in School - Ride 'n' Roll with Science listed by Whitby Public Library programs.",
     "city": "Whitby",
     "region": "Durham",
     "ageMin": 1,
@@ -211,14 +182,13 @@ export const generatedDiscoveryReviewCandidates = [
       "en"
     ],
     "startDate": "2026-10-23T09:00:00-04:00",
-    "sourceUrl": "https://whitbylibrary.libcal.com/event/4017552",
+    "sourceUrl": "https://whitbylibrary.libcal.com/event/4053003",
     "lastChecked": "2026-10-23",
     "lastSeen": "2026-10-23",
     "status": "needs_review",
     "tags": [
       "science & engineering",
-      "stem",
-      "girls in stem"
+      "science"
     ],
     "confidence": "high",
     "reviewReasons": [
