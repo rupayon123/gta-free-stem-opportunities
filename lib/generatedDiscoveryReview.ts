@@ -4,8 +4,8 @@ export const generatedDiscoverySummary = {
   "mode": "deterministic",
   "sourcesChecked": 30,
   "candidatesFound": 273,
-  "newCandidates": 50,
-  "duplicatesSkipped": 36,
+  "newCandidates": 53,
+  "duplicatesSkipped": 43,
   "warnings": [
     "Could not check Credit Valley Conservation youth opportunities: 403 Forbidden.",
     "Could not check Volunteer MBC youth opportunities: 403 Forbidden.",
@@ -14,7 +14,7 @@ export const generatedDiscoverySummary = {
   ],
   "sourceHealth": {
     "schemaVersion": 1,
-    "generatedAt": "2026-10-23T11:43:48.421Z",
+    "generatedAt": "2026-10-23T17:13:25.340Z",
     "status": "healthy",
     "failureReasons": [],
     "sourcesChecked": 30,
@@ -53,6 +53,93 @@ export const generatedDiscoveryReviewCandidates = [
     "confidence": "high",
     "reviewReasons": [],
     "sourceName": "Toronto Public Library youth volunteer events"
+  },
+  {
+    "id": "discovered-markham-events-stem-stem-learning-grades-4-6-see-details-e07b8a977d0b",
+    "title": "STEM Learning (Grades 4-6) - see details",
+    "organization": "Markham Public Library",
+    "description": "Is your child in Grades 4-6 and curious about how the world works? In this 4-week session, your child will dive into the world of Science, Technology, Engineering, and Math through exciting experiments, interactive challenges, and creative problem-solving tasks. Themes for each week are as follows: Oct. 3 - Engineering and Technology Oct. 10 - Science experiments -exploring chemical reactions (this session is to celebrate Science Literacy Week*) Oct. 17 - Coding, Logic and Math Oct. 24 - Data Collection and Hypothesizing ** Please note these are subject to change* Hosted by The Study Buddy, in partnership with Markham Public Library, these free STEM classes encourage kids to think critically, build collaboratively, and discover how everyday ideas spark real-world innovation. ** Note: Pleas",
+    "city": "Markham",
+    "region": "York",
+    "ageMin": 9,
+    "ageMax": 12,
+    "category": "Coding & Robotics",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "deadline": "2026-10-24T11:00:00-04:00",
+    "startDate": "2026-10-24T11:00:00-04:00",
+    "endDate": "2026-10-24T12:00:00-04:00",
+    "sourceUrl": "https://markham.bibliocommons.com/v2/events/6a481f2d20e064860195dac9",
+    "lastChecked": "2026-10-23",
+    "lastSeen": "2026-10-23",
+    "status": "needs_review",
+    "tags": [
+      "coding & robotics",
+      "stem",
+      "coding"
+    ],
+    "confidence": "high",
+    "reviewReasons": [],
+    "sourceName": "Markham Public Library events"
+  },
+  {
+    "id": "discovered-markham-events-volunteer-creating-a-customized-puzzle-with-a-sublim-4b8f186e4de2",
+    "title": "Creating a Customized Puzzle with a Sublimation Printer",
+    "organization": "Markham Public Library",
+    "description": "Creating a Customized Puzzle with a Sublimation Printer from Markham Public Library youth volunteer events.",
+    "city": "Markham",
+    "region": "York",
+    "ageMin": 13,
+    "ageMax": 18,
+    "category": "Volunteer Hours",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "deadline": "2026-10-24T11:00:00-04:00",
+    "startDate": "2026-10-24T11:00:00-04:00",
+    "endDate": "2026-10-24T11:30:00-04:00",
+    "sourceUrl": "https://markham.bibliocommons.com/v2/events/6a642f0c0e562e28009c4bab",
+    "lastChecked": "2026-10-23",
+    "lastSeen": "2026-10-23",
+    "status": "needs_review",
+    "tags": [
+      "volunteer hours"
+    ],
+    "confidence": "high",
+    "reviewReasons": [],
+    "sourceName": "Markham Public Library youth volunteer events"
+  },
+  {
+    "id": "discovered-markham-events-volunteer-reading-to-success-4f79dc8244ad",
+    "title": "Reading to Success",
+    "organization": "Markham Public Library",
+    "description": "Read a story with us! Reading to Success is a volunteer facilitated reading program established to motivate children to read regularly. YPAM in partnership with the Markham Public Library provides this weekly literacy program, where volunteers read grade specific books for children in Junior Kindergarten, Senior Kindergarten, Grade 1, Grade 2 and IEP kids. Make Reading to Success part of your child's reading habit and build a love of reading together. To register, please visit: https://www.ypam.ca/reading *Please note that through registering, you are giving YPAM your information.",
+    "city": "Markham",
+    "region": "York",
+    "ageMin": 6,
+    "ageMax": 12,
+    "category": "Volunteer Hours",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "deadline": "2026-10-24T13:00:00-04:00",
+    "startDate": "2026-10-24T13:00:00-04:00",
+    "endDate": "2026-10-24T14:30:00-04:00",
+    "sourceUrl": "https://markham.bibliocommons.com/v2/events/68fbd37875911f28001a2362",
+    "lastChecked": "2026-10-23",
+    "lastSeen": "2026-10-23",
+    "status": "needs_review",
+    "tags": [
+      "volunteer hours",
+      "volunteer"
+    ],
+    "confidence": "high",
+    "reviewReasons": [],
+    "sourceName": "Markham Public Library youth volunteer events"
   },
   {
     "id": "discovered-vaughan-library-programs-volunteer-opportunities-e775e833a50b",
