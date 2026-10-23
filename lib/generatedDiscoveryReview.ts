@@ -4,8 +4,8 @@ export const generatedDiscoverySummary = {
   "mode": "deterministic",
   "sourcesChecked": 30,
   "candidatesFound": 273,
-  "newCandidates": 53,
-  "duplicatesSkipped": 43,
+  "newCandidates": 54,
+  "duplicatesSkipped": 46,
   "warnings": [
     "Could not check Credit Valley Conservation youth opportunities: 403 Forbidden.",
     "Could not check Volunteer MBC youth opportunities: 403 Forbidden.",
@@ -14,7 +14,7 @@ export const generatedDiscoverySummary = {
   ],
   "sourceHealth": {
     "schemaVersion": 1,
-    "generatedAt": "2026-10-23T17:13:25.340Z",
+    "generatedAt": "2026-10-23T21:28:34.445Z",
     "status": "healthy",
     "failureReasons": [],
     "sourcesChecked": 30,
@@ -27,7 +27,7 @@ export const generatedDiscoverySummary = {
 
 export const generatedDiscoveryReviewCandidates = [
   {
-    "id": "discovered-tpl-events-volunteer-set-phasers-to-celebrate-60-years-of-star--b066b1fadb45",
+    "id": "discovered-tpl-events-volunteer-set-phasers-to-celebrate-60-years-of-star--003c01033506",
     "title": "Set Phasers to Celebrate! 60 Years of Star Trek: A Merril Collection Exhibit",
     "organization": "Toronto Public Library",
     "description": "Beam yourself up to the Merril Collection of Science Fiction, Speculation and Fantasy and boldly embark on a 60-year journey that celebrates all things Star Trek! For decades, the original television series turned global franchise has inspired generations of fans, artists, and scientists alike. Visitors can explore voyages, characters, and new frontiers through our collection highlights such as novels, RPGs, fanzines, original artwork and more! This exhibit can be viewed during the Merril Collection's regular open hours.",
@@ -43,7 +43,7 @@ export const generatedDiscoveryReviewCandidates = [
     "deadline": "2026-08-17T09:00:00-04:00",
     "startDate": "2026-08-17T09:00:00-04:00",
     "endDate": "2026-11-01T09:00:00-04:00",
-    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6abef55ac6cddb0045955ec1",
+    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6aac195586d845003116d0cb",
     "lastChecked": "2026-10-23",
     "lastSeen": "2026-10-23",
     "status": "needs_review",
@@ -55,7 +55,38 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Toronto Public Library youth volunteer events"
   },
   {
-    "id": "discovered-markham-events-stem-stem-learning-grades-4-6-see-details-e07b8a977d0b",
+    "id": "discovered-markham-events-stem-lego-robotics-for-grades-4-8-eb41feac3e0a",
+    "title": "LEGO Robotics for Grades 4-8",
+    "organization": "Markham Public Library",
+    "description": "Is your child in Grades 4-8 and would like to explore LEGO ROBOTICS? Through fun, hands-on engineering challenges, students will sharpen their problem-solving abilities and bring their boldest ideas to life, brick by brick (no coding experience required). Learning Goals: In this session, students will: gain practical STEM skills by learning to program sensors, motors, and mechanical structures to perform real-world tasks. Beyond tech skills, kids develop patience and resilience",
+    "city": "Markham",
+    "region": "York",
+    "ageMin": 9,
+    "ageMax": 14,
+    "category": "Coding & Robotics",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "deadline": "2026-10-24T14:00:00-04:00",
+    "startDate": "2026-10-24T14:00:00-04:00",
+    "endDate": "2026-10-24T15:00:00-04:00",
+    "sourceUrl": "https://markham.bibliocommons.com/v2/events/68fbdd1b0176055300fe80b5",
+    "lastChecked": "2026-10-23",
+    "lastSeen": "2026-10-23",
+    "status": "needs_review",
+    "tags": [
+      "coding & robotics",
+      "stem",
+      "robotics",
+      "coding"
+    ],
+    "confidence": "high",
+    "reviewReasons": [],
+    "sourceName": "Markham Public Library events"
+  },
+  {
+    "id": "discovered-markham-events-stem-stem-learning-grades-4-6-see-details-41d60f3189b4",
     "title": "STEM Learning (Grades 4-6) - see details",
     "organization": "Markham Public Library",
     "description": "Is your child in Grades 4-6 and curious about how the world works? In this 4-week session, your child will dive into the world of Science, Technology, Engineering, and Math through exciting experiments, interactive challenges, and creative problem-solving tasks. Themes for each week are as follows: Oct. 3 - Engineering and Technology Oct. 10 - Science experiments -exploring chemical reactions (this session is to celebrate Science Literacy Week*) Oct. 17 - Coding, Logic and Math Oct. 24 - Data Collection and Hypothesizing ** Please note these are subject to change* Hosted by The Study Buddy, in partnership with Markham Public Library, these free STEM classes encourage kids to think critically, build collaboratively, and discover how everyday ideas spark real-world innovation. ** Note: Pleas",
@@ -71,7 +102,7 @@ export const generatedDiscoveryReviewCandidates = [
     "deadline": "2026-10-24T11:00:00-04:00",
     "startDate": "2026-10-24T11:00:00-04:00",
     "endDate": "2026-10-24T12:00:00-04:00",
-    "sourceUrl": "https://markham.bibliocommons.com/v2/events/6a481f2d20e064860195dac9",
+    "sourceUrl": "https://markham.bibliocommons.com/v2/events/6a6787087b79214226ab95e0",
     "lastChecked": "2026-10-23",
     "lastSeen": "2026-10-23",
     "status": "needs_review",
