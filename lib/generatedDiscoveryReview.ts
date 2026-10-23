@@ -3,8 +3,8 @@ import type { DiscoveredOpportunity } from "./discovery";
 export const generatedDiscoverySummary = {
   "mode": "deterministic",
   "sourcesChecked": 30,
-  "candidatesFound": 276,
-  "newCandidates": 53,
+  "candidatesFound": 273,
+  "newCandidates": 50,
   "duplicatesSkipped": 36,
   "warnings": [
     "Could not check Credit Valley Conservation youth opportunities: 403 Forbidden.",
@@ -14,7 +14,7 @@ export const generatedDiscoverySummary = {
   ],
   "sourceHealth": {
     "schemaVersion": 1,
-    "generatedAt": "2026-10-23T04:55:31.668Z",
+    "generatedAt": "2026-10-23T11:43:48.421Z",
     "status": "healthy",
     "failureReasons": [],
     "sourcesChecked": 30,
@@ -1389,96 +1389,6 @@ export const generatedDiscoveryReviewCandidates = [
     "tags": [
       "science & engineering",
       "stem"
-    ],
-    "confidence": "medium",
-    "reviewReasons": [
-      "No clear future date found on the crawled page.",
-      "Free access wording needs human confirmation."
-    ],
-    "sourceName": "Ontario Tech Engineering Outreach"
-  },
-  {
-    "id": "discovered-ontario-tech-engineering-outreach-virtual-girls-coding-club-3e547d428715",
-    "title": "Virtual Girls Coding Club",
-    "organization": "Ontario Tech University Engineering Outreach",
-    "description": "Virtual Girls Coding Club listed by Ontario Tech Engineering Outreach.",
-    "city": "Oshawa",
-    "region": "Durham",
-    "ageMin": 1,
-    "ageMax": 18,
-    "category": "Coding & Robotics",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-10-23T09:00:00-04:00",
-    "sourceUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdYa1bpm_Iop8t0HWxr1-wF2FTLEcURAHQltxmKWXqnr9C2pw/viewform?usp=dialog",
-    "lastChecked": "2026-10-23",
-    "lastSeen": "2026-10-23",
-    "status": "needs_review",
-    "tags": [
-      "coding & robotics",
-      "coding"
-    ],
-    "confidence": "medium",
-    "reviewReasons": [
-      "No clear future date found on the crawled page.",
-      "Free access wording needs human confirmation."
-    ],
-    "sourceName": "Ontario Tech Engineering Outreach"
-  },
-  {
-    "id": "discovered-ontario-tech-engineering-outreach-choose-your-own-adventure-how-ai-thinks-65cb1d0c6710",
-    "title": "Choose Your Own Adventure: How AI Thinks",
-    "organization": "Ontario Tech University Engineering Outreach",
-    "description": "Choose Your Own Adventure: How AI Thinks listed by Ontario Tech Engineering Outreach.",
-    "city": "Oshawa",
-    "region": "Durham",
-    "ageMin": 1,
-    "ageMax": 18,
-    "category": "AI & Digital Media",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-10-23T09:00:00-04:00",
-    "sourceUrl": "https://forms.gle/CkdC4PcWKnJ1SFPK7",
-    "lastChecked": "2026-10-23",
-    "lastSeen": "2026-10-23",
-    "status": "needs_review",
-    "tags": [
-      "ai & digital media"
-    ],
-    "confidence": "medium",
-    "reviewReasons": [
-      "No clear future date found on the crawled page.",
-      "Free access wording needs human confirmation."
-    ],
-    "sourceName": "Ontario Tech Engineering Outreach"
-  },
-  {
-    "id": "discovered-ontario-tech-engineering-outreach-black-youth-stem-club-a9b4220dac73",
-    "title": "Black Youth STEM Club",
-    "organization": "Ontario Tech University Engineering Outreach",
-    "description": "Black Youth STEM Club listed by Ontario Tech Engineering Outreach.",
-    "city": "Oshawa",
-    "region": "Durham",
-    "ageMin": 13,
-    "ageMax": 18,
-    "category": "Science & Engineering",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-10-23T09:00:00-04:00",
-    "sourceUrl": "https://forms.gle/wXnD2K9nVE3wvLvN9",
-    "lastChecked": "2026-10-23",
-    "lastSeen": "2026-10-23",
-    "status": "needs_review",
-    "tags": [
-      "science & engineering",
-      "stem",
-      "youth"
     ],
     "confidence": "medium",
     "reviewReasons": [
