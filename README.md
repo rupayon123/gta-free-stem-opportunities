@@ -1,23 +1,21 @@
 # GTA FREE STEM
 
-I'm building GTA FREE STEM to help students and families find free STEM programs across the Greater Toronto Area. This repository contains the website and the opportunity feed used by the native apps.
+GTA Free STEM Opportunities helps people of every age find free STEM programs and library events across the Greater Toronto Area. This repository contains the website and the opportunity feed used by the native apps.
 
-[Open the website](https://gta-free-stem.vercel.app/) | [iOS app](https://github.com/rupayon123/gta-free-stem-ios) | [Android app](https://github.com/rupayon123/gta-free-stem-android)
+[Open the website](https://gta-free-stem.pages.dev/) | [iOS app](https://github.com/rupayon123/gta-free-stem-ios) | [Android app](https://github.com/rupayon123/gta-free-stem-android)
 
 ## The web experience
 
 <table>
 <tr><th width="50%">Home</th><th width="50%">Search</th></tr>
 <tr><td align="center"><a href="docs/showcase/home.png"><img src="docs/showcase/home.png" alt="Home" width="440"></a></td><td align="center"><a href="docs/showcase/search.png"><img src="docs/showcase/search.png" alt="Search" width="440"></a></td></tr>
-<tr><th>High School Search</th><th>Profile / Sign in</th></tr>
-<tr><td align="center"><a href="docs/showcase/hs-search.png"><img src="docs/showcase/hs-search.png" alt="High School Search" width="440"></a></td><td align="center"><a href="docs/showcase/profile.png"><img src="docs/showcase/profile.png" alt="Profile / Sign in" width="440"></a></td></tr>
 </table>
 
 ## About the site
 
 Browse programs by city, region, age, category, and language. The High School section covers volunteer hours, co-op, SHSM, mentorship, and career pathways. Listings include dates, provider information, source links, and a map where location data is available.
 
-You don't need an account to browse. The profile area currently shows the sign-in screen; production accounts still need Supabase Auth connected. Account-based saves, feedback, submissions, and admin review depend on that setup.
+Browse and save programs without an account. Anonymous saves stay in the current browser and do not transfer automatically between website addresses. Confirm availability and registration with the original provider.
 
 The site uses Next.js and TypeScript, with MapLibre and OpenFreeMap for maps. It builds as a static export.
 
@@ -36,7 +34,7 @@ npm run qa
 npm run build
 ```
 
-The static site is written to `out/`. Vercel uses the repository's `vercel.json`; Cloudflare Pages deployment is available through `npm run deploy:pages`.
+The free static publication is written to `out/` by `npm run build:github-pages`. This produces portable trailing-slash pages, removes unused client-navigation payloads and checks every sitemap page's search metadata. Cloudflare Pages hosts the branded site; the public GitHub Pages repository retains a backup. Publication is automated by [the hosting repository](https://github.com/rupayon123/rupayon123.github.io). See [search visibility guidance](docs/search-visibility.md).
 
 ## Accounts
 
@@ -78,7 +76,7 @@ Generated translations are browsing summaries, not fully reviewed translations o
 
 Location is optional and session-only. The public support flow is public, so don't include private or sensitive information. Under-13 account storage should remain disabled until a parent-consent flow is in place.
 
-[Privacy policy](https://gta-free-stem.vercel.app/privacy/) | [Terms](https://gta-free-stem.vercel.app/terms/) | [Support](https://gta-free-stem.vercel.app/support/)
+[Privacy policy](https://gta-free-stem.pages.dev/privacy/) | [Terms](https://gta-free-stem.pages.dev/terms/) | [Support](https://gta-free-stem.pages.dev/support/)
 
 ## Make it work for your city
 

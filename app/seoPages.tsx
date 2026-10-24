@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { StorybookMark } from "@/components/StorybookMark";
 
-const siteUrl = "https://rupayon123.github.io";
+const siteUrl = "https://gta-free-stem.pages.dev";
 
 const pages = {
   opportunities: {

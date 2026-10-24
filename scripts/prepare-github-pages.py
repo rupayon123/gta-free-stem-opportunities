@@ -44,11 +44,13 @@ for file in root.rglob('*.html'):
         file.write_text(text)
 files = [f for f in root.rglob('*') if f.is_file()]
 size = sum(f.stat().st_size for f in files)
+if len(files) > 20_000 or any(f.stat().st_size > 25 * 1024 * 1024 for f in files):
+    raise SystemExit('Static publication exceeds the free Cloudflare Pages file limits.')
 if size > 800_000_000 or any(f.stat().st_size > 90_000_000 for f in files):
     raise SystemExit('Static publication exceeds the conservative free Pages size budget.')
 feed = (root / 'opportunities.json').read_bytes()
 manifest = {'sourceCommit': os.environ.get('GTA_SOURCE_COMMIT', ''),
-            'siteUrl': 'https://rupayon123.github.io',
+            'siteUrl': 'https://gta-free-stem.pages.dev',
             'nativeFeedSha256': hashlib.sha256(feed).hexdigest(),
             'nativeFeedRecords': len(json.loads(feed)['opportunities']),
             'publicationBytes': size, 'publicationFiles': len(files),

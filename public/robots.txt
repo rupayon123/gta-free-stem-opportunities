@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://gta-free-stem.vercel.app/sitemap.xml
+Sitemap: https://gta-free-stem.pages.dev/sitemap.xml

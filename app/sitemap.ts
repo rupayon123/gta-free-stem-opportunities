@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { programDirectoryPageCount, programDirectoryPath, programLastModified, programUrl, publicProgramPages } from "@/lib/programPages";
 
 export const dynamic = "force-static";
-const siteUrl = "https://rupayon123.github.io";
+const siteUrl = "https://gta-free-stem.pages.dev";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastUpdated = new Date();

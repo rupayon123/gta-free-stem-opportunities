@@ -4,8 +4,8 @@ import type { Metadata } from "next";
 import { createAssetRecoveryScript } from "@/lib/assetRecovery";
 import { getDeploymentAssetOrigin } from "@/lib/deploymentAssets";
 
-const siteUrl = "https://rupayon123.github.io";
-const siteTitle = "GTA FREE STEM Opportunities";
+const siteUrl = "https://gta-free-stem.pages.dev";
+const siteTitle = "GTA Free STEM Opportunities";
 const siteDescription =
   "Find free and accessible STEM programs, library events, volunteer hours, co-op, SHSM, mentorship, and youth opportunities across the Greater Toronto Area.";
 
@@ -101,6 +101,7 @@ export default function RootLayout({
         "@type": "WebSite",
         "@id": `${siteUrl}/#website`,
         name: siteTitle,
+        alternateName: ["GTA Free STEM", "GTA FREE STEM"],
         url: siteUrl,
         inLanguage: "en-CA",
         description: siteDescription,

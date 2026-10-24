@@ -4,7 +4,7 @@ import { generatedLibraryOpportunities } from "./generatedLibraryOpportunities";
 import { publicOpportunities } from "./opportunityStatus";
 import type { Opportunity } from "./types";
 
-export const programSiteUrl = "https://rupayon123.github.io";
+export const programSiteUrl = "https://gta-free-stem.pages.dev";
 
 // This server-rendered directory is a published snapshot. The interactive
 // browser keeps applying the current clock after a page has been published.

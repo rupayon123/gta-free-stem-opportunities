@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Open-source free STEM opportunity finder for GTA families, students, educators, and community hosts.",
   "private": true,
-  "homepage": "https://gta-free-stem.vercel.app",
+  "homepage": "https://gta-free-stem.pages.dev",
   "repository": {
     "type": "git",
     "url": "https://github.com/rupayon123/gta-free-stem-opportunities.git"
@@ -36,7 +36,7 @@
     "verify:legal:release": "VERIFY_DEPLOYED_LEGAL=0 REQUIRE_MONITORED_SUPPORT=1 npm run verify:legal",
     "verify:legal:production": "VERIFY_DEPLOYED_LEGAL=1 REQUIRE_MONITORED_SUPPORT=1 npm run verify:legal",
     "build:app-release": "npm run build && npm run verify:legal:release",
-    "deploy:pages": "npm run build && npx --yes wrangler pages deploy out --project-name=gta-free-stem",
+    "deploy:pages": "npm run build:github-pages && npx --yes wrangler@4.152.0 pages deploy out --project-name=gta-free-stem --branch=main",
     "prepare:map": "tsx scripts/prepare-map-assets.ts",
     "prepare:library": "tsx scripts/prepare-library-catalog.ts",
     "verify:library-partition": "tsx scripts/prepare-library-catalog.ts --self-test",
@@ -56,7 +56,8 @@
     "presupabase:check": "npm run prepare:library",
     "presupabase:seed": "npm run prepare:library",
     "qa:catalog": "tsx scripts/library-collector-regression.ts && tsx scripts/library-rss-cache-regression.ts && tsx scripts/library-catalog-regression.ts && tsx lib/search.community.test.ts && tsx lib/opportunitySearch.worker.test.ts && npm run verify:library-partition",
-    "build:github-pages": "GTA_HOST_TARGET=github-pages npm run build && python3 scripts/prepare-github-pages.py"
+    "build:github-pages": "GTA_HOST_TARGET=github-pages npm run build && python3 scripts/prepare-github-pages.py && npm run verify:search-indexing",
+    "verify:search-indexing": "python3 scripts/verify-search-indexing.py"
   },
   "dependencies": {
     "@next/env": "^16.4.2",

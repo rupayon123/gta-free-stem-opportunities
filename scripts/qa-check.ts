@@ -94,7 +94,7 @@ assert(supportSource.includes("Support tickets are public"), "Support page must 
 assert(supportSource.includes("supportContactEmail"), "Support page must expose the configured direct support contact.");
 assert(supportSource.includes("Public App Store release is blocked"), "Support page must block release when direct contact is absent.");
 for (const route of ["/privacy/", "/terms/", "/support/"]) {
-  assert(sitemapSource.includes(`https://rupayon123.github.io${route}`), `Sitemap is missing ${route}.`);
+  assert(sitemapSource.includes(`https://gta-free-stem.pages.dev${route}`), `Sitemap is missing ${route}.`);
 }
 
 const baseFilters: Filters = {
