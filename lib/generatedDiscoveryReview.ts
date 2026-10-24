@@ -3,9 +3,9 @@ import type { DiscoveredOpportunity } from "./discovery";
 export const generatedDiscoverySummary = {
   "mode": "deterministic",
   "sourcesChecked": 30,
-  "candidatesFound": 273,
-  "newCandidates": 55,
-  "duplicatesSkipped": 51,
+  "candidatesFound": 274,
+  "newCandidates": 52,
+  "duplicatesSkipped": 39,
   "warnings": [
     "Could not check Credit Valley Conservation youth opportunities: 403 Forbidden.",
     "Could not check Volunteer MBC youth opportunities: 403 Forbidden.",
@@ -14,7 +14,7 @@ export const generatedDiscoverySummary = {
   ],
   "sourceHealth": {
     "schemaVersion": 1,
-    "generatedAt": "2026-10-24T16:01:18.706Z",
+    "generatedAt": "2026-10-24T20:54:10.911Z",
     "status": "healthy",
     "failureReasons": [],
     "sourcesChecked": 30,
@@ -55,94 +55,7 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Toronto Public Library youth volunteer events"
   },
   {
-    "id": "discovered-tpl-events-volunteer-game-on-board-game-playtime-d633da2686c7",
-    "title": "Game on! Board Game Playtime",
-    "organization": "Toronto Public Library",
-    "description": "Join us for a fun-filled day of board games and puzzles! Play your favourites or try something new! Brings your friends and family or meet new people at the library. Games available for use in the Children's Area. Available games include: Ball Fall Jumbo (Ages 3+), STEM Pretend Flower Garden Toy Set (Ages 3-6), Operation (Ages 6+), STEM Road Builder Game (Ages 4-8), Dinosaur Tetra Tower Balance Stacking Blocks Game (Ages 6+) Available puzzles include: Giant World Map Puzzle (Ages 4+), Canada Map Jigsaw Puzzle (Ages 4-12), ABC Puzzle (Ages 3+)",
-    "city": "Toronto",
-    "region": "Toronto",
-    "ageMin": 3,
-    "ageMax": 6,
-    "category": "Science & Engineering",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "deadline": "2026-10-24T09:00:00-04:00",
-    "startDate": "2026-10-24T09:00:00-04:00",
-    "endDate": "2026-10-24T16:30:00-04:00",
-    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6aaac71119094f0c69389746",
-    "lastChecked": "2026-10-24",
-    "lastSeen": "2026-10-24",
-    "status": "needs_review",
-    "tags": [
-      "science & engineering"
-    ],
-    "confidence": "high",
-    "reviewReasons": [],
-    "sourceName": "Toronto Public Library youth volunteer events"
-  },
-  {
-    "id": "discovered-markham-events-stem-lego-robotics-for-grades-4-8-239bc6dbc153",
-    "title": "LEGO Robotics for Grades 4-8",
-    "organization": "Markham Public Library",
-    "description": "Is your child in Grades 4-8 and would like to explore LEGO ROBOTICS? Through fun, hands-on engineering challenges, students will sharpen their problem-solving abilities and bring their boldest ideas to life, brick by brick (no coding experience required). Learning Goals: In this session, students will: gain practical STEM skills by learning to program sensors, motors, and mechanical structures to perform real-world tasks. Beyond tech skills, kids develop patience and resilience",
-    "city": "Markham",
-    "region": "York",
-    "ageMin": 9,
-    "ageMax": 14,
-    "category": "Coding & Robotics",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "deadline": "2026-10-24T14:00:00-04:00",
-    "startDate": "2026-10-24T14:00:00-04:00",
-    "endDate": "2026-10-24T15:00:00-04:00",
-    "sourceUrl": "https://markham.bibliocommons.com/v2/events/6a67ab09f213992f00c76f66",
-    "lastChecked": "2026-10-24",
-    "lastSeen": "2026-10-24",
-    "status": "needs_review",
-    "tags": [
-      "coding & robotics",
-      "stem",
-      "robotics",
-      "coding"
-    ],
-    "confidence": "high",
-    "reviewReasons": [],
-    "sourceName": "Markham Public Library events"
-  },
-  {
-    "id": "discovered-markham-events-volunteer-creating-a-customized-puzzle-with-a-sublim-ee9204afc18a",
-    "title": "Creating a Customized Puzzle with a Sublimation Printer",
-    "organization": "Markham Public Library",
-    "description": "Creating a Customized Puzzle with a Sublimation Printer from Markham Public Library youth volunteer events.",
-    "city": "Markham",
-    "region": "York",
-    "ageMin": 13,
-    "ageMax": 18,
-    "category": "Volunteer Hours",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "deadline": "2026-10-24T15:00:00-04:00",
-    "startDate": "2026-10-24T15:00:00-04:00",
-    "endDate": "2026-10-24T15:30:00-04:00",
-    "sourceUrl": "https://markham.bibliocommons.com/v2/events/68fbe0cde647c8ff0c38743e",
-    "lastChecked": "2026-10-24",
-    "lastSeen": "2026-10-24",
-    "status": "needs_review",
-    "tags": [
-      "volunteer hours"
-    ],
-    "confidence": "high",
-    "reviewReasons": [],
-    "sourceName": "Markham Public Library youth volunteer events"
-  },
-  {
-    "id": "discovered-markham-events-volunteer-reading-to-success-c4e8a1869a69",
+    "id": "discovered-markham-events-volunteer-reading-to-success-53c770a67d2c",
     "title": "Reading to Success",
     "organization": "Markham Public Library",
     "description": "Read a story with us! Reading to Success is a volunteer facilitated reading program established to motivate children to read regularly. YPAM in partnership with the Markham Public Library provides this weekly literacy program, where volunteers read grade specific books for children in Junior Kindergarten, Senior Kindergarten, Grade 1, Grade 2 and IEP kids. Make Reading to Success part of your child's reading habit and build a love of reading together. To register, please visit: https://www.ypam.ca/reading *Please note that through registering, you are giving YPAM your information.",
@@ -155,10 +68,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "deadline": "2026-10-24T13:00:00-04:00",
-    "startDate": "2026-10-24T13:00:00-04:00",
-    "endDate": "2026-10-24T14:30:00-04:00",
-    "sourceUrl": "https://markham.bibliocommons.com/v2/events/6a6787087b79214226ab95e0",
+    "deadline": "2026-10-26T18:00:00-04:00",
+    "startDate": "2026-10-26T18:00:00-04:00",
+    "endDate": "2026-10-26T19:30:00-04:00",
+    "sourceUrl": "https://markham.bibliocommons.com/v2/events/6a6a186d4523092f0033607c",
     "lastChecked": "2026-10-24",
     "lastSeen": "2026-10-24",
     "status": "needs_review",
@@ -228,7 +141,7 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Richmond Hill Public Library programs"
   },
   {
-    "id": "discovered-aurora-library-stem-maker-workshop-custom-mug-c00f8b90c5b6",
+    "id": "discovered-aurora-library-stem-maker-workshop-custom-mug-e43a104592e5",
     "title": "Maker Workshop: Custom Mug",
     "organization": "Aurora Public Library",
     "description": "Learn how to design and make a custom mug with a sublimation printer and Cricut Mug Press. All required materials will be provided. Please note that spots will be prioritized for first-time attendees. teen/adult program 13+",
@@ -244,7 +157,7 @@ export const generatedDiscoveryReviewCandidates = [
     "deadline": "2026-10-26T18:30:00-04:00",
     "startDate": "2026-10-26T18:30:00-04:00",
     "endDate": "2026-10-26T20:00:00-04:00",
-    "sourceUrl": "https://aurora.bibliocommons.com/events/6ad7b37c96ec3a003adbc9ec",
+    "sourceUrl": "https://aurora.bibliocommons.com/events/6933515b94297d36009e7d6c",
     "lastChecked": "2026-10-24",
     "lastSeen": "2026-10-24",
     "status": "needs_review",
