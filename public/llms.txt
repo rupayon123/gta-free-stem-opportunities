@@ -2,7 +2,7 @@
 
 GTA FREE STEM Opportunities is a public beta web platform for finding free and accessible STEM opportunities across the Greater Toronto Area in Ontario, Canada.
 
-Site: https://gta-free-stem.vercel.app/
+Site: https://rupayon123.github.io/
 
 Purpose:
 - Help students, parents, caregivers, educators, newcomer families, and community groups discover free STEM programs.
@@ -19,7 +19,7 @@ Search area:
 
 Published coverage:
 - Availability varies by source and region. Search options do not guarantee current listings in every region.
-- The public feed at https://gta-free-stem.vercel.app/opportunities.json reports current count, lastDataChange, coverage, and sourceHealth.
+- The public feed at https://rupayon123.github.io/opportunities.json reports current count, lastDataChange, coverage, and sourceHealth.
 - The feed's coverage lists only regions, cities, and organizations with verified, current public listings.
 - Unreviewed discoveries and listings with stale verification or past dates are excluded from public results.
 
@@ -30,6 +30,6 @@ Important search context:
 - The interface supports many Greater Toronto Area community languages.
 
 Public policies and support:
-- Privacy Policy: https://gta-free-stem.vercel.app/privacy/
-- Terms of Use: https://gta-free-stem.vercel.app/terms/
-- Support: https://gta-free-stem.vercel.app/support/
+- Privacy Policy: https://rupayon123.github.io/privacy/
+- Terms of Use: https://rupayon123.github.io/terms/
+- Support: https://rupayon123.github.io/support/

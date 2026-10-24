@@ -55,7 +55,8 @@
     "preingest:dry-run": "npm run prepare:library",
     "presupabase:check": "npm run prepare:library",
     "presupabase:seed": "npm run prepare:library",
-    "qa:catalog": "tsx scripts/library-collector-regression.ts && tsx scripts/library-rss-cache-regression.ts && tsx scripts/library-catalog-regression.ts && tsx lib/search.community.test.ts && tsx lib/opportunitySearch.worker.test.ts && npm run verify:library-partition"
+    "qa:catalog": "tsx scripts/library-collector-regression.ts && tsx scripts/library-rss-cache-regression.ts && tsx scripts/library-catalog-regression.ts && tsx lib/search.community.test.ts && tsx lib/opportunitySearch.worker.test.ts && npm run verify:library-partition",
+    "build:github-pages": "GTA_HOST_TARGET=github-pages npm run build && python3 scripts/prepare-github-pages.py"
   },
   "dependencies": {
     "@next/env": "^16.4.2",

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { StorybookMark } from "@/components/StorybookMark";
 
-const siteUrl = "https://gta-free-stem.vercel.app";
+const siteUrl = "https://rupayon123.github.io";
 
 const pages = {
   opportunities: {

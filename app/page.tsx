@@ -13,18 +13,18 @@ export const metadata: Metadata = {
     "SHSM and mentorship programs GTA"
   ],
   alternates: {
-    canonical: "https://gta-free-stem.vercel.app/",
+    canonical: "https://rupayon123.github.io/",
     languages: {
-      en: "https://gta-free-stem.vercel.app/",
-      "en-CA": "https://gta-free-stem.vercel.app/",
-      "x-default": "https://gta-free-stem.vercel.app/"
+      en: "https://rupayon123.github.io/",
+      "en-CA": "https://rupayon123.github.io/",
+      "x-default": "https://rupayon123.github.io/"
     }
   },
   openGraph: {
     title: "GTA FREE STEM Opportunities | Free STEM programs in the Greater Toronto Area",
     description:
       "Explore free library events and STEM activities for every age. Search by interest, age and location without an account.",
-    url: "https://gta-free-stem.vercel.app/",
+    url: "https://rupayon123.github.io/",
     siteName: "GTA FREE STEM Opportunities",
     type: "website",
     images: [

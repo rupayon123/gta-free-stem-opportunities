@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 import { createAssetRecoveryScript } from "@/lib/assetRecovery";
 import { getDeploymentAssetOrigin } from "@/lib/deploymentAssets";
 
-const siteUrl = "https://gta-free-stem.vercel.app";
+const siteUrl = "https://rupayon123.github.io";
 const siteTitle = "GTA FREE STEM Opportunities";
 const siteDescription =
   "Find free and accessible STEM programs, library events, volunteer hours, co-op, SHSM, mentorship, and youth opportunities across the Greater Toronto Area.";
