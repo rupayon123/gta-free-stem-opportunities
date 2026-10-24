@@ -3,9 +3,9 @@ import type { DiscoveredOpportunity } from "./discovery";
 export const generatedDiscoverySummary = {
   "mode": "deterministic",
   "sourcesChecked": 30,
-  "candidatesFound": 272,
-  "newCandidates": 54,
-  "duplicatesSkipped": 47,
+  "candidatesFound": 273,
+  "newCandidates": 55,
+  "duplicatesSkipped": 51,
   "warnings": [
     "Could not check Credit Valley Conservation youth opportunities: 403 Forbidden.",
     "Could not check Volunteer MBC youth opportunities: 403 Forbidden.",
@@ -14,7 +14,7 @@ export const generatedDiscoverySummary = {
   ],
   "sourceHealth": {
     "schemaVersion": 1,
-    "generatedAt": "2026-10-24T11:06:32.615Z",
+    "generatedAt": "2026-10-24T16:01:18.706Z",
     "status": "healthy",
     "failureReasons": [],
     "sourcesChecked": 30,
@@ -26,34 +26,6 @@ export const generatedDiscoverySummary = {
 } as const;
 
 export const generatedDiscoveryReviewCandidates = [
-  {
-    "id": "discovered-tpl-events-volunteer-game-on-board-game-playtime-b6f8ba9337ad",
-    "title": "Game on! Board Game Playtime",
-    "organization": "Toronto Public Library",
-    "description": "Join us for a fun-filled day of board games and puzzles! Play your favourites or try something new! Brings your friends and family or meet new people at the library. Games available for use in the Children's Area. Available games include: Ball Fall Jumbo (Ages 3+), STEM Pretend Flower Garden Toy Set (Ages 3-6), Operation (Ages 6+), STEM Road Builder Game (Ages 4-8), Dinosaur Tetra Tower Balance Stacking Blocks Game (Ages 6+) Available puzzles include: Giant World Map Puzzle (Ages 4+), Canada Map Jigsaw Puzzle (Ages 4-12), ABC Puzzle (Ages 3+)",
-    "city": "Toronto",
-    "region": "Toronto",
-    "ageMin": 3,
-    "ageMax": 6,
-    "category": "Science & Engineering",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "deadline": "2026-10-24T09:00:00-04:00",
-    "startDate": "2026-10-24T09:00:00-04:00",
-    "endDate": "2026-10-24T16:30:00-04:00",
-    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6ab18d4986d845003117c525",
-    "lastChecked": "2026-10-24",
-    "lastSeen": "2026-10-24",
-    "status": "needs_review",
-    "tags": [
-      "science & engineering"
-    ],
-    "confidence": "high",
-    "reviewReasons": [],
-    "sourceName": "Toronto Public Library youth volunteer events"
-  },
   {
     "id": "discovered-tpl-events-volunteer-set-phasers-to-celebrate-60-years-of-star--b066b1fadb45",
     "title": "Set Phasers to Celebrate! 60 Years of Star Trek: A Merril Collection Exhibit",
@@ -83,7 +55,35 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Toronto Public Library youth volunteer events"
   },
   {
-    "id": "discovered-markham-events-stem-lego-robotics-for-grades-4-8-eb41feac3e0a",
+    "id": "discovered-tpl-events-volunteer-game-on-board-game-playtime-d633da2686c7",
+    "title": "Game on! Board Game Playtime",
+    "organization": "Toronto Public Library",
+    "description": "Join us for a fun-filled day of board games and puzzles! Play your favourites or try something new! Brings your friends and family or meet new people at the library. Games available for use in the Children's Area. Available games include: Ball Fall Jumbo (Ages 3+), STEM Pretend Flower Garden Toy Set (Ages 3-6), Operation (Ages 6+), STEM Road Builder Game (Ages 4-8), Dinosaur Tetra Tower Balance Stacking Blocks Game (Ages 6+) Available puzzles include: Giant World Map Puzzle (Ages 4+), Canada Map Jigsaw Puzzle (Ages 4-12), ABC Puzzle (Ages 3+)",
+    "city": "Toronto",
+    "region": "Toronto",
+    "ageMin": 3,
+    "ageMax": 6,
+    "category": "Science & Engineering",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "deadline": "2026-10-24T09:00:00-04:00",
+    "startDate": "2026-10-24T09:00:00-04:00",
+    "endDate": "2026-10-24T16:30:00-04:00",
+    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6aaac71119094f0c69389746",
+    "lastChecked": "2026-10-24",
+    "lastSeen": "2026-10-24",
+    "status": "needs_review",
+    "tags": [
+      "science & engineering"
+    ],
+    "confidence": "high",
+    "reviewReasons": [],
+    "sourceName": "Toronto Public Library youth volunteer events"
+  },
+  {
+    "id": "discovered-markham-events-stem-lego-robotics-for-grades-4-8-239bc6dbc153",
     "title": "LEGO Robotics for Grades 4-8",
     "organization": "Markham Public Library",
     "description": "Is your child in Grades 4-8 and would like to explore LEGO ROBOTICS? Through fun, hands-on engineering challenges, students will sharpen their problem-solving abilities and bring their boldest ideas to life, brick by brick (no coding experience required). Learning Goals: In this session, students will: gain practical STEM skills by learning to program sensors, motors, and mechanical structures to perform real-world tasks. Beyond tech skills, kids develop patience and resilience",
@@ -99,7 +99,7 @@ export const generatedDiscoveryReviewCandidates = [
     "deadline": "2026-10-24T14:00:00-04:00",
     "startDate": "2026-10-24T14:00:00-04:00",
     "endDate": "2026-10-24T15:00:00-04:00",
-    "sourceUrl": "https://markham.bibliocommons.com/v2/events/68fbdd1b0176055300fe80b5",
+    "sourceUrl": "https://markham.bibliocommons.com/v2/events/6a67ab09f213992f00c76f66",
     "lastChecked": "2026-10-24",
     "lastSeen": "2026-10-24",
     "status": "needs_review",
@@ -114,37 +114,7 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Markham Public Library events"
   },
   {
-    "id": "discovered-markham-events-stem-stem-learning-grades-4-6-see-details-41d60f3189b4",
-    "title": "STEM Learning (Grades 4-6) - see details",
-    "organization": "Markham Public Library",
-    "description": "Is your child in Grades 4-6 and curious about how the world works? In this 4-week session, your child will dive into the world of Science, Technology, Engineering, and Math through exciting experiments, interactive challenges, and creative problem-solving tasks. Themes for each week are as follows: Oct. 3 - Engineering and Technology Oct. 10 - Science experiments -exploring chemical reactions (this session is to celebrate Science Literacy Week*) Oct. 17 - Coding, Logic and Math Oct. 24 - Data Collection and Hypothesizing ** Please note these are subject to change* Hosted by The Study Buddy, in partnership with Markham Public Library, these free STEM classes encourage kids to think critically, build collaboratively, and discover how everyday ideas spark real-world innovation. ** Note: Pleas",
-    "city": "Markham",
-    "region": "York",
-    "ageMin": 9,
-    "ageMax": 12,
-    "category": "Coding & Robotics",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "deadline": "2026-10-24T11:00:00-04:00",
-    "startDate": "2026-10-24T11:00:00-04:00",
-    "endDate": "2026-10-24T12:00:00-04:00",
-    "sourceUrl": "https://markham.bibliocommons.com/v2/events/6a6787087b79214226ab95e0",
-    "lastChecked": "2026-10-24",
-    "lastSeen": "2026-10-24",
-    "status": "needs_review",
-    "tags": [
-      "coding & robotics",
-      "stem",
-      "coding"
-    ],
-    "confidence": "high",
-    "reviewReasons": [],
-    "sourceName": "Markham Public Library events"
-  },
-  {
-    "id": "discovered-markham-events-volunteer-creating-a-customized-puzzle-with-a-sublim-4b8f186e4de2",
+    "id": "discovered-markham-events-volunteer-creating-a-customized-puzzle-with-a-sublim-ee9204afc18a",
     "title": "Creating a Customized Puzzle with a Sublimation Printer",
     "organization": "Markham Public Library",
     "description": "Creating a Customized Puzzle with a Sublimation Printer from Markham Public Library youth volunteer events.",
@@ -157,10 +127,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "deadline": "2026-10-24T11:00:00-04:00",
-    "startDate": "2026-10-24T11:00:00-04:00",
-    "endDate": "2026-10-24T11:30:00-04:00",
-    "sourceUrl": "https://markham.bibliocommons.com/v2/events/6a642f0c0e562e28009c4bab",
+    "deadline": "2026-10-24T15:00:00-04:00",
+    "startDate": "2026-10-24T15:00:00-04:00",
+    "endDate": "2026-10-24T15:30:00-04:00",
+    "sourceUrl": "https://markham.bibliocommons.com/v2/events/68fbe0cde647c8ff0c38743e",
     "lastChecked": "2026-10-24",
     "lastSeen": "2026-10-24",
     "status": "needs_review",
@@ -172,7 +142,7 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Markham Public Library youth volunteer events"
   },
   {
-    "id": "discovered-markham-events-volunteer-reading-to-success-4f79dc8244ad",
+    "id": "discovered-markham-events-volunteer-reading-to-success-c4e8a1869a69",
     "title": "Reading to Success",
     "organization": "Markham Public Library",
     "description": "Read a story with us! Reading to Success is a volunteer facilitated reading program established to motivate children to read regularly. YPAM in partnership with the Markham Public Library provides this weekly literacy program, where volunteers read grade specific books for children in Junior Kindergarten, Senior Kindergarten, Grade 1, Grade 2 and IEP kids. Make Reading to Success part of your child's reading habit and build a love of reading together. To register, please visit: https://www.ypam.ca/reading *Please note that through registering, you are giving YPAM your information.",
@@ -188,7 +158,7 @@ export const generatedDiscoveryReviewCandidates = [
     "deadline": "2026-10-24T13:00:00-04:00",
     "startDate": "2026-10-24T13:00:00-04:00",
     "endDate": "2026-10-24T14:30:00-04:00",
-    "sourceUrl": "https://markham.bibliocommons.com/v2/events/68fbd37875911f28001a2362",
+    "sourceUrl": "https://markham.bibliocommons.com/v2/events/6a6787087b79214226ab95e0",
     "lastChecked": "2026-10-24",
     "lastSeen": "2026-10-24",
     "status": "needs_review",
@@ -258,6 +228,35 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Richmond Hill Public Library programs"
   },
   {
+    "id": "discovered-aurora-library-stem-maker-workshop-custom-mug-c00f8b90c5b6",
+    "title": "Maker Workshop: Custom Mug",
+    "organization": "Aurora Public Library",
+    "description": "Learn how to design and make a custom mug with a sublimation printer and Cricut Mug Press. All required materials will be provided. Please note that spots will be prioritized for first-time attendees. teen/adult program 13+",
+    "city": "Aurora",
+    "region": "York",
+    "ageMin": 13,
+    "ageMax": 18,
+    "category": "Makerspace & Fabrication",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "deadline": "2026-10-26T18:30:00-04:00",
+    "startDate": "2026-10-26T18:30:00-04:00",
+    "endDate": "2026-10-26T20:00:00-04:00",
+    "sourceUrl": "https://aurora.bibliocommons.com/events/6ad7b37c96ec3a003adbc9ec",
+    "lastChecked": "2026-10-24",
+    "lastSeen": "2026-10-24",
+    "status": "needs_review",
+    "tags": [
+      "makerspace & fabrication",
+      "maker"
+    ],
+    "confidence": "high",
+    "reviewReasons": [],
+    "sourceName": "Aurora Public Library STEM events"
+  },
+  {
     "id": "discovered-aurora-library-volunteers-volunteers-9a6997e9e36a",
     "title": "Volunteers",
     "organization": "Aurora Public Library",
@@ -307,6 +306,35 @@ export const generatedDiscoveryReviewCandidates = [
     "tags": [
       "science & engineering",
       "science"
+    ],
+    "confidence": "high",
+    "reviewReasons": [
+      "No clear future date found on the crawled page."
+    ],
+    "sourceName": "Whitby Public Library programs"
+  },
+  {
+    "id": "discovered-whitby-programs-computer-and-technology-55d33610656f",
+    "title": "Computer and Technology",
+    "organization": "Whitby Public Library",
+    "description": "Computer and Technology listed by Whitby Public Library programs.",
+    "city": "Whitby",
+    "region": "Durham",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "STEM",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-10-24T09:00:00-04:00",
+    "sourceUrl": "https://whitbylibrary.libcal.com/calendar/adult?&t=d&d=0000-00-00&cal%5B%5D=7833&ct%5B%5D=35170",
+    "lastChecked": "2026-10-24",
+    "lastSeen": "2026-10-24",
+    "status": "needs_review",
+    "tags": [
+      "stem",
+      "technology"
     ],
     "confidence": "high",
     "reviewReasons": [
