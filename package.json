@@ -29,7 +29,7 @@
     "engine:refresh": "npm run generate:library && npm run prepare:library && npm run discover:write && npm run export:public-feed && npm run qa",
     "supabase:check": "tsx scripts/check-supabase.ts",
     "supabase:seed": "tsx scripts/export-supabase-seed.ts",
-    "qa": "tsx scripts/qa-check.ts && npm run qa:search && npm run qa:catalog && npm run verify:native-export",
+    "qa": "tsx scripts/qa-check.ts && npm run qa:search && npm run qa:catalog && npm run verify:native-export && npm run qa:motion",
     "qa:search": "tsx scripts/search-regression.ts && tsx lib/search.cache.test.ts",
     "qa:worker": "tsx lib/opportunitySearch.worker.test.ts",
     "verify:legal": "tsx scripts/verify-public-legal-pages.ts",
@@ -57,7 +57,8 @@
     "presupabase:seed": "npm run prepare:library",
     "qa:catalog": "tsx scripts/library-collector-regression.ts && tsx scripts/library-rss-cache-regression.ts && tsx scripts/library-catalog-regression.ts && tsx lib/search.community.test.ts && tsx lib/opportunitySearch.worker.test.ts && npm run verify:library-partition",
     "build:github-pages": "GTA_HOST_TARGET=github-pages npm run build && python3 scripts/prepare-github-pages.py && npm run verify:search-indexing",
-    "verify:search-indexing": "python3 scripts/verify-search-indexing.py"
+    "verify:search-indexing": "python3 scripts/verify-search-indexing.py",
+    "qa:motion": "tsx lib/discoveryMotion.test.ts"
   },
   "dependencies": {
     "@next/env": "^16.4.2",

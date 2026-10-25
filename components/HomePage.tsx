@@ -1,18 +1,23 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { ArrowRight, Bookmark, Check, Languages, Menu, Moon, Search, Sun, X } from "lucide-react";
-import { OpportunityExplorer } from "./OpportunityExplorer";
+import { ArrowRight, Bookmark, Check, Languages, Menu, Moon, Sun, X } from "lucide-react";
+import dynamic from "next/dynamic";
 import { StorybookMark } from "./StorybookMark";
 import { LegalFooter } from "./LegalFooter";
-import { languageMeta, t, translatedCategory } from "@/lib/i18n";
-import { categories, cityOptions, languagePreferenceOrder } from "@/lib/data";
+import { DiscoveryLanding } from "./DiscoveryLanding";
+import { languageMeta, t } from "@/lib/i18n";
+import { languagePreferenceOrder } from "@/lib/filterOptions";
 import { websiteCopy } from "@/lib/websiteCopy";
 import { legalConfig } from "@/lib/legal";
 import type { Filters, LanguageCode } from "@/lib/types";
-import { PlayfulSurface, SaveSpark, ScienceReveal } from "./ScienceMotion";
+import { PlayfulSurface, SaveSpark } from "./ScienceMotion";
 import "./PlayfulUI.css";
 import "./SearchHelp.css";
+
+const OpportunityExplorer = dynamic(() => import("./OpportunityExplorer").then(module => module.OpportunityExplorer), {
+  loading: () => <p role="status" lang="en">Loading activities…</p>
+});
 
 type Surface = "home" | "opportunities" | "high-school" | "support" | "community-hosts";
 
@@ -30,8 +35,6 @@ export function HomePage({ initialSurface = "home", initialFilterOverrides = {} 
   const DiscoveryHeading = initialSurface === "home" && !savedOnly ? "h2" : "h1";
   const browseSurface = initialSurface === "home" || initialSurface === "opportunities" || initialSurface === "high-school";
   const landing = initialSurface === "home" && !savedOnly;
-  const heroTitle = language === "en" ? "Free activities.\nFor every age." : c.title;
-  const heroIntro = language === "en" ? "Find something you’ll enjoy in the Greater Toronto Area — from storytime and crafts to coding, science and book clubs." : c.intro;
 
   useEffect(() => {
     try {
@@ -117,33 +120,7 @@ export function HomePage({ initialSurface = "home", initialFilterOverrides = {} 
       </header>
       <main id="main-content">
         <noscript><section className="noscript-note" lang="en"><h2>Explore the library calendars</h2><p>The interactive search and map need JavaScript. You can also browse free programs directly through <a href="https://www.torontopubliclibrary.ca/programs-and-classes/">Toronto Public Library</a> and <a href="https://markham.bibliocommons.com/v2/events">Markham Public Library</a>, or <a href="/support/">get help</a>.</p></section></noscript>
-        {landing && <>
-          <section className="welcome welcome-simple" aria-labelledby="welcome-title" data-science-scene>
-            <ScienceReveal className="welcome-copy" lang={copyLanguage}>
-              <p className="eyebrow" lang="en">YOUR COMMUNITY. YOUR NEXT DISCOVERY.</p>
-              <h1 id="welcome-title">{heroTitle.split("\n").map((line, index) => <span key={line}>{index > 0 && <br />}{line}</span>)}</h1>
-              <p className="welcome-intro">{heroIntro}</p>
-              <p className="welcome-ages" lang="en">Babies & toddlers · Children · Teens · Adults · Older adults</p>
-              <a className="text-link welcome-browse" href="/opportunities/#discover" lang="en">Just looking? Browse all activities <ArrowRight size={18} aria-hidden="true" /></a>
-            </ScienceReveal>
-            <ScienceReveal className="welcome-art" aria-hidden="true">
-              <img src="/illustrations/neighbourhood-lab-hero.webp" width={640} height={420} alt="" fetchPriority="high" data-science-tilt />
-            </ScienceReveal>
-          </section>
-        </>}
-        {landing && <section className="landing-finder" id="discover" aria-labelledby="finder-title">
-          <div className="finder-heading"><h2 id="finder-title" lang="en">Find a free activity</h2><p lang="en">Choose any filters, or leave them open to see everything.</p></div>
-          <form action="/opportunities/#discover" method="get" role="search" className="landing-search">
-            <div className="finder-query"><label htmlFor="hero-query">{language === "en" ? "What would you like to do?" : c.interests}</label><div><Search size={21} aria-hidden="true" /><input id="hero-query" name="q" type="search" maxLength={250} placeholder={t(language, "searchPlaceholder")} autoComplete="off" dir="auto" enterKeyHint="search" spellCheck aria-describedby="hero-search-help" /></div></div>
-            <div className="finder-fields">
-              <div><label htmlFor="home-city">{t(language, "city")}</label><select id="home-city" name="city" defaultValue=""><option value="">{t(language, "allCities")}</option>{cityOptions.map(city => <option key={city}>{city}</option>)}</select></div>
-              <div><label htmlFor="home-age">{t(language, "age")}</label><input id="home-age" name="age" type="number" min="0" max="99" step="0.01" placeholder="Any age" aria-describedby="home-age-help" /><small id="home-age-help" lang="en">Years; 0.5 = 6 months</small></div>
-              <div><label htmlFor="home-interest">{t(language, "category")}</label><select id="home-interest" name="category" defaultValue="All"><option value="All">{t(language, "allCategories")}</option>{categories.map(category => <option key={category} value={category}>{translatedCategory(category, language)}</option>)}</select></div>
-            </div>
-            <div className="finder-submit"><p id="hero-search-help" lang="en">Everything listed is free. No account needed.<br />Try a topic or library name — small spelling mistakes are okay.</p><button className="primary-button" type="submit" data-science-press>{language === "en" ? "Find free activities" : c.browse}<ArrowRight size={20} aria-hidden="true" /></button></div>
-          </form>
-          <div className="finder-topics" lang="en"><span>Try something you enjoy:</span>{[["Storytime", "storytime"], ["Arts & crafts", "crafts"], ["Coding & robotics", "robotics"], ["Book clubs", "reading"]].map(([label, query]) => <a key={query} href={`/opportunities/?q=${query}#discover`}>{label}<ArrowRight size={15} aria-hidden="true" /></a>)}</div>
-        </section>}
+        {landing && <DiscoveryLanding language={language} />}
         {landing ? null : browseSurface ? <section className={`discovery-section${landing ? " discovery-landing" : ""}`} id="discover" aria-label="Explore opportunities">
           {!landing && <div className="section-heading"><div><p className="eyebrow" lang="en">{initialSurface === "high-school" ? "YOUR NEXT CHAPTER" : "EXPLORE YOUR CURIOSITY"}</p><DiscoveryHeading>{savedOnly ? c.saved : initialSurface === "high-school" ? t(language, "navHighSchoolOpportunities") : t(language, "navOpportunities")}</DiscoveryHeading></div><p lang="en">{savedOnly ? "Your shortlist, kept in this browser." : "Find something that makes you want to learn more."}</p></div>}
           <SaveSpark><OpportunityExplorer language={language} landing={landing} highSchool={initialSurface === "high-school"} initialFilters={initialFilterOverrides} savedOnly={savedOnly} onSavedCountChange={setSavedCount} /></SaveSpark>

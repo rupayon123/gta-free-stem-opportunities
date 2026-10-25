@@ -1,7 +1,8 @@
+export { categories, cityOptions, languagePreferenceOrder } from "./filterOptions";
 import { generatedLibraryCollectionHealth, generatedLibraryOpportunities } from "./generatedCoreLibraryOpportunities";
 import { generatedDiscoveryReviewCandidates } from "./generatedDiscoveryReview";
 import type { DiscoveredOpportunity } from "./discovery";
-import type { Category, LanguageCode, Opportunity, Region, ReviewItem } from "./types";
+import type { Opportunity, Region, ReviewItem } from "./types";
 import { computedOpportunityStatus, opportunityVerificationMaximumAgeDays } from "./opportunityStatus";
 
 const now = new Date();
@@ -25,48 +26,6 @@ type SeedOpportunity = Omit<
 > & {
   status?: Opportunity["status"];
 };
-
-export const categories: Category[] = [
-  "STEM",
-  "Library & Community",
-  "Coding & Robotics",
-  "Science & Engineering",
-  "AI & Digital Media",
-  "Makerspace & Fabrication",
-  "Camps",
-  "Hackathons & Competitions",
-  "Career & Mentorship",
-  "Scholarships",
-  "Newcomer & Settlement",
-  "Family Learning",
-  "Arts & Media",
-  "Family STEM",
-  "Volunteer Hours",
-  "Co-op & SHSM",
-  "Youth Leadership"
-];
-
-export const cityOptions = [
-  "Ajax",
-  "Aurora",
-  "Brampton",
-  "Burlington",
-  "Clarington",
-  "Halton Hills",
-  "Markham",
-  "Milton",
-  "Mississauga",
-  "Newmarket",
-  "Oakville",
-  "Oshawa",
-  "Pickering",
-  "Richmond Hill",
-  "Thornhill",
-  "Toronto",
-  "Unionville",
-  "Vaughan",
-  "Whitby"
-];
 
 export const gtaFsaCentres: Record<string, { label: string; latitude: number; longitude: number }> = {
   M1B: { label: "Scarborough", latitude: 43.8067, longitude: -79.1944 },
@@ -945,25 +904,4 @@ export const reviewQueue: ReviewItem[] = [
     recommendedAction: "translate",
     createdAt: "2026-05-26T12:00:00-04:00"
   }
-];
-
-export const languagePreferenceOrder: LanguageCode[] = [
-  "en",
-  "fr",
-  "zh",
-  "yue",
-  "pa",
-  "ur",
-  "ta",
-  "tl",
-  "es",
-  "ar",
-  "fa",
-  "hi",
-  "pt",
-  "gu",
-  "bn",
-  "ja",
-  "ko",
-  "hu"
 ];

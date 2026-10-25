@@ -32,7 +32,7 @@
 :is(.hero-search button, .oe-nearby-submit, .primary-button, .soft-button,
     .oe-primary, .oe-secondary, .oe-mobile-apply, .oe-load-more button) {
   border-radius: 15px;
-  box-shadow: 0 5px 0 var(--playful-button-edge), 0 8px 15px var(--playful-shadow);
+  box-shadow: 0 3px 0 var(--playful-button-edge);
   transform: none;
   translate: 0 0;
   rotate: 0deg;
@@ -58,11 +58,11 @@
   outline: 3px solid var(--accent);
   outline-offset: 5px;
   translate: 0 0;
-  box-shadow: 0 8px 0 var(--playful-button-edge), 0 12px 20px var(--playful-shadow);
+  box-shadow: 0 3px 0 var(--playful-button-edge);
 }
 
 :is(.icon-button, .saved-link, .oe-bookmark, .oe-filter-toggle, .oe-dialog-close) {
-  box-shadow: 0 3px 0 var(--playful-soft-edge);
+  box-shadow: none;
   background-color: var(--surface);
   transform: none;
   translate: 0 0;
@@ -112,7 +112,7 @@
 .desktop-nav a:focus-visible::after,
 .desktop-nav a[aria-current]::after { opacity: 1; translate: 0 0; }
 .oe-details-link { border-radius: 10px; padding-inline: 11px; background: var(--tint); }
-.oe-view-toggle { border-radius: 13px; box-shadow: 0 3px 0 var(--playful-soft-edge); }
+.oe-view-toggle { border-radius: 13px; box-shadow: none; }
 .oe-view-toggle button {
   border-radius: 9px;
   translate: 0 0;
@@ -154,23 +154,23 @@
 
 .oe-card {
   border-radius: 22px;
-  box-shadow: 0 5px 0 var(--playful-card-edge);
+  box-shadow: none;
   transform: none;
   translate: 0 0;
   rotate: 0deg;
   transition: translate 420ms var(--playful-spring), rotate 420ms var(--playful-spring),
     box-shadow 180ms ease, border-color 180ms ease;
-  animation: gta-card-settle 320ms var(--playful-ease);
+
 }
 .oe-card:focus-within {
   border-color: var(--accent);
-  box-shadow: 0 7px 0 var(--playful-soft-edge), 0 12px 22px var(--playful-shadow);
+  box-shadow: none;
 }
 .oe-detail[open] { animation: gta-dialog-open 280ms var(--playful-ease); }
 .oe-detail[open]::backdrop { animation: gta-backdrop-in 180ms ease; }
 .mobile-nav { animation: gta-menu-open 280ms var(--playful-ease); }
 .mobile-nav a { border-radius: 11px; }
-.mobile-nav a:focus-visible { background: var(--tint); box-shadow: 0 3px 0 var(--playful-soft-edge); }
+.mobile-nav a:focus-visible { background: var(--tint); box-shadow: none; }
 .oe-filters-open { animation: gta-menu-open 280ms var(--playful-ease); }
 .oe-interest-more > summary, .oe-more-filters > summary {
   border-radius: 9px;
@@ -178,7 +178,7 @@
 }
 .oe-interest-more > summary:focus-visible, .oe-more-filters > summary:focus-visible {
   background: var(--tint);
-  box-shadow: 0 3px 0 var(--playful-soft-edge);
+  box-shadow: none;
 }
 .oe-interest-more > summary > svg, .oe-more-filters > summary > svg {
   transition: transform 260ms var(--playful-spring);
@@ -226,7 +226,7 @@
     transform: none;
     translate: 0 0;
     rotate: 0deg;
-    box-shadow: 0 9px 0 var(--playful-button-edge), 0 15px 22px var(--playful-shadow);
+    box-shadow: 0 4px 0 var(--playful-button-edge);
   }
   :is(.hero-search button, .primary-button, .oe-primary):hover { background: var(--accent); }
   .oe-nearby-submit:hover { background: #ffda53; }
@@ -246,7 +246,7 @@
     translate: 0 0;
     rotate: 0deg;
     border-color: var(--accent);
-    box-shadow: 0 10px 0 var(--playful-card-edge), 0 18px 26px var(--playful-shadow);
+    box-shadow: none;
   }
   .oe-interest-option:hover {
     transform: none;
@@ -263,7 +263,7 @@
     color: var(--accent);
   }
   .desktop-nav a:hover::after { opacity: 1; translate: 0 0; }
-  .mobile-nav a:hover { background: var(--tint); box-shadow: 0 3px 0 var(--playful-soft-edge); }
+  .mobile-nav a:hover { background: var(--tint); box-shadow: none; }
   :is(.oe-details-link, .oe-all-filters-link, .oe-landing-results-heading a, .text-link):hover > svg {
     animation: gta-arrow-nudge 370ms var(--playful-ease);
   }
@@ -321,7 +321,7 @@
 @keyframes gta-card-settle {
   0% { box-shadow: 0 1px 0 var(--playful-card-edge); }
   70% { box-shadow: 0 7px 0 var(--playful-card-edge); }
-  100% { box-shadow: 0 5px 0 var(--playful-card-edge); }
+  100% { box-shadow: none; }
 }
 @keyframes gta-options-open {
   from { background-color: var(--tint); }

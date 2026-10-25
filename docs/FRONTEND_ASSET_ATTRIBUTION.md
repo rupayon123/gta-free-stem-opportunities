@@ -280,3 +280,11 @@ Apache License
    See the License for the specific language governing permissions and
    limitations under the License.
 ```
+
+## October25 product refresh
+
+`components/DiscoveryScene.tsx` is an original inline SVG neighbourhood/compass illustration created for GTA Free STEM. It replaces the generated photographic-style collage on the homepage; earlier image files remain as historical project assets. New curiosity choices use the existing Lucide icons. No new animation runtime, third-party account, registry installer or paid artwork was added. See `product-design.md` for the reviewed resources and selection rationale.
+
+### Hairline compass motion
+
+The spring integration in `lib/discoveryMotion.ts` is adapted from Lucas Marques, Hairline, MIT, commit `37d2e78dcb333ab30c3338e28ed4a690364ea014`, `packages/hairline/src/core/motion.ts`: https://github.com/lucasmarkes/hairline/blob/37d2e78dcb333ab30c3338e28ed4a690364ea014/packages/hairline/src/core/motion.ts . Changes keep reduced motion instance-local, cap long-frame computation and run the website controller only for a bounded real selection change. Full upstream licence is shipped at `/licenses/hairline-MIT.txt`. The illustration is original; no Hairline figure geometry, editor, registry installer, telemetry or new package dependency is included.
