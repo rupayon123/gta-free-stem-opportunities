@@ -72,6 +72,10 @@ sys.exit(subprocess.run([os.environ['REAL_GIT'], *args]).returncode)
 import json, os, pathlib, sys
 with open(os.environ['TEST_LOG'], 'a') as log:
     log.write(json.dumps(['npm', *sys.argv[1:]]) + '\\n')
+command = ' '.join(sys.argv[1:])
+if command == os.environ.get('FAIL_NPM_GATE'):
+    print('Fixture failure for npm ' + command, file=sys.stderr)
+    sys.exit(43)
 if sys.argv[1:] == ['run', 'engine:refresh']:
     if os.environ.get('FAIL_ENGINE') == '1':
         sys.exit(42)
@@ -175,6 +179,43 @@ if sys.argv[1:] == ['run', 'engine:refresh']:
         self.assertEqual(self.remote_head(), tip)
         self.assertEqual(sum(cmd[0] == "push" for cmd in self.commands("git")), 1)
         self.assertNotIn(["run", "build"], self.commands("npm"))
+
+    def assert_failed_retry_gate_preserves_remote(self, gate):
+        tip = self.advance()
+        accepted_tree = self.git(self.remote, "rev-parse", "main^{tree}").stdout.strip()
+        accepted_data = {name: self.git(self.remote, "show", "main:" + name).stdout for name in FILES}
+
+        result = self.run_helper(FAIL_NPM_GATE=gate)
+
+        self.assertEqual(result.returncode, 43, result.stderr)
+        self.assertIn("Fixture failure for npm " + gate, result.stderr)
+        self.assertIn("Regenerating against its new tip (attempt 2/3)", result.stdout)
+        self.assertEqual(self.remote_head(), tip)
+        self.assertEqual(self.git(self.remote, "rev-parse", "main^{tree}").stdout.strip(), accepted_tree)
+        for name, contents in accepted_data.items():
+            self.assertEqual(self.git(self.remote, "show", "main:" + name).stdout, contents)
+        self.assertEqual([" ".join(cmd) for cmd in self.commands("npm")], GATES[:GATES.index(gate) + 1])
+        commands = self.commands("git")
+        # Only the original, rejected bot publication is attempted. A failed
+        # retry gate must never commit or publish the regenerated local files.
+        self.assertEqual(sum(cmd[0] == "push" for cmd in commands), 1)
+        self.assertEqual(sum(cmd[0] == "commit" for cmd in commands), 1)
+        self.assertEqual(sum(cmd[0] == "fetch" for cmd in commands), 1)
+        self.assertEqual(sum(cmd[0] == "reset" for cmd in commands), 1)
+        self.assertFalse(any(
+            argument == "-f" or argument.startswith(("--force", "+"))
+            for command in commands if command[0] == "push"
+            for argument in command[1:]
+        ))
+
+    def test_failed_retry_dependency_install_keeps_accepted_remote_unchanged(self):
+        self.assert_failed_retry_gate_preserves_remote("ci")
+
+    def test_failed_retry_production_audit_keeps_accepted_remote_unchanged(self):
+        self.assert_failed_retry_gate_preserves_remote("audit --omit=dev --audit-level=high")
+
+    def test_failed_retry_build_keeps_accepted_remote_unchanged(self):
+        self.assert_failed_retry_gate_preserves_remote("run build")
 
     def test_rejection_without_remote_advance_does_not_reset(self):
         tip = self.remote_head()
