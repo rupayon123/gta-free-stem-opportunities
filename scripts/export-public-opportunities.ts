@@ -1,15 +1,16 @@
 import assert from "node:assert/strict";
-import { mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, mkdtempSync, readFileSync, renameSync, rmSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { dirname, join } from "node:path";
 import { publicationSnapshotTime, sourceOpportunities } from "../lib/data";
 import { generatedDiscoverySummary } from "../lib/generatedDiscoveryReview";
 import { generatedLibrarySourceHealth, generatedLibraryCollectionHealth } from "../lib/generatedCoreLibraryOpportunities";
 import { publicOpportunities } from "../lib/opportunityStatus";
+import { type FeedPayload, prepareNativePublication, serializeNativeFeed } from "./native-publication";
+import { nativeContentRights } from "./native-content-rights";
+export { serializeNativeFeed } from "./native-publication";
 
 const outputPath = process.env.GTA_PUBLIC_OPPORTUNITIES_EXPORT ?? "public/opportunities.json";
-const maximumNativeBytes = 10_000_000;
-const maximumNativeRecords = 4999;
 
 const publicListings = publicOpportunities(sourceOpportunities, publicationSnapshotTime()).map((opportunity) => ({
   id: opportunity.id,
@@ -66,23 +67,9 @@ const payload = {
       reviewCandidates: generatedDiscoverySummary.newCandidates
     }
   },
+  contentRights: nativeContentRights(publicListings, sourceOpportunities, publicationSnapshotTime().toISOString().slice(0, 10)),
   opportunities: publicListings
 };
-
-type FeedPayload = { count: number; opportunities: readonly unknown[] };
-export function serializeNativeFeed(value: FeedPayload) {
-  if (value.count !== value.opportunities.length || value.count > maximumNativeRecords) {
-    throw new Error(`Native feed count is inconsistent or exceeds ${maximumNativeRecords} records. Previous output was retained.`);
-  }
-  // Optional per-record translations are intentionally omitted. Both native
-  // clients have category/UI localization and factual original-text fallbacks;
-  // repeated generated templates would exceed their shared 10 MB input limit.
-  const contents = `${JSON.stringify(value, null, 2)}\n`;
-  if (Buffer.byteLength(contents, "utf8") > maximumNativeBytes) {
-    throw new Error(`Native feed exceeds ${maximumNativeBytes} UTF-8 bytes. Previous output was retained.`);
-  }
-  return contents;
-}
 
 function writeNativeFeed(path: string, value: FeedPayload) {
   const contents = serializeNativeFeed(value);
@@ -93,6 +80,8 @@ function writeNativeFeed(path: string, value: FeedPayload) {
 }
 
 if (process.argv.includes("--self-test")) {
+  const previous = readFileSync(outputPath, "utf8");
+  assert.equal(prepareNativePublication(payload, previous, "verify").contents, previous);
   const actual = serializeNativeFeed(payload);
   assert.equal(JSON.parse(actual).opportunities.length, publicListings.length);
   assert(publicListings.every((row) => !Object.hasOwn(row, "translations")));
@@ -110,6 +99,16 @@ if (process.argv.includes("--self-test")) {
   } finally { rmSync(directory, { recursive: true, force: true }); }
   console.log(JSON.stringify({ nativeExportSelfTest: true, records: publicListings.length, bytes: Buffer.byteLength(actual, "utf8"), optionalTranslations: "missing and empty accepted", overflowPreservesPreviousFile: true }));
 } else {
-  const bytes = writeNativeFeed(outputPath, payload);
-  console.log(`Exported ${publicListings.length} public opportunities (${bytes} bytes, original provider text) to ${outputPath}`);
+  const mode = process.argv.includes("--publish") ? "publish" : "verify";
+  const previous = existsSync(outputPath) ? readFileSync(outputPath, "utf8") : undefined;
+  const publication = prepareNativePublication(payload, previous, mode);
+  if (publication.changed) {
+    mkdirSync(dirname(outputPath), { recursive: true });
+    const temporary = `${outputPath}.${process.pid}.tmp`;
+    try {
+      writeFileSync(temporary, publication.contents, { flag: "wx" });
+      renameSync(temporary, outputPath);
+    } finally { rmSync(temporary, { force: true }); }
+  }
+  console.log(`${mode === "publish" ? "Published" : "Verified committed"} ${publicListings.length} public opportunities (${Buffer.byteLength(publication.contents, "utf8")} bytes; revision ${publication.publicationRevision})${publication.changed ? "" : "; preserved exact accepted bytes"}`);
 }
