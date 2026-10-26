@@ -3,24 +3,25 @@ import type { DiscoveredOpportunity } from "./discovery";
 export const generatedDiscoverySummary = {
   "mode": "deterministic",
   "sourcesChecked": 30,
-  "candidatesFound": 274,
-  "newCandidates": 54,
-  "duplicatesSkipped": 31,
+  "candidatesFound": 239,
+  "newCandidates": 51,
+  "duplicatesSkipped": 23,
   "warnings": [
     "Could not check Credit Valley Conservation youth opportunities: 403 Forbidden.",
+    "Could not check TRCA youth volunteer opportunities: fetch failed.",
     "Could not check Volunteer MBC youth opportunities: 403 Forbidden.",
     "Could not check Eventbrite free science and technology events: 405 Not Allowed.",
     "Could not check Eventbrite free online science and technology events: 405 Not Allowed."
   ],
   "sourceHealth": {
     "schemaVersion": 1,
-    "generatedAt": "2026-10-26T04:52:25.910Z",
+    "generatedAt": "2026-10-26T13:09:36.267Z",
     "status": "healthy",
     "failureReasons": [],
     "sourcesChecked": 30,
-    "successfulSources": 26,
-    "failedSources": 4,
-    "sourceSuccessRatio": 0.8667,
+    "successfulSources": 25,
+    "failedSources": 5,
+    "sourceSuccessRatio": 0.8333,
     "minimumSourceSuccessRatio": 0.75
   }
 } as const;
@@ -883,97 +884,6 @@ export const generatedDiscoveryReviewCandidates = [
       "No clear future date found on the crawled page."
     ],
     "sourceName": "Halton Hills Public Library programs"
-  },
-  {
-    "id": "discovered-trca-youth-youth-opportunities-at-trca-bd0e50237819",
-    "title": "Youth Opportunities at TRCA",
-    "organization": "Toronto and Region Conservation Authority",
-    "description": "TRCA offers programs to support youth and young adults who are interested in getting involved in the conservation sector.",
-    "city": "Toronto",
-    "region": "Toronto",
-    "ageMin": 13,
-    "ageMax": 18,
-    "category": "Science & Engineering",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-10-26T09:00:00-04:00",
-    "sourceUrl": "https://trca.ca/get-involved/youth-opportunities",
-    "lastChecked": "2026-10-26",
-    "lastSeen": "2026-10-26",
-    "status": "needs_review",
-    "tags": [
-      "science & engineering",
-      "youth",
-      "conservation"
-    ],
-    "confidence": "medium",
-    "reviewReasons": [
-      "No clear future date found on the crawled page.",
-      "Free access wording needs human confirmation."
-    ],
-    "sourceName": "TRCA youth volunteer opportunities"
-  },
-  {
-    "id": "discovered-trca-youth-volunteer-with-trca-cdffdd979d6f",
-    "title": "Volunteer with TRCA",
-    "organization": "Toronto and Region Conservation Authority",
-    "description": "Volunteer with TRCA listed by TRCA youth volunteer opportunities.",
-    "city": "Toronto",
-    "region": "Toronto",
-    "ageMin": 13,
-    "ageMax": 18,
-    "category": "Volunteer Hours",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-10-26T09:00:00-04:00",
-    "sourceUrl": "https://trca.ca/get-involved/volunteer",
-    "lastChecked": "2026-10-26",
-    "lastSeen": "2026-10-26",
-    "status": "needs_review",
-    "tags": [
-      "volunteer hours",
-      "volunteer"
-    ],
-    "confidence": "medium",
-    "reviewReasons": [
-      "No clear future date found on the crawled page.",
-      "Free access wording needs human confirmation."
-    ],
-    "sourceName": "TRCA youth volunteer opportunities"
-  },
-  {
-    "id": "discovered-trca-youth-conservation-leadership-professionals-05a97c280482",
-    "title": "Conservation Leadership Professionals",
-    "organization": "Toronto and Region Conservation Authority",
-    "description": "Conservation Leadership Professionals listed by TRCA youth volunteer opportunities.",
-    "city": "Toronto",
-    "region": "Toronto",
-    "ageMin": 13,
-    "ageMax": 18,
-    "category": "Volunteer Hours",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-10-26T09:00:00-04:00",
-    "sourceUrl": "https://trca.ca/learning/adult/conservation-leadership-professionals",
-    "lastChecked": "2026-10-26",
-    "lastSeen": "2026-10-26",
-    "status": "needs_review",
-    "tags": [
-      "volunteer hours",
-      "conservation"
-    ],
-    "confidence": "medium",
-    "reviewReasons": [
-      "No clear future date found on the crawled page.",
-      "Free access wording needs human confirmation."
-    ],
-    "sourceName": "TRCA youth volunteer opportunities"
   },
   {
     "id": "discovered-uhn-stem-pathways-uhn-stem-pathways-7847b49cfe74",
