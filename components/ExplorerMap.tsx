@@ -95,12 +95,45 @@ export function ExplorerMap({ items, onSelect, language }: {
   const [ready, setReady] = useState(false);
   const [failed, setFailed] = useState(false);
   const [attempt, setAttempt] = useState(0);
+  const [is3D, setIs3D] = useState(false);
+
+  const changePerspective = (threeDimensions: boolean) => {
+    const map = mapRef.current;
+    if (!map || !ready || failed) return;
+    const locations = mapLocations(currentItems.current);
+    const duration = window.matchMedia("(prefers-reduced-motion: reduce)").matches ? 0 : 400;
+    if (threeDimensions && locations.length) {
+      const center = map.getCenter();
+      const nearest = locations.reduce((best, location) =>
+        Math.hypot(location.longitude - center.lng, location.latitude - center.lat) <
+        Math.hypot(best.longitude - center.lng, best.latitude - center.lat) ? location : best);
+      map.easeTo({ center: [nearest.longitude, nearest.latitude], zoom: Math.max(15.5, map.getZoom()), pitch: 55, bearing: -20, duration });
+    } else {
+      map.easeTo({ pitch: 0, bearing: 0, duration });
+    }
+    setIs3D(threeDimensions);
+  };
+
+  const showAllLocations = async () => {
+    const map = mapRef.current;
+    const locations = mapLocations(currentItems.current);
+    if (!map || !ready || failed || !locations.length) return;
+    const { LngLatBounds } = await import("maplibre-gl");
+    // A retry can replace the map while the module loads.
+    if (map !== mapRef.current) return;
+    const bounds = new LngLatBounds();
+    locations.forEach((location) => bounds.extend([location.longitude, location.latitude]));
+    map.fitBounds(bounds, { padding: mapContentPadding(map), maxZoom: 12, pitch: 0, bearing: 0, duration: 0 });
+    setIs3D(false);
+  };
 
   useEffect(() => {
     let cancelled = false;
     let timer: ReturnType<typeof setTimeout> | undefined;
+    let themeObserver: MutationObserver | undefined;
     setFailed(false);
     setReady(false);
+    setIs3D(false);
     previousBoundsKey.current = "";
 
     async function initialize() {
@@ -110,14 +143,29 @@ export function ExplorerMap({ items, onSelect, language }: {
         maplibre.setWorkerUrl("/vendor/maplibre/maplibre-gl-worker.mjs");
         const map = new maplibre.Map({
           container: containerRef.current,
-          style: "https://tiles.openfreemap.org/styles/liberty",
+          style: "https://tiles.openfreemap.org/styles/" + (document.documentElement.dataset.theme === "dark" ? "dark" : "liberty"),
           center: [-79.5, 43.78],
           zoom: 8.3,
           attributionControl: { compact: true }
         });
+        // Liberty includes buildings; the dark style needs the same real vector
+        // height layer added after each style load (including theme changes).
+        map.on("style.load", () => {
+          if (cancelled || map.getLayer("building-3d")) return;
+          if (!map.getSource("openmaptiles")) return;
+          const labels = map.getStyle().layers.find((layer) => layer.type === "symbol")?.id;
+          map.addLayer({ id: "building-3d", type: "fill-extrusion", source: "openmaptiles", "source-layer": "building", minzoom: 14,
+            paint: { "fill-extrusion-color": "#667887", "fill-extrusion-height": ["coalesce", ["get", "render_height"], 0], "fill-extrusion-base": ["coalesce", ["get", "render_min_height"], 0], "fill-extrusion-opacity": 0.85 }
+          }, labels);
+        });
         mapRef.current = map;
         map.scrollZoom.disable();
-        map.addControl(new maplibre.NavigationControl({ showCompass: false }), "top-right");
+        map.addControl(new maplibre.NavigationControl({ showCompass: true, visualizePitch: true }), "top-right");
+        themeObserver = new MutationObserver(() => {
+          if (!cancelled) map.setStyle("https://tiles.openfreemap.org/styles/" + (document.documentElement.dataset.theme === "dark" ? "dark" : "liberty"));
+        });
+        themeObserver.observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
+        map.on("pitchend", () => { if (!cancelled) setIs3D(map.getPitch() > 1); });
         timer = setTimeout(() => { if (!cancelled) setFailed(true); }, 15000);
         map.on("load", () => {
           clearTimeout(timer);
@@ -133,6 +181,7 @@ export function ExplorerMap({ items, onSelect, language }: {
     return () => {
       cancelled = true;
       clearTimeout(timer);
+      themeObserver?.disconnect();
       mapRef.current?.remove();
       mapRef.current = null;
     };
@@ -379,6 +428,11 @@ export function ExplorerMap({ items, onSelect, language }: {
   return (
     <div className="oe-map-shell">
       <div className={`oe-map-canvas${failed ? " oe-map-hidden" : ""}`} ref={containerRef} role="region" aria-label={t(language, "map")} />
+      {ready && !failed && <div className="oe-map-perspective" role="group" aria-label="Map perspective" lang="en">
+        <button type="button" aria-pressed={!is3D} onClick={() => changePerspective(false)}>2D</button>
+        <button type="button" aria-pressed={is3D} disabled={!mapLocations(items).length} onClick={() => changePerspective(true)}>3D</button>
+        <button type="button" disabled={!mapLocations(items).length} onClick={() => void showAllLocations()}>All locations</button>
+      </div>}
       {failed ? (
         <div className="oe-map-fallback" role="status" lang="en">
           <MapPin size={28} aria-hidden="true" />
@@ -387,7 +441,7 @@ export function ExplorerMap({ items, onSelect, language }: {
           <button className="oe-secondary" type="button" onClick={() => setAttempt((value) => value + 1)}>Try map again</button>
         </div>
       ) : !ready ? <p className="oe-map-loading" role="status" lang="en">Loading the neighbourhood…</p> : null}
-      <p className="oe-map-caption" lang="en">Numbers count programs. Nearby locations group together; open a group to zoom in, then choose a location or program. Confirm the address with its provider. Online opportunities remain in the list below.</p>
+      <p className="oe-map-caption" lang="en">Numbers count programs. Nearby locations group together; open a group to zoom in, then choose a location or program. 3D opens a nearby program location; building heights appear where map data is available. Confirm the address with its provider. Online opportunities remain in the list below.</p>
     </div>
   );
 }
