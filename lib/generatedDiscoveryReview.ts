@@ -3,24 +3,25 @@ import type { DiscoveredOpportunity } from "./discovery";
 export const generatedDiscoverySummary = {
   "mode": "deterministic",
   "sourcesChecked": 30,
-  "candidatesFound": 270,
-  "newCandidates": 48,
-  "duplicatesSkipped": 32,
+  "candidatesFound": 232,
+  "newCandidates": 44,
+  "duplicatesSkipped": 23,
   "warnings": [
     "Could not check Credit Valley Conservation youth opportunities: 403 Forbidden.",
+    "Could not check TRCA youth volunteer opportunities: fetch failed.",
     "Could not check Volunteer MBC youth opportunities: 403 Forbidden.",
     "Could not check Eventbrite free science and technology events: 405 Not Allowed.",
     "Could not check Eventbrite free online science and technology events: 405 Not Allowed."
   ],
   "sourceHealth": {
     "schemaVersion": 1,
-    "generatedAt": "2026-10-27T18:06:21.317Z",
+    "generatedAt": "2026-10-27T22:18:53.365Z",
     "status": "healthy",
     "failureReasons": [],
     "sourcesChecked": 30,
-    "successfulSources": 26,
-    "failedSources": 4,
-    "sourceSuccessRatio": 0.8667,
+    "successfulSources": 25,
+    "failedSources": 5,
+    "sourceSuccessRatio": 0.8333,
     "minimumSourceSuccessRatio": 0.75
   }
 } as const;
@@ -167,35 +168,6 @@ export const generatedDiscoveryReviewCandidates = [
       "No clear future date found on the crawled page."
     ],
     "sourceName": "Aurora Public Library volunteer opportunities"
-  },
-  {
-    "id": "discovered-whitby-programs-computer-and-technology-55d33610656f",
-    "title": "Computer and Technology",
-    "organization": "Whitby Public Library",
-    "description": "Computer and Technology listed by Whitby Public Library programs.",
-    "city": "Whitby",
-    "region": "Durham",
-    "ageMin": 1,
-    "ageMax": 18,
-    "category": "STEM",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-10-27T09:00:00-04:00",
-    "sourceUrl": "https://whitbylibrary.libcal.com/calendar/adult?&t=d&d=0000-00-00&cal%5B%5D=7833&ct%5B%5D=35170",
-    "lastChecked": "2026-10-27",
-    "lastSeen": "2026-10-27",
-    "status": "needs_review",
-    "tags": [
-      "stem",
-      "technology"
-    ],
-    "confidence": "high",
-    "reviewReasons": [
-      "No clear future date found on the crawled page."
-    ],
-    "sourceName": "Whitby Public Library programs"
   },
   {
     "id": "discovered-ajax-library-stem-makerspace-33a7bf527381",
@@ -401,7 +373,7 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Oshawa Public Libraries STEM events"
   },
   {
-    "id": "discovered-clarington-library-programs-learning-technology-230c06781e35",
+    "id": "discovered-clarington-library-programs-learning-technology-ef1f52444b44",
     "title": "Learning & Technology",
     "organization": "Clarington Library, Museums & Archives",
     "description": "Learning & Technology listed by Clarington Library programs.",
@@ -415,7 +387,7 @@ export const generatedDiscoveryReviewCandidates = [
       "en"
     ],
     "startDate": "2026-10-27T09:00:00-04:00",
-    "sourceUrl": "http://www.cplma.ca/learning-technology",
+    "sourceUrl": "https://www.cplma.ca/learning-technology",
     "lastChecked": "2026-10-27",
     "lastSeen": "2026-10-27",
     "status": "needs_review",
@@ -430,7 +402,7 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Clarington Library programs"
   },
   {
-    "id": "discovered-clarington-library-programs-computers-internet-access-3cb588204464",
+    "id": "discovered-clarington-library-programs-computers-internet-access-541dee3079cc",
     "title": "Computers & Internet Access",
     "organization": "Clarington Library, Museums & Archives",
     "description": "Computers & Internet Access listed by Clarington Library programs.",
@@ -444,7 +416,7 @@ export const generatedDiscoveryReviewCandidates = [
       "en"
     ],
     "startDate": "2026-10-27T09:00:00-04:00",
-    "sourceUrl": "http://www.cplma.ca/learning-technology/computers-and-internet-access",
+    "sourceUrl": "https://www.cplma.ca/learning-technology/computers-and-internet-access",
     "lastChecked": "2026-10-27",
     "lastSeen": "2026-10-27",
     "status": "needs_review",
@@ -458,7 +430,7 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Clarington Library programs"
   },
   {
-    "id": "discovered-clarington-library-programs-maker-s-space-2a794c50bde2",
+    "id": "discovered-clarington-library-programs-maker-s-space-73692ec01a1b",
     "title": "Maker's Space",
     "organization": "Clarington Library, Museums & Archives",
     "description": "Maker's Space listed by Clarington Library programs.",
@@ -472,7 +444,7 @@ export const generatedDiscoveryReviewCandidates = [
       "en"
     ],
     "startDate": "2026-10-27T09:00:00-04:00",
-    "sourceUrl": "http://www.cplma.ca/learning-technology/makers-space-the-studio",
+    "sourceUrl": "https://www.cplma.ca/learning-technology/makers-space-the-studio",
     "lastChecked": "2026-10-27",
     "lastSeen": "2026-10-27",
     "status": "needs_review",
@@ -486,7 +458,7 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Clarington Library programs"
   },
   {
-    "id": "discovered-clarington-library-programs-jobs-volunteering-034bd1adb633",
+    "id": "discovered-clarington-library-programs-jobs-volunteering-812e9b03cdd9",
     "title": "Jobs & Volunteering",
     "organization": "Clarington Library, Museums & Archives",
     "description": "Jobs & Volunteering listed by Clarington Library programs.",
@@ -500,7 +472,7 @@ export const generatedDiscoveryReviewCandidates = [
       "en"
     ],
     "startDate": "2026-10-27T09:00:00-04:00",
-    "sourceUrl": "http://www.cplma.ca/about-us/jobs-and-volunteering",
+    "sourceUrl": "https://www.cplma.ca/about-us/jobs-and-volunteering",
     "lastChecked": "2026-10-27",
     "lastSeen": "2026-10-27",
     "status": "needs_review",
@@ -741,97 +713,6 @@ export const generatedDiscoveryReviewCandidates = [
       "No clear future date found on the crawled page."
     ],
     "sourceName": "Halton Hills Public Library programs"
-  },
-  {
-    "id": "discovered-trca-youth-youth-opportunities-at-trca-bd0e50237819",
-    "title": "Youth Opportunities at TRCA",
-    "organization": "Toronto and Region Conservation Authority",
-    "description": "TRCA offers programs to support youth and young adults who are interested in getting involved in the conservation sector.",
-    "city": "Toronto",
-    "region": "Toronto",
-    "ageMin": 13,
-    "ageMax": 18,
-    "category": "Science & Engineering",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-10-27T09:00:00-04:00",
-    "sourceUrl": "https://trca.ca/get-involved/youth-opportunities",
-    "lastChecked": "2026-10-27",
-    "lastSeen": "2026-10-27",
-    "status": "needs_review",
-    "tags": [
-      "science & engineering",
-      "youth",
-      "conservation"
-    ],
-    "confidence": "medium",
-    "reviewReasons": [
-      "No clear future date found on the crawled page.",
-      "Free access wording needs human confirmation."
-    ],
-    "sourceName": "TRCA youth volunteer opportunities"
-  },
-  {
-    "id": "discovered-trca-youth-volunteer-with-trca-cdffdd979d6f",
-    "title": "Volunteer with TRCA",
-    "organization": "Toronto and Region Conservation Authority",
-    "description": "Volunteer with TRCA listed by TRCA youth volunteer opportunities.",
-    "city": "Toronto",
-    "region": "Toronto",
-    "ageMin": 13,
-    "ageMax": 18,
-    "category": "Volunteer Hours",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-10-27T09:00:00-04:00",
-    "sourceUrl": "https://trca.ca/get-involved/volunteer",
-    "lastChecked": "2026-10-27",
-    "lastSeen": "2026-10-27",
-    "status": "needs_review",
-    "tags": [
-      "volunteer hours",
-      "volunteer"
-    ],
-    "confidence": "medium",
-    "reviewReasons": [
-      "No clear future date found on the crawled page.",
-      "Free access wording needs human confirmation."
-    ],
-    "sourceName": "TRCA youth volunteer opportunities"
-  },
-  {
-    "id": "discovered-trca-youth-conservation-leadership-professionals-05a97c280482",
-    "title": "Conservation Leadership Professionals",
-    "organization": "Toronto and Region Conservation Authority",
-    "description": "Conservation Leadership Professionals listed by TRCA youth volunteer opportunities.",
-    "city": "Toronto",
-    "region": "Toronto",
-    "ageMin": 13,
-    "ageMax": 18,
-    "category": "Volunteer Hours",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-10-27T09:00:00-04:00",
-    "sourceUrl": "https://trca.ca/learning/adult/conservation-leadership-professionals",
-    "lastChecked": "2026-10-27",
-    "lastSeen": "2026-10-27",
-    "status": "needs_review",
-    "tags": [
-      "volunteer hours",
-      "conservation"
-    ],
-    "confidence": "medium",
-    "reviewReasons": [
-      "No clear future date found on the crawled page.",
-      "Free access wording needs human confirmation."
-    ],
-    "sourceName": "TRCA youth volunteer opportunities"
   },
   {
     "id": "discovered-uhn-stem-pathways-uhn-stem-pathways-7847b49cfe74",
