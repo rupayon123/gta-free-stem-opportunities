@@ -93,7 +93,7 @@ export function OpportunityExplorer({ language, initialFilters = {}, highSchool 
   const [filters, setFilters] = useState<Filters>(() => ({ ...DEFAULT_FILTERS, ...initialFilters }));
   const [urlReady, setUrlReady] = useState(false);
   const [filterOpen, setFilterOpen] = useState(false);
-  const [view, setView] = useState<"list" | "map">("list");
+  const [view, setView] = useState<"list" | "map">("map");
   const [sort, setSort] = useState<SortOrder>("relevance");
   const [page, setPage] = useState(1);
   const [savedIds, setSavedIds] = useState<string[]>([]);

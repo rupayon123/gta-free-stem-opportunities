@@ -1,6 +1,8 @@
 # GTA FREE STEM
 
-GTA Free STEM Opportunities helps people of every age find free STEM programs and library events across the Greater Toronto Area. This repository contains the website and the opportunity feed used by the native apps.
+Find free library events, creative workshops and STEM activities across the Greater Toronto Area—for babies, children, teens, parents and adults. Browse without creating an account.
+
+This repository contains the public website, search tools and source collectors. It also publishes the opportunity feed used by the separate iOS and Android apps.
 
 [Open the website](https://gta-free-stem.pages.dev/) | [iOS app](https://github.com/rupayon123/gta-free-stem-ios) | [Android app](https://github.com/rupayon123/gta-free-stem-android)
 
@@ -13,20 +15,29 @@ GTA Free STEM Opportunities helps people of every age find free STEM programs an
 
 Captured from the [public Cloudflare Pages website](https://gta-free-stem.pages.dev/) on October 27, 2026 at a 1440 × 900 desktop viewport. These are unretouched browser captures of the live site, not design mockups. Listings and result counts change as the public feed refreshes; the images show what appeared at capture time. [Capture details](docs/showcase/README.md).
 
+## What you can do
+
+- Search by activity, topic, library or city, including common spelling mistakes.
+- Narrow the results with visible city, age and category filters.
+- Explore locations on the map, or switch to List to scan activities.
+- Open schedules, age ranges, accessibility information when provided, and original registration links.
+- Save activities in the current browser without signing in.
+
 ## Find an activity
 
 1. On the [home page](https://gta-free-stem.pages.dev/), enter an interest, library, or city. You can also leave the search open and choose a city, age, or category.
-2. Select **Find free activities**. In the [opportunity directory](https://gta-free-stem.pages.dev/opportunities/), refine by category, region, city, age, and the available additional filters. Clear filters to return to the broader list.
-3. Open a result to check its schedule, age range, location, provider, and original source. Follow the provider's link to confirm availability and register when required.
-4. Use the bookmark control to save an activity for later on this browser. Saved items are local to the current browser and website address; no account is needed for browsing.
+2. Select **Find free activities**. The [opportunity directory](https://gta-free-stem.pages.dev/opportunities/) opens in **Map** view. Select a location marker to explore its activities, or choose **List** beside Map. Both views use the same search and filters; switching views keeps your choices. Online activities remain available in List.
+3. Refine by city, age, category or the additional filters. Clear filters to return to the broader list.
+4. Open a result to check its schedule, age range, location, provider, and original source. Follow the provider's link to confirm availability and register when required.
+5. Use the bookmark control to save an activity for later on this browser. Saved items are local to the current browser and website address; no account is needed for browsing.
 
 The High School section gathers volunteer hours, co-op, SHSM, mentorship, and other pathways. Listing summaries may be generated for browsing; check the original provider page for complete and current details.
 
 ## About the site
 
-Browse programs by city, region, age, category, and language. The High School section covers volunteer hours, co-op, SHSM, mentorship, and career pathways. Listings include dates, provider information, source links, and a map where location data is available.
+The colourful GTA logo and orbiting science icons carry the app’s visual identity onto the website. Animation has a pause control and respects reduced-motion preferences. Search and filters remain usable without waiting for an opening animation.
 
-Browse and save programs without an account. Anonymous saves stay in the current browser and do not transfer automatically between website addresses. Confirm availability and registration with the original provider.
+The interface offers 18 language choices. Provider descriptions are not fully translated into every language; use the original provider page for authoritative details. Anonymous saves stay in the current browser and do not transfer automatically between website addresses.
 
 The site uses Next.js and TypeScript, with MapLibre and OpenFreeMap for maps. It builds as a static export.
 
@@ -62,7 +73,7 @@ Use `npm run supabase:check` to check the connection. Keep service-role keys, pa
 
 Listings come from public library, community, nonprofit, conservation, and education sources. Public search includes active listings with current or future dates. Expired and unreviewed finds stay out of the public results.
 
-The [refresh workflow](.github/workflows/refresh-opportunities.yml) collects updates, checks source health, and runs QA and build checks before committing listing data. The native apps read the exported public feed in `public/opportunities.json`.
+The [refresh workflow](.github/workflows/refresh-opportunities.yml) runs every six hours. It collects updates, checks source health, and runs QA and build checks before committing listing data. A failed refresh preserves the previous accepted publication. Availability, registration spaces and provider schedules can still change between updates. The native apps read the exported public feed in `public/opportunities.json`.
 
 ```bash
 npm run discover

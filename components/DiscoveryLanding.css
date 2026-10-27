@@ -1,4 +1,4 @@
-.discovery-welcome { padding-block: 28px 24px; }
+.welcome.welcome-simple.discovery-welcome { position: relative; padding-block: 18px; gap: 24px; }
 .discovery-welcome .welcome-intro { max-width: 660px; }
 .discovery-art { min-width: 0; width: 100%; max-width: 460px; justify-self: end; color: var(--ink); }
 .discovery-art > p { margin: -9px 0 0; text-align: center; font-size: 14px; font-weight: 800; }
@@ -13,13 +13,13 @@
 .discovery-scene[data-interest="nature"] .scene-tree { fill: var(--chapter-sun); }
 .discovery-scene[data-interest="stories"] .scene-library { fill: var(--chapter-sun); }
 .landing-finder { background: var(--chapter-mint); border: 0; border-radius: 22px; padding: 28px 32px; }
-.finder-heading { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; }
+.finder-heading { display: flex; align-items: center; gap: 16px; margin-bottom: 16px; }
 .finder-heading p { margin: 5px 0 0; color: var(--ink); }
 .finder-step { display: grid; place-items: center; width: 48px; height: 48px; flex: 0 0 auto; border-radius: 14px; background: var(--yellow); color: #103452; font-family: var(--font-display); font-size: 24px; }
 .finder-query > div { background: var(--surface); border: 1.5px solid var(--control-line); min-height: 52px; }
 .landing-search input, .landing-search select { border-color: var(--control-line); }
 .finder-query input { border: 0; }
-.finder-submit { margin-top: 24px; }
+.finder-submit { margin-top: 18px; }
 .finder-submit p { color: var(--ink); }
 .finder-submit .primary-button { min-height: 52px; }
 .curiosity-choices { border: 0; padding: 0; margin: 26px 0 0; min-width: 0; }
@@ -40,7 +40,10 @@
 @keyframes curiosity-nod { 0%,100% { transform: rotate(0); } 40% { transform: rotate(-13deg); } 70% { transform: rotate(5deg); } }
 @media (max-width: 1100px) { .curiosity-choices > div { grid-template-columns: repeat(2,minmax(0,1fr)); } }
 @media (max-width: 680px) {
-  .discovery-art { display: none; }
+  .discovery-art { display: block; position: absolute; top: 12px; inset-inline-end: 16px; width: 112px; z-index: 1; }
+  .discovery-welcome .eyebrow, .discovery-welcome .welcome-ages { display: none; }
+  .welcome-simple.discovery-welcome h1 { padding-inline-end: 104px; font-size: 32px; min-height: 112px; }
+  .discovery-welcome .welcome-intro { margin-top: 12px; }
   .landing-finder { padding: 20px 18px; border-radius: 18px; }
   .finder-heading { gap: 12px; margin-bottom: 20px; }
   .finder-heading h2 { font-size: 25px; }
@@ -54,4 +57,9 @@
 }
 @media (prefers-reduced-motion: reduce) {
   .scene-compass, .scene-needle, .curiosity-choice, .curiosity-icon svg { transition: none; animation: none; }
+}
+
+@media (max-width: 370px) {
+  .welcome-simple.discovery-welcome h1 { font-size: 28px; padding-inline-end: 84px; min-height: 104px; }
+  .discovery-art { width: 96px; inset-inline-end: 12px; }
 }

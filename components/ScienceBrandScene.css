@@ -1,0 +1,35 @@
+.science-brand-scene { position: relative; width: min(100%, 280px); margin-inline: auto; }
+.science-brand-art { position: relative; width: 100%; aspect-ratio: 1; isolation: isolate; }
+.science-brand-halo { position: absolute; inset: 13%; border-radius: 50%; background: #fffef8; box-shadow: 0 18px 45px #3b9b8a22; }
+.science-brand-logo { position: absolute; inset: 18%; width: 64%; height: 64%; object-fit: contain; z-index: 2; }
+.science-brand-ring { position: absolute; inset: 5%; border: 2px solid #64c7c54a; border-radius: 50%; }
+.science-brand-ring-inner { inset: 9% 6%; border-color: #69c6c633 #69c6c633 #69c6c6cc #ffc1b677; transform: rotate(-23deg); }
+.science-brand-orbit { position: absolute; inset: 8%; }
+.science-brand-item { position: absolute; width: 15%; height: 15%; stroke-width: 2.4; filter: drop-shadow(0 3px 1px #fff9); }
+.science-brand-cog-pink { inset: 13% auto auto 10%; width: 21%; height: 21%; color: #f6aaa1; fill: #f6aaa1; }
+.science-brand-cog-teal { inset: 5% auto auto 31%; color: #54bfc2; fill: #54bfc2; }
+.science-brand-cog-pink circle, .science-brand-cog-teal circle { fill: #fffef8; }
+.science-brand-atom { inset: 19% 4% auto auto; color: #54bfc2; }
+.science-brand-flask { inset: auto auto 15% 8%; color: #0d6c79; fill: #bbebe6; }
+.science-brand-bulb { inset: auto 10% 12% auto; color: #c78b06; fill: #ffda50; }
+.science-brand-spark { inset: 0 31% auto auto; width: 10%; height: 10%; color: #e6b119; fill: #ffda50; }
+.science-brand-control { display: flex; align-items: center; justify-content: center; gap: 6px; min-height: 44px; padding: 5px 10px; margin-inline-start: auto; border: 0; background: transparent; color: var(--accent); font-size: 12px; font-weight: 700; cursor: pointer; }
+.science-brand-control:hover { text-decoration: underline; text-underline-offset: 3px; }
+.science-brand-control:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-radius: 5px; }
+@media (prefers-reduced-motion: no-preference) {
+  .science-brand-orbit { animation: science-brand-orbit 26s linear infinite; }
+  .science-brand-logo { animation: science-brand-breathe 5s ease-in-out infinite; }
+  .science-brand-scene[data-motion-paused="true"] .science-brand-orbit,
+  .science-brand-scene[data-motion-paused="true"] .science-brand-logo { animation-play-state: paused; }
+}
+@keyframes science-brand-orbit { to { transform: rotate(360deg); } }
+@keyframes science-brand-breathe { 50% { transform: translateY(-3px); } }
+@media (prefers-reduced-motion: reduce) {
+  .science-brand-orbit, .science-brand-logo { animation: none; }
+  .science-brand-control { display: none; }
+}
+@media (max-width: 680px) {
+  .science-brand-scene { width: 100%; }
+  .science-brand-control { position: absolute; bottom: -8px; inset-inline-end: -2px; width: 44px; padding: 0; border-radius: 50%; background: var(--paper); }
+  .science-brand-control span { display: none; }
+}

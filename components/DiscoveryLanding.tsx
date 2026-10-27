@@ -7,7 +7,7 @@ import { t, translatedCategory } from "@/lib/i18n";
 import { websiteCopy } from "@/lib/websiteCopy";
 import type { LanguageCode } from "@/lib/types";
 import { ScienceReveal } from "./ScienceMotion";
-import { DiscoveryScene } from "./DiscoveryScene";
+import { ScienceBrandScene } from "./ScienceBrandScene";
 import "./DiscoveryLanding.css";
 
 const topics = [
@@ -38,7 +38,7 @@ export function DiscoveryLanding({ language }: { language: LanguageCode }) {
         <p className="welcome-ages" lang="en">Babies & toddlers · Children · Teens · Adults · Older adults</p>
         <a className="text-link welcome-browse" href="/opportunities/#discover" lang="en">Just looking? Browse all activities <ArrowRight size={18} aria-hidden="true" /></a>
       </ScienceReveal>
-      <div className="discovery-art"><DiscoveryScene interest={chosen?.key ?? "all"} /><p lang="en">Your neighbourhood. A world of possibilities.</p></div>
+      <div className="discovery-art"><ScienceBrandScene language={language} /></div>
     </section>
     <section className="landing-finder" id="discover" aria-labelledby="finder-title">
       <div className="finder-heading"><span className="finder-step" aria-hidden="true"><Compass size={27} /></span><div><h2 id="finder-title" lang="en">Find a free activity</h2><p lang="en">Choose a few details, or leave them open. It’s all free.</p></div></div>
