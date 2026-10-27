@@ -1,0 +1,42 @@
+name: Full description translation benchmark
+
+on:
+  push:
+    branches: [codex/full-description-translations-20261027]
+    paths: [.github/workflows/translation-benchmark.yml]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: full-description-translation-benchmark
+  cancel-in-progress: false
+
+jobs:
+  benchmark:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 35
+    env:
+      HF_HUB_DISABLE_TELEMETRY: "1"
+      DO_NOT_TRACK: "1"
+      OMP_NUM_THREADS: "4"
+    steps:
+      - uses: actions/checkout@v6
+      - name: Validate full-source and stale-content rejection contracts
+        run: python3 -m unittest discover -s scripts/translations -p test_full_description_translation.py -v
+      - name: Install bounded CPU translation runtime
+        run: |
+          python3 -m venv "$RUNNER_TEMP/translation-runtime"
+          "$RUNNER_TEMP/translation-runtime/bin/pip" install --disable-pip-version-check ctranslate2==4.8.4 sentencepiece==0.2.1 numpy==2.2.6
+      - name: Translate one real complete event in three target languages
+        run: |
+          "$RUNNER_TEMP/translation-runtime/bin/python" scripts/translations/full_description_translation.py --benchmark-feed public/opportunities.json --model-dir "$RUNNER_TEMP/translation-model" --output translation-benchmark.json
+      - name: Save small public-content benchmark report
+        if: always()
+        uses: actions/upload-artifact@v6
+        with:
+          name: full-description-translation-benchmark
+          path: translation-benchmark.json
+          if-no-files-found: ignore
+          retention-days: 7
