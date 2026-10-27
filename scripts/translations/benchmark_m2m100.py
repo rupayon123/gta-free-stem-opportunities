@@ -96,8 +96,9 @@ def run(feed, directory, output):
             require(encoded["input_ids"].shape[1] <= 512, "source exceeds bounded input; refusing to truncate")
             started = time.monotonic()
             with torch.inference_mode():
-                result = model.generate(**encoded, forced_bos_token_id=tokenizer.get_lang_id(language), num_beams=3, do_sample=False, max_new_tokens=768)
+                result = model.generate(**encoded, forced_bos_token_id=tokenizer.get_lang_id(language), forced_eos_token_id=None, num_beams=3, do_sample=False, max_new_tokens=768)
             tokens = result[0].tolist()
+            ended_normally = tokens[-1] == tokenizer.eos_token_id and len(tokens) - 1 < 768
             raw = tokenizer.decode(result[0], skip_special_tokens=True)
             restoration_error, restored = None, None
             try:
@@ -105,11 +106,11 @@ def run(feed, directory, output):
             except ValueError as error:
                 restoration_error = str(error)
             end = offset + len(chunk.encode("utf-8"))
-            case["segments"].append({"startByte": offset, "endByte": end, "sourceSHA256": sha(chunk), "source": chunk, "maskedSource": masked, "maskedSourceSHA256": sha(masked), "protected": mapping, "rawTranslation": raw, "text": restored, "restorationError": restoration_error, "endedNormally": tokens[-1] == tokenizer.eos_token_id, "seconds": round(time.monotonic() - started, 3)})
+            case["segments"].append({"startByte": offset, "endByte": end, "sourceSHA256": sha(chunk), "source": chunk, "maskedSource": masked, "maskedSourceSHA256": sha(masked), "protected": mapping, "rawTranslation": raw, "text": restored, "restorationError": restoration_error, "generatedTokenCount": len(tokens) - 1, "endedNormally": ended_normally, "seconds": round(time.monotonic() - started, 3)})
             offset = end
             write(output, report)
             print(json.dumps({"case": key, "segment": len(case["segments"]), "normalEOS": tokens[-1] == tokenizer.eos_token_id, "restored": restoration_error is None}), flush=True)
-            if tokens[-1] != tokenizer.eos_token_id:
+            if not ended_normally:
                 break
         case["fullSourceBytesCovered"] = offset == len(source.encode("utf-8"))
         case["allSegmentsEndedNormally"] = all(segment["endedNormally"] for segment in case["segments"])
