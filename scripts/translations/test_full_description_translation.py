@@ -3,7 +3,7 @@ import json
 from pathlib import Path
 import tempfile
 import unittest
-from full_description_translation import build_index, encode, generate, parse, sha, split_source, translate_entry, validate_index, validate_pack, write, publish_manifest, benchmark_facts
+from full_description_translation import build_index, encode, generate, parse, sha, split_source, translate_entry, validate_index, validate_pack, write, publish_manifest, benchmark_facts, compact_pack, validate_client_pack
 
 
 def row(identity="one", description="Build the device. Test every circuit. Keep the final instruction."):
@@ -116,6 +116,20 @@ class FullDescriptionTests(unittest.TestCase):
     def test_duplicate_json_keys_and_oversized_inputs_are_rejected(self):
         with self.assertRaises(ValueError): parse(b'{"language":"fr","language":"es"}')
         with self.assertRaises(ValueError): parse(b' ' * 10_000_001)
+
+    def test_client_pack_preserves_full_text_without_duplicate_sentence_payload(self):
+        client = compact_pack(self.pack, self.index, "fr")
+        self.assertEqual(client["auditSHA256"], sha(encode(self.pack)))
+        for key, entry in client["translations"].items():
+            self.assertEqual(entry["text"], self.pack["translations"][key]["text"])
+            self.assertNotIn("segments", entry)
+            self.assertEqual(entry["sourceSegmentCount"], entry["translatedSegmentCount"])
+        self.assertLess(len(encode(client)), len(encode(self.pack)))
+
+    def test_compact_client_rejects_incomplete_source_count(self):
+        client = compact_pack(self.pack, self.index, "fr")
+        client["translations"][next(iter(client["translations"]))]["translatedSegmentCount"] = 0
+        with self.assertRaises(ValueError): validate_client_pack(client, self.index, "fr")
 
     def test_full_release_never_accepts_sixteen_languages_or_one_sample(self):
         with tempfile.TemporaryDirectory() as directory:

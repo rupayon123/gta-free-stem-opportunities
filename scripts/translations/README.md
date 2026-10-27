@@ -15,7 +15,7 @@ excerpt requires a source-description hash from its trusted catalogue projection
 
 Each locale file includes `schemaVersion:1`, exact `language`, `sourceIndexSHA256`
 (the SHA256 of source.json bytes), `translationSource`, pinned `model` provenance,
-and `translations:{sourceTextSHA256:{text,segments:[{startByte,endByte,
+and build-only audit `translations:{sourceTextSHA256:{text,segments:[{startByte,endByte,
 sourceSHA256,text,endedNormally:true}]}}`. Segment boundaries are UTF-8 BYTE offsets,
 covering every original byte exactly once, with no gap, overlap or untranslated
 tail. All segments require real model end-of-sequence, not max-token stopping.
@@ -46,3 +46,15 @@ target token. Its model-card language list describes broader dataset coverage.
 Cantonese is explicitly excluded from this engine, with no Mandarin alias. The
 benchmark covers French, Mandarin and Punjabi; a separate proven Cantonese engine
 is required before complete 17-language delivery can be claimed.
+
+Client locale files use `artifactType:"full-description-locale-pack"` and
+`translations:{sourceTextSHA256:{text,sourceSegmentCount,translatedSegmentCount,
+endedNormally:true}}`, plus `auditSHA256`. Counts are equal positive integers.
+The producer first validates all detailed audit segments and full text, then
+compacts without altering the text. Detailed source/target sentence transcripts
+stay in build-only bounded 64 MB audits; apps never download them. This avoids
+duplicating every translated paragraph and loading thousands of audit records
+into the UI. All source, client locale and manifest responses retain their 10 MB
+limit. The final manifest is not replaced unless every required compact locale
+passes validation. Model choice is still experimental; no production coverage
+is claimed by the schema or successful structural tests alone.

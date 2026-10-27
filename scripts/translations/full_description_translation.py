@@ -12,6 +12,7 @@ from urllib.parse import urlparse
 LANGUAGES = ("fr", "zh", "yue", "pa", "ur", "ta", "tl", "es", "ar", "fa", "hi", "pt", "gu", "bn", "ja", "ko", "hu")
 MODEL_LANGUAGES = {language: ("fil" if language == "tl" else language) for language in LANGUAGES if language != "yue"}
 MAX_BYTES = 10_000_000
+MAX_AUDIT_BYTES = 64_000_000
 MAX_RECORDS = 15_000
 MAX_TEXT_BYTES = 100_000
 PROVIDERS = {"Toronto Public Library": "tpl.bibliocommons.com", "Markham Public Library": "markham.bibliocommons.com"}
@@ -54,19 +55,19 @@ def pairs(items):
     return result
 
 
-def parse(raw: bytes):
-    require(len(raw) <= MAX_BYTES, "translation file exceeds 10 MB")
+def parse(raw: bytes, maximum_bytes: int = MAX_BYTES):
+    require(len(raw) <= maximum_bytes, "translation file exceeds 10 MB")
     return json.loads(raw.decode("utf-8"), object_pairs_hook=pairs)
 
 
-def read(path: Path):
+def read(path: Path, maximum_bytes: int = MAX_BYTES):
     with path.open("rb") as stream:
-        return parse(stream.read(MAX_BYTES + 1))
+        return parse(stream.read(maximum_bytes + 1), maximum_bytes)
 
 
-def write(path: Path, value: object) -> bytes:
+def write(path: Path, value: object, maximum_bytes: int = MAX_BYTES) -> bytes:
     raw = encode(value)
-    require(len(raw) <= MAX_BYTES, "translation file exceeds 10 MB")
+    require(len(raw) <= maximum_bytes, "translation file exceeds its byte bound")
     path.parent.mkdir(parents=True, exist_ok=True)
     temporary = path.with_name(path.name + f".{os.getpid()}.tmp")
     try:
@@ -140,16 +141,42 @@ def validate_pack(pack: dict, index: dict, language: str) -> dict:
             offset = segment["endByte"]
         require(offset == len(index["texts"][text_hash].encode("utf-8")), "untranslated tail of full source text")
         require(text == " ".join(segment["text"].strip() for segment in segments), "translated segments do not reconstruct body")
-    require(len(encode(pack)) <= MAX_BYTES, "translation pack exceeds 10 MB")
+    require(len(encode(pack)) <= MAX_AUDIT_BYTES, "generation audit exceeds its build-only byte bound")
     return pack
+
+
+def validate_client_pack(pack: dict, index: dict, language: str) -> dict:
+    validate_index(index)
+    require(language in MODEL_LANGUAGES and isinstance(pack, dict) and pack.get("schemaVersion") == 1 and pack.get("artifactType") == "full-description-locale-pack" and pack.get("language") == language, "wrong client translation locale/schema")
+    require(pack.get("sourceIndexSHA256") == sha(encode(index)), "stale client source index")
+    require(pack.get("translationSource") == ENGINE and pack.get("model") == MODEL, "unreviewed client translation engine")
+    require(isinstance(pack.get("auditSHA256"), str) and re.fullmatch(r"[0-9a-f]{64}", pack["auditSHA256"]) is not None, "missing generation audit identity")
+    entries = pack.get("translations")
+    require(isinstance(entries, dict) and set(entries) == set(index["texts"]), "partial client translation coverage")
+    for entry in entries.values():
+        require(isinstance(entry, dict) and isinstance(entry.get("text"), str) and entry["text"].strip() and len(entry["text"].encode("utf-8")) <= MAX_TEXT_BYTES * 6, "invalid client translation text")
+        count = entry.get("sourceSegmentCount")
+        require(type(count) is int and 0 < count <= MAX_TEXT_BYTES and type(entry.get("translatedSegmentCount")) is int and count == entry["translatedSegmentCount"] and entry.get("endedNormally") is True, "incomplete client source segments")
+    require(len(encode(pack)) <= MAX_BYTES, "client translation response exceeds 10 MB")
+    return pack
+
+
+def compact_pack(audit: dict, index: dict, language: str) -> dict:
+    # Validate every source/translated segment BEFORE stripping build-only detail.
+    validate_pack(audit, index, language)
+    client = {key: value for key, value in audit.items() if key != "translations"}
+    client.update(artifactType="full-description-locale-pack", auditSHA256=sha(encode(audit)), translations={
+        key: {"text": entry["text"], "sourceSegmentCount": len(entry["segments"]), "translatedSegmentCount": len(entry["segments"]), "endedNormally": True}
+        for key, entry in audit["translations"].items()
+    })
+    return validate_client_pack(client, index, language)
 
 
 def publish_manifest(index: dict, packs: dict[str, dict], directory: Path, required_languages=LANGUAGES) -> dict:
     """Publish only verified immutable files; replace the small manifest last."""
     validate_index(index)
     require(set(packs) == set(required_languages), "release is missing a required full-description language")
-    for language, pack in packs.items():
-        validate_pack(pack, index, language)
+    clients = {language: compact_pack(pack, index, language) for language, pack in packs.items()}
     source_raw = encode(index)
     source_hash = sha(source_raw)
     def descriptor(filename: str, raw: bytes) -> dict:
@@ -157,7 +184,7 @@ def publish_manifest(index: dict, packs: dict[str, dict], directory: Path, requi
     source_name = source_hash + ".source.json"
     locales = {}
     # All coverage/size validations finish before touching the live manifest.
-    for language, pack in sorted(packs.items()):
+    for language, pack in sorted(clients.items()):
         raw = encode(pack)
         filename = f"{source_hash}.{language}.{sha(raw)}.json"
         write(directory / filename, pack)
@@ -229,7 +256,7 @@ def translate_entry(source: str, language: str, engine) -> dict:
 
 def generate(index: dict, language: str, engine, cache_path: Path | None = None) -> dict:
     validate_index(index)
-    cache = read(cache_path) if cache_path and cache_path.is_file() else {}
+    cache = read(cache_path, MAX_AUDIT_BYTES) if cache_path and cache_path.is_file() else {}
     pack = {"schemaVersion": 1, "language": language, "sourceIndexSHA256": sha(encode(index)), "translationSource": ENGINE, "model": MODEL, "translations": {}}
     cached = cache.get("translations", {}) if cache.get("language") == language and cache.get("model") == MODEL and cache.get("translationSource") == ENGINE else {}
     for number, (text_hash, text) in enumerate(sorted(index["texts"].items())):
@@ -243,7 +270,7 @@ def generate(index: dict, language: str, engine, cache_path: Path | None = None)
                 entry = None
         pack["translations"][text_hash] = entry if entry is not None else translate_entry(text, language, engine)
         if cache_path:
-            write(cache_path, pack)
+            write(cache_path, pack, MAX_AUDIT_BYTES)
         if number % 10 == 0:
             print(json.dumps({"language": language, "completedTexts": number + 1, "totalTexts": len(index["texts"])}), flush=True)
     return validate_pack(pack, index, language)
@@ -352,7 +379,7 @@ def main():
         require(args.index is not None and args.language is not None, "source index and language required")
         download_model(args.model_dir)
         pack = generate(read(args.index), args.language, MadladEngine(args.model_dir), args.cache)
-        write(args.output, pack)
+        write(args.output, pack, MAX_AUDIT_BYTES)
 
 
 if __name__ == "__main__":
