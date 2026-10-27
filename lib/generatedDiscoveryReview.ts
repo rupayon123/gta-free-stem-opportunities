@@ -4,8 +4,8 @@ export const generatedDiscoverySummary = {
   "mode": "deterministic",
   "sourcesChecked": 30,
   "candidatesFound": 270,
-  "newCandidates": 47,
-  "duplicatesSkipped": 30,
+  "newCandidates": 48,
+  "duplicatesSkipped": 32,
   "warnings": [
     "Could not check Credit Valley Conservation youth opportunities: 403 Forbidden.",
     "Could not check Volunteer MBC youth opportunities: 403 Forbidden.",
@@ -14,7 +14,7 @@ export const generatedDiscoverySummary = {
   ],
   "sourceHealth": {
     "schemaVersion": 1,
-    "generatedAt": "2026-10-27T12:17:28.144Z",
+    "generatedAt": "2026-10-27T18:06:21.317Z",
     "status": "healthy",
     "failureReasons": [],
     "sourcesChecked": 30,
@@ -53,6 +53,35 @@ export const generatedDiscoveryReviewCandidates = [
     "confidence": "high",
     "reviewReasons": [],
     "sourceName": "Toronto Public Library youth volunteer events"
+  },
+  {
+    "id": "discovered-markham-events-stem-steam-drop-in-2070122b48d1",
+    "title": "STEAM Drop-In",
+    "organization": "Markham Public Library",
+    "description": "Join us anytime between 6:30 - 7:30 PM to explore all things STEAM (Science, Technology, Engineering, Arts, and Math). This drop-in program is designed for families to get curious and creative together!",
+    "city": "Markham",
+    "region": "York",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "Science & Engineering",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "deadline": "2026-10-28T18:30:00-04:00",
+    "startDate": "2026-10-28T18:30:00-04:00",
+    "endDate": "2026-10-28T19:30:00-04:00",
+    "sourceUrl": "https://markham.bibliocommons.com/v2/events/6a72559f88e9bf2800358304",
+    "lastChecked": "2026-10-27",
+    "lastSeen": "2026-10-27",
+    "status": "needs_review",
+    "tags": [
+      "science & engineering",
+      "steam"
+    ],
+    "confidence": "high",
+    "reviewReasons": [],
+    "sourceName": "Markham Public Library events"
   },
   {
     "id": "discovered-vaughan-library-programs-volunteer-opportunities-e775e833a50b",
