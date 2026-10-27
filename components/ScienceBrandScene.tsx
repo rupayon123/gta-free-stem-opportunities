@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Atom, Cog, FlaskConical, Lightbulb, Pause, Play, Sparkles } from "lucide-react";
+import { Atom, Cog, FlaskConical, Lightbulb, Sparkles } from "lucide-react";
 import type { LanguageCode } from "@/lib/types";
 import "./ScienceBrandScene.css";
 
@@ -22,24 +22,28 @@ const controls: Record<LanguageCode, readonly [string, string]> = {
  */
 export function ScienceBrandScene({ language }: { language: LanguageCode }) {
   const [paused, setPaused] = useState(false);
+  const [jiggle, setJiggle] = useState(0);
   const label = controls[language][paused ? 1 : 0];
+  function toggleMotion() {
+    setPaused(value => !value);
+    setJiggle(value => value + 1);
+  }
   return <div className="science-brand-scene" data-motion-paused={paused}>
-    <div className="science-brand-art" aria-hidden="true">
+    <button className="science-brand-toggle" type="button" onClick={toggleMotion} aria-label={label} lang={language}>
+    <div className="science-brand-art" data-jiggle={jiggle === 0 ? "none" : jiggle % 2 ? "odd" : "even"} aria-hidden="true">
       <div className="science-brand-halo" />
       <div className="science-brand-ring science-brand-ring-outer" />
       <div className="science-brand-ring science-brand-ring-inner" />
       <img className="science-brand-logo" src="/logo.png" alt="" width={768} height={768} fetchPriority="high" />
       <div className="science-brand-orbit">
-        <Cog className="science-brand-item science-brand-cog-pink" />
-        <Cog className="science-brand-item science-brand-cog-teal" />
-        <Atom className="science-brand-item science-brand-atom" />
-        <FlaskConical className="science-brand-item science-brand-flask" />
-        <Lightbulb className="science-brand-item science-brand-bulb" />
-        <Sparkles className="science-brand-item science-brand-spark" />
+        <span className="science-brand-item science-brand-cog-pink"><Cog /></span>
+        <span className="science-brand-item science-brand-cog-teal"><Cog /></span>
+        <span className="science-brand-item science-brand-atom"><Atom /></span>
+        <span className="science-brand-item science-brand-flask"><FlaskConical /></span>
+        <span className="science-brand-item science-brand-bulb"><Lightbulb /></span>
+        <span className="science-brand-item science-brand-spark"><Sparkles /></span>
       </div>
     </div>
-    <button className="science-brand-control" type="button" onClick={() => setPaused(value => !value)} aria-label={label} lang={language}>
-      {paused ? <Play size={15} aria-hidden="true" /> : <Pause size={15} aria-hidden="true" />}<span>{label}</span>
     </button>
   </div>;
 }

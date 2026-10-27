@@ -19,14 +19,14 @@ Captured from the [public website](https://gta-free-stem.pages.dev/) on October 
 
 - Search by activity, topic, library or city, including common spelling mistakes.
 - Narrow the results with visible city, age and category filters.
-- Explore locations on the map, or switch to List to scan activities.
+- Explore locations on the map, switch between 2D and 3D neighbourhood views, or choose List to scan activities.
 - Open schedules, age ranges, accessibility information when provided, and original registration links.
 - Save activities in the current browser without signing in.
 
 ## Find an activity
 
 1. On the [home page](https://gta-free-stem.pages.dev/), enter an interest, library, or city. You can also leave the search open and choose a city, age, or category.
-2. Select **Find free activities**. The [opportunity directory](https://gta-free-stem.pages.dev/opportunities/) opens in **Map** view. Select a location marker to explore its activities, or choose **List** beside Map. Both views use the same search and filters; switching views keeps your choices. Online activities remain available in List.
+2. Select **Find free activities**. The [opportunity directory](https://gta-free-stem.pages.dev/opportunities/) opens in **Map** view. Select a location marker to explore its activities, or choose **List** beside Map. Both views use the same search and filters; switching views keeps your choices. Choose **3D** to explore a nearby program location with real building heights where map data is available; **2D** flattens the view and **All locations** returns to the overview. Online activities remain available in List.
 3. Refine by city, age, category or the additional filters. Clear filters to return to the broader list.
 4. Open a result to check its schedule, age range, location, provider, and original source. Follow the provider's link to confirm availability and register when required.
 5. Use the bookmark control to save an activity for later on this browser. Saved items are local to the current browser and website address; no account is needed for browsing.
@@ -35,7 +35,7 @@ The High School section gathers volunteer hours, co-op, SHSM, mentorship, and ot
 
 ## About the site
 
-The colourful GTA logo and orbiting science icons carry the app’s visual identity onto the website. Animation has a pause control and respects reduced-motion preferences. Search and filters remain usable without waiting for an opening animation.
+The colourful GTA logo and orbiting science icons carry the app’s visual identity onto the website. Click or tap the logo to pause or resume its orbit, with a brief playful jiggle. Icons stay upright as they travel. The same action works from the keyboard, and motion respects reduced-motion preferences. Search and filters remain usable without waiting for an opening animation.
 
 The interface offers 18 language choices. Provider descriptions are not fully translated into every language; use the original provider page for authoritative details. Anonymous saves stay in the current browser and do not transfer automatically between website addresses.
 
