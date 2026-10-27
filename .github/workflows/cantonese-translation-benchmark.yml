@@ -1,0 +1,32 @@
+name: Full description Cantonese benchmark
+on:
+  push:
+    branches: [codex/full-description-translations-20261027]
+    paths: [.github/workflows/cantonese-translation-benchmark.yml]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: full-description-cantonese-benchmark
+  cancel-in-progress: false
+jobs:
+  benchmark:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    env:
+      HF_HUB_DISABLE_TELEMETRY: "1"
+      DO_NOT_TRACK: "1"
+    steps:
+      - uses: actions/checkout@v6
+      - name: Translate one full real event into Cantonese with pinned official weights
+        run: python3 scripts/translations/benchmark_cantonese.py --feed public/opportunities.json --directory "$RUNNER_TEMP/cantonese-model" --output cantonese-benchmark.json
+      - name: Save small public-content benchmark report
+        if: always()
+        uses: actions/upload-artifact@v6
+        with:
+          name: full-description-cantonese-benchmark
+          path: |
+            cantonese-benchmark.json
+            cantonese-benchmark.server.log
+          if-no-files-found: ignore
+          retention-days: 7
