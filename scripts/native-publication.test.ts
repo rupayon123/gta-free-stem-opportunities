@@ -25,6 +25,26 @@ check("all accepted payload fields participate in revision identity", () => {
   const result = prepareNativePublication({ ...candidate, coverage: { cities: ["Toronto"] } }, first.contents, "publish", now);
   assert.notEqual(result.publicationRevision, first.publicationRevision);
 });
+check("virtual metadata requires source publication and preserves descriptions and rights", () => {
+  const original = {
+    count: 2, lastDataChange: "2026-10-25",
+    contentRights: { confirmationID: "gta-library-content-2026-10-25" },
+    opportunities: [{ id: "physical", description: "Original venue event body" }, { id: "online", description: "Original online event body" }]
+  };
+  const accepted = prepareNativePublication(original, undefined, "publish", now);
+  const withVirtual = { ...original, opportunities: original.opportunities.map((row) => ({ ...row, virtual: row.id === "online" })) };
+  assert.throws(() => prepareNativePublication(withVirtual, accepted.contents, "verify", now), /builds never assign/);
+  const published = prepareNativePublication(withVirtual, accepted.contents, "publish", now);
+  assert(published.publicationRevision > accepted.publicationRevision);
+  const payload = JSON.parse(published.contents);
+  assert.deepEqual(payload.opportunities.map(({ virtual, ...row }: { virtual: boolean; id: string; description: string }) => row), original.opportunities);
+  assert.deepEqual(payload.opportunities.map((row: { virtual: boolean }) => row.virtual), [false, true]);
+  assert.deepEqual(payload.contentRights, original.contentRights);
+  assert.equal(payload.lastDataChange, original.lastDataChange);
+  const verified = prepareNativePublication(withVirtual, published.contents, "verify", new Date(now.getTime() + 5000));
+  assert.equal(verified.contents, published.contents);
+  assert.equal(verified.changed, false);
+});
 check("unchanged publication retains exact accepted bytes and revision", () => {
   const compact = JSON.stringify(JSON.parse(first.contents));
   const result = prepareNativePublication({ ...candidate, optional: undefined }, compact, "publish", new Date(now.getTime() + 5000));

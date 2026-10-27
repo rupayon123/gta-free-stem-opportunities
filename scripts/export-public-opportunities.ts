@@ -38,6 +38,7 @@ const publicListings = publicOpportunities(sourceOpportunities, publicationSnaps
   latitude: opportunity.latitude,
   longitude: opportunity.longitude,
   address: opportunity.address,
+  virtual: opportunity.virtual,
   volunteerHoursEligible: opportunity.volunteerHoursEligible,
   coopEligible: opportunity.coopEligible,
   trustedSource: opportunity.trustedSource,
@@ -84,6 +85,11 @@ if (process.argv.includes("--self-test")) {
   assert.equal(prepareNativePublication(payload, previous, "verify").contents, previous);
   const actual = serializeNativeFeed(payload);
   assert.equal(JSON.parse(actual).opportunities.length, publicListings.length);
+  const exportedRows = JSON.parse(actual).opportunities;
+  const originalRows = publicOpportunities(sourceOpportunities, publicationSnapshotTime());
+  assert(exportedRows.every((row: Record<string, unknown>) => typeof row.virtual === "boolean"), "Every native row must preserve its explicit virtual flag");
+  assert.deepEqual(exportedRows.map((row: { id: string; virtual: boolean }) => [row.id, row.virtual]), originalRows.map((row) => [row.id, row.virtual]), "Native virtual flags must align exactly with source identities");
+  assert.deepEqual(exportedRows.map((row: { id: string; description: string }) => [row.id, row.description]), originalRows.map((row) => [row.id, row.description]), "Adding virtual metadata must preserve full original bodies and IDs");
   assert(publicListings.every((row) => !Object.hasOwn(row, "translations")));
   const optional = { count: 2, opportunities: [{ id: "missing-translation" }, { id: "empty-translation", translations: {} }] };
   assert.deepEqual(JSON.parse(serializeNativeFeed(optional)).opportunities, optional.opportunities);
@@ -97,7 +103,7 @@ if (process.argv.includes("--self-test")) {
     assert.throws(() => writeNativeFeed(path, oversized), /UTF-8 bytes/);
     assert.equal(readFileSync(path, "utf8"), "retained");
   } finally { rmSync(directory, { recursive: true, force: true }); }
-  console.log(JSON.stringify({ nativeExportSelfTest: true, records: publicListings.length, bytes: Buffer.byteLength(actual, "utf8"), optionalTranslations: "missing and empty accepted", overflowPreservesPreviousFile: true }));
+  console.log(JSON.stringify({ nativeExportSelfTest: true, records: publicListings.length, bytes: Buffer.byteLength(actual, "utf8"), optionalTranslations: "missing and empty accepted", virtualFlagsMatchSource: true, virtualRecords: exportedRows.filter((row: { virtual: boolean }) => row.virtual).length, overflowPreservesPreviousFile: true }));
 } else {
   const mode = process.argv.includes("--publish") ? "publish" : "verify";
   const previous = existsSync(outputPath) ? readFileSync(outputPath, "utf8") : undefined;

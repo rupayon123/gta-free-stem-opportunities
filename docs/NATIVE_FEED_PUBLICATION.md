@@ -56,3 +56,17 @@ native limits, provider pinning, restricted records and permission-date
 stability. The exporter self-test verifies the real committed payload and
 retains a sentinel file when a bounded export fails. Hosting verifies actual
 feed byte hashes against both release manifests before recording success.
+
+## Virtual location metadata
+
+Each newly published native record includes the source's explicit boolean `virtual`.
+Consumers should exclude `virtual: true` events from physical venue pins; online
+events can carry a municipal fallback coordinate. `false` does not certify exact
+geocoding. Older cached feeds can omit this additive field, so consumers must
+retain their existing online-address safeguards during migration.
+
+Introducing the field changes the accepted payload and requires a strictly newer
+source publication revision. A website build must reject the uncommitted shape
+change rather than minting a revision. Prepare and review the new feed together
+with consumer handling before publishing; IDs, original descriptions, permission
+records, source freshness, count/byte limits and atomic writes remain unchanged.
