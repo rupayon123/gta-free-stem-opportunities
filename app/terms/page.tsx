@@ -5,13 +5,16 @@ import { metadataForPage } from "../seoPages";
 
 export const metadata = metadataForPage("terms");
 
+const termsEffectiveDate = "October 27, 2026";
+const termsEffectiveDateIso = "2026-10-27";
+
 export default function TermsPage() {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "WebPage",
     name: `${legalConfig.appDisplayName} Terms of Use`,
     url: legalConfig.termsUrl,
-    dateModified: legalConfig.effectiveDateIso,
+    dateModified: termsEffectiveDateIso,
     publisher: {
       "@type": "Person",
       name: legalConfig.publisherName,
@@ -37,7 +40,7 @@ export default function TermsPage() {
           separately governed by Apple's Standard EULA.
         </p>
         <p>
-          Effective: {legalConfig.effectiveDate} · Publisher: {legalConfig.publisherName}, {legalConfig.publisherRegion}
+          Effective: {termsEffectiveDate} · Publisher: {legalConfig.publisherName}, {legalConfig.publisherRegion}
         </p>
         <div className="hero-actions">
           <a className="primary-button" href="/privacy/">
@@ -54,7 +57,7 @@ export default function TermsPage() {
           <h2>1. Agreement and scope</h2>
           <p>
             By using GTA FREE STEM Opportunities (the “Service”), you agree to these Terms of Use. If you do not
-            agree, do not use the Service. The Service includes the public website and the iPhone, iPad, Mac, and
+            agree, do not use the Service. The Service includes the public website and the Android, iPhone, iPad, Mac, and
             Apple Watch apps published by {legalConfig.publisherName}. These terms govern the directory and content
             service; they do not replace mandatory consumer rights.
           </p>

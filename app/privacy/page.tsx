@@ -186,9 +186,8 @@ export default function PrivacyPage() {
             location fix. The offline schematic view and list do not require a downloaded interactive basemap.
           </p>
           <p>
-            OpenFreeMap's published notice describes request logging and security-related exceptions, including
-            circumstances in which IP addresses may be logged. Do not assume that map requests are unlogged or that
-            provider-side records disappear when the app closes. Provider handling and retention are governed by the{" "}
+            OpenFreeMap says its regular access logs omit IP addresses, while error and security logs may include
+            them. Provider handling and retention are governed by the{" "}
             <a href="https://openfreemap.org/privacy/">OpenFreeMap Privacy Policy</a>, including its description of
             infrastructure providers. GTA FREE STEM does not operate those providers' logs.
           </p>

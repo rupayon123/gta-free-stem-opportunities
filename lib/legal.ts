@@ -2,7 +2,7 @@ export const legalConfig = {
   appDisplayName: "GTA FREE STEM Opportunities",
   publisherName: "Rupayon Haldar",
   publisherRegion: "Ontario, Canada",
-  currentAppleRelease: "1.0 (12)",
+  currentAppleRelease: "1.0",
   effectiveDate: "August 6, 2026",
   effectiveDateIso: "2026-08-06",
   siteUrl: "https://gta-free-stem.pages.dev",
