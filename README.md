@@ -7,9 +7,20 @@ GTA Free STEM Opportunities helps people of every age find free STEM programs an
 ## The web experience
 
 <table>
-<tr><th width="50%">Home</th><th width="50%">Search</th></tr>
-<tr><td align="center"><a href="docs/showcase/home.png"><img src="docs/showcase/home.png" alt="Home" width="440"></a></td><td align="center"><a href="docs/showcase/search.png"><img src="docs/showcase/search.png" alt="Search" width="440"></a></td></tr>
+<tr><th width="50%">Start with an interest</th><th width="50%">Browse source-backed activities</th></tr>
+<tr><td align="center"><a href="docs/showcase/web-home-live-2026-10-27.png"><img src="docs/showcase/web-home-live-2026-10-27.png" alt="Live website home showing the free activity search and optional city, age, and category filters" width="440"></a></td><td align="center"><a href="docs/showcase/web-browse-live-2026-10-27.png"><img src="docs/showcase/web-browse-live-2026-10-27.png" alt="Live opportunity directory showing search, filters, results, and original provider listings" width="440"></a></td></tr>
 </table>
+
+Captured from the [public Cloudflare Pages website](https://gta-free-stem.pages.dev/) on October 27, 2026 at a 1440 × 900 desktop viewport. These are unretouched browser captures of the live site, not design mockups. Listings and result counts change as the public feed refreshes; the images show what appeared at capture time. [Capture details](docs/showcase/README.md).
+
+## Find an activity
+
+1. On the [home page](https://gta-free-stem.pages.dev/), enter an interest, library, or city. You can also leave the search open and choose a city, age, or category.
+2. Select **Find free activities**. In the [opportunity directory](https://gta-free-stem.pages.dev/opportunities/), refine by category, region, city, age, and the available additional filters. Clear filters to return to the broader list.
+3. Open a result to check its schedule, age range, location, provider, and original source. Follow the provider's link to confirm availability and register when required.
+4. Use the bookmark control to save an activity for later on this browser. Saved items are local to the current browser and website address; no account is needed for browsing.
+
+The High School section gathers volunteer hours, co-op, SHSM, mentorship, and other pathways. Listing summaries may be generated for browsing; check the original provider page for complete and current details.
 
 ## About the site
 

@@ -1,5 +1,5 @@
-# Screenshots
+# Screenshot provenance
 
-Captured on September 11, 2026. Original screen captures, without mockups or retouching. Home and Search use the light theme; High School Search and Profile use the dark theme.
+The two images linked from the main README, `web-home-live-2026-10-27.png` and `web-browse-live-2026-10-27.png`, were captured from the public site at https://gta-free-stem.pages.dev/ and https://gta-free-stem.pages.dev/opportunities/ on October 27, 2026. Capture method: headless Google Chrome, 1440 × 900 browser viewport, with seven to nine seconds allowed for page loading. The images are unretouched and show the live public feed at capture time. They are web browser evidence only; they do not demonstrate iOS or Android behavior.
 
-Captured from https://gta-free-stem.vercel.app/ in the browser. High School search had no current matches. Profile shows the actual sign-in dialog; production accounts were not connected. No account was created and no personal information was entered.
+The older `home.png`, `search.png`, `high-school.png`, and `profile.png` files remain as a September 11, 2026 archive from the former Vercel address. They are not current product screenshots. The old High School search had no matches and Profile showed a sign-in dialog; no account was created or personal information entered.
