@@ -1,6 +1,7 @@
 .science-brand-scene { position: relative; width: min(100%, 280px); margin-inline: auto; }
 .science-brand-toggle { display: block; width: 100%; padding: 0; border: 0; border-radius: 50%; background: transparent; color: inherit; cursor: pointer; }
 .science-brand-toggle:focus-visible { outline: 3px solid var(--accent); outline-offset: 5px; }
+.science-brand-pointer { width: 100%; transform-origin: center; }
 .science-brand-art { position: relative; width: 100%; aspect-ratio: 1; isolation: isolate; }
 .science-brand-halo { position: absolute; inset: 13%; border-radius: 50%; background: #fffef8; box-shadow: 0 18px 45px #3b9b8a22; }
 .science-brand-logo { position: absolute; inset: 18%; width: 64%; height: 64%; object-fit: contain; z-index: 2; }
