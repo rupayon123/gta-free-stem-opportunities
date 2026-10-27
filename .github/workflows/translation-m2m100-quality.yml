@@ -1,0 +1,44 @@
+name: Bounded M2M100 protected full-description quality
+on:
+  push:
+    branches: [codex/full-description-translations-20261027]
+    paths: [.github/workflows/translation-m2m100-quality.yml]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: translation-m2m100-quality
+  cancel-in-progress: false
+jobs:
+  hard-set:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    env:
+      HF_HUB_DISABLE_TELEMETRY: "1"
+      DO_NOT_TRACK: "1"
+      TOKENIZERS_PARALLELISM: "false"
+      OMP_NUM_THREADS: "4"
+    steps:
+      - uses: actions/checkout@v6
+      - name: Verify free public standard runner resources
+        run: |
+          python3 - <<'PY'
+          import os, shutil, sys
+          assert sys.version_info[:2] == (3, 12)
+          assert os.sysconf('SC_PHYS_PAGES') * os.sysconf('SC_PAGE_SIZE') >= 12_000_000_000
+          assert shutil.disk_usage(os.environ['RUNNER_TEMP']).free >= 10_000_000_000
+          PY
+      - name: Install pinned official CPU runtime without CUDA
+        run: |
+          python3 -m pip install --no-cache-dir 'https://download.pytorch.org/whl/cpu/torch-2.14.1%2Bcpu-cp312-cp312-manylinux_2_28_x86_64.whl#sha256=5a6363570c753812540a05eb82380e329469cbe668643e88111414c12627711f'
+          python3 -m pip install --no-cache-dir transformers==5.21.0 sentencepiece==0.2.2 safetensors==0.8.0 accelerate==1.15.0
+      - name: Exact source and held-out condition comparisons
+        run: python3 scripts/translations/benchmark_m2m100.py --feed public/opportunities.json --directory "$RUNNER_TEMP/m2m100-model" --output m2m100-quality.json
+      - name: Retain experimental text evidence only
+        if: always()
+        uses: actions/upload-artifact@v6
+        with:
+          name: m2m100-full-description-quality
+          path: m2m100-quality.json
+          if-no-files-found: ignore
+          retention-days: 7
