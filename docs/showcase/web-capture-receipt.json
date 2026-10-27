@@ -1,6 +1,6 @@
 {
-  "capturedAt": "2026-10-27T08:49:22.903Z",
-  "sourceCommit": "779064a6e3bceffacb51639d95c6ddb825a6ce60",
+  "capturedAt": "2026-10-27T09:22:58.329Z",
+  "sourceCommit": "d98c5d3a4e4785ae40efe4e06824af8d9ed14fda",
   "origin": "https://gta-free-stem.pages.dev",
   "method": "Headless Google Chrome, reduced motion, unretouched browser screenshots",
   "captures": [
@@ -37,6 +37,36 @@
         "width": 390,
         "height": 1000
       }
+    },
+    {
+      "file": "web-3d-live-2026-10-27.png",
+      "url": "https://gta-free-stem.pages.dev/opportunities/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "view": "3D",
+      "action": "Selected 3D control and waited for real map paint"
+    },
+    {
+      "file": "web-3d-dark-live-2026-10-27.png",
+      "url": "https://gta-free-stem.pages.dev/opportunities/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "view": "3D",
+      "action": "Selected 3D control and waited for real map paint"
+    },
+    {
+      "file": "web-3d-mobile-live-2026-10-27.png",
+      "url": "https://gta-free-stem.pages.dev/opportunities/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "view": "3D",
+      "action": "Selected 3D control and waited for real map paint"
     }
   ],
   "errors": []
