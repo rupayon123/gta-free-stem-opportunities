@@ -48,7 +48,8 @@ def anchors(text):
 
 
 def checks(language, source, text):
-    result = {"literalContactTimeAndURLAnchors": all(anchor in text for anchor in anchors(source))}
+    result = {"literalContactTimeAndURLAnchors": all(anchor in text for anchor in anchors(source)),
+              "noReplacementCharacters": "\ufffd" not in text}
     if language == "yue":
         result.update({
             "dialectMarkers": sum(text.count(c) for c in "嘅喺冇佢哋嗰咁唔啲嚟攞嘢") >= 2,
@@ -56,7 +57,7 @@ def checks(language, source, text):
             "volunteerHours": "義工" in text and "時" in text,
             "afterSchool": "放學" in text,
             "snacks": any(word in text for word in ("零食", "小食", "點心")),
-            "knownEnglishLeaks": not re.search(r"\b(staff|inquiries|welcoming place|accessible devices)\b", text, re.I),
+            "knownEnglishLeaks": not re.search(r"\b(staff|inquiries|program(?:me)?|welcoming place|accessible devices)\b", text, re.I),
             "noHotel": "酒店" not in text,
         })
     elif language == "pa":

@@ -58,3 +58,15 @@ into the UI. All source, client locale and manifest responses retain their 10 MB
 limit. The final manifest is not replaced unless every required compact locale
 passes validation. Model choice is still experimental; no production coverage
 is claimed by the schema or successful structural tests alone.
+
+The stronger official Qwen3-8B Q4_K_M hard-set run 40501344229 completed all four
+full descriptions with exact byte coverage and normal endings, but was rejected
+for production after inspecting the actual outputs. Punjabi contained corrupt
+characters and changed daily snacks to at night; Cantonese retained the ordinary
+English word programme; French changed mistrust to contempt and left floor text
+in English. Keyword probes passed Punjabi and Cantonese despite those problems.
+Contact-time literal mismatches need semantic review: equivalent 24-hour French
+times are not factual time errors. See QUALITY_REVIEW.md for source-based review
+criteria. Three additional regression tests flag the observed corruption/English
+leak without treating retained proper names as untranslated body text. They do
+not establish semantic accuracy. No model is selected for broad generation.
