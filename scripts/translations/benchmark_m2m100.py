@@ -27,7 +27,7 @@ HARD = {"pa": "tpl-rss-6ac92852295b3b0033cb1160", "fr": "tpl-rss-6acfd30896ec3a0
 HELD_OUT = "tpl-rss-6ac7ffe296ec3a003ad9435c"
 # Explicitly fictional contrast fixture, never represented as a provider listing.
 CONTRAST = "Ages 13\u201317. The entrance is wheelchair accessible. Registration is not required for daytime sessions; registration is required for evening sessions. Free nutritious snacks are offered daily, not nightly. On 2026-11-09, daytime sessions run 16:00\u201317:00. For support, email help@example.org or call 416-555-0100. Details: https://example.org/gta-translation-test."
-PROTECTED = re.compile(r"https?://[^\s]+|[\w.+-]+@[\w.-]+\.[A-Za-z]{2,}|\b\d{3}[- ]\d{3}[- ]\d{4}\b|\b\d{4}-\d{2}-\d{2}\b|\b\d{1,2}:\d{2}(?:\s?(?:am|pm))?\b|\b\d{1,2}[\u2013-]\d{1,2}\b", re.I)
+PROTECTED = re.compile(r"https?://[^\s]+|[\w.+-]+@[\w.-]+\.[A-Za-z]{2,}|\b\d{3}[- ]\d{3}[- ]\d{4}\b|\b\d{4}-\d{2}-\d{2}\b|\b\d{1,2}:\d{2}(?:\s?(?:am|pm))?\b|\b\d{1,2}\s?(?:am|pm)\b|\b\d{1,2}[\u2013-]\d{1,2}\b", re.I)
 TOKEN = re.compile(r"ZXQ\d{6}QXZ")
 
 
