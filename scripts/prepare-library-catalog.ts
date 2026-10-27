@@ -2,6 +2,8 @@ import assert from "node:assert/strict";
 import { existsSync, readFileSync, renameSync, rmSync, writeFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { pathToFileURL } from "node:url";
+import { isDeepStrictEqual } from "node:util";
+import { prepareNativePublication } from "./native-publication";
 import { generatedLibraryOpportunities, generatedLibrarySourceHealth } from "../lib/generatedLibraryOpportunities";
 import { publicOpportunities } from "../lib/opportunityStatus";
 import type { LibrarySourceHealth } from "../lib/refreshHealth";
@@ -139,10 +141,29 @@ export function partitionLibraryCatalog(rows: readonly Opportunity[], collection
   return { core, coreHealth, collectionHealth, catalog, eligibleCount: eligible.length, excludedUnavailableCount: rows.length - eligible.length };
 }
 
-function previousNativeCount() {
-  const payload: unknown = JSON.parse(readFileSync("public/opportunities.json", "utf8"));
+/** Keep a collection's original accepted-feed baseline through export, QA and build. */
+export function nativePredecessorCount(payload: unknown, collectionHealth: LibrarySourceHealth): number {
   ensure(payload && typeof payload === "object" && "opportunities" in payload && Array.isArray(payload.opportunities) && "count" in payload && payload.count === payload.opportunities.length, "existing native envelope count is inconsistent");
-  return payload.opportunities.length;
+  ensure(payload.opportunities.length <= MAX_CORE_RECORDS, "existing native predecessor exceeds the record bound");
+  const asObject = (value: unknown): Record<string, unknown> | undefined =>
+    value !== null && typeof value === "object" && !Array.isArray(value) ? value as Record<string, unknown> : undefined;
+  const sourceHealth = asObject("sourceHealth" in payload ? payload.sourceHealth : undefined);
+  const acceptedCollection = asObject(sourceHealth?.libraryCollection);
+  // The first prepare of a new collection compares against the current feed.
+  // Later prepares see its just-published output and must reuse its prior basis.
+  if (acceptedCollection?.generatedAt !== collectionHealth.generatedAt) return payload.opportunities.length;
+  ensure(isDeepStrictEqual(acceptedCollection, collectionHealth), "accepted collection identity has conflicting health");
+  const nativeHealth = asObject(sourceHealth?.library);
+  const predecessor = nativeHealth?.previousPublishedListings;
+  ensure(nativeHealth?.scope === "stem-core-publication" && nativeHealth.generatedAt === collectionHealth.generatedAt &&
+    typeof predecessor === "number" && Number.isInteger(predecessor) && predecessor >= 0 && predecessor <= MAX_CORE_RECORDS &&
+    nativeHealth.minimumAcceptedListings === Math.max(30, Math.ceil(predecessor * 0.65)),
+    "accepted native predecessor health is missing or inconsistent");
+  return predecessor;
+}
+
+function previousNativeCount() {
+  return nativePredecessorCount(JSON.parse(readFileSync("public/opportunities.json", "utf8")), generatedLibrarySourceHealth);
 }
 
 function writeChanged(path: string, contents: string) {
@@ -199,6 +220,38 @@ function selfTest() {
   const malformed = { ...mixed[0], ages: { min: 9, max: 12 } };
   assert.throws(() => partitionLibraryCatalog([malformed], healthFor(1), 0), /inconsistent/);
 
+  // The accepted export becomes the input of subsequent prepare/QA/build calls.
+  // A changed row count must not turn that collection into its own predecessor.
+  const refreshedRows = Array.from({ length: 1875 }, (_, index) => makeRow(index, true));
+  const refreshedHealth = healthFor(refreshedRows.length);
+  const predecessor = { count: 1882, opportunities: Array.from({ length: 1882 }, (_, index) => ({ id: `previous-${index}` })) };
+  const initial = partitionLibraryCatalog(refreshedRows, refreshedHealth, nativePredecessorCount(predecessor, refreshedHealth));
+  assert.equal(initial.coreHealth.minimumAcceptedListings, 1224);
+  const feedFor = (value: typeof initial) => ({
+    count: value.core.length,
+    opportunities: value.core.map((row) => ({ id: row.id })),
+    sourceHealth: { library: value.coreHealth, libraryCollection: value.collectionHealth }
+  });
+  const publication = prepareNativePublication(feedFor(initial), undefined, "publish", now);
+  const accepted = JSON.parse(publication.contents);
+  const preparedAgain = partitionLibraryCatalog(refreshedRows, refreshedHealth, nativePredecessorCount(accepted, refreshedHealth));
+  assert.deepEqual(preparedAgain.coreHealth, initial.coreHealth, "Export then prepare must retain the original 1882-record predecessor and minimum1224.");
+  assert.equal(prepareNativePublication(feedFor(preparedAgain), publication.contents, "verify", now).contents, publication.contents);
+  const nextCollection = { ...refreshedHealth, generatedAt: "2030-01-02T12:00:00.000Z" };
+  assert.equal(nativePredecessorCount(accepted, nextCollection), 1875, "A genuinely new collection compares against the latest accepted count.");
+  for (const change of [
+    { previousPublishedListings: -1 }, { previousPublishedListings: 5000 },
+    { previousPublishedListings: 1.5 }, { minimumAcceptedListings: 1 },
+    { scope: "unreviewed" }
+  ]) {
+    const invalid = { ...accepted, sourceHealth: { ...accepted.sourceHealth, library: { ...accepted.sourceHealth.library, ...change } } };
+    assert.throws(() => nativePredecessorCount(invalid, refreshedHealth), /predecessor/);
+  }
+  const conflicting = { ...accepted, sourceHealth: { ...accepted.sourceHealth, libraryCollection: { ...refreshedHealth, previousPublishedListings: 0 } } };
+  assert.throws(() => nativePredecessorCount(conflicting, refreshedHealth), /collection/);
+  const missingBasis = { ...accepted, sourceHealth: { libraryCollection: refreshedHealth } };
+  assert.throws(() => nativePredecessorCount(missingBasis, refreshedHealth), /predecessor/);
+
   // Simulate two build workers straddling an event's end time. The declared
   // source set remains the same snapshot; a live reader must still expire it.
   const boundaryRows = Array.from({ length: 42 }, (_, index) => ({
@@ -225,7 +278,7 @@ function selfTest() {
     assert.equal(publicOpportunities(staticRows, new Date(boundaryHealth.generatedAt)).length, 40);
     assert.equal(publicOpportunities(staticRows).length, 0, "Current-clock browser/native readers must expire snapshot rows after their actual end time.");
   } finally { globalThis.Date = realDate; }
-  console.log("Library catalog partition self-test passed: 10,000-row round trip, disjoint IDs, thin fields, month/fraction exclusion, independent core minimum, full-health rejection, duplicate/age/overflow failures, fixed build snapshot and live expiry boundary.");
+  console.log("Library catalog partition self-test passed: 10,000-row round trip, disjoint IDs, thin fields, month/fraction exclusion, independent core minimum, full-health rejection, duplicate/age/overflow failures, fixed build snapshot, 1882-to-1875 publication predecessor retention, malformed-basis rejection and live expiry boundary.");
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) {
