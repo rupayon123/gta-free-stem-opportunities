@@ -1,0 +1,43 @@
+{
+  "capturedAt": "2026-10-27T08:49:22.903Z",
+  "sourceCommit": "779064a6e3bceffacb51639d95c6ddb825a6ce60",
+  "origin": "https://gta-free-stem.pages.dev",
+  "method": "Headless Google Chrome, reduced motion, unretouched browser screenshots",
+  "captures": [
+    {
+      "file": "web-home-live-2026-10-27.png",
+      "url": "https://gta-free-stem.pages.dev/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      }
+    },
+    {
+      "file": "web-browse-live-2026-10-27.png",
+      "url": "https://gta-free-stem.pages.dev/opportunities/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "view": "map"
+    },
+    {
+      "file": "web-list-live-2026-10-27.png",
+      "url": "https://gta-free-stem.pages.dev/opportunities/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "view": "list"
+    },
+    {
+      "file": "web-mobile-live-2026-10-27.png",
+      "url": "https://gta-free-stem.pages.dev/",
+      "viewport": {
+        "width": 390,
+        "height": 1000
+      }
+    }
+  ],
+  "errors": []
+}

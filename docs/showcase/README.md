@@ -1,5 +1,20 @@
-# Screenshot provenance
+# Website screenshots and release checks
 
-The two images linked from the main README, `web-home-live-2026-10-27.png` and `web-browse-live-2026-10-27.png`, were captured from the public site at https://gta-free-stem.pages.dev/ and https://gta-free-stem.pages.dev/opportunities/ on October 27, 2026. Capture method: headless Google Chrome, 1440 × 900 browser viewport, with seven to nine seconds allowed for page loading. The images are unretouched and show the live public feed at capture time. They are web browser evidence only; they do not demonstrate iOS or Android behavior.
+These images were captured from the public website on October 27, 2026, after deploying [website release 779064a](https://github.com/rupayon123/gta-free-stem-opportunities/commit/779064a6e3bceffacb51639d95c6ddb825a6ce60).
 
-The older `home.png`, `search.png`, `high-school.png`, and `profile.png` files remain as a September 11, 2026 archive from the former Vercel address. They are not current product screenshots. The old High School search had no matches and Profile showed a sign-in dialog; no account was created or personal information entered.
+| Screenshot | What it shows | Browser viewport |
+| --- | --- | --- |
+| [Home](web-home-live-2026-10-27.png) | Original GTA logo, science icons, search and visible city/age/category filters | 1440 × 1000 |
+| [Map](web-browse-live-2026-10-27.png) | The default activity view, grouped location markers and the List switch | 1440 × 1000 |
+| [List](web-list-live-2026-10-27.png) | The same activities and filters presented as cards | 1440 × 1000 |
+| [Mobile](web-mobile-live-2026-10-27.png) | Compact branding and the search/filter form on a narrow screen | 390 × 1000 |
+
+Capture method: headless Google Chrome with reduced motion enabled. Images are unretouched browser captures of https://gta-free-stem.pages.dev/ and its activity directory. [Machine-readable capture receipt](web-capture-receipt.json) records URLs, sizes, time and the deployed source commit. These screenshots demonstrate the website; native app release checks are tracked in their respective repositories.
+
+## Checks for this release
+
+Before pushing the application update, TypeScript, the full website QA suite, production build, dependency audit and all 7,810 sitemap/canonical-page checks passed. Browser checks covered phone, small phone, tablet and desktop layouts; animation pause/resume, keyboard operation and reduced motion; dark mode and Urdu right-to-left layout; typo search; Map-first and the List switch; saved activities surviving reload; directory/detail links; rapid query changes; and the List fallback when map tiles are unavailable. The production dependency audit reported zero vulnerabilities.
+
+Public-site checks verified the deployed release and the unchanged 1,875-record native feed, and captured the real map and list views. Counts are a snapshot, not a promise of registration availability. The original provider confirms schedules, spaces and registration.
+
+The older `home.png`, `search.png`, `high-school.png`, and `profile.png` files remain as a September 11, 2026 archive from the former Vercel address. Use the dated October 27 images above for the current presentation.

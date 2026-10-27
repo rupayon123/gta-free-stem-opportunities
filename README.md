@@ -9,11 +9,11 @@ This repository contains the public website, search tools and source collectors.
 ## The web experience
 
 <table>
-<tr><th width="50%">Start with an interest</th><th width="50%">Browse source-backed activities</th></tr>
-<tr><td align="center"><a href="docs/showcase/web-home-live-2026-10-27.png"><img src="docs/showcase/web-home-live-2026-10-27.png" alt="Live website home showing the free activity search and optional city, age, and category filters" width="440"></a></td><td align="center"><a href="docs/showcase/web-browse-live-2026-10-27.png"><img src="docs/showcase/web-browse-live-2026-10-27.png" alt="Live opportunity directory showing search, filters, results, and original provider listings" width="440"></a></td></tr>
+<tr><th width="50%">Start with an interest</th><th width="50%">Explore the map first</th></tr>
+<tr><td align="center"><a href="docs/showcase/web-home-live-2026-10-27.png"><img src="docs/showcase/web-home-live-2026-10-27.png" alt="Live website home showing the free activity search and optional city, age, and category filters" width="440"></a></td><td align="center"><a href="docs/showcase/web-browse-live-2026-10-27.png"><img src="docs/showcase/web-browse-live-2026-10-27.png" alt="Live activity directory opening in Map view with location markers, visible filters, and the List switch" width="440"></a></td></tr>
 </table>
 
-Captured from the [public Cloudflare Pages website](https://gta-free-stem.pages.dev/) on October 27, 2026 at a 1440 × 900 desktop viewport. These are unretouched browser captures of the live site, not design mockups. Listings and result counts change as the public feed refreshes; the images show what appeared at capture time. [Capture details](docs/showcase/README.md).
+Captured from the [public website](https://gta-free-stem.pages.dev/) on October 27, 2026 at a 1440 × 1000 desktop viewport. [See the List view](docs/showcase/web-list-live-2026-10-27.png), [mobile layout](docs/showcase/web-mobile-live-2026-10-27.png), and [capture details](docs/showcase/README.md). These unretouched browser captures show the live release; result counts change as listings refresh.
 
 ## What you can do
 
