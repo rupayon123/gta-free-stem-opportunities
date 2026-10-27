@@ -1,5 +1,5 @@
 name: Full description Cantonese benchmark
-# Full-event Cantonese/Punjabi/Mandarin domain fact benchmark v3
+# Full-event domain facts with model-author recommended non-thinking sampling v4
 on:
   push:
     branches: [codex/full-description-translations-20261027]
