@@ -1,0 +1,39 @@
+name: Bounded full-description quality investigation 8B
+on:
+  push:
+    branches: [codex/full-description-translations-20261027]
+    paths: [.github/workflows/translation-quality-8b.yml]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: full-description-quality-8b
+  cancel-in-progress: false
+jobs:
+  hard-set:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 35
+    env:
+      HF_HUB_DISABLE_TELEMETRY: "1"
+      DO_NOT_TRACK: "1"
+    steps:
+      - uses: actions/checkout@v6
+      - name: Verify public standard runner resources
+        run: |
+          python3 - <<'PY'
+          import os, shutil
+          assert os.sysconf('SC_PHYS_PAGES') * os.sysconf('SC_PAGE_SIZE') >= 12_000_000_000
+          assert shutil.disk_usage(os.environ['RUNNER_TEMP']).free >= 8_000_000_000
+          PY
+      - name: Four complete real source descriptions with pinned official weights
+        run: python3 scripts/translations/benchmark_quality_8b.py --feed public/opportunities.json --directory "$RUNNER_TEMP/quality-model" --output quality-8b.json
+      - name: Retain small experimental text evidence only
+        if: always()
+        uses: actions/upload-artifact@v6
+        with:
+          name: full-description-quality-8b
+          path: |
+            quality-8b.json
+            quality-8b.server.log
+          if-no-files-found: ignore
+          retention-days: 7
