@@ -15,7 +15,7 @@ MAX_BYTES = 10_000_000
 MAX_RECORDS = 15_000
 MAX_TEXT_BYTES = 100_000
 PROVIDERS = {"Toronto Public Library": "tpl.bibliocommons.com", "Markham Public Library": "markham.bibliocommons.com"}
-ENGINE = "madlad400-3b-ct2-int8-full-source-v1"
+ENGINE = "madlad400-3b-ct2-int8-full-source-sentences-v2"
 MODEL = {
     "original": "google/madlad400-3b-mt",
     "originalRevision": "fa184c675da0b5c9e1c8694fccd4e12e2d422094",
@@ -168,7 +168,7 @@ def publish_manifest(index: dict, packs: dict[str, dict], directory: Path, requi
     return manifest
 
 
-def split_source(text: str, measure, limit: int = 192) -> list[str]:
+def _split_token_bounded(text: str, measure, limit: int = 192) -> list[str]:
     """Cover every source codepoint exactly once, without tokenizer truncation."""
     require(isinstance(text, str) and text.strip() and limit >= 8, "invalid segment source/limit")
     chunks, offset = [], 0
@@ -199,12 +199,28 @@ def split_source(text: str, measure, limit: int = 192) -> list[str]:
     return chunks
 
 
+def split_source(text: str, measure, limit: int = 192) -> list[str]:
+    # A normal EOS does not prove a document-level model retained each sentence.
+    # Translate each sentence independently; never combine an unverified tail.
+    boundaries = [match.end() for match in re.finditer(r"[.!?。！？](?:\s+|$)|\n+", text)]
+    if not boundaries or boundaries[-1] != len(text): boundaries.append(len(text))
+    chunks, offset = [], 0
+    for end in boundaries:
+        sentence = text[offset:end]
+        if sentence.strip(): chunks.extend(_split_token_bounded(sentence, measure, limit))
+        elif chunks: chunks[-1] += sentence
+        offset = end
+    require("".join(chunks) == text and all(chunk.strip() for chunk in chunks), "sentence segmentation lost source text")
+    return chunks
+
+
 def translate_entry(source: str, language: str, engine) -> dict:
     require(language in MODEL_LANGUAGES, "unsupported translation locale for this model")
     chunks = split_source(source, lambda text: engine.input_length(text, language))
+    results = engine.translate_many(chunks, language) if hasattr(engine, "translate_many") else [engine.translate(chunk, language) for chunk in chunks]
+    require(len(results) == len(chunks), "model omitted a source sentence")
     segments, offset = [], 0
-    for chunk in chunks:
-        translated, ended = engine.translate(chunk, language)
+    for chunk, (translated, ended) in zip(chunks, results):
         require(ended and isinstance(translated, str) and translated.strip(), "model stopped without EOS; source not fully translated")
         segments.append({"startByte": offset, "endByte": offset + len(chunk.encode("utf-8")), "sourceSHA256": sha(chunk), "text": translated.strip(), "endedNormally": True})
         offset += len(chunk.encode("utf-8"))
@@ -276,13 +292,29 @@ class MadladEngine:
     def input_length(self, text: str, language: str) -> int:
         return len(self.tokens(text, language))
 
+    def translate_many(self, texts: list[str], language: str) -> list[tuple[str, bool]]:
+        tokens = [self.tokens(text, language) for text in texts]
+        require(all(len(text) <= 192 for text in tokens), "source input exceeds tested token bound")
+        translated = self.translator.translate_batch(tokens, beam_size=1, max_input_length=192, max_decoding_length=1024, return_end_token=True, max_batch_size=512, batch_type="tokens")
+        results = []
+        for item in translated:
+            result = item.hypotheses[0]
+            ended = bool(result) and result[-1] == "</s>"
+            output = self.tokenizer.decode([token for token in result if token not in {"</s>", "<s>", "<pad>"}])
+            results.append((output, ended))
+        return results
+
     def translate(self, text: str, language: str) -> tuple[str, bool]:
-        tokens = self.tokens(text, language)
-        require(len(tokens) <= 192, "source input exceeds tested token bound")
-        result = self.translator.translate_batch([tokens], beam_size=1, max_input_length=192, max_decoding_length=1024, return_end_token=True)[0].hypotheses[0]
-        ended = bool(result) and result[-1] == "</s>"
-        output = self.tokenizer.decode([token for token in result if token not in {"</s>", "<s>", "<pad>"}])
-        return output, ended
+        return self.translate_many([text], language)[0]
+
+
+def benchmark_facts(text: str, language: str) -> dict[str, bool]:
+    terms = {
+        "fr": {"snacks": ("collation", "goûter", "snack"), "registration": ("inscription",), "volunteerHours": ("bénévol",), "disability": ("handicap",), "branchContact": ("appelez", "téléphon", "contact")},
+        "zh": {"snacks": ("零食", "小吃", "茶点", "茶點"), "registration": ("注册", "註冊", "报名", "報名", "登記", "登记"), "volunteerHours": ("志愿", "志願", "義工", "义工"), "disability": ("残疾", "殘疾", "障碍", "障礙"), "youthService": ("青少年",)},
+        "pa": {"snacks": ("ਸਨੈਕ", "ਸਨਾਕ", "ਨਾਸ਼ਤ", "ਨਾਸ਼ਤ"), "volunteerHours": ("ਵਲੰਟੀਅਰ", "ਸਵੈਸੇਵ", "ਸਵੈ-ਸੇਵ", "ਸੇਵਾ ਦੇ ਘੰਟੇ"), "disability": ("ਅਪਾਹਜ", "ਅਸਮਰੱਥ", "ਵਿਕਲਾਂਗ", "ਅੰਗਹੀਣ", "ਦਿਵਿਆਂਗ", "ਅਯੋਗਤਾ")},
+    }
+    return {fact: any(word.casefold() in text.casefold() for word in alternatives) for fact, alternatives in terms[language].items()}
 
 
 def benchmark(feed: Path, directory: Path, output: Path) -> None:
@@ -297,8 +329,11 @@ def benchmark(feed: Path, directory: Path, output: Path) -> None:
     for language in ("fr", "zh", "pa"):
         started = time.monotonic()
         pack = generate(index, language, engine)
-        report["results"][language] = {"seconds": round(time.monotonic() - started, 3), "pack": pack}
+        description_hash = index["records"][row["id"]]["descriptionSHA256"]
+        facts = benchmark_facts(pack["translations"][description_hash]["text"], language)
+        report["results"][language] = {"seconds": round(time.monotonic() - started, 3), "pack": pack, "eventFactChecks": facts}
         write(output, report)
+        require(all(facts.values()), f"{language} benchmark missed a required event fact: {facts}")
     print(json.dumps({"benchmarkComplete": True, "languages": list(report["results"]), "fullSourceCharacters": len(row["description"]), "output": str(output)}), flush=True)
 
 

@@ -1,4 +1,5 @@
 name: Full description translation benchmark
+# Sentence-level completeness refinement v2
 
 on:
   push:
