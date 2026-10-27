@@ -70,7 +70,7 @@ assert(
 
 for (const requiredPrivacyTopic of [
   "What the Apple app stores on your device",
-  "Network services and technical request data",
+  "Public feed services and technical request data",
   "Coarse Location",
   "Other Diagnostic Data",
   "Support opens GitHub's public issue tracker",
