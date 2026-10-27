@@ -1,5 +1,5 @@
 name: Full description Cantonese benchmark
-# Explicit colloquial Cantonese style benchmark v2
+# Full-event Cantonese/Punjabi/Mandarin domain fact benchmark v3
 on:
   push:
     branches: [codex/full-description-translations-20261027]
