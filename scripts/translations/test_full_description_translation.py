@@ -3,7 +3,7 @@ import json
 from pathlib import Path
 import tempfile
 import unittest
-from full_description_translation import build_index, encode, generate, parse, sha, split_source, translate_entry, validate_index, validate_pack, write
+from full_description_translation import build_index, encode, generate, parse, sha, split_source, translate_entry, validate_index, validate_pack, write, publish_manifest
 
 
 def row(identity="one", description="Build the device. Test every circuit. Keep the final instruction."):
@@ -104,6 +104,24 @@ class FullDescriptionTests(unittest.TestCase):
     def test_duplicate_json_keys_and_oversized_inputs_are_rejected(self):
         with self.assertRaises(ValueError): parse(b'{"language":"fr","language":"es"}')
         with self.assertRaises(ValueError): parse(b' ' * 10_000_001)
+
+    def test_full_release_never_accepts_sixteen_languages_or_one_sample(self):
+        with tempfile.TemporaryDirectory() as directory:
+            manifest = Path(directory) / "manifest.json"
+            manifest.write_text("retained live manifest")
+            with self.assertRaisesRegex(ValueError, "missing"):
+                publish_manifest(self.index, {"fr": self.pack}, Path(directory))
+            self.assertEqual(manifest.read_text(), "retained live manifest")
+
+    def test_manifest_uses_immutable_hashed_same_origin_paths(self):
+        with tempfile.TemporaryDirectory() as directory:
+            manifest = publish_manifest(self.index, {"fr": self.pack}, Path(directory), required_languages=("fr",))
+            for entry in [manifest["source"], manifest["locales"]["fr"]]:
+                self.assertTrue(entry["path"].startswith("/translations/"))
+                raw = (Path(directory) / Path(entry["path"]).name).read_bytes()
+                self.assertEqual(sha(raw), entry["sha256"])
+                self.assertEqual(len(raw), entry["bytes"])
+            self.assertEqual(manifest["source"]["sha256"], self.pack["sourceIndexSHA256"])
 
     def test_atomic_write_retains_previous_file_on_size_failure(self):
         with tempfile.TemporaryDirectory() as directory:

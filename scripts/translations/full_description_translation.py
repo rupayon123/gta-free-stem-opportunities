@@ -144,6 +144,30 @@ def validate_pack(pack: dict, index: dict, language: str) -> dict:
     return pack
 
 
+def publish_manifest(index: dict, packs: dict[str, dict], directory: Path, required_languages=LANGUAGES) -> dict:
+    """Publish only verified immutable files; replace the small manifest last."""
+    validate_index(index)
+    require(set(packs) == set(required_languages), "release is missing a required full-description language")
+    for language, pack in packs.items():
+        validate_pack(pack, index, language)
+    source_raw = encode(index)
+    source_hash = sha(source_raw)
+    def descriptor(filename: str, raw: bytes) -> dict:
+        return {"path": "/translations/" + filename, "sha256": sha(raw), "bytes": len(raw)}
+    source_name = source_hash + ".source.json"
+    locales = {}
+    # All coverage/size validations finish before touching the live manifest.
+    for language, pack in sorted(packs.items()):
+        raw = encode(pack)
+        filename = f"{source_hash}.{language}.{sha(raw)}.json"
+        write(directory / filename, pack)
+        locales[language] = descriptor(filename, raw)
+    write(directory / source_name, index)
+    manifest = {"schemaVersion": 1, "sourceLanguage": "en", "source": descriptor(source_name, source_raw), "locales": locales}
+    write(directory / "manifest.json", manifest)
+    return manifest
+
+
 def split_source(text: str, measure, limit: int = 192) -> list[str]:
     """Cover every source codepoint exactly once, without tokenizer truncation."""
     require(isinstance(text, str) and text.strip() and limit >= 8, "invalid segment source/limit")

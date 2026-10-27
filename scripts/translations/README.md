@@ -22,8 +22,13 @@ tail. All segments require real model end-of-sequence, not max-token stopping.
 The full translated text reconstructs every segment in order with spaces.
 Partial packs, stale source hashes and old summary templates are rejected.
 
-Publishing will use a small manifest with immutable SHA256-addressed source and
-locale paths, SHA256/byte-size descriptors, and selected-locale loading only.
+Publishing uses `/translations/manifest.json`: `{schemaVersion:1,
+sourceLanguage:"en",source:{path,sha256,bytes},locales:{fr:{path,sha256,bytes},...}}`.
+Paths are `/translations/<sourceSHA>.source.json` and
+`/translations/<sourceSHA>.<locale>.<packSHA>.json`. The source descriptor's SHA is
+the pack's sourceIndexSHA256. Load only the selected locale. New immutable source
+and locale files are validated/written before the live manifest is replaced. A
+full release requires all 17 target language packs, never one sample or 16/17.
 Every response remains bounded to 10 MB; no model runs inside the apps. Native
 feed bounds, event freshness, approved-source rights and publication ordering are
 independent and remain enforced. Valid originals remain the fallback.
