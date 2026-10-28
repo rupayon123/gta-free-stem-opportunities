@@ -3,8 +3,8 @@ import type { DiscoveredOpportunity } from "./discovery";
 export const generatedDiscoverySummary = {
   "mode": "deterministic",
   "sourcesChecked": 30,
-  "candidatesFound": 271,
-  "newCandidates": 48,
+  "candidatesFound": 269,
+  "newCandidates": 49,
   "duplicatesSkipped": 32,
   "warnings": [
     "Could not check Credit Valley Conservation youth opportunities: 403 Forbidden.",
@@ -14,7 +14,7 @@ export const generatedDiscoverySummary = {
   ],
   "sourceHealth": {
     "schemaVersion": 1,
-    "generatedAt": "2026-10-28T13:01:19.241Z",
+    "generatedAt": "2026-10-28T22:39:39.129Z",
     "status": "healthy",
     "failureReasons": [],
     "sourcesChecked": 30,
@@ -165,6 +165,35 @@ export const generatedDiscoveryReviewCandidates = [
       "science & engineering",
       "technology",
       "science"
+    ],
+    "confidence": "high",
+    "reviewReasons": [],
+    "sourceName": "Aurora Public Library STEM events"
+  },
+  {
+    "id": "discovered-aurora-library-stem-stem-engineering-adventures-6898fb7fc377",
+    "title": "STEM Engineering Adventures",
+    "organization": "Aurora Public Library",
+    "description": "Discover the power of hands-on learning with our scientific, intriguing, interactive STEM activities and projects that you get to take home after completion! This is in collaboration with and funded by Robotics Rock STEM Youth Association. This session is for ages 11-14. If you are unable to attend, please cancel your registration as soon as possible so that another child may take your spot. Repeated no-shows without cancelling may affect eligibility for future registrations, as we strive to provide fair access to all families interested in the program.",
+    "city": "Aurora",
+    "region": "York",
+    "ageMin": 11,
+    "ageMax": 14,
+    "category": "Coding & Robotics",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "deadline": "2026-10-29T17:30:00-04:00",
+    "startDate": "2026-10-29T17:30:00-04:00",
+    "endDate": "2026-10-29T18:30:00-04:00",
+    "sourceUrl": "https://aurora.bibliocommons.com/v2/events/6a8c9b5d29a7dd0d67463e53",
+    "lastChecked": "2026-10-28",
+    "lastSeen": "2026-10-28",
+    "status": "needs_review",
+    "tags": [
+      "coding & robotics",
+      "stem"
     ],
     "confidence": "high",
     "reviewReasons": [],
