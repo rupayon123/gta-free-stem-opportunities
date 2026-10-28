@@ -5,6 +5,8 @@ import { acceptedSearchResultIds } from "../components/useOpportunitySearch";
 import { createOpportunitySearchWorkerHandler, type OpportunitySearchWorkerRequest, type OpportunitySearchWorkerResponse } from "./opportunitySearch.worker";
 import { searchOpportunities } from "./search";
 import type { Opportunity } from "./types";
+import { DEFAULT_FILTERS, filtersFromUrl } from "./explorerFilters";
+import { filterOpportunities } from "./utils";
 
 function fixture(id: string, title: string, overrides: Partial<Opportunity> = {}): Opportunity {
   return {
@@ -64,6 +66,37 @@ assert.equal(acceptedSearchResultIds(reply, 2, 9, new Set([reading.id])), undefi
 assert.equal(acceptedSearchResultIds(reply, 3, 8, new Set([reading.id])), undefined);
 assert.equal(acceptedSearchResultIds({ ...reply, ids: [42] }, 2, 8, new Set([reading.id])), undefined);
 
+// A retired program-language filter must not erase the English-default catalogue.
+// Keep the interface/search language and every supported eligibility filter distinct.
+const legacyUrl = new URL("https://example.invalid/opportunities/?programLanguage=ja&q=robotique&city=Toronto&region=Toronto&age=13&category=Coding+%26+Robotics&lang=fr&sort=soonest&view=map&saved=1");
+const restoredFilters = filtersFromUrl({ ...DEFAULT_FILTERS, language: "ja" }, legacyUrl.search);
+assert.equal(restoredFilters.language, "all");
+assert.equal(restoredFilters.query, "robotique");
+assert.equal(restoredFilters.city, "Toronto");
+assert.equal(restoredFilters.region, "Toronto");
+assert.equal(restoredFilters.age, "13");
+assert.equal(restoredFilters.category, "Coding & Robotics");
+const displayLanguage = legacyUrl.searchParams.get("lang") as "fr";
+assert.equal(displayLanguage, "fr");
+assert.equal(legacyUrl.searchParams.get("sort"), "soonest");
+assert.equal(legacyUrl.searchParams.get("view"), "map");
+assert.equal(legacyUrl.searchParams.get("saved"), "1");
+const wrongCity = fixture("wrong-city", "Robot Builders", { ...allowed, id: "wrong-city", city: "Markham", region: "York" });
+const legacyMaster = [...master, wrongCity].map((item) => ({
+  ...item, startDate: new Date(Date.now() + 7 * 86_400_000).toISOString(),
+  lastChecked: new Date().toISOString(), lastVerified: new Date().toISOString()
+}));
+// Exercise direct/persisted caller input too, independently of URL normalization.
+const legacyEligible = filterOpportunities(legacyMaster, { ...restoredFilters, language: "ja" }, null, { searchLanguage: displayLanguage });
+assert.deepEqual(legacyEligible.map((item) => item.id), [allowed.id], "Retired language must be neutral; city, category, age and public status must still restrict results");
+const legacySent: OpportunitySearchWorkerResponse[] = [];
+const legacyHandle = createOpportunitySearchWorkerHandler((message) => legacySent.push(message));
+legacyHandle({ type: "initialize", generation: 1, items: legacyMaster });
+assert.equal(legacySent.pop()?.type, "ready");
+const legacyRequest = request(1, { eligibleIds: legacyEligible.map((item) => item.id), query: restoredFilters.query, language: displayLanguage, proximityResolved: true });
+legacyHandle(legacyRequest);
+assert.deepEqual(legacySent.pop(), { type: "results", generation: 1, sequence: 1, ids: [allowed.id] });
+
 function nextMessage(worker: NodeWorker): Promise<unknown> {
   return new Promise((resolve, reject) => {
     const timeout = setTimeout(() => { cleanup(); reject(new Error("Search worker adapter timed out")); }, 15_000);
@@ -102,15 +135,21 @@ parentPort.postMessage({ type: "adapter-ready" });`;
       const expected = searchOpportunities([allowed, reading], query).map((item) => item.id);
       assert.deepEqual(await response, { type: "results", generation: 1, sequence: sequence + 1, ids: expected });
     }
+    response = nextMessage(worker);
+    worker.postMessage({ type: "initialize", generation: 2, items: legacyMaster } satisfies OpportunitySearchWorkerRequest);
+    assert.deepEqual(await response, { type: "ready", generation: 2 });
+    response = nextMessage(worker);
+    worker.postMessage({ ...legacyRequest, generation: 2 });
+    assert.deepEqual(await response, { type: "results", generation: 2, sequence: 1, ids: [allowed.id] });
     const bulk = Array.from({ length: 5_000 }, (_, index) => fixture(`bulk-${index}`, index % 250 === 0 ? "Robot Builders" : "Community Reading", index % 250 === 0
       ? { category: "Coding & Robotics", categories: ["STEM", "Coding & Robotics"] } : {}));
     response = nextMessage(worker);
-    worker.postMessage({ type: "initialize", generation: 2, items: bulk } satisfies OpportunitySearchWorkerRequest);
-    assert.deepEqual(await response, { type: "ready", generation: 2 });
+    worker.postMessage({ type: "initialize", generation: 3, items: bulk } satisfies OpportunitySearchWorkerRequest);
+    assert.deepEqual(await response, { type: "ready", generation: 3 });
     let mainThreadYielded = false;
     const pulse = setTimeout(() => { mainThreadYielded = true; }, 0);
     response = nextMessage(worker);
-    worker.postMessage(request(1, { generation: 2, eligibleIds: bulk.filter((_, index) => index % 2 === 0).map((item) => item.id) }));
+    worker.postMessage(request(1, { generation: 3, eligibleIds: bulk.filter((_, index) => index % 2 === 0).map((item) => item.id) }));
     const bulkReply = await response as Extract<OpportunitySearchWorkerResponse, { type: "results" }>;
     clearTimeout(pulse);
     assert.equal(bulkReply.type, "results");
@@ -119,7 +158,7 @@ parentPort.postMessage({ type: "adapter-ready" });`;
   } finally {
     await worker.terminate();
   }
-  console.log(JSON.stringify({ protocolChecks: 15, actualWorkerQueries: 5, largeMasterRecords: 5000, largeEligibleRecords: 2500, mainEventLoopYielded: true, strictEligibility: true, staleSequenceAndGenerationRejected: true, browserResponseWhitelist: true, generatedFilesWritten: 0 }));
+  console.log(JSON.stringify({ protocolChecks: 15, actualWorkerQueries: 6, legacyProgramLanguageNeutralized: true, interfaceSearchLanguagePreserved: displayLanguage, largeMasterRecords: 5000, largeEligibleRecords: 2500, mainEventLoopYielded: true, strictEligibility: true, staleSequenceAndGenerationRejected: true, browserResponseWhitelist: true, generatedFilesWritten: 0 }));
 }
 
 main().catch((error: unknown) => {

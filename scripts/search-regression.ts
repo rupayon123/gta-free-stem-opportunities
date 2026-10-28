@@ -201,7 +201,7 @@ const combinedFilters: Filters = {
 };
 const disqualifiers: Partial<Opportunity>[] = [
   { region: "Toronto" }, { city: "Toronto" }, { categories: ["Makerspace & Fabrication"] },
-  { ages: { min: 18, max: 24 } }, { languages: ["en"] },
+  { ages: { min: 18, max: 24 } },
   { communityFocus: ["Girls/women-focused", "Indigenous-focused"] },
   { communityFocus: ["Black-focused", "Indigenous-focused"] },
   { communityFocus: ["Black-focused", "Girls/women-focused"] },
@@ -212,6 +212,7 @@ const disqualifiers: Partial<Opportunity>[] = [
   { lastChecked: new Date(Date.now() - 30 * 86400000).toISOString() },
   { startDate: new Date(Date.now() - 86400000).toISOString() }
 ];
+assert.deepEqual(filterOpportunities([{ ...combined, languages: ["en"] }], { ...combinedFilters, language: "ja" }, null).map((item) => item.id), ["combined"], "A retired program-language selection is neutral while every other combined constraint remains enforced.");
 const combinedItems = [combined, ...disqualifiers.map((change, index) => ({ ...combined, ...change, id: `excluded-${index}` }))];
 assert.deepEqual(filterOpportunities(combinedItems, combinedFilters, null).map((item) => item.id), ["combined"], "Fuzzy/proximity search preserves every combined structured and publication constraint.");
 assert.deepEqual(filterOpportunities(combinedItems, { ...combinedFilters, query: "library near me gala" }, null), [], "Combined filters never discard unknown query intent.");

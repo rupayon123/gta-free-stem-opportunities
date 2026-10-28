@@ -52,7 +52,6 @@ export default async function ProgramPage({ params }: ProgramPageProps) {
   const description = programSummary(program);
   const distinctDeadline = program.deadline && Date.parse(program.deadline) !== Date.parse(program.startDate)
     ? program.deadline : undefined;
-  const languageNames = new Intl.DisplayNames(["en"], { type: "language" });
   const structuredData = {
     "@context": "https://schema.org",
     "@graph": [
@@ -88,7 +87,6 @@ export default async function ProgramPage({ params }: ProgramPageProps) {
               <div><dt>Listed age range</dt><dd>{programAgeRange(program)}</dd></div>
               <div><dt>Location</dt><dd>{program.virtual ? "Online" : program.address || program.city}</dd></div>
               <div><dt>Cost listed</dt><dd>{program.cost}</dd></div>
-              <div><dt>Program language</dt><dd>{program.languages.map((language) => languageNames.of(language) ?? language).join(", ")}</dd></div>
               {distinctDeadline && <div><dt>Registration deadline</dt><dd><time dateTime={distinctDeadline}>{formatProgramDateTime(distinctDeadline)}</time></dd></div>}
               {program.volunteerHoursEligible && <div><dt>School pathway</dt><dd>Volunteer-hour eligibility is listed. Confirm requirements with the provider and your school.</dd></div>}
               {program.coopEligible && <div><dt>School pathway</dt><dd>Co-op eligibility is listed. Confirm placement requirements with the provider and your school.</dd></div>}

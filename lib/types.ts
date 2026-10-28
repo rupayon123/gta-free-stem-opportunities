@@ -202,6 +202,7 @@ export type Filters = {
   city: string;
   category: "All" | Category;
   age: string;
+  /** Legacy program-language selection; ignored until provider delivery language is verified. */
   language: "all" | LanguageCode;
   distanceKm: number;
   postalCode: string;

@@ -834,7 +834,7 @@ assert(
 
 for (const language of languagePreferenceOrder) {
   const languageResults = filterOpportunities(opportunities, { ...baseFilters, language }, null);
-  assert(languageResults.every((opportunity) => opportunity.languages.includes(language)), `Language filter leaked non-${language} listings.`);
+  assert(JSON.stringify(languageResults.map((item) => item.id)) === JSON.stringify(allResults.map((item) => item.id)), `Legacy program-language ${language} must not hide listings.`);
 }
 
 const postalLocation = coordinatesFromPostal("L5B 0A1");

@@ -2,8 +2,9 @@
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { ArrowDown, ArrowRight, Bookmark, CalendarDays, CalendarPlus, Check, ChevronDown, Code2, Compass, ExternalLink, FlaskConical, List, LocateFixed, Map, MapPin, Search, SlidersHorizontal, RefreshCw, UsersRound, X } from "lucide-react";
-import { categories, cityOptions, languagePreferenceOrder, opportunities, regions } from "@/lib/data";
-import { languageMeta, t, translatedCategory, translatedSummary } from "@/lib/i18n";
+import { categories, cityOptions, opportunities, regions } from "@/lib/data";
+import { t, translatedCategory, translatedSummary } from "@/lib/i18n";
+import { DEFAULT_FILTERS, filtersFromUrl, URL_TOGGLES } from "@/lib/explorerFilters";
 import { legalConfig } from "@/lib/legal";
 import { isOpportunityVerificationStale, publicOpportunities } from "@/lib/opportunityStatus";
 import type { Filters, LanguageCode, Opportunity } from "@/lib/types";
@@ -16,11 +17,6 @@ import "./OpportunityExplorer.css";
 
 const SAVED_KEY = "gta-stem-opportunities-saved-anonymous";
 const PAGE_SIZE = 12;
-const DEFAULT_FILTERS: Filters = {
-  query: "", region: "All", city: "", category: "All", age: "", language: "all",
-  distanceKm: 25, postalCode: "", nearMe: false, blackFocused: false, girlsFocused: false,
-  indigenousFocused: false, volunteerHours: false, coop: false, mentorship: false, leadership: false
-};
 
 type ExplorerProps = {
   language: LanguageCode;
@@ -31,27 +27,6 @@ type ExplorerProps = {
   onSavedCountChange?: (count: number) => void;
 };
 type SortOrder = "relevance" | "soonest" | "recent" | "title" | "distance";
-const URL_TOGGLES = { black: "blackFocused", girls: "girlsFocused", indigenous: "indigenousFocused", volunteer: "volunteerHours", coop: "coop", mentorship: "mentorship", leadership: "leadership" } as const;
-function filtersFromUrl(base: Partial<Filters>): Filters {
-  const filters = { ...DEFAULT_FILTERS, ...base };
-  const params = new URLSearchParams(window.location.search);
-  if (params.has("q")) filters.query = (params.get("q") ?? "").slice(0, 250);
-  const category = params.get("category");
-  if (category && categories.includes(category as typeof categories[number])) filters.category = category as Filters["category"];
-  const region = params.get("region");
-  if (region && regions.includes(region as typeof regions[number])) filters.region = region as Filters["region"];
-  const city = params.get("city");
-  if (city && cityOptions.includes(city)) filters.city = city;
-  const age = params.get("age");
-  if (age && /^\d{1,2}(?:\.\d{1,2})?$/.test(age)) filters.age = age;
-  const programLanguage = params.get("programLanguage");
-  if (programLanguage && programLanguage in languageMeta) filters.language = programLanguage as LanguageCode;
-  if (params.has("postal")) filters.postalCode = (params.get("postal") ?? "").slice(0, 7).toUpperCase();
-  const distance = Number(params.get("distance"));
-  if ([5, 10, 25, 50, 100].includes(distance)) filters.distanceKm = distance;
-  Object.entries(URL_TOGGLES).forEach(([param, key]) => { if (params.has(param)) filters[key] = params.get(param) === "1"; });
-  return filters;
-}
 
 type ToggleFilter = "blackFocused" | "girlsFocused" | "indigenousFocused" | "volunteerHours" | "coop" | "mentorship" | "leadership";
 
@@ -90,7 +65,7 @@ function reportUrl(item: Opportunity) {
 }
 
 export function OpportunityExplorer({ language, initialFilters = {}, highSchool = false, savedOnly = false, landing = false, onSavedCountChange }: ExplorerProps) {
-  const [filters, setFilters] = useState<Filters>(() => ({ ...DEFAULT_FILTERS, ...initialFilters }));
+  const [filters, setFilters] = useState<Filters>(() => ({ ...DEFAULT_FILTERS, ...initialFilters, language: "all" }));
   const [urlReady, setUrlReady] = useState(false);
   const [filterOpen, setFilterOpen] = useState(false);
   const [view, setView] = useState<"list" | "map">("map");
@@ -121,7 +96,7 @@ export function OpportunityExplorer({ language, initialFilters = {}, highSchool 
   }, [libraryEvents]);
 
   useEffect(() => {
-    const readUrl = () => { setFilters(filtersFromUrl(JSON.parse(initialKey))); setDeviceLocation(null); };
+    const readUrl = () => { setFilters(filtersFromUrl(JSON.parse(initialKey), window.location.search)); setDeviceLocation(null); };
     readUrl();
     setUrlReady(true);
     window.addEventListener("popstate", readUrl);
@@ -133,7 +108,7 @@ export function OpportunityExplorer({ language, initialFilters = {}, highSchool 
     const values: Record<string, string> = {
       q: filters.query, category: filters.category === "All" ? "" : filters.category,
       region: filters.region === "All" ? "" : filters.region, city: filters.city,
-      age: filters.age, programLanguage: filters.language === "all" ? "" : filters.language,
+      age: filters.age, programLanguage: "",
       postal: filters.postalCode, distance: locationDistanceParameter(filters)
     };
     Object.entries(URL_TOGGLES).forEach(([param, key]) => { values[param] = filters[key] ? "1" : ""; });
@@ -273,7 +248,6 @@ export function OpportunityExplorer({ language, initialFilters = {}, highSchool 
   if (filters.region !== "All") chips.push({ key: "region", label: filters.region, reset: () => updateFilter("region", "All") });
   if (filters.city) chips.push({ key: "city", label: filters.city, reset: () => updateFilter("city", "") });
   if (filters.age) chips.push({ key: "age", label: `${t(language, "age")} ${filters.age}`, reset: () => updateFilter("age", "") });
-  if (filters.language !== "all") chips.push({ key: "language", label: languageMeta[filters.language].label, reset: () => updateFilter("language", "all") });
   if (location) chips.push({ key: "distanceKm", label: `${filters.distanceKm} km · ${location.label ?? "your area"}`, reset: () => setFilters((current) => ({ ...current, nearMe: false, postalCode: "" })) });
   const toggles: [ToggleFilter, "black" | "girls" | "indigenous" | "volunteerHours" | "coop" | "mentorship" | "leadership"][] = [["blackFocused", "black"], ["girlsFocused", "girls"], ["indigenousFocused", "indigenous"], ["volunteerHours", "volunteerHours"], ["coop", "coop"], ["mentorship", "mentorship"], ["leadership", "leadership"]];
   toggles.forEach(([key, label]) => { if (filters[key]) chips.push({ key, label: t(language, label), reset: () => updateFilter(key, false) }); });
@@ -281,7 +255,7 @@ export function OpportunityExplorer({ language, initialFilters = {}, highSchool 
   const browseValues = {
     q: filters.query, category: filters.category === "All" ? "" : filters.category,
     region: filters.region === "All" ? "" : filters.region, city: filters.city,
-    age: filters.age, programLanguage: filters.language === "all" ? "" : filters.language,
+    age: filters.age,
     postal: filters.postalCode, distance: locationDistanceParameter(filters)
   };
   Object.entries(browseValues).forEach(([key, value]) => { if (value) browseParams.set(key, value); });
@@ -328,7 +302,6 @@ export function OpportunityExplorer({ language, initialFilters = {}, highSchool 
           <div className="oe-field"><label htmlFor="oe-city">{t(language, "city")}</label><select id="oe-city" value={filters.city} onChange={(event) => updateFilter("city", event.target.value)}><option value="">{t(language, "allCities")}</option>{cityOptions.map((city) => <option key={city}>{city}</option>)}</select></div>
           <div className="oe-field"><label htmlFor="oe-age">{t(language, "age")}</label><input id="oe-age" type="number" min="0" max="99" step="any" inputMode="decimal" aria-describedby="oe-age-help" value={filters.age} onChange={(event) => updateFilter("age", event.target.value)} placeholder={t(language, "any")} /><p className="oe-hint" id="oe-age-help" lang="en">Age in years; 0.5 means 6 months.</p></div>
           <details className="oe-more-filters"><summary data-science-press>{t(language, "showFilters")}<ChevronDown size={17} aria-hidden="true" /></summary><div>
-            <div className="oe-field"><label htmlFor="oe-program-language">{t(language, "programLanguage")}</label><select id="oe-program-language" value={filters.language} onChange={(event) => updateFilter("language", event.target.value as Filters["language"])}><option value="all">{t(language, "any")}</option>{languagePreferenceOrder.map((code) => <option key={code} value={code}>{languageMeta[code].native}</option>)}</select></div>
             <fieldset><legend>{t(language, "equity")}</legend>{toggles.slice(0, 3).map(([key, label]) => <label key={key} className="oe-check"><input type="checkbox" checked={filters[key]} onChange={(event) => updateFilter(key, event.target.checked)} /><span>{t(language, label)}</span></label>)}</fieldset>
             <fieldset><legend>{t(language, "highSchool")}</legend>{toggles.slice(3).map(([key, label]) => <label key={key} className="oe-check"><input type="checkbox" checked={filters[key]} onChange={(event) => updateFilter(key, event.target.checked)} /><span>{t(language, label)}</span></label>)}</fieldset>
             <fieldset><legend>{t(language, "distance")}</legend><div className="oe-field"><label htmlFor="oe-postal">{t(language, "postal")}</label><input id="oe-postal" type="text" value={filters.postalCode} onChange={(event) => setFilters((current) => ({ ...current, postalCode: event.target.value.toUpperCase(), nearMe: false }))} placeholder="M5T" maxLength={7} autoComplete="postal-code" aria-describedby="oe-postal-help" /></div><p className="oe-hint" id="oe-postal-help" lang="en">Enter the first 3 characters. Approximate distance from supported GTA postal areas.</p>{filters.postalCode.length >= 3 && !location && <p className="oe-inline-notice" role="status" lang="en">This postal area is not in our distance lookup. Choose a city instead.</p>}<button data-science-press className="oe-location-button" type="button" onClick={useLocation} disabled={locating}><LocateFixed size={16} aria-hidden="true" />{locating ? <span lang="en">Finding your location…</span> : t(language, "nearMe")}</button>{locationNotice && <p className="oe-inline-notice" role="status" lang="en">{locationNotice}</p>}<div className="oe-field"><label htmlFor="oe-distance">{t(language, "distance")}</label><select id="oe-distance" value={filters.distanceKm} onChange={(event) => updateFilter("distanceKm", Number(event.target.value))}>{[5, 10, 25, 50, 100].map((distance) => <option value={distance} key={distance} lang="en">Within {distance} km</option>)}</select></div></fieldset>
@@ -384,7 +357,6 @@ function DetailContent({ item, language, saved, onSave, onClose, now }: { item: 
     [t(language, "ages"), ageRange(item)],
     [t(language, "city"), item.virtual ? "Online" : `${item.address} · ${item.city}`],
     [t(language, "deadline"), formatDeadline(item.deadline)],
-    [t(language, "languages"), item.languages.map((code) => languageMeta[code].native).join(", ")],
     [t(language, "commitment"), item.commitment],
     [t(language, "access"), item.accessibility.join(" · ")],
     [t(language, "equipment"), item.equipment], [t(language, "food"), item.food], [t(language, "capacity"), item.capacity]

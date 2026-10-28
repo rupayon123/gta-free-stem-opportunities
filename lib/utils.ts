@@ -129,7 +129,8 @@ export function filterOpportunities(
         const max = opportunity.ages.max ?? 99;
         if (age < opportunity.ages.min || age > max) return false;
       }
-      if (filters.language !== "all" && !opportunity.languages.includes(filters.language)) return false;
+      // Legacy program-language selections are neutral: feed language codes
+      // are source defaults, not verified provider delivery-language metadata.
       if (filters.blackFocused && !opportunity.communityFocus.includes("Black-focused")) return false;
       if (filters.girlsFocused && !opportunity.communityFocus.includes("Girls/women-focused")) return false;
       if (filters.indigenousFocused && !opportunity.communityFocus.includes("Indigenous-focused")) return false;
