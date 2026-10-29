@@ -21,6 +21,7 @@ Captured from the [public website](https://gta-free-stem.pages.dev/) on October 
 - Narrow the results with visible city, age and category filters.
 - Explore locations on the map, switch between 2D and 3D neighbourhood views, or choose List to scan activities.
 - Open schedules, age ranges, accessibility information when provided, and original registration links.
+- Read the provider’s complete original description on a GTA event page, with a link back to the provider for updates.
 - Save activities in the current browser without signing in.
 
 ## Find an activity
@@ -28,10 +29,10 @@ Captured from the [public website](https://gta-free-stem.pages.dev/) on October 
 1. On the [home page](https://gta-free-stem.pages.dev/), enter an interest, library, or city. You can also leave the search open and choose a city, age, or category.
 2. Select **Find free activities**. The [opportunity directory](https://gta-free-stem.pages.dev/opportunities/) opens in **Map** view. Select a location marker to explore its activities, or choose **List** beside Map. Both views use the same search and filters; switching views keeps your choices. Choose **3D** to explore a nearby program location with real building heights where map data is available; **2D** flattens the view and **All locations** returns to the overview. Online activities remain available in List.
 3. Refine by city, age, category or the additional filters. Clear filters to return to the broader list.
-4. Open a result to check its schedule, age range, location, provider, and original source. Follow the provider's link to confirm availability and register when required.
+4. Open a result to check its schedule, age range, location, provider, and original source. Select **Read full description** for the complete original text on the GTA event page. Follow the provider's link to confirm availability and register when required.
 5. Use the bookmark control to save an activity for later on this browser. Saved items are local to the current browser and website address; no account is needed for browsing.
 
-The High School section gathers volunteer hours, co-op, SHSM, mentorship, and other pathways. Listing summaries may be generated for browsing; check the original provider page for complete and current details.
+The High School section gathers volunteer hours, co-op, SHSM, mentorship, and other pathways. Listing summaries may be generated for browsing. Complete original descriptions are available from each result; check the provider for current details and availability. [See the full-description screenshots](docs/showcase/README.md#full-original-descriptions).
 
 ## About the site
 

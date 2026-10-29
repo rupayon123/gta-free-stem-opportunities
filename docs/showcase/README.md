@@ -21,3 +21,13 @@ Before pushing the application update, TypeScript, the full website QA suite, pr
 Public-site checks verified the deployed release and the unchanged 1,875-record native feed, and captured the real map and list views. Counts are a snapshot, not a promise of registration availability. The original provider confirms schedules, spaces and registration.
 
 The older `home.png`, `search.png`, `high-school.png`, and `profile.png` files remain as a September 11, 2026 archive from the former Vercel address. Use the dated October 27 images above for the current presentation.
+
+## Full original descriptions
+
+Captured from the live Cloudflare site on October 28, 2026 (October 29 UTC), source `c5a18ce729cfa1b8344cb2761406d87d6547ae4c`. These unretouched 390×844 phone captures show the directory’s **Read full description** link and its destination. The visible focus outline identifies the keyboard navigation target. The other provider link remains available for registration and changes.
+
+| Open the complete text | Read the provider’s description |
+|---|---|
+| ![Live event detail with the Read full description link](2026-10-28-full-descriptions/modal-full-description-link-phone.png) | ![Live complete original provider description on a GTA event page](2026-10-28-full-descriptions/full-description-phone.png) |
+
+[Capture and publication receipt](2026-10-28-full-descriptions/capture-receipt.json). The published build verified exact original text on all 7,721 accepted event pages; counts are a dated snapshot. Live checks on both public hosts verified the full 4,438-character example, its ending, phone and desktop overflow, keyboard navigation and fragment focus. This addition does not claim full-description translations or new native app releases.
