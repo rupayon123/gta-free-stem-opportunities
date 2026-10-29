@@ -3,8 +3,8 @@ import type { DiscoveredOpportunity } from "./discovery";
 export const generatedDiscoverySummary = {
   "mode": "deterministic",
   "sourcesChecked": 30,
-  "candidatesFound": 266,
-  "newCandidates": 48,
+  "candidatesFound": 265,
+  "newCandidates": 45,
   "duplicatesSkipped": 28,
   "warnings": [
     "Could not check Credit Valley Conservation youth opportunities: 403 Forbidden.",
@@ -14,7 +14,7 @@ export const generatedDiscoverySummary = {
   ],
   "sourceHealth": {
     "schemaVersion": 1,
-    "generatedAt": "2026-10-29T13:07:13.954Z",
+    "generatedAt": "2026-10-29T22:48:50.964Z",
     "status": "healthy",
     "failureReasons": [],
     "sourcesChecked": 30,
@@ -110,65 +110,6 @@ export const generatedDiscoveryReviewCandidates = [
       "No clear future date found on the crawled page."
     ],
     "sourceName": "Richmond Hill Public Library programs"
-  },
-  {
-    "id": "discovered-aurora-library-stem-steam-for-homeschoolers-64faf33da2d6",
-    "title": "STEAM for Homeschoolers",
-    "organization": "Aurora Public Library",
-    "description": "Explore science, technology, engineering, art, and math in the company of other homeschoolers. For kids ages 6-12. Register on Eventbrite: https://www.eventbrite.ca/e/st...",
-    "city": "Aurora",
-    "region": "York",
-    "ageMin": 6,
-    "ageMax": 12,
-    "category": "Science & Engineering",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "deadline": "2026-10-29T14:30:00-04:00",
-    "startDate": "2026-10-29T14:30:00-04:00",
-    "endDate": "2026-10-29T16:00:00-04:00",
-    "sourceUrl": "https://aurora.bibliocommons.com/v2/events/6a563cf5aa34e23600ef0181",
-    "lastChecked": "2026-10-29",
-    "lastSeen": "2026-10-29",
-    "status": "needs_review",
-    "tags": [
-      "science & engineering",
-      "technology",
-      "science"
-    ],
-    "confidence": "high",
-    "reviewReasons": [],
-    "sourceName": "Aurora Public Library STEM events"
-  },
-  {
-    "id": "discovered-aurora-library-stem-stem-engineering-adventures-6898fb7fc377",
-    "title": "STEM Engineering Adventures",
-    "organization": "Aurora Public Library",
-    "description": "Discover the power of hands-on learning with our scientific, intriguing, interactive STEM activities and projects that you get to take home after completion! This is in collaboration with and funded by Robotics Rock STEM Youth Association. This session is for ages 11-14. If you are unable to attend, please cancel your registration as soon as possible so that another child may take your spot. Repeated no-shows without cancelling may affect eligibility for future registrations, as we strive to provide fair access to all families interested in the program.",
-    "city": "Aurora",
-    "region": "York",
-    "ageMin": 11,
-    "ageMax": 14,
-    "category": "Coding & Robotics",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "deadline": "2026-10-29T17:30:00-04:00",
-    "startDate": "2026-10-29T17:30:00-04:00",
-    "endDate": "2026-10-29T18:30:00-04:00",
-    "sourceUrl": "https://aurora.bibliocommons.com/v2/events/6a8c9b5d29a7dd0d67463e53",
-    "lastChecked": "2026-10-29",
-    "lastSeen": "2026-10-29",
-    "status": "needs_review",
-    "tags": [
-      "coding & robotics",
-      "stem"
-    ],
-    "confidence": "high",
-    "reviewReasons": [],
-    "sourceName": "Aurora Public Library STEM events"
   },
   {
     "id": "discovered-aurora-library-volunteers-volunteers-9a6997e9e36a",
@@ -402,7 +343,7 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Oshawa Public Libraries STEM events"
   },
   {
-    "id": "discovered-clarington-library-programs-learning-technology-ef1f52444b44",
+    "id": "discovered-clarington-library-programs-learning-technology-230c06781e35",
     "title": "Learning & Technology",
     "organization": "Clarington Library, Museums & Archives",
     "description": "Learning & Technology listed by Clarington Library programs.",
@@ -416,7 +357,7 @@ export const generatedDiscoveryReviewCandidates = [
       "en"
     ],
     "startDate": "2026-10-29T09:00:00-04:00",
-    "sourceUrl": "https://www.cplma.ca/learning-technology",
+    "sourceUrl": "http://www.cplma.ca/learning-technology",
     "lastChecked": "2026-10-29",
     "lastSeen": "2026-10-29",
     "status": "needs_review",
@@ -431,7 +372,7 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Clarington Library programs"
   },
   {
-    "id": "discovered-clarington-library-programs-computers-internet-access-541dee3079cc",
+    "id": "discovered-clarington-library-programs-computers-internet-access-3cb588204464",
     "title": "Computers & Internet Access",
     "organization": "Clarington Library, Museums & Archives",
     "description": "Computers & Internet Access listed by Clarington Library programs.",
@@ -445,7 +386,7 @@ export const generatedDiscoveryReviewCandidates = [
       "en"
     ],
     "startDate": "2026-10-29T09:00:00-04:00",
-    "sourceUrl": "https://www.cplma.ca/learning-technology/computers-and-internet-access",
+    "sourceUrl": "http://www.cplma.ca/learning-technology/computers-and-internet-access",
     "lastChecked": "2026-10-29",
     "lastSeen": "2026-10-29",
     "status": "needs_review",
@@ -459,7 +400,7 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Clarington Library programs"
   },
   {
-    "id": "discovered-clarington-library-programs-maker-s-space-73692ec01a1b",
+    "id": "discovered-clarington-library-programs-maker-s-space-2a794c50bde2",
     "title": "Maker's Space",
     "organization": "Clarington Library, Museums & Archives",
     "description": "Maker's Space listed by Clarington Library programs.",
@@ -473,7 +414,7 @@ export const generatedDiscoveryReviewCandidates = [
       "en"
     ],
     "startDate": "2026-10-29T09:00:00-04:00",
-    "sourceUrl": "https://www.cplma.ca/learning-technology/makers-space-the-studio",
+    "sourceUrl": "http://www.cplma.ca/learning-technology/makers-space-the-studio",
     "lastChecked": "2026-10-29",
     "lastSeen": "2026-10-29",
     "status": "needs_review",
@@ -487,7 +428,7 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Clarington Library programs"
   },
   {
-    "id": "discovered-clarington-library-programs-jobs-volunteering-812e9b03cdd9",
+    "id": "discovered-clarington-library-programs-jobs-volunteering-034bd1adb633",
     "title": "Jobs & Volunteering",
     "organization": "Clarington Library, Museums & Archives",
     "description": "Jobs & Volunteering listed by Clarington Library programs.",
@@ -501,7 +442,7 @@ export const generatedDiscoveryReviewCandidates = [
       "en"
     ],
     "startDate": "2026-10-29T09:00:00-04:00",
-    "sourceUrl": "https://www.cplma.ca/about-us/jobs-and-volunteering",
+    "sourceUrl": "http://www.cplma.ca/about-us/jobs-and-volunteering",
     "lastChecked": "2026-10-29",
     "lastSeen": "2026-10-29",
     "status": "needs_review",
@@ -914,36 +855,6 @@ export const generatedDiscoveryReviewCandidates = [
     "status": "needs_review",
     "tags": [
       "volunteer hours"
-    ],
-    "confidence": "medium",
-    "reviewReasons": [
-      "No clear future date found on the crawled page.",
-      "Free access wording needs human confirmation."
-    ],
-    "sourceName": "UHN STEM Pathways"
-  },
-  {
-    "id": "discovered-uhn-stem-pathways-stem-talks-stem-cells-oct-28-6-7pm-8e5c1e8b5bbd",
-    "title": "STEM Talks - Stem Cells - Oct 28, 6-7pm",
-    "organization": "UHN STEM Pathways",
-    "description": "STEM Talks - Stem Cells - Oct 28, 6-7pm listed by UHN STEM Pathways.",
-    "city": "Toronto",
-    "region": "Toronto",
-    "ageMin": 1,
-    "ageMax": 18,
-    "category": "Science & Engineering",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-10-29T09:00:00-04:00",
-    "sourceUrl": "https://uhnstempathways.ca/upcoming/stemcells-2026",
-    "lastChecked": "2026-10-29",
-    "lastSeen": "2026-10-29",
-    "status": "needs_review",
-    "tags": [
-      "science & engineering",
-      "stem"
     ],
     "confidence": "medium",
     "reviewReasons": [
