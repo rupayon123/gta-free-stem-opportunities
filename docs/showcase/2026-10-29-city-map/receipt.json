@@ -9,6 +9,9 @@
   },
   "screenshots": {
     "production-390-dark.png": "bc52e7cd12d581c234875428fd4766b3b43d5e51142c52e994e84d846a426bba",
+    "text-size-simulation-panel-200.png": "c450c2f3834f142f2570829ba039ea3a89bd0be75f3fd7b0577da303e5417cd0",
+    "reduced-motion-3d.png": "776722d59fe0dfafa8fb24501e32786ce7b7e00eb8ca0214058ed27c976dfcc1",
+    "text-size-simulation-200.png": "c450c2f3834f142f2570829ba039ea3a89bd0be75f3fd7b0577da303e5417cd0",
     "production-320.png": "1e3b31a2fcf8d43f8c82eef8dd0e18612840201f8bef9b675cdc20b38875b708",
     "production-desktop.png": "9e2cde6ad2ed3f741ffce5984061e024324b4c1dd1d9bea98813dcb8c5be4e59"
   },
@@ -17,9 +20,18 @@
   "map_location_tests_exit": 0,
   "runtime_closed": true,
   "limits": [
-    "200 percent text zoom not applied by IAB shortcut; unverified",
-    "Reduced motion reviewed in source only",
-    "External basemap circle-11 sprite warning",
+    "Genuine browser zoom not supported by IAB shortcut; 200 percent text simulation passed instead",
+    "External basemap missing POI sprites and null road-shield filters; no app venue loss",
     "Public deployment not verified"
-  ]
+  ],
+  "accessibility": {
+    "reduced_motion_emulated": true,
+    "full_pitch_degrees_at_100ms": 55,
+    "bearing_degrees_at_100ms": -20,
+    "text_size_simulation": "Each original computed font doubled once after panel creation; not browser zoom",
+    "viewport": 390,
+    "document_scroll_width": 390,
+    "panel_visible": true,
+    "panel_horizontal_overflow": false
+  }
 }
