@@ -1,0 +1,55 @@
+{
+  "deploymentRun": 40824055946,
+  "checks": [
+    {
+      "host": "https://gta-free-stem.pages.dev",
+      "source": "f1cea23017d1846bec295ebd2029498d06023dd0",
+      "bounds": {
+        "dots": 103,
+        "inside": 103,
+        "width": 390,
+        "scroll": 390
+      },
+      "selectedProgramRows": 273,
+      "detail": "Storytime",
+      "tilted": "transform: scale(1.3204) rotateZ(0deg) rotateX(55deg) rotateZ(20deg);",
+      "reset2D": "true",
+      "emptyRecovery": true,
+      "pageErrors": []
+    },
+    {
+      "host": "https://rupayon123.github.io",
+      "source": "f1cea23017d1846bec295ebd2029498d06023dd0",
+      "bounds": {
+        "dots": 103,
+        "inside": 103,
+        "width": 390,
+        "scroll": 390
+      },
+      "selectedProgramRows": 273,
+      "detail": "Storytime",
+      "tilted": "transform: scale(1.3204) rotateZ(0deg) rotateX(55deg) rotateZ(20deg);",
+      "reset2D": "true",
+      "emptyRecovery": true,
+      "pageErrors": []
+    }
+  ],
+  "browserClosed": true,
+  "capturedAtUTC": "2026-10-29T05:39:32.762323+00:00",
+  "screenshots": {
+    "github-phone.png": "ccd3990fc57e9176bf6354b19d58579fd4ffb71f818cbd1a6abf750e8bffd099",
+    "cloudflare-desktop.png": "209c6b1223b9a1c80b87040612751c35a7590b718c93448947fe1fa1f20fb0d9",
+    "cloudflare-phone.png": "ccd3990fc57e9176bf6354b19d58579fd4ffb71f818cbd1a6abf750e8bffd099"
+  },
+  "desktop": {
+    "host": "https://gta-free-stem.pages.dev",
+    "viewportWidth": 1280,
+    "viewportHeight": 900,
+    "documentScrollWidth": 1280,
+    "dots": 103
+  },
+  "limits": [
+    "Original loader not visible in directory flow; interaction not retested",
+    "This receipt checks published website only; native app validation remains separate"
+  ]
+}
