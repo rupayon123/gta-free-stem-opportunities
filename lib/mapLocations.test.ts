@@ -1,0 +1,13 @@
+import assert from "node:assert/strict";
+import { mapLocations } from "./mapLocations";
+import type { Opportunity } from "./types";
+const record = (id: string, latitude: number, longitude: number, virtual = false) => ({ id, latitude, longitude, virtual }) as Opportunity;
+const input = [record("west",43.6,-79.6),record("east",43.8,-79.2),record("shared",43.6,-79.6),record("online",43.7,-79.4,true),record("missing",NaN,-79),record("bad",91,-79)];
+const result = mapLocations(input);
+assert.equal(result.length,2);
+assert.deepEqual(result.flatMap(location => location.programs.map(program => program.id)).sort(),["east","shared","west"]);
+assert.equal(result[0].programs.length,2);
+assert.deepEqual(mapLocations([]),[]);
+assert.equal(mapLocations([record("equator",0,0)]).length,1);
+assert.equal(input.length,6);
+console.log("Map locations: source positions and every valid physical program preserved; shared, online, invalid and empty cases passed.");

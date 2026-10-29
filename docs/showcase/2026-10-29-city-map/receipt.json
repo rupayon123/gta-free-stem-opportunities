@@ -1,0 +1,25 @@
+{
+  "status": "production_checked_with_stated_limits",
+  "base": "af1cb35218886b5f507ef285b49ed21f1a2321ef",
+  "source_sha256": {
+    "components/ExplorerMap.tsx": "196d26327202dd716d07c21edfa14a28523198803ea9807212a05a267af95b93",
+    "components/ExplorerMapLocations.css": "7291cc2a4c1811b47e8a0ae77762eddcd2eac4b0de6d44914b124e30905fcd30",
+    "lib/mapLocations.ts": "bebb32d9e98fb024d35d77c80957f65d3002d4bebb990a72be904cf9633fbd60",
+    "lib/mapLocations.test.ts": "6b0afbceab626bb09dfe52d8ac2f47f90884da080c2a3d63094c3080ee8172aa"
+  },
+  "screenshots": {
+    "production-390-dark.png": "bc52e7cd12d581c234875428fd4766b3b43d5e51142c52e994e84d846a426bba",
+    "production-320.png": "1e3b31a2fcf8d43f8c82eef8dd0e18612840201f8bef9b675cdc20b38875b708",
+    "production-desktop.png": "9e2cde6ad2ed3f741ffce5984061e024324b4c1dd1d9bea98813dcb8c5be4e59"
+  },
+  "build_exit": 0,
+  "typecheck_exit": 0,
+  "map_location_tests_exit": 0,
+  "runtime_closed": true,
+  "limits": [
+    "200 percent text zoom not applied by IAB shortcut; unverified",
+    "Reduced motion reviewed in source only",
+    "External basemap circle-11 sprite warning",
+    "Public deployment not verified"
+  ]
+}
