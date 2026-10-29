@@ -56,9 +56,10 @@
     "presupabase:check": "npm run prepare:library",
     "presupabase:seed": "npm run prepare:library",
     "qa:catalog": "tsx scripts/library-collector-regression.ts && tsx scripts/library-rss-cache-regression.ts && tsx scripts/library-catalog-regression.ts && tsx lib/search.community.test.ts && tsx lib/opportunitySearch.worker.test.ts && npm run verify:library-partition",
-    "build:github-pages": "GTA_HOST_TARGET=github-pages npm run build && python3 scripts/prepare-github-pages.py && npm run verify:search-indexing",
+    "build:github-pages": "GTA_HOST_TARGET=github-pages npm run build && python3 scripts/prepare-github-pages.py && npm run verify:search-indexing && npm run verify:program-descriptions",
     "verify:search-indexing": "python3 scripts/verify-search-indexing.py",
-    "qa:motion": "tsx lib/discoveryMotion.test.ts"
+    "qa:motion": "tsx lib/discoveryMotion.test.ts",
+    "verify:program-descriptions": "tsx --conditions=react-server scripts/verify-program-full-descriptions.ts"
   },
   "dependencies": {
     "@next/env": "^16.4.2",

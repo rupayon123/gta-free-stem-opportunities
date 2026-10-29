@@ -66,6 +66,9 @@
 .programs-next-step .programs-primary, .programs-next-step .programs-secondary { display: flex; width: 100%; }
 .programs-source-link { display: inline-flex; align-items: center; min-height: 44px; color: var(--accent); margin-top: 10px; font-size: 14px; font-weight: 750; overflow-wrap: anywhere; }
 .programs-next-step .programs-secondary { margin-top: 24px; }
+.programs-full-description { max-width: 760px; margin: 36px 0 0; padding-top: 28px; border-top: 1px solid var(--line); scroll-margin-top: 96px; }
+.programs-full-description h2 { font-size: 28px; }
+.programs-original-description { margin-top: 20px; color: var(--ink); white-space: pre-wrap; overflow-wrap: anywhere; line-height: 1.75; }
 .programs-before-you-go { margin: 36px 0 0; padding: 28px 0 0; border-top: 1px solid var(--line); max-width: 760px; }
 .programs-before-you-go h2 { font-size: 28px; }
 .programs-before-you-go p { color: var(--muted); line-height: 1.75; }
