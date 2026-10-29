@@ -104,6 +104,11 @@ export default async function ProgramPage({ params }: ProgramPageProps) {
             <p className="programs-fact-note">Use the interactive directory to filter current listings and save ideas in your browser.</p>
           </aside>
         </div>
+        <section className="programs-full-description" id="provider-description" aria-labelledby="program-description-title" tabIndex={-1}>
+          <h2 id="program-description-title">Full description</h2>
+          <p className="programs-fact-note">The provider’s original text. Confirm any changes with {program.provider}.</p>
+          <div className="programs-original-description" lang="und" dir="auto">{program.description}</div>
+        </section>
         <section className="programs-before-you-go" aria-labelledby="program-before-title">
           <h2 id="program-before-title">Before you go</h2>
           <p>Check any booking, equipment or accommodation requirements with {program.provider}. Registration and program delivery are handled by the provider.</p>

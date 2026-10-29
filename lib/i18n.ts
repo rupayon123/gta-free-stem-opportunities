@@ -25,6 +25,7 @@ export const languageMeta: Record<
 };
 
 type UiKey =
+  | "readFullDescription"
   | "brand"
   | "mission"
   | "headerTagline"
@@ -2891,7 +2892,18 @@ const catalogUi: Record<LanguageCode, { searchPlaceholder: string; allCategories
   }
 };
 
+const fullDescriptionLabels: Record<LanguageCode, string> = {
+  en: "Read full description", fr: "Lire la description complète",
+  zh: "阅读完整说明", yue: "睇完整介紹", pa: "ਪੂਰਾ ਵੇਰਵਾ ਪੜ੍ਹੋ",
+  ur: "مکمل تفصیل پڑھیں", ta: "முழு விவரத்தையும் படிக்கவும்",
+  tl: "Basahin ang buong paglalarawan", es: "Leer la descripción completa",
+  ar: "قراءة الوصف الكامل", fa: "خواندن توضیحات کامل", hi: "पूरा विवरण पढ़ें",
+  pt: "Ler a descrição completa", gu: "સંપૂર્ણ વર્ણન વાંચો", bn: "সম্পূর্ণ বিবরণ পড়ুন",
+  ja: "詳しい説明を読む", ko: "전체 설명 읽기", hu: "Teljes leírás elolvasása"
+};
+
 export function t(language: LanguageCode, key: UiKey) {
+  if (key === "readFullDescription") return fullDescriptionLabels[language];
   if (key === "searchPlaceholder" || key === "allCategories") return catalogUi[language][key];
   return supplementalUi[language][key] ?? ui[language][key] ?? supplementalUi.en[key] ?? ui.en[key] ?? key;
 }
