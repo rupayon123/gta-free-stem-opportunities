@@ -14,7 +14,7 @@ Fresh checks passed: coordinate-group tests, TypeScript, production export (7,77
 
 An isolated headless Google Chrome context used Playwright with `reducedMotion: 'reduce'`. The browser reported that media preference active; the compass reached its full 55-degree pitch and 20-degree rotation within 100 ms of clicking 3D, rather than the normal 400 ms camera transition. [3D frame](reduced-motion-3d.png).
 
-The in-app browser did not apply genuine browser zoom. A separate, explicitly labelled **200% text-size simulation** doubled each existing map element's original computed font size once, after opening the program panel. This is not browser zoom. At 390 pixels, document width stayed 390 pixels; map controls and the 273-program chooser remained usable and readable without horizontal overflow. The title/address wrapped and the program list remained scrollable. [Controls](text-size-simulation-200.png), [panel](text-size-simulation-panel-200.png), [runtime measurements](accessibility-runtime.txt).
+The in-app browser did not apply genuine browser zoom. A separate, explicitly labelled **200% text-size simulation** doubled each existing map element's original computed font size once, after opening the program panel. This is not browser zoom. At 390 pixels, document width stayed 390 pixels; map controls and the 273-program chooser remained usable and readable without horizontal overflow. The title/address wrapped and the program list remained scrollable. [Controls](text-size-simulation-panel-200.png), [panel](text-size-simulation-panel-200.png), [runtime measurements](accessibility-runtime.txt).
 
 ## External basemap warnings
 

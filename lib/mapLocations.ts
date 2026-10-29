@@ -20,5 +20,3 @@ export function mapLocations(items: Opportunity[]): MapLocation[] {
   }
   return [...locations.values()];
 }
-
-
