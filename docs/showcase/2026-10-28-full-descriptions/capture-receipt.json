@@ -1,0 +1,44 @@
+{
+  "checkedAt": "2026-10-29T03:26:29.277Z",
+  "base": "https://gta-free-stem.pages.dev",
+  "publication": {
+    "sourceCommit": "c5a18ce729cfa1b8344cb2761406d87d6547ae4c",
+    "siteUrl": "https://gta-free-stem.pages.dev",
+    "nativeFeedSha256": "e58a34a5524ded7fba1b55f95f9c2aa40e2e802ef0cd4e758ed856c8e9dca9fd",
+    "nativeFeedRecords": 1904,
+    "publicationBytes": 397023662,
+    "publicationFiles": 7828,
+    "removedNavigationPayloads": 38855,
+    "removedBytes": 571200307
+  },
+  "selectedProgram": "tpl-rss-6ac6a131ebad22004543c8a1",
+  "fullBodyCharacters": 4438,
+  "exactFullBody": true,
+  "endingVerified": true,
+  "phoneNoHorizontalOverflow": true,
+  "desktopNoHorizontalOverflow": true,
+  "keyboardFullDescriptionNavigation": true,
+  "fragmentFocus": true,
+  "modalTarget": "/programs/tpl-rss-6ac6a131ebad22004543c8a1/#provider-description",
+  "pageErrors": [],
+  "limits": "Browser evidence for original descriptions only; full translations and native app readiness are not claimed.",
+  "captureMethod": "Unretouched Playwright/Brave browser capture of the live public website; keyboard fragment focus is visible.",
+  "images": [
+    {
+      "file": "modal-full-description-link-phone.png",
+      "sha256": "e543e06267931589e3548364b11dc870bfea0d952e1ab89c2060c1ca9ca0b11e",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "file": "full-description-phone.png",
+      "sha256": "164134ae039158c83e4095ef60c5962736baeb6d1b83326b477b2062e271554c",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      }
+    }
+  ]
+}
