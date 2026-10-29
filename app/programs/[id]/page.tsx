@@ -104,7 +104,7 @@ export default async function ProgramPage({ params }: ProgramPageProps) {
             <p className="programs-fact-note">Use the interactive directory to filter current listings and save ideas in your browser.</p>
           </aside>
         </div>
-        <section className="programs-full-description" id="provider-description" aria-labelledby="program-description-title">
+        <section className="programs-full-description" id="provider-description" aria-labelledby="program-description-title" tabIndex={-1}>
           <h2 id="program-description-title">Full description</h2>
           <p className="programs-fact-note">The provider’s original text. Confirm any changes with {program.provider}.</p>
           <div className="programs-original-description" lang="und" dir="auto">{program.description}</div>

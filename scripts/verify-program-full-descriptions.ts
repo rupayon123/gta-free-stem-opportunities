@@ -1,7 +1,9 @@
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
-import { publicProgramPages } from "../lib/programPages";
+import { publicationSnapshotTime, sourceOpportunities } from "../lib/data";
+import { generatedLibraryOpportunities } from "../lib/generatedLibraryOpportunities";
+import { publicOpportunities } from "../lib/opportunityStatus";
 
 // Verify the actual exported HTML against the complete accepted source, including
 // its ending. A preview, translated template or escaped markup cannot stand in
@@ -10,7 +12,9 @@ const entities: Record<string, string> = {
   "&amp;": "&", "&lt;": "<", "&gt;": ">", "&quot;": '"', "&#x27;": "'", "&#39;": "'"
 };
 let longest = 0;
-for (const program of publicProgramPages) {
+const acceptedSources = new Map([...sourceOpportunities, ...generatedLibraryOpportunities].map(program => [program.id, program]));
+const expectedPrograms = publicOpportunities([...acceptedSources.values()], publicationSnapshotTime());
+for (const program of expectedPrograms) {
   assert(program.description.length > 0, `Empty source description: ${program.id}`);
   const html = readFileSync(join("out", "programs", encodeURIComponent(program.id), "index.html"), "utf8");
   const matches = [...html.matchAll(/<div class="programs-original-description"[^>]*>([\s\S]*?)<\/div>/g)];
@@ -20,4 +24,4 @@ for (const program of publicProgramPages) {
   assert(html.includes('id="provider-description"'), `Missing direct-link target: ${program.id}`);
   longest = Math.max(longest, rendered.length);
 }
-console.log(`Verified complete original descriptions on ${publicProgramPages.length} exported program pages; longest ${longest} characters.`);
+console.log(`Verified complete original descriptions on ${expectedPrograms.length} exported program pages; longest ${longest} characters.`);

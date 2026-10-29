@@ -59,7 +59,7 @@
     "build:github-pages": "GTA_HOST_TARGET=github-pages npm run build && python3 scripts/prepare-github-pages.py && npm run verify:search-indexing && npm run verify:program-descriptions",
     "verify:search-indexing": "python3 scripts/verify-search-indexing.py",
     "qa:motion": "tsx lib/discoveryMotion.test.ts",
-    "verify:program-descriptions": "tsx --conditions=react-server scripts/verify-program-full-descriptions.ts"
+    "verify:program-descriptions": "tsx scripts/verify-program-full-descriptions.ts"
   },
   "dependencies": {
     "@next/env": "^16.4.2",
