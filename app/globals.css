@@ -140,7 +140,8 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 600; line-height: 1.
 .community-note { max-width: 1376px; margin: 0 auto 40px; padding: 25px 32px; display: flex; align-items: center; gap: 22px; background: var(--tint); border-radius: 18px; }
 .community-note .storybook-mark img { width: 68px; height: 68px; }
 .community-note h2 { font-size: 26px; margin-bottom: 5px; }
-.community-note p { font-size: 15px; color: var(--muted); margin-bottom: 0; }
+.community-note p { font-size: 15px; color: var(--ink); margin-bottom: 0; }
+.community-note .text-link { color: var(--ink); }
 .text-link { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; color: var(--accent); font-size: 15px; font-weight: 800; margin-inline-start: auto; }
 .legal-footer { max-width: 1440px; margin: auto; padding: 30px 32px; border-top: 1px solid var(--line); display: flex; align-items: center; justify-content: space-between; gap: 20px; }
 .legal-footer nav { display: flex; flex-wrap: wrap; gap: 20px; }

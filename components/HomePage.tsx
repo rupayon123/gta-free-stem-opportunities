@@ -11,6 +11,7 @@ import { languageMeta, t } from "@/lib/i18n";
 import { languagePreferenceOrder } from "@/lib/filterOptions";
 import { websiteCopy } from "@/lib/websiteCopy";
 import { legalConfig } from "@/lib/legal";
+import { hasLegacyTeenFilterParams, preserveTeenActivityView } from "@/lib/explorerFilterParams";
 import type { Filters, LanguageCode } from "@/lib/types";
 import { PlayfulSurface, SaveSpark } from "./ScienceMotion";
 import "./PlayfulUI.css";
@@ -20,9 +21,11 @@ const OpportunityExplorer = dynamic(() => import("./OpportunityExplorer").then(m
   loading: () => <p role="status" lang="en">Loading activities…</p>
 });
 
+const HighSchoolHub = dynamic(() => import("./high-school/HighSchoolHub").then(module => module.HighSchoolHub), { loading: () => <p role="status" lang="en">Loading the student hub…</p> });
+
 type Surface = "home" | "opportunities" | "high-school" | "support" | "community-hosts";
 
-export function HomePage({ initialSurface = "home", initialFilterOverrides = {} }: { initialSurface?: Surface; initialFilterOverrides?: Partial<Filters> } = {}) {
+export function HomePage({ initialSurface = "home", initialFilterOverrides = {}, highSchoolMode = "hub", highSchoolPathway = "volunteer", highSchoolContext }: { initialSurface?: Surface; initialFilterOverrides?: Partial<Filters>; highSchoolMode?: "hub" | "activities"; highSchoolPathway?: "volunteer" | "leadership-careers"; highSchoolContext?: "coop-shsm" } = {}) {
   const [language, setLanguage] = useState<LanguageCode>("en");
   const [dark, setDark] = useState(false);
   const [themePreference, setThemePreference] = useState<"light" | "dark" | "system">("light");
@@ -30,12 +33,14 @@ export function HomePage({ initialSurface = "home", initialFilterOverrides = {} 
   const [savedOnly, setSavedOnly] = useState(false);
   const [savedCount, setSavedCount] = useState(0);
   const [ready, setReady] = useState(false);
+  const [legacyTeenFilters, setLegacyTeenFilters] = useState(false);
   const menuButtonRef = useRef<HTMLButtonElement>(null);
   const c = websiteCopy[language];
   const copyLanguage = language;
   const DiscoveryHeading = initialSurface === "home" && !savedOnly ? "h2" : "h1";
   const browseSurface = initialSurface === "home" || initialSurface === "opportunities" || initialSurface === "high-school";
   const landing = initialSurface === "home" && !savedOnly;
+  const teenActivityView = initialSurface === "high-school" && (highSchoolMode === "activities" || legacyTeenFilters);
 
   useEffect(() => {
     try {
@@ -45,7 +50,18 @@ export function HomePage({ initialSurface = "home", initialFilterOverrides = {} 
       const preference = document.documentElement.dataset.themePreference;
       if (preference === "light" || preference === "dark" || preference === "system") setThemePreference(preference);
     } catch { /* Browsing remains available when browser storage is disabled. */ }
-    const syncSaved = () => setSavedOnly(new URLSearchParams(location.search).get("saved") === "1");
+    const syncSaved = () => {
+      const params = new URLSearchParams(location.search);
+      setSavedOnly(params.get("saved") === "1");
+      const legacy = hasLegacyTeenFilterParams(location.search);
+      setLegacyTeenFilters(legacy);
+      // Retain the activity view after legacy-only criteria are cleared by the explorer.
+      if (initialSurface === "high-school" && highSchoolMode === "hub" && legacy && params.get("view") !== "activities") {
+        const url = new URL(location.href);
+        url.search = preserveTeenActivityView(location.search);
+        window.history.replaceState(window.history.state, "", url);
+      }
+    };
     syncSaved();
     window.addEventListener("popstate", syncSaved);
     setReady(true);
@@ -123,8 +139,8 @@ export function HomePage({ initialSurface = "home", initialFilterOverrides = {} 
       <main id="main-content">
         <noscript><section className="noscript-note" lang="en"><h2>Explore the library calendars</h2><p>The interactive search and map need JavaScript. You can also browse free programs directly through <a href="https://www.torontopubliclibrary.ca/programs-and-classes/">Toronto Public Library</a> and <a href="https://markham.bibliocommons.com/v2/events">Markham Public Library</a>, or <a href="/support/">get help</a>.</p></section></noscript>
         {landing && <DiscoveryLanding language={language} />}
-        {landing ? null : browseSurface ? <section className={`discovery-section${landing ? " discovery-landing" : ""}`} id="discover" aria-label="Explore opportunities">
-          {!landing && <div className="section-heading"><div><p className="eyebrow" lang="en">{initialSurface === "high-school" ? "YOUR NEXT CHAPTER" : "EXPLORE YOUR CURIOSITY"}</p><DiscoveryHeading>{savedOnly ? c.saved : initialSurface === "high-school" ? t(language, "navHighSchoolOpportunities") : t(language, "navOpportunities")}</DiscoveryHeading></div><p lang="en">{savedOnly ? "Your shortlist, kept in this browser." : "Find something that makes you want to learn more."}</p></div>}
+        {initialSurface === "high-school" && highSchoolMode === "hub" && !ready ? <section className="discovery-section"><h1>High school</h1><p role="status">Loading your student view…</p></section> : initialSurface === "high-school" && highSchoolMode === "hub" && !legacyTeenFilters ? <HighSchoolHub initialPathway={highSchoolPathway} context={highSchoolContext} /> : landing ? null : browseSurface ? <section className={`discovery-section${landing ? " discovery-landing" : ""}`} id="discover" aria-label="Explore opportunities">
+          {!landing && <div className="section-heading"><div><p className="eyebrow" lang="en">{initialSurface === "high-school" ? "YOUR NEXT CHAPTER" : "EXPLORE YOUR CURIOSITY"}</p><DiscoveryHeading lang={teenActivityView ? "en" : undefined}>{savedOnly ? c.saved : teenActivityView ? "Teen activities" : t(language, "navOpportunities")}</DiscoveryHeading></div><p lang="en">{savedOnly ? "Your shortlist, kept in this browser." : teenActivityView ? "Browse free activities by age. Attendance is not automatically volunteering or school credit." : "Find something that makes you want to learn more."}</p></div>}
           <SaveSpark><OpportunityExplorer language={language} landing={landing} highSchool={initialSurface === "high-school"} initialFilters={initialFilterOverrides} savedOnly={savedOnly} onSavedCountChange={setSavedCount} /></SaveSpark>
         </section> : <section className="information-section" lang="en"><p className="eyebrow">GTA FREE STEM</p><h1>{initialSurface === "support" ? "A little help getting started." : "Bring more learning into the community."}</h1><p>{initialSurface === "support" ? "Browse without an account. Use the search and filters to find a program, then check the full details and registration on the provider’s website." : "Know a free program we should include? Share a public provider link through the project’s support tracker. Suggestions are reviewed before they appear."}</p><div className="hero-actions"><a data-science-press className="primary-button" href="/opportunities/#discover">Browse opportunities <ArrowRight size={18} /></a><a data-science-press className="soft-button" href="/support/">Get support</a></div><p className="quiet-note">Support tickets are public. Please keep personal information and children’s details out of them.</p><a href={legalConfig.supportIssueUrl}>Suggest a program or report a problem <ArrowRight size={16} /></a></section>}
         {initialSurface === "home" && <><div className="trust-strip" lang={copyLanguage}>{[c.noAccount, c.free, c.direct].map(text => <span key={text}><Check size={17} aria-hidden="true" />{text}</span>)}</div><section className="how-section" lang="en" id="how-it-works" aria-labelledby="how-heading"><div className="how-intro"><p className="eyebrow">HOW IT WORKS</p><h2 id="how-heading">Pick an activity.<br />Make it your own.</h2><p>Come on your own, bring a friend, or find something for your family. There’s no account to create.</p></div><ol className="how-steps"><li><span>01</span><div><h3>Find an activity</h3><p>Pick a topic here, or use the city, age and interest filters in Browse.</p></div></li><li><span>02</span><div><h3>Check the details</h3><p>See the schedule, age range, and original source. Save anything you’d like to come back to.</p></div></li><li><span>03</span><div><h3>Register with the provider</h3><p>Follow the provider’s link to confirm availability and register. They’ll handle your booking.</p></div></li></ol></section></>}

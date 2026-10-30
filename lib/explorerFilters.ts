@@ -1,5 +1,7 @@
 import { categories, cityOptions, regions } from "./data";
 import type { Filters } from "./types";
+import { URL_TOGGLES } from "./explorerFilterParams";
+export { URL_TOGGLES } from "./explorerFilterParams";
 
 export const DEFAULT_FILTERS: Filters = {
   query: "", region: "All", city: "", category: "All", age: "", language: "all",
@@ -8,7 +10,6 @@ export const DEFAULT_FILTERS: Filters = {
 };
 
 // Retain legacy filter data compatibility without claiming a provider delivery language.
-export const URL_TOGGLES = { black: "blackFocused", girls: "girlsFocused", indigenous: "indigenousFocused", volunteer: "volunteerHours", coop: "coop", mentorship: "mentorship", leadership: "leadership" } as const;
 export function filtersFromUrl(base: Partial<Filters>, search: string): Filters {
   const filters = { ...DEFAULT_FILTERS, ...base, language: "all" as const };
   const params = new URLSearchParams(search);

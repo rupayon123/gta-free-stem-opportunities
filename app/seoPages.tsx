@@ -21,48 +21,39 @@ const pages = {
   },
   highSchool: {
     path: "/high-school/",
-    title: "High School STEM Opportunities, Co-op, SHSM, Mentorship, and Volunteer Hours",
-    description:
-      "Find free high school STEM opportunities across the GTA, including volunteer hours, co-op, SHSM, mentorship, leadership, and career exploration.",
-    heading: "High school STEM pathways",
-    intro:
-      "The high school section focuses on practical opportunities that can support volunteer hours, SHSM exploration, co-op conversations, mentorship, and youth leadership.",
-    points: [
-      "Find STEM and learning volunteer-hour opportunities.",
-      "Explore co-op, SHSM, mentorship, leadership, and career exposure options.",
-      "Use focused filters for high school students across the GTA."
-    ],
-    keywords: "high school STEM opportunities GTA, SHSM opportunities Toronto, co-op STEM opportunities Ontario"
+    title: "High School Programmes, Volunteering Guidance and Support",
+    description: "Explore reviewed student programmes, provider directories, school-hours guidance and a personal hours notebook. Check each provider’s eligibility, costs and availability.",
+    heading: "A student guide to your next step",
+    intro: "Explore volunteering, learning, leadership, careers and funding guidance. A programme intake or directory is not a guaranteed role or placement.",
+    points: ["Review exact age, grade, residency, costs and commitment requirements.", "Keep directories and unconfirmed intakes separate from confirmed openings.", "Record actual completed volunteering locally; school approval remains separate."],
+    keywords: "high school programmes GTA, student volunteering guidance, teen learning and support"
+  },
+  highSchoolActivities: {
+    path: "/high-school/activities/",
+    title: "Browse Free Teen Activities in the GTA",
+    description: "Browse free library events and learning activities with the existing teen activity search, map and named saved filters. Attendance is not automatically volunteering or school credit.",
+    heading: "Free activities for teens",
+    intro: "Keep using the teen activity search alongside the new student guide.",
+    points: ["Search by topic, city, category and age.", "Use the existing map and local named saved filters.", "Check the provider’s original details before attending."],
+    keywords: "free teen activities GTA, library activities teens Toronto"
   },
   volunteerHours: {
     path: "/volunteer-hours/",
-    title: "Free Volunteer Hour Opportunities for GTA Students",
-    description:
-      "Find free STEM, learning, library, conservation, and youth leadership volunteer-hour opportunities for high school students across the GTA.",
-    heading: "Volunteer hours for students",
-    intro:
-      "Students can search for free community opportunities that may support school volunteer-hour requirements and build real experience.",
-    points: [
-      "Discover library, conservation, STEM, and youth leadership roles.",
-      "Find opportunities connected to learning, community service, and local organizations.",
-      "Browse without creating an account."
-    ],
-    keywords: "student volunteer hours GTA, high school volunteer hours Toronto, STEM volunteering GTA"
+    title: "Student Volunteering Guidance and Personal Hours Notebook",
+    description: "Review volunteering programme requirements and places to look, read school-hours guidance, and record actual completed minutes in a personal local notebook. GTA does not approve school credit.",
+    heading: "Plan and record your volunteering",
+    intro: "Understand provider requirements and your school’s process. Programme applications and directories do not guarantee a placement.",
+    points: ["Distinguish actual roles, programme intakes and provider directories.", "Confirm age, costs and commitment before agreeing.", "Record completed time and export a personal CSV, separate from school approval."],
+    keywords: "student volunteer hours guidance GTA, personal volunteering notebook, high school community involvement"
   },
   coopShsm: {
     path: "/coop-shsm/",
-    title: "Free Co-op and SHSM STEM Opportunities in the GTA",
-    description:
-      "Explore free-to-access co-op, SHSM, placement, mentorship, and career exploration opportunities connected to STEM and youth learning across the GTA.",
-    heading: "Co-op and SHSM discovery",
-    intro:
-      "The platform helps students and educators discover local organizations that may support STEM co-op, SHSM, mentorship, and career exploration pathways.",
-    points: [
-      "Search for free-to-access STEM career exploration opportunities.",
-      "Find community hosts and organizations open to youth learning pathways.",
-      "Use source links to connect directly with the provider."
-    ],
-    keywords: "free co-op opportunities GTA, SHSM STEM placements, youth career exploration Toronto"
+    title: "Co-op and SHSM Planning, Mentorship and Career Guidance",
+    description: "Explore related student leadership and career programmes. Ask your school coordinator about co-op placements, SHSM requirements and credit; listed programmes are not confirmed placements.",
+    heading: "Plan your next school and career steps",
+    intro: "Find related programmes and source information, then work with your school coordinator on eligible co-op and SHSM options.",
+    points: ["Check each programme’s audience and current intake.", "Distinguish career learning from a school-approved placement.", "Use provider information and your school’s coordination process."],
+    keywords: "co-op SHSM planning GTA, student mentorship guidance, teen career programmes"
   },
   accessibilitySupport: {
     path: "/accessibility-support/",
