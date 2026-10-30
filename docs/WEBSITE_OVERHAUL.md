@@ -4,7 +4,9 @@
 
 Bring the public website into the same visual family as the native app, restore current opportunities, and make the first visit useful without an account.
 
-## Design thesis
+Current direction: [approved iOS v3 web parity](product-design.md#approved-visual-system--october-29-2026). Earlier release decisions below are historical.
+
+## Historical design thesis (superseded October 29, 2026)
 
 Follow the user's selected third concept: a warm-white and pale-mint science workspace, navy rounded headings, lake teal actions, restrained amber highlights, the illustrated GTA logo, and a Toronto/science collage. A visible search leads into interests, location, a real map, and actual opportunity results. Self-hosted fonts and original artwork carry the character; clear dates, eligibility and original sources carry the decisions. The website is for GTA students, families, educators, and community hosts.
 

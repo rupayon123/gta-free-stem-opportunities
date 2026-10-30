@@ -1,0 +1,21 @@
+feature,area,priority,original,clone,notes
+Approved iOS visual system across web,design,must,partial,no,Nunito original nineteen roles cool light-dark canvas; preserve loader and maps
+Android exact approved design parity,design,must,partial,no,Audit code6 first; retain completed work and verify remaining changes
+Purpose-built High School landing,navigation,must,no,no,Volunteer learning leadership-careers and funding entry points
+Actual teen volunteer roles,volunteering,must,no,no,Source-backed role eligibility and availability; never attendance text inference
+Separate provider directories,volunteering,must,no,no,Explicit directory label and provider handoff; no fake dates or pins
+Exact age-grade-residency restrictions,eligibility,must,partial,no,Keep original wording and unknown values
+Commitment delivery and cause filters,volunteering,must,partial,no,One-time ongoing weekends virtual and region where source-backed
+School hours guidance,volunteering,must,no,no,Official Ontario and board process; GTA cannot approve hours
+Local hours notebook,volunteering,must,no,no,Actual minutes persistence edit delete export and visible failure
+Recorded versus school-approved distinction,volunteering,must,no,no,No auto-credit or fabricated signatures
+Saved teen filters with immediate selection,discovery,must,partial,no,Preserve separate save-update and genuine-new-match handling
+Free teen learning and clubs,coverage,must,partial,no,Explicit free evidence and current provider conditions
+Leadership mentoring and careers,coverage,must,partial,no,Exclude adult-only roles even if mentor keyword matches
+Funding and scholarships,coverage,should,partial,no,Eligibility and actual deadlines; no fee-based contest contamination
+Shared cross-platform audience semantics,correctness,must,no,no,No Android OR-predicate leakage or age-only web equivalence
+Empty offline closed and stale states,resilience,must,partial,no,Retain valid cache; no promise of always nonzero results
+Accessible responsive native controls,quality,must,partial,no,Keyboard RTL large text touch targets reduced motion
+Verified release availability,delivery,must,partial,no,Source tests rendered evidence and actual intended-channel status
+External auto-application,excluded,could,no,skip,Provider applications remain user-directed
+GTA certification of school hours,excluded,could,no,skip,Approval remains school process

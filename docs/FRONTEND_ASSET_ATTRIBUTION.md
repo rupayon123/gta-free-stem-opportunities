@@ -288,3 +288,9 @@ Apache License
 ### Hairline spring motion
 
 The spring integration in `lib/discoveryMotion.ts` is adapted from Lucas Marques, Hairline, MIT, commit `37d2e78dcb333ab30c3338e28ed4a690364ea014`, `packages/hairline/src/core/motion.ts`: https://github.com/lucasmarkes/hairline/blob/37d2e78dcb333ab30c3338e28ed4a690364ea014/packages/hairline/src/core/motion.ts . Changes keep reduced motion instance-local and cap long-frame computation. The historical `DiscoveryScene` uses it for bounded selection changes. The current `ScienceBrandScene` reuses that helper for fine-pointer artwork response, bounded to 2 pixels per axis and 3 degrees of tilt per axis while the button's hit area stays fixed. Its frame loop sleeps when settled and cancels and resets on pointer exit, cancelled input, pause, reduced-motion changes, loss of fine hover, blur, visibility changes, and unmount. The original orbit and click/keyboard pause-resume jiggle remain separate. Full upstream licence is shipped at `/licenses/hairline-MIT.txt`. No Hairline figure geometry, editor, registry installer, telemetry or new package dependency is included.
+
+## Approved iOS v3 parity assets — October 29, 2026
+
+- `public/fonts/Nunito.ttf`: approved variable Nunito, weights 200–1000; SIL Open Font License retained in `public/fonts/Nunito-OFL.txt`. SHA-256 `bb55a5ca5c2042335b3991af27c4d0705d0ef41cac6164ac737fd8f2a1e85207`. Replaces active Fredoka/Nunito Sans styling; old font files remain for historical compatibility.
+- `public/artwork/v3/`: all 76 original approved GTA SVGs (19 roles × compact/illustration × light/dark), byte-identical to the shared native handoff, including the reviewed School/Support/Profile roles. The original logo and science orbit are unchanged.
+- Existing Hairline-inspired bounded spring and React Bits-inspired interaction behavior is retained; no new motion runtime or external mascot is imported for this parity change.

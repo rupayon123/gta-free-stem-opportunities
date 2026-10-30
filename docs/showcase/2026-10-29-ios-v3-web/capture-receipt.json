@@ -1,0 +1,70 @@
+{
+  "reviewDate": "2026-10-29",
+  "applicationSourceCommit": "5f0792e1781922e9f9b981f7d151a6d3b1ee4b66",
+  "baseSourceCommit": "24feaee0dd691941353e49a14f7271a34620e106",
+  "captureMethod": "CUA browser, exact fixed-viewport clip, unretouched local production export",
+  "captureOrigins": [
+    "http://127.0.0.1:8787"
+  ],
+  "desktopViewport": [
+    1440,
+    1000
+  ],
+  "phoneViewport": [
+    390,
+    844
+  ],
+  "files": [
+    {
+      "file": "desktop-home-light.png",
+      "sha256": "962c8f8b8e5302020db7571739fb73795dc99c3d1b09b945777fbbdf1100ff9f"
+    },
+    {
+      "file": "desktop-browse-dark.png",
+      "sha256": "cb70fa1f5066c7ab341d0d1e5f1f39cd5fbb06316cd00d64e7b87a7b5fe0ad5a"
+    },
+    {
+      "file": "phone-home-dark.png",
+      "sha256": "f6b3a363d94b17a3a9bada16ffc9984454c2cbca7ca1af40e507599697914a50"
+    },
+    {
+      "file": "phone-saved-filter-light.png",
+      "sha256": "67f2818da273c5990c39fdcdc312fe48a59cd2e560b51b8392f6a6d7ec1b112e"
+    },
+    {
+      "file": "phone-saved-filter-dark.png",
+      "sha256": "cb96550aad98dbddd614d4fbb495cb09f23863f49cdc77b1a83b3cf8ff9c7fb9"
+    },
+    {
+      "file": "desktop-map-3d.png",
+      "sha256": "901f6faba0ead0df099b7ff63fd99d11d568ff76c546af213a92bf136797ce87"
+    }
+  ],
+  "checks": {
+    "finalTypecheck": "exit0",
+    "integratedQA": "exit0; retained /tmp/gta-web-v3-qa.log",
+    "staticProductionBuild": "exit0; build:github-pages; 7871 sitemap/canonical URLs;7821 complete original description pages",
+    "productionDependencyAudit": "exit0, zero vulnerabilities",
+    "rootBrowser": [
+      "Home -> Browse map first",
+      "103 venues in picker and city-wide drawn pins",
+      "3D control pressed, Show all reset, List switch",
+      "robtics+age10 yields952 matches at capture",
+      "named filter persists/reloads, age16 draft remains unsaved and reselect restores10",
+      "phone390 no horizontal overflow, named selector visible, dark switch and Home shortcut",
+      "no browser console errors in tested paths"
+    ],
+    "frontendAdditionalEvidence": [
+      "independent4/10/16 age presets",
+      "320px phone,768px tablet,Arabic RTL",
+      "actual native browser200percent zoom capture retained separately"
+    ]
+  },
+  "limits": [
+    "Local screenshots are not public deployment evidence.",
+    "Catalogue counts are time-dependent.",
+    "No web unread-new-match notifications implemented.",
+    "Full provider description translations, High School expansion and native/physical-device work remain open.",
+    "Corrupt/quota storage behavior was tested with isolated model fixtures, not injected into user browser storage."
+  ]
+}

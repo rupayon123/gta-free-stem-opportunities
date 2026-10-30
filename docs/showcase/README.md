@@ -1,4 +1,6 @@
-# Website screenshots and release checks
+# Historical website screenshots and release checks
+
+Current parity candidate: [October 29 iOS v3 website captures](2026-10-29-ios-v3-web/README.md). The public releases documented below remain dated historical evidence.
 
 These images were captured from the public website on October 27, 2026, after deploying [website release d98c5d3](https://github.com/rupayon123/gta-free-stem-opportunities/commit/d98c5d3a4e4785ae40efe4e06824af8d9ed14fda).
 

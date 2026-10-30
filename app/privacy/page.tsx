@@ -5,8 +5,8 @@ import { metadataForPage } from "../seoPages";
 
 export const metadata = metadataForPage("privacy");
 
-const privacyEffectiveDate = "October 27, 2026";
-const privacyEffectiveDateIso = "2026-10-27";
+const privacyEffectiveDate = "October 29, 2026";
+const privacyEffectiveDateIso = "2026-10-29";
 
 const appData = [
   {
@@ -46,6 +46,12 @@ const websiteData = [
     item: "Browser preferences",
     handling: "Theme, language, and local saved-state features use browser local storage.",
     control: "Clear this site's data in browser settings."
+  },
+  {
+    item: "Named saved filters",
+    handling:
+      "Filter names, search criteria, optional age and city or postal area, and creation/update dates stay in this browser's local storage. They are not an online account and do not sync across browsers or devices. A saved filter does not retain your device's location coordinates. Normal browsing URLs can include the search criteria you apply; sharing such a URL shares those criteria with the recipient and requested pages are visible to the host. Saving a filter does not enable notifications.",
+    control: "Use Delete filter in Filters to remove an individual filter, or clear this site's data in browser settings. Resetting the current search does not delete saved filters."
   },
   {
     item: "Optional website location",
