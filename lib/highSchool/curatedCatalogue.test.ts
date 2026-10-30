@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import { getCuratedYouthCatalogue } from "./curatedCatalogue";
 import { evaluateYouthListing } from "./model";
-import { hasLegacyTeenFilterParams } from "../explorerFilterParams";
+import { hasLegacyTeenFilterParams, preserveTeenActivityView } from "../explorerFilterParams";
 
 const now = "2026-10-30T12:00:00Z";
 test("reviewed content never counts a programme intake or directory as an individual role", () => {
@@ -34,7 +34,20 @@ test("unknown intakes and necessary Blueprint expenses never receive open/free c
   assert.match(blueprint.cost.original, /travel/i); assert(blueprint.cost.requiredCosts.length > 0);
 });
 test("existing teen saved-filter and less common legacy links remain explorer entry points", () => {
-  for (const search of ["?savedFilter=old-id", "?programLanguage=fr", "?indigenous=1", "?age=18", "?postal=M5T&distance=10"]) assert.equal(hasLegacyTeenFilterParams(search), true, search);
+  for (const search of ["?savedFilter=old-id", "?view=activities", "?programLanguage=fr", "?indigenous=1", "?age=18", "?postal=M5T&distance=10"]) assert.equal(hasLegacyTeenFilterParams(search), true, search);
   assert.equal(hasLegacyTeenFilterParams("?pathway=learning"), false);
   assert.equal(hasLegacyTeenFilterParams("?pathway=hours"), false);
+});
+
+test("legacy cleanup and Clear filters preserve the activity view across reload", () => {
+  const languageOnly = new URLSearchParams(preserveTeenActivityView("?programLanguage=fr"));
+  languageOnly.delete("programLanguage"); // Existing explorer removes unsupported provider-language criteria.
+  assert.equal(languageOnly.toString(), "view=activities");
+  assert.equal(hasLegacyTeenFilterParams(`?${languageOnly}`), true);
+  const saved = new URLSearchParams(preserveTeenActivityView("?savedFilter=legacy-id&age=16"));
+  assert.equal(saved.get("savedFilter"), "legacy-id");
+  saved.delete("savedFilter"); saved.delete("age"); // Explicit Clear filters detaches selection, not the archive.
+  assert.equal(saved.toString(), "view=activities");
+  assert.equal(hasLegacyTeenFilterParams(`?${saved}`), true);
+  assert.equal(preserveTeenActivityView("?pathway=learning"), "?pathway=learning");
 });

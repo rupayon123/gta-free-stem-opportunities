@@ -61,7 +61,7 @@
     "qa:motion": "tsx lib/discoveryMotion.test.ts",
     "verify:program-descriptions": "tsx scripts/verify-program-full-descriptions.ts",
     "qa:filters": "tsx lib/savedFilters.test.ts",
-    "qa:high-school": "tsx --test --test-concurrency=1 lib/highSchool/model.test.ts lib/highSchool/notebook.test.ts lib/highSchool/curatedCatalogue.test.ts",
+    "qa:high-school": "tsx --test --test-concurrency=1 lib/highSchool/model.test.ts lib/highSchool/notebook.test.ts lib/highSchool/curatedCatalogue.test.ts lib/highSchool/discoveryRendering.test.tsx",
     "qa:high-school:browser": "tsx scripts/prepare-high-school-storage-qa.ts"
   },
   "dependencies": {

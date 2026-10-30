@@ -11,7 +11,7 @@ import { languageMeta, t } from "@/lib/i18n";
 import { languagePreferenceOrder } from "@/lib/filterOptions";
 import { websiteCopy } from "@/lib/websiteCopy";
 import { legalConfig } from "@/lib/legal";
-import { hasLegacyTeenFilterParams } from "@/lib/explorerFilterParams";
+import { hasLegacyTeenFilterParams, preserveTeenActivityView } from "@/lib/explorerFilterParams";
 import type { Filters, LanguageCode } from "@/lib/types";
 import { PlayfulSurface, SaveSpark } from "./ScienceMotion";
 import "./PlayfulUI.css";
@@ -53,7 +53,14 @@ export function HomePage({ initialSurface = "home", initialFilterOverrides = {},
     const syncSaved = () => {
       const params = new URLSearchParams(location.search);
       setSavedOnly(params.get("saved") === "1");
-      setLegacyTeenFilters(hasLegacyTeenFilterParams(location.search));
+      const legacy = hasLegacyTeenFilterParams(location.search);
+      setLegacyTeenFilters(legacy);
+      // Retain the activity view after legacy-only criteria are cleared by the explorer.
+      if (initialSurface === "high-school" && highSchoolMode === "hub" && legacy && params.get("view") !== "activities") {
+        const url = new URL(location.href);
+        url.search = preserveTeenActivityView(location.search);
+        window.history.replaceState(window.history.state, "", url);
+      }
     };
     syncSaved();
     window.addEventListener("popstate", syncSaved);
