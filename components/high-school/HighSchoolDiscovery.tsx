@@ -21,7 +21,7 @@ export function HighSchoolDiscovery({ listings, pathway, now, catalogueState }: 
   const roles = available.filter(({ decision }) => decision.verifiedFreeRoles);
   const programmes = available.filter(({ decision }) => decision.verifiedFreePrograms);
   const upcoming = evaluated.filter(({ decision }) => decision.freeBadge && decision.effectiveStatus === "upcoming");
-  const directories = evaluated.filter(({ decision }) => decision.directorySection);
+  const directories = evaluated.filter(({ decision }) => decision.directorySection && decision.teenHub);
   const programmesToCheck = evaluated.filter(({ row, decision }) => row.listingKind === "program" && decision.teenHub && !decision.freeBadge);
   const resources = evaluated.filter(({ row, decision }) => row.listingKind === "resource" && decision.teenHub);
   const otherRoles = evaluated.filter(({ row, decision }) => row.listingKind === "role" && decision.teenHub && !decision.freeBadge);
