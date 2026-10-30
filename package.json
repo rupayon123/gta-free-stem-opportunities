@@ -26,10 +26,10 @@
     "discover:sql": "tsx scripts/discover-opportunities.ts --format=sql",
     "generate:library": "tsx scripts/generate-library-opportunities.ts",
     "export:public-feed": "npm run prepare:library && tsx scripts/export-public-opportunities.ts --publish",
-    "engine:refresh": "npm run generate:library && npm run prepare:library && npm run discover:write && npm run export:public-feed && npm run qa",
+    "engine:refresh": "npm run generate:library && npm run prepare:library && npm run discover:write && npm run export:public-feed && npm run youth:refresh && npm run qa",
     "supabase:check": "tsx scripts/check-supabase.ts",
     "supabase:seed": "tsx scripts/export-supabase-seed.ts",
-    "qa": "tsx scripts/qa-check.ts && npm run qa:search && npm run qa:catalog && npm run verify:native-export && npm run qa:filters && npm run qa:motion && npm run qa:high-school",
+    "qa": "tsx scripts/qa-check.ts && npm run qa:search && npm run qa:catalog && npm run verify:native-export && npm run qa:filters && npm run qa:motion && npm run qa:high-school && npm run qa:youth-hunter && npm run verify:youth-feed",
     "qa:search": "tsx scripts/search-regression.ts && tsx lib/search.cache.test.ts",
     "qa:worker": "tsx lib/opportunitySearch.worker.test.ts",
     "verify:legal": "tsx scripts/verify-public-legal-pages.ts",
@@ -62,7 +62,12 @@
     "verify:program-descriptions": "tsx scripts/verify-program-full-descriptions.ts",
     "qa:filters": "tsx lib/savedFilters.test.ts",
     "qa:high-school": "tsx --test --test-concurrency=1 lib/highSchool/model.test.ts lib/highSchool/notebook.test.ts lib/highSchool/curatedCatalogue.test.ts lib/highSchool/discoveryRendering.test.tsx",
-    "qa:high-school:browser": "tsx scripts/prepare-high-school-storage-qa.ts"
+    "qa:high-school:browser": "tsx scripts/prepare-high-school-storage-qa.ts",
+    "youth:candidate": "tsx scripts/refresh-youth-opportunities.ts --candidate-only",
+    "youth:refresh": "tsx scripts/refresh-youth-opportunities.ts --refresh",
+    "verify:youth-feed": "tsx scripts/refresh-youth-opportunities.ts --verify",
+    "qa:youth-hunter": "tsx --test --test-concurrency=1 lib/youthHunter/hunter.test.ts scripts/youth-hunter/candidate.test.ts lib/youthHunter/client.test.ts lib/youthHunter/client.freshness.test.ts",
+    "youth:import-reviewed": "tsx scripts/refresh-youth-opportunities.ts --import-reviewed-candidate"
   },
   "dependencies": {
     "@next/env": "^16.4.2",

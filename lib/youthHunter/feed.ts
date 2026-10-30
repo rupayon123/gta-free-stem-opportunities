@@ -20,6 +20,7 @@ export interface YouthHunterState {
   roles: YouthListing[];
   fingerprints: Record<string, string>;
   retiredIds: string[];
+  lastSuccessfulCheck?: string;
 }
 export type YouthRefreshOutcome = { ok: true; observation: YouthSourceObservation } | { ok: false; error: string };
 export interface PublicYouthFeed {
@@ -43,6 +44,8 @@ export function reconcileYouthSource(previous: YouthHunterState, outcome: YouthR
   try {
     if (previous.schemaVersion !== 1 || !o.complete || o.providerId !== "aurora-library" || o.adapterVersion !== 1 || !validTimestamp(o.checkedAt)) throw new Error("Incomplete or unknown provider snapshot");
     parseYouthCatalogue(previous.roles);
+    const priorChecks = [...previous.roles.map(r => r.checkedAt), ...(previous.lastSuccessfulCheck ? [previous.lastSuccessfulCheck] : [])];
+    if (priorChecks.some(time => !validTimestamp(time) || Date.parse(o.checkedAt) < Date.parse(time))) throw new Error("Older youth source observation cannot revive retired roles");
     const rows = parseYouthCatalogue(o.roles);
     const ids = new Set(rows.map(r => r.id));
     if (Object.keys(o.fingerprints).length !== rows.length || o.reviewRequiredIds.some(id => !ids.has(id))) throw new Error("Observation identity mismatch");
@@ -58,7 +61,7 @@ export function reconcileYouthSource(previous: YouthHunterState, outcome: YouthR
     for (const id of retired) delete fingerprints[id];
     Object.assign(fingerprints, o.fingerprints);
     return { state: { schemaVersion: 1, roles: [...other, ...updated], fingerprints,
-      retiredIds: [...new Set([...previous.retiredIds, ...retired])].filter(id => !ids.has(id)) }, accepted: true };
+      retiredIds: [...new Set([...previous.retiredIds, ...retired])].filter(id => !ids.has(id)), lastSuccessfulCheck: o.checkedAt }, accepted: true };
   } catch (error) { return { state: previous, accepted: false, warning: error instanceof Error ? error.message : "Invalid source snapshot" }; }
 }
 /** Failed fetches cannot renew source checks. The current clock still expires
