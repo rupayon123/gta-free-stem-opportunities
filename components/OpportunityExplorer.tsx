@@ -394,7 +394,7 @@ export function OpportunityExplorer({ supportPresetsEnabled = false, language, i
           </form>
         </aside> : <aside id="oe-filters" className={`oe-filters${filterOpen ? " oe-filters-open" : ""}`} aria-label={t(language, "filters")}>
           <div className="oe-filter-heading"><h3>{t(language, "filters")}</h3><button data-science-press type="button" onClick={clearFilters}>{t(language, "clearFilters")}</button></div>
-          {supportPresetsEnabled ? <><ScopedSavedFilters {...scoped} /><AccessibilityFilter value={support} onChange={setSupport} />{supportError && <p role="alert" lang="en">{supportError}</p>}<button type="button" className="soft-button" onClick={clearSupport} lang="en">Clear support filters</button></> : <>
+          {supportPresetsEnabled ? <><ScopedSavedFilters {...scoped} /><AccessibilityFilter value={support} onChange={setSupport} />{supportError && <p role="alert" lang="en">{supportError}</p>}<button type="button" className="soft-button oe-clear-support" onClick={clearSupport} lang="en">Clear support filters</button></> : <>
           <section className="oe-named-filters" aria-labelledby="saved-filter-heading" lang="en">
             <h4 id="saved-filter-heading"><GtaArtwork role="saved" />Saved filters</h4>
             <div className="oe-field"><label htmlFor="saved-filter-picker">Choose a saved filter</label><select id="saved-filter-picker" value={selectedFilterId} onChange={event => applyPreset(event.target.value)}><option value="">New filter</option>{namedFilters.filter(item => item.highSchool === highSchool).map(item => <option value={item.id} key={item.id}>{item.name}</option>)}</select></div>

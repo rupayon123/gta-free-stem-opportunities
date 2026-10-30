@@ -19,6 +19,7 @@
 .oe-filter-heading { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 15px; }
 .oe-filter-heading h3 { font-size: 16px; margin: 0; }
 .oe-filter-heading button { border: 0; background: transparent; color: var(--accent); font-size: 11px; padding: 8px 0; min-height: 44px; font-weight: 600; }
+.oe-clear-support { margin-block-end: 20px; }
 .oe-field { display: grid; gap: 8px; margin-bottom: 20px; }
 .oe-field label, .oe-filters legend { font-weight: 700; color: var(--ink); font-size: 14px; }
 .oe-field :is(input, select) { width: 100%; min-width: 0; min-height: 44px; border: 1px solid var(--control-line); border-radius: 8px; color: var(--ink); background-color: var(--surface); padding: 10px 11px; font-size: 15px; line-height: 1.5; }
