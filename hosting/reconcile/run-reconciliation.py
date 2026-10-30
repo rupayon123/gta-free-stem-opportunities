@@ -66,6 +66,10 @@ def main():
     run("set-VM-repository-committer-name", ["git", "config", "--local", "user.name", "github-actions[bot]"], app)
     run("set-VM-repository-committer-email", ["git", "config", "--local", "user.email",
         "41898282+github-actions[bot]@users.noreply.github.com"], app)
+    # checkout's canonical HTTPS origin omits .git; normalize only this dedicated
+    # VM repository to the exact same own-repository URL accepted by prepare.
+    run("normalize-VM-own-repository-origin", ["git", "remote", "set-url", "origin",
+        "https://github.com/rupayon123/gta-free-stem-opportunities.git"], app)
     # Same approved ordinary merge/streamed baselines/checks, on the VM only.
     run("ordinary-merge-preparation", [sys.executable, str(tools / "prepare-candidate.py"),
         "--repository", str(app), "--new-candidate", str(candidate), "--new-evidence", str(evidence),

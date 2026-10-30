@@ -28,8 +28,8 @@
     },
     {
       "path": "hosting/reconcile/run-reconciliation.py",
-      "sha256": "889d92964770e9406c58f872e4897eb3a5460e44a93da2723a2f543e3389a1ad",
-      "bytes": 8437
+      "sha256": "3d6a0b1508de04bdef55b0a4b46b952b28005c6cddecca8ed44952d5cd33032a",
+      "bytes": 8761
     },
     {
       "path": "hosting/reconcile/publish-candidate.py",
