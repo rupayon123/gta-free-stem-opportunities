@@ -4,5 +4,5 @@ import { metadataForPage } from "../seoPages";
 export const metadata = metadataForPage("volunteerHours");
 
 export default function VolunteerHoursPage() {
-  return <HomePage initialSurface="high-school" initialFilterOverrides={{ volunteerHours: true }} />;
+  return <HomePage initialSurface="high-school" initialFilterOverrides={{ volunteerHours: true }} highSchoolPathway="volunteer" />;
 }

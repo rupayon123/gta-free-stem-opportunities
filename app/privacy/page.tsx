@@ -48,6 +48,11 @@ const websiteData = [
     control: "Clear this site's data in browser settings."
   },
   {
+    item: "Personal volunteering-hours notebook",
+    handling: "The optional High School notebook stores activity dates, organisation and activity labels, actual completed minutes and optional notes in this browser’s IndexedDB storage. It is a personal, self-recorded notebook; it does not approve school hours, collect signatures or sync to an online account or another device. CSV exports are prepared on your device and saved to your browser’s download location.",
+    control: "Edit or delete individual entries in the notebook, or clear this site’s browser data. Clearing site data can remove the notebook. Keep your own exported copies; deleting a notebook entry does not remove a CSV you already downloaded. Leave student identity details, private contact information and signatures out of notes."
+  },
+  {
     item: "Named saved filters",
     handling:
       "Filter names, search criteria, optional age and city or postal area, and creation/update dates stay in this browser's local storage. They are not an online account and do not sync across browsers or devices. A saved filter does not retain your device's location coordinates. Normal browsing URLs can include the search criteria you apply; sharing such a URL shares those criteria with the recipient and requested pages are visible to the host. Saving a filter does not enable notifications.",

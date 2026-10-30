@@ -27,6 +27,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.93
     },
     {
+      url: `${siteUrl}/high-school/activities/`,
+      lastModified: lastUpdated,
+      changeFrequency: "daily",
+      priority: 0.9
+    },
+    {
       url: `${siteUrl}/volunteer-hours/`,
       lastModified: lastUpdated,
       changeFrequency: "daily",
