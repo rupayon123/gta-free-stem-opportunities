@@ -1,65 +1,43 @@
-.welcome.welcome-simple.discovery-welcome { position: relative; padding-block: 18px; gap: 24px; }
-.discovery-welcome .welcome-intro { max-width: 660px; }
-.discovery-art { min-width: 0; width: 100%; max-width: 460px; justify-self: end; color: var(--ink); }
-.discovery-art > p { margin: -9px 0 0; text-align: center; font-size: 14px; font-weight: 800; }
-.discovery-scene { display: block; width: 100%; height: auto; overflow: visible; }
-.scene-ground, .scene-mint { fill: var(--chapter-mint); }
-.scene-paper { fill: var(--surface); }
-.scene-peach { fill: var(--chapter-peach); }
-.scene-sun { fill: var(--yellow); }
-.scene-teal, .scene-tower-deck { fill: var(--blue); }
-.scene-compass { transform-box: fill-box; transform-origin: 50% 100%; transform: rotate(var(--compass-lean, 0deg)); }
-.scene-needle { fill: var(--accent); transform-box: fill-box; transform-origin: center; transform: rotate(var(--compass-angle, 0deg)); }
-.discovery-scene[data-interest="nature"] .scene-tree { fill: var(--chapter-sun); }
-.discovery-scene[data-interest="stories"] .scene-library { fill: var(--chapter-sun); }
-.landing-finder { background: var(--chapter-mint); border: 0; border-radius: 22px; padding: 28px 32px; }
-.finder-heading { display: flex; align-items: center; gap: 16px; margin-bottom: 16px; }
-.finder-heading p { margin: 5px 0 0; color: var(--ink); }
-.finder-step { display: grid; place-items: center; width: 48px; height: 48px; flex: 0 0 auto; border-radius: 14px; background: var(--yellow); color: #103452; font-family: var(--font-display); font-size: 24px; }
-.finder-query > div { background: var(--surface); border: 1.5px solid var(--control-line); min-height: 52px; }
-.landing-search input, .landing-search select { border-color: var(--control-line); }
-.finder-query input { border: 0; }
-.finder-submit { margin-top: 18px; }
-.finder-submit p { color: var(--ink); }
-.finder-submit .primary-button { min-height: 52px; }
-.curiosity-choices { border: 0; padding: 0; margin: 26px 0 0; min-width: 0; }
-.curiosity-choices legend { padding: 0; margin-bottom: 14px; font-size: 15px; font-weight: 800; }
-.curiosity-surprise { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; margin: -8px 0 12px; padding: 6px 0; border: 0; color: var(--accent); background: transparent; font-weight: 800; text-decoration: underline; text-underline-offset: 4px; }
-.curiosity-choices > div { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 12px; }
-.curiosity-choice { display: flex; align-items: center; gap: 12px; text-align: start; min-width: 0; min-height: 78px; padding: 12px; background: var(--surface); border: 2px solid var(--surface); border-radius: 14px; font-weight: 800; line-height: 1.3; color: var(--ink); transition: border-color 160ms ease, background-color 160ms ease; }
-.curiosity-choice > svg { flex: 0 0 auto; margin-inline-start: auto; }
-.curiosity-choice:hover, .curiosity-choice[aria-pressed="true"] { border-color: var(--accent); }
-.curiosity-choice[aria-pressed="true"] { background: var(--paper); }
-.curiosity-icon { display: grid; place-items: center; flex: 0 0 auto; width: 46px; height: 46px; background: var(--chapter-blue); border-radius: 12px; }
-.curiosity-make .curiosity-icon { background: var(--chapter-peach); }
-.curiosity-build .curiosity-icon { background: var(--chapter-sun); }
-.curiosity-nature .curiosity-icon { background: var(--chapter-mint); }
-@media (prefers-reduced-motion: no-preference) {
-  .curiosity-choice[aria-pressed="true"] .curiosity-icon svg { animation: curiosity-nod 320ms ease-out; }
+.welcome.welcome-simple.discovery-welcome { display: grid; position: relative; padding-block: 32px; gap: 32px; }
+.discovery-welcome .welcome-intro { max-width: 660px; font-size: clamp(18px, 1.8vw, 24px); }
+.discovery-welcome h1 { font-weight: 800; letter-spacing: -.035em; }
+.discovery-art { position: static; min-width: 0; width: 100%; max-width: 420px; justify-self: end; }
+.discovery-welcome .hero-actions { align-items: stretch; }
+.welcome-ages { color: var(--muted); }
+.landing-topics, .home-next-steps { max-width: 1440px; padding: 24px 32px 40px; margin: auto; }
+.home-section-heading { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 32px; margin-bottom: 24px; }
+.home-section-heading h2 { font-size: clamp(26px, 2.5vw, 34px); margin-bottom: 8px; }
+.home-section-heading p { color: var(--muted); margin-bottom: 0; }
+.home-section-heading .text-link { flex-shrink: 0; }
+.home-topic-links { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; }
+.home-topic { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 12px; min-width: 0; padding: 20px; background: var(--surface); border: 1.5px solid var(--line); border-radius: 18px; text-decoration: none; font-size: 18px; font-weight: 800; }
+.home-topic .gta-artwork { grid-column: 1 / -1; }
+.home-topic > span:not(.gta-artwork) { flex: 1 1 0; min-width: 0; overflow-wrap: break-word; }
+.home-topic > svg { flex-shrink: 0; }
+.home-next-steps { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.home-next-step { display: flex; align-items: center; gap: 20px; min-width: 0; padding: 24px; border: 1.5px solid var(--line); border-radius: 18px; background: var(--surface-strong); text-decoration: none; }
+.home-next-step > div { flex: 1; min-width: 0; }
+.home-next-step h2 { font-size: 24px; margin-bottom: 8px; }
+.home-next-step p { margin: 0; color: var(--muted); }
+.home-next-step > svg { flex-shrink: 0; }
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .home-topic, .home-next-step { transition: translate 240ms var(--playful-spring), background-color 160ms ease; }
+  .home-topic:hover, .home-next-step:hover { translate: 0 -3px; background: var(--tint); }
+  .home-topic:hover .gta-artwork { rotate: -4deg; }
+  .home-topic .gta-artwork { transition: rotate 280ms var(--playful-spring); }
 }
-@keyframes curiosity-nod { 0%,100% { transform: rotate(0); } 40% { transform: rotate(-13deg); } 70% { transform: rotate(5deg); } }
-@media (max-width: 1100px) { .curiosity-choices > div { grid-template-columns: repeat(2,minmax(0,1fr)); } }
+@media (max-width: 1000px) { .home-topic-links { grid-template-columns: repeat(2,minmax(0,1fr)); } }
 @media (max-width: 680px) {
-  .discovery-art { display: block; position: absolute; top: 12px; inset-inline-end: 16px; width: 112px; z-index: 1; }
-  .discovery-welcome .eyebrow, .discovery-welcome .welcome-ages { display: none; }
-  .welcome-simple.discovery-welcome h1 { padding-inline-end: 104px; font-size: 32px; min-height: 112px; }
-  .discovery-welcome .welcome-intro { margin-top: 12px; }
-  .landing-finder { padding: 20px 18px; border-radius: 18px; }
-  .finder-heading { gap: 12px; margin-bottom: 20px; }
-  .finder-heading h2 { font-size: 25px; }
-  .finder-step { width: 38px; height: 38px; font-size: 20px; border-radius: 11px; }
-  .finder-heading p { font-size: 14px; }
-  .curiosity-choices > div { gap: 10px; }
-  .curiosity-choice { flex-wrap: wrap; position: relative; gap: 8px; font-size: 14px; padding: 10px; }
-  .curiosity-choice > span:last-of-type { flex-basis: 100%; }
-  .curiosity-choice > svg { position: absolute; inset-inline-end: 10px; top: 24px; }
-  .curiosity-icon { width: 42px; height: 42px; }
+  .welcome.welcome-simple.discovery-welcome { grid-template-columns: minmax(0,1fr); padding: 24px 18px; gap: 20px; }
+  .welcome-simple.discovery-welcome h1 { padding: 0; min-height: 0; font-size: clamp(32px, 8vw, 44px); }
+  .discovery-art { position: static; width: 100%; max-width: 220px; justify-self: center; }
+  .discovery-welcome .welcome-ages { display: block; }
+  .discovery-welcome .hero-actions > a { flex: 1 1 160px; }
+  .landing-topics, .home-next-steps { padding: 20px 18px 28px; }
+  .home-topic-links { gap: 12px; }
+  .home-topic { padding: 14px; gap: 8px; font-size: 16px; }
+  .home-next-steps { grid-template-columns: minmax(0,1fr); gap: 16px; }
+  .home-next-step { padding: 18px; gap: 12px; }
+  .home-next-step .gta-artwork { width: 56px; height: 56px; }
 }
-@media (prefers-reduced-motion: reduce) {
-  .scene-compass, .scene-needle, .curiosity-choice, .curiosity-icon svg { transition: none; animation: none; }
-}
-
-@media (max-width: 370px) {
-  .welcome-simple.discovery-welcome h1 { font-size: 28px; padding-inline-end: 84px; min-height: 104px; }
-  .discovery-art { width: 96px; inset-inline-end: 12px; }
-}
+@media (max-width: 360px) { .home-topic-links { grid-template-columns: minmax(0,1fr); } }

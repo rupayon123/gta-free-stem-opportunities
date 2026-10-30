@@ -1,65 +1,58 @@
 @font-face {
-  font-family: "Fredoka";
-  src: url("/fonts/fredoka.woff2") format("woff2");
+  font-family: "Nunito";
+  src: url("/fonts/Nunito.ttf") format("truetype");
   font-style: normal;
-  font-weight: 500 700;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Nunito Sans";
-  src: url("/fonts/nunitosans.woff2") format("woff2");
-  font-style: normal;
-  font-weight: 400 800;
+  font-weight: 200 1000;
   font-display: swap;
 }
 :root {
   color-scheme: light;
-  --bg: #fffaf0;
+  --bg: #f4f8fd;
   --surface: #ffffff;
-  --surface-strong: #eaf7f2;
-  --ink: #103452;
-  --muted: #425d70;
-  --line: #b8cccb;
-  --accent: #08777c;
-  --blue-strong: #08777c;
+  --surface-strong: #e5f0f7;
+  --ink: #19334b;
+  --muted: #536b80;
+  --line: #526f82;
+  --accent: #2e7184;
+  --blue-strong: #2e7184;
   --blue: #69bdc8;
-  --tint: #eaf7f2;
-  --blue-soft: #e7f6f8;
+  --tint: #d1e9ec;
+  --blue-soft: #e5f0f7;
   --yellow: #f4c431;
-  --mint: #eaf7f2;
+  --mint: #e5f0f7;
   --radius: 20px;
   --radius-sm: 12px;
   --shadow-soft: none;
-  --control-line: #66868c;
+  --control-line: #526f82;
   --chapter-mint: #e6f3e9;
   --chapter-sun: #ffe7a3;
   --chapter-blue: #e4effa;
   --chapter-peach: #fbe6dc;
-  --paper: #fffaf0;
-  --font-display: "Fredoka", "Nunito Sans", system-ui, sans-serif;
-  --font-body: "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --paper: #f4f8fd;
+  --font-display: "Nunito", system-ui, sans-serif;
+  --font-body: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --focus: 0 0 0 3px var(--surface), 0 0 0 6px var(--accent);
 }
 :root[data-theme="dark"] {
   color-scheme: dark;
-  --bg: #0b1d2b;
-  --surface: #112a39;
-  --surface-strong: #193b46;
-  --ink: #edf6f7;
-  --muted: #b2c9d2;
-  --line: #385462;
-  --accent: #68d0cd;
-  --blue-strong: #68d0cd;
+  --bg: #14253a;
+  --surface: #23364c;
+  --surface-strong: #1c2b3e;
+  --ink: #eff6ff;
+  --muted: #afc3d9;
+  --line: #8ba3b7;
+  --accent: #a4d8e2;
+  --blue-strong: #a4d8e2;
   --blue: #8bd5df;
-  --tint: #193b46;
-  --blue-soft: #193b46;
-  --mint: #193b46;
-  --control-line: #7c9fa8;
+  --tint: #365969;
+  --blue-soft: #1c2b3e;
+  --mint: #1c2b3e;
+  --control-line: #8ba3b7;
   --chapter-mint: #21433e;
   --chapter-sun: #4c4025;
   --chapter-blue: #223d53;
   --chapter-peach: #4b3434;
-  --paper: #142f3a;
+  --paper: #14253a;
 }
 * { box-sizing: border-box; }
 html { scroll-padding-top: 24px; }
@@ -124,7 +117,7 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 600; line-height: 1.
 .primary-button, .soft-button { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 48px; padding: 12px 20px; border: 1px solid transparent; border-radius: 12px; text-decoration: none; font-size: 16px; font-weight: 800; }
 .primary-button { color: #fff; background: var(--accent); }
 .primary-button:hover { background: var(--ink); color: var(--surface); }
-:root[data-theme="dark"] .primary-button { color: #0b1d2b; }
+:root[data-theme="dark"] .primary-button { color: #142b3c; }
 .soft-button { background: var(--surface); border-color: var(--line); }
 .soft-button:hover { background: var(--tint); }
 .discovery-section { max-width: 1440px; padding: 40px 32px 56px; margin: auto; scroll-margin-top: 24px; }
@@ -183,7 +176,6 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 600; line-height: 1.
   .desktop-nav { gap: 24px; font-size: 16px; }
   .site-tools { gap: 5px; }
   .saved-link { padding-inline: 12px; }
-  .saved-link span { display: none; }
   .welcome { padding: 20px 24px 30px; grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); }
   .welcome-art { position: static; width: auto; margin-inline-start: -12px; }
   .welcome h1 { font-size: 48px; }
@@ -298,3 +290,63 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 600; line-height: 1.
   .finder-submit { display: flex; flex-direction: column-reverse; align-items: stretch; gap: 20px; }
   .finder-submit button { width: 100%; }
 }
+
+/* Approved iOS v3 system: original role artwork, Nunito and opaque cool surfaces. */
+.gta-artwork { display: inline-grid; grid-template: minmax(0, 1fr) / minmax(0, 1fr); place-items: center; width: 28px; height: 28px; flex: 0 0 auto; vertical-align: middle; }
+.gta-artwork img { display: block; width: 100%; height: 100%; object-fit: contain; min-width: 0; min-height: 0; max-height: 100%; }
+.gta-artwork .gta-artwork-dark { display: none; }
+:root[data-theme="dark"] .gta-artwork .gta-artwork-light { display: none; }
+:root[data-theme="dark"] .gta-artwork .gta-artwork-dark { display: block; }
+.gta-artwork-illustration { width: 80px; height: 80px; }
+.header-inner { gap: 24px; padding-block: 8px; }
+.desktop-nav { gap: 16px; font-size: 16px; flex: 1 1 420px; }
+.desktop-nav a { gap: 8px; padding: 10px 8px; white-space: normal; border-radius: 12px; }
+.desktop-nav a[aria-current="page"] { background: var(--tint); color: var(--ink); text-decoration: none; }
+.site-tools { gap: 8px; flex-wrap: wrap; }
+.mobile-nav a { display: flex; align-items: center; gap: 10px; }
+.primary-button .gta-artwork { padding: 2px; background: var(--surface); border-radius: 7px; }
+.oe-explorer .oe-category { display: inline-flex; align-items: center; flex-wrap: wrap; gap: 8px; }
+.oe-explorer .oe-filters { background: var(--surface-strong); border: 1.5px solid var(--line); }
+.oe-explorer .oe-card { border: 1.5px solid var(--line); }
+.oe-explorer .oe-result-toolbar, .oe-explorer .oe-result-actions, .section-heading { flex-wrap: wrap; }
+.oe-explorer .oe-result-toolbar > p { white-space: normal; }
+.oe-explorer .oe-search { min-width: 0; }
+.oe-explorer .oe-search > svg { flex-shrink: 0; }
+.oe-explorer .oe-filter-heading { flex-wrap: wrap; }
+.oe-explorer .oe-filter-heading button { font-size: 13px; }
+.oe-explorer .oe-card-bottom { flex-wrap: wrap; gap: 12px; }
+:root { --playful-edge: #244e60; --playful-soft-edge: var(--line); --playful-card-edge: var(--line); }
+:root[data-theme="dark"] { --playful-edge: #659eac; --playful-soft-edge: var(--line); --playful-card-edge: var(--line); }
+@media (max-width: 1150px) {
+  .header-inner { gap: 16px; }
+  .desktop-nav { flex: 1 1 100%; order: 3; justify-content: center; }
+}
+@media (max-width: 900px) {
+  .desktop-nav { display: none; }
+  .header-inner { flex-wrap: nowrap; gap: 8px; }
+  .site-tools { flex: 1; justify-content: flex-end; }
+  .mobile-menu-button { display: inline-flex; }
+}
+@media (max-width: 480px) {
+  .header-inner { padding-inline: 12px; }
+  .site-tools { gap: 4px; }
+  .language-tool select { max-width: 6em; }
+  .saved-link { padding-inline: 10px; }
+  .site-tools .saved-link { display: none; }
+}
+.oe-named-filters { grid-column: 1 / -1; min-width: 0; border-bottom: 1.5px solid var(--line); padding-bottom: 20px; margin-bottom: 24px; }
+.oe-named-filters h4 { display: flex; align-items: center; gap: 8px; font-size: 17px; margin: 0 0 16px; }
+.oe-named-filters .oe-field { margin-bottom: 14px; }
+.oe-preset-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.oe-preset-actions button { min-height: 44px; border: 1.5px solid var(--line); background: var(--surface); color: var(--ink); border-radius: 10px; padding: 8px 12px; font-size: 14px; text-align: start; }
+.oe-preset-actions button:first-child { background: var(--accent); color: var(--surface); }
+:root[data-theme="dark"] .oe-preset-actions button:first-child { color: #142b3c; }
+.oe-preset-help, .oe-preset-status { font-size: 13px; line-height: 1.55; margin: 12px 0 0; overflow-wrap: anywhere; }
+.oe-preset-help { color: var(--muted); }
+.home-saved-filters { max-width: 1440px; padding: 24px 32px; margin: auto; }
+.home-saved-filters h2 { font-size: 28px; }
+.home-saved-filters > p { color: var(--muted); }
+.home-saved-filter-links { display: flex; flex-wrap: wrap; gap: 12px; }
+.home-saved-filter-links a { display: inline-flex; align-items: center; gap: 10px; padding: 12px 16px; min-height: 48px; border: 1.5px solid var(--line); background: var(--surface); border-radius: 12px; text-decoration: none; overflow-wrap: anywhere; max-width: 100%; }
+.home-saved-filter-links a span:not(.gta-artwork) { min-width: 0; }
+@media (max-width: 680px) { .home-saved-filters { padding: 20px 18px; } }
