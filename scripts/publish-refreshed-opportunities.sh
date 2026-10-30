@@ -20,25 +20,28 @@ publish_refreshed_opportunities() {
     return 1
   fi
 
-  local generated=(lib/generatedLibraryOpportunities.ts lib/generatedDiscoveryReview.ts public/opportunities.json)
+  local generated=(lib/generatedLibraryOpportunities.ts lib/generatedDiscoveryReview.ts public/opportunities.json data/youth-hunter-state.json data/youth-hunter-manifest.json public/youth-opportunities.json)
   local attempt changed base push_output tip
   git config user.name "gta-free-stem-bot"
   git config user.email "gta-free-stem-bot@users.noreply.github.com"
 
   for attempt in 1 2 3; do
-    # Only the three generated files may be discarded by the retry below.
+    # Only the six generated files may be discarded by the retry below.
     while IFS= read -r changed; do
       case "$changed" in
-        lib/generatedLibraryOpportunities.ts|lib/generatedDiscoveryReview.ts|public/opportunities.json) ;;
+        lib/generatedLibraryOpportunities.ts|lib/generatedDiscoveryReview.ts|public/opportunities.json|data/youth-hunter-state.json|data/youth-hunter-manifest.json|public/youth-opportunities.json) ;;
         *) echo "Unexpected tracked changes; refusing publication or reset." >&2; return 1 ;;
       esac
     done < <(git diff --name-only HEAD)
 
-    if git diff --quiet HEAD -- "${generated[@]}"; then
+    if git diff --quiet HEAD -- "${generated[@]}" && [[ -z "$(git ls-files --others --exclude-standard -- "${generated[@]}")" ]]; then
       echo "No opportunity database changes found."
       return 0
     fi
 
+    # A partial or interrupted youth working tree cannot cross the atomic Git
+    # commit boundary. Verify both payload hashes/classification before staging.
+    npm run verify:youth-feed
     base="$(git rev-parse HEAD)"
     git add -- "${generated[@]}"
     git commit -m "Refresh generated public opportunities"

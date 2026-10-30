@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Private factual lead collection, not production catalogue or provider guarantee",
+  "records": [
+    {
+      "id": "aurora-buddies-reading",
+      "provider": "Aurora Public Library",
+      "listingKind": "role",
+      "pathway": "volunteer",
+      "title": "Reading Buddies teen volunteer",
+      "sourceUrl": "https://aurorapl.ca/volunteers/",
+      "applicationUrl": "https://aurorapl.ca/form-reading-buddies-teen-application/",
+      "checkedAt": "2026-10-30T06:01:42.000Z",
+      "audience": {
+        "volunteerGrades": [
+          9,
+          10,
+          11,
+          12
+        ],
+        "volunteerAges": null,
+        "recipientAges": {
+          "min": 6,
+          "max": 12
+        },
+        "noAgeInference": true
+      },
+      "details": {
+        "bodyMode": "factual-summary",
+        "description": "Help children practise reading and literacy through library-based activities.",
+        "commitment": "Ten sessions lasting one hour each; planned commitment is not completed time.",
+        "applicationConditions": [
+          "Incomplete submissions are not considered.",
+          "Applying does not ensure selection.",
+          "Provider follow-up and orientation steps apply.",
+          "Complete orientation before any volunteer activity; weekly meetings use a mutually agreed schedule over ten weeks.",
+          "Provider asks you to submit only one application."
+        ],
+        "sourceContext": "Ongoing recruitment is described; a confirmed place or dated shift is not established."
+      },
+      "availability": {
+        "status": "recruitment-described",
+        "confirmedPlacement": false,
+        "deadline": null
+      },
+      "cost": {
+        "status": "unknown",
+        "reason": "No explicit role participation-cost statement verified."
+      },
+      "reviewStatus": "lead-only",
+      "schoolApproved": false,
+      "actualMinutes": null,
+      "verifiedFreeOpenRole": false
+    },
+    {
+      "id": "aurora-buddies-math",
+      "provider": "Aurora Public Library",
+      "listingKind": "role",
+      "pathway": "volunteer",
+      "title": "Math Buddies teen volunteer",
+      "sourceUrl": "https://aurorapl.ca/volunteers/",
+      "applicationUrl": "https://aurorapl.ca/form-math-buddies-teen-application/",
+      "checkedAt": "2026-10-30T06:01:42.000Z",
+      "audience": {
+        "volunteerGrades": [
+          9,
+          10,
+          11,
+          12
+        ],
+        "volunteerAges": null,
+        "recipientAges": {
+          "min": 6,
+          "max": 12
+        },
+        "noAgeInference": true
+      },
+      "details": {
+        "bodyMode": "factual-summary",
+        "description": "Help children practise numeracy through library-based activities.",
+        "commitment": "Ten sessions lasting one hour each; planned commitment is not completed time.",
+        "applicationConditions": [
+          "Incomplete submissions are not considered.",
+          "Applying does not ensure selection.",
+          "Provider follow-up and orientation steps apply.",
+          "Complete orientation before any volunteer activity; weekly meetings use a mutually agreed schedule over ten weeks.",
+          "Provider asks you to submit only one application."
+        ],
+        "sourceContext": "Ongoing recruitment is described; a confirmed place or dated shift is not established."
+      },
+      "availability": {
+        "status": "recruitment-described",
+        "confirmedPlacement": false,
+        "deadline": null
+      },
+      "cost": {
+        "status": "unknown",
+        "reason": "No explicit role participation-cost statement verified."
+      },
+      "reviewStatus": "lead-only",
+      "schoolApproved": false,
+      "actualMinutes": null,
+      "verifiedFreeOpenRole": false
+    }
+  ]
+}

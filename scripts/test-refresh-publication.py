@@ -16,7 +16,11 @@ FILES = (
     "lib/generatedLibraryOpportunities.ts",
     "lib/generatedDiscoveryReview.ts",
     "public/opportunities.json",
+    "data/youth-hunter-state.json",
+    "data/youth-hunter-manifest.json",
+    "public/youth-opportunities.json",
 )
+PAIR_GATE = "run verify:youth-feed"
 GATES = ["ci", "audit --omit=dev --audit-level=high", "run engine:refresh", "run build"]
 
 
@@ -148,14 +152,14 @@ if sys.argv[1:] == ['run', 'engine:refresh']:
             self.assertEqual(self.git(self.remote, "show", "main:" + name).stdout,
                              "regenerated from new source policy")
         self.git(self.remote, "merge-base", "--is-ancestor", tip, "main")
-        self.assertEqual([" ".join(cmd) for cmd in self.commands("npm")], GATES)
+        self.assertEqual([" ".join(cmd) for cmd in self.commands("npm")], [PAIR_GATE, *GATES, PAIR_GATE])
         self.assertEqual(sum(cmd[0] == "push" for cmd in self.commands("git")), 2)
         self.assertEqual(sum(cmd[0] == "reset" for cmd in self.commands("git")), 1)
 
     def test_normal_publish_does_not_reset_or_repeat_gates(self):
         result = self.run_helper()
         self.assertEqual(result.returncode, 0, result.stderr)
-        self.assertEqual(self.commands("npm"), [])
+        self.assertEqual(self.commands("npm"), [["run", "verify:youth-feed"]])
         self.assertFalse(any(cmd[0] == "reset" for cmd in self.commands("git")))
         self.assertEqual(sum(cmd[0] == "push" for cmd in self.commands("git")), 1)
 
@@ -171,7 +175,7 @@ if sys.argv[1:] == ['run', 'engine:refresh']:
         self.assertIn("Permission denied", result.stderr)
         self.assertEqual(self.remote_head(), tip)
         self.assertFalse(any(cmd[0] in ("reset", "fetch") for cmd in self.commands("git")))
-        self.assertEqual(self.commands("npm"), [])
+        self.assertEqual(self.commands("npm"), [["run", "verify:youth-feed"]])
 
     def test_failed_regeneration_keeps_human_remote_unchanged(self):
         tip = self.advance()
@@ -194,7 +198,7 @@ if sys.argv[1:] == ['run', 'engine:refresh']:
         self.assertEqual(self.git(self.remote, "rev-parse", "main^{tree}").stdout.strip(), accepted_tree)
         for name, contents in accepted_data.items():
             self.assertEqual(self.git(self.remote, "show", "main:" + name).stdout, contents)
-        self.assertEqual([" ".join(cmd) for cmd in self.commands("npm")], GATES[:GATES.index(gate) + 1])
+        self.assertEqual([" ".join(cmd) for cmd in self.commands("npm")], [PAIR_GATE, *GATES[:GATES.index(gate) + 1]])
         commands = self.commands("git")
         # Only the original, rejected bot publication is attempted. A failed
         # retry gate must never commit or publish the regenerated local files.
@@ -224,7 +228,7 @@ if sys.argv[1:] == ['run', 'engine:refresh']:
         self.assertIn("did not advance normally", result.stderr)
         self.assertEqual(self.remote_head(), tip)
         self.assertFalse(any(cmd[0] == "reset" for cmd in self.commands("git")))
-        self.assertEqual(self.commands("npm"), [])
+        self.assertEqual(self.commands("npm"), [["run", "verify:youth-feed"]])
 
     def test_repeated_races_stop_after_three_normal_pushes(self):
         result = self.run_helper(RACE_EVERY_PUSH="1")
@@ -234,7 +238,31 @@ if sys.argv[1:] == ['run', 'engine:refresh']:
         self.assertEqual(sum(cmd[0] == "push" for cmd in commands), 3)
         self.assertEqual(sum(cmd[0] == "reset" for cmd in commands), 2)
         self.assertFalse(any("--force" in cmd or "+HEAD" in " ".join(cmd) for cmd in commands))
-        self.assertEqual([" ".join(cmd) for cmd in self.commands("npm")], GATES * 2)
+        self.assertEqual([" ".join(cmd) for cmd in self.commands("npm")], [PAIR_GATE, *GATES, PAIR_GATE, *GATES, PAIR_GATE])
+
+    def test_invalid_youth_pair_gate_cannot_stage_commit_or_push(self):
+        tip = self.remote_head()
+        result = self.run_helper(FAIL_NPM_GATE=PAIR_GATE)
+        self.assertEqual(result.returncode, 43, result.stderr)
+        self.assertEqual(self.remote_head(), tip)
+        self.assertFalse(any(cmd[0] in ("add", "commit", "push", "reset") for cmd in self.commands("git")))
+
+    def test_new_untracked_youth_pair_is_not_mistaken_for_no_changes(self):
+        # Simulate first activation: accepted legacy paths unchanged; youth paths
+        # absent from HEAD, then created by the validated candidate writer.
+        self.git(self.runner, "restore", ".")
+        youth = FILES[-3:]
+        self.git(self.runner, "rm", *youth)
+        self.git(self.runner, "commit", "-m", "Fixture prior to youth activation")
+        self.git(self.runner, "push", "origin", "main")
+        for name in youth:
+            path = self.runner / name
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_text("new paired youth output")
+        result = self.run_helper()
+        self.assertEqual(result.returncode, 0, result.stderr)
+        for name in youth:
+            self.assertEqual(self.git(self.remote, "show", "main:" + name).stdout, "new paired youth output")
 
     def test_non_ci_checkout_is_never_reset_or_published(self):
         self.assertNotEqual(self.run_helper(GITHUB_ACTIONS="false").returncode, 0)

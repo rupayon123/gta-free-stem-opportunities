@@ -15,12 +15,21 @@ import { ExplorerMap } from "./ExplorerMap";
 import { hasUnresolvedProximityQuery } from "@/lib/search";
 import { useLibraryCatalog } from "./useLibraryCatalog";
 import { useOpportunitySearch } from "./useOpportunitySearch";
+import { stripPrivateSupportParams } from "@/lib/scopedPresets/localOnlyUrl";
+import { AccessibilityFilter } from "./AccessibilityFilter";
+import { AccessibilityDetails } from "./AccessibilityDetails";
+import { ScopedSavedFilters } from "./ScopedSavedFilters";
+import { useScopedSavedFilters } from "./useScopedSavedFilters";
+import { emptyAccessibilitySelection, matchAccessibilitySelection, supportCategoryLabels } from "@/lib/accessibilitySelection";
+import "./AccessibilitySupport.css";
+import "./ScopedSavedFilters.css";
 import "./OpportunityExplorer.css";
 
 const SAVED_KEY = "gta-stem-opportunities-saved-anonymous";
 const PAGE_SIZE = 12;
 
 type ExplorerProps = {
+  supportPresetsEnabled?: boolean;
   language: LanguageCode;
   initialFilters?: Partial<Filters>;
   highSchool?: boolean;
@@ -66,8 +75,15 @@ function reportUrl(item: Opportunity) {
   return url.href;
 }
 
-export function OpportunityExplorer({ language, initialFilters = {}, highSchool = false, savedOnly = false, landing = false, onSavedCountChange }: ExplorerProps) {
+export function OpportunityExplorer({ supportPresetsEnabled = false, language, initialFilters = {}, highSchool = false, savedOnly = false, landing = false, onSavedCountChange }: ExplorerProps) {
   const [filters, setFilters] = useState<Filters>(() => ({ ...DEFAULT_FILTERS, ...initialFilters, language: "all" }));
+  const [support, setSupport] = useState(emptyAccessibilitySelection);
+  const [supportError, setSupportError] = useState("");
+  const [showUnconfirmed, setShowUnconfirmed] = useState(false);
+  const scoped = useScopedSavedFilters({ enabled: supportPresetsEnabled, scope: highSchool ? "teen-activities" : "browse", criteria: { kind: "activity", filters, support }, onApply: value => {
+    if (value.kind !== "activity") return false;
+    setFilters({ ...value.filters }); setSupport(value.support); setSupportError(""); setDeviceLocation(null); return true;
+  } });
   const [urlReady, setUrlReady] = useState(false);
   const [namedFilters, setNamedFilters] = useState<SavedFilter[]>([]);
   const [selectedFilterId, setSelectedFilterId] = useState("");
@@ -106,7 +122,12 @@ export function OpportunityExplorer({ language, initialFilters = {}, highSchool 
     const readUrl = () => {
       let next = filtersFromUrl(JSON.parse(initialKey), window.location.search);
       setSelectedFilterId(""); setFilterName("");
+      if (supportPresetsEnabled && new URLSearchParams(window.location.search).has("accessSupport")) {
+        setSupportError("Support choices from a page address are not applied. Clear support filters, choose them here, or load a saved filter from this browser.");
+        try { window.history.replaceState(window.history.state, "", stripPrivateSupportParams(new URL(window.location.href))); } catch { /* Do not copy the private parameter to another URL. */ }
+      }
       try {
+        if (supportPresetsEnabled) { setFilters(next); setDeviceLocation(null); return; }
         const records = readSavedFilters(window.localStorage);
         setNamedFilters(records); setFilterStorageError("");
         const id = new URLSearchParams(window.location.search).get("savedFilter");
@@ -120,10 +141,10 @@ export function OpportunityExplorer({ language, initialFilters = {}, highSchool 
     setUrlReady(true);
     window.addEventListener("popstate", readUrl);
     return () => window.removeEventListener("popstate", readUrl);
-  }, [initialKey, highSchool]);
+  }, [initialKey, highSchool, supportPresetsEnabled]);
   useEffect(() => {
     if (!urlReady) return;
-    const url = new URL(window.location.href);
+    const url = stripPrivateSupportParams(new URL(window.location.href));
     const values: Record<string, string> = {
       q: filters.query, category: filters.category === "All" ? "" : filters.category,
       region: filters.region === "All" ? "" : filters.region, city: filters.city,
@@ -133,10 +154,10 @@ export function OpportunityExplorer({ language, initialFilters = {}, highSchool 
     Object.entries(URL_TOGGLES).forEach(([param, key]) => { values[param] = filters[key] ? "1" : ""; });
     Object.entries(values).forEach(([key, value]) => { if (value) url.searchParams.set(key, value); else url.searchParams.delete(key); });
     const selectedPreset = namedFilters.find(item => item.id === selectedFilterId);
-    if (selectedPreset && JSON.stringify(selectedPreset.filters) === JSON.stringify(filters)) url.searchParams.set("savedFilter", selectedPreset.id);
-    else url.searchParams.delete("savedFilter");
+    if (!supportPresetsEnabled && selectedPreset && JSON.stringify(selectedPreset.filters) === JSON.stringify(filters)) url.searchParams.set("savedFilter", selectedPreset.id);
+    else if (!supportPresetsEnabled) url.searchParams.delete("savedFilter");
     if (url.href !== window.location.href) window.history.replaceState(window.history.state, "", url);
-  }, [filters, urlReady, selectedFilterId, namedFilters]);
+  }, [filters, urlReady, selectedFilterId, namedFilters, supportPresetsEnabled]);
   useEffect(() => {
     setNow(new Date());
     const interval = window.setInterval(() => setNow(new Date()), 60000);
@@ -156,6 +177,7 @@ export function OpportunityExplorer({ language, initialFilters = {}, highSchool 
   }, []);
 
   useEffect(() => {
+    if (supportPresetsEnabled) return;
     const sync = () => {
       try { setNamedFilters(readSavedFilters(window.localStorage)); setFilterStorageError(""); }
       catch (error) { setFilterStorageError(error instanceof Error ? error.message : "Saved filters could not load."); }
@@ -163,7 +185,7 @@ export function OpportunityExplorer({ language, initialFilters = {}, highSchool 
     window.addEventListener("storage", sync);
     window.addEventListener(SAVED_FILTERS_CHANGED, sync);
     return () => { window.removeEventListener("storage", sync); window.removeEventListener(SAVED_FILTERS_CHANGED, sync); };
-  }, []);
+  }, [supportPresetsEnabled]);
   useEffect(() => {
     if (urlReady && selectedFilterId && !namedFilters.some(item => item.id === selectedFilterId)) {
       setSelectedFilterId(""); setFilterName(""); setFilterNotice("This filter was removed in another tab. Your current search stays available.");
@@ -227,20 +249,25 @@ export function OpportunityExplorer({ language, initialFilters = {}, highSchool 
   }, [available, filters, location, savedIds, savedOnly, highSchool, language]);
   const { results: searchMatches, searching, error: searchError } = useOpportunitySearch(catalog, eligible, filters.query, language, Boolean(location || filters.city));
   const results = useMemo(() => {
-    const result = [...searchMatches];
+    const result = supportPresetsEnabled ? searchMatches.filter(item => !supportError && !!now && matchAccessibilitySelection(item, support, { now: now.toISOString() }).matches) : [...searchMatches];
     if (sort === "soonest" || (sort === "distance" && !location)) result.sort((a, b) => Date.parse(a.startDate) - Date.parse(b.startDate));
     if (sort === "title") result.sort((a, b) => a.title.localeCompare(b.title));
     if (sort === "recent") result.sort((a, b) => Date.parse(b.lastVerified) - Date.parse(a.lastVerified));
     if (sort === "distance" && location) result.sort((a, b) => haversineKm(location, a) - haversineKm(location, b));
     return result;
-  }, [searchMatches, sort, location]);
+  }, [searchMatches, sort, location, supportPresetsEnabled, support, supportError, now]);
+  const unconfirmedResults = useMemo(() => !supportPresetsEnabled || supportError || !support.categories.length || !now ? [] : searchMatches.filter(item => {
+    const match = matchAccessibilitySelection(item, support, { now: now.toISOString() });
+    return !match.matches && match.decisions.every(d => d.status !== "not-available");
+  }), [searchMatches, supportPresetsEnabled, supportError, support, now]);
+  const clearSupport = () => { setSupport(emptyAccessibilitySelection()); setSupportError(""); setShowUnconfirmed(false); };
   const resultsPending = searching || (libraryStatus === "loading" && results.length === 0);
   const staleCount = results.filter((item) => isOpportunityVerificationStale(item.lastVerified, now)).length;
   const visibleResults = results.slice(0, PAGE_SIZE * page);
-  useEffect(() => { setPage(1); }, [filters, sort, savedOnly, highSchool]);
+  useEffect(() => { setPage(1); }, [filters, sort, savedOnly, highSchool, support]);
 
   const updateFilter = <K extends keyof Filters>(key: K, value: Filters[K]) => { setFilterNotice(""); setFilters((current) => ({ ...current, [key]: value })); };
-  const clearFilters = () => { detachPreset(); setFilters({ ...DEFAULT_FILTERS }); setLocationNotice(""); setNearbyInput(""); setNearbyError(""); setDeviceLocation(null); };
+  const clearFilters = () => { if (supportPresetsEnabled) scoped.onSelect(""); clearSupport(); detachPreset(); setFilters({ ...DEFAULT_FILTERS }); setLocationNotice(""); setNearbyInput(""); setNearbyError(""); setDeviceLocation(null); };
   const applyNearbyLocation = () => {
     const entered = nearbyInput.trim();
     const city = cityOptions.find((option) => option.toLowerCase() === entered.toLowerCase());
@@ -311,7 +338,7 @@ export function OpportunityExplorer({ language, initialFilters = {}, highSchool 
     };
   }, [selected]);
 
-  const chips: { key: keyof Filters; label: string; reset: () => void }[] = [];
+  const chips: { key: string; label: string; reset: () => void }[] = [];
   if (filters.query) chips.push({ key: "query", label: `“${filters.query}”`, reset: () => updateFilter("query", "") });
   if (filters.category !== "All") chips.push({ key: "category", label: translatedCategory(filters.category, language), reset: () => updateFilter("category", "All") });
   if (filters.region !== "All") chips.push({ key: "region", label: filters.region, reset: () => updateFilter("region", "All") });
@@ -319,6 +346,7 @@ export function OpportunityExplorer({ language, initialFilters = {}, highSchool 
   if (filters.age) chips.push({ key: "age", label: `${t(language, "age")} ${filters.age}`, reset: () => updateFilter("age", "") });
   if (location) chips.push({ key: "distanceKm", label: `${filters.distanceKm} km · ${location.label ?? "your area"}`, reset: () => setFilters((current) => ({ ...current, nearMe: false, postalCode: "" })) });
   const toggles: [ToggleFilter, "black" | "girls" | "indigenous" | "volunteerHours" | "coop" | "mentorship" | "leadership"][] = [["blackFocused", "black"], ["girlsFocused", "girls"], ["indigenousFocused", "indigenous"], ["volunteerHours", "volunteerHours"], ["coop", "coop"], ["mentorship", "mentorship"], ["leadership", "leadership"]];
+  if (supportPresetsEnabled) support.categories.forEach(category => chips.push({ key: `support-${category}`, label: supportCategoryLabels[category], reset: () => setSupport(current => ({ ...current, categories: current.categories.filter(c => c !== category) })) }));
   toggles.forEach(([key, label]) => { if (filters[key]) chips.push({ key, label: t(language, label), reset: () => updateFilter(key, false) }); });
   const browseParams = new URLSearchParams();
   const browseValues = {
@@ -366,6 +394,7 @@ export function OpportunityExplorer({ language, initialFilters = {}, highSchool 
           </form>
         </aside> : <aside id="oe-filters" className={`oe-filters${filterOpen ? " oe-filters-open" : ""}`} aria-label={t(language, "filters")}>
           <div className="oe-filter-heading"><h3>{t(language, "filters")}</h3><button data-science-press type="button" onClick={clearFilters}>{t(language, "clearFilters")}</button></div>
+          {supportPresetsEnabled ? <><ScopedSavedFilters {...scoped} /><AccessibilityFilter value={support} onChange={setSupport} />{supportError && <p role="alert" lang="en">{supportError}</p>}<button type="button" className="soft-button" onClick={clearSupport} lang="en">Clear support filters</button></> : <>
           <section className="oe-named-filters" aria-labelledby="saved-filter-heading" lang="en">
             <h4 id="saved-filter-heading"><GtaArtwork role="saved" />Saved filters</h4>
             <div className="oe-field"><label htmlFor="saved-filter-picker">Choose a saved filter</label><select id="saved-filter-picker" value={selectedFilterId} onChange={event => applyPreset(event.target.value)}><option value="">New filter</option>{namedFilters.filter(item => item.highSchool === highSchool).map(item => <option value={item.id} key={item.id}>{item.name}</option>)}</select></div>
@@ -376,6 +405,7 @@ export function OpportunityExplorer({ language, initialFilters = {}, highSchool 
             {filterNotice && <p className="oe-preset-status" role="status">{filterNotice}</p>}
             {filterStorageError && <p className="oe-preset-status" role="alert">{filterStorageError}</p>}
           </section>
+          </>}
           <div className="oe-field"><label htmlFor="oe-category">{t(language, "category")}</label><select id="oe-category" value={filters.category} onChange={(event) => updateFilter("category", event.target.value as Filters["category"])}><option value="All">{t(language, "allCategories")}</option>{categories.map((category) => <option key={category} value={category}>{translatedCategory(category, language)}</option>)}</select></div>
           <div className="oe-field"><label htmlFor="oe-region">{t(language, "region")}</label><select id="oe-region" value={filters.region} onChange={(event) => { setFilters((current) => ({ ...current, region: event.target.value as Filters["region"], city: "" })); }}><option value="All">{t(language, "allGta")}</option>{regions.map((region) => <option key={region}>{region}</option>)}</select></div>
           <div className="oe-field"><label htmlFor="oe-city">{t(language, "city")}</label><select id="oe-city" value={filters.city} onChange={(event) => updateFilter("city", event.target.value)}><option value="">{t(language, "allCities")}</option>{cityOptions.map((city) => <option key={city}>{city}</option>)}</select></div>
@@ -391,7 +421,8 @@ export function OpportunityExplorer({ language, initialFilters = {}, highSchool 
         {landing && <div className="oe-discovery-map"><span className="oe-map-badge"><Map size={18} aria-hidden="true" /><span lang="en">Map preview</span></span><a className="oe-map-skip" href="#oe-results" lang="en">Skip map to opportunity list</a>{now ? <ExplorerMap items={results} onSelect={openDetail} language={language} /> : <div className="oe-map-placeholder" role="status" lang="en">Loading the neighbourhood…</div>}</div>}
         <div className="oe-results" id="oe-results" aria-busy={resultsPending}>
           {landing && <div className="oe-landing-results-heading" lang="en"><h3>Opportunities to explore</h3><a href={browseHref}>Browse all<ArrowRight size={17} aria-hidden="true" /></a></div>}
-          {chips.length > 0 && <div className="oe-active-filters" role="group" aria-label={t(language, "filters")}>{chips.map((chip) => <button data-science-press type="button" key={chip.key} onClick={chip.reset} aria-label={`${t(language, "clearFilters")}: ${chip.label}`}>{chip.label}<X size={14} aria-hidden="true" /></button>)}<button data-science-press className="oe-clear-all" type="button" onClick={clearFilters}>{t(language, "clearFilters")}</button></div>}
+          {supportPresetsEnabled && support.categories.length > 0 && <div className="accessibility-results-note" lang="en"><p>{support.includeOnRequest ? "Request-based matches need provider confirmation. Review the conditions in each listing." : "Only reviewed statements confirming every selected support are included."}</p>{!results.length && <p>No reviewed listings confirm all these supports.</p>}<button className="soft-button" type="button" onClick={clearSupport}>Clear support filters</button><button className="soft-button" type="button" aria-expanded={showUnconfirmed} onClick={() => setShowUnconfirmed(v => !v)}>{showUnconfirmed ? "Hide" : "Show"} listings with unconfirmed support ({unconfirmedResults.length})</button></div>}
+          {chips.length > 0 && <div className="oe-active-filters" role="group" aria-label={t(language, "filters")}>{chips.map((chip) => <button data-science-press type="button" key={chip.key} lang={chip.key.startsWith("support-") ? "en" : undefined} onClick={chip.reset} aria-label={`${t(language, "clearFilters")}: ${chip.label}`}>{chip.label}<X size={14} aria-hidden="true" /></button>)}<button data-science-press className="oe-clear-all" type="button" onClick={clearFilters}>{t(language, "clearFilters")}</button></div>}
           <div className="oe-result-toolbar"><p role="status" aria-live="polite" aria-atomic="true" lang={!now ? "en" : language}>{!now || resultsPending ? "Finding opportunities…" : searchError ? "Search is unavailable" : <><strong>{results.length}</strong> {t(language, "results")}</>}</p><div className="oe-result-actions"><div className="oe-sort" lang="en"><label className="oe-sr-only" htmlFor="oe-sort">Sort opportunities</label><select id="oe-sort" value={sort} onChange={(event) => setSort(event.target.value as SortOrder)}><option value="relevance">Best match</option><option value="soonest">Starting soon</option><option value="recent">Recently checked</option><option value="title">A to Z</option>{location && <option value="distance">Nearest first</option>}</select></div>{!landing && <div className="oe-view-toggle" role="group" aria-label={t(language, "viewMode")}><button data-science-press type="button" aria-pressed={view === "list"} aria-label={t(language, "list")} onClick={() => setView("list")}><List size={18} aria-hidden="true" /><span>{t(language, "list")}</span></button><button data-science-press type="button" aria-pressed={view === "map"} aria-label={t(language, "map")} onClick={() => setView("map")}><Map size={18} aria-hidden="true" /><span>{t(language, "map")}</span></button></div>}</div></div>
           <div className="oe-source-status" lang="en"><div className={`oe-feedback-slot${saveFeedback && !selected ? " is-active" : ""}`}><p className="oe-source-meta" aria-hidden={saveFeedback && !selected ? true : undefined}>{!now ? "Loading the published snapshot…" : available.length > 0 ? <>{available.length} published listings · {coverage}<br />Last source check: <bdi lang={language} dir="auto">{shortDate(latestCheck, language)}</bdi>.</> : "No current listings in this published snapshot."}</p>{saveFeedback && !selected && <div key={saveFeedback.sequence} className="oe-save-feedback" aria-hidden="true" lang="en" dir="auto"><Check size={20} /><span>{saveFeedback.text}</span></div>}</div><button data-science-press type="button" onClick={() => window.location.reload()} title="Reload this page for the latest published listings."><RefreshCw size={14} aria-hidden="true" />Refresh listings</button></div>
           {storageNotice && <p className="oe-inline-notice" role="status" lang="en">{storageNotice}</p>}
@@ -401,7 +432,7 @@ export function OpportunityExplorer({ language, initialFilters = {}, highSchool 
           {!now || resultsPending ? <div className="oe-loading" role="status" lang="en"><Search size={24} aria-hidden="true" /><p>Finding your next opportunity…</p></div> : searchError ? <div className="oe-empty" lang="en"><h3>Search could not finish.</h3><p role="status">{searchError}</p><button data-science-press className="oe-primary" type="button" onClick={() => updateFilter("query", "")}>Clear search, keep filters</button></div> : savedOnly && !results.length && uncheckedSaved.length > 0 ? <div className="oe-empty" lang="en"><h3>Your library saves are still here.</h3><p>These saved listings could not be checked while the library catalog is unavailable. Try loading library events again above.</p></div> : !results.length ? <div className="oe-empty" lang="en"><div className="oe-empty-icon">{savedOnly ? <Bookmark size={27} aria-hidden="true" /> : <Search size={27} aria-hidden="true" />}</div><h3>{savedOnly && !savedCount ? pastSavedCount > 0 ? "Your saved listings are no longer current." : "Your next great find belongs here." : "A different search might open a door."}</h3><p>{savedOnly && !savedCount ? pastSavedCount > 0 ? "Your past or unavailable saves are kept below. Remove them when you’re ready, or explore something new." : "Tap the bookmark on any opportunity to keep it here. Past events are kept separately." : available.length === 0 ? "Our current listings have ended or are awaiting review. Explore the official provider calendars while new opportunities are checked." : "Try a nearby city, another interest, or fewer filters. Only active listings appear here."}</p>{chips.length > 0 ? <button data-science-press className="oe-primary" type="button" onClick={clearFilters} lang={language}>{t(language, "clearFilters")}<ArrowRight size={17} aria-hidden="true" /></button> : <a className="oe-primary" href={savedOnly ? "/opportunities/" : "https://www.torontopubliclibrary.ca/programs-and-classes/"} {...(!savedOnly ? { target: "_blank", rel: "noopener noreferrer" } : {})}>{savedOnly ? "Find opportunities" : "Browse library programs"}<ArrowRight size={17} aria-hidden="true" /></a>}</div> : <>
             {!landing && view === "map" && <ExplorerMap items={results} onSelect={openDetail} language={language} />}
             <div className={`oe-card-grid${view === "map" ? " oe-card-grid-map" : ""}`}>
-              {visibleResults.map((item) => <OpportunityCard key={item.id} item={item} language={language} saved={savedIds.includes(item.id)} onSave={() => toggleSave(item)} onOpen={() => openDetail(item)} location={location} now={now} />)}
+              {visibleResults.map((item) => <OpportunityCard key={item.id} item={item} language={language} saved={savedIds.includes(item.id)} supportRequestNeeded={supportPresetsEnabled && support.categories.length > 0 && !!now && matchAccessibilitySelection(item, support, { now: now.toISOString() }).decisions.some(d => d.qualifies && d.status === "on-request")} onSave={() => toggleSave(item)} onOpen={() => openDetail(item)} location={location} now={now} />)}
             </div>
             {visibleResults.length < results.length && <div className="oe-load-more" lang="en"><p>Showing {visibleResults.length} of {results.length}</p><button data-science-press type="button" onClick={() => setPage((current) => current + 1)}>Show more opportunities<ArrowDown size={17} aria-hidden="true" /></button></div>}
           </>}
@@ -410,17 +441,18 @@ export function OpportunityExplorer({ language, initialFilters = {}, highSchool 
         </div>
       </div>
       <span className="oe-sr-only" role="status" aria-live="polite" lang="en">{saveAnnouncement}</span>
-      {selected && <dialog ref={dialogRef} className="oe-detail" aria-labelledby="oe-detail-title" onCancel={(event) => { event.preventDefault(); closeDetail(); }} onClose={closeDetail} onClick={(event) => { if (event.target === event.currentTarget) { const rect = event.currentTarget.getBoundingClientRect(); if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) closeDetail(); } }}><DetailContent item={selected} language={language} saved={savedIds.includes(selected.id)} onSave={() => toggleSave(selected)} onClose={closeDetail} now={now} /></dialog>}
+      {supportPresetsEnabled && showUnconfirmed && support.categories.length > 0 && <section className="accessibility-unconfirmed" lang="en" aria-label="Listings with unconfirmed support"><h2>Support not confirmed ({unconfirmedResults.length})</h2><p>These listings are separate from confirmed matches. Missing information does not mean an activity is inaccessible. Ask the provider about your arrangements.</p><div className="oe-card-grid">{unconfirmedResults.slice(0, PAGE_SIZE * page).map(item => <OpportunityCard key={item.id} item={item} language={language} saved={savedIds.includes(item.id)} onSave={() => toggleSave(item)} onOpen={() => openDetail(item)} location={location} now={now} />)}</div>{unconfirmedResults.length > PAGE_SIZE * page && <button className="soft-button" type="button" onClick={() => setPage(v => v + 1)}>Show more unconfirmed listings</button>}</section>}
+      {selected && <dialog ref={dialogRef} className="oe-detail" aria-labelledby="oe-detail-title" onCancel={(event) => { event.preventDefault(); closeDetail(); }} onClose={closeDetail} onClick={(event) => { if (event.target === event.currentTarget) { const rect = event.currentTarget.getBoundingClientRect(); if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) closeDetail(); } }}><DetailContent supportEnabled={supportPresetsEnabled} item={selected} language={language} saved={savedIds.includes(selected.id)} onSave={() => toggleSave(selected)} onClose={closeDetail} now={now} /></dialog>}
     </section>
   );
 }
 
-function OpportunityCard({ item, language, saved, onSave, onOpen, location, now }: { item: Opportunity; language: LanguageCode; saved: boolean; onSave: () => void; onOpen: () => void; location: Coordinates | null; now?: Date }) {
+function OpportunityCard({ item, language, saved, supportRequestNeeded = false, onSave, onOpen, location, now }: { supportRequestNeeded?: boolean; item: Opportunity; language: LanguageCode; saved: boolean; onSave: () => void; onOpen: () => void; location: Coordinates | null; now?: Date }) {
   const stale = isOpportunityVerificationStale(item.lastVerified, now);
-  return <article className="oe-card"><div className="oe-card-top"><span className="oe-category"><GtaArtwork role={item.categories.some(c => /Coding|Robotics/.test(c)) ? "code" : item.categories.some(c => /Art|Creat/.test(c)) ? "art" : item.categories.some(c => /Science|STEM|Engineering/.test(c)) ? "science" : "library"} />{translatedCategory(item.categories.find((category) => category !== "STEM") ?? item.categories[0], language)}</span><button data-science-press type="button" className={`oe-bookmark${saved ? " oe-bookmarked" : ""}`} aria-label={`${t(language, saved ? "saved" : "save")}: ${item.title}`} aria-pressed={saved} onClick={onSave}><Bookmark data-science-icon size={20} fill={saved ? "currentColor" : "none"} aria-hidden="true" /></button></div><p className="oe-provider" lang="en">{item.provider}</p><h3 lang="en"><button data-science-press type="button" onClick={onOpen}>{item.title}</button></h3><p className="oe-summary" lang={originalSummary(item, language) ? "en" : language}>{originalSummary(item, language) ? programExcerpt(item, 256) : translatedSummary(item, language)}</p><ul className="oe-card-facts"><li><CalendarDays size={16} aria-hidden="true" /><span lang="en">{formatDateRange(item.startDate, item.endDate)}</span></li><li><MapPin size={16} aria-hidden="true" /><span lang="en">{item.virtual ? "Online" : item.city}{location && !item.virtual ? ` · ${Math.round(haversineKm(location, item))} km away` : ""}</span></li><li><UsersRound size={16} aria-hidden="true" /><span>{t(language, "ages")} <bdi lang="en">{ageRange(item)}</bdi>{item.volunteerHoursEligible ? ` · ${t(language, "volunteerHours")}` : ""}</span></li></ul><div className="oe-card-bottom"><div><span className="oe-free"><span aria-hidden="true" />{t(language, "verifiedFree")}</span><span className="oe-checked" lang="en">{stale ? "Check latest details" : "Source checked"} · <time className="oe-verified-date" dateTime={item.lastVerified}><bdi lang={language} dir="auto">{shortDate(item.lastVerified, language)}</bdi></time></span></div><button data-science-press type="button" className="oe-details-link" onClick={onOpen} lang="en" aria-label={`View details for ${item.title}`}>Details<ArrowRight data-science-icon size={16} aria-hidden="true" /></button></div></article>;
+  return <article className="oe-card"><div className="oe-card-top"><span className="oe-category"><GtaArtwork role={item.categories.some(c => /Coding|Robotics/.test(c)) ? "code" : item.categories.some(c => /Art|Creat/.test(c)) ? "art" : item.categories.some(c => /Science|STEM|Engineering/.test(c)) ? "science" : "library"} />{translatedCategory(item.categories.find((category) => category !== "STEM") ?? item.categories[0], language)}</span><button data-science-press type="button" className={`oe-bookmark${saved ? " oe-bookmarked" : ""}`} aria-label={`${t(language, saved ? "saved" : "save")}: ${item.title}`} aria-pressed={saved} onClick={onSave}><Bookmark data-science-icon size={20} fill={saved ? "currentColor" : "none"} aria-hidden="true" /></button></div><p className="oe-provider" lang="en">{item.provider}</p><h3 lang="en"><button data-science-press type="button" onClick={onOpen}>{item.title}</button></h3><p className="oe-summary" lang={originalSummary(item, language) ? "en" : language}>{originalSummary(item, language) ? programExcerpt(item, 256) : translatedSummary(item, language)}</p>{supportRequestNeeded && <p lang="en"><strong>Request and confirmation needed</strong></p>}<ul className="oe-card-facts"><li><CalendarDays size={16} aria-hidden="true" /><span lang="en">{formatDateRange(item.startDate, item.endDate)}</span></li><li><MapPin size={16} aria-hidden="true" /><span lang="en">{item.virtual ? "Online" : item.city}{location && !item.virtual ? ` · ${Math.round(haversineKm(location, item))} km away` : ""}</span></li><li><UsersRound size={16} aria-hidden="true" /><span>{t(language, "ages")} <bdi lang="en">{ageRange(item)}</bdi>{item.volunteerHoursEligible ? ` · ${t(language, "volunteerHours")}` : ""}</span></li></ul><div className="oe-card-bottom"><div><span className="oe-free"><span aria-hidden="true" />{t(language, "verifiedFree")}</span><span className="oe-checked" lang="en">{stale ? "Check latest details" : "Source checked"} · <time className="oe-verified-date" dateTime={item.lastVerified}><bdi lang={language} dir="auto">{shortDate(item.lastVerified, language)}</bdi></time></span></div><button data-science-press type="button" className="oe-details-link" onClick={onOpen} lang="en" aria-label={`View details for ${item.title}`}>Details<ArrowRight data-science-icon size={16} aria-hidden="true" /></button></div></article>;
 }
 
-function DetailContent({ item, language, saved, onSave, onClose, now }: { item: Opportunity; language: LanguageCode; saved: boolean; onSave: () => void; onClose: () => void; now?: Date }) {
+function DetailContent({ supportEnabled = false, item, language, saved, onSave, onClose, now }: { supportEnabled?: boolean; item: Opportunity; language: LanguageCode; saved: boolean; onSave: () => void; onClose: () => void; now?: Date }) {
   const registrationUrl = externalUrl(item.registrationUrl);
   const sourceUrl = externalUrl(item.sourceUrl);
   const downloadCalendar = () => {
@@ -440,5 +472,5 @@ function DetailContent({ item, language, saved, onSave, onClose, now }: { item: 
     [t(language, "access"), item.accessibility.join(" · ")],
     [t(language, "equipment"), item.equipment], [t(language, "food"), item.food], [t(language, "capacity"), item.capacity]
   ].filter(([, value]) => value);
-  return <div className="oe-detail-content"><div className="oe-detail-top"><span className="oe-category"><GtaArtwork role={item.categories.some(c => /Coding|Robotics/.test(c)) ? "code" : item.categories.some(c => /Art|Creat/.test(c)) ? "art" : item.categories.some(c => /Science|STEM|Engineering/.test(c)) ? "science" : "library"} />{translatedCategory(item.categories.find((category) => category !== "STEM") ?? item.categories[0], language)}</span><button data-science-press type="button" className="oe-dialog-close" onClick={onClose} autoFocus lang="en" aria-label="Close opportunity details"><X size={22} aria-hidden="true" /></button></div><p className="oe-provider" lang="en">{item.provider}</p><h2 id="oe-detail-title" lang="en">{item.title}</h2><p className="oe-detail-summary" lang={originalSummary(item, language) ? "en" : language}>{originalSummary(item, language) ? programExcerpt(item) : translatedSummary(item, language)}</p><div className="oe-detail-description-links"><a className="oe-detail-description-link" href={`/programs/${encodeURIComponent(item.id)}/#provider-description`} hrefLang="en" lang={language}>{t(language, "readFullDescription")}</a>{(sourceUrl || registrationUrl) && <a className="oe-detail-description-link" href={sourceUrl || registrationUrl} target="_blank" rel="noopener noreferrer" lang="en">Read full program details<ExternalLink size={14} aria-hidden="true" /></a>}</div>{language !== "en" && (originalSummary(item, language) ? <p className="oe-hint" lang="en">This is a preview of the provider’s original description. Full translations are not available yet. Confirm the program language with the provider.</p> : <p className="oe-hint">{t(language, "translationNote")}</p>)}<div className="oe-detail-free" lang="en"><Check size={19} aria-hidden="true" /><div><strong lang={language}>{t(language, "verifiedFree")}</strong><p>{freeProgramNote(item)}</p></div></div><dl className="oe-detail-facts">{facts.map(([label, value]) => <div key={label}><dt>{label}</dt><dd lang="en">{value}</dd></div>)}</dl><p className="oe-detail-verified" lang="en">{isOpportunityVerificationStale(item.lastVerified, now) ? "Details need a fresh check." : "Source last checked"} <bdi lang={language} dir="auto">{shortDate(item.lastVerified, language)}</bdi>. Registration, spaces, and any changes are confirmed by the provider.</p><div className="oe-detail-actions">{registrationUrl ? <a data-science-press href={registrationUrl} target="_blank" rel="noopener noreferrer" className="oe-primary">{t(language, "registerApply")}<ExternalLink size={16} aria-hidden="true" /></a> : <p lang="en">Registration link unavailable. Visit the official source for details.</p>}<button data-science-press type="button" className="oe-secondary" onClick={onSave} aria-pressed={saved}><Bookmark data-science-icon size={18} fill={saved ? "currentColor" : "none"} aria-hidden="true" />{saved ? t(language, "saved") : t(language, "saveOnThisDevice")}</button></div><div className="oe-detail-links"><button data-science-press type="button" onClick={downloadCalendar}><CalendarPlus size={16} aria-hidden="true" />{t(language, "calendar")}</button>{!item.virtual && <a href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(`${item.address}, ${item.city}, Ontario`)}`} target="_blank" rel="noopener noreferrer"><MapPin size={16} aria-hidden="true" />{t(language, "directions")}</a>}{sourceUrl && <a href={sourceUrl} target="_blank" rel="noopener noreferrer">{t(language, "source")}<ExternalLink size={14} aria-hidden="true" /></a>}<a href={reportUrl(item)} target="_blank" rel="noopener noreferrer">{t(language, "report")}<ExternalLink size={14} aria-hidden="true" /></a></div></div>;
+  return <div className="oe-detail-content"><div className="oe-detail-top"><span className="oe-category"><GtaArtwork role={item.categories.some(c => /Coding|Robotics/.test(c)) ? "code" : item.categories.some(c => /Art|Creat/.test(c)) ? "art" : item.categories.some(c => /Science|STEM|Engineering/.test(c)) ? "science" : "library"} />{translatedCategory(item.categories.find((category) => category !== "STEM") ?? item.categories[0], language)}</span><button data-science-press type="button" className="oe-dialog-close" onClick={onClose} autoFocus lang="en" aria-label="Close opportunity details"><X size={22} aria-hidden="true" /></button></div><p className="oe-provider" lang="en">{item.provider}</p><h2 id="oe-detail-title" lang="en">{item.title}</h2><p className="oe-detail-summary" lang={originalSummary(item, language) ? "en" : language}>{originalSummary(item, language) ? programExcerpt(item) : translatedSummary(item, language)}</p><div className="oe-detail-description-links"><a className="oe-detail-description-link" href={`/programs/${encodeURIComponent(item.id)}/#provider-description`} hrefLang="en" lang={language}>{t(language, "readFullDescription")}</a>{(sourceUrl || registrationUrl) && <a className="oe-detail-description-link" href={sourceUrl || registrationUrl} target="_blank" rel="noopener noreferrer" lang="en">Read full program details<ExternalLink size={14} aria-hidden="true" /></a>}</div>{language !== "en" && (originalSummary(item, language) ? <p className="oe-hint" lang="en">This is a preview of the provider’s original description. Full translations are not available yet. Confirm the program language with the provider.</p> : <p className="oe-hint">{t(language, "translationNote")}</p>)}{supportEnabled && <><AccessibilityDetails support={item.accessibilitySupport} unavailable={item.accessibilitySupportUnavailable} now={(now ?? new Date()).toISOString()} />{!item.accessibilitySupport && !item.accessibilitySupportUnavailable && <p lang="en">Accessibility arrangements have not been reviewed for this listing. Ask the provider.</p>}<section lang="en"><h3>Provider access notes</h3><ul>{item.accessibility.map((note, index) => <li key={index}>{note}</li>)}</ul></section></>}<div className="oe-detail-free" lang="en"><Check size={19} aria-hidden="true" /><div><strong lang={language}>{t(language, "verifiedFree")}</strong><p>{freeProgramNote(item)}</p></div></div><dl className="oe-detail-facts">{facts.map(([label, value]) => <div key={label}><dt>{label}</dt><dd lang="en">{value}</dd></div>)}</dl><p className="oe-detail-verified" lang="en">{isOpportunityVerificationStale(item.lastVerified, now) ? "Details need a fresh check." : "Source last checked"} <bdi lang={language} dir="auto">{shortDate(item.lastVerified, language)}</bdi>. Registration, spaces, and any changes are confirmed by the provider.</p><div className="oe-detail-actions">{registrationUrl ? <a data-science-press href={registrationUrl} target="_blank" rel="noopener noreferrer" className="oe-primary">{t(language, "registerApply")}<ExternalLink size={16} aria-hidden="true" /></a> : <p lang="en">Registration link unavailable. Visit the official source for details.</p>}<button data-science-press type="button" className="oe-secondary" onClick={onSave} aria-pressed={saved}><Bookmark data-science-icon size={18} fill={saved ? "currentColor" : "none"} aria-hidden="true" />{saved ? t(language, "saved") : t(language, "saveOnThisDevice")}</button></div><div className="oe-detail-links"><button data-science-press type="button" onClick={downloadCalendar}><CalendarPlus size={16} aria-hidden="true" />{t(language, "calendar")}</button>{!item.virtual && <a href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(`${item.address}, ${item.city}, Ontario`)}`} target="_blank" rel="noopener noreferrer"><MapPin size={16} aria-hidden="true" />{t(language, "directions")}</a>}{sourceUrl && <a href={sourceUrl} target="_blank" rel="noopener noreferrer">{t(language, "source")}<ExternalLink size={14} aria-hidden="true" /></a>}<a href={reportUrl(item)} target="_blank" rel="noopener noreferrer">{t(language, "report")}<ExternalLink size={14} aria-hidden="true" /></a></div></div>;
 }

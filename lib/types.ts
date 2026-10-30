@@ -1,3 +1,5 @@
+import type { AccessibilitySupport } from "./accessibilitySupport";
+
 export type Region = "Toronto" | "Peel" | "York" | "Durham" | "Halton";
 
 export type Category =
@@ -130,6 +132,10 @@ export type Opportunity = {
   lastSeen: string;
   status: OpportunityStatus;
   accessibility: string[];
+  /** Optional, separately reviewed provider evidence; legacy notes never imply support. */
+  accessibilitySupport?: AccessibilitySupport;
+  /** Runtime-only optional-proof failure; preserve the valid base event and show guidance. */
+  accessibilitySupportUnavailable?: true;
   equipment: string;
   food: string;
   capacity: string;
