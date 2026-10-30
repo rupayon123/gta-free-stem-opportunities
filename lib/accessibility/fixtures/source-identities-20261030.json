@@ -1,0 +1,26 @@
+{
+  "baseCommit": "58c995d405bbafbe60d097dd26161ecc28da74f2",
+  "purpose": "Exact tracked provider/type/source identity samples for policy mapping; not support or opening evidence",
+  "tpl": {
+    "id": "tpl-rss-6a4d01876bd493f6008f06ce",
+    "organization": "Toronto Public Library",
+    "provider": "Toronto Public Library",
+    "type": "Multi-week program",
+    "sourceUrl": "https://tpl.bibliocommons.com/events/6a4d01876bd493f6008f06ce",
+    "accessibility": [
+      "Confirm accessibility and accommodation arrangements with the provider.",
+      "Public library location"
+    ]
+  },
+  "mpl": {
+    "id": "markham-rss-6abad20f96ec3a003ad6d5bb",
+    "organization": "Markham Public Library",
+    "provider": "Markham Public Library",
+    "type": "Drop-in",
+    "sourceUrl": "https://markham.bibliocommons.com/events/6abad20f96ec3a003ad6d5bb",
+    "accessibility": [
+      "Confirm accessibility and accommodation arrangements with the provider.",
+      "Public library location"
+    ]
+  }
+}

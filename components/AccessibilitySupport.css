@@ -1,0 +1,22 @@
+.accessibility-filter { min-width: 0; border: 0; margin: 24px 0; padding: 0; }
+.accessibility-filter legend { padding: 0; font-size: 19px; font-weight: 800; }
+.accessibility-filter p { font-size: 14px; color: var(--muted); line-height: 1.6; }
+.accessibility-filter .accessibility-check { display: flex; align-items: flex-start; gap: 12px; min-height: 48px; padding-block: 10px; margin: 0; cursor: pointer; }
+.accessibility-filter .accessibility-check input { flex: 0 0 auto; width: 20px; height: 20px; min-width: 20px; min-height: 20px; max-width: 20px; max-height: 20px; padding: 0; margin: 3px 0 0; border-radius: 4px; accent-color: var(--accent); }
+.accessibility-check span { min-width: 0; overflow-wrap: anywhere; }
+.accessibility-filter .accessibility-check-help { margin: 0 0 12px 32px; }
+.accessibility-details { padding-block: 24px; border-top: 1.5px solid var(--line); }
+.accessibility-details h3 { font-size: 24px; }
+.accessibility-details > ul { list-style: none; margin: 0; padding: 0; }
+.accessibility-details > ul > li { padding-block: 20px; border-bottom: 1px solid var(--line); }
+.accessibility-details h4 { margin: 0 0 12px; font-size: 18px; }
+.accessibility-details p, .accessibility-details li, .accessibility-details a { overflow-wrap: anywhere; }
+.accessibility-details p { margin-bottom: 12px; }
+.accessibility-detail-links { display: flex; flex-wrap: wrap; gap: 8px 20px; }
+.accessibility-detail-links a { display: inline-flex; align-items: center; min-height: 44px; color: var(--accent); }
+
+.accessibility-results-note, .accessibility-unconfirmed { min-width: 0; padding: 20px; border: 1.5px solid var(--line); border-radius: 20px; overflow-wrap: anywhere; }
+.accessibility-results-note .soft-button, .accessibility-unconfirmed .soft-button { white-space: normal; max-width: 100%; margin: 4px; }
+.accessibility-unconfirmed { margin-block: 24px; }
+.accessibility-unconfirmed .oe-card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 20px; }
+.accessibility-filter legend, .accessibility-filter p { max-width: 100%; overflow-wrap: anywhere; }

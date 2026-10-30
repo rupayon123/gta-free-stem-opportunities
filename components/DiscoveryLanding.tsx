@@ -1,7 +1,9 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { readSavedFilters, savedFilterHref, SAVED_FILTERS_CHANGED, type SavedFilter } from "@/lib/savedFilters";
+import { readSavedFilters, savedFilterHref, SAVED_FILTERS_CHANGED } from "@/lib/savedFilters";
+import { readHomePresetLinks } from "@/lib/scopedPresets/homeLinks";
+import { browserPresetStorage } from "@/lib/scopedPresets/browserStorage";
 import { ArrowRight } from "lucide-react";
 import { t } from "@/lib/i18n";
 import { websiteCopy } from "@/lib/websiteCopy";
@@ -18,17 +20,24 @@ const topics = [
   { label: "Nature & science", query: "nature", role: "science" }
 ] as const;
 
-export function DiscoveryLanding({ language }: { language: LanguageCode }) {
-  const [savedFilters, setSavedFilters] = useState<SavedFilter[]>([]);
+export function DiscoveryLanding({ language, supportPresetsEnabled = false }: { language: LanguageCode; supportPresetsEnabled?: boolean }) {
+  const [savedFilters, setSavedFilters] = useState<{ id: string; name: string; href: string; highSchool: boolean }[]>([]);
   const [savedFilterError, setSavedFilterError] = useState("");
   useEffect(() => {
-    const sync = () => {
-      try { setSavedFilters(readSavedFilters(window.localStorage)); setSavedFilterError(""); }
-      catch (error) { setSavedFilterError(error instanceof Error ? error.message : "Saved filters could not load. You can still browse."); }
+    let mounted = true; let generation = 0;
+    const sync = async () => {
+      const run = ++generation;
+      try {
+        const links = supportPresetsEnabled ? await readHomePresetLinks(browserPresetStorage, window.localStorage) : readSavedFilters(window.localStorage).map(p => ({ ...p, href: savedFilterHref(p) }));
+        if (mounted && run === generation) { setSavedFilters(links); setSavedFilterError(""); }
+      } catch (error) { if (mounted && run === generation) { setSavedFilters([]); setSavedFilterError(error instanceof Error ? error.message : "Saved filters could not load. You can still browse."); } }
     };
-    sync(); window.addEventListener("storage", sync); window.addEventListener(SAVED_FILTERS_CHANGED, sync);
-    return () => { window.removeEventListener("storage", sync); window.removeEventListener(SAVED_FILTERS_CHANGED, sync); };
-  }, []);
+    const refresh = () => { void sync(); };
+    const channel = supportPresetsEnabled && typeof BroadcastChannel !== "undefined" ? new BroadcastChannel("gta-scoped-presets-v2") : null;
+    if (channel) channel.onmessage = refresh;
+    refresh(); window.addEventListener("storage", refresh); window.addEventListener(SAVED_FILTERS_CHANGED, refresh); window.addEventListener("focus", refresh); window.addEventListener("gta-scoped-presets-changed", refresh);
+    return () => { mounted = false; ++generation; channel?.close(); window.removeEventListener("storage", refresh); window.removeEventListener(SAVED_FILTERS_CHANGED, refresh); window.removeEventListener("focus", refresh); window.removeEventListener("gta-scoped-presets-changed", refresh); };
+  }, [supportPresetsEnabled]);
   const c = websiteCopy[language];
   const title = language === "en" ? "Free activities.\nFor every age." : c.title;
   return <>
@@ -49,7 +58,7 @@ export function DiscoveryLanding({ language }: { language: LanguageCode }) {
     <section className="home-saved-filters" aria-labelledby="home-saved-filters-heading" lang="en">
       <h2 id="home-saved-filters-heading">Your saved filters</h2>
       <p>{savedFilterError || (savedFilters.length ? "Pick up where your curiosity left off. Saved only in this browser." : "Set your interests in Browse, then save a named filter to come back to it here.")}</p>
-      <div className="home-saved-filter-links">{savedFilters.map(item => <a key={item.id} href={savedFilterHref(item)}><GtaArtwork role={item.highSchool ? "school" : "filters"} /><span>{item.name}</span><ArrowRight size={18} aria-hidden="true" /></a>)}<a href="/opportunities/#discover"><GtaArtwork role="explore" /><span>Browse & set filters</span><ArrowRight size={18} aria-hidden="true" /></a></div>
+      <div className="home-saved-filter-links">{savedFilters.map(item => <a key={item.id} href={item.href}><GtaArtwork role={item.highSchool ? "school" : "filters"} /><span>{item.name}</span><ArrowRight size={18} aria-hidden="true" /></a>)}<a href="/opportunities/#discover"><GtaArtwork role="explore" /><span>Browse & set filters</span><ArrowRight size={18} aria-hidden="true" /></a></div>
     </section>
     <section className="home-next-steps" aria-label="More ways to explore" lang="en">
       <a className="home-next-step" href="/high-school/#discover" data-science-press><GtaArtwork role="school" illustration /><div><h2 lang={language}>{t(language, "highSchool")}</h2><p>Explore free programs for your next chapter.</p></div><ArrowRight size={20} aria-hidden="true" /></a>

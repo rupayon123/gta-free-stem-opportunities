@@ -46,10 +46,16 @@ check("virtual metadata requires source publication and preserves descriptions a
   assert.equal(verified.changed, false);
 });
 check("unchanged publication retains exact accepted bytes and revision", () => {
-  const compact = JSON.stringify(JSON.parse(first.contents));
-  const result = prepareNativePublication({ ...candidate, optional: undefined }, compact, "publish", new Date(now.getTime() + 5000));
-  assert.equal(result.contents, compact);
-  assert.equal(result.changed, false);
+  const accepted = JSON.parse(first.contents);
+  // Existing pretty publications must not be rewritten just to save whitespace.
+  for (const previous of [JSON.stringify(accepted), `${JSON.stringify(accepted, null, 2)}\n`]) {
+    for (const mode of ["publish", "verify"] as const) {
+      const result = prepareNativePublication({ ...candidate, optional: undefined }, previous, mode, new Date(now.getTime() + 5000));
+      assert.equal(result.contents, previous);
+      assert.equal(result.publicationRevision, first.publicationRevision);
+      assert.equal(result.changed, false);
+    }
+  }
 });
 check("delayed builds reuse the old accepted revision and cannot leapfrog a correction", () => {
   const correction = prepareNativePublication({ ...candidate, opportunities: [{ id: "corrected-program" }] }, first.contents, "publish", now);
@@ -86,6 +92,28 @@ check("bad predecessor JSON, counts and oversized bytes fail before publication"
   }
 });
 check("native UTF-8 byte and record bounds also include new metadata", () => {
+  const fullBody = "Full provider description: café 🧪\n  Keep these spaces and every paragraph.\n".repeat(20);
+  const payload = {
+    schemaVersion: 1, count: 1, lastDataChange: candidate.lastDataChange,
+    publicationRevision: first.publicationRevision,
+    contentRights: { confirmationID: "reviewed-record", provider: "Library" },
+    opportunities: [{
+      id: "full-record", description: fullBody,
+      accessibility: ["Original provider note\nwith unchanged spacing"],
+      accessibilitySupport: {
+        schemaVersion: 1, evidence: [{
+          category: "mobility-wheelchair", status: "provided", scope: "venue",
+          sourceUrl: "https://example.org/access?location=1&language=en",
+          evidenceText: "Wheelchair accessible.", checkedAt: now.toISOString(), reviewStatus: "approved",
+          venue: { id: "library-1", name: "Example Library" }
+        }]
+      }
+    }]
+  };
+  const serialized = serializeNativeFeed(payload);
+  assert.deepEqual(JSON.parse(serialized), payload, "Compaction must preserve every nested field and string byte");
+  assert(Buffer.byteLength(serialized, "utf8") < Buffer.byteLength(`${JSON.stringify(payload, null, 2)}\n`, "utf8"), "Formatting overhead must shrink without dropping metadata");
+  assert.equal(JSON.parse(serialized).opportunities[0].description, fullBody);
   assert.throws(() => serializeNativeFeed({ count: 5000, opportunities: Array(5000).fill({}) }), /records/);
   assert.throws(() => prepareNativePublication({ count: 1, opportunities: [{ body: "🧪".repeat(2_500_000) }] }, first.contents, "publish", now), /UTF-8/);
   for (const count of [-1, 0.5, Number.NaN]) assert.throws(() => serializeNativeFeed({ count, opportunities: [] }), /inconsistent/);
