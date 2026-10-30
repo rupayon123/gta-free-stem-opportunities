@@ -4,16 +4,20 @@
 
 Help children, parents, teens and lifelong learners find real free activities in the Greater Toronto Area. Keep the GTA science identity, visible search/filter controls, source links and anonymous saving. Playfulness must support discovery rather than create a game visitors must learn first.
 
-## Visual thesis
+## Approved visual system — October 29, 2026
 
-A friendly neighbourhood discovery guide: warm opaque cream, clean white paper, navy ink, teal actions and small sunny-yellow signals. Fredoka headings and Nunito Sans body text remain locally served. Larger metadata and clearer control boundaries improve reading for all ages. Use coloured chapter surfaces instead of glass, pale outline grids and repeated floating shadows.
+The approved iOS v3 direction supersedes the former cream/Fredoka neighbourhood concept. Use locally served variable Nunito for headings and body, cool opaque canvas (#f4f8fd light, #14253a dark), white/slate surfaces, teal primary actions and readable 1.5px borders. The original 19-role GTA artwork supplies separate compact/illustration and light/dark SVGs. Keep labels visible; artwork is decorative.
 
-The original DiscoveryScene SVG combines a Toronto tower, library, tree, book and small compass explorer. Its compass responds to the actual selected topic. Curiosity choices populate the real search input without changing city, age or category. Pick for me selects another real topic; it grants no imaginary points or reward pressure. All enhancement movement is bounded and responds to reduced-motion preferences; there is no continuous idle loop or sound.
+Home introduces topics and offers saved activities and named-filter shortcuts. Browse owns query, city, age and category filters and opens with the citywide venue map. Preserve 2D/3D/reset, venue selection, List, full provider descriptions and the original logo/science orbit. Existing bounded spring/tactile feedback remains reduced-motion aware; new topic links lift slightly on fine-pointer hover. Do not replace the identity with external mascots or generic glass cards.
+
+Named filters stay in this browser. Selecting applies criteria immediately; only Save/Update writes changes. Clear filters resets the current search and detaches selection; Delete filter removes only that saved record. No account sync, automatic alerts or new-result badges are implied. High School currently retains its age/filter discovery; a meaningful volunteering/teen hub is a separate upcoming stage.
+
+The previous cream canvas, Fredoka/Nunito Sans and compass-led curiosity picker are historical, not the current design target. See dated captures in `docs/showcase` for their actual release evidence.
 
 ## Shared implementation boundaries
 
-- Full Stack - GTA app owns website UI, source integration, hosting and public verification.
-- Front end - GTA app owns native iOS/Android views, native animation, builds and simulator/emulator tests.
+- Full Stack - GTA app coordinates source integration, hosting, public verification and platform sequencing.
+- Front end - GTA app owns this website parity implementation and actual visual/interaction checks, coordinated with Full Stack.
 - Back end - GTA App owns data acceptance, cache/refresh races, feed-size limits and failure-retention tests.
 
 Keep all operation free. No payment, paid plan, tracking service, new account requirement or child profile is needed. Do not equate a website test, simulator build or accepted HTTP response with a physical-device/store-release signoff. Do not fabricate content-rights evidence to satisfy a gate.

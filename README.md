@@ -8,14 +8,14 @@ This repository contains the public website, search tools and source collectors.
 
 ## The web experience
 
+The October 29 website refresh uses the approved cool light/dark canvas, Nunito and original GTA role artwork. Home offers topics and local saved-filter shortcuts; Browse keeps the citywide map and search. The screenshots below show the actual production export; their source and verification scope are recorded in the capture receipt.
+
 <table>
-<tr><th width="50%">Start with an interest</th><th width="50%">See venues across the city</th></tr>
-<tr><td align="center"><a href="docs/showcase/web-home-live-2026-10-27.png"><img src="docs/showcase/web-home-live-2026-10-27.png" alt="Live website home showing the free activity search and optional city, age, and category filters" width="440"></a></td><td align="center"><a href="docs/showcase/2026-10-29-city-map-live/cloudflare-desktop.png"><img src="docs/showcase/2026-10-29-city-map-live/cloudflare-desktop.png" alt="Live city-wide map showing all 103 mapped venues with visible filters, venue selection and 2D/3D controls" width="440"></a></td></tr>
+<tr><th width="50%">Home — light</th><th width="50%">Browse — dark</th></tr>
+<tr><td align="center"><a href="docs/showcase/2026-10-29-ios-v3-web/desktop-home-light.png"><img src="docs/showcase/2026-10-29-ios-v3-web/desktop-home-light.png" alt="Actual production build with Nunito, original artwork, topic links and clear Home navigation" width="440"></a></td><td align="center"><a href="docs/showcase/2026-10-29-ios-v3-web/desktop-browse-dark.png"><img src="docs/showcase/2026-10-29-ios-v3-web/desktop-browse-dark.png" alt="Actual dark Browse build with named saved filters and citywide venue map" width="440"></a></td></tr>
 </table>
 
-The latest city-map release shows every mapped venue. [See the verified live desktop and phone captures from October 29](docs/showcase/2026-10-29-city-map-live/README.md).
-
-The Home capture is from October 27, 2026 (1440 × 1000); the city map is from October 29 (1280 × 900). Both are unretouched captures of the [public website](https://gta-free-stem.pages.dev/). See the [current phone map and live verification](docs/showcase/2026-10-29-city-map-live/README.md), plus the dated [3D](docs/showcase/web-3d-live-2026-10-27.png), [List](docs/showcase/web-list-live-2026-10-27.png) and [earlier capture details](docs/showcase/README.md). Result counts change as listings refresh.
+[Capture provenance and checks](docs/showcase/2026-10-29-ios-v3-web/README.md). Earlier public captures remain dated history: [October 29 city-map release](docs/showcase/2026-10-29-city-map-live/README.md) and [October 27 site](docs/showcase/README.md). Result counts change with accepted source refreshes.
 
 ## What you can do
 
@@ -25,16 +25,18 @@ The Home capture is from October 27, 2026 (1440 × 1000); the city map is from O
 - Open schedules, age ranges, accessibility information when provided, and original registration links.
 - Read the provider’s complete original description on a GTA event page, with a link back to the provider for updates.
 - Save activities in the current browser without signing in.
+- Save named filters for different interests or ages. Selecting applies them immediately; Save/Update is explicit. Filters remain local to this browser, with no automatic alerts or unread-result badges.
 
 ## Find an activity
 
-1. On the [home page](https://gta-free-stem.pages.dev/), enter an interest, library, or city. You can also leave the search open and choose a city, age, or category.
-2. Select **Find free activities**. The [opportunity directory](https://gta-free-stem.pages.dev/opportunities/) opens in **Map** view. Every mapped venue appears as a dot. Tap an area or use **Choose a location** to explore its activities; **Program groups** shows the counts. Choose **List** beside Map to scan activities. Both views use the same search and filters; switching views keeps your choices. Choose **3D** to explore a nearby program location with real building heights where map data is available; **2D** flattens the view and **Show all locations** returns to the flat venue overview. Online activities remain available in List.
+1. On the [home page](https://gta-free-stem.pages.dev/), choose a topic or **Browse activities**. Home also links to filters you have saved in this browser.
+2. The [opportunity directory](https://gta-free-stem.pages.dev/opportunities/) opens in **Map** view. Every mapped venue appears as a dot. Tap an area or use **Choose a location** to explore its activities; **Program groups** shows the counts. Choose **List** beside Map to scan activities. Both views use the same search and filters; switching views keeps your choices. Choose **3D** to explore a nearby program location with real building heights where map data is available; **2D** flattens the view and **Show all locations** returns to the flat venue overview. Online activities remain available in List.
 3. Refine by city, age, category or the additional filters. Clear filters to return to the broader list.
 4. Open a result to check its schedule, age range, location, provider, and original source. Select **Read full description** for the complete original text on the GTA event page. Follow the provider's link to confirm availability and register when required.
-5. Use the bookmark control to save an activity for later on this browser. Saved items are local to the current browser and website address; no account is needed for browsing.
+5. In Filters, name and **Save filter** to retain your criteria. Choose an existing saved filter to apply it immediately; edits require **Update filter**. **Clear filters** resets the current search without deleting saved filters. **Delete filter** removes only the selected record. Home links back to filters saved in the same browser.
+6. Use the bookmark control to save an activity for later on this browser. Saved items are local to the current browser and website address; no account is needed for browsing.
 
-The High School section gathers volunteer hours, co-op, SHSM, mentorship, and other pathways. Listing summaries may be generated for browsing. Complete original descriptions are available from each result; check the provider for current details and availability. [See the full-description screenshots](docs/showcase/README.md#full-original-descriptions).
+The High School section currently uses age-based discovery and optional pathway filters. A dedicated volunteering and broader teen-opportunity journey is the next stage; visual parity does not complete that work. Listing summaries may be generated for browsing. Complete original descriptions are available from each result; check the provider for current details and availability. [See the full-description screenshots](docs/showcase/README.md#full-original-descriptions).
 
 ## About the site
 
@@ -86,6 +88,10 @@ npm run generate:library
 ```
 
 Generated translations are browsing summaries, not fully reviewed translations of every provider's content.
+
+## High School expansion
+
+A dedicated volunteering and teen-opportunities journey is being developed separately from the visual refresh. [Source research and acceptance criteria](docs/research/high-school/recon.md) distinguish real roles, provider directories, exact eligibility, required costs, application status and school approval. The current High School page is not a completed volunteer-hours service.
 
 ## Project layout
 
