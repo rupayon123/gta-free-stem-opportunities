@@ -3,6 +3,18 @@ export type ListingKind = "event" | "role" | "program" | "provider-directory" | 
 export type Pathway = "volunteer" | "learning" | "leadership-careers" | "funding";
 export type Availability = "open" | "closed" | "upcoming" | "unknown" | "conflicting";
 export type CostStatus = "no-fee-evidence" | "required-cost" | "unknown";
+/** Authored factual detail, not a claim to reproduce the provider's full copyrighted page. */
+export interface YouthRoleDetails {
+  contentMode: "authored-facts";
+  description: string;
+  responsibilities: string[];
+  requirements: string[];
+  commitment: string;
+  selection: string;
+  costNotes: string;
+  applicationUrl: string;
+  applicationInstructions: string;
+}
 export interface YouthListing {
   schemaVersion: 1;
   id: string;
@@ -40,6 +52,7 @@ export interface YouthListing {
   regions?: string[];
   delivery?: "in-person" | "virtual" | "hybrid" | "unknown";
   commitmentOriginal?: string;
+  roleDetails?: YouthRoleDetails;
 }
 
 export function validLocalDate(value: unknown): value is string {
@@ -104,6 +117,14 @@ export function parseYouthListing(input: unknown): YouthListing {
   requireValue(x.regions === undefined || (Array.isArray(x.regions) && x.regions.length <= 5 && x.regions.every(r => ["Toronto", "York", "Peel", "Durham", "Halton"].includes(r))), "regions");
   requireValue(x.delivery === undefined || ["in-person", "virtual", "hybrid", "unknown"].includes(x.delivery), "delivery");
   requireValue(optionalText(x.commitmentOriginal), "commitment");
+  if (x.roleDetails !== undefined) {
+    const d = x.roleDetails;
+    const keys = ["contentMode", "description", "responsibilities", "requirements", "commitment", "selection", "costNotes", "applicationUrl", "applicationInstructions"];
+    requireValue(d && typeof d === "object" && !Array.isArray(d) && Object.keys(d).length === keys.length && keys.every(k => Object.hasOwn(d, k)), "role detail shape");
+    requireValue(d.contentMode === "authored-facts" && text(d.description, 6000) && safeSourceUrl(d.applicationUrl), "role detail source/body");
+    for (const list of [d.responsibilities, d.requirements]) requireValue(Array.isArray(list) && list.length > 0 && list.length <= 32 && list.every(v => text(v)), "role requirements");
+    for (const v of [d.commitment, d.selection, d.costNotes, d.applicationInstructions]) requireValue(text(v), "role instructions");
+  }
   return JSON.parse(JSON.stringify(x)) as YouthListing;
 }
 
