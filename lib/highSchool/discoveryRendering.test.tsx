@@ -10,6 +10,8 @@ test("upcoming-only source results never announce no matches", () => {
   const html = renderToStaticMarkup(<HighSchoolDiscovery listings={[fixtureListing(fixture)]} pathway="learning" now={fixtureNow} catalogueState="ready" />);
   assert.match(html, /1 upcoming programme/);
   assert.match(html, /Upcoming applications/);
+  assert.match(html, /Provider lists it as free/);
+  assert(!html.includes("No fee evidenced"));
   assert(!html.includes("No reviewed matches"));
   assert(!html.includes("Programmes accepting applications</h3>"));
 });
