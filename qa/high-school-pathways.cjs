@@ -39,12 +39,22 @@ const { chromium } = require(process.env.GTA_PLAYWRIGHT_MODULE || "playwright-co
             heightDifference: Math.max(...boxes.map(r => r.height)) - Math.min(...boxes.map(r => r.height)),
             pairsOverlap, textOutside,
             horizontalOverflow: document.documentElement.scrollWidth > innerWidth,
-            reducedMotion: getComputedStyle(elements[0]).transitionDuration === "0s" };
+            // The global reduced-motion rule sets duration to .01ms !important;
+            // transition-property:none is what prevents any transition running.
+            reducedMotion: getComputedStyle(elements[0]).transitionProperty === "none" };
         });
         assert.equal(layout.columns, columns, `${theme}/${width} column count`);
         assert(layout.heightDifference < 1, `${theme}/${width} equal-height cards`);
         assert(!layout.pairsOverlap && !layout.textOutside && !layout.horizontalOverflow, `${theme}/${width} readable bounded layout`);
-        assert(layout.reducedMotion, "Reduced motion must remove the transition");
+        assert(layout.reducedMotion, "Reduced motion must remove every transition property");
+        await cards.first().scrollIntoViewIfNeeded();
+        const target = await cards.first().boundingBox();
+        await page.mouse.move(target.x + target.width / 2, target.y + target.height / 2);
+        await page.mouse.down();
+        const pressedTransform = await cards.first().evaluate(e => getComputedStyle(e).transform);
+        await page.mouse.up();
+        assert.equal(pressedTransform, "none", "Reduced motion must suppress the pressed movement");
+        layout.pressedMovementSuppressed = true;
         layouts.push({ theme, width, ...layout });
       }
     }
