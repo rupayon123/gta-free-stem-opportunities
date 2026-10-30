@@ -5,8 +5,8 @@ import { metadataForPage } from "../seoPages";
 
 export const metadata = metadataForPage("privacy");
 
-const privacyEffectiveDate = "October 29, 2026";
-const privacyEffectiveDateIso = "2026-10-29";
+const privacyEffectiveDate = "October 30, 2026";
+const privacyEffectiveDateIso = "2026-10-30";
 
 const appData = [
   {

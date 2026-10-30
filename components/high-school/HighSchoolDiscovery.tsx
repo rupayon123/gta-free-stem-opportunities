@@ -27,8 +27,12 @@ export function HighSchoolDiscovery({ listings, pathway, now, catalogueState }: 
   const otherRoles = evaluated.filter(({ row, decision }) => row.listingKind === "role" && decision.teenHub && !decision.freeBadge);
   const stale = evaluated.some(({ row, decision }) => row.reviewStatus === "approved" && !decision.evidenceCurrent);
   if (selected) return <YouthListingDetail listing={selected} now={now} onBack={() => { setSelected(null); requestAnimationFrame(() => { if (openerId.current) resultButtons.current.get(openerId.current)?.focus(); }); }} />;
-  function group(title: string, rows: typeof evaluated, empty?: string) {
-    return <section className="hs-result-group" aria-label={title}><h3>{title}</h3>{!rows.length ? empty && <p className="hs-empty">{empty}</p> : <ul className="hs-result-list">{rows.map(({ row, decision }) => <li key={row.id}><GtaArtwork role={row.listingKind === "provider-directory" ? "explore" : pathway === "volunteer" ? "volunteer" : pathway === "learning" ? "library" : "ideas"} /><div><p className="hs-provider">{row.provider}</p><h4><button type="button" ref={element => { if (element) resultButtons.current.set(row.id, element); else resultButtons.current.delete(row.id); }} onClick={() => { openerId.current = row.id; setSelected(row); }}>{row.title}</button></h4><p>{row.audience.original}</p><p className="hs-result-meta">{row.listingKind === "provider-directory" ? "Provider directory · requirements and openings vary" : row.listingKind === "resource" ? "Information resource · not a placement or award" : `${decision.statusLabel} · ${decision.costLabel}`}</p>{row.commitmentOriginal && <p>{row.commitmentOriginal}</p>}</div></li>)}</ul>}</section>;
+  const groupsCount = available.length + upcoming.length + directories.length + programmesToCheck.length + resources.length + otherRoles.length;
+  const count = (n: number, one: string, many: string) => `${n} ${n === 1 ? one : many}`;
+  const summary = [roles.length ? count(roles.length, "confirmed individual role", "confirmed individual roles") : "", programmes.length ? count(programmes.length, "programme accepting applications", "programmes accepting applications") : "", programmesToCheck.length ? count(programmesToCheck.length, "programme to ask about", "programmes to ask about") : "", directories.length ? count(directories.length, "provider directory", "provider directories") : "", resources.length ? count(resources.length, "guidance resource", "guidance resources") : ""].filter(Boolean).join(" · ");
+  function group(title: string, rows: typeof evaluated) {
+    if (!rows.length) return null;
+    return <section className="hs-result-group" aria-label={title}><h3>{title}</h3>{<ul className="hs-result-list">{rows.map(({ row, decision }) => <li key={row.id}><GtaArtwork role={row.listingKind === "provider-directory" ? "explore" : pathway === "volunteer" ? "volunteer" : pathway === "learning" ? "library" : "ideas"} /><div><p className="hs-provider">{row.provider}</p><h4><button type="button" ref={element => { if (element) resultButtons.current.set(row.id, element); else resultButtons.current.delete(row.id); }} onClick={() => { openerId.current = row.id; setSelected(row); }}>{row.title}</button></h4><p>{row.audience.original}</p><p className="hs-result-meta">{row.listingKind === "provider-directory" ? "Provider directory · requirements and openings vary" : row.listingKind === "resource" ? "Information resource · not a placement or award" : `${decision.statusLabel} · ${decision.costLabel}`}</p>{row.commitmentOriginal && <p>{row.commitmentOriginal}</p>}</div></li>)}</ul>}</section>;
   }
   return <div className="hs-discovery" lang="en">
     <button type="button" className="soft-button hs-filter-toggle" aria-expanded={filtersOpen} aria-controls="hs-filters" onClick={() => setFiltersOpen(value => !value)}><GtaArtwork role="filters" />Filter these opportunities</button>
@@ -47,11 +51,12 @@ export function HighSchoolDiscovery({ listings, pathway, now, catalogueState }: 
         {catalogueState === "preparing" && <p className="hs-notice" role="status">Reviewed student opportunities are being prepared. No current openings are claimed here yet.</p>}
         {catalogueState === "error" && <p className="hs-notice" role="alert">Student opportunities could not be loaded. We cannot confirm openings. You can still use the hours notebook and school guidance.</p>}
         {stale && <p className="hs-notice">Some source reviews need refreshing. They are excluded from confirmed openings.</p>}
-        <p role="status">{pathway === "volunteer" ? `${roles.length} confirmed individual roles · ` : ""}{programmes.length} reviewed programmes with no mandatory fee, currently listed as accepting enquiries or applications</p>
-        {pathway === "volunteer" && group("Individual volunteer roles", roles, "No individual volunteer roles are confirmed here yet. A programme intake or directory is not a guaranteed placement.")}
-        {group("Programmes accepting applications", programmes, "No reviewed open programmes match these choices. Try clearing a filter, or check the source information below.")}
+        {catalogueState === "ready" && <p role="status" className={!groupsCount ? "hs-empty" : undefined}>{summary || "No reviewed matches. Try clearing a filter or choose another pathway."}</p>}
+        {pathway === "volunteer" && !roles.length && groupsCount > 0 && <p className="hs-notice">Individual roles are still being reviewed. Start with a programme or provider directory below.</p>}
+        {pathway === "volunteer" && group("Individual volunteer roles", roles)}
+        {group("Programmes accepting applications", programmes)}
         {!!upcoming.length && group("Upcoming applications", upcoming)}
-        {group("Places to look", directories, "No reviewed provider directories match these choices yet. Directories do not count as open opportunities.")}
+        {group("Places to look", directories)}
         {!!programmesToCheck.length && group("Programmes to ask about", programmesToCheck)}
         {!!resources.length && group("Guidance and resources", resources)}
         {!!otherRoles.length && <details><summary>Roles needing confirmation</summary>{group("Not confirmed as open and no-mandatory-fee", otherRoles)}</details>}

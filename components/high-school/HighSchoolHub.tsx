@@ -9,10 +9,10 @@ import { HoursNotebook } from "./HoursNotebook";
 import "./HighSchool.css";
 
 const pathways = [
-  { id: "volunteer", title: "Volunteer", text: "Understand the commitment, check requirements and find places to help.", role: "volunteer" },
-  { id: "learning", title: "Learn & create", text: "Explore projects, clubs and programmes for curious students.", role: "library" },
-  { id: "leadership-careers", title: "Leadership & careers", text: "Ask about mentorship, leadership and practical next steps.", role: "ideas" },
-  { id: "funding", title: "Scholarships & support", text: "Find guidance on awards, bursaries and planning after school.", role: "school" }
+  { id: "volunteer", title: "Volunteer", text: "Find places to help and understand school hours.", role: "volunteer" },
+  { id: "learning", title: "Learn & create", text: "Explore projects, clubs and learning programmes.", role: "library" },
+  { id: "leadership-careers", title: "Leadership & careers", text: "Mentorship, leadership and career exploration.", role: "ideas" },
+  { id: "funding", title: "Scholarships & support", text: "Awards, bursaries and planning after school.", role: "school" }
 ] as const;
 type View = Pathway | "hours" | "guidance";
 const catalogue = getCuratedYouthCatalogue();
@@ -50,9 +50,9 @@ export function HighSchoolHub({ initialPathway = "volunteer", context }: { initi
   };
   const title = view === "hours" ? "Keep your own record" : view === "guidance" ? "Before you begin volunteering" : pathways.find(p => p.id === view)!.title;
   return <section className="hs-hub" id="discover" aria-labelledby="hs-title" lang="en">
-    <header className="hs-intro"><GtaArtwork role="school" illustration /><div><p className="eyebrow">HIGH SCHOOL</p><h1 id="hs-title">Find your next step.</h1><p>Explore programmes, ways to help and support for what comes next. Check each provider’s requirements and current availability.</p></div></header>
+    <header className="hs-intro"><GtaArtwork role="school" illustration /><div><p className="eyebrow">HIGH SCHOOL</p><h1 id="hs-title">Find your next step.</h1><p>Programmes to explore, places to volunteer and a notebook for your hours.</p></div></header>
     {context === "coop-shsm" && <p className="hs-notice">Co-op and SHSM are school-coordinated pathways. These are related programmes and guidance, not confirmed co-op placements or SHSM credit. Ask your school coordinator about eligible placements and requirements.</p>}
-    <p className="hs-language-note">Student guide and notebook · English. Requirements are summarised from linked provider sources; check the provider for full details.</p>
+    <p className="hs-language-note">English student guide</p>
     <nav className="hs-pathways" aria-label="Student pathways"><ul>{pathways.map(path => <li key={path.id}><button type="button" disabled={notebookBusy} aria-pressed={view === path.id} onClick={() => navigate(path.id)}><GtaArtwork role={path.role} /><span><strong>{path.title}</strong><span>{path.text}</span></span></button></li>)}</ul></nav>
     <div className="hs-utility-links"><button className="soft-button" type="button" disabled={notebookBusy} aria-pressed={view === "hours"} onClick={() => navigate("hours")}><GtaArtwork role="calendar" />Hours notebook</button><button className="soft-button" type="button" disabled={notebookBusy} aria-pressed={view === "guidance"} onClick={() => navigate("guidance")}><GtaArtwork role="about" />School-hours guidance</button><a href="/high-school/activities/">Browse teen activities</a></div>
     {pendingView && <div className="hs-notice" role="group" aria-label="Leave unsaved notebook draft"><p>Your notebook draft is not saved. Discard it and change sections?</p><div className="hs-actions"><button className="soft-button" type="button" onClick={() => activate(pendingView)}>Discard draft and continue</button><button className="soft-button" type="button" onClick={() => setPendingView(null)}>Keep editing</button></div></div>}
