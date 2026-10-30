@@ -1,0 +1,19 @@
+{
+  "sourceCommit": "5a44d28bd35c794f6f25dff9d292a056096fddae",
+  "capture": "Actual local production export in a fresh isolated Brave browser; not a public-host or physical-device screenshot",
+  "images": {
+    "hub-desktop-light.png": "d024430eff3fb86967bf08fb5b98a5184a121ff470184b6a1892806a420bfb88",
+    "hub-phone-light.png": "2ce76bd636dbad0cefe95107a7f01728db1f76bdce7b3c7879ca7055bb807865",
+    "hub-phone-dark.png": "78e21ae19f4fbe716787b7695cac6e48cb1dd0182c3dc4cb4405101b4969cae6",
+    "offline-notebook-phone.png": "439c637939a6e2511057bf8def2e07d03f750ec6849917d5f8bd414f2648081b",
+    "200-equivalent-filter-reflow.png": "839aee100fcce0242de3342f6be36115fcb836681afacabfdea46902891dce6a"
+  },
+  "checks": {
+    "axeLightViolations": 0,
+    "axeDarkViolations": 0,
+    "offlineSaveExportAndReconnect": true,
+    "equivalent200PercentReflow": true,
+    "actualBrowserMenuZoom": false,
+    "physicalMobileKeyboard": false
+  }
+}

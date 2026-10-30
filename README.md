@@ -36,7 +36,7 @@ The October 29 website refresh uses the approved cool light/dark canvas, Nunito 
 5. In Filters, name and **Save filter** to retain your criteria. Choose an existing saved filter to apply it immediately; edits require **Update filter**. **Clear filters** resets the current search without deleting saved filters. **Delete filter** removes only the selected record. Home links back to filters saved in the same browser.
 6. Use the bookmark control to save an activity for later on this browser. Saved items are local to the current browser and website address; no account is needed for browsing.
 
-The High School section currently uses age-based discovery and optional pathway filters. A dedicated volunteering and broader teen-opportunity journey is the next stage; visual parity does not complete that work. Listing summaries may be generated for browsing. Complete original descriptions are available from each result; check the provider for current details and availability. [See the full-description screenshots](docs/showcase/README.md#full-original-descriptions).
+The [High School guide](https://gta-free-stem.pages.dev/high-school/) separates volunteering, learning, leadership and careers, and scholarships and support. Choose age and grade independently, review provider requirements, or record actual volunteer minutes in a local hours notebook and export a personal CSV. **Teen activities** keeps the existing activity search. The first reviewed collection has no confirmed individual volunteer roles: directories and programme intakes are labelled separately, and school approval is never automatic. Listing summaries may be generated for browsing. Complete original descriptions are available from each result; check the provider for current details and availability. [See the full-description screenshots](docs/showcase/README.md#full-original-descriptions).
 
 ## About the site
 
@@ -89,9 +89,15 @@ npm run generate:library
 
 Generated translations are browsing summaries, not fully reviewed translations of every provider's content.
 
-## High School expansion
+## High School guide and volunteer hours
 
-A dedicated volunteering and teen-opportunities journey is being developed separately from the visual refresh. [Source research and acceptance criteria](docs/research/high-school/recon.md) distinguish real roles, provider directories, exact eligibility, required costs, application status and school approval. The current High School page is not a completed volunteer-hours service.
+[See the current interface and checked scope](docs/showcase/2026-10-30-high-school/README.md).
+
+The English student guide distinguishes actual roles, programme intakes, directories and guidance. Nine initial reviewed records include zero confirmed individual roles, one evidenced free programme intake and two directories. Costs, eligibility and availability stay explicit; unknown details are not treated as free or open. This is an initial collection, with broader role coverage still needed.
+
+The hours notebook stores actual minutes in this browser's IndexedDB, supports explicit edits and deletion, protects against conflicting tab edits, and exports personal CSV records. It has no account or cross-device sync and does not award or certify community hours. Confirm activities with your school before starting. Save or export errors stay visible, with drafts retained. The new web guide does not imply the same feature has shipped in the native apps.
+
+[Source research and acceptance criteria](docs/research/high-school/recon.md) document the reviewed providers and remaining work.
 
 ## Project layout
 
