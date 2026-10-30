@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { accessibilityExportFields } from "../lib/accessibilitySupport";
 import { existsSync, mkdirSync, mkdtempSync, readFileSync, renameSync, rmSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { dirname, join } from "node:path";
@@ -42,7 +43,8 @@ const publicListings = publicOpportunities(sourceOpportunities, publicationSnaps
   volunteerHoursEligible: opportunity.volunteerHoursEligible,
   coopEligible: opportunity.coopEligible,
   trustedSource: opportunity.trustedSource,
-  sources: opportunity.sources
+  sources: opportunity.sources,
+  ...accessibilityExportFields(opportunity)
 }));
 
 const lastDataChange = publicListings
@@ -90,6 +92,8 @@ if (process.argv.includes("--self-test")) {
   assert(exportedRows.every((row: Record<string, unknown>) => typeof row.virtual === "boolean"), "Every native row must preserve its explicit virtual flag");
   assert.deepEqual(exportedRows.map((row: { id: string; virtual: boolean }) => [row.id, row.virtual]), originalRows.map((row) => [row.id, row.virtual]), "Native virtual flags must align exactly with source identities");
   assert.deepEqual(exportedRows.map((row: { id: string; description: string }) => [row.id, row.description]), originalRows.map((row) => [row.id, row.description]), "Adding virtual metadata must preserve full original bodies and IDs");
+  assert.deepEqual(exportedRows.map((row: { id: string; accessibility: string[] }) => [row.id, row.accessibility]), originalRows.map(row => [row.id, row.accessibility]), "Native export preserves raw access notes without inference");
+  assert.deepEqual(exportedRows.map((row: { id: string; accessibilitySupport?: unknown }) => [row.id, row.accessibilitySupport]), originalRows.map(row => [row.id, row.accessibilitySupport]), "Structured provider evidence is additive and never synthesized");
   assert(publicListings.every((row) => !Object.hasOwn(row, "translations")));
   const optional = { count: 2, opportunities: [{ id: "missing-translation" }, { id: "empty-translation", translations: {} }] };
   assert.deepEqual(JSON.parse(serializeNativeFeed(optional)).opportunities, optional.opportunities);

@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { accessibilityExportFields } from "../lib/accessibilitySupport";
 import { existsSync, readFileSync, renameSync, rmSync, writeFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { pathToFileURL } from "node:url";
@@ -67,6 +68,7 @@ function assertRows(rows: readonly Opportunity[]) {
     ensure(requiredStrings.every((key) => typeof row[key] === "string"), "a required text field is missing or malformed");
     ensure(row.id.trim() === row.id && row.id.length > 0 && row.id.length <= 256 && !ids.has(row.id), "IDs are empty, duplicated, inconsistent or too long");
     ids.add(row.id);
+    accessibilityExportFields(row); // Strict source-publication validation, never runtime fallback.
     ensure(row.title.trim().length > 0 && row.title.length <= 300 && row.organization.trim().length > 0 && row.provider.trim().length > 0 && row.description.trim().length > 0 && row.summary.trim().length > 0, `required listing text is invalid: ${row.id}`);
     ensure(requiredLists.every((key) => Array.isArray(row[key]) && row[key].every((value: unknown) => typeof value === "string")), `a required string array is invalid: ${row.id}`);
     ensure(row.categories.length > 0 && row.categories.includes(row.category), `primary category is absent from category list: ${row.id}`);
@@ -105,7 +107,7 @@ function browserRow(row: Opportunity): Opportunity {
     ageLabel: row.ageLabel, ages: row.ages, grades: row.grades,
     language: row.language, languages: row.languages, cost: row.cost,
     sourceUrl: row.sourceUrl, lastChecked: row.lastChecked, lastSeen: row.lastSeen,
-    status: row.status, accessibility: row.accessibility, equipment: row.equipment,
+    status: row.status, accessibility: row.accessibility, ...accessibilityExportFields(row), equipment: row.equipment,
     food: row.food, capacity: row.capacity, commitment: row.commitment,
     registrationUrl: row.registrationUrl, providerContact: row.providerContact,
     freeStatusProof: row.freeStatusProof, lastVerified: row.lastVerified,
