@@ -1,59 +1,88 @@
-name: Refresh public opportunities
-
+# REVIEW DRAFT: install only on a new operations branch, not main or the app PR.
+# Reuses the existing default-registered workflow path for manual --ref dispatch.
+name: Review isolated fresh-data reconciliation
 on:
-  schedule:
-    - cron: "17 */6 * * *"
   workflow_dispatch:
+    inputs:
+      expected_ops_commit:
+        description: Exact reviewed immutable operations commit
+        type: string
+        required: true
+      expected_helpers_sha256:
+        description: Independently reviewed helpers-manifest.json SHA256
+        type: string
+        required: true
 
 permissions:
-  contents: write
+  contents: read
+concurrency:
+  group: gta-reviewed-data-reconciliation-single-writer
+  cancel-in-progress: false
 
 jobs:
-  refresh:
-    name: Refresh source-backed static database
-    runs-on: ubuntu-latest
-    concurrency:
-      group: gta-free-stem-opportunities-refresh
-      cancel-in-progress: true
+  reconcile:
+    if: github.repository == 'rupayon123/gta-free-stem-opportunities' && github.event.repository.private == false
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    # GitHub permissions are job-level. The write credential is never passed to
+    # app verification and is consumed only by the final fixed-endpoint helper.
+    permissions:
+      contents: write
     env:
-      GTA_MAX_LIBRARY_OPPORTUNITIES: "15000"
-      GTA_LIBRARY_PAGES_PER_SOURCE: "300"
-      GTA_LOOKAHEAD_DAYS: "365"
-      GTA_DISCOVERY_MAX_CANDIDATES_PER_SOURCE: "250"
-      GTA_MIN_LIBRARY_PAGE_SUCCESS_RATIO: "0.75"
-      GTA_MIN_LIBRARY_SOURCE_SUCCESS_RATIO: "0.50"
-      GTA_MIN_LIBRARY_OUTPUT_RATIO: "0.65"
-      GTA_MIN_LIBRARY_OPPORTUNITIES: "30"
-      GTA_MIN_DISCOVERY_SOURCE_SUCCESS_RATIO: "0.75"
-
+      OPS_ROOT: ${{ github.workspace }}/ops
+      APP_REPO: ${{ github.workspace }}/app-source
+      EXPECTED_OPS_COMMIT: ${{ inputs.expected_ops_commit }}
+      EXPECTED_HELPERS_SHA256: ${{ inputs.expected_helpers_sha256 }}
+      NEXT_TELEMETRY_DISABLED: '1'
+      CI: '1'
     steps:
-      - name: Check out repository
-        uses: actions/checkout@v6
+      - name: Check event and immutable operations pin
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$GITHUB_EVENT_NAME" = workflow_dispatch
+          test "$GITHUB_REPOSITORY" = rupayon123/gta-free-stem-opportunities
+          test "$GITHUB_SHA" = "$EXPECTED_OPS_COMMIT"
+          [[ "$EXPECTED_OPS_COMMIT" =~ ^[0-9a-f]{40}$ ]]
+          [[ "$EXPECTED_HELPERS_SHA256" =~ ^[0-9a-f]{64}$ ]]
 
-      - name: Verify refresh publication safeguards
-        run: python3 scripts/test-refresh-publication.py
-
-      - name: Set up Node
-        uses: actions/setup-node@v6
+      - name: Check out immutable operations helpers separately
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # verified official v6 ref
         with:
-          node-version: "22"
-          cache: npm
+          ref: ${{ github.sha }}
+          path: ops
+          persist-credentials: false
+          fetch-depth: 1
 
-      - name: Install dependencies
-        run: npm ci
+      - name: Verify independently pinned helper sources
+        run: python3 "$OPS_ROOT/hosting/reconcile/verify-helpers.py" --expected-sha256 "$EXPECTED_HELPERS_SHA256"
 
-      - name: Audit production dependencies
-        run: npm audit --omit=dev --audit-level=high
+      - name: Check out immutable app without stored credentials
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          ref: 9f83e87e4447b805373ff9f7f206adb737e5c413
+          path: app-source
+          persist-credentials: false
+          fetch-depth: 0
 
-      - name: Refresh source-backed library and youth role databases
+      - name: Set up existing Node major with no persistent dependency cache
+        uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # verified official v6 ref
+        with:
+          node-version: '22'
+          package-manager-cache: false
+
+      - name: Guard isolated ordinary merge, offline proofs and existing QA
+        run: |
+          python3 "$OPS_ROOT/hosting/reconcile/guard-linux.py" \
+            --new-guard-receipt "$RUNNER_TEMP/reconciliation-resource.json" \
+            --timeout-seconds 1200 -- \
+            python3 "$OPS_ROOT/hosting/reconcile/run-reconciliation.py"
+
+      - name: Create only a new reviewed candidate ref after all proofs
         env:
-          GTA_LIBRARY_RSS_CACHE_DIR: ${{ runner.temp }}/gta-library-rss
-        run: npm run engine:refresh
-
-      - name: Build static export
-        run: npm run build
-
-      - name: Commit paired library and youth databases
-        env:
-          GTA_LIBRARY_RSS_CACHE_DIR: ${{ runner.temp }}/gta-library-rss
-        run: bash scripts/publish-refreshed-opportunities.sh
+          RECONCILE_WRITE_TOKEN: ${{ github.token }}
+        run: |
+          python3 "$OPS_ROOT/hosting/reconcile/guard-linux.py" \
+            --new-guard-receipt "$RUNNER_TEMP/candidate-ref-resource.json" \
+            --timeout-seconds 300 -- \
+            python3 "$OPS_ROOT/hosting/reconcile/publish-candidate.py"

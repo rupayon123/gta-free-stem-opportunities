@@ -1,0 +1,55 @@
+{
+  "scope": "Optional Ubuntu route V2 SOURCE ONLY, no ops write or dispatch authority.",
+  "files": [
+    {
+      "path": "hosting/reconcile/prepare-candidate.py",
+      "sha256": "ed197d52df2701ad5057e6da03072f8f63a4af7d130b5c00e8fb2cd1fdc63175",
+      "bytes": 7747
+    },
+    {
+      "path": "hosting/reconcile/overlay-reviewed-policy.ts",
+      "sha256": "f804c788f30b19b0c89ef4a2920f86fcc61cf7d0689f8fe268df8d4813a7a61e",
+      "bytes": 4616
+    },
+    {
+      "path": "hosting/reconcile/verify-reconciled-feed.py",
+      "sha256": "3dab5539c56bf9cc8c6e860553d823b274fbcf5847a3e2243b981ac62c1aab1f",
+      "bytes": 4368
+    },
+    {
+      "path": "hosting/reconcile/guard-linux.py",
+      "sha256": "7f774ed47ed978207d2fb686b9a403cdf603852a2052652106ac38e19a9e6f4d",
+      "bytes": 7517
+    },
+    {
+      "path": "hosting/reconcile/verify-helpers.py",
+      "sha256": "15ce59694225b9bbcc6d9527790d825d6017640987eb0ec8d3db6b014f5bfb97",
+      "bytes": 1637
+    },
+    {
+      "path": "hosting/reconcile/run-reconciliation.py",
+      "sha256": "889d92964770e9406c58f872e4897eb3a5460e44a93da2723a2f543e3389a1ad",
+      "bytes": 8437
+    },
+    {
+      "path": "hosting/reconcile/publish-candidate.py",
+      "sha256": "ac5bb29ee3119076740cf83ff12f717539de2a11a000c486678d8b38d4285600",
+      "bytes": 6532
+    },
+    {
+      "path": "hosting/reconcile/offline-network.mjs",
+      "sha256": "ddcc0cc41b310fb1b62d73ce8e559bf90396370fa4bb0b727c3217dc3c9bcf42",
+      "bytes": 531
+    },
+    {
+      "path": "hosting/reconcile/REVIEW_ROUTE.md",
+      "sha256": "6371b9f46d4bde94805a4ed7e66a1e0025eb729d975185c7492ac71cc5e8045e",
+      "bytes": 12023
+    },
+    {
+      "path": ".github/workflows/refresh-opportunities.yml",
+      "sha256": "3798524d454fa889911d596fba0390c2176b03ade56371b1e2015359f1bfd513",
+      "bytes": 3535
+    }
+  ]
+}
