@@ -1,0 +1,85 @@
+{
+  "buildSource": "f264eacd0a435e392acc3bce8338e1e9a252e7fd",
+  "candidateHead": "cfd8d0a42baae4db8d3ef4b8ff1c634669901195",
+  "candidateDiffFromBuiltSource": "QA script only; all four product files identical",
+  "productHashes": {
+    "components/HomePage.tsx": "ad39f67490443089e69704e25e2933081d870b1d69809253476b58d679eb6a88",
+    "components/high-school/HighSchoolHub.tsx": "78baf39aaca963d3cd1ed9d4e196815fc285232b47a7e8ea0e908cbca7e75d73",
+    "components/high-school/HighSchool.css": "12adbe45b00ab8ea59863c2b9825bb47d89c8b2b33ab972ecea3f847d8856c21",
+    "components/high-school/HighSchoolDiscovery.tsx": "e9115514e8194824928453711101689e2fa6c52cfec218c4ae6bec9e6c4ec4c1"
+  },
+  "highSchoolTests": {
+    "pass": 21,
+    "fail": 0,
+    "skip": 0
+  },
+  "build": {
+    "exitCode": 0,
+    "peakOwnedGroupRSSKiB": 3423008,
+    "limitKiB": 3932160,
+    "reason": null,
+    "log": "/Users/rh_mac/Documents/ChatGPT/GTA Free STEM/outputs/high-school-card-polish-20261030/build.log"
+  },
+  "browser": {
+    "exitCode": 0,
+    "elapsedSeconds": 4.65,
+    "peakOwnedRSSKiB": 1376640,
+    "limitKiB": 2097152,
+    "stopReason": null
+  },
+  "screenshots": {
+    "hub-1440-dark.png": {
+      "width": 1440,
+      "height": 2407,
+      "sha256": "937f317f769d4dc0d4c5e019602af00f9f2edc5f87485074e66b9c1840d6a0e4"
+    },
+    "hub-1440-light.png": {
+      "width": 1440,
+      "height": 2407,
+      "sha256": "88fd20e0ccf813c2a41740db9a1a8c8bee64068ad6d40557e5d55e8e991c2dbd"
+    },
+    "hub-320-dark.png": {
+      "width": 320,
+      "height": 4342,
+      "sha256": "82dd286808fc8add06dbe3c0cc7588b98a301c0be06be798a6ef9a32ab3e8c7b"
+    },
+    "hub-320-light.png": {
+      "width": 320,
+      "height": 4342,
+      "sha256": "6869e14b969593e3c2013f4f121cb695fbf167abefb7fb5bb22e412883076235"
+    },
+    "hub-390-dark.png": {
+      "width": 390,
+      "height": 3882,
+      "sha256": "a3381786f0d362ef5276e006f1709d520d7a8080502bade89d061090b7bc24f2"
+    },
+    "hub-390-light.png": {
+      "width": 390,
+      "height": 3882,
+      "sha256": "c6c0762e2665b40a3bd74d9f4dbe55f4eb8ba459a6da81777b1b3e2c31bfd97e"
+    },
+    "hub-768-dark.png": {
+      "width": 768,
+      "height": 2919,
+      "sha256": "91662897ca22bcb5c58e83bea617fd85dd311bfbe0ef83e985cdcdf53ad54e0f"
+    },
+    "hub-768-light.png": {
+      "width": 768,
+      "height": 2919,
+      "sha256": "338557c8845d74d3205f8c7a0ae50fab589f48215884327088bad845fcb670f1"
+    }
+  },
+  "visualInspection": [
+    "hub-1440-light.png",
+    "hub-390-light.png",
+    "hub-320-dark.png",
+    "hub-768-dark.png"
+  ],
+  "firstRunFailure": "Test incorrectly asserted computed transition duration 0s; global .01ms !important duration remained despite transition-property:none. Corrected QA checks effective property none AND no pressed transform. No product bytes changed. Initial failed logs retained.",
+  "services": "Owned compiler, browser and server stopped; heavy slot explicitly released",
+  "limits": [
+    "No physical phone keyboard or native browser-menu zoom validation.",
+    "No new youth-role ingestion or accessibility support filtering is included.",
+    "Publication is owned by coordinating chat."
+  ]
+}

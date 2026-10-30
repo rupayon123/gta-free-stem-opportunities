@@ -17,6 +17,8 @@ The October 29 website refresh uses the approved cool light/dark canvas, Nunito 
 
 [Capture provenance and checks](docs/showcase/2026-10-29-ios-v3-web/README.md). Earlier public captures remain dated history: [October 29 city-map release](docs/showcase/2026-10-29-city-map-live/README.md) and [October 27 site](docs/showcase/README.md). Result counts change with accepted source refreshes.
 
+The October 30 [High School pathway polish](docs/showcase/2026-10-30-high-school/card-polish/README.md) gives the four pathways distinct responsive cards and removes the redundant English banner. It also corrects age filtering for provider directories. Actual-role ingestion and accessibility/support filters remain in progress.
+
 ## What you can do
 
 - Search by activity, topic, library or city, including common spelling mistakes.
@@ -61,7 +63,7 @@ npm run qa
 npm run build
 ```
 
-The free static publication is written to `out/` by `npm run build:github-pages`. This produces portable trailing-slash pages, removes unused client-navigation payloads and checks every sitemap page's search metadata. Cloudflare Pages hosts the branded site; the public GitHub Pages repository retains a backup. Publication is automated by [the hosting repository](https://github.com/rupayon123/rupayon123.github.io). See [search visibility guidance](docs/search-visibility.md).
+The free static publication is written to `out/` by `npm run build:github-pages`. This produces portable trailing-slash pages, removes unused client-navigation payloads and checks every sitemap page's search metadata. Cloudflare Pages hosts the branded site; the old GitHub Pages address forwards visitors to the same website while retaining compatible app-feed files. Publication is automated by [the hosting repository](https://github.com/rupayon123/rupayon123.github.io). See [search visibility guidance](docs/search-visibility.md).
 
 ## Accounts
 
