@@ -11,13 +11,13 @@ import shutil
 from pathlib import Path
 import subprocess
 
-MAIN = "e09b9e572e840710ae77c47a01ed10f16d7719f5"
+MAIN = "eba9d4aa569f9c89178d698d4cf37f35226a500b"
 APP = "9f83e87e4447b805373ff9f7f206adb737e5c413"
 BRANCH = "refs/heads/codex/web-preview-20261030"
 GENERATED = {
-    "lib/generatedDiscoveryReview.ts": "424a89b94206e07813520152a5e87879e4e926a8",
-    "lib/generatedLibraryOpportunities.ts": "7e415069d2c755bd37c893aac5793d7c8e1f8d45",
-    "public/opportunities.json": "1a529c64235db8a37ecf02ccf73171214fb127ba",
+    "lib/generatedDiscoveryReview.ts": "8a623ffcc787d70cee9d6196d348bf6d1a0fa34d",
+    "lib/generatedLibraryOpportunities.ts": "bd7a877d460433f411003120b35e7695ffa7f421",
+    "public/opportunities.json": "e58921934b5246b32f1c6edcfdf86f18b529ee7e",
 }
 YOUTH = ["data/youth-hunter-state.json", "data/youth-hunter-manifest.json", "public/youth-opportunities.json"]
 

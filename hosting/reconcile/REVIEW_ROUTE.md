@@ -58,9 +58,10 @@ into `app-source/`, with credential persistence disabled in both. Helpers remain
 outside the app candidate. A temporary exact overlay helper is copied only into
 the VM candidate/scripts and removed after verifying its hash. Never stage it.
 
-The existing prepare/overlay/postproof sources are byte-identical to reviewed
-prep2 (prepareed197d52..., overlayf804c788..., postproof3dab5539...). They pin fresh
-maine09b9e572e840710ae77c47a01ed10f16d7719f5 and the exact generated3blob IDs. The
+The Oct31 proposal re-pins preparation to fresh main and adds the approved
+diagnostic verifier103ec14c... while retaining the exact overlayf804c788... .
+Historical prep2 hashes describe prior evidence only. The current sources pin fresh
+maineba9d4aa569f9c89178d698d4cf37f35226a500b and the exact generated3blob IDs. The
 operations manifest pins all helper sources AND this workflow and is independently
 SHA256-pinned at dispatch. verify-helpers checks every exact path/hash before
 application code runs and immediately before the only credentialed write phase.
@@ -178,3 +179,24 @@ large app-data Git blobs, main/draft mutation or dispatch is included. See the
 exact ops-handoff-plan.json and path inventory; root and fresh coordinator LIGHT
 clearance are required before that separate handoff. Source preparation is not
 permission to create those Git objects or the branch.
+
+## Oct31 fresh-baseline and diagnostic proposal: source only
+
+Main advanced by a scheduled data-only refresh to eba9d4aa569f9c89178d698d4cf37f35226a500b.
+The three fresh Git blobs are discovery8a623ffcc787d70cee9d6196d348bf6d1a0fa34d,
+masterbd7a877d460433f411003120b35e7695ffa7f421 and nativee58921934b5246b32f1c6edcfdf86f18b529ee7e.
+Root independently verified these identities; recheck actual main before any
+future source write/dispatch. No old e09 local candidate/output is reused.
+
+Prior run41081510614 remains a FAILURE: it exported locally then strict native
+base equality failed before QA/output. New diagnostic logs bounded paths and
+separate catalogue identity/order/hash/count summaries before the SAME assertion.
+It does not exclude health, bodies or dates or accept the previous failure.
+Pure diagnostic fixtures are reviewed SOURCE ONLY and have not been executed.
+
+This proposal retains the same standard public Ubuntu4GiB/>35% VM guard and
+all source-proof/credential/new-output-branch boundaries. App remains9f83; the
+next runtime must establish new exact native count/body/capture/health baseline
+from pinned fresh main, not assume previous1920/7789/proof totals. Main, draft
+and current ops branch are not changed by this source packet. Ops correction,
+fixture execution and one new workflow run each require root/coordinator review.

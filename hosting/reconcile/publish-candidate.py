@@ -12,7 +12,7 @@ import urllib.error
 import urllib.request
 
 APP = "9f83e87e4447b805373ff9f7f206adb737e5c413"
-MAIN = "e09b9e572e840710ae77c47a01ed10f16d7719f5"
+MAIN = "eba9d4aa569f9c89178d698d4cf37f35226a500b"
 REPOSITORY = "rupayon123/gta-free-stem-opportunities"
 API = "https://api.github.com/repos/" + REPOSITORY
 DATA = ["lib/generatedDiscoveryReview.ts", "lib/generatedLibraryOpportunities.ts", "public/opportunities.json"]

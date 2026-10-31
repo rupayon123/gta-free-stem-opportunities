@@ -5,6 +5,62 @@ import json
 from pathlib import Path
 
 
+def bounded_differences(before, after):
+    """Count every terminal difference; log at most20 paths/array summaries."""
+    missing = object()
+    samples, arrays = [], []
+    total = 0
+    def sha(value):
+        return hashlib.sha256(json.dumps(value, sort_keys=True, ensure_ascii=False,
+            separators=(",", ":")).encode()).hexdigest()
+    def summary(value):
+        if value is missing:
+            return {"type": "missing"}
+        if isinstance(value, (dict, list)):
+            return {"type": "object" if isinstance(value, dict) else "array",
+                    "count": len(value), "sha256": sha(value)}
+        return {"type": type(value).__name__, "value": value[:200] if isinstance(value, str) else value,
+                "truncated": isinstance(value, str) and len(value) > 200}
+    def array_summary(value):
+        result = summary(value)
+        for key in ("id", "sourceId"):
+            if value and all(isinstance(row, dict) and key in row for row in value):
+                ids = [row[key] for row in value]
+                result.update(identityKey=key, identityOrderSHA256=sha(ids),
+                              firstIDs=[str(item)[:200] for item in ids[:20]])
+                break
+        return result
+    def walk(a, b, path):
+        nonlocal total
+        if isinstance(a, dict) and isinstance(b, dict):
+            for key in sorted(a.keys() | b.keys()):
+                walk(a.get(key, missing), b.get(key, missing), path + "/" + key.replace("~", "~0").replace("/", "~1"))
+        elif isinstance(a, list) and isinstance(b, list):
+            start = total
+            for index in range(max(len(a), len(b))):
+                walk(a[index] if index < len(a) else missing,
+                     b[index] if index < len(b) else missing, path + "/" + str(index))
+            if total > start and path != "/opportunities" and len(arrays) < 20:
+                arrays.append({"path": path[:1000], "before": array_summary(a),
+                               "after": array_summary(b), "orderSensitiveHashEqual": sha(a) == sha(b)})
+        elif type(a) != type(b) or a != b:
+            total += 1
+            if len(samples) < 20:
+                samples.append({"path": path[:1000], "before": summary(a), "after": summary(b)})
+    walk(before, after, "")
+    opportunities = None
+    if (isinstance(before, dict) and isinstance(after, dict)
+            and isinstance(before.get("opportunities"), list)
+            and isinstance(after.get("opportunities"), list)):
+        old_rows, new_rows = before["opportunities"], after["opportunities"]
+        opportunities = {"path": "/opportunities", "before": array_summary(old_rows),
+                         "after": array_summary(new_rows),
+                         "orderSensitiveHashEqual": sha(old_rows) == sha(new_rows)}
+    return {"totalChangedPaths": total, "firstDifferences": samples,
+            "opportunitiesComparison": opportunities,
+            "arrayComparisons": arrays, "sampleLimit": 20, "scalarCharacterLimit": 200}
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--candidate", type=Path, required=True)
@@ -28,6 +84,10 @@ def main():
 
     # No generic health/date/description exclusions. Any difference stops the
     # operation for root review rather than silently accepting a changed base.
+    if without_proof_and_revision(before) != without_proof_and_revision(after):
+        diagnostic = bounded_differences(without_proof_and_revision(before), without_proof_and_revision(after))
+        (evidence / "native-base-differences.json").write_text(json.dumps(diagnostic, indent=2) + "\n")
+        print(json.dumps({"nativeBaseDifferences": diagnostic}), flush=True)
     assert without_proof_and_revision(before) == without_proof_and_revision(after), "Real native base fields changed"
     assert after["publicationRevision"] > before["publicationRevision"], "Changed facts require a newer source revision"
     assert after_raw.endswith(b"\n") and b"\n  \"" not in after_raw, "Expected compact JSON plus trailing newline"

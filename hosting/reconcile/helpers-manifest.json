@@ -3,7 +3,7 @@
   "files": [
     {
       "path": "hosting/reconcile/prepare-candidate.py",
-      "sha256": "ed197d52df2701ad5057e6da03072f8f63a4af7d130b5c00e8fb2cd1fdc63175",
+      "sha256": "5116842b8f40b204c0fc616d208e98ca92e3d4ef4a3df45240d56c7bdcadcabc",
       "bytes": 7747
     },
     {
@@ -13,8 +13,8 @@
     },
     {
       "path": "hosting/reconcile/verify-reconciled-feed.py",
-      "sha256": "3dab5539c56bf9cc8c6e860553d823b274fbcf5847a3e2243b981ac62c1aab1f",
-      "bytes": 4368
+      "sha256": "103ec14c98a71b5a233199dec4f55238cbfbe79e58c73bec15d539a648114c03",
+      "bytes": 7761
     },
     {
       "path": "hosting/reconcile/guard-linux.py",
@@ -28,12 +28,12 @@
     },
     {
       "path": "hosting/reconcile/run-reconciliation.py",
-      "sha256": "3d6a0b1508de04bdef55b0a4b46b952b28005c6cddecca8ed44952d5cd33032a",
+      "sha256": "c6ffd22c420be7d555229a7018da8388b53661e45fc208b01459296de5361d14",
       "bytes": 8761
     },
     {
       "path": "hosting/reconcile/publish-candidate.py",
-      "sha256": "ac5bb29ee3119076740cf83ff12f717539de2a11a000c486678d8b38d4285600",
+      "sha256": "c3c724ddd1bfa2997d5baf339426b2871087d073c8e343d6ff50224fb79a2d2d",
       "bytes": 6532
     },
     {
@@ -43,8 +43,8 @@
     },
     {
       "path": "hosting/reconcile/REVIEW_ROUTE.md",
-      "sha256": "6371b9f46d4bde94805a4ed7e66a1e0025eb729d975185c7492ac71cc5e8045e",
-      "bytes": 12023
+      "sha256": "7187eaa8acb419b5e40060f8abd851967f7cd61970788b65012b13a8e4dcd4ff",
+      "bytes": 13451
     },
     {
       "path": ".github/workflows/refresh-opportunities.yml",
