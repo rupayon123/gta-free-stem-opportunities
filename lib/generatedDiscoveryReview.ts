@@ -5,7 +5,7 @@ export const generatedDiscoverySummary = {
   "sourcesChecked": 30,
   "candidatesFound": 236,
   "newCandidates": 45,
-  "duplicatesSkipped": 46,
+  "duplicatesSkipped": 32,
   "warnings": [
     "Could not check Credit Valley Conservation youth opportunities: 403 Forbidden.",
     "Could not check TRCA youth volunteer opportunities: fetch failed.",
@@ -15,7 +15,7 @@ export const generatedDiscoverySummary = {
   ],
   "sourceHealth": {
     "schemaVersion": 1,
-    "generatedAt": "2026-11-01T13:30:33.501Z",
+    "generatedAt": "2026-11-01T22:06:35.007Z",
     "status": "healthy",
     "failureReasons": [],
     "sourcesChecked": 30,
@@ -28,7 +28,7 @@ export const generatedDiscoverySummary = {
 
 export const generatedDiscoveryReviewCandidates = [
   {
-    "id": "discovered-tpl-events-volunteer-set-phasers-to-celebrate-60-years-of-star--49aabc098076",
+    "id": "discovered-tpl-events-volunteer-set-phasers-to-celebrate-60-years-of-star--e3c38142ee7e",
     "title": "Set Phasers to Celebrate! 60 Years of Star Trek: A Merril Collection Exhibit",
     "organization": "Toronto Public Library",
     "description": "Beam yourself up to the Merril Collection of Science Fiction, Speculation and Fantasy and boldly embark on a 60-year journey that celebrates all things Star Trek! For decades, the original television series turned global franchise has inspired generations of fans, artists, and scientists alike. Visitors can explore voyages, characters, and new frontiers through our collection highlights such as novels, RPGs, fanzines, original artwork and more! This exhibit can be viewed during the Merril Collection's regular open hours.",
@@ -44,7 +44,7 @@ export const generatedDiscoveryReviewCandidates = [
     "deadline": "2026-08-17T09:00:00-04:00",
     "startDate": "2026-08-17T09:00:00-04:00",
     "endDate": "2026-11-01T09:00:00-04:00",
-    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6ad665cd9d27a0004551f69e",
+    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6a89c44b29a7dd0d6745c19b",
     "lastChecked": "2026-11-01",
     "lastSeen": "2026-11-01",
     "status": "needs_review",
