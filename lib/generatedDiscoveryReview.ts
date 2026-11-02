@@ -3,10 +3,11 @@ import type { DiscoveredOpportunity } from "./discovery";
 export const generatedDiscoverySummary = {
   "mode": "deterministic",
   "sourcesChecked": 30,
-  "candidatesFound": 272,
-  "newCandidates": 48,
-  "duplicatesSkipped": 40,
+  "candidatesFound": 253,
+  "newCandidates": 50,
+  "duplicatesSkipped": 41,
   "warnings": [
+    "Could not check Aurora Public Library STEM events: 500 Internal Server Error.",
     "Could not check Credit Valley Conservation youth opportunities: 403 Forbidden.",
     "Could not check Volunteer MBC youth opportunities: 403 Forbidden.",
     "Could not check Eventbrite free science and technology events: 405 Not Allowed.",
@@ -14,13 +15,13 @@ export const generatedDiscoverySummary = {
   ],
   "sourceHealth": {
     "schemaVersion": 1,
-    "generatedAt": "2026-11-02T06:11:30.758Z",
+    "generatedAt": "2026-11-02T16:03:51.177Z",
     "status": "healthy",
     "failureReasons": [],
     "sourcesChecked": 30,
-    "successfulSources": 26,
-    "failedSources": 4,
-    "sourceSuccessRatio": 0.8667,
+    "successfulSources": 25,
+    "failedSources": 5,
+    "sourceSuccessRatio": 0.8333,
     "minimumSourceSuccessRatio": 0.75
   }
 } as const;
@@ -372,6 +373,34 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Pickering Public Library technology events"
   },
   {
+    "id": "discovered-oshawa-library-stem-create-with-cricut-cards-for-seniors-b5ef1193fed6",
+    "title": "Create with Cricut®: Cards for Seniors",
+    "organization": "Oshawa Public Libraries",
+    "description": "Create with Cricut®: Cards for Seniors from Oshawa Public Libraries STEM events.",
+    "city": "Oshawa",
+    "region": "Durham",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "Makerspace & Fabrication",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-11-02T09:00:00-04:00",
+    "sourceUrl": "https://oshlib.bibliocommons.com/v2/events/6ad635c8fee2d21deb2449e0",
+    "lastChecked": "2026-11-02",
+    "lastSeen": "2026-11-02",
+    "status": "needs_review",
+    "tags": [
+      "makerspace & fabrication"
+    ],
+    "confidence": "high",
+    "reviewReasons": [
+      "No clear future date found on the crawled page."
+    ],
+    "sourceName": "Oshawa Public Libraries STEM events"
+  },
+  {
     "id": "discovered-oshawa-library-stem-climate-action-paper-bead-jewelry-eeb14961109c",
     "title": "Climate Action: Paper Bead Jewelry",
     "organization": "Oshawa Public Libraries",
@@ -420,6 +449,34 @@ export const generatedDiscoveryReviewCandidates = [
     "status": "needs_review",
     "tags": [
       "makerspace & fabrication"
+    ],
+    "confidence": "high",
+    "reviewReasons": [
+      "No clear future date found on the crawled page."
+    ],
+    "sourceName": "Oshawa Public Libraries STEM events"
+  },
+  {
+    "id": "discovered-oshawa-library-stem-climate-action-week-2f7325f18b0c",
+    "title": "Climate Action Week 🌱",
+    "organization": "Oshawa Public Libraries",
+    "description": "Climate Action Week 🌱 listed by Oshawa Public Libraries STEM events.",
+    "city": "Oshawa",
+    "region": "Durham",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "Science & Engineering",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-11-02T09:00:00-04:00",
+    "sourceUrl": "https://oshlib.bibliocommons.com/v2/list/display/2284869569/3150103367",
+    "lastChecked": "2026-11-02",
+    "lastSeen": "2026-11-02",
+    "status": "needs_review",
+    "tags": [
+      "science & engineering"
     ],
     "confidence": "high",
     "reviewReasons": [
