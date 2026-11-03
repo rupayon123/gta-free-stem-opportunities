@@ -3,9 +3,9 @@ import type { DiscoveredOpportunity } from "./discovery";
 export const generatedDiscoverySummary = {
   "mode": "deterministic",
   "sourcesChecked": 30,
-  "candidatesFound": 270,
-  "newCandidates": 47,
-  "duplicatesSkipped": 33,
+  "candidatesFound": 276,
+  "newCandidates": 50,
+  "duplicatesSkipped": 40,
   "warnings": [
     "Could not check Credit Valley Conservation youth opportunities: 403 Forbidden.",
     "Could not check Volunteer MBC youth opportunities: 403 Forbidden.",
@@ -14,7 +14,7 @@ export const generatedDiscoverySummary = {
   ],
   "sourceHealth": {
     "schemaVersion": 1,
-    "generatedAt": "2026-11-03T14:21:01.345Z",
+    "generatedAt": "2026-11-03T23:27:40.725Z",
     "status": "healthy",
     "failureReasons": [],
     "sourcesChecked": 30,
@@ -26,6 +26,63 @@ export const generatedDiscoverySummary = {
 } as const;
 
 export const generatedDiscoveryReviewCandidates = [
+  {
+    "id": "discovered-tpl-events-volunteer-nocturnal-animals-scavenger-hunt-60721bdca4a2",
+    "title": "Nocturnal Animals Scavenger Hunt",
+    "organization": "Toronto Public Library",
+    "description": "Nocturnal Animals Scavenger Hunt from Toronto Public Library youth volunteer events.",
+    "city": "Toronto",
+    "region": "Toronto",
+    "ageMin": 13,
+    "ageMax": 18,
+    "category": "Volunteer Hours",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-11-03T09:00:00-04:00",
+    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6adf51d39dbc2b002c910d86",
+    "lastChecked": "2026-11-03",
+    "lastSeen": "2026-11-03",
+    "status": "needs_review",
+    "tags": [
+      "volunteer hours"
+    ],
+    "confidence": "high",
+    "reviewReasons": [
+      "No clear future date found on the crawled page."
+    ],
+    "sourceName": "Toronto Public Library youth volunteer events"
+  },
+  {
+    "id": "discovered-markham-events-stem-steam-drop-in-00a43c4989b4",
+    "title": "STEAM Drop-In",
+    "organization": "Markham Public Library",
+    "description": "Join us anytime between 6:30 - 7:30 PM to explore all things STEAM (Science, Technology, Engineering, Arts, and Math). This drop-in program is designed for families to get curious and creative together!",
+    "city": "Markham",
+    "region": "York",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "Science & Engineering",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "deadline": "2026-11-04T18:30:00-04:00",
+    "startDate": "2026-11-04T18:30:00-04:00",
+    "endDate": "2026-11-04T19:30:00-04:00",
+    "sourceUrl": "https://markham.bibliocommons.com/v2/events/6904d70b3cbc052f008290f4",
+    "lastChecked": "2026-11-03",
+    "lastSeen": "2026-11-03",
+    "status": "needs_review",
+    "tags": [
+      "science & engineering",
+      "steam"
+    ],
+    "confidence": "high",
+    "reviewReasons": [],
+    "sourceName": "Markham Public Library events"
+  },
   {
     "id": "discovered-vaughan-library-programs-volunteer-opportunities-e775e833a50b",
     "title": "Volunteer Opportunities",
@@ -255,27 +312,26 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Pickering Public Library technology events"
   },
   {
-    "id": "discovered-pickering-library-tech-developing-responsible-technology-4c170fc272c9",
-    "title": "Developing Responsible Technology",
+    "id": "discovered-pickering-library-tech-which-ai-tool-is-right-for-you-5030c932462b",
+    "title": "Which AI Tool is Right for You?",
     "organization": "Pickering Public Library",
-    "description": "Developing Responsible Technology listed by Pickering Public Library technology events.",
+    "description": "Which AI Tool is Right for You? listed by Pickering Public Library technology events.",
     "city": "Pickering",
     "region": "Durham",
     "ageMin": 1,
     "ageMax": 18,
-    "category": "STEM",
+    "category": "AI & Digital Media",
     "cost": "Free to join",
     "language": [
       "en"
     ],
     "startDate": "2026-11-03T09:00:00-04:00",
-    "sourceUrl": "https://pickering.bibliocommons.com/v2/list/display/1491301049/3106000637",
+    "sourceUrl": "https://cal.pickeringlibrary.ca/event/which-ai-tool-right-you-56328",
     "lastChecked": "2026-11-03",
     "lastSeen": "2026-11-03",
     "status": "needs_review",
     "tags": [
-      "stem",
-      "technology"
+      "ai & digital media"
     ],
     "confidence": "high",
     "reviewReasons": [
@@ -306,6 +362,35 @@ export const generatedDiscoveryReviewCandidates = [
       "stem",
       "technology",
       "computers"
+    ],
+    "confidence": "high",
+    "reviewReasons": [
+      "No clear future date found on the crawled page."
+    ],
+    "sourceName": "Pickering Public Library technology events"
+  },
+  {
+    "id": "discovered-pickering-library-tech-developing-responsible-technology-4c170fc272c9",
+    "title": "Developing Responsible Technology",
+    "organization": "Pickering Public Library",
+    "description": "Developing Responsible Technology listed by Pickering Public Library technology events.",
+    "city": "Pickering",
+    "region": "Durham",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "STEM",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-11-03T09:00:00-04:00",
+    "sourceUrl": "https://pickering.bibliocommons.com/v2/list/display/1491301049/3106000637",
+    "lastChecked": "2026-11-03",
+    "lastSeen": "2026-11-03",
+    "status": "needs_review",
+    "tags": [
+      "stem",
+      "technology"
     ],
     "confidence": "high",
     "reviewReasons": [
