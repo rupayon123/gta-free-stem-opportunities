@@ -3,9 +3,9 @@ import type { DiscoveredOpportunity } from "./discovery";
 export const generatedDiscoverySummary = {
   "mode": "deterministic",
   "sourcesChecked": 30,
-  "candidatesFound": 277,
-  "newCandidates": 48,
-  "duplicatesSkipped": 41,
+  "candidatesFound": 279,
+  "newCandidates": 49,
+  "duplicatesSkipped": 42,
   "warnings": [
     "Could not check Credit Valley Conservation youth opportunities: 403 Forbidden.",
     "Could not check Volunteer MBC youth opportunities: 403 Forbidden.",
@@ -14,7 +14,7 @@ export const generatedDiscoverySummary = {
   ],
   "sourceHealth": {
     "schemaVersion": 1,
-    "generatedAt": "2026-11-04T06:29:03.055Z",
+    "generatedAt": "2026-11-04T19:49:49.993Z",
     "status": "healthy",
     "failureReasons": [],
     "sourcesChecked": 30,
@@ -26,6 +26,34 @@ export const generatedDiscoverySummary = {
 } as const;
 
 export const generatedDiscoveryReviewCandidates = [
+  {
+    "id": "discovered-tpl-events-volunteer-polish-book-club-discussion-4de19866eabd",
+    "title": "Polish Book Club Discussion",
+    "organization": "Toronto Public Library",
+    "description": "Polish Reading Club. Have your recently read a book that you want others to know about. This is a meeting and place for a conversation with those who read in Polish. It doesn't matter what you read; books or magazines, fiction or popular science. Come and tell us what you are reading and why. It's a wonderful opportunity to hear about reading passions and a place to meet new friends. Klub czytajacych po polsku. Spotkanie i rozmowa z tymi co czytaja po polsku.",
+    "city": "Toronto",
+    "region": "Toronto",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "Science & Engineering",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "deadline": "2026-11-04T14:00:00-04:00",
+    "startDate": "2026-11-04T14:00:00-04:00",
+    "endDate": "2026-11-04T15:30:00-04:00",
+    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6adf51d39dbc2b002c910d86",
+    "lastChecked": "2026-11-04",
+    "lastSeen": "2026-11-04",
+    "status": "needs_review",
+    "tags": [
+      "science & engineering"
+    ],
+    "confidence": "high",
+    "reviewReasons": [],
+    "sourceName": "Toronto Public Library youth volunteer events"
+  },
   {
     "id": "discovered-markham-events-stem-steam-drop-in-00a43c4989b4",
     "title": "STEAM Drop-In",
