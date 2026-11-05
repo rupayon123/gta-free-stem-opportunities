@@ -3,9 +3,9 @@ import type { DiscoveredOpportunity } from "./discovery";
 export const generatedDiscoverySummary = {
   "mode": "deterministic",
   "sourcesChecked": 30,
-  "candidatesFound": 279,
-  "newCandidates": 49,
-  "duplicatesSkipped": 42,
+  "candidatesFound": 266,
+  "newCandidates": 45,
+  "duplicatesSkipped": 32,
   "warnings": [
     "Could not check Credit Valley Conservation youth opportunities: 403 Forbidden.",
     "Could not check Volunteer MBC youth opportunities: 403 Forbidden.",
@@ -14,7 +14,7 @@ export const generatedDiscoverySummary = {
   ],
   "sourceHealth": {
     "schemaVersion": 1,
-    "generatedAt": "2026-11-04T19:49:49.993Z",
+    "generatedAt": "2026-11-05T06:52:44.696Z",
     "status": "healthy",
     "failureReasons": [],
     "sourcesChecked": 30,
@@ -27,57 +27,29 @@ export const generatedDiscoverySummary = {
 
 export const generatedDiscoveryReviewCandidates = [
   {
-    "id": "discovered-tpl-events-volunteer-polish-book-club-discussion-4de19866eabd",
-    "title": "Polish Book Club Discussion",
-    "organization": "Toronto Public Library",
-    "description": "Polish Reading Club. Have your recently read a book that you want others to know about. This is a meeting and place for a conversation with those who read in Polish. It doesn't matter what you read; books or magazines, fiction or popular science. Come and tell us what you are reading and why. It's a wonderful opportunity to hear about reading passions and a place to meet new friends. Klub czytajacych po polsku. Spotkanie i rozmowa z tymi co czytaja po polsku.",
-    "city": "Toronto",
-    "region": "Toronto",
-    "ageMin": 1,
-    "ageMax": 18,
-    "category": "Science & Engineering",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "deadline": "2026-11-04T14:00:00-04:00",
-    "startDate": "2026-11-04T14:00:00-04:00",
-    "endDate": "2026-11-04T15:30:00-04:00",
-    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6adf51d39dbc2b002c910d86",
-    "lastChecked": "2026-11-04",
-    "lastSeen": "2026-11-04",
-    "status": "needs_review",
-    "tags": [
-      "science & engineering"
-    ],
-    "confidence": "high",
-    "reviewReasons": [],
-    "sourceName": "Toronto Public Library youth volunteer events"
-  },
-  {
-    "id": "discovered-markham-events-stem-steam-drop-in-00a43c4989b4",
-    "title": "STEAM Drop-In",
+    "id": "discovered-markham-events-stem-stem-in-action-engineering-activities-civi-35c6469f239a",
+    "title": "STEM in Action - Engineering Activities: Civil",
     "organization": "Markham Public Library",
-    "description": "Join us anytime between 6:30 - 7:30 PM to explore all things STEAM (Science, Technology, Engineering, Arts, and Math). This drop-in program is designed for families to get curious and creative together!",
+    "description": "Civil Engineering: Earthquake-Resistant Tower Challenge Does your child enjoy building, experimenting, and solving hands-on challenges? In this civil engineering-focused session, participants will work in small teams to design and construct a tower that can withstand simulated earthquake conditions. Using simple materials, students will explore how engineers design structures that are strong, stable, and resilient. Throughout the challenge, they will test, improve, and redesign their towers as they learn what makes a structure stand up to real-world forces. Learning Outcomes • Identify and apply basic engineering design principles such as stability, balance, and structural strength in a building challenge. • Build, test, and improve the design of a prototype Participants: Children aged 8 -",
     "city": "Markham",
     "region": "York",
-    "ageMin": 1,
-    "ageMax": 18,
+    "ageMin": 6,
+    "ageMax": 12,
     "category": "Science & Engineering",
     "cost": "Free to join",
     "language": [
       "en"
     ],
-    "deadline": "2026-11-04T18:30:00-04:00",
-    "startDate": "2026-11-04T18:30:00-04:00",
-    "endDate": "2026-11-04T19:30:00-04:00",
-    "sourceUrl": "https://markham.bibliocommons.com/v2/events/6904d70b3cbc052f008290f4",
-    "lastChecked": "2026-11-04",
-    "lastSeen": "2026-11-04",
+    "deadline": "2026-11-05T17:30:00-04:00",
+    "startDate": "2026-11-05T17:30:00-04:00",
+    "endDate": "2026-11-05T19:00:00-04:00",
+    "sourceUrl": "https://markham.bibliocommons.com/v2/events/6a5e659c9943bdf31ea0474b",
+    "lastChecked": "2026-11-05",
+    "lastSeen": "2026-11-05",
     "status": "needs_review",
     "tags": [
       "science & engineering",
-      "steam"
+      "stem"
     ],
     "confidence": "high",
     "reviewReasons": [],
@@ -97,10 +69,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-11-04T09:00:00-04:00",
+    "startDate": "2026-11-05T09:00:00-04:00",
     "sourceUrl": "https://www.vaughanpl.info/volunteer",
-    "lastChecked": "2026-11-04",
-    "lastSeen": "2026-11-04",
+    "lastChecked": "2026-11-05",
+    "lastSeen": "2026-11-05",
     "status": "needs_review",
     "tags": [
       "volunteer hours",
@@ -113,26 +85,27 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Vaughan Public Libraries programs"
   },
   {
-    "id": "discovered-vaughan-library-programs-steam-club-2f89f6e0e686",
-    "title": "STEAM Club",
+    "id": "discovered-vaughan-library-programs-coding-buddies-5aee8640a30f",
+    "title": "Coding Buddies",
     "organization": "Vaughan Public Libraries",
-    "description": "STEAM Club listed by Vaughan Public Libraries programs.",
+    "description": "Coding Buddies listed by Vaughan Public Libraries programs.",
     "city": "Vaughan",
     "region": "York",
     "ageMin": 1,
     "ageMax": 18,
-    "category": "Science & Engineering",
+    "category": "Coding & Robotics",
     "cost": "Free to join",
     "language": [
       "en"
     ],
-    "startDate": "2026-11-04T09:00:00-04:00",
-    "sourceUrl": "https://www.vaughanpl.info/programs/view/2278",
-    "lastChecked": "2026-11-04",
-    "lastSeen": "2026-11-04",
+    "startDate": "2026-11-05T09:00:00-04:00",
+    "sourceUrl": "https://www.vaughanpl.info/programs/view/3085",
+    "lastChecked": "2026-11-05",
+    "lastSeen": "2026-11-05",
     "status": "needs_review",
     "tags": [
-      "science & engineering"
+      "coding & robotics",
+      "coding"
     ],
     "confidence": "high",
     "reviewReasons": [
@@ -154,10 +127,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-11-04T09:00:00-04:00",
+    "startDate": "2026-11-05T09:00:00-04:00",
     "sourceUrl": "https://www.rhpl.ca/working-with-the-library/volunteer-opportunities",
-    "lastChecked": "2026-11-04",
-    "lastSeen": "2026-11-04",
+    "lastChecked": "2026-11-05",
+    "lastSeen": "2026-11-05",
     "status": "needs_review",
     "tags": [
       "volunteer hours"
@@ -182,10 +155,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-11-04T09:00:00-04:00",
+    "startDate": "2026-11-05T09:00:00-04:00",
     "sourceUrl": "https://aurorapl.ca/volunteers",
-    "lastChecked": "2026-11-04",
-    "lastSeen": "2026-11-04",
+    "lastChecked": "2026-11-05",
+    "lastSeen": "2026-11-05",
     "status": "needs_review",
     "tags": [
       "volunteer hours"
@@ -210,10 +183,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-11-04T09:00:00-04:00",
+    "startDate": "2026-11-05T09:00:00-04:00",
     "sourceUrl": "https://ajaxlibrary.ca/Makerspace",
-    "lastChecked": "2026-11-04",
-    "lastSeen": "2026-11-04",
+    "lastChecked": "2026-11-05",
+    "lastSeen": "2026-11-05",
     "status": "needs_review",
     "tags": [
       "makerspace & fabrication"
@@ -238,10 +211,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-11-04T09:00:00-04:00",
+    "startDate": "2026-11-05T09:00:00-04:00",
     "sourceUrl": "https://pickeringlibrary.ca/resources/science-technology",
-    "lastChecked": "2026-11-04",
-    "lastSeen": "2026-11-04",
+    "lastChecked": "2026-11-05",
+    "lastSeen": "2026-11-05",
     "status": "needs_review",
     "tags": [
       "science & engineering",
@@ -267,73 +240,15 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-11-04T09:00:00-04:00",
+    "startDate": "2026-11-05T09:00:00-04:00",
     "sourceUrl": "https://pickeringlibrary.ca/makerspace",
-    "lastChecked": "2026-11-04",
-    "lastSeen": "2026-11-04",
+    "lastChecked": "2026-11-05",
+    "lastSeen": "2026-11-05",
     "status": "needs_review",
     "tags": [
       "makerspace & fabrication",
       "technology",
       "maker"
-    ],
-    "confidence": "high",
-    "reviewReasons": [
-      "No clear future date found on the crawled page."
-    ],
-    "sourceName": "Pickering Public Library technology events"
-  },
-  {
-    "id": "discovered-pickering-library-tech-which-ai-tool-is-right-for-you-5030c932462b",
-    "title": "Which AI Tool is Right for You?",
-    "organization": "Pickering Public Library",
-    "description": "Which AI Tool is Right for You? listed by Pickering Public Library technology events.",
-    "city": "Pickering",
-    "region": "Durham",
-    "ageMin": 1,
-    "ageMax": 18,
-    "category": "AI & Digital Media",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-11-04T09:00:00-04:00",
-    "sourceUrl": "https://cal.pickeringlibrary.ca/event/which-ai-tool-right-you-56328",
-    "lastChecked": "2026-11-04",
-    "lastSeen": "2026-11-04",
-    "status": "needs_review",
-    "tags": [
-      "ai & digital media"
-    ],
-    "confidence": "high",
-    "reviewReasons": [
-      "No clear future date found on the crawled page."
-    ],
-    "sourceName": "Pickering Public Library technology events"
-  },
-  {
-    "id": "discovered-pickering-library-tech-computers-and-technology-99e4cbcf5f11",
-    "title": "Computers and Technology",
-    "organization": "Pickering Public Library",
-    "description": "Computers and Technology listed by Pickering Public Library technology events.",
-    "city": "Pickering",
-    "region": "Durham",
-    "ageMin": 1,
-    "ageMax": 18,
-    "category": "STEM",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-11-04T09:00:00-04:00",
-    "sourceUrl": "https://pickeringlibrary.ca/explore/?programs=computers-and-technology",
-    "lastChecked": "2026-11-04",
-    "lastSeen": "2026-11-04",
-    "status": "needs_review",
-    "tags": [
-      "stem",
-      "technology",
-      "computers"
     ],
     "confidence": "high",
     "reviewReasons": [
@@ -355,14 +270,44 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-11-04T09:00:00-04:00",
+    "startDate": "2026-11-05T09:00:00-04:00",
     "sourceUrl": "https://pickering.bibliocommons.com/v2/list/display/1491301049/3106000637",
-    "lastChecked": "2026-11-04",
-    "lastSeen": "2026-11-04",
+    "lastChecked": "2026-11-05",
+    "lastSeen": "2026-11-05",
     "status": "needs_review",
     "tags": [
       "stem",
       "technology"
+    ],
+    "confidence": "high",
+    "reviewReasons": [
+      "No clear future date found on the crawled page."
+    ],
+    "sourceName": "Pickering Public Library technology events"
+  },
+  {
+    "id": "discovered-pickering-library-tech-computers-and-technology-99e4cbcf5f11",
+    "title": "Computers and Technology",
+    "organization": "Pickering Public Library",
+    "description": "Computers and Technology listed by Pickering Public Library technology events.",
+    "city": "Pickering",
+    "region": "Durham",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "STEM",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "startDate": "2026-11-05T09:00:00-04:00",
+    "sourceUrl": "https://pickeringlibrary.ca/explore/?programs=computers-and-technology",
+    "lastChecked": "2026-11-05",
+    "lastSeen": "2026-11-05",
+    "status": "needs_review",
+    "tags": [
+      "stem",
+      "technology",
+      "computers"
     ],
     "confidence": "high",
     "reviewReasons": [
@@ -384,10 +329,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-11-04T09:00:00-04:00",
+    "startDate": "2026-11-05T09:00:00-04:00",
     "sourceUrl": "https://pickering.bibliocommons.com/v2/list/display/1491301049/3037093477",
-    "lastChecked": "2026-11-04",
-    "lastSeen": "2026-11-04",
+    "lastChecked": "2026-11-05",
+    "lastSeen": "2026-11-05",
     "status": "needs_review",
     "tags": [
       "stem",
@@ -413,69 +358,13 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-11-04T09:00:00-04:00",
+    "startDate": "2026-11-05T09:00:00-04:00",
     "sourceUrl": "https://oshlib.bibliocommons.com/v2/events/6ad635c8fee2d21deb2449e0",
-    "lastChecked": "2026-11-04",
-    "lastSeen": "2026-11-04",
+    "lastChecked": "2026-11-05",
+    "lastSeen": "2026-11-05",
     "status": "needs_review",
     "tags": [
       "makerspace & fabrication"
-    ],
-    "confidence": "high",
-    "reviewReasons": [
-      "No clear future date found on the crawled page."
-    ],
-    "sourceName": "Oshawa Public Libraries STEM events"
-  },
-  {
-    "id": "discovered-oshawa-library-stem-climate-action-paper-bead-jewelry-eeb14961109c",
-    "title": "Climate Action: Paper Bead Jewelry",
-    "organization": "Oshawa Public Libraries",
-    "description": "Climate Action: Paper Bead Jewelry from Oshawa Public Libraries STEM events.",
-    "city": "Oshawa",
-    "region": "Durham",
-    "ageMin": 1,
-    "ageMax": 18,
-    "category": "Science & Engineering",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-11-04T09:00:00-04:00",
-    "sourceUrl": "https://oshlib.bibliocommons.com/v2/events/6a68cffff4e5db3d00c4d3aa",
-    "lastChecked": "2026-11-04",
-    "lastSeen": "2026-11-04",
-    "status": "needs_review",
-    "tags": [
-      "science & engineering"
-    ],
-    "confidence": "high",
-    "reviewReasons": [
-      "No clear future date found on the crawled page."
-    ],
-    "sourceName": "Oshawa Public Libraries STEM events"
-  },
-  {
-    "id": "discovered-oshawa-library-stem-steam-after-school-58e2f4c8a819",
-    "title": "STEAM After School",
-    "organization": "Oshawa Public Libraries",
-    "description": "STEAM After School from Oshawa Public Libraries STEM events.",
-    "city": "Oshawa",
-    "region": "Durham",
-    "ageMin": 1,
-    "ageMax": 18,
-    "category": "Science & Engineering",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-11-04T09:00:00-04:00",
-    "sourceUrl": "https://oshlib.bibliocommons.com/events/6a68e515f4e5db3d00c4db7c",
-    "lastChecked": "2026-11-04",
-    "lastSeen": "2026-11-04",
-    "status": "needs_review",
-    "tags": [
-      "science & engineering"
     ],
     "confidence": "high",
     "reviewReasons": [
@@ -497,10 +386,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-11-04T09:00:00-04:00",
+    "startDate": "2026-11-05T09:00:00-04:00",
     "sourceUrl": "https://oshawalibrary.ca/technology/makerspace",
-    "lastChecked": "2026-11-04",
-    "lastSeen": "2026-11-04",
+    "lastChecked": "2026-11-05",
+    "lastSeen": "2026-11-05",
     "status": "needs_review",
     "tags": [
       "makerspace & fabrication"
@@ -525,10 +414,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-11-04T09:00:00-04:00",
+    "startDate": "2026-11-05T09:00:00-04:00",
     "sourceUrl": "https://oshlib.bibliocommons.com/v2/list/display/2284869569/3150103367",
-    "lastChecked": "2026-11-04",
-    "lastSeen": "2026-11-04",
+    "lastChecked": "2026-11-05",
+    "lastSeen": "2026-11-05",
     "status": "needs_review",
     "tags": [
       "science & engineering"
@@ -553,10 +442,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-11-04T09:00:00-04:00",
+    "startDate": "2026-11-05T09:00:00-04:00",
     "sourceUrl": "http://www.cplma.ca/learning-technology",
-    "lastChecked": "2026-11-04",
-    "lastSeen": "2026-11-04",
+    "lastChecked": "2026-11-05",
+    "lastSeen": "2026-11-05",
     "status": "needs_review",
     "tags": [
       "stem",
@@ -582,10 +471,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-11-04T09:00:00-04:00",
+    "startDate": "2026-11-05T09:00:00-04:00",
     "sourceUrl": "http://www.cplma.ca/learning-technology/computers-and-internet-access",
-    "lastChecked": "2026-11-04",
-    "lastSeen": "2026-11-04",
+    "lastChecked": "2026-11-05",
+    "lastSeen": "2026-11-05",
     "status": "needs_review",
     "tags": [
       "stem"
@@ -610,10 +499,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-11-04T09:00:00-04:00",
+    "startDate": "2026-11-05T09:00:00-04:00",
     "sourceUrl": "http://www.cplma.ca/learning-technology/makers-space-the-studio",
-    "lastChecked": "2026-11-04",
-    "lastSeen": "2026-11-04",
+    "lastChecked": "2026-11-05",
+    "lastSeen": "2026-11-05",
     "status": "needs_review",
     "tags": [
       "makerspace & fabrication"
@@ -638,10 +527,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-11-04T09:00:00-04:00",
+    "startDate": "2026-11-05T09:00:00-04:00",
     "sourceUrl": "http://www.cplma.ca/about-us/jobs-and-volunteering",
-    "lastChecked": "2026-11-04",
-    "lastSeen": "2026-11-04",
+    "lastChecked": "2026-11-05",
+    "lastSeen": "2026-11-05",
     "status": "needs_review",
     "tags": [
       "volunteer hours"
@@ -666,10 +555,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-11-04T09:00:00-04:00",
+    "startDate": "2026-11-05T09:00:00-04:00",
     "sourceUrl": "https://www.cplma.ca/programs-services/reading-and-math-buddies",
-    "lastChecked": "2026-11-04",
-    "lastSeen": "2026-11-04",
+    "lastChecked": "2026-11-05",
+    "lastSeen": "2026-11-05",
     "status": "needs_review",
     "tags": [
       "science & engineering"
@@ -694,10 +583,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-11-04T09:00:00-04:00",
+    "startDate": "2026-11-05T09:00:00-04:00",
     "sourceUrl": "https://www.mississauga.ca/library/library-jobs-and-volunteer",
-    "lastChecked": "2026-11-04",
-    "lastSeen": "2026-11-04",
+    "lastChecked": "2026-11-05",
+    "lastSeen": "2026-11-05",
     "status": "needs_review",
     "tags": [
       "volunteer hours",
@@ -723,10 +612,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-11-04T09:00:00-04:00",
+    "startDate": "2026-11-05T09:00:00-04:00",
     "sourceUrl": "https://app.betterimpact.com/PublicEnterprise/EnterpriseSearch?EnterpriseGuid=e3200288-2b64-4ed8-a26d-5bd0f4c5170b&SearchType=OrganizationClassification&SearchId=9624",
-    "lastChecked": "2026-11-04",
-    "lastSeen": "2026-11-04",
+    "lastChecked": "2026-11-05",
+    "lastSeen": "2026-11-05",
     "status": "needs_review",
     "tags": [
       "volunteer hours",
@@ -753,10 +642,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-11-04T09:00:00-04:00",
+    "startDate": "2026-11-05T09:00:00-04:00",
     "sourceUrl": "https://beinspired.ca/volunteer-opportunities",
-    "lastChecked": "2026-11-04",
-    "lastSeen": "2026-11-04",
+    "lastChecked": "2026-11-05",
+    "lastSeen": "2026-11-05",
     "status": "needs_review",
     "tags": [
       "volunteer hours",
@@ -782,10 +671,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-11-04T09:00:00-04:00",
+    "startDate": "2026-11-05T09:00:00-04:00",
     "sourceUrl": "https://beinspired.ca",
-    "lastChecked": "2026-11-04",
-    "lastSeen": "2026-11-04",
+    "lastChecked": "2026-11-05",
+    "lastSeen": "2026-11-05",
     "status": "needs_review",
     "tags": [
       "stem"
@@ -810,10 +699,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-11-04T09:00:00-04:00",
+    "startDate": "2026-11-05T09:00:00-04:00",
     "sourceUrl": "https://beinspired.ca/computer-services",
-    "lastChecked": "2026-11-04",
-    "lastSeen": "2026-11-04",
+    "lastChecked": "2026-11-05",
+    "lastSeen": "2026-11-05",
     "status": "needs_review",
     "tags": [
       "stem"
@@ -838,10 +727,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-11-04T09:00:00-04:00",
+    "startDate": "2026-11-05T09:00:00-04:00",
     "sourceUrl": "https://www.hhpl.ca/services/technology-resources",
-    "lastChecked": "2026-11-04",
-    "lastSeen": "2026-11-04",
+    "lastChecked": "2026-11-05",
+    "lastSeen": "2026-11-05",
     "status": "needs_review",
     "tags": [
       "stem",
@@ -867,10 +756,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-11-04T09:00:00-04:00",
+    "startDate": "2026-11-05T09:00:00-04:00",
     "sourceUrl": "https://www.hhpl.ca/computers",
-    "lastChecked": "2026-11-04",
-    "lastSeen": "2026-11-04",
+    "lastChecked": "2026-11-05",
+    "lastSeen": "2026-11-05",
     "status": "needs_review",
     "tags": [
       "stem"
@@ -895,10 +784,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-11-04T09:00:00-04:00",
+    "startDate": "2026-11-05T09:00:00-04:00",
     "sourceUrl": "https://trca.ca/get-involved/youth-opportunities",
-    "lastChecked": "2026-11-04",
-    "lastSeen": "2026-11-04",
+    "lastChecked": "2026-11-05",
+    "lastSeen": "2026-11-05",
     "status": "needs_review",
     "tags": [
       "science & engineering",
@@ -926,10 +815,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-11-04T09:00:00-04:00",
+    "startDate": "2026-11-05T09:00:00-04:00",
     "sourceUrl": "https://trca.ca/get-involved/volunteer",
-    "lastChecked": "2026-11-04",
-    "lastSeen": "2026-11-04",
+    "lastChecked": "2026-11-05",
+    "lastSeen": "2026-11-05",
     "status": "needs_review",
     "tags": [
       "volunteer hours",
@@ -956,10 +845,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-11-04T09:00:00-04:00",
+    "startDate": "2026-11-05T09:00:00-04:00",
     "sourceUrl": "https://uhnstempathways.ca",
-    "lastChecked": "2026-11-04",
-    "lastSeen": "2026-11-04",
+    "lastChecked": "2026-11-05",
+    "lastSeen": "2026-11-05",
     "status": "needs_review",
     "tags": [
       "science & engineering",
@@ -986,10 +875,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-11-04T09:00:00-04:00",
+    "startDate": "2026-11-05T09:00:00-04:00",
     "sourceUrl": "https://uhnstempathways.ca/volunteer-spotlight",
-    "lastChecked": "2026-11-04",
-    "lastSeen": "2026-11-04",
+    "lastChecked": "2026-11-05",
+    "lastSeen": "2026-11-05",
     "status": "needs_review",
     "tags": [
       "volunteer hours"
@@ -1015,10 +904,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-11-04T09:00:00-04:00",
+    "startDate": "2026-11-05T09:00:00-04:00",
     "sourceUrl": "https://uhnstempathways.ca/volunteers",
-    "lastChecked": "2026-11-04",
-    "lastSeen": "2026-11-04",
+    "lastChecked": "2026-11-05",
+    "lastSeen": "2026-11-05",
     "status": "needs_review",
     "tags": [
       "volunteer hours"
@@ -1044,10 +933,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-11-04T09:00:00-04:00",
+    "startDate": "2026-11-05T09:00:00-04:00",
     "sourceUrl": "https://uhnstempathways.ca/upcoming/healthcare-tech",
-    "lastChecked": "2026-11-04",
-    "lastSeen": "2026-11-04",
+    "lastChecked": "2026-11-05",
+    "lastSeen": "2026-11-05",
     "status": "needs_review",
     "tags": [
       "science & engineering",
@@ -1074,10 +963,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-11-04T09:00:00-04:00",
+    "startDate": "2026-11-05T09:00:00-04:00",
     "sourceUrl": "https://uhnstempathways.ca/upcoming/stem-talks-2026-overview",
-    "lastChecked": "2026-11-04",
-    "lastSeen": "2026-11-04",
+    "lastChecked": "2026-11-05",
+    "lastSeen": "2026-11-05",
     "status": "needs_review",
     "tags": [
       "science & engineering",
@@ -1104,10 +993,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-11-04T09:00:00-04:00",
+    "startDate": "2026-11-05T09:00:00-04:00",
     "sourceUrl": "https://outreach.engineering.utoronto.ca",
-    "lastChecked": "2026-11-04",
-    "lastSeen": "2026-11-04",
+    "lastChecked": "2026-11-05",
+    "lastSeen": "2026-11-05",
     "status": "needs_review",
     "tags": [
       "science & engineering",
@@ -1135,10 +1024,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-11-04T09:00:00-04:00",
+    "startDate": "2026-11-05T09:00:00-04:00",
     "sourceUrl": "https://www.engineering.utoronto.ca",
-    "lastChecked": "2026-11-04",
-    "lastSeen": "2026-11-04",
+    "lastChecked": "2026-11-05",
+    "lastSeen": "2026-11-05",
     "status": "needs_review",
     "tags": [
       "science & engineering",
@@ -1165,10 +1054,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-11-04T09:00:00-04:00",
+    "startDate": "2026-11-05T09:00:00-04:00",
     "sourceUrl": "https://outreach.engineering.utoronto.ca/about-us",
-    "lastChecked": "2026-11-04",
-    "lastSeen": "2026-11-04",
+    "lastChecked": "2026-11-05",
+    "lastSeen": "2026-11-05",
     "status": "needs_review",
     "tags": [
       "science & engineering",
@@ -1195,10 +1084,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-11-04T09:00:00-04:00",
+    "startDate": "2026-11-05T09:00:00-04:00",
     "sourceUrl": "https://outreach.engineering.utoronto.ca/pre-university-programs/high-school-program/create",
-    "lastChecked": "2026-11-04",
-    "lastSeen": "2026-11-04",
+    "lastChecked": "2026-11-05",
+    "lastSeen": "2026-11-05",
     "status": "needs_review",
     "tags": [
       "science & engineering",
@@ -1225,10 +1114,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-11-04T09:00:00-04:00",
+    "startDate": "2026-11-05T09:00:00-04:00",
     "sourceUrl": "https://outreach.engineering.utoronto.ca/pre-university-programs/elementary/engineering-discovery-day",
-    "lastChecked": "2026-11-04",
-    "lastSeen": "2026-11-04",
+    "lastChecked": "2026-11-05",
+    "lastSeen": "2026-11-05",
     "status": "needs_review",
     "tags": [
       "science & engineering",
@@ -1255,10 +1144,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-11-04T09:00:00-04:00",
+    "startDate": "2026-11-05T09:00:00-04:00",
     "sourceUrl": "https://outreach.engineering.utoronto.ca/about-us/volunteer-opportunities",
-    "lastChecked": "2026-11-04",
-    "lastSeen": "2026-11-04",
+    "lastChecked": "2026-11-05",
+    "lastSeen": "2026-11-05",
     "status": "needs_review",
     "tags": [
       "volunteer hours"
@@ -1284,10 +1173,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-11-04T09:00:00-04:00",
+    "startDate": "2026-11-05T09:00:00-04:00",
     "sourceUrl": "https://data.viceprovoststudents.utoronto.ca",
-    "lastChecked": "2026-11-04",
-    "lastSeen": "2026-11-04",
+    "lastChecked": "2026-11-05",
+    "lastSeen": "2026-11-05",
     "status": "needs_review",
     "tags": [
       "science & engineering"
@@ -1313,10 +1202,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-11-04T09:00:00-04:00",
+    "startDate": "2026-11-05T09:00:00-04:00",
     "sourceUrl": "https://engineering.ontariotechu.ca/outreach/index.php",
-    "lastChecked": "2026-11-04",
-    "lastSeen": "2026-11-04",
+    "lastChecked": "2026-11-05",
+    "lastSeen": "2026-11-05",
     "status": "needs_review",
     "tags": [
       "science & engineering",
@@ -1343,10 +1232,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-11-04T09:00:00-04:00",
+    "startDate": "2026-11-05T09:00:00-04:00",
     "sourceUrl": "https://engineering.ontariotechu.ca/outreach/about-us/outreach-supporters.php",
-    "lastChecked": "2026-11-04",
-    "lastSeen": "2026-11-04",
+    "lastChecked": "2026-11-05",
+    "lastSeen": "2026-11-05",
     "status": "needs_review",
     "tags": [
       "science & engineering",
@@ -1373,10 +1262,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-11-04T09:00:00-04:00",
+    "startDate": "2026-11-05T09:00:00-04:00",
     "sourceUrl": "https://engineering.ontariotechu.ca/outreach/about-us/in-the-community.php",
-    "lastChecked": "2026-11-04",
-    "lastSeen": "2026-11-04",
+    "lastChecked": "2026-11-05",
+    "lastSeen": "2026-11-05",
     "status": "needs_review",
     "tags": [
       "science & engineering",
@@ -1403,10 +1292,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-11-04T09:00:00-04:00",
+    "startDate": "2026-11-05T09:00:00-04:00",
     "sourceUrl": "https://forms.gle/bDWdmyHJ4pVqsxpy5",
-    "lastChecked": "2026-11-04",
-    "lastSeen": "2026-11-04",
+    "lastChecked": "2026-11-05",
+    "lastSeen": "2026-11-05",
     "status": "needs_review",
     "tags": [
       "science & engineering",
@@ -1433,10 +1322,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "startDate": "2026-11-04T09:00:00-04:00",
+    "startDate": "2026-11-05T09:00:00-04:00",
     "sourceUrl": "https://engineering.ontariotechu.ca/outreach/about-us/volunteer.php",
-    "lastChecked": "2026-11-04",
-    "lastSeen": "2026-11-04",
+    "lastChecked": "2026-11-05",
+    "lastSeen": "2026-11-05",
     "status": "needs_review",
     "tags": [
       "volunteer hours"
