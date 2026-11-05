@@ -3,57 +3,57 @@ import type { DiscoveredOpportunity } from "./discovery";
 export const generatedDiscoverySummary = {
   "mode": "deterministic",
   "sourcesChecked": 30,
-  "candidatesFound": 266,
-  "newCandidates": 45,
-  "duplicatesSkipped": 32,
+  "candidatesFound": 233,
+  "newCandidates": 43,
+  "duplicatesSkipped": 26,
   "warnings": [
     "Could not check Credit Valley Conservation youth opportunities: 403 Forbidden.",
+    "Could not check TRCA youth volunteer opportunities: fetch failed.",
     "Could not check Volunteer MBC youth opportunities: 403 Forbidden.",
     "Could not check Eventbrite free science and technology events: 405 Not Allowed.",
     "Could not check Eventbrite free online science and technology events: 405 Not Allowed."
   ],
   "sourceHealth": {
     "schemaVersion": 1,
-    "generatedAt": "2026-11-05T06:52:44.696Z",
+    "generatedAt": "2026-11-05T20:01:27.799Z",
     "status": "healthy",
     "failureReasons": [],
     "sourcesChecked": 30,
-    "successfulSources": 26,
-    "failedSources": 4,
-    "sourceSuccessRatio": 0.8667,
+    "successfulSources": 25,
+    "failedSources": 5,
+    "sourceSuccessRatio": 0.8333,
     "minimumSourceSuccessRatio": 0.75
   }
 } as const;
 
 export const generatedDiscoveryReviewCandidates = [
   {
-    "id": "discovered-markham-events-stem-stem-in-action-engineering-activities-civi-35c6469f239a",
-    "title": "STEM in Action - Engineering Activities: Civil",
-    "organization": "Markham Public Library",
-    "description": "Civil Engineering: Earthquake-Resistant Tower Challenge Does your child enjoy building, experimenting, and solving hands-on challenges? In this civil engineering-focused session, participants will work in small teams to design and construct a tower that can withstand simulated earthquake conditions. Using simple materials, students will explore how engineers design structures that are strong, stable, and resilient. Throughout the challenge, they will test, improve, and redesign their towers as they learn what makes a structure stand up to real-world forces. Learning Outcomes • Identify and apply basic engineering design principles such as stability, balance, and structural strength in a building challenge. • Build, test, and improve the design of a prototype Participants: Children aged 8 -",
-    "city": "Markham",
-    "region": "York",
-    "ageMin": 6,
-    "ageMax": 12,
-    "category": "Science & Engineering",
+    "id": "discovered-tpl-events-stem-google-ai-essentials-online-learning-circl-d5ea72575df3",
+    "title": "Google AI Essentials: Online Learning Circle",
+    "organization": "Toronto Public Library",
+    "description": "Curious about artificial intelligence or want to learn practical AI skills for work and personal use? Join our staff-facilitated learning circle to complete the self-paced Google AI Essentials specialization. This 10-hour introductory-level specialization, offered through Coursera, is available for free to learning circle participants. It is made up of five courses, each containing four units that consist of short videos, articles, assignments and a short multiple-choice quiz. By completing the specialization, you will learn: How AI works How to write effective prompts How to use generative AI tools responsibly How to identify AI's potential biases and avoid harm How to stay up to date with AI news After you complete the course, you earn a Google certificate and a badge to share with other",
+    "city": "Toronto",
+    "region": "Toronto",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "AI & Digital Media",
     "cost": "Free to join",
     "language": [
       "en"
     ],
-    "deadline": "2026-11-05T17:30:00-04:00",
-    "startDate": "2026-11-05T17:30:00-04:00",
-    "endDate": "2026-11-05T19:00:00-04:00",
-    "sourceUrl": "https://markham.bibliocommons.com/v2/events/6a5e659c9943bdf31ea0474b",
+    "deadline": "2026-11-05T14:00:00-04:00",
+    "startDate": "2026-11-05T14:00:00-04:00",
+    "endDate": "2026-11-05T16:00:00-04:00",
+    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6a89c44b29a7dd0d6745c19b",
     "lastChecked": "2026-11-05",
     "lastSeen": "2026-11-05",
     "status": "needs_review",
     "tags": [
-      "science & engineering",
-      "stem"
+      "ai & digital media"
     ],
     "confidence": "high",
     "reviewReasons": [],
-    "sourceName": "Markham Public Library events"
+    "sourceName": "Toronto Public Library events"
   },
   {
     "id": "discovered-vaughan-library-programs-volunteer-opportunities-e775e833a50b",
@@ -769,67 +769,6 @@ export const generatedDiscoveryReviewCandidates = [
       "No clear future date found on the crawled page."
     ],
     "sourceName": "Halton Hills Public Library programs"
-  },
-  {
-    "id": "discovered-trca-youth-youth-opportunities-at-trca-bd0e50237819",
-    "title": "Youth Opportunities at TRCA",
-    "organization": "Toronto and Region Conservation Authority",
-    "description": "TRCA offers programs to support youth and young adults who are interested in getting involved in the conservation sector.",
-    "city": "Toronto",
-    "region": "Toronto",
-    "ageMin": 13,
-    "ageMax": 18,
-    "category": "Science & Engineering",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-11-05T09:00:00-04:00",
-    "sourceUrl": "https://trca.ca/get-involved/youth-opportunities",
-    "lastChecked": "2026-11-05",
-    "lastSeen": "2026-11-05",
-    "status": "needs_review",
-    "tags": [
-      "science & engineering",
-      "youth",
-      "conservation"
-    ],
-    "confidence": "medium",
-    "reviewReasons": [
-      "No clear future date found on the crawled page.",
-      "Free access wording needs human confirmation."
-    ],
-    "sourceName": "TRCA youth volunteer opportunities"
-  },
-  {
-    "id": "discovered-trca-youth-volunteer-with-trca-cdffdd979d6f",
-    "title": "Volunteer with TRCA",
-    "organization": "Toronto and Region Conservation Authority",
-    "description": "Volunteer with TRCA listed by TRCA youth volunteer opportunities.",
-    "city": "Toronto",
-    "region": "Toronto",
-    "ageMin": 13,
-    "ageMax": 18,
-    "category": "Volunteer Hours",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-11-05T09:00:00-04:00",
-    "sourceUrl": "https://trca.ca/get-involved/volunteer",
-    "lastChecked": "2026-11-05",
-    "lastSeen": "2026-11-05",
-    "status": "needs_review",
-    "tags": [
-      "volunteer hours",
-      "volunteer"
-    ],
-    "confidence": "medium",
-    "reviewReasons": [
-      "No clear future date found on the crawled page.",
-      "Free access wording needs human confirmation."
-    ],
-    "sourceName": "TRCA youth volunteer opportunities"
   },
   {
     "id": "discovered-uhn-stem-pathways-uhn-stem-pathways-7847b49cfe74",
