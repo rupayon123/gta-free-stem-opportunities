@@ -5,7 +5,7 @@ export const generatedDiscoverySummary = {
   "sourcesChecked": 30,
   "candidatesFound": 263,
   "newCandidates": 46,
-  "duplicatesSkipped": 35,
+  "duplicatesSkipped": 46,
   "warnings": [
     "Could not check Credit Valley Conservation youth opportunities: 403 Forbidden.",
     "Could not check Volunteer MBC youth opportunities: 403 Forbidden.",
@@ -14,7 +14,7 @@ export const generatedDiscoverySummary = {
   ],
   "sourceHealth": {
     "schemaVersion": 1,
-    "generatedAt": "2026-11-06T06:52:48.760Z",
+    "generatedAt": "2026-11-06T19:28:33.304Z",
     "status": "healthy",
     "failureReasons": [],
     "sourcesChecked": 30,
@@ -27,32 +27,33 @@ export const generatedDiscoverySummary = {
 
 export const generatedDiscoveryReviewCandidates = [
   {
-    "id": "discovered-tpl-events-volunteer-google-prompting-essentials-online-learnin-e635338bdcb8",
-    "title": "Google Prompting Essentials: Online Learning Circle",
-    "organization": "Toronto Public Library",
-    "description": "Ready to develop the skills to use generative AI (GenAI) tools effectively and responsibly for work and daily life? Join our staff-facilitated Learning Circle to complete the self-paced Google Prompting specialization. By completing this Learning Circle program, you will earn a Google Prompting Essentials certificate to share on your resume, LinkedIn and social media profiles! What You'll Learn This program is designed for those with some experience with using GenAI. Through short videos, articles, assignments and quizzes, you will discover: Essential Prompting Skills : How to use a prompting framework to create a desired output with GenAI; how to evaluate and refine your results. Everyday Work Tasks: Strategies to draft content, brainstorm ideas, create tables, timelines, and more. Data &",
-    "city": "Toronto",
-    "region": "Toronto",
-    "ageMin": 1,
-    "ageMax": 18,
-    "category": "AI & Digital Media",
+    "id": "discovered-markham-events-volunteer-reading-to-success-8ae63895e1a0",
+    "title": "Reading to Success",
+    "organization": "Markham Public Library",
+    "description": "Help your child build confidence and a love of reading through Reading to Success, a weekly literacy program offered by YPAM in partnership with Markham Public Library, where volunteer readers share age-appropriate books with children in Junior Kindergarten, Senior Kindergarten, Grades 1 and 2, and children with IEPs. Through engaging read-aloud sessions and regular participation, your child will strengthen literacy skills while developing positive reading habits in a supportive environment. You will: Build reading comprehension, listening, and literacy skills through grade-specific stories. Develop a consistent reading routine and greater confidence with books. Program format: Weekly volunteer-led read-aloud sessions featuring grade-specific books for young readers. Registration: Visit ht",
+    "city": "Markham",
+    "region": "York",
+    "ageMin": 6,
+    "ageMax": 12,
+    "category": "Volunteer Hours",
     "cost": "Free to join",
     "language": [
       "en"
     ],
-    "deadline": "2026-11-06T09:30:00-04:00",
-    "startDate": "2026-11-06T09:30:00-04:00",
-    "endDate": "2026-11-06T12:00:00-04:00",
-    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6ae64bc5901b02002cc6747a",
+    "deadline": "2026-11-07T13:00:00-04:00",
+    "startDate": "2026-11-07T13:00:00-04:00",
+    "endDate": "2026-11-07T14:30:00-04:00",
+    "sourceUrl": "https://markham.bibliocommons.com/v2/events/6a8f34d01c197d11325b03e6",
     "lastChecked": "2026-11-06",
     "lastSeen": "2026-11-06",
     "status": "needs_review",
     "tags": [
-      "ai & digital media"
+      "volunteer hours",
+      "volunteer"
     ],
     "confidence": "high",
     "reviewReasons": [],
-    "sourceName": "Toronto Public Library youth volunteer events"
+    "sourceName": "Markham Public Library youth volunteer events"
   },
   {
     "id": "discovered-vaughan-library-programs-volunteer-opportunities-e775e833a50b",
