@@ -4,8 +4,8 @@ export const generatedDiscoverySummary = {
   "mode": "deterministic",
   "sourcesChecked": 30,
   "candidatesFound": 230,
-  "newCandidates": 46,
-  "duplicatesSkipped": 38,
+  "newCandidates": 45,
+  "duplicatesSkipped": 29,
   "warnings": [
     "Could not check Credit Valley Conservation youth opportunities: 403 Forbidden.",
     "Could not check TRCA youth volunteer opportunities: fetch failed.",
@@ -15,7 +15,7 @@ export const generatedDiscoverySummary = {
   ],
   "sourceHealth": {
     "schemaVersion": 1,
-    "generatedAt": "2026-11-07T13:07:33.209Z",
+    "generatedAt": "2026-11-07T21:55:55.881Z",
     "status": "healthy",
     "failureReasons": [],
     "sourcesChecked": 30,
@@ -28,65 +28,36 @@ export const generatedDiscoverySummary = {
 
 export const generatedDiscoveryReviewCandidates = [
   {
-    "id": "discovered-tpl-events-volunteer-seniors-e-connect-tech-help-2c59b6d0dabb",
-    "title": "Seniors E-Connect: Tech Help",
-    "organization": "Toronto Public Library",
-    "description": "Seniors E-Connect matches older adults with a teen volunteer to provide tech help, under the guidance of library staff. Learn the basics of using smartphones, tablets, and laptops and learn about topics such as library databases, various mobile apps, Microsoft Office and Google Suite software. Get one on one support in a welcoming and friendly environment. Register online, by phone or in-branch. Please bring your device(s) and any information you might need for the inquiry. If you're a teen between the ages of 13-17 and would like to learn more about becoming a Seniors E-Connect volunteer, visit the Seniors E-Connect Volunteering page or contact the branch. Information Collection Notice: The personal information on this form is collected by the Toronto Public Library under the Public Libra",
-    "city": "Toronto",
-    "region": "Toronto",
-    "ageMin": 13,
+    "id": "discovered-markham-events-volunteer-knitting-circle-3028ae51ee9a",
+    "title": "Knitting Circle",
+    "organization": "Markham Public Library",
+    "description": "Connect with fellow knitters and crocheters through this welcoming community knitting circle, held in partnership with Casting Off the Cold, a volunteer organization that has donated handmade items to local charities in York Region since 2006. Share your completed projects, contribute to charitable donations, and exchange ideas with others who enjoy knitting and crochet in a monthly meet-up designed for all experience levels. You will: Learn about community crafting initiatives and how handmade items support local charitable organizations. Gain inspiration, tips, and encouragement by connecting with other knitters and crocheters. Program format: Monthly social gathering where participants showcase and donate completed knitting and crochet projects; this is not an instructional class.",
+    "city": "Markham",
+    "region": "York",
+    "ageMin": 1,
     "ageMax": 18,
     "category": "Volunteer Hours",
     "cost": "Free to join",
     "language": [
       "en"
     ],
-    "deadline": "2026-11-07T10:00:00-04:00",
-    "startDate": "2026-11-07T10:00:00-04:00",
-    "endDate": "2026-11-07T11:30:00-04:00",
-    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6ae91f5ef9d28050ccb0bd0d",
+    "deadline": "2026-11-08T13:00:00-04:00",
+    "startDate": "2026-11-08T13:00:00-04:00",
+    "endDate": "2026-11-08T15:00:00-04:00",
+    "sourceUrl": "https://markham.bibliocommons.com/v2/events/68fbdf2de59a13000d3e1ded",
     "lastChecked": "2026-11-07",
     "lastSeen": "2026-11-07",
     "status": "needs_review",
     "tags": [
       "volunteer hours",
-      "volunteer",
-      "teen"
+      "volunteer"
     ],
     "confidence": "high",
     "reviewReasons": [],
-    "sourceName": "Toronto Public Library youth volunteer events"
+    "sourceName": "Markham Public Library youth volunteer events"
   },
   {
-    "id": "discovered-tpl-events-volunteer-game-on-board-game-playtime-5dde794d3d59",
-    "title": "Game on! Board Game Playtime",
-    "organization": "Toronto Public Library",
-    "description": "Join us for a fun-filled day of board games and puzzles! Play your favourites or try something new! Brings your friends and family or meet new people at the library. Games available for use in the Children's Area. Available games include: Ball Fall Jumbo (Ages 3+), STEM Pretend Flower Garden Toy Set (Ages 3-6), Operation (Ages 6+), STEM Road Builder Game (Ages 4-8), Dinosaur Tetra Tower Balance Stacking Blocks Game (Ages 6+) Available puzzles include: Giant World Map Puzzle (Ages 4+), Canada Map Jigsaw Puzzle (Ages 4-12), ABC Puzzle (Ages 3+)",
-    "city": "Toronto",
-    "region": "Toronto",
-    "ageMin": 3,
-    "ageMax": 6,
-    "category": "Science & Engineering",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "deadline": "2026-11-07T09:00:00-04:00",
-    "startDate": "2026-11-07T09:00:00-04:00",
-    "endDate": "2026-11-07T16:30:00-04:00",
-    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6a5e99f388e9bf2800322b5f",
-    "lastChecked": "2026-11-07",
-    "lastSeen": "2026-11-07",
-    "status": "needs_review",
-    "tags": [
-      "science & engineering"
-    ],
-    "confidence": "high",
-    "reviewReasons": [],
-    "sourceName": "Toronto Public Library youth volunteer events"
-  },
-  {
-    "id": "discovered-markham-events-volunteer-reading-to-success-e42525c243c3",
+    "id": "discovered-markham-events-volunteer-reading-to-success-2844f6cb8ba3",
     "title": "Reading to Success",
     "organization": "Markham Public Library",
     "description": "Help your child build confidence and a love of reading through Reading to Success, a weekly literacy program offered by YPAM in partnership with Markham Public Library, where volunteer readers share age-appropriate books with children in Junior Kindergarten, Senior Kindergarten, Grades 1 and 2, and children with IEPs. Through engaging read-aloud sessions and regular participation, your child will strengthen literacy skills while developing positive reading habits in a supportive environment. You will: Build reading comprehension, listening, and literacy skills through grade-specific stories. Develop a consistent reading routine and greater confidence with books. Program format: Weekly volunteer-led read-aloud sessions featuring grade-specific books for young readers. Registration: Visit ht",
@@ -99,10 +70,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "deadline": "2026-11-07T13:00:00-04:00",
-    "startDate": "2026-11-07T13:00:00-04:00",
-    "endDate": "2026-11-07T14:30:00-04:00",
-    "sourceUrl": "https://markham.bibliocommons.com/v2/events/68fbdc50e59a13000d3e1cac",
+    "deadline": "2026-11-09T18:00:00-04:00",
+    "startDate": "2026-11-09T18:00:00-04:00",
+    "endDate": "2026-11-09T19:30:00-04:00",
+    "sourceUrl": "https://markham.bibliocommons.com/v2/events/68fbd37875911f28001a2369",
     "lastChecked": "2026-11-07",
     "lastSeen": "2026-11-07",
     "status": "needs_review",
@@ -224,6 +195,35 @@ export const generatedDiscoveryReviewCandidates = [
     "tags": [
       "makerspace & fabrication",
       "maker"
+    ],
+    "confidence": "high",
+    "reviewReasons": [],
+    "sourceName": "Aurora Public Library STEM events"
+  },
+  {
+    "id": "discovered-aurora-library-stem-winter-ornament-laser-engraving-288e70aab417",
+    "title": "Winter Ornament Laser Engraving",
+    "organization": "Aurora Public Library",
+    "description": "Get into the winter spirit with our Winter Ornament Laser Engraving program! Participants will learn the basics of laser engraving while creating a beautiful, personalized glass ornament. With guidance each participant will create a unique ornament that can be proudly displayed or given as a special homemade gift. This program is a fun introduction to digital fabrication and laser technology, combining creativity, hands-on learning, and holiday crafting. Perfect for beginners and anyone looking to create a meaningful keepsake for the holiday season. Participants will: Learn basic laser engraving concepts and safe equipment practices. Select a festive design for their ornament. Personalize their ornament with a name, date, or holiday message. Use the laser engraver to create their finished ",
+    "city": "Aurora",
+    "region": "York",
+    "ageMin": 1,
+    "ageMax": 18,
+    "category": "Makerspace & Fabrication",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "deadline": "2026-11-10T18:00:00-04:00",
+    "startDate": "2026-11-10T18:00:00-04:00",
+    "endDate": "2026-11-10T20:00:00-04:00",
+    "sourceUrl": "https://aurora.bibliocommons.com/v2/events/6a7cbd5d386764026a16c09c",
+    "lastChecked": "2026-11-07",
+    "lastSeen": "2026-11-07",
+    "status": "needs_review",
+    "tags": [
+      "makerspace & fabrication",
+      "technology"
     ],
     "confidence": "high",
     "reviewReasons": [],
@@ -396,35 +396,6 @@ export const generatedDiscoveryReviewCandidates = [
       "stem",
       "technology",
       "computers"
-    ],
-    "confidence": "high",
-    "reviewReasons": [
-      "No clear future date found on the crawled page."
-    ],
-    "sourceName": "Pickering Public Library technology events"
-  },
-  {
-    "id": "discovered-pickering-library-tech-technology-for-health-fitness-c25f6de4b42e",
-    "title": "Technology for Health & Fitness",
-    "organization": "Pickering Public Library",
-    "description": "Technology for Health & Fitness listed by Pickering Public Library technology events.",
-    "city": "Pickering",
-    "region": "Durham",
-    "ageMin": 1,
-    "ageMax": 18,
-    "category": "STEM",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-11-07T09:00:00-04:00",
-    "sourceUrl": "https://pickering.bibliocommons.com/v2/list/display/1491301049/3037093477",
-    "lastChecked": "2026-11-07",
-    "lastSeen": "2026-11-07",
-    "status": "needs_review",
-    "tags": [
-      "stem",
-      "technology"
     ],
     "confidence": "high",
     "reviewReasons": [
