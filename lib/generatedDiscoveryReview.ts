@@ -3,60 +3,60 @@ import type { DiscoveredOpportunity } from "./discovery";
 export const generatedDiscoverySummary = {
   "mode": "deterministic",
   "sourcesChecked": 30,
-  "candidatesFound": 263,
-  "newCandidates": 47,
-  "duplicatesSkipped": 36,
+  "candidatesFound": 230,
+  "newCandidates": 45,
+  "duplicatesSkipped": 22,
   "warnings": [
     "Could not check Credit Valley Conservation youth opportunities: 403 Forbidden.",
+    "Could not check TRCA youth volunteer opportunities: fetch failed.",
     "Could not check Volunteer MBC youth opportunities: 403 Forbidden.",
     "Could not check Eventbrite free science and technology events: 405 Not Allowed.",
     "Could not check Eventbrite free online science and technology events: 405 Not Allowed."
   ],
   "sourceHealth": {
     "schemaVersion": 1,
-    "generatedAt": "2026-11-08T13:30:04.946Z",
+    "generatedAt": "2026-11-08T22:10:54.394Z",
     "status": "healthy",
     "failureReasons": [],
     "sourcesChecked": 30,
-    "successfulSources": 26,
-    "failedSources": 4,
-    "sourceSuccessRatio": 0.8667,
+    "successfulSources": 25,
+    "failedSources": 5,
+    "sourceSuccessRatio": 0.8333,
     "minimumSourceSuccessRatio": 0.75
   }
 } as const;
 
 export const generatedDiscoveryReviewCandidates = [
   {
-    "id": "discovered-markham-events-volunteer-knitting-circle-3028ae51ee9a",
-    "title": "Knitting Circle",
-    "organization": "Markham Public Library",
-    "description": "Connect with fellow knitters and crocheters through this welcoming community knitting circle, held in partnership with Casting Off the Cold, a volunteer organization that has donated handmade items to local charities in York Region since 2006. Share your completed projects, contribute to charitable donations, and exchange ideas with others who enjoy knitting and crochet in a monthly meet-up designed for all experience levels. You will: Learn about community crafting initiatives and how handmade items support local charitable organizations. Gain inspiration, tips, and encouragement by connecting with other knitters and crocheters. Program format: Monthly social gathering where participants showcase and donate completed knitting and crochet projects; this is not an instructional class.",
-    "city": "Markham",
-    "region": "York",
+    "id": "discovered-tpl-events-volunteer-new-horizons-speaker-series-f55f83b58103",
+    "title": "New Horizons Speaker Series",
+    "organization": "Toronto Public Library",
+    "description": "Hillcrest Library has partnered with Bayview Village Association (BVA) to deliver a speaker series on topics ranging from health and wellness, emerging technology, civic engagement, arts and culture, and beyond. This series is funded through Government of Canada's \"New Horizons for Seniors Program\". Here are our upcoming session topics: *SOLD OUT* November 9 – The World of Honeybees and Beekeepers *SOLD OUT* November 16 – An Expert Explains Home and Auto Insurance *SOLD OUT* November 23 – North York General: On Palliative Care *SOLD OUT* November 30 – Steeped in History: The Story of Tea Registration required through the Bayview Village Association. Click here to register.",
+    "city": "Toronto",
+    "region": "Toronto",
     "ageMin": 1,
     "ageMax": 18,
-    "category": "Volunteer Hours",
+    "category": "STEM",
     "cost": "Free to join",
     "language": [
       "en"
     ],
-    "deadline": "2026-11-08T13:00:00-04:00",
-    "startDate": "2026-11-08T13:00:00-04:00",
-    "endDate": "2026-11-08T15:00:00-04:00",
-    "sourceUrl": "https://markham.bibliocommons.com/v2/events/68fbdf2de59a13000d3e1ded",
+    "deadline": "2026-11-09T10:00:00-04:00",
+    "startDate": "2026-11-09T10:00:00-04:00",
+    "endDate": "2026-11-09T12:00:00-04:00",
+    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6ab6a0b6a5dbde002aa72632",
     "lastChecked": "2026-11-08",
     "lastSeen": "2026-11-08",
     "status": "needs_review",
     "tags": [
-      "volunteer hours",
-      "volunteer"
+      "stem"
     ],
     "confidence": "high",
     "reviewReasons": [],
-    "sourceName": "Markham Public Library youth volunteer events"
+    "sourceName": "Toronto Public Library youth volunteer events"
   },
   {
-    "id": "discovered-markham-events-volunteer-reading-to-success-2844f6cb8ba3",
+    "id": "discovered-markham-events-volunteer-reading-to-success-ab5a4a8af4e5",
     "title": "Reading to Success",
     "organization": "Markham Public Library",
     "description": "Help your child build confidence and a love of reading through Reading to Success, a weekly literacy program offered by YPAM in partnership with Markham Public Library, where volunteer readers share age-appropriate books with children in Junior Kindergarten, Senior Kindergarten, Grades 1 and 2, and children with IEPs. Through engaging read-aloud sessions and regular participation, your child will strengthen literacy skills while developing positive reading habits in a supportive environment. You will: Build reading comprehension, listening, and literacy skills through grade-specific stories. Develop a consistent reading routine and greater confidence with books. Program format: Weekly volunteer-led read-aloud sessions featuring grade-specific books for young readers. Registration: Visit ht",
@@ -72,7 +72,7 @@ export const generatedDiscoveryReviewCandidates = [
     "deadline": "2026-11-09T18:00:00-04:00",
     "startDate": "2026-11-09T18:00:00-04:00",
     "endDate": "2026-11-09T19:30:00-04:00",
-    "sourceUrl": "https://markham.bibliocommons.com/v2/events/68fbd37875911f28001a2369",
+    "sourceUrl": "https://markham.bibliocommons.com/v2/events/69274e280886c5530056becc",
     "lastChecked": "2026-11-08",
     "lastSeen": "2026-11-08",
     "status": "needs_review",
@@ -171,35 +171,6 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Richmond Hill Public Library programs"
   },
   {
-    "id": "discovered-aurora-library-stem-maker-workshop-layered-art-d1bf11fd129a",
-    "title": "Maker Workshop: Layered Art",
-    "organization": "Aurora Public Library",
-    "description": "Learn how to create multi-layered artwork using Adobe Illustrator and a laser cutter. All materials will be provided. Basic computer knowledge and skills are required for attendance. Please note that spots will be prioritized for first-time attendees. teen/adult program 13+",
-    "city": "Aurora",
-    "region": "York",
-    "ageMin": 13,
-    "ageMax": 18,
-    "category": "Makerspace & Fabrication",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "deadline": "2026-11-09T18:00:00-04:00",
-    "startDate": "2026-11-09T18:00:00-04:00",
-    "endDate": "2026-11-09T20:00:00-04:00",
-    "sourceUrl": "https://aurora.bibliocommons.com/v2/events/6ab68f124852aa18b5b0b37c",
-    "lastChecked": "2026-11-08",
-    "lastSeen": "2026-11-08",
-    "status": "needs_review",
-    "tags": [
-      "makerspace & fabrication",
-      "maker"
-    ],
-    "confidence": "high",
-    "reviewReasons": [],
-    "sourceName": "Aurora Public Library STEM events"
-  },
-  {
     "id": "discovered-aurora-library-stem-winter-ornament-laser-engraving-288e70aab417",
     "title": "Winter Ornament Laser Engraving",
     "organization": "Aurora Public Library",
@@ -223,6 +194,35 @@ export const generatedDiscoveryReviewCandidates = [
     "tags": [
       "makerspace & fabrication",
       "technology"
+    ],
+    "confidence": "high",
+    "reviewReasons": [],
+    "sourceName": "Aurora Public Library STEM events"
+  },
+  {
+    "id": "discovered-aurora-library-stem-maker-workshop-layered-art-01807581b1fb",
+    "title": "Maker Workshop: Layered Art",
+    "organization": "Aurora Public Library",
+    "description": "Learn how to create multi-layered artwork using Adobe Illustrator and a laser cutter. All materials will be provided. Basic computer knowledge and skills are required for attendance. Please note that spots will be prioritized for first-time attendees. teen/adult program 13+",
+    "city": "Aurora",
+    "region": "York",
+    "ageMin": 13,
+    "ageMax": 18,
+    "category": "Makerspace & Fabrication",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "deadline": "2026-11-09T18:00:00-04:00",
+    "startDate": "2026-11-09T18:00:00-04:00",
+    "endDate": "2026-11-09T20:00:00-04:00",
+    "sourceUrl": "https://aurora.bibliocommons.com/v2/events/6a59254cfb418a28009b7437",
+    "lastChecked": "2026-11-08",
+    "lastSeen": "2026-11-08",
+    "status": "needs_review",
+    "tags": [
+      "makerspace & fabrication",
+      "maker"
     ],
     "confidence": "high",
     "reviewReasons": [],
@@ -827,67 +827,6 @@ export const generatedDiscoveryReviewCandidates = [
       "No clear future date found on the crawled page."
     ],
     "sourceName": "Halton Hills Public Library programs"
-  },
-  {
-    "id": "discovered-trca-youth-youth-opportunities-at-trca-bd0e50237819",
-    "title": "Youth Opportunities at TRCA",
-    "organization": "Toronto and Region Conservation Authority",
-    "description": "TRCA offers programs to support youth and young adults who are interested in getting involved in the conservation sector.",
-    "city": "Toronto",
-    "region": "Toronto",
-    "ageMin": 13,
-    "ageMax": 18,
-    "category": "Science & Engineering",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-11-08T09:00:00-04:00",
-    "sourceUrl": "https://trca.ca/get-involved/youth-opportunities",
-    "lastChecked": "2026-11-08",
-    "lastSeen": "2026-11-08",
-    "status": "needs_review",
-    "tags": [
-      "science & engineering",
-      "youth",
-      "conservation"
-    ],
-    "confidence": "medium",
-    "reviewReasons": [
-      "No clear future date found on the crawled page.",
-      "Free access wording needs human confirmation."
-    ],
-    "sourceName": "TRCA youth volunteer opportunities"
-  },
-  {
-    "id": "discovered-trca-youth-volunteer-with-trca-cdffdd979d6f",
-    "title": "Volunteer with TRCA",
-    "organization": "Toronto and Region Conservation Authority",
-    "description": "Volunteer with TRCA listed by TRCA youth volunteer opportunities.",
-    "city": "Toronto",
-    "region": "Toronto",
-    "ageMin": 13,
-    "ageMax": 18,
-    "category": "Volunteer Hours",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "startDate": "2026-11-08T09:00:00-04:00",
-    "sourceUrl": "https://trca.ca/get-involved/volunteer",
-    "lastChecked": "2026-11-08",
-    "lastSeen": "2026-11-08",
-    "status": "needs_review",
-    "tags": [
-      "volunteer hours",
-      "volunteer"
-    ],
-    "confidence": "medium",
-    "reviewReasons": [
-      "No clear future date found on the crawled page.",
-      "Free access wording needs human confirmation."
-    ],
-    "sourceName": "TRCA youth volunteer opportunities"
   },
   {
     "id": "discovered-uhn-stem-pathways-uhn-stem-pathways-7847b49cfe74",
