@@ -14,7 +14,7 @@ export const generatedDiscoverySummary = {
   ],
   "sourceHealth": {
     "schemaVersion": 1,
-    "generatedAt": "2026-11-08T06:07:06.872Z",
+    "generatedAt": "2026-11-08T13:30:04.946Z",
     "status": "healthy",
     "failureReasons": [],
     "sourcesChecked": 30,
