@@ -3,9 +3,9 @@ import type { DiscoveredOpportunity } from "./discovery";
 export const generatedDiscoverySummary = {
   "mode": "deterministic",
   "sourcesChecked": 30,
-  "candidatesFound": 265,
+  "candidatesFound": 264,
   "newCandidates": 49,
-  "duplicatesSkipped": 29,
+  "duplicatesSkipped": 27,
   "warnings": [
     "Could not check Credit Valley Conservation youth opportunities: 403 Forbidden.",
     "Could not check Volunteer MBC youth opportunities: 403 Forbidden.",
@@ -14,7 +14,7 @@ export const generatedDiscoverySummary = {
   ],
   "sourceHealth": {
     "schemaVersion": 1,
-    "generatedAt": "2026-11-09T06:37:58.189Z",
+    "generatedAt": "2026-11-09T22:27:03.331Z",
     "status": "healthy",
     "failureReasons": [],
     "sourcesChecked": 30,
@@ -26,34 +26,6 @@ export const generatedDiscoverySummary = {
 } as const;
 
 export const generatedDiscoveryReviewCandidates = [
-  {
-    "id": "discovered-tpl-events-volunteer-new-horizons-speaker-series-f55f83b58103",
-    "title": "New Horizons Speaker Series",
-    "organization": "Toronto Public Library",
-    "description": "Hillcrest Library has partnered with Bayview Village Association (BVA) to deliver a speaker series on topics ranging from health and wellness, emerging technology, civic engagement, arts and culture, and beyond. This series is funded through Government of Canada's \"New Horizons for Seniors Program\". Here are our upcoming session topics: *SOLD OUT* November 9 – The World of Honeybees and Beekeepers *SOLD OUT* November 16 – An Expert Explains Home and Auto Insurance *SOLD OUT* November 23 – North York General: On Palliative Care *SOLD OUT* November 30 – Steeped in History: The Story of Tea Registration required through the Bayview Village Association. Click here to register.",
-    "city": "Toronto",
-    "region": "Toronto",
-    "ageMin": 1,
-    "ageMax": 18,
-    "category": "STEM",
-    "cost": "Free to join",
-    "language": [
-      "en"
-    ],
-    "deadline": "2026-11-09T10:00:00-04:00",
-    "startDate": "2026-11-09T10:00:00-04:00",
-    "endDate": "2026-11-09T12:00:00-04:00",
-    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6ab6a0b6a5dbde002aa72632",
-    "lastChecked": "2026-11-09",
-    "lastSeen": "2026-11-09",
-    "status": "needs_review",
-    "tags": [
-      "stem"
-    ],
-    "confidence": "high",
-    "reviewReasons": [],
-    "sourceName": "Toronto Public Library youth volunteer events"
-  },
   {
     "id": "discovered-markham-events-volunteer-reading-to-success-ab5a4a8af4e5",
     "title": "Reading to Success",
@@ -256,7 +228,36 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Aurora Public Library STEM events"
   },
   {
-    "id": "discovered-aurora-library-stem-maker-workshop-layered-art-01807581b1fb",
+    "id": "discovered-aurora-library-stem-maker-workshop-greeting-card-c738c4fb9eb2",
+    "title": "Maker Workshop: Greeting Card",
+    "organization": "Aurora Public Library",
+    "description": "Learn how to design and make a custom greeting card with the Cricut machine. All required materials will be provided. Please note that spots will be prioritized for first-time attendees. teen/adult program 13+",
+    "city": "Aurora",
+    "region": "York",
+    "ageMin": 13,
+    "ageMax": 18,
+    "category": "Makerspace & Fabrication",
+    "cost": "Free to join",
+    "language": [
+      "en"
+    ],
+    "deadline": "2026-11-11T11:00:00-04:00",
+    "startDate": "2026-11-11T11:00:00-04:00",
+    "endDate": "2026-11-11T12:00:00-04:00",
+    "sourceUrl": "https://aurora.bibliocommons.com/v2/events/6a59254cfb418a28009b7437",
+    "lastChecked": "2026-11-09",
+    "lastSeen": "2026-11-09",
+    "status": "needs_review",
+    "tags": [
+      "makerspace & fabrication",
+      "maker"
+    ],
+    "confidence": "high",
+    "reviewReasons": [],
+    "sourceName": "Aurora Public Library STEM events"
+  },
+  {
+    "id": "discovered-aurora-library-stem-maker-workshop-layered-art-53c8400a4cdf",
     "title": "Maker Workshop: Layered Art",
     "organization": "Aurora Public Library",
     "description": "Learn how to create multi-layered artwork using Adobe Illustrator and a laser cutter. All materials will be provided. Basic computer knowledge and skills are required for attendance. Please note that spots will be prioritized for first-time attendees. teen/adult program 13+",
@@ -272,7 +273,7 @@ export const generatedDiscoveryReviewCandidates = [
     "deadline": "2026-11-09T18:00:00-04:00",
     "startDate": "2026-11-09T18:00:00-04:00",
     "endDate": "2026-11-09T20:00:00-04:00",
-    "sourceUrl": "https://aurora.bibliocommons.com/v2/events/6a59254cfb418a28009b7437",
+    "sourceUrl": "https://aurora.bibliocommons.com/v2/events/6a7cc8095d8bc300315a2afc",
     "lastChecked": "2026-11-09",
     "lastSeen": "2026-11-09",
     "status": "needs_review",
