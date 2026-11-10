@@ -1,0 +1,51 @@
+.beta-page { max-width: 1080px; margin-inline: auto; padding: 24px 32px calc(32px + env(safe-area-inset-bottom)); }
+.beta-header { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; padding-block: 8px 24px; border-bottom: 1.5px solid var(--line); }
+.beta-header > a { display: inline-flex; min-width: 44px; min-height: 44px; max-width: 100%; }
+.beta-header .storybook-mark { width: 86px; height: auto; }
+.beta-header .storybook-mark img { width: 86px; height: 86px; }
+.beta-header > span { font-weight: 800; color: var(--muted); }
+.beta-hero { display: grid; grid-template-columns: minmax(0, 1fr) 160px; gap: 32px; align-items: center; padding-block: clamp(32px, 5vw, 64px); }
+.beta-page h1 { max-width: 18ch; margin-block: 12px 20px; font-size: clamp(32px, 5vw, 56px); line-height: 1.12; text-wrap: balance; }
+.beta-intro { max-width: 52ch; color: var(--muted); font-size: 20px; line-height: 1.55; }
+.beta-page p { overflow-wrap: anywhere; }
+.beta-hero-art { align-self: center; }
+.beta-hero-art .gta-artwork, .beta-hero-art .gta-artwork img { width: 160px; height: 160px; }
+.beta-page .hero-actions { margin-top: 24px; }
+.beta-page .beta-action { min-height: 48px; max-width: 100%; height: auto; white-space: normal; text-align: start; overflow-wrap: anywhere; }
+.beta-action > svg, .beta-back > svg { flex-shrink: 0; }
+.beta-note { padding: 24px; margin-bottom: 40px; border: 1.5px solid var(--line); border-inline-start: 6px solid var(--accent); border-radius: 12px; background: var(--surface-strong); }
+.beta-page h2 { font-size: 26px; line-height: 1.25; margin-block: 0 12px; }
+.beta-note p { max-width: 65ch; margin: 0; }
+.beta-section { padding-block: 24px; scroll-margin-top: 24px; }
+.beta-steps { counter-reset: beta-step; list-style: none; margin: 24px 0 0; padding: 0; }
+.beta-steps > li { counter-increment: beta-step; position: relative; min-width: 0; padding: 0 0 28px 64px; margin-bottom: 28px; border-bottom: 1px solid var(--line); }
+.beta-steps > li::before { content: counter(beta-step); position: absolute; inset-block-start: 0; inset-inline-start: 0; display: grid; place-items: center; width: 42px; height: 42px; border-radius: 50%; background: var(--yellow); color: #19334b; font-size: 22px; font-weight: 900; line-height: 1; }
+.beta-steps h3 { margin-block: 0 8px; font-size: 22px; line-height: 1.3; }
+.beta-steps p { max-width: 64ch; margin-block: 0 16px; }
+.beta-steps > li:last-child { margin-bottom: 0; }
+.beta-feedback { display: flex; align-items: flex-start; gap: 16px; }
+.beta-feedback > .gta-artwork { flex-shrink: 0; margin-top: 4px; }
+.beta-feedback > div { min-width: 0; }
+.beta-feedback p { max-width: 64ch; margin-bottom: 0; }
+.beta-back { display: inline-flex; align-items: center; gap: 8px; min-height: 48px; margin-block: 20px; }
+.beta-install-heading { padding-block: 8px 24px; }
+.beta-install-heading h1 { max-width: 20ch; }
+.beta-install-steps { margin-top: 32px; }
+.beta-guide-download { margin-top: 24px; }
+.beta-page > .legal-footer { padding-inline: 0; margin-top: 48px; }
+.beta-page .legal-footer a { display: inline-flex; align-items: center; min-width: 44px; min-height: 44px; max-width: 100%; padding-block: 6px; overflow-wrap: anywhere; }
+@media (max-width: 600px) {
+  .beta-page { padding-inline: 20px; }
+  .beta-hero { grid-template-columns: minmax(0, 1fr); gap: 16px; padding-block: 32px; }
+  .beta-hero-art { grid-row: 1; }
+  .beta-hero-art .gta-artwork, .beta-hero-art .gta-artwork img { width: 80px; height: 80px; }
+  .beta-page .hero-actions > a { flex: 1 1 200px; }
+  .beta-note { padding: 20px; }
+  .beta-steps > li { padding-inline-start: 54px; }
+  .beta-feedback { gap: 12px; }
+}
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .beta-action { transition: transform 180ms cubic-bezier(.34, 1.56, .64, 1); }
+  .beta-action:hover { transform: translateY(-2px); }
+  .beta-action:active { transform: translateY(1px) scale(.98); }
+}
