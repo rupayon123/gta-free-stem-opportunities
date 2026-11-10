@@ -1,4 +1,5 @@
 name: Backend-only dual-feed review
+# Includes the shared evidence selection and captured identity fixtures.
 on:
   push:
     branches: [codex/backend-dual-release-20261110]
