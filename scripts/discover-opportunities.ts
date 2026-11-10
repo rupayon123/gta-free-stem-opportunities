@@ -1,7 +1,6 @@
 import { createHash } from "node:crypto";
 import { renameSync, rmSync, writeFileSync } from "node:fs";
 import {
-  discoverySourceRequiresSpecificStemEvidence,
   evidenceBackedDiscoveryTags,
   inferDiscoveryCategory,
   isGeneratedDiscoveryOpportunityId
@@ -15,7 +14,8 @@ import { hasEstimatedAgeRange } from "../lib/discoveryEligibility";
 import { extractScienceCentreCards } from "../lib/scienceCentreDiscovery";
 import { extractUniversityEventCards } from "../lib/universityEventDiscovery";
 import { extractAutismOntarioEvent } from "../lib/autismOntarioDiscovery";
-import { isLibraryOpportunityStemRelevant } from "../lib/libraryOpportunityClassification";
+import { reviewCost, reviewAges } from "../lib/discoveryReviewEvidence";
+import { autismOntarioIndexPages, extractAutismOntarioIndex } from "../lib/autismOntarioIndex";
 import { opportunities } from "../lib/data";
 import { evaluateDiscoverySourceHealth, type DiscoverySourceHealth } from "../lib/refreshHealth";
 import type { LanguageCode, Region } from "../lib/types";
@@ -203,36 +203,6 @@ function hasBlockedSupportProgramSignal(text: string) {
   return blockedSupportProgramPatterns.some((pattern) => pattern.test(text));
 }
 
-function hasFreeSignal(text: string, source: DiscoverySource) {
-  const lower = text.toLowerCase();
-  return (
-    lower.includes("free") ||
-    lower.includes("no cost") ||
-    lower.includes("no fee") ||
-    lower.includes("included with") ||
-    source.sourceType === "library"
-  );
-}
-
-function inferAges(text: string) {
-  const lower = text.toLowerCase();
-  const ageRange = lower.match(/ages?\s*(\d{1,2})\s*(?:-|to|–|—)\s*(\d{1,2})/);
-  if (ageRange) return { ageMin: Number(ageRange[1]), ageMax: Number(ageRange[2]) };
-
-  const grades = lower.match(/grades?\s*(\d{1,2})\s*(?:-|to|–|—)\s*(\d{1,2})/);
-  if (grades) {
-    const minGrade = Number(grades[1]);
-    const maxGrade = Number(grades[2]);
-    return { ageMin: Math.max(0, minGrade + 5), ageMax: maxGrade + 6 };
-  }
-
-  if (lower.includes("teen") || lower.includes("high school") || lower.includes("youth")) return { ageMin: 13, ageMax: 18 };
-  if (lower.includes("adult")) return { ageMin: 18, ageMax: undefined };
-  if (lower.includes("child") || lower.includes("kid")) return { ageMin: 6, ageMax: 12 };
-  if (lower.includes("family")) return { ageMin: 0, ageMax: undefined };
-  return { ageMin: 1, ageMax: 18 };
-}
-
 function inferLanguages(text: string): LanguageCode[] {
   const lower = text.toLowerCase();
   const languages = new Set<LanguageCode>(["en"]);
@@ -293,50 +263,9 @@ function buildOpportunity(source: DiscoverySource, candidate: RawCandidate): Dis
   const description = stripTags(candidate.description || `${title} from ${source.name}.`);
   const combinedText = `${title} ${description}`;
   const reviewReasons: string[] = [];
-  if (
-    /\b(branch art exhibit|science fiction|digital (video|magazines|newspapers|comics|archive)|computer & library training|computers, printing|computers, wifi & printing|public computers|email us|translation disclaimer|get started|event payment system|job fairs|jobs & volunteers|code of conduct|privacy|terms of use|accessibility statement|artificial intelligence policy|library card|hours & information|font size|my account)\b/i.test(
-      title
-    ) ||
-    /^(my events|visit our website|homepage|.*homepage|technology|volunteer|programs?|events?|register|learn more|contact us|science & technology|catalogue|donate|log in)$/i.test(
-      title
-    ) ||
-    /^([a-z0-9-]+\.)+[a-z]{2,}$/i.test(title) ||
-    /^best free science & tech events/i.test(title)
-  ) {
-    return null;
-  }
-  if (
-    /^(city of mississauga|jobs and volunteer|conservation parks & lands|taking action on climate change|creating climate ready homes|conservation|member of conservation ontario|view all volunteer opportunities)$/i.test(
-      title
-    ) ||
-    /\b(conservation park|conservation area)\b/i.test(title)
-  ) {
-    return null;
-  }
-  if (source.id === "cvc-youth" && !/\b(corps|volunteer|youth|student|intern|co-?op|shsm)\b/i.test(title)) {
-    return null;
-  }
-  if (
-    source.id === "trca-youth" &&
-    !/\b(youth|volunteer|girls|professional|professionals|corps|newcomer|leadership|student|intern|co-?op|shsm)\b/i.test(
-      title
-    )
-  ) {
-    return null;
-  }
-  if (
-    discoverySourceRequiresSpecificStemEvidence(source) &&
-    !isLibraryOpportunityStemRelevant({
-      title,
-      description,
-      categories: candidate.tags ?? []
-    })
-  ) {
-    return null;
-  }
-  if (title.length < 5 || (source.id !== "autism-ontario-quiet-time" && !hasStemSignal(combinedText))) return null;
-  if (hasBlockedSupportProgramSignal(combinedText)) return null;
-  if (/\$\s*\d|resident:\s*\$|non-resident:\s*\$|cost of the program|program cost|tuition|paid program/i.test(combinedText)) {
+  if (/^(my events|visit our website|homepage|programs?|events?|register|learn more|contact us|catalogue|donate|log in)$/i.test(title) || /^([a-z0-9-]+\.)+[a-z]{2,}$/i.test(title)) return null;
+  if (title.length < 5) return null;
+  if (/\$\s*\d|resident:\s*\$|non-resident:\s*\$|paid program|tuition required/i.test(combinedText)) {
     return null;
   }
 
@@ -346,22 +275,26 @@ function buildOpportunity(source: DiscoverySource, candidate: RawCandidate): Dis
   } else if (isExpired(endDate || startDate)) {
     return null;
   }
-  if (!hasFreeSignal(combinedText, source)) reviewReasons.push("Free access wording needs human confirmation.");
+  const cost = reviewCost(combinedText);
+  if (cost === "Unknown") reviewReasons.push("Cost is unknown; check the official listing.");
   if (hasPaidRisk(combinedText) && !combinedText.toLowerCase().includes("free")) {
     reviewReasons.push("Cost-related words appeared near the listing.");
   }
   if (!candidate.sourceUrl) reviewReasons.push("Exact listing URL was not found; using source page URL.");
   if (!source.trusted) reviewReasons.push("Source is a broad public event index, so official provider confirmation is needed.");
   if (hasEstimatedAgeRange(combinedText)) {
-    reviewReasons.push("Age filter is an estimate from school grades; verify eligibility with the provider.");
+    reviewReasons.push("School grades are stated; numeric ages are unknown and must be verified.");
   }
 
-  const ages = source.id === "autism-ontario-quiet-time" ? { ageMin: 0, ageMax: undefined } : inferAges(combinedText);
+  const ages = reviewAges(combinedText);
+  if (ages.ageMin === undefined) reviewReasons.push("Numeric eligibility is unknown; check the official listing.");
   const sourceUrl = normalizeUrl(candidate.sourceUrl || source.url);
-  const city = candidate.city || source.city || "Toronto";
+  const city = candidate.city || source.city;
+  if (!city) return null;
   const organization = candidate.organization || source.organization;
-  const region = candidate.region || source.region || "Toronto";
-  const category = source.id === "autism-ontario-quiet-time" ? "Family Learning" : inferDiscoveryCategory(combinedText);
+  const region = candidate.region || source.region;
+  if (!region) return null;
+  const category = hasStemSignal(combinedText) ? inferDiscoveryCategory(combinedText) : "Family Learning";
   // A page scan supplies candidates, not reviewer approval. Even an official
   // calendar can omit cost, audience, or registration details in its excerpt.
   // Keep all discoveries private until their evidence has been reviewed.
@@ -378,10 +311,12 @@ function buildOpportunity(source: DiscoverySource, candidate: RawCandidate): Dis
     ageMin: ages.ageMin,
     ageMax: ages.ageMax,
     category,
-    cost: "Free to join",
+    cost,
+    costEvidence: cost === "Free to join" ? "source-stated-free" : "unknown",
+    eligibilityEvidence: ages.ageMin === undefined ? "unknown" : "explicit-ages",
     language: inferLanguages(combinedText),
     deadline: startDate,
-    startDate: startDate || `${todayIsoDate}T09:00:00-04:00`,
+    startDate,
     endDate,
     sourceUrl,
     lastChecked: todayIsoDate,
@@ -454,34 +389,17 @@ function extractBiblioCommonsCandidates(html: string, source: DiscoverySource): 
 
 function extractGenericCandidates(html: string, source: DiscoverySource): RawCandidate[] {
   const candidates: RawCandidate[] = [];
-  const pageTitle =
-    decodeHtml(html.match(/<meta[^>]+property=["']og:title["'][^>]+content=["']([^"']+)["']/i)?.[1] || "") ||
-    stripTags(html.match(/<title[^>]*>([\s\S]*?)<\/title>/i)?.[1] || "");
-  const pageDescription =
-    decodeHtml(html.match(/<meta[^>]+(?:name|property)=["'](?:description|og:description)["'][^>]+content=["']([^"']+)["']/i)?.[1] || "") ||
-    "";
-
-  if (pageTitle && hasStemSignal(`${pageTitle} ${pageDescription}`)) {
-    candidates.push({
-      title: pageTitle,
-      description: pageDescription,
-      sourceUrl: source.url,
-      city: source.city,
-      region: source.region,
-      organization: source.organization
-    });
-  }
-
   const anchorRegex = /<a\b[^>]*href=["']([^"']+)["'][^>]*>([\s\S]{0,500}?)<\/a>/gi;
   let match: RegExpExecArray | null;
   while ((match = anchorRegex.exec(html))) {
     const text = stripTags(match[2]);
     if (text.length < 8 || text.length > 160) continue;
-    if (!hasStemSignal(text)) continue;
+    const resolved = absoluteUrl(match[1], source.url);
+    try { if (new URL(resolved).origin !== new URL(source.url).origin || !/\b(?:event|events|program|programs|programme|activity|activities)\b/i.test(new URL(resolved).pathname)) continue; } catch { continue; }
     candidates.push({
       title: text,
       description: `${text} listed by ${source.name}.`,
-      sourceUrl: absoluteUrl(match[1], source.url),
+      sourceUrl: resolved,
       city: source.city,
       region: source.region,
       organization: source.organization
@@ -527,7 +445,9 @@ function toSql(opportunitiesToInsert: DiscoveredOpportunity[]) {
     return "-- No new discovered opportunities after duplicate filtering.\n";
   }
 
-  const rows = opportunitiesToInsert.map((opportunity) => {
+  const eligibleForSql = opportunitiesToInsert.filter((row) => row.costEvidence === "source-stated-free" && row.eligibilityEvidence === "explicit-ages" && row.startDate && row.ageMin !== undefined);
+  if (!eligibleForSql.length) return "-- Review candidates have unknown cost, age, or date; no SQL rows generated.";
+  const rows = eligibleForSql.map((opportunity) => {
     return `(
     ${sqlString(opportunity.id)},
     ${sqlString(opportunity.title)},
@@ -535,7 +455,7 @@ function toSql(opportunitiesToInsert: DiscoveredOpportunity[]) {
     ${sqlString(opportunity.description)},
     ${sqlString(opportunity.city)},
     ${sqlString(opportunity.region)}::public.gta_region,
-    ${opportunity.ageMin},
+    ${opportunity.ageMin ?? "null"},
     ${opportunity.ageMax ?? "null"},
     ${sqlString(opportunity.category)},
     ${sqlString(opportunity.cost)},
@@ -635,7 +555,10 @@ async function main() {
   for (const source of discoverySources) {
     try {
       const html = await fetchSource(source);
-      const deterministicCandidates = (source.id === "autism-ontario-quiet-time"
+      const indexPages = source.id === "autism-ontario-index" ? [html, ...await (async () => { const pages: string[] = []; for (const page of autismOntarioIndexPages(html, today)) pages.push(await fetchSource({ ...source, url: `${source.url}?page=${page}` })); return pages; })()] : [];
+      const deterministicCandidates = (source.id === "autism-ontario-index"
+        ? indexPages.flatMap(extractAutismOntarioIndex)
+        : source.id === "autism-ontario-quiet-time"
         ? extractAutismOntarioEvent(html, source.url)
         : source.id === "ontario-science-centre-events"
         ? extractScienceCentreCards(html)
@@ -645,7 +568,7 @@ async function main() {
         ? extractBiblioCommonsCandidates(html, source)
         : [...extractBiblioCommonsCandidates(html, source), ...extractGenericCandidates(html, source)]
       ).slice(0, discoveryMaxCandidatesPerSource);
-      if ((source.id === "autism-ontario-quiet-time" || source.id === "ontario-science-centre-events" || source.id === "uoft-engineering-outreach") && deterministicCandidates.length === 0) {
+      if ((source.id === "autism-ontario-index" || source.id === "autism-ontario-quiet-time" || source.id === "ontario-science-centre-events" || source.id === "uoft-engineering-outreach") && deterministicCandidates.length === 0) {
         throw new Error("No recognizable event cards; retained previous review candidates pending source check");
       }
       const sourceAccepted: DiscoveredOpportunity[] = [];
@@ -656,10 +579,12 @@ async function main() {
       if (sourceAccepted.length === 0 && retainFailedDiscoverySource(generatedDiscoveryReviewCandidates, source.name).length > 0) {
         throw new Error("No review candidates remain; retained previous records pending source check");
       }
+      const observedIds = new Set(sourceAccepted.map(row => row.id));
+      const unvisited = source.id === "autism-ontario-index" ? retainFailedDiscoverySource(generatedDiscoveryReviewCandidates, source.name).filter(row => !observedIds.has(row.id)) : [];
       successfulSources += 1;
       candidatesFound += deterministicCandidates.length;
-      discovered.push(...sourceAccepted);
-      sourceResults.push({ sourceId: source.id, status: "ok", candidates: deterministicCandidates.length, accepted: sourceAccepted.length, retained: 0 });
+      discovered.push(...sourceAccepted, ...unvisited);
+      sourceResults.push({ sourceId: source.id, status: "ok", candidates: deterministicCandidates.length, accepted: sourceAccepted.length, retained: unvisited.length });
     } catch (error) {
       warnings.push(`Could not check ${source.name}: ${error instanceof Error ? error.message : "unknown error"}.`);
       // Keep earlier review candidates for this source with their original

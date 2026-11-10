@@ -2,7 +2,7 @@ name: Hunter expansion review checks
 # Check scoped collectors, review-candidate eligibility, and source policies.
 on:
   push:
-    branches: [codex/hunter-v1-integration-20261110]
+    branches: [codex/hunter-broad-review-20261110]
     paths: [.github/workflows/hunter-expansion-qa.yml]
   workflow_dispatch:
 permissions:
@@ -26,13 +26,8 @@ jobs:
       - run: npx tsx scripts/native-source-policy.test.mjs
       - run: npx tsx scripts/autism-ontario-discovery.test.ts
       - run: npx tsx scripts/discovery-refresh-guard.test.ts
+      - run: npx tsx scripts/broad-discovery.test.ts
       - run: npm run qa:accessibility-support
       - run: npx tsx lib/accessibility/reviewedHunterEvents.test.ts
       - run: GTA_PUBLIC_OPPORTUNITIES_EXPORT="$RUNNER_TEMP/hunter-candidate.json" npx tsx scripts/export-public-opportunities.ts --publish
       - run: GTA_PUBLIC_OPPORTUNITIES_EXPORT="$RUNNER_TEMP/hunter-candidate.json" npx tsx scripts/hunter-candidate-feed.test.ts
-      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
-        with:
-          name: hunter-native-feed-review
-          path: ${{ runner.temp }}/hunter-candidate.json
-          if-no-files-found: error
-          retention-days: 3
