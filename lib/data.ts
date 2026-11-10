@@ -25,6 +25,8 @@ type SeedOpportunity = Omit<
   | "status"
 > & {
   status?: Opportunity["status"];
+  /** Complete source-backed body when a shorter browse summary is available. */
+  description?: string;
 };
 
 export const gtaFsaCentres: Record<string, { label: string; latitude: number; longitude: number }> = {
@@ -186,6 +188,32 @@ function discoveryCandidateToOpportunity(candidate: DiscoveredOpportunity): Oppo
 }
 
 const seedOpportunities: SeedOpportunity[] = [
+  {
+    id: "ontario-science-centre-pride-in-stem-2026",
+    title: "Pride in STEM 2026",
+    provider: "Ontario Science Centre",
+    summary: "Free, all-ages STEM activities and performances celebrating 2SLGBTQI+ people. November 21, 2026, 9 a.m.–3 p.m. at Evergreen Brick Works, 550 Bayview Avenue, Toronto. Registration is encouraged but not required. The venue is wheelchair accessible; a free shuttle runs from Broadview Station. On-site parking is paid.",
+    type: "One-time event",
+    categories: ["STEM", "Family STEM", "Science & Engineering"],
+    communityFocus: ["Open to all", "2SLGBTQ+ inclusive"],
+    city: "Toronto", region: "Toronto",
+    address: "Evergreen Brick Works, 550 Bayview Avenue, Toronto, ON M4W 3X8",
+    latitude: 43.6843326, longitude: -79.3654782, virtual: false,
+    startDate: "2026-11-21T09:00:00-05:00", endDate: "2026-11-21T15:00:00-05:00",
+    // Enable only after website/feed and native provider contracts are aligned.
+    status: "needs_review",
+    ages: { min: 0 }, ageLabel: "All ages", grades: ["Family", "All ages"], languages: ["en"],
+    accessibility: ["Wheelchair accessible venue", "Public transit accessible", "Free shuttle from Broadview Station"],
+    equipment: "Check the source for activity details.", food: "Check the source for food options.",
+    capacity: "Registration encouraged but not required for entry.", commitment: "November 21, 9 a.m. to 3 p.m.",
+    registrationUrl: "https://www.ontariosciencecentre.ca/whats-on/pop-ups-plus-events/pride-in-stem-2026",
+    providerContact: "https://www.ontariosciencecentre.ca/contact-us",
+    freeStatusProof: "The official event page states that the family-friendly event is free; on-site parking is paid.",
+    lastVerified: "2026-11-10", trustedSource: true, volunteerHoursEligible: false, coopEligible: false, paidPosition: false,
+    tags: ["science centre", "science", "engineering", "family", "2SLGBTQI+"],
+    sources: [{ label: "Official Ontario Science Centre event", url: "https://www.ontariosciencecentre.ca/whats-on/pop-ups-plus-events/pride-in-stem-2026", capturedAt: "2026-11-10T05:59:01Z", confidence: "high" }],
+    adminAuditTrail: [{ label: "Verified source", at: "2026-11-10T05:59:01Z", actor: "Reviewer", detail: "Official event page confirms all ages, free entry, date, time, address, optional registration, accessibility and paid parking." }]
+  },
   {
     id: "tpl-stem-programming-forest-hill-2026-06-04",
     title: "STEM Programming For Children",
@@ -861,7 +889,7 @@ export const sourceOpportunities: Opportunity[] = [
     return {
       ...opportunity,
       organization: opportunity.provider,
-      description: opportunity.summary,
+      description: opportunity.description ?? opportunity.summary,
       category: opportunity.categories[0],
       ageMin: opportunity.ages.min,
       ageMax: opportunity.ages.max,

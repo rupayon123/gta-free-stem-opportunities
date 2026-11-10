@@ -7,6 +7,12 @@ import {
   isGeneratedDiscoveryOpportunityId
 } from "../lib/discoveryClassification";
 import { discoverySources, type DiscoveredOpportunity, type DiscoverySource } from "../lib/discovery";
+import { generatedDiscoveryReviewCandidates } from "../lib/generatedDiscoveryReview";
+import { retainFailedDiscoverySource } from "../lib/discoveryRetention";
+import { discoveryDateOnly } from "../lib/discoveryDates";
+import { markDiscoveryObservation } from "../lib/discoveryChanges";
+import { extractScienceCentreCards } from "../lib/scienceCentreDiscovery";
+import { extractUniversityEventCards } from "../lib/universityEventDiscovery";
 import { isLibraryOpportunityStemRelevant } from "../lib/libraryOpportunityClassification";
 import { opportunities } from "../lib/data";
 import { evaluateDiscoverySourceHealth, type DiscoverySourceHealth } from "../lib/refreshHealth";
@@ -33,7 +39,7 @@ type DiscoveryOutput = {
   duplicatesSkipped: number;
   opportunities: DiscoveredOpportunity[];
   warnings: string[];
-  sourceHealth: DiscoverySourceHealth;
+  sourceHealth: DiscoverySourceHealth & { sources: { sourceId: string; status: "ok" | "failed"; candidates: number; accepted: number; retained: number }[] };
 };
 
 const args = new Set(process.argv.slice(2));
@@ -166,6 +172,10 @@ function normalizedKey(title: string, organization: string, city: string) {
 }
 
 function makeId(source: DiscoverySource, candidate: RawCandidate) {
+  if (source.id === "ontario-science-centre-events" && candidate.sourceUrl) {
+    const stable = createHash("sha256").update(normalizeUrl(candidate.sourceUrl)).digest("hex").slice(0, 16);
+    return `discovered-${source.id}-${stable}`;
+  }
   const hash = createHash("sha1")
     .update(`${source.id}:${candidate.title}:${candidate.sourceUrl ?? source.url}:${candidate.startDate ?? ""}`)
     .digest("hex")
@@ -246,8 +256,11 @@ function parseLooseDate(value: string | undefined) {
   if (!value) return undefined;
   const cleaned = decodeHtml(value).trim();
   if (/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}$/.test(cleaned)) return `${cleaned}:00-04:00`;
-  if (/^\d{4}-\d{2}-\d{2}$/.test(cleaned)) return `${cleaned}T09:00:00-04:00`;
+  if (/^\d{4}-\d{2}-\d{2}$/.test(cleaned)) return discoveryDateOnly(cleaned);
   const date = new Date(cleaned);
+  if (/^(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2},?\s+20\d{2}$/i.test(cleaned)) {
+    return discoveryDateOnly(cleaned);
+  }
   if (!Number.isNaN(date.getTime())) return date.toISOString();
   return undefined;
 }
@@ -606,23 +619,42 @@ async function main() {
   const discovered: DiscoveredOpportunity[] = [];
   let candidatesFound = 0;
   let successfulSources = 0;
+  const sourceResults: DiscoveryOutput["sourceHealth"]["sources"] = [];
+  const previousById = new Map(generatedDiscoveryReviewCandidates.map((candidate) => [candidate.id, candidate]));
 
   for (const source of discoverySources) {
     try {
       const html = await fetchSource(source);
-      successfulSources += 1;
-      const deterministicCandidates = (source.url.includes("bibliocommons.com")
+      const deterministicCandidates = (source.id === "ontario-science-centre-events"
+        ? extractScienceCentreCards(html)
+        : source.id === "uoft-engineering-outreach"
+        ? extractUniversityEventCards(html)
+        : source.url.includes("bibliocommons.com")
         ? extractBiblioCommonsCandidates(html, source)
         : [...extractBiblioCommonsCandidates(html, source), ...extractGenericCandidates(html, source)]
       ).slice(0, discoveryMaxCandidatesPerSource);
-      candidatesFound += deterministicCandidates.length;
-
+      if ((source.id === "ontario-science-centre-events" || source.id === "uoft-engineering-outreach") && deterministicCandidates.length === 0) {
+        throw new Error("No recognizable event cards; retained previous review candidates pending source check");
+      }
+      const sourceAccepted: DiscoveredOpportunity[] = [];
       for (const candidate of deterministicCandidates) {
         const opportunity = buildOpportunity(source, candidate);
-        if (opportunity) discovered.push(opportunity);
+        if (opportunity) sourceAccepted.push(markDiscoveryObservation(opportunity, previousById.get(opportunity.id)));
       }
+      if (sourceAccepted.length === 0 && retainFailedDiscoverySource(generatedDiscoveryReviewCandidates, source.name).length > 0) {
+        throw new Error("No review candidates remain; retained previous records pending source check");
+      }
+      successfulSources += 1;
+      candidatesFound += deterministicCandidates.length;
+      discovered.push(...sourceAccepted);
+      sourceResults.push({ sourceId: source.id, status: "ok", candidates: deterministicCandidates.length, accepted: sourceAccepted.length, retained: 0 });
     } catch (error) {
       warnings.push(`Could not check ${source.name}: ${error instanceof Error ? error.message : "unknown error"}.`);
+      // Keep earlier review candidates for this source with their original
+      // lastChecked/lastSeen dates; failed access is not a successful refresh.
+      const retained = retainFailedDiscoverySource(generatedDiscoveryReviewCandidates, source.name);
+      discovered.push(...retained.map((candidate) => ({ ...candidate, changeKind: "source_unavailable" as const })));
+      sourceResults.push({ sourceId: source.id, status: "failed", candidates: 0, accepted: 0, retained: retained.length });
     }
   }
 
@@ -642,7 +674,7 @@ async function main() {
     duplicatesSkipped,
     opportunities: output,
     warnings,
-    sourceHealth: discoveryAssessment.health
+    sourceHealth: { ...discoveryAssessment.health, sources: sourceResults }
   };
 
   if (writeReviewFile) {
