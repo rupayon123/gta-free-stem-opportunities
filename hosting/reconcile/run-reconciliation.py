@@ -21,6 +21,38 @@ def digest(path):
     return h.hexdigest()
 
 
+
+def recover_verified_publication_checkpoint(candidate):
+    # Reconstruct the byte-exact artifact that passed run 42759536325, rather
+    # than mint a later revision solely because the transport phase failed.
+    expected = {
+        "lib/generatedDiscoveryReview.ts": "467684bd3f806009a9489b7211a79c103a496f5069dc85b41492bf8df8820c69",
+        "lib/generatedLibraryOpportunities.ts": "97f7edc3cf7af1ac1c7b961cfe46e3f92615108f8d131f831918231c0e038d84",
+        "public/opportunities.json": "d7c990ac47516423815199ab04026cd636b64be67c95cad01992838f1c59d004"
+    }
+    for name in DATA[:-1]:
+        if digest(candidate / name) != expected[name]:
+            raise RuntimeError("Verified checkpoint source changed: " + name)
+    path = candidate / "public/opportunities.json"
+    raw = path.read_bytes().decode("utf8")
+    current = json.loads(raw)["publicationRevision"]
+    checkpoint = "2026-11-10T05:02:41.994Z"
+    if current < checkpoint:
+        raise RuntimeError("Publication clock predates the verified checkpoint")
+    old = '"publicationRevision":' + json.dumps(current)
+    if raw.count(old) != 1:
+        raise RuntimeError("Ambiguous publication-revision field")
+    restored = raw.replace(old, '"publicationRevision":' + json.dumps(checkpoint), 1)
+    if hashlib.sha256(restored.encode()).hexdigest() != expected["public/opportunities.json"]:
+        raise RuntimeError("Recovered file differs from the exact previously verified native bytes")
+    temporary = path.with_name(path.name + ".verified-checkpoint.tmp")
+    with temporary.open("xb") as stream:
+        stream.write(restored.encode("utf8"))
+    temporary.replace(path)
+    print(json.dumps({"recoveredVerifiedCheckpointRun": 42759536325, "publicationRevision": checkpoint,
+                      "fileSHA256": expected, "newSourceCaptureClaim": False}), flush=True)
+
+
 def main():
     ops = Path(os.environ["OPS_ROOT"]).resolve()
     tools = ops / "hosting/reconcile"
@@ -94,6 +126,7 @@ def main():
     helper.unlink()  # Only our exact new helper, never a reviewed product file.
     run("offline-library-partition", [*node, "scripts/prepare-library-catalog.ts"], candidate, offline=True)
     run("offline-compact-source-export", [*node, "scripts/export-public-opportunities.ts", "--publish"], candidate, offline=True)
+    recover_verified_publication_checkpoint(candidate)
     run("full-real-native-postproof", [sys.executable, str(tools / "verify-reconciled-feed.py"),
         "--candidate", str(candidate), "--evidence", str(evidence)], candidate)
     native_freeze = {name: digest(candidate / name) for name in DATA}
@@ -119,6 +152,8 @@ def main():
     if set(staged) - set(DATA):
         raise RuntimeError("Unexpected staged paths")
     tree = subprocess.check_output(["git", "write-tree"], cwd=candidate, text=True).strip()
+    if tree != "382624fe5c64050de6f7191c7c5cb0c732ae27a8":
+        raise RuntimeError("Recovered source/data tree differs from the exact previously verified artifact")
     result = {"allStagesPassed": True, "stages": stages, "app": APP, "main": MAIN,
               "operationsCommit": expected_ops, "operationsHelpersSHA256": os.environ["EXPECTED_HELPERS_SHA256"],
               "candidateTree": tree, "changedPaths": changed, "stagedPaths": staged,
