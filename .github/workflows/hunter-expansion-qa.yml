@@ -1,12 +1,12 @@
 name: Hunter expansion review checks
-# Check scoped collectors, review-candidate eligibility, and source policies.
+# Check rotating collectors, review-candidate eligibility, and source policies.
 on:
   push:
-    branches: [codex/hunter-dual-feed-20261110]
+    branches: [codex/hunter-combined-20261110]
     paths: [.github/workflows/hunter-expansion-qa.yml]
   workflow_dispatch:
 permissions:
-  contents: write
+  contents: read
 jobs:
   checks:
     if: github.repository == 'rupayon123/gta-free-stem-opportunities' && github.event.repository.private == false
@@ -15,7 +15,7 @@ jobs:
     steps:
       - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
         with:
-          persist-credentials: true
+          persist-credentials: false
       - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
         with:
           node-version: '22'
@@ -25,6 +25,9 @@ jobs:
       - run: npx tsx scripts/native-content-rights.test.ts
       - run: npx tsx scripts/native-source-policy.test.mjs
       - run: npx tsx scripts/autism-ontario-discovery.test.ts
+      - run: npx tsx scripts/discovery-refresh-guard.test.ts
+      - run: npx tsx scripts/broad-discovery.test.ts
+      - run: npx tsx scripts/discovery-pipeline.test.ts
       - run: npm run qa:accessibility-support
       - run: npx tsx lib/accessibility/reviewedHunterEvents.test.ts
       - run: python3 scripts/test-refresh-publication.py
@@ -34,19 +37,8 @@ jobs:
       - run: GTA_PUBLIC_OPPORTUNITIES_EXPORT="$RUNNER_TEMP/opportunities-v2.json" npx tsx scripts/export-public-opportunities.ts --v2 --self-test
       - run: GTA_PUBLIC_OPPORTUNITIES_EXPORT="$RUNNER_TEMP/opportunities-v2.json" npx tsx scripts/hunter-candidate-feed.test.ts
       - run: GTA_REVIEW_V1_PATH="$RUNNER_TEMP/opportunities.json" GTA_REVIEW_V2_PATH="$RUNNER_TEMP/opportunities-v2.json" npx tsx scripts/dual-native-feed.test.ts
-      - name: Save tested bytes to a new review-only branch
-        if: github.ref == 'refs/heads/codex/hunter-dual-feed-20261110' && github.event_name == 'push'
-        shell: bash
+      - name: Check full publication QA in the disposable runner
         run: |
-          set -euo pipefail
-          review_dir="$RUNNER_TEMP/hunter-review-worktree"
-          review_branch="codex/hunter-dual-review-20261110-$GITHUB_RUN_ID"
-          git worktree add --detach "$review_dir" HEAD
-          git -C "$review_dir" switch --orphan "$review_branch"
-          cp "$RUNNER_TEMP/opportunities.json" "$review_dir/opportunities.json"
-          cp "$RUNNER_TEMP/opportunities-v2.json" "$review_dir/opportunities-v2.json"
-          git -C "$review_dir" add opportunities.json opportunities-v2.json
-          git -C "$review_dir" -c user.name='gta-review-bot' -c user.email='gta-review-bot@users.noreply.github.com' commit -m 'Save tested review-only feed bytes'
-          git -C "$review_dir" push origin "HEAD:refs/heads/$review_branch"
-          sha256sum "$review_dir/opportunities.json" "$review_dir/opportunities-v2.json"
-          echo "Review branch: $review_branch"
+          cp "$RUNNER_TEMP/opportunities.json" public/opportunities.json
+          cp "$RUNNER_TEMP/opportunities-v2.json" public/opportunities-v2.json
+          npx tsx scripts/qa-check.ts

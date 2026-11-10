@@ -109,7 +109,11 @@ function typeForDiscovery(candidate: DiscoveredOpportunity): Opportunity["type"]
   return "Drop-in";
 }
 
-function discoveryCandidateToOpportunity(candidate: DiscoveredOpportunity): Opportunity {
+type ProjectableDiscovery = DiscoveredOpportunity & { ageMin: number; startDate: string; cost: "Free to join" };
+function isProjectableDiscovery(candidate: DiscoveredOpportunity): candidate is ProjectableDiscovery {
+  return candidate.cost === "Free to join" && candidate.costEvidence === "source-stated-free" && candidate.eligibilityEvidence === "explicit-ages" && typeof candidate.ageMin === "number" && typeof candidate.startDate === "string";
+}
+function discoveryCandidateToOpportunity(candidate: ProjectableDiscovery): Opportunity {
   const centre = centreForDiscovery(candidate);
   const dateNeedsCheck = candidate.reviewReasons.some((reason) =>
     reason.toLowerCase().includes("no clear future date")
@@ -925,12 +929,17 @@ export const sourceOpportunities: Opportunity[] = [
     });
   }),
   ...generatedLibraryOpportunities,
-  ...generatedDiscoveryReviewCandidates.map(discoveryCandidateToOpportunity)
+  ...(generatedDiscoveryReviewCandidates as DiscoveredOpportunity[]).filter(isProjectableDiscovery).map(discoveryCandidateToOpportunity)
 ];
 
 export const opportunities: Opportunity[] = sourceOpportunities.map(applyLiveStatus);
 
 export const reviewQueue: ReviewItem[] = [
+  ...(generatedDiscoveryReviewCandidates as DiscoveredOpportunity[]).filter(row => !isProjectableDiscovery(row)).map(row => ({
+    id: row.id, title: row.title, source: row.sourceUrl,
+    reason: [row.costEvidence !== "source-stated-free" ? "Cost is unknown or requires rechecking." : "", row.eligibilityEvidence !== "explicit-ages" ? "Numeric eligibility is unknown or requires rechecking." : "", ...row.reviewReasons].filter(Boolean).join(" "),
+    recommendedAction: "verify-cost" as const, createdAt: row.lastChecked
+  })),
   {
     id: "queue-unclear-cost-camp",
     title: "Private summer robotics camp",

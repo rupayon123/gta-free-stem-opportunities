@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { extractScienceCentreCards } from "../lib/scienceCentreDiscovery.ts";
-import { retainFailedDiscoverySource } from "../lib/discoveryRetention.ts";
+import { retainFailedDiscoverySource, retainUnvisitedDiscovery } from "../lib/discoveryRetention.ts";
 import { discoveryDateOnly } from "../lib/discoveryDates.ts";
 import { markDiscoveryObservation } from "../lib/discoveryChanges.ts";
 import { extractUniversityEventCards } from "../lib/universityEventDiscovery.ts";
@@ -26,6 +26,8 @@ const prior = [{ sourceName: "Science Centre", lastChecked: "2026-11-01", lastSe
   { sourceName: "Other", lastChecked: "2026-11-02", lastSeen: "2026-11-02" }];
 assert.deepEqual(retainFailedDiscoverySource(prior, "Science Centre"), [prior[0]]);
 assert.equal(prior[0].lastChecked, "2026-11-01");
+const rotating = [{ id: "old", sourceName: "Index", lastChecked: "2026-11-01" }, { id: "seen", sourceName: "Index", lastChecked: "2026-11-02" }, { id: "other", sourceName: "Other" }];
+assert.deepEqual(retainUnvisitedDiscovery(rotating, "Index", [{ id: "seen" }]), [rotating[0]]);
 assert.equal(discoveryDateOnly("November 21, 2026"), "2026-11-21");
 assert.equal(discoveryDateOnly("2026-11-21"), "2026-11-21");
 assert.equal(discoveryDateOnly("February 30, 2026"), undefined);

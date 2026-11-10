@@ -19,13 +19,15 @@ export type DiscoveredOpportunity = {
   description: string;
   city: string;
   region: Region;
-  ageMin: number;
+  ageMin?: number;
   ageMax?: number;
   category: Category;
-  cost: "Free to join";
+  cost: "Free to join" | "Unknown";
+  costEvidence?: "source-stated-free" | "unknown";
+  eligibilityEvidence?: "explicit-ages" | "unknown";
   language: LanguageCode[];
   deadline?: string;
-  startDate: string;
+  startDate?: string;
   endDate?: string;
   sourceUrl: string;
   lastChecked: string;
@@ -42,6 +44,10 @@ export type DiscoveredOpportunity = {
 };
 
 export const discoverySources: DiscoverySource[] = [
+  {
+    id: "autism-ontario-index", name: "Autism Ontario event index", organization: "Autism Ontario",
+    url: "https://www.autismontario.com/events", trusted: true, sourceType: "nonprofit", keywords: ["family", "community"]
+  },
   {
     id: "autism-ontario-quiet-time",
     name: "Autism Ontario Quiet Time events",
