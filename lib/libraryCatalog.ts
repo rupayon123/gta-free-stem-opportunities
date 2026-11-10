@@ -1,4 +1,5 @@
 import type { Opportunity } from "./types";
+import { readAccessibilitySupport } from "./accessibilitySupport";
 import { isOpportunityVerificationStale } from "./opportunityStatus";
 
 const maximumCatalogSize = 15000;
@@ -29,7 +30,10 @@ export function decodeLibraryCatalog(value: unknown, now = new Date()): Opportun
     if ((item.endDate !== undefined && (typeof item.endDate !== "string" || !Number.isFinite(Date.parse(item.endDate)))) || (item.deadline !== undefined && (typeof item.deadline !== "string" || !Number.isFinite(Date.parse(item.deadline))))) throw new Error("Invalid library event schedule.");
     ids.add(item.id as string);
   }
-  return value.opportunities as Opportunity[];
+  return value.opportunities.map(item => {
+    const { accessibilitySupport, accessibilitySupportUnavailable: _untrustedMarker, ...base } = item as Record<string, unknown>;
+    return { ...base, ...readAccessibilitySupport(accessibilitySupport) };
+  }) as Opportunity[];
 }
 
 let cached: { events: Opportunity[]; fetchedAt: number } | undefined;

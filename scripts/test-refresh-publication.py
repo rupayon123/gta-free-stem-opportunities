@@ -16,6 +16,7 @@ FILES = (
     "lib/generatedLibraryOpportunities.ts",
     "lib/generatedDiscoveryReview.ts",
     "public/opportunities.json",
+    "public/opportunities-v2.json",
 )
 GATES = ["ci", "audit --omit=dev --audit-level=high", "run engine:refresh", "run build"]
 
