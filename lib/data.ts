@@ -132,7 +132,7 @@ function discoveryCandidateToOpportunity(candidate: DiscoveredOpportunity): Oppo
     summary: candidate.description,
     type: typeForDiscovery(candidate),
     category: candidate.category,
-    categories: candidate.category === "STEM" ? ["STEM"] : [candidate.category, "STEM"],
+    categories: candidate.category === "STEM" ? ["STEM"] : candidate.category === "Family Learning" ? ["Family Learning"] : [candidate.category, "STEM"],
     communityFocus: ["Open to all", "Newcomer-friendly"],
     city: candidate.city,
     region: candidate.region,
@@ -188,6 +188,28 @@ function discoveryCandidateToOpportunity(candidate: DiscoveredOpportunity): Oppo
 }
 
 const seedOpportunities: SeedOpportunity[] = [
+  {
+    id: "autism-ontario-newmarket-quiet-santa-2026-11-22",
+    title: "Quiet Time with Santa — Newmarket",
+    provider: "Autism Ontario",
+    summary: "Free five-minute Quiet Time with Santa appointments for autistic children and adults, siblings and caregivers. November 22, 2026, 8:30–10:30 a.m. at Upper Canada Mall, 17600 Yonge Street, Newmarket. Registration and one time slot are required; a waitlist may be available if full. Optional photo packages cost extra. Parent or caregiver supervision is required. Registrants' names and email addresses are shared with the appointment vendor.",
+    type: "One-time event", categories: ["Family Learning"], communityFocus: [],
+    city: "Newmarket", region: "York", address: "Upper Canada Mall, 17600 Yonge Street, Newmarket, ON L3Y 4Z1",
+    latitude: 44.0562244, longitude: -79.4836673, virtual: false,
+    startDate: "2026-11-22T08:30:00-05:00", endDate: "2026-11-22T10:30:00-05:00",
+    status: "needs_review", ages: { min: 0 }, ageLabel: "Autistic children and adults, siblings and caregivers", grades: ["Family", "All ages"], languages: ["en"],
+    accessibility: ["Quiet Time appointment; confirm individual access needs with the provider."],
+    equipment: "Check the source for details.", food: "Check the source for food options.",
+    capacity: "Registration and one time slot are required; check the source or join the waitlist if full.",
+    commitment: "Five-minute appointments during the 8:30–10:30 a.m. event window.",
+    registrationUrl: "https://www.autismontario.com/civicrm/event/info?id=13084",
+    providerContact: "https://www.autismontario.com/civicrm/event/info?id=13084",
+    freeStatusProof: "The official event page says registration is free; photo packages are optional and paid.",
+    lastVerified: "2026-11-10", trustedSource: true, volunteerHoursEligible: false, coopEligible: false, paidPosition: false,
+    tags: ["sensory-friendly", "quiet time", "family"],
+    sources: [{ label: "Official Autism Ontario event", url: "https://www.autismontario.com/civicrm/event/info?id=13084", capturedAt: "2026-11-10T06:24:19Z", confidence: "high" }],
+    adminAuditTrail: [{ label: "Verified source", at: "2026-11-10T06:24:19Z", actor: "Reviewer", detail: "Official page confirms free registration, optional paid photos, date, location, eligible families, Quiet Time and supervision; ticket availability not confirmed." }]
+  },
   {
     id: "ontario-science-centre-pride-in-stem-2026",
     title: "Pride in STEM 2026",

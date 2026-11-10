@@ -1,4 +1,5 @@
 name: Hunter expansion review checks
+# Check the scoped non-library collectors and source policies.
 on:
   push:
     branches: [codex/hunter-expansion-20261110]
@@ -23,3 +24,4 @@ jobs:
       - run: npm run qa:catalog
       - run: npx tsx scripts/native-content-rights.test.ts
       - run: npx tsx scripts/native-source-policy.test.mjs
+      - run: npx tsx scripts/autism-ontario-discovery.test.ts

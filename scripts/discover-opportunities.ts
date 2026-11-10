@@ -11,8 +11,10 @@ import { generatedDiscoveryReviewCandidates } from "../lib/generatedDiscoveryRev
 import { retainFailedDiscoverySource } from "../lib/discoveryRetention";
 import { discoveryDateOnly } from "../lib/discoveryDates";
 import { markDiscoveryObservation } from "../lib/discoveryChanges";
+import { hasEstimatedAgeRange } from "../lib/discoveryEligibility";
 import { extractScienceCentreCards } from "../lib/scienceCentreDiscovery";
 import { extractUniversityEventCards } from "../lib/universityEventDiscovery";
+import { extractAutismOntarioEvent } from "../lib/autismOntarioDiscovery";
 import { isLibraryOpportunityStemRelevant } from "../lib/libraryOpportunityClassification";
 import { opportunities } from "../lib/data";
 import { evaluateDiscoverySourceHealth, type DiscoverySourceHealth } from "../lib/refreshHealth";
@@ -332,7 +334,7 @@ function buildOpportunity(source: DiscoverySource, candidate: RawCandidate): Dis
   ) {
     return null;
   }
-  if (title.length < 5 || !hasStemSignal(combinedText)) return null;
+  if (title.length < 5 || (source.id !== "autism-ontario-quiet-time" && !hasStemSignal(combinedText))) return null;
   if (hasBlockedSupportProgramSignal(combinedText)) return null;
   if (/\$\s*\d|resident:\s*\$|non-resident:\s*\$|cost of the program|program cost|tuition|paid program/i.test(combinedText)) {
     return null;
@@ -350,13 +352,16 @@ function buildOpportunity(source: DiscoverySource, candidate: RawCandidate): Dis
   }
   if (!candidate.sourceUrl) reviewReasons.push("Exact listing URL was not found; using source page URL.");
   if (!source.trusted) reviewReasons.push("Source is a broad public event index, so official provider confirmation is needed.");
+  if (hasEstimatedAgeRange(combinedText)) {
+    reviewReasons.push("Age filter is an estimate from school grades; verify eligibility with the provider.");
+  }
 
-  const ages = inferAges(combinedText);
+  const ages = source.id === "autism-ontario-quiet-time" ? { ageMin: 0, ageMax: undefined } : inferAges(combinedText);
   const sourceUrl = normalizeUrl(candidate.sourceUrl || source.url);
   const city = candidate.city || source.city || "Toronto";
   const organization = candidate.organization || source.organization;
   const region = candidate.region || source.region || "Toronto";
-  const category = inferDiscoveryCategory(combinedText);
+  const category = source.id === "autism-ontario-quiet-time" ? "Family Learning" : inferDiscoveryCategory(combinedText);
   // A page scan supplies candidates, not reviewer approval. Even an official
   // calendar can omit cost, audience, or registration details in its excerpt.
   // Keep all discoveries private until their evidence has been reviewed.
@@ -625,7 +630,9 @@ async function main() {
   for (const source of discoverySources) {
     try {
       const html = await fetchSource(source);
-      const deterministicCandidates = (source.id === "ontario-science-centre-events"
+      const deterministicCandidates = (source.id === "autism-ontario-quiet-time"
+        ? extractAutismOntarioEvent(html, source.url)
+        : source.id === "ontario-science-centre-events"
         ? extractScienceCentreCards(html)
         : source.id === "uoft-engineering-outreach"
         ? extractUniversityEventCards(html)
@@ -633,7 +640,7 @@ async function main() {
         ? extractBiblioCommonsCandidates(html, source)
         : [...extractBiblioCommonsCandidates(html, source), ...extractGenericCandidates(html, source)]
       ).slice(0, discoveryMaxCandidatesPerSource);
-      if ((source.id === "ontario-science-centre-events" || source.id === "uoft-engineering-outreach") && deterministicCandidates.length === 0) {
+      if ((source.id === "autism-ontario-quiet-time" || source.id === "ontario-science-centre-events" || source.id === "uoft-engineering-outreach") && deterministicCandidates.length === 0) {
         throw new Error("No recognizable event cards; retained previous review candidates pending source check");
       }
       const sourceAccepted: DiscoveredOpportunity[] = [];

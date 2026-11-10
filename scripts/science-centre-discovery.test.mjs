@@ -4,6 +4,7 @@ import { retainFailedDiscoverySource } from "../lib/discoveryRetention.ts";
 import { discoveryDateOnly } from "../lib/discoveryDates.ts";
 import { markDiscoveryObservation } from "../lib/discoveryChanges.ts";
 import { extractUniversityEventCards } from "../lib/universityEventDiscovery.ts";
+import { hasEstimatedAgeRange } from "../lib/discoveryEligibility.ts";
 
 const card = `<a href="/whats-on/pop-ups-plus-events/pride-in-stem-2026/" class="osc-callout osc-callout-special">
   <span class="title">Pride in STEM 2026</span>
@@ -48,5 +49,7 @@ const university = extractUniversityEventCards(structured);
 assert.equal(university.length, 1);
 assert.equal(university[0].startDate, "2026-11-20T09:00:00-05:00");
 assert.match(university[0].description, /Admission: Free/);
+assert.equal(hasEstimatedAgeRange(university[0].description), true);
+assert.equal(hasEstimatedAgeRange("Grades 9–12, ages 14–18"), false);
 assert.deepEqual(extractUniversityEventCards('<script type="application/ld+json">invalid</script>'), []);
 console.log("Ontario Science Centre card extraction passed; candidates still require review.");

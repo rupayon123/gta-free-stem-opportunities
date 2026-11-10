@@ -1,0 +1,25 @@
+{
+  "note": "Review-only source observations; not attached to published listings. Venue identity and event applicability require independent review before approval.",
+  "observations": [
+    {
+      "opportunityId": "autism-ontario-newmarket-quiet-santa-2026-11-22",
+      "accessibilitySupport": {
+        "schemaVersion": 1,
+        "evidence": [
+          {
+            "category": "sensory-friendly",
+            "status": "provided",
+            "scope": "activity",
+            "sourceUrl": "https://www.autismontario.com/civicrm/event/info?id=13084",
+            "evidenceText": "special Quiet Time with Santa event for families who have children with ASD who can be overwhelmed by usual holiday festivities",
+            "checkedAt": "2026-11-10T06:24:19.000Z",
+            "reviewStatus": "hold",
+            "conditions": [
+              "A five-minute appointment requires registration and one time slot; confirm individual access needs and availability with the provider."
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

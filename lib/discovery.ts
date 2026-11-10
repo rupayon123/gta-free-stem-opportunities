@@ -43,6 +43,17 @@ export type DiscoveredOpportunity = {
 
 export const discoverySources: DiscoverySource[] = [
   {
+    id: "autism-ontario-quiet-time",
+    name: "Autism Ontario Quiet Time events",
+    organization: "Autism Ontario",
+    url: "https://www.autismontario.com/civicrm/event/info?id=13084",
+    city: "Newmarket",
+    region: "York",
+    trusted: true,
+    sourceType: "nonprofit",
+    keywords: ["family", "quiet time", "sensory"]
+  },
+  {
     id: "ontario-science-centre-events",
     name: "Ontario Science Centre pop-up events",
     organization: "Ontario Science Centre",

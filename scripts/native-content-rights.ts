@@ -22,12 +22,12 @@ export function nativeContentRights(rows: readonly SourceRecord[], sourceRows: r
     // Retained wire key: snapshot verification date, never a claim of renewed permission.
     termsVerifiedAt: verifiedAt,
     restrictedOpportunityIds,
-    sources: [...approvedProviders, ["Ontario Science Centre", "www.ontariosciencecentre.ca"] as const].map(([organization, sourceHost]) => ({
+    sources: [...approvedProviders, ["Ontario Science Centre", "www.ontariosciencecentre.ca"] as const, ["Autism Ontario", "www.autismontario.com"] as const].map(([organization, sourceHost]) => ({
       organization,
       sourceHost,
       records: rows.filter((row) => row.organization === organization).length,
-      status: organization === "Ontario Science Centre" ? "original-factual-summary" : "owner-confirmed-permission",
-      ownerPermission: organization === "Ontario Science Centre" ? undefined : {
+      status: organization === "Ontario Science Centre" || organization === "Autism Ontario" ? "original-factual-summary" : "owner-confirmed-permission",
+      ownerPermission: organization === "Ontario Science Centre" || organization === "Autism Ontario" ? undefined : {
         confirmationID: "gta-library-content-2026-10-25",
         confirmedAt: "2026-10-25",
         scope: ["display-event-listings", "translate-event-listings"]
