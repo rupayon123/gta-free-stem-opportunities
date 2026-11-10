@@ -30,7 +30,8 @@ function nameFrom(value: unknown): string {
   }
   return value.trim();
 }
-function criteriaFrom(value: unknown): Filters {
+/** The legacy criteria contract, reused for non-destructive scoped migration. */
+export function normalizeLegacyFilterCriteria(value: unknown): Filters {
   if (!object(value)) return invalid();
   if (typeof value.query !== "string" || value.query.length > 250
     || typeof value.region !== "string" || !regions.includes(value.region)
@@ -55,7 +56,7 @@ function recordFrom(value: unknown): SavedFilter {
   if (!object(value) || typeof value.id !== "string" || !/^[a-zA-Z0-9-]{1,80}$/.test(value.id)
     || typeof value.highSchool !== "boolean" || typeof value.createdAt !== "string" || !Number.isFinite(Date.parse(value.createdAt))
     || typeof value.updatedAt !== "string" || !Number.isFinite(Date.parse(value.updatedAt))) return invalid();
-  return { id: value.id, name: nameFrom(value.name), filters: criteriaFrom(value.filters),
+  return { id: value.id, name: nameFrom(value.name), filters: normalizeLegacyFilterCriteria(value.filters),
     highSchool: value.highSchool, createdAt: value.createdAt, updatedAt: value.updatedAt };
 }
 
@@ -82,7 +83,7 @@ function persist(storage: Writer, records: SavedFilter[]): SavedFilter[] {
 export function saveNamedFilter(storage: Writer, input: { id?: string; name: string; filters: Filters; highSchool: boolean }, now = new Date()): SavedFilter[] {
   if (input.filters.nearMe) throw new Error("Choose a city or postal area before saving. Your device location is not stored in a saved filter.");
   const name = nameFrom(input.name);
-  const filters = criteriaFrom(input.filters);
+  const filters = normalizeLegacyFilterCriteria(input.filters);
   // Re-read immediately before mutation: stale UI must not resurrect another tab's removed filters.
   const current = readSavedFilters(storage);
   const previous = input.id ? current.find(item => item.id === input.id) : undefined;

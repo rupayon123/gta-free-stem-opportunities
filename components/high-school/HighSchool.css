@@ -37,7 +37,7 @@
 .hs-result-list > li { display: flex; align-items: flex-start; gap: 16px; border-top: 1.5px solid var(--line); padding-block: 22px; }
 .hs-result-list > li > div { min-width: 0; flex: 1; }
 .hs-result-list h4 { margin: 0 0 12px; font-size: 21px; line-height: 1.4; }
-.hs-result-list h4 button { text-align: start; padding: 6px 0; min-height: 44px; border: 0; border-radius: 4px; background: transparent; color: var(--accent); font: inherit; font-weight: 800; text-decoration: underline; text-underline-offset: 4px; }
+.hs-result-list h4 button { text-align: start; padding: 6px 0; min-height: 44px; max-inline-size: 100%; overflow-wrap: anywhere; border: 0; border-radius: 4px; background: transparent; color: var(--accent); font: inherit; font-weight: 800; text-decoration: underline; text-underline-offset: 4px; }
 .hs-result-list p { margin-bottom: 10px; }
 .hs-provider { color: var(--muted); font-size: 15px; font-weight: 700; margin-bottom: 8px; }
 .hs-result-meta, .hs-kind { font-weight: 700; font-size: 15px; }

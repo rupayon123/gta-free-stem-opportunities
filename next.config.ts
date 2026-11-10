@@ -8,7 +8,7 @@ const nextConfig: NextConfig = {
   assetPrefix: getDeploymentAssetOrigin(),
   experimental: {
     // Bound concurrent static renders on the shared development Mac and free CI.
-    cpus: 2,
+    cpus: 1,
     staticGenerationMaxConcurrency: 1
   },
   turbopack: {
