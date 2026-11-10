@@ -71,6 +71,7 @@ def main():
     run("normalize-VM-own-repository-origin", ["git", "remote", "set-url", "origin",
         "https://github.com/rupayon123/gta-free-stem-opportunities.git"], app)
     # Same approved ordinary merge/streamed baselines/checks, on the VM only.
+    run("raw-notes-migration-fixtures", [sys.executable, str(tools / "verify-reconciled-feed.py"), "--self-test"], ops)
     run("ordinary-merge-preparation", [sys.executable, str(tools / "prepare-candidate.py"),
         "--repository", str(app), "--new-candidate", str(candidate), "--new-evidence", str(evidence),
         "--execute-reviewed-plan"], ops)

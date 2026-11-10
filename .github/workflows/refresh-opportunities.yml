@@ -34,7 +34,7 @@ jobs:
           set -euo pipefail
           test "$GITHUB_EVENT_NAME" = push
           test "$GITHUB_REF_NAME" = codex/frontend-reconcile-20261109
-          test "${{ github.event.before }}" = cc7fa6a95a503753485ca918263d42dbddaa836a
+          test "${{ github.event.before }}" = 7dc02d2867c36dfc7163b77ac9f4973c8f774dbb
           test "$GITHUB_REPOSITORY" = rupayon123/gta-free-stem-opportunities
           test "$GITHUB_SHA" = "$EXPECTED_OPS_COMMIT"
           [[ "$EXPECTED_OPS_COMMIT" =~ ^[0-9a-f]{40}$ ]]
@@ -56,15 +56,17 @@ jobs:
           root=Path(os.environ['OPS_ROOT'])
           def git(*args):
               return subprocess.check_output(['git',*args],cwd=root)
-          parent='cc7fa6a95a503753485ca918263d42dbddaa836a'
+          parent='7dc02d2867c36dfc7163b77ac9f4973c8f774dbb'
           assert git('rev-parse','HEAD').decode().strip()==os.environ['EXPECTED_OPS_COMMIT']
           assert git('rev-list','--parents','-n','1','HEAD').decode().split()==[os.environ['EXPECTED_OPS_COMMIT'],parent]
           manifest='hosting/reconcile/helpers-manifest.json'
           workflow='.github/workflows/refresh-opportunities.yml'
           publisher='hosting/reconcile/publish-candidate.py'
-          assert set(git('diff','--name-only',parent,'HEAD').decode().splitlines())=={manifest,workflow,publisher}
+          verifier='hosting/reconcile/verify-reconciled-feed.py'
+          runner='hosting/reconcile/run-reconciliation.py'
+          assert set(git('diff','--name-only',parent,'HEAD').decode().splitlines())=={manifest,workflow,publisher,verifier,runner}
           previous=git('show',parent+':'+manifest)
-          assert hashlib.sha256(previous).hexdigest()=='8d1d5decebeceabe65d66d3aed93051cab5ed86db45ea0b63b198ae6e142863e'
+          assert hashlib.sha256(previous).hexdigest()=='537480fda885f60933d9c25d22762e209cced235c1a78caf9c509754fd8381b3'
           original=json.loads(previous)
           raw=(root/manifest).read_bytes()
           current=json.loads(raw)
@@ -73,15 +75,19 @@ jobs:
           assert len(before)==len(original['files'])==len(after)==len(current['files'])
           assert before.keys()==after.keys()
           assert {k:v for k,v in original.items() if k!='files'}=={k:v for k,v in current.items() if k!='files'}
-          assert all(before[name]==after[name] for name in before if name not in {workflow,publisher})
-          assert after[publisher]=={'path':publisher,'sha256':'5f98c4b8207f8661b71d61303b38e664258b4a090361a049b885eaa13a77994c','bytes':7160}
-          assert hashlib.sha256((root/publisher).read_bytes()).hexdigest()=='5f98c4b8207f8661b71d61303b38e664258b4a090361a049b885eaa13a77994c'
+          assert all(before[name]==after[name] for name in before if name not in {workflow,publisher,verifier,runner})
+          assert after[publisher]=={'path':publisher,'sha256':'c52fbb36b0c295779323b10d990d5465b87e680fece89ade0967f3be344d0997','bytes':7160}
+          assert hashlib.sha256((root/publisher).read_bytes()).hexdigest()=='c52fbb36b0c295779323b10d990d5465b87e680fece89ade0967f3be344d0997'
+          assert after[verifier]=={'path':verifier,'sha256':'8d31e2a2eda6a623523455516a531c8fb472d9b1f815d816285f3a0320872acc','bytes':12761}
+          assert hashlib.sha256((root/verifier).read_bytes()).hexdigest()=='8d31e2a2eda6a623523455516a531c8fb472d9b1f815d816285f3a0320872acc'
+          assert after[runner]=={'path':runner,'sha256':'c0c944dcf9e80ed11a0f28972049ab79c60905f9886ef750940b63a2ca981ed7','bytes':8881}
+          assert hashlib.sha256((root/runner).read_bytes()).hexdigest()=='c0c944dcf9e80ed11a0f28972049ab79c60905f9886ef750940b63a2ca981ed7'
           actual=(root/workflow).read_bytes()
           assert after[workflow]=={'path':workflow,'sha256':hashlib.sha256(actual).hexdigest(),'bytes':len(actual)}
           expected=hashlib.sha256(raw).hexdigest()
           with open(os.environ['GITHUB_ENV'],'a') as env:
               env.write('EXPECTED_HELPERS_SHA256='+expected+'\n')
-          print(json.dumps({'authorizedParent':parent,'actualOperationsCommit':os.environ['EXPECTED_OPS_COMMIT'],'verifiedHelpersSHA256':expected,'changedPaths':[workflow,manifest,publisher]}))
+          print(json.dumps({'authorizedParent':parent,'actualOperationsCommit':os.environ['EXPECTED_OPS_COMMIT'],'verifiedHelpersSHA256':expected,'changedPaths':[workflow,manifest,publisher,verifier,runner]}))
           PYVALIDATE
 
       - name: Verify independently pinned helper sources
