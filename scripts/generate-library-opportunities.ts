@@ -1,3 +1,4 @@
+import { attachReviewedTplProgramPolicy, tplProgramSupportObservation } from "../lib/accessibility/reviewedPolicies";
 import { readFileSync, writeFileSync } from "node:fs";
 import { resolve } from "node:path";
 import {
@@ -520,7 +521,9 @@ export async function generateLibraryOpportunities(options: LibraryRssFetchOptio
   }
 
   generated.sort((a, b) => new Date(a.startDate).getTime() - new Date(b.startDate).getTime());
-  const selected = generated;
+  // Reviewed source observation is fixed, never renewed by collection time.
+  // This additive producer hook does not infer support from titles or raw notes.
+  const selected = generated.map(item => attachReviewedTplProgramPolicy(item, tplProgramSupportObservation));
   const refreshAssessment = evaluateLibraryRefreshHealth({
     generatedAt: earliestCapture ?? refreshTime.toISOString(),
     sources: Array.from(feedStats.values()),

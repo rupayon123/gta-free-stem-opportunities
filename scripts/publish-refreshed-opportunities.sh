@@ -20,16 +20,16 @@ publish_refreshed_opportunities() {
     return 1
   fi
 
-  local generated=(lib/generatedLibraryOpportunities.ts lib/generatedDiscoveryReview.ts public/opportunities.json)
+  local generated=(lib/generatedLibraryOpportunities.ts lib/generatedDiscoveryReview.ts public/opportunities.json public/opportunities-v2.json)
   local attempt changed base push_output tip
   git config user.name "gta-free-stem-bot"
   git config user.email "gta-free-stem-bot@users.noreply.github.com"
 
   for attempt in 1 2 3; do
-    # Only the three generated files may be discarded by the retry below.
+    # Only the four generated files may be discarded by the retry below.
     while IFS= read -r changed; do
       case "$changed" in
-        lib/generatedLibraryOpportunities.ts|lib/generatedDiscoveryReview.ts|public/opportunities.json) ;;
+        lib/generatedLibraryOpportunities.ts|lib/generatedDiscoveryReview.ts|public/opportunities.json|public/opportunities-v2.json) ;;
         *) echo "Unexpected tracked changes; refusing publication or reset." >&2; return 1 ;;
       esac
     done < <(git diff --name-only HEAD)

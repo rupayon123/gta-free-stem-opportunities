@@ -65,7 +65,7 @@ export function computedOpportunityStatus(opportunity: Opportunity, now = new Da
 }
 
 export function isPublicOpportunity(opportunity: Opportunity, now = new Date()) {
-  return computedOpportunityStatus(opportunity, now) === "active";
+  return computedOpportunityStatus(opportunity, now) === "active" && !opportunity.id.startsWith("discovered-") && opportunity.cost === "Free to join" && Boolean(opportunity.freeStatusProof?.trim());
 }
 
 export function publicOpportunities(opportunities: Opportunity[], now = new Date()) {

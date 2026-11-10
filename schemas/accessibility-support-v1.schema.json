@@ -1,0 +1,146 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "GTA provider-backed accessibility support version 1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "evidence"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "evidence": {
+      "type": "array",
+      "maxItems": 48,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "category",
+          "status",
+          "scope",
+          "sourceUrl",
+          "evidenceText",
+          "checkedAt",
+          "reviewStatus"
+        ],
+        "properties": {
+          "category": {
+            "enum": [
+              "mobility-wheelchair",
+              "sensory-friendly",
+              "adapted-inclusive-programme",
+              "sign-language",
+              "hearing-captioning",
+              "visual-formats",
+              "support-person"
+            ]
+          },
+          "status": {
+            "enum": [
+              "provided",
+              "on-request",
+              "not-available",
+              "unknown"
+            ]
+          },
+          "scope": {
+            "enum": [
+              "venue",
+              "activity",
+              "provider-policy"
+            ]
+          },
+          "sourceUrl": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^[Hh][Tt][Tt][Pp][Ss]://",
+            "minLength": 1,
+            "maxLength": 2048
+          },
+          "evidenceText": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 600,
+            "pattern": "\\S"
+          },
+          "checkedAt": {
+            "type": "string",
+            "format": "date-time",
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}\\.\\d{3}Z$"
+          },
+          "reviewStatus": {
+            "enum": [
+              "approved",
+              "hold"
+            ]
+          },
+          "conditions": {
+            "type": "array",
+            "maxItems": 12,
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 500,
+              "pattern": "\\S"
+            }
+          },
+          "requestUrl": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^[Hh][Tt][Tt][Pp][Ss]://",
+            "minLength": 1,
+            "maxLength": 2048
+          },
+          "venue": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id",
+              "name"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 120,
+                "pattern": "\\S"
+              },
+              "name": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 240,
+                "pattern": "\\S"
+              }
+            }
+          }
+        },
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "scope": {
+                  "const": "venue"
+                }
+              }
+            },
+            "then": {
+              "required": [
+                "venue"
+              ]
+            },
+            "else": {
+              "not": {
+                "required": [
+                  "venue"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}
