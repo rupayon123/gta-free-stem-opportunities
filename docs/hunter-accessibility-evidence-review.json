@@ -1,0 +1,50 @@
+{
+  "note": "Reviewed source observations in shared accessibility-support-v1 format; not yet attached to published listings. The venue proof applies only to the reviewed exact event and venue.",
+  "observations": [
+    {
+      "opportunityId": "ontario-science-centre-pride-in-stem-2026",
+      "accessibilitySupport": {
+        "schemaVersion": 1,
+        "evidence": [
+          {
+            "category": "mobility-wheelchair",
+            "status": "provided",
+            "scope": "venue",
+            "venue": {
+              "id": "evergreen-brick-works-550-bayview",
+              "name": "Evergreen Brick Works"
+            },
+            "sourceUrl": "https://www.ontariosciencecentre.ca/whats-on/pop-ups-plus-events/pride-in-stem-2026",
+            "evidenceText": "Evergreen Brick Works is wheelchair accessible",
+            "checkedAt": "2026-11-10T06:33:20.000Z",
+            "reviewStatus": "approved",
+            "conditions": [
+              "Venue access does not establish access for every activity; confirm specific needs with the provider."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "opportunityId": "autism-ontario-newmarket-quiet-santa-2026-11-22",
+      "accessibilitySupport": {
+        "schemaVersion": 1,
+        "evidence": [
+          {
+            "category": "sensory-friendly",
+            "status": "provided",
+            "scope": "activity",
+            "sourceUrl": "https://www.autismontario.com/civicrm/event/info?id=13084",
+            "evidenceText": "special Quiet Time with Santa event for families who have children with ASD who can be overwhelmed by usual holiday festivities",
+            "checkedAt": "2026-11-10T06:33:20.000Z",
+            "reviewStatus": "approved",
+            "conditions": [
+              "A five-minute appointment requires registration and one time slot; a waitlist may be offered when full, and availability is not confirmed.",
+              "Parent or caregiver supervision is required. Confirm individual access needs with the provider."
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
