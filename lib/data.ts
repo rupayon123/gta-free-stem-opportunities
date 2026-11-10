@@ -4,6 +4,7 @@ import { generatedDiscoveryReviewCandidates } from "./generatedDiscoveryReview";
 import type { DiscoveredOpportunity } from "./discovery";
 import type { Opportunity, Region, ReviewItem } from "./types";
 import { computedOpportunityStatus, opportunityVerificationMaximumAgeDays } from "./opportunityStatus";
+import { attachReviewedHunterEventSupport } from "./accessibility/reviewedHunterEvents";
 
 const now = new Date();
 export const curatedVerificationMaximumAgeDays = opportunityVerificationMaximumAgeDays;
@@ -25,6 +26,8 @@ type SeedOpportunity = Omit<
   | "status"
 > & {
   status?: Opportunity["status"];
+  /** Complete source-backed body when a shorter browse summary is available. */
+  description?: string;
 };
 
 export const gtaFsaCentres: Record<string, { label: string; latitude: number; longitude: number }> = {
@@ -130,8 +133,8 @@ function discoveryCandidateToOpportunity(candidate: DiscoveredOpportunity): Oppo
     summary: candidate.description,
     type: typeForDiscovery(candidate),
     category: candidate.category,
-    categories: candidate.category === "STEM" ? ["STEM"] : [candidate.category, "STEM"],
-    communityFocus: ["Open to all", "Newcomer-friendly"],
+    categories: candidate.category === "STEM" ? ["STEM"] : candidate.category === "Family Learning" ? ["Family Learning"] : [candidate.category, "STEM"],
+    communityFocus: candidate.organization === "Autism Ontario" ? [] : ["Open to all", "Newcomer-friendly"],
     city: candidate.city,
     region: candidate.region,
     address: `${candidate.city}, ${candidate.region}`,
@@ -186,6 +189,54 @@ function discoveryCandidateToOpportunity(candidate: DiscoveredOpportunity): Oppo
 }
 
 const seedOpportunities: SeedOpportunity[] = [
+  {
+    id: "autism-ontario-newmarket-quiet-santa-2026-11-22",
+    title: "Quiet Time with Santa — Newmarket",
+    provider: "Autism Ontario",
+    summary: "Free five-minute Quiet Time with Santa appointments for autistic children and adults, siblings and caregivers. November 22, 2026, 8:30–10:30 a.m. at Upper Canada Mall, 17600 Yonge Street, Newmarket. Registration and one time slot are required; a waitlist may be available if full. Optional photo packages cost extra. Parent or caregiver supervision is required. Registrants' names and email addresses are shared with the appointment vendor.",
+    type: "One-time event", categories: ["Family Learning"], communityFocus: [],
+    city: "Newmarket", region: "York", address: "Upper Canada Mall, 17600 Yonge Street, Newmarket, ON L3Y 4Z1",
+    latitude: 44.0562244, longitude: -79.4836673, virtual: false,
+    startDate: "2026-11-22T08:30:00-05:00", endDate: "2026-11-22T10:30:00-05:00",
+    status: "needs_review", ages: { min: 0 }, ageLabel: "Autistic children and adults, siblings and caregivers", grades: ["Family", "All ages"], languages: ["en"],
+    accessibility: ["Quiet Time appointment; confirm individual access needs with the provider."],
+    equipment: "Check the source for details.", food: "Check the source for food options.",
+    capacity: "Registration and one time slot are required; check the source or join the waitlist if full.",
+    commitment: "Five-minute appointments during the 8:30–10:30 a.m. event window.",
+    registrationUrl: "https://www.autismontario.com/civicrm/event/info?id=13084",
+    providerContact: "https://www.autismontario.com/civicrm/event/info?id=13084",
+    freeStatusProof: "The official event page says registration is free; photo packages are optional and paid.",
+    lastVerified: "2026-11-10", trustedSource: true, volunteerHoursEligible: false, coopEligible: false, paidPosition: false,
+    tags: ["sensory-friendly", "quiet time", "family"],
+    sources: [{ label: "Official Autism Ontario event", url: "https://www.autismontario.com/civicrm/event/info?id=13084", capturedAt: "2026-11-10T06:24:19Z", confidence: "high" }],
+    adminAuditTrail: [{ label: "Verified source", at: "2026-11-10T06:24:19Z", actor: "Reviewer", detail: "Official page confirms free registration, optional paid photos, date, location, eligible families, Quiet Time and supervision; ticket availability not confirmed." }]
+  },
+  {
+    id: "ontario-science-centre-pride-in-stem-2026",
+    title: "Pride in STEM 2026",
+    provider: "Ontario Science Centre",
+    summary: "Free, all-ages STEM activities and performances celebrating 2SLGBTQI+ people. November 21, 2026, 9 a.m.–3 p.m. at Evergreen Brick Works, 550 Bayview Avenue, Toronto. Registration is encouraged but not required. The venue is wheelchair accessible; a free shuttle runs from Broadview Station. On-site parking is paid.",
+    type: "One-time event",
+    categories: ["STEM", "Family STEM", "Science & Engineering"],
+    communityFocus: ["Open to all", "2SLGBTQ+ inclusive"],
+    city: "Toronto", region: "Toronto",
+    address: "Evergreen Brick Works, 550 Bayview Avenue, Toronto, ON M4W 3X8",
+    latitude: 43.6843326, longitude: -79.3654782, virtual: false,
+    startDate: "2026-11-21T09:00:00-05:00", endDate: "2026-11-21T15:00:00-05:00",
+    // Enable only after website/feed and native provider contracts are aligned.
+    status: "needs_review",
+    ages: { min: 0 }, ageLabel: "All ages", grades: ["Family", "All ages"], languages: ["en"],
+    accessibility: ["Wheelchair accessible venue", "Public transit accessible", "Free shuttle from Broadview Station"],
+    equipment: "Check the source for activity details.", food: "Check the source for food options.",
+    capacity: "Registration encouraged but not required for entry.", commitment: "November 21, 9 a.m. to 3 p.m.",
+    registrationUrl: "https://www.ontariosciencecentre.ca/whats-on/pop-ups-plus-events/pride-in-stem-2026",
+    providerContact: "https://www.ontariosciencecentre.ca/contact-us",
+    freeStatusProof: "The official event page states that the family-friendly event is free; on-site parking is paid.",
+    lastVerified: "2026-11-10", trustedSource: true, volunteerHoursEligible: false, coopEligible: false, paidPosition: false,
+    tags: ["science centre", "science", "engineering", "family", "2SLGBTQI+"],
+    sources: [{ label: "Official Ontario Science Centre event", url: "https://www.ontariosciencecentre.ca/whats-on/pop-ups-plus-events/pride-in-stem-2026", capturedAt: "2026-11-10T05:59:01Z", confidence: "high" }],
+    adminAuditTrail: [{ label: "Verified source", at: "2026-11-10T05:59:01Z", actor: "Reviewer", detail: "Official event page confirms all ages, free entry, date, time, address, optional registration, accessibility and paid parking." }]
+  },
   {
     id: "tpl-stem-programming-forest-hill-2026-06-04",
     title: "STEM Programming For Children",
@@ -858,10 +909,10 @@ export function publicationSnapshotTime() {
 // status first would irreversibly expire a row before an earlier snapshot check.
 export const sourceOpportunities: Opportunity[] = [
   ...seedOpportunities.map((opportunity) => {
-    return {
+    return attachReviewedHunterEventSupport({
       ...opportunity,
       organization: opportunity.provider,
-      description: opportunity.summary,
+      description: opportunity.description ?? opportunity.summary,
       category: opportunity.categories[0],
       ageMin: opportunity.ages.min,
       ageMax: opportunity.ages.max,
@@ -871,7 +922,7 @@ export const sourceOpportunities: Opportunity[] = [
       lastChecked: opportunity.lastVerified,
       lastSeen: opportunity.lastVerified,
       status: opportunity.status ?? "active"
-    };
+    });
   }),
   ...generatedLibraryOpportunities,
   ...generatedDiscoveryReviewCandidates.map(discoveryCandidateToOpportunity)

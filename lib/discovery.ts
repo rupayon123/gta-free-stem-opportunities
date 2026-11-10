@@ -35,9 +35,46 @@ export type DiscoveredOpportunity = {
   confidence: "high" | "medium" | "needs_review";
   reviewReasons: string[];
   sourceName: string;
+  /** Observation metadata, not permission to publish or send a notification. */
+  firstSeen?: string;
+  lastChanged?: string;
+  changeKind?: "new" | "changed" | "unchanged" | "source_unavailable";
 };
 
 export const discoverySources: DiscoverySource[] = [
+  {
+    id: "autism-ontario-quiet-time",
+    name: "Autism Ontario Quiet Time events",
+    organization: "Autism Ontario",
+    url: "https://www.autismontario.com/civicrm/event/info?id=13084",
+    city: "Newmarket",
+    region: "York",
+    trusted: true,
+    sourceType: "nonprofit",
+    keywords: ["family", "quiet time", "sensory"]
+  },
+  {
+    id: "ontario-science-centre-events",
+    name: "Ontario Science Centre pop-up events",
+    organization: "Ontario Science Centre",
+    url: "https://www.ontariosciencecentre.ca/whats-on",
+    city: "Toronto",
+    region: "Toronto",
+    trusted: true,
+    sourceType: "community",
+    keywords: ["stem", "science", "engineering", "family", "youth"]
+  },
+  {
+    id: "rom-public-programs",
+    name: "Royal Ontario Museum public programs",
+    organization: "Royal Ontario Museum",
+    url: "https://www.rom.on.ca/whats-on/programs",
+    city: "Toronto",
+    region: "Toronto",
+    trusted: true,
+    sourceType: "community",
+    keywords: ["science", "nature", "family", "youth", "museum"]
+  },
   {
     id: "tpl-events-stem",
     name: "Toronto Public Library events",
@@ -328,7 +365,7 @@ export const discoverySources: DiscoverySource[] = [
     id: "uoft-engineering-outreach",
     name: "University of Toronto Engineering Outreach",
     organization: "University of Toronto Engineering Outreach",
-    url: "https://outreach.engineering.utoronto.ca/",
+    url: "https://outreach.engineering.utoronto.ca/events/",
     city: "Toronto",
     region: "Toronto",
     trusted: true,
