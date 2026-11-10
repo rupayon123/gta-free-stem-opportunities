@@ -26,7 +26,7 @@
     "discover:sql": "tsx scripts/discover-opportunities.ts --format=sql",
     "generate:library": "tsx scripts/generate-library-opportunities.ts",
     "export:public-feed": "npm run prepare:library && tsx scripts/export-public-opportunities.ts --publish",
-    "engine:refresh": "npm run generate:library && npm run prepare:library && npm run discover:write && npm run export:public-feed && npm run youth:refresh && npm run qa",
+    "engine:refresh": "npm run generate:library && npm run prepare:library && tsx scripts/discovery-refresh.ts && npm run export:public-feed && npm run youth:refresh && npm run qa",
     "supabase:check": "tsx scripts/check-supabase.ts",
     "supabase:seed": "tsx scripts/export-supabase-seed.ts",
     "qa": "tsx scripts/qa-check.ts && npm run qa:search && npm run qa:catalog && npm run verify:native-export && npm run qa:filters && npm run qa:motion && npm run qa:high-school && npm run qa:youth-hunter && npm run verify:youth-feed && npm run qa:accessibility-support",

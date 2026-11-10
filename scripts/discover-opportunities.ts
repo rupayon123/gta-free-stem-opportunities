@@ -1,5 +1,5 @@
 import { createHash } from "node:crypto";
-import { writeFileSync } from "node:fs";
+import { renameSync, rmSync, writeFileSync } from "node:fs";
 import {
   discoverySourceRequiresSpecificStemEvidence,
   evidenceBackedDiscoveryTags,
@@ -616,7 +616,12 @@ export const generatedDiscoverySummary = ${JSON.stringify(summary, null, 2)} as 
 
 export const generatedDiscoveryReviewCandidates = ${JSON.stringify(result.opportunities, null, 2)} satisfies DiscoveredOpportunity[];
 `;
-  writeFileSync("lib/generatedDiscoveryReview.ts", output);
+  const path = "lib/generatedDiscoveryReview.ts";
+  const temporary = `${path}.${process.pid}.tmp`;
+  try {
+    writeFileSync(temporary, output, { flag: "wx" });
+    renameSync(temporary, path);
+  } finally { rmSync(temporary, { force: true }); }
 }
 
 async function main() {
