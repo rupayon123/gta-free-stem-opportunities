@@ -27,3 +27,5 @@ jobs:
       - run: npx tsx scripts/autism-ontario-discovery.test.ts
       - run: npm run qa:accessibility-support
       - run: npx tsx lib/accessibility/reviewedHunterEvents.test.ts
+      - run: GTA_PUBLIC_OPPORTUNITIES_EXPORT="$RUNNER_TEMP/hunter-candidate.json" npx tsx scripts/export-public-opportunities.ts --publish
+      - run: GTA_PUBLIC_OPPORTUNITIES_EXPORT="$RUNNER_TEMP/hunter-candidate.json" npx tsx scripts/hunter-candidate-feed.test.ts
