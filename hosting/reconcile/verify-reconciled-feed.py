@@ -86,8 +86,9 @@ def add_source_bound_raw_notes(before, after, master):
             continue
         source = by_id.get(old["id"])
         assert source is not None, "New raw notes require an exact baseline master identity"
-        for key in ["provider", "sourceUrl", "title", "description"]:
+        for key in ["organization", "sourceUrl", "title", "description"]:
             assert key in old and old[key] == source[key], "Raw-notes source binding changed: " + key
+        assert source.get("provider") == old["organization"], "Native organization differs from the original source provider"
         notes = source.get("accessibility")
         assert isinstance(notes, list) and all(isinstance(note, str) for note in notes), "Baseline raw notes must be literal strings"
         assert new["accessibility"] == notes, "Added raw notes differ from the exact baseline source or its order"
@@ -97,8 +98,8 @@ def add_source_bound_raw_notes(before, after, master):
 
 
 def self_test():
-    source = {"id": "fixture", "provider": "Library", "sourceUrl": "https://example.org/event", "title": "Full title", "description": "Full source body — 原文", "accessibility": ["Raw note A", "Raw note B"]}
-    row = {key: value for key, value in source.items() if key != "accessibility"}
+    source = {"id": "fixture", "organization": "Library", "provider": "Library", "sourceUrl": "https://example.org/event", "title": "Full title", "description": "Full source body — 原文", "accessibility": ["Raw note A", "Raw note B"]}
+    row = {key: value for key, value in source.items() if key not in {"accessibility", "provider"}}
     before = {"schemaVersion": 1, "count": 1, "publicationRevision": "old", "opportunities": [{**row, "cost": "Free to join"}]}
     after = copy.deepcopy(before)
     after["publicationRevision"] = "new"
@@ -110,10 +111,10 @@ def self_test():
     for value in [["Raw note A"], ["Raw note A", "Raw note B", "Invented support"], ["Raw note B", "Raw note A"], ["Altered note", "Raw note B"], "Raw note A"]:
         changed = copy.deepcopy(after); changed["opportunities"][0]["accessibility"] = value
         cases.append((before, changed, [source]))
-    for key, value in [("cost", "$10"), ("description", "Changed body"), ("provider", "Other provider"), ("sourceUrl", "https://example.org/other"), ("id", "another-id"), ("unexpectedField", True)]:
+    for key, value in [("cost", "$10"), ("description", "Changed body"), ("organization", "Other provider"), ("sourceUrl", "https://example.org/other"), ("id", "another-id"), ("unexpectedField", True)]:
         changed = copy.deepcopy(after); changed["opportunities"][0][key] = value
         cases.append((before, changed, [source]))
-    for key in ["provider", "sourceUrl", "title", "description"]:
+    for key in ["organization", "sourceUrl", "title", "description"]:
         old = copy.deepcopy(before); new = copy.deepcopy(after)
         old["opportunities"][0][key] = new["opportunities"][0][key] = "Wrong binding"
         cases.append((old, new, [source]))
@@ -124,6 +125,7 @@ def self_test():
     changed = copy.deepcopy(after); changed["opportunities"][0]["accessibility"] = ["Changed existing note"]
     cases.append((existing, changed, [source]))
     cases.append((before, after, []))
+    cases.append((before, after, [{**source, "provider": "Unrelated source provider"}]))
     rejected = 0
     for old, new, master in cases:
         try:

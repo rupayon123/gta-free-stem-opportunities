@@ -32,7 +32,7 @@ def validate_event():
         raise RuntimeError("Wrong event")
     event = json.loads(Path(os.environ["GITHUB_EVENT_PATH"]).read_text())
     if (event.get("ref") != "refs/heads/codex/frontend-reconcile-20261109"
-            or event.get("before") != "7dc02d2867c36dfc7163b77ac9f4973c8f774dbb"
+            or event.get("before") != "97ba4a079ae3c56fe2f11e849a10c7b0a0516420"
             or event.get("after") != os.environ["EXPECTED_OPS_COMMIT"]
             or any(event.get(key) is not False for key in ["created", "deleted", "forced"])):
         raise RuntimeError("Push is outside the one authorized operations revision")
