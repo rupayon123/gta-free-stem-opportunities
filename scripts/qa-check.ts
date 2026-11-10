@@ -1,4 +1,5 @@
 import { readFileSync, readdirSync } from "node:fs";
+import { isLegacyNativeSource } from "./native-feed-projection";
 import {
   communityFormFields,
   communityFormKinds,
@@ -493,7 +494,7 @@ assert(
 const publicListings = publicOpportunities(opportunities);
 assert(publicListings.length > 0, "Expected at least one public active listing.");
 const snapshotTime = publicationSnapshotTime();
-const snapshotListings = publicOpportunities(sourceOpportunities, snapshotTime);
+const snapshotListings = publicOpportunities(sourceOpportunities, snapshotTime).filter(isLegacyNativeSource);
 assert(!isOpportunityVerificationStale(publicationSnapshotAt), "The publication snapshot must still have a fresh source check at QA time.");
 assert(snapshotTime.getTime() <= Date.now() + 86400000, "The publication snapshot must not be materially in the future.");
 assert(allLibraryOpportunities.every((opportunity) => cityOptions.includes(opportunity.city)), "Every collected library city must be selectable and accepted in shared links.");

@@ -10,7 +10,7 @@ export function serializeNativeFeed(value: FeedPayload): string {
       || value.count !== value.opportunities.length || value.count > maximumNativeRecords) {
     throw new Error(`Native feed count is inconsistent or exceeds ${maximumNativeRecords} records. Previous output was retained.`);
   }
-  const contents = `${JSON.stringify(value, null, 2)}\n`;
+  const contents = `${JSON.stringify(value)}\n`;
   if (Buffer.byteLength(contents, "utf8") > maximumNativeBytes) {
     throw new Error(`Native feed exceeds ${maximumNativeBytes} UTF-8 bytes. Previous output was retained.`);
   }

@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { accessibilityExportFields } from "../lib/accessibilitySupport";
 import { existsSync, mkdirSync, mkdtempSync, readFileSync, renameSync, rmSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { dirname, join } from "node:path";
@@ -8,11 +9,15 @@ import { generatedLibrarySourceHealth, generatedLibraryCollectionHealth } from "
 import { publicOpportunities } from "../lib/opportunityStatus";
 import { type FeedPayload, prepareNativePublication, serializeNativeFeed } from "./native-publication";
 import { nativeContentRights } from "./native-content-rights";
+import { factualSummaryRightsReviewedAt, scienceCentreEventID, autismOntarioEventID } from "./native-source-policy";
+import { isLegacyNativeSource } from "./native-feed-projection";
 export { serializeNativeFeed } from "./native-publication";
 
-const outputPath = process.env.GTA_PUBLIC_OPPORTUNITIES_EXPORT ?? "public/opportunities.json";
+const expanded = process.argv.includes("--v2");
+const outputPath = process.env.GTA_PUBLIC_OPPORTUNITIES_EXPORT ?? (expanded ? "public/opportunities-v2.json" : "public/opportunities.json");
 
-const publicListings = publicOpportunities(sourceOpportunities, publicationSnapshotTime()).map((opportunity) => ({
+const selectedOpportunities = publicOpportunities(sourceOpportunities, publicationSnapshotTime()).filter(row => expanded || isLegacyNativeSource(row));
+const publicListings = selectedOpportunities.map((opportunity) => ({
   id: opportunity.id,
   title: opportunity.title,
   organization: opportunity.organization,
@@ -21,6 +26,7 @@ const publicListings = publicOpportunities(sourceOpportunities, publicationSnaps
   region: opportunity.region,
   ageMin: opportunity.ageMin,
   ageMax: opportunity.ageMax,
+  ageLabel: opportunity.ageLabel,
   category: opportunity.category,
   categories: opportunity.categories,
   cost: opportunity.cost,
@@ -39,16 +45,23 @@ const publicListings = publicOpportunities(sourceOpportunities, publicationSnaps
   longitude: opportunity.longitude,
   address: opportunity.address,
   virtual: opportunity.virtual,
+  accessibility: opportunity.accessibility,
   volunteerHoursEligible: opportunity.volunteerHoursEligible,
   coopEligible: opportunity.coopEligible,
   trustedSource: opportunity.trustedSource,
-  sources: opportunity.sources
+  sources: opportunity.sources,
+  ...accessibilityExportFields(opportunity)
 }));
 
 const lastDataChange = publicListings
   .flatMap((opportunity) => [opportunity.lastChecked, opportunity.lastSeen].filter(Boolean))
   .sort()
   .at(-1);
+
+const baseRightsSnapshot = publicationSnapshotTime().toISOString().slice(0, 10);
+const hasReviewedFactualSummary = publicListings.some(row => row.id === scienceCentreEventID || row.id === autismOntarioEventID);
+const rightsSnapshot = [baseRightsSnapshot, ...(hasReviewedFactualSummary ? [factualSummaryRightsReviewedAt] : [])].sort().at(-1)!;
+if (lastDataChange && lastDataChange.slice(0, 10) > rightsSnapshot) throw new Error("Rights review snapshot precedes the latest source check; retain the previous feed.");
 
 const payload = {
   name: "GTA FREE STEM Opportunities public feed",
@@ -68,7 +81,7 @@ const payload = {
       reviewCandidates: generatedDiscoverySummary.newCandidates
     }
   },
-  contentRights: nativeContentRights(publicListings, sourceOpportunities, publicationSnapshotTime().toISOString().slice(0, 10)),
+  contentRights: nativeContentRights(publicListings, sourceOpportunities, rightsSnapshot),
   opportunities: publicListings
 };
 
@@ -86,10 +99,12 @@ if (process.argv.includes("--self-test")) {
   const actual = serializeNativeFeed(payload);
   assert.equal(JSON.parse(actual).opportunities.length, publicListings.length);
   const exportedRows = JSON.parse(actual).opportunities;
-  const originalRows = publicOpportunities(sourceOpportunities, publicationSnapshotTime());
+  const originalRows = selectedOpportunities;
   assert(exportedRows.every((row: Record<string, unknown>) => typeof row.virtual === "boolean"), "Every native row must preserve its explicit virtual flag");
   assert.deepEqual(exportedRows.map((row: { id: string; virtual: boolean }) => [row.id, row.virtual]), originalRows.map((row) => [row.id, row.virtual]), "Native virtual flags must align exactly with source identities");
   assert.deepEqual(exportedRows.map((row: { id: string; description: string }) => [row.id, row.description]), originalRows.map((row) => [row.id, row.description]), "Adding virtual metadata must preserve full original bodies and IDs");
+  assert.deepEqual(exportedRows.map((row: { id: string; accessibility: string[] }) => [row.id, row.accessibility]), originalRows.map(row => [row.id, row.accessibility]), "Native export preserves raw access notes without inference");
+  assert.deepEqual(exportedRows.map((row: { id: string; accessibilitySupport?: unknown }) => [row.id, row.accessibilitySupport]), originalRows.map(row => [row.id, row.accessibilitySupport]), "Structured provider evidence is additive and never synthesized");
   assert(publicListings.every((row) => !Object.hasOwn(row, "translations")));
   const optional = { count: 2, opportunities: [{ id: "missing-translation" }, { id: "empty-translation", translations: {} }] };
   assert.deepEqual(JSON.parse(serializeNativeFeed(optional)).opportunities, optional.opportunities);
