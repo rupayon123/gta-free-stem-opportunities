@@ -198,7 +198,7 @@ const seedOpportunities: SeedOpportunity[] = [
     city: "Newmarket", region: "York", address: "Upper Canada Mall, 17600 Yonge Street, Newmarket, ON L3Y 4Z1",
     latitude: 44.0562244, longitude: -79.4836673, virtual: false,
     startDate: "2026-11-22T08:30:00-05:00", endDate: "2026-11-22T10:30:00-05:00",
-    status: "needs_review", ages: { min: 0 }, ageLabel: "Autistic children and adults, siblings and caregivers", grades: ["Family", "All ages"], languages: ["en"],
+    status: "active", ages: { min: 0 }, ageLabel: "Autistic children and adults, siblings and caregivers", grades: ["Family", "All ages"], languages: ["en"],
     accessibility: ["Quiet Time appointment; confirm individual access needs with the provider."],
     equipment: "Check the source for details.", food: "Check the source for food options.",
     capacity: "Registration and one time slot are required; check the source or join the waitlist if full.",
@@ -223,8 +223,8 @@ const seedOpportunities: SeedOpportunity[] = [
     address: "Evergreen Brick Works, 550 Bayview Avenue, Toronto, ON M4W 3X8",
     latitude: 43.6843326, longitude: -79.3654782, virtual: false,
     startDate: "2026-11-21T09:00:00-05:00", endDate: "2026-11-21T15:00:00-05:00",
-    // Enable only after website/feed and native provider contracts are aligned.
-    status: "needs_review",
+    // Active only in this isolated review candidate; native approval is pending.
+    status: "active",
     ages: { min: 0 }, ageLabel: "All ages", grades: ["Family", "All ages"], languages: ["en"],
     accessibility: ["Wheelchair accessible venue", "Public transit accessible", "Free shuttle from Broadview Station"],
     equipment: "Check the source for activity details.", food: "Check the source for food options.",

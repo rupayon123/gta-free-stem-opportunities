@@ -29,3 +29,9 @@ jobs:
       - run: npx tsx lib/accessibility/reviewedHunterEvents.test.ts
       - run: GTA_PUBLIC_OPPORTUNITIES_EXPORT="$RUNNER_TEMP/hunter-candidate.json" npx tsx scripts/export-public-opportunities.ts --publish
       - run: GTA_PUBLIC_OPPORTUNITIES_EXPORT="$RUNNER_TEMP/hunter-candidate.json" npx tsx scripts/hunter-candidate-feed.test.ts
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: hunter-native-feed-review
+          path: ${{ runner.temp }}/hunter-candidate.json
+          if-no-files-found: error
+          retention-days: 3

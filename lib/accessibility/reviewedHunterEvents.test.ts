@@ -5,8 +5,8 @@ import { attachReviewedHunterEventSupport } from "./reviewedHunterEvents";
 
 const science = sourceOpportunities.find((row) => row.id === "ontario-science-centre-pride-in-stem-2026")!;
 const autism = sourceOpportunities.find((row) => row.id === "autism-ontario-newmarket-quiet-santa-2026-11-22")!;
-assert.equal(science.status, "needs_review");
-assert.equal(autism.status, "needs_review");
+assert.equal(science.status, "active");
+assert.equal(autism.status, "active");
 const now = "2026-11-10T12:00:00.000Z";
 const wheelchair = { schemaVersion: 1 as const, categories: ["mobility-wheelchair" as const], includeOnRequest: false };
 const sensory = { schemaVersion: 1 as const, categories: ["sensory-friendly" as const], includeOnRequest: false };
