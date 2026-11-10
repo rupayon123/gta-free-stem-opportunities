@@ -1,3 +1,22 @@
+## Current frontend visual gate — 2026-11-09
+
+This revision reuses the existing isolated Ubuntu reconciliation route. The current
+main is `dfa1b64a9c0c5ef6263e9f93d494926ab4032f30`; the reviewed UI parent remains
+`9f83e87e4447b805373ff9f7f206adb737e5c413`. Only the three generated data files
+changed on main since their merge base. Their exact current blob IDs are checked
+in `prepare-candidate.py`. The pre-proof merge must match independently reviewed
+tree `340f9b4a11a1232055ab45a56d21371e9dad9feb` (remote source candidate
+`efef6692172bdb234b611e973b93ca5c0e9a8110`).
+
+Use the existing approved mapper offline without changing its review timestamp.
+Keep the full native-envelope comparison strict: only accessibility proof and the
+publication revision may differ. Diagnose any other field difference; do not add
+exclusions. No provider fetch, collector, local Mac runtime, existing-ref update,
+production merge, or deployment is part of this route. The successful output is a
+new review candidate, followed separately by a fresh preview and original-viewport
+visual checks. Existing phase time, memory, and single-writer limits are unchanged.
+Historical source reviews below remain historical and do not override these pins.
+
 # Optional public Ubuntu reconciliation route — unexecuted source draft
 
 Root workflow review, an explicit dispatch authorization and a coordinator

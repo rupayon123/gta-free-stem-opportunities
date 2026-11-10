@@ -1,10 +1,10 @@
 {
-  "scope": "Optional Ubuntu route V2 SOURCE ONLY, no ops write or dispatch authority.",
+  "scope": "Current Nov9 isolated Ubuntu reconciliation, current main plus reviewed frontend; no production deployment.",
   "files": [
     {
       "path": "hosting/reconcile/prepare-candidate.py",
-      "sha256": "5116842b8f40b204c0fc616d208e98ca92e3d4ef4a3df45240d56c7bdcadcabc",
-      "bytes": 7747
+      "sha256": "4e022823668ede1a3a30aa30a0e108a83adcad27fdd326680fe6684212569c4d",
+      "bytes": 7960
     },
     {
       "path": "hosting/reconcile/overlay-reviewed-policy.ts",
@@ -28,12 +28,12 @@
     },
     {
       "path": "hosting/reconcile/run-reconciliation.py",
-      "sha256": "c6ffd22c420be7d555229a7018da8388b53661e45fc208b01459296de5361d14",
+      "sha256": "7be86bb7ad05107dd815b65cd6f58b6177b2454a4b6b34f842a6d0be9179167f",
       "bytes": 8761
     },
     {
       "path": "hosting/reconcile/publish-candidate.py",
-      "sha256": "c3c724ddd1bfa2997d5baf339426b2871087d073c8e343d6ff50224fb79a2d2d",
+      "sha256": "dbcbdfb68882c85af7bd839503b8f09a882b6608727a8b9fbf49e2dc27b147b3",
       "bytes": 6532
     },
     {
@@ -43,8 +43,8 @@
     },
     {
       "path": "hosting/reconcile/REVIEW_ROUTE.md",
-      "sha256": "7187eaa8acb419b5e40060f8abd851967f7cd61970788b65012b13a8e4dcd4ff",
-      "bytes": 13451
+      "sha256": "06f789d7245a9dbe6c3e267502f71010fa3a623f7ccf7d51fc32d44d4f9e2e9f",
+      "bytes": 14684
     },
     {
       "path": ".github/workflows/refresh-opportunities.yml",

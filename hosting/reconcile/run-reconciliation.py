@@ -9,7 +9,7 @@ import subprocess
 import sys
 
 APP = "9f83e87e4447b805373ff9f7f206adb737e5c413"
-MAIN = "eba9d4aa569f9c89178d698d4cf37f35226a500b"
+MAIN = "dfa1b64a9c0c5ef6263e9f93d494926ab4032f30"
 DATA = ["lib/generatedDiscoveryReview.ts", "lib/generatedLibraryOpportunities.ts", "public/opportunities.json"]
 
 

@@ -11,13 +11,13 @@ import shutil
 from pathlib import Path
 import subprocess
 
-MAIN = "eba9d4aa569f9c89178d698d4cf37f35226a500b"
+MAIN = "dfa1b64a9c0c5ef6263e9f93d494926ab4032f30"
 APP = "9f83e87e4447b805373ff9f7f206adb737e5c413"
 BRANCH = "refs/heads/codex/web-preview-20261030"
 GENERATED = {
-    "lib/generatedDiscoveryReview.ts": "8a623ffcc787d70cee9d6196d348bf6d1a0fa34d",
-    "lib/generatedLibraryOpportunities.ts": "bd7a877d460433f411003120b35e7695ffa7f421",
-    "public/opportunities.json": "e58921934b5246b32f1c6edcfdf86f18b529ee7e",
+    "lib/generatedDiscoveryReview.ts": "12858aa1e32842dc2b6de1c10ef6f4ebaf247e1e",
+    "lib/generatedLibraryOpportunities.ts": "af821a0dbab52f3d46a076fd77a1237f85c0ca0e",
+    "public/opportunities.json": "154309fcef539710547810b78a51694a44749dde"
 }
 YOUTH = ["data/youth-hunter-state.json", "data/youth-hunter-manifest.json", "public/youth-opportunities.json"]
 
@@ -105,6 +105,8 @@ def main():
         with (evidence / "baseline" / path).open("rb") as source, (candidate / path).open("wb") as destination:
             shutil.copyfileobj(source, destination, length=64 * 1024)
     git(candidate, "add", "--", *GENERATED)
+    if git(candidate, "write-tree").stdout.decode().strip() != "340f9b4a11a1232055ab45a56d21371e9dad9feb":
+        raise RuntimeError("Pre-proof merge differs from independently reviewed current-source candidate")
     if git(candidate, "diff", "--name-only", "--diff-filter=U").stdout.strip():
         raise RuntimeError("Unresolved merge paths")
     for path in YOUTH:
