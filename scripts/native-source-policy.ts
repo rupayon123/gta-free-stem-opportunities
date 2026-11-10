@@ -6,6 +6,8 @@ export const scienceCentreEventID = "ontario-science-centre-pride-in-stem-2026";
 export const scienceCentreFactualSummary = "Free, all-ages STEM activities and performances celebrating 2SLGBTQI+ people. November 21, 2026, 9 a.m.–3 p.m. at Evergreen Brick Works, 550 Bayview Avenue, Toronto. Registration is encouraged but not required. The venue is wheelchair accessible; a free shuttle runs from Broadview Station. On-site parking is paid.";
 export const autismOntarioEventURL = "https://www.autismontario.com/civicrm/event/info?id=13084";
 export const autismOntarioEventID = "autism-ontario-newmarket-quiet-santa-2026-11-22";
+/** Source and factual-summary policies for both reviewed events checked this day. */
+export const factualSummaryRightsReviewedAt = "2026-11-10";
 export const autismOntarioFactualSummary = "Free five-minute Quiet Time with Santa appointments for autistic children and adults, siblings and caregivers. November 22, 2026, 8:30–10:30 a.m. at Upper Canada Mall, 17600 Yonge Street, Newmarket. Registration and one time slot are required; a waitlist may be available if full. Optional photo packages cost extra. Parent or caregiver supervision is required. Registrants' names and email addresses are shared with the appointment vendor.";
 
 /** Narrow provider/link allowlist; no assertion of a provider agreement. */

@@ -9,6 +9,7 @@ import { generatedLibrarySourceHealth, generatedLibraryCollectionHealth } from "
 import { publicOpportunities } from "../lib/opportunityStatus";
 import { type FeedPayload, prepareNativePublication, serializeNativeFeed } from "./native-publication";
 import { nativeContentRights } from "./native-content-rights";
+import { factualSummaryRightsReviewedAt, scienceCentreEventID, autismOntarioEventID } from "./native-source-policy";
 export { serializeNativeFeed } from "./native-publication";
 
 const outputPath = process.env.GTA_PUBLIC_OPPORTUNITIES_EXPORT ?? "public/opportunities.json";
@@ -54,6 +55,11 @@ const lastDataChange = publicListings
   .sort()
   .at(-1);
 
+const baseRightsSnapshot = publicationSnapshotTime().toISOString().slice(0, 10);
+const hasReviewedFactualSummary = publicListings.some(row => row.id === scienceCentreEventID || row.id === autismOntarioEventID);
+const rightsSnapshot = [baseRightsSnapshot, ...(hasReviewedFactualSummary ? [factualSummaryRightsReviewedAt] : [])].sort().at(-1)!;
+if (lastDataChange && lastDataChange.slice(0, 10) > rightsSnapshot) throw new Error("Rights review snapshot precedes the latest source check; retain the previous feed.");
+
 const payload = {
   name: "GTA FREE STEM Opportunities public feed",
   schemaVersion: 1,
@@ -72,7 +78,7 @@ const payload = {
       reviewCandidates: generatedDiscoverySummary.newCandidates
     }
   },
-  contentRights: nativeContentRights(publicListings, sourceOpportunities, publicationSnapshotTime().toISOString().slice(0, 10)),
+  contentRights: nativeContentRights(publicListings, sourceOpportunities, rightsSnapshot),
   opportunities: publicListings
 };
 
