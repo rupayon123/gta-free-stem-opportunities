@@ -346,3 +346,5 @@
 :root[data-theme="dark"] .oe-interest-option:nth-of-type(3) .oe-interest-icon { background: #5a4c16; color: #ffe486; }
 :root[data-theme="dark"] :is(.oe-primary, .oe-map-marker) { color: var(--bg); }
 @media (prefers-reduced-motion: reduce) { .oe-card:hover { transform: none; } }
+.oe-filters .oe-community-filters { margin-block: 0 24px; padding-block-end: 20px; border-block-end: 1px solid var(--line); }
+.oe-filters .oe-community-filters legend { font-size: 16px; font-weight: 800; }
