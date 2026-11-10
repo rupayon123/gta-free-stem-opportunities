@@ -10,11 +10,14 @@ import { publicOpportunities } from "../lib/opportunityStatus";
 import { type FeedPayload, prepareNativePublication, serializeNativeFeed } from "./native-publication";
 import { nativeContentRights } from "./native-content-rights";
 import { factualSummaryRightsReviewedAt, scienceCentreEventID, autismOntarioEventID } from "./native-source-policy";
+import { isLegacyNativeSource } from "./native-feed-projection";
 export { serializeNativeFeed } from "./native-publication";
 
-const outputPath = process.env.GTA_PUBLIC_OPPORTUNITIES_EXPORT ?? "public/opportunities.json";
+const expanded = process.argv.includes("--v2");
+const outputPath = process.env.GTA_PUBLIC_OPPORTUNITIES_EXPORT ?? (expanded ? "public/opportunities-v2.json" : "public/opportunities.json");
 
-const publicListings = publicOpportunities(sourceOpportunities, publicationSnapshotTime()).map((opportunity) => ({
+const selectedOpportunities = publicOpportunities(sourceOpportunities, publicationSnapshotTime()).filter(row => expanded || isLegacyNativeSource(row));
+const publicListings = selectedOpportunities.map((opportunity) => ({
   id: opportunity.id,
   title: opportunity.title,
   organization: opportunity.organization,
@@ -96,7 +99,7 @@ if (process.argv.includes("--self-test")) {
   const actual = serializeNativeFeed(payload);
   assert.equal(JSON.parse(actual).opportunities.length, publicListings.length);
   const exportedRows = JSON.parse(actual).opportunities;
-  const originalRows = publicOpportunities(sourceOpportunities, publicationSnapshotTime());
+  const originalRows = selectedOpportunities;
   assert(exportedRows.every((row: Record<string, unknown>) => typeof row.virtual === "boolean"), "Every native row must preserve its explicit virtual flag");
   assert.deepEqual(exportedRows.map((row: { id: string; virtual: boolean }) => [row.id, row.virtual]), originalRows.map((row) => [row.id, row.virtual]), "Native virtual flags must align exactly with source identities");
   assert.deepEqual(exportedRows.map((row: { id: string; description: string }) => [row.id, row.description]), originalRows.map((row) => [row.id, row.description]), "Adding virtual metadata must preserve full original bodies and IDs");

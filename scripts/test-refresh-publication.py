@@ -16,6 +16,7 @@ FILES = (
     "lib/generatedLibraryOpportunities.ts",
     "lib/generatedDiscoveryReview.ts",
     "public/opportunities.json",
+    "public/opportunities-v2.json",
     "data/youth-hunter-state.json",
     "data/youth-hunter-manifest.json",
     "public/youth-opportunities.json",

@@ -2,7 +2,7 @@ name: Hunter expansion review checks
 # Check scoped collectors, review-candidate eligibility, and source policies.
 on:
   push:
-    branches: [codex/hunter-feed-revision-20261110]
+    branches: [codex/hunter-dual-feed-20261110]
     paths: [.github/workflows/hunter-expansion-qa.yml]
   workflow_dispatch:
 permissions:
@@ -27,20 +27,26 @@ jobs:
       - run: npx tsx scripts/autism-ontario-discovery.test.ts
       - run: npm run qa:accessibility-support
       - run: npx tsx lib/accessibility/reviewedHunterEvents.test.ts
-      - run: GTA_PUBLIC_OPPORTUNITIES_EXPORT="$RUNNER_TEMP/hunter-candidate.json" npx tsx scripts/export-public-opportunities.ts --publish
-      - run: GTA_PUBLIC_OPPORTUNITIES_EXPORT="$RUNNER_TEMP/hunter-candidate.json" npx tsx scripts/hunter-candidate-feed.test.ts
+      - run: python3 scripts/test-refresh-publication.py
+      - run: GTA_PUBLIC_OPPORTUNITIES_EXPORT="$RUNNER_TEMP/opportunities.json" npx tsx scripts/export-public-opportunities.ts --publish
+      - run: GTA_PUBLIC_OPPORTUNITIES_EXPORT="$RUNNER_TEMP/opportunities-v2.json" npx tsx scripts/export-public-opportunities.ts --v2 --publish
+      - run: GTA_PUBLIC_OPPORTUNITIES_EXPORT="$RUNNER_TEMP/opportunities.json" npx tsx scripts/export-public-opportunities.ts --self-test
+      - run: GTA_PUBLIC_OPPORTUNITIES_EXPORT="$RUNNER_TEMP/opportunities-v2.json" npx tsx scripts/export-public-opportunities.ts --v2 --self-test
+      - run: GTA_PUBLIC_OPPORTUNITIES_EXPORT="$RUNNER_TEMP/opportunities-v2.json" npx tsx scripts/hunter-candidate-feed.test.ts
+      - run: GTA_REVIEW_V1_PATH="$RUNNER_TEMP/opportunities.json" GTA_REVIEW_V2_PATH="$RUNNER_TEMP/opportunities-v2.json" npx tsx scripts/dual-native-feed.test.ts
       - name: Save tested bytes to a new review-only branch
-        if: github.ref == 'refs/heads/codex/hunter-feed-revision-20261110' && github.event_name == 'push'
+        if: github.ref == 'refs/heads/codex/hunter-dual-feed-20261110' && github.event_name == 'push'
         shell: bash
         run: |
           set -euo pipefail
           review_dir="$RUNNER_TEMP/hunter-review-worktree"
-          review_branch="codex/hunter-feed-review-20261110-$GITHUB_RUN_ID"
+          review_branch="codex/hunter-dual-review-20261110-$GITHUB_RUN_ID"
           git worktree add --detach "$review_dir" HEAD
           git -C "$review_dir" switch --orphan "$review_branch"
-          cp "$RUNNER_TEMP/hunter-candidate.json" "$review_dir/hunter-candidate.json"
-          git -C "$review_dir" add hunter-candidate.json
+          cp "$RUNNER_TEMP/opportunities.json" "$review_dir/opportunities.json"
+          cp "$RUNNER_TEMP/opportunities-v2.json" "$review_dir/opportunities-v2.json"
+          git -C "$review_dir" add opportunities.json opportunities-v2.json
           git -C "$review_dir" -c user.name='gta-review-bot' -c user.email='gta-review-bot@users.noreply.github.com' commit -m 'Save tested review-only feed bytes'
           git -C "$review_dir" push origin "HEAD:refs/heads/$review_branch"
-          sha256sum "$review_dir/hunter-candidate.json"
+          sha256sum "$review_dir/opportunities.json" "$review_dir/opportunities-v2.json"
           echo "Review branch: $review_branch"
