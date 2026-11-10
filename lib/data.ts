@@ -133,7 +133,7 @@ function discoveryCandidateToOpportunity(candidate: DiscoveredOpportunity): Oppo
     type: typeForDiscovery(candidate),
     category: candidate.category,
     categories: candidate.category === "STEM" ? ["STEM"] : candidate.category === "Family Learning" ? ["Family Learning"] : [candidate.category, "STEM"],
-    communityFocus: ["Open to all", "Newcomer-friendly"],
+    communityFocus: candidate.organization === "Autism Ontario" ? [] : ["Open to all", "Newcomer-friendly"],
     city: candidate.city,
     region: candidate.region,
     address: `${candidate.city}, ${candidate.region}`,

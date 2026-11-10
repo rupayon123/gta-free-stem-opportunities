@@ -1,5 +1,5 @@
 name: Hunter expansion review checks
-# Check the scoped non-library collectors and source policies.
+# Check scoped collectors, review-candidate eligibility, and source policies.
 on:
   push:
     branches: [codex/hunter-expansion-20261110]
