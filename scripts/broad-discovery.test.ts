@@ -13,6 +13,7 @@ assert(pageSets.every(pages => pages.length === 3 && new Set(pages).size === 3))
 assert.equal(new Set(pageSets.flat()).size, 10);
 assert(leads.some(row => row.city === "Toronto" && row.sourceUrl === "https://www.autismontario.com/civicrm/event/info?id=13014"));
 assert(leads.some(row => row.city === "Pickering" && row.sourceUrl === "https://www.autismontario.com/civicrm/event/info?id=13023"));
+assert(leads.some(row => row.city === "Oakville" && row.startDate === "2026-11-13" && row.sourceUrl === "https://www.autismontario.com/civicrm/event/info?id=13304"));
 assert(leads.every(row => reviewCost(row.description) === "Unknown" && reviewAges(row.description).ageMin === undefined));
 assert.deepEqual(extractAutismOntarioIndex(html.replaceAll('/civicrm/event/info?id=', 'https://evil.example/?id=')), []);
 assert.equal(reviewCost("Free parking for registered attendees"), "Unknown");

@@ -7,7 +7,7 @@ import {
 } from "../lib/discoveryClassification";
 import { discoverySources, type DiscoveredOpportunity, type DiscoverySource } from "../lib/discovery";
 import { generatedDiscoveryReviewCandidates } from "../lib/generatedDiscoveryReview";
-import { retainFailedDiscoverySource } from "../lib/discoveryRetention";
+import { retainFailedDiscoverySource, retainUnvisitedDiscovery } from "../lib/discoveryRetention";
 import { discoveryDateOnly } from "../lib/discoveryDates";
 import { markDiscoveryObservation } from "../lib/discoveryChanges";
 import { hasEstimatedAgeRange } from "../lib/discoveryEligibility";
@@ -579,8 +579,7 @@ async function main() {
       if (sourceAccepted.length === 0 && retainFailedDiscoverySource(generatedDiscoveryReviewCandidates, source.name).length > 0) {
         throw new Error("No review candidates remain; retained previous records pending source check");
       }
-      const observedIds = new Set(sourceAccepted.map(row => row.id));
-      const unvisited = source.id === "autism-ontario-index" ? retainFailedDiscoverySource(generatedDiscoveryReviewCandidates, source.name).filter(row => !observedIds.has(row.id)) : [];
+      const unvisited = source.id === "autism-ontario-index" ? retainUnvisitedDiscovery(generatedDiscoveryReviewCandidates, source.name, sourceAccepted) : [];
       successfulSources += 1;
       candidatesFound += deterministicCandidates.length;
       discovered.push(...sourceAccepted, ...unvisited);

@@ -1,5 +1,5 @@
 name: Hunter expansion review checks
-# Check scoped collectors, review-candidate eligibility, and source policies.
+# Check rotating collectors, review-candidate eligibility, and source policies.
 on:
   push:
     branches: [codex/hunter-broad-review-20261110]
