@@ -1,6 +1,7 @@
 """Full source translations. Stdlib validation is separate from optional model inference."""
 from __future__ import annotations
 import argparse
+from collections import Counter
 import hashlib
 import json
 import os
@@ -8,6 +9,7 @@ from pathlib import Path
 import re
 import time
 from urllib.parse import urlparse
+from protected_literals import protect, restore
 
 LANGUAGES = ("fr", "zh", "yue", "pa", "ur", "ta", "tl", "es", "ar", "fa", "hi", "pt", "gu", "bn", "ja", "ko", "hu")
 MODEL_LANGUAGES = {language: ("fil" if language == "tl" else language) for language in LANGUAGES if language != "yue"}
@@ -16,7 +18,7 @@ MAX_AUDIT_BYTES = 64_000_000
 MAX_RECORDS = 15_000
 MAX_TEXT_BYTES = 100_000
 PROVIDERS = {"Toronto Public Library": "tpl.bibliocommons.com", "Markham Public Library": "markham.bibliocommons.com"}
-ENGINE = "madlad400-3b-ct2-int8-full-source-sentences-v2"
+ENGINE = "madlad400-3b-ct2-int8-full-source-sentences-v3-protected-literals"
 MODEL = {
     "original": "google/madlad400-3b-mt",
     "originalRevision": "fa184c675da0b5c9e1c8694fccd4e12e2d422094",
@@ -138,8 +140,15 @@ def validate_pack(pack: dict, index: dict, language: str) -> dict:
             source.decode("utf-8")
             require(sha(source) == segment.get("sourceSHA256") and segment.get("endedNormally") is True, "incomplete/truncated source segment")
             require(isinstance(segment.get("text"), str) and segment["text"].strip(), "missing translated source segment")
+            require(Counter(protect(source.decode("utf-8"))[1].values()) == Counter(protect(segment["text"])[1].values()), "translated protected literals differ from source")
             offset = segment["endByte"]
         require(offset == len(index["texts"][text_hash].encode("utf-8")), "untranslated tail of full source text")
+        source_literals = Counter(protect(index["texts"][text_hash])[1].values())
+        segment_literals = Counter()
+        raw = index["texts"][text_hash].encode("utf-8")
+        for segment in segments:
+            segment_literals.update(protect(raw[segment["startByte"]:segment["endByte"]].decode("utf-8"))[1].values())
+        require(source_literals == segment_literals, "source segment splits a protected literal")
         require(text == " ".join(segment["text"].strip() for segment in segments), "translated segments do not reconstruct body")
     require(len(encode(pack)) <= MAX_AUDIT_BYTES, "generation audit exceeds its build-only byte bound")
     return pack
@@ -195,6 +204,32 @@ def publish_manifest(index: dict, packs: dict[str, dict], directory: Path, requi
     return manifest
 
 
+def publish_available_manifest(index: dict, packs: dict[str, dict], directory: Path, approvals: dict[str, dict]) -> dict:
+    """Publish complete locales with caller-supplied review evidence; not a quality review itself.
+
+    Existing advertised locales must all be regenerated for the same fresh source,
+    so a partial update can never silently drop a previously available language.
+    The normal all-17 release gate remains unchanged in publish_manifest.
+    """
+    validate_index(index)
+    require(isinstance(packs, dict) and bool(packs) and set(packs) <= set(MODEL_LANGUAGES), "no supported complete locales supplied")
+    require(isinstance(approvals, dict) and set(approvals) == set(packs), "explicit review evidence required for every locale")
+    index_sha = sha(encode(index))
+    for language, pack in packs.items():
+        validate_pack(pack, index, language)
+        approval = approvals[language]
+        require(isinstance(approval, dict) and approval.get("status") == "approved" and approval.get("language") == language
+                and approval.get("sourceIndexSHA256") == index_sha and approval.get("auditSHA256") == sha(encode(pack))
+                and isinstance(approval.get("reviewReference"), str) and 0 < len(approval["reviewReference"].strip()) <= 500,
+                "missing, stale or mismatched locale review evidence")
+    manifest_path = directory / "manifest.json"
+    if manifest_path.exists():
+        existing = read(manifest_path)
+        require(isinstance(existing, dict) and existing.get("schemaVersion") == 1 and isinstance(existing.get("locales"), dict), "invalid existing locale manifest")
+        require(set(existing["locales"]) <= set(packs), "update would drop an existing available language")
+    return publish_manifest(index, packs, directory, required_languages=tuple(sorted(packs)))
+
+
 def _split_token_bounded(text: str, measure, limit: int = 192) -> list[str]:
     """Cover every source codepoint exactly once, without tokenizer truncation."""
     require(isinstance(text, str) and text.strip() and limit >= 8, "invalid segment source/limit")
@@ -243,12 +278,19 @@ def split_source(text: str, measure, limit: int = 192) -> list[str]:
 
 def translate_entry(source: str, language: str, engine) -> dict:
     require(language in MODEL_LANGUAGES, "unsupported translation locale for this model")
-    chunks = split_source(source, lambda text: engine.input_length(text, language))
-    results = engine.translate_many(chunks, language) if hasattr(engine, "translate_many") else [engine.translate(chunk, language) for chunk in chunks]
+    chunks = split_source(source, lambda text: engine.input_length(protect(text)[0], language))
+    protected = [protect(chunk) for chunk in chunks]
+    chunk_literals = Counter()
+    for _masked, mapping in protected:
+        chunk_literals.update(mapping.values())
+    require(chunk_literals == Counter(protect(source)[1].values()), "source segment splits a protected literal")
+    inputs = [masked for masked, _mapping in protected]
+    results = engine.translate_many(inputs, language) if hasattr(engine, "translate_many") else [engine.translate(chunk, language) for chunk in inputs]
     require(len(results) == len(chunks), "model omitted a source sentence")
     segments, offset = [], 0
-    for chunk, (translated, ended) in zip(chunks, results):
+    for chunk, (_masked, mapping), (translated, ended) in zip(chunks, protected, results):
         require(ended and isinstance(translated, str) and translated.strip(), "model stopped without EOS; source not fully translated")
+        translated = restore(translated, mapping)
         segments.append({"startByte": offset, "endByte": offset + len(chunk.encode("utf-8")), "sourceSHA256": sha(chunk), "text": translated.strip(), "endedNormally": True})
         offset += len(chunk.encode("utf-8"))
     return {"text": " ".join(segment["text"] for segment in segments), "segments": segments}

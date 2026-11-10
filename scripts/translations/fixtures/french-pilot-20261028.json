@@ -1,0 +1,251 @@
+{
+  "schemaVersion": 1,
+  "status": "SOURCE-ONLY-PILOT-NOT-RUN-OFFICIAL-GET403",
+  "sourceAcceptedRevision": "bf877fb582370a1ae556256456e6013d916db2bb",
+  "catalogueRevision": "4f6d75575744a82d230fe75e80afd4373fb784f32b1d051317ab7d4cc08014d3",
+  "sourceCapture": "2026-10-28T22:37:18.100Z",
+  "limits": {
+    "maxCases": 3,
+    "maxSourceBodyBytes": 16000,
+    "maxModelDownloadBytes": 200000000,
+    "maxRSSGiB": 2,
+    "maxWallMinutes": 15
+  },
+  "actualSourceBodyBytes": 4881,
+  "cases": [
+    {
+      "caseKind": "actual-provider-source",
+      "sourceID": "tpl-rss-6acfd30896ec3a003ada9007",
+      "sourceUrl": "https://tpl.bibliocommons.com/events/6acfd30896ec3a003ada9007",
+      "sourceTitle": "Sven Beckert: A Global History of Capitalism",
+      "sourceBody": "TPL and Toronto Metropolitan University present historian Sven Beckert in conversation with Sanjay Ruparelia at the Toronto Reference Library's Appel Salon. As the Laird Bell Professor of History at Harvard University and co-chair of the university's Program on the Study of Capitalism, Sven Beckert has spent his career tracing how a single economic system came to structure nearly every aspect of modern life, how we work, how we think about ourselves and others, and how we organize our politics. In Capitalism: A Global History , Beckert reveals that capitalism was born global, corresponding at no point to an idealized dream of free markets; from the outset, state-backed institutions, imperial expansion, and coercion shaped its dynamics as much as innovation and exchange did. Along the way, capitalism has both expanded political voice for some and violently foreclosed it for others, entangled from its origins with slavery, colonialism, and profound inequality. How do we distinguish between capitalism's capacity to generate genuine prosperity and its tendency to concentrate power in ways that undermine democratic institutions? What can nearly a thousand years of capitalist history teach us about the conditions under which economic systems support, rather than erode, democratic life? And as we confront what many call a crisis of late-stage capitalism, what possibilities remain for reimagining an economic order more compatible with democratic values? Join one of the world's foremost historians of capitalism for an essential conversation about the deep entanglement of markets and democracy, and what history suggests about the road ahead. Question and answer session and book signing to follow. Books available for purchase. About this Event's Guests: Sven Beckert Sanjay Ruparelia Read More: Capitalism Empire of Cotton *** This event is part of our On Civil Society series, where we host local and international authors, activists and academics in conversation about the most critical topics of our time. Generously supported by the McConnell Foundation and also by Chris M. Reid. *** About the series: On the Frontlines of Democracy is a public lecture series to analyze the trajectory of democracy in the twenty-first century. In every region, the prospects of democracy face serious challenges, old and new. Can we protect constitutional rights and renew collective self-rule in an era of popular mistrust, severe partisanship and resurgent nationalism? Can they reduce inequalities of power, wealth and status, defend deep diversity and confront climate change in the new digital age? Can we develop innovative strategies to revitalize civic engagement, empower public institutions and resist autocratic threats? And what can we offer, learn and do to promote the prospects of democracy in our increasingly post-western global order? *** PLAN YOUR VISIT : Location: Bram and Bluma Appel Salon, Toronto Reference Library (789 Yonge Street), 2nd floor Time: Doors open 6:00 pm, Event starts 7 pm. Tickets: Free registration required. Ticket policy: Tickets guaranteed until 6:50 pm, after which rush line admission begins. Seating first come, first served. Bar: Beer/wine available for purchase (debit/credit only). TPL is committed to accessibility. If you are Deaf or have a disability and would like to request accommodation for this event, please contact accessibleservices@tpl.ca or 416-393-7099 at least three weeks prior to the event. *** Information Collection Notice: The personal information on this form is collected by the Toronto Public Library under the Public Libraries Act, sections 20(a), 20(c), and 20(d). The information will only be used for event and program registration, delivery and evaluation. Registrants may be contacted to fill out a brief survey following the program . Questions about how the library handles your information can be directed to Answerline staff at answerline@tpl.ca, 416-397-5981, 789 Yonge Street, Toronto ON M4W 2G8.",
+      "sourceTitleSHA256": "ff87173ed9c5c65886288d0047568c4e83ff92fc1d9b3f0067d3ec55c7d0e1ae",
+      "sourceBodySHA256": "7764bca346739e31f5855a4aa4a00373674bf4b17b65602472ab17426e354afd",
+      "sourceBodyBytes": 3990,
+      "criticalFactLedger": [
+        {
+          "fact": "event-participants",
+          "exactSourceSpan": "present historian Sven Beckert in conversation with Sanjay Ruparelia",
+          "startUTF8Byte": 40,
+          "endUTF8Byte": 108,
+          "targetReview": "No output produced; Root must compare complete French meaning, not keyword/EOS alone."
+        },
+        {
+          "fact": "global-history-claim",
+          "exactSourceSpan": "capitalism was born global",
+          "startUTF8Byte": 555,
+          "endUTF8Byte": 581,
+          "targetReview": "No output produced; Root must compare complete French meaning, not keyword/EOS alone."
+        },
+        {
+          "fact": "full-intellectual-discussion",
+          "exactSourceSpan": "slavery, colonialism, and profound inequality",
+          "startUTF8Byte": 926,
+          "endUTF8Byte": 971,
+          "targetReview": "No output produced; Root must compare complete French meaning, not keyword/EOS alone."
+        },
+        {
+          "fact": "questions-not-contempt",
+          "exactSourceSpan": "in an era of popular mistrust",
+          "startUTF8Byte": 2402,
+          "endUTF8Byte": 2431,
+          "targetReview": "No output produced; Root must compare complete French meaning, not keyword/EOS alone."
+        },
+        {
+          "fact": "book-sales",
+          "exactSourceSpan": "Books available for purchase.",
+          "startUTF8Byte": 1716,
+          "endUTF8Byte": 1745,
+          "targetReview": "No output produced; Root must compare complete French meaning, not keyword/EOS alone."
+        },
+        {
+          "fact": "both-series-and-sponsors",
+          "exactSourceSpan": "Generously supported by the McConnell Foundation and also by Chris M. Reid.",
+          "startUTF8Byte": 2028,
+          "endUTF8Byte": 2103,
+          "targetReview": "No output produced; Root must compare complete French meaning, not keyword/EOS alone."
+        },
+        {
+          "fact": "second-series",
+          "exactSourceSpan": "On the Frontlines of Democracy is a public lecture series",
+          "startUTF8Byte": 2126,
+          "endUTF8Byte": 2183,
+          "targetReview": "No output produced; Root must compare complete French meaning, not keyword/EOS alone."
+        },
+        {
+          "fact": "venue-floor",
+          "exactSourceSpan": "Toronto Reference Library (789 Yonge Street), 2nd floor",
+          "startUTF8Byte": 2921,
+          "endUTF8Byte": 2976,
+          "targetReview": "No output produced; Root must compare complete French meaning, not keyword/EOS alone."
+        },
+        {
+          "fact": "door-event-times",
+          "exactSourceSpan": "Doors open 6:00 pm, Event starts 7 pm.",
+          "startUTF8Byte": 2983,
+          "endUTF8Byte": 3021,
+          "targetReview": "No output produced; Root must compare complete French meaning, not keyword/EOS alone."
+        },
+        {
+          "fact": "registration-required",
+          "exactSourceSpan": "Free registration required.",
+          "startUTF8Byte": 3031,
+          "endUTF8Byte": 3058,
+          "targetReview": "No output produced; Root must compare complete French meaning, not keyword/EOS alone."
+        },
+        {
+          "fact": "ticket-release-seats",
+          "exactSourceSpan": "Tickets guaranteed until 6:50 pm, after which rush line admission begins. Seating first come, first served.",
+          "startUTF8Byte": 3074,
+          "endUTF8Byte": 3181,
+          "targetReview": "No output produced; Root must compare complete French meaning, not keyword/EOS alone."
+        },
+        {
+          "fact": "bar-is-paid-card-only",
+          "exactSourceSpan": "Beer/wine available for purchase (debit/credit only).",
+          "startUTF8Byte": 3187,
+          "endUTF8Byte": 3240,
+          "targetReview": "No output produced; Root must compare complete French meaning, not keyword/EOS alone."
+        },
+        {
+          "fact": "accessibility-not-lodging",
+          "exactSourceSpan": "If you are Deaf or have a disability and would like to request accommodation",
+          "startUTF8Byte": 3276,
+          "endUTF8Byte": 3352,
+          "targetReview": "No output produced; Root must compare complete French meaning, not keyword/EOS alone."
+        },
+        {
+          "fact": "accessibility-contact-and-leadtime",
+          "exactSourceSpan": "accessibleservices@tpl.ca or 416-393-7099 at least three weeks prior to the event.",
+          "startUTF8Byte": 3384,
+          "endUTF8Byte": 3466,
+          "targetReview": "No output produced; Root must compare complete French meaning, not keyword/EOS alone."
+        },
+        {
+          "fact": "privacy-authority",
+          "exactSourceSpan": "Public Libraries Act, sections 20(a), 20(c), and 20(d).",
+          "startUTF8Byte": 3593,
+          "endUTF8Byte": 3648,
+          "targetReview": "No output produced; Root must compare complete French meaning, not keyword/EOS alone."
+        },
+        {
+          "fact": "collection-purpose",
+          "exactSourceSpan": "event and program registration, delivery and evaluation",
+          "startUTF8Byte": 3687,
+          "endUTF8Byte": 3742,
+          "targetReview": "No output produced; Root must compare complete French meaning, not keyword/EOS alone."
+        },
+        {
+          "fact": "survey",
+          "exactSourceSpan": "Registrants may be contacted to fill out a brief survey",
+          "startUTF8Byte": 3744,
+          "endUTF8Byte": 3799,
+          "targetReview": "No output produced; Root must compare complete French meaning, not keyword/EOS alone."
+        },
+        {
+          "fact": "full-ending-contact",
+          "exactSourceSpan": "answerline@tpl.ca, 416-397-5981, 789 Yonge Street, Toronto ON M4W 2G8.",
+          "startUTF8Byte": 3920,
+          "endUTF8Byte": 3990,
+          "targetReview": "No output produced; Root must compare complete French meaning, not keyword/EOS alone."
+        }
+      ],
+      "sourceTail": "aluation. Registrants may be contacted to fill out a brief survey following the program . Questions about how the library handles your information can be directed to Answerline staff at answerline@tpl.ca, 416-397-5981, 789 Yonge Street, Toronto ON M4W 2G8.",
+      "translatedTitle": null,
+      "translatedBody": null,
+      "semanticAccepted": false
+    },
+    {
+      "caseKind": "actual-provider-source",
+      "sourceID": "tpl-rss-6ac7ffe296ec3a003ad9435c",
+      "sourceUrl": "https://tpl.bibliocommons.com/events/6ac7ffe296ec3a003ad9435c",
+      "sourceTitle": "Youth Hub: Block Printing",
+      "sourceBody": "Create a one-of-a-kind tote bag with your own custom block print. Experiment with patterns, colours, and designs for a unique project. This is a drop-in program for teens only with limited space. No registration required. Arrive early to ensure your spot. This program is part of Youth Hub service. Youth Hubs are a welcoming place for teens after school and in the summer, where helpful staff are always available. Free, nutritious snacks are offered daily. Drop by a branch with a Youth Hub or call the branch to find out more.",
+      "sourceTitleSHA256": "834d508516b3e3c092aa5b9e36878fb2a764c5da83af4dcf8dde9e77752b8aaf",
+      "sourceBodySHA256": "dd13b2d1008da5cddd34096d3f3407f69ac8f162d9fb21c1e3f69f4ae002afa9",
+      "sourceBodyBytes": 529,
+      "criticalFactLedger": [
+        {
+          "fact": "activity-not-backpack",
+          "exactSourceSpan": "one-of-a-kind tote bag with your own custom block print",
+          "startUTF8Byte": 9,
+          "endUTF8Byte": 64,
+          "targetReview": "No output produced; Root must compare complete French meaning, not keyword/EOS alone."
+        },
+        {
+          "fact": "teens-only",
+          "exactSourceSpan": "drop-in program for teens only with limited space",
+          "startUTF8Byte": 145,
+          "endUTF8Byte": 194,
+          "targetReview": "No output produced; Root must compare complete French meaning, not keyword/EOS alone."
+        },
+        {
+          "fact": "registration-negation",
+          "exactSourceSpan": "No registration required.",
+          "startUTF8Byte": 196,
+          "endUTF8Byte": 221,
+          "targetReview": "No output produced; Root must compare complete French meaning, not keyword/EOS alone."
+        },
+        {
+          "fact": "early-arrival",
+          "exactSourceSpan": "Arrive early to ensure your spot.",
+          "startUTF8Byte": 222,
+          "endUTF8Byte": 255,
+          "targetReview": "No output produced; Root must compare complete French meaning, not keyword/EOS alone."
+        },
+        {
+          "fact": "after-school-and-summer",
+          "exactSourceSpan": "after school and in the summer",
+          "startUTF8Byte": 342,
+          "endUTF8Byte": 372,
+          "targetReview": "No output produced; Root must compare complete French meaning, not keyword/EOS alone."
+        },
+        {
+          "fact": "helpful-staff",
+          "exactSourceSpan": "helpful staff are always available",
+          "startUTF8Byte": 380,
+          "endUTF8Byte": 414,
+          "targetReview": "No output produced; Root must compare complete French meaning, not keyword/EOS alone."
+        },
+        {
+          "fact": "daily-not-nightly",
+          "exactSourceSpan": "Free, nutritious snacks are offered daily.",
+          "startUTF8Byte": 416,
+          "endUTF8Byte": 458,
+          "targetReview": "No output produced; Root must compare complete French meaning, not keyword/EOS alone."
+        },
+        {
+          "fact": "ending-instruction",
+          "exactSourceSpan": "Drop by a branch with a Youth Hub or call the branch to find out more.",
+          "startUTF8Byte": 459,
+          "endUTF8Byte": 529,
+          "targetReview": "No output produced; Root must compare complete French meaning, not keyword/EOS alone."
+        }
+      ],
+      "sourceTail": "art of Youth Hub service. Youth Hubs are a welcoming place for teens after school and in the summer, where helpful staff are always available. Free, nutritious snacks are offered daily. Drop by a branch with a Youth Hub or call the branch to find out more.",
+      "translatedTitle": null,
+      "translatedBody": null,
+      "semanticAccepted": false
+    },
+    {
+      "caseKind": "explicitly-fictional-contrast-never-production",
+      "sourceID": "synthetic-contrast",
+      "sourceTitle": "Fictional translation QA contrast",
+      "sourceBody": "Ages 13–17. The entrance is wheelchair accessible. No registration is required for daytime sessions; registration is required for evening sessions. Free nutritious snacks are offered daily, not nightly. On 2026-11-09 daytime sessions run 16:00–17:00. For support email help@example.org or call 416-555-0100. Details: https://example.org/gta-translation-test.",
+      "sourceBodySHA256": "ca89cc1b070b0aab399ae91fafeea8bbbe0f6337e9f424d40ea1e71185aee1d7",
+      "sourceBodyBytes": 362,
+      "criticalFactLedger": [
+        "Ages13–17 must not become elderly eligibility.",
+        "Wheelchair accessibility must not become lodging.",
+        "Daytime no-registration versus evening required-registration must both survive.",
+        "Daily snacks, explicitly not nightly.",
+        "Preserve exact date/time/email/phone/URL and their association."
+      ],
+      "sourceTail": "egistration is required for evening sessions. Free nutritious snacks are offered daily, not nightly. On 2026-11-09 daytime sessions run 16:00–17:00. For support email help@example.org or call 416-555-0100. Details: https://example.org/gta-translation-test.",
+      "translatedTitle": null,
+      "translatedBody": null,
+      "semanticAccepted": false
+    }
+  ],
+  "outputNotice": "No translation text exists for this pilot. Null targets are not fixtures accepted as translation or release coverage. No synthetic row may enter publication."
+}

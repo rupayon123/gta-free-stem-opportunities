@@ -3,7 +3,8 @@ import json
 from pathlib import Path
 import tempfile
 import unittest
-from full_description_translation import build_index, encode, generate, parse, sha, split_source, translate_entry, validate_index, validate_pack, write, publish_manifest, benchmark_facts, compact_pack, validate_client_pack
+from unittest.mock import patch
+from full_description_translation import build_index, encode, generate, parse, sha, split_source, translate_entry, validate_index, validate_pack, write, publish_manifest, publish_available_manifest, benchmark_facts, compact_pack, validate_client_pack
 
 
 def row(identity="one", description="Build the device. Test every circuit. Keep the final instruction."):
@@ -61,6 +62,34 @@ class FullDescriptionTests(unittest.TestCase):
         chunks = split_source(source, len, 192)
         self.assertEqual(len(chunks), 3)
         self.assertEqual("".join(chunks), source)
+
+    def test_generator_shields_contact_and_cost_literals_before_model(self):
+        class CorruptingEngine(FakeEngine):
+            def translate(self, text, language):
+                self.seen = text
+                return text.replace("example.org", "exemple.org").replace("$15", "$50"), True
+        engine = CorruptingEngine()
+        source = "Email help@example.org; cost $15; ages 13–17; count 42."
+        result = translate_entry(source, "fr", engine)
+        self.assertNotIn("help@example.org", engine.seen)
+        self.assertEqual(result["text"], source)
+        self.assertEqual(result["segments"][-1]["endByte"], len(source.encode("utf8")))
+
+    def test_generator_rejects_damaged_literal_placeholders(self):
+        class BrokenEngine(FakeEngine):
+            def translate(self, text, language):
+                return text.lower(), True
+        with self.assertRaises(ValueError):
+            translate_entry("Contact help@example.org.", "fr", BrokenEngine())
+
+    def test_generator_rejects_a_split_inside_an_email_before_inference(self):
+        class TrackingEngine(FakeEngine):
+            calls = 0
+        engine = TrackingEngine()
+        with patch("full_description_translation.split_source", return_value=["Contact help@", "example.org."]):
+            with self.assertRaisesRegex(ValueError, "splits a protected literal"):
+                translate_entry("Contact help@example.org.", "fr", engine)
+        self.assertEqual(engine.calls, 0)
 
     def test_no_eos_cannot_be_called_complete(self):
         class Truncated(FakeEngine):
@@ -138,6 +167,35 @@ class FullDescriptionTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, "missing"):
                 publish_manifest(self.index, {"fr": self.pack}, Path(directory))
             self.assertEqual(manifest.read_text(), "retained live manifest")
+
+    def test_individual_complete_locale_requires_matching_review_and_cannot_drop_previous_locale(self):
+        with tempfile.TemporaryDirectory() as directory:
+            target = Path(directory)
+            approval = {"status": "approved", "language": "fr", "sourceIndexSHA256": sha(encode(self.index)),
+                        "auditSHA256": sha(encode(self.pack)), "reviewReference": "review-record"}
+            with self.assertRaises(ValueError):
+                publish_available_manifest(self.index, {"fr": self.pack}, target, {})
+            stale = {**approval, "auditSHA256": "0" * 64}
+            with self.assertRaises(ValueError):
+                publish_available_manifest(self.index, {"fr": self.pack}, target, {"fr": stale})
+            manifest = publish_available_manifest(self.index, {"fr": self.pack}, target, {"fr": approval})
+            self.assertEqual(set(manifest["locales"]), {"fr"})
+            before = (target / "manifest.json").read_bytes()
+            spanish = generate(self.index, "es", FakeEngine())
+            spanish_approval = {"status": "approved", "language": "es", "sourceIndexSHA256": sha(encode(self.index)),
+                                "auditSHA256": sha(encode(spanish)), "reviewReference": "review-record"}
+            with self.assertRaisesRegex(ValueError, "drop"):
+                publish_available_manifest(self.index, {"es": spanish}, target, {"es": spanish_approval})
+            self.assertEqual((target / "manifest.json").read_bytes(), before)
+
+    def test_pack_rejects_changed_contact_literal_even_when_segments_reconstruct(self):
+        index = build_index([row(description="Email help@example.org for details.")])
+        pack = generate(index, "fr", FakeEngine())
+        entry = pack["translations"][sha("Email help@example.org for details.")]
+        entry["segments"][0]["text"] = entry["segments"][0]["text"].replace("example.org", "exemple.org")
+        entry["text"] = " ".join(segment["text"].strip() for segment in entry["segments"])
+        with self.assertRaisesRegex(ValueError, "literals"):
+            validate_pack(pack, index, "fr")
 
     def test_manifest_uses_immutable_hashed_same_origin_paths(self):
         with tempfile.TemporaryDirectory() as directory:
