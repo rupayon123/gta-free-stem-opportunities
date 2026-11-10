@@ -2,16 +2,9 @@
 # Reuses the existing default-registered workflow path for manual --ref dispatch.
 name: Review isolated fresh-data reconciliation
 on:
-  workflow_dispatch:
-    inputs:
-      expected_ops_commit:
-        description: Exact reviewed immutable operations commit
-        type: string
-        required: true
-      expected_helpers_sha256:
-        description: Independently reviewed helpers-manifest.json SHA256
-        type: string
-        required: true
+  push:
+    branches: [codex/frontend-reconcile-20261109]
+    paths: [.github/workflows/refresh-opportunities.yml]
 
 permissions:
   contents: read
@@ -31,8 +24,7 @@ jobs:
     env:
       OPS_ROOT: ${{ github.workspace }}/ops
       APP_REPO: ${{ github.workspace }}/app-source
-      EXPECTED_OPS_COMMIT: ${{ inputs.expected_ops_commit }}
-      EXPECTED_HELPERS_SHA256: ${{ inputs.expected_helpers_sha256 }}
+      EXPECTED_OPS_COMMIT: ${{ github.sha }}
       NEXT_TELEMETRY_DISABLED: '1'
       CI: '1'
     steps:
@@ -40,11 +32,12 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          test "$GITHUB_EVENT_NAME" = workflow_dispatch
+          test "$GITHUB_EVENT_NAME" = push
+          test "$GITHUB_REF_NAME" = codex/frontend-reconcile-20261109
+          test "${{ github.event.before }}" = cc7fa6a95a503753485ca918263d42dbddaa836a
           test "$GITHUB_REPOSITORY" = rupayon123/gta-free-stem-opportunities
           test "$GITHUB_SHA" = "$EXPECTED_OPS_COMMIT"
           [[ "$EXPECTED_OPS_COMMIT" =~ ^[0-9a-f]{40}$ ]]
-          [[ "$EXPECTED_HELPERS_SHA256" =~ ^[0-9a-f]{64}$ ]]
 
       - name: Check out immutable operations helpers separately
         uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # verified official v6 ref
@@ -52,7 +45,44 @@ jobs:
           ref: ${{ github.sha }}
           path: ops
           persist-credentials: false
-          fetch-depth: 1
+          fetch-depth: 2
+
+      - name: Validate the one authorized workflow and manifest revision
+        shell: bash
+        run: |
+          python3 - <<'PYVALIDATE'
+          import hashlib,json,os,subprocess
+          from pathlib import Path
+          root=Path(os.environ['OPS_ROOT'])
+          def git(*args):
+              return subprocess.check_output(['git',*args],cwd=root)
+          parent='cc7fa6a95a503753485ca918263d42dbddaa836a'
+          assert git('rev-parse','HEAD').decode().strip()==os.environ['EXPECTED_OPS_COMMIT']
+          assert git('rev-list','--parents','-n','1','HEAD').decode().split()==[os.environ['EXPECTED_OPS_COMMIT'],parent]
+          manifest='hosting/reconcile/helpers-manifest.json'
+          workflow='.github/workflows/refresh-opportunities.yml'
+          publisher='hosting/reconcile/publish-candidate.py'
+          assert set(git('diff','--name-only',parent,'HEAD').decode().splitlines())=={manifest,workflow,publisher}
+          previous=git('show',parent+':'+manifest)
+          assert hashlib.sha256(previous).hexdigest()=='8d1d5decebeceabe65d66d3aed93051cab5ed86db45ea0b63b198ae6e142863e'
+          original=json.loads(previous)
+          raw=(root/manifest).read_bytes()
+          current=json.loads(raw)
+          before={item['path']:item for item in original['files']}
+          after={item['path']:item for item in current['files']}
+          assert len(before)==len(original['files'])==len(after)==len(current['files'])
+          assert before.keys()==after.keys()
+          assert {k:v for k,v in original.items() if k!='files'}=={k:v for k,v in current.items() if k!='files'}
+          assert all(before[name]==after[name] for name in before if name not in {workflow,publisher})
+          assert after[publisher]=={'path':publisher,'sha256':'5f98c4b8207f8661b71d61303b38e664258b4a090361a049b885eaa13a77994c','bytes':7160}
+          assert hashlib.sha256((root/publisher).read_bytes()).hexdigest()=='5f98c4b8207f8661b71d61303b38e664258b4a090361a049b885eaa13a77994c'
+          actual=(root/workflow).read_bytes()
+          assert after[workflow]=={'path':workflow,'sha256':hashlib.sha256(actual).hexdigest(),'bytes':len(actual)}
+          expected=hashlib.sha256(raw).hexdigest()
+          with open(os.environ['GITHUB_ENV'],'a') as env:
+              env.write('EXPECTED_HELPERS_SHA256='+expected+'\n')
+          print(json.dumps({'authorizedParent':parent,'actualOperationsCommit':os.environ['EXPECTED_OPS_COMMIT'],'verifiedHelpersSHA256':expected,'changedPaths':[workflow,manifest,publisher]}))
+          PYVALIDATE
 
       - name: Verify independently pinned helper sources
         run: python3 "$OPS_ROOT/hosting/reconcile/verify-helpers.py" --expected-sha256 "$EXPECTED_HELPERS_SHA256"

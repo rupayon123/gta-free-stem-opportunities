@@ -23,9 +23,23 @@ class NoRedirect(urllib.request.HTTPRedirectHandler):
         raise RuntimeError("Redirect rejected in credentialed GitHub phase")
 
 
+def validate_event():
+    if os.environ["GITHUB_REPOSITORY"] != REPOSITORY:
+        raise RuntimeError("Wrong repository")
+    if os.environ["GITHUB_EVENT_NAME"] == "workflow_dispatch":
+        return
+    if os.environ["GITHUB_EVENT_NAME"] != "push":
+        raise RuntimeError("Wrong event")
+    event = json.loads(Path(os.environ["GITHUB_EVENT_PATH"]).read_text())
+    if (event.get("ref") != "refs/heads/codex/frontend-reconcile-20261109"
+            or event.get("before") != "cc7fa6a95a503753485ca918263d42dbddaa836a"
+            or event.get("after") != os.environ["EXPECTED_OPS_COMMIT"]
+            or any(event.get(key) is not False for key in ["created", "deleted", "forced"])):
+        raise RuntimeError("Push is outside the one authorized operations revision")
+
+
 def main():
-    if os.environ["GITHUB_REPOSITORY"] != REPOSITORY or os.environ["GITHUB_EVENT_NAME"] != "workflow_dispatch":
-        raise RuntimeError("Wrong repository or event")
+    validate_event()
     ops = Path(os.environ["OPS_ROOT"]).resolve()
     evidence = Path(os.environ["RUNNER_TEMP"]) / "reviewed-data-evidence"
     candidate = Path(os.environ["RUNNER_TEMP"]) / "reviewed-data-candidate"
