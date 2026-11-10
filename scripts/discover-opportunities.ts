@@ -536,7 +536,7 @@ export const generatedDiscoverySummary = ${JSON.stringify(summary, null, 2)} as 
 
 export const generatedDiscoveryReviewCandidates = ${JSON.stringify(result.opportunities, null, 2)} satisfies DiscoveredOpportunity[];
 `;
-  const path = "lib/generatedDiscoveryReview.ts";
+  const path = process.env.GTA_DISCOVERY_REVIEW_OUTPUT || "lib/generatedDiscoveryReview.ts";
   const temporary = `${path}.${process.pid}.tmp`;
   try {
     writeFileSync(temporary, output, { flag: "wx" });
@@ -656,7 +656,8 @@ async function main() {
   console.log(JSON.stringify(result, null, 2));
 }
 
-main().catch((error) => {
+export const discoveryRun = main();
+discoveryRun.catch((error) => {
   console.error(error instanceof Error ? error.message : error);
   process.exit(1);
 });
