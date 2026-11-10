@@ -62,7 +62,7 @@
 .oe-card { display: flex; flex-direction: column; align-items: stretch; background: var(--surface); border: 0; border-top: 5px solid var(--accent); border-radius: 15px; padding: 21px 22px 0; min-width: 0; transition: border-color .18s ease, box-shadow .18s ease; }
 .oe-card:hover, .oe-card:focus-within { border-color: #9bbcb5; box-shadow: 0 3px 12px #0a2e4707; }
 .oe-card-top { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 12px; min-height: 34px; }
-.oe-category { background: var(--tint); color: var(--accent); font-size: 10px; font-weight: 700; padding: 6px 9px; border-radius: 5px; line-height: 1.5; overflow-wrap: anywhere; }
+.oe-category { background: var(--tint); color: var(--ink); font-size: 10px; font-weight: 700; padding: 6px 9px; border-radius: 5px; line-height: 1.5; overflow-wrap: anywhere; }
 .oe-bookmark { display: flex; align-items: center; justify-content: center; min-width: 44px; min-height: 44px; border: 0; border-radius: 8px; color: var(--muted); background: transparent; margin: -6px -9px -6px 0; }
 .oe-bookmark:hover, .oe-bookmarked { color: var(--accent); background: var(--tint); }
 .oe-provider { color: var(--muted); font-size: 13px; line-height: 1.5; font-weight: 600; margin: 0 0 7px; }
