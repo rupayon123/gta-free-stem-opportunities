@@ -3,35 +3,34 @@ import type { DiscoveredOpportunity } from "./discovery";
 export const generatedDiscoverySummary = {
   "mode": "deterministic",
   "sourcesChecked": 34,
-  "candidatesFound": 409,
-  "newCandidates": 182,
-  "duplicatesSkipped": 225,
+  "candidatesFound": 441,
+  "newCandidates": 180,
+  "duplicatesSkipped": 250,
   "warnings": [
     "Could not check Mississauga Library volunteer opportunities: No review candidates remain; retained previous records pending source check.",
     "Could not check Milton Public Library programs: No review candidates remain; retained previous records pending source check.",
     "Could not check Credit Valley Conservation youth opportunities: 403 Forbidden.",
-    "Could not check TRCA youth volunteer opportunities: fetch failed.",
     "Could not check Volunteer MBC youth opportunities: 403 Forbidden.",
     "Could not check Eventbrite free science and technology events: 405 Not Allowed.",
     "Could not check Eventbrite free online science and technology events: 405 Not Allowed."
   ],
   "sourceHealth": {
     "schemaVersion": 1,
-    "generatedAt": "2026-11-19T07:31:30.739Z",
+    "generatedAt": "2026-11-19T20:42:54.265Z",
     "status": "healthy",
     "failureReasons": [],
     "sourcesChecked": 34,
-    "successfulSources": 27,
-    "failedSources": 7,
-    "sourceSuccessRatio": 0.7941,
+    "successfulSources": 28,
+    "failedSources": 6,
+    "sourceSuccessRatio": 0.8235,
     "minimumSourceSuccessRatio": 0.75,
     "sources": [
       {
         "sourceId": "autism-ontario-index",
         "status": "ok",
-        "candidates": 16,
-        "accepted": 11,
-        "retained": 10
+        "candidates": 18,
+        "accepted": 13,
+        "retained": 12
       },
       {
         "sourceId": "autism-ontario-quiet-time",
@@ -134,8 +133,8 @@ export const generatedDiscoverySummary = {
       {
         "sourceId": "whitby-programs",
         "status": "ok",
-        "candidates": 16,
-        "accepted": 15,
+        "candidates": 17,
+        "accepted": 16,
         "retained": 0
       },
       {
@@ -155,8 +154,8 @@ export const generatedDiscoverySummary = {
       {
         "sourceId": "oshawa-library-stem",
         "status": "ok",
-        "candidates": 22,
-        "accepted": 20,
+        "candidates": 21,
+        "accepted": 19,
         "retained": 0
       },
       {
@@ -217,10 +216,10 @@ export const generatedDiscoverySummary = {
       },
       {
         "sourceId": "trca-youth",
-        "status": "failed",
-        "candidates": 0,
-        "accepted": 0,
-        "retained": 11
+        "status": "ok",
+        "candidates": 30,
+        "accepted": 30,
+        "retained": 0
       },
       {
         "sourceId": "uhn-stem-pathways",
@@ -269,6 +268,171 @@ export const generatedDiscoverySummary = {
 } as const;
 
 export const generatedDiscoveryReviewCandidates = [
+  {
+    "id": "discovered-autism-ontario-index-central-east-richmond-hill-4ee66adc30cc",
+    "title": "Central East – Richmond Hill -…",
+    "organization": "Autism Ontario",
+    "description": "An Autism Ontario event is listed. Check its official page for cost, eligibility and availability.",
+    "city": "Richmond Hill",
+    "region": "York",
+    "category": "Family Learning",
+    "cost": "Unknown",
+    "costEvidence": "unknown",
+    "eligibilityEvidence": "unknown",
+    "language": [
+      "en"
+    ],
+    "deadline": "2026-11-21",
+    "startDate": "2026-11-21",
+    "sourceUrl": "https://www.autismontario.com/civicrm/event/info?id=12994",
+    "lastChecked": "2026-11-19",
+    "lastSeen": "2026-11-19",
+    "status": "needs_review",
+    "tags": [
+      "family learning"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "Cost is unknown; check the official listing.",
+      "Numeric eligibility is unknown; check the official listing."
+    ],
+    "sourceName": "Autism Ontario event index",
+    "firstSeen": "2026-11-19",
+    "lastChanged": "2026-11-19",
+    "changeKind": "new"
+  },
+  {
+    "id": "discovered-autism-ontario-index-central-east-markham-481c8cce3d60",
+    "title": "Central East - Markham -…",
+    "organization": "Autism Ontario",
+    "description": "An Autism Ontario event is listed. Check its official page for cost, eligibility and availability.",
+    "city": "Markham",
+    "region": "York",
+    "category": "Family Learning",
+    "cost": "Unknown",
+    "costEvidence": "unknown",
+    "eligibilityEvidence": "unknown",
+    "language": [
+      "en"
+    ],
+    "deadline": "2026-11-25",
+    "startDate": "2026-11-25",
+    "sourceUrl": "https://www.autismontario.com/civicrm/event/info?id=12973",
+    "lastChecked": "2026-11-19",
+    "lastSeen": "2026-11-19",
+    "status": "needs_review",
+    "tags": [
+      "family learning"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "Cost is unknown; check the official listing.",
+      "Numeric eligibility is unknown; check the official listing."
+    ],
+    "sourceName": "Autism Ontario event index",
+    "firstSeen": "2026-11-19",
+    "lastChanged": "2026-11-19",
+    "changeKind": "new"
+  },
+  {
+    "id": "discovered-autism-ontario-index-central-east-newmarket-cooking-d94a11f53ea2",
+    "title": "Central East - Newmarket - Cooking…",
+    "organization": "Autism Ontario",
+    "description": "An Autism Ontario event is listed. Check its official page for cost, eligibility and availability.",
+    "city": "Newmarket",
+    "region": "York",
+    "category": "Family Learning",
+    "cost": "Unknown",
+    "costEvidence": "unknown",
+    "eligibilityEvidence": "unknown",
+    "language": [
+      "en"
+    ],
+    "deadline": "2026-11-25",
+    "startDate": "2026-11-25",
+    "sourceUrl": "https://www.autismontario.com/civicrm/event/info?id=12999",
+    "lastChecked": "2026-11-19",
+    "lastSeen": "2026-11-19",
+    "status": "needs_review",
+    "tags": [
+      "family learning"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "Cost is unknown; check the official listing.",
+      "Numeric eligibility is unknown; check the official listing."
+    ],
+    "sourceName": "Autism Ontario event index",
+    "firstSeen": "2026-11-19",
+    "lastChanged": "2026-11-19",
+    "changeKind": "new"
+  },
+  {
+    "id": "discovered-autism-ontario-index-central-east-whitby-sensory-b598c0169078",
+    "title": "Central East, Whitby - Sensory…",
+    "organization": "Autism Ontario",
+    "description": "An Autism Ontario event is listed. Check its official page for cost, eligibility and availability.",
+    "city": "Whitby",
+    "region": "Durham",
+    "category": "Family Learning",
+    "cost": "Unknown",
+    "costEvidence": "unknown",
+    "eligibilityEvidence": "unknown",
+    "language": [
+      "en"
+    ],
+    "deadline": "2026-11-28",
+    "startDate": "2026-11-28",
+    "sourceUrl": "https://www.autismontario.com/civicrm/event/info?id=13244",
+    "lastChecked": "2026-11-19",
+    "lastSeen": "2026-11-19",
+    "status": "needs_review",
+    "tags": [
+      "family learning"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "Cost is unknown; check the official listing.",
+      "Numeric eligibility is unknown; check the official listing."
+    ],
+    "sourceName": "Autism Ontario event index",
+    "firstSeen": "2026-11-10",
+    "lastChanged": "2026-11-10",
+    "changeKind": "unchanged"
+  },
+  {
+    "id": "discovered-autism-ontario-index-toronto-autistic-adults-social-6a61450fb34e",
+    "title": "Toronto – Autistic Adults Social:…",
+    "organization": "Autism Ontario",
+    "description": "An Autism Ontario event is listed. Check its official page for cost, eligibility and availability.",
+    "city": "Toronto",
+    "region": "Toronto",
+    "category": "Family Learning",
+    "cost": "Unknown",
+    "costEvidence": "unknown",
+    "eligibilityEvidence": "unknown",
+    "language": [
+      "en"
+    ],
+    "deadline": "2026-11-28",
+    "startDate": "2026-11-28",
+    "sourceUrl": "https://www.autismontario.com/civicrm/event/info?id=13166",
+    "lastChecked": "2026-11-19",
+    "lastSeen": "2026-11-19",
+    "status": "needs_review",
+    "tags": [
+      "family learning"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "Cost is unknown; check the official listing.",
+      "Numeric eligibility is unknown; check the official listing."
+    ],
+    "sourceName": "Autism Ontario event index",
+    "firstSeen": "2026-11-10",
+    "lastChanged": "2026-11-10",
+    "changeKind": "unchanged"
+  },
   {
     "id": "discovered-autism-ontario-index-central-west-mississauga-chuck-78bb6fe4025a",
     "title": "Central West - Mississauga - Chuck…",
@@ -400,39 +564,6 @@ export const generatedDiscoveryReviewCandidates = [
     "firstSeen": "2026-11-18",
     "lastChanged": "2026-11-18",
     "changeKind": "unchanged"
-  },
-  {
-    "id": "discovered-autism-ontario-index-central-east-richmond-hill-bc34e59d94da",
-    "title": "Central East - Richmond Hill -…",
-    "organization": "Autism Ontario",
-    "description": "An Autism Ontario event is listed. Check its official page for cost, eligibility and availability.",
-    "city": "Richmond Hill",
-    "region": "York",
-    "category": "Family Learning",
-    "cost": "Unknown",
-    "costEvidence": "unknown",
-    "eligibilityEvidence": "unknown",
-    "language": [
-      "en"
-    ],
-    "deadline": "2026-12-06",
-    "startDate": "2026-12-06",
-    "sourceUrl": "https://www.autismontario.com/civicrm/event/info?id=13051",
-    "lastChecked": "2026-11-19",
-    "lastSeen": "2026-11-19",
-    "status": "needs_review",
-    "tags": [
-      "family learning"
-    ],
-    "confidence": "medium",
-    "reviewReasons": [
-      "Cost is unknown; check the official listing.",
-      "Numeric eligibility is unknown; check the official listing."
-    ],
-    "sourceName": "Autism Ontario event index",
-    "firstSeen": "2026-11-19",
-    "lastChanged": "2026-11-19",
-    "changeKind": "new"
   },
   {
     "id": "discovered-autism-ontario-index-toronto-autistic-adults-liquid-fa2ce96bebaf",
@@ -567,72 +698,6 @@ export const generatedDiscoveryReviewCandidates = [
     "changeKind": "unchanged"
   },
   {
-    "id": "discovered-autism-ontario-index-central-east-markham-b59081f94015",
-    "title": "Central East - Markham -…",
-    "organization": "Autism Ontario",
-    "description": "An Autism Ontario event is listed. Check its official page for cost, eligibility and availability.",
-    "city": "Markham",
-    "region": "York",
-    "category": "Family Learning",
-    "cost": "Unknown",
-    "costEvidence": "unknown",
-    "eligibilityEvidence": "unknown",
-    "language": [
-      "en"
-    ],
-    "deadline": "2026-11-18",
-    "startDate": "2026-11-18",
-    "sourceUrl": "https://www.autismontario.com/civicrm/event/info?id=12973",
-    "lastChecked": "2026-11-18",
-    "lastSeen": "2026-11-18",
-    "status": "needs_review",
-    "tags": [
-      "family learning"
-    ],
-    "confidence": "medium",
-    "reviewReasons": [
-      "Cost is unknown; check the official listing.",
-      "Numeric eligibility is unknown; check the official listing."
-    ],
-    "sourceName": "Autism Ontario event index",
-    "firstSeen": "2026-11-17",
-    "lastChanged": "2026-11-17",
-    "changeKind": "unchanged"
-  },
-  {
-    "id": "discovered-autism-ontario-index-central-east-newmarket-cooking-5f2f60447058",
-    "title": "Central East - Newmarket - Cooking…",
-    "organization": "Autism Ontario",
-    "description": "An Autism Ontario event is listed. Check its official page for cost, eligibility and availability.",
-    "city": "Newmarket",
-    "region": "York",
-    "category": "Family Learning",
-    "cost": "Unknown",
-    "costEvidence": "unknown",
-    "eligibilityEvidence": "unknown",
-    "language": [
-      "en"
-    ],
-    "deadline": "2026-11-18",
-    "startDate": "2026-11-18",
-    "sourceUrl": "https://www.autismontario.com/civicrm/event/info?id=12999",
-    "lastChecked": "2026-11-18",
-    "lastSeen": "2026-11-18",
-    "status": "needs_review",
-    "tags": [
-      "family learning"
-    ],
-    "confidence": "medium",
-    "reviewReasons": [
-      "Cost is unknown; check the official listing.",
-      "Numeric eligibility is unknown; check the official listing."
-    ],
-    "sourceName": "Autism Ontario event index",
-    "firstSeen": "2026-11-17",
-    "lastChanged": "2026-11-17",
-    "changeKind": "unchanged"
-  },
-  {
     "id": "discovered-autism-ontario-index-toronto-glow-in-the-dark-paint-4ad54fb9ff5a",
     "title": "Toronto – Glow in the Dark Paint…",
     "organization": "Autism Ontario",
@@ -663,72 +728,6 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Autism Ontario event index",
     "firstSeen": "2026-11-17",
     "lastChanged": "2026-11-17",
-    "changeKind": "unchanged"
-  },
-  {
-    "id": "discovered-autism-ontario-index-central-east-whitby-sensory-b598c0169078",
-    "title": "Central East, Whitby - Sensory…",
-    "organization": "Autism Ontario",
-    "description": "An Autism Ontario event is listed. Check its official page for cost, eligibility and availability.",
-    "city": "Whitby",
-    "region": "Durham",
-    "category": "Family Learning",
-    "cost": "Unknown",
-    "costEvidence": "unknown",
-    "eligibilityEvidence": "unknown",
-    "language": [
-      "en"
-    ],
-    "deadline": "2026-11-28",
-    "startDate": "2026-11-28",
-    "sourceUrl": "https://www.autismontario.com/civicrm/event/info?id=13244",
-    "lastChecked": "2026-11-18",
-    "lastSeen": "2026-11-18",
-    "status": "needs_review",
-    "tags": [
-      "family learning"
-    ],
-    "confidence": "medium",
-    "reviewReasons": [
-      "Cost is unknown; check the official listing.",
-      "Numeric eligibility is unknown; check the official listing."
-    ],
-    "sourceName": "Autism Ontario event index",
-    "firstSeen": "2026-11-10",
-    "lastChanged": "2026-11-10",
-    "changeKind": "unchanged"
-  },
-  {
-    "id": "discovered-autism-ontario-index-toronto-autistic-adults-social-6a61450fb34e",
-    "title": "Toronto – Autistic Adults Social:…",
-    "organization": "Autism Ontario",
-    "description": "An Autism Ontario event is listed. Check its official page for cost, eligibility and availability.",
-    "city": "Toronto",
-    "region": "Toronto",
-    "category": "Family Learning",
-    "cost": "Unknown",
-    "costEvidence": "unknown",
-    "eligibilityEvidence": "unknown",
-    "language": [
-      "en"
-    ],
-    "deadline": "2026-11-28",
-    "startDate": "2026-11-28",
-    "sourceUrl": "https://www.autismontario.com/civicrm/event/info?id=13166",
-    "lastChecked": "2026-11-18",
-    "lastSeen": "2026-11-18",
-    "status": "needs_review",
-    "tags": [
-      "family learning"
-    ],
-    "confidence": "medium",
-    "reviewReasons": [
-      "Cost is unknown; check the official listing.",
-      "Numeric eligibility is unknown; check the official listing."
-    ],
-    "sourceName": "Autism Ontario event index",
-    "firstSeen": "2026-11-10",
-    "lastChanged": "2026-11-10",
     "changeKind": "unchanged"
   },
   {
@@ -961,10 +960,45 @@ export const generatedDiscoveryReviewCandidates = [
     "changeKind": "unchanged"
   },
   {
-    "id": "discovered-tpl-events-stem-wellness-recovery-action-plan-wrap-for-hea-4df207b0cc97",
-    "title": "Wellness Recovery Action Plan (WRAP) for Healthy Aging",
+    "id": "discovered-tpl-events-stem-macaulay-family-drop-in-08be7ed3b678",
+    "title": "Macaulay Family Drop-In",
     "organization": "Toronto Public Library",
-    "description": "WRAP is for anyone looking to strengthen their well-being—whether you’re supporting your mental health, managing stress, or simply wanting to feel more balanced and resilient in daily life. The WRAP for Wellness Recovery Action Plan (WRAP) Workshop for Healthy Aging is expertly designed by Hope + Me for individuals aged 60 and older using the principles of WRAP, but with scenarios and tools focused on common aging challenges This 3-week session is appropriate for people with no experience with WRAP, or for those who wish to refresh their knowledge and skills. Participants will receive a certificate of participation upon program completion, but these sessions do not contribute to a WRAP certificate. Find more WRAP program options at TPL here. This WRAP Group meets every Thursday, once a wee",
+    "description": "Join the Macaulay Child Development Centre Wednesday mornings and Thursday afternoons for Play & Learn! This weekly program is for parents, caregivers and their children (ages 0-6) to socialize with others in an interactive learning environment. Children will learn, explore, communicate and understand new concepts to help expand their knowledge through play-based and guided activities. Expect a story time from Annette Street Library staff on the first Wednesday and the last Thursday of each month!",
+    "city": "Toronto",
+    "region": "Toronto",
+    "ageMin": 0,
+    "ageMax": 6,
+    "category": "Family Learning",
+    "cost": "Unknown",
+    "costEvidence": "unknown",
+    "eligibilityEvidence": "explicit-ages",
+    "language": [
+      "en"
+    ],
+    "deadline": "2026-11-19T14:00:00-04:00",
+    "startDate": "2026-11-19T14:00:00-04:00",
+    "endDate": "2026-11-19T16:00:00-04:00",
+    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6a89c44b29a7dd0d6745c19b",
+    "lastChecked": "2026-11-19",
+    "lastSeen": "2026-11-19",
+    "status": "needs_review",
+    "tags": [
+      "family learning"
+    ],
+    "confidence": "high",
+    "reviewReasons": [
+      "Cost is unknown; check the official listing."
+    ],
+    "sourceName": "Toronto Public Library events",
+    "firstSeen": "2026-11-19",
+    "lastChanged": "2026-11-19",
+    "changeKind": "new"
+  },
+  {
+    "id": "discovered-tpl-events-stem-branch-art-exhibit-dancing-flowers-58f80d51481c",
+    "title": "Branch Art Exhibit: Dancing Flowers",
+    "organization": "Toronto Public Library",
+    "description": "Throughout the month of November the works of artist Mary Garrone are on display at the Yorkville Branch in an exhibit titled Dancing Flowers. Artist biography: A Toronto-based artist from Australia. She has studied abstract expressionism for two years with the techniques of Nicholas Wilton and Jenny Nelson. A flower photographer for many years, she continues with this subject matter in her acrylic and oil painting. Artist statement: I love the challenge of translating emotion into paintings using gesture, palette, value, shape and line. While each painting is an exhausting number of decisions for me, the artist, the goal is ultimately to bring joy to the viewer. Applying the visual principle that \"lines activate,\" this series is entitled \"There's a party in the garden and the flowers are ",
     "city": "Toronto",
     "region": "Toronto",
     "category": "Family Learning",
@@ -974,9 +1008,9 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "deadline": "2026-11-19T10:00:00-04:00",
-    "startDate": "2026-11-19T10:00:00-04:00",
-    "endDate": "2026-11-19T12:30:00-04:00",
+    "deadline": "2026-11-02",
+    "startDate": "2026-11-02",
+    "endDate": "2026-11-29",
     "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6ae89bf09d27a00045550e59",
     "lastChecked": "2026-11-19",
     "lastSeen": "2026-11-19",
@@ -987,7 +1021,6 @@ export const generatedDiscoveryReviewCandidates = [
     "confidence": "medium",
     "reviewReasons": [
       "Cost is unknown; check the official listing.",
-      "Cost-related words appeared near the listing.",
       "Numeric eligibility is unknown; check the official listing."
     ],
     "sourceName": "Toronto Public Library events",
@@ -996,10 +1029,10 @@ export const generatedDiscoveryReviewCandidates = [
     "changeKind": "new"
   },
   {
-    "id": "discovered-tpl-events-stem-40th-anniversary-of-franklin-in-the-dark-d8e926a22491",
-    "title": "40th Anniversary of Franklin in the Dark",
+    "id": "discovered-tpl-events-stem-leap-after-school-program-892e574b7d60",
+    "title": "LEAP After School Program",
     "organization": "Toronto Public Library",
-    "description": "First published in 1986, join us in celebrating 40 years of the beloved Canadian turtle, Franklin. Discover the series’ original drafts by author Paulette Bourgeois and illustrator Brenda Clark, alongside other terrific turtle tales! Visit the Osborne Collection to experience our exhibit.",
+    "description": "This program offers a fun and engaging environment with two hours of physical activities, trivia, games, crafts, and sports-based activities. Participants will build independence and social skills while enjoying nutritious snacks and educational workshops. The program is safe, supervised, and facilitated in partnership with North York Community House LEAP staff. Information Collection Notice: The personal information on this form is collected by the Toronto Public Library under the Public Libraries Act, sections 20(a), 20(c), and 20(d). The information will only be used for event and program registration, delivery and evaluation. Questions about how the library handles your information can be directed to Answerline staff at answerline@tpl.ca , 416-397-5981, 789 Yonge Street, Toronto ON M4W",
     "city": "Toronto",
     "region": "Toronto",
     "category": "Family Learning",
@@ -1009,9 +1042,9 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "deadline": "2026-09-13",
-    "startDate": "2026-09-13",
-    "endDate": "2027-01-03",
+    "deadline": "2026-11-19T15:30:00-04:00",
+    "startDate": "2026-11-19T15:30:00-04:00",
+    "endDate": "2026-11-19T17:30:00-04:00",
     "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6ae64bc5901b02002cc6747a",
     "lastChecked": "2026-11-19",
     "lastSeen": "2026-11-19",
@@ -1030,10 +1063,10 @@ export const generatedDiscoveryReviewCandidates = [
     "changeKind": "new"
   },
   {
-    "id": "discovered-tpl-events-stem-maison-des-b-b-s-d8a23872de8a",
-    "title": "Maison des bébés",
+    "id": "discovered-tpl-events-stem-branch-art-exhibit-storytelling-works-by-a-2caa95755ce5",
+    "title": "Branch Art Exhibit: Storytelling -- works by Adira Rotstein",
     "organization": "Toronto Public Library",
-    "description": "Un programme spécialement conçu pour les bébés de 0 à 18 mois et leurs accompagnateurs. Chanter des chansons et des comptines à votre bébé favorise le développement du langage tout en partageant un moment amusant et chaleureux. Les comptines avec gestes encouragent également les tout‑petits à bouger et à explorer selon leur stade de développement. Ce programme est offert en partenariat avec le Centre francophone du Grand Toronto. Accessibilité: Le sous-titrage en direct ou automatique, l’interprétation en langue des signes, les services d’intervenant, ou les services d’accompagnement sont disponibles sur demande. Veuillez soumettre votre demande au moins deux semaines à l’avance à : tpl.ca/accessibility-events A program specially designed for babies aged 0 to 18 months and their caregivers",
+    "description": "Throughout the month of November, the works of artist Adira Rotstein are on display at Deer Park branch . Adira Rotstein is a Toronto artist, writer and teacher. Her YA novels 'Little Jane Silver' and 'Little Jane and the Nameless Isle' are published by Dundurn. She has experience in sequential art, creating comic books and illustrating stories. She also loves experimenting with the boundaries of stopmotion and hand drawn animation. I am curious about the world in all beauty and absurdity \"Usually, with my artwork I attempt to tell a story. People say I am able to imbue even inanimate objects with a personality, human agency and warmth. People's faces, their motions, their discarded objects at rest tell stories about where they have been, what they have felt and where they are going. Slow ",
     "city": "Toronto",
     "region": "Toronto",
     "category": "Family Learning",
@@ -1043,43 +1076,9 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "deadline": "2026-11-19T10:00:00-04:00",
-    "startDate": "2026-11-19T10:00:00-04:00",
-    "endDate": "2026-11-19T11:30:00-04:00",
-    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6abfe43a9dbc2b002c8bcccd",
-    "lastChecked": "2026-11-19",
-    "lastSeen": "2026-11-19",
-    "status": "needs_review",
-    "tags": [
-      "family learning"
-    ],
-    "confidence": "medium",
-    "reviewReasons": [
-      "Cost is unknown; check the official listing.",
-      "Numeric eligibility is unknown; check the official listing."
-    ],
-    "sourceName": "Toronto Public Library events",
-    "firstSeen": "2026-11-19",
-    "lastChanged": "2026-11-19",
-    "changeKind": "new"
-  },
-  {
-    "id": "discovered-tpl-events-stem-baby-time-8e742a7a03d3",
-    "title": "Baby Time",
-    "organization": "Toronto Public Library",
-    "description": "Join us for bouncing rhymes, songs and stories in this program for babies, birth to 18 months, and their parents or caregivers. Baby Time runs from 10am 11am. Children, parents and caregivers are invited to Stay and Play.",
-    "city": "Toronto",
-    "region": "Toronto",
-    "category": "Family Learning",
-    "cost": "Unknown",
-    "costEvidence": "unknown",
-    "eligibilityEvidence": "unknown",
-    "language": [
-      "en"
-    ],
-    "deadline": "2026-11-19T10:00:00-04:00",
-    "startDate": "2026-11-19T10:00:00-04:00",
-    "endDate": "2026-11-19T11:00:00-04:00",
+    "deadline": "2026-11-01",
+    "startDate": "2026-11-01",
+    "endDate": "2026-11-30",
     "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6ac7c2bfa85a2c00337e0e97",
     "lastChecked": "2026-11-19",
     "lastSeen": "2026-11-19",
@@ -1098,10 +1097,10 @@ export const generatedDiscoveryReviewCandidates = [
     "changeKind": "new"
   },
   {
-    "id": "discovered-tpl-events-stem-nocturnal-animals-scavenger-hunt-0413fe229e7c",
-    "title": "Nocturnal Animals Scavenger Hunt",
+    "id": "discovered-tpl-events-stem-branch-art-exhibit-saving-the-moment-by-jo-e6f8b39fd2c2",
+    "title": "Branch Art Exhibit: Saving the Moment by Jon Christopher Embree",
     "organization": "Toronto Public Library",
-    "description": "Welcome to the Night Shift! Stop by the library to find images of nocturnal animals hidden around the children's area. Find them all and win a fun prize! This program is intended for children aged 4 to 12 years .",
+    "description": "Throughout the month of November, the works of Jon Christopher Embree are on display at Morningside branch Jon Christopher Embree showed artistic promise early and started drawing, painting and sculpting from his teens on. With some post-secondary fine arts instruction, he then worked as a graphic artist with a focus on colour theory and retouching. Since retirement, he has worked full-time on visual art using oils, pen and ink, watercolour, acrylic as well as sketching, pencil and charcoal. “I want to move people, showcase something that will highlight the beauty of a moment in nature, or the day-to-day environment, ordinary life activities and special places. I want the viewer to stop, breathe slower and think.” This exhibit is part of TPL's Art Exhibit program . Toronto Public Library p",
     "city": "Toronto",
     "region": "Toronto",
     "category": "Family Learning",
@@ -1111,10 +1110,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "deadline": "2026-11-02",
-    "startDate": "2026-11-02",
+    "deadline": "2026-11-01",
+    "startDate": "2026-11-01",
     "endDate": "2026-11-30",
-    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6ae63f065ea4c386b3ec1b19",
+    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6adf51d39dbc2b002c910d86",
     "lastChecked": "2026-11-19",
     "lastSeen": "2026-11-19",
     "status": "needs_review",
@@ -1127,15 +1126,48 @@ export const generatedDiscoveryReviewCandidates = [
       "Numeric eligibility is unknown; check the official listing."
     ],
     "sourceName": "Toronto Public Library events",
-    "firstSeen": "2026-11-17",
-    "lastChanged": "2026-11-17",
-    "changeKind": "unchanged"
+    "firstSeen": "2026-11-19",
+    "lastChanged": "2026-11-19",
+    "changeKind": "new"
   },
   {
-    "id": "discovered-tpl-events-stem-knit-wits-knitting-and-crochet-club-3d70f0a37757",
-    "title": "Knit Wits Knitting and Crochet Club",
+    "id": "discovered-tpl-events-stem-buying-a-car-know-your-rights-16f06fc70e29",
+    "title": "Buying a Car? Know Your Rights!",
     "organization": "Toronto Public Library",
-    "description": "Main Street's knitting and crochet club returns! Share your projects with other knitters/crocheters, teach a technique, learn a technique, and enjoy great conversation. All level of knitters/crocheters welcome. Bring your own yarn, needles, and crochet hooks. We meet on the second floor of the library. Drop-in program.",
+    "description": "November is Financial Literacy Month. Buying a vehicle can be a challenging experience with long-term financial implications. Join us for an online presentation by the Ontario Motor Vehicle Industry Council (OMVIC) , the regulator of motor vehicle sales in Ontario. A representative from OMVIC will provide you with resources and tips for buying new and used cars in Ontario. Topics will include: OMVIC’s Compensation Fund Understanding Car Dealer Advertising Negative Equity & Long Term Loans Agreement & Disclosure Avoiding Curbsides & Fraud Prevention Tips for Buying or Leasing a Car Registration: This virtual Zoom event is free to join. Once registered, you’ll receive an email with the Zoom link. Need help with Zoom? - Joining and participating in a Zoom webinar - Zoom Privacy Statement Info",
+    "city": "Toronto",
+    "region": "Toronto",
+    "category": "Family Learning",
+    "cost": "Free to join",
+    "costEvidence": "source-stated-free",
+    "eligibilityEvidence": "unknown",
+    "language": [
+      "en"
+    ],
+    "deadline": "2026-11-19T15:00:00-04:00",
+    "startDate": "2026-11-19T15:00:00-04:00",
+    "endDate": "2026-11-19T16:00:00-04:00",
+    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6ae63f065ea4c386b3ec1b19",
+    "lastChecked": "2026-11-19",
+    "lastSeen": "2026-11-19",
+    "status": "needs_review",
+    "tags": [
+      "family learning"
+    ],
+    "confidence": "high",
+    "reviewReasons": [
+      "Numeric eligibility is unknown; check the official listing."
+    ],
+    "sourceName": "Toronto Public Library events",
+    "firstSeen": "2026-11-19",
+    "lastChanged": "2026-11-19",
+    "changeKind": "new"
+  },
+  {
+    "id": "discovered-tpl-events-stem-housing-help-341aa0bd19a4",
+    "title": "Housing Help",
+    "organization": "Toronto Public Library",
+    "description": "Drop in and work one-on-one with staff from The Housing Help Centre (THHC) to determine your housing needs, connect you to other government services, and to match you with landlords across the city. THHC works with both individuals and families in the City of Toronto to find and maintain affordable, safe housing. The Housing Help Centre can be contacted at 416-285-8070 or at shhc.ca",
     "city": "Toronto",
     "region": "Toronto",
     "category": "Family Learning",
@@ -1145,9 +1177,9 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "deadline": "2026-11-19T09:30:00-04:00",
-    "startDate": "2026-11-19T09:30:00-04:00",
-    "endDate": "2026-11-19T11:30:00-04:00",
+    "deadline": "2026-11-19T13:00:00-04:00",
+    "startDate": "2026-11-19T13:00:00-04:00",
+    "endDate": "2026-11-19T16:30:00-04:00",
     "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6ae91f5ef9d28050ccb0bd0d",
     "lastChecked": "2026-11-19",
     "lastSeen": "2026-11-19",
@@ -1166,10 +1198,10 @@ export const generatedDiscoveryReviewCandidates = [
     "changeKind": "new"
   },
   {
-    "id": "discovered-tpl-events-stem-celebrate-60-years-of-mimico-centennial-li-6690df7725e7",
-    "title": "Celebrate 60 years of Mimico Centennial Library",
+    "id": "discovered-tpl-events-stem-youth-hub-gaming-caf-f0f993bb3414",
+    "title": "Youth Hub: Gaming Café",
     "organization": "Toronto Public Library",
-    "description": "Throughout November, we're celebrating the 60th anniversary of Mimico Centennial Library ! Take a walk through history with our special historical photo display , featuring images and newspaper articles of the library and surrounding Mimico community through the years. Discover how our neighbourhood has changed and revisit the people, places, and moments that have shaped our community. 60 years of stories. 60 years of memories. 60 years of community.",
+    "description": "Drop-in every Monday and Thursday to take part in video games and board games! Nintendo Switch and PS5 games available. All games available on a first come, first serve basis. All teens are welcome! Drop-in, no registration required. This program is part of Youth Hub service. Youth Hubs are a welcoming place for teens after school and in the summer, where helpful staff are always available. Free, nutritious snacks are offered daily. Drop by a branch with a Youth Hub or call the branch to find out more.",
     "city": "Toronto",
     "region": "Toronto",
     "category": "Family Learning",
@@ -1179,9 +1211,9 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "deadline": "2026-11-01",
-    "startDate": "2026-11-01",
-    "endDate": "2026-11-30",
+    "deadline": "2026-11-19T15:30:00-04:00",
+    "startDate": "2026-11-19T15:30:00-04:00",
+    "endDate": "2026-11-19T19:00:00-04:00",
     "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6ae9ebfe9b955d531f7caf6c",
     "lastChecked": "2026-11-19",
     "lastSeen": "2026-11-19",
@@ -1200,143 +1232,7 @@ export const generatedDiscoveryReviewCandidates = [
     "changeKind": "new"
   },
   {
-    "id": "discovered-tpl-events-stem-branch-art-exhibit-saving-the-moment-by-jo-8ad8305861d7",
-    "title": "Branch Art Exhibit: Saving the Moment by Jon Christopher Embree",
-    "organization": "Toronto Public Library",
-    "description": "Throughout the month of November, the works of Jon Christopher Embree are on display at Morningside branch Jon Christopher Embree showed artistic promise early and started drawing, painting and sculpting from his teens on. With some post-secondary fine arts instruction, he then worked as a graphic artist with a focus on colour theory and retouching. Since retirement, he has worked full-time on visual art using oils, pen and ink, watercolour, acrylic as well as sketching, pencil and charcoal. “I want to move people, showcase something that will highlight the beauty of a moment in nature, or the day-to-day environment, ordinary life activities and special places. I want the viewer to stop, breathe slower and think.” This exhibit is part of TPL's Art Exhibit program . Toronto Public Library p",
-    "city": "Toronto",
-    "region": "Toronto",
-    "category": "Family Learning",
-    "cost": "Unknown",
-    "costEvidence": "unknown",
-    "eligibilityEvidence": "unknown",
-    "language": [
-      "en"
-    ],
-    "deadline": "2026-11-01",
-    "startDate": "2026-11-01",
-    "endDate": "2026-11-30",
-    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6ae8f7bbad4027659155ee39",
-    "lastChecked": "2026-11-19",
-    "lastSeen": "2026-11-19",
-    "status": "needs_review",
-    "tags": [
-      "family learning"
-    ],
-    "confidence": "medium",
-    "reviewReasons": [
-      "Cost is unknown; check the official listing.",
-      "Numeric eligibility is unknown; check the official listing."
-    ],
-    "sourceName": "Toronto Public Library events",
-    "firstSeen": "2026-11-19",
-    "lastChanged": "2026-11-19",
-    "changeKind": "new"
-  },
-  {
-    "id": "discovered-tpl-events-stem-sanko-speaks-2e64aeafec75",
-    "title": "Sanko Speaks",
-    "organization": "Toronto Public Library",
-    "description": "A free, culturally affirming drop-in program for adults that promotes mental wellness through creative activities, discussion, and healthy coping strategies. Guided by the concept of Sankofa, participants explore connections between past experiences and present wellbeing while building skills for managing stress and supporting mental health. Activities vary based on community interests and needs. This program is in collaboration with TAIBU Community Health Centre.",
-    "city": "Toronto",
-    "region": "Toronto",
-    "category": "Family Learning",
-    "cost": "Unknown",
-    "costEvidence": "unknown",
-    "eligibilityEvidence": "unknown",
-    "language": [
-      "en"
-    ],
-    "deadline": "2026-11-19T10:00:00-04:00",
-    "startDate": "2026-11-19T10:00:00-04:00",
-    "endDate": "2026-11-19T14:00:00-04:00",
-    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/696a8e2c6724c63d00ec90d8",
-    "lastChecked": "2026-11-19",
-    "lastSeen": "2026-11-19",
-    "status": "needs_review",
-    "tags": [
-      "family learning"
-    ],
-    "confidence": "medium",
-    "reviewReasons": [
-      "Cost is unknown; check the official listing.",
-      "Numeric eligibility is unknown; check the official listing."
-    ],
-    "sourceName": "Toronto Public Library events",
-    "firstSeen": "2026-11-19",
-    "lastChanged": "2026-11-19",
-    "changeKind": "new"
-  },
-  {
-    "id": "discovered-tpl-events-stem-branch-art-exhibit-my-red-is-not-your-red--8b93a4e50595",
-    "title": "Branch Art Exhibit: My Red Is Not Your Red by Francesco Leka",
-    "organization": "Toronto Public Library",
-    "description": "Throughout the month of November, the works of artist Francesco Leka are on display at Northern District library. Francesco Leka is a self-taught Canadian artist from Toronto who balances his artistic practice with his studies in Health Sciences at the University of Ottawa. While pursuing a future career in medicine, he continues to develop his art independently and with dedication. \"In my work, I find in witnessing viewers interpret the densely packed symbolic elements into their own narratives. Conceptually, my works explore the illusions people cling to—nostalgia, order, wealth—and the harsher truths underlying them. Visually, scenes in my oil paintings draw inspiration from the awe of nature, aesthetic qualities of myths, and my own visual interpretations of music.\" This exhibit is par",
-    "city": "Toronto",
-    "region": "Toronto",
-    "category": "Family Learning",
-    "cost": "Unknown",
-    "costEvidence": "unknown",
-    "eligibilityEvidence": "unknown",
-    "language": [
-      "en"
-    ],
-    "deadline": "2026-11-02",
-    "startDate": "2026-11-02",
-    "endDate": "2026-11-29",
-    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6aa9fcd23dd190003e724a08",
-    "lastChecked": "2026-11-19",
-    "lastSeen": "2026-11-19",
-    "status": "needs_review",
-    "tags": [
-      "family learning"
-    ],
-    "confidence": "medium",
-    "reviewReasons": [
-      "Cost is unknown; check the official listing.",
-      "Numeric eligibility is unknown; check the official listing."
-    ],
-    "sourceName": "Toronto Public Library events",
-    "firstSeen": "2026-11-19",
-    "lastChanged": "2026-11-19",
-    "changeKind": "new"
-  },
-  {
-    "id": "discovered-tpl-events-stem-needleworx-ed45ed2e93ff",
-    "title": "Needleworx",
-    "organization": "Toronto Public Library",
-    "description": "Bring your own knitting or crocheting project, or start something new while enjoying relaxed conversation! All are welcome! This is a drop in program. No registration request.",
-    "city": "Toronto",
-    "region": "Toronto",
-    "category": "Family Learning",
-    "cost": "Unknown",
-    "costEvidence": "unknown",
-    "eligibilityEvidence": "unknown",
-    "language": [
-      "en"
-    ],
-    "deadline": "2026-11-19T10:00:00-04:00",
-    "startDate": "2026-11-19T10:00:00-04:00",
-    "endDate": "2026-11-19T11:30:00-04:00",
-    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6ad374aa2b40e729fed2bcb0",
-    "lastChecked": "2026-11-19",
-    "lastSeen": "2026-11-19",
-    "status": "needs_review",
-    "tags": [
-      "family learning"
-    ],
-    "confidence": "medium",
-    "reviewReasons": [
-      "Cost is unknown; check the official listing.",
-      "Numeric eligibility is unknown; check the official listing."
-    ],
-    "sourceName": "Toronto Public Library events",
-    "firstSeen": "2026-11-19",
-    "lastChanged": "2026-11-19",
-    "changeKind": "new"
-  },
-  {
-    "id": "discovered-tpl-events-stem-branch-art-exhibit-works-by-camila-mia-c4e355082263",
+    "id": "discovered-tpl-events-stem-branch-art-exhibit-works-by-camila-mia-48f7e1f3787a",
     "title": "Branch Art Exhibit: Works by Camila Mia",
     "organization": "Toronto Public Library",
     "description": "Camila Mia is a talented young artist from Mimico, Toronto, who has been passionate about painting since she was four. Over the years, her love for art has evolved into a professional pursuit, with Camila officially dedicating herself to her craft about two years ago. Her work showcases a unique blend of creativity and technical skill, with a portfolio that includes serene landscapes, expressive wildlife, and intricate still-life pieces created with watercolour, acrylic, and mixed media. This exhibit is part of TPL's Art Exhibit program. Toronto Public Library provides space for local artists to exhibit their work at locations across the city. These exhibits aim to reflect the diverse cultural interests of the city and its neighbourhoods. The exhibit can be viewed during Richview branch op",
@@ -1352,7 +1248,7 @@ export const generatedDiscoveryReviewCandidates = [
     "deadline": "2026-11-02",
     "startDate": "2026-11-02",
     "endDate": "2026-11-30",
-    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6ab554d5c9d1b8187a993479",
+    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6ac8698e035faf0033db66c5",
     "lastChecked": "2026-11-19",
     "lastSeen": "2026-11-19",
     "status": "needs_review",
@@ -1370,10 +1266,78 @@ export const generatedDiscoveryReviewCandidates = [
     "changeKind": "new"
   },
   {
-    "id": "discovered-tpl-events-stem-branch-art-exhibit-storytelling-works-by-a-9e03ef6cb3c2",
-    "title": "Branch Art Exhibit: Storytelling -- works by Adira Rotstein",
+    "id": "discovered-tpl-events-stem-google-ai-essentials-online-learning-circl-5be8e2504674",
+    "title": "Google AI Essentials: Online Learning Circle",
     "organization": "Toronto Public Library",
-    "description": "Throughout the month of November, the works of artist Adira Rotstein are on display at Deer Park branch . Adira Rotstein is a Toronto artist, writer and teacher. Her YA novels 'Little Jane Silver' and 'Little Jane and the Nameless Isle' are published by Dundurn. She has experience in sequential art, creating comic books and illustrating stories. She also loves experimenting with the boundaries of stopmotion and hand drawn animation. I am curious about the world in all beauty and absurdity \"Usually, with my artwork I attempt to tell a story. People say I am able to imbue even inanimate objects with a personality, human agency and warmth. People's faces, their motions, their discarded objects at rest tell stories about where they have been, what they have felt and where they are going. Slow ",
+    "description": "Curious about artificial intelligence or want to learn practical AI skills for work and personal use? Join our staff-facilitated learning circle to complete the self-paced Google AI Essentials specialization. This 10-hour introductory-level specialization, offered through Coursera, is available for free to learning circle participants. It is made up of five courses, each containing four units that consist of short videos, articles, assignments and a short multiple-choice quiz. By completing the specialization, you will learn: How AI works How to write effective prompts How to use generative AI tools responsibly How to identify AI's potential biases and avoid harm How to stay up to date with AI news After you complete the course, you earn a Google certificate and a badge to share with other",
+    "city": "Toronto",
+    "region": "Toronto",
+    "category": "AI & Digital Media",
+    "cost": "Unknown",
+    "costEvidence": "unknown",
+    "eligibilityEvidence": "unknown",
+    "language": [
+      "en"
+    ],
+    "deadline": "2026-11-19T14:00:00-04:00",
+    "startDate": "2026-11-19T14:00:00-04:00",
+    "endDate": "2026-11-19T16:00:00-04:00",
+    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6af217399b955d531f7e3bb3",
+    "lastChecked": "2026-11-19",
+    "lastSeen": "2026-11-19",
+    "status": "needs_review",
+    "tags": [
+      "ai & digital media"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "Cost is unknown; check the official listing.",
+      "Numeric eligibility is unknown; check the official listing."
+    ],
+    "sourceName": "Toronto Public Library events",
+    "firstSeen": "2026-11-19",
+    "lastChanged": "2026-11-19",
+    "changeKind": "new"
+  },
+  {
+    "id": "discovered-tpl-events-stem-empowering-immigrants-settlement-support-1-159343aef1f9",
+    "title": "Empowering Immigrants: Settlement Support 101:Ontario Education移民赋能项目: 安居服务 101 之 安省教育体系和安省学生助学计划",
+    "organization": "Toronto Public Library",
+    "description": "You will learn about: 你将了解: · Ontario secondary education system 安省高中教育体系 · Ontario University and college applications 安省大学和学院申请 · Ontario Student Assistance Program (OSAP) application 安省学生助学计划(OSAP)申请 This is a collaborative program with The Cross-Cultural Community Services Association. The program presented in English and Chinese Translation Provided.",
+    "city": "Toronto",
+    "region": "Toronto",
+    "category": "Family Learning",
+    "cost": "Unknown",
+    "costEvidence": "unknown",
+    "eligibilityEvidence": "unknown",
+    "language": [
+      "en"
+    ],
+    "deadline": "2026-11-19T15:00:00-04:00",
+    "startDate": "2026-11-19T15:00:00-04:00",
+    "endDate": "2026-11-19T16:30:00-04:00",
+    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6ae4e3119dbc2b002c922f12",
+    "lastChecked": "2026-11-19",
+    "lastSeen": "2026-11-19",
+    "status": "needs_review",
+    "tags": [
+      "family learning"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "Cost is unknown; check the official listing.",
+      "Numeric eligibility is unknown; check the official listing."
+    ],
+    "sourceName": "Toronto Public Library events",
+    "firstSeen": "2026-11-19",
+    "lastChanged": "2026-11-19",
+    "changeKind": "new"
+  },
+  {
+    "id": "discovered-tpl-events-stem-celebrate-60-years-of-mimico-centennial-li-60f05a5c5c5b",
+    "title": "Celebrate 60 years of Mimico Centennial Library",
+    "organization": "Toronto Public Library",
+    "description": "Throughout November, we're celebrating the 60th anniversary of Mimico Centennial Library ! Take a walk through history with our special historical photo display , featuring images and newspaper articles of the library and surrounding Mimico community through the years. Discover how our neighbourhood has changed and revisit the people, places, and moments that have shaped our community. 60 years of stories. 60 years of memories. 60 years of community.",
     "city": "Toronto",
     "region": "Toronto",
     "category": "Family Learning",
@@ -1386,7 +1350,7 @@ export const generatedDiscoveryReviewCandidates = [
     "deadline": "2026-11-01",
     "startDate": "2026-11-01",
     "endDate": "2026-11-30",
-    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6ae35682198b996a80a9527b",
+    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6ae9edc7de685359098d91ed",
     "lastChecked": "2026-11-19",
     "lastSeen": "2026-11-19",
     "status": "needs_review",
@@ -1404,10 +1368,44 @@ export const generatedDiscoveryReviewCandidates = [
     "changeKind": "new"
   },
   {
-    "id": "discovered-tpl-events-stem-branch-art-exhibit-dancing-flowers-d047edbb0d43",
-    "title": "Branch Art Exhibit: Dancing Flowers",
+    "id": "discovered-tpl-events-stem-nocturnal-animals-scavenger-hunt-c5f713d25bbd",
+    "title": "Nocturnal Animals Scavenger Hunt",
     "organization": "Toronto Public Library",
-    "description": "Throughout the month of November the works of artist Mary Garrone are on display at the Yorkville Branch in an exhibit titled Dancing Flowers. Artist biography: A Toronto-based artist from Australia. She has studied abstract expressionism for two years with the techniques of Nicholas Wilton and Jenny Nelson. A flower photographer for many years, she continues with this subject matter in her acrylic and oil painting. Artist statement: I love the challenge of translating emotion into paintings using gesture, palette, value, shape and line. While each painting is an exhausting number of decisions for me, the artist, the goal is ultimately to bring joy to the viewer. Applying the visual principle that \"lines activate,\" this series is entitled \"There's a party in the garden and the flowers are ",
+    "description": "Welcome to the Night Shift! Stop by the library to find images of nocturnal animals hidden around the children's area. Find them all and win a fun prize! This program is intended for children aged 4 to 12 years .",
+    "city": "Toronto",
+    "region": "Toronto",
+    "category": "Family Learning",
+    "cost": "Unknown",
+    "costEvidence": "unknown",
+    "eligibilityEvidence": "unknown",
+    "language": [
+      "en"
+    ],
+    "deadline": "2026-11-02",
+    "startDate": "2026-11-02",
+    "endDate": "2026-11-30",
+    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6a8db51860ccaf01c020dea3",
+    "lastChecked": "2026-11-19",
+    "lastSeen": "2026-11-19",
+    "status": "needs_review",
+    "tags": [
+      "family learning"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "Cost is unknown; check the official listing.",
+      "Numeric eligibility is unknown; check the official listing."
+    ],
+    "sourceName": "Toronto Public Library events",
+    "firstSeen": "2026-11-19",
+    "lastChanged": "2026-11-19",
+    "changeKind": "new"
+  },
+  {
+    "id": "discovered-tpl-events-stem-branch-art-exhibit-my-red-is-not-your-red--d9a1bdd2e7d3",
+    "title": "Branch Art Exhibit: My Red Is Not Your Red by Francesco Leka",
+    "organization": "Toronto Public Library",
+    "description": "Throughout the month of November, the works of artist Francesco Leka are on display at Northern District library. Francesco Leka is a self-taught Canadian artist from Toronto who balances his artistic practice with his studies in Health Sciences at the University of Ottawa. While pursuing a future career in medicine, he continues to develop his art independently and with dedication. \"In my work, I find in witnessing viewers interpret the densely packed symbolic elements into their own narratives. Conceptually, my works explore the illusions people cling to—nostalgia, order, wealth—and the harsher truths underlying them. Visually, scenes in my oil paintings draw inspiration from the awe of nature, aesthetic qualities of myths, and my own visual interpretations of music.\" This exhibit is par",
     "city": "Toronto",
     "region": "Toronto",
     "category": "Family Learning",
@@ -1420,7 +1418,41 @@ export const generatedDiscoveryReviewCandidates = [
     "deadline": "2026-11-02",
     "startDate": "2026-11-02",
     "endDate": "2026-11-29",
-    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6aa59ff6129d8e0031f1bb7e",
+    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6a60e8569943bdf31ea0bbfa",
+    "lastChecked": "2026-11-19",
+    "lastSeen": "2026-11-19",
+    "status": "needs_review",
+    "tags": [
+      "family learning"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "Cost is unknown; check the official listing.",
+      "Numeric eligibility is unknown; check the official listing."
+    ],
+    "sourceName": "Toronto Public Library events",
+    "firstSeen": "2026-11-19",
+    "lastChanged": "2026-11-19",
+    "changeKind": "new"
+  },
+  {
+    "id": "discovered-tpl-events-stem-40th-anniversary-of-franklin-in-the-dark-314d3f778281",
+    "title": "40th Anniversary of Franklin in the Dark",
+    "organization": "Toronto Public Library",
+    "description": "First published in 1986, join us in celebrating 40 years of the beloved Canadian turtle, Franklin. Discover the series’ original drafts by author Paulette Bourgeois and illustrator Brenda Clark, alongside other terrific turtle tales! Visit the Osborne Collection to experience our exhibit.",
+    "city": "Toronto",
+    "region": "Toronto",
+    "category": "Family Learning",
+    "cost": "Unknown",
+    "costEvidence": "unknown",
+    "eligibilityEvidence": "unknown",
+    "language": [
+      "en"
+    ],
+    "deadline": "2026-09-13",
+    "startDate": "2026-09-13",
+    "endDate": "2027-01-03",
+    "sourceUrl": "https://tpl.bibliocommons.com/v2/events/6abaf7219abb62002c6ad49b",
     "lastChecked": "2026-11-19",
     "lastSeen": "2026-11-19",
     "status": "needs_review",
@@ -1502,174 +1534,6 @@ export const generatedDiscoveryReviewCandidates = [
     "changeKind": "unchanged"
   },
   {
-    "id": "discovered-markham-events-stem-unionville-english-conversation-circle-731b2e21fded",
-    "title": "Unionville English Conversation Circle",
-    "organization": "Markham Public Library",
-    "description": "Join this casual English Conversation Circle where small groups will practice speaking English through guided conversations on topics that are organized around real-life themes, such as friendship, communication, daily routines, helping others, family life, community life, work, and personal growth. The goal is to help participants build confidence while discussing practical everyday topics as well as to build community and connection with neighbors. We hope to see you there!",
-    "city": "Markham",
-    "region": "York",
-    "category": "Family Learning",
-    "cost": "Unknown",
-    "costEvidence": "unknown",
-    "eligibilityEvidence": "unknown",
-    "language": [
-      "en"
-    ],
-    "deadline": "2026-11-19T18:00:00-04:00",
-    "startDate": "2026-11-19T18:00:00-04:00",
-    "endDate": "2026-11-19T19:00:00-04:00",
-    "sourceUrl": "https://markham.bibliocommons.com/v2/events/6aa707fe65abe8002a78ed62",
-    "lastChecked": "2026-11-19",
-    "lastSeen": "2026-11-19",
-    "status": "needs_review",
-    "tags": [
-      "family learning"
-    ],
-    "confidence": "medium",
-    "reviewReasons": [
-      "Cost is unknown; check the official listing.",
-      "Numeric eligibility is unknown; check the official listing."
-    ],
-    "sourceName": "Markham Public Library events",
-    "firstSeen": "2026-11-18",
-    "lastChanged": "2026-11-18",
-    "changeKind": "unchanged"
-  },
-  {
-    "id": "discovered-markham-events-stem-1-1-interview-skills-coaching-9761cbf00085",
-    "title": "1:1 Interview Skills Coaching",
-    "organization": "Markham Public Library",
-    "description": "Get one-on-one help with your interview skills! Book a 25 minute with an employment consultant and improve your interview skills. Requirement: Participants must be a Canadian citizens, PR, refugee status with work permit, or with work permit. Job Skills Bio: This one-on-one sessions are facilitated by Job Skills, a government funded employment service. Job Skills, a non-profit charitable community-based employment, and training organization has successfully delivered employment solutions since 1988 across the Greater Toronto Area (GTA) and neighbouring regions. Today, the agency provides employment, employer, business, and newcomer services and programs in the York and Peel Regions. For more information, please visit their website - https://www.jobskills.org/",
-    "city": "Markham",
-    "region": "York",
-    "category": "Family Learning",
-    "cost": "Unknown",
-    "costEvidence": "unknown",
-    "eligibilityEvidence": "unknown",
-    "language": [
-      "en"
-    ],
-    "deadline": "2026-11-20T10:30:00-04:00",
-    "startDate": "2026-11-20T10:30:00-04:00",
-    "endDate": "2026-11-20T11:00:00-04:00",
-    "sourceUrl": "https://markham.bibliocommons.com/v2/events/68fbde1fe59a13000d3e1d1f",
-    "lastChecked": "2026-11-19",
-    "lastSeen": "2026-11-19",
-    "status": "needs_review",
-    "tags": [
-      "family learning"
-    ],
-    "confidence": "medium",
-    "reviewReasons": [
-      "Cost is unknown; check the official listing.",
-      "Numeric eligibility is unknown; check the official listing."
-    ],
-    "sourceName": "Markham Public Library events",
-    "firstSeen": "2026-11-19",
-    "lastChanged": "2026-11-19",
-    "changeKind": "new"
-  },
-  {
-    "id": "discovered-markham-events-stem-mpl-homepage-8b3700b85563",
-    "title": "MPL Homepage",
-    "organization": "Markham Public Library",
-    "description": "MPL Homepage from Markham Public Library events.",
-    "city": "Markham",
-    "region": "York",
-    "category": "Family Learning",
-    "cost": "Unknown",
-    "costEvidence": "unknown",
-    "eligibilityEvidence": "unknown",
-    "language": [
-      "en"
-    ],
-    "sourceUrl": "https://markham.bibliocommons.com/v2/events/6acfd45ca85a2c00337f86a3",
-    "lastChecked": "2026-11-19",
-    "lastSeen": "2026-11-19",
-    "status": "needs_review",
-    "tags": [
-      "family learning"
-    ],
-    "confidence": "medium",
-    "reviewReasons": [
-      "No clear future date found on the crawled page.",
-      "Cost is unknown; check the official listing.",
-      "Numeric eligibility is unknown; check the official listing."
-    ],
-    "sourceName": "Markham Public Library events",
-    "firstSeen": "2026-11-18",
-    "lastChanged": "2026-11-18",
-    "changeKind": "unchanged"
-  },
-  {
-    "id": "discovered-markham-events-stem-financial-literacy-chat-with-ceo-of-credit-7b8703c3b3e8",
-    "title": "Financial Literacy Chat with CEO of Credit Canada",
-    "organization": "Markham Public Library",
-    "description": "If your wallet could talk, what would it say? We are honoured to invite Bruce Sellery, CEO of Credit Canada , to share essential financial knowledge that every Canadian should know. Credit Canada is Canada's first and longest-standing non-profit credit counselling agency. This session will also include a Q&A period, giving participants the opportunity to ask their financial questions. Learning Outcomes: Learn about Canada's financial system and how it works. Gain practical financial literacy tips and discover where to find reliable resources. Have the opportunity to ask your financial questions and receive expert insights.",
-    "city": "Markham",
-    "region": "York",
-    "category": "Family Learning",
-    "cost": "Unknown",
-    "costEvidence": "unknown",
-    "eligibilityEvidence": "unknown",
-    "language": [
-      "en"
-    ],
-    "deadline": "2026-11-19T11:00:00-04:00",
-    "startDate": "2026-11-19T11:00:00-04:00",
-    "endDate": "2026-11-19T12:00:00-04:00",
-    "sourceUrl": "https://markham.bibliocommons.com/v2/events/6a636ddf0d65ac360041e600",
-    "lastChecked": "2026-11-19",
-    "lastSeen": "2026-11-19",
-    "status": "needs_review",
-    "tags": [
-      "family learning"
-    ],
-    "confidence": "medium",
-    "reviewReasons": [
-      "Cost is unknown; check the official listing.",
-      "Numeric eligibility is unknown; check the official listing."
-    ],
-    "sourceName": "Markham Public Library events",
-    "firstSeen": "2026-11-18",
-    "lastChanged": "2026-11-18",
-    "changeKind": "unchanged"
-  },
-  {
-    "id": "discovered-markham-events-stem-alzheimers-society-york-region-active-livi-24db474a5e73",
-    "title": "Alzheimers Society York Region Active Living - Joy in Art",
-    "organization": "Markham Public Library",
-    "description": "Discover the joy of creativity in Joy in Art , a lighthearted four-week art program for people living with Alzheimer’s disease or other related dementias and their caregivers , offered as part of the Alzheimer Society of York Region’s Active Living programs. You’ll explore playful drawing and simple art activities while enjoying opportunities for creative self-expression, connection, and making art together in a welcoming setting. You will: Explore your creativity and self-expression through playful drawing and simple art activities. Enjoy connection and creativity while making art together in a relaxed and supportive environment. Format: Four-week interactive art program featuring guided drawing and simple creative activities.",
-    "city": "Markham",
-    "region": "York",
-    "category": "Family Learning",
-    "cost": "Unknown",
-    "costEvidence": "unknown",
-    "eligibilityEvidence": "unknown",
-    "language": [
-      "en"
-    ],
-    "deadline": "2026-11-20T10:30:00-04:00",
-    "startDate": "2026-11-20T10:30:00-04:00",
-    "endDate": "2026-11-20T11:30:00-04:00",
-    "sourceUrl": "https://markham.bibliocommons.com/v2/events/6903a9359b87934100935126",
-    "lastChecked": "2026-11-19",
-    "lastSeen": "2026-11-19",
-    "status": "needs_review",
-    "tags": [
-      "family learning"
-    ],
-    "confidence": "medium",
-    "reviewReasons": [
-      "Cost is unknown; check the official listing.",
-      "Numeric eligibility is unknown; check the official listing."
-    ],
-    "sourceName": "Markham Public Library events",
-    "firstSeen": "2026-11-19",
-    "lastChanged": "2026-11-19",
-    "changeKind": "new"
-  },
-  {
     "id": "discovered-markham-events-stem-tenant-rights-450ad280ae03",
     "title": "Tenant Rights",
     "organization": "Markham Public Library",
@@ -1704,10 +1568,10 @@ export const generatedDiscoveryReviewCandidates = [
     "changeKind": "unchanged"
   },
   {
-    "id": "discovered-markham-events-stem-wagging-tails-happy-hearts-an-introduction-991fb7794251",
-    "title": "Wagging Tails, Happy Hearts: An Introduction to Responsible Dog Ownership",
+    "id": "discovered-markham-events-stem-pa-day-activities-markham-village-branch-1cb285c3e3e3",
+    "title": "PA Day Activities | Markham Village branch",
     "organization": "Markham Public Library",
-    "description": "Join us for an educational presentation where we will explore the wonderful world of responsible dog ownership! Wagging Tails, Happy Hearts aims to teach families essential skills and knowledge needed to care for our furry friends. Whether you're thinking about getting a dog, recently adopted one, or have been a dog owner for years, this seminar is the perfect place to enhance your knowledge. Led by Valerie from SSH Canine Academy , a canine behavior specialist with a passion for creating lasting connections between dogs and their families, this presentation will empower you with the tools to be a confident and compassionate dog owner. In this program, you’ll discover the joys of having a dog while learning about the responsibilities that come with pet ownership. Valerie will guide you thr",
+    "description": "Decorate a fun picture keychain with a wide selection of colourful beads! While supplies last, one keychain per child. A scavenger hunt will also be available throughout the day.",
     "city": "Markham",
     "region": "York",
     "category": "Family Learning",
@@ -1717,9 +1581,9 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "deadline": "2026-11-19T18:00:00-04:00",
-    "startDate": "2026-11-19T18:00:00-04:00",
-    "endDate": "2026-11-19T19:00:00-04:00",
+    "deadline": "2026-11-20T11:00:00-04:00",
+    "startDate": "2026-11-20T11:00:00-04:00",
+    "endDate": "2026-11-20T12:00:00-04:00",
     "sourceUrl": "https://markham.bibliocommons.com/v2/events/6a738410e30fe48459672c58",
     "lastChecked": "2026-11-19",
     "lastSeen": "2026-11-19",
@@ -1733,9 +1597,9 @@ export const generatedDiscoveryReviewCandidates = [
       "Numeric eligibility is unknown; check the official listing."
     ],
     "sourceName": "Markham Public Library events",
-    "firstSeen": "2026-11-18",
-    "lastChanged": "2026-11-18",
-    "changeKind": "unchanged"
+    "firstSeen": "2026-11-19",
+    "lastChanged": "2026-11-19",
+    "changeKind": "new"
   },
   {
     "id": "discovered-markham-events-stem-pa-day-crafts-at-unionville-965c1ffb50c0",
@@ -1769,7 +1633,7 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Markham Public Library events",
     "firstSeen": "2026-11-19",
     "lastChanged": "2026-11-19",
-    "changeKind": "new"
+    "changeKind": "unchanged"
   },
   {
     "id": "discovered-markham-events-stem-english-conversation-circle-coffee-chat-8329ba36cbfe",
@@ -1804,7 +1668,7 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Markham Public Library events",
     "firstSeen": "2026-11-19",
     "lastChanged": "2026-11-19",
-    "changeKind": "new"
+    "changeKind": "unchanged"
   },
   {
     "id": "discovered-markham-events-stem-book-club-discussion-atmosphere-816d693486cb",
@@ -1872,13 +1736,13 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Markham Public Library events",
     "firstSeen": "2026-11-19",
     "lastChanged": "2026-11-19",
-    "changeKind": "new"
+    "changeKind": "unchanged"
   },
   {
-    "id": "discovered-markham-events-stem-service-canada-presents-saving-for-your-ch-e79edd6a4d3c",
-    "title": "Service Canada Presents: Saving For Your Child's Education and Government Supports for Families",
+    "id": "discovered-markham-events-stem-1-1-interview-skills-coaching-922abcc87deb",
+    "title": "1:1 Interview Skills Coaching",
     "organization": "Markham Public Library",
-    "description": "Join this virtual session with Service Canada for a broad introduction and overview of government programs and services for families and children including how to save for your child's education . Participants will learn about: The Social Insurance program Canada Pension Plan for children and families Employment Insurance Canadian Dental Care Plan Canada Disability Benefit Canada Child Benefit Registered Education Savings Plans (RESP) Canada Learning Bond and Canada Education Savings Grant Registered Disability Savings Plan (RDSP) We look forward to seeing you there!",
+    "description": "Get one-on-one help with your interview skills! Book a 25 minute with an employment consultant and improve your interview skills. Requirement: Participants must be a Canadian citizens, PR, refugee status with work permit, or with work permit. Job Skills Bio: This one-on-one sessions are facilitated by Job Skills, a government funded employment service. Job Skills, a non-profit charitable community-based employment, and training organization has successfully delivered employment solutions since 1988 across the Greater Toronto Area (GTA) and neighbouring regions. Today, the agency provides employment, employer, business, and newcomer services and programs in the York and Peel Regions. For more information, please visit their website - https://www.jobskills.org/",
     "city": "Markham",
     "region": "York",
     "category": "Family Learning",
@@ -1888,10 +1752,10 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "deadline": "2026-11-19T13:00:00-04:00",
-    "startDate": "2026-11-19T13:00:00-04:00",
-    "endDate": "2026-11-19T14:00:00-04:00",
-    "sourceUrl": "https://markham.bibliocommons.com/v2/events/68fbd37875911f28001a236d",
+    "deadline": "2026-11-20T10:30:00-04:00",
+    "startDate": "2026-11-20T10:30:00-04:00",
+    "endDate": "2026-11-20T11:00:00-04:00",
+    "sourceUrl": "https://markham.bibliocommons.com/v2/events/6a4ea82d9a203c36006b95a6",
     "lastChecked": "2026-11-19",
     "lastSeen": "2026-11-19",
     "status": "needs_review",
@@ -1909,10 +1773,10 @@ export const generatedDiscoveryReviewCandidates = [
     "changeKind": "new"
   },
   {
-    "id": "discovered-markham-events-stem-earlyon-drop-in-c4dad93b988a",
-    "title": "EarlyON Drop-in",
+    "id": "discovered-markham-events-stem-kids-reading-challenge-meet-up-95133307ad2b",
+    "title": "Kids Reading Challenge Meet-Up",
     "organization": "Markham Public Library",
-    "description": "In partnership with Family Day's EarlyON Child & Family Centres, drop-in for welcoming, supportive and accessible sessions where children (birth to six years of age) and their parents, grandparents, or caregivers can play and learn together. EarlyON Child and Family Centres (familydaycare.com)",
+    "description": "Join the Kids Reading Challenge meetup and discover what makes a great story by exploring characters, setting, rising action, climax, falling action, and resolution. After listening to a short story, you will create your own ending, using story structure techniques that strong readers and writers use every day.",
     "city": "Markham",
     "region": "York",
     "category": "Family Learning",
@@ -1922,9 +1786,9 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "deadline": "2026-11-19T09:30:00-04:00",
-    "startDate": "2026-11-19T09:30:00-04:00",
-    "endDate": "2026-11-19T11:30:00-04:00",
+    "deadline": "2026-11-20T11:00:00-04:00",
+    "startDate": "2026-11-20T11:00:00-04:00",
+    "endDate": "2026-11-20T12:00:00-04:00",
     "sourceUrl": "https://markham.bibliocommons.com/v2/events/69274b3f44d0e96d007b8765",
     "lastChecked": "2026-11-19",
     "lastSeen": "2026-11-19",
@@ -1943,10 +1807,10 @@ export const generatedDiscoveryReviewCandidates = [
     "changeKind": "new"
   },
   {
-    "id": "discovered-markham-events-stem-book-club-discussion-the-names-8d7409eae2e0",
-    "title": "Book Club Discussion - The Names",
+    "id": "discovered-markham-events-stem-alzheimers-society-york-region-active-livi-729654f5c182",
+    "title": "Alzheimers Society York Region Active Living - Joy in Art",
     "organization": "Markham Public Library",
-    "description": "Want to connect with others over the love of reading? Join our book club to discuss Florence Knapp's The Names . This title should be on shelves and ready to borrow approximately 5 weeks prior to the discussion date. Check with a staff member if you have questions on how to access a copy. Book Description \"A dazzling debut that asks: Can a name shape the course of a life? In the wake of an enormous, history-making storm, Cora sets off with her nine-year-old daughter, Maia, to register her son's birth. Her husband Gordon, a local doctor, respected in the community but a terrifying and controlling presence at home, intends for her to follow his family tradition going back generations, and name the child Gordon. But on the journey there, Cora wonders if it's right to impose the burden of this",
+    "description": "Discover the joy of creativity in Joy in Art , a lighthearted four-week art program for people living with Alzheimer’s disease or other related dementias and their caregivers , offered as part of the Alzheimer Society of York Region’s Active Living programs. You’ll explore playful drawing and simple art activities while enjoying opportunities for creative self-expression, connection, and making art together in a welcoming setting. You will: Explore your creativity and self-expression through playful drawing and simple art activities. Enjoy connection and creativity while making art together in a relaxed and supportive environment. Format: Four-week interactive art program featuring guided drawing and simple creative activities.",
     "city": "Markham",
     "region": "York",
     "category": "Family Learning",
@@ -1956,9 +1820,9 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "deadline": "2026-11-19T14:00:00-04:00",
-    "startDate": "2026-11-19T14:00:00-04:00",
-    "endDate": "2026-11-19T15:30:00-04:00",
+    "deadline": "2026-11-20T10:30:00-04:00",
+    "startDate": "2026-11-20T10:30:00-04:00",
+    "endDate": "2026-11-20T11:30:00-04:00",
     "sourceUrl": "https://markham.bibliocommons.com/v2/events/6a4818e54407827f8aa93246",
     "lastChecked": "2026-11-19",
     "lastSeen": "2026-11-19",
@@ -2004,6 +1868,106 @@ export const generatedDiscoveryReviewCandidates = [
     "reviewReasons": [
       "Cost is unknown; check the official listing.",
       "School grades are stated; numeric ages are unknown and must be verified.",
+      "Numeric eligibility is unknown; check the official listing."
+    ],
+    "sourceName": "Markham Public Library events",
+    "firstSeen": "2026-11-19",
+    "lastChanged": "2026-11-19",
+    "changeKind": "unchanged"
+  },
+  {
+    "id": "discovered-markham-events-stem-wagging-tails-happy-hearts-an-introduction-fb3e580e7574",
+    "title": "Wagging Tails, Happy Hearts: An Introduction to Responsible Dog Ownership",
+    "organization": "Markham Public Library",
+    "description": "Join us for an educational presentation where we will explore the wonderful world of responsible dog ownership! Wagging Tails, Happy Hearts aims to teach families essential skills and knowledge needed to care for our furry friends. Whether you're thinking about getting a dog, recently adopted one, or have been a dog owner for years, this seminar is the perfect place to enhance your knowledge. Led by Valerie from SSH Canine Academy , a canine behavior specialist with a passion for creating lasting connections between dogs and their families, this presentation will empower you with the tools to be a confident and compassionate dog owner. In this program, you’ll discover the joys of having a dog while learning about the responsibilities that come with pet ownership. Valerie will guide you thr",
+    "city": "Markham",
+    "region": "York",
+    "category": "Family Learning",
+    "cost": "Unknown",
+    "costEvidence": "unknown",
+    "eligibilityEvidence": "unknown",
+    "language": [
+      "en"
+    ],
+    "deadline": "2026-11-19T18:00:00-04:00",
+    "startDate": "2026-11-19T18:00:00-04:00",
+    "endDate": "2026-11-19T19:00:00-04:00",
+    "sourceUrl": "https://markham.bibliocommons.com/v2/events/6abbcb2e901b02002cbeb871",
+    "lastChecked": "2026-11-19",
+    "lastSeen": "2026-11-19",
+    "status": "needs_review",
+    "tags": [
+      "family learning"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "Cost is unknown; check the official listing.",
+      "Numeric eligibility is unknown; check the official listing."
+    ],
+    "sourceName": "Markham Public Library events",
+    "firstSeen": "2026-11-19",
+    "lastChanged": "2026-11-19",
+    "changeKind": "new"
+  },
+  {
+    "id": "discovered-markham-events-stem-mpl-homepage-d7772f20ee67",
+    "title": "MPL Homepage",
+    "organization": "Markham Public Library",
+    "description": "MPL Homepage from Markham Public Library events.",
+    "city": "Markham",
+    "region": "York",
+    "category": "Family Learning",
+    "cost": "Unknown",
+    "costEvidence": "unknown",
+    "eligibilityEvidence": "unknown",
+    "language": [
+      "en"
+    ],
+    "sourceUrl": "https://markham.bibliocommons.com/v2/events/6a4ea82d9a203c36006b95a9",
+    "lastChecked": "2026-11-19",
+    "lastSeen": "2026-11-19",
+    "status": "needs_review",
+    "tags": [
+      "family learning"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "No clear future date found on the crawled page.",
+      "Cost is unknown; check the official listing.",
+      "Numeric eligibility is unknown; check the official listing."
+    ],
+    "sourceName": "Markham Public Library events",
+    "firstSeen": "2026-11-19",
+    "lastChanged": "2026-11-19",
+    "changeKind": "new"
+  },
+  {
+    "id": "discovered-markham-events-stem-unionville-english-conversation-circle-a5d76960b78c",
+    "title": "Unionville English Conversation Circle",
+    "organization": "Markham Public Library",
+    "description": "Join this casual English Conversation Circle where small groups will practice speaking English through guided conversations on topics that are organized around real-life themes, such as friendship, communication, daily routines, helping others, family life, community life, work, and personal growth. The goal is to help participants build confidence while discussing practical everyday topics as well as to build community and connection with neighbors. We hope to see you there!",
+    "city": "Markham",
+    "region": "York",
+    "category": "Family Learning",
+    "cost": "Unknown",
+    "costEvidence": "unknown",
+    "eligibilityEvidence": "unknown",
+    "language": [
+      "en"
+    ],
+    "deadline": "2026-11-19T18:00:00-04:00",
+    "startDate": "2026-11-19T18:00:00-04:00",
+    "endDate": "2026-11-19T19:00:00-04:00",
+    "sourceUrl": "https://markham.bibliocommons.com/v2/events/6a4ea82d9a203c36006b95aa",
+    "lastChecked": "2026-11-19",
+    "lastSeen": "2026-11-19",
+    "status": "needs_review",
+    "tags": [
+      "family learning"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "Cost is unknown; check the official listing.",
       "Numeric eligibility is unknown; check the official listing."
     ],
     "sourceName": "Markham Public Library events",
@@ -3201,29 +3165,28 @@ export const generatedDiscoveryReviewCandidates = [
     "changeKind": "unchanged"
   },
   {
-    "id": "discovered-aurora-library-stem-maker-workshop-custom-stickers-1e4206b0d15a",
-    "title": "Maker Workshop: Custom Stickers",
+    "id": "discovered-aurora-library-stem-chinese-singing-lessons-739f39347d7d",
+    "title": "Chinese Singing Lessons",
     "organization": "Aurora Public Library",
-    "description": "Learn how to design and cut custom printed stickers using printable vinyl and laminate materials with the Cricut machine. All required materials will be provided. Please note that spots will be prioritized for first-time attendees. teen/adult program 13+",
+    "description": "Do you love singing? Would you like to improve your vocal method and singing techniques? Join us to enhance your singing skills through vocal and breathing techniques taught by our experienced vocal instructor! 喜歡唱歌的你，是否想改善發聲方法及歌唱技巧？ 由資深聲樂老師教授發聲與運氣方法。 歡迎參加 Location: Magna Room 地點： 奧羅拉圖書館 Magna Room，在圖書館入口左手邊 Drop in, no registration required 免費, 無需註冊",
     "city": "Aurora",
     "region": "York",
-    "category": "Makerspace & Fabrication",
+    "category": "Family Learning",
     "cost": "Unknown",
     "costEvidence": "unknown",
     "eligibilityEvidence": "unknown",
     "language": [
       "en"
     ],
-    "deadline": "2026-11-19T11:00:00-04:00",
-    "startDate": "2026-11-19T11:00:00-04:00",
-    "endDate": "2026-11-19T12:30:00-04:00",
+    "deadline": "2026-11-21T10:00:00-04:00",
+    "startDate": "2026-11-21T10:00:00-04:00",
+    "endDate": "2026-11-21T12:30:00-04:00",
     "sourceUrl": "https://aurora.bibliocommons.com/v2/events/69a451c5491b809c6f1d4a1b",
     "lastChecked": "2026-11-19",
     "lastSeen": "2026-11-19",
     "status": "needs_review",
     "tags": [
-      "makerspace & fabrication",
-      "maker"
+      "family learning"
     ],
     "confidence": "medium",
     "reviewReasons": [
@@ -3231,9 +3194,9 @@ export const generatedDiscoveryReviewCandidates = [
       "Numeric eligibility is unknown; check the official listing."
     ],
     "sourceName": "Aurora Public Library STEM events",
-    "firstSeen": "2026-11-17",
-    "lastChanged": "2026-11-17",
-    "changeKind": "unchanged"
+    "firstSeen": "2026-11-19",
+    "lastChanged": "2026-11-19",
+    "changeKind": "new"
   },
   {
     "id": "discovered-aurora-library-stem-crass-stitch-club-0400adcef3c5",
@@ -3302,178 +3265,7 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Aurora Public Library STEM events",
     "firstSeen": "2026-11-19",
     "lastChanged": "2026-11-19",
-    "changeKind": "new"
-  },
-  {
-    "id": "discovered-aurora-library-stem-fall-in-love-with-ya-reading-challenge-2ddfe8105a9b",
-    "title": "Fall in Love with YA Reading Challenge",
-    "organization": "Aurora Public Library",
-    "description": "Track the books you read, complete activities, write reviews, and earn digital badges to win prizes. To register, please see the link below: Online Reading Challenge",
-    "city": "Aurora",
-    "region": "York",
-    "category": "Family Learning",
-    "cost": "Unknown",
-    "costEvidence": "unknown",
-    "eligibilityEvidence": "unknown",
-    "language": [
-      "en"
-    ],
-    "deadline": "2026-09-01T08:00:00-04:00",
-    "startDate": "2026-09-01T08:00:00-04:00",
-    "endDate": "2026-12-31T09:00:00-04:00",
-    "sourceUrl": "https://aurora.bibliocommons.com/v2/events/6a563c6cfb418a28009ad685",
-    "lastChecked": "2026-11-19",
-    "lastSeen": "2026-11-19",
-    "status": "needs_review",
-    "tags": [
-      "family learning"
-    ],
-    "confidence": "medium",
-    "reviewReasons": [
-      "Cost is unknown; check the official listing.",
-      "Numeric eligibility is unknown; check the official listing."
-    ],
-    "sourceName": "Aurora Public Library STEM events",
-    "firstSeen": "2026-11-19",
-    "lastChanged": "2026-11-19",
-    "changeKind": "new"
-  },
-  {
-    "id": "discovered-aurora-library-stem-cs-intro-to-cricut-68fbb49ffeb1",
-    "title": "CS Intro to Cricut",
-    "organization": "Aurora Public Library",
-    "description": "Learn the basics of the Cricut cutting machine in this introductory course. Create a custom vinyl sticker to take home! This program is for ages 13+ . This is just a reminder that if you are unable to attend any of our programs at APL , to please unregister , or else you will be marked as a \"no-show\", and your ability to register for programs in the future may be impacted, due to high waitlists. Unregistering when you are unable to make it to a program, allows there to be space for others who are on the waitlist to attend. We appreciate your consideration. APL Creative Studio",
-    "city": "Aurora",
-    "region": "York",
-    "category": "Family Learning",
-    "cost": "Unknown",
-    "costEvidence": "unknown",
-    "eligibilityEvidence": "unknown",
-    "language": [
-      "en"
-    ],
-    "deadline": "2026-11-19T19:00:00-04:00",
-    "startDate": "2026-11-19T19:00:00-04:00",
-    "endDate": "2026-11-19T20:00:00-04:00",
-    "sourceUrl": "https://aurora.bibliocommons.com/v2/events/6aaac94da5dbde002aa50898",
-    "lastChecked": "2026-11-19",
-    "lastSeen": "2026-11-19",
-    "status": "needs_review",
-    "tags": [
-      "family learning",
-      "creative studio"
-    ],
-    "confidence": "medium",
-    "reviewReasons": [
-      "Cost is unknown; check the official listing.",
-      "Numeric eligibility is unknown; check the official listing."
-    ],
-    "sourceName": "Aurora Public Library STEM events",
-    "firstSeen": "2026-11-18",
-    "lastChanged": "2026-11-18",
     "changeKind": "unchanged"
-  },
-  {
-    "id": "discovered-aurora-library-stem-chinese-singing-lessons-5990d1dbce11",
-    "title": "Chinese Singing Lessons",
-    "organization": "Aurora Public Library",
-    "description": "Do you love singing? Would you like to improve your vocal method and singing techniques? Join us to enhance your singing skills through vocal and breathing techniques taught by our experienced vocal instructor! 喜歡唱歌的你，是否想改善發聲方法及歌唱技巧？ 由資深聲樂老師教授發聲與運氣方法。 歡迎參加 Location: Magna Room 地點： 奧羅拉圖書館 Magna Room，在圖書館入口左手邊 Drop in, no registration required 免費, 無需註冊",
-    "city": "Aurora",
-    "region": "York",
-    "category": "Family Learning",
-    "cost": "Unknown",
-    "costEvidence": "unknown",
-    "eligibilityEvidence": "unknown",
-    "language": [
-      "en"
-    ],
-    "deadline": "2026-11-21T10:00:00-04:00",
-    "startDate": "2026-11-21T10:00:00-04:00",
-    "endDate": "2026-11-21T12:30:00-04:00",
-    "sourceUrl": "https://aurora.bibliocommons.com/v2/events/6a7cbff361e11c00517723cc",
-    "lastChecked": "2026-11-19",
-    "lastSeen": "2026-11-19",
-    "status": "needs_review",
-    "tags": [
-      "family learning"
-    ],
-    "confidence": "medium",
-    "reviewReasons": [
-      "Cost is unknown; check the official listing.",
-      "Numeric eligibility is unknown; check the official listing."
-    ],
-    "sourceName": "Aurora Public Library STEM events",
-    "firstSeen": "2026-11-19",
-    "lastChanged": "2026-11-19",
-    "changeKind": "new"
-  },
-  {
-    "id": "discovered-aurora-library-stem-apl-s-stuffed-animal-hospital-576df6caac5e",
-    "title": "APL's Stuffed Animal Hospital",
-    "organization": "Aurora Public Library",
-    "description": "Children's Desk on 2nd Floor | All Day Is your stuffed animal sick or injured? Worry not! APL’s Stuffed Animal Hospital is here to help! Drop off your stuffie needing repairs at the children’s desk on the 2nd floor of the library, then our “doctors” will fix them up and send them home with instructions for YOU to help your stuffies next time! Please drop your stuffie off at the 2nd floor Children's Desk and fill out our stuffie patient intake form!",
-    "city": "Aurora",
-    "region": "York",
-    "category": "Family Learning",
-    "cost": "Unknown",
-    "costEvidence": "unknown",
-    "eligibilityEvidence": "unknown",
-    "language": [
-      "en"
-    ],
-    "deadline": "2025-09-18",
-    "startDate": "2025-09-18",
-    "endDate": "2026-12-31",
-    "sourceUrl": "https://aurora.bibliocommons.com/v2/events/6a563cf5aa34e23600ef0184",
-    "lastChecked": "2026-11-19",
-    "lastSeen": "2026-11-19",
-    "status": "needs_review",
-    "tags": [
-      "family learning"
-    ],
-    "confidence": "medium",
-    "reviewReasons": [
-      "Cost is unknown; check the official listing.",
-      "Numeric eligibility is unknown; check the official listing."
-    ],
-    "sourceName": "Aurora Public Library STEM events",
-    "firstSeen": "2026-11-17",
-    "lastChanged": "2026-11-17",
-    "changeKind": "unchanged"
-  },
-  {
-    "id": "discovered-aurora-library-stem-apl-escape-room-9d663aef0f16",
-    "title": "APL Escape Room",
-    "organization": "Aurora Public Library",
-    "description": "Put your puzzle-solving skills to the test! Find codes, solve riddles, and so much more! One clue leads to another, until victory is achieved! Registration is required.",
-    "city": "Aurora",
-    "region": "York",
-    "category": "Family Learning",
-    "cost": "Unknown",
-    "costEvidence": "unknown",
-    "eligibilityEvidence": "unknown",
-    "language": [
-      "en"
-    ],
-    "deadline": "2026-11-19T18:00:00-04:00",
-    "startDate": "2026-11-19T18:00:00-04:00",
-    "endDate": "2026-11-19T19:00:00-04:00",
-    "sourceUrl": "https://aurora.bibliocommons.com/v2/events/6933515b94297d36009e7d73",
-    "lastChecked": "2026-11-19",
-    "lastSeen": "2026-11-19",
-    "status": "needs_review",
-    "tags": [
-      "family learning"
-    ],
-    "confidence": "medium",
-    "reviewReasons": [
-      "Cost is unknown; check the official listing.",
-      "Numeric eligibility is unknown; check the official listing."
-    ],
-    "sourceName": "Aurora Public Library STEM events",
-    "firstSeen": "2026-11-19",
-    "lastChanged": "2026-11-19",
-    "changeKind": "new"
   },
   {
     "id": "discovered-aurora-library-stem-stem-engineering-adventures-07635a5e6504",
@@ -3512,10 +3304,10 @@ export const generatedDiscoveryReviewCandidates = [
     "changeKind": "unchanged"
   },
   {
-    "id": "discovered-aurora-library-stem-improving-your-listening-and-speaking-d20cbe1825d0",
-    "title": "Improving Your Listening and Speaking",
+    "id": "discovered-aurora-library-stem-saturday-family-storytime-12c648a6f86d",
+    "title": "Saturday Family Storytime",
     "organization": "Aurora Public Library",
-    "description": "In partnership with YCDSB, this course will allow students to explore and develop their language skills through various documentaries, parts of films, current news and talk shows. Students will be given the opportunity to explore ideas, use everyday language and develop their knowledge on real world lingo. New students will need to have a registration/assessment completed. The assessment centre number is 1-855-330-8655.",
+    "description": "Join us for Saturday Family Storytime, where we have stories, rhymes, songs, and lots of fun! Best for ages 5 and younger with a parent, but everyone is welcome.",
     "city": "Aurora",
     "region": "York",
     "category": "Family Learning",
@@ -3525,9 +3317,9 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "deadline": "2026-11-19T13:30:00-04:00",
-    "startDate": "2026-11-19T13:30:00-04:00",
-    "endDate": "2026-11-19T15:30:00-04:00",
+    "deadline": "2026-11-21T10:30:00-04:00",
+    "startDate": "2026-11-21T10:30:00-04:00",
+    "endDate": "2026-11-21T11:00:00-04:00",
     "sourceUrl": "https://aurora.bibliocommons.com/v2/events/6a3d7a57c52cdc3600ecdd19",
     "lastChecked": "2026-11-19",
     "lastSeen": "2026-11-19",
@@ -3541,9 +3333,9 @@ export const generatedDiscoveryReviewCandidates = [
       "Numeric eligibility is unknown; check the official listing."
     ],
     "sourceName": "Aurora Public Library STEM events",
-    "firstSeen": "2026-11-18",
-    "lastChanged": "2026-11-18",
-    "changeKind": "unchanged"
+    "firstSeen": "2026-11-19",
+    "lastChanged": "2026-11-19",
+    "changeKind": "new"
   },
   {
     "id": "discovered-aurora-library-stem-friday-family-storytime-44fece4d5703",
@@ -3577,13 +3369,13 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Aurora Public Library STEM events",
     "firstSeen": "2026-11-19",
     "lastChanged": "2026-11-19",
-    "changeKind": "new"
+    "changeKind": "unchanged"
   },
   {
-    "id": "discovered-aurora-library-stem-financial-empowerment-for-women-f5fb2a5d0fd3",
-    "title": "Financial Empowerment for Women",
+    "id": "discovered-aurora-library-stem-cs-intro-to-cricut-c0db6524d4b3",
+    "title": "CS Intro to Cricut",
     "organization": "Aurora Public Library",
-    "description": "Financial Empowerment is a four-week financial education workshop designed specifically for women. The program takes a comprehensive and practical approach to building financial well-being. WEEK 1 | Nov 19 Discover Your Relationship With Money and Where It Comes From WEEK 2 | Nov 26 Build Your Budget & Expense Tracker WEEK 3 | Dec 3 Trust New Financial Habits WEEK 4 | Dec 10 Align Your Values With Your Financial Decisions For women 18+ living in York Region. In partnership with Women’s Centre of York Region. Please note: Registration is for the full four-week program. Register at wcyr.ca/registration",
+    "description": "Learn the basics of the Cricut cutting machine in this introductory course. Create a custom vinyl sticker to take home! This program is for ages 13+ . This is just a reminder that if you are unable to attend any of our programs at APL , to please unregister , or else you will be marked as a \"no-show\", and your ability to register for programs in the future may be impacted, due to high waitlists. Unregistering when you are unable to make it to a program, allows there to be space for others who are on the waitlist to attend. We appreciate your consideration. APL Creative Studio",
     "city": "Aurora",
     "region": "York",
     "category": "Family Learning",
@@ -3593,15 +3385,16 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "deadline": "2026-11-19T10:00:00-04:00",
-    "startDate": "2026-11-19T10:00:00-04:00",
-    "endDate": "2026-11-19T12:00:00-04:00",
+    "deadline": "2026-11-19T19:00:00-04:00",
+    "startDate": "2026-11-19T19:00:00-04:00",
+    "endDate": "2026-11-19T20:00:00-04:00",
     "sourceUrl": "https://aurora.bibliocommons.com/v2/events/6a0c8164278f7c2f008e1e48",
     "lastChecked": "2026-11-19",
     "lastSeen": "2026-11-19",
     "status": "needs_review",
     "tags": [
-      "family learning"
+      "family learning",
+      "creative studio"
     ],
     "confidence": "medium",
     "reviewReasons": [
@@ -3646,7 +3439,7 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Aurora Public Library STEM events",
     "firstSeen": "2026-11-19",
     "lastChanged": "2026-11-19",
-    "changeKind": "new"
+    "changeKind": "unchanged"
   },
   {
     "id": "discovered-aurora-library-stem-kids-sewing-series-0ed62f18bd9b",
@@ -3680,48 +3473,13 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Aurora Public Library STEM events",
     "firstSeen": "2026-11-19",
     "lastChanged": "2026-11-19",
-    "changeKind": "new"
+    "changeKind": "unchanged"
   },
   {
-    "id": "discovered-aurora-library-stem-song-and-dance-time-ea77ab529e49",
-    "title": "Song and Dance Time",
+    "id": "discovered-aurora-library-stem-paws-to-read-253590aca986",
+    "title": "Paws to Read",
     "organization": "Aurora Public Library",
-    "description": "Join us for preschool music and movement! We’ll sing, dance, learn about rhythm, and have a lot of fun! Best for ages 2-5.",
-    "city": "Aurora",
-    "region": "York",
-    "ageMin": 2,
-    "ageMax": 5,
-    "category": "Family Learning",
-    "cost": "Unknown",
-    "costEvidence": "unknown",
-    "eligibilityEvidence": "explicit-ages",
-    "language": [
-      "en"
-    ],
-    "deadline": "2026-11-19T11:00:00-04:00",
-    "startDate": "2026-11-19T11:00:00-04:00",
-    "endDate": "2026-11-19T11:30:00-04:00",
-    "sourceUrl": "https://aurora.bibliocommons.com/v2/events/6ad2844b29c3d60033306e00",
-    "lastChecked": "2026-11-19",
-    "lastSeen": "2026-11-19",
-    "status": "needs_review",
-    "tags": [
-      "family learning"
-    ],
-    "confidence": "high",
-    "reviewReasons": [
-      "Cost is unknown; check the official listing."
-    ],
-    "sourceName": "Aurora Public Library STEM events",
-    "firstSeen": "2026-11-19",
-    "lastChanged": "2026-11-19",
-    "changeKind": "new"
-  },
-  {
-    "id": "discovered-aurora-library-stem-korean-storytime-8155aa1ceae9",
-    "title": "Korean Storytime",
-    "organization": "Aurora Public Library",
-    "description": "Join us for a cozy Korean-language storytime designed for young learners and their families! Each session features a themed story — from nature and emotions to family and friendship — followed by a fun, simple craft that brings the story to life. A wonderful way to build language skills, spark imagination, and connect with Korean culture together. 오로라 도서관 한국어 스토리타임 아이들과 함께하는 따뜻한 한국어 스토리타임에 초대합니다! 매 회 자연, 감정, 가족 등 다양한 주제의 그림책을 읽고, 이야기와 연결된 간단하고 재미있는 크래프트 활동을 진행합니다. 한국어와 한국 문화를 즐겁게 배우는 소중한 시간이 될 거예요.",
+    "description": "Children can spend a Sunday afternoon reading to a Therapy Dog from St. John Ambulance. This is a drop-in program, no registration required!",
     "city": "Aurora",
     "region": "York",
     "category": "Family Learning",
@@ -3729,12 +3487,45 @@ export const generatedDiscoveryReviewCandidates = [
     "costEvidence": "unknown",
     "eligibilityEvidence": "unknown",
     "language": [
-      "en",
-      "ko"
+      "en"
     ],
-    "deadline": "2026-11-19T17:00:00-04:00",
-    "startDate": "2026-11-19T17:00:00-04:00",
-    "endDate": "2026-11-19T18:00:00-04:00",
+    "deadline": "2026-11-22T13:00:00-04:00",
+    "startDate": "2026-11-22T13:00:00-04:00",
+    "endDate": "2026-11-22T14:00:00-04:00",
+    "sourceUrl": "https://aurora.bibliocommons.com/v2/events/6ad2844b29c3d60033306e00",
+    "lastChecked": "2026-11-19",
+    "lastSeen": "2026-11-19",
+    "status": "needs_review",
+    "tags": [
+      "family learning"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "Cost is unknown; check the official listing.",
+      "Numeric eligibility is unknown; check the official listing."
+    ],
+    "sourceName": "Aurora Public Library STEM events",
+    "firstSeen": "2026-11-19",
+    "lastChanged": "2026-11-19",
+    "changeKind": "new"
+  },
+  {
+    "id": "discovered-aurora-library-stem-power-of-the-pen-37146e052ccb",
+    "title": "Power of the Pen!",
+    "organization": "Aurora Public Library",
+    "description": "Have you ever wondered what your handwriting might reveal about your personality? Join us for a fascinating, fun, and interactive session with professional graphologist Elaine Charal ! Elaine holds certifications from the International Graphoanalysis Society of Chicago and the American Handwriting Analysis Foundation. With 13 years of experience working with the Handwriting Analysis Association in the United States, she has also helped companies gain insights to support their executive hiring decisions. A former Dale Carnegie instructor, Elaine has also trained with The Second City and brings her extensive experience as an entertainer, presenting at more than 300 events each year. During this engaging session, Elaine will explore the unique characteristics of your handwriting and what they",
+    "city": "Aurora",
+    "region": "York",
+    "category": "Family Learning",
+    "cost": "Unknown",
+    "costEvidence": "unknown",
+    "eligibilityEvidence": "unknown",
+    "language": [
+      "en"
+    ],
+    "deadline": "2026-11-21T14:30:00-04:00",
+    "startDate": "2026-11-21T14:30:00-04:00",
+    "endDate": "2026-11-21T16:30:00-04:00",
     "sourceUrl": "https://aurora.bibliocommons.com/v2/events/6a79fc311d5d03c3a6bba1e4",
     "lastChecked": "2026-11-19",
     "lastSeen": "2026-11-19",
@@ -3753,10 +3544,10 @@ export const generatedDiscoveryReviewCandidates = [
     "changeKind": "new"
   },
   {
-    "id": "discovered-aurora-library-stem-time-for-toddlers-1fabb8115dd3",
-    "title": "Time for Toddlers",
+    "id": "discovered-aurora-library-stem-fall-in-love-with-ya-reading-challenge-9892573e4e38",
+    "title": "Fall in Love with YA Reading Challenge",
     "organization": "Aurora Public Library",
-    "description": "Come join us for a fun session of movement, rhythm, and reading that's perfect for little ones.",
+    "description": "Track the books you read, complete activities, write reviews, and earn digital badges to win prizes. To register, please see the link below: Online Reading Challenge",
     "city": "Aurora",
     "region": "York",
     "category": "Family Learning",
@@ -3766,9 +3557,9 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "deadline": "2026-11-19T10:00:00-04:00",
-    "startDate": "2026-11-19T10:00:00-04:00",
-    "endDate": "2026-11-19T10:30:00-04:00",
+    "deadline": "2026-09-01T08:00:00-04:00",
+    "startDate": "2026-09-01T08:00:00-04:00",
+    "endDate": "2026-12-31T09:00:00-04:00",
     "sourceUrl": "https://aurora.bibliocommons.com/v2/events/6a78c8b5b3bdcec4a6674160",
     "lastChecked": "2026-11-19",
     "lastSeen": "2026-11-19",
@@ -3819,13 +3610,13 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Aurora Public Library STEM events",
     "firstSeen": "2026-11-19",
     "lastChanged": "2026-11-19",
-    "changeKind": "new"
+    "changeKind": "unchanged"
   },
   {
-    "id": "discovered-aurora-library-stem-the-good-food-workshop-69eeef6e297d",
-    "title": "The Good Food Workshop",
+    "id": "discovered-aurora-library-stem-smart-investments-for-you-invest-for-your--ae0ae2778366",
+    "title": "Smart Investments for You: Invest for your Body, Live Healthier, Stay Protected",
     "organization": "Aurora Public Library",
-    "description": "The Good Food Workshop is a food skills workshop that helps participants build confidence in preparing nutritious, affordable meals. This interactive workshop is tailored to individual lifestyles and needs, and participants develop practical skills in meal planning, food safety and food budgeting. In partnership with York Region Food Network. Register at bit.ly/4eg6OWf",
+    "description": "Saturday November 21 | 2:00-3:30 Invest for your body, live healthier, stay protected What are the benefits of private health & dental plans, and how do you choose them?",
     "city": "Aurora",
     "region": "York",
     "category": "Family Learning",
@@ -3835,10 +3626,182 @@ export const generatedDiscoveryReviewCandidates = [
     "language": [
       "en"
     ],
-    "deadline": "2026-11-19T10:00:00-04:00",
-    "startDate": "2026-11-19T10:00:00-04:00",
-    "endDate": "2026-11-19T12:00:00-04:00",
+    "deadline": "2026-11-21T14:00:00-04:00",
+    "startDate": "2026-11-21T14:00:00-04:00",
+    "endDate": "2026-11-21T15:30:00-04:00",
     "sourceUrl": "https://aurora.bibliocommons.com/v2/events/6aea8d1b901b02002cc7536c",
+    "lastChecked": "2026-11-19",
+    "lastSeen": "2026-11-19",
+    "status": "needs_review",
+    "tags": [
+      "family learning"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "Cost is unknown; check the official listing.",
+      "Numeric eligibility is unknown; check the official listing."
+    ],
+    "sourceName": "Aurora Public Library STEM events",
+    "firstSeen": "2026-11-19",
+    "lastChanged": "2026-11-19",
+    "changeKind": "new"
+  },
+  {
+    "id": "discovered-aurora-library-stem-financial-security-early-years-what-does-i-1663c17adc2e",
+    "title": "Financial Security - Early Years: What does it really mean to be financially secure?",
+    "organization": "Aurora Public Library",
+    "description": "Financial Security is a dynamic balance of having enough money, while also mastering the strategies to preserve and grow it over time. Join us for an insightful series as we explore the stages of life and the financial decisions that shape each one. From early planning to retirement, we’ll discuss key financial considerations and the tools available to help you build a secure future for yourself and your loved ones. Presented by Jamil Khushal, independent financial broker.",
+    "city": "Aurora",
+    "region": "York",
+    "category": "Family Learning",
+    "cost": "Unknown",
+    "costEvidence": "unknown",
+    "eligibilityEvidence": "unknown",
+    "language": [
+      "en"
+    ],
+    "deadline": "2026-11-21T11:00:00-04:00",
+    "startDate": "2026-11-21T11:00:00-04:00",
+    "endDate": "2026-11-21T12:30:00-04:00",
+    "sourceUrl": "https://aurora.bibliocommons.com/v2/events/6ac521f2de300e00451897a6",
+    "lastChecked": "2026-11-19",
+    "lastSeen": "2026-11-19",
+    "status": "needs_review",
+    "tags": [
+      "family learning"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "Cost is unknown; check the official listing.",
+      "Numeric eligibility is unknown; check the official listing."
+    ],
+    "sourceName": "Aurora Public Library STEM events",
+    "firstSeen": "2026-11-19",
+    "lastChanged": "2026-11-19",
+    "changeKind": "new"
+  },
+  {
+    "id": "discovered-aurora-library-stem-fang-hua-mandarin-social-meet-up-e5fc00ff643e",
+    "title": "Fang Hua: Mandarin Social Meet Up",
+    "organization": "Aurora Public Library",
+    "description": "Fang Hua singing & dancing troupe welcomes all Mandarin speaking seniors to join in for a day of socializing and entertainment. Drop-in, no registration required. Other schedule: Sundays 1:30-5:00pm Sep 6, 13, 27 October 11, 18, 25 Nov 1, 15, 22, 29 Dec 6,13 Fridays 1:00-5:00pm Sep 11 October 9 Nov 27",
+    "city": "Aurora",
+    "region": "York",
+    "category": "Family Learning",
+    "cost": "Unknown",
+    "costEvidence": "unknown",
+    "eligibilityEvidence": "unknown",
+    "language": [
+      "en",
+      "zh"
+    ],
+    "deadline": "2026-11-22T13:30:00-04:00",
+    "startDate": "2026-11-22T13:30:00-04:00",
+    "endDate": "2026-11-22T17:00:00-04:00",
+    "sourceUrl": "https://aurora.bibliocommons.com/v2/events/6ad804ca9d27a000455248b6",
+    "lastChecked": "2026-11-19",
+    "lastSeen": "2026-11-19",
+    "status": "needs_review",
+    "tags": [
+      "family learning"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "Cost is unknown; check the official listing.",
+      "Numeric eligibility is unknown; check the official listing."
+    ],
+    "sourceName": "Aurora Public Library STEM events",
+    "firstSeen": "2026-11-19",
+    "lastChanged": "2026-11-19",
+    "changeKind": "new"
+  },
+  {
+    "id": "discovered-aurora-library-stem-korean-storytime-31afd9fa15db",
+    "title": "Korean Storytime",
+    "organization": "Aurora Public Library",
+    "description": "Join us for a cozy Korean-language storytime designed for young learners and their families! Each session features a themed story — from nature and emotions to family and friendship — followed by a fun, simple craft that brings the story to life. A wonderful way to build language skills, spark imagination, and connect with Korean culture together. 오로라 도서관 한국어 스토리타임 아이들과 함께하는 따뜻한 한국어 스토리타임에 초대합니다! 매 회 자연, 감정, 가족 등 다양한 주제의 그림책을 읽고, 이야기와 연결된 간단하고 재미있는 크래프트 활동을 진행합니다. 한국어와 한국 문화를 즐겁게 배우는 소중한 시간이 될 거예요.",
+    "city": "Aurora",
+    "region": "York",
+    "category": "Family Learning",
+    "cost": "Unknown",
+    "costEvidence": "unknown",
+    "eligibilityEvidence": "unknown",
+    "language": [
+      "en",
+      "ko"
+    ],
+    "deadline": "2026-11-19T17:00:00-04:00",
+    "startDate": "2026-11-19T17:00:00-04:00",
+    "endDate": "2026-11-19T18:00:00-04:00",
+    "sourceUrl": "https://aurora.bibliocommons.com/v2/events/6a9b0a89660e510bf4412143",
+    "lastChecked": "2026-11-19",
+    "lastSeen": "2026-11-19",
+    "status": "needs_review",
+    "tags": [
+      "family learning"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "Cost is unknown; check the official listing.",
+      "Numeric eligibility is unknown; check the official listing."
+    ],
+    "sourceName": "Aurora Public Library STEM events",
+    "firstSeen": "2026-11-19",
+    "lastChanged": "2026-11-19",
+    "changeKind": "new"
+  },
+  {
+    "id": "discovered-aurora-library-stem-apl-s-stuffed-animal-hospital-bf05dcac676f",
+    "title": "APL's Stuffed Animal Hospital",
+    "organization": "Aurora Public Library",
+    "description": "Children's Desk on 2nd Floor | All Day Is your stuffed animal sick or injured? Worry not! APL’s Stuffed Animal Hospital is here to help! Drop off your stuffie needing repairs at the children’s desk on the 2nd floor of the library, then our “doctors” will fix them up and send them home with instructions for YOU to help your stuffies next time! Please drop your stuffie off at the 2nd floor Children's Desk and fill out our stuffie patient intake form!",
+    "city": "Aurora",
+    "region": "York",
+    "category": "Family Learning",
+    "cost": "Unknown",
+    "costEvidence": "unknown",
+    "eligibilityEvidence": "unknown",
+    "language": [
+      "en"
+    ],
+    "deadline": "2025-09-18",
+    "startDate": "2025-09-18",
+    "endDate": "2026-12-31",
+    "sourceUrl": "https://aurora.bibliocommons.com/v2/events/6a8f32cb1c197d11325b02d3",
+    "lastChecked": "2026-11-19",
+    "lastSeen": "2026-11-19",
+    "status": "needs_review",
+    "tags": [
+      "family learning"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "Cost is unknown; check the official listing.",
+      "Numeric eligibility is unknown; check the official listing."
+    ],
+    "sourceName": "Aurora Public Library STEM events",
+    "firstSeen": "2026-11-19",
+    "lastChanged": "2026-11-19",
+    "changeKind": "new"
+  },
+  {
+    "id": "discovered-aurora-library-stem-apl-escape-room-c504d9a054c6",
+    "title": "APL Escape Room",
+    "organization": "Aurora Public Library",
+    "description": "Put your puzzle-solving skills to the test! Find codes, solve riddles, and so much more! One clue leads to another, until victory is achieved! Registration is required.",
+    "city": "Aurora",
+    "region": "York",
+    "category": "Family Learning",
+    "cost": "Unknown",
+    "costEvidence": "unknown",
+    "eligibilityEvidence": "unknown",
+    "language": [
+      "en"
+    ],
+    "deadline": "2026-11-19T18:00:00-04:00",
+    "startDate": "2026-11-19T18:00:00-04:00",
+    "endDate": "2026-11-19T19:00:00-04:00",
+    "sourceUrl": "https://aurora.bibliocommons.com/v2/events/6a3dadb5f3bd131b675ff798",
     "lastChecked": "2026-11-19",
     "lastSeen": "2026-11-19",
     "status": "needs_review",
@@ -4141,71 +4104,7 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Oshawa Public Libraries STEM events",
     "firstSeen": "2026-11-19",
     "lastChanged": "2026-11-19",
-    "changeKind": "new"
-  },
-  {
-    "id": "discovered-oshawa-library-stem-neighbourhood-play-date-6ee84c3cfcfd",
-    "title": "Neighbourhood Play Date",
-    "organization": "Oshawa Public Libraries",
-    "description": "Neighbourhood Play Date from Oshawa Public Libraries STEM events.",
-    "city": "Oshawa",
-    "region": "Durham",
-    "category": "Science & Engineering",
-    "cost": "Unknown",
-    "costEvidence": "unknown",
-    "eligibilityEvidence": "unknown",
-    "language": [
-      "en"
-    ],
-    "sourceUrl": "https://oshlib.bibliocommons.com/events/6a68df564523092f00332446",
-    "lastChecked": "2026-11-19",
-    "lastSeen": "2026-11-19",
-    "status": "needs_review",
-    "tags": [
-      "science & engineering"
-    ],
-    "confidence": "medium",
-    "reviewReasons": [
-      "No clear future date found on the crawled page.",
-      "Cost is unknown; check the official listing.",
-      "Numeric eligibility is unknown; check the official listing."
-    ],
-    "sourceName": "Oshawa Public Libraries STEM events",
-    "firstSeen": "2026-11-18",
-    "lastChanged": "2026-11-18",
     "changeKind": "unchanged"
-  },
-  {
-    "id": "discovered-oshawa-library-stem-lunchtime-book-club-43b4451acf21",
-    "title": "Lunchtime Book Club",
-    "organization": "Oshawa Public Libraries",
-    "description": "Lunchtime Book Club from Oshawa Public Libraries STEM events.",
-    "city": "Oshawa",
-    "region": "Durham",
-    "category": "Science & Engineering",
-    "cost": "Unknown",
-    "costEvidence": "unknown",
-    "eligibilityEvidence": "unknown",
-    "language": [
-      "en"
-    ],
-    "sourceUrl": "https://oshlib.bibliocommons.com/events/6a68c0844523092f00331bf8",
-    "lastChecked": "2026-11-19",
-    "lastSeen": "2026-11-19",
-    "status": "needs_review",
-    "tags": [
-      "science & engineering"
-    ],
-    "confidence": "medium",
-    "reviewReasons": [
-      "No clear future date found on the crawled page.",
-      "Cost is unknown; check the official listing.",
-      "Numeric eligibility is unknown; check the official listing."
-    ],
-    "sourceName": "Oshawa Public Libraries STEM events",
-    "firstSeen": "2026-11-19",
-    "lastChanged": "2026-11-19",
-    "changeKind": "new"
   },
   {
     "id": "discovered-oshawa-library-stem-creation-station-70711801df07",
@@ -4237,7 +4136,7 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Oshawa Public Libraries STEM events",
     "firstSeen": "2026-11-19",
     "lastChanged": "2026-11-19",
-    "changeKind": "new"
+    "changeKind": "unchanged"
   },
   {
     "id": "discovered-oshawa-library-stem-meditation-group-0bb7799b6c07",
@@ -4254,6 +4153,38 @@ export const generatedDiscoveryReviewCandidates = [
       "en"
     ],
     "sourceUrl": "https://oshlib.bibliocommons.com/events/6a68bceef4e5db3d00c4cf19",
+    "lastChecked": "2026-11-19",
+    "lastSeen": "2026-11-19",
+    "status": "needs_review",
+    "tags": [
+      "science & engineering"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "No clear future date found on the crawled page.",
+      "Cost is unknown; check the official listing.",
+      "Numeric eligibility is unknown; check the official listing."
+    ],
+    "sourceName": "Oshawa Public Libraries STEM events",
+    "firstSeen": "2026-11-19",
+    "lastChanged": "2026-11-19",
+    "changeKind": "unchanged"
+  },
+  {
+    "id": "discovered-oshawa-library-stem-steam-saturday-fee3f3ad11dc",
+    "title": "STEAM Saturday",
+    "organization": "Oshawa Public Libraries",
+    "description": "STEAM Saturday from Oshawa Public Libraries STEM events.",
+    "city": "Oshawa",
+    "region": "Durham",
+    "category": "Science & Engineering",
+    "cost": "Unknown",
+    "costEvidence": "unknown",
+    "eligibilityEvidence": "unknown",
+    "language": [
+      "en"
+    ],
+    "sourceUrl": "https://oshlib.bibliocommons.com/events/6a68d83ae9de6536001ecbb4",
     "lastChecked": "2026-11-19",
     "lastSeen": "2026-11-19",
     "status": "needs_review",
@@ -5035,7 +4966,7 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Oakville Public Library programs",
     "firstSeen": "2026-11-19",
     "lastChanged": "2026-11-19",
-    "changeKind": "new"
+    "changeKind": "unchanged"
   },
   {
     "id": "discovered-oakville-library-programs-programs-faq-fb4b1e3842ef",
@@ -5529,8 +5460,8 @@ export const generatedDiscoveryReviewCandidates = [
       "en"
     ],
     "sourceUrl": "https://trca.ca/events-calendar",
-    "lastChecked": "2026-11-18",
-    "lastSeen": "2026-11-18",
+    "lastChecked": "2026-11-19",
+    "lastSeen": "2026-11-19",
     "status": "needs_review",
     "tags": [
       "volunteer hours"
@@ -5544,7 +5475,7 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "TRCA youth volunteer opportunities",
     "firstSeen": "2026-11-10",
     "lastChanged": "2026-11-10",
-    "changeKind": "source_unavailable"
+    "changeKind": "unchanged"
   },
   {
     "id": "discovered-trca-youth-host-an-event-a0b1d26008f8",
@@ -5561,8 +5492,8 @@ export const generatedDiscoveryReviewCandidates = [
       "en"
     ],
     "sourceUrl": "https://trca.ca/host-an-event",
-    "lastChecked": "2026-11-18",
-    "lastSeen": "2026-11-18",
+    "lastChecked": "2026-11-19",
+    "lastSeen": "2026-11-19",
     "status": "needs_review",
     "tags": [
       "volunteer hours"
@@ -5576,231 +5507,7 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "TRCA youth volunteer opportunities",
     "firstSeen": "2026-11-10",
     "lastChanged": "2026-11-10",
-    "changeKind": "source_unavailable"
-  },
-  {
-    "id": "discovered-trca-youth-recreational-activities-396e33de425b",
-    "title": "Recreational Activities",
-    "organization": "Toronto and Region Conservation Authority",
-    "description": "Recreational Activities listed by TRCA youth volunteer opportunities.",
-    "city": "Toronto",
-    "region": "Toronto",
-    "category": "Volunteer Hours",
-    "cost": "Unknown",
-    "costEvidence": "unknown",
-    "eligibilityEvidence": "unknown",
-    "language": [
-      "en"
-    ],
-    "sourceUrl": "https://trca.ca/activities",
-    "lastChecked": "2026-11-18",
-    "lastSeen": "2026-11-18",
-    "status": "needs_review",
-    "tags": [
-      "volunteer hours"
-    ],
-    "confidence": "medium",
-    "reviewReasons": [
-      "No clear future date found on the crawled page.",
-      "Cost is unknown; check the official listing.",
-      "Numeric eligibility is unknown; check the official listing."
-    ],
-    "sourceName": "TRCA youth volunteer opportunities",
-    "firstSeen": "2026-11-10",
-    "lastChanged": "2026-11-10",
-    "changeKind": "source_unavailable"
-  },
-  {
-    "id": "discovered-trca-youth-take-your-bike-for-a-spin-0667eb7d0928",
-    "title": "Take Your Bike for a Spin",
-    "organization": "Toronto and Region Conservation Authority",
-    "description": "Take Your Bike for a Spin listed by TRCA youth volunteer opportunities.",
-    "city": "Toronto",
-    "region": "Toronto",
-    "category": "Volunteer Hours",
-    "cost": "Unknown",
-    "costEvidence": "unknown",
-    "eligibilityEvidence": "unknown",
-    "language": [
-      "en"
-    ],
-    "sourceUrl": "https://trca.ca/activities/mountain-biking-cycling",
-    "lastChecked": "2026-11-18",
-    "lastSeen": "2026-11-18",
-    "status": "needs_review",
-    "tags": [
-      "volunteer hours"
-    ],
-    "confidence": "medium",
-    "reviewReasons": [
-      "No clear future date found on the crawled page.",
-      "Cost is unknown; check the official listing.",
-      "Numeric eligibility is unknown; check the official listing."
-    ],
-    "sourceName": "TRCA youth volunteer opportunities",
-    "firstSeen": "2026-11-10",
-    "lastChanged": "2026-11-10",
-    "changeKind": "source_unavailable"
-  },
-  {
-    "id": "discovered-trca-youth-enjoy-birding-8e78e476bdc0",
-    "title": "Enjoy Birding",
-    "organization": "Toronto and Region Conservation Authority",
-    "description": "Enjoy Birding listed by TRCA youth volunteer opportunities.",
-    "city": "Toronto",
-    "region": "Toronto",
-    "category": "Volunteer Hours",
-    "cost": "Unknown",
-    "costEvidence": "unknown",
-    "eligibilityEvidence": "unknown",
-    "language": [
-      "en"
-    ],
-    "sourceUrl": "https://trca.ca/activities/bird-watching",
-    "lastChecked": "2026-11-18",
-    "lastSeen": "2026-11-18",
-    "status": "needs_review",
-    "tags": [
-      "volunteer hours"
-    ],
-    "confidence": "medium",
-    "reviewReasons": [
-      "No clear future date found on the crawled page.",
-      "Cost is unknown; check the official listing.",
-      "Numeric eligibility is unknown; check the official listing."
-    ],
-    "sourceName": "TRCA youth volunteer opportunities",
-    "firstSeen": "2026-11-10",
-    "lastChanged": "2026-11-10",
-    "changeKind": "source_unavailable"
-  },
-  {
-    "id": "discovered-trca-youth-go-for-a-hike-880461c7c6c4",
-    "title": "Go for a Hike",
-    "organization": "Toronto and Region Conservation Authority",
-    "description": "Go for a Hike listed by TRCA youth volunteer opportunities.",
-    "city": "Toronto",
-    "region": "Toronto",
-    "category": "Volunteer Hours",
-    "cost": "Unknown",
-    "costEvidence": "unknown",
-    "eligibilityEvidence": "unknown",
-    "language": [
-      "en"
-    ],
-    "sourceUrl": "https://trca.ca/activities/hiking",
-    "lastChecked": "2026-11-18",
-    "lastSeen": "2026-11-18",
-    "status": "needs_review",
-    "tags": [
-      "volunteer hours"
-    ],
-    "confidence": "medium",
-    "reviewReasons": [
-      "No clear future date found on the crawled page.",
-      "Cost is unknown; check the official listing.",
-      "Numeric eligibility is unknown; check the official listing."
-    ],
-    "sourceName": "TRCA youth volunteer opportunities",
-    "firstSeen": "2026-11-10",
-    "lastChanged": "2026-11-10",
-    "changeKind": "source_unavailable"
-  },
-  {
-    "id": "discovered-trca-youth-community-events-32f975a0ccf8",
-    "title": "Community Events",
-    "organization": "Toronto and Region Conservation Authority",
-    "description": "Community Events listed by TRCA youth volunteer opportunities.",
-    "city": "Toronto",
-    "region": "Toronto",
-    "category": "Volunteer Hours",
-    "cost": "Unknown",
-    "costEvidence": "unknown",
-    "eligibilityEvidence": "unknown",
-    "language": [
-      "en"
-    ],
-    "sourceUrl": "https://trca.ca/get-involved/events",
-    "lastChecked": "2026-11-18",
-    "lastSeen": "2026-11-18",
-    "status": "needs_review",
-    "tags": [
-      "volunteer hours"
-    ],
-    "confidence": "medium",
-    "reviewReasons": [
-      "No clear future date found on the crawled page.",
-      "Cost is unknown; check the official listing.",
-      "Numeric eligibility is unknown; check the official listing."
-    ],
-    "sourceName": "TRCA youth volunteer opportunities",
-    "firstSeen": "2026-11-10",
-    "lastChanged": "2026-11-10",
-    "changeKind": "source_unavailable"
-  },
-  {
-    "id": "discovered-trca-youth-community-stewardship-program-99b1d30186d4",
-    "title": "Community Stewardship Program",
-    "organization": "Toronto and Region Conservation Authority",
-    "description": "Community Stewardship Program listed by TRCA youth volunteer opportunities.",
-    "city": "Toronto",
-    "region": "Toronto",
-    "category": "Volunteer Hours",
-    "cost": "Unknown",
-    "costEvidence": "unknown",
-    "eligibilityEvidence": "unknown",
-    "language": [
-      "en"
-    ],
-    "sourceUrl": "https://trca.ca/get-involved/community-stewardship-program",
-    "lastChecked": "2026-11-18",
-    "lastSeen": "2026-11-18",
-    "status": "needs_review",
-    "tags": [
-      "volunteer hours"
-    ],
-    "confidence": "medium",
-    "reviewReasons": [
-      "No clear future date found on the crawled page.",
-      "Cost is unknown; check the official listing.",
-      "Numeric eligibility is unknown; check the official listing."
-    ],
-    "sourceName": "TRCA youth volunteer opportunities",
-    "firstSeen": "2026-11-10",
-    "lastChanged": "2026-11-10",
-    "changeKind": "source_unavailable"
-  },
-  {
-    "id": "discovered-trca-youth-corporate-functions-459f3d290cf8",
-    "title": "Corporate Functions",
-    "organization": "Toronto and Region Conservation Authority",
-    "description": "Corporate Functions listed by TRCA youth volunteer opportunities.",
-    "city": "Toronto",
-    "region": "Toronto",
-    "category": "Volunteer Hours",
-    "cost": "Unknown",
-    "costEvidence": "unknown",
-    "eligibilityEvidence": "unknown",
-    "language": [
-      "en"
-    ],
-    "sourceUrl": "https://trca.ca/host-an-event/corporate-functions",
-    "lastChecked": "2026-11-18",
-    "lastSeen": "2026-11-18",
-    "status": "needs_review",
-    "tags": [
-      "volunteer hours"
-    ],
-    "confidence": "medium",
-    "reviewReasons": [
-      "No clear future date found on the crawled page.",
-      "Cost is unknown; check the official listing.",
-      "Numeric eligibility is unknown; check the official listing."
-    ],
-    "sourceName": "TRCA youth volunteer opportunities",
-    "firstSeen": "2026-11-10",
-    "lastChanged": "2026-11-10",
-    "changeKind": "source_unavailable"
+    "changeKind": "unchanged"
   },
   {
     "id": "discovered-trca-youth-weddings-47d188b05138",
@@ -5817,8 +5524,8 @@ export const generatedDiscoveryReviewCandidates = [
       "en"
     ],
     "sourceUrl": "https://trca.ca/host-an-event/weddings",
-    "lastChecked": "2026-11-18",
-    "lastSeen": "2026-11-18",
+    "lastChecked": "2026-11-19",
+    "lastSeen": "2026-11-19",
     "status": "needs_review",
     "tags": [
       "volunteer hours"
@@ -5832,7 +5539,231 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "TRCA youth volunteer opportunities",
     "firstSeen": "2026-11-10",
     "lastChanged": "2026-11-10",
-    "changeKind": "source_unavailable"
+    "changeKind": "unchanged"
+  },
+  {
+    "id": "discovered-trca-youth-recreational-activities-396e33de425b",
+    "title": "Recreational Activities",
+    "organization": "Toronto and Region Conservation Authority",
+    "description": "Recreational Activities listed by TRCA youth volunteer opportunities.",
+    "city": "Toronto",
+    "region": "Toronto",
+    "category": "Volunteer Hours",
+    "cost": "Unknown",
+    "costEvidence": "unknown",
+    "eligibilityEvidence": "unknown",
+    "language": [
+      "en"
+    ],
+    "sourceUrl": "https://trca.ca/activities",
+    "lastChecked": "2026-11-19",
+    "lastSeen": "2026-11-19",
+    "status": "needs_review",
+    "tags": [
+      "volunteer hours"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "No clear future date found on the crawled page.",
+      "Cost is unknown; check the official listing.",
+      "Numeric eligibility is unknown; check the official listing."
+    ],
+    "sourceName": "TRCA youth volunteer opportunities",
+    "firstSeen": "2026-11-10",
+    "lastChanged": "2026-11-10",
+    "changeKind": "unchanged"
+  },
+  {
+    "id": "discovered-trca-youth-cross-country-skiing-opens-january-2-9e88e8eebe35",
+    "title": "Cross-Country Skiing (Opens January 2)",
+    "organization": "Toronto and Region Conservation Authority",
+    "description": "Cross-Country Skiing (Opens January 2) listed by TRCA youth volunteer opportunities.",
+    "city": "Toronto",
+    "region": "Toronto",
+    "category": "Volunteer Hours",
+    "cost": "Unknown",
+    "costEvidence": "unknown",
+    "eligibilityEvidence": "unknown",
+    "language": [
+      "en"
+    ],
+    "sourceUrl": "https://trca.ca/activities/cross-country-skiing",
+    "lastChecked": "2026-11-19",
+    "lastSeen": "2026-11-19",
+    "status": "needs_review",
+    "tags": [
+      "volunteer hours"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "No clear future date found on the crawled page.",
+      "Cost is unknown; check the official listing.",
+      "Numeric eligibility is unknown; check the official listing."
+    ],
+    "sourceName": "TRCA youth volunteer opportunities",
+    "firstSeen": "2026-11-19",
+    "lastChanged": "2026-11-19",
+    "changeKind": "new"
+  },
+  {
+    "id": "discovered-trca-youth-on-leash-dog-walking-542f82e8bfde",
+    "title": "On-Leash Dog Walking",
+    "organization": "Toronto and Region Conservation Authority",
+    "description": "On-Leash Dog Walking listed by TRCA youth volunteer opportunities.",
+    "city": "Toronto",
+    "region": "Toronto",
+    "category": "Volunteer Hours",
+    "cost": "Unknown",
+    "costEvidence": "unknown",
+    "eligibilityEvidence": "unknown",
+    "language": [
+      "en"
+    ],
+    "sourceUrl": "https://trca.ca/activities/dog-walking",
+    "lastChecked": "2026-11-19",
+    "lastSeen": "2026-11-19",
+    "status": "needs_review",
+    "tags": [
+      "volunteer hours"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "No clear future date found on the crawled page.",
+      "Cost is unknown; check the official listing.",
+      "Numeric eligibility is unknown; check the official listing."
+    ],
+    "sourceName": "TRCA youth volunteer opportunities",
+    "firstSeen": "2026-11-19",
+    "lastChanged": "2026-11-19",
+    "changeKind": "new"
+  },
+  {
+    "id": "discovered-trca-youth-community-events-32f975a0ccf8",
+    "title": "Community Events",
+    "organization": "Toronto and Region Conservation Authority",
+    "description": "Community Events listed by TRCA youth volunteer opportunities.",
+    "city": "Toronto",
+    "region": "Toronto",
+    "category": "Volunteer Hours",
+    "cost": "Unknown",
+    "costEvidence": "unknown",
+    "eligibilityEvidence": "unknown",
+    "language": [
+      "en"
+    ],
+    "sourceUrl": "https://trca.ca/get-involved/events",
+    "lastChecked": "2026-11-19",
+    "lastSeen": "2026-11-19",
+    "status": "needs_review",
+    "tags": [
+      "volunteer hours"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "No clear future date found on the crawled page.",
+      "Cost is unknown; check the official listing.",
+      "Numeric eligibility is unknown; check the official listing."
+    ],
+    "sourceName": "TRCA youth volunteer opportunities",
+    "firstSeen": "2026-11-10",
+    "lastChanged": "2026-11-10",
+    "changeKind": "unchanged"
+  },
+  {
+    "id": "discovered-trca-youth-community-stewardship-program-99b1d30186d4",
+    "title": "Community Stewardship Program",
+    "organization": "Toronto and Region Conservation Authority",
+    "description": "Community Stewardship Program listed by TRCA youth volunteer opportunities.",
+    "city": "Toronto",
+    "region": "Toronto",
+    "category": "Volunteer Hours",
+    "cost": "Unknown",
+    "costEvidence": "unknown",
+    "eligibilityEvidence": "unknown",
+    "language": [
+      "en"
+    ],
+    "sourceUrl": "https://trca.ca/get-involved/community-stewardship-program",
+    "lastChecked": "2026-11-19",
+    "lastSeen": "2026-11-19",
+    "status": "needs_review",
+    "tags": [
+      "volunteer hours"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "No clear future date found on the crawled page.",
+      "Cost is unknown; check the official listing.",
+      "Numeric eligibility is unknown; check the official listing."
+    ],
+    "sourceName": "TRCA youth volunteer opportunities",
+    "firstSeen": "2026-11-10",
+    "lastChanged": "2026-11-10",
+    "changeKind": "unchanged"
+  },
+  {
+    "id": "discovered-trca-youth-hiking-walking-3bb84c0eebf3",
+    "title": "Hiking/Walking",
+    "organization": "Toronto and Region Conservation Authority",
+    "description": "Hiking/Walking listed by TRCA youth volunteer opportunities.",
+    "city": "Toronto",
+    "region": "Toronto",
+    "category": "Volunteer Hours",
+    "cost": "Unknown",
+    "costEvidence": "unknown",
+    "eligibilityEvidence": "unknown",
+    "language": [
+      "en"
+    ],
+    "sourceUrl": "https://trca.ca/activities/hiking",
+    "lastChecked": "2026-11-19",
+    "lastSeen": "2026-11-19",
+    "status": "needs_review",
+    "tags": [
+      "volunteer hours"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "No clear future date found on the crawled page.",
+      "Cost is unknown; check the official listing.",
+      "Numeric eligibility is unknown; check the official listing."
+    ],
+    "sourceName": "TRCA youth volunteer opportunities",
+    "firstSeen": "2026-11-19",
+    "lastChanged": "2026-11-19",
+    "changeKind": "new"
+  },
+  {
+    "id": "discovered-trca-youth-corporate-functions-459f3d290cf8",
+    "title": "Corporate Functions",
+    "organization": "Toronto and Region Conservation Authority",
+    "description": "Corporate Functions listed by TRCA youth volunteer opportunities.",
+    "city": "Toronto",
+    "region": "Toronto",
+    "category": "Volunteer Hours",
+    "cost": "Unknown",
+    "costEvidence": "unknown",
+    "eligibilityEvidence": "unknown",
+    "language": [
+      "en"
+    ],
+    "sourceUrl": "https://trca.ca/host-an-event/corporate-functions",
+    "lastChecked": "2026-11-19",
+    "lastSeen": "2026-11-19",
+    "status": "needs_review",
+    "tags": [
+      "volunteer hours"
+    ],
+    "confidence": "medium",
+    "reviewReasons": [
+      "No clear future date found on the crawled page.",
+      "Cost is unknown; check the official listing.",
+      "Numeric eligibility is unknown; check the official listing."
+    ],
+    "sourceName": "TRCA youth volunteer opportunities",
+    "firstSeen": "2026-11-10",
+    "lastChanged": "2026-11-10",
+    "changeKind": "unchanged"
   },
   {
     "id": "discovered-trca-youth-host-a-community-event-80b67e5aa208",
@@ -5849,8 +5780,8 @@ export const generatedDiscoveryReviewCandidates = [
       "en"
     ],
     "sourceUrl": "https://trca.ca/host-an-event/host-a-large-scale-community-event",
-    "lastChecked": "2026-11-18",
-    "lastSeen": "2026-11-18",
+    "lastChecked": "2026-11-19",
+    "lastSeen": "2026-11-19",
     "status": "needs_review",
     "tags": [
       "volunteer hours"
@@ -5864,7 +5795,7 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "TRCA youth volunteer opportunities",
     "firstSeen": "2026-11-10",
     "lastChanged": "2026-11-10",
-    "changeKind": "source_unavailable"
+    "changeKind": "unchanged"
   },
   {
     "id": "discovered-uhn-stem-pathways-program-update-d82e225d9965",
@@ -6224,6 +6155,6 @@ export const generatedDiscoveryReviewCandidates = [
     "sourceName": "Ontario Tech Engineering Outreach",
     "firstSeen": "2026-11-19",
     "lastChanged": "2026-11-19",
-    "changeKind": "new"
+    "changeKind": "unchanged"
   }
 ] satisfies DiscoveredOpportunity[];
